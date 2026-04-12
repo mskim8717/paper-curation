@@ -89,7 +89,9 @@ Google Scholar, Microsoft Academic, Scopus, Dimensions, Web of Science, OpenCita
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/992_OpenAlex_in_focus_Metadata_quality_of_publication_type_and_l/review]] — 여러 인용 데이터베이스의 커버리지 비교 연구를 OpenAlex의 메타데이터 품질 평가로 확장한 후속 연구로 볼 수 있다.
-- 🔄 다른 접근: [[papers/993_OpenAlex_A_fully-open_index_of_scholarly_works_authors_venue/review]] — 기존 상업적 데이터베이스들과 완전 오픈인 OpenAlex의 특성 및 활용도를 비교 분석하는 대안적 접근법을 제시한다.
-- 🏛 기반 연구: [[papers/992_OpenAlex_in_focus_Metadata_quality_of_publication_type_and_l/review]] — 주요 인용 데이터베이스들의 전반적 커버리지 비교가 OpenAlex 메타데이터 품질 평가의 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/939_BibFusion_A_Python_package_to_integrate_deduplicate_and_harm/review]] — BibFusion의 통합 접근법과 다양한 데이터베이스 비교 연구를 결합하여 최적의 서지 데이터 통합 전략을 수립할 수 있음
+- 🔗 후속 연구: [[papers/992_OpenAlex_in_focus_Metadata_quality_of_publication_type_and_l/review]] — OpenAlex라는 새로운 인용 데이터 소스의 메타데이터 품질을 평가하여 기존 6개 데이터베이스 비교를 보완한다.
+- 🏛 기반 연구: [[papers/1139_Assessing_data_quality_in_citation_analysis_A_case_study_of/review]] — 인용 분석에서 데이터 품질 평가의 중요성과 방법론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/992_OpenAlex_in_focus_Metadata_quality_of_publication_type_and_l/review]] — 주요 인용 데이터베이스들의 커버리지 비교 연구가 OpenAlex 메타데이터 품질 평가의 기준점을 제공한다.
+- 🏛 기반 연구: [[papers/1163_effect_of_poloxamer_and_hyaluronic_acid_administration_in_ne/review]] — 의료 분야 bibliometric 분석의 정확성을 위해 주요 학술 데이터베이스들의 비교 분석이 필요하다.
+- 🔄 다른 접근: [[papers/1138_Arts_and_Humanities_Citation_Index_for_Research_Evaluation_i/review]] — 종교학 연구평가에서 A&HCI의 한계와 Google Scholar, Scopus 등 다양한 학술 데이터베이스의 비교 분석이라는 대안적 접근법을 제시합니다.
+- 🏛 기반 연구: [[papers/1139_Assessing_data_quality_in_citation_analysis_A_case_study_of/review]] — 다양한 학술 데이터베이스의 비교 분석이 Web of Science와 Crossref의 데이터 품질 평가를 위한 기준을 제공한다.

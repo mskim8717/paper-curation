@@ -11,7 +11,7 @@ tags:
   - "cat/Computational_Bibliometric_Analysis"
   - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bibliometric analysis of publications titled culinary arts scanned in the Web of.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ödemiş_2026_Bibliometric analysis of publications titled culinary arts scanned in the Web of Science database.pdf"
 ---
 
 # Bibliometric analysis of publications titled culinary arts scanned in the Web of Science database
@@ -87,7 +87,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bibliometric analysis of publications ti
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1147_Bibliometric_Analysis_on_the_Research_Trends_and_Collaborati/review]] — 둘 다 VOSviewer를 활용한 특정 도메인 분석이지만 요리 예술과 MSME 파산이라는 완전히 다른 분야를 다룹니다.
-- 🔗 후속 연구: [[papers/1216_Tour_guiding_technologies_a_bibliometric_analysis_mapping_tr/review]] — 요리 예술에서 관광 가이드 기술로 호스피탈리티 관련 분야의 서지 분석을 확장한 연구입니다.
-- 🧪 응용 사례: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — VOSviewer의 이론적 기능들을 요리 예술이라는 구체적 도메인에서 실제로 활용한 사례입니다.
-- 🔄 다른 접근: [[papers/1170_Evolution_of_Social_Work_Knowledge_Production_Over_35_Years/review]] — AI를 활용한 대규모 논문 분석 방법론을 다른 학문 분야의 서지계량 연구와 비교하여 방법론적 차이를 파악할 수 있다.
+- 🧪 응용 사례: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — VOSviewer 프로그램을 요리 예술 분야 bibliometric 분석에 실제 적용한 구체적 사례를 제시한다.
+- 🏛 기반 연구: [[papers/1137_Art_tourism_a_nascent_concept_but_symptomatic_of_a_trend_Ins/review]] — 예술 관광의 개념적 진화 분석이 요리 예술의 학술적 발전 과정을 이해하는 문화적 맥락을 제공한다.
+- 🔄 다른 접근: [[papers/1196_Media_and_Digital_Marketing_Bibliomatrix_Analysis_using_R_Fu/review]] — 둘 다 특정 분야의 bibliometric 분석이지만 1144는 요리 예술, 1196은 디지털 마케팅을 다룬다.
+- 🧪 응용 사례: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — 요리 예술 분야 연구에서 VOSviewer를 활용한 서지계량 분석의 구체적 적용 사례를 보여준다.

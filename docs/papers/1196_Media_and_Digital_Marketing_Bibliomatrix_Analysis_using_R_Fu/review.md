@@ -14,7 +14,7 @@ tags:
   - "cat/Computational_Bibliometric_Analysis"
   - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Media and Digital Marketing Bibliomatrix Analysis using R (Future Research Direc.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wening et al._2026_Media and Digital Marketing Bibliomatrix Analysis using R (Future Research Directions).pdf"
 ---
 
 # Media and Digital Marketing: Bibliomatrix Analysis using R (Future Research Directions)
@@ -92,5 +92,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Media and Digital Marketing Bibliomatrix
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1077_Quantifying_large_language_model_usage_in_scientific_papers/review]] — 디지털 마케팅 연구에서 AI와 LLM 활용 현황을 정량적으로 분석하여 연구 방법론의 변화를 추적할 수 있음
-- ⚖️ 반론/비판: [[papers/1010_Remote_collaboration_fuses_fewer_breakthrough_ideas/review]] — 원격 협업이 혁신을 감소시킨다는 연구와 디지털 마케팅의 협업 증진 효과를 비교 분석할 필요가 있음
+- 🔄 다른 접근: [[papers/1206_Review_of_E-Commerce_Literature_Inferences_Trends_and_Recomm/review]] — 소셜미디어-디지털마케팅과 e-commerce 문헌 분석 모두 디지털 경제의 서로 다른 측면을 bibliometric으로 접근한다.
+- 🏛 기반 연구: [[papers/937_Authorship_titles_and_open_access_as_drivers_of_citation_per/review]] — 디지털마케팅 연구의 인용 분석에서 저자명과 제목이 인용 성과에 미치는 영향을 이해해야 한다.
+- 🔄 다른 접근: [[papers/1144_Bibliometric_analysis_of_publications_titled_culinary_arts_s/review]] — 둘 다 특정 분야의 bibliometric 분석이지만 1144는 요리 예술, 1196은 디지털 마케팅을 다룬다.
+- 🔄 다른 접근: [[papers/1135_AI-Augmented_Mobile_and_Data-Driven_Decision_Making_in_Busin/review]] — 둘 다 디지털 기술과 비즈니스의 연결을 bibliometric 방법으로 분석하지만 서로 다른 기술 영역에 초점을 맞춘다.

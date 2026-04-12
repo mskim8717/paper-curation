@@ -79,9 +79,9 @@ tags:
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/1068_Artificial_intelligence_and_illusions_of_understanding_in_sc/review]] — 투어 가이딩 기술의 이해 착각 문제를 AI 기술 도입 과정에서 발생할 수 있는 인식 오류로 분석할 필요가 있음
-- 🧪 응용 사례: [[papers/1117_Human-Modeling_in_Sequential_Decision-Making_An_Analysis_thr/review]] — 투어 가이딩에서 인간-AI 상호작용의 순차적 의사결정 모델링을 통해 기술 통합 과정을 분석할 수 있음
-- 🔄 다른 접근: [[papers/1217_Tracing_the_Evolution_of_Sleep-Related_Behavioural_Outcomes/review]] — 투어 가이딩 기술의 체계적 문헌계량 분석과 자폐아동 수면 연구의 scientometric 분석은 모두 특정 도메인의 연구 동향을 문헌계량학적으로 매핑한다.
-- 🔗 후속 연구: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 투어 가이딩 기술 연구 동향 분석은 머신러닝을 통한 고영향 연구 토픽 예측 방법론을 관광 기술 분야에 적용한 사례로 볼 수 있다.
-- 🔗 후속 연구: [[papers/1144_Bibliometric_analysis_of_publications_titled_culinary_arts_s/review]] — 요리 예술에서 관광 가이드 기술로 호스피탈리티 관련 분야의 서지 분석을 확장한 연구입니다.
-- 🔄 다른 접근: [[papers/1217_Tracing_the_Evolution_of_Sleep-Related_Behavioural_Outcomes/review]] — 자폐아동 수면 연구의 scientometric 분석과 투어 가이딩 기술 분석은 모두 특정 분야의 지식 발전 경로를 문헌계량학으로 추적한다.
+- 🔗 후속 연구: [[papers/1113_Definition_and_Value_Reconstruction_of_Human_Creativity_in_t/review]] — 투어 가이딩 기술의 발전이 AI 시대에서 인간 창의성의 정의와 가치 재구성으로 확장될 수 있다.
+- 🏛 기반 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 투어 가이딩 기술의 영향을 분석하기 위해 대규모 팀과 소규모 팀이 기술 발전에 미치는 차별적 효과를 이해해야 한다.
+- 🔗 후속 연구: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 기계학습을 통한 연구 동향 예측 방법을 투어 가이딩 기술 분야에 적용할 수 있다
+- 🔄 다른 접근: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 기계학습 응용에 대한 과학계량학적 접근을 투어 가이딩 기술에 적용한다
+- 🧪 응용 사례: [[papers/1014_Risk_and_Artificial_Intelligence_Adoption_A_Scientometric_an/review]] — AI 도입 위험성 분석을 투어 가이딩 기술의 전문직 통합 과정에 적용할 수 있다
+- 🔄 다른 접근: [[papers/1137_Art_tourism_a_nascent_concept_but_symptomatic_of_a_trend_Ins/review]] — 둘 다 관광 분야의 bibliometric 분석이지만 1137은 예술 관광, 1216은 가이드 기술에 초점을 맞춘다.

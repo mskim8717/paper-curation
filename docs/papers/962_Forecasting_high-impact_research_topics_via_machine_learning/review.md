@@ -78,11 +78,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gu and Krenn_2025_Forecasting high-impac
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 진화하는 지식 그래프와 의미 및 신경망 네트워크 접근법을 비교하여 연구 동향 예측의 정확성을 향상시킬 수 있음
-- 🔗 후속 연구: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 고영향력 연구 주제 예측 모델에 과학상 네트워크 분석을 결합하여 혁신적 연구의 조기 식별이 가능함
-- 🧪 응용 사례: [[papers/929_A_network_approach_to_topic_models/review]] — 네트워크 기반 토픽 모델링 기법을 머신러닝을 통한 고영향 연구 주제 예측에 적용하여 성능을 개선할 수 있다.
-- 🔗 후속 연구: [[papers/1072_Embracing_Foundation_Models_for_Advancing_Scientific_Discove/review]] — 머신러닝 기반 고영향 연구 주제 예측 방법론을 기초 모델 활용 과학 발견에 통합하여 더 정확한 연구 방향 제시가 가능하다.
-- 🔄 다른 접근: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 둘 다 기계학습으로 연구 트렌드를 예측하지만 의미론적 네트워크와 일반적 머신러닝이라는 다른 접근법을 사용합니다.
-- 🔄 다른 접근: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 기계학습 기반 고영향 연구 주제 예측과 대비하여 인용 네트워크의 구조적 진화에 초점을 맞춘 돌파구 예측을 제시한다.
-- 🧪 응용 사례: [[papers/1195_Mapping_the_Research_Landscape_of_Electronic_Properties_of_G/review]] — 그래핀 연구 동향 분석 결과를 바탕으로 미래 고영향력 그래핀 연구 주제를 예측할 수 있음
-- 🔗 후속 연구: [[papers/1216_Tour_guiding_technologies_a_bibliometric_analysis_mapping_tr/review]] — 투어 가이딩 기술 연구 동향 분석은 머신러닝을 통한 고영향 연구 토픽 예측 방법론을 관광 기술 분야에 적용한 사례로 볼 수 있다.
+- 🔄 다른 접근: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 진화하는 지식그래프와 머신러닝을 통한 고임팩트 연구 주제 예측과 의미-신경망 네트워크 기반 연구 동향 예측이 상호 보완적 접근을 제시합니다.
+- 🧪 응용 사례: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 머신러닝 기반 미래 임팩트 예측 방법론을 과학적 돌파구 예측의 구조적 역학 연구에 실제 적용할 수 있는 사례를 보여줍니다.
+- 🔄 다른 접근: [[papers/1116_Harnessing_the_Power_of_Adversarial_Prompting_and_Large_Lang/review]] — 연구 주제 예측에서 적대적 프롬프팅과 기계학습의 다른 방법론적 접근법임
+- 🔄 다른 접근: [[papers/1072_Embracing_Foundation_Models_for_Advancing_Scientific_Discove/review]] — 과학적 발견과 연구 예측에서 기초 모델과 기계학습의 다른 접근법임
+- 🔄 다른 접근: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 둘 다 머신러닝을 활용한 연구 트렌드 예측이지만 1076은 물리학, 962는 고영향 토픽 예측에 특화되어 있다.
+- 🔄 다른 접근: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 영향력 높은 연구 주제 예측을 위한 머신러닝과 인용 네트워크의 동적 구조라는 서로 다른 예측 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/1216_Tour_guiding_technologies_a_bibliometric_analysis_mapping_tr/review]] — 기계학습을 통한 연구 동향 예측 방법을 투어 가이딩 기술 분야에 적용할 수 있다
+- 🧪 응용 사례: [[papers/1175_Figures_as_Interfaces_Toward_LLM-Native_Artifacts_for_Scient/review]] — 기계 학습을 통한 연구 동향 예측에 인터랙티브 도형 인터페이스를 활용할 수 있다.
+- 🧪 응용 사례: [[papers/1236_Weaning_from_mechanical_ventilation_in_ICU_patients_research/review]] — 기계학습을 통한 연구 동향 예측 방법을 ICU 기계환기 이탈 분야의 핫스팟 분석에 적용한다

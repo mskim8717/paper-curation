@@ -79,10 +79,10 @@ tags:
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 사회복지 분야의 35년 지식생산 진화를 성별 다양성과 혁신성이라는 더 넓은 과학사회학적 관점으로 확장합니다.
-- 🔄 다른 접근: [[papers/1179_Global_Research_Trends_in_Knowledge_Management_in_Higher_Edu/review]] — 둘 다 특정 분야의 장기 연구 동향을 분석하지만 사회복지와 고등교육 지식관리라는 다른 영역을 다룹니다.
-- 🔗 후속 연구: [[papers/940_Bibliometrics_Global_Gender_Disparities_in_Science/review]] — 사회복지 분야의 성별 불균형과 협력 패턴 변화를 글로벌 과학 분야의 성별 격차 연구와 비교 분석할 수 있다.
-- 🏛 기반 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 사회복지 연구에서 관찰된 협력 증대 현상을 과학 지식 생산에서 팀 규모 확대 트렌드의 맥락에서 이해할 수 있다.
-- 🔄 다른 접근: [[papers/1144_Bibliometric_analysis_of_publications_titled_culinary_arts_s/review]] — AI를 활용한 대규모 논문 분석 방법론을 다른 학문 분야의 서지계량 연구와 비교하여 방법론적 차이를 파악할 수 있다.
-- 🔗 후속 연구: [[papers/1159_Dissemination_and_Implementation_Theories_Models_or_Framewor/review]] — 사회복지 지식 생산의 35년 진화를 분석하여 노인 연구에서 D&I 프레임워크 사용의 학문적 맥락을 보여준다.
-- 🔄 다른 접근: [[papers/1179_Global_Research_Trends_in_Knowledge_Management_in_Higher_Edu/review]] — 둘 다 특정 분야의 장기적 지식 생산 변화를 추적하지만 고등교육과 사회복지라는 다른 영역을 다룹니다.
+- 🔗 후속 연구: [[papers/940_Bibliometrics_Global_Gender_Disparities_in_Science/review]] — 사회복지 분야의 성별 다양성 변화가 지식생산 패턴에 미친 영향을 분석할 수 있는 보완적 관점을 제공한다.
+- 🏛 기반 연구: [[papers/1071_Data_measurement_and_empirical_methods_in_the_science_of_sci/review]] — 대규모 논문 분석을 통한 학문 분야 진화 연구의 방법론적 기반을 제공한다.
+- ⚖️ 반론/비판: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 인용 지표의 인플레이션 문제가 35년간의 사회복지 분야 발전 평가에 미칠 수 있는 왜곡 효과를 고려해야 한다.
+- 🏛 기반 연구: [[papers/1120_SciEvo_A_2_Million_30-Year_Cross-disciplinary_Dataset_for_Te/review]] — 35년간 사회복지 지식생산 진화 분석에서 대규모 학제간 데이터셋의 종단 분석 방법론을 활용할 수 있다.
+- 🔗 후속 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 사회복지 분야의 협력 증대 현상을 지식 생산에서 팀의 지배력 증가라는 더 큰 맥락에서 이해할 수 있다.
+- 🔄 다른 접근: [[papers/1114_GoAI_Enhancing_AI_Students_Learning_Paths_and_Idea_Generatio/review]] — 지식 생산 분석에서 AI 교육과 사회복지학의 다른 학문 영역 접근법임
+- 🔄 다른 접근: [[papers/1159_Dissemination_and_Implementation_Theories_Models_or_Framewor/review]] — 사회복지 지식 생산 35년 진화 분석과 노인 연구의 D&I 프레임워크 사용 현황을 비교하여 서로 다른 분야의 이론 적용 패턴을 탐구할 수 있다.

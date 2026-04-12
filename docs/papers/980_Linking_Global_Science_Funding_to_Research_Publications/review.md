@@ -92,9 +92,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dalsgaard et al._2026_Linking Global Sci
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 글로벌 펀딩 데이터와 매튜 효과 분석을 결합하여 연구 자금 배분의 불평등 구조를 체계적으로 파악할 수 있음
-- 🧪 응용 사례: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 표준화된 펀딩 데이터를 활용하여 프론티어 연구 자금 지원의 광범위한 영향을 시각화하고 분석할 수 있음
-- 🔄 다른 접근: [[papers/991_Open_Datasets_in_Learning_Analytics_Trends_Challenges_and_Be/review]] — 연구 자금과 출판물 연계 분석과 오픈 데이터셋 현황 분석이 모두 과학 연구의 투명성과 재현성 향상이라는 동일한 목표를 다른 각도에서 접근한다.
-- 🏛 기반 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 글로벌 과학 펀딩과 연구 출판물 연결 연구는 펀딩의 다차원적 영향 시각화 시스템 개발의 데이터 연결 방법론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 글로벌 과학 자금과 연구 출판물 연결 연구를 북유럽 지역의 주제별 세분화 분석으로 확장하여 지역적 특성을 규명한다.
-- 🏛 기반 연구: [[papers/1184_Hamemayu_Hayuning_Nagara_A_Bibliometric_Analysis_of_the_Poli/review]] — 글로벌 과학 펀딩과 연구 성과의 연계를 주제 수준에서 분석한 연구로 VAT 정책과 연구 생산성의 관계를 이해하는 기반을 제공한다.
+- 🔄 다른 접근: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 글로벌 과학 펀딩과 연구 출판물 연결과 토픽 수준에서의 연구 자금 및 성과 매핑이 서로 다른 규모와 접근법으로 펀딩-연구 관계를 분석합니다.
+- 🧪 응용 사례: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 펀딩 인정 문자열의 체계적 정규화 데이터셋을 과학 연구의 광범위한 영향 시각화 연구에 실제 적용할 수 있습니다.
+- 🔄 다른 접근: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — 과학 연구와 자금 지원의 연결에서 촉매 데이터셋과 글로벌 자금-출판 매핑의 다른 접근법임
+- 🏛 기반 연구: [[papers/991_Open_Datasets_in_Learning_Analytics_Trends_Challenges_and_Be/review]] — 연구 자금과 연구 결과물 연결의 중요성을 학습분석 데이터셋 공개와 활용 맥락에서 이해할 수 있다.
+- 🏛 기반 연구: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 글로벌 과학 자금과 연구 출판의 연결 분석을 통해 그랜트 유형별 효과 차이의 구조적 배경을 파악할 수 있다.
+- 🏛 기반 연구: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 글로벌 과학 자금과 연구 출판의 연결 분석 방법론을 북유럽 지역 사례에 적용하여 지역별 특성을 파악할 수 있다.
+- 🏛 기반 연구: [[papers/1184_Hamemayu_Hayuning_Nagara_A_Bibliometric_Analysis_of_the_Poli/review]] — 글로벌 과학 펀딩과 연구 결과의 연결 분석 방법론을 국가 재정 정책(VAT) 연구에 적용할 수 있는 기초를 제공한다.

@@ -87,6 +87,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sekara et al._2018_The chaperone effect 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 개별 논문의 샤페론 효과를 학술계 전체의 구조적 불평등과 위계 시스템으로 확장해서 분석합니다.
-- ⚖️ 반론/비판: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 샤페론 효과의 긍정적 측면과 달리 저널 인용 편향의 부정적 영향을 다루어 균형잡힌 시각을 제공합니다.
-- 🧪 응용 사례: [[papers/994_Organisational_accounts_engaged_in_scholarly_communication_o/review]] — 학술 출판에서 샤페론 효과 연구에 Twitter 기관 계정의 학술 논문 증폭 역할 분석을 적용할 수 있다.
+- 🔗 후속 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 과학 출판에서의 샤페론 효과는 연구 펀딩에서 나타나는 Matthew 효과와 유사한 누적 이익 현상을 보여준다.
+- 🏛 기반 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 학계 채용에서의 체계적 불평등과 위계가 출판에서의 샤페론 효과 발생의 구조적 배경을 설명한다.
+- ⚖️ 반론/비판: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성이 혁신적 연구를 촉진한다는 관점과 기존 네트워크 기반 샤페론 효과가 상충할 수 있다.

@@ -11,7 +11,7 @@ tags:
   - "cat/Computational_Bibliometric_Analysis"
   - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Exploring Strategies for Addressing Weight Stigma An Analysis of Health Communic.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Alshahrani_2026_Exploring Strategies for Addressing Weight Stigma An Analysis of Health Communication Dynamics and.pdf"
 ---
 
 # Exploring Strategies for Addressing Weight Stigma: An Analysis of Health Communication Dynamics and Evolutionary Themes.
@@ -92,7 +92,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Exploring Strategies for Addressing Weig
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/966_Global_citation_inequality_is_on_the_rise/review]] — 체중 낙인 연구의 글로벌 불평등 분석을 위해 전반적인 과학 인용 불평등 현황에 대한 이해가 필요합니다.
-- 🔗 후속 연구: [[papers/1180_Global_research_trends_on_depression-related_stigma_in_the_2/review]] — 체중 낙인에서 우울증 낙인으로 정신건강 관련 사회적 편견 연구 영역을 확장합니다.
-- 🔄 다른 접근: [[papers/1163_effect_of_poloxamer_and_hyaluronic_acid_administration_in_ne/review]] — 둘 다 의학 분야 서지 분석이지만 신경근 섬유화 예방과 체중 낙인이라는 완전히 다른 주제를 다룹니다.
-- 🔄 다른 접근: [[papers/1180_Global_research_trends_on_depression-related_stigma_in_the_2/review]] — 둘 다 건강 관련 사회적 낙인을 다루지만 우울증과 체중이라는 서로 다른 낙인 유형을 분석합니다.
+- 🏛 기반 연구: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 체중 관리 연구에서 비낙인화 언어 사용의 성별 격차를 이해하기 위해 컴퓨터 과학 분야의 체계적 성별 인용 불균형 연구가 참고된다.
+- 🔗 후속 연구: [[papers/976_Intersectional_inequalities_in_science/review]] — 체중 낙인화 연구의 국제 협력 네트워크 분석이 과학에서의 교차적 불평등 분석으로 확장될 수 있다.
+- 🔄 다른 접근: [[papers/1217_Tracing_the_Evolution_of_Sleep-Related_Behavioural_Outcomes/review]] — 자폐 아동의 수면-행동 연구와 체중 낙인화 연구 모두 건강 관련 행동 결과를 scientometric 관점에서 분석한다.

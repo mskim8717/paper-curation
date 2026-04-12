@@ -90,8 +90,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tshitoyan et al._2019_Unsupervised Word 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1112_CS-KG_20_A_Large-scale_Knowledge_Graph_of_Computer_Science/review]] — 컴퓨터과학 논문에서 구축한 지식그래프와 재료과학 문헌의 Word2vec 임베딩은 서로 다른 도메인에서 잠재 지식 추출을 위한 상호 보완적 접근법이다.
-- 🔗 후속 연구: [[papers/978_Introducing_the_open_biomedical_map_of_science/review]] — 생의학 과학 지도 구축 방법론을 재료과학 도메인에 적용하여 더 포괄적인 과학 지식 구조 분석이 가능하다.
-- 🔄 다른 접근: [[papers/1112_CS-KG_20_A_Large-scale_Knowledge_Graph_of_Computer_Science/review]] — 재료과학의 Word2vec 임베딩과 컴퓨터과학의 지식그래프는 서로 다른 학문 분야에서 잠재 지식 추출을 위한 상호 보완적 접근법이다.
-- 🏛 기반 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 비지도 단어 임베딩의 잠재 지식 포착 방법론을 바탕으로 연구자의 인식론적 위치를 의미론적으로 규명한다.
-- 🏛 기반 연구: [[papers/1175_Figures_as_Interfaces_Toward_LLM-Native_Artifacts_for_Scient/review]] — 의료 언어에서 잠재 지식을 포착하는 임베딩 기술이 과학 도형의 기계 판독 가능한 표현 생성에 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/1074_OLMo_Accelerating_the_Science_of_Language_Models/review]] — 공개된 언어 모델 연구를 통해 재료과학 임베딩의 메커니즘을 더 잘 이해할 수 있음
+- 🔗 후속 연구: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — 재료과학 텍스트 마이닝과 촉매 발견 데이터셋을 결합하여 더 강력한 AI 모델 개발 가능
+- 🔄 다른 접근: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — 연구 분야의 지식 체계화에서 임베딩 기반 접근법과 전통적 분류 체계의 대안적 방법론임
+- 🏛 기반 연구: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 지식공간에서의 인용 확산을 분석하기 위한 문서 표현 학습의 기반 기술로 Word embedding 방법론을 제공합니다.
+- 🔄 다른 접근: [[papers/989_Modeling_Changing_Scientific_Concepts_with_Complex_Networks/review]] — 과학 개념 변화 추적을 위한 복잡 네트워크와 비지도 워드 임베딩이라는 서로 다른 방법론적 접근을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/1209_Scientometric_Analysis_of_Data_Privacy_and_Cloud_Security_Re/review]] — 과학 논문에서 데이터 보안 관련 잠재 지식을 무감독 임베딩으로 추출하는 방법으로 확장될 수 있다.
+- 🏛 기반 연구: [[papers/1175_Figures_as_Interfaces_Toward_LLM-Native_Artifacts_for_Scient/review]] — LLM이 과학적 도형에서 잠재 지식을 추출하고 조작하는 능력의 이론적 기반을 제공한다.

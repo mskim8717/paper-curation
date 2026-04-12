@@ -77,6 +77,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Price_1976_A General Theory of Bibliomet
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 누적 우위의 일반 이론은 스케일-프리 네트워크의 선호적 부착 메커니즘에 대한 수학적 모델링의 이론적 토대를 제공한다.
-- 🧪 응용 사례: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 베타 함수로 표현되는 누적 우위 모델은 인용 분포의 보편성을 객관적으로 측정하는 연구의 수학적 기반이 된다.
-- 🔗 후속 연구: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 스케일-프리 네트워크의 선호적 부착 메커니즘은 누적 우위 과정의 일반 이론을 네트워크 성장 맥락으로 구체화한다.
+- 🔗 후속 연구: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 누적 우위 이론을 인용 분포의 보편성 연구로 확장하여 객관적 측정 가능성을 탐구한다
+- 🧪 응용 사례: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — 개인의 과학 연구 성과 정량화에 누적 우위 이론의 베타 함수 모델을 적용할 수 있다
+- 🔄 다른 접근: [[papers/1047_Theory_and_Practice_of_the_g-index/review]] — h-index의 대안인 g-index를 통해 누적 우위 효과를 다른 방식으로 측정한다

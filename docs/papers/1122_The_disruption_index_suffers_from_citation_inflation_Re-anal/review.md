@@ -86,10 +86,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Petersen et al._2025_The disruption inde
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — disruption index 하락이 실제 현상이라고 주장하는 연구에 대한 직접적 반박으로 측정 편향의 가능성을 제기한다.
-- 🏛 기반 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 논문과 특허의 disruptiveness 감소를 최초로 보고한 연구로 인용 인플레이션 비판의 대상이 된다.
-- 🔗 후속 연구: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 인용 분포의 보편성을 분석하여 인용 인플레이션이 인용 패턴에 미치는 체계적 영향을 이해하는 기반을 제공한다.
-- ⚖️ 반론/비판: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 인용 인플레이션 문제는 장기 영향력 모델의 시간적 안정성에 대한 의문을 제기한다.
-- ⚖️ 반론/비판: [[papers/1009_Relative_Citation_Ratio_A_New_Metric_That_Uses_Citation_Rate/review]] — 인용 인플레이션 문제는 상대인용비율의 시간적 비교 가능성에 대한 의문을 제기한다.
-- ⚖️ 반론/비판: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 인용 인플레이션 문제는 인용 분포의 시간적 보편성에 대한 의문을 제기한다.
-- ⚖️ 반론/비판: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — disruption index의 측정 편향 문제를 제기하여 과학 혁신성 하락 주장에 대한 반박 논리를 보강한다.
+- ⚖️ 반론/비판: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 동일한 혁신성 하락 데이터를 측정 편향으로 재해석하여 Park et al.의 주장에 대한 직접적 반박을 제시한다.
+- 🔄 다른 접근: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 논문과 특허의 혁신성 하락을 다른 측정 방법론으로 접근하여 CD 지수의 한계를 보완하는 관점을 제공한다.
+- 🏛 기반 연구: [[papers/966_Global_citation_inequality_is_on_the_rise/review]] — 글로벌 인용 불평등 증가라는 구조적 변화가 CD 지수의 인용 인플레이션에 기여하는 맥락을 설명한다.
+- 🧪 응용 사례: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 인용 분포의 보편적 정규화 방법이 파괴성 지수의 인용 인플레이션 문제를 해결하는 데 적용될 수 있습니다.
+- ⚖️ 반론/비판: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 동일한 혁신성 하락 현상을 인용 인플레이션이라는 측정 편향으로 설명하는 직접적인 반박 논문이다.
+- ⚖️ 반론/비판: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 혁신성 지수가 인용 인플레이션으로 인해 왜곡될 수 있다는 비판적 관점을 제시한다.
+- 🔗 후속 연구: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 파괴성 지수(CD index)의 한계를 파괴적 인용 지표로 개선하는 것이 파괴성 지수의 인플레이션 문제 분석으로 확장됩니다.
+- 🏛 기반 연구: [[papers/968_Growth_Rates_of_Modern_Science_Bibliometric_Analysis_Based_o/review]] — 과학 성장률의 장기적 분석이 disruption index의 인플레이션 문제를 이해하는 역사적 맥락을 제공한다.
+- ⚖️ 반론/비판: [[papers/1170_Evolution_of_Social_Work_Knowledge_Production_Over_35_Years/review]] — 인용 지표의 인플레이션 문제가 35년간의 사회복지 분야 발전 평가에 미칠 수 있는 왜곡 효과를 고려해야 한다.

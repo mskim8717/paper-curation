@@ -86,7 +86,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kim et al._2024_Identifying interdiscipl
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 지식 결합을 통한 과학적 영향력 창출이라는 학제간 연구의 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 연구 동향 예측에 BERTopic과 네트워크 분석을 활용하는 방법론과 의미 신경망 접근법 간의 비교 분석이 가능하다.
-- 🧪 응용 사례: [[papers/1120_SciEvo_A_2_Million_30-Year_Cross-disciplinary_Dataset_for_Te/review]] — 과학학의 학제간 출현 특성은 SciEvo 데이터셋으로 분석할 수 있는 지식 교류 패턴의 구체적 사례이다.
-- 🏛 기반 연구: [[papers/1159_Dissemination_and_Implementation_Theories_Models_or_Framewor/review]] — 과학의 과학 분야에서 학제간 출현을 식별하는 방법론을 제시하여 D&I 연구의 학제간 특성을 이해하는 기반을 제공한다.
+- 🔄 다른 접근: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 학제간 지식 결합을 식별하는 BERTopic 방법론이 atypical combination 분석의 대안적 접근법을 제시한다.
+- 🧪 응용 사례: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 토픽 모델링과 네트워크 분석을 결합한 방법론을 과학 트렌드 예측에 직접 적용할 수 있다.
+- 🧪 응용 사례: [[papers/1120_SciEvo_A_2_Million_30-Year_Cross-disciplinary_Dataset_for_Te/review]] — 과학의 과학에서 학제 간 출현을 식별하는 데 30년간의 종단 scientometric 데이터셋을 구체적으로 적용할 수 있습니다.
+- 🏛 기반 연구: [[papers/1195_Mapping_the_Research_Landscape_of_Electronic_Properties_of_G/review]] — 그래핀 연구의 학제간 특성을 이해하기 위해 과학의 학제간 emergence 식별 방법론이 기반이 된다.
+- 🔗 후속 연구: [[papers/1138_Arts_and_Humanities_Citation_Index_for_Research_Evaluation_i/review]] — 과학의 과학에서 학제간 출현을 식별하는 방법론이 종교학의 학제간 특성을 평가하는 데 확장 적용된다.
+- 🔗 후속 연구: [[papers/926_A_bibliometric_analysis_of_bouldering_and_climbing_research/review]] — 고등교육 지식관리 연구의 학제간 특성을 파악하는데 과학의 학제간 출현 식별 방법론이 유용한 확장을 제공할 수 있습니다.

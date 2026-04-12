@@ -90,9 +90,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lin et al._2023_Remote collaboration fus
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 팀 기반 지식 생산이 지배적이 되는 환경에서 원격 협업의 한계를 분석하는 기초를 제공한다.
-- ⚖️ 반론/비판: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 다양성이 혁신에 미치는 긍정적 효과와 대조적으로 원격 협업의 혁신 저해 효과를 보여준다.
-- 🔗 후속 연구: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 인종적 다양성이 협업 영향력을 높이는 발견을 원격 협업 환경에서 재검토할 필요성을 제시한다.
-- 🧪 응용 사례: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 팀 기반 연구가 지배적인 환경에서 원격 협업이 혁신에 미치는 제약을 분석하는 맥락을 제공한다.
-- 🏛 기반 연구: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 다양성이 협업에 미치는 긍정적 효과를 원격 협업의 혁신 제약과 비교하는 기준을 제공한다.
-- ⚖️ 반론/비판: [[papers/1196_Media_and_Digital_Marketing_Bibliomatrix_Analysis_using_R_Fu/review]] — 원격 협업이 혁신을 감소시킨다는 연구와 디지털 마케팅의 협업 증진 효과를 비교 분석할 필요가 있음
+- ⚖️ 반론/비판: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 팀 연구의 우세를 보여주지만 원격 협업이 혁신적 발견에는 제약이 있음을 밝혀 팀 연구의 한계를 지적한다.
+- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 원격 협업의 한계를 보완할 수 있는 성별 다양성이 팀의 참신성과 영향력 향상에 미치는 긍정적 효과를 보여준다.
+- 🧪 응용 사례: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 원격 협업의 제약을 극복하기 위해 인종적 다양성이 과학 협업의 영향력 증대에 미치는 효과를 활용할 수 있다.
+- 🧪 응용 사례: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 팀 기반 연구의 우세에도 불구하고 원격 협업이 혁신적 발견에는 한계가 있음을 보여주는 구체적 사례다.
+- 🧪 응용 사례: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 인종적 다양성의 협업 효과를 원격 협업의 혁신 한계를 극복하는 방안으로 활용할 수 있다.

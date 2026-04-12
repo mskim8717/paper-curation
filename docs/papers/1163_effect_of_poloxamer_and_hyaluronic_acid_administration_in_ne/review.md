@@ -13,7 +13,7 @@ tags:
   - "cat/Computational_Bibliometric_Analysis"
   - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/effect of poloxamer and hyaluronic acid administration in nerve root fibrosis an.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ivander et al._2026_effect of poloxamer and hyaluronic acid administration in nerve root fibrosis and adhesion preventio.pdf"
 ---
 
 # effect of poloxamer and hyaluronic acid administration in nerve root fibrosis and adhesion prevention following laminectomy: a novel bibliometric analysis.
@@ -85,5 +85,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/effect of poloxamer and hyaluronic acid 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1172_Exploring_Strategies_for_Addressing_Weight_Stigma_An_Analysi/review]] — 둘 다 의학 분야 서지 분석이지만 신경근 섬유화 예방과 체중 낙인이라는 완전히 다른 주제를 다룹니다.
-- 🧪 응용 사례: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — 생의학 연구의 서지 분석이 실제 촉매 연구 데이터셋 구축으로 이어지는 응용 사례입니다.
+- 🔄 다른 접근: [[papers/1141_Assistive_technology_for_developmental_conditions_A_scientom/review]] — 신경근 섬유화 치료와 발달 조건 보조 기술 모두 의료 기술 발전을 scientometric 분석으로 추적하는 방법론이 동일하다.
+- 🏛 기반 연구: [[papers/1115_Google_Scholar_Microsoft_Academic_Scopus_Dimensions_Web_of_S/review]] — 의료 분야 bibliometric 분석의 정확성을 위해 주요 학술 데이터베이스들의 비교 분석이 필요하다.
+- 🔄 다른 접근: [[papers/1236_Weaning_from_mechanical_ventilation_in_ICU_patients_research/review]] — 의료 분야에서 poloxamer와 hyaluronic acid 연구와 유사한 서지계량학적 접근을 사용한다

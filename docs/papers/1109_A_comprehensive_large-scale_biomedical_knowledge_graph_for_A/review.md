@@ -93,9 +93,10 @@ PubMed의 모든 초록을 이용한 대규모 생의학 지식그래프(iKraph)
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — MOLIERE와 iKraph 모두 생의학 지식 네트워크를 구축하지만 가설 생성과 약물 재위치라는 서로 다른 응용에 특화되어 있다.
-- 🧪 응용 사례: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 제약 분야 화이트 스페이스 분석을 위한 전략적 가이드가 iKraph의 약물 재위치 지정 기능을 실제 제약 R&D에 활용하는 방법을 제시한다.
-- 🔄 다른 접근: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — MOLIERE의 생의학 가설 생성과 iKraph의 약물 재위치 지정은 모두 대규모 생의학 지식 네트워크를 활용하지만 서로 다른 응용 목표를 갖는다.
-- 🔄 다른 접근: [[papers/978_Introducing_the_open_biomedical_map_of_science/review]] — 생의학 과학 지도와 대규모 생의학 지식 그래프를 결합하여 더욱 포괄적인 생의학 연구 생태계를 구축할 수 있음
-- 🏛 기반 연구: [[papers/1217_Tracing_the_Evolution_of_Sleep-Related_Behavioural_Outcomes/review]] — 자폐 스펙트럼 장애 연구의 지식 구조 분석을 위해 대규모 생의학 지식 그래프가 제공하는 개념 관계를 활용할 수 있음
-- 🏛 기반 연구: [[papers/1153_Classical_RAG_for_Semantic_Search__Quantum_Modules_for_Resea/review]] — 대규모 생의학 지식 그래프가 Knowledge Graph RAG 아키텍처의 성능 향상을 위한 핵심 데이터 인프라를 제공한다.
+- 🔗 후속 연구: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — 생의학 가설 생성을 MEDLINE 네트워크에서 포괄적 지식그래프로 발전시킴
+- 🔄 다른 접근: [[papers/1112_CS-KG_20_A_Large-scale_Knowledge_Graph_of_Computer_Science/review]] — 대규모 지식그래프 구축에서 생의학과 컴퓨터과학의 다른 도메인 접근법임
+- 🧪 응용 사례: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 생의학 지식그래프의 약물 재위치 지정이 제약 분야 화이트 스페이스 분석의 구체적 적용임
+- 🔄 다른 접근: [[papers/1112_CS-KG_20_A_Large-scale_Knowledge_Graph_of_Computer_Science/review]] — 대규모 지식그래프에서 컴퓨터과학과 생의학 도메인의 다른 구축 방법론임
+- 🔗 후속 연구: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — 생의학 가설 생성에서 MEDLINE 기반 접근법을 더 포괄적인 지식그래프로 발전시킴
+- 🔗 후속 연구: [[papers/978_Introducing_the_open_biomedical_map_of_science/review]] — PubMed 기반 생의학 과학 지도를 AI 연구를 위한 포괄적 대규모 생의학 지식 그래프로 확장하여 더욱 풍부한 응용을 가능하게 합니다.
+- 🔄 다른 접근: [[papers/1228_OpenRad_a_Curated_Repository_of_Open-access_AI_models_for_Ra/review]] — 생의학 지식 그래프와 달리 방사선학 특화 AI 모델 저장소로 도메인별 접근법을 제시한다.

@@ -85,6 +85,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Leibel and Bornmann_2026_Introducing mul
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 파괴성 감소에 대한 견고한 증거 연구와 함께 팀 규모-파괴성 관계의 다중우주 분석을 통해 과학 혁신 이론을 정밀화할 수 있다.
-- 🏛 기반 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 대규모 팀의 개발과 소규모 팀의 파괴 이론을 다중우주 분석으로 재검증하여 팀 규모 효과의 견고성을 평가한다.
-- 🔄 다른 접근: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — 대규모 언어 모델을 활용한 책임감 있는 연구 평가와 다중우주 분석이 연구 결과의 견고성 검증에서 상호 보완적 역할을 한다.
+- 🔗 후속 연구: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 파괴적 연구 감소에 대한 견고한 증거를 다중우주분석으로 재검증하여 방법론적 견고성을 높일 수 있다.
+- 🏛 기반 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 팀 규모와 과학적 파괴성의 관계에 대한 원본 연구로서 다중우주분석의 검증 대상이 되는 핵심 이론을 제공한다.
+- 🔄 다른 접근: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — 연구 평가에서 통계적 견고성과 AI 기반 평가 방법이라는 서로 다른 신뢰성 확보 접근법을 비교할 수 있다.

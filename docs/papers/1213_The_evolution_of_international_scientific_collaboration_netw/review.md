@@ -86,8 +86,8 @@ tags:
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 혁명 시기의 협업 네트워크 진화를 이해하기 위해 과학 협력 네트워크의 구조적 특성 연구가 필수적임
-- 🔗 후속 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비정형적 개념 결합이 과학 혁명 시기의 새로운 패러다임 형성에 미치는 영향을 분석할 수 있음
-- 🔄 다른 접근: [[papers/935_Atlas_of_Science_Collaboration_19712020/review]] — 과학 혁명의 개념 변화를 네트워크로 모델링한 접근법과 국제 협력 네트워크 시각화는 모두 과학 지식의 진화를 네트워크로 분석한다.
-- 🏛 기반 연구: [[papers/989_Modeling_Changing_Scientific_Concepts_with_Complex_Networks/review]] — 복잡 네트워크를 통한 과학적 개념 변화 모델링은 과학 개념의 변화 구조를 네트워크로 매핑한 연구의 방법론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/935_Atlas_of_Science_Collaboration_19712020/review]] — 국제 협력 관계 시각화와 과학 혁명 개념 변화 모델링은 모두 과학 지식의 진화를 네트워크 관점에서 분석한다.
+- 🏛 기반 연구: [[papers/990_Networks_of_Scientific_Papers/review]] — 과학 혁명 시기의 개념 변화를 복잡 네트워크로 모델링하는 기반은 과학 논문 네트워크의 서지학적 패턴에서 출발한다.
+- 🔗 후속 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 과학 협력 네트워크의 진화가 작은 세계 네트워크의 집단 역학으로 확장하여 이해될 수 있다.
+- 🏛 기반 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 복잡 네트워크에서 커뮤니티 구조 탐지 방법이 과학 혁명 시기 협력 네트워크 분석의 기초가 된다
+- 🔄 다른 접근: [[papers/989_Modeling_Changing_Scientific_Concepts_with_Complex_Networks/review]] — 복잡 네트워크를 통해 과학 개념의 변화를 모델링하는 다른 접근법을 제시한다
+- 🔗 후속 연구: [[papers/935_Atlas_of_Science_Collaboration_19712020/review]] — 국제 과학 협력의 역사적 변화를 개념 변화와 연결하여 분석할 수 있다

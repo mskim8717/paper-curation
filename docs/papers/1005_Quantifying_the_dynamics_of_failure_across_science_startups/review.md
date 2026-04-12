@@ -87,7 +87,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yin et al._2019_Quantifying the dynamics
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 과학자 개인의 초기 경력 좌절이 미래 성과에 미치는 영향을 다른 관점에서 분석한다.
-- 🔗 후속 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 실패와 성공의 동역학을 예술, 문화, 과학 분야의 핫스트릭 현상으로 확장하여 이해한다.
-- 🧪 응용 사례: [[papers/1121_Superstar_Extinctionsupsup/review]] — 과학계의 슈퍼스타 멸종 현상을 실패 동역학의 관점에서 이해할 수 있는 틀을 제공한다.
-- 🔄 다른 접근: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — 실패 동역학을 정량화하는 다른 접근법을 제시하여 과학 생산성 감소 현상의 대안적 분석 틀을 제공한다.
+- 🧪 응용 사례: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 실패 역학 모델을 개인 연구자의 초기 경력 좌절이 향후 성과에 미치는 영향 분석에 적용할 수 있다.
+- ⚖️ 반론/비판: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 실패 후 성공의 역학보다는 연구자 경력에서 지속적인 고성과 시기인 핫 스트릭 현상을 분석한다.
+- 🔗 후속 연구: [[papers/955_Does_Science_Advance_One_Funeral_at_a_Time/review]] — 과학계에서의 실패 역학을 세대 교체와 패러다임 변화 맥락에서 확장하여 이해할 수 있는 관점을 제공한다.
+- 🔄 다른 접근: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 과학과 스타트업 실패 역학의 정량화 접근법을 제약 R&D의 백색공간 분석에 적용하여 혁신 기회 탐지 방법을 비교할 수 있다.

@@ -88,8 +88,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2023_Impacts of inter-instit
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 전 세계 학자 이동의 거시적 패턴을 바탕으로 기관-산업체 이동의 미시적 성과 영향을 구체적으로 분석한다.
-- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 초기 경력 좌절의 영향 분석과 대비하여 기관 이동이 연구 성과에 미치는 긍정적 효과를 실증적으로 규명한다.
-- 🔗 후속 연구: [[papers/1028_Tenure_and_research_trajectories/review]] — 종신재직권과 연구 궤적 관계 연구를 산업체 이동 맥락으로 확장하여 다양한 경력 경로의 효과를 비교 분석할 수 있다.
-- 🔗 후속 연구: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 기관 간 이동이 과학 성과에 미치는 영향은 이주 궤적 분석의 성과 예측 차원을 보완한다.
-- 🔗 후속 연구: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 국가 간 학자 이동의 거시적 패턴을 기관-산업체 이동의 미시적 성과 분석으로 확장하여 이해할 수 있다.
+- 🏛 기반 연구: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 글로벌 학자 이동의 거시적 패턴을 통해 개별 연구자의 기관-산업 이동 동기와 맥락을 이해할 수 있다.
+- 🔗 후속 연구: [[papers/1028_Tenure_and_research_trajectories/review]] — 종신재직권이 연구자의 기관-산업 이동 결정과 이후 연구 궤적에 미치는 영향을 분석할 수 있다.
+- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 조직 간 이동의 긍정적 효과와 초기 경력 좌절의 부정적 영향이라는 상반된 관점을 제공한다.
+- 🔗 후속 연구: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 기관 간 이동이 과학적 성과에 미치는 영향을 이동 궤적의 잠재 구조 분석으로 확장하여 더 깊이 이해할 수 있습니다.
+- 🔗 후속 연구: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 국가 간 거시적 학자 이동 패턴을 기관-산업 간 미시적 이동 분석으로 확장하여 다층적 이해를 제공한다.

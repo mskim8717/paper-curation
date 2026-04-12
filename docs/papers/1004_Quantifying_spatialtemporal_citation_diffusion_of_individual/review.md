@@ -75,7 +75,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Quantifying spatial–
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 파괴적 논문의 인용 확산 패턴은 혁신성과 영향력 확산의 공간적 메커니즘을 규명하는 데 중요하다.
-- 🏛 기반 연구: [[papers/1017_Science_as_exploration_in_a_knowledge_landscape_tracing_hots/review]] — 지식공간에서의 탐색 패턴 이론은 인용 확산의 공간적 모델링에 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/929_A_network_approach_to_topic_models/review]] — 네트워크 기반 토픽 모델은 문서 표현 학습과 다른 방식으로 지식공간을 구성할 수 있다.
-- 🏛 기반 연구: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 파괴적 논문의 인용 확산 패턴은 기술·사회 영향력과의 관계를 공간적으로 이해하는 기반을 제공한다.
+- 🏛 기반 연구: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 지식공간에서의 인용 확산을 분석하기 위한 문서 표현 학습의 기반 기술로 Word embedding 방법론을 제공합니다.
+- 🔄 다른 접근: [[papers/1017_Science_as_exploration_in_a_knowledge_landscape_tracing_hots/review]] — 지식공간에서의 탐색을 개별 논문의 인용 확산이 아닌 과학자의 연구주제 선택 관점에서 분석하는 대안적 접근법입니다.
+- 🔗 후속 연구: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 인용 확산의 공간적-시간적 특성이 논문의 파괴적 특성과 기술사회적 영향력에 어떻게 연결되는지 확장 분석을 제공합니다.
+- 🔗 후속 연구: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 장기 인용 영향력 예측 모델을 지식공간에서의 공간적-시간적 확산 메커니즘으로 확장하여 더 정교한 분석을 제공합니다.

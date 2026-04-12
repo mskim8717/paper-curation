@@ -83,11 +83,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ross et al._2022_Women are credited less
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 과학에서 여성에 대한 체계적 과소평가를 여성의 학제간 혁신 인정 역설의 근본 원인으로 설명한다.
-- 🧪 응용 사례: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 과학계에서 여성에 대한 체계적 과소평가를 컴퓨터과학 분야의 성별 인용 불균형으로 구체화한다.
-- 🔗 후속 연구: [[papers/940_Bibliometrics_Global_Gender_Disparities_in_Science/review]] — 과학 분야 전반의 성별 격차를 여성의 업적 인정 부족이라는 구체적 메커니즘으로 심화한다.
-- 🔗 후속 연구: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 과학계에서 여성에 대한 체계적 과소평가를 컴퓨터과학 분야의 인용 불균형으로 구체화한 연구이다.
-- 🏛 기반 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 과학에서 여성에 대한 체계적 과소평가를 혁신 인정 역설의 구체적 메커니즘으로 설명한다.
-- ⚖️ 반론/비판: [[papers/937_Authorship_titles_and_open_access_as_drivers_of_citation_per/review]] — 정형외과 논문의 저자 수와 인용 성과 관계 분석은 여성이 과학에서 적게 인정받는다는 연구와 대조적 관점을 제시한다.
-- 🏛 기반 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 여성이 과학에서 덜 인정받는다는 기본 전제가 장기적 성별 불평등 패턴의 이론적 토대를 제공함
-- 🔗 후속 연구: [[papers/1218_Viewing_Citation_Analysis_Through_the_Lens_of_Citation_Justi/review]] — 인용 정의 관점에서 여성 연구자의 낮은 인용률 문제를 구조적 불평등으로 분석하여 해결 방안을 모색할 수 있음
+- 🏛 기반 연구: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 과학계에서 여성 기여의 체계적 과소인정이 컴퓨터과학 분야 성별 인용 불균형의 이론적 배경을 제공한다.
+- 🏛 기반 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 여성 과학자의 기여 과소인정 문제가 여성의 학제간 혁신이 과소평가되는 메커니즘의 근본 원인을 설명한다.
+- 🔗 후속 연구: [[papers/946_Collective_Credit_Allocation_in_Science/review]] — 여성에 대한 개별적 기여 과소인정 문제를 과학계의 집단 기여 배분 시스템 전반의 문제로 확장하여 분석했다.
+- 🔗 후속 연구: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 과학계에서 여성에 대한 체계적 차별을 컴퓨터과학 분야의 성별 인용 불균형이라는 구체적 사례로 확장하여 분석했다.
+- 🔗 후속 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 여성 과학자의 기여 과소인정 문제를 혁신 인정에서의 성별 격차라는 구체적 맥락으로 확장하여 분석했다.
+- 🔗 후속 연구: [[papers/940_Bibliometrics_Global_Gender_Disparities_in_Science/review]] — 과학 분야 성별 신용 배분 불균형을 전 세계적 성별 격차의 구체적 메커니즘으로 확장한다
+- 🧪 응용 사례: [[papers/946_Collective_Credit_Allocation_in_Science/review]] — 과학에서 여성의 낮은 신용 배분 문제에 집단 신용 배분 알고리즘을 적용하여 공정성을 개선할 수 있다
+- 🏛 기반 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 여성이 과학에서 적게 인정받는 현상이 장기적 성별 불평등 패턴의 지속적 원인임을 보여준다.

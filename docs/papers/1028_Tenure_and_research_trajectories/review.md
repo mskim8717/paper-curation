@@ -83,11 +83,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tripodi et al._2025_Tenure and research 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 과학자 경력에서 초기 좌절의 영향과 대조적으로 종신교수제라는 제도적 안정성의 효과를 분석한다.
-- 🏛 기반 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 과학 경력에서 성별 불평등의 역사적 맥락을 종신교수제 효과 분석의 기초로 활용한다.
-- 🔗 후속 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용 네트워크의 체계적 불평등을 종신교수제 이후의 연구 궤적 변화로 확장한다.
-- 🧪 응용 사례: [[papers/1000_Productivity_Prominence_and_the_Effects_of_Academic_Environm/review]] — 종신 재직권이 연구 궤적에 미치는 영향은 기관 환경 효과의 구체적 메커니즘을 보여준다.
-- 🔗 후속 연구: [[papers/955_Does_Science_Advance_One_Funeral_at_a_Time/review]] — 저명 과학자 사망의 분야 영향 연구는 테뉴어가 연구 궤적에 미치는 영향과 함께 과학자 경력의 구조적 요인들을 종합적으로 이해하게 한다.
-- 🧪 응용 사례: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 종신재직권 제도가 학자의 국제 이동 의사결정과 경력 궤적에 미치는 영향을 분석하는 데 활용할 수 있다.
-- 🧪 응용 사례: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 테뉴어 시스템이 핫스트릭 현상의 발현과 지속에 미치는 제도적 영향을 분석할 수 있음
-- 🔗 후속 연구: [[papers/973_Impacts_of_inter-institutional_mobility_on_scientific_perfor/review]] — 종신재직권과 연구 궤적 관계 연구를 산업체 이동 맥락으로 확장하여 다양한 경력 경로의 효과를 비교 분석할 수 있다.
+- 🔗 후속 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 과학 경력에서 성별 불평등의 역사적 변화를 종신교수제가 연구 궤적에 미치는 영향으로 확장하여 분석했다.
+- 🧪 응용 사례: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 종신교수제의 영향 분석을 교수 채용 네트워크의 체계적 불평등과 계층 구조 맥락에서 이해할 수 있다.
+- ⚖️ 반론/비판: [[papers/1037_The_Misleading_Narrative_of_the_Canonical_Faculty_Productivi/review]] — 종신교수제의 다양한 영향을 보여주며 교수 생산성에 대한 단순한 서사가 잘못되었다는 관점을 뒷받침한다.
+- 🏛 기반 연구: [[papers/1000_Productivity_Prominence_and_the_Effects_of_Academic_Environm/review]] — tenure 시스템이 연구 궤적에 미치는 영향을 분석하여 학술 환경과 생산성 관계의 제도적 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/1037_The_Misleading_Narrative_of_the_Canonical_Faculty_Productivi/review]] — tenure 시스템이 교수들의 다양한 생산성 궤적 형성에 미치는 제도적 영향을 확장 분석합니다.
+- 🏛 기반 연구: [[papers/1121_Superstar_Extinctionsupsup/review]] — 종신재직권과 연구 궤적의 관계를 제시하여 슈퍼스타 상실이 협업자들의 경력 안정성에 미치는 영향을 분석하는 기반을 제공한다.
+- 🧪 응용 사례: [[papers/955_Does_Science_Advance_One_Funeral_at_a_Time/review]] — 종신 재직권이 연구 궤적에 미치는 영향을 저명 과학자의 사망 후 변화와 비교 분석할 수 있다
+- 🏛 기반 연구: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 테뉴어 획득과 연구 궤도 변화는 초기 경력 좌절이 장기 성과에 미치는 영향을 이해하는 기초가 된다.
+- 🔗 후속 연구: [[papers/973_Impacts_of_inter-institutional_mobility_on_scientific_perfor/review]] — 종신재직권이 연구자의 기관-산업 이동 결정과 이후 연구 궤적에 미치는 영향을 분석할 수 있다.

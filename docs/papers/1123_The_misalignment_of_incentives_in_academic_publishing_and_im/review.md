@@ -78,8 +78,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Trueblood et al._2025_The misalignment o
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 디지털 시대 학술 출판사의 과점 구조를 분석하여 출판 인센티브 불일치의 구조적 원인을 보여준다.
-- 🧪 응용 사례: [[papers/932_An_empirical_analysis_of_open_access_citation_advantages_in/review]] — 오픈 액세스의 인용 이점을 실증적으로 분석하여 대안적 출판 모델의 효과를 구체적으로 보여준다.
-- 🔗 후속 연구: [[papers/1069_Breaking_the_gatekeepers_how_AI_will_revolutionize_scientifi/review]] — AI를 통한 과학 펀딩 혁신과 연계하여 출판 시스템 개혁의 필요성과 방향을 제시한다.
-- 🔗 후속 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 학술 출판의 인센티브 구조 문제가 대형 출판사 독과점과 어떻게 연결되는지에 대한 심화된 분석을 제공한다.
-- 🏛 기반 연구: [[papers/1045_The_strain_on_scientific_publishing/review]] — 학술 출판의 인센티브 부정합은 출판 부담이 발생하는 구조적 원인을 설명한다.
+- 🔗 후속 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 학술 출판 과점 구조가 지식 전파와 학문적 신용 체계의 불일치를 어떻게 심화시키는지 구체적 메커니즘을 분석한다.
+- 🏛 기반 연구: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 오픈 액세스 현황 분석을 통해 상업 출판사 모델의 대안적 출판 방식의 실현 가능성을 평가하는 근거를 제공한다.
+- 🧪 응용 사례: [[papers/1069_Breaking_the_gatekeepers_how_AI_will_revolutionize_scientifi/review]] — 학술 출판 인센티브 불일치 문제를 AI 기반 펀딩 혁신으로 해결할 수 있는 연결점을 탐색한다.
+- 🔗 후속 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 학술 출판 시장의 과점 구조가 연구자들의 출판 인센티브와 어떻게 잘못 정렬되어 있는지를 보여준다.
+- 🏛 기반 연구: [[papers/1045_The_strain_on_scientific_publishing/review]] — 학술 출판에서 인센티브의 잘못된 정렬이 출판 부담 심화의 근본적 원인을 제공합니다.
+- 🔗 후속 연구: [[papers/1234_The_Open_Science_promise_vs_the_Author-pays_reality_The_Hidd/review]] — 학술 출판의 잘못된 인센티브 구조가 author-pays 모델을 통해 어떻게 형평성을 해치는지 구체적으로 보여준다.

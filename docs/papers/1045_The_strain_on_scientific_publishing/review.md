@@ -77,8 +77,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hanson et al._2024_The strain on scienti
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — AI 가속화된 글쓰기의 출판 증가는 과학 출판 부담 심화의 구체적 메커니즘을 보여준다.
-- ⚖️ 반론/비판: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 논문의 파괴성 감소 트렌드는 출판량 증가가 질적 측면에 미치는 부정적 영향을 시사한다.
-- 🏛 기반 연구: [[papers/1123_The_misalignment_of_incentives_in_academic_publishing_and_im/review]] — 학술 출판의 인센티브 부정합은 출판 부담이 발생하는 구조적 원인을 설명한다.
-- ⚖️ 반론/비판: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 출판사 독과점으로 인한 구조적 압박과 개별 연구자들이 느끼는 출판 압박 간의 상호작용을 비교 분석할 수 있다.
-- 🔗 후속 연구: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — 과학 출판에 대한 압박을 분석하여 AI 도구가 기존 출판 시스템에 가하는 추가적 스트레스를 보여준다.
+- 🔗 후속 연구: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — 과학 출판량 급증 문제가 AI 가속화된 글쓰기로 인한 제안 없는 출판으로 더욱 심화되는 메커니즘을 확장 분석합니다.
+- 🏛 기반 연구: [[papers/1123_The_misalignment_of_incentives_in_academic_publishing_and_im/review]] — 학술 출판에서 인센티브의 잘못된 정렬이 출판 부담 심화의 근본적 원인을 제공합니다.
+- 🧪 응용 사례: [[papers/1021_Scientific_production_in_the_era_of_large_language_models/review]] — 대규모 언어모델 시대의 과학적 생산이 출판 부담 문제를 어떻게 변화시키는지 구체적 적용 사례를 보여줍니다.
+- 🏛 기반 연구: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 저널 명성에 따른 인용 편향이 과학 출판량 급증과 함께 출판 시스템의 구조적 문제를 심화시키는 배경을 제공합니다.
+- ⚖️ 반론/비판: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 출판사 과점이 학술 출판 시스템에 가하는 압박을 구조적 관점에서 분석한 대조적 시각을 제공한다.
+- 🧪 응용 사례: [[papers/1042_The_Scholarly_Knowledge_Ecosystem_Challenges_and_Opportuniti/review]] — 학술 지식 생태계의 도전 과제를 과학 출판에 가해지는 압박이라는 구체적 맥락에서 이해할 수 있다.
+- 🔗 후속 연구: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — 과학 출판의 부담이라는 기존 문제에 AI 가속 글쓰기라는 새로운 변수를 추가하여 시스템 붕괴 위험을 정량적으로 모델링한다.

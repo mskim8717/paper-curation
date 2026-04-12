@@ -85,8 +85,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Brzozowski et al._2026_The Price-Pareto 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크 이론을 커뮤니티 구조가 있는 네트워크로 확장한 모델링 접근법이다.
-- 🔄 다른 접근: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 네트워크의 커뮤니티 구조를 분석하는 다른 방법론적 접근을 제시한다.
-- 🧪 응용 사례: [[papers/948_Community_Detection_in_Graphs/review]] — 그래프에서 커뮤니티 탐지 이론을 인용 네트워크의 구체적 모델링에 적용한다.
-- 🔗 후속 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 특성을 가진 네트워크에서 커뮤니티 구조를 모델링하는 확장된 접근법을 제시한다.
-- 🧪 응용 사례: [[papers/948_Community_Detection_in_Graphs/review]] — 커뮤니티 검출 기법은 커뮤니티 구조를 가진 네트워크의 Price-Pareto 성장 모델에 대한 실증적 분석 도구로 활용된다.
+- 🔗 후속 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크 이론을 커뮤니티 구조를 가진 학술 인용 네트워크에 적용할 수 있는 확장된 모델을 제공한다.
+- 🧪 응용 사례: [[papers/990_Networks_of_Scientific_Papers/review]] — 학술 논문 인용 네트워크의 기초적 패턴 분석을 커뮤니티 구조를 고려한 고도화된 모델링으로 발전시켰다.
+- 🏛 기반 연구: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 무작위 네트워크에서 스케일링 현상의 출현 이론이 커뮤니티 구조를 가진 네트워크 모델링의 기초를 제공한다.
+- 🔗 후속 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크 모델을 커뮤니티 구조를 가진 학술 인용 네트워크에 적용할 수 있는 Price-Pareto 성장 모델로 확장했다.

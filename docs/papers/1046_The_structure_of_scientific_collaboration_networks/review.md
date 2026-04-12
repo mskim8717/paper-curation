@@ -78,11 +78,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Newman_2001_The structure of scientific 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크 이론을 과학자들의 실제 협력 네트워크 구조 분석에 구체적으로 적용한다.
-- 🔗 후속 연구: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 과학 협력 네트워크의 구조적 특성을 인종적 다양성의 영향력 관점에서 확장하여 분석한다.
-- 🏛 기반 연구: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 과학 협력 네트워크의 구조적 특성을 시간에 따른 동적 진화의 관점에서 이해하는 기초를 제공한다.
-- 🔗 후속 연구: [[papers/990_Networks_of_Scientific_Papers/review]] — 초기 인용 네트워크 개념이 과학 협력 네트워크 구조 분석의 이론적 토대를 제공함
-- 🏛 기반 연구: [[papers/935_Atlas_of_Science_Collaboration_19712020/review]] — 과학 협력 네트워크의 구조적 특성 연구는 국제 협력 관계 아틀라스의 네트워크 분석 방법론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크 이론을 과학자 협력 네트워크의 실제 구조 분석에 적용한다.
-- 🔄 다른 접근: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 과학 협력 네트워크의 구조적 특성을 다른 각도에서 분석하여 보완적 시각을 제공한다.
-- 🏛 기반 연구: [[papers/1213_The_evolution_of_international_scientific_collaboration_netw/review]] — 과학 혁명 시기의 협업 네트워크 진화를 이해하기 위해 과학 협력 네트워크의 구조적 특성 연구가 필수적임
+- 🧪 응용 사례: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크 이론을 과학자들의 실제 공저 협력 네트워크 구조 분석에 적용하여 실증적으로 검증했다.
+- 🔗 후속 연구: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 과학 협력 네트워크의 구조적 특성을 시간에 따른 사회 네트워크 진화 관점으로 확장하여 동적 분석을 제공한다.
+- 🧪 응용 사례: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 과학 협력 네트워크의 소규모 세계 특성을 대규모 과학 커뮤니티 매핑에 적용할 수 있는 방법론적 기초를 제공한다.
+- 🏛 기반 연구: [[papers/935_Atlas_of_Science_Collaboration_19712020/review]] — 과학 협력 네트워크의 구조적 특성이 국제 협력 아틀라스 구축의 이론적 기반이 된다
+- 🧪 응용 사례: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크 이론을 과학자 협력 네트워크의 실제 구조 분석에 적용하여 실증적으로 검증했다.
+- 🏛 기반 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 과학 협력 네트워크의 구조 분석에 커뮤니티 탐지 방법론이 핵심적인 기반을 제공한다
+- 🧪 응용 사례: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 선호적 부착 메커니즘을 과학자 협업 네트워크의 실제 구조 형성 과정에 적용하여 검증한다.
+- 🔄 다른 접근: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 과학 협력 네트워크의 구조를 분석하는 다른 접근법과 시각을 제공하여 보완적 관점을 제시합니다.

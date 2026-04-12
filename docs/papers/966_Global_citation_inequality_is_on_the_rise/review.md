@@ -80,9 +80,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nielsen and Andersen_2021_Global citatio
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 성별 불평등과 인용 불평등이 모두 증가하는 현상을 통해 과학계의 다층적 불평등 구조를 이해할 수 있음
-- 🏛 기반 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 매튜 효과가 인용 불평등 심화의 근본적 메커니즘으로 작용하여 상위 1% 과학자의 인용 독점을 설명함
-- ⚖️ 반론/비판: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 다양성 증진이 혁신을 촉진한다는 관점과 소수 엘리트의 인용 독점 현상 간의 모순을 탐구할 수 있음
-- 🧪 응용 사례: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 글로벌 인용 불평등의 증가는 보편적 인용 분포 모델의 실제 적용 한계를 보여준다.
-- 🔗 후속 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 성별 격차와 인용 불평등이 동시에 증가하는 패턴을 통해 과학계 불평등의 복합적 양상을 파악할 수 있음
-- 🏛 기반 연구: [[papers/1172_Exploring_Strategies_for_Addressing_Weight_Stigma_An_Analysi/review]] — 체중 낙인 연구의 글로벌 불평등 분석을 위해 전반적인 과학 인용 불평등 현황에 대한 이해가 필요합니다.
+- 🔄 다른 접근: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 글로벌 인용 불평등과 성별 불평등은 모두 과학계 내 구조적 불평등 문제를 다른 차원에서 다룬다.
+- 🏛 기반 연구: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — 개인 연구자의 과학적 산출물 정량화 지수가 인용 불평등 측정과 분석의 기초 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 인용 불평등이 연구 펀딩 분배에서도 나타나는 매튜 효과로 확장되어 불평등이 심화되는 메커니즘을 보여준다.
+- 🏛 기반 연구: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 전 세계적 인용 불평등의 증가가 인용 분포의 보편성을 통한 객관적 측정의 필요성을 뒷받침합니다.
+- 🏛 기반 연구: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 글로벌 인용 불평등 증가라는 구조적 변화가 CD 지수의 인용 인플레이션에 기여하는 맥락을 설명한다.
+- 🔄 다른 접근: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 성별 차원의 불평등과 전반적 인용 불평등은 과학계 불평등을 서로 다른 관점에서 조명한다.
+- 🏛 기반 연구: [[papers/1155_Corporate_Governance_in_Accounting_A_Bibliometric_Analysis_o/review]] — 기업지배구조 연구의 인용 불평등과 지적 구조 분석에서 글로벌 인용 불평등 증가 현상을 이해하는 기반이 된다.

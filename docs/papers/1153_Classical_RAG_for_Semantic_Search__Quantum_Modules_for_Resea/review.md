@@ -14,6 +14,7 @@ tags:
   - "cat/Science_Policy_and_Research_Dynamics"
   - "sub/Research_Evaluation_and_Metrics"
   - "topic/scisci"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/R et al._2026_Classical RAG for Semantic Search & Quantum Modules for Research Evaluation.pdf"
 ---
 
 # Classical RAG for Semantic Search & Quantum Modules for Research Evaluation
@@ -84,9 +85,10 @@ tags:
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1109_A_comprehensive_large-scale_biomedical_knowledge_graph_for_A/review]] — 대규모 생의학 지식 그래프가 Knowledge Graph RAG 아키텍처의 성능 향상을 위한 핵심 데이터 인프라를 제공한다.
-- 🧪 응용 사례: [[papers/1015_S2ORC_The_Semantic_Scholar_Open_Research_Corpus/review]] — 의미론적 스콜라 오픈 연구 코퍼스를 RAG 기반 연구 평가 시스템의 벡터 검색 성능 개선에 활용할 수 있다.
-- ⚖️ 반론/비판: [[papers/1057_Which_stylistic_features_fool_ChatGPT_research_evaluations/review]] — ChatGPT 연구 평가를 속이는 문체적 특성 연구와 QNLP 모듈을 통한 하이브리드 평가 시스템의 강건성을 대조 분석할 수 있다.
-- 🔄 다른 접근: [[papers/1162_DREAM_Deep_Research_Evaluation_with_Agentic_Metrics/review]] — 양자 모듈과 에이전틱 메트릭스가 모두 기존 연구 평가의 한계를 극복하는 서로 다른 AI 기반 접근법을 제시함
-- 🏛 기반 연구: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — 대형 언어 모델의 책임감 있는 연구 평가 적용이 RAG 기반 시스템의 윤리적 구현 방향을 제시함
-- 🧪 응용 사례: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — 대형 언어 모델이 과학학을 강화하는 방식과 RAG 기반 평가 시스템의 발전 방향이 연결됨
+- 🔄 다른 접근: [[papers/1016_Sci2Pol_Evaluating_and_Fine-tuning_LLMs_on_Scientific-to-Pol/review]] — 과학-정책 번역을 위한 LLM 파인튜닝과 달리 연구 평가를 위한 RAG 아키텍처 최적화에 중점을 둔 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 의미론적 및 신경망 네트워크를 활용한 연구 동향 예측의 이론적 기반을 양자 자연언어처리로 확장한다.
+- 🔗 후속 연구: [[papers/1118_Paper_Circle_An_Open-source_Multi-agent_Research_Discovery_a/review]] — 다중 에이전트 연구 발견 시스템에 양자 모듈을 통합하여 더 정교한 연구 평가가 가능하다.
+- 🔄 다른 접근: [[papers/1156_Correction_Enabling_transparent_research_evaluation_A_method/review]] — RAG 기반 연구 평가와 투명한 연구 평가는 모두 기존 연구 평가 시스템의 한계를 기술적으로 극복하려는 접근이다.
+- 🔗 후속 연구: [[papers/1162_DREAM_Deep_Research_Evaluation_with_Agentic_Metrics/review]] — RAG 시스템을 에이전틱 메트릭을 활용한 심층 연구 평가로 발전시켜 더 정교한 평가가 가능하다.
+- 🏛 기반 연구: [[papers/1019_Science_of_science/review]] — 과학의 과학 분야의 이론적 발전이 RAG 기반 연구 평가 시스템 개발의 학문적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/1156_Correction_Enabling_transparent_research_evaluation_A_method/review]] — 투명한 연구 평가 방법과 RAG 기반 평가는 모두 연구 평가의 객관성과 투명성을 높이려는 기술적 접근이다.

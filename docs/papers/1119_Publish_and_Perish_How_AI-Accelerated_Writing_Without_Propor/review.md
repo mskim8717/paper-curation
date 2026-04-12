@@ -86,9 +86,9 @@ AI 기반 논문 작성 도구의 급속한 확산이 동료 검증(peer review)
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1021_Scientific_production_in_the_era_of_large_language_models/review]] — LLM 시대의 과학적 생산성 변화를 분석한 기초 연구로 AI 가속화 글쓰기의 영향을 이해하는 출발점이 된다.
-- 🔗 후속 연구: [[papers/1045_The_strain_on_scientific_publishing/review]] — 과학 출판에 대한 압박을 분석하여 AI 도구가 기존 출판 시스템에 가하는 추가적 스트레스를 보여준다.
-- 🔄 다른 접근: [[papers/1005_Quantifying_the_dynamics_of_failure_across_science_startups/review]] — 실패 동역학을 정량화하는 다른 접근법을 제시하여 과학 생산성 감소 현상의 대안적 분석 틀을 제공한다.
-- 🔗 후속 연구: [[papers/1045_The_strain_on_scientific_publishing/review]] — AI 가속화된 글쓰기의 출판 증가는 과학 출판 부담 심화의 구체적 메커니즘을 보여준다.
-- ⚖️ 반론/비판: [[papers/931_AI-Driven_Automation_Can_Become_the_Foundation_of_Next-Era_S/review]] — AI 가속화 연구가 적절한 사고 없이 이루어질 위험성과 체계적 AI4SoS 프레임워크의 필요성을 대조적으로 보여준다.
-- 🔗 후속 연구: [[papers/1077_Quantifying_large_language_model_usage_in_scientific_papers/review]] — AI 가속화된 글쓰기의 문제점 지적이 LLM 사용량 정량화 연구에서 발견한 급격한 증가 추세의 부정적 측면을 구체화한다.
+- 🔗 후속 연구: [[papers/1045_The_strain_on_scientific_publishing/review]] — 과학 출판의 부담이라는 기존 문제에 AI 가속 글쓰기라는 새로운 변수를 추가하여 시스템 붕괴 위험을 정량적으로 모델링한다.
+- 🏛 기반 연구: [[papers/1021_Scientific_production_in_the_era_of_large_language_models/review]] — LLM 시대 과학 생산의 전반적 변화상을 제시하여 AI 가속 글쓰기가 동료 검토에 미치는 영향을 이해하는 배경을 제공한다.
+- 🔄 다른 접근: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 동료 검토 시스템의 선택 편향 문제를 질적 관점에서 다루어 AI 가속 글쓰기로 인한 양적 과부하 문제와 대조적 시각을 제공한다.
+- 🔗 후속 연구: [[papers/1045_The_strain_on_scientific_publishing/review]] — 과학 출판량 급증 문제가 AI 가속화된 글쓰기로 인한 제안 없는 출판으로 더욱 심화되는 메커니즘을 확장 분석합니다.
+- ⚖️ 반론/비판: [[papers/1065_A_Survey_of_AI_Scientists/review]] — AI 가속화된 과학 발견의 긍정적 전망과 달리 적절한 검증 없는 출판의 위험을 지적함
+- 🔄 다른 접근: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — AI 가속화된 글쓰기가 과학 발전에 미치는 부정적 영향을 다른 관점에서 분석한다

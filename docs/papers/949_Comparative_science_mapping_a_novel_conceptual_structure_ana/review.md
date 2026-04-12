@@ -90,5 +90,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Aria et al._2024_Comparative science map
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — 개념 구조 분석의 혁신적 접근법과 팀 과학 메트릭의 협업 지향적 접근을 결합하여 연구 평가를 개선할 수 있음
-- 🔗 후속 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 메타데이터 기반 개념 구조 분석을 주제 수준 연구 매핑으로 확장하여 더 정교한 과학 지도를 작성할 수 있음
+- 🏛 기반 연구: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 메타데이터 기반 개념 구조 분석의 혁신적 과학 매핑 기법 개발에 과학 매핑과 과학 지도의 이론적 기반이 필요합니다.
+- 🔄 다른 접근: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 이탈리아 의료센터 종양학 연구의 비교 과학 매핑과 토픽 수준에서의 연구 자금 및 성과 매핑이 다른 관점의 과학 매핑을 제시합니다.
+- 🔗 후속 연구: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 기존 과학 지도 방법론을 확장하여 새로운 개념적 구조 분석과 비교 과학 매핑 기법을 제시한다.
+- 🔄 다른 접근: [[papers/1055_When_text_mining_meets_science_mapping_in_the_bibliometric_a/review]] — 서지학적 분석에서 새로운 개념 구조 분석과 비교 과학 지도화라는 서로 다른 접근법을 제시합니다.

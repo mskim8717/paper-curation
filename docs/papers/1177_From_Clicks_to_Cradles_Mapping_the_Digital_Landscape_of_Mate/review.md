@@ -15,7 +15,7 @@ tags:
   - "cat/Computational_Bibliometric_Analysis"
   - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/From Clicks to Cradles Mapping the Digital Landscape of Maternal Support through.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mee et al._2026_From Clicks to Cradles Mapping the Digital Landscape of Maternal Support through Bibliometric Analy.pdf"
 ---
 
 # From Clicks to Cradles: Mapping the Digital Landscape of Maternal Support through Bibliometric Analysis
@@ -80,5 +80,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/From Clicks to Cradles Mapping the Digit
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 온라인 과학 커뮤니케이션의 정보 경로에 대한 이론적 기반이 모성 지원의 디지털 환경 분석에 필요합니다.
-- 🔗 후속 연구: [[papers/1146_BIBLIOMETRIC_ANALYSIS_ON_PARENTING_STYLES_AND_ADOLESCENTS_HA/review]] — 온라인 모성 지원에서 양육 방식과 청소년 행복이라는 구체적 양육 결과까지 확장한 연구입니다.
+- 🔄 다른 접근: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 어머니들의 온라인 양육 자원 상호작용과 온라인 과학 커뮤니케이션의 정보 경로는 디지털 지식 교환이라는 공통점이 있다.
+- 🔗 후속 연구: [[papers/994_Organisational_accounts_engaged_in_scholarly_communication_o/review]] — 모성 지원의 디지털 환경 매핑이 학술 커뮤니케이션의 조직적 계정 분석으로 확장될 수 있다.

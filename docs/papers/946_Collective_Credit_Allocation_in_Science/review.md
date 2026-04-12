@@ -86,5 +86,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shen and Barabási_2014_Collective credi
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 다중저자 논문의 신용 배분 알고리즘은 지식 생산에서 팀의 지배력 증가 현상을 정량적으로 분석하기 위한 방법론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/999_Principles_of_Scientific_Research_Team_Formation_and_Evoluti/review]] — 집단 신용 배분 방법론은 과학 연구팀 형성과 진화 원리를 실증적으로 분석하는 구체적 도구를 제공한다.
+- 🧪 응용 사례: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학에서 여성의 낮은 신용 배분 문제에 집단 신용 배분 알고리즘을 적용하여 공정성을 개선할 수 있다
+- 🏛 기반 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 팀 기반 지식 생산의 증가에 따라 다중저자 논문의 기여도 정량화 필요성이 증대한다
+- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성 팀의 성과 측정에 개별 저자 기여도 배분 방법을 확장하여 적용한다
+- 🔗 후속 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 여성에 대한 개별적 기여 과소인정 문제를 과학계의 집단 기여 배분 시스템 전반의 문제로 확장하여 분석했다.
+- 🏛 기반 연구: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — 팀 과학 평가에서 개별 기여도 정량화 방법론이 Collaborative Guideposts 프레임워크의 기반이 된다

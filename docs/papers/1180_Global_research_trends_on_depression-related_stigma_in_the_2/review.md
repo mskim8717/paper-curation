@@ -89,7 +89,7 @@ tags:
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1172_Exploring_Strategies_for_Addressing_Weight_Stigma_An_Analysi/review]] — 둘 다 건강 관련 사회적 낙인을 다루지만 우울증과 체중이라는 서로 다른 낙인 유형을 분석합니다.
-- 🏛 기반 연구: [[papers/976_Intersectional_inequalities_in_science/review]] — 우울증 낙인 연구에서 교차적 불평등 관점이 성별, 인종 등 다중 정체성의 복합적 영향을 이해하는 데 필요합니다.
-- 🔄 다른 접근: [[papers/1146_BIBLIOMETRIC_ANALYSIS_ON_PARENTING_STYLES_AND_ADOLESCENTS_HA/review]] — 둘 다 심리학 관련 주제를 다루지만 청소년 행복과 우울증 낙인이라는 서로 다른 측면을 분석합니다.
-- 🔗 후속 연구: [[papers/1172_Exploring_Strategies_for_Addressing_Weight_Stigma_An_Analysi/review]] — 체중 낙인에서 우울증 낙인으로 정신건강 관련 사회적 편견 연구 영역을 확장합니다.
+- 🔄 다른 접근: [[papers/1217_Tracing_the_Evolution_of_Sleep-Related_Behavioural_Outcomes/review]] — 우울증 관련 낙인화와 자폐스펙트럼장애 아동의 수면-행동 관계 모두 정신건강 분야의 scientometric 분석을 다룬다.
+- 🏛 기반 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 우울증 낙인화 연구에서 성별 차이를 이해하기 위해 과학 경력에서의 역사적 성별 불평등 비교 연구가 기반이 된다.
+- 🔄 다른 접근: [[papers/1166_Emerging_Trends_in_Cybersecurity_Machine_Learning_as_a_Game-/review]] — 특정 분야의 연구 동향 분석에서 사이버보안과 우울증 관련 낙인의 다른 주제 접근법임
+- 🧪 응용 사례: [[papers/1217_Tracing_the_Evolution_of_Sleep-Related_Behavioural_Outcomes/review]] — 우울증 관련 낙인 연구의 서지계량 방법을 자폐스펙트럼장애 수면 연구에 적용할 수 있다

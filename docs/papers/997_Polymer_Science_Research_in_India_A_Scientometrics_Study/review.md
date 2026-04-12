@@ -78,7 +78,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mete and Wagh_2026_Polymer Science Resea
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1014_Risk_and_Artificial_Intelligence_Adoption_A_Scientometric_an/review]] — scientometrics 방법론을 위험과 AI 분야 연구 분석에 적용한 사례와 고분자 과학 분야 적용 사례 간의 방법론적 유사성을 보여준다.
-- 🏛 기반 연구: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 국가별 과학 협력 관계 변화 분석이 인도의 고분자 과학 연구 성장을 국제적 맥락에서 이해하는 기반을 제공한다.
-- 🔄 다른 접근: [[papers/1184_Hamemayu_Hayuning_Nagara_A_Bibliometric_Analysis_of_the_Poli/review]] — 인도 폴리머 과학 연구의 scientometric 분석과 유사한 지역적 접근법으로 VAT 정책 연구의 비교 맥락을 제공한다.
-- 🏛 기반 연구: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 인도의 폴리머 과학 연구 과학계량학 분석 방법론을 심혈관질환 머신러닝 연구의 지역별 비교 분석에 적용할 수 있다.
+- 🔄 다른 접근: [[papers/1227_Exploring_Open_Access_Research_Trends_in_the_Indian_Council/review]] — 동일한 국가(인도)의 서로 다른 연구 분야에서 scientometrics 분석을 통해 학문분야별 특성을 비교할 수 있다.
+- 🧪 응용 사례: [[papers/935_Atlas_of_Science_Collaboration_19712020/review]] — 과학 협력 아틀라스의 글로벌 관점에서 인도 고분자과학 연구의 국제적 위치와 협력 패턴을 분석할 수 있다.
+- 🔄 다른 접근: [[papers/1227_Exploring_Open_Access_Research_Trends_in_the_Indian_Council/review]] — 인도 고분자과학 연구와 농업연구의 OA 패턴을 비교하여 학문분야별 개방접근 전략을 도출할 수 있다.
+- 🏛 기반 연구: [[papers/1138_Arts_and_Humanities_Citation_Index_for_Research_Evaluation_i/review]] — 특정 학문 분야에서 scientometric 연구의 사례로서 인도 폴리머 과학 연구가 종교학 A&HCI 분석의 방법론적 참고 기반을 제공합니다.
+- 🔄 다른 접근: [[papers/1133_A_bibliometric_and_visualized_analysis_of_choriocapillaris_f/review]] — 인도의 폴리머 과학 연구와 맥락삭 연구 모두 특정 국가나 지역의 과학 연구 현황을 scientometric으로 분석한다.

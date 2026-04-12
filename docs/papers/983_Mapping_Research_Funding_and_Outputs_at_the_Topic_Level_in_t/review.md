@@ -76,8 +76,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jenset_2026_Mapping Research Funding and
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 학제간 그랜트 지원 효과 연구에 북유럽 지역의 연구 자금-출판물 주제별 매핑 방법론을 적용할 수 있다.
-- 🔗 후속 연구: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 글로벌 과학 자금과 연구 출판물 연결 연구를 북유럽 지역의 주제별 세분화 분석으로 확장하여 지역적 특성을 규명한다.
-- 🔄 다른 접근: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 프론티어 자금 지원의 광범위한 영향과 대비하여 북유럽 지역의 주제별 자금-성과 관계를 구체적으로 분석한다.
-- 🧪 응용 사례: [[papers/996_Partisan_disparities_in_the_funding_of_science_in_the_United/review]] — 주제별 연구 자금과 성과 매핑을 통해 정당별 투자 우선순위의 실제 효과를 분석할 수 있음
-- 🔗 후속 연구: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 북유럽 연구 자금과 출판물 관계 매핑을 학제간 그랜트의 인용 영향도 분석으로 확장하여 자금 지원 효과를 정밀 분석할 수 있다.
+- 🔄 다른 접근: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 북유럽 지역의 세부적 분석과 글로벌 차원의 연구 자금 시각화라는 서로 다른 규모와 범위에서 자금-성과 관계를 탐구한다.
+- 🏛 기반 연구: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 글로벌 과학 자금과 연구 출판의 연결 분석 방법론을 북유럽 지역 사례에 적용하여 지역별 특성을 파악할 수 있다.
+- 🔗 후속 연구: [[papers/1227_Exploring_Open_Access_Research_Trends_in_the_Indian_Council/review]] — 인도 연구 위원회의 오픈액세스 동향과 북유럽의 자금-성과 매핑을 비교하여 지역별 연구 생태계 차이를 분석할 수 있다.
+- 🔄 다른 접근: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 글로벌 과학 펀딩과 연구 출판물 연결과 토픽 수준에서의 연구 자금 및 성과 매핑이 서로 다른 규모와 접근법으로 펀딩-연구 관계를 분석합니다.
+- 🏛 기반 연구: [[papers/1204_Rethinking_Research_Evaluation_in_India_Is_the_Ecosystem_Rea/review]] — 주제 수준에서 연구 펀딩과 성과를 매핑하는 방법론이 인도의 연구 평가 개혁에서 메트릭스 중심 체계의 한계를 극복하는 대안을 제시한다.

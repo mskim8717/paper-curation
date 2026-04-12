@@ -86,10 +86,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Radicchi et al._2008_Universality of cit
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 보편적 인용 분포와 인용 동역학은 과학적 영향력의 정규화와 예측에 상호 보완적 접근을 제공한다.
-- 🧪 응용 사례: [[papers/966_Global_citation_inequality_is_on_the_rise/review]] — 글로벌 인용 불평등의 증가는 보편적 인용 분포 모델의 실제 적용 한계를 보여준다.
-- ⚖️ 반론/비판: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 인용 인플레이션 문제는 인용 분포의 시간적 보편성에 대한 의문을 제기한다.
-- 🔄 다른 접근: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 인용 분포의 보편성과 인용 동역학 모델링을 통해 과학적 영향력 예측의 다른 접근법을 제공한다.
-- 🔗 후속 연구: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 인용 분포의 보편성을 분석하여 인용 인플레이션이 인용 패턴에 미치는 체계적 영향을 이해하는 기반을 제공한다.
-- 🧪 응용 사례: [[papers/928_A_General_Theory_of_Bibliometric_and_Other_Cumulative_Advant/review]] — 베타 함수로 표현되는 누적 우위 모델은 인용 분포의 보편성을 객관적으로 측정하는 연구의 수학적 기반이 된다.
-- 🏛 기반 연구: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — 개인 연구자의 h-index 산출에 필요한 인용분포의 보편적 특성을 규명한다.
+- 🔗 후속 연구: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 인용 분포의 보편성이 장기 과학적 영향력을 예측하는 모델의 수학적 기반과 분야 간 비교 방법론을 제공합니다.
+- 🏛 기반 연구: [[papers/966_Global_citation_inequality_is_on_the_rise/review]] — 전 세계적 인용 불평등의 증가가 인용 분포의 보편성을 통한 객관적 측정의 필요성을 뒷받침합니다.
+- 🧪 응용 사례: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 인용 분포의 보편적 정규화 방법이 파괴성 지수의 인용 인플레이션 문제를 해결하는 데 적용될 수 있습니다.
+- 🏛 기반 연구: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 인용 분포의 보편성이 장기 과학적 영향력 모델의 수학적 기반과 정규화 방법론을 제공합니다.
+- 🔗 후속 연구: [[papers/928_A_General_Theory_of_Bibliometric_and_Other_Cumulative_Advant/review]] — 누적 우위 이론을 인용 분포의 보편성 연구로 확장하여 객관적 측정 가능성을 탐구한다
+- 🔗 후속 연구: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — 표준화된 인용 지표 데이터베이스를 인용 분포의 보편성과 객관적 측정이라는 이론적 맥락으로 확장했다.

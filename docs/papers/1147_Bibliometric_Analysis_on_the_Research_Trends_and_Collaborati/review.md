@@ -78,10 +78,7 @@ tags:
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1148_Bibliometrics_Analysis_of_Bankruptcy_Prediction_Trends_in_MS/review]] — 같은 MSME 파산 예측 주제를 다루는 연구로서 서로 상호 참조할 수 있는 기본 문헌입니다.
-- 🧪 응용 사례: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 일반적인 기업 분석 방법론을 중소기업 파산이라는 특정 영역에 적용한 사례입니다.
-- 🔄 다른 접근: [[papers/1144_Bibliometric_analysis_of_publications_titled_culinary_arts_s/review]] — 둘 다 VOSviewer를 활용한 특정 도메인 분석이지만 요리 예술과 MSME 파산이라는 완전히 다른 분야를 다룹니다.
-- 🔄 다른 접근: [[papers/1148_Bibliometrics_Analysis_of_Bankruptcy_Prediction_Trends_in_MS/review]] — 동일한 MSME 파산 예측 주제이지만 다른 분석 기간과 방법론적 접근을 사용해 상호 보완적입니다.
-- 🔄 다른 접근: [[papers/1159_Dissemination_and_Implementation_Theories_Models_or_Framewor/review]] — 연구 동향과 협력 패턴을 bibliometric으로 분석하는 다른 사례로 D&I 이론 적용 연구의 방법론적 참고점을 제공한다.
-- 🔗 후속 연구: [[papers/1184_Hamemayu_Hayuning_Nagara_A_Bibliometric_Analysis_of_the_Poli/review]] — 연구 동향과 협력 패턴의 bibliometric 분석 방법론을 VAT 정책 연구로 확장한 사례를 제시한다.
-- 🔗 후속 연구: [[papers/1206_Review_of_E-Commerce_Literature_Inferences_Trends_and_Recomm/review]] — 연구 동향과 협력 패턴 분석의 방법론을 e-commerce 분야로 확장하여 학제간 협력의 구체적 사례를 제시한다.
+- 🔄 다른 접근: [[papers/1148_Bibliometrics_Analysis_of_Bankruptcy_Prediction_Trends_in_MS/review]] — 둘 다 MSME 파산 예측 분야의 bibliometric 분석이지만 서로 다른 시기와 범위로 연구를 수행한다.
+- 🏛 기반 연구: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 제약 산업의 화이트 스페이스 분석 전략적 가이드가 MSME 파산 예측 연구의 미개척 영역 식별에 방법론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 초기 경력 좌절의 미래 영향 연구가 MSME 기업의 파산 예측과 회복 경로를 이해하는 틀을 확장한다.
+- 🔄 다른 접근: [[papers/1148_Bibliometrics_Analysis_of_Bankruptcy_Prediction_Trends_in_MS/review]] — 둘 다 MSME 파산 예측의 bibliometric 분석이지만 데이터 수집 기간과 분석 규모에서 차이를 보인다.

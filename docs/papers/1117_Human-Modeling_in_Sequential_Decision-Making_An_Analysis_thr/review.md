@@ -84,7 +84,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tulli et al._2024_Human-Modeling in Sequ
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1066_Accelerating_science_with_human-aware_artificial_intelligenc/review]] — 인간-인식형 AI 시스템의 순차적 의사결정 분석이 과학자 전문성을 AI에 통합하여 과학적 발견 예측을 개선하는 구체적 방법을 제시한다.
-- 🏛 기반 연구: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 과학적 발견과 혁신에서 성별 다양성의 효과 분석이 인간 모델링에서 다양성 요소를 고려해야 할 이론적 근거를 제공한다.
-- 🏛 기반 연구: [[papers/1066_Accelerating_science_with_human-aware_artificial_intelligenc/review]] — 순차적 의사결정에서의 인간 모델링 분석이 과학자 전문성을 AI에 통합하는 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/1216_Tour_guiding_technologies_a_bibliometric_analysis_mapping_tr/review]] — 투어 가이딩에서 인간-AI 상호작용의 순차적 의사결정 모델링을 통해 기술 통합 과정을 분석할 수 있음
+- 🔗 후속 연구: [[papers/1066_Accelerating_science_with_human-aware_artificial_intelligenc/review]] — 인간-인식 AI를 과학 발견에서 순차적 의사결정 전반으로 확장한 이론적 분석임
+- 🏛 기반 연구: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 과학에서 다양성의 중요성이 인간 모델링 AI 시스템의 이론적 근거가 됨
+- 🔄 다른 접근: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — 팀 과학에서 인간 모델링과 협력 가이드포스트의 다른 접근법임
+- 🔗 후속 연구: [[papers/1066_Accelerating_science_with_human-aware_artificial_intelligenc/review]] — 인간 중심 AI에서 과학 발견을 넘어 순차적 의사결정 전반으로 확장된 연구임

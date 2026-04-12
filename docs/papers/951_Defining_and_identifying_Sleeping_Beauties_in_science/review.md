@@ -83,8 +83,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ke et al._2015_Defining and identifying 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 잠자는 미녀 논문의 장기 인용 패턴 분석을 위한 정량적 영향력 측정 방법론을 제공한다.
-- 🔄 다른 접근: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 인용 네트워크의 동적 구조 분석을 통해 늦은 인용 급증을 예측하는 대안적 접근법을 제시한다.
-- 🧪 응용 사례: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 의미론적 네트워크와 신경망을 활용하여 잠자는 미녀 현상의 주제적 특성을 예측할 수 있다.
-- 🔗 후속 연구: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 장기 영향력 모델은 sleeping beauty 현상의 시간적 패턴을 예측하는 도구로 확장될 수 있다.
-- 🔄 다른 접근: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 잠자는 미녀 현상의 사후 분석과 대비하여 인용 캐스케이드 동적 구조를 통한 과학적 돌파구의 사전 예측을 시도한다.
+- 🔄 다른 접근: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 장기적 과학적 영향력을 측정하는 서로 다른 접근법을 제시하여 상호 보완적 관점을 제공한다.
+- ⚖️ 반론/비판: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 사후적 발견(Sleeping Beauty)과 사전적 예측(breakthrough prediction)이라는 정반대 접근 방식을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 과학의 파괴적 혁신성 감소 현상에 대한 견고한 증거를 통해 잠자는 미녀 현상의 맥락을 이해할 수 있다.
+- 🧪 응용 사례: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 장기 인용 영향력 예측 방법론을 늦게 인정받는 'Sleeping Beauty' 논문들의 발견과 식별에 적용할 수 있습니다.
+- ⚖️ 반론/비판: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 과학적 돌파구의 사전 예측과 잠자는 미녀의 사후 발견이라는 정반대 시간적 접근 방식을 비교할 수 있다.

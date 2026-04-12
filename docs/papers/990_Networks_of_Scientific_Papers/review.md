@@ -75,7 +75,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Price_1965_Networks of Scientific Papers
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 초기 인용 네트워크 개념이 과학 협력 네트워크 구조 분석의 이론적 토대를 제공함
-- 🧪 응용 사례: [[papers/1081_Science_Citation_IndexA_New_Dimension_in_Indexing_This_uniqu/review]] — 인용 패턴 분석이 Science Citation Index의 실용적 구현으로 발전한 과정을 이해할 수 있음
-- 🔗 후속 연구: [[papers/1015_S2ORC_The_Semantic_Scholar_Open_Research_Corpus/review]] — 논문 인용 네트워크의 기본 개념이 대규모 오픈 연구 코퍼스 구축의 이론적 기반이 됨
-- 🔗 후속 연구: [[papers/1081_Science_Citation_IndexA_New_Dimension_in_Indexing_This_uniqu/review]] — 과학 논문 네트워크의 초기 개념을 제시한 연구로 인용 색인 시스템의 네트워크적 함의를 보여준다.
+- 🔗 후속 연구: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 과학논문 인용 네트워크의 초기 패턴 관찰이 복잡한 네트워크의 스케일-프리 특성 발견으로 발전했다.
+- 🏛 기반 연구: [[papers/1081_Science_Citation_IndexA_New_Dimension_in_Indexing_This_uniqu/review]] — Science Citation Index 개발이 논문 인용 네트워크 패턴 분석을 가능하게 한 기초 인프라를 제공했다.
+- 🔗 후속 연구: [[papers/1218_Viewing_Citation_Analysis_Through_the_Lens_of_Citation_Justi/review]] — 인용 분석을 인용 정당화 관점에서 재해석하여 단순 연결성 이상의 의미를 탐구한다.
+- 🧪 응용 사례: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 학술 논문 인용 네트워크의 기초적 패턴 분석을 커뮤니티 구조를 고려한 고도화된 모델링으로 발전시켰다.
+- 🏛 기반 연구: [[papers/1081_Science_Citation_IndexA_New_Dimension_in_Indexing_This_uniqu/review]] — 과학 논문의 인용 네트워크 패턴 분석이라는 기초적 개념을 제시하여 SCI의 이론적 토대를 마련했다.
+- 🏛 기반 연구: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 과학논문 인용 네트워크의 초기 패턴 분석이 복잡한 네트워크의 스케일-프리 특성 발견의 기초를 제공했다.
+- 🏛 기반 연구: [[papers/1213_The_evolution_of_international_scientific_collaboration_netw/review]] — 과학 혁명 시기의 개념 변화를 복잡 네트워크로 모델링하는 기반은 과학 논문 네트워크의 서지학적 패턴에서 출발한다.

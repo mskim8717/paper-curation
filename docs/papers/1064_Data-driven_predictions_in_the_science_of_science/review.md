@@ -81,6 +81,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Clauset et al._2017_Data-driven predicti
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1071_Data_measurement_and_empirical_methods_in_the_science_of_sci/review]] — 과학의 과학 분야의 데이터와 측정 방법론을 체계화하여 예측 모델의 실증적 기반을 강화한다.
-- ⚖️ 반론/비판: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 과학의 파괴적 혁신이 감소하고 있다는 실증적 증거는 데이터 기반 과학 예측의 한계를 보여주는 중요한 반박 사례이다.
-- 🏛 기반 연구: [[papers/931_AI-Driven_Automation_Can_Become_the_Foundation_of_Next-Era_S/review]] — 과학의 과학 분야의 데이터 기반 예측 방법론이 AI 자동화 프레임워크의 이론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/1019_Science_of_science/review]] — 과학의 과학 분야의 핵심 개념과 방법론을 더욱 발전시킨 후속 연구임
+- 🔗 후속 연구: [[papers/1124_The_Science_of_Science/review]] — 데이터 기반 과학 예측의 이론적 토대를 제공하는 종합적 프레임워크임
+- ⚖️ 반론/비판: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 과학의 예측가능성에 대한 낙관적 관점과 달리 과학의 파괴성 감소 현상을 보여줌
+- 🏛 기반 연구: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 과학학 분야에서 데이터 기반 예측의 일반적 이론과 방법론을 인용 네트워크의 동적 구조 예측에 적용하는 토대를 제공한다.

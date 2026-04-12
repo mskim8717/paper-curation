@@ -78,9 +78,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hirsch_2005_An index to quantify an indi
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — h-index를 포함한 더 포괄적인 표준화된 인용 지표 데이터베이스를 제공한다.
-- 🔄 다른 접근: [[papers/1047_Theory_and_Practice_of_the_g-index/review]] — h-index의 대안으로 g-index라는 개선된 개인 연구성과 측정 지표를 제안한다.
-- 🏛 기반 연구: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 개인 연구자의 h-index 산출에 필요한 인용분포의 보편적 특성을 규명한다.
-- 🏛 기반 연구: [[papers/1007_Redefining_Academic_Performance_The_Development_of_the_NK_Co/review]] — h-지수의 한계 분석은 새로운 복합 지표 개발의 필요성을 뒷받침한다.
-- 🔗 후속 연구: [[papers/1047_Theory_and_Practice_of_the_g-index/review]] — g-지수는 h-지수의 상위 논문 인용 반영 한계를 개선한 직접적 확장이다.
-- 🔗 후속 연구: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — h-index를 포함하여 과학자들의 연구 성과를 측정하는 더 포괄적인 표준화된 지표 시스템을 제공한다.
+- 🔗 후속 연구: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — h-index의 실제 적용과 표준화된 인용 지표 데이터베이스 구축을 통해 개인 연구 성과 측정을 확장했다.
+- 🔄 다른 접근: [[papers/1009_Relative_Citation_Ratio_A_New_Metric_That_Uses_Citation_Rate/review]] — h-index와 달리 분야별 인용 패턴을 고려한 상대적 인용 비율로 연구자 성과를 측정하는 대안적 접근법이다.
+- 🔗 후속 연구: [[papers/1047_Theory_and_Practice_of_the_g-index/review]] — h-index의 한계를 보완하여 높은 인용을 받은 논문에 더 큰 가중치를 부여하는 g-index를 제안했다.
+- 🏛 기반 연구: [[papers/1001_Public_Profile_Matters_A_Scalable_Integrated_Approach_to_Rec/review]] — 개별 연구자의 과학적 성과 측정 방법론이 public profile 분석의 이론적 기반이 됨
+- 🔗 후속 연구: [[papers/1007_Redefining_Academic_Performance_The_Development_of_the_NK_Co/review]] — 개별 연구자의 과학적 성과를 정량화하는 h-지수를 다차원적 요소들을 통합한 종합적 평가 방식으로 확장합니다.
+- 🏛 기반 연구: [[papers/1047_Theory_and_Practice_of_the_g-index/review]] — 개별 연구자의 과학적 성과를 정량화하는 h-지수가 g-지수 개발의 직접적 기반이 됩니다.
+- 🧪 응용 사례: [[papers/928_A_General_Theory_of_Bibliometric_and_Other_Cumulative_Advant/review]] — 개인의 과학 연구 성과 정량화에 누적 우위 이론의 베타 함수 모델을 적용할 수 있다
+- 🧪 응용 사례: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — h-index를 포함한 표준화된 인용 지표들을 대규모 데이터베이스로 구축하여 개인 연구 성과 측정을 실용화했다.
+- 🏛 기반 연구: [[papers/966_Global_citation_inequality_is_on_the_rise/review]] — 개인 연구자의 과학적 산출물 정량화 지수가 인용 불평등 측정과 분석의 기초 방법론을 제공한다.

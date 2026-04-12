@@ -84,12 +84,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qian et al._2026_The Rise of Large Langu
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1021_Scientific_production_in_the_era_of_large_language_models/review]] — LLM이 과학 논문 생산에 미치는 영향을 연방 연구자금 신청서 분야로 확장하여 분석한다.
-- 🔗 후속 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 공적 자금의 과학 연구 지원에 LLM이 미치는 의미론적 독창성 감소 효과를 추가로 규명한다.
-- 🏛 기반 연구: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — 대규모 언어 모델이 연구 참신성을 감소시키는 현상의 구체적 사례를 연구자금 신청서에서 확인한다.
-- ⚖️ 반론/비판: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 연방 연구자금이 LLM 도입으로 인해 의미론적 독창성을 감소시키는 문제점을 지적한다.
-- 🧪 응용 사례: [[papers/1021_Scientific_production_in_the_era_of_large_language_models/review]] — LLM이 과학 논문 생산에 미치는 영향을 연방 연구자금 신청서 분야로 확장하여 분석한다.
-- 🏛 기반 연구: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — 대규모언어모델의 등장이 과학 연구에 미치는 방향성과 영향 분석이 LLM의 과학계량학 적용 가능성을 뒷받침한다.
-- 🏛 기반 연구: [[papers/1077_Quantifying_large_language_model_usage_in_scientific_papers/review]] — LLM의 등장과 과학에 미치는 방향성 및 영향 분석이 학술논문에서 LLM 사용량 정량화의 이론적 배경을 제공한다.
-- 🔗 후속 연구: [[papers/963_Forecasting_the_future_of_artificial_intelligence_with_machi/review]] — LLM의 부상이 AI 연구 예측 모델의 정확성과 방향성에 미치는 영향을 체계적으로 분석할 수 있음
-- 🏛 기반 연구: [[papers/1179_Global_Research_Trends_in_Knowledge_Management_in_Higher_Edu/review]] — LLM의 등장이 고등교육 지식관리의 미래 방향성인 AI와 디지털 변환에 미치는 영향을 이해할 수 있습니다.
+- 🧪 응용 사례: [[papers/1021_Scientific_production_in_the_era_of_large_language_models/review]] — LLM이 과학 논문 작성에 미치는 영향을 연방 연구 자금 신청서의 의미론적 독창성 변화라는 구체적 사례로 적용했다.
+- 🔗 후속 연구: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — LLM이 연구 참신성을 감소시킨다는 발견을 연구 자금 신청서의 의미론적 독창성 감소로 확장하여 검증했다.
+- 🧪 응용 사례: [[papers/996_Partisan_disparities_in_the_funding_of_science_in_the_United/review]] — LLM이 연구비 신청에 미치는 영향을 미국 과학 자금 배분의 정치적 양극화 맥락에서 분석할 수 있다.
+- 🧪 응용 사례: [[papers/1021_Scientific_production_in_the_era_of_large_language_models/review]] — LLM이 과학 논문 작성에 미치는 영향을 연방 연구 자금 신청서의 의미론적 독창성 변화에 적용한 사례다.
+- 🔗 후속 연구: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — 대규모언어모델이 과학 연구 방향과 영향에 미치는 변화를 과학계량학 관점에서 체계적으로 분석할 수 있다.
+- 🏛 기반 연구: [[papers/1067_After_science/review]] — LLM이 연구 방향에 미치는 영향에 대한 분석이 과학 이후 시대 논의의 배경이 됨

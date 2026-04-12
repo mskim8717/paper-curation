@@ -90,9 +90,9 @@ Word2vec 신경망 임베딩 모델을 이용하여 이동 궤적(migration traj
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 경제 발전과 연결된 학자 이주 패턴은 궤적 임베딩 모델의 구체적 적용 사례를 제공한다.
-- 🔗 후속 연구: [[papers/973_Impacts_of_inter-institutional_mobility_on_scientific_perfor/review]] — 기관 간 이동이 과학 성과에 미치는 영향은 이주 궤적 분석의 성과 예측 차원을 보완한다.
-- 🔄 다른 접근: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 미중 과학 협력 변화는 궤적 임베딩으로 분석할 수 있는 구체적 이동 패턴 사례를 제공한다.
-- 🔄 다른 접근: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 이주 궤적의 비지도학습 임베딩은 미중 협력 변화를 분석하는 다른 방법론적 접근을 제시한다.
-- 🏛 기반 연구: [[papers/1121_Superstar_Extinctionsupsup/review]] — 과학자 경력 궤적의 잠재 구조를 분석하는 방법론을 제시하여 슈퍼스타 소멸의 영향을 측정하는 기반을 제공한다.
-- 🔄 다른 접근: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 궤적의 비지도 임베딩과 학술지의 시간변화 임베딩이 과학적 변화 포착에서 서로 다른 관점을 제공한다.
+- 🏛 기반 연구: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 경제 발전과 학자 이동의 전 지구적 패턴이 과학 마이그레이션의 다층적 요인을 이해하는 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/973_Impacts_of_inter-institutional_mobility_on_scientific_perfor/review]] — 기관 간 이동이 과학적 성과에 미치는 영향을 이동 궤적의 잠재 구조 분석으로 확장하여 더 깊이 이해할 수 있습니다.
+- 🏛 기반 연구: [[papers/929_A_network_approach_to_topic_models/review]] — 네트워크 접근법을 통한 주제 모델링이 이동 궤적에서 잠재 구조를 추출하는 방법론적 기반을 제공합니다.
+- 🔄 다른 접근: [[papers/1017_Science_as_exploration_in_a_knowledge_landscape_tracing_hots/review]] — 지식공간 탐색을 과학자의 연구주제 선택과 과학자 이동 궤적이라는 서로 다른 관점에서 분석하는 대안적 접근법입니다.
+- 🔄 다른 접근: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 경력 궤도의 잠재 구조를 비지도 학습으로 포착하는 것이 핫스트릭 탐지의 다른 접근법이 될 수 있다.
+- 🔄 다른 접근: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 연구자 위치 매핑을 위한 주제 모델링과 궤적 임베딩이라는 서로 다른 기하학적 접근법을 비교할 수 있다.

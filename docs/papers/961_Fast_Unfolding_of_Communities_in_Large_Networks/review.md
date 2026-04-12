@@ -91,8 +91,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Blondel et al._2008_Fast Unfolding of Co
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 대규모 네트워크의 빠른 커뮤니티 검출 알고리즘은 그래프 커뮤니티 검출 방법들에 대한 종합적 분석을 기반으로 개발되었다.
-- 🧪 응용 사례: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 모듈성 최적화 기반 커뮤니티 검출 방법론은 대규모 과학 커뮤니티 매핑에 대한 실제적 구현 도구를 제공한다.
-- 🔄 다른 접근: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 네트워크의 커뮤니티 구조를 분석하는 다른 방법론적 접근을 제시한다.
-- 🔄 다른 접근: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 네트워크의 커뮤니티 구조를 발견하는 다른 알고리즘적 접근방법을 제공한다.
-- 🔗 후속 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 그래프 커뮤니티 검출 방법들에 대한 종합 리뷰는 대규모 네트워크에서 빠른 커뮤니티 검출 알고리즘 개발의 이론적 배경을 제공한다.
+- 🏛 기반 연구: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 스케일-프리 네트워크와 선호적 부착 이론이 대규모 네트워크 커뮤니티 탐지 알고리즘 개발의 이론적 기초를 제공한다.
+- 🔄 다른 접근: [[papers/948_Community_Detection_in_Graphs/review]] — 네트워크 커뮤니티 탐지의 다양한 알고리즘적 접근법을 비교하여 각각의 장단점을 이해할 수 있다.
+- 🧪 응용 사례: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 과학 지식 지도 작성에 효율적인 커뮤니티 탐지 알고리즘을 적용하여 학문 분야 구조를 시각화한다.
+- 🧪 응용 사례: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크의 커뮤니티 탐지를 위한 효율적인 알고리즘을 제공하여 네트워크 구조 분석을 심화했다.
+- 🔄 다른 접근: [[papers/948_Community_Detection_in_Graphs/review]] — 대규모 네트워크에서 커뮤니티를 빠르게 탐지하는 다른 알고리즘적 접근법을 제시한다
+- 🔗 후속 연구: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 스케일-프리 네트워크의 이론적 기반을 실제 대규모 네트워크에서 커뮤니티를 탐지하는 알고리즘으로 발전시킨다.
+- 🔄 다른 접근: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 대규모 네트워크에서 커뮤니티 탐지를 위한 링크 필터링과 전통적 노드 기반 접근법의 효율성을 비교할 수 있다.

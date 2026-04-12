@@ -87,13 +87,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liang et al._2025_The Empowerment of Sci
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1065_A_Survey_of_AI_Scientists/review]] — AI 과학자에 대한 종합적 설문 조사 결과를 과학의 과학 분야에 LLM을 적용하는 구체적 방향성 설정에 활용할 수 있다.
-- 🏛 기반 연구: [[papers/1041_The_Rise_of_Large_Language_Models_and_the_Direction_and_Impa/review]] — 대규모언어모델의 등장이 과학 연구에 미치는 방향성과 영향 분석이 LLM의 과학계량학 적용 가능성을 뒷받침한다.
-- 🧪 응용 사례: [[papers/1077_Quantifying_large_language_model_usage_in_scientific_papers/review]] — 과학 논문에서 대규모언어모델 사용량 정량화 연구를 LLM 기반 과학계량학 도구의 실제 활용도 측정에 적용할 수 있다.
-- 🔗 후속 연구: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — 대규모 언어 모델이 과학의 과학 연구를 어떻게 강화할 수 있는지 구체적 도구로 실현한다.
-- 🏛 기반 연구: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — LLM이 과학 연구에 미치는 혁신적 영향력에 대한 이론적 배경을 제공합니다.
-- 🔗 후속 연구: [[papers/1078_Quantifying_the_use_and_potential_benefits_of_artificial_int/review]] — AI가 과학 연구에 미치는 영향을 더 포괄적으로 분석하여 정량적 측정을 넘어선 통찰을 제공한다.
-- ⚖️ 반론/비판: [[papers/989_Modeling_Changing_Scientific_Concepts_with_Complex_Networks/review]] — 대규모 언어 모델의 과학 발전 지원과 대비하여 복잡 네트워크 기반의 해석 가능한 과학 개념 변화 모델링을 제시한다.
-- 🏛 기반 연구: [[papers/963_Forecasting_the_future_of_artificial_intelligence_with_machi/review]] — AI 연구 방향 예측을 위해 대규모 언어 모델이 과학학 연구에 미치는 혁신적 영향을 이해할 필요가 있음
-- 🏛 기반 연구: [[papers/1179_Global_Research_Trends_in_Knowledge_Management_in_Higher_Edu/review]] — LLM이 과학의 과학을 강화하는 방식을 분석하여 고등교육 지식관리 연구의 AI 활용 방향을 제시한다.
-- 🧪 응용 사례: [[papers/1153_Classical_RAG_for_Semantic_Search__Quantum_Modules_for_Resea/review]] — 대형 언어 모델이 과학학을 강화하는 방식과 RAG 기반 평가 시스템의 발전 방향이 연결됨
+- 🔗 후속 연구: [[papers/1041_The_Rise_of_Large_Language_Models_and_the_Direction_and_Impa/review]] — 대규모언어모델이 과학 연구 방향과 영향에 미치는 변화를 과학계량학 관점에서 체계적으로 분석할 수 있다.
+- 🧪 응용 사례: [[papers/1078_Quantifying_the_use_and_potential_benefits_of_artificial_int/review]] — 인공지능 사용량 정량화 연구에 LLM 기반 과학계량학 분석 도구를 적용하여 더 정확한 측정이 가능하다.
+- 🏛 기반 연구: [[papers/1124_The_Science_of_Science/review]] — 과학의 과학 연구 분야에 LLM 기술을 통합하는 이론적이고 방법론적 토대를 공유한다.
+- 🧪 응용 사례: [[papers/1124_The_Science_of_Science/review]] — LLM이 과학의 과학 연구를 어떻게 강화할 수 있는지 구체적 활용 방안을 제시한다.
+- 🔗 후속 연구: [[papers/1072_Embracing_Foundation_Models_for_Advancing_Scientific_Discove/review]] — LLM이 과학의 과학 분야에 미치는 전반적 영향력을 기초 모델 활용으로 구체화함
+- 🏛 기반 연구: [[papers/1074_OLMo_Accelerating_the_Science_of_Language_Models/review]] — LLM의 과학 연구 영향력 분석에 필요한 오픈 모델 인프라를 제공함
+- 🔗 후속 연구: [[papers/963_Forecasting_the_future_of_artificial_intelligence_with_machi/review]] — AI 연구 방향 예측을 위한 Science4Cast 벤치마크와 대규모 언어 모델이 과학의 과학을 강화하는 방법이 상호 보완적 발전을 이룹니다.
+- 🏛 기반 연구: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — LLM을 과학계량학에 활용할 때 필요한 책임 있는 평가 원칙의 이론적 기반을 공유한다.

@@ -81,6 +81,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Okamura_2024_Atlas of Science Collaborat
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1213_The_evolution_of_international_scientific_collaboration_netw/review]] — 국제 협력 관계 시각화와 과학 혁명 개념 변화 모델링은 모두 과학 지식의 진화를 네트워크 관점에서 분석한다.
-- 🏛 기반 연구: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크의 구조적 특성 연구는 국제 협력 관계 아틀라스의 네트워크 분석 방법론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/1213_The_evolution_of_international_scientific_collaboration_netw/review]] — 과학 혁명의 개념 변화를 네트워크로 모델링한 접근법과 국제 협력 네트워크 시각화는 모두 과학 지식의 진화를 네트워크로 분석한다.
+- 🏛 기반 연구: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크의 구조적 특성이 국제 협력 아틀라스 구축의 이론적 기반이 된다
+- 🔗 후속 연구: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 과학 협력의 사회적 네트워크 진화를 50년간의 장기적 관점에서 확장한다
+- 🧪 응용 사례: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 미중 과학 협력의 변화하는 지형을 국제 협력 아틀라스의 구체적 사례로 분석할 수 있다
+- 🏛 기반 연구: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 1971-2020년 과학 협력의 전반적 지도가 미중 과학협력 변화를 이해하는 역사적 맥락과 기반을 제공합니다.
+- 🧪 응용 사례: [[papers/997_Polymer_Science_Research_in_India_A_Scientometrics_Study/review]] — 과학 협력 아틀라스의 글로벌 관점에서 인도 고분자과학 연구의 국제적 위치와 협력 패턴을 분석할 수 있다.
+- 🏛 기반 연구: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 1971-2020년 과학 협력의 글로벌 지도를 통해 학자 이동 패턴의 역사적 맥락과 배경을 이해할 수 있다.
+- 🔗 후속 연구: [[papers/1213_The_evolution_of_international_scientific_collaboration_netw/review]] — 국제 과학 협력의 역사적 변화를 개념 변화와 연결하여 분석할 수 있다
+- 🧪 응용 사례: [[papers/1215_Total_Fertility_Rate_Studies_Bibliometric_Analysis_with_R_Pr/review]] — 출산율 연구의 국제 협력 분석이 1971-2020년 과학 협력 아틀라스에서 실제 적용될 수 있다.

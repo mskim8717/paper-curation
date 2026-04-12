@@ -80,12 +80,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kapoor et al._2024_REFORMS Consensus-bas
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 과학 연구의 재현성 위기를 다룬 기초 연구로 기계학습 기반 연구의 재현성 보장 필요성을 뒷받침한다.
-- 🔗 후속 연구: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 심리학 연구 재현성 평가 방법론을 기계학습 연구로 확장한 체크리스트 개발의 선행 사례를 제공한다.
-- 🧪 응용 사례: [[papers/1142_Beyond_Retractions_Forensic_Scientometrics_Techniques_to_Ide/review]] — 연구 부정행위 탐지를 위한 실증적 사례로 REFORMS 체크리스트의 필요성을 구체적으로 보여준다.
-- 🧪 응용 사례: [[papers/1014_Risk_and_Artificial_Intelligence_Adoption_A_Scientometric_an/review]] — 머신러닝 연구 개혁 권고안은 AI 도입에서 위험 거버넌스의 구체적 적용 사례를 보여준다.
-- 🧪 응용 사례: [[papers/1082_The_Open_Catalyst_2022_OC22_Dataset_and_Challenges_for_Oxide/review]] — 기계학습 기반 물질 발견을 위한 합의 기반 권고사항이 Open Catalyst 데이터셋 활용 연구의 모범 사례를 제시한다.
-- 🔗 후속 연구: [[papers/991_Open_Datasets_in_Learning_Analytics_Trends_Challenges_and_Be/review]] — 머신러닝 연구의 재현성 향상을 위한 체크리스트와 학습분석 연구의 오픈 데이터셋 관리 체크리스트 간 방법론적 연관성을 보여준다.
-- 🧪 응용 사례: [[papers/1142_Beyond_Retractions_Forensic_Scientometrics_Techniques_to_Ide/review]] — 기계학습 연구의 타당성 보장을 위한 체크리스트와 연계하여 부정행위 예방의 사전적 접근법을 제시한다.
-- 🏛 기반 연구: [[papers/1159_Dissemination_and_Implementation_Theories_Models_or_Framewor/review]] — 머신러닝 연구에서 합의 기반 권고사항이 D&I 이론의 의미 있는 적용을 위한 방법론적 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/1156_Correction_Enabling_transparent_research_evaluation_A_method/review]] — 머신러닝 기반 권고안과 투명한 연구 평가 방법이 모두 과학 연구의 신뢰성 제고를 목표로 함
+- 🏛 기반 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 재현성 위기라는 근본적 문제를 제기하여 기계학습 기반 과학 연구에서 엄격한 표준이 필요한 이유를 제공한다.
+- 🔗 후속 연구: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 심리학에서의 재현성 평가 경험을 ML 기반 과학 연구로 확장하여 검증 체크리스트의 실용적 근거를 강화한다.
+- 🧪 응용 사례: [[papers/1162_DREAM_Deep_Research_Evaluation_with_Agentic_Metrics/review]] — REFORMS 체크리스트를 AI 연구 평가에 적용할 때 DREAM 프레임워크가 제공하는 자동화된 검증 도구로 활용할 수 있다.
+- 🧪 응용 사례: [[papers/1162_DREAM_Deep_Research_Evaluation_with_Agentic_Metrics/review]] — 기계학습 기반 과학 연구의 검증을 위한 REFORMS 체크리스트를 AI 에이전트 평가에 적용할 수 있는 자동화 도구를 제공한다.
+- 🔗 후속 연구: [[papers/1228_OpenRad_a_Curated_Repository_of_Open-access_AI_models_for_Ra/review]] — 기계학습 모델의 표준화된 보고 지침을 방사선학 AI 모델 저장소에 적용할 수 있다.

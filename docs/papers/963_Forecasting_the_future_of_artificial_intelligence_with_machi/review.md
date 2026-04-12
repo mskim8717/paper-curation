@@ -94,5 +94,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Krenn et al._2023_Forecasting the future
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — AI 연구 방향 예측을 위해 대규모 언어 모델이 과학학 연구에 미치는 혁신적 영향을 이해할 필요가 있음
-- 🔗 후속 연구: [[papers/1041_The_Rise_of_Large_Language_Models_and_the_Direction_and_Impa/review]] — LLM의 부상이 AI 연구 예측 모델의 정확성과 방향성에 미치는 영향을 체계적으로 분석할 수 있음
+- 🔗 후속 연구: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — AI 연구 방향 예측을 위한 Science4Cast 벤치마크와 대규모 언어 모델이 과학의 과학을 강화하는 방법이 상호 보완적 발전을 이룹니다.
+- ⚖️ 반론/비판: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — AI 기술로 미래 연구 방향을 예측하는 연구와 대규모 언어 모델이 연구 참신성을 감소시킨다는 상반된 관점을 제시합니다.
+- 🧪 응용 사례: [[papers/1014_Risk_and_Artificial_Intelligence_Adoption_A_Scientometric_an/review]] — AI 도입에서 위험 역할의 진화를 기계학습 기반 미래 예측 방법론을 통해 분석하고 전망할 수 있습니다.
+- 🔗 후속 연구: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — AI 분야의 머신러닝 기반 예측 연구가 양자물리학 트렌드 예측 방법론을 AI 도메인으로 확장 적용한다.
+- 🔄 다른 접근: [[papers/1135_AI-Augmented_Mobile_and_Data-Driven_Decision_Making_in_Busin/review]] — AI 연구 동향을 기계학습으로 예측하는 다른 접근법을 제시하여 scientometric 분석과 비교 연구할 수 있다.

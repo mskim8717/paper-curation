@@ -11,7 +11,7 @@ tags:
   - "cat/Science_Policy_and_Research_Dynamics"
   - "sub/Science_Policy_Funding"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rethinking Research Evaluation in India Is the Ecosystem Ready for a Responsible.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kar_2026_Rethinking Research Evaluation in India Is the Ecosystem Ready for a Responsible Reform Agenda.pdf"
 ---
 
 # Rethinking Research Evaluation in India: Is the Ecosystem Ready for a Responsible Reform Agenda?
@@ -75,8 +75,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rethinking Research Evaluation in India 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1182_Governing_Science_through_Evaluation_A_Global_Heuristic_of_R/review]] — 글로벌 연구 평가 거버넌스 프레임워크를 인도라는 구체적 맥락에 적용하여 지역별 평가 체계 개혁의 실증적 사례를 제공한다.
-- 🏛 기반 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 과학 펀딩에서 Matthew effect를 분석한 연구로 인도 연구 평가 체계의 불평등 구조와 개혁 필요성을 뒷받침한다.
-- 🔗 후속 연구: [[papers/1167_Enabling_transparent_research_evaluation_A_method_for_histor/review]] — 투명한 연구 평가 방법론을 제시하여 인도의 책임 있는 연구 평가 도입에 필요한 구체적 도구를 보완한다.
-- 🧪 응용 사례: [[papers/1167_Enabling_transparent_research_evaluation_A_method_for_histor/review]] — 투명한 연구 평가 방법론을 인도의 연구 생태계 재고라는 구체적 맥락에 적용한 사례입니다.
-- 🧪 응용 사례: [[papers/1182_Governing_Science_through_Evaluation_A_Global_Heuristic_of_R/review]] — 인도의 연구 평가 체계 개혁 필요성을 다룬 구체적 사례로 글로벌 연구 평가 거버넌스 분석의 실증적 적용을 보여준다.
+- 🔗 후속 연구: [[papers/1182_Governing_Science_through_Evaluation_A_Global_Heuristic_of_R/review]] — 글로벌 연구 평가 체계 비교 휴리스틱을 인도라는 특정 국가 사례에 구체적으로 적용하여 RRA 도입의 현실적 과제를 분석한다.
+- 🔄 다른 접근: [[papers/1167_Enabling_transparent_research_evaluation_A_method_for_histor/review]] — 연구 평가 투명성을 확보하는 서로 다른 접근법으로 기술적 해결책(RCR 데이터 추출)과 제도적 개혁(RRA 도입)을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 주제 수준에서 연구 펀딩과 성과를 매핑하는 방법론이 인도의 연구 평가 개혁에서 메트릭스 중심 체계의 한계를 극복하는 대안을 제시한다.
+- 🧪 응용 사례: [[papers/1167_Enabling_transparent_research_evaluation_A_method_for_histor/review]] — 투명한 연구 평가 방법이 인도의 연구 생태계 재고찰에서 실제로 적용될 수 있다.
+- 🧪 응용 사례: [[papers/1182_Governing_Science_through_Evaluation_A_Global_Heuristic_of_R/review]] — 연구 평가 체계의 글로벌 비교 휴리스틱을 인도의 구체적 사례에 적용하여 RRA 도입 가능성을 체계적으로 평가한다.
+- 🧪 응용 사례: [[papers/1224_Declarative_commitments_and_editorial_open_access_practices/review]] — 러시아 사례를 통해 개방접근 정책과 실행의 불일치 문제를 인도 연구 생태계 개선에 적용할 수 있다.
+- 🏛 기반 연구: [[papers/1154_Contributions_of_accreditation_organizations_in_health_servi/review]] — 인도의 연구 평가 생태계 재고찰이 보건의료 인증기구의 품질 기여도 평가 방법론의 맥락을 제공한다.

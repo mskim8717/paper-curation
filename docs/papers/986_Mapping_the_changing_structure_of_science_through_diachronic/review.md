@@ -83,8 +83,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lyu and Ke_2025_Mapping the changing str
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 연구자의 인식론적 위치 규명 연구에 학술지 시간변화 임베딩을 통한 과학 구조 진화 추적 방법론을 제공한다.
-- 🔄 다른 접근: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 궤적의 비지도 임베딩과 학술지의 시간변화 임베딩이 과학적 변화 포착에서 서로 다른 관점을 제공한다.
-- 🔗 후속 연구: [[papers/1017_Science_as_exploration_in_a_knowledge_landscape_tracing_hots/review]] — 지식 경관에서 핫스팟 추적 연구를 학술지 임베딩을 통한 물리-생명-보건 삼각형의 동적 변화 분석으로 확장한다.
-- 🔗 후속 연구: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 과학 구조의 시간적 변화 매핑은 주제 진화 분석의 이론적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 학술지의 시간변화 임베딩 연구를 개별 연구자의 인식론적 위치 변화 추적으로 확장하여 동적 학문 지형을 구축할 수 있다.
+- 🔄 다른 접근: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 과학 매핑에서 시간적 진화 추적을 위한 임베딩 기반 접근법과 주제 진화 분석의 통합적 접근법을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/927_A_Dynamic_Network_Measure_of_Technological_Change/review]] — 기술 변화의 동적 네트워크 측정 방법론을 학술지 진화 분석에 적용하여 과학 구조 변화를 정량화하는 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 의미론적 신경망을 활용한 연구 동향 예측과 시간변화 임베딩을 결합하여 과학 발전의 미래 방향을 예측할 수 있다.
+- 🧪 응용 사례: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 과학 구조 변화의 통시적 매핑을 위한 구체적 적용 사례로 주제 진화 프레임워크를 활용할 수 있습니다.
+- 🔗 후속 연구: [[papers/1212_Shifts_in_Biotechnology_Research_Fronts_20002026_A_Bibliomet/review]] — 시간에 따른 과학 구조 변화를 통시적으로 매핑하는 방법론을 생명공학에 적용한다

@@ -76,11 +76,12 @@ NIH 데이터베이스의 공개 메타데이터로부터 역사적 RCR(Relative
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1009_Relative_Citation_Ratio_A_New_Metric_That_Uses_Citation_Rate/review]] — RCR 메트릭에 대한 기본 개념과 이론적 배경을 제공하여 역사적 데이터 추출 방법의 토대가 됩니다.
-- 🧪 응용 사례: [[papers/1204_Rethinking_Research_Evaluation_in_India_Is_the_Ecosystem_Rea/review]] — 투명한 연구 평가 방법론을 인도의 연구 생태계 재고라는 구체적 맥락에 적용한 사례입니다.
-- 🔗 후속 연구: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — 표준화된 인용 데이터베이스 연구를 확장하여 투명한 연구 평가를 위한 구체적 방법론을 제시한다.
-- 🧪 응용 사례: [[papers/1182_Governing_Science_through_Evaluation_A_Global_Heuristic_of_R/review]] — 글로벌 연구 평가 체계 분석에 필요한 투명한 데이터 추출 방법을 제공하여 비교 연구의 실증적 기반을 마련한다.
-- 🏛 기반 연구: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — 투명한 연구 평가 방법론의 역사적 분석이 LLM 기반 평가 시스템의 윤리적 프레임워크 설계에 중요한 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1182_Governing_Science_through_Evaluation_A_Global_Heuristic_of_R/review]] — 투명한 연구 평가 방법론을 제시하여 글로벌 연구 평가 체계의 투명성과 책임성 향상 방안을 보완한다.
-- 🔗 후속 연구: [[papers/1204_Rethinking_Research_Evaluation_in_India_Is_the_Ecosystem_Rea/review]] — 투명한 연구 평가 방법론을 제시하여 인도의 책임 있는 연구 평가 도입에 필요한 구체적 도구를 보완한다.
-- 🏛 기반 연구: [[papers/1156_Correction_Enabling_transparent_research_evaluation_A_method/review]] — 원본 논문의 투명한 연구 평가 방법론이 데이터 가용성 수정을 통해 재현가능성을 높임
+- 🏛 기반 연구: [[papers/1009_Relative_Citation_Ratio_A_New_Metric_That_Uses_Citation_Rate/review]] — 역사적 RCR 데이터 추출 방법의 이론적 기반은 RCR 메트릭의 원래 개념과 적용에서 출발한다.
+- 🧪 응용 사례: [[papers/1204_Rethinking_Research_Evaluation_in_India_Is_the_Ecosystem_Rea/review]] — 투명한 연구 평가 방법이 인도의 연구 생태계 재고찰에서 실제로 적용될 수 있다.
+- 🔗 후속 연구: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — 표준화된 저자 데이터베이스 업데이트 작업을 RCR 메타데이터 추출로 확장하여 연구 평가 투명성을 높인다.
+- 🧪 응용 사례: [[papers/1182_Governing_Science_through_Evaluation_A_Global_Heuristic_of_R/review]] — 연구 평가 체계의 글로벌 비교 분석을 위해 NIH의 RCR 데이터 추출 방법을 다른 국가 시스템에 적용할 수 있다.
+- 🔄 다른 접근: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — 연구 평가의 투명성 확보를 위해 기존 방법론과 LLM 기반 접근법을 비교 분석한다.
+- 🏛 기반 연구: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — 투명한 연구 평가를 가능하게 하는 방법론이 팀 과학에서 협업 성과를 평가하는 새로운 프레임워크의 기반을 제공합니다.
+- 🔄 다른 접근: [[papers/1204_Rethinking_Research_Evaluation_in_India_Is_the_Ecosystem_Rea/review]] — 연구 평가 투명성을 확보하는 서로 다른 접근법으로 기술적 해결책(RCR 데이터 추출)과 제도적 개혁(RRA 도입)을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/1156_Correction_Enabling_transparent_research_evaluation_A_method/review]] — 역사적 연구 평가 방법이 투명한 연구 평가 시스템 개발의 방법론적 기초를 제공한다.
+- 🏛 기반 연구: [[papers/1224_Declarative_commitments_and_editorial_open_access_practices/review]] — 연구 평가의 투명성과 실제 실행 사이의 간극을 측정하는 방법론적 기반을 제공한다.

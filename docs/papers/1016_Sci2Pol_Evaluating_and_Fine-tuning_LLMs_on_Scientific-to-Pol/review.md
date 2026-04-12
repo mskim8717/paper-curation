@@ -92,6 +92,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2025_Sci2Pol Evaluating and Fi
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1074_OLMo_Accelerating_the_Science_of_Language_Models/review]] — 완전 공개된 OLMo 모델을 활용하여 과학-정책 변환 작업의 투명성과 재현성을 높일 수 있다.
-- 🧪 응용 사례: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 정책에서의 과학 지식 선택적 활용 패턴을 분석한 연구로, Sci2Pol의 과학-정책 변환 품질 평가에 중요한 통찰을 제공한다.
-- 🧪 응용 사례: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 과학적 지식을 정책으로 번역하는 과정을 LLM을 활용한 자동화 평가로 발전시킨다.
+- 🔄 다른 접근: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 과학 지식의 정책적 활용에서 선택적 사용 패턴을 분석한 다른 접근법임
+- 🏛 기반 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 공공 자금으로 지원된 과학연구의 공공적 활용이라는 기본 전제를 공유함
+- 🔗 후속 연구: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — 과학의 과학 분야에서 인간-AI 협력을 통한 정책 문서 생성으로 확장됨
+- 🔗 후속 연구: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 과학 지식의 정책 활용을 AI를 통한 과학-정책 번역 자동화라는 기술적 해결 방안으로 확장했다.
+- 🔗 후속 연구: [[papers/945_Coevolution_of_policy_and_science_during_the_pandemic/review]] — 과학-정책 번역을 위한 LLM 평가와 미세조정을 팬데믹 시기 정책-과학 공진화 분석으로 확장한다
+- 🔗 후속 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학-정책 연결 평가 모델을 LLM을 활용한 자동화된 분석으로 확장하여 더 효율적인 영향 추적이 가능하다.
+- 🔄 다른 접근: [[papers/1153_Classical_RAG_for_Semantic_Search__Quantum_Modules_for_Resea/review]] — 과학-정책 번역을 위한 LLM 파인튜닝과 달리 연구 평가를 위한 RAG 아키텍처 최적화에 중점을 둔 접근법을 제시한다.

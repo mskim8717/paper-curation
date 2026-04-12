@@ -84,6 +84,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sourati and Evans_2023_Accelerating scie
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1117_Human-Modeling_in_Sequential_Decision-Making_An_Analysis_thr/review]] — 순차적 의사결정에서의 인간 모델링 분석이 과학자 전문성을 AI에 통합하는 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성 팀이 더 혁신적인 과학을 생산한다는 발견을 인간 중심 AI 모델에 통합하여 팀 구성 최적화에 활용할 수 있다.
-- 🧪 응용 사례: [[papers/1117_Human-Modeling_in_Sequential_Decision-Making_An_Analysis_thr/review]] — 인간-인식형 AI 시스템의 순차적 의사결정 분석이 과학자 전문성을 AI에 통합하여 과학적 발견 예측을 개선하는 구체적 방법을 제시한다.
+- 🔗 후속 연구: [[papers/1117_Human-Modeling_in_Sequential_Decision-Making_An_Analysis_thr/review]] — 인간 중심 AI에서 과학 발견을 넘어 순차적 의사결정 전반으로 확장된 연구임
+- 🏛 기반 연구: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 과학적 발견에서 인간 다양성의 중요성이 인간-인식 AI의 이론적 근거가 됨
+- 🔄 다른 접근: [[papers/1113_Definition_and_Value_Reconstruction_of_Human_Creativity_in_t/review]] — 과학에서 인간의 역할을 AI 예측 향상과 창의성 재정의로 다르게 접근함
+- 🔄 다른 접근: [[papers/1113_Definition_and_Value_Reconstruction_of_Human_Creativity_in_t/review]] — AI 시대 인간 역할을 과학 발견 예측과 창의성 재정의로 다르게 접근함
+- 🔗 후속 연구: [[papers/1117_Human-Modeling_in_Sequential_Decision-Making_An_Analysis_thr/review]] — 인간-인식 AI를 과학 발견에서 순차적 의사결정 전반으로 확장한 이론적 분석임

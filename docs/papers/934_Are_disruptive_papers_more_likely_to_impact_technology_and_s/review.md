@@ -79,7 +79,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_Are disruptive papers m
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 논문의 파괴성 감소 트렌드와 파괴적 논문의 사회적 영향력 역설을 함께 보면 혁신의 복잡한 메커니즘을 이해할 수 있다.
-- 🏛 기반 연구: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 파괴적 논문의 인용 확산 패턴은 기술·사회 영향력과의 관계를 공간적으로 이해하는 기반을 제공한다.
-- 🏛 기반 연구: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 파괴성 감소에 대한 견고한 증거는 파괴적 논문의 사회적 영향 분석에 중요한 배경을 제공한다.
-- 🔗 후속 연구: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 파괴적 논문의 인용 확산 패턴은 혁신성과 영향력 확산의 공간적 메커니즘을 규명하는 데 중요하다.
+- 🏛 기반 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 논문과 특허의 파괴성 감소 경향이 파괴적 논문이 기술사회적 영향력에 미치는 역설적 효과를 이해하는 배경을 제공합니다.
+- 🔗 후속 연구: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 파괴성 지수(CD index)의 한계를 파괴적 인용 지표로 개선하는 것이 파괴성 지수의 인플레이션 문제 분석으로 확장됩니다.
+- ⚖️ 반론/비판: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 파괴성 감소에 대한 강력한 증거와 파괴적 논문의 기술사회적 영향력 한계라는 서로 다른 관점에서 파괴성을 분석합니다.
+- 🔗 후속 연구: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 인용 확산의 공간적-시간적 특성이 논문의 파괴적 특성과 기술사회적 영향력에 어떻게 연결되는지 확장 분석을 제공합니다.
+- 🧪 응용 사례: [[papers/927_A_Dynamic_Network_Measure_of_Technological_Change/review]] — 파괴적 논문이 기술과 사회에 미치는 영향을 CDt 지수로 측정할 수 있다

@@ -78,8 +78,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Furnas et al._2025_Partisan disparities 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 과학의 공적 사용과 공적 자금 지원 관계가 정당별 과학 투자 패턴 분석의 이론적 배경을 제공함
-- 🔗 후속 연구: [[papers/945_Coevolution_of_policy_and_science_during_the_pandemic/review]] — 팬데믹 시기 정책과 과학의 공진화와 정당별 과학 투자 패턴을 연결하여 정치적 맥락을 이해할 수 있음
-- 🧪 응용 사례: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 주제별 연구 자금과 성과 매핑을 통해 정당별 투자 우선순위의 실제 효과를 분석할 수 있음
-- 🔗 후속 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 공적 자금 배분의 정치적 편향을 분석하여 과학의 공공 활용 연구를 보완한다.
-- 🔗 후속 연구: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — NIH 그랜트 동료평가 효과성 연구는 미국 과학 펀딩의 정치적 편향 분석과 함께 펀딩 시스템의 편향성을 종합적으로 검토한다.
+- 🔄 다른 접근: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 정당별 과학 펀딩 격차와 펀딩 영향 시각화는 모두 과학 투자 정책을 서로 다른 관점에서 분석한다.
+- 🏛 기반 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 과학의 공공 활용과 펀딩에 대한 이론적 논의가 정당별 펀딩 분석의 정책적 중요성을 뒷받침한다.
+- 🔗 후속 연구: [[papers/945_Coevolution_of_policy_and_science_during_the_pandemic/review]] — 팬데믹 시기 정책과 과학의 공진화 사례가 정당별 과학 펀딩 격차의 실제적 영향을 보여준다.
+- 🔗 후속 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 과학 연구비의 공공 활용 분석을 미국 정치적 양극화가 과학 자금 배분에 미치는 영향까지 확장하여 분석했다.
+- 🧪 응용 사례: [[papers/1041_The_Rise_of_Large_Language_Models_and_the_Direction_and_Impa/review]] — LLM이 연구비 신청에 미치는 영향을 미국 과학 자금 배분의 정치적 양극화 맥락에서 분석할 수 있다.
+- 🧪 응용 사례: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 미국 과학 펀딩의 당파적 격차를 동료평가 패널의 선택 편향 분석에 적용할 수 있다
+- 🔄 다른 접근: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 펀딩의 다차원적 영향 분석과 정당별 펀딩 격차 분석은 과학 투자 정책을 다른 관점에서 평가한다.
+- 🔗 후속 연구: [[papers/1182_Governing_Science_through_Evaluation_A_Global_Heuristic_of_R/review]] — 미국 과학 펀딩의 정파적 격차 분석을 다국가 연구 평가 체계 비교로 확장하여 정치적 맥락이 과학 거버넌스에 미치는 영향을 탐구한다.

@@ -83,10 +83,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fortunato_2010_Community Detection in Gr
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 그래프 커뮤니티 검출 방법들에 대한 종합 리뷰는 대규모 네트워크에서 빠른 커뮤니티 검출 알고리즘 개발의 이론적 배경을 제공한다.
-- 🧪 응용 사례: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 커뮤니티 검출 기법은 커뮤니티 구조를 가진 네트워크의 Price-Pareto 성장 모델에 대한 실증적 분석 도구로 활용된다.
-- 🧪 응용 사례: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 그래프에서 커뮤니티 탐지 이론을 인용 네트워크의 구체적 모델링에 적용한다.
-- 🏛 기반 연구: [[papers/929_A_network_approach_to_topic_models/review]] — 그래프에서의 커뮤니티 탐지 이론이 텍스트 네트워크에서 토픽을 발견하는 비모수적 접근법의 수학적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/989_Modeling_Changing_Scientific_Concepts_with_Complex_Networks/review]] — 복잡 네트워크 이론을 바탕으로 플로지스톤과 산소 이론 경쟁에서 과학 개념 변화의 위상학적 특성을 모델링한다.
-- 🏛 기반 연구: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 대규모 네트워크의 빠른 커뮤니티 검출 알고리즘은 그래프 커뮤니티 검출 방법들에 대한 종합적 분석을 기반으로 개발되었다.
-- 🏛 기반 연구: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 그래프 내 공동체 탐지 이론을 바탕으로 링크 필터링 기반의 효율적인 과학 공동체 매핑 방법을 개발했다.
+- 🏛 기반 연구: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크의 구조 분석에 커뮤니티 탐지 방법론이 핵심적인 기반을 제공한다
+- 🧪 응용 사례: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 대규모 과학 커뮤니티 매핑에 그래프 커뮤니티 탐지 알고리즘을 직접 적용할 수 있다
+- 🔄 다른 접근: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 대규모 네트워크에서 커뮤니티를 빠르게 탐지하는 다른 알고리즘적 접근법을 제시한다
+- 🔄 다른 접근: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 네트워크 커뮤니티 탐지의 다양한 알고리즘적 접근법을 비교하여 각각의 장단점을 이해할 수 있다.
+- 🏛 기반 연구: [[papers/1213_The_evolution_of_international_scientific_collaboration_netw/review]] — 복잡 네트워크에서 커뮤니티 구조 탐지 방법이 과학 혁명 시기 협력 네트워크 분석의 기초가 된다

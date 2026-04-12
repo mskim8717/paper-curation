@@ -89,5 +89,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Švábenský et al._2026_Open Datasets i
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 머신러닝 연구의 재현성 향상을 위한 체크리스트와 학습분석 연구의 오픈 데이터셋 관리 체크리스트 간 방법론적 연관성을 보여준다.
-- 🔄 다른 접근: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 연구 자금과 출판물 연계 분석과 오픈 데이터셋 현황 분석이 모두 과학 연구의 투명성과 재현성 향상이라는 동일한 목표를 다른 각도에서 접근한다.
+- 🧪 응용 사례: [[papers/1023_SciSciNet_A_large-scale_open_data_lake_for_the_science_of_sc/review]] — 학습분석 분야의 공개 데이터셋 발굴 방법론을 과학의 과학 연구를 위한 대규모 오픈 데이터 레이크 구축에 적용할 수 있다.
+- 🏛 기반 연구: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 연구 자금과 연구 결과물 연결의 중요성을 학습분석 데이터셋 공개와 활용 맥락에서 이해할 수 있다.

@@ -13,7 +13,7 @@ tags:
   - "cat/AI-Assisted_Scientific_Discovery"
   - "sub/Trend_Forecasting_Techniques"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Emerging Trends in Cybersecurity Machine Learning as a Game-Changer in Next-Gene.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Razzaq and Shah_2026_Emerging Trends in Cybersecurity Machine Learning as a Game-Changer in Next-Generation Cybersecurit.pdf"
 ---
 
 # Emerging Trends in Cybersecurity: Machine Learning as a Game-Changer in Next-Generation Cybersecurity Applications
@@ -84,9 +84,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Emerging Trends in Cybersecurity Machine
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 사이버보안에서 머신러닝 응용을 다루기 전에 ML 응용 전반에 대한 과학계량학적 기초 조사가 필요합니다.
-- 🔗 후속 연구: [[papers/1209_Scientometric_Analysis_of_Data_Privacy_and_Cloud_Security_Re/review]] — 일반적인 사이버보안 머신러닝 트렌드를 데이터 프라이버시와 클라우드 보안이라는 구체적 영역으로 확장합니다.
-- 🔄 다른 접근: [[papers/1014_Risk_and_Artificial_Intelligence_Adoption_A_Scientometric_an/review]] — 사이버보안과 위험 및 AI 채택 모두 scientometric 분석을 통해 신기술의 영향과 동향을 체계적으로 파악하는 유사한 접근법을 사용한다.
-- 🧪 응용 사례: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 일반적 트렌드 예측 방법론을 사이버보안이라는 구체적 분야에 적용한 사례입니다.
-- 🔄 다른 접근: [[papers/1209_Scientometric_Analysis_of_Data_Privacy_and_Cloud_Security_Re/review]] — 사이버보안과 머신러닝의 관계를 데이터 프라이버시 관점에서 체계적으로 분석하는 보완적 접근법임
-- 🔗 후속 연구: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 심혈관 질환에서 머신러닝 응용과 사이버보안에서 머신러닝 활용을 비교하여 의료 AI의 보안 취약성을 분석할 수 있음
+- 🔗 후속 연구: [[papers/1014_Risk_and_Artificial_Intelligence_Adoption_A_Scientometric_an/review]] — AI 도입의 사이버보안 분야 적용이 위험과 AI 도입의 일반적 과학계량 분석을 확장함
+- 🔄 다른 접근: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 기계학습 응용 분야에서 사이버보안과 전반적 과학계량 조사의 다른 범위 접근법임
+- 🔄 다른 접근: [[papers/1180_Global_research_trends_on_depression-related_stigma_in_the_2/review]] — 특정 분야의 연구 동향 분석에서 사이버보안과 우울증 관련 낙인의 다른 주제 접근법임
+- 🔗 후속 연구: [[papers/1209_Scientometric_Analysis_of_Data_Privacy_and_Cloud_Security_Re/review]] — 사이버보안에서 머신러닝의 emerging trends가 데이터 프라이버시와 클라우드 보안 연구로 자연스럽게 확장된다.
+- 🏛 기반 연구: [[papers/1014_Risk_and_Artificial_Intelligence_Adoption_A_Scientometric_an/review]] — 사이버보안에서 기계학습의 게임체인징 역할이 AI 도입에서 위험 관리의 기술적 기반을 제공합니다.
+- 🏛 기반 연구: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 기계학습이 의료 분야에서 게임 체인저 역할을 한다는 관점의 심혈관질환 특화 실증 분석을 제공한다.
+- 🏛 기반 연구: [[papers/1141_Assistive_technology_for_developmental_conditions_A_scientom/review]] — 사이버보안에서 머신러닝의 게임체인징 역할 분석이 발달장애 지원 기술 발전의 기술적 맥락을 제공한다.

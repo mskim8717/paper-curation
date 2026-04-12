@@ -88,7 +88,8 @@ AI 도구가 과학 연구에 광범위하게 도입될 때, 생산성과 객관
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1077_Quantifying_large_language_model_usage_in_scientific_papers/review]] — 학술논문에서 LLM 사용량 정량화 방법을 활용하여 이해의 환상이 실제로 얼마나 확산되고 있는지 측정할 수 있다.
-- 🔗 후속 연구: [[papers/1057_Which_stylistic_features_fool_ChatGPT_research_evaluations/review]] — ChatGPT가 연구 평가에서 속기 쉬운 문체적 특성을 분석하여 AI 도구의 이해의 환상 메커니즘을 구체적으로 규명한다.
-- ⚖️ 반론/비판: [[papers/1157_Critical_Review_with_Scientometrics_Approach_on_the_Retrofit/review]] — LLM의 품질 검사 능력과 달리 AI가 과학적 이해에 미치는 환상과 한계를 지적합니다.
-- ⚖️ 반론/비판: [[papers/1216_Tour_guiding_technologies_a_bibliometric_analysis_mapping_tr/review]] — 투어 가이딩 기술의 이해 착각 문제를 AI 기술 도입 과정에서 발생할 수 있는 인식 오류로 분석할 필요가 있음
+- 🔄 다른 접근: [[papers/1058_Why_Most_Published_Research_Findings_Are_False/review]] — 과학 연구의 신뢰성 문제를 AI 도구와 연구 방법론의 다른 관점에서 접근함
+- 🔗 후속 연구: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 과학에서 편향성 문제가 AI 도구에 의한 이해의 환상으로 확장됨
+- 🔄 다른 접근: [[papers/1142_Beyond_Retractions_Forensic_Scientometrics_Techniques_to_Ide/review]] — 과학 연구의 질 평가에서 AI 환상과 법의학적 과학계량 기법의 대안적 접근법임
+- 🔗 후속 연구: [[papers/1067_After_science/review]] — AI가 과학에 미치는 부정적 영향에 대한 우려를 더욱 근본적인 차원에서 확장함
+- ⚖️ 반론/비판: [[papers/989_Modeling_Changing_Scientific_Concepts_with_Complex_Networks/review]] — 과학에서 인공지능의 이해 착각 문제와 복잡 네트워크 기반의 해석 가능한 개념 모델링이라는 상반된 접근법을 제시한다.

@@ -84,8 +84,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Milojević_2014_Principles of scientific
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 팀 규모 증가와 팀 형성 원리를 함께 분석하여 현대 과학의 협력적 지식 생산 메커니즘을 종합적으로 이해할 수 있음
-- 🔄 다른 접근: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 소규모 핵심팀과 대규모 확장팀의 서로 다른 역할이 팀 크기에 따른 혁신성 차이를 설명함
-- 🧪 응용 사례: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 연구팀 형성 원리가 교수 채용 네트워크의 위계와 불평등에 미치는 영향을 분석할 수 있음
-- 🧪 응용 사례: [[papers/946_Collective_Credit_Allocation_in_Science/review]] — 집단 신용 배분 방법론은 과학 연구팀 형성과 진화 원리를 실증적으로 분석하는 구체적 도구를 제공한다.
-- 🧪 응용 사례: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — 과학 연구팀 형성과 진화의 원리를 다룬 연구로 팀 과학 평가 지표의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 지식 생산에서 팀의 지배력 증가가 연구팀 형성과 진화 원리를 이해하는 배경을 제공한다.
+- 🔄 다른 접근: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 팀 크기에 따른 지식 생산 방식의 차이를 대규모 팀과 소규모 팀의 역할 분화로 설명한다.
+- 🔗 후속 연구: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — 팀 과학 원리를 협업 가이드포인트를 통한 실제 팀 과학 평가 지표로 발전시킨다.
+- 🧪 응용 사례: [[papers/1110_A_cross-disciplinary_research_framework_at_institution_level/review]] — 과학 연구팀 형성의 일반 원리를 제도적 차원에서 구현하는 구체적 사례로 IFISC 모델을 활용할 수 있다.
+- 🔗 후속 연구: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — 과학 연구팀 형성과 진화의 원리를 협업 지표를 통한 팀 성과 평가로 확장하여 종합적 관점을 제시합니다.

@@ -79,7 +79,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Way et al._2017_The misleading narrative
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 예술과 과학 경력에서 hot streak 패턴은 정형화된 생산성 궤적과 다른 개인차 중심 관점을 제공한다.
-- 🔗 후속 연구: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 초기 경력 좌절의 영향은 다양한 생산성 패턴이 나타나는 메커니즘을 설명하는 데 도움이 된다.
-- 🏛 기반 연구: [[papers/1030_The_Burden_of_Knowledge_and_the_Death_of_the_Renaissance_Man/review]] — 지식 부담의 증가는 표준적 생산성 궤적이 더 이상 적용되지 않는 구조적 변화를 설명한다.
-- 🏛 기반 연구: [[papers/1048_Unequal_effects_of_the_COVID-19_pandemic_on_scientists/review]] — 교수 생산성에 대한 잘못된 통념이 팬데믹 시기 불평등한 영향을 이해하는 배경 지식을 제공함
+- 🏛 기반 연구: [[papers/1000_Productivity_Prominence_and_the_Effects_of_Academic_Environm/review]] — 학술 환경이 연구 생산성에 미치는 영향이 개별 교수들의 다양한 생산성 궤적 패턴을 설명하는 기반을 제공합니다.
+- 🔄 다른 접근: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 교수 생산성의 다양한 패턴과 예술, 과학 경력에서 나타나는 hot streak 현상이라는 서로 다른 성과 패턴을 비교 분석할 수 있습니다.
+- 🔗 후속 연구: [[papers/1028_Tenure_and_research_trajectories/review]] — tenure 시스템이 교수들의 다양한 생산성 궤적 형성에 미치는 제도적 영향을 확장 분석합니다.
+- 🔗 후속 연구: [[papers/1000_Productivity_Prominence_and_the_Effects_of_Academic_Environm/review]] — 학술 환경이 생산성에 미치는 영향을 개별 연구자의 다양한 생산성 궤적 패턴으로 확장하여 분석합니다.
+- ⚖️ 반론/비판: [[papers/1028_Tenure_and_research_trajectories/review]] — 종신교수제의 다양한 영향을 보여주며 교수 생산성에 대한 단순한 서사가 잘못되었다는 관점을 뒷받침한다.

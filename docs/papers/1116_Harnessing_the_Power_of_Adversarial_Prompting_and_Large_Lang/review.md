@@ -89,6 +89,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ciucă et al._2023_Harnessing the Power 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1072_Embracing_Foundation_Models_for_Advancing_Scientific_Discove/review]] — 적대적 프롬프팅 기반 가설 생성과 지식그래프 기반 아이디어 사슬은 LLM을 활용한 과학 발견에서 서로 다른 접근 방식을 제공한다.
-- 🧪 응용 사례: [[papers/1017_Science_as_exploration_in_a_knowledge_landscape_tracing_hots/review]] — 지식 경관에서 과학 탐험을 추적하는 방법론을 천문학 분야 적대적 프롬프팅 연구에 적용하여 가설 생성의 탐험적 패턴을 분석할 수 있다.
-- 🔄 다른 접근: [[papers/1072_Embracing_Foundation_Models_for_Advancing_Scientific_Discove/review]] — 천문학에서 적대적 프롬프팅을 활용한 가설 생성과 지식 기반 아이디어 사슬 방법론은 서로 다른 LLM 활용 전략으로 상호 보완된다.
+- 🔄 다른 접근: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — 가설 생성에서 LLM 기반 프롬프팅과 생의학 네트워크 기반의 다른 접근법임
+- 🔗 후속 연구: [[papers/1072_Embracing_Foundation_Models_for_Advancing_Scientific_Discove/review]] — 기초 모델을 과학 발견에 활용하는 방법을 천문학 분야로 구체적으로 적용함
+- 🔄 다른 접근: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 연구 주제 예측에서 적대적 프롬프팅과 기계학습의 다른 방법론적 접근법임
+- 🔄 다른 접근: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — 가설 생성에서 생의학 네트워크 기반과 LLM 기반의 다른 접근법임

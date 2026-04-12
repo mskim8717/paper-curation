@@ -90,7 +90,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nakajima et al._2026_Systemic Gendered C
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학계에서 여성에 대한 체계적 과소평가를 컴퓨터과학 분야의 인용 불균형으로 구체화한 연구이다.
-- 🧪 응용 사례: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 여성 과학자의 학제간 혁신이 과소평가되는 현상을 컴퓨터과학 분야의 인용 패턴으로 확인한다.
-- 🏛 기반 연구: [[papers/940_Bibliometrics_Global_Gender_Disparities_in_Science/review]] — 과학계 전반의 성별 격차를 컴퓨터과학 분야의 구체적 인용 분석으로 심화한다.
-- 🧪 응용 사례: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학계에서 여성에 대한 체계적 과소평가를 컴퓨터과학 분야의 성별 인용 불균형으로 구체화한다.
+- 🔗 후속 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학계에서 여성에 대한 체계적 차별을 컴퓨터과학 분야의 성별 인용 불균형이라는 구체적 사례로 확장하여 분석했다.
+- 🧪 응용 사례: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 여성 과학자의 혁신적 기여가 과소평가되는 현상을 컴퓨터과학 분야의 성별 인용 불균형에서도 확인할 수 있다.
+- 🏛 기반 연구: [[papers/940_Bibliometrics_Global_Gender_Disparities_in_Science/review]] — 과학계 전반의 성별 격차 분석이 컴퓨터과학 특정 분야의 성별 인용 불균형 연구의 이론적 토대를 제공한다.
+- 🏛 기반 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학계에서 여성 기여의 체계적 과소인정이 컴퓨터과학 분야 성별 인용 불균형의 이론적 배경을 제공한다.
+- 🏛 기반 연구: [[papers/976_Intersectional_inequalities_in_science/review]] — 컴퓨터 과학 분야의 체계적 성별 인용 불균형 연구의 교차적 분석 확장 기반을 제공한다.
+- 🏛 기반 연구: [[papers/1172_Exploring_Strategies_for_Addressing_Weight_Stigma_An_Analysi/review]] — 체중 관리 연구에서 비낙인화 언어 사용의 성별 격차를 이해하기 위해 컴퓨터 과학 분야의 체계적 성별 인용 불균형 연구가 참고된다.
+- 🧪 응용 사례: [[papers/1218_Viewing_Citation_Analysis_Through_the_Lens_of_Citation_Justi/review]] — 컴퓨터과학의 체계적 성별 인용 불균형 문제에 인용 정의 원칙을 적용할 수 있다

@@ -14,7 +14,7 @@ tags:
   - "cat/Science_Policy_and_Research_Dynamics"
   - "sub/Research_Reproducibility_Crisis"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Correction Enabling transparent research evaluation A method for historical RCR .pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Haupt et al._2026_Correction Enabling transparent research evaluation A method for historical RCR retrieval using pu.pdf"
 ---
 
 # Correction: Enabling transparent research evaluation: A method for historical RCR retrieval using public NIH metadata
@@ -71,6 +71,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Correction Enabling transparent research
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1167_Enabling_transparent_research_evaluation_A_method_for_histor/review]] — 원본 논문의 투명한 연구 평가 방법론이 데이터 가용성 수정을 통해 재현가능성을 높임
-- 🧪 응용 사례: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 데이터 공개를 통한 투명성 증진이 재현성 위기 해결의 구체적 실천 방안을 제시함
-- 🔗 후속 연구: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 머신러닝 기반 권고안과 투명한 연구 평가 방법이 모두 과학 연구의 신뢰성 제고를 목표로 함
+- 🔄 다른 접근: [[papers/1153_Classical_RAG_for_Semantic_Search__Quantum_Modules_for_Resea/review]] — 투명한 연구 평가 방법과 RAG 기반 평가는 모두 연구 평가의 객관성과 투명성을 높이려는 기술적 접근이다.
+- 🏛 기반 연구: [[papers/1167_Enabling_transparent_research_evaluation_A_method_for_histor/review]] — 역사적 연구 평가 방법이 투명한 연구 평가 시스템 개발의 방법론적 기초를 제공한다.
+- 🔗 후속 연구: [[papers/959_Evaluating_the_Replicability_of_Social_Science_Experiments_i/review]] — 연구 평가의 투명성이 사회과학 실험의 재현성 문제 해결에 기여할 수 있는 방법을 제시한다.
+- 🏛 기반 연구: [[papers/1070_Challenges_in_High-Throughput_Inorganic_Materials_Prediction/review]] — 투명한 연구 평가 방법론이 자동화된 재료 발견의 신뢰성 검증에 필요함
+- 🔄 다른 접근: [[papers/959_Evaluating_the_Replicability_of_Social_Science_Experiments_i/review]] — 연구 평가의 투명성 확보가 사회과학 실험의 재현 가능성 문제 해결의 다른 접근법이 될 수 있다.
+- 🔄 다른 접근: [[papers/1153_Classical_RAG_for_Semantic_Search__Quantum_Modules_for_Resea/review]] — RAG 기반 연구 평가와 투명한 연구 평가는 모두 기존 연구 평가 시스템의 한계를 기술적으로 극복하려는 접근이다.

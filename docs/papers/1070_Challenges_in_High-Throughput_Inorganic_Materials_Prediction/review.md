@@ -78,6 +78,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Leeman et al._2024_Challenges in High-Th
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — Open Catalyst 2020 데이터셋이 제공하는 체계적인 촉매 연구 기반이 고처리량 무기재료 예측 시스템의 신뢰성 문제 해결에 필수적이다.
-- ⚖️ 반론/비판: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 연구 부정행위가 철회 논문의 대부분을 차지한다는 분석이 A-lab의 43개 신규 재료 발견 주장의 신뢰성 문제를 뒷받침한다.
-- 🔗 후속 연구: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 고처리량 무기재료 예측의 도전과제와 심혈관질환 머신러닝 응용의 한계를 비교하여 의료 AI의 발전 방향을 모색할 수 있다.
+- 🔄 다른 접근: [[papers/1082_The_Open_Catalyst_2022_OC22_Dataset_and_Challenges_for_Oxide/review]] — 고처리량 재료 발견에서 무기재료와 산화물 전기촉매의 다른 접근법과 데이터셋임
+- 🏛 기반 연구: [[papers/1156_Correction_Enabling_transparent_research_evaluation_A_method/review]] — 투명한 연구 평가 방법론이 자동화된 재료 발견의 신뢰성 검증에 필요함
+- 🔄 다른 접근: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 과학 연구의 신뢰성 문제를 재료과학과 출판 부정행위의 다른 영역에서 다룸
+- ⚖️ 반론/비판: [[papers/1082_The_Open_Catalyst_2022_OC22_Dataset_and_Challenges_for_Oxide/review]] — 고처리량 재료 예측의 성공 사례와 달리 자동화의 한계와 문제점을 지적함
+- 🔄 다른 접근: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — 고처리량 재료 예측에서 촉매 발견과 무기재료의 다른 접근법과 과제를 다룸

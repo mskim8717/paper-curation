@@ -91,11 +91,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hofstra et al._2020_The Diversity-Innova
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 소수집단의 높은 혁신율이 과소평가되는 현상을 여성 과학자의 학제간 혁신 사례로 구체화한다.
-- ⚖️ 반론/비판: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 인종적 다양성이 협업 영향력을 높인다는 발견과 소수집단 혁신이 과소평가된다는 역설을 대조한다.
-- 🏛 기반 연구: [[papers/976_Intersectional_inequalities_in_science/review]] — 과학에서 교차적 불평등의 광범위한 분석을 다양성-혁신 역설의 이론적 토대로 활용한다.
-- 🧪 응용 사례: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 과학계 소수집단의 혁신 과소평가 현상을 여성 과학자의 학제간 연구 사례로 구체화한다.
-- ⚖️ 반론/비판: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 소수집단의 혁신이 과소평가된다는 발견과 인종적 다양성이 협업 영향력을 높인다는 결과를 대조한다.
-- ⚖️ 반론/비판: [[papers/1110_A_cross-disciplinary_research_framework_at_institution_level/review]] — 과학에서 다양성-혁신 역설을 제시하여 학제간 협력이 항상 혁신으로 이어지지 않는 한계를 보여준다.
-- 🔄 다른 접근: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 다양성-혁신 역설과 성별 다양성의 긍정적 효과 간의 모순을 해결하는 대안적 관점을 제시함
-- 🧪 응용 사례: [[papers/1212_Shifts_in_Biotechnology_Research_Fronts_20002026_A_Bibliomet/review]] — 생명공학 연구의 다양성-혁신 패러독스가 지속가능성 중심 전환에 미치는 영향을 분석할 수 있음
+- 🔗 후속 연구: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 과학계 소수집단의 혁신 기여 과소평가 문제를 인종적 다양성이 과학 협업에 미치는 긍정적 영향으로 확장했다.
+- 🧪 응용 사례: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 다양성-혁신 역설을 성별 관점에서 구체화하여 여성 과학자의 학제간 혁신이 과소평가되는 현상을 분석했다.
+- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 소수집단의 혁신 과소평가 문제를 성별 다양성이 팀의 참신성과 영향력에 미치는 긍정적 효과로 확장했다.
+- 🧪 응용 사례: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 과학계 다양성-혁신 역설을 성별 관점에서 구체화하여 여성의 학제간 혁신이 과소평가되는 메커니즘을 분석했다.
+- 🏛 기반 연구: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 과학계 다양성이 혁신에 미치는 긍정적 효과를 인종적 다양성이 협업 영향력에 미치는 구체적 근거로 입증했다.
+- ⚖️ 반론/비판: [[papers/1110_A_cross-disciplinary_research_framework_at_institution_level/review]] — 다양성-혁신 역설이 제기하는 학제간 협력의 딜레마를 IFISC 모델이 어떻게 극복하는지 비교 분석할 수 있다.
+- ⚖️ 반론/비판: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 다양성-혁신 패러독스를 비전형적 조합의 긍정적 효과와 대비하여 분석한다
+- ⚖️ 반론/비판: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 다양성-혁신 역설과 성별 다양성의 긍정적 효과는 다양성이 과학에 미치는 복합적 영향을 보여준다.
+- ⚖️ 반론/비판: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 성별 다양성 최적화 프레임워크와 다양성-혁신 역설은 다양성 효과에 대한 상반된 관점을 제시한다.

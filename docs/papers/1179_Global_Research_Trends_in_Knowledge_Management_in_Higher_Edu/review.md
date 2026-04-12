@@ -14,7 +14,7 @@ tags:
   - "cat/Science_Policy_and_Research_Dynamics"
   - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Global Research Trends in Knowledge Management in Higher Education A Bibliometri.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Altawe et al._2026_Global Research Trends in Knowledge Management in Higher Education A Bibliometric Analysis.pdf"
 ---
 
 # Global Research Trends in Knowledge Management in Higher Education: A Bibliometric Analysis
@@ -89,10 +89,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Global Research Trends in Knowledge Mana
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1170_Evolution_of_Social_Work_Knowledge_Production_Over_35_Years/review]] — 둘 다 특정 분야의 장기적 지식 생산 변화를 추적하지만 고등교육과 사회복지라는 다른 영역을 다룹니다.
-- 🏛 기반 연구: [[papers/1041_The_Rise_of_Large_Language_Models_and_the_Direction_and_Impa/review]] — LLM의 등장이 고등교육 지식관리의 미래 방향성인 AI와 디지털 변환에 미치는 영향을 이해할 수 있습니다.
-- 🔄 다른 접근: [[papers/1206_Review_of_E-Commerce_Literature_Inferences_Trends_and_Recomm/review]] — e-commerce 문헌의 bibliometric 분석과 유사한 방법론을 사용하여 고등교육 지식관리 연구의 비교 관점을 제공한다.
-- 🔗 후속 연구: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 기계학습 응용의 scientometric 조사를 확장하여 고등교육 맥락에서 AI와 디지털 변환의 구체적 적용을 보여준다.
-- 🏛 기반 연구: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — LLM이 과학의 과학을 강화하는 방식을 분석하여 고등교육 지식관리 연구의 AI 활용 방향을 제시한다.
-- 🔄 다른 접근: [[papers/1170_Evolution_of_Social_Work_Knowledge_Production_Over_35_Years/review]] — 둘 다 특정 분야의 장기 연구 동향을 분석하지만 사회복지와 고등교육 지식관리라는 다른 영역을 다룹니다.
-- 🔄 다른 접근: [[papers/1206_Review_of_E-Commerce_Literature_Inferences_Trends_and_Recomm/review]] — 고등교육 지식관리의 bibliometric 분석과 유사한 방법론으로 e-commerce 연구 동향의 비교 관점을 제공한다.
+- 🔄 다른 접근: [[papers/1184_Hamemayu_Hayuning_Nagara_A_Bibliometric_Analysis_of_the_Poli/review]] — 고등교육 지식관리와 VAT 정책 연구 모두 조직 차원에서 지식과 정책의 조화를 추구하는 bibliometric 접근법을 사용한다.
+- 🔗 후속 연구: [[papers/1110_A_cross-disciplinary_research_framework_at_institution_level/review]] — 고등교육기관의 지식관리 연구가 기관 차원의 학제간 연구 프레임워크로 발전할 수 있다.
+- 🧪 응용 사례: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 과학 매핑 방법론을 고등교육 지식관리 연구에 구체적으로 적용하여 특정 분야의 연구 동향과 미래 방향을 제시한다.
+- 🔄 다른 접근: [[papers/1135_AI-Augmented_Mobile_and_Data-Driven_Decision_Making_in_Busin/review]] — AI와 디지털 변환을 다루는 두 bibliometric 연구로서 교육 분야와 비즈니스 분야에서 AI 연구 동향을 비교 분석할 수 있다.
+- 🔗 후속 연구: [[papers/1114_GoAI_Enhancing_AI_Students_Learning_Paths_and_Idea_Generatio/review]] — AI 시대 학생 학습 경로 향상 연구를 고등교육기관의 지식관리 맥락으로 확장하여 교육혁신의 제도적 접근을 탐구한다.

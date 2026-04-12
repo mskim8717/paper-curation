@@ -92,7 +92,11 @@ Paper Circle는 학술 문헌 발견과 분석을 위한 다중 에이전트 LLM
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — 단일 도메인 가설 생성을 넘어서 다중 에이전트로 범용 학술 발견과 분석을 자동화한 확장된 시스템입니다.
-- 🔄 다른 접근: [[papers/1162_DREAM_Deep_Research_Evaluation_with_Agentic_Metrics/review]] — 둘 다 AI 기반 연구 평가 시스템이지만 발견 중심과 평가 중심이라는 다른 목적을 가집니다.
-- 🔄 다른 접근: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 둘 다 LLM 기반 학술 분석 시스템이지만 지식 그래프 생성과 다중 에이전트 접근법이라는 다른 방식을 사용합니다.
-- 🔗 후속 연구: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — Paper Circle의 다중 에이전트 연구 발견 시스템이 MOLIERE의 가설 생성 기능을 확장하여 더 포괄적인 과학 발견 지원을 제공한다.
+- 🧪 응용 사례: [[papers/1015_S2ORC_The_Semantic_Scholar_Open_Research_Corpus/review]] — S2ORC 같은 대규모 학술 코퍼스를 Paper Circle의 다중 에이전트 시스템이 효과적으로 활용할 수 있다.
+- 🔄 다른 접근: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 둘 다 LLM과 지식 그래프로 과학 연구를 분석하지만 Paper Circle은 다중 에이전트 파이프라인을 특징으로 한다.
+- 🏛 기반 연구: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — MOLIERE의 자동 생물의학 가설 생성 시스템이 Paper Circle의 다중 에이전트 연구 발견 접근법의 선행 모델이다.
+- 🧪 응용 사례: [[papers/1015_S2ORC_The_Semantic_Scholar_Open_Research_Corpus/review]] — Paper Circle의 다중 에이전트 시스템이 S2ORC 같은 대규모 학술 코퍼스를 활용하여 논문 발견과 분석을 자동화한다.
+- 🔄 다른 접근: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — AI 기반 연구 도구로서 SciSciGPT와 유사하게 다중 에이전트를 활용한 연구 발견 시스템인 Paper Circle을 제안한다.
+- 🔄 다른 접근: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 둘 다 LLM과 지식 그래프를 활용하여 과학 연구를 분석하지만 Paper Circle은 다중 에이전트 접근법을 사용한다.
+- 🔗 후속 연구: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 과학 커뮤니티 매핑을 다중 에이전트 연구 발견 시스템과 결합하여 더 동적이고 지능적인 연구 네트워크 분석을 구현할 수 있다.
+- 🔗 후속 연구: [[papers/1153_Classical_RAG_for_Semantic_Search__Quantum_Modules_for_Resea/review]] — 다중 에이전트 연구 발견 시스템에 양자 모듈을 통합하여 더 정교한 연구 평가가 가능하다.

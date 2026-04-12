@@ -88,13 +88,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liang et al._2025_Quantifying large lang
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — AI 가속화된 글쓰기의 문제점 지적이 LLM 사용량 정량화 연구에서 발견한 급격한 증가 추세의 부정적 측면을 구체화한다.
-- 🏛 기반 연구: [[papers/1041_The_Rise_of_Large_Language_Models_and_the_Direction_and_Impa/review]] — LLM의 등장과 과학에 미치는 방향성 및 영향 분석이 학술논문에서 LLM 사용량 정량화의 이론적 배경을 제공한다.
-- 🔗 후속 연구: [[papers/1001_Public_Profile_Matters_A_Scalable_Integrated_Approach_to_Rec/review]] — LLM 사용량 정량화 방법론을 적용하여 AI 기반 인용 추천 시스템의 실제 학술 커뮤니티 영향도를 측정할 수 있다.
-- 🏛 기반 연구: [[papers/1021_Scientific_production_in_the_era_of_large_language_models/review]] — 과학 논문에서 LLM 사용을 정량화하는 방법론적 기초를 제공한다.
-- 🧪 응용 사례: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — 과학 논문에서 대규모언어모델 사용량 정량화 연구를 LLM 기반 과학계량학 도구의 실제 활용도 측정에 적용할 수 있다.
-- 🧪 응용 사례: [[papers/1068_Artificial_intelligence_and_illusions_of_understanding_in_sc/review]] — 학술논문에서 LLM 사용량 정량화 방법을 활용하여 이해의 환상이 실제로 얼마나 확산되고 있는지 측정할 수 있다.
-- 🔄 다른 접근: [[papers/1078_Quantifying_the_use_and_potential_benefits_of_artificial_int/review]] — LLM의 과학 논문 사용을 정량화하는 다른 접근법으로 AI 사용 측정의 보완적 관점을 제공한다.
-- 🔗 후속 연구: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — LLM이 연구 새로움에 미치는 영향 분석은 과학 논문에서 대형 언어모델 사용량 정량화 연구의 효과적 후속 연구이다.
-- 🏛 기반 연구: [[papers/1157_Critical_Review_with_Scientometrics_Approach_on_the_Retrofit/review]] — 과학 논문에서 LLM 사용 현황을 정량화한 연구가 LLM 기반 품질 검사 시스템의 필요성을 뒷받침합니다.
-- 🔗 후속 연구: [[papers/1196_Media_and_Digital_Marketing_Bibliomatrix_Analysis_using_R_Fu/review]] — 디지털 마케팅 연구에서 AI와 LLM 활용 현황을 정량적으로 분석하여 연구 방법론의 변화를 추적할 수 있음
+- 🔗 후속 연구: [[papers/1021_Scientific_production_in_the_era_of_large_language_models/review]] — LLM 시대 과학 출판 현황을 정량적으로 측정하여 과학 생산성 변화를 구체화함
+- 🔄 다른 접근: [[papers/1057_Which_stylistic_features_fool_ChatGPT_research_evaluations/review]] — LLM 사용 탐지에서 단어 빈도 변화와 문체적 특징의 다른 접근법임
+- 🏛 기반 연구: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — LLM과 책임감 있는 연구 평가의 이론적 틀이 LLM 사용 정량화의 기반이 됨
+- 🔗 후속 연구: [[papers/1001_Public_Profile_Matters_A_Scalable_Integrated_Approach_to_Rec/review]] — 인용 추천 시스템에 LLM 사용 패턴을 통합하면 더 정확한 추천이 가능할 것임
+- 🔗 후속 연구: [[papers/1021_Scientific_production_in_the_era_of_large_language_models/review]] — LLM이 과학 논문 생산성에 미치는 영향을 정량적으로 측정하여 AI의 학술 활용 규모를 구체화했다.
+- 🔗 후속 연구: [[papers/1078_Quantifying_the_use_and_potential_benefits_of_artificial_int/review]] — 과학 논문에서 LLM 사용을 정량화하는 보완적 접근법으로 AI 영향 측정의 다각적 관점을 제공한다.
+- 🏛 기반 연구: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — 과학 논문에서 대규모 언어 모델 사용량 정량화가 연구 새로움 감소 분석의 기초가 된다

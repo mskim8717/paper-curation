@@ -86,9 +86,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lee and Shim_2026_An empirical analysis 
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 일반적으로 관찰되는 OA 인용 우위 효과가 특정 학문 분야에서는 조건부로만 나타난다는 상반된 결과를 보여준다.
-- 🏛 기반 연구: [[papers/937_Authorship_titles_and_open_access_as_drivers_of_citation_per/review]] — 저자, 제목, 오픈액세스가 인용 성과에 미치는 복합적 영향에 대한 이론적 기반을 제공한다.
-- ⚖️ 반론/비판: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 오픈 액세스의 인용 우위는 저널 명성 기반 편향과 반대되는 메커니즘을 보여준다.
-- ⚖️ 반론/비판: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 일반적인 OA 인용 우위 효과와 도서관정보학 분야에서 조건부로만 나타나는 OA 효과 간의 차이점을 비교할 수 있다.
-- 🧪 응용 사례: [[papers/1123_The_misalignment_of_incentives_in_academic_publishing_and_im/review]] — 오픈 액세스의 인용 이점을 실증적으로 분석하여 대안적 출판 모델의 효과를 구체적으로 보여준다.
-- 🏛 기반 연구: [[papers/1140_Assessing_the_impact_of_Open_Research_Information_Infrastruc/review]] — 오픈액세스의 인용 우위 효과에 대한 기본적인 실증적 근거를 제공합니다.
+- ⚖️ 반론/비판: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 전체 학문분야에서 발견된 OA 인용 우위 효과가 도서관정보학에서는 조건부로만 나타나는 한계를 보여준다.
+- 🏛 기반 연구: [[papers/1226_Evaluating_Open_Access_Advantages_for_Citations_and_Altmetri/review]] — 특정 학문분야에서의 OA 효과 분석이 전체적인 OA 우위 연구의 기반이 되는 세부 사례를 제공한다.
+- 🔄 다른 접근: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 도서관정보학이라는 특정 학문 분야에서 OA 인용 우위 효과의 조건부 특성을 심층적으로 검증한다.
+- 🏛 기반 연구: [[papers/937_Authorship_titles_and_open_access_as_drivers_of_citation_per/review]] — Open Access 인용 이점의 실증적 증거가 정형외과 논문의 OA 출판 효과 분석에 기반을 제공한다
+- 🏛 기반 연구: [[papers/1206_Review_of_E-Commerce_Literature_Inferences_Trends_and_Recomm/review]] — e-commerce 문헌의 오픈 액세스 현황을 분석하기 위해 오픈 액세스 인용 이점의 실증 분석이 기반이 된다.
+- 🧪 응용 사례: [[papers/1224_Declarative_commitments_and_editorial_open_access_practices/review]] — Open Access 인용 이점의 실증 분석을 러시아 편집자들의 정책 결정에 적용할 수 있다
+- ⚖️ 반론/비판: [[papers/1226_Evaluating_Open_Access_Advantages_for_Citations_and_Altmetri/review]] — 도서관정보학에서 발견한 조건부 OA 효과와 대조하여 전체 학문 분야의 다양성을 보여준다.

@@ -85,11 +85,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lee and Yoon_2026_The selective use of p
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 과학지식의 정책 활용을 물리학이라는 특정 분야에 초점을 맞춰 분석하는 접근법이다.
-- 🔗 후속 연구: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 학제간 연구가 학문적 자금 지원을 받는 현상을 물리학 지식의 선택적 정책 활용으로 확장한다.
-- 🧪 응용 사례: [[papers/1016_Sci2Pol_Evaluating_and_Fine-tuning_LLMs_on_Scientific-to-Pol/review]] — 과학적 지식을 정책으로 번역하는 과정을 LLM을 활용한 자동화 평가로 발전시킨다.
-- 🧪 응용 사례: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 과학지식의 정책 활용 패턴을 분석하는 유사한 접근법으로 물리학 분야에 특화된 연구이다.
-- 🔄 다른 접근: [[papers/1006_Real-World_Evidence_in_the_First_Round_of_the_US_Inflation_R/review]] — 정책 결정에서 과학 지식이 선택적으로 활용되는 현상을 다른 분야에서 분석한 유사한 접근법을 제시한다.
-- 🧪 응용 사례: [[papers/1016_Sci2Pol_Evaluating_and_Fine-tuning_LLMs_on_Scientific-to-Pol/review]] — 정책에서의 과학 지식 선택적 활용 패턴을 분석한 연구로, Sci2Pol의 과학-정책 변환 품질 평가에 중요한 통찰을 제공한다.
-- 🧪 응용 사례: [[papers/942_Bridging_the_gap_between_science_and_society_Mapping_librari/review]] — 정책에서 물리학 지식의 선택적 활용은 도서관이 과학 지식을 사회적으로 중개할 때 고려해야 할 구체적 사례를 제공한다.
-- 🔄 다른 접근: [[papers/945_Coevolution_of_policy_and_science_during_the_pandemic/review]] — 팬데믹 정책-과학 상호작용과 정책에서 물리학 지식의 선별적 활용은 모두 과학과 정책 간 지식 전달 과정을 분석한다.
+- 🧪 응용 사례: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 공적 자금으로 지원된 과학 연구의 공공 활용을 물리학 지식이 정책에 선택적으로 활용되는 구체적 사례로 분석했다.
+- 🔗 후속 연구: [[papers/1016_Sci2Pol_Evaluating_and_Fine-tuning_LLMs_on_Scientific-to-Pol/review]] — 과학 지식의 정책 활용을 AI를 통한 과학-정책 번역 자동화라는 기술적 해결 방안으로 확장했다.
+- 🏛 기반 연구: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 온라인 과학 커뮤니케이션에서 정보 경로 분석이 물리학 지식의 정책 진입 메커니즘 이해의 기초를 제공한다.
+- 🧪 응용 사례: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 공적 자금으로 지원된 물리학 연구가 정책에 선택적으로 활용되는 메커니즘을 구체적으로 분석한 사례 연구다.
+- 🔄 다른 접근: [[papers/1016_Sci2Pol_Evaluating_and_Fine-tuning_LLMs_on_Scientific-to-Pol/review]] — 과학 지식의 정책적 활용에서 선택적 사용 패턴을 분석한 다른 접근법임
+- 🧪 응용 사례: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 미중 과학협력의 발산이 물리학 지식의 정책적 선택적 활용에서 어떻게 나타나는지 구체적 사례를 제공합니다.
+- 🔄 다른 접근: [[papers/945_Coevolution_of_policy_and_science_during_the_pandemic/review]] — 정책에서 물리학 지식의 선별적 사용을 통해 과학-정책 상호작용의 다른 측면을 분석한다

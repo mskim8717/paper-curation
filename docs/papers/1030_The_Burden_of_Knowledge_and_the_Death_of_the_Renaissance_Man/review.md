@@ -82,9 +82,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jones_2009_The Burden of Knowledge and t
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 지식 부담 증가로 인한 팀워크 필요성을 팀 기반 지식 생산 지배라는 실증적 현상으로 뒷받침한다.
-- 🔗 후속 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 지식 부담으로 인한 전문화를 대규모 팀의 개발과 소규모 팀의 파괴적 혁신으로 발전시킨다.
-- 🔄 다른 접근: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 지식 부담 관점에서 비전형적 조합이 과학적 영향력에 미치는 효과를 다르게 해석한다.
-- 🧪 응용 사례: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 지식 부담 증가로 인한 팀워크 필요성이라는 이론을 실제 지식 생산에서 팀 지배 현상으로 입증한다.
-- 🏛 기반 연구: [[papers/1037_The_Misleading_Narrative_of_the_Canonical_Faculty_Productivi/review]] — 지식 부담의 증가는 표준적 생산성 궤적이 더 이상 적용되지 않는 구조적 변화를 설명한다.
-- 🏛 기반 연구: [[papers/968_Growth_Rates_of_Modern_Science_Bibliometric_Analysis_Based_o/review]] — 과학 지식의 급속한 성장이 개별 연구자의 지식 부담 증가와 어떻게 연결되는지에 대한 역사적 맥락을 제공한다.
+- 🧪 응용 사례: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 지식 부담 증가로 인한 전문화와 팀 작업 증가 현상이 실제로 지식 생산에서 팀 기반 연구의 우세로 나타났다.
+- 🔗 후속 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 지식 부담으로 인한 팀 연구 증가를 대형 팀과 소형 팀이 과학 발전에 미치는 차별적 영향으로 확장하여 분석했다.
+- ⚖️ 반론/비판: [[papers/1072_Embracing_Foundation_Models_for_Advancing_Scientific_Discove/review]] — 지식 부담 문제를 AI 기반 파운데이션 모델로 해결하여 과학 발견을 가속화하려는 대안적 접근법이다.
+- 🏛 기반 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 지식 축적으로 인한 전문화와 팀 작업 증가 이론이 실제 지식 생산에서 팀 기반 연구 우세의 근거를 제공한다.
+- 🏛 기반 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 지식 부담의 증가가 혁신성 감소의 근본 원인 중 하나임을 이론적으로 뒷받침한다.

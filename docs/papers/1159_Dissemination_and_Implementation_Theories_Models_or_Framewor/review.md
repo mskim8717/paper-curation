@@ -16,7 +16,7 @@ tags:
   - "cat/Science_Policy_and_Research_Dynamics"
   - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dissemination and Implementation Theories, Models, or Frameworks Utilized in Int.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Barth et al._2026_Dissemination and Implementation Theories, Models, or Frameworks Utilized in International Aging Res.pdf"
 ---
 
 # Dissemination and Implementation Theories, Models, or Frameworks Utilized in International Aging Research: A Citation Analysis
@@ -92,8 +92,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dissemination and Implementation Theorie
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 성별 불평등 분석을 노인 연구 분야의 이론 적용 격차 분석으로 확장한 포괄적 접근입니다.
-- 🏛 기반 연구: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 머신러닝 연구에서 합의 기반 권고사항이 D&I 이론의 의미 있는 적용을 위한 방법론적 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/1147_Bibliometric_Analysis_on_the_Research_Trends_and_Collaborati/review]] — 연구 동향과 협력 패턴을 bibliometric으로 분석하는 다른 사례로 D&I 이론 적용 연구의 방법론적 참고점을 제공한다.
-- 🔗 후속 연구: [[papers/1170_Evolution_of_Social_Work_Knowledge_Production_Over_35_Years/review]] — 사회복지 지식 생산의 35년 진화를 분석하여 노인 연구에서 D&I 프레임워크 사용의 학문적 맥락을 보여준다.
-- 🏛 기반 연구: [[papers/972_Identifying_interdisciplinary_emergence_in_the_science_of_sc/review]] — 과학의 과학 분야에서 학제간 출현을 식별하는 방법론을 제시하여 D&I 연구의 학제간 특성을 이해하는 기반을 제공한다.
+- 🔗 후속 연구: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — D&I 이론의 의미 있는 적용 부족 문제가 협력적 가이드포스트를 통한 팀 과학 메트릭 재고찰로 해결될 수 있다.
+- 🏛 기반 연구: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 노인 연구에서 D&I 프레임워크의 재현성 문제를 이해하기 위해 심리학 과학의 재현성 추정 연구가 기반이 된다.
+- 🔄 다른 접근: [[papers/1170_Evolution_of_Social_Work_Knowledge_Production_Over_35_Years/review]] — 사회복지 지식 생산 35년 진화 분석과 노인 연구의 D&I 프레임워크 사용 현황을 비교하여 서로 다른 분야의 이론 적용 패턴을 탐구할 수 있다.
+- 🏛 기반 연구: [[papers/944_Co-Citation_Analysis_Bibliographic_Coupling_and_Direct_Citat/review]] — 공인용 분석과 서지결합의 기본 개념을 제시하여 D&I 이론의 인용 네트워크 분석을 위한 방법론적 토대를 마련한다.
+- 🧪 응용 사례: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 과학 매핑 기법을 활용하여 D&I 이론들의 적용 패턴과 의미 있는 활용 사례를 시각적으로 분석한다.

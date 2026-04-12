@@ -82,6 +82,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Migliorini et al._2026_Authorship, title
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 정형외과 논문의 저자 수와 인용 성과 관계 분석은 여성이 과학에서 적게 인정받는다는 연구와 대조적 관점을 제시한다.
-- 🔗 후속 연구: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 개방접근이 인용 성과에 미치는 영향 연구는 디지털 시대 학술출판 과점 현상 분석을 실증적으로 확장한다.
-- 🏛 기반 연구: [[papers/932_An_empirical_analysis_of_open_access_citation_advantages_in/review]] — 저자, 제목, 오픈액세스가 인용 성과에 미치는 복합적 영향에 대한 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/1009_Relative_Citation_Ratio_A_New_Metric_That_Uses_Citation_Rate/review]] — 상대 인용 비율이라는 새로운 메트릭을 통해 정형외과 논문의 인용 성과를 다른 방식으로 측정한다
+- 🧪 응용 사례: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 천문학 저널 인용 편향 분석을 정형외과 분야의 저자 수와 Open Access 효과 연구에 적용할 수 있다
+- 🏛 기반 연구: [[papers/932_An_empirical_analysis_of_open_access_citation_advantages_in/review]] — Open Access 인용 이점의 실증적 증거가 정형외과 논문의 OA 출판 효과 분석에 기반을 제공한다
+- 🏛 기반 연구: [[papers/1196_Media_and_Digital_Marketing_Bibliomatrix_Analysis_using_R_Fu/review]] — 디지털마케팅 연구의 인용 분석에서 저자명과 제목이 인용 성과에 미치는 영향을 이해해야 한다.

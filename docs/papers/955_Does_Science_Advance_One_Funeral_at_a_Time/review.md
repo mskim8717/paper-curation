@@ -86,7 +86,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Azoulay et al._2019_Does Science Advance
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1121_Superstar_Extinctionsupsup/review]] — 저명 과학자 사망이 분야 활성화에 미치는 영향과 슈퍼스타 소멸 연구는 모두 과학계 엘리트의 존재가 분야 발전에 미치는 영향을 분석한다.
-- 🔗 후속 연구: [[papers/1028_Tenure_and_research_trajectories/review]] — 저명 과학자 사망의 분야 영향 연구는 테뉴어가 연구 궤적에 미치는 영향과 함께 과학자 경력의 구조적 요인들을 종합적으로 이해하게 한다.
-- 🔗 후속 연구: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 과학 발전과 세대 교체의 관계는 과학상 네트워크가 예측하는 경계 확장 과학자들의 등장 패턴과 연결된다.
-- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 조기 경력 좌절의 장기 영향과 저명 과학자 사망의 분야 영향은 모두 과학자 경력의 중요한 전환점이 미치는 파급효과를 분석한다.
+- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 과학자의 조기사망이 분야에 미치는 긍정적 효과를 초기 경력 좌절의 부정적 영향과 대비하여 분석한다
+- 🔗 후속 연구: [[papers/1121_Superstar_Extinctionsupsup/review]] — 슈퍼스타 과학자의 소멸이 과학 진보에 미치는 영향을 조기사망 효과로 확장하여 분석한다
+- 🧪 응용 사례: [[papers/1028_Tenure_and_research_trajectories/review]] — 종신 재직권이 연구 궤적에 미치는 영향을 저명 과학자의 사망 후 변화와 비교 분석할 수 있다
+- 🔗 후속 연구: [[papers/1005_Quantifying_the_dynamics_of_failure_across_science_startups/review]] — 과학계에서의 실패 역학을 세대 교체와 패러다임 변화 맥락에서 확장하여 이해할 수 있는 관점을 제공한다.

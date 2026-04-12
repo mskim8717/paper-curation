@@ -73,8 +73,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/DrugPatentWatch_2025_A Strategic Guide t
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1006_Real-World_Evidence_in_the_First_Round_of_the_US_Inflation_R/review]] — 제약 분야의 실제 사례를 통해 특허 분석과 임상 데이터를 결합한 백색공간 분석의 실용성을 보여준다.
-- 🏛 기반 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 연구 펀딩의 광범위한 영향을 시각화한 연구로 제약 R&D 투자 전략의 맥락을 제공한다.
-- 🔗 후속 연구: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 의미론적 네트워크를 통한 연구 동향 예측 방법론을 제시하여 백색공간 분석의 예측력을 보완한다.
-- 🧪 응용 사례: [[papers/1109_A_comprehensive_large-scale_biomedical_knowledge_graph_for_A/review]] — 제약 분야 화이트 스페이스 분석을 위한 전략적 가이드가 iKraph의 약물 재위치 지정 기능을 실제 제약 R&D에 활용하는 방법을 제시한다.
-- 🧪 응용 사례: [[papers/1147_Bibliometric_Analysis_on_the_Research_Trends_and_Collaborati/review]] — 일반적인 기업 분석 방법론을 중소기업 파산이라는 특정 영역에 적용한 사례입니다.
+- 🔄 다른 접근: [[papers/1005_Quantifying_the_dynamics_of_failure_across_science_startups/review]] — 과학과 스타트업 실패 역학의 정량화 접근법을 제약 R&D의 백색공간 분석에 적용하여 혁신 기회 탐지 방법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 기초 과학 펀딩의 광범위한 영향을 시각화하는 방법론을 제약 R&D의 특허-임상 데이터 통합 분석으로 확장한다.
+- 🏛 기반 연구: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 과학상 네트워크가 경계 돌파를 예측하는 원리를 제약 분야의 미충족 수요 발굴에 응용할 수 있는 이론적 토대를 제공한다.
+- 🧪 응용 사례: [[papers/1109_A_comprehensive_large-scale_biomedical_knowledge_graph_for_A/review]] — 생의학 지식그래프의 약물 재위치 지정이 제약 분야 화이트 스페이스 분석의 구체적 적용임
+- 🧪 응용 사례: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 학제간 연구의 그랜트 전략을 제약업계의 화이트스페이스 분석에 적용하여 연구개발 투자 최적화 방안을 모색할 수 있다.
+- 🏛 기반 연구: [[papers/1147_Bibliometric_Analysis_on_the_Research_Trends_and_Collaborati/review]] — 제약 산업의 화이트 스페이스 분석 전략적 가이드가 MSME 파산 예측 연구의 미개척 영역 식별에 방법론적 기반을 제공한다.

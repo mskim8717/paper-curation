@@ -89,7 +89,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rao et al._2024_Hierarchical Classificat
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 의미론적 네트워크 기반 연구자 위치 규명과 딥러닝 기반 계층적 분류가 상호 보완적인 학문 지형 매핑을 제공한다.
-- 🔗 후속 연구: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 지식 그래프 매핑 방법론을 확장하여 더 정밀한 연구 분야 분류 시스템을 구축할 수 있다.
-- 🏛 기반 연구: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — 연구 분야 지식 체계화의 기존 서베이를 바탕으로 Microsoft Academic Graph 기반 계층적 분류 시스템을 발전시켰다.
-- 🔄 다른 접근: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 딥러닝 기반 계층적 분류와 의미론적 네트워크 기반 연구자 위치 규명이 학문 지형 매핑에서 서로 다른 접근법을 제공한다.
+- 🔄 다른 접근: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — 연구 분야 분류를 위한 딥러닝 기반 접근법과 전통적 지식 조직 시스템의 차이점과 장단점을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 계층적 분야 분류 시스템을 기반으로 개별 연구자의 학문적 위치를 더 정밀하게 매핑할 수 있다.
+- 🏛 기반 연구: [[papers/1015_S2ORC_The_Semantic_Scholar_Open_Research_Corpus/review]] — 대규모 학술 말뭉치 구축과 처리를 위한 핵심 인프라와 방법론적 토대를 제공한다.
+- 🏛 기반 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 계층적 분야 분류 시스템을 활용하여 연구자의 학문적 위치 매핑을 더욱 정밀하게 수행할 수 있다.

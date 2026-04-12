@@ -86,14 +86,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Krenn and Zeilinger_2020_Predicting rese
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 둘 다 기계학습으로 연구 트렌드를 예측하지만 의미론적 네트워크와 일반적 머신러닝이라는 다른 접근법을 사용합니다.
-- 🧪 응용 사례: [[papers/1166_Emerging_Trends_in_Cybersecurity_Machine_Learning_as_a_Game-/review]] — 일반적 트렌드 예측 방법론을 사이버보안이라는 구체적 분야에 적용한 사례입니다.
-- 🔄 다른 접근: [[papers/1014_Risk_and_Artificial_Intelligence_Adoption_A_Scientometric_an/review]] — 의미론적 신경망을 통한 연구 트렌드 예측은 AI 도입 연구 진화의 다른 분석 방법을 제시한다.
-- 🔗 후속 연구: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 의미론적 네트워크를 통한 연구 동향 예측 방법론을 제시하여 백색공간 분석의 예측력을 보완한다.
-- 🔗 후속 연구: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 의미론적 네트워크 기반 연구 동향 예측을 인용 네트워크의 구조적 동태 예측으로 확장하여 다차원적 돌파구 예측을 가능하게 한다.
-- 🧪 응용 사례: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 의미론적 네트워크와 신경망을 활용하여 잠자는 미녀 현상의 주제적 특성을 예측할 수 있다.
-- 🔄 다른 접근: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 진화하는 지식 그래프와 의미 및 신경망 네트워크 접근법을 비교하여 연구 동향 예측의 정확성을 향상시킬 수 있음
-- 🔄 다른 접근: [[papers/972_Identifying_interdisciplinary_emergence_in_the_science_of_sc/review]] — 연구 동향 예측에 BERTopic과 네트워크 분석을 활용하는 방법론과 의미 신경망 접근법 간의 비교 분석이 가능하다.
-- 🏛 기반 연구: [[papers/1140_Assessing_the_impact_of_Open_Research_Information_Infrastruc/review]] — 연구 인프라의 영향력 평가에 NLP 기반 의미 네트워크 분석 방법론의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1212_Shifts_in_Biotechnology_Research_Fronts_20002026_A_Bibliomet/review]] — 의미론적 네트워크를 통한 연구 동향 예측 방법론을 생명공학 분야의 지속가능성 지향적 전환 예측에 적용한 사례를 제시한다.
-- 🧪 응용 사례: [[papers/1175_Figures_as_Interfaces_Toward_LLM-Native_Artifacts_for_Scient/review]] — 의미적 네트워크 기반 연구 트렌드 예측 방법을 인터랙티브 과학 도형의 발견 인터페이스 설계에 적용할 수 있다.
+- 🔄 다른 접근: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 둘 다 머신러닝을 활용한 연구 트렌드 예측이지만 1076은 물리학, 962는 고영향 토픽 예측에 특화되어 있다.
+- 🔗 후속 연구: [[papers/963_Forecasting_the_future_of_artificial_intelligence_with_machi/review]] — AI 분야의 머신러닝 기반 예측 연구가 양자물리학 트렌드 예측 방법론을 AI 도메인으로 확장 적용한다.
+- 🏛 기반 연구: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 구조적 역학 기반 과학적 돌파구 예측 방법론이 신경망 기반 트렌드 예측의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/1055_When_text_mining_meets_science_mapping_in_the_bibliometric_a/review]] — 서지학적 분석에서 텍스트 마이닝과 과학 지도화의 결합을 의미적, 신경망 네트워크 기반 연구 동향 예측으로 확장합니다.
+- 🔗 후속 연구: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 의미론적 신경망을 활용한 연구 동향 예측과 시간변화 임베딩을 결합하여 과학 발전의 미래 방향을 예측할 수 있다.
+- 🔄 다른 접근: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 진화하는 지식그래프와 머신러닝을 통한 고임팩트 연구 주제 예측과 의미-신경망 네트워크 기반 연구 동향 예측이 상호 보완적 접근을 제시합니다.
+- 🧪 응용 사례: [[papers/972_Identifying_interdisciplinary_emergence_in_the_science_of_sc/review]] — 토픽 모델링과 네트워크 분석을 결합한 방법론을 과학 트렌드 예측에 직접 적용할 수 있다.
+- 🧪 응용 사례: [[papers/1140_Assessing_the_impact_of_Open_Research_Information_Infrastruc/review]] — 오픈 연구 인프라의 영향을 연구 트렌드 예측에 활용할 수 있는 방법론적 연결점을 제시한다.
+- 🏛 기반 연구: [[papers/1153_Classical_RAG_for_Semantic_Search__Quantum_Modules_for_Resea/review]] — 의미론적 및 신경망 네트워크를 활용한 연구 동향 예측의 이론적 기반을 양자 자연언어처리로 확장한다.
+- 🔄 다른 접근: [[papers/1236_Weaning_from_mechanical_ventilation_in_ICU_patients_research/review]] — ICU 기계환기 이탈 연구 동향을 전통적 서지분석으로 파악한 것과 달리 신경망 기반 미래 연구 동향 예측 방법을 제시합니다.

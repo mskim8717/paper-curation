@@ -91,7 +91,8 @@ Twitter에서 학술 출판물을 논의하는 9,842개의 연구·정책 관련
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — COVID-19 팬데믹 온라인 과학 소통 연구에 Twitter 기관 계정의 학술 소통 패턴 분석 방법론을 제공한다.
-- 🔗 후속 연구: [[papers/942_Bridging_the_gap_between_science_and_society_Mapping_librari/review]] — 과학과 사회 간 격차 해소를 위한 도서관 매핑 연구를 Twitter 기관 계정의 학술 소통 역할 분석으로 확장할 수 있다.
-- 🧪 응용 사례: [[papers/1031_The_Chaperone_Effect_in_Scientific_Publishing/review]] — 학술 출판에서 샤페론 효과 연구에 Twitter 기관 계정의 학술 논문 증폭 역할 분석을 적용할 수 있다.
-- 🔗 후속 연구: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 기관 계정의 학술 소통 패턴 분석을 팬데믹 상황의 정보 경로 분석으로 확장하여 위기 시 과학 소통을 이해할 수 있다.
+- 🔄 다른 접근: [[papers/954_Do_novel_papers_attract_more_social_attention/review]] — 조직 계정의 체계적 소셜미디어 전략과 개별 논문의 혁신성이 사회적 주목도에 미치는 영향이라는 다른 관점을 제공한다.
+- 🔗 후속 연구: [[papers/1001_Public_Profile_Matters_A_Scalable_Integrated_Approach_to_Rec/review]] — 연구자 평판 관리를 위한 통합적 접근법과 기관 계정의 소셜미디어 전략을 결합하여 더 효과적인 과학 소통 방안을 모색할 수 있다.
+- 🧪 응용 사례: [[papers/1021_Scientific_production_in_the_era_of_large_language_models/review]] — 대형 언어 모델 시대의 과학 생산 변화와 기관의 소셜미디어 소통 전략이 어떻게 상호작용하는지 분석할 수 있다.
+- 🔄 다른 접근: [[papers/954_Do_novel_papers_attract_more_social_attention/review]] — 개별 논문의 혁신성 효과와 기관 계정의 체계적 소셜미디어 전략이라는 다른 관점에서 학술 소통을 분석한다.
+- 🔗 후속 연구: [[papers/1177_From_Clicks_to_Cradles_Mapping_the_Digital_Landscape_of_Mate/review]] — 모성 지원의 디지털 환경 매핑이 학술 커뮤니케이션의 조직적 계정 분석으로 확장될 수 있다.

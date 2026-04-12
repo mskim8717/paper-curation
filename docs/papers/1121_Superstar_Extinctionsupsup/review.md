@@ -74,9 +74,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Azoulay et al._2010_Superstar Extinction
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 초기 경력 좌절의 장기적 영향을 분석하여 학계 슈퍼스타 소멸과 다른 각도에서 경력 충격의 효과를 보여준다.
-- 🔗 후속 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 과학 경력에서 연속적 성공(hot streaks) 패턴을 분석하여 슈퍼스타 부재가 협력자들의 성과 궤적에 미치는 영향을 보완한다.
-- 🏛 기반 연구: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 과학자 경력 궤적의 잠재 구조를 분석하는 방법론을 제시하여 슈퍼스타 소멸의 영향을 측정하는 기반을 제공한다.
-- 🧪 응용 사례: [[papers/1005_Quantifying_the_dynamics_of_failure_across_science_startups/review]] — 과학계의 슈퍼스타 멸종 현상을 실패 동역학의 관점에서 이해할 수 있는 틀을 제공한다.
-- 🧪 응용 사례: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 슈퍼스타 소멸 현상은 과학상 네트워크에서 관찰되는 엘리트 집중화의 장기적 결과를 보여준다.
-- 🔄 다른 접근: [[papers/955_Does_Science_Advance_One_Funeral_at_a_Time/review]] — 저명 과학자 사망이 분야 활성화에 미치는 영향과 슈퍼스타 소멸 연구는 모두 과학계 엘리트의 존재가 분야 발전에 미치는 영향을 분석한다.
+- 🔄 다른 접근: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 과학자 경력의 핫스트릭 패턴 분석과 슈퍼스타 사망의 네트워크 효과를 비교하여 개인 vs 협업 차원의 과학 생산성 동역학을 탐구할 수 있다.
+- 🔗 후속 연구: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 초기 경력 좌절이 미래에 미치는 영향 분석을 슈퍼스타 상실로 인한 협업 네트워크 충격과 연결하여 과학 경력의 다층적 위험 요소를 이해한다.
+- 🏛 기반 연구: [[papers/1028_Tenure_and_research_trajectories/review]] — 종신재직권과 연구 궤적의 관계를 제시하여 슈퍼스타 상실이 협업자들의 경력 안정성에 미치는 영향을 분석하는 기반을 제공한다.
+- 🧪 응용 사례: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 과학상 네트워크로 예측된 슈퍼스타 과학자들의 영향력 소멸 과정을 분석하는 구체적 적용 사례를 제공합니다.
+- 🔗 후속 연구: [[papers/955_Does_Science_Advance_One_Funeral_at_a_Time/review]] — 슈퍼스타 과학자의 소멸이 과학 진보에 미치는 영향을 조기사망 효과로 확장하여 분석한다

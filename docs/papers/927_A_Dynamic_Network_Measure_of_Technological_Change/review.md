@@ -87,5 +87,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Funk and Owen-Smith_2017_A Dynamic Netwo
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 기술 네트워크의 동적 변화를 측정하는 CDt 지수와 논문/특허의 파괴성 감소 연구는 모두 혁신의 파괴적 영향을 정량화한다.
-- 🔗 후속 연구: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 기술 변화의 동적 측정 방법론은 과학적 경계를 확장하는 연구자 예측에 대한 네트워크 기반 접근법의 기술적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 기술 변화의 파괴성 측정을 논문과 특허의 시간적 변화 분석으로 확장한다
+- 🔄 다른 접근: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 과학의 파괴성 감소에 대한 강건한 증거를 기술 네트워크 변화 측정의 다른 관점에서 제시한다
+- 🧪 응용 사례: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 파괴적 논문이 기술과 사회에 미치는 영향을 CDt 지수로 측정할 수 있다
+- 🏛 기반 연구: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 기술 변화의 동적 네트워크 측정 방법론을 학술지 진화 분석에 적용하여 과학 구조 변화를 정량화하는 이론적 기반을 제공한다.

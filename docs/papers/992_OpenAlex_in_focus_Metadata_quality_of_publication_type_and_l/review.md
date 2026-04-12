@@ -80,7 +80,9 @@ OpenAlex 데이터베이스의 출판물 유형(publication type)과 언어(lang
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1115_Google_Scholar_Microsoft_Academic_Scopus_Dimensions_Web_of_S/review]] — 주요 인용 데이터베이스들의 전반적 커버리지 비교가 OpenAlex 메타데이터 품질 평가의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/993_OpenAlex_A_fully-open_index_of_scholarly_works_authors_venue/review]] — OpenAlex의 전반적 특성 소개를 메타데이터 품질이라는 구체적 측면에서 심화 분석한 후속 연구이다.
-- 🔗 후속 연구: [[papers/1115_Google_Scholar_Microsoft_Academic_Scopus_Dimensions_Web_of_S/review]] — 여러 인용 데이터베이스의 커버리지 비교 연구를 OpenAlex의 메타데이터 품질 평가로 확장한 후속 연구로 볼 수 있다.
-- 🔄 다른 접근: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — OpenAlex와 다른 접근으로 과학자들의 표준화된 인용 지표 데이터베이스를 구축한다.
+- 🏛 기반 연구: [[papers/1115_Google_Scholar_Microsoft_Academic_Scopus_Dimensions_Web_of_S/review]] — 주요 인용 데이터베이스들의 커버리지 비교 연구가 OpenAlex 메타데이터 품질 평가의 기준점을 제공한다.
+- 🔗 후속 연구: [[papers/993_OpenAlex_A_fully-open_index_of_scholarly_works_authors_venue/review]] — OpenAlex의 전체적 소개를 바탕으로 특정 메타데이터 필드의 품질을 심층적으로 검증한다.
+- 🔗 후속 연구: [[papers/1115_Google_Scholar_Microsoft_Academic_Scopus_Dimensions_Web_of_S/review]] — OpenAlex라는 새로운 인용 데이터 소스의 메타데이터 품질을 평가하여 기존 6개 데이터베이스 비교를 보완한다.
+- 🔄 다른 접근: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — Scopus 기반 인용 지표 데이터베이스와는 다른 접근으로 OpenAlex의 출판물 유형과 접근성 메타데이터 품질을 분석한다.
+- 🏛 기반 연구: [[papers/1227_Exploring_Open_Access_Research_Trends_in_the_Indian_Council/review]] — ICAR 기관의 오픈 액세스 분석에서 OpenAlex 데이터베이스의 메타데이터 품질과 출판 유형 정확성이 기반이 된다.
+- 🔄 다른 접근: [[papers/1139_Assessing_data_quality_in_citation_analysis_A_case_study_of/review]] — OpenAlex와 Web of Science/Crossref 모두 학술 메타데이터 품질 평가의 서로 다른 접근법을 제시한다.

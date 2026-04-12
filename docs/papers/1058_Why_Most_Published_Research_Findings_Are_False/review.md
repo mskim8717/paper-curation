@@ -84,7 +84,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ioannidis_2005_Why Most Published Resear
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 대부분의 연구 결과가 거짓일 수 있다는 주장을 1,500명 과학자의 재현성 경험으로 실증적으로 뒷받침한다.
-- 🧪 응용 사례: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 연구 결과의 거짓 가능성 문제를 심리학 분야의 구체적인 재현성 평가로 적용한다.
-- 🏛 기반 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 연구 결과의 신뢰성 문제를 과학 논문 철회의 주요 원인인 연구 부정행위와 연결하여 분석한다.
-- 🏛 기반 연구: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 대부분의 연구 결과가 거짓이라는 주장이 편향의 메타분석을 통한 실증적 검증의 이론적 근거를 제공함
+- 🔗 후속 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 대부분의 연구 결과가 거짓일 수 있다는 주장을 1500명 과학자의 재현성 위기 경험으로 확장하여 실증적으로 검증했다.
+- 🧪 응용 사례: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 발표된 연구 결과의 거짓 가능성을 심리학 실험의 재현가능성 추정이라는 구체적 분야에서 검증했다.
+- 🔗 후속 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 연구 결과의 거짓 가능성 문제를 연구 부정행위가 논문 철회의 주요 원인이라는 구체적 사례로 확장했다.
+- 🔄 다른 접근: [[papers/1068_Artificial_intelligence_and_illusions_of_understanding_in_sc/review]] — 과학 연구의 신뢰성 문제를 AI 도구와 연구 방법론의 다른 관점에서 접근함
+- 🏛 기반 연구: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 대부분의 발표된 연구 결과가 거짓이라는 주장이 과학 편향 메타분석의 이론적 출발점을 제공한다.

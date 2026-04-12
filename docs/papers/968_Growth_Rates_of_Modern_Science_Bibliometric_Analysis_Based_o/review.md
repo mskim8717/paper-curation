@@ -85,6 +85,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bornmann and Mutz_2015_Growth Rates of M
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 과학의 전반적 성장률 분석을 팀 기반 지식 생산의 증가라는 구체적 현상으로 확장한 후속 연구로 볼 수 있다.
-- 🏛 기반 연구: [[papers/1030_The_Burden_of_Knowledge_and_the_Death_of_the_Renaissance_Man/review]] — 과학 지식의 급속한 성장이 개별 연구자의 지식 부담 증가와 어떻게 연결되는지에 대한 역사적 맥락을 제공한다.
-- 🧪 응용 사례: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 과학 성장률 분석은 저널 인용 편향이 학문 발전에 미치는 영향을 정량화하는 맥락을 제공한다.
+- 🏛 기반 연구: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 과학 성장률의 장기적 분석이 disruption index의 인플레이션 문제를 이해하는 역사적 맥락을 제공한다.
+- 🔗 후속 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 과학의 성장 단계 분석을 통해 최근 논문들이 덜 파괴적이 되는 현상의 구조적 원인을 설명한다.
+- 🏛 기반 연구: [[papers/1215_Total_Fertility_Rate_Studies_Bibliometric_Analysis_with_R_Pr/review]] — 출산율 연구의 성장 패턴을 이해하기 위해 현대 과학의 성장률에 대한 bibliometric 분석이 기반이 된다.

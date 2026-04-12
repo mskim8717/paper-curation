@@ -88,7 +88,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2024_Predicting Scientific Bre
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 잠자는 미녀 현상의 사후 분석과 대비하여 인용 캐스케이드 동적 구조를 통한 과학적 돌파구의 사전 예측을 시도한다.
-- 🔗 후속 연구: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 의미론적 네트워크 기반 연구 동향 예측을 인용 네트워크의 구조적 동태 예측으로 확장하여 다차원적 돌파구 예측을 가능하게 한다.
-- 🔄 다른 접근: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 기계학습 기반 고영향 연구 주제 예측과 대비하여 인용 네트워크의 구조적 진화에 초점을 맞춘 돌파구 예측을 제시한다.
-- 🔄 다른 접근: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 인용 네트워크의 동적 구조 분석을 통해 늦은 인용 급증을 예측하는 대안적 접근법을 제시한다.
+- ⚖️ 반론/비판: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 과학적 돌파구의 사전 예측과 잠자는 미녀의 사후 발견이라는 정반대 시간적 접근 방식을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/1064_Data-driven_predictions_in_the_science_of_science/review]] — 과학학 분야에서 데이터 기반 예측의 일반적 이론과 방법론을 인용 네트워크의 동적 구조 예측에 적용하는 토대를 제공한다.
+- 🔄 다른 접근: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 영향력 높은 연구 주제 예측을 위한 머신러닝과 인용 네트워크의 동적 구조라는 서로 다른 예측 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/1072_Embracing_Foundation_Models_for_Advancing_Scientific_Discove/review]] — 과학적 돌파구 예측에서 구조적 분석을 기초 모델 기반 아이디어 생성으로 보완함
+- 🏛 기반 연구: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 구조적 역학 기반 과학적 돌파구 예측 방법론이 신경망 기반 트렌드 예측의 이론적 기반을 제공한다.
+- ⚖️ 반론/비판: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 사후적 발견(Sleeping Beauty)과 사전적 예측(breakthrough prediction)이라는 정반대 접근 방식을 비교할 수 있다.
+- 🧪 응용 사례: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 머신러닝 기반 미래 임팩트 예측 방법론을 과학적 돌파구 예측의 구조적 역학 연구에 실제 적용할 수 있는 사례를 보여줍니다.

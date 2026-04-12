@@ -80,6 +80,9 @@ Eugene Garfield의 논문들을 인용한 문헌들의 인용 맥락(citation co
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1056_Where_Do_Your_Citations_Come_From_Citation-Constellation_A_F/review]] — 단순 인용 맥락 분석을 넘어서 인용의 출처와 확산 패턴까지 추적하는 더 포괄적인 분석 방법입니다.
-- 🏛 기반 연구: [[papers/1218_Viewing_Citation_Analysis_Through_the_Lens_of_Citation_Justi/review]] — 인용 맥락 시각화의 이론적 기반이 되는 인용 정당화 관점을 제공합니다.
-- 🔄 다른 접근: [[papers/1056_Where_Do_Your_Citations_Come_From_Citation-Constellation_A_F/review]] — 인용 맥락 시각화는 인용 네트워크 경로와 다른 방식으로 인용 구조를 분석하는 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/1218_Viewing_Citation_Analysis_Through_the_Lens_of_Citation_Justi/review]] — 인용 맥락 분석을 위한 새로운 방법론이 인용 정당화 관점에서 인용 분석을 이해하는 이론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/1056_Where_Do_Your_Citations_Come_From_Citation-Constellation_A_F/review]] — Citation-Constellation 방법론이 인용 맥락 기반 키워드 네트워크 분석을 더욱 발전시킨 접근법이다.
+- 🏛 기반 연구: [[papers/1139_Assessing_data_quality_in_citation_analysis_A_case_study_of/review]] — 인용 데이터의 품질 평가가 인용 맥락 분석의 신뢰성을 확보하는 데 필수적인 기반을 제공한다.
+- 🧪 응용 사례: [[papers/1081_Science_Citation_IndexA_New_Dimension_in_Indexing_This_uniqu/review]] — SCI가 제시한 인용 색인의 원리를 시각화 기술과 결합하여 인용 맥락 분석의 실용적 도구로 발전시켰다.
+- 🏛 기반 연구: [[papers/1056_Where_Do_Your_Citations_Come_From_Citation-Constellation_A_F/review]] — 논문 인용 맥락의 시각화가 인용 네트워크의 사회구조적 경로를 분석하는 Citation-Constellation 도구의 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/1139_Assessing_data_quality_in_citation_analysis_A_case_study_of/review]] — 인용 분석의 데이터 품질 평가가 인용 맥락 시각화 방법론의 신뢰성을 확보하는 데 필수적이다.

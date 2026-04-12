@@ -85,9 +85,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kitajima and Okamura_2025_The altering l
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 경제 발전과 연결된 글로벌 학자 이주 패턴은 미중 과학 협력 변화의 광범위한 맥락을 제공한다.
-- 🔄 다른 접근: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 이주 궤적의 비지도학습 임베딩은 미중 협력 변화를 분석하는 다른 방법론적 접근을 제시한다.
-- ⚖️ 반론/비판: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 과학 협력에서 민족 다양성의 우월성과 미중 협력 발산은 상반된 국제 협력 트렌드를 보여준다.
-- 🔄 다른 접근: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 미중 과학 협력 변화는 궤적 임베딩으로 분석할 수 있는 구체적 이동 패턴 사례를 제공한다.
-- 🏛 기반 연구: [[papers/997_Polymer_Science_Research_in_India_A_Scientometrics_Study/review]] — 국가별 과학 협력 관계 변화 분석이 인도의 고분자 과학 연구 성장을 국제적 맥락에서 이해하는 기반을 제공한다.
-- 🧪 응용 사례: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 미중 과학 협력의 변화는 글로벌 협력 네트워크 진화의 구체적 사례를 보여준다.
+- 🏛 기반 연구: [[papers/935_Atlas_of_Science_Collaboration_19712020/review]] — 1971-2020년 과학 협력의 전반적 지도가 미중 과학협력 변화를 이해하는 역사적 맥락과 기반을 제공합니다.
+- 🧪 응용 사례: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 미중 과학협력의 발산이 물리학 지식의 정책적 선택적 활용에서 어떻게 나타나는지 구체적 사례를 제공합니다.
+- 🔗 후속 연구: [[papers/945_Coevolution_of_policy_and_science_during_the_pandemic/review]] — 팬데믹 동안 정책과 과학의 공진화가 미중 과학협력의 수렴에서 발산으로의 전환을 가속화시키는 메커니즘을 확장 분석합니다.
+- 🧪 응용 사례: [[papers/935_Atlas_of_Science_Collaboration_19712020/review]] — 미중 과학 협력의 변화하는 지형을 국제 협력 아틀라스의 구체적 사례로 분석할 수 있다
+- 🔗 후속 연구: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 과학자 협력 네트워크의 기본 진화 메커니즘을 미중 과학협력의 구체적 사례로 확장하여 지정학적 변화까지 포함합니다.

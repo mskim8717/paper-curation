@@ -88,7 +88,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Way et al._2019_Productivity, prominence
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용과 연구 환경이 생산성에 미치는 영향을 연결하여 학계 불평등의 전체 구조를 이해할 수 있다.
-- 🧪 응용 사례: [[papers/1028_Tenure_and_research_trajectories/review]] — 종신 재직권이 연구 궤적에 미치는 영향은 기관 환경 효과의 구체적 메커니즘을 보여준다.
-- 🔄 다른 접근: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 개별 연구자의 hot streak 패턴은 기관 환경과는 다른 생산성 결정 요인을 제시한다.
-- 🏛 기반 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용의 체계적 불평등은 기관 환경이 생산성에 미치는 영향의 구조적 배경을 제공한다.
+- 🔗 후속 연구: [[papers/1037_The_Misleading_Narrative_of_the_Canonical_Faculty_Productivi/review]] — 학술 환경이 생산성에 미치는 영향을 개별 연구자의 다양한 생산성 궤적 패턴으로 확장하여 분석합니다.
+- 🏛 기반 연구: [[papers/1028_Tenure_and_research_trajectories/review]] — tenure 시스템이 연구 궤적에 미치는 영향을 분석하여 학술 환경과 생산성 관계의 제도적 기반을 제공합니다.
+- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 학술 환경의 긍정적 영향과 대조적으로 초기 경력 좌절이 미래 성과에 미치는 부정적 영향을 보여줍니다.
+- ⚖️ 반론/비판: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용에서 박사 기관 명성의 영향력과 현재 근무 기관 환경의 중요성이라는 상반된 관점을 제시합니다.
+- ⚖️ 반론/비판: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — Matthew effect가 기관 명성의 영향을 보여주는 반면, 이 연구는 현재 환경이 과거 명성보다 중요함을 입증해 상반된 관점을 제시합니다.
+- 🏛 기반 연구: [[papers/1037_The_Misleading_Narrative_of_the_Canonical_Faculty_Productivi/review]] — 학술 환경이 연구 생산성에 미치는 영향이 개별 교수들의 다양한 생산성 궤적 패턴을 설명하는 기반을 제공합니다.

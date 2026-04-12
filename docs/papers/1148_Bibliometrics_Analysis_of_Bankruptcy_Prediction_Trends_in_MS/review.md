@@ -13,7 +13,7 @@ tags:
   - "cat/Computational_Bibliometric_Analysis"
   - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bibliometrics Analysis of Bankruptcy Prediction Trends in MSMEs Global Insights .pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Supriyono et al._2026_Bibliometrics Analysis of Bankruptcy Prediction Trends in MSMEs Global Insights from (2020–2025).pdf"
 ---
 
 # Bibliometrics Analysis of Bankruptcy Prediction Trends in MSMEs: Global Insights from (2020–2025)
@@ -80,6 +80,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bibliometrics Analysis of Bankruptcy Pre
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1147_Bibliometric_Analysis_on_the_Research_Trends_and_Collaborati/review]] — 동일한 MSME 파산 예측 주제이지만 다른 분석 기간과 방법론적 접근을 사용해 상호 보완적입니다.
-- 🏛 기반 연구: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 파산 예측에 사용되는 머신러닝 방법들에 대한 포괄적인 과학계량학적 조사 결과를 제공합니다.
-- 🏛 기반 연구: [[papers/1147_Bibliometric_Analysis_on_the_Research_Trends_and_Collaborati/review]] — 같은 MSME 파산 예측 주제를 다루는 연구로서 서로 상호 참조할 수 있는 기본 문헌입니다.
+- 🔄 다른 접근: [[papers/1147_Bibliometric_Analysis_on_the_Research_Trends_and_Collaborati/review]] — 둘 다 MSME 파산 예측의 bibliometric 분석이지만 데이터 수집 기간과 분석 규모에서 차이를 보인다.
+- 🏛 기반 연구: [[papers/1155_Corporate_Governance_in_Accounting_A_Bibliometric_Analysis_o/review]] — 회계 분야 기업지배구조의 bibliometric 분석이 MSME 파산 예측 연구의 재무 관리 맥락을 제공한다.
+- 🧪 응용 사례: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — VOSviewer를 활용한 bibliometric 매핑이 MSME 파산 예측 연구의 시각적 분석 도구로 적용된다.
+- 🔄 다른 접근: [[papers/1147_Bibliometric_Analysis_on_the_Research_Trends_and_Collaborati/review]] — 둘 다 MSME 파산 예측 분야의 bibliometric 분석이지만 서로 다른 시기와 범위로 연구를 수행한다.

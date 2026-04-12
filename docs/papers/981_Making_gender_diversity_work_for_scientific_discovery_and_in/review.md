@@ -88,10 +88,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nielsen et al._2018_Making gender divers
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 성별 다양성 프레임워크가 실제 과학계에서 나타나는 성별 불평등 패턴의 해석 틀을 제공함
-- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양한 팀이 혁신을 촉진한다는 실증 결과를 체계적 프레임워크로 설명할 수 있음
-- 🔄 다른 접근: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 다양성-혁신 역설과 성별 다양성의 긍정적 효과 간의 모순을 해결하는 대안적 관점을 제시함
-- 🏛 기반 연구: [[papers/1117_Human-Modeling_in_Sequential_Decision-Making_An_Analysis_thr/review]] — 과학적 발견과 혁신에서 성별 다양성의 효과 분석이 인간 모델링에서 다양성 요소를 고려해야 할 이론적 근거를 제공한다.
-- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성 팀의 과학적 성과 연구는 성별 다양성이 과학적 발견과 혁신에 효과적으로 작용하도록 하는 방법론적 확장을 제공한다.
-- 🧪 응용 사례: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 성별 다양성의 이론적 프레임워크를 역사적 데이터로 검증하여 실제 효과를 평가할 수 있음
-- 🧪 응용 사례: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — 과학적 발견에서 성별 다양성의 효과는 Collaborative Guideposts 프레임워크의 구체적 적용 영역을 보여준다.
+- 🏛 기반 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성의 정량적 성과 효과가 체계적 프레임워크 개발의 실증적 근거를 제공한다.
+- ⚖️ 반론/비판: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 성별 다양성 최적화 프레임워크와 다양성-혁신 역설은 다양성 효과에 대한 상반된 관점을 제시한다.
+- 🔗 후속 연구: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 성별 다양성 프레임워크를 민족 다양성까지 확장하여 더 포괄적인 다양성 전략을 개발할 수 있다.
+- 🏛 기반 연구: [[papers/1117_Human-Modeling_in_Sequential_Decision-Making_An_Analysis_thr/review]] — 과학에서 다양성의 중요성이 인간 모델링 AI 시스템의 이론적 근거가 됨
+- 🏛 기반 연구: [[papers/1066_Accelerating_science_with_human-aware_artificial_intelligenc/review]] — 과학적 발견에서 인간 다양성의 중요성이 인간-인식 AI의 이론적 근거가 됨
+- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성의 정량적 성과 효과를 체계적인 프레임워크로 발전시켜 실제 적용 방안을 제시한다.
+- 🧪 응용 사례: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 성별 다양성이 과학적 발견에 미치는 영향을 팀 규모별로 분석하여 최적의 팀 구성 전략을 도출할 수 있다.
+- 🔗 후속 연구: [[papers/1152_Citation_of_classical_research_by_doctoral-level_LIS_scholar/review]] — 과학적 발견에서 성별 다양성의 효과가 도서관정보학 분야의 인용 다양성과 학문적 영향을 이해하는 데 확장된다.

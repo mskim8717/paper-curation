@@ -16,7 +16,7 @@ tags:
   - "cat/Science_Policy_and_Research_Dynamics"
   - "sub/Research_Evaluation_and_Metrics"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/DREAM Deep Research Evaluation with Agentic Metrics.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Avraham et al._2026_DREAM Deep Research Evaluation with Agentic Metrics.pdf"
 ---
 
 # DREAM: Deep Research Evaluation with Agentic Metrics
@@ -93,13 +93,15 @@ Deep Research Agents가 생성한 분석가급 보고서 평가의 핵심 문제
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1157_Critical_Review_with_Scientometrics_Approach_on_the_Retrofit/review]] — 논문 품질 검사를 위한 LLM과 연구 에이전트 보고서 평가를 위한 DREAM은 서로 다른 연구 산출물 평가에 특화된 상호 보완적 접근법이다.
-- 🔗 후속 연구: [[papers/1214_The_Story_is_Not_the_Science_Execution-Grounded_Evaluation_o/review]] — 실행 기반 과학 평가 방법론이 DREAM 프레임워크의 agentic evaluation을 실제 과학적 성과 측정으로 확장하는 방향을 제시한다.
-- ⚖️ 반론/비판: [[papers/1057_Which_stylistic_features_fool_ChatGPT_research_evaluations/review]] — ChatGPT의 연구 평가 능력을 문체적 특성 관점에서 비판적으로 분석하여 agentic evaluation의 한계를 보여준다.
-- 🔗 후속 연구: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — LLM 기반 연구 평가의 책임 있는 적용을 다루어 DREAM 프레임워크의 윤리적 고려사항을 보완한다.
-- 🏛 기반 연구: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — 과학 연구에서 인간-AI 협력을 다룬 기초 연구로 deep research evaluation의 협력적 접근법을 뒷받침한다.
-- 🔄 다른 접근: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — 과학 연구 평가에서 AI를 활용하는 다른 접근방법을 제시한다.
-- 🔄 다른 접근: [[papers/1118_Paper_Circle_An_Open-source_Multi-agent_Research_Discovery_a/review]] — 둘 다 AI 기반 연구 평가 시스템이지만 발견 중심과 평가 중심이라는 다른 목적을 가집니다.
-- 🔄 다른 접근: [[papers/1157_Critical_Review_with_Scientometrics_Approach_on_the_Retrofit/review]] — LLM을 활용한 논문 품질 검사와 Deep Research Agents 보고서 평가는 서로 다른 연구 산출물에 대한 AI 기반 평가 접근법이다.
-- 🔄 다른 접근: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — LLM 기반 연구 평가의 책임성 원칙과 에이전틱 메트릭을 활용한 깊이 있는 연구 평가 방법론을 비교 검토할 수 있다.
-- 🔄 다른 접근: [[papers/1153_Classical_RAG_for_Semantic_Search__Quantum_Modules_for_Resea/review]] — 양자 모듈과 에이전틱 메트릭스가 모두 기존 연구 평가의 한계를 극복하는 서로 다른 AI 기반 접근법을 제시함
+- 🔗 후속 연구: [[papers/1157_Critical_Review_with_Scientometrics_Approach_on_the_Retrofit/review]] — 논문 품질 검사에서 단일 모델을 넘어 다중 에이전트 평가 시스템으로 발전시킨 접근법임
+- 🔄 다른 접근: [[papers/1214_The_Story_is_Not_the_Science_Execution-Grounded_Evaluation_o/review]] — 연구 평가에서 에이전트 기반 메트릭과 실행 기반 평가의 다른 접근법임
+- 🔗 후속 연구: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — LLM의 책임감 있는 연구 평가를 멀티 에이전트 시스템으로 확장함
+- 🧪 응용 사례: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 기계학습 기반 과학 연구의 검증을 위한 REFORMS 체크리스트를 AI 에이전트 평가에 적용할 수 있는 자동화 도구를 제공한다.
+- 🏛 기반 연구: [[papers/1057_Which_stylistic_features_fool_ChatGPT_research_evaluations/review]] — ChatGPT가 연구 평가에서 놓치는 문체적 특징 분석을 통해 agentic evaluation의 한계와 개선 방향을 제시한다.
+- 🔄 다른 접근: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — AI 기반 연구 평가를 위해 SciSciGPT와는 다른 접근인 DREAM 시스템을 통한 심층 연구 평가 방법을 제안한다.
+- 🔄 다른 접근: [[papers/1057_Which_stylistic_features_fool_ChatGPT_research_evaluations/review]] — ChatGPT의 스타일 편향 문제에 대한 대안으로 더 정교한 AI 기반 연구 평가 메트릭을 제안한다.
+- 🧪 응용 사례: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — REFORMS 체크리스트를 AI 연구 평가에 적용할 때 DREAM 프레임워크가 제공하는 자동화된 검증 도구로 활용할 수 있다.
+- 🔄 다른 접근: [[papers/1157_Critical_Review_with_Scientometrics_Approach_on_the_Retrofit/review]] — LLM을 활용한 연구 품질 평가에서 비판적 오류 식별과 연구 평가 에이전트 메트릭스는 상호 보완적인 접근법이다.
+- 🔗 후속 연구: [[papers/1175_Figures_as_Interfaces_Toward_LLM-Native_Artifacts_for_Scient/review]] — LLM-native figures를 연구 평가 에이전트 시스템에 통합하여 더 정교한 평가가 가능하다.
+- 🔄 다른 접근: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — LLM 기반 연구 평가를 서로 다른 관점에서 접근하여 책임성 원칙과 실용적 구현 방법을 비교 연구할 수 있다.
+- 🔗 후속 연구: [[papers/1153_Classical_RAG_for_Semantic_Search__Quantum_Modules_for_Resea/review]] — RAG 시스템을 에이전틱 메트릭을 활용한 심층 연구 평가로 발전시켜 더 정교한 평가가 가능하다.

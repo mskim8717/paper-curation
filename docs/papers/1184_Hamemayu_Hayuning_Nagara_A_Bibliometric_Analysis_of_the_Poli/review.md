@@ -14,7 +14,7 @@ tags:
   - "cat/Science_Policy_and_Research_Dynamics"
   - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hamemayu Hayuning Nagara A Bibliometric Analysis of the Policy on Increasing the.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kusumastuti et al._2026_Hamemayu Hayuning Nagara A Bibliometric Analysis of the Policy on Increasing the Value Added Tax Ra.pdf"
 ---
 
 # Hamemayu Hayuning Nagara: A Bibliometric Analysis of the Policy on Increasing the Value Added Tax Rate as a Means of Welfare and Social Justice
@@ -87,8 +87,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hamemayu Hayuning Nagara A Bibliometric 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — VAT 정책의 디지털 출판 생태계에 대한 영향을 이해하기 위해 학술 출판의 구조적 특성을 파악할 필요가 있음
-- 🔗 후속 연구: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — VAT 정책이 학술 출판의 오픈 액세스 모델에 미치는 영향을 분석하는 연구로 확장 가능함
-- 🔄 다른 접근: [[papers/997_Polymer_Science_Research_in_India_A_Scientometrics_Study/review]] — 인도 폴리머 과학 연구의 scientometric 분석과 유사한 지역적 접근법으로 VAT 정책 연구의 비교 맥락을 제공한다.
-- 🔗 후속 연구: [[papers/1147_Bibliometric_Analysis_on_the_Research_Trends_and_Collaborati/review]] — 연구 동향과 협력 패턴의 bibliometric 분석 방법론을 VAT 정책 연구로 확장한 사례를 제시한다.
-- 🏛 기반 연구: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 글로벌 과학 펀딩과 연구 성과의 연계를 주제 수준에서 분석한 연구로 VAT 정책과 연구 생산성의 관계를 이해하는 기반을 제공한다.
+- 🔗 후속 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — VAT 정책과 공공 복지 조화 분석이 과학 연구 자금 지원의 광범위한 영향 시각화로 확장될 수 있다.
+- 🏛 기반 연구: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — Javanese 철학을 통한 정책 분석의 장기적 영향을 측정하기 위해 과학적 영향력의 장기 정량화 방법이 필요하다.
+- 🔄 다른 접근: [[papers/1155_Corporate_Governance_in_Accounting_A_Bibliometric_Analysis_o/review]] — 회계 분야와 세무 정책 분야의 서로 다른 bibliometric 접근법을 비교하여 경제학 관련 연구 분석의 다양한 관점을 제공한다.
+- 🧪 응용 사례: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 과학 매핑 방법론을 VAT 정책 연구에 적용하고 Javanese 철학으로 해석하는 독특한 문화적 접근을 보여준다.
+- 🏛 기반 연구: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 글로벌 과학 펀딩과 연구 결과의 연결 분석 방법론을 국가 재정 정책(VAT) 연구에 적용할 수 있는 기초를 제공한다.
+- 🔄 다른 접근: [[papers/1179_Global_Research_Trends_in_Knowledge_Management_in_Higher_Edu/review]] — 고등교육 지식관리와 VAT 정책 연구 모두 조직 차원에서 지식과 정책의 조화를 추구하는 bibliometric 접근법을 사용한다.
+- 🏛 기반 연구: [[papers/1137_Art_tourism_a_nascent_concept_but_symptomatic_of_a_trend_Ins/review]] — 정치-문화 개념의 bibliometric 분석이 예술 관광의 문화적 진화 과정을 분석하는 방법론적 기반을 제공한다.

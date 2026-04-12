@@ -78,8 +78,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huong and Long_2026_Risk and Artificial 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 의미론적 신경망을 통한 연구 트렌드 예측은 AI 도입 연구 진화의 다른 분석 방법을 제시한다.
-- 🧪 응용 사례: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 머신러닝 연구 개혁 권고안은 AI 도입에서 위험 거버넌스의 구체적 적용 사례를 보여준다.
-- 🏛 기반 연구: [[papers/1124_The_Science_of_Science/review]] — 과학학 이론은 AI 도입 연구의 scientometric 분석에 개념적 틀을 제공한다.
-- 🧪 응용 사례: [[papers/997_Polymer_Science_Research_in_India_A_Scientometrics_Study/review]] — scientometrics 방법론을 위험과 AI 분야 연구 분석에 적용한 사례와 고분자 과학 분야 적용 사례 간의 방법론적 유사성을 보여준다.
-- 🔄 다른 접근: [[papers/1166_Emerging_Trends_in_Cybersecurity_Machine_Learning_as_a_Game-/review]] — 사이버보안과 위험 및 AI 채택 모두 scientometric 분석을 통해 신기술의 영향과 동향을 체계적으로 파악하는 유사한 접근법을 사용한다.
+- 🧪 응용 사례: [[papers/963_Forecasting_the_future_of_artificial_intelligence_with_machi/review]] — AI 도입에서 위험 역할의 진화를 기계학습 기반 미래 예측 방법론을 통해 분석하고 전망할 수 있습니다.
+- 🔗 후속 연구: [[papers/1078_Quantifying_the_use_and_potential_benefits_of_artificial_int/review]] — AI 도입 연구에서 위험의 역할 변화를 AI의 과학적 활용과 잠재적 이익에 대한 정량적 분석으로 확장합니다.
+- 🏛 기반 연구: [[papers/1166_Emerging_Trends_in_Cybersecurity_Machine_Learning_as_a_Game-/review]] — 사이버보안에서 기계학습의 게임체인징 역할이 AI 도입에서 위험 관리의 기술적 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/1166_Emerging_Trends_in_Cybersecurity_Machine_Learning_as_a_Game-/review]] — AI 도입의 사이버보안 분야 적용이 위험과 AI 도입의 일반적 과학계량 분석을 확장함
+- 🧪 응용 사례: [[papers/1216_Tour_guiding_technologies_a_bibliometric_analysis_mapping_tr/review]] — AI 도입 위험성 분석을 투어 가이딩 기술의 전문직 통합 과정에 적용할 수 있다

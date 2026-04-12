@@ -14,7 +14,7 @@ tags:
   - "cat/Computational_Bibliometric_Analysis"
   - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/BIBLIOMETRIC ANALYSIS ON PARENTING STYLES AND ADOLESCENTS’ HAPPINESS.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ho et al._2026_BIBLIOMETRIC ANALYSIS ON PARENTING STYLES AND ADOLESCENTS’ HAPPINESS.pdf"
 ---
 
 # BIBLIOMETRIC ANALYSIS ON PARENTING STYLES AND ADOLESCENTS’ HAPPINESS
@@ -80,6 +80,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/BIBLIOMETRIC ANALYSIS ON PARENTING STYLE
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1180_Global_research_trends_on_depression-related_stigma_in_the_2/review]] — 둘 다 심리학 관련 주제를 다루지만 청소년 행복과 우울증 낙인이라는 서로 다른 측면을 분석합니다.
-- 🔗 후속 연구: [[papers/1217_Tracing_the_Evolution_of_Sleep-Related_Behavioural_Outcomes/review]] — 부모 양육이 청소년에게 미치는 영향을 수면 행동 결과까지 확장해서 분석한 연구입니다.
-- 🔗 후속 연구: [[papers/1177_From_Clicks_to_Cradles_Mapping_the_Digital_Landscape_of_Mate/review]] — 온라인 모성 지원에서 양육 방식과 청소년 행복이라는 구체적 양육 결과까지 확장한 연구입니다.
+- 🔄 다른 접근: [[papers/1217_Tracing_the_Evolution_of_Sleep-Related_Behavioural_Outcomes/review]] — 둘 다 청소년의 행동 결과를 다루지만 1146은 부모 양육방식과 행복, 1217은 수면 관련 행동에 초점을 맞춘다.
+- 🏛 기반 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 과학 경력에서의 성별 불평등 역사적 비교가 청소년 발달 연구에서의 젠더 관점을 이해하는 배경을 제공한다.
+- 🏛 기반 연구: [[papers/944_Co-Citation_Analysis_Bibliographic_Coupling_and_Direct_Citat/review]] — Co-citation과 bibliographic coupling 분석 기법이 부모 양육방식 연구의 co-word 분석 방법론적 기반이다.
+- 🔗 후속 연구: [[papers/1217_Tracing_the_Evolution_of_Sleep-Related_Behavioural_Outcomes/review]] — 양육 스타일과 청소년 건강 연구 방법론을 자폐아동 수면-행동 관계 분석에 확장할 수 있다

@@ -79,14 +79,12 @@ Nature가 1,576명의 과학자를 대상으로 실시한 설문조사에서 70%
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 1,500명 과학자 대상 재현성 위기 설문조사는 심리학 100개 연구 직접 재현 실험의 광범위한 배경과 맥락을 제공한다.
-- 🔄 다른 접근: [[papers/959_Evaluating_the_Replicability_of_Social_Science_Experiments_i/review]] — 자연과학 전반의 재현성 인식 조사와 Nature/Science 사회과학 실험 재현은 모두 과학의 재현성 위기를 다른 방식으로 검증한다.
-- 🔗 후속 연구: [[papers/1058_Why_Most_Published_Research_Findings_Are_False/review]] — 대부분의 연구 결과가 거짓일 수 있다는 주장을 1,500명 과학자의 재현성 경험으로 실증적으로 뒷받침한다.
-- 🏛 기반 연구: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 과학 연구의 재현성 위기를 다룬 기초 연구로 기계학습 기반 연구의 재현성 보장 필요성을 뒷받침한다.
-- 🧪 응용 사례: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 재현성 위기에 대한 과학자들의 인식과 편향의 실제 유병률 간의 격차를 비교 분석할 수 있음
-- 🏛 기반 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 재현성 위기에 대한 과학자들의 우려가 실제 부정행위 증가 추세의 배경을 설명함
-- 🏛 기반 연구: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 심리학 100개 연구의 직접 재현 실험은 1,500명 과학자가 인식한 재현성 위기에 대한 실증적 검증을 제공한다.
-- 🔗 후속 연구: [[papers/959_Evaluating_the_Replicability_of_Social_Science_Experiments_i/review]] — 최고 저널 사회과학 실험의 재현 연구는 과학자들이 인식한 재현성 위기를 실제 재현 실험으로 구체적으로 검증한다.
-- 🏛 기반 연구: [[papers/1142_Beyond_Retractions_Forensic_Scientometrics_Techniques_to_Ide/review]] — 과학 연구의 재현성 문제에 대한 광범위한 조사 결과가 포렌식 과학계량학의 필요성을 뒷받침합니다.
-- 🏛 기반 연구: [[papers/1214_The_Story_is_Not_the_Science_Execution-Grounded_Evaluation_o/review]] — 과학 연구의 재현성 위기 문제가 논문 내러티브를 넘어선 실행 기반 검증의 필요성을 뒷받침하는 핵심 배경을 제공한다.
-- 🧪 응용 사례: [[papers/1156_Correction_Enabling_transparent_research_evaluation_A_method/review]] — 데이터 공개를 통한 투명성 증진이 재현성 위기 해결의 구체적 실천 방안을 제시함
+- 🔗 후속 연구: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 심리학 분야 재현성 평가를 다른 과학 분야로 확장하여 재현성 위기의 범위를 확인한다
+- 🔄 다른 접근: [[papers/959_Evaluating_the_Replicability_of_Social_Science_Experiments_i/review]] — 사회과학 실험의 재현성을 다른 방법론으로 평가하여 재현성 문제의 다각적 분석을 제공한다
+- 🔗 후속 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 과학 논문 철회의 주요 원인으로 부정행위를 밝혀 재현성 위기의 구체적 원인을 제시한다
+- 🔗 후속 연구: [[papers/1058_Why_Most_Published_Research_Findings_Are_False/review]] — 대부분의 연구 결과가 거짓일 수 있다는 주장을 1500명 과학자의 재현성 위기 경험으로 확장하여 실증적으로 검증했다.
+- 🏛 기반 연구: [[papers/1074_OLMo_Accelerating_the_Science_of_Language_Models/review]] — 과학 재현성 위기가 완전 공개 언어 모델 개발의 필요성을 뒷받침함
+- 🏛 기반 연구: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 재현성 위기라는 근본적 문제를 제기하여 기계학습 기반 과학 연구에서 엄격한 표준이 필요한 이유를 제공한다.
+- 🔄 다른 접근: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 1,500명 과학자 설문조사는 100개 연구 직접 재현과 다른 방법으로 재현성 문제의 실태를 파악한다.
+- 🔗 후속 연구: [[papers/1142_Beyond_Retractions_Forensic_Scientometrics_Techniques_to_Ide/review]] — 재현성 위기를 넘어 적극적 부정행위 탐지로 과학적 무결성 확보 방법을 확장한다.
+- 🏛 기반 연구: [[papers/1214_The_Story_is_Not_the_Science_Execution-Grounded_Evaluation_o/review]] — 과학 연구의 재현성 문제를 해결하기 위한 실행 기반 검증의 필요성을 뒷받침한다.

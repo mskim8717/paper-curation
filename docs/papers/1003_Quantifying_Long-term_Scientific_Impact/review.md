@@ -88,9 +88,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2013_Quantifying Long-term S
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 인용 분포의 보편성과 인용 동역학 모델링을 통해 과학적 영향력 예측의 다른 접근법을 제공한다.
-- 🔗 후속 연구: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 장기 영향력 모델은 sleeping beauty 현상의 시간적 패턴을 예측하는 도구로 확장될 수 있다.
-- ⚖️ 반론/비판: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 인용 인플레이션 문제는 장기 영향력 모델의 시간적 안정성에 대한 의문을 제기한다.
-- 🔄 다른 접근: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 보편적 인용 분포와 인용 동역학은 과학적 영향력의 정규화와 예측에 상호 보완적 접근을 제공한다.
-- 🔗 후속 연구: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 잠자는 미녀 논문의 장기 인용 패턴 분석을 위한 정량적 영향력 측정 방법론을 제공한다.
-- 🔗 후속 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 핫스트릭 현상을 장기적 과학적 영향력 측정과 연결하여 창의적 생산성의 시간적 패턴을 심화 분석할 수 있음
+- 🔗 후속 연구: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 장기 인용 영향력 예측 모델을 지식공간에서의 공간적-시간적 확산 메커니즘으로 확장하여 더 정교한 분석을 제공합니다.
+- 🏛 기반 연구: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 인용 분포의 보편성이 장기 과학적 영향력 모델의 수학적 기반과 정규화 방법론을 제공합니다.
+- 🧪 응용 사례: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 장기 인용 영향력 예측 방법론을 늦게 인정받는 'Sleeping Beauty' 논문들의 발견과 식별에 적용할 수 있습니다.
+- 🧪 응용 사례: [[papers/1006_Real-World_Evidence_in_the_First_Round_of_the_US_Inflation_R/review]] — 실제임상증거(RWE)의 장기적 과학적 영향력을 정량화하여 약가 협상에서의 과학적 근거의 지속성을 평가할 수 있다.
+- 🔗 후속 연구: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 인용 분포의 보편성이 장기 과학적 영향력을 예측하는 모델의 수학적 기반과 분야 간 비교 방법론을 제공합니다.
+- 🔄 다른 접근: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 장기적 과학적 영향력을 측정하는 서로 다른 접근법을 제시하여 상호 보완적 관점을 제공한다.
+- 🔗 후속 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 핫스트릭 현상을 장기적 과학적 영향력 정량화 방법론과 결합하여 더 정교한 경력 평가가 가능하다.
+- 🏛 기반 연구: [[papers/1184_Hamemayu_Hayuning_Nagara_A_Bibliometric_Analysis_of_the_Poli/review]] — Javanese 철학을 통한 정책 분석의 장기적 영향을 측정하기 위해 과학적 영향력의 장기 정량화 방법이 필요하다.

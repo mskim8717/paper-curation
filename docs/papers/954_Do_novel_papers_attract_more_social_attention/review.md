@@ -87,7 +87,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cheng et al._2025_Do novel papers attrac
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — COVID-19 사례의 온라인 과학 소통 분석을 통해 혁신적 연구의 소셜 미디어 확산 메커니즘을 확장 이해할 수 있다.
-- ⚖️ 반론/비판: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 혁신이 과소평가된다는 관점에서 소셜 미디어 주목도가 진정한 혁신성을 반영하는지 비판적으로 검토해야 한다.
-- 🏛 기반 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합이 과학적 영향력에 미치는 효과 이론을 바탕으로 혁신성과 사회적 주목의 관계를 이해할 수 있다.
-- 🏛 기반 연구: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 혁신적 연구의 소셜 미디어 주목도 연구에 COVID-19 팬데믹 시기 과학 정보 흐름 분석 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/1226_Evaluating_Open_Access_Advantages_for_Citations_and_Altmetri/review]] — 논문의 혁신성이 전통적 인용도뿐만 아니라 오픈액세스를 통한 사회적 주목도에도 영향을 미치는지 확장 검증할 수 있다.
+- 🔄 다른 접근: [[papers/994_Organisational_accounts_engaged_in_scholarly_communication_o/review]] — 개별 논문의 혁신성 효과와 기관 계정의 체계적 소셜미디어 전략이라는 다른 관점에서 학술 소통을 분석한다.
+- 🏛 기반 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합과 과학적 영향의 관계를 통해 혁신적 연구가 사회적 주목을 받는 이론적 근거를 제공한다.
+- 🔄 다른 접근: [[papers/994_Organisational_accounts_engaged_in_scholarly_communication_o/review]] — 조직 계정의 체계적 소셜미디어 전략과 개별 논문의 혁신성이 사회적 주목도에 미치는 영향이라는 다른 관점을 제공한다.

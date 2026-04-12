@@ -83,10 +83,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ma and Uzzi_2018_Scientific prize networ
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 과학상 네트워크는 연구비 Matthew effect와 다른 경로로 과학계 엘리트 형성 메커니즘을 보여준다.
-- 🔗 후속 연구: [[papers/955_Does_Science_Advance_One_Funeral_at_a_Time/review]] — 과학 발전과 세대 교체의 관계는 과학상 네트워크가 예측하는 경계 확장 과학자들의 등장 패턴과 연결된다.
-- 🧪 응용 사례: [[papers/1121_Superstar_Extinctionsupsup/review]] — 슈퍼스타 소멸 현상은 과학상 네트워크에서 관찰되는 엘리트 집중화의 장기적 결과를 보여준다.
-- 🔄 다른 접근: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 과학상 네트워크는 연구비와 다른 경로로 과학계 엘리트 형성과 Matthew effect를 보여준다.
-- 🔗 후속 연구: [[papers/927_A_Dynamic_Network_Measure_of_Technological_Change/review]] — 기술 변화의 동적 측정 방법론은 과학적 경계를 확장하는 연구자 예측에 대한 네트워크 기반 접근법의 기술적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — 표준화된 인용 지표를 활용하여 과학 분야의 경계를 확장하는 연구자들을 예측하는 데 활용한다.
-- 🔗 후속 연구: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 고영향력 연구 주제 예측 모델에 과학상 네트워크 분석을 결합하여 혁신적 연구의 조기 식별이 가능함
+- 🔗 후속 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 과학상 네트워크가 예측하는 과학 엘리트가 교수 채용의 위계 구조와 어떻게 연결되어 학계 불평등을 형성하는지 확장 분석합니다.
+- 🏛 기반 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 예술, 문화, 과학 분야의 hot streak 현상이 과학상 수상과 과학적 돌파 사이의 관계를 이해하는 기반을 제공합니다.
+- 🧪 응용 사례: [[papers/1121_Superstar_Extinctionsupsup/review]] — 과학상 네트워크로 예측된 슈퍼스타 과학자들의 영향력 소멸 과정을 분석하는 구체적 적용 사례를 제공합니다.
+- 🏛 기반 연구: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 과학상 네트워크가 경계 돌파를 예측하는 원리를 제약 분야의 미충족 수요 발굴에 응용할 수 있는 이론적 토대를 제공한다.
+- 🧪 응용 사례: [[papers/1212_Shifts_in_Biotechnology_Research_Fronts_20002026_A_Bibliomet/review]] — 생명공학 분야의 혁신 경계를 탐지하는 데 과학상 네트워크 분석을 적용할 수 있다

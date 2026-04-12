@@ -82,8 +82,8 @@ Scopus 데이터를 기반으로 전 과학 분야의 상위 인용 과학자들
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — h-index를 포함하여 과학자들의 연구 성과를 측정하는 더 포괄적인 표준화된 지표 시스템을 제공한다.
-- 🧪 응용 사례: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 표준화된 인용 지표를 활용하여 과학 분야의 경계를 확장하는 연구자들을 예측하는 데 활용한다.
-- 🔄 다른 접근: [[papers/992_OpenAlex_in_focus_Metadata_quality_of_publication_type_and_l/review]] — OpenAlex와 다른 접근으로 과학자들의 표준화된 인용 지표 데이터베이스를 구축한다.
-- 🔗 후속 연구: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — h-index를 포함한 더 포괄적인 표준화된 인용 지표 데이터베이스를 제공한다.
-- 🔗 후속 연구: [[papers/1167_Enabling_transparent_research_evaluation_A_method_for_histor/review]] — 표준화된 인용 데이터베이스 연구를 확장하여 투명한 연구 평가를 위한 구체적 방법론을 제시한다.
+- 🧪 응용 사례: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — h-index를 포함한 표준화된 인용 지표들을 대규모 데이터베이스로 구축하여 개인 연구 성과 측정을 실용화했다.
+- 🔗 후속 연구: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 표준화된 인용 지표 데이터베이스를 인용 분포의 보편성과 객관적 측정이라는 이론적 맥락으로 확장했다.
+- 🔄 다른 접근: [[papers/992_OpenAlex_in_focus_Metadata_quality_of_publication_type_and_l/review]] — Scopus 기반 인용 지표 데이터베이스와는 다른 접근으로 OpenAlex의 출판물 유형과 접근성 메타데이터 품질을 분석한다.
+- 🔗 후속 연구: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — h-index의 실제 적용과 표준화된 인용 지표 데이터베이스 구축을 통해 개인 연구 성과 측정을 확장했다.
+- 🔗 후속 연구: [[papers/1167_Enabling_transparent_research_evaluation_A_method_for_histor/review]] — 표준화된 저자 데이터베이스 업데이트 작업을 RCR 메타데이터 추출로 확장하여 연구 평가 투명성을 높인다.

@@ -75,12 +75,11 @@ tags:
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1019_Science_of_science/review]] — 같은 주제를 다루는 다른 종합 리뷰로 과학의 과학 분야에 대한 보완적 관점과 최신 동향을 제공한다.
-- 🔗 후속 연구: [[papers/1071_Data_measurement_and_empirical_methods_in_the_science_of_sci/review]] — 과학의 과학 분야의 데이터, 측정, 실증 방법론을 구체적으로 다루어 종합 개요의 방법론적 깊이를 보완한다.
-- 🧪 응용 사례: [[papers/1023_SciSciNet_A_large-scale_open_data_lake_for_the_science_of_sc/review]] — 과학의 과학 연구를 위한 대규모 오픈 데이터 레이크를 제공하여 이론적 프레임워크의 실증적 적용을 가능하게 한다.
-- 🏛 기반 연구: [[papers/1014_Risk_and_Artificial_Intelligence_Adoption_A_Scientometric_an/review]] — 과학학 이론은 AI 도입 연구의 scientometric 분석에 개념적 틀을 제공한다.
-- 🔄 다른 접근: [[papers/1019_Science_of_science/review]] — 같은 과학의 과학 주제에 대한 다른 관점과 접근방법을 제시한다.
-- 🔗 후속 연구: [[papers/1120_SciEvo_A_2_Million_30-Year_Cross-disciplinary_Dataset_for_Te/review]] — 과학학 이론은 SciEvo 데이터셋이 다루는 과학 진화 현상의 개념적 틀을 제공한다.
-- 🏛 기반 연구: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — 연구 분야의 지식 조직 체계 구축을 위해 과학학의 이론적 기반과 체계적 접근 방법이 필요함
-- 🏛 기반 연구: [[papers/1071_Data_measurement_and_empirical_methods_in_the_science_of_sci/review]] — 과학의 과학에 대한 종합적 이론적 틀이 실증적 연구 방법론의 개념적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/993_OpenAlex_A_fully-open_index_of_scholarly_works_authors_venue/review]] — OpenAlex 학술 지식 그래프의 구축과 활용을 위해 과학학의 포괄적 이론적 틀과 방법론적 지침이 필요함
+- 🏛 기반 연구: [[papers/1019_Science_of_science/review]] — 과학의 과학 분야의 전반적 개념과 방법론을 제시하여 AI 시대 과학 연구 분석의 이론적 기반을 마련한다.
+- 🔗 후속 연구: [[papers/1023_SciSciNet_A_large-scale_open_data_lake_for_the_science_of_sc/review]] — 과학의 과학을 위한 대규모 오픈 데이터 레이크를 제공하여 AI 기반 과학 연구 분석의 실용적 인프라를 구축한다.
+- 🧪 응용 사례: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — LLM이 과학의 과학 연구를 어떻게 강화할 수 있는지 구체적 활용 방안을 제시한다.
+- 🏛 기반 연구: [[papers/1019_Science_of_science/review]] — 과학의 과학 분야의 이론적 토대와 방법론적 프레임워크를 제시하여 후속 연구의 기초를 마련했다.
+- 🏛 기반 연구: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — 과학의 과학 연구 분야에 LLM 기술을 통합하는 이론적이고 방법론적 토대를 공유한다.
+- 🔗 후속 연구: [[papers/1064_Data-driven_predictions_in_the_science_of_science/review]] — 데이터 기반 과학 예측의 이론적 토대를 제공하는 종합적 프레임워크임
+- 🔗 후속 연구: [[papers/1071_Data_measurement_and_empirical_methods_in_the_science_of_sci/review]] — 과학의 과학 분야의 이론적 토대와 실증적 방법론을 종합한 발전된 형태임
+- 🏛 기반 연구: [[papers/989_Modeling_Changing_Scientific_Concepts_with_Complex_Networks/review]] — 과학학의 전반적 이론과 방법론을 화학혁명이라는 구체적 역사 사례에 적용하여 개념 변화의 일반 원리를 검증한다.

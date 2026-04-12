@@ -89,6 +89,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luebber et al._2023_Rethink Funding by P
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 기존의 동료평가 기반 연구비 배분 시스템의 한계를 극복하는 추첨 기반 대안을 제시한다.
-- 🏛 기반 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 과학 자금 지원에서 나타나는 매튜 효과 문제를 해결하기 위한 추첨 시스템의 이론적 근거를 제공한다.
-- 🔗 후속 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 자금 지원의 광범위한 영향을 시각화하는 연구에 추첨 기반 배분의 효과 분석을 추가한다.
+- 🏛 기반 연구: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 기존 동료평가 시스템이 유명한 연구자보다는 혁신적 아이디어를 선별하는 데 한계가 있음을 보여주는 근거를 제공한다.
+- 🔄 다른 접근: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 연구비 배분의 효율성을 추첨으로 개선하려는 접근과 달리 공적 자금 활용의 실증적 분석을 통한 개선 방안이다.
+- ⚖️ 반론/비판: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 기존 연구비 배분에서 나타나는 매튜 효과의 불평등을 추첨 시스템으로 완화하려는 대안적 접근법이다.
+- ⚖️ 반론/비판: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 공적 자금의 효율적 배분을 위해 기존 동료평가 시스템 개선보다는 추첨 기반 배분을 제안하는 대안적 관점이다.
+- 🔄 다른 접근: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 펀딩에서 Matthew effect의 불평등을 해결하기 위한 대안적 접근법으로 추첨 기반 펀딩 시스템을 제안합니다.
+- 🔄 다른 접근: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — NIH 동료평가의 한계를 해결하기 위해 복권 방식의 펀딩 시스템을 대안으로 제시한다

@@ -90,11 +90,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Biliotti et al._2026_The Innovation Reco
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 과학계 소수집단의 혁신 과소평가 현상을 여성 과학자의 학제간 연구 사례로 구체화한다.
-- 🏛 기반 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학에서 여성에 대한 체계적 과소평가를 혁신 인정 역설의 구체적 메커니즘으로 설명한다.
-- 🔗 후속 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합의 과학적 영향을 성별에 따른 인정 차이의 관점에서 재해석한다.
-- 🧪 응용 사례: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 여성 과학자의 학제간 혁신이 과소평가되는 현상을 컴퓨터과학 분야의 인용 패턴으로 확인한다.
-- 🔗 후속 연구: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 소수집단의 높은 혁신율이 과소평가되는 현상을 여성 과학자의 학제간 혁신 사례로 구체화한다.
-- 🏛 기반 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학에서 여성에 대한 체계적 과소평가를 여성의 학제간 혁신 인정 역설의 근본 원인으로 설명한다.
-- 🔗 후속 연구: [[papers/942_Bridging_the_gap_between_science_and_society_Mapping_librari/review]] — 과학의 혁신 인식 역설과 도서관의 사회적 영향 중개 전략을 연결하면 과학의 사회적 가치 인식 개선 방안을 찾을 수 있다.
-- ⚖️ 반론/비판: [[papers/954_Do_novel_papers_attract_more_social_attention/review]] — 혁신이 과소평가된다는 관점에서 소셜 미디어 주목도가 진정한 혁신성을 반영하는지 비판적으로 검토해야 한다.
+- 🧪 응용 사례: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 과학계 다양성-혁신 역설을 성별 관점에서 구체화하여 여성의 학제간 혁신이 과소평가되는 메커니즘을 분석했다.
+- 🔗 후속 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 여성 과학자의 기여 과소인정 문제를 혁신 인정에서의 성별 격차라는 구체적 맥락으로 확장하여 분석했다.
+- 🏛 기반 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합이 과학적 영향력을 증대시킨다는 이론이 여성의 맥락적 참신성 혁신의 가치를 뒷받침한다.
+- 🧪 응용 사례: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 여성 과학자의 혁신적 기여가 과소평가되는 현상을 컴퓨터과학 분야의 성별 인용 불균형에서도 확인할 수 있다.
+- 🧪 응용 사례: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 다양성-혁신 역설을 성별 관점에서 구체화하여 여성 과학자의 학제간 혁신이 과소평가되는 현상을 분석했다.
+- 🏛 기반 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 여성 과학자의 기여 과소인정 문제가 여성의 학제간 혁신이 과소평가되는 메커니즘의 근본 원인을 설명한다.

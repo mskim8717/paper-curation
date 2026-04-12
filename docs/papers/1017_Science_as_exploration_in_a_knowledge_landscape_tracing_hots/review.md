@@ -81,10 +81,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_Science as exploration i
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합의 과학적 영향과 지식공간 탐색 패턴을 연결하여 혁신의 공간적 메커니즘을 이해할 수 있다.
-- 🏛 기반 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 토픽 수준의 과학 지도 작성은 지식공간 모델링의 실증적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 지식 그래프를 통한 과학 연구 매핑은 GIS 기반 접근과 다른 지식공간 구성 방법을 제시한다.
-- 🏛 기반 연구: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 지식공간에서의 탐색 패턴 이론은 인용 확산의 공간적 모델링에 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/1116_Harnessing_the_Power_of_Adversarial_Prompting_and_Large_Lang/review]] — 지식 경관에서 과학 탐험을 추적하는 방법론을 천문학 분야 적대적 프롬프팅 연구에 적용하여 가설 생성의 탐험적 패턴을 분석할 수 있다.
-- 🔗 후속 연구: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 지식 경관에서 핫스팟 추적 연구를 학술지 임베딩을 통한 물리-생명-보건 삼각형의 동적 변화 분석으로 확장한다.
-- 🧪 응용 사례: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 지식의 비전형적 조합 개념은 지식 경관에서 핫스팟을 추적하는 탐험적 과학 연구의 구체적 적용 사례를 제공한다.
+- 🔄 다른 접근: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 지식공간 탐색을 과학자의 연구주제 선택과 과학자 이동 궤적이라는 서로 다른 관점에서 분석하는 대안적 접근법입니다.
+- 🏛 기반 연구: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 과학 연구 분야 매핑 방법론이 지식공간에서의 과학자 탐색 패턴을 분석하는 기술적 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 주제 수준의 과학 매핑을 개별 과학자의 지식공간 탐색 행동으로 확장하여 미시적 관점을 추가합니다.
+- 🔄 다른 접근: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 지식공간에서의 탐색을 개별 논문의 인용 확산이 아닌 과학자의 연구주제 선택 관점에서 분석하는 대안적 접근법입니다.
+- 🔄 다른 접근: [[papers/1212_Shifts_in_Biotechnology_Research_Fronts_20002026_A_Bibliomet/review]] — 지식 지형에서 핫스팟 추적을 통해 생명공학 연구 전선의 변화를 다른 관점에서 분석할 수 있다

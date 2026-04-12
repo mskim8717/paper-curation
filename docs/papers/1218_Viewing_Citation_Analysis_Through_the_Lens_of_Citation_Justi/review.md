@@ -12,7 +12,7 @@ tags:
   - "cat/Computational_Bibliometric_Analysis"
   - "sub/Journal_Citation_Patterns"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Viewing Citation Analysis Through the Lens of Citation Justice.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Smith_2026_Viewing Citation Analysis Through the Lens of Citation Justice.pdf"
 ---
 
 # Viewing Citation Analysis Through the Lens of Citation Justice
@@ -76,9 +76,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Viewing Citation Analysis Through the Le
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 인용 정의 관점에서 여성 연구자의 낮은 인용률 문제를 구조적 불평등으로 분석하여 해결 방안을 모색할 수 있음
-- 🏛 기반 연구: [[papers/943_Citation_Analysis_as_a_Tool_in_Journal_Evaluation/review]] — 인용 정의를 실현하기 위해 저널 평가에서 인용 분석의 근본적 원리와 한계를 이해할 필요가 있음
-- 🧪 응용 사례: [[papers/940_Bibliometrics_Global_Gender_Disparities_in_Science/review]] — Citation justice의 관점은 과학계 성별 불균형을 다룬 서지계량학 연구에서 공정한 인용 분석의 중요성을 강조한다.
-- 🏛 기반 연구: [[papers/1081_Science_Citation_IndexA_New_Dimension_in_Indexing_This_uniqu/review]] — 인용 분석의 철학적 기초를 다루며 Science Citation Index가 만든 인용 기반 평가의 정당성을 검토한다.
-- 🏛 기반 연구: [[papers/1053_Visualizing_the_context_of_citations_referencing_papers_publ/review]] — 인용 맥락 시각화의 이론적 기반이 되는 인용 정당화 관점을 제공합니다.
-- 🏛 기반 연구: [[papers/943_Citation_Analysis_as_a_Tool_in_Journal_Evaluation/review]] — 저널 평가를 위한 인용 분석 도구 개발은 citation justice 관점에서 인용 분석을 재검토하는 연구의 기초적 배경을 제공한다.
+- 🏛 기반 연구: [[papers/1081_Science_Citation_IndexA_New_Dimension_in_Indexing_This_uniqu/review]] — 인용 정의의 관점에서 인용 분석을 재검토하는 것은 Science Citation Index의 원래 개념과 활용에서 출발한다.
+- 🔗 후속 연구: [[papers/943_Citation_Analysis_as_a_Tool_in_Journal_Evaluation/review]] — 인용 정의 관점의 인용 분석이 저널 평가 도구로서의 인용 분석으로 확장될 수 있다.
+- 🧪 응용 사례: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 컴퓨터과학의 체계적 성별 인용 불균형 문제에 인용 정의 원칙을 적용할 수 있다
+- 🔗 후속 연구: [[papers/940_Bibliometrics_Global_Gender_Disparities_in_Science/review]] — 과학 분야 성별 격차 분석에 인용 정의 관점을 추가하여 공정성을 높일 수 있다
+- 🏛 기반 연구: [[papers/1053_Visualizing_the_context_of_citations_referencing_papers_publ/review]] — 인용 맥락 분석을 위한 새로운 방법론이 인용 정당화 관점에서 인용 분석을 이해하는 이론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/990_Networks_of_Scientific_Papers/review]] — 인용 분석을 인용 정당화 관점에서 재해석하여 단순 연결성 이상의 의미를 탐구한다.
+- 🔗 후속 연구: [[papers/944_Co-Citation_Analysis_Bibliographic_Coupling_and_Direct_Citat/review]] — 인용 분석 방법들의 효과 비교 연구를 인용 정당성의 관점에서 더욱 심층적으로 확장하여 분석할 수 있습니다.
+- 🏛 기반 연구: [[papers/1152_Citation_of_classical_research_by_doctoral-level_LIS_scholar/review]] — 인용 정당성 관점에서 인용 분석을 바라보는 시각을 제공하여 치의학 철회 논문의 지속적 인용 문제를 이론적으로 해석할 수 있다.

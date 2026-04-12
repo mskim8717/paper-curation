@@ -14,7 +14,7 @@ tags:
   - "cat/Computational_Bibliometric_Analysis"
   - "sub/Research_Reproducibility_Crisis"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Beyond Retractions Forensic Scientometrics Techniques to Identify Research Misco.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/McIntosh et al._2026_Beyond Retractions Forensic Scientometrics Techniques to Identify Research Misconduct, Citation Lea.pdf"
 ---
 
 # Beyond Retractions: Forensic Scientometrics Techniques to Identify Research Misconduct, Citation Leakage, and Funding Anomalies
@@ -87,9 +87,11 @@ Pharmakon Neuroscience Research Network라는 위조 연구 집단의 사례 분
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 단순한 부정행위 통계를 넘어서 사기 집단을 능동적으로 탐지하는 포렌식 방법론으로 발전시켰습니다.
-- 🏛 기반 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 과학 연구의 재현성 문제에 대한 광범위한 조사 결과가 포렌식 과학계량학의 필요성을 뒷받침합니다.
-- 🧪 응용 사례: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 기계학습 연구의 타당성 보장을 위한 체크리스트와 연계하여 부정행위 예방의 사전적 접근법을 제시한다.
-- 🧪 응용 사례: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 연구 부정행위 탐지를 위한 실증적 사례로 REFORMS 체크리스트의 필요성을 구체적으로 보여준다.
-- 🧪 응용 사례: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 철회를 넘어선 포렌식 과학계량학 기법으로 부정행위 탐지 방법론을 확장할 수 있음
-- 🔗 후속 연구: [[papers/1214_The_Story_is_Not_the_Science_Execution-Grounded_Evaluation_o/review]] — 연구 부정 탐지를 위한 포렌식 과학계량학 기법과 코드/데이터 검증을 통한 연구 문제 발견을 통합적으로 활용할 수 있다.
+- 🔗 후속 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 과학적 부정행위가 철회의 대부분을 차지한다는 연구가 forensic scientometrics의 필요성을 뒷받침한다.
+- 🏛 기반 연구: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 심리학에서의 재현성 평가가 더 광범위한 연구 부정행위 탐지 시스템의 방법론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 과학의 파괴적 혁신 감소에 대한 견고한 증거와 연구 부정행위 탐지 모두 과학 품질 저하 문제를 다른 관점에서 다룬다.
+- 🔗 후속 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 재현성 위기를 넘어 적극적 부정행위 탐지로 과학적 무결성 확보 방법을 확장한다.
+- 🔄 다른 접근: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 과학에서 편향 평가를 위한 메타 분석적 접근과 부정행위 탐지를 위한 forensic 접근을 비교 연구할 수 있다.
+- 🔄 다른 접근: [[papers/1068_Artificial_intelligence_and_illusions_of_understanding_in_sc/review]] — 과학 연구의 질 평가에서 AI 환상과 법의학적 과학계량 기법의 대안적 접근법임
+- 🔗 후속 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 논문 철회 분석을 철회 이전 단계에서 부정행위를 탐지하는 포렌식 기법으로 발전시킨다.
+- 🔄 다른 접근: [[papers/1157_Critical_Review_with_Scientometrics_Approach_on_the_Retrofit/review]] — 연구 품질 평가에서 LLM 기반과 법의학적 과학계량 기법의 다른 접근법임

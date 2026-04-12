@@ -73,6 +73,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Barabási and Albert_1999_Emergence of S
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/928_A_General_Theory_of_Bibliometric_and_Other_Cumulative_Advant/review]] — 스케일-프리 네트워크의 선호적 부착 메커니즘은 누적 우위 과정의 일반 이론을 네트워크 성장 맥락으로 구체화한다.
-- 🏛 기반 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 무작위 네트워크에서의 스케일링 출현은 스몰월드 네트워크의 집합적 역학을 이해하기 위한 네트워크 이론의 기초를 제공한다.
-- 🏛 기반 연구: [[papers/928_A_General_Theory_of_Bibliometric_and_Other_Cumulative_Advant/review]] — 누적 우위의 일반 이론은 스케일-프리 네트워크의 선호적 부착 메커니즘에 대한 수학적 모델링의 이론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 스케일-프리 네트워크의 이론적 기반을 실제 대규모 네트워크에서 커뮤니티를 탐지하는 알고리즘으로 발전시킨다.
+- 🏛 기반 연구: [[papers/990_Networks_of_Scientific_Papers/review]] — 과학논문 인용 네트워크의 초기 패턴 분석이 복잡한 네트워크의 스케일-프리 특성 발견의 기초를 제공했다.
+- 🧪 응용 사례: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 선호적 부착 메커니즘을 과학자 협업 네트워크의 실제 구조 형성 과정에 적용하여 검증한다.
+- 🏛 기반 연구: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 무작위 네트워크에서 스케일링 현상의 출현 이론이 커뮤니티 구조를 가진 네트워크 모델링의 기초를 제공한다.
+- 🔗 후속 연구: [[papers/990_Networks_of_Scientific_Papers/review]] — 과학논문 인용 네트워크의 초기 패턴 관찰이 복잡한 네트워크의 스케일-프리 특성 발견으로 발전했다.
+- 🏛 기반 연구: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 스케일-프리 네트워크와 선호적 부착 이론이 대규모 네트워크 커뮤니티 탐지 알고리즘 개발의 이론적 기초를 제공한다.

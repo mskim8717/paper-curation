@@ -85,7 +85,7 @@ LLM의 맥락 임베딩 대신 복잡 네트워크 기반 프레임워크를 사
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — 대규모 언어 모델의 과학 발전 지원과 대비하여 복잡 네트워크 기반의 해석 가능한 과학 개념 변화 모델링을 제시한다.
-- 🔗 후속 연구: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 과학 매핑에서 주제 진화 재고찰 연구를 화학혁명 사례의 복잡 네트워크 기반 개념 변화 분석으로 구체화한다.
-- 🏛 기반 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 복잡 네트워크 이론을 바탕으로 플로지스톤과 산소 이론 경쟁에서 과학 개념 변화의 위상학적 특성을 모델링한다.
-- 🏛 기반 연구: [[papers/1213_The_evolution_of_international_scientific_collaboration_netw/review]] — 복잡 네트워크를 통한 과학적 개념 변화 모델링은 과학 개념의 변화 구조를 네트워크로 매핑한 연구의 방법론적 기반을 제공한다.
+- ⚖️ 반론/비판: [[papers/1068_Artificial_intelligence_and_illusions_of_understanding_in_sc/review]] — 과학에서 인공지능의 이해 착각 문제와 복잡 네트워크 기반의 해석 가능한 개념 모델링이라는 상반된 접근법을 제시한다.
+- 🔄 다른 접근: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 과학 개념 변화 추적을 위한 복잡 네트워크와 비지도 워드 임베딩이라는 서로 다른 방법론적 접근을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/1124_The_Science_of_Science/review]] — 과학학의 전반적 이론과 방법론을 화학혁명이라는 구체적 역사 사례에 적용하여 개념 변화의 일반 원리를 검증한다.
+- 🔄 다른 접근: [[papers/1213_The_evolution_of_international_scientific_collaboration_netw/review]] — 복잡 네트워크를 통해 과학 개념의 변화를 모델링하는 다른 접근법을 제시한다

@@ -89,7 +89,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zuorong et al._2026_Bridging the gap bet
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 과학의 혁신 인식 역설과 도서관의 사회적 영향 중개 전략을 연결하면 과학의 사회적 가치 인식 개선 방안을 찾을 수 있다.
-- 🔄 다른 접근: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 온라인 과학 소통의 정보 경로는 도서관의 전통적 중개 역할과 다른 과학-사회 연결 메커니즘을 보여준다.
-- 🧪 응용 사례: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 정책에서 물리학 지식의 선택적 활용은 도서관이 과학 지식을 사회적으로 중개할 때 고려해야 할 구체적 사례를 제공한다.
-- 🔗 후속 연구: [[papers/994_Organisational_accounts_engaged_in_scholarly_communication_o/review]] — 과학과 사회 간 격차 해소를 위한 도서관 매핑 연구를 Twitter 기관 계정의 학술 소통 역할 분석으로 확장할 수 있다.
+- 🏛 기반 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 공공 자금으로 지원된 과학 연구의 사회적 활용에 대한 이론적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 도서관의 체계적 중개 전략과 소셜미디어 플랫폼의 자발적 정보 흐름이라는 상이한 과학 소통 방식을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — AI 기반 과학 협력 도구가 도서관의 과학-사회 중개 역할을 어떻게 강화할 수 있는지 보여준다.
+- 🔄 다른 접근: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 소셜미디어의 자발적 정보 확산과 도서관의 체계적 과학 소통 전략이라는 서로 다른 접근 방식을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/1137_Art_tourism_a_nascent_concept_but_symptomatic_of_a_trend_Ins/review]] — 도서관이 과학과 사회를 연결하는 역할 매핑이 예술 관광의 문화적 브리지 역할을 이해하는 틀을 확장한다.

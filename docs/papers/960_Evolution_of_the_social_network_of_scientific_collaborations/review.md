@@ -83,8 +83,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Barabási et al._2002_Evolution of the s
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 작은 세상 네트워크 이론은 과학 협력 네트워크의 기본적인 수학적 모델을 제공한다.
-- 🔄 다른 접근: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크의 구조적 특성을 다른 각도에서 분석하여 보완적 시각을 제공한다.
-- 🧪 응용 사례: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 미중 과학 협력의 변화는 글로벌 협력 네트워크 진화의 구체적 사례를 보여준다.
-- 🏛 기반 연구: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크의 구조적 특성을 시간에 따른 동적 진화의 관점에서 이해하는 기초를 제공한다.
-- 🧪 응용 사례: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 과학 협력의 사회적 네트워크 진화 연구에 대규모 과학 공동체 매핑의 새로운 방법론을 적용할 수 있다.
+- 🔗 후속 연구: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 과학자 협력 네트워크의 기본 진화 메커니즘을 미중 과학협력의 구체적 사례로 확장하여 지정학적 변화까지 포함합니다.
+- 🏛 기반 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — small-world 네트워크의 집합 역학이 과학자 협력 네트워크의 우선적 부착 메커니즘을 이해하는 이론적 기반을 제공합니다.
+- 🔄 다른 접근: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크의 구조를 분석하는 다른 접근법과 시각을 제공하여 보완적 관점을 제시합니다.
+- 🔗 후속 연구: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크의 구조적 특성을 시간에 따른 사회 네트워크 진화 관점으로 확장하여 동적 분석을 제공한다.
+- 🔗 후속 연구: [[papers/935_Atlas_of_Science_Collaboration_19712020/review]] — 과학 협력의 사회적 네트워크 진화를 50년간의 장기적 관점에서 확장한다

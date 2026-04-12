@@ -91,12 +91,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2018_Hot streaks in artistic,
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 핫스트릭 현상을 장기적 과학적 영향력 측정과 연결하여 창의적 생산성의 시간적 패턴을 심화 분석할 수 있음
-- ⚖️ 반론/비판: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 초기 좌절이 미래 성과에 미치는 영향과 핫스트릭의 긍정적 궤적 간의 대조를 통해 경력 동역학을 이해할 수 있음
-- 🧪 응용 사례: [[papers/1028_Tenure_and_research_trajectories/review]] — 테뉴어 시스템이 핫스트릭 현상의 발현과 지속에 미치는 제도적 영향을 분석할 수 있음
-- 🔄 다른 접근: [[papers/1000_Productivity_Prominence_and_the_Effects_of_Academic_Environm/review]] — 개별 연구자의 hot streak 패턴은 기관 환경과는 다른 생산성 결정 요인을 제시한다.
-- 🔗 후속 연구: [[papers/1005_Quantifying_the_dynamics_of_failure_across_science_startups/review]] — 실패와 성공의 동역학을 예술, 문화, 과학 분야의 핫스트릭 현상으로 확장하여 이해한다.
-- 🔄 다른 접근: [[papers/1037_The_Misleading_Narrative_of_the_Canonical_Faculty_Productivi/review]] — 예술과 과학 경력에서 hot streak 패턴은 정형화된 생산성 궤적과 다른 개인차 중심 관점을 제공한다.
-- 🏛 기반 연구: [[papers/1113_Definition_and_Value_Reconstruction_of_Human_Creativity_in_t/review]] — 예술, 문화, 과학 분야 경력에서 나타나는 hot streak 패턴 분석이 AI 시대 인간 창의성의 독특한 특성을 이해하는 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1121_Superstar_Extinctionsupsup/review]] — 과학 경력에서 연속적 성공(hot streaks) 패턴을 분석하여 슈퍼스타 부재가 협력자들의 성과 궤적에 미치는 영향을 보완한다.
-- 🏛 기반 연구: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 조기 좌절 경험의 분석은 예술, 문화, 과학 경력에서 나타나는 핫스트릭 현상을 이해하기 위한 경력 궤적 연구의 기반을 제공한다.
+- 🏛 기반 연구: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 예술가와 과학자의 핫스트릭 현상이 초기 좌절 후 성과 향상 패턴을 이해하는 이론적 배경을 제공한다.
+- 🔗 후속 연구: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 핫스트릭 현상을 장기적 과학적 영향력 정량화 방법론과 결합하여 더 정교한 경력 평가가 가능하다.
+- 🔄 다른 접근: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 경력 궤도의 잠재 구조를 비지도 학습으로 포착하는 것이 핫스트릭 탐지의 다른 접근법이 될 수 있다.
+- ⚖️ 반론/비판: [[papers/1005_Quantifying_the_dynamics_of_failure_across_science_startups/review]] — 실패 후 성공의 역학보다는 연구자 경력에서 지속적인 고성과 시기인 핫 스트릭 현상을 분석한다.
+- 🏛 기반 연구: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 예술, 문화, 과학 분야의 hot streak 현상이 과학상 수상과 과학적 돌파 사이의 관계를 이해하는 기반을 제공합니다.
+- 🔄 다른 접근: [[papers/1037_The_Misleading_Narrative_of_the_Canonical_Faculty_Productivi/review]] — 교수 생산성의 다양한 패턴과 예술, 과학 경력에서 나타나는 hot streak 현상이라는 서로 다른 성과 패턴을 비교 분석할 수 있습니다.
+- 🔗 후속 연구: [[papers/1113_Definition_and_Value_Reconstruction_of_Human_Creativity_in_t/review]] — 예술과 과학 경력의 핫스트릭 분석을 AI 시대 창의성 평가 모델로 확장함
+- 🔄 다른 접근: [[papers/1121_Superstar_Extinctionsupsup/review]] — 과학자 경력의 핫스트릭 패턴 분석과 슈퍼스타 사망의 네트워크 효과를 비교하여 개인 vs 협업 차원의 과학 생산성 동역학을 탐구할 수 있다.
+- 🧪 응용 사례: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 예술, 문화, 과학 경력의 핫스트릭을 비전형적 조합이 만드는 영향력으로 설명할 수 있다
+- 🔗 후속 연구: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 초기 좌절 후 성과 향상 패턴과 핫스트릭 현상은 모두 경력에서 나타나는 비선형적 성과 변화를 다룬다.

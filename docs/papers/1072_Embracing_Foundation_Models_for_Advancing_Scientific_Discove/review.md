@@ -85,8 +85,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Guo et al._2024_Embracing Foundation Mod
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1116_Harnessing_the_Power_of_Adversarial_Prompting_and_Large_Lang/review]] — 천문학에서 적대적 프롬프팅을 활용한 가설 생성과 지식 기반 아이디어 사슬 방법론은 서로 다른 LLM 활용 전략으로 상호 보완된다.
-- 🔗 후속 연구: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 머신러닝 기반 고영향 연구 주제 예측 방법론을 기초 모델 활용 과학 발견에 통합하여 더 정확한 연구 방향 제시가 가능하다.
-- 🔄 다른 접근: [[papers/1114_GoAI_Enhancing_AI_Students_Learning_Paths_and_Idea_Generatio/review]] — GoAI의 교육용 지식그래프와 KG-CoI의 과학 발견용 지식그래프는 서로 다른 목적으로 AI 연구 지원을 제공하는 상호 보완적 시스템이다.
-- 🔄 다른 접근: [[papers/1116_Harnessing_the_Power_of_Adversarial_Prompting_and_Large_Lang/review]] — 적대적 프롬프팅 기반 가설 생성과 지식그래프 기반 아이디어 사슬은 LLM을 활용한 과학 발견에서 서로 다른 접근 방식을 제공한다.
-- 🔗 후속 연구: [[papers/1175_Figures_as_Interfaces_Toward_LLM-Native_Artifacts_for_Scient/review]] — LLM-native figures는 과학 발견을 위한 foundation model 활용의 새로운 방향성을 제시하는 구체적 구현체로 볼 수 있다.
+- 🔗 후속 연구: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — LLM이 과학의 과학 분야에 미치는 전반적 영향력을 기초 모델 활용으로 구체화함
+- 🔄 다른 접근: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 과학적 발견과 연구 예측에서 기초 모델과 기계학습의 다른 접근법임
+- 🔗 후속 연구: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 과학적 돌파구 예측에서 구조적 분석을 기초 모델 기반 아이디어 생성으로 보완함
+- ⚖️ 반론/비판: [[papers/1030_The_Burden_of_Knowledge_and_the_Death_of_the_Renaissance_Man/review]] — 지식 부담 문제를 AI 기반 파운데이션 모델로 해결하여 과학 발견을 가속화하려는 대안적 접근법이다.
+- 🔄 다른 접근: [[papers/1114_GoAI_Enhancing_AI_Students_Learning_Paths_and_Idea_Generatio/review]] — 과학 발견과 교육에서 기초 모델 활용의 다른 접근법과 목적을 보여줌
+- 🔗 후속 연구: [[papers/1116_Harnessing_the_Power_of_Adversarial_Prompting_and_Large_Lang/review]] — 기초 모델을 과학 발견에 활용하는 방법을 천문학 분야로 구체적으로 적용함
+- 🔗 후속 연구: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 기초모델을 활용한 과학적 발견 가속화를 심혈관질환 연구 분야에 구체적으로 적용한 사례 연구로 확장된다.
+- 🧪 응용 사례: [[papers/1228_OpenRad_a_Curated_Repository_of_Open-access_AI_models_for_Ra/review]] — 방사선학 분야의 기초 모델들을 과학적 발견 가속화에 활용할 수 있는 구체적 경로를 제시한다.

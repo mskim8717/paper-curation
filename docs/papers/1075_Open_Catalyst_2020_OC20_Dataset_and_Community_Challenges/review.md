@@ -90,11 +90,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chanussot et al._2021_Open Catalyst 2020
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1082_The_Open_Catalyst_2022_OC22_Dataset_and_Challenges_for_Oxide/review]] — OC20에서 OC22로의 발전은 산화물 전기촉매 연구를 위한 데이터셋과 도전 과제의 확장을 보여준다.
-- 🧪 응용 사례: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 펀딩의 광범위한 영향 시각화 방법론을 Open Catalyst 데이터셋 기반 연구의 사회적 임팩트 측정에 적용할 수 있다.
-- 🏛 기반 연구: [[papers/1082_The_Open_Catalyst_2022_OC22_Dataset_and_Challenges_for_Oxide/review]] — OC20 데이터셋이 OC22 산화물 전기촉매 연구의 기초적인 방법론과 데이터 구조를 제공한다.
-- 🏛 기반 연구: [[papers/1070_Challenges_in_High-Throughput_Inorganic_Materials_Prediction/review]] — Open Catalyst 2020 데이터셋이 제공하는 체계적인 촉매 연구 기반이 고처리량 무기재료 예측 시스템의 신뢰성 문제 해결에 필수적이다.
-- 🧪 응용 사례: [[papers/1140_Assessing_the_impact_of_Open_Research_Information_Infrastruc/review]] — 오픈 과학 인프라 영향력 평가 프레임워크를 다른 과학 데이터 플랫폼인 Open Catalyst에도 적용할 수 있는 방법론적 확장성을 보여준다.
-- 🧪 응용 사례: [[papers/1163_effect_of_poloxamer_and_hyaluronic_acid_administration_in_ne/review]] — 생의학 연구의 서지 분석이 실제 촉매 연구 데이터셋 구축으로 이어지는 응용 사례입니다.
-- 🔄 다른 접근: [[papers/1195_Mapping_the_Research_Landscape_of_Electronic_Properties_of_G/review]] — 그래핀 연구의 bibliometric 분석과 병행하여 실제 그래핀 연구 데이터셋을 통한 검증 연구가 필요함
-- 🏛 기반 연구: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 심혈관 질환 연구의 머신러닝 응용 동향 분석을 위해 대규모 과학 데이터셋의 구조와 특성을 이해할 필요가 있음
+- 🔄 다른 접근: [[papers/1070_Challenges_in_High-Throughput_Inorganic_Materials_Prediction/review]] — 고처리량 재료 예측에서 촉매 발견과 무기재료의 다른 접근법과 과제를 다룸
+- 🔄 다른 접근: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 과학 연구와 자금 지원의 연결에서 촉매 데이터셋과 글로벌 자금-출판 매핑의 다른 접근법임
+- 🔄 다른 접근: [[papers/1228_OpenRad_a_Curated_Repository_of_Open-access_AI_models_for_Ra/review]] — AI 모델의 오픈 접근에서 촉매 발견과 방사선학의 다른 과학 영역 접근법임
+- 🔗 후속 연구: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 재료과학 텍스트 마이닝과 촉매 발견 데이터셋을 결합하여 더 강력한 AI 모델 개발 가능
+- 🔗 후속 연구: [[papers/1082_The_Open_Catalyst_2022_OC22_Dataset_and_Challenges_for_Oxide/review]] — Open Catalyst 데이터셋을 OC20에서 OC22로 확장하여 산화물 전기촉매까지 포함함
+- 🧪 응용 사례: [[papers/1195_Mapping_the_Research_Landscape_of_Electronic_Properties_of_G/review]] — 그래핀 전자 특성 연구의 bibliometric 분석이 촉매 연구 데이터셋과 커뮤니티 챌린지에서 실제 적용될 수 있다.

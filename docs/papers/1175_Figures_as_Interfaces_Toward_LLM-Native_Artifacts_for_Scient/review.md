@@ -15,7 +15,7 @@ tags:
   - "cat/AI-Assisted_Scientific_Discovery"
   - "sub/LLM_Applications_in_Science"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Figures as Interfaces Toward LLM-Native Artifacts for Scientific Discovery.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2026_Figures as Interfaces Toward LLM-Native Artifacts for Scientific Discovery.pdf"
 ---
 
 # Figures as Interfaces: Toward LLM-Native Artifacts for Scientific Discovery
@@ -88,7 +88,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Figures as Interfaces Toward LLM-Native 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1072_Embracing_Foundation_Models_for_Advancing_Scientific_Discove/review]] — LLM-native figures는 과학 발견을 위한 foundation model 활용의 새로운 방향성을 제시하는 구체적 구현체로 볼 수 있다.
-- 🏛 기반 연구: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 의료 언어에서 잠재 지식을 포착하는 임베딩 기술이 과학 도형의 기계 판독 가능한 표현 생성에 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 의미적 네트워크 기반 연구 트렌드 예측 방법을 인터랙티브 과학 도형의 발견 인터페이스 설계에 적용할 수 있다.
-- 🔗 후속 연구: [[papers/1114_GoAI_Enhancing_AI_Students_Learning_Paths_and_Idea_Generatio/review]] — LLM 네이티브 과학 커뮤니케이션 아티팩트가 GoAI의 개인화된 학습 경로와 통합되어 더 효과적인 AI 교육 환경을 구축할 수 있다.
+- 🏛 기반 연구: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — LLM이 과학적 도형에서 잠재 지식을 추출하고 조작하는 능력의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/1162_DREAM_Deep_Research_Evaluation_with_Agentic_Metrics/review]] — LLM-native figures를 연구 평가 에이전트 시스템에 통합하여 더 정교한 평가가 가능하다.
+- 🧪 응용 사례: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 기계 학습을 통한 연구 동향 예측에 인터랙티브 도형 인터페이스를 활용할 수 있다.

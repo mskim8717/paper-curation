@@ -11,7 +11,7 @@ tags:
   - "cat/Computational_Bibliometric_Analysis"
   - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mapping the Research Landscape of Electronic Properties of Graphene A Citation N.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jain_2026_Mapping the Research Landscape of Electronic Properties of Graphene A Citation Network Analysis.pdf"
 ---
 
 # Mapping the Research Landscape of Electronic Properties of Graphene: A Citation Network Analysis
@@ -81,5 +81,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mapping the Research Landscape of Electr
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — 그래핀 연구의 bibliometric 분석과 병행하여 실제 그래핀 연구 데이터셋을 통한 검증 연구가 필요함
-- 🧪 응용 사례: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 그래핀 연구 동향 분석 결과를 바탕으로 미래 고영향력 그래핀 연구 주제를 예측할 수 있음
+- 🧪 응용 사례: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — 그래핀 전자 특성 연구의 bibliometric 분석이 촉매 연구 데이터셋과 커뮤니티 챌린지에서 실제 적용될 수 있다.
+- 🏛 기반 연구: [[papers/972_Identifying_interdisciplinary_emergence_in_the_science_of_sc/review]] — 그래핀 연구의 학제간 특성을 이해하기 위해 과학의 학제간 emergence 식별 방법론이 기반이 된다.
+- 🔄 다른 접근: [[papers/984_Mapping_Scholarly_Impact_Citation_Analysis_of_Commerce_Docto/review]] — 그래핀 전자 특성 연구의 인용 네트워크 분석과 그래핀 전자 특성 연구 지형도 매핑이 동일 주제에 대한 서로 다른 서지계량학적 접근을 보여줍니다.

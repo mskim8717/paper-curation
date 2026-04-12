@@ -88,8 +88,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Park et al._2026_Interdisciplinary paper
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 북유럽 연구 자금과 출판물 관계 매핑을 학제간 그랜트의 인용 영향도 분석으로 확장하여 자금 지원 효과를 정밀 분석할 수 있다.
-- 🏛 기반 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 프론티어 자금 지원의 광범위한 영향 시각화 연구를 바탕으로 학제간 연구 지원 방식의 효과를 구체적으로 분석한다.
-- 🧪 응용 사례: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 과학의 공공 사용과 공공 자금 연구에 학제간 그랜트 지원 효과 분석을 적용하여 자금 배분 정책을 개선할 수 있다.
-- 🔗 후속 연구: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 학제간 연구가 학문적 자금 지원을 받는 현상을 물리학 지식의 선택적 정책 활용으로 확장한다.
-- 🏛 기반 연구: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 학제간 그랜트 지원 효과 연구에 북유럽 지역의 연구 자금-출판물 주제별 매핑 방법론을 적용할 수 있다.
+- 🧪 응용 사례: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 학제간 연구의 그랜트 전략을 제약업계의 화이트스페이스 분석에 적용하여 연구개발 투자 최적화 방안을 모색할 수 있다.
+- 🔗 후속 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 연구 자금 지원의 시각화와 광범위한 영향 분석을 통해 학제간 그랜트 전략의 효과를 더 깊이 이해할 수 있다.
+- 🏛 기반 연구: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 글로벌 과학 자금과 연구 출판의 연결 분석을 통해 그랜트 유형별 효과 차이의 구조적 배경을 파악할 수 있다.

@@ -85,5 +85,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Goyal et al._2026_Public Profile Matters
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1009_Relative_Citation_Ratio_A_New_Metric_That_Uses_Citation_Rate/review]] — 인용 추천 시스템의 성능 평가에 상대 인용 비율(RCR) 메트릭을 활용할 수 있어 DAVINCI 모델의 추천 품질 측정을 개선할 수 있다.
-- 🔗 후속 연구: [[papers/1077_Quantifying_large_language_model_usage_in_scientific_papers/review]] — LLM 사용량 정량화 방법론을 적용하여 AI 기반 인용 추천 시스템의 실제 학술 커뮤니티 영향도를 측정할 수 있다.
+- 🔗 후속 연구: [[papers/1077_Quantifying_large_language_model_usage_in_scientific_papers/review]] — 인용 추천 시스템에 LLM 사용 패턴을 통합하면 더 정확한 추천이 가능할 것임
+- 🏛 기반 연구: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — 개별 연구자의 과학적 성과 측정 방법론이 public profile 분석의 이론적 기반이 됨
+- 🏛 기반 연구: [[papers/1071_Data_measurement_and_empirical_methods_in_the_science_of_sci/review]] — 과학의 과학 분야의 실증적 방법론이 인용 추천 시스템 평가에 필수적임
+- 🔗 후속 연구: [[papers/994_Organisational_accounts_engaged_in_scholarly_communication_o/review]] — 연구자 평판 관리를 위한 통합적 접근법과 기관 계정의 소셜미디어 전략을 결합하여 더 효과적인 과학 소통 방안을 모색할 수 있다.

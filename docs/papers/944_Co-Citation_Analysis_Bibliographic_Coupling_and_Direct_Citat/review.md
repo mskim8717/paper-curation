@@ -76,6 +76,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Boyack and Klavans_2010_Co‐citation an
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 기존 유사성 기반 방법들의 비교 평가 결과를 바탕으로 주제 진화 분석의 통합적 접근법을 개발할 수 있음
-- 🏛 기반 연구: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 다양한 인용 분석 방법의 효과성 평가를 위해 과학 매핑의 이론적 기반과 실용적 지침이 필요함
-- 🏛 기반 연구: [[papers/1056_Where_Do_Your_Citations_Come_From_Citation-Constellation_A_F/review]] — 공동인용 분석과 서지결합의 기본 원리는 인용 네트워크 경로 분석의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/1218_Viewing_Citation_Analysis_Through_the_Lens_of_Citation_Justi/review]] — 인용 분석 방법들의 효과 비교 연구를 인용 정당성의 관점에서 더욱 심층적으로 확장하여 분석할 수 있습니다.
+- 🧪 응용 사례: [[papers/943_Citation_Analysis_as_a_Tool_in_Journal_Evaluation/review]] — 공인용분석과 서지결합 등의 인용 분석 방법들을 학술지 평가 도구로 실제 적용하는 구체적 사례를 보여줍니다.
+- 🏛 기반 연구: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — VOSviewer가 구현하는 co-citation, bibliographic coupling 등의 기본 분석 기법들의 이론적 배경을 제공한다.
+- 🏛 기반 연구: [[papers/929_A_network_approach_to_topic_models/review]] — 문서-단어 네트워크를 통한 토픽 모델링이 서지결합 및 동시인용 분석의 이론적 기반을 확장한다.
+- 🏛 기반 연구: [[papers/1056_Where_Do_Your_Citations_Come_From_Citation-Constellation_A_F/review]] — 공동인용 분석과 서지학적 결합의 기본 원리가 인용 네트워크의 사회구조적 분석을 위한 방법론적 기반을 제공합니다.
+- 🏛 기반 연구: [[papers/1146_BIBLIOMETRIC_ANALYSIS_ON_PARENTING_STYLES_AND_ADOLESCENTS_HA/review]] — Co-citation과 bibliographic coupling 분석 기법이 부모 양육방식 연구의 co-word 분석 방법론적 기반이다.
+- 🏛 기반 연구: [[papers/1159_Dissemination_and_Implementation_Theories_Models_or_Framewor/review]] — 공인용 분석과 서지결합의 기본 개념을 제시하여 D&I 이론의 인용 네트워크 분석을 위한 방법론적 토대를 마련한다.
+- 🔗 후속 연구: [[papers/1206_Review_of_E-Commerce_Literature_Inferences_Trends_and_Recomm/review]] — 서지결합과 동시인용 분석을 통해 e-commerce 분야의 지적 구조를 더 정교하게 파악할 수 있다
+- 🧪 응용 사례: [[papers/1154_Contributions_of_accreditation_organizations_in_health_servi/review]] — Co-citation, co-occurrence, co-authorship 분석 기법이 보건의료 인증 분야의 지식 구조 규명에 적용된다.

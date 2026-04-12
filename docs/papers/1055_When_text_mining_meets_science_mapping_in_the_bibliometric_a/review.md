@@ -86,7 +86,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2023_When text mining meets 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 텍스트 마이닝과 과학 지도화 통합은 주제 진화 분석에 다른 방법론적 접근을 제공한다.
-- 🏛 기반 연구: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — VOSviewer와 같은 서지계량 도구는 텍스트 마이닝과 과학 지도화 결합의 기술적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — 연구 분야 지식 조직 체계는 텍스트 마이닝 기반 과학 지도화의 분류학적 토대를 제공한다.
-- 🔄 다른 접근: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 텍스트 마이닝과 과학 지도화 결합은 주제 진화 분석에 다른 방법론적 접근을 제공한다.
+- 🏛 기반 연구: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 기본적인 과학 지도 작성과 과학 지도의 원리가 텍스트 마이닝과 결합된 서지학적 분석의 방법론적 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 서지학적 분석에서 텍스트 마이닝과 과학 지도화의 결합을 의미적, 신경망 네트워크 기반 연구 동향 예측으로 확장합니다.
+- 🔄 다른 접근: [[papers/949_Comparative_science_mapping_a_novel_conceptual_structure_ana/review]] — 서지학적 분석에서 새로운 개념 구조 분석과 비교 과학 지도화라는 서로 다른 접근법을 제시합니다.
+- 🏛 기반 연구: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 과학 지도 작성에서 텍스트 마이닝과 결합된 서지학적 분석이 주제 진화 추적의 방법론적 기반을 제공합니다.

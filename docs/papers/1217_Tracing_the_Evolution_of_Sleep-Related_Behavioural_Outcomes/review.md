@@ -16,7 +16,7 @@ tags:
   - "cat/Science_Policy_and_Research_Dynamics"
   - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tracing the Evolution of Sleep-Related Behavioural Outcomes Research in Autistic.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xu et al._2026_Tracing the Evolution of Sleep-Related Behavioural Outcomes Research in Autistic Children A Sciento.pdf"
 ---
 
 # Tracing the Evolution of Sleep-Related Behavioural Outcomes Research in Autistic Children: A Scientometric Review
@@ -92,9 +92,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tracing the Evolution of Sleep-Related B
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1109_A_comprehensive_large-scale_biomedical_knowledge_graph_for_A/review]] — 자폐 스펙트럼 장애 연구의 지식 구조 분석을 위해 대규모 생의학 지식 그래프가 제공하는 개념 관계를 활용할 수 있음
-- 🔗 후속 연구: [[papers/1048_Unequal_effects_of_the_COVID-19_pandemic_on_scientists/review]] — COVID-19가 자폐 스펙트럼 장애 아동의 수면 연구에 미친 불평등한 영향을 분석하여 연구 공백을 파악할 수 있음
-- 🔄 다른 접근: [[papers/1216_Tour_guiding_technologies_a_bibliometric_analysis_mapping_tr/review]] — 자폐아동 수면 연구의 scientometric 분석과 투어 가이딩 기술 분석은 모두 특정 분야의 지식 발전 경로를 문헌계량학으로 추적한다.
-- 🏛 기반 연구: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — 연구 분야 지식 조직 시스템에 대한 조사는 자폐아동 수면 연구의 지식 클러스터 분석을 위한 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1146_BIBLIOMETRIC_ANALYSIS_ON_PARENTING_STYLES_AND_ADOLESCENTS_HA/review]] — 부모 양육이 청소년에게 미치는 영향을 수면 행동 결과까지 확장해서 분석한 연구입니다.
-- 🔄 다른 접근: [[papers/1216_Tour_guiding_technologies_a_bibliometric_analysis_mapping_tr/review]] — 투어 가이딩 기술의 체계적 문헌계량 분석과 자폐아동 수면 연구의 scientometric 분석은 모두 특정 도메인의 연구 동향을 문헌계량학적으로 매핑한다.
+- 🏛 기반 연구: [[papers/1048_Unequal_effects_of_the_COVID-19_pandemic_on_scientists/review]] — 자폐스펙트럼장애 연구의 지식 발전 경로를 추적하기 위해 코로나19가 과학자들에게 미친 불평등한 영향을 고려해야 한다.
+- 🔄 다른 접근: [[papers/1172_Exploring_Strategies_for_Addressing_Weight_Stigma_An_Analysi/review]] — 자폐 아동의 수면-행동 연구와 체중 낙인화 연구 모두 건강 관련 행동 결과를 scientometric 관점에서 분석한다.
+- 🔄 다른 접근: [[papers/1141_Assistive_technology_for_developmental_conditions_A_scientom/review]] — 발달 조건을 위한 보조 기술 연구와 자폐스펙트럼장애 수면 연구를 비교 분석할 수 있다
+- 🔗 후속 연구: [[papers/1146_BIBLIOMETRIC_ANALYSIS_ON_PARENTING_STYLES_AND_ADOLESCENTS_HA/review]] — 양육 스타일과 청소년 건강 연구 방법론을 자폐아동 수면-행동 관계 분석에 확장할 수 있다
+- 🧪 응용 사례: [[papers/1180_Global_research_trends_on_depression-related_stigma_in_the_2/review]] — 우울증 관련 낙인 연구의 서지계량 방법을 자폐스펙트럼장애 수면 연구에 적용할 수 있다
+- 🔄 다른 접근: [[papers/1146_BIBLIOMETRIC_ANALYSIS_ON_PARENTING_STYLES_AND_ADOLESCENTS_HA/review]] — 둘 다 청소년의 행동 결과를 다루지만 1146은 부모 양육방식과 행복, 1217은 수면 관련 행동에 초점을 맞춘다.
+- 🔄 다른 접근: [[papers/1180_Global_research_trends_on_depression-related_stigma_in_the_2/review]] — 우울증 관련 낙인화와 자폐스펙트럼장애 아동의 수면-행동 관계 모두 정신건강 분야의 scientometric 분석을 다룬다.

@@ -75,7 +75,7 @@ AI가 과학의 모든 영역을 자동화하면서 인간의 이해(understandi
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1113_Definition_and_Value_Reconstruction_of_Human_Creativity_in_t/review]] — AI 시대 인간 창의성의 재정의가 '과학 이후' 시대에서 인간의 역할과 가치를 보존하기 위한 이론적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — LLM이 연구 참신성을 감소시킨다는 실증적 증거가 AI 자동화로 인한 과학적 이해 저하 우려를 뒷받침한다.
-- 🧪 응용 사례: [[papers/1113_Definition_and_Value_Reconstruction_of_Human_Creativity_in_t/review]] — 3차원 창의성 평가 모델(보간형, 외삽형, 도약형)이 '과학 이후' 시대에서 인간 고유 창의성을 보존하기 위한 구체적 평가 기준을 제공한다.
-- ⚖️ 반론/비판: [[papers/1065_A_Survey_of_AI_Scientists/review]] — AI 과학자 시스템의 긍정적 발전 전망과 '과학 이후' 시대의 우려스러운 전망을 대비하여 AI 자동화의 양면성을 이해할 수 있다.
+- 🔗 후속 연구: [[papers/1068_Artificial_intelligence_and_illusions_of_understanding_in_sc/review]] — AI가 과학에 미치는 부정적 영향에 대한 우려를 더욱 근본적인 차원에서 확장함
+- 🏛 기반 연구: [[papers/1041_The_Rise_of_Large_Language_Models_and_the_Direction_and_Impa/review]] — LLM이 연구 방향에 미치는 영향에 대한 분석이 과학 이후 시대 논의의 배경이 됨
+- 🔗 후속 연구: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — LLM이 연구 참신성을 감소시킨다는 우려가 과학 이후 시대의 구체적 증거가 됨
+- ⚖️ 반론/비판: [[papers/1065_A_Survey_of_AI_Scientists/review]] — AI 과학자의 발전에 대한 기술적 낙관론과 달리 인간 이해의 한계를 경고함

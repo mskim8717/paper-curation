@@ -84,10 +84,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Watts and Strogatz_1998_Collective dynam
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 소규모 세계 네트워크 이론을 과학자 협력 네트워크의 실제 구조 분석에 적용한다.
-- 🔗 후속 연구: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 소규모 세계 특성을 가진 네트워크에서 커뮤니티 구조를 모델링하는 확장된 접근법을 제시한다.
-- 🔄 다른 접근: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 네트워크의 커뮤니티 구조를 발견하는 다른 알고리즘적 접근방법을 제공한다.
-- 🔗 후속 연구: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 소규모 세계 네트워크 이론을 커뮤니티 구조가 있는 네트워크로 확장한 모델링 접근법이다.
-- 🧪 응용 사례: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 소규모 세계 네트워크 이론을 과학자들의 실제 협력 네트워크 구조 분석에 구체적으로 적용한다.
-- 🏛 기반 연구: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 무작위 네트워크에서의 스케일링 출현은 스몰월드 네트워크의 집합적 역학을 이해하기 위한 네트워크 이론의 기초를 제공한다.
-- 🏛 기반 연구: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 작은 세상 네트워크 이론은 과학 협력 네트워크의 기본적인 수학적 모델을 제공한다.
+- 🧪 응용 사례: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 소규모 세계 네트워크 이론을 과학자 협력 네트워크의 실제 구조 분석에 적용하여 실증적으로 검증했다.
+- 🔗 후속 연구: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 소규모 세계 네트워크 모델을 커뮤니티 구조를 가진 학술 인용 네트워크에 적용할 수 있는 Price-Pareto 성장 모델로 확장했다.
+- 🧪 응용 사례: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 소규모 세계 네트워크의 커뮤니티 탐지를 위한 효율적인 알고리즘을 제공하여 네트워크 구조 분석을 심화했다.
+- 🔗 후속 연구: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 소규모 세계 네트워크 이론을 커뮤니티 구조를 가진 학술 인용 네트워크에 적용할 수 있는 확장된 모델을 제공한다.
+- 🧪 응용 사례: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 소규모 세계 네트워크 이론을 과학자들의 실제 공저 협력 네트워크 구조 분석에 적용하여 실증적으로 검증했다.
+- 🔗 후속 연구: [[papers/929_A_network_approach_to_topic_models/review]] — 소규모 세계 네트워크 이론을 텍스트 코퍼스의 이분 네트워크 구조 분석에 적용한다.
+- 🏛 기반 연구: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — small-world 네트워크의 집합 역학이 과학자 협력 네트워크의 우선적 부착 메커니즘을 이해하는 이론적 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/1213_The_evolution_of_international_scientific_collaboration_netw/review]] — 과학 협력 네트워크의 진화가 작은 세계 네트워크의 집단 역학으로 확장하여 이해될 수 있다.

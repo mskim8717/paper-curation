@@ -12,7 +12,7 @@ tags:
   - "cat/Science_Policy_and_Research_Dynamics"
   - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shifts in Biotechnology Research Fronts 2000–2026 A Bibliometric Study of Topic .pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Judijanto_2026_Shifts in Biotechnology Research Fronts 2000–2026 A Bibliometric Study of Topic Emergence and Citat.pdf"
 ---
 
 # Shifts in Biotechnology Research Fronts 2000–2026: A Bibliometric Study of Topic Emergence and Citation Landscapes
@@ -88,8 +88,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shifts in Biotechnology Research Fronts 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 생명공학 연구의 다양성-혁신 패러독스가 지속가능성 중심 전환에 미치는 영향을 분석할 수 있음
-- 🏛 기반 연구: [[papers/1071_Data_measurement_and_empirical_methods_in_the_science_of_sci/review]] — 생명공학 연구 동향의 경험적 분석을 위해 과학학 연구의 데이터 측정 방법론을 적용할 필요가 있음
-- 🔄 다른 접근: [[papers/1206_Review_of_E-Commerce_Literature_Inferences_Trends_and_Recomm/review]] — e-commerce 연구 동향과 유사한 bibliometric 분석 방법론을 생명공학 분야에 적용하여 연구 전선 변화의 비교 관점을 제공한다.
-- 🏛 기반 연구: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 기계학습 응용의 scientometric 조사를 통해 생명공학 연구에서 AI 기술 도입과 학제간 응용의 학술적 배경을 보여준다.
-- 🔗 후속 연구: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 의미론적 네트워크를 통한 연구 동향 예측 방법론을 생명공학 분야의 지속가능성 지향적 전환 예측에 적용한 사례를 제시한다.
+- 🏛 기반 연구: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 생명공학 연구 전선의 변화를 분석하기 위해 오픈 액세스 논문의 대규모 현황 분석이 기반 데이터로 필요하다.
+- 🔗 후속 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 생명공학 분야의 지속가능성 지향 전환이 비전형적 조합과 과학적 영향력 연구로 확장될 수 있다.
+- 🧪 응용 사례: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 생명공학 분야의 혁신 경계를 탐지하는 데 과학상 네트워크 분석을 적용할 수 있다
+- 🔗 후속 연구: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 시간에 따른 과학 구조 변화를 통시적으로 매핑하는 방법론을 생명공학에 적용한다
+- 🔄 다른 접근: [[papers/1017_Science_as_exploration_in_a_knowledge_landscape_tracing_hots/review]] — 지식 지형에서 핫스팟 추적을 통해 생명공학 연구 전선의 변화를 다른 관점에서 분석할 수 있다
+- 🔄 다른 접근: [[papers/1155_Corporate_Governance_in_Accounting_A_Bibliometric_Analysis_o/review]] — 기업지배구조와 생명공학 분야 모두에서 지속가능성과 ESG로의 패러다임 전환을 bibliometric 분석으로 추적하는 접근법이 유사하다.

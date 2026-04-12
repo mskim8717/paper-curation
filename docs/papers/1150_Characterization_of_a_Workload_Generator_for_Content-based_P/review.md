@@ -10,7 +10,7 @@ essence: "본 논문은 content-based publish-subscribe (CBPS) 시스템 연구 
 tags:
   - "cat/Other"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Characterization of a Workload Generator for Content-based Publish-subscribe Res.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/2026_Characterization of a Workload Generator for Content-based Publish-subscribe Research Evaluation.pdf"
 ---
 
 # Characterization of a Workload Generator for Content-based Publish-subscribe Research Evaluation

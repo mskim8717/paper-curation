@@ -15,7 +15,7 @@ tags:
   - "cat/AI-Assisted_Scientific_Discovery"
   - "sub/Research_Evaluation_and_Metrics"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/The Story is Not the Science Execution-Grounded Evaluation of Mechanistic Interp.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bai et al._2026_The Story is Not the Science Execution-Grounded Evaluation of Mechanistic Interpretability Research.pdf"
 ---
 
 # The Story is Not the Science: Execution-Grounded Evaluation of Mechanistic Interpretability Research
@@ -88,7 +88,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/The Story is Not the Science Execution-G
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 과학 연구의 재현성 위기 문제가 논문 내러티브를 넘어선 실행 기반 검증의 필요성을 뒷받침하는 핵심 배경을 제공한다.
-- 🔗 후속 연구: [[papers/1142_Beyond_Retractions_Forensic_Scientometrics_Techniques_to_Ide/review]] — 연구 부정 탐지를 위한 포렌식 과학계량학 기법과 코드/데이터 검증을 통한 연구 문제 발견을 통합적으로 활용할 수 있다.
-- 🧪 응용 사례: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 심리학 실험의 재현가능성 평가 경험을 기계적 해석 연구의 실행 기반 평가 프레임워크 설계에 적용할 수 있다.
-- 🔗 후속 연구: [[papers/1162_DREAM_Deep_Research_Evaluation_with_Agentic_Metrics/review]] — 실행 기반 과학 평가 방법론이 DREAM 프레임워크의 agentic evaluation을 실제 과학적 성과 측정으로 확장하는 방향을 제시한다.
+- 🏛 기반 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 과학 연구의 재현성 문제를 해결하기 위한 실행 기반 검증의 필요성을 뒷받침한다.
+- 🔗 후속 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 연구 부정행위 탐지를 위해 논문 서술뿐만 아니라 코드와 데이터까지 검증하는 포괄적 접근을 제시한다.
+- 🔄 다른 접근: [[papers/1057_Which_stylistic_features_fool_ChatGPT_research_evaluations/review]] — 텍스트 스타일 분석 대신 실행 가능한 코드와 데이터를 통한 연구 평가의 대안적 접근법을 제공한다.
+- 🔄 다른 접근: [[papers/1140_Assessing_the_impact_of_Open_Research_Information_Infrastruc/review]] — 과학 연구 평가에서 NLP 기반 텍스트 분석과 실행 기반 평가라는 서로 다른 접근법을 비교할 수 있다.
+- 🔄 다른 접근: [[papers/1162_DREAM_Deep_Research_Evaluation_with_Agentic_Metrics/review]] — 연구 평가에서 에이전트 기반 메트릭과 실행 기반 평가의 다른 접근법임

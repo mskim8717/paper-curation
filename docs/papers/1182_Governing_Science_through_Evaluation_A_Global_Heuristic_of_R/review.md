@@ -12,7 +12,7 @@ tags:
   - "cat/Science_Policy_and_Research_Dynamics"
   - "sub/Science_Policy_Funding"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Governing Science through Evaluation A Global Heuristic of Research Evaluation R.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cramer and Reinhart_2026_Governing Science through Evaluation A Global Heuristic of Research Evaluation Regimes.pdf"
 ---
 
 # Governing Science through Evaluation: A Global Heuristic of Research Evaluation Regimes
@@ -74,9 +74,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Governing Science through Evaluation A G
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1204_Rethinking_Research_Evaluation_in_India_Is_the_Ecosystem_Rea/review]] — 인도의 연구 평가 체계 개혁 필요성을 다룬 구체적 사례로 글로벌 연구 평가 거버넌스 분석의 실증적 적용을 보여준다.
-- 🏛 기반 연구: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 과학에서 편향을 메타 평가한 연구로 연구 평가 체계의 편향성 문제와 거버넌스 개선 필요성을 뒷받침한다.
-- 🔗 후속 연구: [[papers/1167_Enabling_transparent_research_evaluation_A_method_for_histor/review]] — 투명한 연구 평가 방법론을 제시하여 글로벌 연구 평가 체계의 투명성과 책임성 향상 방안을 보완한다.
-- 🧪 응용 사례: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 평가를 통한 과학 거버넌스는 교수 채용 네트워크 불평등이 작동하는 제도적 메커니즘을 보여준다.
-- 🧪 응용 사례: [[papers/1167_Enabling_transparent_research_evaluation_A_method_for_histor/review]] — 글로벌 연구 평가 체계 분석에 필요한 투명한 데이터 추출 방법을 제공하여 비교 연구의 실증적 기반을 마련한다.
-- 🧪 응용 사례: [[papers/1204_Rethinking_Research_Evaluation_in_India_Is_the_Ecosystem_Rea/review]] — 글로벌 연구 평가 거버넌스 프레임워크를 인도라는 구체적 맥락에 적용하여 지역별 평가 체계 개혁의 실증적 사례를 제공한다.
+- 🧪 응용 사례: [[papers/1204_Rethinking_Research_Evaluation_in_India_Is_the_Ecosystem_Rea/review]] — 연구 평가 체계의 글로벌 비교 휴리스틱을 인도의 구체적 사례에 적용하여 RRA 도입 가능성을 체계적으로 평가한다.
+- 🏛 기반 연구: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — LLM 기반 연구 평가의 책임 있는 적용을 위해 필요한 거버넌스 관점의 이론적 프레임워크를 제공한다.
+- 🔗 후속 연구: [[papers/996_Partisan_disparities_in_the_funding_of_science_in_the_United/review]] — 미국 과학 펀딩의 정파적 격차 분석을 다국가 연구 평가 체계 비교로 확장하여 정치적 맥락이 과학 거버넌스에 미치는 영향을 탐구한다.
+- 🧪 응용 사례: [[papers/1167_Enabling_transparent_research_evaluation_A_method_for_histor/review]] — 연구 평가 체계의 글로벌 비교 분석을 위해 NIH의 RCR 데이터 추출 방법을 다른 국가 시스템에 적용할 수 있다.
+- 🧪 응용 사례: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — 연구 평가 거버넌스의 글로벌 비교 프레임워크를 LLM 시대의 새로운 평가 방식에 적용한다.
+- 🔗 후속 연구: [[papers/1204_Rethinking_Research_Evaluation_in_India_Is_the_Ecosystem_Rea/review]] — 글로벌 연구 평가 체계 비교 휴리스틱을 인도라는 특정 국가 사례에 구체적으로 적용하여 RRA 도입의 현실적 과제를 분석한다.

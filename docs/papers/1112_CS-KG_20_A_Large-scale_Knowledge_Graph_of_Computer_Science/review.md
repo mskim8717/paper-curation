@@ -91,7 +91,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dessí et al._2025_CS-KG 2.0 A Large-sca
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 재료과학의 Word2vec 임베딩과 컴퓨터과학의 지식그래프는 서로 다른 학문 분야에서 잠재 지식 추출을 위한 상호 보완적 접근법이다.
-- 🔗 후속 연구: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — 연구 분야의 지식 조직 체계에 대한 조사가 CS-KG 2.0의 컴퓨터과학 분야 체계화 방법론을 다른 학문 영역으로 확장하는 기반을 제공한다.
-- 🔄 다른 접근: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 컴퓨터과학 논문에서 구축한 지식그래프와 재료과학 문헌의 Word2vec 임베딩은 서로 다른 도메인에서 잠재 지식 추출을 위한 상호 보완적 접근법이다.
-- 🧪 응용 사례: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — 컴퓨터 과학 지식 그래프를 통해 연구 분야 분류 체계의 실제 적용 사례를 검증할 수 있음
+- 🔄 다른 접근: [[papers/1109_A_comprehensive_large-scale_biomedical_knowledge_graph_for_A/review]] — 대규모 지식그래프에서 컴퓨터과학과 생의학 도메인의 다른 구축 방법론임
+- 🔗 후속 연구: [[papers/1114_GoAI_Enhancing_AI_Students_Learning_Paths_and_Idea_Generatio/review]] — 컴퓨터과학 지식그래프가 AI 교육용 지식그래프 구축의 기반 데이터가 됨
+- 🏛 기반 연구: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 기계학습 응용의 과학계량학적 조사가 CS-KG 지식그래프 구축의 이론적 배경임
+- 🔄 다른 접근: [[papers/1109_A_comprehensive_large-scale_biomedical_knowledge_graph_for_A/review]] — 대규모 지식그래프 구축에서 생의학과 컴퓨터과학의 다른 도메인 접근법임
+- 🏛 기반 연구: [[papers/1114_GoAI_Enhancing_AI_Students_Learning_Paths_and_Idea_Generatio/review]] — 컴퓨터과학 지식그래프가 AI 교육용 지식그래프 구축의 기반 데이터를 제공함
+- 🏛 기반 연구: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 컴퓨터 과학 분야의 대규모 지식 그래프인 CS-KG가 과학 연구 매핑을 위한 구조화된 지식의 모델을 제공한다.

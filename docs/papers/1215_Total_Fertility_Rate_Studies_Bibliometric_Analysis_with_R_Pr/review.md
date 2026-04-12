@@ -12,7 +12,7 @@ tags:
   - "cat/Computational_Bibliometric_Analysis"
   - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Total Fertility Rate Studies Bibliometric Analysis with R Program.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Baş and Coşan_2026_Total Fertility Rate Studies Bibliometric Analysis with R Program.pdf"
 ---
 
 # Total Fertility Rate Studies: Bibliometric Analysis with R Program
@@ -90,5 +90,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Total Fertility Rate Studies Bibliometri
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1120_SciEvo_A_2_Million_30-Year_Cross-disciplinary_Dataset_for_Te/review]] — 출산율 연구의 진화 분석을 위해 30년간의 학제간 데이터셋이 제공하는 장기적 관점을 활용할 수 있음
-- 🔗 후속 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 출산율 연구에서 나타나는 성별 불평등 패턴을 과학계 전반의 성별 불평등과 비교 분석할 수 있음
+- 🏛 기반 연구: [[papers/968_Growth_Rates_of_Modern_Science_Bibliometric_Analysis_Based_o/review]] — 출산율 연구의 성장 패턴을 이해하기 위해 현대 과학의 성장률에 대한 bibliometric 분석이 기반이 된다.
+- 🧪 응용 사례: [[papers/935_Atlas_of_Science_Collaboration_19712020/review]] — 출산율 연구의 국제 협력 분석이 1971-2020년 과학 협력 아틀라스에서 실제 적용될 수 있다.

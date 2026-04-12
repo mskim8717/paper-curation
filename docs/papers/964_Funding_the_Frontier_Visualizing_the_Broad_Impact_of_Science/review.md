@@ -91,11 +91,15 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_Funding the Frontier Vi
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 과학 펀딩의 광범위한 사회적 영향 시각화는 과학의 공적 사용과 공적 펀딩 관계 연구를 대규모 데이터 기반으로 확장한다.
-- 🏛 기반 연구: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 글로벌 과학 펀딩과 연구 출판물 연결 연구는 펀딩의 다차원적 영향 시각화 시스템 개발의 데이터 연결 방법론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1012_Rethink_Funding_by_Putting_the_Lottery_First/review]] — 과학 자금 지원의 광범위한 영향을 시각화하는 연구에 추첨 기반 배분의 효과 분석을 추가한다.
-- 🏛 기반 연구: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 과학 연구 펀딩의 광범위한 영향을 시각화한 연구로 제약 R&D 투자 전략의 맥락을 제공한다.
-- 🧪 응용 사례: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — 과학 펀딩의 광범위한 영향 시각화 방법론을 Open Catalyst 데이터셋 기반 연구의 사회적 임팩트 측정에 적용할 수 있다.
-- 🏛 기반 연구: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 과학 프론티어 자금 지원의 광범위한 영향 시각화 연구를 바탕으로 학제간 연구 지원 방식의 효과를 구체적으로 분석한다.
-- 🧪 응용 사례: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 표준화된 펀딩 데이터를 활용하여 프론티어 연구 자금 지원의 광범위한 영향을 시각화하고 분석할 수 있음
-- 🔄 다른 접근: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 과학 프론티어 자금 지원의 광범위한 영향과 대비하여 북유럽 지역의 주제별 자금-성과 관계를 구체적으로 분석한다.
+- 🔄 다른 접근: [[papers/996_Partisan_disparities_in_the_funding_of_science_in_the_United/review]] — 과학 펀딩의 다차원적 영향 분석과 정당별 펀딩 격차 분석은 과학 투자 정책을 다른 관점에서 평가한다.
+- 🏛 기반 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 과학의 공공 활용과 공공 펀딩에 대한 이론적 논의가 펀딩 영향 시각화 시스템의 필요성을 뒷받침한다.
+- 🔗 후속 연구: [[papers/1016_Sci2Pol_Evaluating_and_Fine-tuning_LLMs_on_Scientific-to-Pol/review]] — 과학-정책 연결 평가 모델을 LLM을 활용한 자동화된 분석으로 확장하여 더 효율적인 영향 추적이 가능하다.
+- 🏛 기반 연구: [[papers/1082_The_Open_Catalyst_2022_OC22_Dataset_and_Challenges_for_Oxide/review]] — 과학 연구 자금 지원의 광범위한 영향 분석이 촉매 연구 데이터셋 구축을 뒷받침함
+- 🔗 후속 연구: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 기초 과학 펀딩의 광범위한 영향을 시각화하는 방법론을 제약 R&D의 특허-임상 데이터 통합 분석으로 확장한다.
+- 🧪 응용 사례: [[papers/931_AI-Driven_Automation_Can_Become_the_Foundation_of_Next-Era_S/review]] — 과학 연구 프런티어 자금 지원 패턴 분석에 AI4SoS 자동화 프레임워크를 적용할 수 있다.
+- 🔄 다른 접근: [[papers/996_Partisan_disparities_in_the_funding_of_science_in_the_United/review]] — 정당별 과학 펀딩 격차와 펀딩 영향 시각화는 모두 과학 투자 정책을 서로 다른 관점에서 분석한다.
+- 🔗 후속 연구: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 연구 자금 지원의 시각화와 광범위한 영향 분석을 통해 학제간 그랜트 전략의 효과를 더 깊이 이해할 수 있다.
+- 🧪 응용 사례: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 펀딩 인정 문자열의 체계적 정규화 데이터셋을 과학 연구의 광범위한 영향 시각화 연구에 실제 적용할 수 있습니다.
+- 🔄 다른 접근: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 북유럽 지역의 세부적 분석과 글로벌 차원의 연구 자금 시각화라는 서로 다른 규모와 범위에서 자금-성과 관계를 탐구한다.
+- 🔗 후속 연구: [[papers/1184_Hamemayu_Hayuning_Nagara_A_Bibliometric_Analysis_of_the_Poli/review]] — VAT 정책과 공공 복지 조화 분석이 과학 연구 자금 지원의 광범위한 영향 시각화로 확장될 수 있다.
+- 🔗 후속 연구: [[papers/1135_AI-Augmented_Mobile_and_Data-Driven_Decision_Making_in_Busin/review]] — AI와 SDG의 연결을 매핑하는 연구가 혁신적 논문이 사회적 주목을 받는 현상을 지속가능성 맥락으로 확장한다.

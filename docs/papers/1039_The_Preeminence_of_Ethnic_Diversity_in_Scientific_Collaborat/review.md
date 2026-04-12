@@ -87,11 +87,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/AlShebli et al._2018_The Preeminence of 
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 소수집단의 혁신이 과소평가된다는 발견과 인종적 다양성이 협업 영향력을 높인다는 결과를 대조한다.
-- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양한 팀의 혁신적 성과를 인종적 다양성의 관점에서 확장하여 분석한다.
-- 🏛 기반 연구: [[papers/1010_Remote_collaboration_fuses_fewer_breakthrough_ideas/review]] — 다양성이 협업에 미치는 긍정적 효과를 원격 협업의 혁신 제약과 비교하는 기준을 제공한다.
-- 🔗 후속 연구: [[papers/1010_Remote_collaboration_fuses_fewer_breakthrough_ideas/review]] — 인종적 다양성이 협업 영향력을 높이는 발견을 원격 협업 환경에서 재검토할 필요성을 제시한다.
-- ⚖️ 반론/비판: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 과학 협력에서 민족 다양성의 우월성과 미중 협력 발산은 상반된 국제 협력 트렌드를 보여준다.
-- ⚖️ 반론/비판: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 인종적 다양성이 협업 영향력을 높인다는 발견과 소수집단 혁신이 과소평가된다는 역설을 대조한다.
-- 🔗 후속 연구: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크의 구조적 특성을 인종적 다양성의 영향력 관점에서 확장하여 분석한다.
-- 🔄 다른 접근: [[papers/976_Intersectional_inequalities_in_science/review]] — 과학 협력에서 민족 다양성의 우월성 연구와 교차적 정체성 불평등 분석을 비교하여 다양성의 복합적 효과를 파악할 수 있다.
+- 🏛 기반 연구: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 과학계 다양성이 혁신에 미치는 긍정적 효과를 인종적 다양성이 협업 영향력에 미치는 구체적 근거로 입증했다.
+- 🔄 다른 접근: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 협업에서 다양성의 효과를 인종적 관점과 성별 관점에서 각각 분석하여 상호 보완적인 증거를 제공한다.
+- 🧪 응용 사례: [[papers/1010_Remote_collaboration_fuses_fewer_breakthrough_ideas/review]] — 인종적 다양성의 협업 효과를 원격 협업의 혁신 한계를 극복하는 방안으로 활용할 수 있다.
+- 🧪 응용 사례: [[papers/1010_Remote_collaboration_fuses_fewer_breakthrough_ideas/review]] — 원격 협업의 제약을 극복하기 위해 인종적 다양성이 과학 협업의 영향력 증대에 미치는 효과를 활용할 수 있다.
+- 🔄 다른 접근: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용의 명성 기반 위계와 대조적으로 민족 다양성이 과학 협력에서 갖는 우월성을 보여주는 대안적 관점입니다.
+- 🔗 후속 연구: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 과학계 소수집단의 혁신 기여 과소평가 문제를 인종적 다양성이 과학 협업에 미치는 긍정적 영향으로 확장했다.
+- 🔗 후속 연구: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 성별 다양성 프레임워크를 민족 다양성까지 확장하여 더 포괄적인 다양성 전략을 개발할 수 있다.

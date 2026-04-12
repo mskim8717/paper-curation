@@ -74,6 +74,8 @@ AI 시대에 인간 창의성의 정의를 재구성하며, 전통적 창의성 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1067_After_science/review]] — 3차원 창의성 평가 모델(보간형, 외삽형, 도약형)이 '과학 이후' 시대에서 인간 고유 창의성을 보존하기 위한 구체적 평가 기준을 제공한다.
-- 🏛 기반 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 예술, 문화, 과학 분야 경력에서 나타나는 hot streak 패턴 분석이 AI 시대 인간 창의성의 독특한 특성을 이해하는 기반을 제공한다.
-- 🏛 기반 연구: [[papers/1067_After_science/review]] — AI 시대 인간 창의성의 재정의가 '과학 이후' 시대에서 인간의 역할과 가치를 보존하기 위한 이론적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/1066_Accelerating_science_with_human-aware_artificial_intelligenc/review]] — AI 시대 인간 역할을 과학 발견 예측과 창의성 재정의로 다르게 접근함
+- 🔗 후속 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 예술과 과학 경력의 핫스트릭 분석을 AI 시대 창의성 평가 모델로 확장함
+- 🏛 기반 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성이 혁신적 과학을 촉진한다는 발견이 인간 창의성 재정의의 배경이 됨
+- 🔄 다른 접근: [[papers/1066_Accelerating_science_with_human-aware_artificial_intelligenc/review]] — 과학에서 인간의 역할을 AI 예측 향상과 창의성 재정의로 다르게 접근함
+- 🔗 후속 연구: [[papers/1216_Tour_guiding_technologies_a_bibliometric_analysis_mapping_tr/review]] — 투어 가이딩 기술의 발전이 AI 시대에서 인간 창의성의 정의와 가치 재구성으로 확장될 수 있다.

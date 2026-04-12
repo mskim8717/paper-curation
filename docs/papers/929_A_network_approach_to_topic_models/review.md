@@ -88,7 +88,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gerlach et al._2018_A network approach t
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 그래프에서의 커뮤니티 탐지 이론이 텍스트 네트워크에서 토픽을 발견하는 비모수적 접근법의 수학적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 지식 그래프를 활용한 과학 연구 매핑 방법론을 문서-단어 네트워크 기반 토픽 모델링과 결합하여 확장할 수 있다.
-- 🧪 응용 사례: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 네트워크 기반 토픽 모델링 기법을 머신러닝을 통한 고영향 연구 주제 예측에 적용하여 성능을 개선할 수 있다.
-- 🔄 다른 접근: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 네트워크 기반 토픽 모델은 문서 표현 학습과 다른 방식으로 지식공간을 구성할 수 있다.
+- 🏛 기반 연구: [[papers/944_Co-Citation_Analysis_Bibliographic_Coupling_and_Direct_Citat/review]] — 문서-단어 네트워크를 통한 토픽 모델링이 서지결합 및 동시인용 분석의 이론적 기반을 확장한다.
+- 🔗 후속 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크 이론을 텍스트 코퍼스의 이분 네트워크 구조 분석에 적용한다.
+- 🧪 응용 사례: [[papers/978_Introducing_the_open_biomedical_map_of_science/review]] — 생의학 과학 지도 구축에 네트워크 기반 토픽 모델링 방법론을 적용할 수 있다.
+- 🏛 기반 연구: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 네트워크 접근법을 통한 주제 모델링이 이동 궤적에서 잠재 구조를 추출하는 방법론적 기반을 제공합니다.
+- 🔄 다른 접근: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 토픽 모델링을 위한 네트워크 접근법과 LLM 기반 지식 그래프 접근법이 서로 다른 연구 분야 매핑 방법을 제시한다.

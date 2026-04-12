@@ -88,7 +88,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Adibekyan et al._2026_Reinforcing Presti
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 학술 출판계의 과점 구조는 저널 명성 기반 인용 편향의 구조적 배경을 설명한다.
-- 🧪 응용 사례: [[papers/968_Growth_Rates_of_Modern_Science_Bibliometric_Analysis_Based_o/review]] — 과학 성장률 분석은 저널 인용 편향이 학문 발전에 미치는 영향을 정량화하는 맥락을 제공한다.
-- ⚖️ 반론/비판: [[papers/932_An_empirical_analysis_of_open_access_citation_advantages_in/review]] — 오픈 액세스의 인용 우위는 저널 명성 기반 편향과 반대되는 메커니즘을 보여준다.
-- ⚖️ 반론/비판: [[papers/1031_The_Chaperone_Effect_in_Scientific_Publishing/review]] — 샤페론 효과의 긍정적 측면과 달리 저널 인용 편향의 부정적 영향을 다루어 균형잡힌 시각을 제공합니다.
+- 🏛 기반 연구: [[papers/1045_The_strain_on_scientific_publishing/review]] — 저널 명성에 따른 인용 편향이 과학 출판량 급증과 함께 출판 시스템의 구조적 문제를 심화시키는 배경을 제공합니다.
+- 🔗 후속 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 저널 인용 편향이 학술 출판사들의 과점 구조와 어떻게 연결되어 출판 생태계의 불평등을 강화하는지 확장 분석합니다.
+- ⚖️ 반론/비판: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 저널 명성이 논문 질과 무관한 인용 편향을 야기한다는 관점과 peer-review에서 명성 vs 아이디어의 선택 기준을 대비합니다.
+- 🧪 응용 사례: [[papers/937_Authorship_titles_and_open_access_as_drivers_of_citation_per/review]] — 천문학 저널 인용 편향 분석을 정형외과 분야의 저자 수와 Open Access 효과 연구에 적용할 수 있다
+- 🧪 응용 사례: [[papers/943_Citation_Analysis_as_a_Tool_in_Journal_Evaluation/review]] — 천문학 저널의 인용 편향 분석에 초기 인용 분석 방법론을 적용할 수 있다
+- 🧪 응용 사례: [[papers/1210_Scilit_with_the_Integrated_Impact_Indicator_Assessment/review]] — 새로운 영향력 지표가 천문학 분야의 저널 인용 편향 문제 해결에 적용될 수 있다.
+- 🔗 후속 연구: [[papers/1151_Citation_Analysis_of_DESIDOC_Journal_of_Information_Technolo/review]] — 도서관정보학 분야 학술지의 인용 분석과 천문학 분야의 학술지 인용 편향 연구가 서로 다른 학문 분야의 인용 패턴을 비교 분석할 수 있게 합니다.

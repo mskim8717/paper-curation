@@ -83,9 +83,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fanelli et al._2017_Meta-assessment of b
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 연구 부정행위와 편향이 모두 과학 지식의 왜곡을 초래하는 메커니즘을 종합적으로 이해할 수 있음
-- 🏛 기반 연구: [[papers/1058_Why_Most_Published_Research_Findings_Are_False/review]] — 대부분의 연구 결과가 거짓이라는 주장이 편향의 메타분석을 통한 실증적 검증의 이론적 근거를 제공함
-- 🧪 응용 사례: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 재현성 위기에 대한 과학자들의 인식과 편향의 실제 유병률 간의 격차를 비교 분석할 수 있음
-- 🏛 기반 연구: [[papers/1057_Which_stylistic_features_fool_ChatGPT_research_evaluations/review]] — 과학 연구 평가에서 발생하는 편향의 체계적 분석을 위한 메타 평가 방법론적 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 편향과 부정행위가 모두 과학 지식의 신뢰성을 훼손하는 상호 보완적 위험 요소로 작용함을 보여줌
-- 🏛 기반 연구: [[papers/1182_Governing_Science_through_Evaluation_A_Global_Heuristic_of_R/review]] — 과학에서 편향을 메타 평가한 연구로 연구 평가 체계의 편향성 문제와 거버넌스 개선 필요성을 뒷받침한다.
+- 🔗 후속 연구: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 과학 편향의 메타분석이 심리학 재현성 문제의 근본 원인을 더 넓은 관점에서 설명한다.
+- 🔄 다른 접근: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 의도적 부정행위와 달리 편향은 연구 과정에서 나타나는 구조적 문제로 다른 차원의 과학 신뢰성 위협이다.
+- 🏛 기반 연구: [[papers/1058_Why_Most_Published_Research_Findings_Are_False/review]] — 대부분의 발표된 연구 결과가 거짓이라는 주장이 과학 편향 메타분석의 이론적 출발점을 제공한다.
+- 🔗 후속 연구: [[papers/1057_Which_stylistic_features_fool_ChatGPT_research_evaluations/review]] — 과학에서의 편향 메타평가 연구가 AI 기반 연구 평가에서 나타나는 스타일 편향을 이해하는 틀을 확장한다.
+- 🔗 후속 연구: [[papers/1068_Artificial_intelligence_and_illusions_of_understanding_in_sc/review]] — 과학에서 편향성 문제가 AI 도구에 의한 이해의 환상으로 확장됨
+- 🔄 다른 접근: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 과학 부정행위와 편향은 모두 과학 연구의 신뢰성을 해치지만 발생 원인과 해결책이 다르다.
+- 🏛 기반 연구: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 과학 연구의 편향성에 대한 메타분석이 재현성 실패의 근본 원인을 이해하는 이론적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/1142_Beyond_Retractions_Forensic_Scientometrics_Techniques_to_Ide/review]] — 과학에서 편향 평가를 위한 메타 분석적 접근과 부정행위 탐지를 위한 forensic 접근을 비교 연구할 수 있다.
+- 🔗 후속 연구: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — 과학 연구의 편향성 메타 평가에 LLM 기반 평가의 책임성 원칙을 적용할 수 있다.

@@ -89,8 +89,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2023_Data, measurement and em
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1023_SciSciNet_A_large-scale_open_data_lake_for_the_science_of_sc/review]] — SciSciNet의 대규모 과학 데이터 레이크가 과학의 과학 분야의 실증적 연구 방법론을 실제 적용하기 위한 핵심 인프라를 제공한다.
-- 🏛 기반 연구: [[papers/1124_The_Science_of_Science/review]] — 과학의 과학에 대한 종합적 이론적 틀이 실증적 연구 방법론의 개념적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1124_The_Science_of_Science/review]] — 과학의 과학 분야의 데이터, 측정, 실증 방법론을 구체적으로 다루어 종합 개요의 방법론적 깊이를 보완한다.
-- 🔗 후속 연구: [[papers/1064_Data-driven_predictions_in_the_science_of_science/review]] — 과학의 과학 분야의 데이터와 측정 방법론을 체계화하여 예측 모델의 실증적 기반을 강화한다.
-- 🏛 기반 연구: [[papers/1212_Shifts_in_Biotechnology_Research_Fronts_20002026_A_Bibliomet/review]] — 생명공학 연구 동향의 경험적 분석을 위해 과학학 연구의 데이터 측정 방법론을 적용할 필요가 있음
+- 🏛 기반 연구: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 과학 매핑과 지식 지도화 방법론이 과학의 과학 실증 연구의 핵심 도구임
+- 🔗 후속 연구: [[papers/1023_SciSciNet_A_large-scale_open_data_lake_for_the_science_of_sc/review]] — 과학의 과학 연구를 위한 대규모 오픈 데이터 플랫폼으로 확장됨
+- 🔗 후속 연구: [[papers/1124_The_Science_of_Science/review]] — 과학의 과학 분야의 이론적 토대와 실증적 방법론을 종합한 발전된 형태임
+- 🏛 기반 연구: [[papers/1001_Public_Profile_Matters_A_Scalable_Integrated_Approach_to_Rec/review]] — 과학의 과학 분야의 실증적 방법론이 인용 추천 시스템 평가에 필수적임
+- 🏛 기반 연구: [[papers/1006_Real-World_Evidence_in_the_First_Round_of_the_US_Inflation_R/review]] — 정책 의사결정에서 과학적 데이터와 측정 방법론이 어떻게 활용되는지에 대한 실증적 근거를 제공한다.
+- 🏛 기반 연구: [[papers/1170_Evolution_of_Social_Work_Knowledge_Production_Over_35_Years/review]] — 대규모 논문 분석을 통한 학문 분야 진화 연구의 방법론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/1209_Scientometric_Analysis_of_Data_Privacy_and_Cloud_Security_Re/review]] — 과학의 과학 분야에서 데이터 측정과 실증 방법론의 발전을 보여준다

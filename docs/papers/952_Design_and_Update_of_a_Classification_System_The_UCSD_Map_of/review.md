@@ -93,5 +93,6 @@ UCSD Map of Science의 설계 및 업데이트를 통해 과학 분류 체계(cl
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — UCSD 과학 지도의 분류 체계와 지식 그래프 기반 연구 매핑을 비교하여 최적의 과학 분류 방법을 도출할 수 있음
-- 🔗 후속 연구: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 과학 분류 체계의 업데이트 방법론을 대규모 과학 커뮤니티 매핑에 적용하여 동적 분류 시스템을 구축할 수 있음
+- 🔄 다른 접근: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — UCSD 과학 지도의 분류 체계 구축과 지식 그래프를 활용한 과학 연구 매핑이 서로 다른 접근법의 과학 분류 시스템을 제시합니다.
+- 🔗 후속 연구: [[papers/978_Introducing_the_open_biomedical_map_of_science/review]] — 일반적인 과학 분류 체계인 UCSD Map을 생의학 특화 영역으로 확장한 개방형 생의학 과학 지도로 발전시킬 수 있습니다.
+- 🏛 기반 연구: [[papers/978_Introducing_the_open_biomedical_map_of_science/review]] — 생의학 특화 과학 지도 개발을 위해 UCSD Map of Science의 분류 체계 설계 및 업데이트 방법론이 기반이 됩니다.

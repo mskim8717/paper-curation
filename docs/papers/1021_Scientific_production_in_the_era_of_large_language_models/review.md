@@ -80,11 +80,14 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kusumegi et al._2025_Scientific producti
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — LLM이 과학 생산성에 미치는 영향을 구체적인 AI 협력 도구로 발전시킨 연구이다.
-- 🧪 응용 사례: [[papers/1041_The_Rise_of_Large_Language_Models_and_the_Direction_and_Impa/review]] — LLM이 과학 논문 생산에 미치는 영향을 연방 연구자금 신청서 분야로 확장하여 분석한다.
-- 🏛 기반 연구: [[papers/1077_Quantifying_large_language_model_usage_in_scientific_papers/review]] — 과학 논문에서 LLM 사용을 정량화하는 방법론적 기초를 제공한다.
-- 🏛 기반 연구: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — LLM이 과학 생산성에 미치는 기본적 영향을 바탕으로 구체적인 AI 협력 도구를 개발한다.
-- 🧪 응용 사례: [[papers/1041_The_Rise_of_Large_Language_Models_and_the_Direction_and_Impa/review]] — LLM이 과학 논문 생산에 미치는 영향을 연방 연구자금 신청서 분야로 확장하여 분석한다.
-- 🏛 기반 연구: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — LLM 시대의 과학적 생산성 변화를 분석한 기초 연구로 AI 가속화 글쓰기의 영향을 이해하는 출발점이 된다.
-- 🧪 응용 사례: [[papers/1074_OLMo_Accelerating_the_Science_of_Language_Models/review]] — LLM 시대 과학적 생산성 변화 분석에 완전 공개된 OLMo 모델을 활용하여 투명하고 재현 가능한 연구가 가능하다.
-- 🔄 다른 접근: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — LLM이 연구 새로움을 감소시킨다는 연구와 대형 언어모델 시대의 과학 생산성 연구는 AI가 과학에 미치는 영향을 상반된 관점에서 분석한다.
+- 🔗 후속 연구: [[papers/1077_Quantifying_large_language_model_usage_in_scientific_papers/review]] — LLM이 과학 논문 생산성에 미치는 영향을 정량적으로 측정하여 AI의 학술 활용 규모를 구체화했다.
+- ⚖️ 반론/비판: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — LLM이 연구 생산성을 증가시키지만 반대로 연구 참신성을 감소시킨다는 상반된 효과를 보여준다.
+- 🧪 응용 사례: [[papers/1041_The_Rise_of_Large_Language_Models_and_the_Direction_and_Impa/review]] — LLM이 과학 논문 작성에 미치는 영향을 연방 연구 자금 신청서의 의미론적 독창성 변화에 적용한 사례다.
+- 🧪 응용 사례: [[papers/1041_The_Rise_of_Large_Language_Models_and_the_Direction_and_Impa/review]] — LLM이 과학 논문 작성에 미치는 영향을 연방 연구 자금 신청서의 의미론적 독창성 변화라는 구체적 사례로 적용했다.
+- 🧪 응용 사례: [[papers/1045_The_strain_on_scientific_publishing/review]] — 대규모 언어모델 시대의 과학적 생산이 출판 부담 문제를 어떻게 변화시키는지 구체적 적용 사례를 보여줍니다.
+- 🏛 기반 연구: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — LLM 시대 과학 생산의 전반적 변화상을 제시하여 AI 가속 글쓰기가 동료 검토에 미치는 영향을 이해하는 배경을 제공한다.
+- ⚖️ 반론/비판: [[papers/1074_OLMo_Accelerating_the_Science_of_Language_Models/review]] — 오픈 언어 모델 연구 촉진과 LLM 시대 과학 출판의 우려 사이의 대조적 관점임
+- 🔗 후속 연구: [[papers/1077_Quantifying_large_language_model_usage_in_scientific_papers/review]] — LLM 시대 과학 출판 현황을 정량적으로 측정하여 과학 생산성 변화를 구체화함
+- 🔄 다른 접근: [[papers/1078_Quantifying_the_use_and_potential_benefits_of_artificial_int/review]] — LLM 시대의 과학 생산성을 다른 관점에서 분석하여 AI 사용 효과에 대한 비교 연구 기반을 제공한다.
+- 🧪 응용 사례: [[papers/994_Organisational_accounts_engaged_in_scholarly_communication_o/review]] — 대형 언어 모델 시대의 과학 생산 변화와 기관의 소셜미디어 소통 전략이 어떻게 상호작용하는지 분석할 수 있다.
+- 🔗 후속 연구: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — 대규모 언어 모델 시대의 과학 생산성 변화를 의미론적 새로움 감소라는 구체적 측면에서 확장한다

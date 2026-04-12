@@ -11,7 +11,7 @@ tags:
   - "cat/Computational_Bibliometric_Analysis"
   - "sub/Citation_Analysis_Methods"
   - "topic/scisci"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Citation Analysis of DESIDOC Journal of Information Technology..pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mengal_2026_Citation Analysis of DESIDOC Journal of Information Technology..pdf"
 ---
 
 # Citation Analysis of DESIDOC Journal of Information Technology.
@@ -73,5 +73,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Citation Analysis of DESIDOC Journal of 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 도서관정보학 저널의 인용 패턴 분석을 통해 학술 출판 과점 구조가 특정 학문 분야에 미치는 영향을 파악할 수 있음
-- 🏛 기반 연구: [[papers/943_Citation_Analysis_as_a_Tool_in_Journal_Evaluation/review]] — DJLIT 인용 분석의 방법론적 기반을 확립하기 위해 저널 평가에서 인용 분석의 근본 원리를 이해할 필요가 있음
+- 🏛 기반 연구: [[papers/943_Citation_Analysis_as_a_Tool_in_Journal_Evaluation/review]] — DESIDOC Journal 논문들의 인용 패턴 분석에 학술지 평가 도구로서의 인용 분석 이론적 기반이 필요합니다.
+- 🔗 후속 연구: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 도서관정보학 분야 학술지의 인용 분석과 천문학 분야의 학술지 인용 편향 연구가 서로 다른 학문 분야의 인용 패턴을 비교 분석할 수 있게 합니다.
+- 🏛 기반 연구: [[papers/1152_Citation_of_classical_research_by_doctoral-level_LIS_scholar/review]] — DESIDOC 저널의 인용 분석이 인도 도서관정보학 학자들의 고전 연구 인용 패턴을 이해하는 기반을 제공한다.

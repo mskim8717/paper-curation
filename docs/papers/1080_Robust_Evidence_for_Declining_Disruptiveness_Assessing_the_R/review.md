@@ -81,10 +81,13 @@ Park et al.의 과학 혁신성(disruptiveness) 하락 주장에 대한 Holst et
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — disruption index의 측정 편향 문제를 제기하여 과학 혁신성 하락 주장에 대한 반박 논리를 보강한다.
-- 🏛 기반 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 과학 논문의 disruptiveness 감소 현상을 최초로 제시한 원논문으로 후속 논쟁의 출발점이 된다.
-- 🔄 다른 접근: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비정형적 조합과 과학적 영향력의 관계를 분석하여 혁신성 측정의 다른 접근법을 제시한다.
-- ⚖️ 반론/비판: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — disruption index 하락이 실제 현상이라고 주장하는 연구에 대한 직접적 반박으로 측정 편향의 가능성을 제기한다.
-- 🔄 다른 접근: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 혁신성 감소에 대한 강건한 증거 제시와 원 연구 결과 간의 방법론적 차이를 비교 검토할 수 있음
-- 🏛 기반 연구: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 파괴성 감소에 대한 견고한 증거는 파괴적 논문의 사회적 영향 분석에 중요한 배경을 제공한다.
-- 🔗 후속 연구: [[papers/977_Introducing_multiverse_analysis_to_bibliometrics_The_case_of/review]] — 파괴성 감소에 대한 견고한 증거 연구와 함께 팀 규모-파괴성 관계의 다중우주 분석을 통해 과학 혁신 이론을 정밀화할 수 있다.
+- 🏛 기반 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 과학의 혁신성 하락이라는 원론적 주장을 제시하여 후속 연구들의 비판적 검증과 방법론적 개선을 위한 출발점을 제공한다.
+- ⚖️ 반론/비판: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 동일한 혁신성 하락 현상을 인용 인플레이션이라는 측정 편향으로 설명하는 직접적인 반박 논문이다.
+- 🔄 다른 접근: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합과 과학적 영향의 관계를 통해 혁신성을 측정하는 다른 접근법을 제시한다.
+- ⚖️ 반론/비판: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 동일한 혁신성 하락 데이터를 측정 편향으로 재해석하여 Park et al.의 주장에 대한 직접적 반박을 제시한다.
+- 🔄 다른 접근: [[papers/927_A_Dynamic_Network_Measure_of_Technological_Change/review]] — 과학의 파괴성 감소에 대한 강건한 증거를 기술 네트워크 변화 측정의 다른 관점에서 제시한다
+- 🔗 후속 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 혁신성 감소에 대한 강건한 증거를 추가로 제시하여 이 현상의 실재성을 더욱 확실하게 입증한다.
+- ⚖️ 반론/비판: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 파괴성 감소에 대한 강력한 증거와 파괴적 논문의 기술사회적 영향력 한계라는 서로 다른 관점에서 파괴성을 분석합니다.
+- 🏛 기반 연구: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 과학의 파괴적 혁신성 감소 현상에 대한 견고한 증거를 통해 잠자는 미녀 현상의 맥락을 이해할 수 있다.
+- 🔗 후속 연구: [[papers/977_Introducing_multiverse_analysis_to_bibliometrics_The_case_of/review]] — 파괴적 연구 감소에 대한 견고한 증거를 다중우주분석으로 재검증하여 방법론적 견고성을 높일 수 있다.
+- 🔄 다른 접근: [[papers/1142_Beyond_Retractions_Forensic_Scientometrics_Techniques_to_Ide/review]] — 과학의 파괴적 혁신 감소에 대한 견고한 증거와 연구 부정행위 탐지 모두 과학 품질 저하 문제를 다른 관점에서 다룬다.

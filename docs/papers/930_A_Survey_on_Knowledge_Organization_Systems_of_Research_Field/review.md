@@ -90,9 +90,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Salatino et al._2025_A Survey on Knowled
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1124_The_Science_of_Science/review]] — 연구 분야의 지식 조직 체계 구축을 위해 과학학의 이론적 기반과 체계적 접근 방법이 필요함
-- 🧪 응용 사례: [[papers/1112_CS-KG_20_A_Large-scale_Knowledge_Graph_of_Computer_Science/review]] — 컴퓨터 과학 지식 그래프를 통해 연구 분야 분류 체계의 실제 적용 사례를 검증할 수 있음
-- 🔗 후속 연구: [[papers/1112_CS-KG_20_A_Large-scale_Knowledge_Graph_of_Computer_Science/review]] — 연구 분야의 지식 조직 체계에 대한 조사가 CS-KG 2.0의 컴퓨터과학 분야 체계화 방법론을 다른 학문 영역으로 확장하는 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1055_When_text_mining_meets_science_mapping_in_the_bibliometric_a/review]] — 연구 분야 지식 조직 체계는 텍스트 마이닝 기반 과학 지도화의 분류학적 토대를 제공한다.
-- 🏛 기반 연구: [[papers/969_Hierarchical_Classification_of_Research_Fields_in_the_Web_of/review]] — 연구 분야 지식 체계화의 기존 서베이를 바탕으로 Microsoft Academic Graph 기반 계층적 분류 시스템을 발전시켰다.
-- 🏛 기반 연구: [[papers/1217_Tracing_the_Evolution_of_Sleep-Related_Behavioural_Outcomes/review]] — 연구 분야 지식 조직 시스템에 대한 조사는 자폐아동 수면 연구의 지식 클러스터 분석을 위한 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/993_OpenAlex_A_fully-open_index_of_scholarly_works_authors_venue/review]] — 연구 분야의 지식 조직 체계 분석에 필요한 대규모 학술 메타데이터를 OpenAlex가 완전 개방형으로 제공하는 기반 인프라 역할을 합니다.
+- 🔗 후속 연구: [[papers/1023_SciSciNet_A_large-scale_open_data_lake_for_the_science_of_sc/review]] — 지식 조직 체계의 통합 솔루션 필요성을 제시한 연구와 과학의 과학을 위한 대규모 개방 데이터 레이크 구축이 상호 보완적 관계에 있습니다.
+- 🔄 다른 접근: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 연구 분야의 지식 체계화에서 임베딩 기반 접근법과 전통적 분류 체계의 대안적 방법론임
+- 🔄 다른 접근: [[papers/969_Hierarchical_Classification_of_Research_Fields_in_the_Web_of/review]] — 연구 분야 분류를 위한 딥러닝 기반 접근법과 전통적 지식 조직 시스템의 차이점과 장단점을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/1228_OpenRad_a_Curated_Repository_of_Open-access_AI_models_for_Ra/review]] — 연구 분야의 지식 조직 시스템에 대한 이론적 기반을 방사선학 AI 모델 분류에 적용했다.
+- 🏛 기반 연구: [[papers/1141_Assistive_technology_for_developmental_conditions_A_scientom/review]] — 연구 분야의 지식 조직 체계에 대한 이해를 바탕으로 보조기술 연구의 체계적 분류와 매핑을 수행한다.

@@ -77,6 +77,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Winberg et al._2026_Real-World Evidence 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 실제임상증거의 공공 활용 정책과 공공 자금으로 지원된 과학 연구의 공적 활용 간 정책적 유사성을 보여준다.
-- 🔄 다른 접근: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 정책 결정에서 과학 지식이 선택적으로 활용되는 현상을 다른 분야에서 분석한 유사한 접근법을 제시한다.
-- 🧪 응용 사례: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 제약 분야의 실제 사례를 통해 특허 분석과 임상 데이터를 결합한 백색공간 분석의 실용성을 보여준다.
+- 🧪 응용 사례: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 실제임상증거(RWE)의 장기적 과학적 영향력을 정량화하여 약가 협상에서의 과학적 근거의 지속성을 평가할 수 있다.
+- 🏛 기반 연구: [[papers/1071_Data_measurement_and_empirical_methods_in_the_science_of_sci/review]] — 정책 의사결정에서 과학적 데이터와 측정 방법론이 어떻게 활용되는지에 대한 실증적 근거를 제공한다.

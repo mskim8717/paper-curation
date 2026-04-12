@@ -84,11 +84,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hladik and Renisio_2024_Mapping Knowledg
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/969_Hierarchical_Classification_of_Research_Fields_in_the_Web_of/review]] — 딥러닝 기반 계층적 분류와 의미론적 네트워크 기반 연구자 위치 규명이 학문 지형 매핑에서 서로 다른 접근법을 제공한다.
-- 🔗 후속 연구: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 학술지의 시간변화 임베딩 연구를 개별 연구자의 인식론적 위치 변화 추적으로 확장하여 동적 학문 지형을 구축할 수 있다.
-- 🏛 기반 연구: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 비지도 단어 임베딩의 잠재 지식 포착 방법론을 바탕으로 연구자의 인식론적 위치를 의미론적으로 규명한다.
-- 🏛 기반 연구: [[papers/1017_Science_as_exploration_in_a_knowledge_landscape_tracing_hots/review]] — 토픽 수준의 과학 지도 작성은 지식공간 모델링의 실증적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 과학 지도 이론을 실제 연구 분야 매핑에 적용한 구체적 사례를 보여줍니다.
-- 🏛 기반 연구: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 연구자의 인식론적 위치 규명 연구에 학술지 시간변화 임베딩을 통한 과학 구조 진화 추적 방법론을 제공한다.
-- 🔗 후속 연구: [[papers/949_Comparative_science_mapping_a_novel_conceptual_structure_ana/review]] — 메타데이터 기반 개념 구조 분석을 주제 수준 연구 매핑으로 확장하여 더 정교한 과학 지도를 작성할 수 있음
-- 🔄 다른 접근: [[papers/969_Hierarchical_Classification_of_Research_Fields_in_the_Web_of/review]] — 의미론적 네트워크 기반 연구자 위치 규명과 딥러닝 기반 계층적 분류가 상호 보완적인 학문 지형 매핑을 제공한다.
+- 🏛 기반 연구: [[papers/969_Hierarchical_Classification_of_Research_Fields_in_the_Web_of/review]] — 계층적 분야 분류 시스템을 활용하여 연구자의 학문적 위치 매핑을 더욱 정밀하게 수행할 수 있다.
+- 🔄 다른 접근: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 연구자 위치 매핑을 위한 주제 모델링과 궤적 임베딩이라는 서로 다른 기하학적 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 지식 그래프를 활용한 과학 연구 매핑 기법을 연구자 위치 매핑에 적용하여 더 풍부한 맥락 정보를 제공할 수 있다.
+- 🔗 후속 연구: [[papers/1017_Science_as_exploration_in_a_knowledge_landscape_tracing_hots/review]] — 주제 수준의 과학 매핑을 개별 과학자의 지식공간 탐색 행동으로 확장하여 미시적 관점을 추가합니다.
+- 🔄 다른 접근: [[papers/949_Comparative_science_mapping_a_novel_conceptual_structure_ana/review]] — 이탈리아 의료센터 종양학 연구의 비교 과학 매핑과 토픽 수준에서의 연구 자금 및 성과 매핑이 다른 관점의 과학 매핑을 제시합니다.
+- 🔗 후속 연구: [[papers/969_Hierarchical_Classification_of_Research_Fields_in_the_Web_of/review]] — 계층적 분야 분류 시스템을 기반으로 개별 연구자의 학문적 위치를 더 정밀하게 매핑할 수 있다.

@@ -80,11 +80,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Larivière et al._2013_Bibliometrics Glo
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 전 세계 과학계 성별 불균형 분석은 성별 다양한 팀의 혁신적 연구 생산을 보여준 연구로 확장되어 다양성의 긍정적 효과를 입증한다.
-- 🔄 다른 접근: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 글로벌 성별 불균형과 과학 경력에서의 성별 불평등 역사적 비교는 모두 과학계 젠더 문제를 다른 시각에서 분석한다.
-- 🏛 기반 연구: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 과학계 전반의 성별 격차를 컴퓨터과학 분야의 구체적 인용 분석으로 심화한다.
-- 🔗 후속 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학 분야 전반의 성별 격차를 여성의 업적 인정 부족이라는 구체적 메커니즘으로 심화한다.
-- ⚖️ 반론/비판: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성 팀의 혁신적 연구 생산은 과학계 글로벌 성별 불균형 문제에 대한 해결책으로서 다양성의 긍정적 효과를 보여준다.
-- 🔗 후속 연구: [[papers/976_Intersectional_inequalities_in_science/review]] — 과학 분야의 글로벌 성별 격차 분석과 미국 내 인종-성별 교차적 불평등 연구를 결합하여 더 포괄적인 불평등 이해가 가능하다.
-- 🔗 후속 연구: [[papers/1170_Evolution_of_Social_Work_Knowledge_Production_Over_35_Years/review]] — 사회복지 분야의 성별 불균형과 협력 패턴 변화를 글로벌 과학 분야의 성별 격차 연구와 비교 분석할 수 있다.
-- 🧪 응용 사례: [[papers/1218_Viewing_Citation_Analysis_Through_the_Lens_of_Citation_Justi/review]] — Citation justice의 관점은 과학계 성별 불균형을 다룬 서지계량학 연구에서 공정한 인용 분석의 중요성을 강조한다.
+- 🔗 후속 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학 분야 성별 신용 배분 불균형을 전 세계적 성별 격차의 구체적 메커니즘으로 확장한다
+- 🔄 다른 접근: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 과학 경력에서 성별 불평등의 역사적 비교를 통해 성별 격차의 변화 양상을 분석한다
+- 🔗 후속 연구: [[papers/976_Intersectional_inequalities_in_science/review]] — 온라인 과학의 교차적 불평등을 성별 격차의 다차원적 분석으로 확장한다
+- 🏛 기반 연구: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 과학계 전반의 성별 격차 분석이 컴퓨터과학 특정 분야의 성별 인용 불균형 연구의 이론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/1170_Evolution_of_Social_Work_Knowledge_Production_Over_35_Years/review]] — 사회복지 분야의 성별 다양성 변화가 지식생산 패턴에 미친 영향을 분석할 수 있는 보완적 관점을 제공한다.
+- 🔗 후속 연구: [[papers/1218_Viewing_Citation_Analysis_Through_the_Lens_of_Citation_Justi/review]] — 과학 분야 성별 격차 분석에 인용 정의 관점을 추가하여 공정성을 높일 수 있다

@@ -91,6 +91,7 @@ tags:
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — OC20 데이터셋이 OC22 산화물 전기촉매 연구의 기초적인 방법론과 데이터 구조를 제공한다.
-- 🧪 응용 사례: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 기계학습 기반 물질 발견을 위한 합의 기반 권고사항이 Open Catalyst 데이터셋 활용 연구의 모범 사례를 제시한다.
-- 🔗 후속 연구: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — OC20에서 OC22로의 발전은 산화물 전기촉매 연구를 위한 데이터셋과 도전 과제의 확장을 보여준다.
+- 🔗 후속 연구: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — Open Catalyst 데이터셋을 OC20에서 OC22로 확장하여 산화물 전기촉매까지 포함함
+- ⚖️ 반론/비판: [[papers/1070_Challenges_in_High-Throughput_Inorganic_Materials_Prediction/review]] — 고처리량 재료 예측의 성공 사례와 달리 자동화의 한계와 문제점을 지적함
+- 🏛 기반 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 연구 자금 지원의 광범위한 영향 분석이 촉매 연구 데이터셋 구축을 뒷받침함
+- 🔄 다른 접근: [[papers/1070_Challenges_in_High-Throughput_Inorganic_Materials_Prediction/review]] — 고처리량 재료 발견에서 무기재료와 산화물 전기촉매의 다른 접근법과 데이터셋임

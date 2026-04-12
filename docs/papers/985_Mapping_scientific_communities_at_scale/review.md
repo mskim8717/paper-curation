@@ -86,8 +86,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Barbier and Jeangirard_2025_Mapping scie
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — VOSviewer 프로그램의 서베이 연구를 Elasticsearch와 Graphology를 통합한 확장 가능한 네트워크 분석으로 발전시킨다.
-- 🧪 응용 사례: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 과학 협력의 사회적 네트워크 진화 연구에 대규모 과학 공동체 매핑의 새로운 방법론을 적용할 수 있다.
-- 🏛 기반 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 그래프 내 공동체 탐지 이론을 바탕으로 링크 필터링 기반의 효율적인 과학 공동체 매핑 방법을 개발했다.
-- 🔗 후속 연구: [[papers/952_Design_and_Update_of_a_Classification_System_The_UCSD_Map_of/review]] — 과학 분류 체계의 업데이트 방법론을 대규모 과학 커뮤니티 매핑에 적용하여 동적 분류 시스템을 구축할 수 있음
-- 🧪 응용 사례: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 모듈성 최적화 기반 커뮤니티 검출 방법론은 대규모 과학 커뮤니티 매핑에 대한 실제적 구현 도구를 제공한다.
+- 🏛 기반 연구: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — VOSviewer와 같은 기존 네트워크 분석 도구의 한계를 극복하는 확장 가능한 대안 프레임워크를 제공한다.
+- 🔄 다른 접근: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 대규모 네트워크에서 커뮤니티 탐지를 위한 링크 필터링과 전통적 노드 기반 접근법의 효율성을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/1118_Paper_Circle_An_Open-source_Multi-agent_Research_Discovery_a/review]] — 과학 커뮤니티 매핑을 다중 에이전트 연구 발견 시스템과 결합하여 더 동적이고 지능적인 연구 네트워크 분석을 구현할 수 있다.
+- 🧪 응용 사례: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크의 소규모 세계 특성을 대규모 과학 커뮤니티 매핑에 적용할 수 있는 방법론적 기초를 제공한다.
+- 🧪 응용 사례: [[papers/948_Community_Detection_in_Graphs/review]] — 대규모 과학 커뮤니티 매핑에 그래프 커뮤니티 탐지 알고리즘을 직접 적용할 수 있다
