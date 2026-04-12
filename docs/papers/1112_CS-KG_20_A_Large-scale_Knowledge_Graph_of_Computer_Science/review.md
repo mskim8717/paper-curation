@@ -12,9 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "150만 개의 컴퓨터과학 논문에서 자동 추출한 2,500만 개 엔티티와 6,700만 개 관계로 구성된 CS-KG 2.0 지식그래프를 제시하며, 이를 통해 연구 트렌드 분석, 가설 생성, 지능형 문헌 검색 등을 지원한다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Knowledge_Graphs_and_Semantic_Mapping"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Knowledge_Graphs_and_Data_Integration"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dessí et al._2025_CS-KG 2.0 A Large-scale Knowledge Graph of Computer Science.pdf"
 ---
@@ -92,10 +91,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dessí et al._2025_CS-KG 2.0 A Large-sca
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — 컴퓨터과학 지식그래프를 생의학 분야 자동 가설 생성 시스템으로 응용한다.
-- 🔄 다른 접근: [[papers/1109_A_comprehensive_large-scale_biomedical_knowledge_graph_for_A/review]] — 컴퓨터과학 특화 지식그래프 대신 생의학 분야의 포괄적 지식그래프를 제안한다.
-- 🧪 응용 사례: [[papers/1114_GoAI_Enhancing_AI_Students_Learning_Paths_and_Idea_Generatio/review]] — CS-KG 2.0을 AI 학습자의 학습 경로 최적화와 아이디어 생성 도구로 활용한다.
-- 🏛 기반 연구: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 지식그래프 구축을 연구 분야 매핑과 과학적 지식 체계화의 방법론적 기반으로 제공한다.
-- 🏛 기반 연구: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — 연구 분야의 지식 조직 시스템에 대한 이론적 기반을 제공하여 컴퓨터과학 지식그래프 구축의 개념적 토대가 된다.
-- 🧪 응용 사례: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 주제 수준에서 과학 연구를 매핑하는 구체적 사례로 컴퓨터과학 분야의 지식그래프 활용을 보여준다.
-- 🔄 다른 접근: [[papers/1015_S2ORC_The_Semantic_Scholar_Open_Research_Corpus/review]] — 범학문적 대규모 코퍼스 대신 컴퓨터과학 특화된 지식그래프로 구조화된 학술 정보를 제공한다.
+- 🔄 다른 접근: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 재료과학의 Word2vec 임베딩과 컴퓨터과학의 지식그래프는 서로 다른 학문 분야에서 잠재 지식 추출을 위한 상호 보완적 접근법이다.
+- 🔗 후속 연구: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — 연구 분야의 지식 조직 체계에 대한 조사가 CS-KG 2.0의 컴퓨터과학 분야 체계화 방법론을 다른 학문 영역으로 확장하는 기반을 제공한다.
+- 🔄 다른 접근: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 컴퓨터과학 논문에서 구축한 지식그래프와 재료과학 문헌의 Word2vec 임베딩은 서로 다른 도메인에서 잠재 지식 추출을 위한 상호 보완적 접근법이다.
+- 🧪 응용 사례: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — 컴퓨터 과학 지식 그래프를 통해 연구 분야 분류 체계의 실제 적용 사례를 검증할 수 있음

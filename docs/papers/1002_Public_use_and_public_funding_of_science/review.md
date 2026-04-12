@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "공적 자금으로 지원되는 과학연구가 실제로 공중의 필요와 일치하는지 대규모 데이터 연계를 통해 실증적으로 검증한 연구이다. 정부문서, 뉴스미디어, 특허 등 세 개의 공공 영역에서 과학의 활용 패턴을 분석하고 공적 자금 배분과의 정렬성(alignment)을 측정했다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Scientific_Publishing_and_Incentives"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Science_Policy_Funding"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yin et al._2022_Public use and public funding of science.pdf"
 ---
@@ -86,7 +86,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yin et al._2022_Public use and public fu
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 펀딩의 사회적 영향을 시각화하여 공적 자금의 효과성을 더 포괄적으로 평가할 수 있는 방법론을 제공한다.
-- ⚖️ 반론/비판: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 매튜 효과에 의한 펀딩 불평등이 공적 자금의 공공 필요 부합도에 미치는 왜곡 효과를 검토할 필요가 있다.
-- 🏛 기반 연구: [[papers/942_Bridging_the_gap_between_science_and_society_Mapping_librari/review]] — 과학의 공적 활용과 공적 자금지원 관계를 분석하여 도서관의 과학-사회 중개 역할의 이론적 배경을 제공한다.
-- 🏛 기반 연구: [[papers/996_Partisan_disparities_in_the_funding_of_science_in_the_United/review]] — 과학 연구의 공적 자금 지원과 활용에 대한 기본적인 이해를 제공하여 정당별 자금 배분 분석의 이론적 토대가 된다.
+- 🧪 응용 사례: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 과학지식의 정책 활용 패턴을 분석하는 유사한 접근법으로 물리학 분야에 특화된 연구이다.
+- 🔗 후속 연구: [[papers/996_Partisan_disparities_in_the_funding_of_science_in_the_United/review]] — 공적 자금 배분의 정치적 편향을 분석하여 과학의 공공 활용 연구를 보완한다.
+- ⚖️ 반론/비판: [[papers/1041_The_Rise_of_Large_Language_Models_and_the_Direction_and_Impa/review]] — 연방 연구자금이 LLM 도입으로 인해 의미론적 독창성을 감소시키는 문제점을 지적한다.
+- 🏛 기반 연구: [[papers/1006_Real-World_Evidence_in_the_First_Round_of_the_US_Inflation_R/review]] — 실제임상증거의 공공 활용 정책과 공공 자금으로 지원된 과학 연구의 공적 활용 간 정책적 유사성을 보여준다.
+- 🔗 후속 연구: [[papers/1041_The_Rise_of_Large_Language_Models_and_the_Direction_and_Impa/review]] — 공적 자금의 과학 연구 지원에 LLM이 미치는 의미론적 독창성 감소 효과를 추가로 규명한다.
+- 🔄 다른 접근: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 과학지식의 정책 활용을 물리학이라는 특정 분야에 초점을 맞춰 분석하는 접근법이다.
+- 🏛 기반 연구: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 공적 자금 연구의 공개 접근성과 OA의 인용 영향력 간의 관계를 이해하는 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/996_Partisan_disparities_in_the_funding_of_science_in_the_United/review]] — 과학의 공적 사용과 공적 자금 지원 관계가 정당별 과학 투자 패턴 분석의 이론적 배경을 제공함
+- 🔗 후속 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 펀딩의 광범위한 사회적 영향 시각화는 과학의 공적 사용과 공적 펀딩 관계 연구를 대규모 데이터 기반으로 확장한다.
+- 🧪 응용 사례: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 과학의 공공 사용과 공공 자금 연구에 학제간 그랜트 지원 효과 분석을 적용하여 자금 배분 정책을 개선할 수 있다.

@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "과학, 스타트업, 보안 등 다양한 분야에서 반복된 실패의 역학을 설명하는 일-매개변수 모델을 개발하여, 실패 후 성공으로 이어지는 동역학의 위상 전이를 발견했다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Research_Evaluation_and_Metrics"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Research_Team_Dynamics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yin et al._2019_Quantifying the dynamics of failure across science, startups and security.pdf"
 ---
@@ -87,7 +87,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yin et al._2019_Quantifying the dynamics
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 실패 후 성공의 동역학과 hot streak 현상을 연결하여 경력 패턴의 위상 전이를 더 깊이 이해할 수 있다.
-- 🧪 응용 사례: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 초기 경력 좌절이라는 구체적 사례에 실패 동역학 모델을 적용하여 예측력을 검증할 수 있다.
-- 🏛 기반 연구: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 구조적 역학 기반의 돌파구 예측 방법론이 실패-성공 전이 모델의 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 과학자 경력에서 실패의 역설적 효과를 이해하기 위해 실패 동학의 일반 이론이 필요함
+- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 과학자 개인의 초기 경력 좌절이 미래 성과에 미치는 영향을 다른 관점에서 분석한다.
+- 🔗 후속 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 실패와 성공의 동역학을 예술, 문화, 과학 분야의 핫스트릭 현상으로 확장하여 이해한다.
+- 🧪 응용 사례: [[papers/1121_Superstar_Extinctionsupsup/review]] — 과학계의 슈퍼스타 멸종 현상을 실패 동역학의 관점에서 이해할 수 있는 틀을 제공한다.
+- 🔄 다른 접근: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — 실패 동역학을 정량화하는 다른 접근법을 제시하여 과학 생산성 감소 현상의 대안적 분석 틀을 제공한다.

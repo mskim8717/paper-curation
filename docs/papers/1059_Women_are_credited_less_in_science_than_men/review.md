@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "행정 데이터, 설문조사, 정성 분석을 통해 과학 연구팀에서 여성의 업적이 남성에 비해 체계적으로 인정받지 못하고 있음을 실증적으로 입증했다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Bias_and_Inequality"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Gender_Research_Diversity"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ross et al._2022_Women are credited less in science than men.pdf"
 ---
@@ -83,10 +83,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ross et al._2022_Women are credited less
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 여성 연구자의 업적 인정 부족이 컴퓨터과학 분야의 인용 불균형으로 구체적으로 나타나는 체계적 성별 편향의 연결고리를 보여준다.
-- 🔗 후속 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 여성의 혁신적 기여 과소평가가 업적 인정 부족의 구체적 사례로서 성별 편향의 다면적 메커니즘을 드러낸다.
-- 🧪 응용 사례: [[papers/946_Collective_Credit_Allocation_in_Science/review]] — 과학에서의 집단적 신용 배분 원리를 성별 관점에서 재검토하여 공정한 업적 인정 시스템을 설계할 수 있다.
-- 🔗 후속 연구: [[papers/966_Global_citation_inequality_is_on_the_rise/review]] — 과학에서 여성이 받는 인정 부족 문제를 전체 인용 불평등 심화 현상의 구체적 사례로 확장하여 이해할 수 있다.
-- 🔗 후속 연구: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 여성 연구자의 업적 인정 부족이 인용 불균형으로도 나타나는 체계적 성별 편향의 다면적 증거를 제공한다.
-- 🔗 후속 연구: [[papers/976_Intersectional_inequalities_in_science/review]] — 여성의 과소평가 문제를 교차적 관점으로 확장하여 인종과 성별의 복합적 영향을 분석한다
-- 🔗 후속 연구: [[papers/946_Collective_Credit_Allocation_in_Science/review]] — 다중저자 논문의 공정한 신용 배분을 과학에서 성별에 따른 차별적 기여도 인정 문제로 확장한다.
+- 🏛 기반 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 과학에서 여성에 대한 체계적 과소평가를 여성의 학제간 혁신 인정 역설의 근본 원인으로 설명한다.
+- 🧪 응용 사례: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 과학계에서 여성에 대한 체계적 과소평가를 컴퓨터과학 분야의 성별 인용 불균형으로 구체화한다.
+- 🔗 후속 연구: [[papers/940_Bibliometrics_Global_Gender_Disparities_in_Science/review]] — 과학 분야 전반의 성별 격차를 여성의 업적 인정 부족이라는 구체적 메커니즘으로 심화한다.
+- 🔗 후속 연구: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 과학계에서 여성에 대한 체계적 과소평가를 컴퓨터과학 분야의 인용 불균형으로 구체화한 연구이다.
+- 🏛 기반 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 과학에서 여성에 대한 체계적 과소평가를 혁신 인정 역설의 구체적 메커니즘으로 설명한다.
+- ⚖️ 반론/비판: [[papers/937_Authorship_titles_and_open_access_as_drivers_of_citation_per/review]] — 정형외과 논문의 저자 수와 인용 성과 관계 분석은 여성이 과학에서 적게 인정받는다는 연구와 대조적 관점을 제시한다.
+- 🏛 기반 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 여성이 과학에서 덜 인정받는다는 기본 전제가 장기적 성별 불평등 패턴의 이론적 토대를 제공함
+- 🔗 후속 연구: [[papers/1218_Viewing_Citation_Analysis_Through_the_Lens_of_Citation_Justi/review]] — 인용 정의 관점에서 여성 연구자의 낮은 인용률 문제를 구조적 불평등으로 분석하여 해결 방안을 모색할 수 있음

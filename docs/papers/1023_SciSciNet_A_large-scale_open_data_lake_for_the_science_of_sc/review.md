@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "SciSciNet은 134M개 이상의 과학 출판물과 자금 조달, 특허, 임상시험 등 외부 연계를 포괄하는 대규모 개방형 데이터 레이크(data lake)로서 과학의 과학(science of science) 연구의 진입 장벽을 낮추고 재현성을 향상시킨다."
 tags:
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Artificial_intelligence_and_science"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Citation_Index_Analysis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lin et al._2023_SciSciNet A large-scale open data lake for the science of science research.pdf"
 ---
@@ -91,10 +91,14 @@ SciSciNet은 134M개 이상의 과학 출판물과 자금 조달, 특허, 임상
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1015_S2ORC_The_Semantic_Scholar_Open_Research_Corpus/review]] — 과학 연구를 위한 대규모 오픈 데이터 인프라 구축에서 서로 다른 접근법과 범위를 가진 경쟁적 솔루션을 제시한다.
-- 🔗 후속 연구: [[papers/935_Atlas_of_Science_Collaboration_19712020/review]] — 과학 협력의 지도화 연구를 더 포괄적이고 최신의 데이터로 확장할 수 있는 인프라를 제공한다.
-- 🏛 기반 연구: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 과학의 과학 연구를 위한 대규모 오픈 데이터 플랫폼을 제공하여 지식그래프 구축의 데이터 기반이 된다.
-- 🏛 기반 연구: [[papers/1019_Science_of_science/review]] — 과학의 과학 연구를 위한 대규모 오픈 데이터 인프라를 제공하여 실증적 분석의 기반을 마련한다.
-- 🔗 후속 연구: [[papers/985_Mapping_scientific_communities_at_scale/review]] — SciSciNet의 대규모 오픈 데이터와 확장 가능한 매핑 방법론이 과학 공동체 분석의 완전한 파이프라인을 구성한다.
-- 🔗 후속 연구: [[papers/991_Open_Datasets_in_Learning_Analytics_Trends_Challenges_and_Be/review]] — 과학의 과학 연구를 위한 대규모 데이터 레이크로 학습분석 데이터셋을 확장한다
-- 🧪 응용 사례: [[papers/993_OpenAlex_A_fully-open_index_of_scholarly_works_authors_venue/review]] — OpenAlex 데이터를 과학학 연구를 위한 대규모 오픈 데이터 레이크로 활용하는 구체적인 응용 사례를 제시한다.
+- 🧪 응용 사례: [[papers/1019_Science_of_science/review]] — 과학의 과학 이론을 실제 연구에 적용할 수 있는 대규모 데이터 인프라를 제공한다.
+- 🔄 다른 접근: [[papers/993_OpenAlex_A_fully-open_index_of_scholarly_works_authors_venue/review]] — OpenAlex와 유사하게 학술 저작물의 대규모 오픈 인덱스를 제공하지만 과학의 과학 연구에 특화되어 있다.
+- 🔗 후속 연구: [[papers/1015_S2ORC_The_Semantic_Scholar_Open_Research_Corpus/review]] — S2ORC 코퍼스를 과학의 과학 연구에 특화된 외부 연계 데이터로 확장한 형태이다.
+- 🔗 후속 연구: [[papers/1015_S2ORC_The_Semantic_Scholar_Open_Research_Corpus/review]] — S2ORC의 정적 코퍼스를 동적이고 실시간으로 업데이트되는 과학 데이터 레이크로 확장한 개념입니다.
+- 🧪 응용 사례: [[papers/1019_Science_of_science/review]] — 과학의 과학 연구를 위한 대규모 오픈 데이터 인프라를 제공하여 이론을 실제 적용 가능하게 한다.
+- 🧪 응용 사례: [[papers/1042_The_Scholarly_Knowledge_Ecosystem_Challenges_and_Opportuniti/review]] — 학술 지식 생태계 개선을 위한 이론적 틀을 대규모 데이터 인프라로 구현하는 방안을 제시한다.
+- 🧪 응용 사례: [[papers/1124_The_Science_of_Science/review]] — 과학의 과학 연구를 위한 대규모 오픈 데이터 레이크를 제공하여 이론적 프레임워크의 실증적 적용을 가능하게 한다.
+- 🧪 응용 사례: [[papers/1071_Data_measurement_and_empirical_methods_in_the_science_of_sci/review]] — SciSciNet의 대규모 과학 데이터 레이크가 과학의 과학 분야의 실증적 연구 방법론을 실제 적용하기 위한 핵심 인프라를 제공한다.
+- 🔄 다른 접근: [[papers/993_OpenAlex_A_fully-open_index_of_scholarly_works_authors_venue/review]] — OpenAlex와 SciSciNet의 서로 다른 접근 방식을 비교하여 최적의 과학 연구 인프라를 설계할 수 있음
+- 🏛 기반 연구: [[papers/1206_Review_of_E-Commerce_Literature_Inferences_Trends_and_Recomm/review]] — 대규모 e-commerce 연구 분석을 위해 과학 연구의 오픈 데이터 레이크가 제공하는 인프라를 활용할 수 있음
+- 🏛 기반 연구: [[papers/1209_Scientometric_Analysis_of_Data_Privacy_and_Cloud_Security_Re/review]] — 과학의 과학을 위한 대규모 오픈 데이터 레이크와 유사한 접근법으로 arXiv 기반 scientometric 데이터셋의 가치를 보여준다.

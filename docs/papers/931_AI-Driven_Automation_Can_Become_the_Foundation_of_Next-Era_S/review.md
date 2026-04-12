@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 과학의 과학(Science of Science, SoS) 연구에 AI 기술을 통합하여 대규모 연구 패턴 자동 발견을 가능하게 하는 AI4SoS(AI for Science of Science) 프레임워크를 제안한다. 기존 통계 기반 방법론의 한계를 극복하고 자동화된 SoS 연구의 완전한 실현을 위한 5단계 자동화 계층을 제시한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/AI_and_Large_Language_Models"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Scientific_Discovery_Automation"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_AI-Driven Automation Can Become the Foundation of Next-Era Science of Science Research.pdf"
 ---
@@ -89,6 +89,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_AI-Driven Automation Ca
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1064_Data-driven_predictions_in_the_science_of_science/review]] — 과학의 과학 분야의 데이터 기반 예측 방법론을 AI 자동화를 통해 한 단계 더 발전시킨 차세대 접근법을 제시한다.
-- 🧪 응용 사례: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — 과학의 과학 분야에서 인간-AI 협업을 다루는 SciSciGPT와 연결되어 AI4SoS 프레임워크의 구체적인 구현 방안을 보여준다.
-- 🏛 기반 연구: [[papers/1078_Quantifying_the_use_and_potential_benefits_of_artificial_int/review]] — AI 기반 자동화가 차세대 과학 연구의 기반이 될 수 있다는 관점에서 AI 활용 정량화의 이론적 배경을 제공한다.
+- 🔗 후속 연구: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — AI4SoS 프레임워크가 인간-AI 협력을 통한 과학의 과학 연구 발전의 구체적 실현 방안을 제시한다.
+- 🏛 기반 연구: [[papers/1064_Data-driven_predictions_in_the_science_of_science/review]] — 과학의 과학 분야의 데이터 기반 예측 방법론이 AI 자동화 프레임워크의 이론적 토대를 제공한다.
+- ⚖️ 반론/비판: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — AI 가속화 연구가 적절한 사고 없이 이루어질 위험성과 체계적 AI4SoS 프레임워크의 필요성을 대조적으로 보여준다.
+- 🧪 응용 사례: [[papers/1065_A_Survey_of_AI_Scientists/review]] — 차세대 과학 발견을 위한 AI 자동화 기반 구축에 AI 과학자 시스템의 6단계 방법론 프레임워크가 직접적으로 적용된다.

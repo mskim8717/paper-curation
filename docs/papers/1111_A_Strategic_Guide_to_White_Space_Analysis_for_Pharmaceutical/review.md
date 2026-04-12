@@ -8,9 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "제약 R&D의 높은 비용과 낮은 생산성 문제를 해결하기 위해 특허 데이터(Patent Lens)와 임상 미충족 수요 데이터(Clinical & Unmet Need Lens)를 결합한 White Space Analysis(백색공간 분석)라는 전략적 방법론을 제시한다."
 tags:
-  - "cat/Scientific_Impact_and_Innovation"
-  - "cat/Scientific_Information_Systems"
-  - "sub/Research_innovation_and_novelty"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Innovation_Patent_Analysis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/DrugPatentWatch_2025_A Strategic Guide to White Space Analysis for Pharmaceutical R&D.pdf"
 ---
@@ -74,9 +73,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/DrugPatentWatch_2025_A Strategic Guide t
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — 제약 R&D의 백색공간 분석 방법론을 촉매 및 재료 발견 분야의 연구 기회 탐색에 적용할 수 있다.
-- 🏛 기반 연구: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 글로벌 과학 펀딩과 연구 성과의 연결 분석이 제약 R&D 투자 전략 수립의 기반 정보를 제공한다.
-- 🧪 응용 사례: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 머신러닝을 통한 고영향 연구 주제 예측을 제약 R&D의 백색공간 분석에 적용하여 혁신 기회를 발견한다.
-- 🔗 후속 연구: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 구조적 역학 기반의 과학적 돌파 예측을 제약 분야의 특허 및 임상 데이터 분석으로 확장 적용한다.
-- 🧪 응용 사례: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — 제약 분야의 화이트 스페이스 분석 전략을 통해 촉매 발견 데이터셋의 실제 산업 적용 가능성을 평가할 수 있다.
-- 🔄 다른 접근: [[papers/1109_A_comprehensive_large-scale_biomedical_knowledge_graph_for_A/review]] — 생의학 분야 대신 제약 R&D에서 특허와 임상 데이터를 결합한 다른 형태의 지식그래프 접근법을 제시한다.
+- 🧪 응용 사례: [[papers/1006_Real-World_Evidence_in_the_First_Round_of_the_US_Inflation_R/review]] — 제약 분야의 실제 사례를 통해 특허 분석과 임상 데이터를 결합한 백색공간 분석의 실용성을 보여준다.
+- 🏛 기반 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 연구 펀딩의 광범위한 영향을 시각화한 연구로 제약 R&D 투자 전략의 맥락을 제공한다.
+- 🔗 후속 연구: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 의미론적 네트워크를 통한 연구 동향 예측 방법론을 제시하여 백색공간 분석의 예측력을 보완한다.
+- 🧪 응용 사례: [[papers/1109_A_comprehensive_large-scale_biomedical_knowledge_graph_for_A/review]] — 제약 분야 화이트 스페이스 분석을 위한 전략적 가이드가 iKraph의 약물 재위치 지정 기능을 실제 제약 R&D에 활용하는 방법을 제시한다.
+- 🧪 응용 사례: [[papers/1147_Bibliometric_Analysis_on_the_Research_Trends_and_Collaborati/review]] — 일반적인 기업 분석 방법론을 중소기업 파산이라는 특정 영역에 적용한 사례입니다.

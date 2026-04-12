@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "350,000개 그랜트와 1.3백만 논문을 분석한 결과, 학제간 그랜트보다 학문 분야별(disciplinary) 그랜트가 지원한 학제간 논문이 더 높은 인용도를 보인다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Research_Evaluation_and_Impact"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholarly_Impact_Metrics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Park et al._2026_Interdisciplinary papers supported by disciplinary grants garner deep and broad scientific impact.pdf"
 ---
@@ -88,9 +88,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Park et al._2026_Interdisciplinary paper
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/972_Identifying_interdisciplinary_emergence_in_the_science_of_sc/review]] — 과학의 과학 분야에서 학제간 출현을 식별하는 연구와 연결되어 그랜트 지원 방식이 학제간 연구의 질적 성과에 미치는 영향을 분석한다.
-- 🔗 후속 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 대형 팀이 과학기술을 발전시키고 소형 팀이 파괴적 혁신을 일으킨다는 연구와 연결하여 학제간 연구에서 팀 크기와 펀딩 방식의 상호작용을 이해한다.
-- 🔗 후속 연구: [[papers/972_Identifying_interdisciplinary_emergence_in_the_science_of_sc/review]] — 학제간 연구가 단일 분야 펀딩으로도 높은 성과를 낼 수 있다는 발견과 학제간 출현 탐지 연구가 상호 보완적이다.
-- ⚖️ 반론/비판: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 학제간 논문이 학문적 지원을 받으면서 성과를 거두지만 여성의 학제간 혁신은 오히려 과소평가되는 모순적 현상을 드러낸다.
-- 🔗 후속 연구: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 동료평가의 예측력 한계를 학제간 연구가 더 나은 성과를 보인다는 발견으로 확장하여 평가 시스템 개선 방향을 제시한다.
-- 🔗 후속 연구: [[papers/1110_A_cross-disciplinary_research_framework_at_institution_level/review]] — 학문적 지원을 받는 학제간 논문의 성과와 IFISC 모델의 분산형 학제간 조직 구조를 연결하여 제도적 지원 방안을 모색할 수 있다.
+- 🔗 후속 연구: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 북유럽 연구 자금과 출판물 관계 매핑을 학제간 그랜트의 인용 영향도 분석으로 확장하여 자금 지원 효과를 정밀 분석할 수 있다.
+- 🏛 기반 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 프론티어 자금 지원의 광범위한 영향 시각화 연구를 바탕으로 학제간 연구 지원 방식의 효과를 구체적으로 분석한다.
+- 🧪 응용 사례: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 과학의 공공 사용과 공공 자금 연구에 학제간 그랜트 지원 효과 분석을 적용하여 자금 배분 정책을 개선할 수 있다.
+- 🔗 후속 연구: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 학제간 연구가 학문적 자금 지원을 받는 현상을 물리학 지식의 선택적 정책 활용으로 확장한다.
+- 🏛 기반 연구: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 학제간 그랜트 지원 효과 연구에 북유럽 지역의 연구 자금-출판물 주제별 매핑 방법론을 적용할 수 있다.

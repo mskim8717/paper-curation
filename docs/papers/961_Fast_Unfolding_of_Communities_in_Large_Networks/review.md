@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "대규모 네트워크의 커뮤니티 구조를 모듈성(modularity) 최적화를 통해 빠르게 추출하는 휴리스틱 알고리즘을 제안한다. 반복적인 두 단계(지역 최적화 및 커뮤니티 응집)를 통해 계층적 커뮤니티 구조를 효율적으로 도출한다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Network_Structure_and_Detection"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Network_Community_Detection"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Blondel et al._2008_Fast Unfolding of Communities in Large Networks.pdf"
 ---
@@ -91,9 +91,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Blondel et al._2008_Fast Unfolding of Co
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/948_Community_Detection_in_Graphs/review]] — 모듈성 기반 고속 알고리즘과 다른 커뮤니티 탐지 방법들을 종합적으로 비교할 수 있다.
-- 🧪 응용 사례: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — VOSviewer는 Louvain 알고리즘을 구현하여 학술 네트워크의 커뮤니티 구조를 시각화하는 도구이다.
-- 🔗 후속 연구: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 대규모 과학 공동체 매핑에서 Louvain 알고리즘의 확장성과 실용적 구현 방안을 제시한다.
-- 🔗 후속 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 일반적 커뮤니티 탐지 이론을 대규모 네트워크에서 빠른 커뮤니티 구조 발견 알고리즘으로 구체화한다.
-- 🔗 후속 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크의 커뮤니티 구조를 효율적으로 탐지하는 알고리즘적 접근법을 제공한다.
-- 🏛 기반 연구: [[papers/929_A_network_approach_to_topic_models/review]] — 네트워크에서 커뮤니티 탐지의 기본 알고리즘을 제공하여 토픽 모델링을 커뮤니티 탐지로 재정의하는 이론적 기반이 된다.
+- 🏛 기반 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 대규모 네트워크의 빠른 커뮤니티 검출 알고리즘은 그래프 커뮤니티 검출 방법들에 대한 종합적 분석을 기반으로 개발되었다.
+- 🧪 응용 사례: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 모듈성 최적화 기반 커뮤니티 검출 방법론은 대규모 과학 커뮤니티 매핑에 대한 실제적 구현 도구를 제공한다.
+- 🔄 다른 접근: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 네트워크의 커뮤니티 구조를 분석하는 다른 방법론적 접근을 제시한다.
+- 🔄 다른 접근: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 네트워크의 커뮤니티 구조를 발견하는 다른 알고리즘적 접근방법을 제공한다.
+- 🔗 후속 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 그래프 커뮤니티 검출 방법들에 대한 종합 리뷰는 대규모 네트워크에서 빠른 커뮤니티 검출 알고리즘 개발의 이론적 배경을 제공한다.

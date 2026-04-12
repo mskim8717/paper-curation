@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "북유럽 지역에서 연구 자금과 학술 출판 수 및 인용도 간의 관계를 주제별 수준에서 매핑하여, 자금이 출판량을 증진하지만 인용 영향도(citation impact)는 보장하지 않음을 보여준다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Bibliometrics_and_Science_Mapping"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Thematic_Network_Detection"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jenset_2026_Mapping Research Funding and Outputs at the Topic Level in the Nordic Countries.pdf"
 ---
@@ -76,7 +76,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jenset_2026_Mapping Research Funding and
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 글로벌 과학 자금과 연구 출판의 연결 관계에 대한 일반적 방법론을 제공한다
-- 🔄 다른 접근: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 연구 자금의 광범위한 영향을 시각화하는 다른 접근법을 제시한다
-- 🧪 응용 사례: [[papers/1006_Real-World_Evidence_in_the_First_Round_of_the_US_Inflation_R/review]] — 특정 정책(인플레이션 감축법) 자금 지원의 실제 효과를 평가하는 응용 사례를 보여준다
-- 🔄 다른 접근: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 영국의 주제별 연구 펀딩과 성과 매핑과 다른 접근으로 다차원적 사회적 영향을 포함한 미국 기반의 시각분석 시스템을 제시한다.
+- 🏛 기반 연구: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 학제간 그랜트 지원 효과 연구에 북유럽 지역의 연구 자금-출판물 주제별 매핑 방법론을 적용할 수 있다.
+- 🔗 후속 연구: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 글로벌 과학 자금과 연구 출판물 연결 연구를 북유럽 지역의 주제별 세분화 분석으로 확장하여 지역적 특성을 규명한다.
+- 🔄 다른 접근: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 프론티어 자금 지원의 광범위한 영향과 대비하여 북유럽 지역의 주제별 자금-성과 관계를 구체적으로 분석한다.
+- 🧪 응용 사례: [[papers/996_Partisan_disparities_in_the_funding_of_science_in_the_United/review]] — 주제별 연구 자금과 성과 매핑을 통해 정당별 투자 우선순위의 실제 효과를 분석할 수 있음
+- 🔗 후속 연구: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 북유럽 연구 자금과 출판물 관계 매핑을 학제간 그랜트의 인용 영향도 분석으로 확장하여 자금 지원 효과를 정밀 분석할 수 있다.

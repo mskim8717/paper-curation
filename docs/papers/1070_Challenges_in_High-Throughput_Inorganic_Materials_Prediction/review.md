@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "고처리량 무기재료 자동 합성 및 예측 시스템의 핵심 문제점들을 분석한 관점 논문으로, Szymanski et al.의 A-lab 연구에서 43개 신규 재료 발견 주장이 신뢰할 수 없음을 지적하고 자동화된 재료 발견의 개선 방향을 제시한다."
 tags:
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Research_innovation_and_novelty"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Scientific_Discovery_Automation"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Leeman et al._2024_Challenges in High-Throughput Inorganic Materials Prediction and Autonomous Synthesis.pdf"
 ---
@@ -78,9 +78,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Leeman et al._2024_Challenges in High-Th
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 재현가능성 위기를 재료과학의 자동화된 고처리량 연구로 확장하여 새로운 형태의 재현성 문제를 제기한다.
-- 🏛 기반 연구: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 기계학습 기반 연구의 합의 기반 권고사항이 자동화된 재료 발견 시스템의 개선 방향을 제시하는 기준을 제공한다.
-- 🔗 후속 연구: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — 고처리량 무기물질 예측의 도전과제를 통해 촉매 발견을 위한 기계학습 접근법의 한계와 개선 방향을 구체화한다.
-- 🧪 응용 사례: [[papers/1082_The_Open_Catalyst_2022_OC22_Dataset_and_Challenges_for_Oxide/review]] — 무기 재료 예측의 고처리량 방법론이 전기촉매 재료 설계에 직접 적용될 수 있는 방법론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/948_Community_Detection_in_Graphs/review]] — 커뮤니티 탐지 방법론을 고처리량 무기재료 예측의 복잡한 데이터 구조 분석에 적용한다.
-- 🧪 응용 사례: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 무기재료 예측에서 Word2vec과 같은 비지도 학습 방법이 재료과학 지식 발견에 실제로 활용되는 사례를 보여준다.
+- 🏛 기반 연구: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — Open Catalyst 2020 데이터셋이 제공하는 체계적인 촉매 연구 기반이 고처리량 무기재료 예측 시스템의 신뢰성 문제 해결에 필수적이다.
+- ⚖️ 반론/비판: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 연구 부정행위가 철회 논문의 대부분을 차지한다는 분석이 A-lab의 43개 신규 재료 발견 주장의 신뢰성 문제를 뒷받침한다.
+- 🔗 후속 연구: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 고처리량 무기재료 예측의 도전과제와 심혈관질환 머신러닝 응용의 한계를 비교하여 의료 AI의 발전 방향을 모색할 수 있다.

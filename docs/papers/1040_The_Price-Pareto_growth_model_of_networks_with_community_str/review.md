@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "커뮤니티 구조를 가진 네트워크의 도수 수열(degree sequence)을 모델링하기 위해 Price 모델을 확장한 Price-Pareto 성장 모델을 제안한다. 각 커뮤니티별로 이질적인 인용 역학을 포착할 수 있는 분석적 틀을 제공한다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Network_Structure_and_Detection"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Network_Community_Detection"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Brzozowski et al._2026_The Price-Pareto growth model of networks with community structure.pdf"
 ---
@@ -85,9 +85,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Brzozowski et al._2026_The Price-Pareto 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 무작위 네트워크에서 scale-free 특성의 출현 원리를 커뮤니티 구조를 가진 Price-Pareto 모델의 이론적 기반으로 제공한다.
-- 🧪 응용 사례: [[papers/948_Community_Detection_in_Graphs/review]] — Price-Pareto 모델에서 생성된 커뮤니티 구조를 다양한 커뮤니티 탐지 알고리즘으로 검증한다.
-- 🔗 후속 연구: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 이론적 커뮤니티 성장 모델을 대규모 실제 과학 커뮤니티 매핑 문제에 적용한다.
-- 🧪 응용 사례: [[papers/989_Modeling_Changing_Scientific_Concepts_with_Complex_Networks/review]] — Price-Pareto 모델을 과학 개념의 변화하는 복잡 네트워크 모델링에 적용한다.
-- 🔗 후속 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 특성을 가진 네트워크에서 커뮤니티별 이질적 성장 dynamics를 모델링하는 확장된 프레임워크를 제안한다.
-- 🔄 다른 접근: [[papers/990_Networks_of_Scientific_Papers/review]] — 커뮤니티 구조를 가진 네트워크의 가격-파레토 성장 모델로 다른 네트워크 분석 접근법을 제시한다
+- 🔗 후속 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크 이론을 커뮤니티 구조가 있는 네트워크로 확장한 모델링 접근법이다.
+- 🔄 다른 접근: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 네트워크의 커뮤니티 구조를 분석하는 다른 방법론적 접근을 제시한다.
+- 🧪 응용 사례: [[papers/948_Community_Detection_in_Graphs/review]] — 그래프에서 커뮤니티 탐지 이론을 인용 네트워크의 구체적 모델링에 적용한다.
+- 🔗 후속 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 특성을 가진 네트워크에서 커뮤니티 구조를 모델링하는 확장된 접근법을 제시한다.
+- 🧪 응용 사례: [[papers/948_Community_Detection_in_Graphs/review]] — 커뮤니티 검출 기법은 커뮤니티 구조를 가진 네트워크의 Price-Pareto 성장 모델에 대한 실증적 분석 도구로 활용된다.

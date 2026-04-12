@@ -10,7 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 '인간-인식형 AI(Human-Aware AI)' 시스템의 개념을 정의하고, 순차적 의사결정(Sequential Decision-Making) 분야의 최근 연구를 체계적으로 분석하여 인간 모델링의 현황과 연구 공백을 파악한다."
 tags:
-  - "cat/Other"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Science_of_Science_Analysis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tulli et al._2024_Human-Modeling in Sequential Decision-Making An Analysis through the Lens of Human-Aware AI.pdf"
 ---
@@ -80,3 +81,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tulli et al._2024_Human-Modeling in Sequ
 - Overall: 4/5
 
 **총평**: 본 논문은 혼용되던 'human-aware AI' 개념을 명확히 정의하고 체계적 분석 프레임워크를 제시하여 인간-AI 상호작용 연구의 이론적 기초를 제공한다. 순차적 의사결정 분야의 현황 분석을 통해 구체적 연구 공백을 식별함으로써 향후 연구 방향 설정에 실질적 기여를 한다.
+
+## Related Papers
+
+- 🧪 응용 사례: [[papers/1066_Accelerating_science_with_human-aware_artificial_intelligenc/review]] — 인간-인식형 AI 시스템의 순차적 의사결정 분석이 과학자 전문성을 AI에 통합하여 과학적 발견 예측을 개선하는 구체적 방법을 제시한다.
+- 🏛 기반 연구: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 과학적 발견과 혁신에서 성별 다양성의 효과 분석이 인간 모델링에서 다양성 요소를 고려해야 할 이론적 근거를 제공한다.
+- 🏛 기반 연구: [[papers/1066_Accelerating_science_with_human-aware_artificial_intelligenc/review]] — 순차적 의사결정에서의 인간 모델링 분석이 과학자 전문성을 AI에 통합하는 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/1216_Tour_guiding_technologies_a_bibliometric_analysis_mapping_tr/review]] — 투어 가이딩에서 인간-AI 상호작용의 순차적 의사결정 모델링을 통해 기술 통합 과정을 분석할 수 있음

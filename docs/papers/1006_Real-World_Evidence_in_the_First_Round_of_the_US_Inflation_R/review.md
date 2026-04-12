@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 미국 인플레이션 감축법(IRA)의 첫 번째 Medicare 약가 협상에서 인용된 실제임상증거(RWE)의 출처와 연구 설계를 체계적으로 분석한 인용 분석 연구이다."
 tags:
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Research_innovation_and_novelty"
+  - "cat/Open_Access_Publication_Analytics"
+  - "sub/Research_Data_and_Metadata"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Winberg et al._2026_Real-World Evidence in the First Round of the US Inflation Reduction Act Drug Price Negotiations A.pdf"
 ---
@@ -77,6 +77,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Winberg et al._2026_Real-World Evidence 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 물리학 지식의 정책적 선택적 활용과 유사하게 의료정책에서 실제임상증거가 어떻게 선별적으로 인용되는지를 보여준다.
-- 🏛 기반 연구: [[papers/996_Partisan_disparities_in_the_funding_of_science_in_the_United/review]] — 정책 결정에서 과학적 증거의 활용 양상을 이해하는 기초적 맥락을 제공한다.
-- 🧪 응용 사례: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 특정 정책(인플레이션 감축법) 자금 지원의 실제 효과를 평가하는 응용 사례를 보여준다
+- 🏛 기반 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 실제임상증거의 공공 활용 정책과 공공 자금으로 지원된 과학 연구의 공적 활용 간 정책적 유사성을 보여준다.
+- 🔄 다른 접근: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 정책 결정에서 과학 지식이 선택적으로 활용되는 현상을 다른 분야에서 분석한 유사한 접근법을 제시한다.
+- 🧪 응용 사례: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 제약 분야의 실제 사례를 통해 특허 분석과 임상 데이터를 결합한 백색공간 분석의 실용성을 보여준다.

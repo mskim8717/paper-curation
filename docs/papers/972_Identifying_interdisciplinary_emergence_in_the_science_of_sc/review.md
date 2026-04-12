@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 BERTopic 임베딩 토픽 모델링과 네트워크 분석을 결합하여 과학 출판 메타데이터에서 학제간 지식 결합을 통한 신흥 과학 분야의 출현을 식별하는 방법론을 제시한다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Scientific_Mapping_and_Visualization"
+  - "cat/Open_Access_Publication_Analytics"
+  - "sub/Bibliometric_Measurement_Methods"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kim et al._2024_Identifying interdisciplinary emergence in the science of science combination of network analysis a.pdf"
 ---
@@ -86,9 +86,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kim et al._2024_Identifying interdiscipl
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — BERTopic 모델링으로 식별된 학제간 결합이 실제로 비전형적 조합을 통한 과학적 임팩트로 이어지는지 검증할 수 있다.
-- 🔗 후속 연구: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 학제간 연구가 단일 분야 펀딩으로도 높은 성과를 낼 수 있다는 발견과 학제간 출현 탐지 연구가 상호 보완적이다.
-- 🏛 기반 연구: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 주제 진화를 추적하는 통합적 접근법이 학제간 출현 탐지의 방법론적 토대를 제공한다.
-- 🧪 응용 사례: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 과학의 과학 분야에서 학제간 출현을 식별하는 연구와 연결되어 그랜트 지원 방식이 학제간 연구의 질적 성과에 미치는 영향을 분석한다.
-- 🔗 후속 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 학제간 융합의 출현을 식별하는 연구에 비전형적 조합 분석을 적용하여 혁신적 융합 연구를 예측할 수 있다.
-- 🧪 응용 사례: [[papers/1110_A_cross-disciplinary_research_framework_at_institution_level/review]] — 과학의 과학 분야에서 학제간 출현을 식별하는 방법론을 IFISC의 학제간 연구 프레임워크 설계에 활용할 수 있다.
+- 🏛 기반 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 지식 결합을 통한 과학적 영향력 창출이라는 학제간 연구의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 연구 동향 예측에 BERTopic과 네트워크 분석을 활용하는 방법론과 의미 신경망 접근법 간의 비교 분석이 가능하다.
+- 🧪 응용 사례: [[papers/1120_SciEvo_A_2_Million_30-Year_Cross-disciplinary_Dataset_for_Te/review]] — 과학학의 학제간 출현 특성은 SciEvo 데이터셋으로 분석할 수 있는 지식 교류 패턴의 구체적 사례이다.
+- 🏛 기반 연구: [[papers/1159_Dissemination_and_Implementation_Theories_Models_or_Framewor/review]] — 과학의 과학 분야에서 학제간 출현을 식별하는 방법론을 제시하여 D&I 연구의 학제간 특성을 이해하는 기반을 제공한다.

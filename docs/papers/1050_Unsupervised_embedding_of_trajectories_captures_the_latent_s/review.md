@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "Word2vec 신경망 임베딩 모델을 이용하여 이동 궤적(migration trajectories)으로부터 지역 간의 잠재적 구조를 비지도학습으로 추출하고, 중력 모델(gravity model of mobility)과의 수학적 동치성을 증명한다. 과학자 300만 명의 이동 데이터에 적용하여 문화, 언어, 위신 등 다층적 요인을 포함한 과학 마이그레이션의 복잡한 구조를 효과적으로 인코딩할 수 있음을 보여준다."
 tags:
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Research_innovation_and_novelty"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Mathematical_Topology_Indexing"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Murray et al._2023_Unsupervised embedding of trajectories captures the latent structure of scientific migration.pdf"
 ---
@@ -90,11 +90,9 @@ Word2vec 신경망 임베딩 모델을 이용하여 이동 궤적(migration traj
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 연구자 이동 궤적의 임베딩 모델을 경제 발전과 연계된 글로벌 학자 이동 패턴 분석에 직접 적용할 수 있다.
-- 🏛 기반 연구: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 과학 협력 네트워크의 진화에 대한 기본 이해가 연구자 이동의 잠재 구조를 파악하는 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 과학 궤적의 비지도 임베딩을 통해 재료과학 문헌에서 포착된 잠재 지식을 동적 패턴으로 확장 분석한다.
-- 🔗 후속 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 연구자 궤적의 비지도 임베딩과 학문 지형에서의 인식론적 위치 규명이 상호 보완적인 접근법이다.
-- 🔄 다른 접근: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 궤적 임베딩을 통한 무감독 학습으로 과학적 돌파구 예측의 다른 접근법을 제시한다
-- 🏛 기반 연구: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 논문의 궤적을 벡터공간에서 임베딩하여 잠재적 지식구조를 포착하는 방법론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 궤적의 비지도 임베딩을 통한 잠재 구조 포착 방법론이 핫스트릭의 패턴 인식과 예측에 기술적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1064_Data-driven_predictions_in_the_science_of_science/review]] — 궤적 임베딩을 통한 잠재 구조 포착이 과학적 발견의 예측가능성을 높이는 새로운 방법론적 접근을 제공한다.
+- 🧪 응용 사례: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 경제 발전과 연결된 학자 이주 패턴은 궤적 임베딩 모델의 구체적 적용 사례를 제공한다.
+- 🔗 후속 연구: [[papers/973_Impacts_of_inter-institutional_mobility_on_scientific_perfor/review]] — 기관 간 이동이 과학 성과에 미치는 영향은 이주 궤적 분석의 성과 예측 차원을 보완한다.
+- 🔄 다른 접근: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 미중 과학 협력 변화는 궤적 임베딩으로 분석할 수 있는 구체적 이동 패턴 사례를 제공한다.
+- 🔄 다른 접근: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 이주 궤적의 비지도학습 임베딩은 미중 협력 변화를 분석하는 다른 방법론적 접근을 제시한다.
+- 🏛 기반 연구: [[papers/1121_Superstar_Extinctionsupsup/review]] — 과학자 경력 궤적의 잠재 구조를 분석하는 방법론을 제시하여 슈퍼스타 소멸의 영향을 측정하는 기반을 제공한다.
+- 🔄 다른 접근: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 궤적의 비지도 임베딩과 학술지의 시간변화 임베딩이 과학적 변화 포착에서 서로 다른 관점을 제공한다.

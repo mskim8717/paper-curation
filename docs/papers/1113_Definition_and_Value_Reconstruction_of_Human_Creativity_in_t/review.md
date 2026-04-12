@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "AI 시대에 인간 창의성의 정의를 재구성하며, 전통적 창의성 평가 기준이 인간과 AI의 창의성 구분에 부적절함을 지적하고 3차원 창의성 평가 모델(보간형, 외삽형, 도약형)을 제안한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/AI_and_Large_Language_Models"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Science_of_Science_Analysis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ke et al._2025_Definition and Value Reconstruction of Human Creativity in the AI Era.pdf"
 ---
@@ -74,5 +74,6 @@ AI 시대에 인간 창의성의 정의를 재구성하며, 전통적 창의성 
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/1068_Artificial_intelligence_and_illusions_of_understanding_in_sc/review]] — AI가 과학적 이해에 착각을 불러일으킨다는 관점과 대조되어 인간 창의성의 고유한 가치를 재정의하는 상반된 접근을 보여준다.
-- 🔗 후속 연구: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — 대형 언어모델이 연구 참신성에 미치는 영향을 다루어 AI 시대 창의성 평가의 실증적 근거를 제공한다.
+- 🧪 응용 사례: [[papers/1067_After_science/review]] — 3차원 창의성 평가 모델(보간형, 외삽형, 도약형)이 '과학 이후' 시대에서 인간 고유 창의성을 보존하기 위한 구체적 평가 기준을 제공한다.
+- 🏛 기반 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 예술, 문화, 과학 분야 경력에서 나타나는 hot streak 패턴 분석이 AI 시대 인간 창의성의 독특한 특성을 이해하는 기반을 제공한다.
+- 🏛 기반 연구: [[papers/1067_After_science/review]] — AI 시대 인간 창의성의 재정의가 '과학 이후' 시대에서 인간의 역할과 가치를 보존하기 위한 이론적 토대를 제공한다.

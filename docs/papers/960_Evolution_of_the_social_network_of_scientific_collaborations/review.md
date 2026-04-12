@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "과학자들의 공동저자 네트워크를 1991-98년 수학 및 신경과학 데이터베이스를 통해 분석하여, 스케일-프리 네트워크 특성과 우선적 부착(preferential attachment)이 네트워크 진화를 지배함을 규명했다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "sub/Scientific_Collaboration_Networks"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholar_Mobility_Patterns"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Barabási et al._2002_Evolution of the social network of scientific collaborations.pdf"
 ---
@@ -83,10 +83,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Barabási et al._2002_Evolution of the s
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 과학 협력 네트워크에서 팀 크기가 연구 성과에 미치는 영향을 우선적 부착 메커니즘과 연결하여 분석한다.
-- 🏛 기반 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 과학 지식 생산에서 팀워크의 중요성이 증가하는 현상의 네트워크 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크의 정적 구조 분석을 시간적 진화 패턴 분석으로 확장한다.
-- 🏛 기반 연구: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 과학 협력 네트워크의 진화에 대한 기본 이해가 연구자 이동의 잠재 구조를 파악하는 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 과학 협력 네트워크의 진화 원리를 미중 협력의 구체적 사례에 적용하여 지정학적 요인의 영향을 이해할 수 있다.
-- 🧪 응용 사례: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 이론을 과학 협력 네트워크의 시간적 진화 패턴 분석에 적용한다.
-- 🔗 후속 연구: [[papers/990_Networks_of_Scientific_Papers/review]] — 논문 인용 네트워크에서 발견된 패턴을 과학자 협력 네트워크의 진화적 관점으로 확장하여 분석한다.
+- 🏛 기반 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 작은 세상 네트워크 이론은 과학 협력 네트워크의 기본적인 수학적 모델을 제공한다.
+- 🔄 다른 접근: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크의 구조적 특성을 다른 각도에서 분석하여 보완적 시각을 제공한다.
+- 🧪 응용 사례: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 미중 과학 협력의 변화는 글로벌 협력 네트워크 진화의 구체적 사례를 보여준다.
+- 🏛 기반 연구: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크의 구조적 특성을 시간에 따른 동적 진화의 관점에서 이해하는 기초를 제공한다.
+- 🧪 응용 사례: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 과학 협력의 사회적 네트워크 진화 연구에 대규모 과학 공동체 매핑의 새로운 방법론을 적용할 수 있다.

@@ -8,8 +8,8 @@ arxiv: ""
 score: 5.0
 essence: "개인의 과학적 연구 성과를 정량화하기 위해 h-index를 제안한다. h-index는 h편 이상의 인용수를 가진 논문의 개수로 정의되며, 연구자의 생산성과 영향력을 동시에 반영하는 단일 지표이다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Citation_Metrics_and_Indices"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Academic_Career_Recognition"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hirsch_2005_An index to quantify an individual's scientific research output.pdf"
 ---
@@ -78,10 +78,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hirsch_2005_An index to quantify an indi
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1047_Theory_and_Practice_of_the_g-index/review]] — h-index의 한계를 극복하기 위해 상위 논문들의 인용 성과를 더 잘 반영하는 g-index를 제안한다.
-- 🏛 기반 연구: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — h-index와 같은 개별 지표를 넘어 학문분야 간 객관적 비교를 위한 보편적 인용 분포 모델을 제공한다.
-- 🔗 후속 연구: [[papers/946_Collective_Credit_Allocation_in_Science/review]] — 개별 연구자의 성과 측정을 다중저자 환경에서 공정한 기여도 배분 문제로 확장한다.
-- 🧪 응용 사례: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — h-index와 같은 계량지표가 연구비 배분에서 어떻게 기존 우위를 강화하는지 보여준다.
-- 🔗 후속 연구: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — 개별 연구자의 과학적 성과를 정량화하는 h-지수 연구를 전체 과학 분야로 확장한 표준화된 데이터베이스를 제공한다.
-- 🔄 다른 접근: [[papers/1007_Redefining_Academic_Performance_The_Development_of_the_NK_Co/review]] — h-index의 한계를 극복하기 위한 다차원적 접근법으로 NK 지수와 상호 보완적 평가가 가능하다.
-- 🔄 다른 접근: [[papers/946_Collective_Credit_Allocation_in_Science/review]] — h-지수와 같은 개인 연구 성과 지표와 다른 접근으로 집단 작업에서의 개별 기여도를 정량화하는 대안적 평가 방법을 제안한다.
+- 🔗 후속 연구: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — h-index를 포함한 더 포괄적인 표준화된 인용 지표 데이터베이스를 제공한다.
+- 🔄 다른 접근: [[papers/1047_Theory_and_Practice_of_the_g-index/review]] — h-index의 대안으로 g-index라는 개선된 개인 연구성과 측정 지표를 제안한다.
+- 🏛 기반 연구: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 개인 연구자의 h-index 산출에 필요한 인용분포의 보편적 특성을 규명한다.
+- 🏛 기반 연구: [[papers/1007_Redefining_Academic_Performance_The_Development_of_the_NK_Co/review]] — h-지수의 한계 분석은 새로운 복합 지표 개발의 필요성을 뒷받침한다.
+- 🔗 후속 연구: [[papers/1047_Theory_and_Practice_of_the_g-index/review]] — g-지수는 h-지수의 상위 논문 인용 반영 한계를 개선한 직접적 확장이다.
+- 🔗 후속 연구: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — h-index를 포함하여 과학자들의 연구 성과를 측정하는 더 포괄적인 표준화된 지표 시스템을 제공한다.

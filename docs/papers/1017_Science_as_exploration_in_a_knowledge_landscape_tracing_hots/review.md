@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 지리정보시스템(GIS) 기법을 활용하여 과학자들의 연구주제 선택을 지식공간(knowledge space)에서의 탐색 과정으로 모델링하고, 과학자들이 주로 보수적으로 국소적 지식공간을 탐색하는 패턴을 실증적으로 규명한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Bibliometrics_and_Science_Mapping"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Thematic_Network_Detection"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_Science as exploration in a knowledge landscape tracing hotspots or seeking opportunity.pdf"
 ---
@@ -81,5 +81,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_Science as exploration i
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 지식 네트워크의 구조적 역학을 바탕으로 과학적 돌파구 예측에 활용할 수 있는 확장된 분석틀을 제공한다.
-- 🧪 응용 사례: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 기계학습 기법을 통해 지식 공간에서의 탐색 패턴을 바탕으로 미래 연구 주제를 예측하는 구체적 적용 사례를 제시한다.
+- 🔗 후속 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합의 과학적 영향과 지식공간 탐색 패턴을 연결하여 혁신의 공간적 메커니즘을 이해할 수 있다.
+- 🏛 기반 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 토픽 수준의 과학 지도 작성은 지식공간 모델링의 실증적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 지식 그래프를 통한 과학 연구 매핑은 GIS 기반 접근과 다른 지식공간 구성 방법을 제시한다.
+- 🏛 기반 연구: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 지식공간에서의 탐색 패턴 이론은 인용 확산의 공간적 모델링에 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/1116_Harnessing_the_Power_of_Adversarial_Prompting_and_Large_Lang/review]] — 지식 경관에서 과학 탐험을 추적하는 방법론을 천문학 분야 적대적 프롬프팅 연구에 적용하여 가설 생성의 탐험적 패턴을 분석할 수 있다.
+- 🔗 후속 연구: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 지식 경관에서 핫스팟 추적 연구를 학술지 임베딩을 통한 물리-생명-보건 삼각형의 동적 변화 분석으로 확장한다.
+- 🧪 응용 사례: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 지식의 비전형적 조합 개념은 지식 경관에서 핫스팟을 추적하는 탐험적 과학 연구의 구체적 적용 사례를 제공한다.

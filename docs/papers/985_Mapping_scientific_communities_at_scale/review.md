@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "대규모 bibliometric 데이터셋에서 과학 공동체를 효율적으로 매핑하기 위해 노드 필터링 대신 링크 필터링에 기반한 새로운 방법론을 제시하고, Elasticsearch, Graphology, VOSviewer 등을 통합한 확장 가능한 네트워크 분석 프레임워크를 제안한다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Scientific_Mapping_and_Visualization"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Thematic_Network_Detection"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Barbier and Jeangirard_2025_Mapping scientific communities at scale.pdf"
 ---
@@ -86,9 +86,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Barbier and Jeangirard_2025_Mapping scie
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1115_Google_Scholar_Microsoft_Academic_Scopus_Dimensions_Web_of_S/review]] — 다양한 학술 데이터베이스 비교 연구가 확장 가능한 네트워크 분석 프레임워크 설계의 데이터 품질 기준을 제시한다.
-- 🔗 후속 연구: [[papers/1023_SciSciNet_A_large-scale_open_data_lake_for_the_science_of_sc/review]] — SciSciNet의 대규모 오픈 데이터와 확장 가능한 매핑 방법론이 과학 공동체 분석의 완전한 파이프라인을 구성한다.
-- 🧪 응용 사례: [[papers/978_Introducing_the_open_biomedical_map_of_science/review]] — 생의학 과학 지도 구축 경험이 대규모 과학 공동체 매핑 방법론의 특정 도메인 적용 사례가 된다.
-- 🧪 응용 사례: [[papers/948_Community_Detection_in_Graphs/review]] — 커뮤니티 탐지 알고리즘을 대규모 과학 커뮤니티의 실제 매핑과 시각화에 적용한다.
-- 🔗 후속 연구: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 대규모 과학 공동체 매핑에서 Louvain 알고리즘의 확장성과 실용적 구현 방안을 제시한다.
-- 🔗 후속 연구: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 이론적 커뮤니티 성장 모델을 대규모 실제 과학 커뮤니티 매핑 문제에 적용한다.
+- 🔗 후속 연구: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — VOSviewer 프로그램의 서베이 연구를 Elasticsearch와 Graphology를 통합한 확장 가능한 네트워크 분석으로 발전시킨다.
+- 🧪 응용 사례: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 과학 협력의 사회적 네트워크 진화 연구에 대규모 과학 공동체 매핑의 새로운 방법론을 적용할 수 있다.
+- 🏛 기반 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 그래프 내 공동체 탐지 이론을 바탕으로 링크 필터링 기반의 효율적인 과학 공동체 매핑 방법을 개발했다.
+- 🔗 후속 연구: [[papers/952_Design_and_Update_of_a_Classification_System_The_UCSD_Map_of/review]] — 과학 분류 체계의 업데이트 방법론을 대규모 과학 커뮤니티 매핑에 적용하여 동적 분류 시스템을 구축할 수 있음
+- 🧪 응용 사례: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 모듈성 최적화 기반 커뮤니티 검출 방법론은 대규모 과학 커뮤니티 매핑에 대한 실제적 구현 도구를 제공한다.

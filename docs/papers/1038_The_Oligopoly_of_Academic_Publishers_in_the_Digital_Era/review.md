@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "1973-2013년 45백만 개 문서를 분석하여 디지털 시대 이후 Reed-Elsevier, Wiley-Blackwell, Springer, Taylor & Francis 등 소수 대형 출판사들이 학술 출판 시장을 독점하는 현상을 실증적으로 규명했다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Publishing_and_Incentives"
+  - "cat/Open_Access_Publication_Analytics"
+  - "sub/Scholarly_Publishing_Landscape"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Larivière et al._2015_The Oligopoly of Academic Publishers in the Digital Era.pdf"
 ---
@@ -84,12 +84,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Larivière et al._2015_The Oligopoly of 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1123_The_misalignment_of_incentives_in_academic_publishing_and_im/review]] — 학술 출판의 인센티브 불일치 문제가 소수 대형 출판사의 시장 독점으로 구체화되어 나타나는 구조적 문제를 보여준다.
-- 🧪 응용 사례: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 출판사 독점이 저널 명성 기반 인용 편향을 강화하여 학술 평가의 공정성을 해치는 구체적 메커니즘을 설명한다.
-- ⚖️ 반론/비판: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 오픈 액세스의 확산이 기존 출판사 독점 구조에 어떤 변화를 가져오고 있는지 대안적 관점을 제공한다.
-- 🏛 기반 연구: [[papers/1042_The_Scholarly_Knowledge_Ecosystem_Challenges_and_Opportuniti/review]] — 학술 출판의 과점 구조가 학술 지식 생태계의 거버넌스 문제에 미치는 근본적 영향을 이해하는 기반을 제공한다.
-- 🏛 기반 연구: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 학술 출판사의 시장 독점 구조가 저널 명성 기반 인용 편향을 강화하는 구조적 원인을 제공한다.
-- 🔗 후속 연구: [[papers/1031_The_Chaperone_Effect_in_Scientific_Publishing/review]] — 학술 출판사의 시장 독점이 샤페론 효과를 더욱 강화하여 기존 연구자들의 출판 우위를 고착화시킬 수 있다.
-- 🏛 기반 연구: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 학술출판의 과점 구조에 대한 이해가 오픈액세스 운동의 필요성과 영향을 설명하는 맥락을 제공한다.
-- 🏛 기반 연구: [[papers/1123_The_misalignment_of_incentives_in_academic_publishing_and_im/review]] — 학술 출판사의 시장 독점이 지식 전파와 학문적 신용 확립 목표의 불일치를 심화시키는 구조적 원인을 제공한다.
-- ⚖️ 반론/비판: [[papers/932_An_empirical_analysis_of_open_access_citation_advantages_in/review]] — 개방접근의 제한적 효과에 대해 디지털 시대 학술 출판 과점 체제의 구조적 문제를 제시한다.
+- 🔗 후속 연구: [[papers/1123_The_misalignment_of_incentives_in_academic_publishing_and_im/review]] — 학술 출판의 인센티브 구조 문제가 대형 출판사 독과점과 어떻게 연결되는지에 대한 심화된 분석을 제공한다.
+- ⚖️ 반론/비판: [[papers/1045_The_strain_on_scientific_publishing/review]] — 출판사 독과점으로 인한 구조적 압박과 개별 연구자들이 느끼는 출판 압박 간의 상호작용을 비교 분석할 수 있다.
+- 🏛 기반 연구: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 학술 출판계의 과점 구조는 저널 명성 기반 인용 편향의 구조적 배경을 설명한다.
+- 🏛 기반 연구: [[papers/1042_The_Scholarly_Knowledge_Ecosystem_Challenges_and_Opportuniti/review]] — 디지털 시대 학술 출판의 과점 구조를 학술 지식 생태계의 핵심 도전과제로 분석한다.
+- 🏛 기반 연구: [[papers/1123_The_misalignment_of_incentives_in_academic_publishing_and_im/review]] — 디지털 시대 학술 출판사의 과점 구조를 분석하여 출판 인센티브 불일치의 구조적 원인을 보여준다.
+- 🏛 기반 연구: [[papers/1184_Hamemayu_Hayuning_Nagara_A_Bibliometric_Analysis_of_the_Poli/review]] — VAT 정책의 디지털 출판 생태계에 대한 영향을 이해하기 위해 학술 출판의 구조적 특성을 파악할 필요가 있음
+- 🔗 후속 연구: [[papers/1206_Review_of_E-Commerce_Literature_Inferences_Trends_and_Recomm/review]] — e-commerce 연구의 출판 패턴이 학술 출판 산업의 과점 구조에 어떤 영향을 받는지 분석할 수 있음
+- 🔗 후속 연구: [[papers/1151_Citation_Analysis_of_DESIDOC_Journal_of_Information_Technolo/review]] — 도서관정보학 저널의 인용 패턴 분석을 통해 학술 출판 과점 구조가 특정 학문 분야에 미치는 영향을 파악할 수 있음

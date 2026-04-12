@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "통계적 유의성(p < 0.05)만을 기준으로 발표되는 대부분의 연구 결과는 실제로는 거짓일 수 있으며, 이는 낮은 통계력, 편향, 그리고 다중 독립 연구팀의 반복 검증 부재로 인해 발생한다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Research_Evaluation_and_Metrics"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Research_Reproducibility_Crisis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ioannidis_2005_Why Most Published Research Findings Are False.pdf"
 ---
@@ -84,10 +84,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ioannidis_2005_Why Most Published Resear
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 재현성 위기에 대한 과학자들의 인식 조사와 거짓 연구 결과의 통계적 분석을 결합하여 과학 신뢰성 문제를 종합적으로 이해할 수 있다.
-- 🧪 응용 사례: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 심리과학의 재현성 추정 연구가 Ioannidis의 이론적 예측을 구체적 분야에서 실증적으로 검증하는 사례를 제공한다.
-- 🏛 기반 연구: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 과학에서의 편향에 대한 메타 평가가 거짓 연구 결과 발생의 구조적 원인을 더 체계적으로 분석하는 방법론을 제공한다.
-- 🏛 기반 연구: [[papers/959_Evaluating_the_Replicability_of_Social_Science_Experiments_i/review]] — 발표된 대부분의 연구 결과가 거짓이라는 이론적 주장에 대해 실제 재현 실험을 통한 실증적 증거를 제공한다.
-- 🏛 기반 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 과학자들이 인식하는 재현성 위기가 통계적으로 예측되는 거짓 연구 결과 문제와 일치하는 실증적 증거를 제공한다.
-- 🏛 기반 연구: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 연구 결과의 거짓 양성 문제와 편향의 체계적 발생이 과학의 신뢰성 위기를 공통으로 다룸
-- 🏛 기반 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 연구 부정행위와 거짓 연구 결과가 모두 과학의 신뢰성과 품질 문제를 다루는 핵심 이슈
+- 🔗 후속 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 대부분의 연구 결과가 거짓일 수 있다는 주장을 1,500명 과학자의 재현성 경험으로 실증적으로 뒷받침한다.
+- 🧪 응용 사례: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 연구 결과의 거짓 가능성 문제를 심리학 분야의 구체적인 재현성 평가로 적용한다.
+- 🏛 기반 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 연구 결과의 신뢰성 문제를 과학 논문 철회의 주요 원인인 연구 부정행위와 연결하여 분석한다.
+- 🏛 기반 연구: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 대부분의 연구 결과가 거짓이라는 주장이 편향의 메타분석을 통한 실증적 검증의 이론적 근거를 제공함

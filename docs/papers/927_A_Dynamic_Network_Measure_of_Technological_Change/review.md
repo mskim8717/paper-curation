@@ -9,9 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 기술 네트워크의 동적 변화를 측정하기 위해 특정 발명이 기존 기술 스트림을 공고히(consolidate) 하는지 또는 불안정하게(destabilize) 하는지를 정량화하는 CDt 지수를 제안한다. 대학 연구 상용화 분석을 통해 연방 기금은 파괴적 기술을 유도하지만 상업적 연계는 현상 유지 기술을 강화함을 보여준다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Temporal_and_Longitudinal_Analysis"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Innovation_Patent_Analysis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Funk and Owen-Smith_2017_A Dynamic Network Measure of Technological Change.pdf"
 ---
@@ -88,8 +87,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Funk and Owen-Smith_2017_A Dynamic Netwo
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 기술 변화의 동적 네트워크 측정이 과학과 기술에서 파괴성 감소 현상을 이해하는 방법론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 파괴적 논문이 기술과 사회에 미치는 영향을 CDt 지수를 통해 더 정교하게 측정할 수 있는 방법론을 제시한다.
-- 🧪 응용 사례: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 기술 변화의 동적 측정을 비전형적 조합이 과학적 영향력에 미치는 효과 분석에 적용한다.
-- 🧪 응용 사례: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — 기술 네트워크 분석을 촉매 과학에서 혁신적 발견을 위한 데이터셋 구축에 적용한다.
-- 🔄 다른 접근: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 지식공간에서 인용 확산을 측정하는 대신 기술 네트워크에서 발명의 파괴적/통합적 영향을 정량화한다.
+- 🔄 다른 접근: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 기술 네트워크의 동적 변화를 측정하는 CDt 지수와 논문/특허의 파괴성 감소 연구는 모두 혁신의 파괴적 영향을 정량화한다.
+- 🔗 후속 연구: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 기술 변화의 동적 측정 방법론은 과학적 경계를 확장하는 연구자 예측에 대한 네트워크 기반 접근법의 기술적 기반을 제공한다.

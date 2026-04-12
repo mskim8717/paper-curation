@@ -11,9 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "컴퓨터과학 분야 2,453명의 초기 경력 연구자를 대상으로 한 매칭 실험 설계를 통해, 박사 학위 취득 기관의 명성보다는 현재 근무 기관의 환경이 연구 생산성과 영향력을 결정하는 주요 요인임을 규명했다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Career_Dynamics_and_Outcomes"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholarly_Impact_Metrics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Way et al._2019_Productivity, prominence, and the effects of academic environment.pdf"
 ---
@@ -89,10 +88,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Way et al._2019_Productivity, prominence
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1028_Tenure_and_research_trajectories/review]] — 연구자의 박사후과정 재직기간이 연구 궤적에 미치는 영향을 분석하여 학술 환경의 장기적 효과를 보완적으로 규명한다.
-- 🏛 기반 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용 네트워크에서 나타나는 체계적 불평등이 학술 환경의 명성 효과를 뒷받침하는 구조적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/973_Impacts_of_inter-institutional_mobility_on_scientific_perfor/review]] — 기관 간 이동이 연구 성과에 미치는 영향을 다른 관점에서 분석하여 환경 효과를 보완 설명한다.
-- 🧪 응용 사례: [[papers/1048_Unequal_effects_of_the_COVID-19_pandemic_on_scientists/review]] — 팬데믹이 과학자 생산성에 미친 영향을 학술 환경과 명성의 상호작용 맥락에서 구체적으로 분석 가능
-- 🔄 다른 접근: [[papers/1028_Tenure_and_research_trajectories/review]] — 종신교수제와 기관 환경이 연구 성과에 미치는 상대적 영향을 비교 분석하여 경력 개발 전략을 수립할 수 있다.
-- 🏛 기반 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용의 계층적 불평등이 이후 연구 환경과 성과에 미치는 지속적 영향을 보여주는 연결고리를 제공한다.
-- 🧪 응용 사례: [[papers/946_Collective_Credit_Allocation_in_Science/review]] — 집단적 신용 배분 알고리즘을 학술 환경이 개별 연구자의 생산성과 명성에 미치는 효과 분석에 적용한다.
+- 🔗 후속 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용과 연구 환경이 생산성에 미치는 영향을 연결하여 학계 불평등의 전체 구조를 이해할 수 있다.
+- 🧪 응용 사례: [[papers/1028_Tenure_and_research_trajectories/review]] — 종신 재직권이 연구 궤적에 미치는 영향은 기관 환경 효과의 구체적 메커니즘을 보여준다.
+- 🔄 다른 접근: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 개별 연구자의 hot streak 패턴은 기관 환경과는 다른 생산성 결정 요인을 제시한다.
+- 🏛 기반 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용의 체계적 불평등은 기관 환경이 생산성에 미치는 영향의 구조적 배경을 제공한다.

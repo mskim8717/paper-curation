@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 학술 성과 평가의 한계를 극복하기 위해 출판량, 인용 영향력, 경력 기간, 저자 기여도를 통합한 NK 지수(NK Composite Scholarly Performance Index)를 개발했다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Research_Evaluation_and_Metrics"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholarly_Impact_Metrics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Taştan_2026_Redefining Academic Performance The Development of the NK Composite Scholarly Performance Index.pdf"
 ---
@@ -77,6 +77,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Taştan_2026_Redefining Academic Perform
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — h-index의 한계를 극복하기 위한 다차원적 접근법으로 NK 지수와 상호 보완적 평가가 가능하다.
-- 🔗 후속 연구: [[papers/1009_Relative_Citation_Ratio_A_New_Metric_That_Uses_Citation_Rate/review]] — 상대 인용 비율과 NK 지수를 결합하면 더 정확하고 공정한 학술 성과 평가 시스템을 구축할 수 있다.
-- 🏛 기반 연구: [[papers/946_Collective_Credit_Allocation_in_Science/review]] — 과학에서의 집단적 신용 배분 원리가 NK 지수의 저자 기여도 평가 방법론의 이론적 근거를 제공한다.
+- 🔄 다른 접근: [[papers/1009_Relative_Citation_Ratio_A_New_Metric_That_Uses_Citation_Rate/review]] — 상대인용비율과 NK지수는 서로 다른 접근으로 기존 지표의 한계를 극복하려는 보완적 시도이다.
+- 🏛 기반 연구: [[papers/1047_Theory_and_Practice_of_the_g-index/review]] — g-지수의 인용 성과 반영 방식은 NK지수 개발에 방법론적 통찰을 제공한다.
+- 🏛 기반 연구: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — h-지수의 한계 분석은 새로운 복합 지표 개발의 필요성을 뒷받침한다.
+- 🔄 다른 접근: [[papers/1047_Theory_and_Practice_of_the_g-index/review]] — NK 복합지수는 g-지수와 다른 방식으로 기존 지표들의 한계를 극복하려는 시도이다.

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "과학 논문을 정책 문서로 변환하는 LLM의 능력을 평가하고 개선하기 위해 벤치마크(Sci2Pol-Bench)와 학습 데이터셋(Sci2Pol-Corpus)을 제시한다."
 tags:
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Artificial_intelligence_and_science"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/LLM_Applications_in_Science"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2025_Sci2Pol Evaluating and Fine-tuning LLMs on Scientific-to-Policy Brief Generation.pdf"
 ---
@@ -92,8 +92,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2025_Sci2Pol Evaluating and Fi
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — 생의학 분야에서 과학 지식을 다른 형태(가설 vs 정책문서)로 변환하는 자동화 시스템의 다른 접근법을 보여준다.
-- 🏛 기반 연구: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 의료 문헌에서 잠재 지식을 추출하는 비지도 학습 방법론이 과학-정책 변환의 기술적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/945_Coevolution_of_policy_and_science_during_the_pandemic/review]] — 과학-정책 번역에서 LLM을 활용하여 팬데믹 동안 정책과 과학의 상호작용을 자동화된 방법으로 분석한다.
-- 🧪 응용 사례: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 과학-정책 번역에서 LLM을 활용한 자동화된 접근법으로 물리학 지식의 정책 영향력 분석을 확장할 수 있다.
-- 🧪 응용 사례: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 과학-정책 커뮤니케이션 경로 분석을 LLM 기반 평가 도구로 자동화하여 실시간 모니터링 가능
+- 🏛 기반 연구: [[papers/1074_OLMo_Accelerating_the_Science_of_Language_Models/review]] — 완전 공개된 OLMo 모델을 활용하여 과학-정책 변환 작업의 투명성과 재현성을 높일 수 있다.
+- 🧪 응용 사례: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 정책에서의 과학 지식 선택적 활용 패턴을 분석한 연구로, Sci2Pol의 과학-정책 변환 품질 평가에 중요한 통찰을 제공한다.
+- 🧪 응용 사례: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 과학적 지식을 정책으로 번역하는 과정을 LLM을 활용한 자동화 평가로 발전시킨다.

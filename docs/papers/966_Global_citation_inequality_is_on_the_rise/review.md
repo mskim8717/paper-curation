@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "2000-2015년 15년간 4백만 명의 저자와 2,600만 편의 논문을 분석한 결과, 상위 1% 인용 엘리트 과학자들의 인용 점유율이 14-21%로 증가하며 글로벌 인용 불평등(Gini 계수 0.65→0.70)이 심화되고 있음을 보여줌."
 tags:
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Equity_and_diversity_in_science"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Gender_Citation_Imbalance"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nielsen and Andersen_2021_Global citation inequality is on the rise.pdf"
 ---
@@ -80,8 +80,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nielsen and Andersen_2021_Global citatio
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학에서 여성이 받는 인정 부족 문제를 전체 인용 불평등 심화 현상의 구체적 사례로 확장하여 이해할 수 있다.
-- ⚖️ 반론/비판: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 파괴적 혁신성 감소에 대한 강건한 증거와 함께 인용 불평등 심화 현상을 종합적으로 검토하여 과학 발전의 복합적 양상을 파악한다.
-- 🏛 기반 연구: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 과학에서 다양성과 혁신의 역설적 관계가 인용 불평등 심화와 어떻게 연결되는지 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 보편적 인용 분포 모델을 전세계 인용 불평등 증가 현상의 정량적 분석에 적용한다.
-- 🏛 기반 연구: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 글로벌 인용 불평등의 증가 추세 속에서 성별 기반 인용 불균형이 어떤 위치에 있는지 맥락적으로 이해할 수 있다.
+- 🔗 후속 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 성별 불평등과 인용 불평등이 모두 증가하는 현상을 통해 과학계의 다층적 불평등 구조를 이해할 수 있음
+- 🏛 기반 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 매튜 효과가 인용 불평등 심화의 근본적 메커니즘으로 작용하여 상위 1% 과학자의 인용 독점을 설명함
+- ⚖️ 반론/비판: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 다양성 증진이 혁신을 촉진한다는 관점과 소수 엘리트의 인용 독점 현상 간의 모순을 탐구할 수 있음
+- 🧪 응용 사례: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 글로벌 인용 불평등의 증가는 보편적 인용 분포 모델의 실제 적용 한계를 보여준다.
+- 🔗 후속 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 성별 격차와 인용 불평등이 동시에 증가하는 패턴을 통해 과학계 불평등의 복합적 양상을 파악할 수 있음
+- 🏛 기반 연구: [[papers/1172_Exploring_Strategies_for_Addressing_Weight_Stigma_An_Analysi/review]] — 체중 낙인 연구의 글로벌 불평등 분석을 위해 전반적인 과학 인용 불평등 현황에 대한 이해가 필요합니다.

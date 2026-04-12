@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 학술 분야의 지식 조직 체계(Knowledge Organization Systems, KOS) 45개를 scope, structure, curation, usage, links 등 5가지 차원으로 분석하여 현황을 파악하고 통합 솔루션의 필요성을 제시한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Bibliometrics_and_Science_Mapping"
+  - "cat/Computational_Bibliometric_Analysis"
+  - "sub/Research_Infrastructure_Platforms"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Salatino et al._2025_A Survey on Knowledge Organization Systems of Research Fields Resources and Challenges.pdf"
 ---
@@ -90,7 +90,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Salatino et al._2025_A Survey on Knowled
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/952_Design_and_Update_of_a_Classification_System_The_UCSD_Map_of/review]] — UCSD Map of Science의 분류 체계 설계 경험을 바탕으로 다양한 지식 조직 체계들의 통합 솔루션 개발에 필요한 구조적 이해를 제공한다.
-- 🧪 응용 사례: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 과학 연구 분야 매핑에 사용되는 지식 체계들의 현황 분석이 실제 연구 분야 매핑 도구 개발에 직접 활용될 수 있다.
-- 🔗 후속 연구: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 연구 분야 지식 조직 시스템에 대한 체계적 조사가 과학 구조 진화 추적의 분류학적 기반이 된다.
-- 🏛 기반 연구: [[papers/1112_CS-KG_20_A_Large-scale_Knowledge_Graph_of_Computer_Science/review]] — 연구 분야의 지식 조직 시스템에 대한 이론적 기반을 제공하여 컴퓨터과학 지식그래프 구축의 개념적 토대가 된다.
+- 🏛 기반 연구: [[papers/1124_The_Science_of_Science/review]] — 연구 분야의 지식 조직 체계 구축을 위해 과학학의 이론적 기반과 체계적 접근 방법이 필요함
+- 🧪 응용 사례: [[papers/1112_CS-KG_20_A_Large-scale_Knowledge_Graph_of_Computer_Science/review]] — 컴퓨터 과학 지식 그래프를 통해 연구 분야 분류 체계의 실제 적용 사례를 검증할 수 있음
+- 🔗 후속 연구: [[papers/1112_CS-KG_20_A_Large-scale_Knowledge_Graph_of_Computer_Science/review]] — 연구 분야의 지식 조직 체계에 대한 조사가 CS-KG 2.0의 컴퓨터과학 분야 체계화 방법론을 다른 학문 영역으로 확장하는 기반을 제공한다.
+- 🔗 후속 연구: [[papers/1055_When_text_mining_meets_science_mapping_in_the_bibliometric_a/review]] — 연구 분야 지식 조직 체계는 텍스트 마이닝 기반 과학 지도화의 분류학적 토대를 제공한다.
+- 🏛 기반 연구: [[papers/969_Hierarchical_Classification_of_Research_Fields_in_the_Web_of/review]] — 연구 분야 지식 체계화의 기존 서베이를 바탕으로 Microsoft Academic Graph 기반 계층적 분류 시스템을 발전시켰다.
+- 🏛 기반 연구: [[papers/1217_Tracing_the_Evolution_of_Sleep-Related_Behavioural_Outcomes/review]] — 연구 분야 지식 조직 시스템에 대한 조사는 자폐아동 수면 연구의 지식 클러스터 분석을 위한 이론적 기반을 제공한다.

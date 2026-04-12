@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 GPT-4와 적대적 프롬프팅(adversarial prompting)을 활용하여 천문학 분야에서 가설 생성 능력을 향상시키는 방법을 제시한다. NASA 천체물리학 데이터시스템(ADS)의 1,000개 논문을 맥락 정보로 제공할 때 적대적 프롬프팅이 특히 효과적임을 보여준다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/AI_and_Large_Language_Models"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/LLM_Applications_in_Science"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ciucă et al._2023_Harnessing the Power of Adversarial Prompting and Large Language Models for Robust Hypothesis Genera.pdf"
 ---
@@ -89,6 +89,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ciucă et al._2023_Harnessing the Power 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — 과학의 과학 분야에서 대형 언어모델의 활용 가능성을 보여주는 구체적인 천문학 분야 적용 사례를 제시한다.
-- 🔄 다른 접근: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 기계학습을 통한 고영향 연구 주제 예측과 다른 접근으로 적대적 프롬프팅을 통한 가설 생성 방법을 제안한다.
-- 🔗 후속 연구: [[papers/1072_Embracing_Foundation_Models_for_Advancing_Scientific_Discove/review]] — 적대적 프롬프팅과 LLM을 활용한 연구 질문 생성이 과학 발견을 위한 기초 모델 활용의 구체적 구현 방법을 제시한다.
+- 🔄 다른 접근: [[papers/1072_Embracing_Foundation_Models_for_Advancing_Scientific_Discove/review]] — 적대적 프롬프팅 기반 가설 생성과 지식그래프 기반 아이디어 사슬은 LLM을 활용한 과학 발견에서 서로 다른 접근 방식을 제공한다.
+- 🧪 응용 사례: [[papers/1017_Science_as_exploration_in_a_knowledge_landscape_tracing_hots/review]] — 지식 경관에서 과학 탐험을 추적하는 방법론을 천문학 분야 적대적 프롬프팅 연구에 적용하여 가설 생성의 탐험적 패턴을 분석할 수 있다.
+- 🔄 다른 접근: [[papers/1072_Embracing_Foundation_Models_for_Advancing_Scientific_Discove/review]] — 천문학에서 적대적 프롬프팅을 활용한 가설 생성과 지식 기반 아이디어 사슬 방법론은 서로 다른 LLM 활용 전략으로 상호 보완된다.

@@ -10,9 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 문서 표현 학습 알고리즘을 활용하여 지식공간(knowledge space)에서 개별 논문의 인용(citation)이 시간과 공간적으로 어떻게 확산되는지를 정량화한다. 초기 인용 확산 특성이 장기 인용 누적과 논문의 혁신성(novelty)·파괴성(disruptiveness)을 어떻게 결정하는지를 밝힌다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Temporal_and_Longitudinal_Analysis"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholarly_Impact_Metrics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Quantifying spatial–temporal citation diffusion of individual papers in knowledge space.pdf"
 ---
@@ -76,10 +75,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Quantifying spatial–
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 잠자는 미녀 논문의 지연된 인용 패턴을 공간-시간적 확산 모델로 더 정교하게 분석할 수 있는 방법론을 제시한다.
-- 🧪 응용 사례: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 개별 논문의 장기적 과학적 영향력을 정량화하는 연구에 공간-시간적 인용 확산 분석을 적용할 수 있다.
-- 🔄 다른 접근: [[papers/927_A_Dynamic_Network_Measure_of_Technological_Change/review]] — 지식공간에서 인용 확산을 측정하는 대신 기술 네트워크에서 발명의 파괴적/통합적 영향을 정량화한다.
-- 🏛 기반 연구: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 논문의 궤적을 벡터공간에서 임베딩하여 잠재적 지식구조를 포착하는 방법론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 인용 확산 패턴과 파괴적 지수 간의 관계를 통해 논문의 장기적 기술/사회 영향력을 예측한다.
-- 🏛 기반 연구: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 개별 논문의 공간-시간적 인용 확산 정량화가 의미론적 네트워크 기반 트렌드 예측의 확산 메커니즘 이해를 뒷받침한다.
-- 🔗 후속 연구: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 개별 논문의 시공간적 인용 확산을 정량화하여 인용 네트워크 동역학을 확장한다
+- 🔗 후속 연구: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 파괴적 논문의 인용 확산 패턴은 혁신성과 영향력 확산의 공간적 메커니즘을 규명하는 데 중요하다.
+- 🏛 기반 연구: [[papers/1017_Science_as_exploration_in_a_knowledge_landscape_tracing_hots/review]] — 지식공간에서의 탐색 패턴 이론은 인용 확산의 공간적 모델링에 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/929_A_network_approach_to_topic_models/review]] — 네트워크 기반 토픽 모델은 문서 표현 학습과 다른 방식으로 지식공간을 구성할 수 있다.
+- 🏛 기반 연구: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 파괴적 논문의 인용 확산 패턴은 기술·사회 영향력과의 관계를 공간적으로 이해하는 기반을 제공한다.

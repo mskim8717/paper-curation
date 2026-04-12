@@ -10,10 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "성별 다양성(gender diversity)을 연구팀 구성, 연구방법, 연구질문의 세 가지 차원에서 체계화하고, 이들이 연구팀·학문분야·연구기관·사회 네 개 영역에서 어떻게 작동하는지 분석하여 과학혁신을 극대화하는 프레임워크를 제시한다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "cat/Scientific_Impact_and_Innovation"
-  - "cat/Science_of_Science_Research"
-  - "sub/Bias_and_Inequality"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Gender_Research_Diversity"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nielsen et al._2018_Making gender diversity work for scientific discovery and innovation.pdf"
 ---
@@ -90,12 +88,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nielsen et al._2018_Making gender divers
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성이 높은 팀이 더 참신하고 높은 영향력을 가진 과학을 생산한다는 실증 결과를 체계적 프레임워크로 확장 설명한다.
-- 🔄 다른 접근: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 과학 협력에서 민족적 다양성의 탁월성을 성별 다양성과 비교하여 다차원적 다양성 효과를 종합적으로 이해한다.
-- 🏛 기반 연구: [[papers/976_Intersectional_inequalities_in_science/review]] — 과학에서 교차적 불평등 연구가 성별을 포함한 다면적 다양성 효과 분석에 이론적 토대를 제공한다.
-- 🔄 다른 접근: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 다양성의 혁신 효과와 다양성-혁신 역설이라는 상반된 관점을 조화시키는 이론적 틀 필요
-- ⚖️ 반론/비판: [[papers/1010_Remote_collaboration_fuses_fewer_breakthrough_ideas/review]] — 원격 협업이 혁신적 아이디어를 감소시킨다는 연구로 다양성 프레임워크의 한계를 시사한다
-- 🔗 후속 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 팀 기반 연구 증가 현상에 성별 다양성 프레임워크를 적용하여 확장할 수 있다
-- 🏛 기반 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성의 혁신 효과에 대한 실증적 증거를 체계적 프레임워크로 일반화할 수 있음
-- 🧪 응용 사례: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 성별 다양성을 과학적 발견과 혁신에 효과적으로 활용하기 위한 구체적 방안을 다양성-혁신 역설의 관점에서 재검토할 수 있다.
-- 🧪 응용 사례: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 인종적 다양성의 과학적 우수성을 실제 연구 발견과 혁신에 효과적으로 활용하기 위한 구체적 전략을 수립할 수 있다.
+- 🏛 기반 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 성별 다양성 프레임워크가 실제 과학계에서 나타나는 성별 불평등 패턴의 해석 틀을 제공함
+- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양한 팀이 혁신을 촉진한다는 실증 결과를 체계적 프레임워크로 설명할 수 있음
+- 🔄 다른 접근: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 다양성-혁신 역설과 성별 다양성의 긍정적 효과 간의 모순을 해결하는 대안적 관점을 제시함
+- 🏛 기반 연구: [[papers/1117_Human-Modeling_in_Sequential_Decision-Making_An_Analysis_thr/review]] — 과학적 발견과 혁신에서 성별 다양성의 효과 분석이 인간 모델링에서 다양성 요소를 고려해야 할 이론적 근거를 제공한다.
+- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성 팀의 과학적 성과 연구는 성별 다양성이 과학적 발견과 혁신에 효과적으로 작용하도록 하는 방법론적 확장을 제공한다.
+- 🧪 응용 사례: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 성별 다양성의 이론적 프레임워크를 역사적 데이터로 검증하여 실제 효과를 평가할 수 있음
+- 🧪 응용 사례: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — 과학적 발견에서 성별 다양성의 효과는 Collaborative Guideposts 프레임워크의 구체적 적용 영역을 보여준다.

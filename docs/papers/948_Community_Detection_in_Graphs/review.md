@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "그래프(네트워크)에서 커뮤니티 구조(community structure)를 검출하는 방법들을 종합적으로 분석하고 분류한 리뷰 논문으로, 실제 복잡 시스템의 모듈 조직을 이해하기 위한 다양한 알고리즘과 기법들을 제시한다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Network_Structure_and_Detection"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Network_Community_Detection"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fortunato_2010_Community Detection in Graphs.pdf"
 ---
@@ -83,11 +83,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fortunato_2010_Community Detection in Gr
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 커뮤니티 탐지 알고리즘을 대규모 과학 커뮤니티의 실제 매핑과 시각화에 적용한다.
-- 🔗 후속 연구: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 일반적 커뮤니티 탐지 이론을 대규모 네트워크에서 빠른 커뮤니티 구조 발견 알고리즘으로 구체화한다.
-- 🧪 응용 사례: [[papers/1070_Challenges_in_High-Throughput_Inorganic_Materials_Prediction/review]] — 커뮤니티 탐지 방법론을 고처리량 무기재료 예측의 복잡한 데이터 구조 분석에 적용한다.
-- 🏛 기반 연구: [[papers/1072_Embracing_Foundation_Models_for_Advancing_Scientific_Discove/review]] — 그래프 커뮤니티 탐지 이론이 과학적 발견을 위한 foundation model 개발의 네트워크 분석 기반이 된다.
-- 🔄 다른 접근: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 모듈성 기반 고속 알고리즘과 다른 커뮤니티 탐지 방법들을 종합적으로 비교할 수 있다.
-- 🧪 응용 사례: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — Price-Pareto 모델에서 생성된 커뮤니티 구조를 다양한 커뮤니티 탐지 알고리즘으로 검증한다.
-- 🏛 기반 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크의 커뮤니티 구조를 탐지하고 분석하기 위한 다양한 알고리즘적 접근법을 제공한다.
-- 🏛 기반 연구: [[papers/929_A_network_approach_to_topic_models/review]] — 텍스트를 이분 네트워크로 표현하여 토픽 모델링을 커뮤니티 탐지 문제로 전환하는 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 그래프 커뮤니티 검출 방법들에 대한 종합 리뷰는 대규모 네트워크에서 빠른 커뮤니티 검출 알고리즘 개발의 이론적 배경을 제공한다.
+- 🧪 응용 사례: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 커뮤니티 검출 기법은 커뮤니티 구조를 가진 네트워크의 Price-Pareto 성장 모델에 대한 실증적 분석 도구로 활용된다.
+- 🧪 응용 사례: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 그래프에서 커뮤니티 탐지 이론을 인용 네트워크의 구체적 모델링에 적용한다.
+- 🏛 기반 연구: [[papers/929_A_network_approach_to_topic_models/review]] — 그래프에서의 커뮤니티 탐지 이론이 텍스트 네트워크에서 토픽을 발견하는 비모수적 접근법의 수학적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/989_Modeling_Changing_Scientific_Concepts_with_Complex_Networks/review]] — 복잡 네트워크 이론을 바탕으로 플로지스톤과 산소 이론 경쟁에서 과학 개념 변화의 위상학적 특성을 모델링한다.
+- 🏛 기반 연구: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 대규모 네트워크의 빠른 커뮤니티 검출 알고리즘은 그래프 커뮤니티 검출 방법들에 대한 종합적 분석을 기반으로 개발되었다.
+- 🏛 기반 연구: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 그래프 내 공동체 탐지 이론을 바탕으로 링크 필터링 기반의 효율적인 과학 공동체 매핑 방법을 개발했다.

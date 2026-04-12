@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "정형외과 논문 97,806개를 분석하여 저자 수, 제목 특성, 개방접근(OA) 출판이 인용 성과에 미치는 영향을 규명한 scientometric 연구"
 tags:
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Citation_metrics_and_impact_measurement"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Journal_Citation_Patterns"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Migliorini et al._2026_Authorship, titles and open access as drivers of citation performance in orthopaedics a scientometr.pdf"
 ---
@@ -82,8 +82,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Migliorini et al._2026_Authorship, title
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 오픈액세스가 인용 성과에 미치는 영향을 정형외과 분야의 구체적 사례로 확장하여 분야별 차이를 규명한다.
-- 🏛 기반 연구: [[papers/992_OpenAlex_in_focus_Metadata_quality_of_publication_type_and_l/review]] — 출판 유형과 메타데이터 품질에 대한 체계적 분석이 인용 성과 요인 연구의 데이터 신뢰성 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 제목과 오픈 액세스가 인용에 미치는 영향과 저널 명성 효과를 함께 분석하면 인용 편향의 전체적 메커니즘을 이해할 수 있다.
-- 🔄 다른 접근: [[papers/1031_The_Chaperone_Effect_in_Scientific_Publishing/review]] — 제목과 오픈 액세스 외에 저자의 이전 출판 경험이라는 또 다른 인용 동인을 발견하여 출판 성공 요인을 다각도로 이해할 수 있다.
-- 🏛 기반 연구: [[papers/932_An_empirical_analysis_of_open_access_citation_advantages_in/review]] — 개방접근이 인용에 미치는 조건부 효과 분석의 방법론적 기반을 제공한다.
+- ⚖️ 반론/비판: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 정형외과 논문의 저자 수와 인용 성과 관계 분석은 여성이 과학에서 적게 인정받는다는 연구와 대조적 관점을 제시한다.
+- 🔗 후속 연구: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 개방접근이 인용 성과에 미치는 영향 연구는 디지털 시대 학술출판 과점 현상 분석을 실증적으로 확장한다.
+- 🏛 기반 연구: [[papers/932_An_empirical_analysis_of_open_access_citation_advantages_in/review]] — 저자, 제목, 오픈액세스가 인용 성과에 미치는 복합적 영향에 대한 이론적 기반을 제공한다.

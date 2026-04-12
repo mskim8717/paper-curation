@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 인용 네트워크의 동적 구조 진화 특성을 포착하여 과학적 돌파구 논문을 예측하는 새로운 방법을 제안한다. 시간 순서대로 구성된 인용 캐스케이드(citation cascade)의 구조 지표 궤적을 동적 예측자로 활용한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Bibliometrics_and_Science_Mapping"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholarly_Impact_Metrics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2024_Predicting Scientific Breakthroughs Based on Structural Dynamic of Citation Cascades.pdf"
 ---
@@ -88,11 +88,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2024_Predicting Scientific Bre
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 궤적 임베딩을 통한 무감독 학습으로 과학적 돌파구 예측의 다른 접근법을 제시한다
-- 🏛 기반 연구: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 머신러닝을 통한 고영향 연구 주제 예측의 방법론적 기초를 제공한다
-- 🔗 후속 연구: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 개별 논문의 시공간적 인용 확산을 정량화하여 인용 네트워크 동역학을 확장한다
-- 🔄 다른 접근: [[papers/963_Forecasting_the_future_of_artificial_intelligence_with_machi/review]] — AI 연구 예측에서 의미 네트워크 대신 구조적 역학을 기반으로 과학적 돌파를 예측하는 다른 접근법을 제시한다.
-- 🏛 기반 연구: [[papers/1005_Quantifying_the_dynamics_of_failure_across_science_startups/review]] — 구조적 역학 기반의 돌파구 예측 방법론이 실패-성공 전이 모델의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1017_Science_as_exploration_in_a_knowledge_landscape_tracing_hots/review]] — 지식 네트워크의 구조적 역학을 바탕으로 과학적 돌파구 예측에 활용할 수 있는 확장된 분석틀을 제공한다.
-- 🔗 후속 연구: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 구조적 역학 기반의 과학적 돌파 예측을 제약 분야의 특허 및 임상 데이터 분석으로 확장 적용한다.
-- 🔗 후속 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 핫스트릭 현상을 과학적 돌파구 예측 모델에 통합하여 혁신 시점 예측 정확도 향상 가능
+- 🔄 다른 접근: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 잠자는 미녀 현상의 사후 분석과 대비하여 인용 캐스케이드 동적 구조를 통한 과학적 돌파구의 사전 예측을 시도한다.
+- 🔗 후속 연구: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 의미론적 네트워크 기반 연구 동향 예측을 인용 네트워크의 구조적 동태 예측으로 확장하여 다차원적 돌파구 예측을 가능하게 한다.
+- 🔄 다른 접근: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 기계학습 기반 고영향 연구 주제 예측과 대비하여 인용 네트워크의 구조적 진화에 초점을 맞춘 돌파구 예측을 제시한다.
+- 🔄 다른 접근: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 인용 네트워크의 동적 구조 분석을 통해 늦은 인용 급증을 예측하는 대안적 접근법을 제시한다.

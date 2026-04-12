@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "1650년부터 2012년까지 과학의 성장률을 분석한 연구로, 인용 참고문헌(cited references)과 출판물 수를 기반으로 segmented regression analysis(구간 회귀 분석)를 적용하여 과학의 성장 단계를 규명했다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Temporal_and_Longitudinal_Analysis"
+  - "cat/Open_Access_Publication_Analytics"
+  - "sub/Bibliometric_Measurement_Methods"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bornmann and Mutz_2015_Growth Rates of Modern Science Bibliometric Analysis Based on the Number of Publications and Cited.pdf"
 ---
@@ -85,7 +85,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bornmann and Mutz_2015_Growth Rates of M
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 과학의 지속적 성장 패턴과 최근 과학의 파괴적 혁신 감소 현상이 상반된 관점을 제시한다.
-- 🔗 후속 연구: [[papers/1030_The_Burden_of_Knowledge_and_the_Death_of_the_Renaissance_Man/review]] — 과학 성장률 변화가 지식 축적 부담과 르네상스맨 소멸이라는 구조적 문제로 이어지는 연결고리를 보여준다.
-- 🧪 응용 사례: [[papers/1045_The_strain_on_scientific_publishing/review]] — 과학 출판의 양적 성장이 학술 출판 시스템에 가하는 압박을 실증적으로 분석한다.
-- 🔄 다른 접근: [[papers/1037_The_Misleading_Narrative_of_the_Canonical_Faculty_Productivi/review]] — 서지계량학적 성장률 분석과 개별 연구자의 생산성 궤적 분석을 결합하여 미시-거시 수준의 과학 성장을 통합적으로 이해할 수 있다.
+- 🔗 후속 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 과학의 전반적 성장률 분석을 팀 기반 지식 생산의 증가라는 구체적 현상으로 확장한 후속 연구로 볼 수 있다.
+- 🏛 기반 연구: [[papers/1030_The_Burden_of_Knowledge_and_the_Death_of_the_Renaissance_Man/review]] — 과학 지식의 급속한 성장이 개별 연구자의 지식 부담 증가와 어떻게 연결되는지에 대한 역사적 맥락을 제공한다.
+- 🧪 응용 사례: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 과학 성장률 분석은 저널 인용 편향이 학문 발전에 미치는 영향을 정량화하는 맥락을 제공한다.

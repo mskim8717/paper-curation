@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "학습분석(Learning Analytics) 연구의 세 주요 학회(LAK, EDM, AIED)에서 2020-2024년간 출판된 1,125개 논문을 분석하여 172개의 공개 데이터셋(Open Datasets)을 발굴하고, 현황을 파악하며 PRACTICE 8개 항목 체크리스트를 제시한 종합 조사 연구이다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/AI_and_Large_Language_Models"
+  - "cat/Open_Access_Publication_Analytics"
+  - "sub/Research_Data_and_Metadata"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Švábenský et al._2026_Open Datasets in Learning Analytics Trends, Challenges, and Best PRACTICE.pdf"
 ---
@@ -89,6 +89,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Švábenský et al._2026_Open Datasets i
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1071_Data_measurement_and_empirical_methods_in_the_science_of_sci/review]] — 과학의 과학 분야의 데이터와 측정 방법론에 대한 기초를 제공한다
-- 🔄 다른 접근: [[papers/1115_Google_Scholar_Microsoft_Academic_Scopus_Dimensions_Web_of_S/review]] — 다양한 학술 데이터베이스 비교를 통해 공개 데이터셋의 다른 관점을 제시한다
-- 🔗 후속 연구: [[papers/1023_SciSciNet_A_large-scale_open_data_lake_for_the_science_of_sc/review]] — 과학의 과학 연구를 위한 대규모 데이터 레이크로 학습분석 데이터셋을 확장한다
+- 🔗 후속 연구: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 머신러닝 연구의 재현성 향상을 위한 체크리스트와 학습분석 연구의 오픈 데이터셋 관리 체크리스트 간 방법론적 연관성을 보여준다.
+- 🔄 다른 접근: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 연구 자금과 출판물 연계 분석과 오픈 데이터셋 현황 분석이 모두 과학 연구의 투명성과 재현성 향상이라는 동일한 목표를 다른 각도에서 접근한다.

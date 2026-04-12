@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 기초 모델(Foundation Models), 특히 대규모 언어 모델(LLM)을 과학 발견에 활용하기 위해 지식-기반 아이디어 사슬(KG-CoI) 방법론과 IdeaBench 벤치마크를 제안한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/AI_and_Large_Language_Models"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/LLM_Applications_in_Science"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Guo et al._2024_Embracing Foundation Models for Advancing Scientific Discovery 1.pdf"
 ---
@@ -85,7 +85,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Guo et al._2024_Embracing Foundation Mod
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1116_Harnessing_the_Power_of_Adversarial_Prompting_and_Large_Lang/review]] — 적대적 프롬프팅과 LLM을 활용한 연구 질문 생성이 과학 발견을 위한 기초 모델 활용의 구체적 구현 방법을 제시한다.
-- 🔄 다른 접근: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — 생의학 가설 생성 시스템을 통해 과학 발견에서 AI 활용의 다른 접근법과 벤치마크 비교 가능성을 제공한다.
-- 🏛 기반 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 그래프 커뮤니티 탐지 이론이 과학적 발견을 위한 foundation model 개발의 네트워크 분석 기반이 된다.
-- 🔗 후속 연구: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 과학 발견을 위한 기반 모델 활용에서 지식그래프와 LLM의 결합된 접근법을 더욱 발전시킨다.
+- 🔄 다른 접근: [[papers/1116_Harnessing_the_Power_of_Adversarial_Prompting_and_Large_Lang/review]] — 천문학에서 적대적 프롬프팅을 활용한 가설 생성과 지식 기반 아이디어 사슬 방법론은 서로 다른 LLM 활용 전략으로 상호 보완된다.
+- 🔗 후속 연구: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 머신러닝 기반 고영향 연구 주제 예측 방법론을 기초 모델 활용 과학 발견에 통합하여 더 정확한 연구 방향 제시가 가능하다.
+- 🔄 다른 접근: [[papers/1114_GoAI_Enhancing_AI_Students_Learning_Paths_and_Idea_Generatio/review]] — GoAI의 교육용 지식그래프와 KG-CoI의 과학 발견용 지식그래프는 서로 다른 목적으로 AI 연구 지원을 제공하는 상호 보완적 시스템이다.
+- 🔄 다른 접근: [[papers/1116_Harnessing_the_Power_of_Adversarial_Prompting_and_Large_Lang/review]] — 적대적 프롬프팅 기반 가설 생성과 지식그래프 기반 아이디어 사슬은 LLM을 활용한 과학 발견에서 서로 다른 접근 방식을 제공한다.
+- 🔗 후속 연구: [[papers/1175_Figures_as_Interfaces_Toward_LLM-Native_Artifacts_for_Scient/review]] — LLM-native figures는 과학 발견을 위한 foundation model 활용의 새로운 방향성을 제시하는 구체적 구현체로 볼 수 있다.

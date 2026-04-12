@@ -12,9 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "과학 논문 출판에서 경험 많은 과학자(선임저자)가 특정 저널에 이전 경험이 있을 때 더 높은 출판 성공률을 보이는 '샤페론 효과(chaperone effect)'를 정량적으로 분석한 연구이다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Publishing_and_Incentives"
+  - "cat/Computational_Bibliometric_Analysis"
+  - "sub/Citation_Analysis_Methods"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sekara et al._2018_The chaperone effect in scientific publishing.pdf"
 ---
@@ -88,10 +87,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sekara et al._2018_The chaperone effect 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 동료평가에서 나타나는 명성 효과와 유사하게 출판 과정에서도 경험과 네트워크가 성공률에 미치는 영향을 보여준다.
-- 🔄 다른 접근: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 과학 출판과 연구비 지원에서 각각 나타나는 서로 다른 형태의 매튜 효과를 비교 분석할 수 있다.
-- 🏛 기반 연구: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 저널 명성에 따른 인용 편향과 샤페론 효과가 모두 학술 출판의 네트워크 기반 불평등을 보여주는 상호 보완적 증거다.
-- 🔗 후속 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 학술 출판사의 시장 독점이 샤페론 효과를 더욱 강화하여 기존 연구자들의 출판 우위를 고착화시킬 수 있다.
-- 🔄 다른 접근: [[papers/937_Authorship_titles_and_open_access_as_drivers_of_citation_per/review]] — 제목과 오픈 액세스 외에 저자의 이전 출판 경험이라는 또 다른 인용 동인을 발견하여 출판 성공 요인을 다각도로 이해할 수 있다.
-- 🔗 후속 연구: [[papers/955_Does_Science_Advance_One_Funeral_at_a_Time/review]] — 과학 출판에서의 보호자 효과와 연결되어 저명한 과학자가 후배 연구자들의 진입과 발전에 미치는 복합적인 영향을 이해하는 데 도움을 준다.
-- 🔗 후속 연구: [[papers/1121_Superstar_Extinctionsupsup/review]] — 슈퍼스타의 멘토링 효과 소멸을 과학 출판에서 chaperone 효과의 중요성 이해로 확장한다.
+- 🔗 후속 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 개별 논문의 샤페론 효과를 학술계 전체의 구조적 불평등과 위계 시스템으로 확장해서 분석합니다.
+- ⚖️ 반론/비판: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 샤페론 효과의 긍정적 측면과 달리 저널 인용 편향의 부정적 영향을 다루어 균형잡힌 시각을 제공합니다.
+- 🧪 응용 사례: [[papers/994_Organisational_accounts_engaged_in_scholarly_communication_o/review]] — 학술 출판에서 샤페론 효과 연구에 Twitter 기관 계정의 학술 논문 증폭 역할 분석을 적용할 수 있다.

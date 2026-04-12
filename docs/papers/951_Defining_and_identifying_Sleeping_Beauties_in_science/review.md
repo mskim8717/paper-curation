@@ -11,9 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "과학 논문 중 발표 후 수십 년간 인용되지 않다가 갑자기 높은 인용도를 보이는 '잠자는 미녀(Sleeping Beauty)' 현상을 정량화하는 매개변수 무관(parameter-free) 지표를 제시하고, 2천2백만 개 논문 분석으로 이 현상이 예외가 아닌 보편적 현상임을 규명했다."
 tags:
-  - "cat/Scientific_Impact_and_Innovation"
-  - "cat/Science_of_Science_Research"
-  - "sub/Citation_metrics_and_impact_measurement"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholarly_Impact_Metrics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ke et al._2015_Defining and identifying Sleeping Beauties in science.pdf"
 ---
@@ -84,8 +83,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ke et al._2015_Defining and identifying 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/954_Do_novel_papers_attract_more_social_attention/review]] — 잠자는 미녀 논문의 지연된 학술적 인정이 소셜 미디어에서는 어떤 관심을 받는지 확장하여 분석할 수 있다.
-- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 경력 초기 좌절과 잠자는 미녀 현상 모두 지연된 인정이라는 공통점을 가지지만 서로 다른 메커니즘을 보여준다.
-- 🧪 응용 사례: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합과 과학적 영향력 연구와 연결되어 잠자는 미녀 논문들이 보이는 비전형적 특성과 지연된 인정 패턴을 설명한다.
-- 🔗 후속 연구: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 잠자는 미녀 논문의 지연된 인용 패턴을 공간-시간적 확산 모델로 더 정교하게 분석할 수 있는 방법론을 제시한다.
-- 🔄 다른 접근: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 즉각적 파괴성 대신 장기간 잠들어 있다가 재발견되는 논문의 특성을 분석한다.
+- 🔗 후속 연구: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 잠자는 미녀 논문의 장기 인용 패턴 분석을 위한 정량적 영향력 측정 방법론을 제공한다.
+- 🔄 다른 접근: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 인용 네트워크의 동적 구조 분석을 통해 늦은 인용 급증을 예측하는 대안적 접근법을 제시한다.
+- 🧪 응용 사례: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 의미론적 네트워크와 신경망을 활용하여 잠자는 미녀 현상의 주제적 특성을 예측할 수 있다.
+- 🔗 후속 연구: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 장기 영향력 모델은 sleeping beauty 현상의 시간적 패턴을 예측하는 도구로 확장될 수 있다.
+- 🔄 다른 접근: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 잠자는 미녀 현상의 사후 분석과 대비하여 인용 캐스케이드 동적 구조를 통한 과학적 돌파구의 사전 예측을 시도한다.

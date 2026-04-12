@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "논문은 인용 동역학(citation dynamics)의 보편적 메커니즘을 규명하여 서로 다른 저널과 학문 분야의 논문들을 단일 곡선으로 통합할 수 있음을 보여주고, 장기 과학적 영향력을 예측 가능하게 만드는 모델을 제시한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Research_Evaluation_and_Impact"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholarly_Impact_Metrics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2013_Quantifying Long-term Scientific Impact.pdf"
 ---
@@ -88,8 +88,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2013_Quantifying Long-term S
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1009_Relative_Citation_Ratio_A_New_Metric_That_Uses_Citation_Rate/review]] — RCR 지표를 통해 논문의 장기적 영향력을 분야별로 정규화하여 측정하는 다른 접근법을 제공한다.
-- 🏛 기반 연구: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 인용 분포의 보편성에 대한 이론적 기반을 제공하여 장기 영향력 예측 모델의 수학적 토대를 마련한다.
-- 🏛 기반 연구: [[papers/954_Do_novel_papers_attract_more_social_attention/review]] — 연구 영향력의 장기적 측정 방법론이 소셜 미디어를 통한 혁신적 논문의 단기적 주목도 분석에 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 연구 아이디어의 미래 임팩트 예측이 장기적 과학적 영향력 정량화 연구의 발전된 형태이다.
-- 🧪 응용 사례: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 개별 논문의 장기적 과학적 영향력을 정량화하는 연구에 공간-시간적 인용 확산 분석을 적용할 수 있다.
+- 🔄 다른 접근: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 인용 분포의 보편성과 인용 동역학 모델링을 통해 과학적 영향력 예측의 다른 접근법을 제공한다.
+- 🔗 후속 연구: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 장기 영향력 모델은 sleeping beauty 현상의 시간적 패턴을 예측하는 도구로 확장될 수 있다.
+- ⚖️ 반론/비판: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 인용 인플레이션 문제는 장기 영향력 모델의 시간적 안정성에 대한 의문을 제기한다.
+- 🔄 다른 접근: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 보편적 인용 분포와 인용 동역학은 과학적 영향력의 정규화와 예측에 상호 보완적 접근을 제공한다.
+- 🔗 후속 연구: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 잠자는 미녀 논문의 장기 인용 패턴 분석을 위한 정량적 영향력 측정 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 핫스트릭 현상을 장기적 과학적 영향력 측정과 연결하여 창의적 생산성의 시간적 패턴을 심화 분석할 수 있음

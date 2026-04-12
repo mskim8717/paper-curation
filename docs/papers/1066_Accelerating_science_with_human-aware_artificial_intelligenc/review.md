@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "과학자들의 전문성 분포를 AI 모델에 통합하면 미래 과학적 발견을 예측하는 능력이 최대 400% 향상되며, 이는 콘텐츠 기반 AI만으로는 놓치는 인간 중심의 과학 발전 메커니즘을 포착한다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "sub/AI-Driven_Research_Discovery"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Scientific_Discovery_Automation"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sourati and Evans_2023_Accelerating science with human-aware artificial intelligence.pdf"
 ---
@@ -84,7 +84,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sourati and Evans_2023_Accelerating scie
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성이 과학 혁신에 미치는 영향을 인간 중심 AI 접근법으로 확장하여 전문성 분포의 다양성 효과를 분석한다.
-- 🏛 기반 연구: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 과학에서 다양성-혁신 역설을 이해하는데 인간의 전문성을 고려한 AI 모델이 제공하는 통찰의 기반이 된다.
-- 🔄 다른 접근: [[papers/1001_Public_Profile_Matters_A_Scalable_Integrated_Approach_to_Rec/review]] — 인용 추천에서 인간의 행동 패턴 대신 과학자의 전문성 분포를 AI에 통합하는 다른 접근법을 제시한다.
-- ⚖️ 반론/비판: [[papers/1067_After_science/review]] — 인간 인식 AI를 통한 과학 가속화가 AI 주도 과학 이후 시대의 대안적 발전 방향을 제시한다.
+- 🏛 기반 연구: [[papers/1117_Human-Modeling_in_Sequential_Decision-Making_An_Analysis_thr/review]] — 순차적 의사결정에서의 인간 모델링 분석이 과학자 전문성을 AI에 통합하는 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성 팀이 더 혁신적인 과학을 생산한다는 발견을 인간 중심 AI 모델에 통합하여 팀 구성 최적화에 활용할 수 있다.
+- 🧪 응용 사례: [[papers/1117_Human-Modeling_in_Sequential_Decision-Making_An_Analysis_thr/review]] — 인간-인식형 AI 시스템의 순차적 의사결정 분석이 과학자 전문성을 AI에 통합하여 과학적 발견 예측을 개선하는 구체적 방법을 제시한다.

@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "Eugene Garfield의 논문들을 인용한 문헌들의 인용 맥락(citation context)을 이용하여 키워드 동시출현 네트워크(keyword co-occurrence network)를 구성하는 새로운 유형의 계량분석 방법론을 제시하고, 이를 제목/초록 기반 네트워크와 비교 분석한다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Scientific_Mapping_and_Visualization"
+  - "cat/Computational_Bibliometric_Analysis"
+  - "sub/Citation_Analysis_Methods"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bornmann et al._2018_Visualizing the context of citations referencing papers published by Eugene Garfield a new type of.pdf"
 ---
@@ -80,9 +80,6 @@ Eugene Garfield의 논문들을 인용한 문헌들의 인용 맥락(citation co
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 인용 맥락에서 키워드를 추출하는 비지도 워드 임베딩의 방법론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/944_Co-Citation_Analysis_Bibliographic_Coupling_and_Direct_Citat/review]] — 전통적인 공인용분석과 서지결합을 인용 맥락 기반 네트워크 분석으로 확장한다.
-- 🧪 응용 사례: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 인용 맥락 기반 키워드 매핑을 연구 분야의 지식 지도 작성에 적용한다.
-- 🔗 후속 연구: [[papers/943_Citation_Analysis_as_a_Tool_in_Journal_Evaluation/review]] — 저널 평가에서 단순 인용 분석을 인용 맥락의 질적 분석으로 확장한다.
-- 🔗 후속 연구: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — 전통적 서지학적 지도를 인용 맥락 기반 키워드 네트워크 시각화로 확장한다.
-- 🧪 응용 사례: [[papers/944_Co-Citation_Analysis_Bibliographic_Coupling_and_Direct_Citat/review]] — 논문 발표 후 인용 맥락을 시각화하여 직접 인용과 공인용 분석의 실제적 차이를 구체적으로 보여준다.
+- 🔗 후속 연구: [[papers/1056_Where_Do_Your_Citations_Come_From_Citation-Constellation_A_F/review]] — 단순 인용 맥락 분석을 넘어서 인용의 출처와 확산 패턴까지 추적하는 더 포괄적인 분석 방법입니다.
+- 🏛 기반 연구: [[papers/1218_Viewing_Citation_Analysis_Through_the_Lens_of_Citation_Justi/review]] — 인용 맥락 시각화의 이론적 기반이 되는 인용 정당화 관점을 제공합니다.
+- 🔄 다른 접근: [[papers/1056_Where_Do_Your_Citations_Come_From_Citation-Constellation_A_F/review]] — 인용 맥락 시각화는 인용 네트워크 경로와 다른 방식으로 인용 구조를 분석하는 접근법을 제시한다.

@@ -8,10 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "과학논문의 인용 네트워크 패턴을 분석하여 과학 연구 전면(research front)의 특성을 규명한 연구로, 문헌 참고 행위를 통해 전체 과학 지식체계의 구조를 파악한다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "cat/Scientific_Information_Systems"
-  - "cat/Science_of_Science_Research"
-  - "sub/Network_Structure_and_Detection"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Research_Collaboration_Networks"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Price_1965_Networks of Scientific Papers The pattern of bibliographic references indicates the nature of the s.pdf"
 ---
@@ -77,13 +75,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Price_1965_Networks of Scientific Papers
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1081_Science_Citation_IndexA_New_Dimension_in_Indexing_This_uniqu/review]] — Science Citation Index의 개념적 토대가 과학논문 네트워크 분석의 근본적인 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/943_Citation_Analysis_as_a_Tool_in_Journal_Evaluation/review]] — 인용 분석이 저널 평가 도구로 발전한 과정이 초기 연구 전선 분석의 실용적 응용 사례이다.
-- 🔄 다른 접근: [[papers/944_Co-Citation_Analysis_Bibliographic_Coupling_and_Direct_Citat/review]] — 동시인용, 서지결합, 직접인용이라는 세 가지 인용 기반 분석법이 초기 인용 네트워크 연구의 방법론적 확장이다.
-- 🏛 기반 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 과학논문 인용 네트워크의 small-world 특성을 이해하기 위해 네트워크의 기본 구조적 특성을 제공한다.
-- 🔗 후속 연구: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 논문 인용 네트워크에서 발견된 패턴을 과학자 협력 네트워크의 진화적 관점으로 확장하여 분석한다.
-- 🔗 후속 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 개별 논문 인용 패턴 분석에서 팀 기반 지식 생산의 지배적 경향으로 확장된 연구 동향을 보여준다.
-- 🔄 다른 접근: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 논문 인용 네트워크와 다른 관점에서 과학자 협력 네트워크의 구조적 특성을 분석한다.
-- 🔄 다른 접근: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 커뮤니티 구조를 가진 네트워크의 가격-파레토 성장 모델로 다른 네트워크 분석 접근법을 제시한다
-- 🏛 기반 연구: [[papers/943_Citation_Analysis_as_a_Tool_in_Journal_Evaluation/review]] — 과학 논문 네트워크의 서지 결합 패턴에 대한 초기 연구로서 인용 분석 도구 발전의 이론적 토대를 마련했다.
-- 🏛 기반 연구: [[papers/928_A_General_Theory_of_Bibliometric_and_Other_Cumulative_Advant/review]] — 누적 우위 이론이 과학 논문 인용 네트워크의 서지학적 패턴을 설명하는 수학적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 초기 인용 네트워크 개념이 과학 협력 네트워크 구조 분석의 이론적 토대를 제공함
+- 🧪 응용 사례: [[papers/1081_Science_Citation_IndexA_New_Dimension_in_Indexing_This_uniqu/review]] — 인용 패턴 분석이 Science Citation Index의 실용적 구현으로 발전한 과정을 이해할 수 있음
+- 🔗 후속 연구: [[papers/1015_S2ORC_The_Semantic_Scholar_Open_Research_Corpus/review]] — 논문 인용 네트워크의 기본 개념이 대규모 오픈 연구 코퍼스 구축의 이론적 기반이 됨
+- 🔗 후속 연구: [[papers/1081_Science_Citation_IndexA_New_Dimension_in_Indexing_This_uniqu/review]] — 과학 논문 네트워크의 초기 개념을 제시한 연구로 인용 색인 시스템의 네트워크적 함의를 보여준다.

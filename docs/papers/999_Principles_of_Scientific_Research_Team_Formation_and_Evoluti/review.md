@@ -8,9 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 과학 연구팀의 규모 분포가 50년간 어떻게 진화했는지를 설명하는 모델을 제시하며, 소규모 핵심팀(Poisson process)과 대규모 확장팀(누적이득)의 두 가지 지식 생산 방식을 제안한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Career_Trajectories_and_Inequality"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Research_Team_Dynamics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Milojević_2014_Principles of scientific research team formation and evolution.pdf"
 ---
@@ -85,7 +84,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Milojević_2014_Principles of scientific
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 대규모팀과 소규모팀의 지식 생산 방식 차이와 연구팀 형성 진화 원리가 상호 보완적인 팀 과학 연구이다.
-- 🏛 기반 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 지식 생산에서 팀의 지배력 증가 현상이 연구팀 형성과 진화 모델의 역사적 맥락을 제공한다.
-- 🧪 응용 사례: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성이 팀 성과에 미치는 영향 연구가 연구팀 구성 원리의 구체적인 다양성 측면을 다룬다.
-- 🧪 응용 사례: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용 네트워크의 체계적 불평등을 팀 형성 원리로 분석할 수 있다
+- 🔗 후속 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 팀 규모 증가와 팀 형성 원리를 함께 분석하여 현대 과학의 협력적 지식 생산 메커니즘을 종합적으로 이해할 수 있음
+- 🔄 다른 접근: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 소규모 핵심팀과 대규모 확장팀의 서로 다른 역할이 팀 크기에 따른 혁신성 차이를 설명함
+- 🧪 응용 사례: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 연구팀 형성 원리가 교수 채용 네트워크의 위계와 불평등에 미치는 영향을 분석할 수 있음
+- 🧪 응용 사례: [[papers/946_Collective_Credit_Allocation_in_Science/review]] — 집단 신용 배분 방법론은 과학 연구팀 형성과 진화 원리를 실증적으로 분석하는 구체적 도구를 제공한다.
+- 🧪 응용 사례: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — 과학 연구팀 형성과 진화의 원리를 다룬 연구로 팀 과학 평가 지표의 이론적 기반을 제공한다.

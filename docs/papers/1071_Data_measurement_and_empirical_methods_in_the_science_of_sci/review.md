@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "과학의 과학(science of science) 분야에서 대규모 데이터셋, 측정 방법론, 실증적 연구 방법론을 종합적으로 리뷰하여 과학의 작동 방식과 과학적 진전을 이해하기 위한 실증적 접근법을 제시한다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "sub/Science_Policy_and_Impact"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Research_Evaluation_and_Metrics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2023_Data, measurement and empirical methods in the science of science.pdf"
 ---
@@ -89,10 +89,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2023_Data, measurement and em
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1124_The_Science_of_Science/review]] — 과학의 과학 분야의 전반적인 이론적 프레임워크를 제공하여 실증적 연구 방법론의 기본 토대가 된다.
-- 🧪 응용 사례: [[papers/939_BibFusion_A_Python_package_to_integrate_deduplicate_and_harm/review]] — 서지정보 통합과 중복 제거를 위한 실용적 도구를 통해 대규모 데이터셋 구축의 구체적 방법론을 제시한다.
-- 🔗 후속 연구: [[papers/1019_Science_of_science/review]] — 과학의 과학 분야의 데이터, 측정, 실증 방법론에 대한 심화된 방법론적 가이드라인을 제공한다.
-- 🏛 기반 연구: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — 과학의 과학 분야의 데이터, 측정, 실증 방법에 대한 체계적 이해가 AI 협력 시스템 개발의 기반을 제공한다.
-- 🏛 기반 연구: [[papers/991_Open_Datasets_in_Learning_Analytics_Trends_Challenges_and_Be/review]] — 과학의 과학 분야의 데이터와 측정 방법론에 대한 기초를 제공한다
-- 🏛 기반 연구: [[papers/992_OpenAlex_in_focus_Metadata_quality_of_publication_type_and_l/review]] — 과학학에서의 데이터 측정과 실증 방법론 연구가 메타데이터 품질 평가의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1124_The_Science_of_Science/review]] — 과학의 과학 분야의 데이터, 측정, 실증 방법론에 대한 구체적인 가이드라인을 제공하여 종합 개요를 실무적으로 확장한다.
+- 🧪 응용 사례: [[papers/1023_SciSciNet_A_large-scale_open_data_lake_for_the_science_of_sc/review]] — SciSciNet의 대규모 과학 데이터 레이크가 과학의 과학 분야의 실증적 연구 방법론을 실제 적용하기 위한 핵심 인프라를 제공한다.
+- 🏛 기반 연구: [[papers/1124_The_Science_of_Science/review]] — 과학의 과학에 대한 종합적 이론적 틀이 실증적 연구 방법론의 개념적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/1124_The_Science_of_Science/review]] — 과학의 과학 분야의 데이터, 측정, 실증 방법론을 구체적으로 다루어 종합 개요의 방법론적 깊이를 보완한다.
+- 🔗 후속 연구: [[papers/1064_Data-driven_predictions_in_the_science_of_science/review]] — 과학의 과학 분야의 데이터와 측정 방법론을 체계화하여 예측 모델의 실증적 기반을 강화한다.
+- 🏛 기반 연구: [[papers/1212_Shifts_in_Biotechnology_Research_Fronts_20002026_A_Bibliomet/review]] — 생명공학 연구 동향의 경험적 분석을 위해 과학학 연구의 데이터 측정 방법론을 적용할 필요가 있음

@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 급증하는 과학 출판물을 효율적으로 분석하기 위해 텍스트 마이닝(Text Mining)과 과학 지도화(Science Mapping)를 결합한 서지학적 분석(Bibliometric Analysis) 방법론을 종합적으로 검토하고, 향후 연구 방향을 제시한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Bibliometrics_and_Science_Mapping"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Thematic_Network_Detection"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2023_When text mining meets science mapping in the bibliometric analysis A review and future opportuniti.pdf"
 ---
@@ -86,5 +86,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2023_When text mining meets 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 비지도 워드 임베딩을 통한 잠재 지식 포착 기법이 텍스트 마이닝과 과학 지도화 결합의 핵심 기술적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/949_Comparative_science_mapping_a_novel_conceptual_structure_ana/review]] — 비교 과학 지도화 개념을 텍스트 마이닝과 결합하여 더 정교한 서지학적 분석 방법론을 구현할 수 있다.
+- 🔄 다른 접근: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 텍스트 마이닝과 과학 지도화 통합은 주제 진화 분석에 다른 방법론적 접근을 제공한다.
+- 🏛 기반 연구: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — VOSviewer와 같은 서지계량 도구는 텍스트 마이닝과 과학 지도화 결합의 기술적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — 연구 분야 지식 조직 체계는 텍스트 마이닝 기반 과학 지도화의 분류학적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 텍스트 마이닝과 과학 지도화 결합은 주제 진화 분석에 다른 방법론적 접근을 제공한다.

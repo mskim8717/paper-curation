@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "OpenAlex 데이터베이스의 출판물 유형(publication type)과 언어(language) 메타데이터 품질을 평가하여 43%의 출판물 유형 불일치와 3.3%의 언어 불일치를 발견했다. 체계적인 데이터 검증의 필요성을 강조한다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Bibliometric_Datasets_and_Infrastructure"
+  - "cat/Open_Access_Publication_Analytics"
+  - "sub/Research_Data_and_Metadata"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Doǧan and Sezen_2026_OpenAlex in focus Metadata quality of publication type and language fields in an open peer review c.pdf"
 ---
@@ -80,11 +80,7 @@ OpenAlex 데이터베이스의 출판물 유형(publication type)과 언어(lang
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/993_OpenAlex_A_fully-open_index_of_scholarly_works_authors_venue/review]] — OpenAlex의 메타데이터 품질 문제점과 완전 개방형 학술 색인으로서의 장점이 상반된 관점을 제시한다.
-- 🔄 다른 접근: [[papers/1015_S2ORC_The_Semantic_Scholar_Open_Research_Corpus/review]] — S2ORC와 OpenAlex 모두 대규모 오픈 학술 데이터셋이지만 데이터 품질 평가 관점에서 서로 다른 특성을 보인다.
-- 🏛 기반 연구: [[papers/1071_Data_measurement_and_empirical_methods_in_the_science_of_sci/review]] — 과학학에서의 데이터 측정과 실증 방법론 연구가 메타데이터 품질 평가의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1015_S2ORC_The_Semantic_Scholar_Open_Research_Corpus/review]] — S2ORC 데이터의 메타데이터 품질 문제를 OpenAlex와 비교하여 대규모 학술 데이터베이스의 신뢰성을 평가한다.
-- 🏛 기반 연구: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — OpenAlex의 메타데이터 품질 분석을 통해 OA 연구의 데이터 신뢰성을 확보하고 더 정확한 분석 기반을 마련한다.
-- 🏛 기반 연구: [[papers/937_Authorship_titles_and_open_access_as_drivers_of_citation_per/review]] — 출판 유형과 메타데이터 품질에 대한 체계적 분석이 인용 성과 요인 연구의 데이터 신뢰성 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1115_Google_Scholar_Microsoft_Academic_Scopus_Dimensions_Web_of_S/review]] — OpenAlex의 메타데이터 품질을 다른 주요 인용 데이터베이스와 비교하여 각 플랫폼의 특성을 종합적으로 평가한다.
-- 🔗 후속 연구: [[papers/939_BibFusion_A_Python_package_to_integrate_deduplicate_and_harm/review]] — OpenAlex의 메타데이터 품질 분석과 연결되어 다양한 서지 데이터베이스 통합 시 고려해야 할 데이터 품질 이슈를 다룬다.
+- 🏛 기반 연구: [[papers/1115_Google_Scholar_Microsoft_Academic_Scopus_Dimensions_Web_of_S/review]] — 주요 인용 데이터베이스들의 전반적 커버리지 비교가 OpenAlex 메타데이터 품질 평가의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/993_OpenAlex_A_fully-open_index_of_scholarly_works_authors_venue/review]] — OpenAlex의 전반적 특성 소개를 메타데이터 품질이라는 구체적 측면에서 심화 분석한 후속 연구이다.
+- 🔗 후속 연구: [[papers/1115_Google_Scholar_Microsoft_Academic_Scopus_Dimensions_Web_of_S/review]] — 여러 인용 데이터베이스의 커버리지 비교 연구를 OpenAlex의 메타데이터 품질 평가로 확장한 후속 연구로 볼 수 있다.
+- 🔄 다른 접근: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — OpenAlex와 다른 접근으로 과학자들의 표준화된 인용 지표 데이터베이스를 구축한다.

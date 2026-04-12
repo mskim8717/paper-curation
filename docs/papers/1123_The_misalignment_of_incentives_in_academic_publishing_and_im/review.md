@@ -12,9 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "학술출판의 지식 전파와 학문적 신용 확립이라는 두 목표의 불일치 문제를 분석하고, 상업출판사의 이윤 추구가 학술평가 체계에 미치는 부작용을 조명하며 대안적 출판 모델을 제시한다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "cat/Science_of_Science_Research"
-  - "sub/Publishing_and_Incentives"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Peer_Review_Grant_Systems"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Trueblood et al._2025_The misalignment of incentives in academic publishing and implications for journal reform.pdf"
 ---
@@ -79,10 +78,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Trueblood et al._2025_The misalignment o
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 학술 출판사의 시장 독점이 지식 전파와 학문적 신용 확립 목표의 불일치를 심화시키는 구조적 원인을 제공한다.
-- 🔄 다른 접근: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 오픈 액세스의 확산이 기존 상업 출판 모델의 인센티브 불일치 문제를 해결할 수 있는 대안적 출판 모델의 가능성을 보여준다.
-- 🧪 응용 사례: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 저널 명성 편향이 학술 출판 인센티브 불일치의 구체적 발현 사례로서 대안적 평가 시스템의 필요성을 강조한다.
-- 🔗 후속 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 학술 출판의 인센티브 불일치 문제가 소수 대형 출판사의 시장 독점으로 구체화되어 나타나는 구조적 문제를 보여준다.
-- ⚖️ 반론/비판: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 학술 출판의 인센티브 불일치 문제가 저널 명성 편향을 야기하는 근본적 구조적 원인임을 보여준다.
-- 🏛 기반 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 학술 출판의 인센티브 불일치 문제가 부정행위 증가의 근본 원인임을 설명한다
-- 🔗 후속 연구: [[papers/932_An_empirical_analysis_of_open_access_citation_advantages_in/review]] — 개방접근의 한계를 학술 출판에서 인센티브 오정렬과 영향력 측정 문제로 확장한다.
+- 🏛 기반 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 디지털 시대 학술 출판사의 과점 구조를 분석하여 출판 인센티브 불일치의 구조적 원인을 보여준다.
+- 🧪 응용 사례: [[papers/932_An_empirical_analysis_of_open_access_citation_advantages_in/review]] — 오픈 액세스의 인용 이점을 실증적으로 분석하여 대안적 출판 모델의 효과를 구체적으로 보여준다.
+- 🔗 후속 연구: [[papers/1069_Breaking_the_gatekeepers_how_AI_will_revolutionize_scientifi/review]] — AI를 통한 과학 펀딩 혁신과 연계하여 출판 시스템 개혁의 필요성과 방향을 제시한다.
+- 🔗 후속 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 학술 출판의 인센티브 구조 문제가 대형 출판사 독과점과 어떻게 연결되는지에 대한 심화된 분석을 제공한다.
+- 🏛 기반 연구: [[papers/1045_The_strain_on_scientific_publishing/review]] — 학술 출판의 인센티브 부정합은 출판 부담이 발생하는 구조적 원인을 설명한다.

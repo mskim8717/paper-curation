@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "거의 4천만 개의 논문을 분석하여 높은 CD index(파괴적 지수)를 가진 논문이 역설적으로 기술·사회 영향력이 낮다는 것을 발견했으며, 대신 '파괴적 인용(disruptive citation)' 지표가 더 강한 예측력을 가짐을 밝혔다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Citation_Metrics_and_Indices"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholarly_Impact_Metrics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_Are disruptive papers more likely to impact technology and society.pdf"
 ---
@@ -79,11 +79,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_Are disruptive papers m
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 파괴성 지수와 기술/사회 영향력 관계 분석을 인용 인플레이션으로 인한 파괴성 지수의 근본적 한계 재분석으로 확장한다.
-- ⚖️ 반론/비판: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 파괴성과 영향력의 역설적 관계에 대해 파괴성 감소 현상의 견고한 증거를 제시한다.
-- 🔄 다른 접근: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 즉각적 파괴성 대신 장기간 잠들어 있다가 재발견되는 논문의 특성을 분석한다.
-- 🔗 후속 연구: [[papers/954_Do_novel_papers_attract_more_social_attention/review]] — 파괴성과 기술 영향력의 관계를 논문의 새로움과 소셜 미디어 관심도의 관계로 확장한다.
-- 🧪 응용 사례: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 혁신적 논문이 기술과 사회에 미치는 영향을 혁신성 하락 추세와 연결하여 과학의 사회적 기여 변화를 평가할 수 있다.
-- 🔗 후속 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 파괴적 논문의 기술-사회 영향력을 팀 규모별로 분석하여 혁신의 다층적 효과 이해 가능
-- 🔗 후속 연구: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 인용 확산 패턴과 파괴적 지수 간의 관계를 통해 논문의 장기적 기술/사회 영향력을 예측한다.
-- 🔗 후속 연구: [[papers/927_A_Dynamic_Network_Measure_of_Technological_Change/review]] — 파괴적 논문이 기술과 사회에 미치는 영향을 CDt 지수를 통해 더 정교하게 측정할 수 있는 방법론을 제시한다.
+- 🔗 후속 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 논문의 파괴성 감소 트렌드와 파괴적 논문의 사회적 영향력 역설을 함께 보면 혁신의 복잡한 메커니즘을 이해할 수 있다.
+- 🏛 기반 연구: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 파괴적 논문의 인용 확산 패턴은 기술·사회 영향력과의 관계를 공간적으로 이해하는 기반을 제공한다.
+- 🏛 기반 연구: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 파괴성 감소에 대한 견고한 증거는 파괴적 논문의 사회적 영향 분석에 중요한 배경을 제공한다.
+- 🔗 후속 연구: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 파괴적 논문의 인용 확산 패턴은 혁신성과 영향력 확산의 공간적 메커니즘을 규명하는 데 중요하다.

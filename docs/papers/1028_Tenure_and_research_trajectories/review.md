@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "미국 12,000명 이상의 교수자를 추적한 대규모 연구를 통해 종신교수제(tenure)가 연구 출산성, 창의성, 영향력에 미치는 영향을 체계적으로 분석하였다. 종신교수 전에는 출산성이 급증하지만, 이후 학과별로 다양한 경향을 보이며, 고위험 연구는 증가하나 영향력은 감소한다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Career_Dynamics_and_Outcomes"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Academic_Career_Trajectories"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tripodi et al._2025_Tenure and research trajectories.pdf"
 ---
@@ -83,11 +83,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tripodi et al._2025_Tenure and research 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1037_The_Misleading_Narrative_of_the_Canonical_Faculty_Productivi/review]] — 종신교수 전후의 생산성 변화가 기존에 알려진 정설적 경력 궤적과 다른 복잡한 패턴을 보임을 함께 분석할 수 있다.
-- 🏛 기반 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 경력 전반의 hot streak 현상과 종신교수제의 영향을 결합하면 연구자 생산성의 전체적 동역학을 이해할 수 있다.
-- 🔄 다른 접근: [[papers/1000_Productivity_Prominence_and_the_Effects_of_Academic_Environm/review]] — 종신교수제와 기관 환경이 연구 성과에 미치는 상대적 영향을 비교 분석하여 경력 개발 전략을 수립할 수 있다.
-- 🔗 후속 연구: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 조기 좌절의 장기 영향을 테뉴어 획득이라는 제도적 맥락에서 더 구체적으로 분석할 수 있음
-- 🔗 후속 연구: [[papers/1000_Productivity_Prominence_and_the_Effects_of_Academic_Environm/review]] — 연구자의 박사후과정 재직기간이 연구 궤적에 미치는 영향을 분석하여 학술 환경의 장기적 효과를 보완적으로 규명한다.
-- 🔗 후속 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 종신재직권 획득이 연구 궤적에 미치는 영향과 핫스트릭 현상을 연결하여 경력 전환점에서 나타나는 창의성 폭발을 분석한다.
-- 🏛 기반 연구: [[papers/1037_The_Misleading_Narrative_of_the_Canonical_Faculty_Productivi/review]] — 종신교수제가 연구 궤적에 미치는 영향을 정설적 생산성 패턴의 다양성과 연결하여 경력 개발의 복잡성을 이해할 수 있다.
-- 🔗 후속 연구: [[papers/1121_Superstar_Extinctionsupsup/review]] — 협업 네트워크 붕괴가 개별 연구자에게 미치는 영향을 종신재직권과 연구 궤적의 관계로 확장한다.
+- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 과학자 경력에서 초기 좌절의 영향과 대조적으로 종신교수제라는 제도적 안정성의 효과를 분석한다.
+- 🏛 기반 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 과학 경력에서 성별 불평등의 역사적 맥락을 종신교수제 효과 분석의 기초로 활용한다.
+- 🔗 후속 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용 네트워크의 체계적 불평등을 종신교수제 이후의 연구 궤적 변화로 확장한다.
+- 🧪 응용 사례: [[papers/1000_Productivity_Prominence_and_the_Effects_of_Academic_Environm/review]] — 종신 재직권이 연구 궤적에 미치는 영향은 기관 환경 효과의 구체적 메커니즘을 보여준다.
+- 🔗 후속 연구: [[papers/955_Does_Science_Advance_One_Funeral_at_a_Time/review]] — 저명 과학자 사망의 분야 영향 연구는 테뉴어가 연구 궤적에 미치는 영향과 함께 과학자 경력의 구조적 요인들을 종합적으로 이해하게 한다.
+- 🧪 응용 사례: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 종신재직권 제도가 학자의 국제 이동 의사결정과 경력 궤적에 미치는 영향을 분석하는 데 활용할 수 있다.
+- 🧪 응용 사례: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 테뉴어 시스템이 핫스트릭 현상의 발현과 지속에 미치는 제도적 영향을 분석할 수 있음
+- 🔗 후속 연구: [[papers/973_Impacts_of_inter-institutional_mobility_on_scientific_perfor/review]] — 종신재직권과 연구 궤적 관계 연구를 산업체 이동 맥락으로 확장하여 다양한 경력 경로의 효과를 비교 분석할 수 있다.

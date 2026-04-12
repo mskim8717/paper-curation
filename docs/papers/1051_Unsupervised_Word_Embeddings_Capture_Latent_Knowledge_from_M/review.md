@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "비지도 학습 방식의 Word2vec를 재료과학 문헌 330만 개 초록에 적용하여 화학적 지식을 명시적으로 부여하지 않고도 주기율표 구조와 물성-구조 관계 등 잠재 지식을 포착할 수 있음을 보여줌."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "sub/Knowledge_Graphs_and_Semantic_Mapping"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Knowledge_Graphs_and_Data_Integration"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tshitoyan et al._2019_Unsupervised Word Embeddings Capture Latent Knowledge from Materials Science Literature.pdf"
 ---
@@ -90,10 +90,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tshitoyan et al._2019_Unsupervised Word 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1070_Challenges_in_High-Throughput_Inorganic_Materials_Prediction/review]] — 무기재료 예측에서 Word2vec과 같은 비지도 학습 방법이 재료과학 지식 발견에 실제로 활용되는 사례를 보여준다.
-- 🔗 후속 연구: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 과학 궤적의 비지도 임베딩을 통해 재료과학 문헌에서 포착된 잠재 지식을 동적 패턴으로 확장 분석한다.
-- 🔗 후속 연구: [[papers/969_Hierarchical_Classification_of_Research_Fields_in_the_Web_of/review]] — 비지도 워드 임베딩으로 의학 지식을 추출하는 방법이 계층적 분류 시스템의 특화된 응용 사례이다.
-- 🏛 기반 연구: [[papers/1053_Visualizing_the_context_of_citations_referencing_papers_publ/review]] — 인용 맥락에서 키워드를 추출하는 비지도 워드 임베딩의 방법론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/1055_When_text_mining_meets_science_mapping_in_the_bibliometric_a/review]] — 비지도 워드 임베딩을 통한 잠재 지식 포착 기법이 텍스트 마이닝과 과학 지도화 결합의 핵심 기술적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/1016_Sci2Pol_Evaluating_and_Fine-tuning_LLMs_on_Scientific-to-Pol/review]] — 의료 문헌에서 잠재 지식을 추출하는 비지도 학습 방법론이 과학-정책 변환의 기술적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/929_A_network_approach_to_topic_models/review]] — 네트워크 기반 토픽 모델링을 의학 문헌에서 잠재적 지식 포착을 위한 비지도 워드 임베딩에 적용한다.
+- 🔄 다른 접근: [[papers/1112_CS-KG_20_A_Large-scale_Knowledge_Graph_of_Computer_Science/review]] — 컴퓨터과학 논문에서 구축한 지식그래프와 재료과학 문헌의 Word2vec 임베딩은 서로 다른 도메인에서 잠재 지식 추출을 위한 상호 보완적 접근법이다.
+- 🔗 후속 연구: [[papers/978_Introducing_the_open_biomedical_map_of_science/review]] — 생의학 과학 지도 구축 방법론을 재료과학 도메인에 적용하여 더 포괄적인 과학 지식 구조 분석이 가능하다.
+- 🔄 다른 접근: [[papers/1112_CS-KG_20_A_Large-scale_Knowledge_Graph_of_Computer_Science/review]] — 재료과학의 Word2vec 임베딩과 컴퓨터과학의 지식그래프는 서로 다른 학문 분야에서 잠재 지식 추출을 위한 상호 보완적 접근법이다.
+- 🏛 기반 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 비지도 단어 임베딩의 잠재 지식 포착 방법론을 바탕으로 연구자의 인식론적 위치를 의미론적으로 규명한다.
+- 🏛 기반 연구: [[papers/1175_Figures_as_Interfaces_Toward_LLM-Native_Artifacts_for_Scient/review]] — 의료 언어에서 잠재 지식을 포착하는 임베딩 기술이 과학 도형의 기계 판독 가능한 표현 생성에 이론적 기반을 제공한다.

@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "Nature가 1,576명의 과학자를 대상으로 실시한 설문조사에서 70% 이상이 다른 연구자의 실험을 재현하지 못했으며, 52%가 재현성(reproducibility) 위기가 있다고 인식하고 있음을 밝혔다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Research_Evaluation_and_Metrics"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Research_Reproducibility_Crisis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Baker_2016_1,500 scientists lift the lid on reproducibility.pdf"
 ---
@@ -79,10 +79,14 @@ Nature가 1,576명의 과학자를 대상으로 실시한 설문조사에서 70%
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1058_Why_Most_Published_Research_Findings_Are_False/review]] — 과학자들이 인식하는 재현성 위기가 통계적으로 예측되는 거짓 연구 결과 문제와 일치하는 실증적 증거를 제공한다.
-- 🔗 후속 연구: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 심리과학의 재현성 추정과 Nature 설문조사를 결합하면 재현성 문제의 범위와 심각성을 더 정확히 파악할 수 있다.
-- 🧪 응용 사례: [[papers/959_Evaluating_the_Replicability_of_Social_Science_Experiments_i/review]] — 사회과학 실험의 재현성 평가가 과학자들이 보고하는 재현 실패 경험을 체계적으로 검증하는 구체적 사례를 제공한다.
-- 🔗 후속 연구: [[papers/1070_Challenges_in_High-Throughput_Inorganic_Materials_Prediction/review]] — 재현가능성 위기를 재료과학의 자동화된 고처리량 연구로 확장하여 새로운 형태의 재현성 문제를 제기한다.
-- 🏛 기반 연구: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 1,500명 과학자들의 재현성에 대한 인식 조사가 심리학 분야의 실제 재현 실험 결과와 비교할 수 있는 배경 정보를 제공한다.
-- 🔗 후속 연구: [[papers/1058_Why_Most_Published_Research_Findings_Are_False/review]] — 재현성 위기에 대한 과학자들의 인식 조사와 거짓 연구 결과의 통계적 분석을 결합하여 과학 신뢰성 문제를 종합적으로 이해할 수 있다.
-- 🔗 후속 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 연구 부정행위 문제를 재현성 위기와 연결하여 과학의 구조적 문제를 종합적으로 이해 가능
+- 🔗 후속 연구: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 1,500명 과학자 대상 재현성 위기 설문조사는 심리학 100개 연구 직접 재현 실험의 광범위한 배경과 맥락을 제공한다.
+- 🔄 다른 접근: [[papers/959_Evaluating_the_Replicability_of_Social_Science_Experiments_i/review]] — 자연과학 전반의 재현성 인식 조사와 Nature/Science 사회과학 실험 재현은 모두 과학의 재현성 위기를 다른 방식으로 검증한다.
+- 🔗 후속 연구: [[papers/1058_Why_Most_Published_Research_Findings_Are_False/review]] — 대부분의 연구 결과가 거짓일 수 있다는 주장을 1,500명 과학자의 재현성 경험으로 실증적으로 뒷받침한다.
+- 🏛 기반 연구: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 과학 연구의 재현성 위기를 다룬 기초 연구로 기계학습 기반 연구의 재현성 보장 필요성을 뒷받침한다.
+- 🧪 응용 사례: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 재현성 위기에 대한 과학자들의 인식과 편향의 실제 유병률 간의 격차를 비교 분석할 수 있음
+- 🏛 기반 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 재현성 위기에 대한 과학자들의 우려가 실제 부정행위 증가 추세의 배경을 설명함
+- 🏛 기반 연구: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 심리학 100개 연구의 직접 재현 실험은 1,500명 과학자가 인식한 재현성 위기에 대한 실증적 검증을 제공한다.
+- 🔗 후속 연구: [[papers/959_Evaluating_the_Replicability_of_Social_Science_Experiments_i/review]] — 최고 저널 사회과학 실험의 재현 연구는 과학자들이 인식한 재현성 위기를 실제 재현 실험으로 구체적으로 검증한다.
+- 🏛 기반 연구: [[papers/1142_Beyond_Retractions_Forensic_Scientometrics_Techniques_to_Ide/review]] — 과학 연구의 재현성 문제에 대한 광범위한 조사 결과가 포렌식 과학계량학의 필요성을 뒷받침합니다.
+- 🏛 기반 연구: [[papers/1214_The_Story_is_Not_the_Science_Execution-Grounded_Evaluation_o/review]] — 과학 연구의 재현성 위기 문제가 논문 내러티브를 넘어선 실행 기반 검증의 필요성을 뒷받침하는 핵심 배경을 제공한다.
+- 🧪 응용 사례: [[papers/1156_Correction_Enabling_transparent_research_evaluation_A_method/review]] — 데이터 공개를 통한 투명성 증진이 재현성 위기 해결의 구체적 실천 방안을 제시함

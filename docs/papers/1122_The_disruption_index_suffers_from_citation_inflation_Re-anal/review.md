@@ -10,9 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "인용 지수(CD)는 참고문헌 길이의 증가로 인한 인용 인플레이션(Citation Inflation)으로 인해 체계적으로 감소하며, 이는 혁신의 실제 감소가 아닌 측정 편향을 반영한다."
 tags:
-  - "cat/Scientific_Impact_and_Innovation"
-  - "cat/Science_of_Science_Research"
-  - "sub/Citation_metrics_and_impact_measurement"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Journal_Citation_Patterns"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Petersen et al._2025_The disruption index suffers from citation inflation Re-analysis of temporal CD trend and relations.pdf"
 ---
@@ -87,11 +86,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Petersen et al._2025_The disruption inde
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 파괴성 지수의 전반적 감소 현상이 인용 인플레이션이라는 측정 편향에서 기인할 수 있음을 규명하여 기존 연구를 보완한다.
-- ⚖️ 반론/비판: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 파괴성 감소에 대한 강력한 증거를 제시하는 연구와 측정 편향을 지적하는 연구 간의 대립적 관점을 보여준다.
-- 🔗 후속 연구: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 혁신성 지수의 인용 인플레이션 문제와 영인용 논문 효과를 함께 고려하여 혁신성 측정의 정확성을 높일 수 있다.
-- 🧪 응용 사례: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 보편적 인용 분포 모델을 파괴성 지수의 인플레이션 문제 분석에 적용한다.
-- ⚖️ 반론/비판: [[papers/1009_Relative_Citation_Ratio_A_New_Metric_That_Uses_Citation_Rate/review]] — 인용 기반 지표들이 공통적으로 겪는 인용 인플레이션 문제를 보여주며 RCR 지표의 한계를 지적한다.
-- 🔗 후속 연구: [[papers/977_Introducing_multiverse_analysis_to_bibliometrics_The_case_of/review]] — 팀 규모 연구에서 사용된 파괴성 지수의 인용 인플레이션 문제를 다중우주분석으로 재평가 필요
-- ⚖️ 반론/비판: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 혁신성 지수가 인용 인플레이션으로 인해 문제가 있다고 지적하여 혁신성 감소 결론에 이의를 제기한다
-- 🔗 후속 연구: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 파괴성 지수와 기술/사회 영향력 관계 분석을 인용 인플레이션으로 인한 파괴성 지수의 근본적 한계 재분석으로 확장한다.
+- ⚖️ 반론/비판: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — disruption index 하락이 실제 현상이라고 주장하는 연구에 대한 직접적 반박으로 측정 편향의 가능성을 제기한다.
+- 🏛 기반 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 논문과 특허의 disruptiveness 감소를 최초로 보고한 연구로 인용 인플레이션 비판의 대상이 된다.
+- 🔗 후속 연구: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 인용 분포의 보편성을 분석하여 인용 인플레이션이 인용 패턴에 미치는 체계적 영향을 이해하는 기반을 제공한다.
+- ⚖️ 반론/비판: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 인용 인플레이션 문제는 장기 영향력 모델의 시간적 안정성에 대한 의문을 제기한다.
+- ⚖️ 반론/비판: [[papers/1009_Relative_Citation_Ratio_A_New_Metric_That_Uses_Citation_Rate/review]] — 인용 인플레이션 문제는 상대인용비율의 시간적 비교 가능성에 대한 의문을 제기한다.
+- ⚖️ 반론/비판: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 인용 인플레이션 문제는 인용 분포의 시간적 보편성에 대한 의문을 제기한다.
+- ⚖️ 반론/비판: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — disruption index의 측정 편향 문제를 제기하여 과학 혁신성 하락 주장에 대한 반박 논리를 보강한다.

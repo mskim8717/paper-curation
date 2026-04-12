@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "촉매 발견을 위한 1.2백만 개의 DFT 계산 데이터로 구성된 Open Catalyst 2020 (OC20) 데이터셋을 제시하고, 그래프 신경망 기반 베이스라인 모델과 커뮤니티 챌린지를 제공한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/AI_and_Large_Language_Models"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Knowledge_Graphs_and_Data_Integration"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chanussot et al._2021_Open Catalyst 2020 (OC20) Dataset and Community Challenges.pdf"
 ---
@@ -90,8 +90,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chanussot et al._2021_Open Catalyst 2020
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1070_Challenges_in_High-Throughput_Inorganic_Materials_Prediction/review]] — 고처리량 무기물질 예측의 도전과제를 통해 촉매 발견을 위한 기계학습 접근법의 한계와 개선 방향을 구체화한다.
-- 🧪 응용 사례: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 제약 분야의 화이트 스페이스 분석 전략을 통해 촉매 발견 데이터셋의 실제 산업 적용 가능성을 평가할 수 있다.
-- 🏛 기반 연구: [[papers/1082_The_Open_Catalyst_2022_OC22_Dataset_and_Challenges_for_Oxide/review]] — OC20 데이터셋의 후속 버전으로 산화물 전기촉매 연구를 위한 더 확장된 DFT 계산 데이터를 제공한다.
-- 🧪 응용 사례: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 제약 R&D의 백색공간 분석 방법론을 촉매 및 재료 발견 분야의 연구 기회 탐색에 적용할 수 있다.
-- 🧪 응용 사례: [[papers/927_A_Dynamic_Network_Measure_of_Technological_Change/review]] — 기술 네트워크 분석을 촉매 과학에서 혁신적 발견을 위한 데이터셋 구축에 적용한다.
+- 🔗 후속 연구: [[papers/1082_The_Open_Catalyst_2022_OC22_Dataset_and_Challenges_for_Oxide/review]] — OC20에서 OC22로의 발전은 산화물 전기촉매 연구를 위한 데이터셋과 도전 과제의 확장을 보여준다.
+- 🧪 응용 사례: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 펀딩의 광범위한 영향 시각화 방법론을 Open Catalyst 데이터셋 기반 연구의 사회적 임팩트 측정에 적용할 수 있다.
+- 🏛 기반 연구: [[papers/1082_The_Open_Catalyst_2022_OC22_Dataset_and_Challenges_for_Oxide/review]] — OC20 데이터셋이 OC22 산화물 전기촉매 연구의 기초적인 방법론과 데이터 구조를 제공한다.
+- 🏛 기반 연구: [[papers/1070_Challenges_in_High-Throughput_Inorganic_Materials_Prediction/review]] — Open Catalyst 2020 데이터셋이 제공하는 체계적인 촉매 연구 기반이 고처리량 무기재료 예측 시스템의 신뢰성 문제 해결에 필수적이다.
+- 🧪 응용 사례: [[papers/1140_Assessing_the_impact_of_Open_Research_Information_Infrastruc/review]] — 오픈 과학 인프라 영향력 평가 프레임워크를 다른 과학 데이터 플랫폼인 Open Catalyst에도 적용할 수 있는 방법론적 확장성을 보여준다.
+- 🧪 응용 사례: [[papers/1163_effect_of_poloxamer_and_hyaluronic_acid_administration_in_ne/review]] — 생의학 연구의 서지 분석이 실제 촉매 연구 데이터셋 구축으로 이어지는 응용 사례입니다.
+- 🔄 다른 접근: [[papers/1195_Mapping_the_Research_Landscape_of_Electronic_Properties_of_G/review]] — 그래핀 연구의 bibliometric 분석과 병행하여 실제 그래핀 연구 데이터셋을 통한 검증 연구가 필요함
+- 🏛 기반 연구: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 심혈관 질환 연구의 머신러닝 응용 동향 분석을 위해 대규모 과학 데이터셋의 구조와 특성을 이해할 필요가 있음

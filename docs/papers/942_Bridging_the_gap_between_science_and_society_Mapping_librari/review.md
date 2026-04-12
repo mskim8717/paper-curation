@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 영국 Research Excellence Framework (REF)의 465개 사례 분석을 통해 도서관이 과학 연구의 사회적 영향을 중개하는 구체적 전략 5가지를 의미론적 분석(LLM + BERTopic)으로 규명했다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "sub/Science_Policy_and_Impact"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholarly_Social_Media_Engagement"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zuorong et al._2026_Bridging the gap between science and society Mapping libraries' strategies for engaging in the rese 1.pdf"
 ---
@@ -89,8 +89,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zuorong et al._2026_Bridging the gap bet
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 온라인 과학 커뮤니케이션에서 정보 경로 역할을 하는 도서관이 과학과 사회 간 격차를 줄이는 구체적 메커니즘을 보여준다.
-- 🏛 기반 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 과학의 공적 활용과 공적 자금지원 관계를 분석하여 도서관의 과학-사회 중개 역할의 이론적 배경을 제공한다.
-- 🧪 응용 사례: [[papers/1042_The_Scholarly_Knowledge_Ecosystem_Challenges_and_Opportuniti/review]] — 과학과 사회 간 격차 해소를 위한 도서관의 역할을 통해 학술 지식 생태계 개선의 구체적 실행 방안을 제시한다.
-- 🏛 기반 연구: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 온라인 과학 커뮤니케이션이 과학-사회 간극을 메우는 도서관의 전통적 역할과 연결됨
-- 🔗 후속 연구: [[papers/994_Organisational_accounts_engaged_in_scholarly_communication_o/review]] — 과학과 사회 간 격차를 연결하는 도서관의 역할을 기관 계정으로 확장하여 분석한다
+- 🔗 후속 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 과학의 혁신 인식 역설과 도서관의 사회적 영향 중개 전략을 연결하면 과학의 사회적 가치 인식 개선 방안을 찾을 수 있다.
+- 🔄 다른 접근: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 온라인 과학 소통의 정보 경로는 도서관의 전통적 중개 역할과 다른 과학-사회 연결 메커니즘을 보여준다.
+- 🧪 응용 사례: [[papers/1043_The_selective_use_of_physics_knowledge_in_policy_how_interdi/review]] — 정책에서 물리학 지식의 선택적 활용은 도서관이 과학 지식을 사회적으로 중개할 때 고려해야 할 구체적 사례를 제공한다.
+- 🔗 후속 연구: [[papers/994_Organisational_accounts_engaged_in_scholarly_communication_o/review]] — 과학과 사회 간 격차 해소를 위한 도서관 매핑 연구를 Twitter 기관 계정의 학술 소통 역할 분석으로 확장할 수 있다.

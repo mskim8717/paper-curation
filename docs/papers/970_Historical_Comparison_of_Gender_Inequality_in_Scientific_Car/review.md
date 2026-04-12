@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "1955-2010년 간 150만 명 이상의 과학자 데이터를 분석하여 STEM 분야 전 학문과 83개국에 걸친 성별 불평등의 장기 추이를 규명했다. 역설적으로 여성 과학자 비율 증가가 생산성(productivity)과 영향력(impact)의 성별 격차 증가를 동반했으나, 동일한 논문 수에 대해 남녀의 연간 발표율(annual rate)과 커리어 영향력이 동등함을 발견했다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Career_Trajectories_and_Inequality"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Gender_Research_Diversity"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2020_Historical Comparison of Gender Inequality in Scientific Careers Across Countries and Disciplines.pdf"
 ---
@@ -94,10 +94,14 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2020_Historical Comparison 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양한 팀이 더 참신하고 높은 영향력의 과학을 생산한다는 연구와 연결되어 개별 여성 과학자의 경력 불평등이 팀 차원의 성과에 미치는 영향을 이해한다.
-- 🧪 응용 사례: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 컴퓨터 과학의 체계적 성별 인용 불균형 분석과 연결되어 STEM 분야 전반의 성별 불평등이 인용 패턴에 미치는 구체적 영향을 보여준다.
-- 🔗 후속 연구: [[papers/940_Bibliometrics_Global_Gender_Disparities_in_Science/review]] — 과학 분야 성별 불평등에 대한 글로벌 분석을 시간적 변화와 국가별 비교를 통해 더욱 상세히 확장한 종단 연구를 제공한다.
-- 🔗 후속 연구: [[papers/1048_Unequal_effects_of_the_COVID-19_pandemic_on_scientists/review]] — 팬데믹이 기존 성별 불평등을 심화시키는 현상을 과학계 성별 불평등의 역사적 맥락에서 이해
-- 🧪 응용 사례: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — 표준화된 인용 지표 데이터베이스를 활용하여 과학 경력에서의 성별 불평등을 역사적으로 비교 분석할 수 있다.
-- 🏛 기반 연구: [[papers/976_Intersectional_inequalities_in_science/review]] — 성별 불평등에 대한 역사적 분석을 제공하여 교차적 불평등 연구의 기초가 된다
-- 🔗 후속 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 학계 채용 불평등의 역사적 변화와 성별 격차를 함께 분석하면 구조적 불평등의 전체적 양상을 파악할 수 있다.
+- 🔗 후속 연구: [[papers/966_Global_citation_inequality_is_on_the_rise/review]] — 성별 격차와 인용 불평등이 동시에 증가하는 패턴을 통해 과학계 불평등의 복합적 양상을 파악할 수 있음
+- 🧪 응용 사례: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 성별 다양성의 이론적 프레임워크를 역사적 데이터로 검증하여 실제 효과를 평가할 수 있음
+- 🏛 기반 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 여성이 과학에서 덜 인정받는다는 기본 전제가 장기적 성별 불평등 패턴의 이론적 토대를 제공함
+- 🔗 후속 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 과학 경력에서 성별 불평등의 역사적 비교는 교수 채용 불평등의 시간적 변화를 이해하는 맥락을 제공한다.
+- 🏛 기반 연구: [[papers/1028_Tenure_and_research_trajectories/review]] — 과학 경력에서 성별 불평등의 역사적 맥락을 종신교수제 효과 분석의 기초로 활용한다.
+- 🔗 후속 연구: [[papers/1048_Unequal_effects_of_the_COVID-19_pandemic_on_scientists/review]] — 팬데믹이 기존의 성별 불평등을 더욱 심화시키는 메커니즘을 통해 과학계 불평등의 취약성을 드러냄
+- 🔄 다른 접근: [[papers/940_Bibliometrics_Global_Gender_Disparities_in_Science/review]] — 글로벌 성별 불균형과 과학 경력에서의 성별 불평등 역사적 비교는 모두 과학계 젠더 문제를 다른 시각에서 분석한다.
+- 🔗 후속 연구: [[papers/966_Global_citation_inequality_is_on_the_rise/review]] — 성별 불평등과 인용 불평등이 모두 증가하는 현상을 통해 과학계의 다층적 불평등 구조를 이해할 수 있음
+- 🏛 기반 연구: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 성별 다양성 프레임워크가 실제 과학계에서 나타나는 성별 불평등 패턴의 해석 틀을 제공함
+- 🔗 후속 연구: [[papers/1159_Dissemination_and_Implementation_Theories_Models_or_Framewor/review]] — 성별 불평등 분석을 노인 연구 분야의 이론 적용 격차 분석으로 확장한 포괄적 접근입니다.
+- 🔗 후속 연구: [[papers/1215_Total_Fertility_Rate_Studies_Bibliometric_Analysis_with_R_Pr/review]] — 출산율 연구에서 나타나는 성별 불평등 패턴을 과학계 전반의 성별 불평등과 비교 분석할 수 있음

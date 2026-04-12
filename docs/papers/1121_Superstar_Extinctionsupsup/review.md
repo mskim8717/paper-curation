@@ -10,9 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "학계 슈퍼스타의 예기치 않은 사망을 자연실험으로 활용하여, 동료 연구자들의 협업 네트워크 구조 변화가 과학적 생산성에 미치는 영향을 5-8% 감소로 정량화함."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Career_Trajectories_and_Inequality"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Academic_Career_Recognition"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Azoulay et al._2010_Superstar Extinction.pdf"
 ---
@@ -75,10 +74,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Azoulay et al._2010_Superstar Extinction
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 슈퍼스타 사망의 즉각적 영향 대신 초기 경력 좌절이 장기적 경력 궤적에 미치는 영향을 분석한다.
-- 🔗 후속 연구: [[papers/1028_Tenure_and_research_trajectories/review]] — 협업 네트워크 붕괴가 개별 연구자에게 미치는 영향을 종신재직권과 연구 궤적의 관계로 확장한다.
-- 🧪 응용 사례: [[papers/1010_Remote_collaboration_fuses_fewer_breakthrough_ideas/review]] — 슈퍼스타 소멸로 인한 협업 변화를 원격 협업이 혁신적 아이디어 융합에 미치는 영향 연구에 적용한다.
-- 🔗 후속 연구: [[papers/1031_The_Chaperone_Effect_in_Scientific_Publishing/review]] — 슈퍼스타의 멘토링 효과 소멸을 과학 출판에서 chaperone 효과의 중요성 이해로 확장한다.
-- 🔄 다른 접근: [[papers/955_Does_Science_Advance_One_Funeral_at_a_Time/review]] — 과학계 거물의 사망이 과학 진보에 미치는 영향을 다루지만 협업 네트워크 구조 변화에 초점을 맞춘 다른 관점을 제시한다.
-- 🔄 다른 접근: [[papers/955_Does_Science_Advance_One_Funeral_at_a_Time/review]] — 슈퍼스타 소멸 현상을 다른 관점에서 접근하여 저명 과학자 부재가 학문 발전에 미치는 영향을 비교 분석한다.
-- 🔗 후속 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용 네트워크의 위계적 불평등을 협업 네트워크 붕괴가 개별 연구자에게 미치는 영향으로 확장한다.
+- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 초기 경력 좌절의 장기적 영향을 분석하여 학계 슈퍼스타 소멸과 다른 각도에서 경력 충격의 효과를 보여준다.
+- 🔗 후속 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 과학 경력에서 연속적 성공(hot streaks) 패턴을 분석하여 슈퍼스타 부재가 협력자들의 성과 궤적에 미치는 영향을 보완한다.
+- 🏛 기반 연구: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 과학자 경력 궤적의 잠재 구조를 분석하는 방법론을 제시하여 슈퍼스타 소멸의 영향을 측정하는 기반을 제공한다.
+- 🧪 응용 사례: [[papers/1005_Quantifying_the_dynamics_of_failure_across_science_startups/review]] — 과학계의 슈퍼스타 멸종 현상을 실패 동역학의 관점에서 이해할 수 있는 틀을 제공한다.
+- 🧪 응용 사례: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 슈퍼스타 소멸 현상은 과학상 네트워크에서 관찰되는 엘리트 집중화의 장기적 결과를 보여준다.
+- 🔄 다른 접근: [[papers/955_Does_Science_Advance_One_Funeral_at_a_Time/review]] — 저명 과학자 사망이 분야 활성화에 미치는 영향과 슈퍼스타 소멸 연구는 모두 과학계 엘리트의 존재가 분야 발전에 미치는 영향을 분석한다.

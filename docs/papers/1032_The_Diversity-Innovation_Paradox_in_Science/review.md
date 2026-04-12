@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "과학계에서 소수집단이 다수집단보다 더 높은 혁신율을 보이지만, 그들의 혁신적 기여가 과소평가되고 학업 경력 성공으로 이어지지 않는 다양성-혁신 역설을 규명한다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Bias_and_Inequality"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Academic_Institutional_Diversity"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hofstra et al._2020_The Diversity-Innovation Paradox in Science.pdf"
 ---
@@ -91,14 +91,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hofstra et al._2020_The Diversity-Innova
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 소수집단의 혁신이 과소평가되는 현상이 특히 여성의 학제간 혁신에서 더욱 두드러지게 나타나는 구체적 메커니즘을 보여준다.
-- 🏛 기반 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합이 과학적 영향을 높이지만 소수집단의 기여가 과소평가되는 역설을 설명하는 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 성별 다양성을 과학적 발견과 혁신에 효과적으로 활용하기 위한 구체적 방안을 다양성-혁신 역설의 관점에서 재검토할 수 있다.
-- 🏛 기반 연구: [[papers/1066_Accelerating_science_with_human-aware_artificial_intelligenc/review]] — 과학에서 다양성-혁신 역설을 이해하는데 인간의 전문성을 고려한 AI 모델이 제공하는 통찰의 기반이 된다.
-- ⚖️ 반론/비판: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성의 긍정적 효과가 다양성-혁신 역설과 어떻게 조화될 수 있는지 논의 필요
-- 🏛 기반 연구: [[papers/966_Global_citation_inequality_is_on_the_rise/review]] — 과학에서 다양성과 혁신의 역설적 관계가 인용 불평등 심화와 어떻게 연결되는지 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 다양성-혁신 역설의 구체적 사례로 여성의 학제간 혁신 과소평가 현상을 더 깊이 이해할 수 있는 이론적 틀을 제공한다.
-- ⚖️ 반론/비판: [[papers/976_Intersectional_inequalities_in_science/review]] — 다양성과 혁신의 역설적 관계를 제시하여 교차적 다양성의 긍정적 효과에 대한 반대 시각을 제공한다
-- ⚖️ 반론/비판: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 팀 기반 연구의 증가가 항상 긍정적이지 않을 수 있음을 다양성-혁신 패러독스를 통해 비판적으로 검토한다.
-- 🔄 다른 접근: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 다양성의 혁신 효과와 다양성-혁신 역설이라는 상반된 관점을 조화시키는 이론적 틀 필요
-- 🧪 응용 사례: [[papers/946_Collective_Credit_Allocation_in_Science/review]] — 집단적 신용 배분을 팀 다양성이 혁신에 미치는 역설적 영향 분석에 적용한다.
+- 🔗 후속 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 소수집단의 높은 혁신율이 과소평가되는 현상을 여성 과학자의 학제간 혁신 사례로 구체화한다.
+- ⚖️ 반론/비판: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 인종적 다양성이 협업 영향력을 높인다는 발견과 소수집단 혁신이 과소평가된다는 역설을 대조한다.
+- 🏛 기반 연구: [[papers/976_Intersectional_inequalities_in_science/review]] — 과학에서 교차적 불평등의 광범위한 분석을 다양성-혁신 역설의 이론적 토대로 활용한다.
+- 🧪 응용 사례: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 과학계 소수집단의 혁신 과소평가 현상을 여성 과학자의 학제간 연구 사례로 구체화한다.
+- ⚖️ 반론/비판: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 소수집단의 혁신이 과소평가된다는 발견과 인종적 다양성이 협업 영향력을 높인다는 결과를 대조한다.
+- ⚖️ 반론/비판: [[papers/1110_A_cross-disciplinary_research_framework_at_institution_level/review]] — 과학에서 다양성-혁신 역설을 제시하여 학제간 협력이 항상 혁신으로 이어지지 않는 한계를 보여준다.
+- 🔄 다른 접근: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 다양성-혁신 역설과 성별 다양성의 긍정적 효과 간의 모순을 해결하는 대안적 관점을 제시함
+- 🧪 응용 사례: [[papers/1212_Shifts_in_Biotechnology_Research_Fronts_20002026_A_Bibliomet/review]] — 생명공학 연구의 다양성-혁신 패러독스가 지속가능성 중심 전환에 미치는 영향을 분석할 수 있음

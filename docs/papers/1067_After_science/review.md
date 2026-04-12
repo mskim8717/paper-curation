@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "AI가 과학의 모든 영역을 자동화하면서 인간의 이해(understanding)가 제어(control)를 따라가지 못하는 '과학 이후(after science)' 시대로 전환되고 있으며, 이 새로운 시대에 과학의 지속적 발전을 위해서는 AI에 호기심(curiosity)을 부여하고 방법론적 다양성을 보존해야 함을 주장한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Research_Evaluation_and_Impact"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Science_of_Science_Analysis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Evans and Duede_2025_After science.pdf"
 ---
@@ -75,6 +75,7 @@ AI가 과학의 모든 영역을 자동화하면서 인간의 이해(understandi
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1068_Artificial_intelligence_and_illusions_of_understanding_in_sc/review]] — AI가 과학적 이해에 미치는 근본적 위험성에 대한 심층 분석을 통해 '과학 이후' 시대의 철학적 함의를 구체화한다.
-- ⚖️ 반론/비판: [[papers/1066_Accelerating_science_with_human-aware_artificial_intelligenc/review]] — 인간 인식 AI를 통한 과학 가속화가 AI 주도 과학 이후 시대의 대안적 발전 방향을 제시한다.
-- 🔄 다른 접근: [[papers/997_Polymer_Science_Research_in_India_A_Scientometrics_Study/review]] — 인도 고분자 과학의 성장과 대비되는 과학 이후 시대의 관점을 제시한다
+- 🏛 기반 연구: [[papers/1113_Definition_and_Value_Reconstruction_of_Human_Creativity_in_t/review]] — AI 시대 인간 창의성의 재정의가 '과학 이후' 시대에서 인간의 역할과 가치를 보존하기 위한 이론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — LLM이 연구 참신성을 감소시킨다는 실증적 증거가 AI 자동화로 인한 과학적 이해 저하 우려를 뒷받침한다.
+- 🧪 응용 사례: [[papers/1113_Definition_and_Value_Reconstruction_of_Human_Creativity_in_t/review]] — 3차원 창의성 평가 모델(보간형, 외삽형, 도약형)이 '과학 이후' 시대에서 인간 고유 창의성을 보존하기 위한 구체적 평가 기준을 제공한다.
+- ⚖️ 반론/비판: [[papers/1065_A_Survey_of_AI_Scientists/review]] — AI 과학자 시스템의 긍정적 발전 전망과 '과학 이후' 시대의 우려스러운 전망을 대비하여 AI 자동화의 양면성을 이해할 수 있다.

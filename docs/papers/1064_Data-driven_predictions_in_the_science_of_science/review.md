@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 과학의 사회적 프로세스를 데이터 기반으로 분석하는 '과학의 과학(Science of Science)' 분야를 조사하고, 과학적 발견의 예측가능성에 대한 현황과 한계를 논의한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Research_Evaluation_and_Impact"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Science_of_Science_Analysis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Clauset et al._2017_Data-driven predictions in the science of science.pdf"
 ---
@@ -81,6 +81,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Clauset et al._2017_Data-driven predicti
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/963_Forecasting_the_future_of_artificial_intelligence_with_machi/review]] — AI 분야의 기계학습 예측을 통해 과학의 과학에서 데이터 기반 예측의 구체적 적용 사례와 한계를 보여준다.
-- 🔗 후속 연구: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 궤적 임베딩을 통한 잠재 구조 포착이 과학적 발견의 예측가능성을 높이는 새로운 방법론적 접근을 제공한다.
-- 🔗 후속 연구: [[papers/931_AI-Driven_Automation_Can_Become_the_Foundation_of_Next-Era_S/review]] — 과학의 과학 분야의 데이터 기반 예측 방법론을 AI 자동화를 통해 한 단계 더 발전시킨 차세대 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/1071_Data_measurement_and_empirical_methods_in_the_science_of_sci/review]] — 과학의 과학 분야의 데이터와 측정 방법론을 체계화하여 예측 모델의 실증적 기반을 강화한다.
+- ⚖️ 반론/비판: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 과학의 파괴적 혁신이 감소하고 있다는 실증적 증거는 데이터 기반 과학 예측의 한계를 보여주는 중요한 반박 사례이다.
+- 🏛 기반 연구: [[papers/931_AI-Driven_Automation_Can_Become_the_Foundation_of_Next-Era_S/review]] — 과학의 과학 분야의 데이터 기반 예측 방법론이 AI 자동화 프레임워크의 이론적 토대를 제공한다.

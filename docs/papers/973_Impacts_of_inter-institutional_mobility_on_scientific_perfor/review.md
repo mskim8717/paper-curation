@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "인공지능 분야에서 연구자의 학술기관-산업체 이동(aca.ind mobility)이 연구 성과에 미치는 영향을 연구 자본과 사회 자본 관점에서 분석한 논문으로, PSM 방법을 통해 인과관계를 규명한다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Career_Dynamics_and_Outcomes"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholar_Mobility_Patterns"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2023_Impacts of inter-institutional mobility on scientific performance from research capital and social c.pdf"
 ---
@@ -88,9 +88,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2023_Impacts of inter-instit
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 기관-산업 이동의 미시적 효과와 국제 학자 이동의 거시적 패턴이라는 다른 스케일의 모빌리티 연구
-- 🏛 기반 연구: [[papers/1030_The_Burden_of_Knowledge_and_the_Death_of_the_Renaissance_Man/review]] — 학술-산업 이동이 지식 부담 증가 시대에 연구자 전문성 확장의 대안적 경로가 될 수 있음
-- 🧪 응용 사례: [[papers/978_Introducing_the_open_biomedical_map_of_science/review]] — 학술-산업 이동 연구를 생의학 지식 지도를 통해 특정 분야별 이동 패턴과 성과 차이 분석 가능
-- 🔄 다른 접근: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 국가 간 학자 이동과 기관-산업 간 이동이라는 서로 다른 차원의 모빌리티 효과 비교 연구
-- 🔄 다른 접근: [[papers/1000_Productivity_Prominence_and_the_Effects_of_Academic_Environm/review]] — 기관 간 이동이 연구 성과에 미치는 영향을 다른 관점에서 분석하여 환경 효과를 보완 설명한다.
-- 🔗 후속 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용 네트워크의 위계가 기관 간 이동이 과학적 성과에 미치는 영향으로 이어진다.
+- 🏛 기반 연구: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 전 세계 학자 이동의 거시적 패턴을 바탕으로 기관-산업체 이동의 미시적 성과 영향을 구체적으로 분석한다.
+- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 초기 경력 좌절의 영향 분석과 대비하여 기관 이동이 연구 성과에 미치는 긍정적 효과를 실증적으로 규명한다.
+- 🔗 후속 연구: [[papers/1028_Tenure_and_research_trajectories/review]] — 종신재직권과 연구 궤적 관계 연구를 산업체 이동 맥락으로 확장하여 다양한 경력 경로의 효과를 비교 분석할 수 있다.
+- 🔗 후속 연구: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 기관 간 이동이 과학 성과에 미치는 영향은 이주 궤적 분석의 성과 예측 차원을 보완한다.
+- 🔗 후속 연구: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 국가 간 학자 이동의 거시적 패턴을 기관-산업체 이동의 미시적 성과 분석으로 확장하여 이해할 수 있다.

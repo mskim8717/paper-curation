@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "UCSD Map of Science의 설계 및 업데이트를 통해 과학 분류 체계(classification system)를 구축하고, 원본 5년 데이터에서 10년 데이터로 확장하여 저널 매핑 정확도와 사용성을 향상시켰다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Bibliometrics_and_Science_Mapping"
+  - "cat/Computational_Bibliometric_Analysis"
+  - "sub/Research_Infrastructure_Platforms"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Börner et al._2012_Design and Update of a Classification System The UCSD Map of Science.pdf"
 ---
@@ -93,8 +93,5 @@ UCSD Map of Science의 설계 및 업데이트를 통해 과학 분류 체계(cl
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 과학 주제 분석을 통한 연구 분야 위치 파악 방법론을 UCSD 맵의 분류 체계와 결합하여 더 정교한 과학 지도 구축을 가능하게 한다.
-- 🧪 응용 사례: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 통시적 복합 네트워크를 통한 과학 구조 변화 매핑에 UCSD 맵의 업데이트된 분류 체계가 시간적 변화 추적의 기준점을 제공한다.
-- 🔄 다른 접근: [[papers/969_Hierarchical_Classification_of_Research_Fields_in_the_Web_of/review]] — UCSD 맵과 딥러닝 기반 분류는 모두 과학 분야를 체계적으로 분류하되 서로 다른 방법론을 사용한다.
-- 🧪 응용 사례: [[papers/1120_SciEvo_A_2_Million_30-Year_Cross-disciplinary_Dataset_for_Te/review]] — 30년간의 학문 진화 데이터를 연구 분야 분류 시스템의 설계와 업데이트에 활용한다.
-- 🔗 후속 연구: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — UCSD Map of Science의 분류 체계 설계 경험을 바탕으로 다양한 지식 조직 체계들의 통합 솔루션 개발에 필요한 구조적 이해를 제공한다.
+- 🔄 다른 접근: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — UCSD 과학 지도의 분류 체계와 지식 그래프 기반 연구 매핑을 비교하여 최적의 과학 분류 방법을 도출할 수 있음
+- 🔗 후속 연구: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 과학 분류 체계의 업데이트 방법론을 대규모 과학 커뮤니티 매핑에 적용하여 동적 분류 시스템을 구축할 수 있음

@@ -10,9 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "텍스트 코퍼스를 문서-단어 이분 네트워크로 표현하여 토픽 모델링을 커뮤니티 탐지 문제로 재정의하고, 비모수 계층적 확률 블록 모델(hSBM)을 통해 LDA의 한계를 극복하는 통합 프레임워크를 제시한다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Knowledge_Graphs_and_Semantic_Mapping"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Knowledge_Graphs_and_Data_Integration"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gerlach et al._2018_A network approach to topic models.pdf"
 ---
@@ -89,10 +88,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gerlach et al._2018_A network approach t
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 네트워크 기반 토픽 모델링을 의학 문헌에서 잠재적 지식 포착을 위한 비지도 워드 임베딩에 적용한다.
-- 🏛 기반 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 텍스트를 이분 네트워크로 표현하여 토픽 모델링을 커뮤니티 탐지 문제로 전환하는 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 네트워크 기반 토픽 모델링을 시맨틱 네트워크와 신경망을 결합한 연구 트렌드 예측으로 확장한다.
-- 🧪 응용 사례: [[papers/989_Modeling_Changing_Scientific_Concepts_with_Complex_Networks/review]] — 문서-단어 이분 네트워크 접근법을 과학 개념 변화의 복잡 네트워크 모델링에 적용한다.
-- 🏛 기반 연구: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 네트워크에서 커뮤니티 탐지의 기본 알고리즘을 제공하여 토픽 모델링을 커뮤니티 탐지로 재정의하는 이론적 기반이 된다.
-- 🏛 기반 연구: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — 토픽 모델에 대한 네트워크 접근법이 대규모 생의학 지식 네트워크 구축의 방법론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 주제 모델에 대한 네트워크 접근법과 기하학적 데이터 분석 접근법이라는 서로 다른 토픽 모델링 방식을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 그래프에서의 커뮤니티 탐지 이론이 텍스트 네트워크에서 토픽을 발견하는 비모수적 접근법의 수학적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 지식 그래프를 활용한 과학 연구 매핑 방법론을 문서-단어 네트워크 기반 토픽 모델링과 결합하여 확장할 수 있다.
+- 🧪 응용 사례: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 네트워크 기반 토픽 모델링 기법을 머신러닝을 통한 고영향 연구 주제 예측에 적용하여 성능을 개선할 수 있다.
+- 🔄 다른 접근: [[papers/1004_Quantifying_spatialtemporal_citation_diffusion_of_individual/review]] — 네트워크 기반 토픽 모델은 문서 표현 학습과 다른 방식으로 지식공간을 구성할 수 있다.

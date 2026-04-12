@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 다중우주분석(multiverse analysis)을 문헌계량학에 도입하여 팀 규모가 파괴적 연구에 미치는 영향에 대한 모델 불확실성을 체계적으로 평가한다. Wu et al. (2019)의 '소규모 팀이 더 파괴적 연구를 생산한다'는 주장의 견고성을 재검토한다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Collaboration_and_Team_Effects"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Statistical_Robustness_Mapping"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Leibel and Bornmann_2026_Introducing multiverse analysis to bibliometrics The case of team size effects on disruptive resear.pdf"
 ---
@@ -85,7 +85,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Leibel and Bornmann_2026_Introducing mul
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 다중우주분석을 통해 팀 규모-혁신성 관계의 견고성을 검증하고 원 연구의 한계 보완
-- 🔗 후속 연구: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 팀 규모 연구에서 사용된 파괴성 지수의 인용 인플레이션 문제를 다중우주분석으로 재평가 필요
-- 🔄 다른 접근: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 파괴성 감소 현상에 대한 견고한 증거와 팀 규모 효과의 불확실성이라는 대조적 관점 제시
-- ⚖️ 반론/비판: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 팀 규모-파괴성 관계의 견고성에 대한 의문을 다중우주분석을 통해 체계적으로 검증받음
+- 🔗 후속 연구: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 파괴성 감소에 대한 견고한 증거 연구와 함께 팀 규모-파괴성 관계의 다중우주 분석을 통해 과학 혁신 이론을 정밀화할 수 있다.
+- 🏛 기반 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 대규모 팀의 개발과 소규모 팀의 파괴 이론을 다중우주 분석으로 재검증하여 팀 규모 효과의 견고성을 평가한다.
+- 🔄 다른 접근: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — 대규모 언어 모델을 활용한 책임감 있는 연구 평가와 다중우주 분석이 연구 결과의 견고성 검증에서 상호 보완적 역할을 한다.

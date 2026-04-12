@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "ChatGPT는 추상(abstract)의 언어적 복잡성과 길이에 과도하게 반응하여 연구 품질을 평가하는데, 이는 인간 전문가의 평가와 달리 스타일 편향(stylistic bias)을 보인다."
 tags:
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Artificial_intelligence_and_science"
+  - "cat/Computational_Bibliometric_Analysis"
+  - "sub/Citation_Analysis_Methods"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kousha and Thelwall_2026_Which stylistic features fool ChatGPT research evaluations.pdf"
 ---
@@ -77,6 +77,9 @@ ChatGPT는 추상(abstract)의 언어적 복잡성과 길이에 과도하게 반
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 인간 전문가의 동료평가와 AI의 연구 평가에서 각각 나타나는 서로 다른 형태의 편향을 비교 분석한다.
-- 🔗 후속 연구: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 과학에서의 편향을 메타 평가하는 연구를 AI 시스템의 평가 편향으로 확장하여 새로운 차원의 편향을 규명한다.
-- 🧪 응용 사례: [[papers/1068_Artificial_intelligence_and_illusions_of_understanding_in_sc/review]] — ChatGPT 연구 평가에서 문체적 특성이 미치는 영향을 통해 AI 도구의 이해 환상 메커니즘을 구체적으로 분석한다.
+- 🔗 후속 연구: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — ChatGPT의 스타일 편향 문제를 더 넓은 맥락의 책임감 있는 연구 평가 프레임워크로 확장합니다.
+- 🏛 기반 연구: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 과학 연구 평가에서 발생하는 편향의 체계적 분석을 위한 메타 평가 방법론적 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/1068_Artificial_intelligence_and_illusions_of_understanding_in_sc/review]] — ChatGPT가 연구 평가에서 속기 쉬운 문체적 특성을 분석하여 AI 도구의 이해의 환상 메커니즘을 구체적으로 규명한다.
+- ⚖️ 반론/비판: [[papers/1162_DREAM_Deep_Research_Evaluation_with_Agentic_Metrics/review]] — ChatGPT의 연구 평가 능력을 문체적 특성 관점에서 비판적으로 분석하여 agentic evaluation의 한계를 보여준다.
+- ⚖️ 반론/비판: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — ChatGPT 연구 평가의 한계를 지적한 연구와 대비하여 LLM 기반 평가의 가능성과 제약을 균형있게 보여준다.
+- ⚖️ 반론/비판: [[papers/1153_Classical_RAG_for_Semantic_Search__Quantum_Modules_for_Resea/review]] — ChatGPT 연구 평가를 속이는 문체적 특성 연구와 QNLP 모듈을 통한 하이브리드 평가 시스템의 강건성을 대조 분석할 수 있다.

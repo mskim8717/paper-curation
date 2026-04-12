@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 310,000여 개의 경제경영학 논문을 대상으로 Altmetrics를 활용하여 혁신적(novel) 연구가 소셜 미디어 등 사회적 주목도를 더 크게 받는지 실증 분석했다."
 tags:
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Citation_metrics_and_impact_measurement"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholarly_Social_Media_Engagement"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cheng et al._2025_Do novel papers attract more social attention.pdf"
 ---
@@ -87,9 +87,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cheng et al._2025_Do novel papers attrac
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 연구 영향력의 장기적 측정 방법론이 소셜 미디어를 통한 혁신적 논문의 단기적 주목도 분석에 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합이 과학적 영향력에 미치는 효과 연구를 소셜 미디어 관심도까지 확장하여 혁신성의 다면적 영향을 검증한다.
-- 🧪 응용 사례: [[papers/1042_The_Scholarly_Knowledge_Ecosystem_Challenges_and_Opportuniti/review]] — 학술 지식 생태계의 변화 속에서 혁신적 연구가 받는 사회적 관심의 패턴을 실증적으로 적용 분석한다.
-- 🔄 다른 접근: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 참신한 논문이 사회적 관심을 끄는 정도를 통해 연구 트렌드 예측에서 혁신성 지표의 다른 측면을 제공한다.
-- 🔗 후속 연구: [[papers/951_Defining_and_identifying_Sleeping_Beauties_in_science/review]] — 잠자는 미녀 논문의 지연된 학술적 인정이 소셜 미디어에서는 어떤 관심을 받는지 확장하여 분석할 수 있다.
-- 🔗 후속 연구: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 파괴성과 기술 영향력의 관계를 논문의 새로움과 소셜 미디어 관심도의 관계로 확장한다.
+- 🔗 후속 연구: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — COVID-19 사례의 온라인 과학 소통 분석을 통해 혁신적 연구의 소셜 미디어 확산 메커니즘을 확장 이해할 수 있다.
+- ⚖️ 반론/비판: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 혁신이 과소평가된다는 관점에서 소셜 미디어 주목도가 진정한 혁신성을 반영하는지 비판적으로 검토해야 한다.
+- 🏛 기반 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합이 과학적 영향력에 미치는 효과 이론을 바탕으로 혁신성과 사회적 주목의 관계를 이해할 수 있다.
+- 🏛 기반 연구: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 혁신적 연구의 소셜 미디어 주목도 연구에 COVID-19 팬데믹 시기 과학 정보 흐름 분석 방법론을 제공한다.

@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "AI 도구가 과학 연구에 광범위하게 도입될 때, 생산성과 객관성 향상을 약속하지만 실제로는 '이해의 환상(illusions of understanding)'을 야기하여 과학적 이해를 저해할 위험이 있다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/AI_and_Large_Language_Models"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Science_of_Science_Analysis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Messeri and Crockett_2024_Artificial intelligence and illusions of understanding in scientific research.pdf"
 ---
@@ -88,9 +88,7 @@ AI 도구가 과학 연구에 광범위하게 도입될 때, 생산성과 객관
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1078_Quantifying_the_use_and_potential_benefits_of_artificial_int/review]] — AI 사용의 잠재적 이점 정량화를 통해 이해의 환상 문제를 실증적으로 검증할 수 있는 측정 기반을 마련한다.
-- 🧪 응용 사례: [[papers/1057_Which_stylistic_features_fool_ChatGPT_research_evaluations/review]] — ChatGPT 연구 평가에서 문체적 특성이 미치는 영향을 통해 AI 도구의 이해 환상 메커니즘을 구체적으로 분석한다.
-- 🏛 기반 연구: [[papers/989_Modeling_Changing_Scientific_Concepts_with_Complex_Networks/review]] — 과학에서 이해의 착각을 다루어 과학 개념 변화의 해석 가능한 모델링이 중요한 이유의 인지적 배경을 제공한다.
-- ⚖️ 반론/비판: [[papers/1078_Quantifying_the_use_and_potential_benefits_of_artificial_int/review]] — AI가 과학에서 이해의 착각을 만든다는 비판적 관점과 AI의 잠재적 이익을 강조하는 긍정적 관점을 대조한다.
-- 🔗 후속 연구: [[papers/1067_After_science/review]] — AI가 과학적 이해에 미치는 근본적 위험성에 대한 심층 분석을 통해 '과학 이후' 시대의 철학적 함의를 구체화한다.
-- ⚖️ 반론/비판: [[papers/1113_Definition_and_Value_Reconstruction_of_Human_Creativity_in_t/review]] — AI가 과학적 이해에 착각을 불러일으킨다는 관점과 대조되어 인간 창의성의 고유한 가치를 재정의하는 상반된 접근을 보여준다.
+- 🧪 응용 사례: [[papers/1077_Quantifying_large_language_model_usage_in_scientific_papers/review]] — 학술논문에서 LLM 사용량 정량화 방법을 활용하여 이해의 환상이 실제로 얼마나 확산되고 있는지 측정할 수 있다.
+- 🔗 후속 연구: [[papers/1057_Which_stylistic_features_fool_ChatGPT_research_evaluations/review]] — ChatGPT가 연구 평가에서 속기 쉬운 문체적 특성을 분석하여 AI 도구의 이해의 환상 메커니즘을 구체적으로 규명한다.
+- ⚖️ 반론/비판: [[papers/1157_Critical_Review_with_Scientometrics_Approach_on_the_Retrofit/review]] — LLM의 품질 검사 능력과 달리 AI가 과학적 이해에 미치는 환상과 한계를 지적합니다.
+- ⚖️ 반론/비판: [[papers/1216_Tour_guiding_technologies_a_bibliometric_analysis_mapping_tr/review]] — 투어 가이딩 기술의 이해 착각 문제를 AI 기술 도입 과정에서 발생할 수 있는 인식 오류로 분석할 필요가 있음

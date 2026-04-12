@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 과학 자체를 정량적으로 분석하는 Science of Science (SciSci)라는 새로운 학문 분야를 제시하며, 대규모 데이터를 활용하여 과학 발전의 메커니즘과 과학자의 경력 궤적을 이해하고자 한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Research_Evaluation_and_Impact"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Science_Policy_and_Research_Dynamics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fortunato et al._2018_Science of science.pdf"
 ---
@@ -81,7 +81,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fortunato et al._2018_Science of science
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1023_SciSciNet_A_large-scale_open_data_lake_for_the_science_of_sc/review]] — 과학의 과학 연구를 위한 대규모 오픈 데이터 인프라를 제공하여 실증적 분석의 기반을 마련한다.
-- 🔗 후속 연구: [[papers/1071_Data_measurement_and_empirical_methods_in_the_science_of_sci/review]] — 과학의 과학 분야의 데이터, 측정, 실증 방법론에 대한 심화된 방법론적 가이드라인을 제공한다.
-- 🔗 후속 연구: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — 과학의 과학 분야의 기본 개념과 방법론을 AI 협력 시스템으로 확장하여 자동화된 연구 워크플로우를 구현한다.
-- 🏛 기반 연구: [[papers/1124_The_Science_of_Science/review]] — 과학의 과학 분야에 대한 포괄적인 개관을 제공하여 빅데이터 기반 과학 연구 분석의 이론적 토대를 마련한다.
+- 🧪 응용 사례: [[papers/1023_SciSciNet_A_large-scale_open_data_lake_for_the_science_of_sc/review]] — 과학의 과학 연구를 위한 대규모 오픈 데이터 인프라를 제공하여 이론을 실제 적용 가능하게 한다.
+- 🔗 후속 연구: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — 과학의 과학 연구에 AI 협력자를 도입하여 연구 방법론을 획기적으로 발전시킨다.
+- 🔄 다른 접근: [[papers/1124_The_Science_of_Science/review]] — 같은 과학의 과학 주제에 대한 다른 관점과 접근방법을 제시한다.
+- 🧪 응용 사례: [[papers/1023_SciSciNet_A_large-scale_open_data_lake_for_the_science_of_sc/review]] — 과학의 과학 이론을 실제 연구에 적용할 수 있는 대규모 데이터 인프라를 제공한다.
+- 🔗 후속 연구: [[papers/1042_The_Scholarly_Knowledge_Ecosystem_Challenges_and_Opportuniti/review]] — 과학의 과학 연구 분야를 학술 지식 생태계 전반의 거버넌스 문제로 확장하여 접근한다.
+- 🔄 다른 접근: [[papers/1124_The_Science_of_Science/review]] — 같은 주제를 다루는 다른 종합 리뷰로 과학의 과학 분야에 대한 보완적 관점과 최신 동향을 제공한다.

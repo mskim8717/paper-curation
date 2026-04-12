@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "h-지수의 개선 버전인 g-지수를 제안하고, 상위 g개 논문이 함께 최소 g²개의 인용을 받은 최대 순위 g로 정의하여 상위 논문들의 인용 성과를 더 잘 반영한다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Citation_Metrics_and_Indices"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholarly_Impact_Metrics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Egghe_2006_Theory and Practice of the g-index.pdf"
 ---
@@ -76,8 +76,9 @@ h-지수의 개선 버전인 g-지수를 제안하고, 상위 g개 논문이 함
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1009_Relative_Citation_Ratio_A_New_Metric_That_Uses_Citation_Rate/review]] — g-index의 절대적 인용 집계 방식 대신 상대적 인용 비율을 통한 학문분야 간 공정한 비교 방법을 제안한다.
-- 🏛 기반 연구: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — g-index와 같은 개별 지표를 넘어 학문분야별 인용 분포의 보편적 특성을 이해하는 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1056_Where_Do_Your_Citations_Come_From_Citation-Constellation_A_F/review]] — 단순 인용 집계를 넘어 인용 네트워크의 사회구조적 경로를 분석하여 더 정교한 영향력 측정을 제안한다.
-- 🧪 응용 사례: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — g-index와 같은 계량지표가 천문학 분야에서 어떻게 저널 인용 편향을 강화하는지 보여준다.
-- 🔗 후속 연구: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — h-index의 한계를 극복하기 위해 상위 논문들의 인용 성과를 더 잘 반영하는 g-index를 제안한다.
+- 🔗 후속 연구: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — g-지수는 h-지수의 상위 논문 인용 반영 한계를 개선한 직접적 확장이다.
+- 🔄 다른 접근: [[papers/1007_Redefining_Academic_Performance_The_Development_of_the_NK_Co/review]] — NK 복합지수는 g-지수와 다른 방식으로 기존 지표들의 한계를 극복하려는 시도이다.
+- 🔄 다른 접근: [[papers/1009_Relative_Citation_Ratio_A_New_Metric_That_Uses_Citation_Rate/review]] — 상대인용비율과 g-지수는 인용 성과를 측정하는 서로 다른 보완적 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/1007_Redefining_Academic_Performance_The_Development_of_the_NK_Co/review]] — g-지수의 인용 성과 반영 방식은 NK지수 개발에 방법론적 통찰을 제공한다.
+- 🔄 다른 접근: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — h-index의 대안으로 g-index라는 개선된 개인 연구성과 측정 지표를 제안한다.
+- 🔗 후속 연구: [[papers/1210_Scilit_with_the_Integrated_Impact_Indicator_Assessment/review]] — g-index와 같은 기존 영향력 지표의 한계를 극복하고 학제간 평가에 특화된 새로운 지표로 발전시킨 연구이다.

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "Paper Circle는 학술 문헌 발견과 분석을 위한 다중 에이전트 LLM 기반 프레임워크로, Discovery Pipeline과 Analysis Pipeline을 통해 논문 검색, 평가, 구조화된 지식 그래프 생성을 자동화한다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "sub/AI-Driven_Research_Discovery"
+  - "cat/Computational_Bibliometric_Analysis"
+  - "sub/Research_Infrastructure_Platforms"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kumar et al._2026_Paper Circle An Open-source Multi-agent Research Discovery and Analysis Framework.pdf"
 ---
@@ -92,5 +92,7 @@ Paper Circle는 학술 문헌 발견과 분석을 위한 다중 에이전트 LLM
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1022_SciSciGPT_advancing_humanAI_collaboration_in_the_science_of/review]] — 과학의 과학 분야에서 인간-AI 협력을 다중 에이전트 시스템으로 확장하여 연구 발견과 분석을 자동화한다.
-- 🧪 응용 사례: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 의미 네트워크와 신경망을 활용한 연구 트렌드 예측을 다중 에이전트 파이프라인으로 구현하여 실용화한다.
+- 🔗 후속 연구: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — 단일 도메인 가설 생성을 넘어서 다중 에이전트로 범용 학술 발견과 분석을 자동화한 확장된 시스템입니다.
+- 🔄 다른 접근: [[papers/1162_DREAM_Deep_Research_Evaluation_with_Agentic_Metrics/review]] — 둘 다 AI 기반 연구 평가 시스템이지만 발견 중심과 평가 중심이라는 다른 목적을 가집니다.
+- 🔄 다른 접근: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 둘 다 LLM 기반 학술 분석 시스템이지만 지식 그래프 생성과 다중 에이전트 접근법이라는 다른 방식을 사용합니다.
+- 🔗 후속 연구: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — Paper Circle의 다중 에이전트 연구 발견 시스템이 MOLIERE의 가설 생성 기능을 확장하여 더 포괄적인 과학 발견 지원을 제공한다.

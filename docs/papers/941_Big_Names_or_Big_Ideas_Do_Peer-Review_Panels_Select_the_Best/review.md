@@ -9,10 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "NIH 동료평가(peer review) 점수가 실제로 연구의 미래 성과(논문, 인용, 특허)를 예측하는지 13만여 건의 R01 그랜트를 추적하여 검증한 연구이다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "cat/Scientific_Impact_and_Innovation"
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Research_Evaluation_and_Impact"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Peer_Review_Grant_Systems"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li and Agha_2015_Big Names or Big Ideas Do Peer-Review Panels Select the Best Science Proposals.pdf"
 ---
@@ -89,13 +87,9 @@ NIH 동료평가(peer review) 점수가 실제로 연구의 미래 성과(논문
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1012_Rethink_Funding_by_Putting_the_Lottery_First/review]] — 기존 동료평가 시스템의 한계를 보완하기 위해 추첨제 도입을 우선시하는 근본적으로 다른 펀딩 방식을 제안한다.
-- 🔗 후속 연구: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 동료평가의 예측력 한계를 학제간 연구가 더 나은 성과를 보인다는 발견으로 확장하여 평가 시스템 개선 방향을 제시한다.
-- 🔗 후속 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 동료평가가 실제 성과를 예측하지 못하는 현상이 매튜 효과로 인한 명성 기반 선택 때문임을 보여줌
-- 🏛 기반 연구: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 동료평가에서 나타나는 체계적 편향이 과학 전반의 메타 편향 문제와 연결됨
-- 🧪 응용 사례: [[papers/943_Citation_Analysis_as_a_Tool_in_Journal_Evaluation/review]] — 동료평가의 한계를 저널 평가에서도 나타나는 인용 분석의 문제와 연계하여 이해할 수 있음
-- 🔄 다른 접근: [[papers/1057_Which_stylistic_features_fool_ChatGPT_research_evaluations/review]] — 인간 전문가의 동료평가와 AI의 연구 평가에서 각각 나타나는 서로 다른 형태의 편향을 비교 분석한다.
-- 🏛 기반 연구: [[papers/1012_Rethink_Funding_by_Putting_the_Lottery_First/review]] — 동료평가 패널의 선택 편향 분석이 추첨 시스템 도입의 필요성을 뒷받침하는 실증적 근거를 제공한다.
-- ⚖️ 반론/비판: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 동료평가에서 명성과 아이디어 중 어느 것이 더 중요한지에 대한 상반된 관점을 제시하여 과학상 예측력의 한계를 보여준다.
-- 🔗 후속 연구: [[papers/1031_The_Chaperone_Effect_in_Scientific_Publishing/review]] — 동료평가에서 나타나는 명성 효과와 유사하게 출판 과정에서도 경험과 네트워크가 성공률에 미치는 영향을 보여준다.
-- 🔗 후속 연구: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 동료평가에서 나타나는 편향이 과학 전반의 메타 편향 문제의 구체적 사례임을 보여줌
+- ⚖️ 반론/비판: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 동료평가 점수의 연구 성과 예측력 검증과 과학 펀딩의 매튜 효과는 모두 펀딩 시스템의 공정성에 대해 상반된 관점을 제시한다.
+- 🔗 후속 연구: [[papers/996_Partisan_disparities_in_the_funding_of_science_in_the_United/review]] — NIH 그랜트 동료평가 효과성 연구는 미국 과학 펀딩의 정치적 편향 분석과 함께 펀딩 시스템의 편향성을 종합적으로 검토한다.
+- 🔄 다른 접근: [[papers/1012_Rethink_Funding_by_Putting_the_Lottery_First/review]] — 기존의 동료평가 기반 연구비 배분 시스템의 한계를 극복하는 추첨 기반 대안을 제시한다.
+- 🔗 후속 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 연구비 배분에서 명성 vs 아이디어의 효과를 비교하여 Matthew effect의 메커니즘을 더 깊이 이해할 수 있다.
+- 🏛 기반 연구: [[papers/1069_Breaking_the_gatekeepers_how_AI_will_revolutionize_scientifi/review]] — 기존 동료검증 시스템의 한계를 실증적으로 보여주는 연구로 AI 기반 펀딩 시스템의 필요성을 뒷받침한다.
+- ⚖️ 반론/비판: [[papers/1192_Large_language_models_and_responsible_research_evaluation_an/review]] — 동료 평가 패널의 선택 편향 문제와 LLM 기반 평가의 책임성 원칙을 대조하여 각 방법의 한계와 장점을 분석할 수 있다.

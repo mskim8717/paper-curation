@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "누적 우위(Cumulative Advantage) 원리를 수학적으로 모델링하는 일반 이론을 제시하며, 이를 통해 베타 함수(Beta Function)로 표현되는 분포가 서지학적 법칙들(Bradford Law, Lotka Law, Zipf Distribution 등)의 기저를 이룬다는 것을 보여준다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Citation_Metrics_and_Indices"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Citation_Index_Analysis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Price_1976_A General Theory of Bibliometric and Other Cumulative Advantage Processes.pdf"
 ---
@@ -77,7 +77,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Price_1976_A General Theory of Bibliomet
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/990_Networks_of_Scientific_Papers/review]] — 누적 우위 이론이 과학 논문 인용 네트워크의 서지학적 패턴을 설명하는 수학적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 누적 우위 원리를 연구비 배분에서 나타나는 매튜 효과 현상 분석에 적용한다.
-- 🔗 후속 연구: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 누적 우위 과정을 무작위 네트워크에서 scale-free 특성이 출현하는 구체적 메커니즘으로 확장한다.
-- 🧪 응용 사례: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 누적 우위 이론을 과학에서 혁신 인정의 역설적 현상 설명에 적용한다.
+- 🏛 기반 연구: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 누적 우위의 일반 이론은 스케일-프리 네트워크의 선호적 부착 메커니즘에 대한 수학적 모델링의 이론적 토대를 제공한다.
+- 🧪 응용 사례: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 베타 함수로 표현되는 누적 우위 모델은 인용 분포의 보편성을 객관적으로 측정하는 연구의 수학적 기반이 된다.
+- 🔗 후속 연구: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 스케일-프리 네트워크의 선호적 부착 메커니즘은 누적 우위 과정의 일반 이론을 네트워크 성장 맥락으로 구체화한다.

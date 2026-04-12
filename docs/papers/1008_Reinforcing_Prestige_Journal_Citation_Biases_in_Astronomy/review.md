@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "천문학 분야 255,000개 논문을 분석한 결과, 다학제 저널(Nature, Science)이 출판량 대비 9배까지 높은 인용을 받으며, 저널 자체의 명성이 논문의 질과 무관하게 인용 편향을 야기함을 보여줌."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Publishing_and_Incentives"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Publisher_Citation_Bias"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Adibekyan et al._2026_Reinforcing Prestige Journal Citation Biases in Astronomy.pdf"
 ---
@@ -88,10 +88,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Adibekyan et al._2026_Reinforcing Presti
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 학술 출판사의 시장 독점 구조가 저널 명성 기반 인용 편향을 강화하는 구조적 원인을 제공한다.
-- 🔗 후속 연구: [[papers/937_Authorship_titles_and_open_access_as_drivers_of_citation_per/review]] — 제목과 오픈 액세스가 인용에 미치는 영향과 저널 명성 효과를 함께 분석하면 인용 편향의 전체적 메커니즘을 이해할 수 있다.
-- ⚖️ 반론/비판: [[papers/1123_The_misalignment_of_incentives_in_academic_publishing_and_im/review]] — 학술 출판의 인센티브 불일치 문제가 저널 명성 편향을 야기하는 근본적 구조적 원인임을 보여준다.
-- 🧪 응용 사례: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 출판사 독점이 저널 명성 기반 인용 편향을 강화하여 학술 평가의 공정성을 해치는 구체적 메커니즘을 설명한다.
-- 🧪 응용 사례: [[papers/1047_Theory_and_Practice_of_the_g-index/review]] — g-index와 같은 계량지표가 천문학 분야에서 어떻게 저널 인용 편향을 강화하는지 보여준다.
-- 🏛 기반 연구: [[papers/1031_The_Chaperone_Effect_in_Scientific_Publishing/review]] — 저널 명성에 따른 인용 편향과 샤페론 효과가 모두 학술 출판의 네트워크 기반 불평등을 보여주는 상호 보완적 증거다.
-- 🧪 응용 사례: [[papers/1123_The_misalignment_of_incentives_in_academic_publishing_and_im/review]] — 저널 명성 편향이 학술 출판 인센티브 불일치의 구체적 발현 사례로서 대안적 평가 시스템의 필요성을 강조한다.
+- 🏛 기반 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 학술 출판계의 과점 구조는 저널 명성 기반 인용 편향의 구조적 배경을 설명한다.
+- 🧪 응용 사례: [[papers/968_Growth_Rates_of_Modern_Science_Bibliometric_Analysis_Based_o/review]] — 과학 성장률 분석은 저널 인용 편향이 학문 발전에 미치는 영향을 정량화하는 맥락을 제공한다.
+- ⚖️ 반론/비판: [[papers/932_An_empirical_analysis_of_open_access_citation_advantages_in/review]] — 오픈 액세스의 인용 우위는 저널 명성 기반 편향과 반대되는 메커니즘을 보여준다.
+- ⚖️ 반론/비판: [[papers/1031_The_Chaperone_Effect_in_Scientific_Publishing/review]] — 샤페론 효과의 긍정적 측면과 달리 저널 인용 편향의 부정적 영향을 다루어 균형잡힌 시각을 제공합니다.

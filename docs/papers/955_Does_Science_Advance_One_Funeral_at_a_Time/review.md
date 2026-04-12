@@ -10,9 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "저명한 생명과학자의 조기사망이 해당 분야의 활성화에 미치는 영향을 분석한 결과, 별 과학자가 생존할 때는 외부인들이 진입을 회피하지만 사망 후 새로운 방향의 연구가 증가하여 과학 진보가 가속화됨을 보여준다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Career_Trajectories_and_Inequality"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Academic_Career_Trajectories"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Azoulay et al._2019_Does Science Advance One Funeral at a Time.pdf"
 ---
@@ -87,8 +86,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Azoulay et al._2019_Does Science Advance
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 과학 자금지원에서 나타나는 마태효과와 유사하게 저명 과학자의 지위가 해당 분야 연구 진입에 미치는 영향을 확장 분석한다.
-- 🔄 다른 접근: [[papers/1121_Superstar_Extinctionsupsup/review]] — 슈퍼스타 소멸 현상을 다른 관점에서 접근하여 저명 과학자 부재가 학문 발전에 미치는 영향을 비교 분석한다.
-- 🏛 기반 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용 네트워크의 위계적 불평등 구조가 저명 과학자의 영향력과 후속 연구자 진입 패턴을 설명하는 이론적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/1031_The_Chaperone_Effect_in_Scientific_Publishing/review]] — 과학 출판에서의 보호자 효과와 연결되어 저명한 과학자가 후배 연구자들의 진입과 발전에 미치는 복합적인 영향을 이해하는 데 도움을 준다.
-- 🔄 다른 접근: [[papers/1121_Superstar_Extinctionsupsup/review]] — 과학계 거물의 사망이 과학 진보에 미치는 영향을 다루지만 협업 네트워크 구조 변화에 초점을 맞춘 다른 관점을 제시한다.
+- 🔄 다른 접근: [[papers/1121_Superstar_Extinctionsupsup/review]] — 저명 과학자 사망이 분야 활성화에 미치는 영향과 슈퍼스타 소멸 연구는 모두 과학계 엘리트의 존재가 분야 발전에 미치는 영향을 분석한다.
+- 🔗 후속 연구: [[papers/1028_Tenure_and_research_trajectories/review]] — 저명 과학자 사망의 분야 영향 연구는 테뉴어가 연구 궤적에 미치는 영향과 함께 과학자 경력의 구조적 요인들을 종합적으로 이해하게 한다.
+- 🔗 후속 연구: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 과학 발전과 세대 교체의 관계는 과학상 네트워크가 예측하는 경계 확장 과학자들의 등장 패턴과 연결된다.
+- 🔄 다른 접근: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 조기 경력 좌절의 장기 영향과 저명 과학자 사망의 분야 영향은 모두 과학자 경력의 중요한 전환점이 미치는 파급효과를 분석한다.

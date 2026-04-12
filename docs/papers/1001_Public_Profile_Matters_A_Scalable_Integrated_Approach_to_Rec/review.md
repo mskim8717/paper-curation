@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "논문은 인용 추천 시스템에서 인간의 인용 행동 패턴(public profile)을 효율적으로 캡처하는 경량 모듈 Profiler와 적응형 벡터 게이팅을 통해 신뢰도 사전정보와 의미론적 정보를 통합하는 DAVINCI 모델을 제안하며, 현실적인 귀납적(inductive) 평가 설정을 도입하여 새로운 최첨단 성능을 달성한다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "sub/Citation_and_Bibliometric_Analysis"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Research_Evaluation_and_Metrics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Goyal et al._2026_Public Profile Matters A Scalable Integrated Approach to Recommend Citations in the Wild.pdf"
 ---
@@ -85,6 +85,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Goyal et al._2026_Public Profile Matters
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1066_Accelerating_science_with_human-aware_artificial_intelligenc/review]] — 인용 추천에서 인간의 행동 패턴 대신 과학자의 전문성 분포를 AI에 통합하는 다른 접근법을 제시한다.
-- 🧪 응용 사례: [[papers/1073_MOLIERE_Automatic_Biomedical_Hypothesis_Generation_System/review]] — 생물의학 분야에서 자동화된 가설 생성을 통해 인용 추천 시스템의 응용 가능성을 보여준다.
-- 🔄 다른 접근: [[papers/994_Organisational_accounts_engaged_in_scholarly_communication_o/review]] — 연구자 프로필 관리에 대한 통합적 접근법으로 소셜미디어 활동과 다른 관점을 제시한다
+- 🔄 다른 접근: [[papers/1009_Relative_Citation_Ratio_A_New_Metric_That_Uses_Citation_Rate/review]] — 인용 추천 시스템의 성능 평가에 상대 인용 비율(RCR) 메트릭을 활용할 수 있어 DAVINCI 모델의 추천 품질 측정을 개선할 수 있다.
+- 🔗 후속 연구: [[papers/1077_Quantifying_large_language_model_usage_in_scientific_papers/review]] — LLM 사용량 정량화 방법론을 적용하여 AI 기반 인용 추천 시스템의 실제 학술 커뮤니티 영향도를 측정할 수 있다.

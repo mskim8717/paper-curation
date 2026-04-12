@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "도서관 정보학(LIS) 분야에서 개방접근(OA) 논문의 인용 영향력을 실증 분석한 결과, OA가 반드시 인용 이점을 제공하지 않으며 OA 유형, 학문분야, 출판 시기에 따라 조건부로 작용함을 밝혔다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Citation_Metrics_and_Indices"
+  - "cat/Open_Access_Publication_Analytics"
+  - "sub/Citation_Impact_Analysis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lee and Shim_2026_An empirical analysis of open access citation advantages in library and information science.pdf"
 ---
@@ -86,9 +86,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lee and Shim_2026_An empirical analysis 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 도서관정보학 분야의 개방접근 영향 분석을 전세계 개방접근 논문의 광범위한 보급률과 영향력 분석으로 확장한다.
-- 🏛 기반 연구: [[papers/937_Authorship_titles_and_open_access_as_drivers_of_citation_per/review]] — 개방접근이 인용에 미치는 조건부 효과 분석의 방법론적 기반을 제공한다.
-- ⚖️ 반론/비판: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 개방접근의 제한적 효과에 대해 디지털 시대 학술 출판 과점 체제의 구조적 문제를 제시한다.
-- 🔗 후속 연구: [[papers/1123_The_misalignment_of_incentives_in_academic_publishing_and_im/review]] — 개방접근의 한계를 학술 출판에서 인센티브 오정렬과 영향력 측정 문제로 확장한다.
-- 🔗 후속 연구: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 오픈액세스의 인용 우위 효과에 대한 초기 실증 연구를 더 대규모 데이터로 확장하여 검증한다.
-- 🔗 후속 연구: [[papers/944_Co-Citation_Analysis_Bibliographic_Coupling_and_Direct_Citat/review]] — 오픈 액세스의 인용 우위를 분석하여 다양한 인용 기반 방법들이 연구 최전선을 표현하는 정확도에 미치는 영향을 확장 분석한다.
+- ⚖️ 반론/비판: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 일반적으로 관찰되는 OA 인용 우위 효과가 특정 학문 분야에서는 조건부로만 나타난다는 상반된 결과를 보여준다.
+- 🏛 기반 연구: [[papers/937_Authorship_titles_and_open_access_as_drivers_of_citation_per/review]] — 저자, 제목, 오픈액세스가 인용 성과에 미치는 복합적 영향에 대한 이론적 기반을 제공한다.
+- ⚖️ 반론/비판: [[papers/1008_Reinforcing_Prestige_Journal_Citation_Biases_in_Astronomy/review]] — 오픈 액세스의 인용 우위는 저널 명성 기반 편향과 반대되는 메커니즘을 보여준다.
+- ⚖️ 반론/비판: [[papers/1044_The_State_of_OA_A_Large-Scale_Analysis_of_the_Prevalence_and/review]] — 일반적인 OA 인용 우위 효과와 도서관정보학 분야에서 조건부로만 나타나는 OA 효과 간의 차이점을 비교할 수 있다.
+- 🧪 응용 사례: [[papers/1123_The_misalignment_of_incentives_in_academic_publishing_and_im/review]] — 오픈 액세스의 인용 이점을 실증적으로 분석하여 대안적 출판 모델의 효과를 구체적으로 보여준다.
+- 🏛 기반 연구: [[papers/1140_Assessing_the_impact_of_Open_Research_Information_Infrastruc/review]] — 오픈액세스의 인용 우위 효과에 대한 기본적인 실증적 근거를 제공합니다.

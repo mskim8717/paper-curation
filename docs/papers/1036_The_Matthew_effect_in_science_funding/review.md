@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.5
 essence: "본 연구는 네덜란드 과학 펀딩 데이터를 분석하여 초기 펀딩 성공이 이후 펀딩 획득 확률을 2.5배 이상 증가시키는 Matthew effect를 실증적으로 검증했다. 흥미롭게도 이러한 펀딩 격차는 부분적으로 초기 실패자들의 재신청 포기에 의해 발생하는 '참여 메커니즘'에 의해 주도된다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Publishing_and_Incentives"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholarly_Impact_Metrics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bol et al._2018_The Matthew effect in science funding.pdf"
 ---
@@ -84,16 +84,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bol et al._2018_The Matthew effect in sc
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 초기 펀딩 실패가 경력에 미치는 장기적 영향을 Matthew effect의 메커니즘으로 설명할 수 있다.
-- 🔄 다른 접근: [[papers/1012_Rethink_Funding_by_Putting_the_Lottery_First/review]] — 편향된 동료평가 시스템의 대안으로 추첨 방식을 제안하여 Matthew effect를 완화할 수 있는 방법을 제시한다.
-- 🏛 기반 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 펀딩과 연구 성과의 시각화를 통해 Matthew effect의 메커니즘을 더 명확히 이해할 수 있다.
-- ⚖️ 반론/비판: [[papers/1069_Breaking_the_gatekeepers_how_AI_will_revolutionize_scientifi/review]] — 기존 펀딩 시스템의 매튜 효과를 AI가 혁신적으로 해결할 수 있다는 낙관적 전망을 제시한다.
-- ⚖️ 반론/비판: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 매튜 효과에 의한 펀딩 불평등이 공적 자금의 공공 필요 부합도에 미치는 왜곡 효과를 검토할 필요가 있다.
-- 🔄 다른 접근: [[papers/1012_Rethink_Funding_by_Putting_the_Lottery_First/review]] — Matthew effect로 인한 펀딩 불평등을 해결하기 위한 구체적인 추첨 기반 대안 시스템을 제안한다.
-- 🏛 기반 연구: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 펀딩 데이터의 체계적 구축이 과학 펀딩에서의 매튜 효과 분석을 가능하게 하는 필수 기반이다.
-- 🔗 후속 연구: [[papers/996_Partisan_disparities_in_the_funding_of_science_in_the_United/review]] — 과학 자금 지원에서 정당별 차이와 함께 Matthew 효과라는 또 다른 불평등 메커니즘을 분석한다.
-- 🔄 다른 접근: [[papers/1031_The_Chaperone_Effect_in_Scientific_Publishing/review]] — 과학 출판과 연구비 지원에서 각각 나타나는 서로 다른 형태의 매튜 효과를 비교 분석할 수 있다.
-- 🔗 후속 연구: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 동료평가가 실제 성과를 예측하지 못하는 현상이 매튜 효과로 인한 명성 기반 선택 때문임을 보여줌
-- 🔗 후속 연구: [[papers/955_Does_Science_Advance_One_Funeral_at_a_Time/review]] — 과학 자금지원에서 나타나는 마태효과와 유사하게 저명 과학자의 지위가 해당 분야 연구 진입에 미치는 영향을 확장 분석한다.
-- 🧪 응용 사례: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — h-index와 같은 계량지표가 연구비 배분에서 어떻게 기존 우위를 강화하는지 보여준다.
-- 🧪 응용 사례: [[papers/928_A_General_Theory_of_Bibliometric_and_Other_Cumulative_Advant/review]] — 누적 우위 원리를 연구비 배분에서 나타나는 매튜 효과 현상 분석에 적용한다.
+- 🔗 후속 연구: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 연구비 배분에서 명성 vs 아이디어의 효과를 비교하여 Matthew effect의 메커니즘을 더 깊이 이해할 수 있다.
+- 🔄 다른 접근: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 과학상 네트워크는 연구비와 다른 경로로 과학계 엘리트 형성과 Matthew effect를 보여준다.
+- 🏛 기반 연구: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 교수 채용의 체계적 불평등 구조는 연구비 Matthew effect의 근본적 배경을 제공한다.
+- 🏛 기반 연구: [[papers/1012_Rethink_Funding_by_Putting_the_Lottery_First/review]] — 과학 자금 지원에서 나타나는 매튜 효과 문제를 해결하기 위한 추첨 시스템의 이론적 근거를 제공한다.
+- 🔄 다른 접근: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 과학상 네트워크는 연구비 Matthew effect와 다른 경로로 과학계 엘리트 형성 메커니즘을 보여준다.
+- ⚖️ 반론/비판: [[papers/1069_Breaking_the_gatekeepers_how_AI_will_revolutionize_scientifi/review]] — 기존 펀딩 시스템의 Matthew effect를 분석하여 AI 혁신이 해결해야 할 구조적 불평등을 구체적으로 보여준다.
+- ⚖️ 반론/비판: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 동료평가 점수의 연구 성과 예측력 검증과 과학 펀딩의 매튜 효과는 모두 펀딩 시스템의 공정성에 대해 상반된 관점을 제시한다.
+- 🏛 기반 연구: [[papers/966_Global_citation_inequality_is_on_the_rise/review]] — 매튜 효과가 인용 불평등 심화의 근본적 메커니즘으로 작용하여 상위 1% 과학자의 인용 독점을 설명함
+- 🔗 후속 연구: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 글로벌 펀딩 데이터와 매튜 효과 분석을 결합하여 연구 자금 배분의 불평등 구조를 체계적으로 파악할 수 있음
+- 🏛 기반 연구: [[papers/1204_Rethinking_Research_Evaluation_in_India_Is_the_Ecosystem_Rea/review]] — 과학 펀딩에서 Matthew effect를 분석한 연구로 인도 연구 평가 체계의 불평등 구조와 개혁 필요성을 뒷받침한다.

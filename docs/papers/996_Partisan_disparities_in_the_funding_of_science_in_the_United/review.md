@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "1980년부터 2020년까지 미국 연방정부의 과학 기금 배분을 분석한 결과, 공화당 의원들이 민주당보다 과학에 더 많은 자금을 지속적으로 제공했음을 보여준다. 이는 정당 간 과학 투자의 중요성을 강조한다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "sub/Science_Policy_and_Impact"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Science_Policy_Funding"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Furnas et al._2025_Partisan disparities in the funding of science in the United States.pdf"
 ---
@@ -78,9 +78,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Furnas et al._2025_Partisan disparities 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 과학 연구의 공적 자금 지원과 활용에 대한 기본적인 이해를 제공하여 정당별 자금 배분 분석의 이론적 토대가 된다.
-- 🔄 다른 접근: [[papers/945_Coevolution_of_policy_and_science_during_the_pandemic/review]] — 팬데믹 기간 동안 정책과 과학의 공진화를 분석하여 정치적 맥락에서 과학 정책의 동태적 변화를 보여준다.
-- 🔗 후속 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 과학 자금 지원에서 정당별 차이와 함께 Matthew 효과라는 또 다른 불평등 메커니즘을 분석한다.
-- 🧪 응용 사례: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 정당별 과학 자금 배분 분석을 통해 과학 연구의 광범위한 영향을 시각화하고 평가하는 방법론을 적용한다.
-- 🏛 기반 연구: [[papers/1006_Real-World_Evidence_in_the_First_Round_of_the_US_Inflation_R/review]] — 정책 결정에서 과학적 증거의 활용 양상을 이해하는 기초적 맥락을 제공한다.
-- 🧪 응용 사례: [[papers/980_Linking_Global_Science_Funding_to_Research_Publications/review]] — 미국 과학 펀딩의 정치적 양극화 현상을 글로벌 펀딩 데이터로 확장 분석할 수 있는 토대를 제공한다.
+- 🏛 기반 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 과학의 공적 사용과 공적 자금 지원 관계가 정당별 과학 투자 패턴 분석의 이론적 배경을 제공함
+- 🔗 후속 연구: [[papers/945_Coevolution_of_policy_and_science_during_the_pandemic/review]] — 팬데믹 시기 정책과 과학의 공진화와 정당별 과학 투자 패턴을 연결하여 정치적 맥락을 이해할 수 있음
+- 🧪 응용 사례: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 주제별 연구 자금과 성과 매핑을 통해 정당별 투자 우선순위의 실제 효과를 분석할 수 있음
+- 🔗 후속 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 공적 자금 배분의 정치적 편향을 분석하여 과학의 공공 활용 연구를 보완한다.
+- 🔗 후속 연구: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — NIH 그랜트 동료평가 효과성 연구는 미국 과학 펀딩의 정치적 편향 분석과 함께 펀딩 시스템의 편향성을 종합적으로 검토한다.

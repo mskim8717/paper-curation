@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "학술지의 시간변화 임베딩(diachronic embedding)을 개발하여 과학 구조의 진화를 추적하고, 물리-생명-보건 삼각형 매핑을 통해 학제간 과학 경관의 변화를 정량화한다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Temporal_and_Longitudinal_Analysis"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Thematic_Network_Detection"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lyu and Ke_2025_Mapping the changing structure of science through diachronic periodical embeddings.pdf"
 ---
@@ -83,10 +83,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lyu and Ke_2025_Mapping the changing str
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/989_Modeling_Changing_Scientific_Concepts_with_Complex_Networks/review]] — 복잡 네트워크를 통한 과학 개념 모델링과 저널 임베딩을 통한 과학 구조 추적이라는 서로 다른 시간적 분석 접근법이다.
-- 🏛 기반 연구: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 과학 매핑에서 주제 진화 추적의 통합적 접근법이 시간변화 학술지 분석의 이론적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — 연구 분야 지식 조직 시스템에 대한 체계적 조사가 과학 구조 진화 추적의 분류학적 기반이 된다.
-- 🧪 응용 사례: [[papers/952_Design_and_Update_of_a_Classification_System_The_UCSD_Map_of/review]] — 통시적 복합 네트워크를 통한 과학 구조 변화 매핑에 UCSD 맵의 업데이트된 분류 체계가 시간적 변화 추적의 기준점을 제공한다.
-- 🔗 후속 연구: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 과학 구조의 통시적 변화 분석을 통합된 네트워크 프레임워크로 확장하여 더욱 정교한 분석을 가능하게 한다.
-- 🔄 다른 접근: [[papers/989_Modeling_Changing_Scientific_Concepts_with_Complex_Networks/review]] — 과학 구조의 통시적 변화를 LLM 임베딩 대신 복잡 네트워크로 분석하는 해석 가능한 대안적 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/1120_SciEvo_A_2_Million_30-Year_Cross-disciplinary_Dataset_for_Te/review]] — arXiv 기반 학문 진화 분석을 더 넓은 시계열에서 과학 구조의 통시적 변화 매핑으로 확장한다.
+- 🏛 기반 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 연구자의 인식론적 위치 규명 연구에 학술지 시간변화 임베딩을 통한 과학 구조 진화 추적 방법론을 제공한다.
+- 🔄 다른 접근: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 궤적의 비지도 임베딩과 학술지의 시간변화 임베딩이 과학적 변화 포착에서 서로 다른 관점을 제공한다.
+- 🔗 후속 연구: [[papers/1017_Science_as_exploration_in_a_knowledge_landscape_tracing_hots/review]] — 지식 경관에서 핫스팟 추적 연구를 학술지 임베딩을 통한 물리-생명-보건 삼각형의 동적 변화 분석으로 확장한다.
+- 🔗 후속 연구: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 과학 구조의 시간적 변화 매핑은 주제 진화 분석의 이론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 학술지의 시간변화 임베딩 연구를 개별 연구자의 인식론적 위치 변화 추적으로 확장하여 동적 학문 지형을 구축할 수 있다.

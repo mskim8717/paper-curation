@@ -9,8 +9,8 @@ arxiv: ""
 score: 3.0
 essence: "2010-2020년 Web of Science 데이터를 기반으로 인도의 고분자 과학(Polymer Science) 연구 생산성을 scientometrics 분석한 연구로, 인도가 2010년 4위에서 2020년 2위로 급상승했음을 밝혔다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Bibliometrics_and_Science_Mapping"
+  - "cat/Open_Access_Publication_Analytics"
+  - "sub/Bibliometric_Measurement_Methods"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mete and Wagh_2026_Polymer Science Research in India A Scientometrics Study.pdf"
 ---
@@ -78,7 +78,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mete and Wagh_2026_Polymer Science Resea
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 과학 공동체를 대규모로 매핑하는 일반적 방법론을 제공한다
-- 🔄 다른 접근: [[papers/1067_After_science/review]] — 인도 고분자 과학의 성장과 대비되는 과학 이후 시대의 관점을 제시한다
-- 🔗 후속 연구: [[papers/1110_A_cross-disciplinary_research_framework_at_institution_level/review]] — 기관 수준의 학제간 연구 프레임워크로 국가별 연구 분석을 확장한다
-- 🧪 응용 사례: [[papers/949_Comparative_science_mapping_a_novel_conceptual_structure_ana/review]] — 비교 과학 매핑 기법을 인도 폴리머 과학 연구의 scientometric 분석에 적용한다.
+- 🧪 응용 사례: [[papers/1014_Risk_and_Artificial_Intelligence_Adoption_A_Scientometric_an/review]] — scientometrics 방법론을 위험과 AI 분야 연구 분석에 적용한 사례와 고분자 과학 분야 적용 사례 간의 방법론적 유사성을 보여준다.
+- 🏛 기반 연구: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 국가별 과학 협력 관계 변화 분석이 인도의 고분자 과학 연구 성장을 국제적 맥락에서 이해하는 기반을 제공한다.
+- 🔄 다른 접근: [[papers/1184_Hamemayu_Hayuning_Nagara_A_Bibliometric_Analysis_of_the_Poli/review]] — 인도 폴리머 과학 연구의 scientometric 분석과 유사한 지역적 접근법으로 VAT 정책 연구의 비교 맥락을 제공한다.
+- 🏛 기반 연구: [[papers/1134_A_scientometrics_survey_of_machine_learning_and_neural_netwo/review]] — 인도의 폴리머 과학 연구 과학계량학 분석 방법론을 심혈관질환 머신러닝 연구의 지역별 비교 분석에 적용할 수 있다.

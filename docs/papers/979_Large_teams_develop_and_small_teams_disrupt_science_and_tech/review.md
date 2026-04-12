@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "65백만 개 이상의 논문, 특허, 소프트웨어 제품 분석을 통해 소규모 팀은 과학기술을 혁신(disrupt)하고 대규모 팀은 기존 아이디어를 발전(develop)시킨다는 것을 입증했다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Collaboration_and_Team_Effects"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Science_of_Science_Analysis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2019_Large teams develop and small teams disrupt science and technology.pdf"
 ---
@@ -85,15 +85,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2019_Large teams develop and s
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/977_Introducing_multiverse_analysis_to_bibliometrics_The_case_of/review]] — 팀 규모-파괴성 관계의 견고성에 대한 의문을 다중우주분석을 통해 체계적으로 검증받음
-- 🔗 후속 연구: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 파괴적 논문의 기술-사회 영향력을 팀 규모별로 분석하여 혁신의 다층적 효과 이해 가능
-- 🏛 기반 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 논문과 특허의 파괴성 감소 현상을 팀 규모 변화와 연결하여 과학 발전의 구조적 변화 설명
-- 🔗 후속 연구: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 과학 협력 네트워크에서 팀 크기가 연구 성과에 미치는 영향을 우선적 부착 메커니즘과 연결하여 분석한다.
-- 🔗 후속 연구: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 협력 네트워크의 소규모 세계 특성을 팀 크기가 과학적 발견과 혁신에 미치는 차별적 영향으로 확장한다.
-- 🔗 후속 연구: [[papers/1010_Remote_collaboration_fuses_fewer_breakthrough_ideas/review]] — 대규모 팀과 소규모 팀의 혁신 패턴 차이가 원격 협업에서 더욱 두드러지게 나타나는 현상을 설명할 수 있다.
-- 🔗 후속 연구: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 대형 팀이 과학기술을 발전시키고 소형 팀이 파괴적 혁신을 일으킨다는 연구와 연결하여 학제간 연구에서 팀 크기와 펀딩 방식의 상호작용을 이해한다.
-- 🏛 기반 연구: [[papers/977_Introducing_multiverse_analysis_to_bibliometrics_The_case_of/review]] — 다중우주분석을 통해 팀 규모-혁신성 관계의 견고성을 검증하고 원 연구의 한계 보완
-- 🏛 기반 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 대규모 팀과 소규모 팀의 서로 다른 역할이 혁신성 변화의 기초적 메커니즘을 설명한다
-- 🧪 응용 사례: [[papers/1030_The_Burden_of_Knowledge_and_the_Death_of_the_Renaissance_Man/review]] — 지식 부담 이론이 대규모 팀과 소규모 팀의 서로 다른 혁신 패턴을 설명하는 구체적 사례를 제공한다.
-- 🔗 후속 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 팀 기반 연구의 우세와 함께 대형 팀과 소형 팀이 각각 다른 유형의 과학적 기여를 한다는 세분화된 분석을 제공한다.
-- 🔗 후속 연구: [[papers/999_Principles_of_Scientific_Research_Team_Formation_and_Evoluti/review]] — 대규모팀과 소규모팀의 지식 생산 방식 차이와 연구팀 형성 진화 원리가 상호 보완적인 팀 과학 연구이다.
+- 🔗 후속 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 팀 규모와 혁신의 관계를 과학기술 논문의 파괴성 감소 현상과 연결하여 현대 연구 생태계의 변화를 종합적으로 이해할 수 있다.
+- 🏛 기반 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비정형적 조합과 과학적 영향력 연구가 소규모 팀의 혁신 메커니즘을 설명하는 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — 협력 가이드포스트를 통한 팀 사이언스 메트릭 재고찰을 팀 규모별 연구 성과 평가 방법 개선에 적용할 수 있다.
+- 🔗 후속 연구: [[papers/1030_The_Burden_of_Knowledge_and_the_Death_of_the_Renaissance_Man/review]] — 지식 부담으로 인한 전문화를 대규모 팀의 개발과 소규모 팀의 파괴적 혁신으로 발전시킨다.
+- 🔗 후속 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 팀 기반 지식 생산의 지배를 대규모 팀과 소규모 팀의 서로 다른 역할로 세분화하여 분석한다.
+- 🔗 후속 연구: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 대형 팀의 개발적 성격과 혁신성 감소 현상이 모두 현대 과학의 점진적 발전 경향을 설명함
+- 🔄 다른 접근: [[papers/999_Principles_of_Scientific_Research_Team_Formation_and_Evoluti/review]] — 소규모 핵심팀과 대규모 확장팀의 서로 다른 역할이 팀 크기에 따른 혁신성 차이를 설명함
+- 🔗 후속 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합의 과학적 영향 연구는 대형 팀과 소형 팀이 각각 개발과 파괴적 혁신에 미치는 영향을 조합 관점에서 확장한다.
+- 🏛 기반 연구: [[papers/977_Introducing_multiverse_analysis_to_bibliometrics_The_case_of/review]] — 대규모 팀의 개발과 소규모 팀의 파괴 이론을 다중우주 분석으로 재검증하여 팀 규모 효과의 견고성을 평가한다.
+- 🏛 기반 연구: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — 대규모 팀과 소규모 팀의 서로 다른 역할은 팀 과학 평가에서 고려해야 할 기본 원리를 제공한다.

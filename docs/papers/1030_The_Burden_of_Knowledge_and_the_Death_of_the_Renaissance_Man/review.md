@@ -8,9 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "기술 진보에 따른 지식 축적이 혁신자들의 교육 부담을 증가시키며, 이로 인해 전문화와 팀 작업이 증가하는 '지식 부담 메커니즘(knowledge burden mechanism)'을 이론과 실증으로 분석한 연구이다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Career_Trajectories_and_Inequality"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Interdisciplinary_Research_Collaboration"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jones_2009_The Burden of Knowledge and the “Death of the Renaissance Man” Is Innovation Getting Harder.pdf"
 ---
@@ -83,8 +82,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jones_2009_The Burden of Knowledge and t
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 지식 부담 증가로 인한 개인 연구의 한계가 팀 기반 연구의 우세로 이어지는 메커니즘을 연결하여 설명한다.
-- 🧪 응용 사례: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 지식 부담 이론이 대규모 팀과 소규모 팀의 서로 다른 혁신 패턴을 설명하는 구체적 사례를 제공한다.
-- 🧪 응용 사례: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비정형적 조합이 과학적 영향에 미치는 효과를 통해 전문화 심화 속에서도 혁신을 창출하는 메커니즘을 구체적으로 보여준다.
-- 🔗 후속 연구: [[papers/968_Growth_Rates_of_Modern_Science_Bibliometric_Analysis_Based_o/review]] — 과학 성장률 변화가 지식 축적 부담과 르네상스맨 소멸이라는 구조적 문제로 이어지는 연결고리를 보여준다.
-- 🏛 기반 연구: [[papers/973_Impacts_of_inter-institutional_mobility_on_scientific_perfor/review]] — 학술-산업 이동이 지식 부담 증가 시대에 연구자 전문성 확장의 대안적 경로가 될 수 있음
+- 🏛 기반 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 지식 부담 증가로 인한 팀워크 필요성을 팀 기반 지식 생산 지배라는 실증적 현상으로 뒷받침한다.
+- 🔗 후속 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 지식 부담으로 인한 전문화를 대규모 팀의 개발과 소규모 팀의 파괴적 혁신으로 발전시킨다.
+- 🔄 다른 접근: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 지식 부담 관점에서 비전형적 조합이 과학적 영향력에 미치는 효과를 다르게 해석한다.
+- 🧪 응용 사례: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 지식 부담 증가로 인한 팀워크 필요성이라는 이론을 실제 지식 생산에서 팀 지배 현상으로 입증한다.
+- 🏛 기반 연구: [[papers/1037_The_Misleading_Narrative_of_the_Canonical_Faculty_Productivi/review]] — 지식 부담의 증가는 표준적 생산성 궤적이 더 이상 적용되지 않는 구조적 변화를 설명한다.
+- 🏛 기반 연구: [[papers/968_Growth_Rates_of_Modern_Science_Bibliometric_Analysis_Based_o/review]] — 과학 지식의 급속한 성장이 개별 연구자의 지식 부담 증가와 어떻게 연결되는지에 대한 역사적 맥락을 제공한다.

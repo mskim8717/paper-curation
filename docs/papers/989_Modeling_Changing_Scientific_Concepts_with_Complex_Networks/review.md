@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "LLM의 맥락 임베딩 대신 복잡 네트워크 기반 프레임워크를 사용하여 과학 개념의 시간적 변화를 해석 가능하게 모델링하며, 화학혁명의 플로지스톤(phlogiston) vs 산소(oxygen) 이론 경쟁 사례를 통해 개념 변화가 엔트로피(entropy)와 위상 밀도(topological density) 증가와 연관됨을 입증한다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "sub/Knowledge_Graphs_and_Semantic_Mapping"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Mathematical_Topology_Indexing"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Aguilar-Valdez and Degaetano-Ortlieb_2026_Modeling Changing Scientific Concepts with Complex Networks A Case Study on the Chemical Revolution.pdf"
 ---
@@ -85,8 +85,7 @@ LLM의 맥락 임베딩 대신 복잡 네트워크 기반 프레임워크를 사
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1068_Artificial_intelligence_and_illusions_of_understanding_in_sc/review]] — 과학에서 이해의 착각을 다루어 과학 개념 변화의 해석 가능한 모델링이 중요한 이유의 인지적 배경을 제공한다.
-- 🔄 다른 접근: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 과학 구조의 통시적 변화를 LLM 임베딩 대신 복잡 네트워크로 분석하는 해석 가능한 대안적 접근법을 제시한다.
-- 🧪 응용 사례: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — Price-Pareto 모델을 과학 개념의 변화하는 복잡 네트워크 모델링에 적용한다.
-- 🔄 다른 접근: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 복잡 네트워크를 통한 과학 개념 모델링과 저널 임베딩을 통한 과학 구조 추적이라는 서로 다른 시간적 분석 접근법이다.
-- 🧪 응용 사례: [[papers/929_A_network_approach_to_topic_models/review]] — 문서-단어 이분 네트워크 접근법을 과학 개념 변화의 복잡 네트워크 모델링에 적용한다.
+- ⚖️ 반론/비판: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — 대규모 언어 모델의 과학 발전 지원과 대비하여 복잡 네트워크 기반의 해석 가능한 과학 개념 변화 모델링을 제시한다.
+- 🔗 후속 연구: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 과학 매핑에서 주제 진화 재고찰 연구를 화학혁명 사례의 복잡 네트워크 기반 개념 변화 분석으로 구체화한다.
+- 🏛 기반 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 복잡 네트워크 이론을 바탕으로 플로지스톤과 산소 이론 경쟁에서 과학 개념 변화의 위상학적 특성을 모델링한다.
+- 🏛 기반 연구: [[papers/1213_The_evolution_of_international_scientific_collaboration_netw/review]] — 복잡 네트워크를 통한 과학적 개념 변화 모델링은 과학 개념의 변화 구조를 네트워크로 매핑한 연구의 방법론적 기반을 제공한다.

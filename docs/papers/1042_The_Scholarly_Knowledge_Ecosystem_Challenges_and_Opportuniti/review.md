@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "학술 지식 생태계(Scholarly Knowledge Ecosystem)의 이해, 개선, 거버넌스를 위한 근본적인 과학 연구 과제를 종합적으로 분석하여, 다부문 협력, 혼합 방법론, 학제 간 협업의 필요성을 제시하는 리뷰 논문이다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Scientific_Publishing_and_Incentives"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Science_Policy_Funding"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Altman and Cohen_2022_The Scholarly Knowledge Ecosystem Challenges and Opportunities for the Field of Information.pdf"
 ---
@@ -78,6 +78,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Altman and Cohen_2022_The Scholarly Know
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 학술 출판의 과점 구조가 학술 지식 생태계의 거버넌스 문제에 미치는 근본적 영향을 이해하는 기반을 제공한다.
-- 🧪 응용 사례: [[papers/942_Bridging_the_gap_between_science_and_society_Mapping_librari/review]] — 과학과 사회 간 격차 해소를 위한 도서관의 역할을 통해 학술 지식 생태계 개선의 구체적 실행 방안을 제시한다.
-- 🧪 응용 사례: [[papers/954_Do_novel_papers_attract_more_social_attention/review]] — 학술 지식 생태계의 변화 속에서 혁신적 연구가 받는 사회적 관심의 패턴을 실증적으로 적용 분석한다.
+- 🔗 후속 연구: [[papers/1019_Science_of_science/review]] — 과학의 과학 연구 분야를 학술 지식 생태계 전반의 거버넌스 문제로 확장하여 접근한다.
+- 🧪 응용 사례: [[papers/1023_SciSciNet_A_large-scale_open_data_lake_for_the_science_of_sc/review]] — 학술 지식 생태계 개선을 위한 이론적 틀을 대규모 데이터 인프라로 구현하는 방안을 제시한다.
+- 🏛 기반 연구: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 디지털 시대 학술 출판의 과점 구조를 학술 지식 생태계의 핵심 도전과제로 분석한다.

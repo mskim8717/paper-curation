@@ -9,9 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "대규모 생의학 문헌(2004-2008, 215만 개 논문)을 이용하여 공인용분석(co-citation analysis), 서지적 결합(bibliographic coupling), 직접 인용(direct citation), 그리고 하이브리드 접근법의 4가지 유사성 기반 방법이 연구 최전선을 얼마나 정확하게 표현하는지 비교 평가했다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "cat/Scientific_Information_Systems"
-  - "sub/Citation_Metrics_and_Indices"
+  - "cat/Computational_Bibliometric_Analysis"
+  - "sub/Citation_Analysis_Methods"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Boyack and Klavans_2010_Co‐citation analysis, bibliographic coupling, and direct citation Which citation approach represent.pdf"
 ---
@@ -77,11 +76,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Boyack and Klavans_2010_Co‐citation an
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 서지학적 유사성 방법론을 주제 수준에서 연구 분야의 지리적 위치 매핑에 적용한다.
-- 🏛 기반 연구: [[papers/969_Hierarchical_Classification_of_Research_Fields_in_the_Web_of/review]] — 서지학적 유사성 기반 연구 최전선 표현이 Web of Science 기반 연구 분야 계층적 분류의 방법론적 기반이 된다.
-- 🧪 응용 사례: [[papers/978_Introducing_the_open_biomedical_map_of_science/review]] — 생의학 분야의 서지학적 결합 분석을 생의학 과학 지도의 개방형 구축에 적용한다.
-- 🏛 기반 연구: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 공인용분석과 서지결합의 비교 평가가 과학 매핑의 다양한 접근법 이해의 기반이 된다.
-- 🔗 후속 연구: [[papers/932_An_empirical_analysis_of_open_access_citation_advantages_in/review]] — 오픈 액세스의 인용 우위를 분석하여 다양한 인용 기반 방법들이 연구 최전선을 표현하는 정확도에 미치는 영향을 확장 분석한다.
-- 🧪 응용 사례: [[papers/1053_Visualizing_the_context_of_citations_referencing_papers_publ/review]] — 논문 발표 후 인용 맥락을 시각화하여 직접 인용과 공인용 분석의 실제적 차이를 구체적으로 보여준다.
-- 🔗 후속 연구: [[papers/1053_Visualizing_the_context_of_citations_referencing_papers_publ/review]] — 전통적인 공인용분석과 서지결합을 인용 맥락 기반 네트워크 분석으로 확장한다.
-- 🔄 다른 접근: [[papers/990_Networks_of_Scientific_Papers/review]] — 동시인용, 서지결합, 직접인용이라는 세 가지 인용 기반 분석법이 초기 인용 네트워크 연구의 방법론적 확장이다.
+- 🔗 후속 연구: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 기존 유사성 기반 방법들의 비교 평가 결과를 바탕으로 주제 진화 분석의 통합적 접근법을 개발할 수 있음
+- 🏛 기반 연구: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 다양한 인용 분석 방법의 효과성 평가를 위해 과학 매핑의 이론적 기반과 실용적 지침이 필요함
+- 🏛 기반 연구: [[papers/1056_Where_Do_Your_Citations_Come_From_Citation-Constellation_A_F/review]] — 공동인용 분석과 서지결합의 기본 원리는 인용 네트워크 경로 분석의 이론적 기반을 제공한다.

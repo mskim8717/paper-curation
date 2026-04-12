@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "3,000개 이상의 과학상(Scientific Prize)과 10,455명의 수상자 데이터를 분석하여 과학상 네트워크(Prize Network)가 과학의 경계를 확장하는 과학자들을 예측할 수 있음을 보여준다. 과학상의 집중도 증가와 학제 간 연결성이 과학의 엘리트 계층화와 지식 전파 경로를 드러낸다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Research_Evaluation_and_Impact"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scientific_Prize_Networks"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ma and Uzzi_2018_Scientific prize network predicts who pushes the boundaries of science.pdf"
 ---
@@ -83,7 +83,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ma and Uzzi_2018_Scientific prize networ
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 동료평가에서 명성과 아이디어 중 어느 것이 더 중요한지에 대한 상반된 관점을 제시하여 과학상 예측력의 한계를 보여준다.
-- 🔗 후속 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 과학에서 혁신의 인정 역설을 통해 과학상 네트워크가 진정한 혁신을 얼마나 잘 포착하는지 비판적으로 검토할 수 있다.
-- 🏛 기반 연구: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 과학상 수상자 네트워크 분석을 통한 혁신 예측 연구가 고임팩트 연구 예측의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1056_Where_Do_Your_Citations_Come_From_Citation-Constellation_A_F/review]] — 인용 네트워크 분석을 과학상 네트워크가 과학 경계 확장 예측에 미치는 영향으로 확장한다.
+- 🔄 다른 접근: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 과학상 네트워크는 연구비 Matthew effect와 다른 경로로 과학계 엘리트 형성 메커니즘을 보여준다.
+- 🔗 후속 연구: [[papers/955_Does_Science_Advance_One_Funeral_at_a_Time/review]] — 과학 발전과 세대 교체의 관계는 과학상 네트워크가 예측하는 경계 확장 과학자들의 등장 패턴과 연결된다.
+- 🧪 응용 사례: [[papers/1121_Superstar_Extinctionsupsup/review]] — 슈퍼스타 소멸 현상은 과학상 네트워크에서 관찰되는 엘리트 집중화의 장기적 결과를 보여준다.
+- 🔄 다른 접근: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 과학상 네트워크는 연구비와 다른 경로로 과학계 엘리트 형성과 Matthew effect를 보여준다.
+- 🔗 후속 연구: [[papers/927_A_Dynamic_Network_Measure_of_Technological_Change/review]] — 기술 변화의 동적 측정 방법론은 과학적 경계를 확장하는 연구자 예측에 대한 네트워크 기반 접근법의 기술적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/1052_Updated_science-wide_author_databases_of_standardized_citati/review]] — 표준화된 인용 지표를 활용하여 과학 분야의 경계를 확장하는 연구자들을 예측하는 데 활용한다.
+- 🔗 후속 연구: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — 고영향력 연구 주제 예측 모델에 과학상 네트워크 분석을 결합하여 혁신적 연구의 조기 식별이 가능함

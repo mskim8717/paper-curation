@@ -9,9 +9,8 @@ arxiv: ""
 score: 5.0
 essence: "규칙적 네트워크와 무작위 네트워크 사이의 중간 영역에 위치한 '소규모 세계(small-world)' 네트워크를 제안하며, 이러한 네트워크가 높은 군집화와 짧은 경로 길이를 동시에 가지는 특성을 규명했다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "cat/Scientific_Information_Systems"
-  - "sub/Network_Structure_and_Detection"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Network_Community_Detection"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Watts and Strogatz_1998_Collective dynamics of ‘small-world’ networks.pdf"
 ---
@@ -85,10 +84,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Watts and Strogatz_1998_Collective dynam
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 소규모 세계 네트워크 이론을 실제 과학자 협력 네트워크에 적용하여 과학 커뮤니티의 구조적 특성을 규명한다.
-- 🏛 기반 연구: [[papers/948_Community_Detection_in_Graphs/review]] — 소규모 세계 네트워크의 커뮤니티 구조를 탐지하고 분석하기 위한 다양한 알고리즘적 접근법을 제공한다.
-- 🔗 후속 연구: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 소규모 세계 특성을 가진 네트워크에서 커뮤니티별 이질적 성장 dynamics를 모델링하는 확장된 프레임워크를 제안한다.
-- 🧪 응용 사례: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 소규모 세계 이론을 과학 협력 네트워크의 시간적 진화 패턴 분석에 적용한다.
-- 🔗 후속 연구: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 소규모 세계 네트워크의 커뮤니티 구조를 효율적으로 탐지하는 알고리즘적 접근법을 제공한다.
-- 🔄 다른 접근: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 작은 세계 네트워크와 스케일-프리 네트워크는 모두 실제 네트워크의 비자명한 위상 구조를 설명하는 대표적인 이론 모델이다.
-- 🏛 기반 연구: [[papers/990_Networks_of_Scientific_Papers/review]] — 과학논문 인용 네트워크의 small-world 특성을 이해하기 위해 네트워크의 기본 구조적 특성을 제공한다.
+- 🧪 응용 사례: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 소규모 세계 네트워크 이론을 과학자 협력 네트워크의 실제 구조 분석에 적용한다.
+- 🔗 후속 연구: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 소규모 세계 특성을 가진 네트워크에서 커뮤니티 구조를 모델링하는 확장된 접근법을 제시한다.
+- 🔄 다른 접근: [[papers/961_Fast_Unfolding_of_Communities_in_Large_Networks/review]] — 네트워크의 커뮤니티 구조를 발견하는 다른 알고리즘적 접근방법을 제공한다.
+- 🔗 후속 연구: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 소규모 세계 네트워크 이론을 커뮤니티 구조가 있는 네트워크로 확장한 모델링 접근법이다.
+- 🧪 응용 사례: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 소규모 세계 네트워크 이론을 과학자들의 실제 협력 네트워크 구조 분석에 구체적으로 적용한다.
+- 🏛 기반 연구: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 무작위 네트워크에서의 스케일링 출현은 스몰월드 네트워크의 집합적 역학을 이해하기 위한 네트워크 이론의 기초를 제공한다.
+- 🏛 기반 연구: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 작은 세상 네트워크 이론은 과학 협력 네트워크의 기본적인 수학적 모델을 제공한다.

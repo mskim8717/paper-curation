@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "여성 과학자들은 남성과 달리 학제 간 경계를 넘나드는 혁신 (context novelty)을 더 많이 생산하지만, 과학계의 보상 구조가 이를 과소평가하여 동등한 혁신에도 낮은 저널 게재와 적은 인용을 받는 역설을 실증적으로 보여준다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Research_Evaluation_and_Metrics"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Innovation_Patent_Analysis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Biliotti et al._2026_The Innovation Recognition Paradox How Science Undervalues the Boundary-Crossing Work Women Produce.pdf"
 ---
@@ -90,11 +90,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Biliotti et al._2026_The Innovation Reco
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 다양성-혁신 역설의 구체적 사례로 여성의 학제간 혁신 과소평가 현상을 더 깊이 이해할 수 있는 이론적 틀을 제공한다.
-- 🔗 후속 연구: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 여성의 혁신적 기여 과소평가가 인용 불균형과 저널 게재 차별로 구체적으로 나타나는 다층적 메커니즘을 보여준다.
-- ⚖️ 반론/비판: [[papers/975_Interdisciplinary_papers_supported_by_disciplinary_grants_ga/review]] — 학제간 논문이 학문적 지원을 받으면서 성과를 거두지만 여성의 학제간 혁신은 오히려 과소평가되는 모순적 현상을 드러낸다.
-- 🔗 후속 연구: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 소수집단의 혁신이 과소평가되는 현상이 특히 여성의 학제간 혁신에서 더욱 두드러지게 나타나는 구체적 메커니즘을 보여준다.
-- 🔗 후속 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 여성의 혁신적 기여 과소평가가 업적 인정 부족의 구체적 사례로서 성별 편향의 다면적 메커니즘을 드러낸다.
-- 🔗 후속 연구: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 과학에서 혁신의 인정 역설을 통해 과학상 네트워크가 진정한 혁신을 얼마나 잘 포착하는지 비판적으로 검토할 수 있다.
-- 🔄 다른 접근: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 여성의 학제간 혁신이 과소평가되는 현상과 인용 불균형을 연결하여 성별 편향의 복합적 메커니즘을 이해할 수 있다.
-- 🧪 응용 사례: [[papers/928_A_General_Theory_of_Bibliometric_and_Other_Cumulative_Advant/review]] — 누적 우위 이론을 과학에서 혁신 인정의 역설적 현상 설명에 적용한다.
+- 🧪 응용 사례: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 과학계 소수집단의 혁신 과소평가 현상을 여성 과학자의 학제간 연구 사례로 구체화한다.
+- 🏛 기반 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학에서 여성에 대한 체계적 과소평가를 혁신 인정 역설의 구체적 메커니즘으로 설명한다.
+- 🔗 후속 연구: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합의 과학적 영향을 성별에 따른 인정 차이의 관점에서 재해석한다.
+- 🧪 응용 사례: [[papers/1027_Systemic_Gendered_Citation_Imbalance_in_Computer_Science_Evi/review]] — 여성 과학자의 학제간 혁신이 과소평가되는 현상을 컴퓨터과학 분야의 인용 패턴으로 확인한다.
+- 🔗 후속 연구: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 소수집단의 높은 혁신율이 과소평가되는 현상을 여성 과학자의 학제간 혁신 사례로 구체화한다.
+- 🏛 기반 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학에서 여성에 대한 체계적 과소평가를 여성의 학제간 혁신 인정 역설의 근본 원인으로 설명한다.
+- 🔗 후속 연구: [[papers/942_Bridging_the_gap_between_science_and_society_Mapping_librari/review]] — 과학의 혁신 인식 역설과 도서관의 사회적 영향 중개 전략을 연결하면 과학의 사회적 가치 인식 개선 방안을 찾을 수 있다.
+- ⚖️ 반론/비판: [[papers/954_Do_novel_papers_attract_more_social_attention/review]] — 혁신이 과소평가된다는 관점에서 소셜 미디어 주목도가 진정한 혁신성을 반영하는지 비판적으로 검토해야 한다.

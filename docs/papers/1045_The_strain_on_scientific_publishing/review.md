@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "과학 논문 출판량이 2016년 대비 2022년에 47% 증가했으나 과학자 수는 정체되어 '출판 부담(strain on scientific publishing)'이 심화되고 있으며, 이를 정량적 지표로 분석한 연구이다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Scientific_Publishing_and_Incentives"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Publisher_Citation_Bias"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hanson et al._2024_The strain on scientific publishing.pdf"
 ---
@@ -77,8 +77,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hanson et al._2024_The strain on scienti
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — AI 가속화된 글쓰기가 적절한 기여 없이 출판 부담을 더욱 심화시키는 메커니즘을 구체적으로 분석한다.
-- ⚖️ 반론/비판: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 연구 부정행위가 논문 철회의 주요 원인이라는 점에서 출판량 증가가 질적 문제로 이어질 위험성을 경고한다.
-- 🧪 응용 사례: [[papers/968_Growth_Rates_of_Modern_Science_Bibliometric_Analysis_Based_o/review]] — 과학 출판의 양적 성장이 학술 출판 시스템에 가하는 압박을 실증적으로 분석한다.
-- 🔗 후속 연구: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — 과학 출판의 압박과 AI 가속화된 글쓰기가 결합되어 동료 검증 시스템에 미치는 복합적 부담을 분석할 수 있다.
-- 🏛 기반 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 학술 출판의 압박이 연구 부정행위 증가의 구조적 원인 중 하나임을 연결하여 분석
+- 🔗 후속 연구: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — AI 가속화된 글쓰기의 출판 증가는 과학 출판 부담 심화의 구체적 메커니즘을 보여준다.
+- ⚖️ 반론/비판: [[papers/995_Papers_and_patents_are_becoming_less_disruptive_over_time/review]] — 논문의 파괴성 감소 트렌드는 출판량 증가가 질적 측면에 미치는 부정적 영향을 시사한다.
+- 🏛 기반 연구: [[papers/1123_The_misalignment_of_incentives_in_academic_publishing_and_im/review]] — 학술 출판의 인센티브 부정합은 출판 부담이 발생하는 구조적 원인을 설명한다.
+- ⚖️ 반론/비판: [[papers/1038_The_Oligopoly_of_Academic_Publishers_in_the_Digital_Era/review]] — 출판사 독과점으로 인한 구조적 압박과 개별 연구자들이 느끼는 출판 압박 간의 상호작용을 비교 분석할 수 있다.
+- 🔗 후속 연구: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — 과학 출판에 대한 압박을 분석하여 AI 도구가 기존 출판 시스템에 가하는 추가적 스트레스를 보여준다.

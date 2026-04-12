@@ -9,9 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "다중저자 논문에서 각 저자의 기여도를 정량화하기 위해 인용 패턴 기반의 학제 독립적 신용 배분 알고리즘을 개발했다. 이 방법은 과학 커뮤니티의 비공식적 집단 신용 배분 과정을 수학적으로 모델링한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Research_Evaluation_and_Impact"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Research_Team_Dynamics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shen and Barabási_2014_Collective credit allocation in science.pdf"
 ---
@@ -87,12 +86,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shen and Barabási_2014_Collective credi
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1000_Productivity_Prominence_and_the_Effects_of_Academic_Environm/review]] — 집단적 신용 배분 알고리즘을 학술 환경이 개별 연구자의 생산성과 명성에 미치는 효과 분석에 적용한다.
-- 🔗 후속 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 다중저자 논문의 공정한 신용 배분을 과학에서 성별에 따른 차별적 기여도 인정 문제로 확장한다.
-- 🧪 응용 사례: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 집단적 신용 배분을 팀 다양성이 혁신에 미치는 역설적 영향 분석에 적용한다.
-- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 저자별 기여도 정량화를 성별 다양성 팀이 생산하는 혁신적 고영향 과학의 신용 배분으로 확장한다.
-- 🔄 다른 접근: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — h-지수와 같은 개인 연구 성과 지표와 다른 접근으로 집단 작업에서의 개별 기여도를 정량화하는 대안적 평가 방법을 제안한다.
-- 🧪 응용 사례: [[papers/1056_Where_Do_Your_Citations_Come_From_Citation-Constellation_A_F/review]] — 인용 네트워크의 사회구조적 경로 분석을 다중저자 논문의 집단적 신용 배분 문제에 적용한다.
-- 🧪 응용 사례: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학에서의 집단적 신용 배분 원리를 성별 관점에서 재검토하여 공정한 업적 인정 시스템을 설계할 수 있다.
-- 🏛 기반 연구: [[papers/1007_Redefining_Academic_Performance_The_Development_of_the_NK_Co/review]] — 과학에서의 집단적 신용 배분 원리가 NK 지수의 저자 기여도 평가 방법론의 이론적 근거를 제공한다.
-- 🔗 후속 연구: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — 개별 연구자의 성과 측정을 다중저자 환경에서 공정한 기여도 배분 문제로 확장한다.
+- 🏛 기반 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 다중저자 논문의 신용 배분 알고리즘은 지식 생산에서 팀의 지배력 증가 현상을 정량적으로 분석하기 위한 방법론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/999_Principles_of_Scientific_Research_Team_Formation_and_Evoluti/review]] — 집단 신용 배분 방법론은 과학 연구팀 형성과 진화 원리를 실증적으로 분석하는 구체적 도구를 제공한다.

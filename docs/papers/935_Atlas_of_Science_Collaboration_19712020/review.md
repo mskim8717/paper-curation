@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "1971년부터 2020년까지 OpenAlex 데이터를 활용하여 15개 자연과학 분야의 국제·기관 간 연구 협력 관계를 시각화한 아틀라스를 제시한다. 세계 지도와 다양한 다이어그램을 통해 국가 및 국제 협력 패턴의 변화를 보여준다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "sub/Scientific_Collaboration_Networks"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Research_Collaboration_Networks"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Okamura_2024_Atlas of Science Collaboration, 1971–2020.pdf"
 ---
@@ -81,8 +81,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Okamura_2024_Atlas of Science Collaborat
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 미중 과학 협력의 변화하는 지형을 50년간의 국제 과학 협력 아틀라스의 맥락에서 구체적으로 분석한다.
-- 🏛 기반 연구: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 경제 발전에 따른 학자들의 글로벌 이동 패턴을 제공하여 국제 과학 협력 변화의 기반 동력을 설명한다.
-- 🧪 응용 사례: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 학자 이동 패턴을 과학 협력 지도를 통해 시각화하고 지리적 분포 변화 추적 가능
-- 🔗 후속 연구: [[papers/1023_SciSciNet_A_large-scale_open_data_lake_for_the_science_of_sc/review]] — 과학 협력의 지도화 연구를 더 포괄적이고 최신의 데이터로 확장할 수 있는 인프라를 제공한다.
-- 🧪 응용 사례: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 1971-2020년 과학 협력 지도를 통해 미중 협력 변화를 더 넓은 글로벌 맥락에서 비교 분석할 수 있다.
+- 🔄 다른 접근: [[papers/1213_The_evolution_of_international_scientific_collaboration_netw/review]] — 국제 협력 관계 시각화와 과학 혁명 개념 변화 모델링은 모두 과학 지식의 진화를 네트워크 관점에서 분석한다.
+- 🏛 기반 연구: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크의 구조적 특성 연구는 국제 협력 관계 아틀라스의 네트워크 분석 방법론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/1213_The_evolution_of_international_scientific_collaboration_netw/review]] — 과학 혁명의 개념 변화를 네트워크로 모델링한 접근법과 국제 협력 네트워크 시각화는 모두 과학 지식의 진화를 네트워크로 분석한다.

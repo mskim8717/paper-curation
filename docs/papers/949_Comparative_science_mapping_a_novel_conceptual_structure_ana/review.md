@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 메타데이터(저자, 기관, 지역 등)를 활용하여 과학 논문의 개념 구조(conceptual structure)를 분석하는 혁신적인 과학 매핑(science mapping) 기법을 제안하고, 이탈리아 학술의료센터(AMCs)의 종양학 연구를 비교 분석한다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Scientific_Mapping_and_Visualization"
+  - "cat/Computational_Bibliometric_Analysis"
+  - "sub/Bibliometric_Mapping_Tools"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Aria et al._2024_Comparative science mapping a novel conceptual structure analysis with metadata.pdf"
 ---
@@ -90,10 +90,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Aria et al._2024_Comparative science map
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 메타데이터 기반 개념 구조 분석이 과학 매핑에서 테마틱 진화를 재고하는 통합적 접근법의 기반이 된다.
-- 🔗 후속 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 이탈리아 의료센터의 종양학 연구 비교를 주제별 과학 연구의 지리적 분포 매핑으로 확장한다.
-- 🧪 응용 사례: [[papers/997_Polymer_Science_Research_in_India_A_Scientometrics_Study/review]] — 비교 과학 매핑 기법을 인도 폴리머 과학 연구의 scientometric 분석에 적용한다.
-- 🧪 응용 사례: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 새로운 개념 구조 분석을 과학 매핑과 과학 지도의 혁신적 시각화 방법으로 적용한다.
-- 🧪 응용 사례: [[papers/1055_When_text_mining_meets_science_mapping_in_the_bibliometric_a/review]] — 비교 과학 지도화 개념을 텍스트 마이닝과 결합하여 더 정교한 서지학적 분석 방법론을 구현할 수 있다.
-- 🔗 후속 연구: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 비교 과학 지도화 개념을 통해 기존 과학 매핑 방법론을 확장하여 더 정교한 분석이 가능하다.
-- 🧪 응용 사례: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — VOSviewer의 시각화 기능을 메타데이터 기반 개념 구조 분석이라는 혁신적 과학 매핑에 적용한다.
+- 🔄 다른 접근: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — 개념 구조 분석의 혁신적 접근법과 팀 과학 메트릭의 협업 지향적 접근을 결합하여 연구 평가를 개선할 수 있음
+- 🔗 후속 연구: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 메타데이터 기반 개념 구조 분석을 주제 수준 연구 매핑으로 확장하여 더 정교한 과학 지도를 작성할 수 있음

@@ -10,9 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "대학원 졸업생의 교수 채용 네트워크를 분석하여 학계의 체계적 불평등과 계층 구조를 정량화하고, 박사 학위 기관의 명성(prestige)이 최종 배치를 더 잘 예측함을 보여줌."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Bias_and_Inequality"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Faculty_Hiring_Prestige"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Clauset et al._2015_Systematic inequality and hierarchy in faculty hiring networks.pdf"
 ---
@@ -91,13 +90,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Clauset et al._2015_Systematic inequalit
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1000_Productivity_Prominence_and_the_Effects_of_Academic_Environm/review]] — 교수 채용의 계층적 불평등이 이후 연구 환경과 성과에 미치는 지속적 영향을 보여주는 연결고리를 제공한다.
-- 🔗 후속 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 학계 채용 불평등의 역사적 변화와 성별 격차를 함께 분석하면 구조적 불평등의 전체적 양상을 파악할 수 있다.
-- 🧪 응용 사례: [[papers/976_Intersectional_inequalities_in_science/review]] — 교차적 불평등 관점에서 채용 네트워크의 계층 구조가 다양한 정체성 집단에 미치는 복합적 영향을 분석할 수 있다.
-- 🔗 후속 연구: [[papers/1121_Superstar_Extinctionsupsup/review]] — 교수 채용 네트워크의 위계적 불평등을 협업 네트워크 붕괴가 개별 연구자에게 미치는 영향으로 확장한다.
-- 🔄 다른 접근: [[papers/967_Global_patterns_of_migration_of_scholars_with_economic_devel/review]] — 국내 교수 채용의 위계구조 대신 국제적 학자 이주 패턴과 경제발전 간의 관계를 분석한다.
-- 🔗 후속 연구: [[papers/973_Impacts_of_inter-institutional_mobility_on_scientific_perfor/review]] — 교수 채용 네트워크의 위계가 기관 간 이동이 과학적 성과에 미치는 영향으로 이어진다.
-- ⚖️ 반론/비판: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 명성 기반 위계구조의 문제점에 대해 민족적 다양성이 과학 협력에 미치는 긍정적 효과를 제시한다.
-- 🏛 기반 연구: [[papers/1000_Productivity_Prominence_and_the_Effects_of_Academic_Environm/review]] — 교수 채용 네트워크에서 나타나는 체계적 불평등이 학술 환경의 명성 효과를 뒷받침하는 구조적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/955_Does_Science_Advance_One_Funeral_at_a_Time/review]] — 교수 채용 네트워크의 위계적 불평등 구조가 저명 과학자의 영향력과 후속 연구자 진입 패턴을 설명하는 이론적 토대를 제공한다.
-- 🧪 응용 사례: [[papers/999_Principles_of_Scientific_Research_Team_Formation_and_Evoluti/review]] — 교수 채용 네트워크의 체계적 불평등을 팀 형성 원리로 분석할 수 있다
+- 🏛 기반 연구: [[papers/1000_Productivity_Prominence_and_the_Effects_of_Academic_Environm/review]] — 교수 채용의 체계적 불평등은 기관 환경이 생산성에 미치는 영향의 구조적 배경을 제공한다.
+- 🔗 후속 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 과학 경력에서 성별 불평등의 역사적 비교는 교수 채용 불평등의 시간적 변화를 이해하는 맥락을 제공한다.
+- 🧪 응용 사례: [[papers/1182_Governing_Science_through_Evaluation_A_Global_Heuristic_of_R/review]] — 평가를 통한 과학 거버넌스는 교수 채용 네트워크 불평등이 작동하는 제도적 메커니즘을 보여준다.
+- 🔗 후속 연구: [[papers/1000_Productivity_Prominence_and_the_Effects_of_Academic_Environm/review]] — 교수 채용과 연구 환경이 생산성에 미치는 영향을 연결하여 학계 불평등의 전체 구조를 이해할 수 있다.
+- 🔗 후속 연구: [[papers/1028_Tenure_and_research_trajectories/review]] — 교수 채용 네트워크의 체계적 불평등을 종신교수제 이후의 연구 궤적 변화로 확장한다.
+- 🔗 후속 연구: [[papers/1031_The_Chaperone_Effect_in_Scientific_Publishing/review]] — 개별 논문의 샤페론 효과를 학술계 전체의 구조적 불평등과 위계 시스템으로 확장해서 분석합니다.
+- 🏛 기반 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 교수 채용의 체계적 불평등 구조는 연구비 Matthew effect의 근본적 배경을 제공한다.
+- 🧪 응용 사례: [[papers/999_Principles_of_Scientific_Research_Team_Formation_and_Evoluti/review]] — 연구팀 형성 원리가 교수 채용 네트워크의 위계와 불평등에 미치는 영향을 분석할 수 있음

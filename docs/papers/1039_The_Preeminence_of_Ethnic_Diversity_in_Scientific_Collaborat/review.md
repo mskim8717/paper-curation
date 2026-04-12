@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "920만 개 논문과 610만 명 과학자를 분석하여 인종적 다양성(ethnic diversity)이 과학 협업의 영향력(citation impact)과 가장 강한 양의 상관관계(r=0.77)를 보임을 규명했다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Collaboration_and_Team_Effects"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Research_Collaboration_Networks"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/AlShebli et al._2018_The Preeminence of Ethnic Diversity in Scientific Collaboration.pdf"
 ---
@@ -87,10 +87,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/AlShebli et al._2018_The Preeminence of 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성뿐만 아니라 인종적 다양성도 과학 협업의 참신성과 영향력을 높이는 핵심 요인임을 보여주는 상호 보완적 증거다.
-- 🏛 기반 연구: [[papers/1010_Remote_collaboration_fuses_fewer_breakthrough_ideas/review]] — 원격 협업에서 돌파적 아이디어가 줄어드는 현상을 인종적 다양성의 긍정적 효과와 대비하여 협업 방식의 중요성을 강조한다.
-- 🧪 응용 사례: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 인종적 다양성의 과학적 우수성을 실제 연구 발견과 혁신에 효과적으로 활용하기 위한 구체적 전략을 수립할 수 있다.
-- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양성 효과를 민족 다양성까지 확장하여 팀 구성의 다차원적 다양성 이해 가능
-- ⚖️ 반론/비판: [[papers/1010_Remote_collaboration_fuses_fewer_breakthrough_ideas/review]] — 인종적 다양성이 협업 성과를 높이지만 원격 환경에서는 그 효과가 제한될 수 있음을 시사한다.
-- 🔄 다른 접근: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 과학 협력에서 민족적 다양성의 탁월성을 성별 다양성과 비교하여 다차원적 다양성 효과를 종합적으로 이해한다.
-- ⚖️ 반론/비판: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 명성 기반 위계구조의 문제점에 대해 민족적 다양성이 과학 협력에 미치는 긍정적 효과를 제시한다.
+- ⚖️ 반론/비판: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 소수집단의 혁신이 과소평가된다는 발견과 인종적 다양성이 협업 영향력을 높인다는 결과를 대조한다.
+- 🔗 후속 연구: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 성별 다양한 팀의 혁신적 성과를 인종적 다양성의 관점에서 확장하여 분석한다.
+- 🏛 기반 연구: [[papers/1010_Remote_collaboration_fuses_fewer_breakthrough_ideas/review]] — 다양성이 협업에 미치는 긍정적 효과를 원격 협업의 혁신 제약과 비교하는 기준을 제공한다.
+- 🔗 후속 연구: [[papers/1010_Remote_collaboration_fuses_fewer_breakthrough_ideas/review]] — 인종적 다양성이 협업 영향력을 높이는 발견을 원격 협업 환경에서 재검토할 필요성을 제시한다.
+- ⚖️ 반론/비판: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 과학 협력에서 민족 다양성의 우월성과 미중 협력 발산은 상반된 국제 협력 트렌드를 보여준다.
+- ⚖️ 반론/비판: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 인종적 다양성이 협업 영향력을 높인다는 발견과 소수집단 혁신이 과소평가된다는 역설을 대조한다.
+- 🔗 후속 연구: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크의 구조적 특성을 인종적 다양성의 영향력 관점에서 확장하여 분석한다.
+- 🔄 다른 접근: [[papers/976_Intersectional_inequalities_in_science/review]] — 과학 협력에서 민족 다양성의 우월성 연구와 교차적 정체성 불평등 분석을 비교하여 다양성의 복합적 효과를 파악할 수 있다.

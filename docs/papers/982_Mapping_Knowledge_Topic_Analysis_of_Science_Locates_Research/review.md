@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "과학 출판물의 의미론적 네트워크와 주제 모델링을 기반으로 연구자들의 인식론적 위치를 규명하는 새로운 좌표계를 제시한다. 주제 구성과 기하학적 데이터 분석을 결합하여 개별 연구자를 학문 지형 내에 위치시킨다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Scientific_Mapping_and_Visualization"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Thematic_Network_Detection"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hladik and Renisio_2024_Mapping Knowledge Topic Analysis of Science Locates Researchers in Disciplinary Landscape.pdf"
 ---
@@ -84,12 +84,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hladik and Renisio_2024_Mapping Knowledg
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/929_A_network_approach_to_topic_models/review]] — 주제 모델에 대한 네트워크 접근법과 기하학적 데이터 분석 접근법이라는 서로 다른 토픽 모델링 방식을 비교할 수 있다.
-- 🔗 후속 연구: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 연구자 궤적의 비지도 임베딩과 학문 지형에서의 인식론적 위치 규명이 상호 보완적인 접근법이다.
-- 🧪 응용 사례: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 개별 연구자의 학문적 위치 변화를 통해 예술적·과학적 경력에서의 핫스트릭 현상을 새롭게 분석할 수 있다.
-- 🔗 후속 연구: [[papers/949_Comparative_science_mapping_a_novel_conceptual_structure_ana/review]] — 이탈리아 의료센터의 종양학 연구 비교를 주제별 과학 연구의 지리적 분포 매핑으로 확장한다.
-- 🔗 후속 연구: [[papers/952_Design_and_Update_of_a_Classification_System_The_UCSD_Map_of/review]] — 과학 주제 분석을 통한 연구 분야 위치 파악 방법론을 UCSD 맵의 분류 체계와 결합하여 더 정교한 과학 지도 구축을 가능하게 한다.
-- 🧪 응용 사례: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — VOSviewer의 시각화 기능을 연구 분야의 지리적 분포 매핑에 적용한다.
-- 🏛 기반 연구: [[papers/997_Polymer_Science_Research_in_India_A_Scientometrics_Study/review]] — 과학 공동체를 대규모로 매핑하는 일반적 방법론을 제공한다
-- 🧪 응용 사례: [[papers/1112_CS-KG_20_A_Large-scale_Knowledge_Graph_of_Computer_Science/review]] — 주제 수준에서 과학 연구를 매핑하는 구체적 사례로 컴퓨터과학 분야의 지식그래프 활용을 보여준다.
-- 🧪 응용 사례: [[papers/944_Co-Citation_Analysis_Bibliographic_Coupling_and_Direct_Citat/review]] — 서지학적 유사성 방법론을 주제 수준에서 연구 분야의 지리적 위치 매핑에 적용한다.
+- 🔄 다른 접근: [[papers/969_Hierarchical_Classification_of_Research_Fields_in_the_Web_of/review]] — 딥러닝 기반 계층적 분류와 의미론적 네트워크 기반 연구자 위치 규명이 학문 지형 매핑에서 서로 다른 접근법을 제공한다.
+- 🔗 후속 연구: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 학술지의 시간변화 임베딩 연구를 개별 연구자의 인식론적 위치 변화 추적으로 확장하여 동적 학문 지형을 구축할 수 있다.
+- 🏛 기반 연구: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 비지도 단어 임베딩의 잠재 지식 포착 방법론을 바탕으로 연구자의 인식론적 위치를 의미론적으로 규명한다.
+- 🏛 기반 연구: [[papers/1017_Science_as_exploration_in_a_knowledge_landscape_tracing_hots/review]] — 토픽 수준의 과학 지도 작성은 지식공간 모델링의 실증적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 과학 지도 이론을 실제 연구 분야 매핑에 적용한 구체적 사례를 보여줍니다.
+- 🏛 기반 연구: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 연구자의 인식론적 위치 규명 연구에 학술지 시간변화 임베딩을 통한 과학 구조 진화 추적 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/949_Comparative_science_mapping_a_novel_conceptual_structure_ana/review]] — 메타데이터 기반 개념 구조 분석을 주제 수준 연구 매핑으로 확장하여 더 정교한 과학 지도를 작성할 수 있음
+- 🔄 다른 접근: [[papers/969_Hierarchical_Classification_of_Research_Fields_in_the_Web_of/review]] — 의미론적 네트워크 기반 연구자 위치 규명과 딥러닝 기반 계층적 분류가 상호 보완적인 학문 지형 매핑을 제공한다.

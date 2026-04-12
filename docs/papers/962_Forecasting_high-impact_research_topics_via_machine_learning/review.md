@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "21백만 개 과학논문으로부터 구축한 진화하는 지식그래프(evolving knowledge graph)와 머신러닝을 활용하여, 아직 발표되지 않은 새로운 연구 아이디어의 미래 임팩트를 미리 예측하는 방법을 개발했다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Temporal_and_Longitudinal_Analysis"
+  - "cat/Computational_Bibliometric_Analysis"
+  - "sub/Trend_Forecasting_Techniques"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gu and Krenn_2025_Forecasting high-impact research topics via machine learning on evolving knowledge graphs.pdf"
 ---
@@ -78,12 +78,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gu and Krenn_2025_Forecasting high-impac
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 둘 다 머신러닝을 활용해 연구 트렌드를 예측하지만 지식그래프와 신경망이라는 서로 다른 접근법을 사용한다.
-- 🔗 후속 연구: [[papers/1003_Quantifying_Long-term_Scientific_Impact/review]] — 연구 아이디어의 미래 임팩트 예측이 장기적 과학적 영향력 정량화 연구의 발전된 형태이다.
-- 🏛 기반 연구: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 과학상 수상자 네트워크 분석을 통한 혁신 예측 연구가 고임팩트 연구 예측의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1014_Risk_and_Artificial_Intelligence_Adoption_A_Scientometric_an/review]] — AI 위험 연구 트렌드 분석을 머신러닝 기반 고영향 연구 주제 예측 방법론으로 확장한다.
-- 🧪 응용 사례: [[papers/1017_Science_as_exploration_in_a_knowledge_landscape_tracing_hots/review]] — 기계학습 기법을 통해 지식 공간에서의 탐색 패턴을 바탕으로 미래 연구 주제를 예측하는 구체적 적용 사례를 제시한다.
-- 🏛 기반 연구: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 머신러닝을 통한 고영향 연구 주제 예측의 방법론적 기초를 제공한다
-- 🧪 응용 사례: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 머신러닝을 통한 고영향 연구 주제 예측을 제약 R&D의 백색공간 분석에 적용하여 혁신 기회를 발견한다.
-- 🧪 응용 사례: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합을 통한 고영향 연구의 특성을 기계학습으로 미래 연구 토픽을 예측하는데 활용할 수 있다.
-- 🔄 다른 접근: [[papers/1116_Harnessing_the_Power_of_Adversarial_Prompting_and_Large_Lang/review]] — 기계학습을 통한 고영향 연구 주제 예측과 다른 접근으로 적대적 프롬프팅을 통한 가설 생성 방법을 제안한다.
+- 🔄 다른 접근: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 진화하는 지식 그래프와 의미 및 신경망 네트워크 접근법을 비교하여 연구 동향 예측의 정확성을 향상시킬 수 있음
+- 🔗 후속 연구: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 고영향력 연구 주제 예측 모델에 과학상 네트워크 분석을 결합하여 혁신적 연구의 조기 식별이 가능함
+- 🧪 응용 사례: [[papers/929_A_network_approach_to_topic_models/review]] — 네트워크 기반 토픽 모델링 기법을 머신러닝을 통한 고영향 연구 주제 예측에 적용하여 성능을 개선할 수 있다.
+- 🔗 후속 연구: [[papers/1072_Embracing_Foundation_Models_for_Advancing_Scientific_Discove/review]] — 머신러닝 기반 고영향 연구 주제 예측 방법론을 기초 모델 활용 과학 발견에 통합하여 더 정확한 연구 방향 제시가 가능하다.
+- 🔄 다른 접근: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 둘 다 기계학습으로 연구 트렌드를 예측하지만 의미론적 네트워크와 일반적 머신러닝이라는 다른 접근법을 사용합니다.
+- 🔄 다른 접근: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — 기계학습 기반 고영향 연구 주제 예측과 대비하여 인용 네트워크의 구조적 진화에 초점을 맞춘 돌파구 예측을 제시한다.
+- 🧪 응용 사례: [[papers/1195_Mapping_the_Research_Landscape_of_Electronic_Properties_of_G/review]] — 그래핀 연구 동향 분석 결과를 바탕으로 미래 고영향력 그래핀 연구 주제를 예측할 수 있음
+- 🔗 후속 연구: [[papers/1216_Tour_guiding_technologies_a_bibliometric_analysis_mapping_tr/review]] — 투어 가이딩 기술 연구 동향 분석은 머신러닝을 통한 고영향 연구 토픽 예측 방법론을 관광 기술 분야에 적용한 사례로 볼 수 있다.

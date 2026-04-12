@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "컴퓨터과학 분야에서 여성 저자 논문이 예상보다 적은 인용을 받는 체계적 불균형을 발견하였으며, 이러한 현상이 학회 논문에서 특히 두드러진다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Bias_and_Inequality"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Gender_Citation_Imbalance"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nakajima et al._2026_Systemic Gendered Citation Imbalance in Computer Science Evidence from Conferences and Journals.pdf"
 ---
@@ -90,9 +90,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nakajima et al._2026_Systemic Gendered C
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 여성 연구자의 업적 인정 부족이 인용 불균형으로도 나타나는 체계적 성별 편향의 다면적 증거를 제공한다.
-- 🔄 다른 접근: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 여성의 학제간 혁신이 과소평가되는 현상과 인용 불균형을 연결하여 성별 편향의 복합적 메커니즘을 이해할 수 있다.
-- 🏛 기반 연구: [[papers/966_Global_citation_inequality_is_on_the_rise/review]] — 글로벌 인용 불평등의 증가 추세 속에서 성별 기반 인용 불균형이 어떤 위치에 있는지 맥락적으로 이해할 수 있다.
-- 🧪 응용 사례: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 컴퓨터 과학의 체계적 성별 인용 불균형 분석과 연결되어 STEM 분야 전반의 성별 불평등이 인용 패턴에 미치는 구체적 영향을 보여준다.
-- 🔗 후속 연구: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 여성의 혁신적 기여 과소평가가 인용 불균형과 저널 게재 차별로 구체적으로 나타나는 다층적 메커니즘을 보여준다.
-- 🏛 기반 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 여성 연구자의 업적 인정 부족이 컴퓨터과학 분야의 인용 불균형으로 구체적으로 나타나는 체계적 성별 편향의 연결고리를 보여준다.
+- 🔗 후속 연구: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학계에서 여성에 대한 체계적 과소평가를 컴퓨터과학 분야의 인용 불균형으로 구체화한 연구이다.
+- 🧪 응용 사례: [[papers/1035_The_Innovation_Recognition_Paradox_How_Science_Undervalues_t/review]] — 여성 과학자의 학제간 혁신이 과소평가되는 현상을 컴퓨터과학 분야의 인용 패턴으로 확인한다.
+- 🏛 기반 연구: [[papers/940_Bibliometrics_Global_Gender_Disparities_in_Science/review]] — 과학계 전반의 성별 격차를 컴퓨터과학 분야의 구체적 인용 분석으로 심화한다.
+- 🧪 응용 사례: [[papers/1059_Women_are_credited_less_in_science_than_men/review]] — 과학계에서 여성에 대한 체계적 과소평가를 컴퓨터과학 분야의 성별 인용 불균형으로 구체화한다.

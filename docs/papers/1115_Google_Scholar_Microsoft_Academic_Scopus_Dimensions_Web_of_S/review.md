@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "Google Scholar, Microsoft Academic, Scopus, Dimensions, Web of Science, OpenCitations COCI 등 6개 주요 인용 데이터 소스의 인용 커버리지를 252개 학문 분야에서 체계적으로 비교 분석하였다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "sub/Citation_and_Bibliometric_Analysis"
+  - "cat/Open_Access_Publication_Analytics"
+  - "sub/Bibliometric_Measurement_Methods"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Martín-Martín et al._2021_Google Scholar, Microsoft Academic, Scopus, Dimensions, Web of Science, and OpenCitations’ COCI a m.pdf"
 ---
@@ -89,11 +89,7 @@ Google Scholar, Microsoft Academic, Scopus, Dimensions, Web of Science, OpenCita
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/992_OpenAlex_in_focus_Metadata_quality_of_publication_type_and_l/review]] — OpenAlex의 메타데이터 품질을 다른 주요 인용 데이터베이스와 비교하여 각 플랫폼의 특성을 종합적으로 평가한다.
-- 🏛 기반 연구: [[papers/1015_S2ORC_The_Semantic_Scholar_Open_Research_Corpus/review]] — Semantic Scholar의 오픈 연구 코퍼스가 제공하는 대규모 학술 데이터의 기반 위에서 인용 커버리지 분석을 수행한다.
-- 🧪 응용 사례: [[papers/1074_OLMo_Accelerating_the_Science_of_Language_Models/review]] — 다양한 학술 데이터베이스 비교 연구를 통해 OLMo와 같은 공개 모델의 과학적 연구 활용도를 실증적으로 평가할 수 있다.
-- ⚖️ 반론/비판: [[papers/1015_S2ORC_The_Semantic_Scholar_Open_Research_Corpus/review]] — 단일 대규모 코퍼스의 한계를 보여주며 다양한 학술 데이터베이스 간 비교의 중요성을 강조한다.
-- 🏛 기반 연구: [[papers/985_Mapping_scientific_communities_at_scale/review]] — 다양한 학술 데이터베이스 비교 연구가 확장 가능한 네트워크 분석 프레임워크 설계의 데이터 품질 기준을 제시한다.
-- 🔄 다른 접근: [[papers/991_Open_Datasets_in_Learning_Analytics_Trends_Challenges_and_Be/review]] — 다양한 학술 데이터베이스 비교를 통해 공개 데이터셋의 다른 관점을 제시한다
-- 🏛 기반 연구: [[papers/993_OpenAlex_A_fully-open_index_of_scholarly_works_authors_venue/review]] — 다양한 학술 데이터베이스들의 비교 분석을 통해 OpenAlex 같은 새로운 플랫폼의 필요성과 특징을 이해할 수 있다.
-- 🔗 후속 연구: [[papers/1081_Science_Citation_IndexA_New_Dimension_in_Indexing_This_uniqu/review]] — Science Citation Index의 개념을 현대의 다양한 인용 데이터베이스로 확장하여 각각의 커버리지와 특성을 비교 분석한다.
+- 🔗 후속 연구: [[papers/992_OpenAlex_in_focus_Metadata_quality_of_publication_type_and_l/review]] — 여러 인용 데이터베이스의 커버리지 비교 연구를 OpenAlex의 메타데이터 품질 평가로 확장한 후속 연구로 볼 수 있다.
+- 🔄 다른 접근: [[papers/993_OpenAlex_A_fully-open_index_of_scholarly_works_authors_venue/review]] — 기존 상업적 데이터베이스들과 완전 오픈인 OpenAlex의 특성 및 활용도를 비교 분석하는 대안적 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/992_OpenAlex_in_focus_Metadata_quality_of_publication_type_and_l/review]] — 주요 인용 데이터베이스들의 전반적 커버리지 비교가 OpenAlex 메타데이터 품질 평가의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/939_BibFusion_A_Python_package_to_integrate_deduplicate_and_harm/review]] — BibFusion의 통합 접근법과 다양한 데이터베이스 비교 연구를 결합하여 최적의 서지 데이터 통합 전략을 수립할 수 있음

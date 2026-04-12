@@ -11,9 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "컴퓨터과학 분야 2,453명 교수의 200,000개 이상 논문 데이터를 분석하여, 생산성이 초기에 급상승 후 완만히 감소한다는 기존의 정설(canonical narrative)이 실제로는 약 20%의 교수에게만 해당되며, 나머지 80%는 다양한 생산성 패턴을 보임을 밝혔다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "cat/Science_of_Science_Research"
-  - "sub/Career_Dynamics_and_Outcomes"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholarly_Impact_Metrics"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Way et al._2017_The misleading narrative of the canonical faculty productivity trajectory.pdf"
 ---
@@ -80,7 +79,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Way et al._2017_The misleading narrative
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1028_Tenure_and_research_trajectories/review]] — 종신교수제가 연구 궤적에 미치는 영향을 정설적 생산성 패턴의 다양성과 연결하여 경력 개발의 복잡성을 이해할 수 있다.
-- 🔗 후속 연구: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — hot streak 현상과 다양한 생산성 패턴을 결합하면 연구자 경력의 예측 불가능성과 개인차를 더 정확히 모델링할 수 있다.
-- 🔄 다른 접근: [[papers/968_Growth_Rates_of_Modern_Science_Bibliometric_Analysis_Based_o/review]] — 서지계량학적 성장률 분석과 개별 연구자의 생산성 궤적 분석을 결합하여 미시-거시 수준의 과학 성장을 통합적으로 이해할 수 있다.
-- 🔗 후속 연구: [[papers/1028_Tenure_and_research_trajectories/review]] — 종신교수 전후의 생산성 변화가 기존에 알려진 정설적 경력 궤적과 다른 복잡한 패턴을 보임을 함께 분석할 수 있다.
+- 🔄 다른 접근: [[papers/971_Hot_streaks_in_artistic_cultural_and_scientific_careers/review]] — 예술과 과학 경력에서 hot streak 패턴은 정형화된 생산성 궤적과 다른 개인차 중심 관점을 제공한다.
+- 🔗 후속 연구: [[papers/956_Early_career_setback_and_future_achievement_in_professional/review]] — 초기 경력 좌절의 영향은 다양한 생산성 패턴이 나타나는 메커니즘을 설명하는 데 도움이 된다.
+- 🏛 기반 연구: [[papers/1030_The_Burden_of_Knowledge_and_the_Death_of_the_Renaissance_Man/review]] — 지식 부담의 증가는 표준적 생산성 궤적이 더 이상 적용되지 않는 구조적 변화를 설명한다.
+- 🏛 기반 연구: [[papers/1048_Unequal_effects_of_the_COVID-19_pandemic_on_scientists/review]] — 교수 생산성에 대한 잘못된 통념이 팬데믹 시기 불평등한 영향을 이해하는 배경 지식을 제공함

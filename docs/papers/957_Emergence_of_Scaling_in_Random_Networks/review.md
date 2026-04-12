@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "복잡한 네트워크의 위상 구조가 스케일-프리(scale-free) 멱법칙 분포를 따르며, 이는 네트워크의 지속적 성장과 선호적 부착(preferential attachment)이라는 두 가지 보편적 메커니즘에서 비롯된다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Network_Structure_and_Detection"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Network_Community_Detection"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Barabási and Albert_1999_Emergence of Scaling in Random Networks.pdf"
 ---
@@ -73,8 +73,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Barabási and Albert_1999_Emergence of S
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 작은 세계 네트워크와 스케일-프리 네트워크는 모두 실제 네트워크의 비자명한 위상 구조를 설명하는 대표적인 이론 모델이다.
-- 🧪 응용 사례: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학자 협력 네트워크가 실제로 스케일-프리 특성을 보이는지 실증적으로 검증한 연구이다.
-- 🔗 후속 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 선호적 부착 메커니즘이 과학 연구에서 팀 규모 증가와 협력 패턴 형성에 어떻게 작용하는지 보여준다.
-- 🏛 기반 연구: [[papers/1040_The_Price-Pareto_growth_model_of_networks_with_community_str/review]] — 무작위 네트워크에서 scale-free 특성의 출현 원리를 커뮤니티 구조를 가진 Price-Pareto 모델의 이론적 기반으로 제공한다.
-- 🔗 후속 연구: [[papers/928_A_General_Theory_of_Bibliometric_and_Other_Cumulative_Advant/review]] — 누적 우위 과정을 무작위 네트워크에서 scale-free 특성이 출현하는 구체적 메커니즘으로 확장한다.
+- 🔗 후속 연구: [[papers/928_A_General_Theory_of_Bibliometric_and_Other_Cumulative_Advant/review]] — 스케일-프리 네트워크의 선호적 부착 메커니즘은 누적 우위 과정의 일반 이론을 네트워크 성장 맥락으로 구체화한다.
+- 🏛 기반 연구: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 무작위 네트워크에서의 스케일링 출현은 스몰월드 네트워크의 집합적 역학을 이해하기 위한 네트워크 이론의 기초를 제공한다.
+- 🏛 기반 연구: [[papers/928_A_General_Theory_of_Bibliometric_and_Other_Cumulative_Advant/review]] — 누적 우위의 일반 이론은 스케일-프리 네트워크의 선호적 부착 메커니즘에 대한 수학적 모델링의 이론적 토대를 제공한다.

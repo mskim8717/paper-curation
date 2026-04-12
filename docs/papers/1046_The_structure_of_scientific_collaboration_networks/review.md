@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "과학자들의 공저 관계로 구성된 협력 네트워크의 구조를 분석하여 과학 커뮤니티가 '작은 세상(small world)' 특성을 가짐을 보였다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Network_Structure_and_Detection"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Research_Collaboration_Networks"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Newman_2001_The structure of scientific collaboration networks.pdf"
 ---
@@ -78,10 +78,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Newman_2001_The structure of scientific 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 과학 협력 네트워크의 정적 구조 분석을 시간적 진화 패턴 분석으로 확장한다.
-- 🧪 응용 사례: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 개별 과학자 협력 네트워크 분석을 팀 기반 지식 생산의 증가 현상 이해에 적용한다.
-- 🔗 후속 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 협력 네트워크의 소규모 세계 특성을 팀 크기가 과학적 발견과 혁신에 미치는 차별적 영향으로 확장한다.
-- 🧪 응용 사례: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 과학 협력 네트워크 구조 분석을 성별 다양성이 팀 성과에 미치는 영향 연구에 적용한다.
-- 🧪 응용 사례: [[papers/957_Emergence_of_Scaling_in_Random_Networks/review]] — 과학자 협력 네트워크가 실제로 스케일-프리 특성을 보이는지 실증적으로 검증한 연구이다.
-- 🧪 응용 사례: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크 이론을 실제 과학자 협력 네트워크에 적용하여 과학 커뮤니티의 구조적 특성을 규명한다.
-- 🔄 다른 접근: [[papers/990_Networks_of_Scientific_Papers/review]] — 논문 인용 네트워크와 다른 관점에서 과학자 협력 네트워크의 구조적 특성을 분석한다.
+- 🧪 응용 사례: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크 이론을 과학자들의 실제 협력 네트워크 구조 분석에 구체적으로 적용한다.
+- 🔗 후속 연구: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 과학 협력 네트워크의 구조적 특성을 인종적 다양성의 영향력 관점에서 확장하여 분석한다.
+- 🏛 기반 연구: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 과학 협력 네트워크의 구조적 특성을 시간에 따른 동적 진화의 관점에서 이해하는 기초를 제공한다.
+- 🔗 후속 연구: [[papers/990_Networks_of_Scientific_Papers/review]] — 초기 인용 네트워크 개념이 과학 협력 네트워크 구조 분석의 이론적 토대를 제공함
+- 🏛 기반 연구: [[papers/935_Atlas_of_Science_Collaboration_19712020/review]] — 과학 협력 네트워크의 구조적 특성 연구는 국제 협력 관계 아틀라스의 네트워크 분석 방법론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/947_Collective_dynamics_of_small-world_networks/review]] — 소규모 세계 네트워크 이론을 과학자 협력 네트워크의 실제 구조 분석에 적용한다.
+- 🔄 다른 접근: [[papers/960_Evolution_of_the_social_network_of_scientific_collaborations/review]] — 과학 협력 네트워크의 구조적 특성을 다른 각도에서 분석하여 보완적 시각을 제공한다.
+- 🏛 기반 연구: [[papers/1213_The_evolution_of_international_scientific_collaboration_netw/review]] — 과학 혁명 시기의 협업 네트워크 진화를 이해하기 위해 과학 협력 네트워크의 구조적 특성 연구가 필수적임

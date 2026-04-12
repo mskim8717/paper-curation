@@ -10,9 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "과학 문헌에서 보고된 편향(bias)의 실제 유병률을 대규모 메타분석 샘플을 통해 다학제적으로 조사한 결과, 작고 초기의 높이 인용된 연구들이 효과크기를 과대추정하는 경향을 일관되게 관찰했다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "cat/Science_of_Science_Research"
-  - "sub/Bias_and_Inequality"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Research_Reproducibility_Crisis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fanelli et al._2017_Meta-assessment of bias in science.pdf"
 ---
@@ -84,13 +83,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fanelli et al._2017_Meta-assessment of b
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 동료평가에서 나타나는 편향이 과학 전반의 메타 편향 문제의 구체적 사례임을 보여줌
-- 🏛 기반 연구: [[papers/1058_Why_Most_Published_Research_Findings_Are_False/review]] — 연구 결과의 거짓 양성 문제와 편향의 체계적 발생이 과학의 신뢰성 위기를 공통으로 다룸
-- 🔗 후속 연구: [[papers/958_Estimating_the_Reproducibility_of_Psychological_Science/review]] — 편향 평가를 심리학의 재현성 위기라는 구체적 맥락에서 분야별 차이점과 공통점 분석 가능
-- 🔄 다른 접근: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 혁신성 감소에 대한 강건한 증거를 제시하여 편향 평가의 다른 관점을 제공한다
-- 🔗 후속 연구: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 과학에서 편향성에 대한 메타 평가를 통해 REFORMS 체크리스트가 다뤄야 할 편향성 문제의 범위와 깊이를 확장한다.
-- 🧪 응용 사례: [[papers/959_Evaluating_the_Replicability_of_Social_Science_Experiments_i/review]] — 과학에서의 편향에 대한 메타 평가 연구와 연결되어 재현성 실패가 어떤 종류의 편향에서 비롯되는지 이해하는 데 도움을 준다.
-- 🔗 후속 연구: [[papers/1049_Universality_of_citation_distributions_Toward_an_objective_m/review]] — 보편적 인용 분포를 이용한 객관적 측정을 과학 전반의 편향성 메타 평가로 확장한다.
-- 🔗 후속 연구: [[papers/1057_Which_stylistic_features_fool_ChatGPT_research_evaluations/review]] — 과학에서의 편향을 메타 평가하는 연구를 AI 시스템의 평가 편향으로 확장하여 새로운 차원의 편향을 규명한다.
-- 🏛 기반 연구: [[papers/1058_Why_Most_Published_Research_Findings_Are_False/review]] — 과학에서의 편향에 대한 메타 평가가 거짓 연구 결과 발생의 구조적 원인을 더 체계적으로 분석하는 방법론을 제공한다.
-- 🏛 기반 연구: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 동료평가에서 나타나는 체계적 편향이 과학 전반의 메타 편향 문제와 연결됨
+- 🔗 후속 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 연구 부정행위와 편향이 모두 과학 지식의 왜곡을 초래하는 메커니즘을 종합적으로 이해할 수 있음
+- 🏛 기반 연구: [[papers/1058_Why_Most_Published_Research_Findings_Are_False/review]] — 대부분의 연구 결과가 거짓이라는 주장이 편향의 메타분석을 통한 실증적 검증의 이론적 근거를 제공함
+- 🧪 응용 사례: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 재현성 위기에 대한 과학자들의 인식과 편향의 실제 유병률 간의 격차를 비교 분석할 수 있음
+- 🏛 기반 연구: [[papers/1057_Which_stylistic_features_fool_ChatGPT_research_evaluations/review]] — 과학 연구 평가에서 발생하는 편향의 체계적 분석을 위한 메타 평가 방법론적 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/988_Misconduct_Accounts_for_the_Majority_of_Retracted_Scientific/review]] — 편향과 부정행위가 모두 과학 지식의 신뢰성을 훼손하는 상호 보완적 위험 요소로 작용함을 보여줌
+- 🏛 기반 연구: [[papers/1182_Governing_Science_through_Evaluation_A_Global_Heuristic_of_R/review]] — 과학에서 편향을 메타 평가한 연구로 연구 평가 체계의 편향성 문제와 거버넌스 개선 필요성을 뒷받침한다.

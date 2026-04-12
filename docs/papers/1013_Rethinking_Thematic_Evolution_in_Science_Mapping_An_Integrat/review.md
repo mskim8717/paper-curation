@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "과학 지도 작성(Science Mapping)에서 종단 분석을 위한 구조적으로 통합된 프레임워크를 제시하여, 주제 탐지와 시간적 추적을 동일한 가중 관계형 네트워크 아키텍처 내에서 모델링한다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "sub/Knowledge_Graphs_and_Semantic_Mapping"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Thematic_Network_Detection"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Aria et al._2026_Rethinking Thematic Evolution in Science Mapping An Integrated Framework for Longitudinal Analysis.pdf"
 ---
@@ -85,9 +85,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Aria et al._2026_Rethinking Thematic Evo
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 과학 지도 작성의 기본 개념과 방법론적 기반을 제공하여 주제 진화 분석의 이론적 토대가 된다.
-- 🔗 후속 연구: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 과학 구조의 통시적 변화 분석을 통합된 네트워크 프레임워크로 확장하여 더욱 정교한 분석을 가능하게 한다.
-- 🏛 기반 연구: [[papers/949_Comparative_science_mapping_a_novel_conceptual_structure_ana/review]] — 메타데이터 기반 개념 구조 분석이 과학 매핑에서 테마틱 진화를 재고하는 통합적 접근법의 기반이 된다.
-- 🏛 기반 연구: [[papers/972_Identifying_interdisciplinary_emergence_in_the_science_of_sc/review]] — 주제 진화를 추적하는 통합적 접근법이 학제간 출현 탐지의 방법론적 토대를 제공한다.
-- 🏛 기반 연구: [[papers/1014_Risk_and_Artificial_Intelligence_Adoption_A_Scientometric_an/review]] — 과학 매핑에서 테마틱 진화를 분석하는 통합적 접근법의 방법론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 과학 매핑에서 주제 진화 추적의 통합적 접근법이 시간변화 학술지 분석의 이론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/986_Mapping_the_changing_structure_of_science_through_diachronic/review]] — 과학 구조의 시간적 변화 매핑은 주제 진화 분석의 이론적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/1055_When_text_mining_meets_science_mapping_in_the_bibliometric_a/review]] — 텍스트 마이닝과 과학 지도화 결합은 주제 진화 분석에 다른 방법론적 접근을 제공한다.
+- 🏛 기반 연구: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 과학 지도 작성의 기본 원리는 주제 진화 프레임워크의 방법론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/1055_When_text_mining_meets_science_mapping_in_the_bibliometric_a/review]] — 텍스트 마이닝과 과학 지도화 통합은 주제 진화 분석에 다른 방법론적 접근을 제공한다.
+- 🔗 후속 연구: [[papers/989_Modeling_Changing_Scientific_Concepts_with_Complex_Networks/review]] — 과학 매핑에서 주제 진화 재고찰 연구를 화학혁명 사례의 복잡 네트워크 기반 개념 변화 분석으로 구체화한다.
+- 🔗 후속 연구: [[papers/944_Co-Citation_Analysis_Bibliographic_Coupling_and_Direct_Citat/review]] — 기존 유사성 기반 방법들의 비교 평가 결과를 바탕으로 주제 진화 분석의 통합적 접근법을 개발할 수 있음

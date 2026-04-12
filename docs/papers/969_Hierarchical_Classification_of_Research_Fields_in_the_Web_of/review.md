@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 Microsoft Academic Graph의 1.6억 개 논문 초록을 이용하여 심층 신경망 기반의 계층적 분류 시스템을 개발하여 학술 출판물을 44개 학문분야(discipline), 718개 분야(field), 1,485개 세부분야(subfield)로 자동 분류하는 시스템을 제시한다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Scientific_Mapping_and_Visualization"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Thematic_Network_Detection"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rao et al._2024_Hierarchical Classification of Research Fields in the Web of Science Using Deep Learning.pdf"
 ---
@@ -89,8 +89,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rao et al._2024_Hierarchical Classificat
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/952_Design_and_Update_of_a_Classification_System_The_UCSD_Map_of/review]] — UCSD 맵과 딥러닝 기반 분류는 모두 과학 분야를 체계적으로 분류하되 서로 다른 방법론을 사용한다.
-- 🏛 기반 연구: [[papers/1018_Science_Mapping_and_Science_Maps/review]] — 과학 매핑의 이론적 기초와 실제 구현 방법론을 이해하는 데 필수적인 배경 지식을 제공한다.
-- 🔗 후속 연구: [[papers/1051_Unsupervised_Word_Embeddings_Capture_Latent_Knowledge_from_M/review]] — 비지도 워드 임베딩으로 의학 지식을 추출하는 방법이 계층적 분류 시스템의 특화된 응용 사례이다.
-- 🏛 기반 연구: [[papers/978_Introducing_the_open_biomedical_map_of_science/review]] — Web of Science의 연구 분야 계층적 분류 체계를 제공하여 생의학 과학 지도의 분류학적 기반이 된다.
-- 🏛 기반 연구: [[papers/944_Co-Citation_Analysis_Bibliographic_Coupling_and_Direct_Citat/review]] — 서지학적 유사성 기반 연구 최전선 표현이 Web of Science 기반 연구 분야 계층적 분류의 방법론적 기반이 된다.
+- 🔄 다른 접근: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 의미론적 네트워크 기반 연구자 위치 규명과 딥러닝 기반 계층적 분류가 상호 보완적인 학문 지형 매핑을 제공한다.
+- 🔗 후속 연구: [[papers/1054_Whats_In_Your_Field_Mapping_Scientific_Research_with_Knowled/review]] — 지식 그래프 매핑 방법론을 확장하여 더 정밀한 연구 분야 분류 시스템을 구축할 수 있다.
+- 🏛 기반 연구: [[papers/930_A_Survey_on_Knowledge_Organization_Systems_of_Research_Field/review]] — 연구 분야 지식 체계화의 기존 서베이를 바탕으로 Microsoft Academic Graph 기반 계층적 분류 시스템을 발전시켰다.
+- 🔄 다른 접근: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 딥러닝 기반 계층적 분류와 의미론적 네트워크 기반 연구자 위치 규명이 학문 지형 매핑에서 서로 다른 접근법을 제공한다.

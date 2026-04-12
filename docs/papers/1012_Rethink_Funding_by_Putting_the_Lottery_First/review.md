@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "연구비 배분 초기 단계에 추첨(lottery)을 도입하여 기존의 편향된 동료평가(peer review) 기반 경쟁적 배분 시스템을 개선하고, GrantInq 시뮬레이션 앱을 통해 다양한 자금배분 시나리오의 비용, 다양성, 품질 효과를 비교 분석한다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Publishing_and_Incentives"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Peer_Review_Grant_Systems"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luebber et al._2023_Rethink Funding by Putting the Lottery First.pdf"
 ---
@@ -89,9 +89,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luebber et al._2023_Rethink Funding by P
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — Matthew effect로 인한 펀딩 불평등을 해결하기 위한 구체적인 추첨 기반 대안 시스템을 제안한다.
-- 🏛 기반 연구: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 동료평가 패널의 선택 편향 분석이 추첨 시스템 도입의 필요성을 뒷받침하는 실증적 근거를 제공한다.
-- 🧪 응용 사례: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 펀딩의 광범위한 영향을 시각화하여 추첨 시스템의 효과를 평가하고 최적화할 수 있다.
-- 🔄 다른 접근: [[papers/1069_Breaking_the_gatekeepers_how_AI_will_revolutionize_scientifi/review]] — 복권 방식 펀딩을 통해 기존 권력 구조를 혁신하는 다른 접근법을 제시하여 AI 혁신과 비교할 수 있는 대안을 제공한다.
-- 🔄 다른 접근: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 편향된 동료평가 시스템의 대안으로 추첨 방식을 제안하여 Matthew effect를 완화할 수 있는 방법을 제시한다.
-- 🔄 다른 접근: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 기존 동료평가 시스템의 한계를 보완하기 위해 추첨제 도입을 우선시하는 근본적으로 다른 펀딩 방식을 제안한다.
+- 🔄 다른 접근: [[papers/941_Big_Names_or_Big_Ideas_Do_Peer-Review_Panels_Select_the_Best/review]] — 기존의 동료평가 기반 연구비 배분 시스템의 한계를 극복하는 추첨 기반 대안을 제시한다.
+- 🏛 기반 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 과학 자금 지원에서 나타나는 매튜 효과 문제를 해결하기 위한 추첨 시스템의 이론적 근거를 제공한다.
+- 🔗 후속 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 과학 자금 지원의 광범위한 영향을 시각화하는 연구에 추첨 기반 배분의 효과 분석을 추가한다.

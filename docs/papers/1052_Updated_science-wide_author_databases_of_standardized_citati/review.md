@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "Scopus 데이터를 기반으로 전 과학 분야의 상위 인용 과학자들에 대한 표준화된 인용 지표 데이터베이스를 2019년까지 업데이트하여 공개한 논문이다."
 tags:
-  - "cat/Scientific_Impact_and_Innovation"
-  - "sub/Citation_metrics_and_impact_measurement"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Citation_Index_Analysis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ioannidis et al._2020_Updated science-wide author databases of standardized citation indicators.pdf"
 ---
@@ -82,7 +82,8 @@ Scopus 데이터를 기반으로 전 과학 분야의 상위 인용 과학자들
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — 개별 연구자의 과학적 성과를 정량화하는 h-지수 연구를 전체 과학 분야로 확장한 표준화된 데이터베이스를 제공한다.
-- 🧪 응용 사례: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 표준화된 인용 지표 데이터베이스를 활용하여 과학 경력에서의 성별 불평등을 역사적으로 비교 분석할 수 있다.
-- 🔗 후속 연구: [[papers/1056_Where_Do_Your_Citations_Come_From_Citation-Constellation_A_F/review]] — 표준화된 저자 데이터베이스를 인용 네트워크의 사회구조적 분석으로 확장한다.
-- 🔗 후속 연구: [[papers/993_OpenAlex_A_fully-open_index_of_scholarly_works_authors_venue/review]] — OpenAlex의 저자 정보를 표준화된 인용 데이터베이스와 연결하여 더 정확한 학술 성과 분석이 가능하다.
+- 🔗 후속 연구: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — h-index를 포함하여 과학자들의 연구 성과를 측정하는 더 포괄적인 표준화된 지표 시스템을 제공한다.
+- 🧪 응용 사례: [[papers/1020_Scientific_prize_network_predicts_who_pushes_the_boundaries/review]] — 표준화된 인용 지표를 활용하여 과학 분야의 경계를 확장하는 연구자들을 예측하는 데 활용한다.
+- 🔄 다른 접근: [[papers/992_OpenAlex_in_focus_Metadata_quality_of_publication_type_and_l/review]] — OpenAlex와 다른 접근으로 과학자들의 표준화된 인용 지표 데이터베이스를 구축한다.
+- 🔗 후속 연구: [[papers/933_An_index_to_quantify_an_individuals_scientific_research_outp/review]] — h-index를 포함한 더 포괄적인 표준화된 인용 지표 데이터베이스를 제공한다.
+- 🔗 후속 연구: [[papers/1167_Enabling_transparent_research_evaluation_A_method_for_histor/review]] — 표준화된 인용 데이터베이스 연구를 확장하여 투명한 연구 평가를 위한 구체적 방법론을 제시한다.

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어 모델(LLM)이 2023년 이후 급격히 확산되면서 연방 연구 자금 신청 제안서의 의미론적 독창성을 감소시키고 있으며, 이러한 변화가 NIH에서는 제안 성공률과 논문 출판량 증가와 연관되지만 NSF에서는 그러한 연관성이 관찰되지 않음을 보여준다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/AI_and_Large_Language_Models"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/AI_Impact_on_Computer_Science"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qian et al._2026_The Rise of Large Language Models and the Direction and Impact of US Federal Research Funding.pdf"
 ---
@@ -84,5 +84,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qian et al._2026_The Rise of Large Langu
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1077_Quantifying_large_language_model_usage_in_scientific_papers/review]] — LLM 사용률 정량화 방법론을 통해 연구 제안서뿐만 아니라 학술논문 전반의 LLM 영향을 더 체계적으로 측정할 수 있다.
-- ⚖️ 반론/비판: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — LLM이 연구의 참신성을 감소시키는지에 대한 상반된 관점을 제시하여 연방 자금 지원에 미치는 영향을 비판적으로 검토한다.
+- 🧪 응용 사례: [[papers/1021_Scientific_production_in_the_era_of_large_language_models/review]] — LLM이 과학 논문 생산에 미치는 영향을 연방 연구자금 신청서 분야로 확장하여 분석한다.
+- 🔗 후속 연구: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 공적 자금의 과학 연구 지원에 LLM이 미치는 의미론적 독창성 감소 효과를 추가로 규명한다.
+- 🏛 기반 연구: [[papers/953_Do_Large_Language_Models_Reduce_Research_Novelty_Evidence_fr/review]] — 대규모 언어 모델이 연구 참신성을 감소시키는 현상의 구체적 사례를 연구자금 신청서에서 확인한다.
+- ⚖️ 반론/비판: [[papers/1002_Public_use_and_public_funding_of_science/review]] — 연방 연구자금이 LLM 도입으로 인해 의미론적 독창성을 감소시키는 문제점을 지적한다.
+- 🧪 응용 사례: [[papers/1021_Scientific_production_in_the_era_of_large_language_models/review]] — LLM이 과학 논문 생산에 미치는 영향을 연방 연구자금 신청서 분야로 확장하여 분석한다.
+- 🏛 기반 연구: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — 대규모언어모델의 등장이 과학 연구에 미치는 방향성과 영향 분석이 LLM의 과학계량학 적용 가능성을 뒷받침한다.
+- 🏛 기반 연구: [[papers/1077_Quantifying_large_language_model_usage_in_scientific_papers/review]] — LLM의 등장과 과학에 미치는 방향성 및 영향 분석이 학술논문에서 LLM 사용량 정량화의 이론적 배경을 제공한다.
+- 🔗 후속 연구: [[papers/963_Forecasting_the_future_of_artificial_intelligence_with_machi/review]] — LLM의 부상이 AI 연구 예측 모델의 정확성과 방향성에 미치는 영향을 체계적으로 분석할 수 있음
+- 🏛 기반 연구: [[papers/1179_Global_Research_Trends_in_Knowledge_Management_in_Higher_Edu/review]] — LLM의 등장이 고등교육 지식관리의 미래 방향성인 AI와 디지털 변환에 미치는 영향을 이해할 수 있습니다.

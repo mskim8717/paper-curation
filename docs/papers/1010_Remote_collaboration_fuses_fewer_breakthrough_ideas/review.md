@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "지난 50년간 과학자와 발명가들의 원격 협업이 급증했지만, 모든 분야에서 원격 팀은 온사이트 팀에 비해 혁신적(disruptive) 발견을 이루기 어렵다는 것을 보여준다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Collaboration_and_Team_Effects"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Research_Collaboration_Networks"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lin et al._2023_Remote collaboration fuses fewer breakthrough ideas.pdf"
 ---
@@ -90,9 +90,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lin et al._2023_Remote collaboration fus
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 대규모 팀과 소규모 팀의 혁신 패턴 차이가 원격 협업에서 더욱 두드러지게 나타나는 현상을 설명할 수 있다.
-- ⚖️ 반론/비판: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 인종적 다양성이 협업 성과를 높이지만 원격 환경에서는 그 효과가 제한될 수 있음을 시사한다.
-- 🧪 응용 사례: [[papers/945_Coevolution_of_policy_and_science_during_the_pandemic/review]] — 팬데믹 기간 중 정책과 과학의 공진화 과정에서 원격 협업의 한계가 실제로 나타났는지 검증할 수 있다.
-- 🏛 기반 연구: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 원격 협업에서 돌파적 아이디어가 줄어드는 현상을 인종적 다양성의 긍정적 효과와 대비하여 협업 방식의 중요성을 강조한다.
-- ⚖️ 반론/비판: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 원격 협업이 혁신적 아이디어를 감소시킨다는 연구로 다양성 프레임워크의 한계를 시사한다
-- 🧪 응용 사례: [[papers/1121_Superstar_Extinctionsupsup/review]] — 슈퍼스타 소멸로 인한 협업 변화를 원격 협업이 혁신적 아이디어 융합에 미치는 영향 연구에 적용한다.
+- 🏛 기반 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 팀 기반 지식 생산이 지배적이 되는 환경에서 원격 협업의 한계를 분석하는 기초를 제공한다.
+- ⚖️ 반론/비판: [[papers/965_Gender-diverse_teams_produce_more_novel_and_higher-impact_sc/review]] — 다양성이 혁신에 미치는 긍정적 효과와 대조적으로 원격 협업의 혁신 저해 효과를 보여준다.
+- 🔗 후속 연구: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 인종적 다양성이 협업 영향력을 높이는 발견을 원격 협업 환경에서 재검토할 필요성을 제시한다.
+- 🧪 응용 사례: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 팀 기반 연구가 지배적인 환경에서 원격 협업이 혁신에 미치는 제약을 분석하는 맥락을 제공한다.
+- 🏛 기반 연구: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 다양성이 협업에 미치는 긍정적 효과를 원격 협업의 혁신 제약과 비교하는 기준을 제공한다.
+- ⚖️ 반론/비판: [[papers/1196_Media_and_Digital_Marketing_Bibliomatrix_Analysis_using_R_Fu/review]] — 원격 협업이 혁신을 감소시킨다는 연구와 디지털 마케팅의 협업 증진 효과를 비교 분석할 필요가 있음

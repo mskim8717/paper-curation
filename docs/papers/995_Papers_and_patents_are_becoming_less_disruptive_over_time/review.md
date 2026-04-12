@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "45백만 논문과 390만 특허 데이터를 분석하여 과학과 기술의 혁신성(disruptiveness)이 시간이 지남에 따라 지속적으로 감소하고 있음을 규명했다. 이러한 감소 추세는 연구자들이 과거 지식의 범위를 좁혀서 활용하는 경향과 연관되어 있다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Research_Evaluation_and_Impact"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Innovation_Patent_Analysis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Park et al._2023_Papers and patents are becoming less disruptive over time.pdf"
 ---
@@ -89,11 +89,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Park et al._2023_Papers and patents are 
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 혁신성 지수가 인용 인플레이션으로 인해 문제가 있다고 지적하여 혁신성 감소 결론에 이의를 제기한다
-- 🏛 기반 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 대규모 팀과 소규모 팀의 서로 다른 역할이 혁신성 변화의 기초적 메커니즘을 설명한다
-- 🔄 다른 접근: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비전형적 조합이 과학적 영향력을 높인다는 상반된 관점을 제시한다
-- 🏛 기반 연구: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 과학과 특허의 혁신성 하락을 뒷받침하는 강건한 증거로서 영인용 논문 제외 후에도 하락 추세가 지속됨을 확인한다.
-- ⚖️ 반론/비판: [[papers/968_Growth_Rates_of_Modern_Science_Bibliometric_Analysis_Based_o/review]] — 과학의 지속적 성장 패턴과 최근 과학의 파괴적 혁신 감소 현상이 상반된 관점을 제시한다.
-- 🏛 기반 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 논문과 특허의 파괴성 감소 현상을 팀 규모 변화와 연결하여 과학 발전의 구조적 변화 설명
-- 🔗 후속 연구: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 파괴성 지수의 전반적 감소 현상이 인용 인플레이션이라는 측정 편향에서 기인할 수 있음을 규명하여 기존 연구를 보완한다.
-- 🏛 기반 연구: [[papers/927_A_Dynamic_Network_Measure_of_Technological_Change/review]] — 기술 변화의 동적 네트워크 측정이 과학과 기술에서 파괴성 감소 현상을 이해하는 방법론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 대형 팀의 개발적 성격과 혁신성 감소 현상이 모두 현대 과학의 점진적 발전 경향을 설명함
+- 🔄 다른 접근: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 혁신성 감소에 대한 강건한 증거 제시와 원 연구 결과 간의 방법론적 차이를 비교 검토할 수 있음
+- ⚖️ 반론/비판: [[papers/936_Atypical_Combinations_and_Scientific_Impact/review]] — 비정형적 조합이 과학적 영향력을 높인다는 발견과 혁신성 감소 추세 간의 모순을 탐구할 수 있음
+- ⚖️ 반론/비판: [[papers/1045_The_strain_on_scientific_publishing/review]] — 논문의 파괴성 감소 트렌드는 출판량 증가가 질적 측면에 미치는 부정적 영향을 시사한다.
+- 🏛 기반 연구: [[papers/1122_The_disruption_index_suffers_from_citation_inflation_Re-anal/review]] — 논문과 특허의 disruptiveness 감소를 최초로 보고한 연구로 인용 인플레이션 비판의 대상이 된다.
+- 🔄 다른 접근: [[papers/927_A_Dynamic_Network_Measure_of_Technological_Change/review]] — 기술 네트워크의 동적 변화를 측정하는 CDt 지수와 논문/특허의 파괴성 감소 연구는 모두 혁신의 파괴적 영향을 정량화한다.
+- ⚖️ 반론/비판: [[papers/1064_Data-driven_predictions_in_the_science_of_science/review]] — 과학의 파괴적 혁신이 감소하고 있다는 실증적 증거는 데이터 기반 과학 예측의 한계를 보여주는 중요한 반박 사례이다.
+- 🏛 기반 연구: [[papers/1080_Robust_Evidence_for_Declining_Disruptiveness_Assessing_the_R/review]] — 과학 논문의 disruptiveness 감소 현상을 최초로 제시한 원논문으로 후속 논쟁의 출발점이 된다.
+- 🔗 후속 연구: [[papers/934_Are_disruptive_papers_more_likely_to_impact_technology_and_s/review]] — 논문의 파괴성 감소 트렌드와 파괴적 논문의 사회적 영향력 역설을 함께 보면 혁신의 복잡한 메커니즘을 이해할 수 있다.
+- 🔗 후속 연구: [[papers/979_Large_teams_develop_and_small_teams_disrupt_science_and_tech/review]] — 팀 규모와 혁신의 관계를 과학기술 논문의 파괴성 감소 현상과 연결하여 현대 연구 생태계의 변화를 종합적으로 이해할 수 있다.

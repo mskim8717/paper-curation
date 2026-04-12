@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "1990-2025년 Scopus와 Web of Science 데이터 기반 scientometric 분석을 통해 AI 도입(adoption) 연구에서 위험(risk)의 역할이 개별 지각적 억제요인에서 구조적 거버넌스 구성으로 진화했음을 규명한 연구이다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Scientific_Mapping_and_Visualization"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Thematic_Network_Detection"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huong and Long_2026_Risk and Artificial Intelligence Adoption A Scientometric and Thematic Evolution Analysis Based on.pdf"
 ---
@@ -78,7 +78,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huong and Long_2026_Risk and Artificial 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1120_SciEvo_A_2_Million_30-Year_Cross-disciplinary_Dataset_for_Te/review]] — AI 도입 연구의 테마틱 진화를 분석하는 대신 학문 전반의 용어 진화와 학제간 지식 교류를 추적한다.
-- 🔗 후속 연구: [[papers/962_Forecasting_high-impact_research_topics_via_machine_learning/review]] — AI 위험 연구 트렌드 분석을 머신러닝 기반 고영향 연구 주제 예측 방법론으로 확장한다.
-- 🏛 기반 연구: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 과학 매핑에서 테마틱 진화를 분석하는 통합적 접근법의 방법론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/1078_Quantifying_the_use_and_potential_benefits_of_artificial_int/review]] — AI 도입 위험 분석을 실제 과학 연구에서 AI 활용의 잠재적 이익과 위험 정량화에 적용한다.
+- 🔄 다른 접근: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 의미론적 신경망을 통한 연구 트렌드 예측은 AI 도입 연구 진화의 다른 분석 방법을 제시한다.
+- 🧪 응용 사례: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 머신러닝 연구 개혁 권고안은 AI 도입에서 위험 거버넌스의 구체적 적용 사례를 보여준다.
+- 🏛 기반 연구: [[papers/1124_The_Science_of_Science/review]] — 과학학 이론은 AI 도입 연구의 scientometric 분석에 개념적 틀을 제공한다.
+- 🧪 응용 사례: [[papers/997_Polymer_Science_Research_in_India_A_Scientometrics_Study/review]] — scientometrics 방법론을 위험과 AI 분야 연구 분석에 적용한 사례와 고분자 과학 분야 적용 사례 간의 방법론적 유사성을 보여준다.
+- 🔄 다른 접근: [[papers/1166_Emerging_Trends_in_Cybersecurity_Machine_Learning_as_a_Game-/review]] — 사이버보안과 위험 및 AI 채택 모두 scientometric 분석을 통해 신기술의 영향과 동향을 체계적으로 파악하는 유사한 접근법을 사용한다.

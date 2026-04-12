@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "의료 과학의 660만 개 논문 분석을 통해 성별 다양성 높은 팀이 동일 규모의 단일 성별 팀보다 더 신규적이고 영향력 있는 연구 결과를 생산함을 입증했다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Collaboration_and_Team_Effects"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Gender_Research_Diversity"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2022_Gender-diverse teams produce more novel and higher-impact scientific ideas.pdf"
 ---
@@ -92,14 +92,15 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2022_Gender-diverse teams pr
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 성별 다양성의 혁신 효과에 대한 실증적 증거를 체계적 프레임워크로 일반화할 수 있음
-- ⚖️ 반론/비판: [[papers/1032_The_Diversity-Innovation_Paradox_in_Science/review]] — 성별 다양성의 긍정적 효과가 다양성-혁신 역설과 어떻게 조화될 수 있는지 논의 필요
-- 🔗 후속 연구: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 성별 다양성 효과를 민족 다양성까지 확장하여 팀 구성의 다차원적 다양성 이해 가능
-- 🔗 후속 연구: [[papers/1066_Accelerating_science_with_human-aware_artificial_intelligenc/review]] — 성별 다양성이 과학 혁신에 미치는 영향을 인간 중심 AI 접근법으로 확장하여 전문성 분포의 다양성 효과를 분석한다.
-- 🔗 후속 연구: [[papers/970_Historical_Comparison_of_Gender_Inequality_in_Scientific_Car/review]] — 성별 다양한 팀이 더 참신하고 높은 영향력의 과학을 생산한다는 연구와 연결되어 개별 여성 과학자의 경력 불평등이 팀 차원의 성과에 미치는 영향을 이해한다.
-- 🔗 후속 연구: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 성별 다양성뿐만 아니라 인종적 다양성도 과학 협업의 참신성과 영향력을 높이는 핵심 요인임을 보여주는 상호 보완적 증거다.
-- 🧪 응용 사례: [[papers/1046_The_structure_of_scientific_collaboration_networks/review]] — 과학 협력 네트워크 구조 분석을 성별 다양성이 팀 성과에 미치는 영향 연구에 적용한다.
-- 🔗 후속 연구: [[papers/1034_The_Increasing_Dominance_of_Teams_in_Production_of_Knowledge/review]] — 팀 연구의 우세 현상을 성별 다양성 관점에서 확장하여 팀 구성이 혁신에 미치는 구체적 메커니즘을 규명한다.
-- 🔗 후속 연구: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 성별 다양성이 높은 팀이 더 참신하고 높은 영향력을 가진 과학을 생산한다는 실증 결과를 체계적 프레임워크로 확장 설명한다.
-- 🔗 후속 연구: [[papers/946_Collective_Credit_Allocation_in_Science/review]] — 저자별 기여도 정량화를 성별 다양성 팀이 생산하는 혁신적 고영향 과학의 신용 배분으로 확장한다.
-- 🧪 응용 사례: [[papers/999_Principles_of_Scientific_Research_Team_Formation_and_Evoluti/review]] — 성별 다양성이 팀 성과에 미치는 영향 연구가 연구팀 구성 원리의 구체적인 다양성 측면을 다룬다.
+- ⚖️ 반론/비판: [[papers/940_Bibliometrics_Global_Gender_Disparities_in_Science/review]] — 성별 다양성 팀의 혁신적 연구 생산은 과학계 글로벌 성별 불균형 문제에 대한 해결책으로서 다양성의 긍정적 효과를 보여준다.
+- 🔗 후속 연구: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 성별 다양성 팀의 과학적 성과 연구는 성별 다양성이 과학적 발견과 혁신에 효과적으로 작용하도록 하는 방법론적 확장을 제공한다.
+- ⚖️ 반론/비판: [[papers/1010_Remote_collaboration_fuses_fewer_breakthrough_ideas/review]] — 다양성이 혁신에 미치는 긍정적 효과와 대조적으로 원격 협업의 혁신 저해 효과를 보여준다.
+- 🔗 후속 연구: [[papers/1039_The_Preeminence_of_Ethnic_Diversity_in_Scientific_Collaborat/review]] — 성별 다양한 팀의 혁신적 성과를 인종적 다양성의 관점에서 확장하여 분석한다.
+- 🔗 후속 연구: [[papers/1110_A_cross-disciplinary_research_framework_at_institution_level/review]] — 성별 다양성이 과학적 발견에 미치는 긍정적 효과를 분석하여 다학제 협력의 다양성 가치를 보강한다.
+- 🔗 후속 연구: [[papers/1066_Accelerating_science_with_human-aware_artificial_intelligenc/review]] — 성별 다양성 팀이 더 혁신적인 과학을 생산한다는 발견을 인간 중심 AI 모델에 통합하여 팀 구성 최적화에 활용할 수 있다.
+- 🔗 후속 연구: [[papers/940_Bibliometrics_Global_Gender_Disparities_in_Science/review]] — 전 세계 과학계 성별 불균형 분석은 성별 다양한 팀의 혁신적 연구 생산을 보여준 연구로 확장되어 다양성의 긍정적 효과를 입증한다.
+- ⚖️ 반론/비판: [[papers/966_Global_citation_inequality_is_on_the_rise/review]] — 다양성 증진이 혁신을 촉진한다는 관점과 소수 엘리트의 인용 독점 현상 간의 모순을 탐구할 수 있음
+- ⚖️ 반론/비판: [[papers/976_Intersectional_inequalities_in_science/review]] — 성별 다양 팀의 혁신성 증대 결과와 교차적 불평등이 연구 성과에 미치는 부정적 영향을 대조하여 다양성의 복잡한 효과를 분석할 수 있다.
+- 🔗 후속 연구: [[papers/981_Making_gender_diversity_work_for_scientific_discovery_and_in/review]] — 성별 다양한 팀이 혁신을 촉진한다는 실증 결과를 체계적 프레임워크로 설명할 수 있음
+- 🔗 후속 연구: [[papers/1170_Evolution_of_Social_Work_Knowledge_Production_Over_35_Years/review]] — 사회복지 분야의 35년 지식생산 진화를 성별 다양성과 혁신성이라는 더 넓은 과학사회학적 관점으로 확장합니다.
+- 🔗 후속 연구: [[papers/1205_Rethinking_team_science_metrics_through_Collaborative_Guidep/review]] — 성별 다양성이 과학적 발견에 미치는 영향을 분석하여 Collaborative Guideposts 프레임워크의 다양성 고려 방안을 보완한다.

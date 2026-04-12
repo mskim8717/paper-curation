@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 2022-2025년 AI 과학자(AI Scientist) 시스템의 급속한 발전을 종합적으로 분석하며, 문헌 검토부터 논문 생성까지 6단계 방법론 프레임워크를 통해 자율적 과학 발견의 전체 워크플로우를 체계화한다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "sub/AI-Driven_Research_Discovery"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Scientific_Discovery_Automation"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tie et al._2026_A Survey of AI Scientists.pdf"
 ---
@@ -87,5 +87,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tie et al._2026_A Survey of AI Scientist
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/1119_Publish_and_Perish_How_AI-Accelerated_Writing_Without_Propor/review]] — AI 가속 연구의 부정적 측면인 적절한 검증 없는 논문 발표 문제를 지적하여 AI 과학자 시스템의 한계를 보여준다.
-- 🏛 기반 연구: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — 대규모 언어모델이 과학의 과학 분야에 미치는 영향을 분석하여 AI 과학자 시스템의 이론적 기반을 제공한다.
+- ⚖️ 반론/비판: [[papers/1067_After_science/review]] — AI 과학자 시스템의 긍정적 발전 전망과 '과학 이후' 시대의 우려스러운 전망을 대비하여 AI 자동화의 양면성을 이해할 수 있다.
+- 🧪 응용 사례: [[papers/931_AI-Driven_Automation_Can_Become_the_Foundation_of_Next-Era_S/review]] — 차세대 과학 발견을 위한 AI 자동화 기반 구축에 AI 과학자 시스템의 6단계 방법론 프레임워크가 직접적으로 적용된다.
+- 🔗 후속 연구: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — AI 과학자에 대한 종합적 설문 조사 결과를 과학의 과학 분야에 LLM을 적용하는 구체적 방향성 설정에 활용할 수 있다.

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "Scopus 데이터베이스의 3,600만 논문 메타데이터를 활용하여 1998-2017년 전 세계 학자의 국제 이동 패턴을 분석하고, 경제 발전 수준에 따른 학자 이민의 U자형 관계를 발견했다."
 tags:
-  - "cat/Research_Quality_and_Demographics"
-  - "sub/Career_Dynamics_and_Outcomes"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholar_Mobility_Patterns"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sanliturk et al._2023_Global patterns of migration of scholars with economic development.pdf"
 ---
@@ -85,11 +85,9 @@ Scopus 데이터베이스의 3,600만 논문 메타데이터를 활용하여 199
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 전 세계 학자 이동의 거시적 패턴을 미중 과학 협력 변화라는 구체적 사례로 심화 분석 가능
-- 🔄 다른 접근: [[papers/973_Impacts_of_inter-institutional_mobility_on_scientific_perfor/review]] — 국가 간 학자 이동과 기관-산업 간 이동이라는 서로 다른 차원의 모빌리티 효과 비교 연구
-- 🧪 응용 사례: [[papers/935_Atlas_of_Science_Collaboration_19712020/review]] — 학자 이동 패턴을 과학 협력 지도를 통해 시각화하고 지리적 분포 변화 추적 가능
-- 🧪 응용 사례: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 연구자 이동 궤적의 임베딩 모델을 경제 발전과 연계된 글로벌 학자 이동 패턴 분석에 직접 적용할 수 있다.
-- 🔗 후속 연구: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 경제 발전에 따른 글로벌 학자 이동 패턴이 미중 과학 협력의 수렴-발산 전환에 어떤 영향을 미쳤는지 분석할 수 있다.
-- 🔄 다른 접근: [[papers/973_Impacts_of_inter-institutional_mobility_on_scientific_perfor/review]] — 기관-산업 이동의 미시적 효과와 국제 학자 이동의 거시적 패턴이라는 다른 스케일의 모빌리티 연구
-- 🔄 다른 접근: [[papers/1026_Systematic_Inequality_and_Hierarchy_in_Faculty_Hiring_Networ/review]] — 국내 교수 채용의 위계구조 대신 국제적 학자 이주 패턴과 경제발전 간의 관계를 분석한다.
-- 🏛 기반 연구: [[papers/935_Atlas_of_Science_Collaboration_19712020/review]] — 경제 발전에 따른 학자들의 글로벌 이동 패턴을 제공하여 국제 과학 협력 변화의 기반 동력을 설명한다.
+- 🔗 후속 연구: [[papers/973_Impacts_of_inter-institutional_mobility_on_scientific_perfor/review]] — 국가 간 학자 이동의 거시적 패턴을 기관-산업체 이동의 미시적 성과 분석으로 확장하여 이해할 수 있다.
+- 🧪 응용 사례: [[papers/1028_Tenure_and_research_trajectories/review]] — 종신재직권 제도가 학자의 국제 이동 의사결정과 경력 궤적에 미치는 영향을 분석하는 데 활용할 수 있다.
+- 🏛 기반 연구: [[papers/1110_A_cross-disciplinary_research_framework_at_institution_level/review]] — 기관 수준의 학제간 연구 프레임워크를 통해 학자 이동이 연구 다양성에 미치는 영향을 이해할 수 있다.
+- 🔗 후속 연구: [[papers/1029_The_altering_landscape_of_USChina_science_collaboration_from/review]] — 경제 발전과 연결된 글로벌 학자 이주 패턴은 미중 과학 협력 변화의 광범위한 맥락을 제공한다.
+- 🧪 응용 사례: [[papers/1050_Unsupervised_embedding_of_trajectories_captures_the_latent_s/review]] — 경제 발전과 연결된 학자 이주 패턴은 궤적 임베딩 모델의 구체적 적용 사례를 제공한다.
+- 🏛 기반 연구: [[papers/973_Impacts_of_inter-institutional_mobility_on_scientific_perfor/review]] — 전 세계 학자 이동의 거시적 패턴을 바탕으로 기관-산업체 이동의 미시적 성과 영향을 구체적으로 분석한다.

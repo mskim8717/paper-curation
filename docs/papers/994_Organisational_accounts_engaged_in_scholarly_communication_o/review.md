@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "Twitter에서 학술 출판물을 논의하는 9,842개의 연구·정책 관련 기관 계정(Organisational accounts)을 식별하고 이들의 소셜 미디어 활동, 팔로워 기반, 참여 패턴을 분석한 연구."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Scientific_Publishing_and_Incentives"
+  - "cat/Academic_Impact_and_Mobility"
+  - "sub/Scholarly_Social_Media_Engagement"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zahedi et al._2026_Organisational accounts engaged in scholarly communication on Twitter Patterns of presence, activit 1.pdf"
 ---
@@ -91,6 +91,7 @@ Twitter에서 학술 출판물을 논의하는 9,842개의 연구·정책 관련
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 온라인 과학 커뮤니케이션에서 정보 경로의 역할에 대한 이론적 기반을 제공한다
-- 🔗 후속 연구: [[papers/942_Bridging_the_gap_between_science_and_society_Mapping_librari/review]] — 과학과 사회 간 격차를 연결하는 도서관의 역할을 기관 계정으로 확장하여 분석한다
-- 🔄 다른 접근: [[papers/1001_Public_Profile_Matters_A_Scalable_Integrated_Approach_to_Rec/review]] — 연구자 프로필 관리에 대한 통합적 접근법으로 소셜미디어 활동과 다른 관점을 제시한다
+- 🏛 기반 연구: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — COVID-19 팬데믹 온라인 과학 소통 연구에 Twitter 기관 계정의 학술 소통 패턴 분석 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/942_Bridging_the_gap_between_science_and_society_Mapping_librari/review]] — 과학과 사회 간 격차 해소를 위한 도서관 매핑 연구를 Twitter 기관 계정의 학술 소통 역할 분석으로 확장할 수 있다.
+- 🧪 응용 사례: [[papers/1031_The_Chaperone_Effect_in_Scientific_Publishing/review]] — 학술 출판에서 샤페론 효과 연구에 Twitter 기관 계정의 학술 논문 증폭 역할 분석을 적용할 수 있다.
+- 🔗 후속 연구: [[papers/974_Information_Pathways_in_Online_Science_Communication_The_Rol/review]] — 기관 계정의 학술 소통 패턴 분석을 팬데믹 상황의 정보 경로 분석으로 확장하여 위기 시 과학 소통을 이해할 수 있다.

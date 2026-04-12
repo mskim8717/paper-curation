@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "1.2백만 개 이상의 DFT 계산을 포함한 Open Catalyst 2020 (OC20) 데이터셋을 개발하여 산화물 전기촉매의 기계학습 모델 개발을 가능하게 했다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/AI_and_Large_Language_Models"
+  - "cat/AI-Assisted_Scientific_Discovery"
+  - "sub/Knowledge_Graphs_and_Data_Integration"
   - "topic/scisci"
 ---
 
@@ -91,5 +91,6 @@ tags:
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — OC20 데이터셋의 후속 버전으로 산화물 전기촉매 연구를 위한 더 확장된 DFT 계산 데이터를 제공한다.
-- 🧪 응용 사례: [[papers/1070_Challenges_in_High-Throughput_Inorganic_Materials_Prediction/review]] — 무기 재료 예측의 고처리량 방법론이 전기촉매 재료 설계에 직접 적용될 수 있는 방법론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — OC20 데이터셋이 OC22 산화물 전기촉매 연구의 기초적인 방법론과 데이터 구조를 제공한다.
+- 🧪 응용 사례: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 기계학습 기반 물질 발견을 위한 합의 기반 권고사항이 Open Catalyst 데이터셋 활용 연구의 모범 사례를 제시한다.
+- 🔗 후속 연구: [[papers/1075_Open_Catalyst_2020_OC20_Dataset_and_Community_Challenges/review]] — OC20에서 OC22로의 발전은 산화물 전기촉매 연구를 위한 데이터셋과 도전 과제의 확장을 보여준다.

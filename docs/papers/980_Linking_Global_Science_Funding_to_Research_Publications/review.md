@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "7.4백만 개의 펀딩 인정(funding acknowledgment) 문자열을 체계적으로 정규화하고 1.9백만 개를 표준 조직 식별자에 매칭하여 글로벌 과학 펀딩과 연구 출판물을 연결하는 대규모 데이터셋을 구축했다."
 tags:
-  - "cat/Bibliometric_Network_Analysis"
-  - "sub/Bibliometric_Datasets_and_Infrastructure"
+  - "cat/Computational_Bibliometric_Analysis"
+  - "sub/Domain-Specific_Analysis_Studies"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dalsgaard et al._2026_Linking Global Science Funding to Research Publications.pdf"
 ---
@@ -92,9 +92,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dalsgaard et al._2026_Linking Global Sci
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 펀딩-출판물 연결 데이터셋이 과학 펀딩의 광범위한 임팩트 시각화 연구의 핵심 인프라를 구성한다.
-- 🧪 응용 사례: [[papers/996_Partisan_disparities_in_the_funding_of_science_in_the_United/review]] — 미국 과학 펀딩의 정치적 양극화 현상을 글로벌 펀딩 데이터로 확장 분석할 수 있는 토대를 제공한다.
-- 🏛 기반 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 펀딩 데이터의 체계적 구축이 과학 펀딩에서의 매튜 효과 분석을 가능하게 하는 필수 기반이다.
-- 🔗 후속 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 글로벌 과학 펀딩과 연구 출판물 연결 연구를 펀딩의 다운스트림 영향까지 확장하여 더 포괄적인 펀딩 영향 평가 시스템을 구축한다.
-- 🏛 기반 연구: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 글로벌 과학 자금과 연구 출판의 연결 관계에 대한 일반적 방법론을 제공한다
-- 🏛 기반 연구: [[papers/1111_A_Strategic_Guide_to_White_Space_Analysis_for_Pharmaceutical/review]] — 글로벌 과학 펀딩과 연구 성과의 연결 분석이 제약 R&D 투자 전략 수립의 기반 정보를 제공한다.
+- 🔗 후속 연구: [[papers/1036_The_Matthew_effect_in_science_funding/review]] — 글로벌 펀딩 데이터와 매튜 효과 분석을 결합하여 연구 자금 배분의 불평등 구조를 체계적으로 파악할 수 있음
+- 🧪 응용 사례: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 표준화된 펀딩 데이터를 활용하여 프론티어 연구 자금 지원의 광범위한 영향을 시각화하고 분석할 수 있음
+- 🔄 다른 접근: [[papers/991_Open_Datasets_in_Learning_Analytics_Trends_Challenges_and_Be/review]] — 연구 자금과 출판물 연계 분석과 오픈 데이터셋 현황 분석이 모두 과학 연구의 투명성과 재현성 향상이라는 동일한 목표를 다른 각도에서 접근한다.
+- 🏛 기반 연구: [[papers/964_Funding_the_Frontier_Visualizing_the_Broad_Impact_of_Science/review]] — 글로벌 과학 펀딩과 연구 출판물 연결 연구는 펀딩의 다차원적 영향 시각화 시스템 개발의 데이터 연결 방법론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/983_Mapping_Research_Funding_and_Outputs_at_the_Topic_Level_in_t/review]] — 글로벌 과학 자금과 연구 출판물 연결 연구를 북유럽 지역의 주제별 세분화 분석으로 확장하여 지역적 특성을 규명한다.
+- 🏛 기반 연구: [[papers/1184_Hamemayu_Hayuning_Nagara_A_Bibliometric_Analysis_of_the_Poli/review]] — 글로벌 과학 펀딩과 연구 성과의 연계를 주제 수준에서 분석한 연구로 VAT 정책과 연구 생산성의 관계를 이해하는 기반을 제공한다.

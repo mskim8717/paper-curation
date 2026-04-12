@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "143,000개의 AI 논문으로부터 64,000개 개념노드의 의미 네트워크를 구축하고, 머신러닝 기반 링크 예측을 통해 미래의 AI 연구 방향을 예측하는 Science4Cast 벤치마크를 제시한다."
 tags:
-  - "cat/Scientific_Information_Systems"
-  - "sub/AI-Driven_Research_Discovery"
+  - "cat/Computational_Bibliometric_Analysis"
+  - "sub/Trend_Forecasting_Techniques"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Krenn et al._2023_Forecasting the future of artificial intelligence with machine learning-based link prediction in an.pdf"
 ---
@@ -94,6 +94,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Krenn et al._2023_Forecasting the future
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/998_Predicting_Scientific_Breakthroughs_Based_on_Structural_Dyna/review]] — AI 연구 예측에서 의미 네트워크 대신 구조적 역학을 기반으로 과학적 돌파를 예측하는 다른 접근법을 제시한다.
-- 🏛 기반 연구: [[papers/1076_Predicting_research_trends_with_semantic_and_neural_networks/review]] — 의미 네트워크와 신경망을 활용한 연구 트렌드 예측의 기본 방법론을 AI 분야에 특화하여 적용한다.
-- 🧪 응용 사례: [[papers/1064_Data-driven_predictions_in_the_science_of_science/review]] — AI 분야의 기계학습 예측을 통해 과학의 과학에서 데이터 기반 예측의 구체적 적용 사례와 한계를 보여준다.
+- 🏛 기반 연구: [[papers/1033_The_Empowerment_of_Science_of_Science_by_Large_Language_Mode/review]] — AI 연구 방향 예측을 위해 대규모 언어 모델이 과학학 연구에 미치는 혁신적 영향을 이해할 필요가 있음
+- 🔗 후속 연구: [[papers/1041_The_Rise_of_Large_Language_Models_and_the_Direction_and_Impa/review]] — LLM의 부상이 AI 연구 예측 모델의 정확성과 방향성에 미치는 영향을 체계적으로 분석할 수 있음

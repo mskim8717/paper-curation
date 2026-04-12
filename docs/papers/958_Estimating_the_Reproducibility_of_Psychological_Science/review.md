@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "심리학 분야의 100개 주요 연구를 직접 재현(replication)한 결과, 원래 연구의 효과크기가 재현 연구에서 약 절반 수준으로 감소했으며, 재현 성공률이 36%에 불과함을 보여주었다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Research_Evaluation_and_Impact"
+  - "cat/Science_Policy_and_Research_Dynamics"
+  - "sub/Research_Reproducibility_Crisis"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Open Science Collaboration_2015_Estimating the Reproducibility of Psychological Science.pdf"
 ---
@@ -77,9 +77,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Open Science Collaboration_2015_Estimati
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/959_Evaluating_the_Replicability_of_Social_Science_Experiments_i/review]] — 심리학 분야의 재현성 위기를 Nature와 Science의 사회과학 실험으로 확장하여 재현성 문제가 학문 분야를 넘나드는 보편적 현상임을 보여준다.
-- 🏛 기반 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 1,500명 과학자들의 재현성에 대한 인식 조사가 심리학 분야의 실제 재현 실험 결과와 비교할 수 있는 배경 정보를 제공한다.
-- 🏛 기반 연구: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 심리학 연구의 재현성 평가 경험을 바탕으로 기계학습 기반 과학 연구의 재현성 보장 방법론에 대한 기초를 제공한다.
-- 🧪 응용 사례: [[papers/1058_Why_Most_Published_Research_Findings_Are_False/review]] — 심리과학의 재현성 추정 연구가 Ioannidis의 이론적 예측을 구체적 분야에서 실증적으로 검증하는 사례를 제공한다.
-- 🔗 후속 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 심리과학의 재현성 추정과 Nature 설문조사를 결합하면 재현성 문제의 범위와 심각성을 더 정확히 파악할 수 있다.
-- 🔗 후속 연구: [[papers/987_Meta-assessment_of_Bias_in_Science/review]] — 편향 평가를 심리학의 재현성 위기라는 구체적 맥락에서 분야별 차이점과 공통점 분석 가능
+- 🏛 기반 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 심리학 100개 연구의 직접 재현 실험은 1,500명 과학자가 인식한 재현성 위기에 대한 실증적 검증을 제공한다.
+- 🔄 다른 접근: [[papers/959_Evaluating_the_Replicability_of_Social_Science_Experiments_i/review]] — 심리학 연구 재현과 Nature/Science 사회과학 실험 재현은 모두 직접 재현을 통해 재현성 위기를 검증하되 다른 분야를 대상으로 한다.
+- 🔗 후속 연구: [[papers/925_1500_scientists_lift_the_lid_on_reproducibility/review]] — 1,500명 과학자 대상 재현성 위기 설문조사는 심리학 100개 연구 직접 재현 실험의 광범위한 배경과 맥락을 제공한다.
+- 🧪 응용 사례: [[papers/1058_Why_Most_Published_Research_Findings_Are_False/review]] — 연구 결과의 거짓 가능성 문제를 심리학 분야의 구체적인 재현성 평가로 적용한다.
+- 🔗 후속 연구: [[papers/1079_REFORMS_Consensus-based_Recommendations_for_Machine-learning/review]] — 심리학 연구 재현성 평가 방법론을 기계학습 연구로 확장한 체크리스트 개발의 선행 사례를 제공한다.
+- 🔄 다른 접근: [[papers/959_Evaluating_the_Replicability_of_Social_Science_Experiments_i/review]] — Nature/Science 사회과학 실험 재현과 심리학 연구 재현은 모두 저명 저널의 연구 재현성을 직접 검증하되 서로 다른 학문 분야를 다룬다.
+- 🧪 응용 사례: [[papers/1214_The_Story_is_Not_the_Science_Execution-Grounded_Evaluation_o/review]] — 심리학 실험의 재현가능성 평가 경험을 기계적 해석 연구의 실행 기반 평가 프레임워크 설계에 적용할 수 있다.

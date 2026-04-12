@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "과학 지도(Science Maps)는 학술 지식의 구조와 동역학을 시각적으로 표현하는 방법론으로, 인용 네트워크(Citation Networks)와 용어 공동 출현(Term Co-occurrence) 기반의 다양한 매핑 기법들을 체계적으로 소개한다."
 tags:
-  - "cat/Science_of_Science_Research"
-  - "sub/Bibliometrics_and_Science_Mapping"
+  - "cat/Computational_Bibliometric_Analysis"
+  - "sub/Bibliometric_Mapping_Tools"
   - "topic/scisci"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Petrovich_2021_Science Mapping and Science Maps.pdf"
 ---
@@ -85,10 +85,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Petrovich_2021_Science Mapping and Scien
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — VOSviewer와 같은 구체적인 소프트웨어 도구를 통해 과학 지도 작성의 실용적 구현 방법을 제공한다.
-- 🔗 후속 연구: [[papers/949_Comparative_science_mapping_a_novel_conceptual_structure_ana/review]] — 비교 과학 지도화 개념을 통해 기존 과학 매핑 방법론을 확장하여 더 정교한 분석이 가능하다.
-- 🧪 응용 사례: [[papers/949_Comparative_science_mapping_a_novel_conceptual_structure_ana/review]] — 새로운 개념 구조 분석을 과학 매핑과 과학 지도의 혁신적 시각화 방법으로 적용한다.
-- 🏛 기반 연구: [[papers/969_Hierarchical_Classification_of_Research_Fields_in_the_Web_of/review]] — 과학 매핑의 이론적 기초와 실제 구현 방법론을 이해하는 데 필수적인 배경 지식을 제공한다.
-- 🏛 기반 연구: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 과학 지도 작성의 기본 개념과 방법론적 기반을 제공하여 주제 진화 분석의 이론적 토대가 된다.
-- 🏛 기반 연구: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — 과학 매핑과 과학 지도의 이론적 배경과 다양한 시각화 접근법을 제공한다.
-- 🏛 기반 연구: [[papers/944_Co-Citation_Analysis_Bibliographic_Coupling_and_Direct_Citat/review]] — 공인용분석과 서지결합의 비교 평가가 과학 매핑의 다양한 접근법 이해의 기반이 된다.
+- 🏛 기반 연구: [[papers/1024_Software_survey_VOSviewer_a_computer_program_for_bibliometri/review]] — 과학 지도 이론과 방법론을 실제로 구현할 수 있는 구체적인 도구가 VOSviewer입니다.
+- 🧪 응용 사례: [[papers/982_Mapping_Knowledge_Topic_Analysis_of_Science_Locates_Research/review]] — 과학 지도 이론을 실제 연구 분야 매핑에 적용한 구체적 사례를 보여줍니다.
+- 🏛 기반 연구: [[papers/1013_Rethinking_Thematic_Evolution_in_Science_Mapping_An_Integrat/review]] — 과학 지도 작성의 기본 원리는 주제 진화 프레임워크의 방법론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/944_Co-Citation_Analysis_Bibliographic_Coupling_and_Direct_Citat/review]] — 다양한 인용 분석 방법의 효과성 평가를 위해 과학 매핑의 이론적 기반과 실용적 지침이 필요함
