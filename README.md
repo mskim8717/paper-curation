@@ -1,8 +1,9 @@
 # Paper Curation
 
-학술 논문 자동 큐레이션 파이프라인: Zotero 연동 → 구조화 리뷰 → 토픽 분류 → 시각화 → Deep Research → Obsidian 지식 축적.
+**[Claude Code](https://claude.ai/code) 위에서 동작하는** 학술 논문 자동 큐레이션 파이프라인.
+Zotero 연동 → 구조화 리뷰 → 토픽 분류 → 시각화 → Deep Research → Obsidian 지식 축적.
 
-Zotero 컬렉션에서 논문을 가져와 Claude/Gemini API로 한국어 구조화 리뷰를 작성하고, Bottom-up 토픽 모델링(HDBSCAN + UMAP)으로 자동 분류합니다. 로컬에서 검색 가능한 HTML 인덱스, Deep Research(자연어 질의 + Claude 답변 + 인용), Obsidian 연동(메모 축적 + wiki-link)을 통해 **개인 연구 지식이 계속 쌓이는 시스템**을 만듭니다.
+Zotero 컬렉션에서 논문을 가져와 Claude/Gemini API로 한국어 구조화 리뷰를 작성하고, Bottom-up 토픽 모델링(HDBSCAN + UMAP)으로 자동 분류합니다. 로컬에서 검색 가능한 HTML 인덱스, Deep Research(자연어 질의 + Claude 답변 + 인용), Obsidian 연동(메모 축적 + wiki-link)을 통해 **개인 연구 지식이 계속 쌓이는 시스템**을 만듭니다. 설치부터 파이프라인 실행까지 **Claude Code가 대화형으로 안내**합니다.
 
 <a href="#english">English</a>
 
@@ -81,7 +82,7 @@ build_search_index.py 재실행 → 내 메모가 인덱스에 포함
 3. **리뷰** — PDF에서 텍스트/Figure 추출, 구조화된 한국어 리뷰 생성 (Claude Haiku). Jargon은 원문 유지 (예: `diffusion model을 사용한다`)
 4. **토픽 모델링** — SPECTER2 임베딩 → HDBSCAN 클러스터링 → TF-IDF 키워드 추출 → Sonnet 작명 → Ward linkage 카테고리 그룹핑
 5. **인사이트** — 카테고리 요약, 카테고리 간 논문 연결 관계 추출 (cross-category connections)
-6. **시각화** — 연구 타임라인 (Opus 내러티브 + PaperBanana 이미지) + UMAP 2D/3D 네트워크 (D3.js + Three.js)
+6. **시각화** — **카테고리별 연구 동향 타임라인** (Claude Opus가 내러티브 작성 → [PaperBanana](https://github.com/dwzhu-pku/PaperBanana)가 category_timeline 다이어그램 자동 생성) + UMAP 2D/3D 네트워크 (D3.js + Three.js)
 7. **검증** — 깨진 그림 참조, 링크, 포맷 문제 자동 수정
 8. **인덱스 빌드** — 토픽 인덱스 HTML (카드, 검색, 타임라인, Deep Research UI) + Deep Research RAG 인덱스 (section-aware chunking + OpenAI embedding)
 
@@ -222,9 +223,9 @@ python pipeline/setup.py
 <details>
 <summary><h2 id="english">English</h2></summary>
 
-Automated academic paper curation pipeline: Zotero → structured review → topic classification → visualization → Deep Research → Obsidian knowledge compounding.
+**Built on [Claude Code](https://claude.ai/code)** — an automated academic paper curation pipeline: Zotero → structured review → topic classification → visualization → Deep Research → Obsidian knowledge compounding.
 
-Papers are fetched from a Zotero collection, reviewed via Claude/Gemini APIs, classified using bottom-up topic modeling (HDBSCAN + UMAP), and served locally as a searchable HTML index with Deep Research (natural-language Q&A grounded in paper reviews) and Obsidian integration for persistent personal knowledge.
+Papers are fetched from a Zotero collection, reviewed via Claude/Gemini APIs, classified using bottom-up topic modeling (HDBSCAN + UMAP), and served locally as a searchable HTML index with Deep Research (natural-language Q&A grounded in paper reviews) and Obsidian integration for persistent personal knowledge. Claude Code guides the entire setup and pipeline execution interactively.
 
 ### Key Features
 
@@ -243,7 +244,7 @@ Papers are fetched from a Zotero collection, reviewed via Claude/Gemini APIs, cl
 3. **Review** — Extract text & figures from PDF, generate a structured Korean review (Claude Haiku)
 4. **Topic Modeling** — SPECTER2 embeddings → HDBSCAN clustering → TF-IDF keywords → Sonnet naming → Ward linkage
 5. **Insights** — Category summaries, cross-category paper connections
-6. **Visualize** — Research timelines + UMAP 2D/3D network (D3.js + Three.js)
+6. **Visualize** — **Per-category research trend timelines** (Claude Opus narrative → [PaperBanana](https://github.com/dwzhu-pku/PaperBanana) auto-generates category_timeline diagrams) + UMAP 2D/3D network (D3.js + Three.js)
 7. **Validate** — Auto-fix broken figure refs, links, and formatting issues
 8. **Build** — Topic index HTML (cards, search, Deep Research UI) + RAG search index (OpenAI embeddings)
 
