@@ -16,7 +16,7 @@ KST = timezone(timedelta(hours=9))
 TODAY = datetime.now(KST).strftime("%Y-%m-%d")
 
 from collections import OrderedDict
-from config_loader import PAPERS_DIR as _PAPERS_DIR, DOCS_DIR, get_topic_dir
+from config_loader import PAPERS_DIR as _PAPERS_DIR, DOCS_DIR, get_topic_dir, get_zotero_api_key, get_zotero_user_id
 from lib.categories import category_slug
 PAPERS_DIR = str(_PAPERS_DIR)
 
@@ -987,16 +987,24 @@ function collectInlineFigureUrls(md) {
   return used;
 }
 
-function buildPrompt(query, selected, lang) {
-  const systemKo = '당신은 학술 논문 큐레이션의 리서치 보조입니다. 아래에 제공된 논문 발췌문만을 근거로, 큐레이터의 "카테고리 요약" 스타일을 따라 답변하세요.\\n\\n스타일 지침:\\n- 서술형 한국어 문장 (불릿 나열은 꼭 필요할 때만)\\n- 2~5개 문단, 주제별 또는 시간순으로 자연스럽게 묶기\\n- 모든 주장에 [ref:N] 인용 (N은 아래 발췌문 번호)\\n- 연관된 Figure는 본문의 적절한 위치에 ![caption](url) 형식으로 삽입 (발췌문의 Figures에 명시된 URL만 사용, 임의 URL 금지)\\n- 마지막 문단은 연구들을 종합하는 한두 문장\\n\\n답변 절차 (출력에 포함하지 말 것):\\n1. 먼저 내부적으로 질의를 분석하고, 어떤 논문들을 어떤 그룹/순서로 엮을지 계획을 세우세요.\\n2. 그런 다음 계획에 따라 최종 답변 본문만 작성하세요.\\n3. 제공된 발췌문 밖의 지식을 절대 사용하지 마세요.\\n4. 발췌문으로 뒷받침되지 않는 주장은 생략하세요.';
-  const systemEn = 'You are a research assistant for an academic paper curation. Answer using ONLY the provided excerpts, following the curator\\'s "category overview" style.\\n\\nStyle guidelines:\\n- Narrative prose (use bullets only when truly needed)\\n- 2-5 paragraphs, grouped by theme or chronology\\n- Cite every claim with [ref:N] where N is the excerpt number below\\n- Embed relevant figures inline at natural positions using ![caption](url) markdown; only use figure URLs explicitly listed with the excerpts (no fabricated URLs)\\n- Close with one or two synthesizing sentences\\n\\nProcedure (do NOT include in output):\\n1. First analyse the query internally and plan which papers to cover and how to group/order them.\\n2. Then write only the final answer body according to your plan.\\n3. Do not use any knowledge beyond the excerpts.\\n4. Omit any claim you cannot back up with an excerpt.';
+function buildPrompt(query, selected, lang, fullTexts) {
+  const systemKo = '당신은 학술 논문 큐레이션의 리서치 보조입니다. 아래에 제공된 논문 발췌문만을 근거로, 큐레이터의 "카테고리 요약" 스타일을 따라 답변하세요.\\n\\n스타일 지침:\\n- 서술형 한국어 문장 (불릿 나열은 꼭 필요할 때만)\\n- 2~5개 문단, 주제별 또는 시간순으로 자연스럽게 묶기\\n- 모든 주장에 [ref:N] 인용 (N은 아래 발췌문 번호)\\n- 연관된 Figure는 본문의 적절한 위치에 ![caption](url) 형식으로 삽입 (발췌문의 Figures에 명시된 URL만 사용, 임의 URL 금지)\\n- 마지막 문단은 연구들을 종합하는 한두 문장\\n\\n답변 절차 (출력에 포함하지 말 것):\\n1. 먼저 내부적으로 질의를 분석하고, 어떤 논문들을 어떤 그룹/순서로 엮을지 계획을 세우세요.\\n2. 그런 다음 계획에 따라 최종 답변 본문만 작성하세요.\\n3. 제공된 발췌문 밖의 지식을 절대 사용하지 마세요.\\n4. 발췌문으로 뒷받침되지 않는 주장은 생략하세요.\\n5. 일부 논문에는 "ORIGINAL EXCERPT" 블록이 함께 제공될 수 있습니다. 시약 이름·분량·온도·시간·구체적 수치·실험 조건 등 정량적 디테일이 답변에 필요할 때는 그 원문 발췌를 우선 활용하세요.';
+  const systemEn = 'You are a research assistant for an academic paper curation. Answer using ONLY the provided excerpts, following the curator\\'s "category overview" style.\\n\\nStyle guidelines:\\n- Narrative prose (use bullets only when truly needed)\\n- 2-5 paragraphs, grouped by theme or chronology\\n- Cite every claim with [ref:N] where N is the excerpt number below\\n- Embed relevant figures inline at natural positions using ![caption](url) markdown; only use figure URLs explicitly listed with the excerpts (no fabricated URLs)\\n- Close with one or two synthesizing sentences\\n\\nProcedure (do NOT include in output):\\n1. First analyse the query internally and plan which papers to cover and how to group/order them.\\n2. Then write only the final answer body according to your plan.\\n3. Do not use any knowledge beyond the excerpts.\\n4. Omit any claim you cannot back up with an excerpt.\\n5. Some papers may also include an "ORIGINAL EXCERPT" block alongside the summary. When the answer needs concrete quantitative detail (reagent names, amounts, temperatures, durations, specific numbers, experimental conditions), prefer the original excerpt over the summary.';
   const lines = [];
   for (let i = 0; i < selected.length; i++) {
     const s = selected[i], n = i + 1, paper = s.paper;
     const figs = (paper.figures && paper.figures.length)
       ? '\\n  Figures:\\n' + paper.figures.map(f => '    - ' + f.url + '  (' + (f.caption || 'figure') + ')').join('\\n')
       : '';
-    lines.push('[' + n + '] Paper: "' + paper.title + '" (' + (paper.year || 'n/a') + ', category: ' + (paper.category || 'n/a') + ')\\n  Section: ' + s.chunk.section + figs + '\\n  Text:\\n' + s.chunk.text.split('\\n').map(l => '    ' + l).join('\\n'));
+    // s.chunks is now an array of {section, text} for this single paper
+    const sectionsBlock = s.chunks.map(function(c) {
+      return '  Section: ' + c.section + '\\n  Text:\\n' + c.text.split('\\n').map(function(l) { return '    ' + l; }).join('\\n');
+    }).join('\\n');
+    let originalBlock = '';
+    if (fullTexts && fullTexts[s.slug]) {
+      originalBlock = '\\n  ORIGINAL EXCERPT (use for quantitative detail like reagents, amounts, conditions):\\n' + fullTexts[s.slug].split('\\n').map(function(l) { return '    ' + l; }).join('\\n');
+    }
+    lines.push('[' + n + '] Paper: "' + paper.title + '" (' + (paper.year || 'n/a') + ', category: ' + (paper.category || 'n/a') + ')' + figs + '\\n' + sectionsBlock + originalBlock);
   }
   const user = 'Excerpts from paper reviews:\\n\\n' + lines.join('\\n\\n---\\n\\n') + '\\n\\n---\\nQuestion: ' + query;
   return { system: lang === 'ko' ? systemKo : systemEn, user: user };
@@ -1009,7 +1017,7 @@ const LENGTH_SPEC = {
   ultra:  { max_tokens: 20000, thinking: 6000, ko: '20~40개 문단으로 심층적으로 (약 4500~9000자)', en: '20-40 in-depth paragraphs (roughly 3500-7000 words)' },
 };
 
-async function callClaude(query, selected, lang, model, length) {
+async function callClaude(query, selected, lang, model, length, fullTexts) {
   const apiKey = localStorage.getItem('anthropic_key');
   if (!apiKey) throw new Error('Anthropic API key missing');
   const spec = LENGTH_SPEC[length] || LENGTH_SPEC.short;
@@ -1020,7 +1028,7 @@ async function callClaude(query, selected, lang, model, length) {
     maxTokens = 8000;
     if (thinkingBudget > 2500) thinkingBudget = 2500;
   }
-  const p = buildPrompt(query, selected, lang);
+  const p = buildPrompt(query, selected, lang, fullTexts);
   // Append length directive to the system prompt.
   p.system += '\\n\\n' + (lang === 'ko'
     ? '분량 지침: 답변을 ' + spec.ko + '로 작성하세요. 분량이 길수록 각 논문을 더 깊이 있게 다루고, 주제 그룹을 더 세분화하세요.'
@@ -1105,6 +1113,24 @@ function finalizeDeepAnswer() {
       link.textContent = ref.title;
       li.appendChild(link);
       if (ref.year) li.appendChild(document.createTextNode(' (' + ref.year + ')'));
+      // Local-only: render a 'Open PDF' button when we have a Zotero itemKey
+      // for this paper. Clicking it triggers the zotero:// protocol handler
+      // and the Zotero desktop app pops the PDF immediately.
+      if (window._zoteroKeys && window._zoteroKeys[ref.slug]) {
+        const pdfLink = document.createElement('a');
+        pdfLink.href = 'zotero://open-pdf/library/items/' + window._zoteroKeys[ref.slug];
+        pdfLink.title = 'Open PDF in Zotero';
+        pdfLink.textContent = '\U0001F4C4 PDF';
+        pdfLink.style.marginLeft = '0.5rem';
+        pdfLink.style.fontSize = '0.75rem';
+        pdfLink.style.color = '#555';
+        pdfLink.style.textDecoration = 'none';
+        pdfLink.style.padding = '0.05rem 0.4rem';
+        pdfLink.style.borderRadius = '3px';
+        pdfLink.style.background = '#f0f0f0';
+        pdfLink.style.border = '1px solid #ddd';
+        li.appendChild(pdfLink);
+      }
       refsListEl.appendChild(li);
     }
     document.getElementById('deep-refs').style.display = '';
@@ -1168,18 +1194,51 @@ async function runDeepResearch(query) {
       deepSetStatus('관련 논문을 찾지 못했어요. 질의를 다시 입력해보세요.', true);
       return;
     }
-    DEEP.currentRefs = selected.map((s, i) => ({
+    // Group chunks by paper so each paper appears as a single reference
+    // entry. The retrieval step still uses chunk-level cosine similarity
+    // (so different sections can independently boost a paper into the
+    // top-k), but downstream prompt construction and references list
+    // operate on unique papers -- otherwise the same paper shows up as
+    // [1], [2], [3] when its Essence/How/Achievement chunks all match.
+    const byPaper = new Map();
+    for (const s of selected) {
+      const slug = s.chunk.slug;
+      if (!byPaper.has(slug)) {
+        byPaper.set(slug, { slug: slug, paper: s.paper, chunks: [] });
+      }
+      byPaper.get(slug).chunks.push({ section: s.chunk.section, text: s.chunk.text });
+    }
+    const dedupedSelected = Array.from(byPaper.values());
+
+    DEEP.currentRefs = dedupedSelected.map((s, i) => ({
       n: i + 1,
-      slug: s.chunk.slug,
+      slug: s.slug,
       title: s.paper.title,
       year: s.paper.year,
       url: s.paper.url,
       figures: s.paper.figures || [],
     }));
+    // Local-only deep dive: try to fetch text.md (raw paper text) for the
+    // top distinct papers so Claude can quote concrete quantitative
+    // details (reagents, amounts, conditions). text.md is git-ignored,
+    // so on Cloudflare these fetches return 404 and we silently fall
+    // back to review-only context. On localhost / file:// they succeed
+    // and the LLM gets richer source material.
+    deepSetStatus('\U0001F4C4 원문 발췌 가져오는 중...');
+    const fullTexts = {};
+    const topSlugs = dedupedSelected.slice(0, 10).map(function(s) { return s.slug; });
+    await Promise.all(topSlugs.map(async function(slug) {
+      try {
+        const r = await fetch('../papers/' + slug + '/text.md');
+        if (!r.ok) return;
+        const t = await r.text();
+        fullTexts[slug] = t.slice(0, 30000);
+      } catch (e) { /* fetch error or missing file -- skip silently */ }
+    }));
     const lang = detectLang(query);
     const model = document.getElementById('deep-model').value || 'claude-haiku-4-5';
     const length = document.getElementById('deep-length').value || 'short';
-    await callClaude(query, selected, lang, model, length);
+    await callClaude(query, dedupedSelected, lang, model, length, fullTexts);
     finalizeDeepAnswer();
     deepSetStatus('\u2705 완료');
     setTimeout(() => deepSetStatus(''), 2500);
@@ -1323,6 +1382,16 @@ document.addEventListener('DOMContentLoaded', function() {
     if (keys.openai_key && !localStorage.getItem('openai_key'))
       localStorage.setItem('openai_key', keys.openai_key);
   }).catch(function() { /* no local keys; fine */ });
+
+  // Same pattern for Zotero itemKey lookup. When present (local dev),
+  // the Deep Research References list adds a one-click 'Open PDF'
+  // button next to each citation. Git-ignored, so Cloudflare visitors
+  // get a 404 here and the button never appears for them.
+  fetch('../_zotero_keys.json').then(function(r) {
+    return r.ok ? r.json() : null;
+  }).then(function(keys) {
+    if (keys) window._zoteroKeys = keys;
+  }).catch(function() { /* no zotero keys; fine */ });
 
   const cb = document.getElementById('mode-classic');
   const db = document.getElementById('mode-deep');
@@ -1698,6 +1767,97 @@ try:
         print(f"Local keys: {_lk_path} ({len(_lk)} keys, for localhost dev, git-ignored)")
 except Exception as _e:
     print(f"Local keys skipped: {_e}")
+
+# Operator convenience: write docs/_zotero_keys.json (slug -> Zotero
+# itemKey). The Deep Research References list checks this on page load
+# and, if present, adds a one-click 'Open PDF' button next to each
+# reference. The button uses 'zotero://open-pdf/library/items/<KEY>'
+# which the Zotero desktop app handles directly. Git-ignored, so the
+# Cloudflare deployment never sees it.
+try:
+    import urllib.request as _urllib_request
+    _api_key = get_zotero_api_key()
+    _user_id = get_zotero_user_id()
+    if _api_key and _user_id:
+        _items = []
+        _start = 0
+        _limit = 100
+        while True:
+            _url = f"https://api.zotero.org/users/{_user_id}/items/top?format=json&limit={_limit}&start={_start}"
+            _req = _urllib_request.Request(_url, headers={
+                "Zotero-API-Key": _api_key,
+                "User-Agent": "Mozilla/5.0",
+            })
+            with _urllib_request.urlopen(_req, timeout=30) as _resp:
+                _batch = json.load(_resp)
+            if not _batch:
+                break
+            _items.extend(_batch)
+            if len(_batch) < _limit:
+                break
+            _start += _limit
+
+        def _norm_title(t):
+            return re.sub(r"\s+", " ", t.lower().strip()) if t else ""
+
+        _title_to_key = {}
+        for _it in _items:
+            _t = _it.get("data", {}).get("title", "")
+            _k = _it.get("key", "")
+            if _t and _k:
+                _title_to_key[_norm_title(_t)] = _k
+
+        # Fetch attachment items so we can map parent -> PDF attachment
+        # key. zotero://open-pdf requires the *attachment* key, not the
+        # parent item key, to open the PDF directly.
+        print("  Fetching Zotero attachments for PDF key mapping...")
+        _attach_items = []
+        _start = 0
+        while True:
+            _url = f"https://api.zotero.org/users/{_user_id}/items?itemType=attachment&format=json&limit={_limit}&start={_start}"
+            _req = _urllib_request.Request(_url, headers={
+                "Zotero-API-Key": _api_key,
+                "User-Agent": "Mozilla/5.0",
+            })
+            with _urllib_request.urlopen(_req, timeout=30) as _resp:
+                _batch = json.load(_resp)
+            if not _batch:
+                break
+            _attach_items.extend(_batch)
+            if len(_batch) < _limit:
+                break
+            _start += _limit
+
+        # Build parent_key -> first PDF attachment_key map
+        _parent_to_pdf = {}
+        for _att in _attach_items:
+            _d = _att.get("data", {})
+            _parent = _d.get("parentItem", "")
+            _ct = _d.get("contentType", "") or ""
+            _att_key = _att.get("key", "")
+            if _parent and _att_key and "pdf" in _ct.lower() and _parent not in _parent_to_pdf:
+                _parent_to_pdf[_parent] = _att_key
+        print(f"  {len(_parent_to_pdf)} PDF attachments found")
+
+        _slug_to_key = {}
+        _papers_index = Path(_PAPERS_DIR) / "_papers_index.json"
+        if _papers_index.exists():
+            with open(_papers_index, "r", encoding="utf-8") as _pf:
+                for _p in json.load(_pf):
+                    _t = _p.get("title", "")
+                    _s = _p.get("slug", "")
+                    _nt = _norm_title(_t)
+                    if _s and _nt in _title_to_key:
+                        _parent_key = _title_to_key[_nt]
+                        # Use PDF attachment key if available, fall back
+                        # to parent key (which at least selects the item)
+                        _slug_to_key[_s] = _parent_to_pdf.get(_parent_key, _parent_key)
+        if _slug_to_key:
+            _zk_path = Path(DOCS_DIR) / "_zotero_keys.json"
+            _zk_path.write_text(json.dumps(_slug_to_key), encoding="utf-8")
+            print(f"Zotero keys: {_zk_path} ({len(_slug_to_key)} matched, for localhost dev, git-ignored)")
+except Exception as _e:
+    print(f"Zotero keys skipped: {_e}")
 
 # Verify no old-style paths
 old_paths = re.findall(r'(?:href|src)="(\d{3}_[^"]*)"', HTML)

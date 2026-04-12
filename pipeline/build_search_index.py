@@ -92,21 +92,97 @@ def extract_sections(md_text: str) -> dict:
     return sections
 
 
-def extract_figures(md_text: str, slug: str) -> list:
-    """Return a deduped list of figure refs as relative URLs (from docs/{topic}/)."""
-    seen = set()
-    figures = []
-    for m in FIGURE_RE.finditer(md_text):
-        caption = m.group(1).strip()
-        path = m.group(2)  # "figures/fig1.webp"
-        if path in seen:
+# Caption pattern in PyMuPDF-extracted text. Matches lines like
+#   "Figure 1: Schematic of the proposed system."
+#   "Fig. 2. Performance comparison across baselines"
+#   "FIG 3 -- Synthesis pipeline"
+# Group 1 captures the figure number, group 2 the caption sentence.
+PDF_CAPTION_RE = re.compile(
+    r"(?im)^[ \t]*(?:Figure|Fig\.?|FIG\.?)\s*0*(\d+)\s*[\.:\-\u2013\u2014]\s*([^\n]{20,400})"
+)
+
+def _captions_from_text(text_md: str) -> dict:
+    """Pull "Figure N: ..." style captions out of the raw PDF text."""
+    out: dict = {}
+    for m in PDF_CAPTION_RE.finditer(text_md):
+        num = m.group(1)
+        cap = m.group(2).strip().rstrip(".")
+        if not num or not cap:
             continue
-        seen.add(path)
+        # Keep the longest caption per figure number (later occurrences
+        # are usually richer than the in-text reference).
+        prev = out.get(num, "")
+        if len(cap) > len(prev):
+            out[num] = cap
+    return out
+
+
+def extract_figures(md_text: str, slug: str) -> list:
+    """Return every figure that physically exists on disk for this paper.
+
+    PyMuPDF extracts up to 5 figures per paper, but the Claude-written
+    review.md typically only cites 1-3 of them in fig_essence /
+    fig_achievement / fig_how. The rest sit on disk unused.
+
+    Caption resolution priority for each on-disk file:
+      1. The italic caption authored by Claude in review.md (Korean)
+      2. The original "Figure N: ..." sentence pulled from text.md
+         (English, PyMuPDF extraction of the PDF body)
+      3. A numeric "Figure N" placeholder
+
+    text.md is git-ignored, so step 2 only succeeds when the build
+    runs locally (operator side). The captions still get baked into
+    _search_index.json which IS shipped to Cloudflare, so visitors
+    benefit from the better captions even though text.md itself
+    never reaches the public site.
+    """
+    # 1) Captions Claude wrote in review.md (Korean alt text on the image)
+    caption_by_path: dict = {}
+    for m in FIGURE_RE.finditer(md_text):
+        cap = m.group(1).strip()
+        path = m.group(2)  # "figures/fig1.webp"
+        if cap and path not in caption_by_path:
+            caption_by_path[path] = cap
+
+    # 2) Captions from PyMuPDF-extracted text (only if text.md is on disk)
+    text_path = PAPERS_DIR / slug / "text.md"
+    text_caption_by_num: dict = {}
+    if text_path.exists():
+        try:
+            text_md = text_path.read_text(encoding="utf-8")
+            text_caption_by_num = _captions_from_text(text_md)
+        except Exception:
+            pass
+
+    fig_dir = PAPERS_DIR / slug / "figures"
+    if not fig_dir.exists():
+        return []
+
+    files = sorted(
+        f.name for f in fig_dir.iterdir()
+        if f.suffix.lower() in (".webp", ".png", ".jpg", ".jpeg")
+    )
+
+    figures = []
+    for fname in files:
+        rel = f"figures/{fname}"
+        # Prefer the human-written Korean caption from review.md.
+        cap = caption_by_path.get(rel, "")
+        if not cap:
+            # Fall back to the original PDF caption when available.
+            num_m = re.search(r"(\d+)", fname)
+            num = num_m.group(1) if num_m else None
+            if num and num in text_caption_by_num:
+                cap = text_caption_by_num[num]
+            elif num:
+                cap = f"Figure {num}"
+            else:
+                cap = fname
         figures.append({
-            "caption": caption,
+            "caption": cap,
             # URL is resolved from docs/{topic}/ (the page that will host
             # the search UI), hence the ../papers/ prefix.
-            "url": f"../papers/{slug}/{path}",
+            "url": f"../papers/{slug}/{rel}",
         })
     return figures
 
