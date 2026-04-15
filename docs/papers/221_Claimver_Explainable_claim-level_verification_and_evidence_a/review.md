@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 지식 그래프(Knowledge Graph, KG)를 활용하여 텍스트의 각 주장(claim)을 세분화된 수준에서 검증하고, 각 검증 결과에 대한 명확한 증거와 설명을 제공하는 ClaimVer 프레임워크를 제안한다. 단순한 이진 판정 대신 주장 단위의 세밀한 분석을 통해 사용자의 신뢰도를 향상시킨다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Citation_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dammu et al._2024_Claimver Explainable claim-level verification and evidence attribution of text through knowledge gr.pdf"
 ---
@@ -117,9 +118,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dammu et al._2024_Claimver Explainable c
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/685_Robust_claim_verification_through_fact_detection/review]] — 간결한 사실 추출 방식 대신 지식 그래프를 활용한 설명가능한 주장 검증을 제시한다
-- 🏛 기반 연구: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 지식 그래프 기반 주장 검증의 기초 방법론을 의료 분야에 특화하여 확장한다
-- 🔗 후속 연구: [[papers/057_aedfact_Scientific_fact-checking_made_easier_via_semi-automa/review]] — 반자동 팩트체킹을 더 체계적이고 설명가능한 프레임워크로 발전시킨다
-- 🔄 다른 접근: [[papers/685_Robust_claim_verification_through_fact_detection/review]] — 주장 검증을 위한 다른 접근법으로 지식 그래프를 활용한 설명가능한 방법을 제시한다
-- 🔄 다른 접근: [[papers/057_aedfact_Scientific_fact-checking_made_easier_via_semi-automa/review]] — 웹 기반 반자동 검색 대신 지식 그래프를 활용한 체계적 주장 검증 방법을 제시한다
-- 🧪 응용 사례: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 지식 그래프 기반 설명가능한 검증을 의료 주장 검증에 구체적으로 적용한다
+- 🔗 후속 연구: [[papers/057_aedfact_Scientific_fact-checking_made_easier_via_semi-automa/review]] — 반자동 팩트체킹에서 완전 자동화된 주장 검증으로 발전시킨 접근법을 제시한다
+- 🔄 다른 접근: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 복잡한 주장 검증을 위한 프로그램 기반의 다른 추론 방법론을 보여준다
+- 🏛 기반 연구: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 멀티모달 증거 기반 팩트체킹을 위한 기본적인 증거 귀속 방법론을 제공한다
+- 🔄 다른 접근: [[papers/124_Automated_justification_production_for_claim_veracity_in_fac/review]] — 팩트체킹에서 정당화 자동 생성과 설명 가능한 주장 수준 검증은 모두 검증 결과의 투명성을 높이는 상호보완적 접근법이다.
+- 🏛 기반 연구: [[papers/057_aedfact_Scientific_fact-checking_made_easier_via_semi-automa/review]] — 과학적 주장 검증을 위한 자동화된 증거 수집과 분석의 기본 방법론을 제공한다

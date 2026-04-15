@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.5
 essence: "대규모 언어모델(LLM)의 환각(hallucination) 문제를 자기검증 메커니즘으로 해결하는 유전자 집합 분석 AI 에이전트를 제시하며, GPT-4 대비 현저히 높은 정확도를 달성한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/CRISPR_and_Drug_Discovery_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_GeneAgent self-verification language agent for gene-set analysis using domain databases.pdf"
 ---
@@ -100,10 +100,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_GeneAgent self-verifica
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 생명과학과 일반 추론에서 각각 자기검증 메커니즘으로 LLM 환각 문제를 해결하는 서로 다른 접근법을 제시한다.
-- 🧪 응용 사례: [[papers/159_Bio-sieve_exploring_instruction_tuning_large_language_models/review]] — 자기검증 기법을 생명정보학 분야에 적용한 구체적 사례로서 Bio-SIEVE와 상호 보완적인 접근을 보여준다.
-- 🔗 후속 연구: [[papers/165_Biokgbench_A_knowledge_graph_checking_benchmark_of_ai_agent/review]] — 유전자 분석에서 검증된 자기검증 방법론을 지식 그래프 검사로 확장하여 더 넓은 생명과학 응용을 가능하게 한다.
-- 🔄 다른 접근: [[papers/131_Automating_exploratory_proteomics_research_via_language_mode/review]] — 단백질체학 vs 유전자 세트 분석으로 생물정보학의 서로 다른 자동화 영역
-- 🔗 후속 연구: [[papers/505_Llm4grn_Discovering_causal_gene_regulatory_networks_with_llm/review]] — 유전자 집합 분석을 위한 자기 검증 언어 에이전트 기술을 유전자 조절 네트워크 분석에 확장할 수 있다.
-- 🧪 응용 사례: [[papers/817_Toward_a_Team_of_AI-made_Scientists_for_Scientific_Discovery/review]] — 유전자셋 분석을 위한 자기 검증 언어 에이전트로 유전자 관련 연구 자동화의 구체적 적용 사례를 보여준다.
-- 🔗 후속 연구: [[papers/681_Revisiting_Gene_Ontology_Knowledge_Discovery_with_Hierarchic/review]] — 유전자셋 분석을 위한 자기 검증 언어 에이전트로 유전자 온톨로지 연구를 확장한다.
+- 🔄 다른 접근: [[papers/750_SEVerA_Verified_Synthesis_of_Self-Evolving_Agents/review]] — LLM 에이전트의 신뢰성 문제를 형식적 검증을 통해 해결하는 다른 접근 방식을 제시하여 자기검증 메커니즘과 비교됨
+- 🧪 응용 사례: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — 단일 세포 주석에서 LLM 에이전트를 활용하는 구체적 응용 사례로, 생물학적 데이터 분석에서의 실제 적용 예시
+- ⚖️ 반론/비판: [[papers/397_Hallucinations_can_improve_large_language_models_in_drug_dis/review]] — 약물 발견에서 LLM의 환각이 오히려 도움이 될 수 있다는 반대 관점을 제시하여 환각 문제에 대한 다른 시각을 보여줌
+- 🧪 응용 사례: [[papers/681_Revisiting_Gene_Ontology_Knowledge_Discovery_with_Hierarchic/review]] — 유전자 온톨로지 지식 발견에 계층적 분류를 활용하는 연구로, 유전자 집합 분석의 또 다른 응용 방향을 제시
+- 🔄 다른 접근: [[papers/750_SEVerA_Verified_Synthesis_of_Self-Evolving_Agents/review]] — LLM 에이전트의 신뢰성을 자기검증 메커니즘으로 해결하는 다른 접근과 대조하여, 형식적 검증의 우수성을 보여줌
+- 🔗 후속 연구: [[papers/615_PerTurboAgent_A_Self-Planning_Agent_for_Boosting_Sequential/review]] — 자기검증 언어 에이전트와 유전자 섭동 계획을 결합하여 더 신뢰할 수 있는 유전자 기능 분석 시스템 구축
+- 🔗 후속 연구: [[papers/239_CRISPR-GPT_for_agentic_automation_of_gene-editing_experiment/review]] — CRISPR 실험 자동화에서 유전자 세트 분석이라는 더 포괄적인 유전학 연구 자동화로 확장된다
+- 🔗 후속 연구: [[papers/817_Toward_a_Team_of_AI-made_Scientists_for_Scientific_Discovery/review]] — GeneAgent의 자기검증 기능이 AI 과학자 팀의 유전자 발견 신뢰성을 향상시킬 수 있다.
+- 🏛 기반 연구: [[papers/681_Revisiting_Gene_Ontology_Knowledge_Discovery_with_Hierarchic/review]] — 단일 에이전트 유전자 세트 분석을 다중 AI 에이전트로 구성된 가상 스터디 그룹으로 확장하여 LLM 환각 문제 완화

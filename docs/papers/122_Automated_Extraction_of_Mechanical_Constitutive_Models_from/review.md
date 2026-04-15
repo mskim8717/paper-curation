@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "대규모 언어모델(LLM)을 활용하여 과학 문헌에 산재된 기계적 구성 모델(constitutive model)을 자동으로 추출하고, 이를 문화유산 보존 분야의 디지털 트윈 구축에 활용하는 혁신적 시스템을 제시한다. 2,000여 편의 논문에서 185개의 구성 모델과 450개 이상의 보정된 매개변수를 추출하여 80.4%의 정확도를 달성했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/AI-Powered_Research_Planning"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2026_Automated Extraction of Mechanical Constitutive Models from Scientific Literature using Large Langua.pdf"
 ---
@@ -121,6 +122,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2026_Automated Extraction of M
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/496_LLM_Agents_Making_Agent_Tools/review]] — 기계적 구성 모델의 문헌 기반 추출과 TOOLMAKER의 코드 저장소 기반 도구 생성은 서로 다른 소스에서 과학 지식을 자동화하는 대안적 접근이다.
-- 🧪 응용 사례: [[papers/252_Data_integrity_in_materials_science_in_the_era_of_AI_balanci/review]] — 재료과학에서의 데이터 무결성 연구가 기계적 구성 모델 추출의 정확도 검증과 품질 보장에 직접적으로 적용되는 방법론이다.
-- 🔄 다른 접근: [[papers/496_LLM_Agents_Making_Agent_Tools/review]] — TOOLMAKER의 코드 저장소 기반 도구 생성과 기계적 구성 모델의 문헌 기반 추출은 서로 다른 소스에서 과학 도구를 자동 생성하는 접근이다.
+- 🏛 기반 연구: [[papers/021_A_Review_on_Scientific_Knowledge_Extraction_using_Large_Lang/review]] — 과학 문헌에서 지식을 추출하는 LLM 기반 방법론의 기본 원리를 제시하여 구성 모델 자동 추출의 이론적 토대를 마련함
+- 🧪 응용 사례: [[papers/403_Highly_accurate_protein_structure_prediction_with_AlphaFold/review]] — AlphaFold의 단백질 구조 예측 성공 사례처럼 문화유산 보존을 위한 구성 모델 추출이 AI를 활용한 과학적 발견의 구체적 응용 분야임
+- ⚖️ 반론/비판: [[papers/252_Data_integrity_in_materials_science_in_the_era_of_AI_balanci/review]] — AI 시대 재료과학에서 데이터 무결성의 중요성을 강조하여 자동화된 모델 추출에서 발생할 수 있는 정확성 문제에 대한 반대 관점을 제시함

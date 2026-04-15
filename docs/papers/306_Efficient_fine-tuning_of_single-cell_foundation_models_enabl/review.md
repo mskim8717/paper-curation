@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "단일세포 기초 모델(foundation model)을 약물 조건부 어댑터(drug-conditional adapter)로 효율적으로 미세조정하여, 미래 약물에 대한 세포 반응 예측 및 미보유 세포주(unseen cell line)에 대한 제로샷 일반화를 가능하게 한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Drug_Discovery"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kurshan_2024_Efficient fine-tuning of single-cell foundation models enables zero-shot molecular perturbation pred.pdf"
 ---
@@ -96,12 +97,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kurshan_2024_Efficient fine-tuning of si
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 단일세포 기초 모델의 약물 반응 예측을 생의학 연구 가설 검증에 적용할 수 있다
-- 🔗 후속 연구: [[papers/292_Drugpilot_Llm-based_parameterized_reasoning_agent_for_drug_d/review]] — LLM 기반 신약 개발 에이전트와 단일세포 모델을 결합하여 더 정확한 약물 효과 예측을 할 수 있다
-- 🏛 기반 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 대규모 언어모델과 단일세포 분석의 통합적 접근법에 대한 기반을 제공한다
-- 🧪 응용 사례: [[papers/431_Integrated_analysis_of_multimodal_single-cell_data/review]] — 다중모달 단일세포 데이터 분석에 약물 조건부 어댑터를 적용할 수 있다
-- 🧪 응용 사례: [[papers/700_scBaseCount_an_AI_agent-curated_uniformly_processed_and_auto/review]] — 표준화된 단일세포 데이터를 파운데이션 모델의 효율적 파인튜닝에 활용할 수 있다
-- 🧪 응용 사례: [[papers/287_Dont_Stop_Pretraining_Adapt_Language_Models_to_Domains_and_T/review]] — 언어모델 도메인 적응 방법을 단일세포 파운데이션 모델 미세조정에 적용한다.
-- 🔄 다른 접근: [[papers/699_SCANPY_large-scale_single-cell_gene_expression_data_analysis/review]] — 단일세포 분석을 Python 기반 스케일링 vs LLM 기반 파운데이션 모델로 접근한다.
-- 🧪 응용 사례: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 단일세포 모델의 약물 반응 예측 능력을 생의학 가설 검증 벤치마크에서 평가할 수 있다
-- 🔗 후속 연구: [[papers/292_Drugpilot_Llm-based_parameterized_reasoning_agent_for_drug_d/review]] — 단일세포 모델의 약물 반응 예측을 LLM 기반 신약 개발 에이전트와 통합한 확장 연구다
+- 🔄 다른 접근: [[papers/699_SCANPY_large-scale_single-cell_gene_expression_data_analysis/review]] — 단일세포 기초 모델의 약물 반응 예측과 SCANPY의 대규모 분석은 단일세포 연구의 서로 다른 접근법이다.
+- 🔗 후속 연구: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — CellAgent의 LLM 기반 멀티에이전트 프레임워크가 단일세포 기초 모델을 더 자동화된 형태로 발전시킨다.
+- 🏛 기반 연구: [[papers/700_scBaseCount_an_AI_agent-curated_uniformly_processed_and_auto/review]] — AI 에이전트가 큐레이션한 단일세포 데이터베이스가 단일세포 기초 모델 훈련의 데이터 기반을 제공한다.
+- 🔄 다른 접근: [[papers/699_SCANPY_large-scale_single-cell_gene_expression_data_analysis/review]] — SCANPY의 대규모 단일세포 분석과 단일세포 기초 모델의 약물 반응 예측은 서로 다른 단일세포 분석 접근법이다.

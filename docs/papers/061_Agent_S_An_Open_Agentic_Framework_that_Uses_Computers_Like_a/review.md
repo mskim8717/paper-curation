@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "Agent S는 계층적 계획 수립, 경험 기억 시스템, 그리고 Agent-Computer Interface(ACI)를 통합한 GUI 자동화 프레임워크로, 복잡한 멀티스텝 데스크톱 작업을 인간처럼 자동으로 수행한다. OSWorld 벤치마크에서 기존 방법 대비 83.6% 상대 개선율을 달성한 최신 최고 성능(SOTA) 모델이다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Domain-Specific_Autonomous_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Agashe et al._2024_Agent S An Open Agentic Framework that Uses Computers Like a Human.pdf"
 ---
@@ -146,5 +146,7 @@ Agent S는 계층적 계획 수립, 경험 기억 시스템, 그리고 Agent-Com
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/849_UI-TARS_Pioneering_Automated_GUI_Interaction_with_Native_Age/review]] — Agent S와 UI-TARS는 모두 GUI 자동화를 다루지만, 인간과 유사한 컴퓨터 사용과 네이티브 에이전트 기반 자동화라는 서로 다른 접근 방식을 채택합니다.
-- 🔗 후속 연구: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — Agent S의 GUI 자동화 프레임워크는 WebAgent-R1의 웹 에이전트 훈련 기법을 확장하여 더 넓은 범위의 데스크톱 응용프로그램까지 포괄하는 범용 자동화를 실현합니다.
+- 🔄 다른 접근: [[papers/849_UI-TARS_Pioneering_Automated_GUI_Interaction_with_Native_Age/review]] — GUI 자동화에서 계층적 계획 수립과 네이티브 에이전트 접근법이라는 서로 다른 방법론을 비교할 수 있다
+- 🔗 후속 연구: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — 범용 GUI 자동화 프레임워크를 웹 에이전트의 엔드투엔드 학습이라는 특화된 영역으로 확장한 발전된 형태이다
+- 🧪 응용 사례: [[papers/865_Vending-Bench_A_Benchmark_for_Long-Term_Coherence_of_Autonom/review]] — GUI 자동화의 장기 일관성 문제를 벤치마킹하여 Agent S 프레임워크의 실제 성능 한계를 평가할 수 있다
+- 🔄 다른 접근: [[papers/849_UI-TARS_Pioneering_Automated_GUI_Interaction_with_Native_Age/review]] — 컴퓨터 사용에 특화된 에이전트의 다른 구현 방식과 아키텍처를 제시한다.

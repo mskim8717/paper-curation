@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "671B 매개변수를 가진 혼합 전문가(Mixture-of-Experts, MoE) 언어 모델 DeepSeek-V3를 제시하며, 토큰당 37B만 활성화되어 효율적 추론을 실현한다. 보조 손실 없는 부하 균형 전략과 다중 토큰 예측(Multi-Token Prediction, MTP) 목표를 도입하여 뛰어난 성능을 달성하면서도 2.788M H800 GPU 시간이라는 경제적 훈련 비용으로 완성했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Language_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/DeepSeek-AI et al._2024_Deepseek-v3 technical report.pdf"
 ---
@@ -151,9 +151,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/DeepSeek-AI et al._2024_Deepseek-v3 tech
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/387_Gpt-4_technical_report/review]] — GPT-4와 경쟁하는 대규모 MoE 모델로 효율성과 성능 면에서 다른 접근법을 제시
-- ⚖️ 반론/비판: [[papers/370_Gemma_2_Improving_open_language_models_at_a_practical_size/review]] — DeepSeek-V3의 대규모 MoE 접근법과 달리 Gemma 2는 경량화된 효율적 모델에 집중
-- 🔄 다른 접근: [[papers/801_The_llama_3_herd_of_models/review]] — Llama 3와 유사한 성능을 MoE 아키텍처로 더 효율적으로 달성하는 경쟁 모델
-- 🔗 후속 연구: [[papers/617_Phi-4_technical_report/review]] — Phi-4의 효율적 소형 모델 철학을 대규모 MoE로 확장한 접근법
-- ⚖️ 반론/비판: [[papers/370_Gemma_2_Improving_open_language_models_at_a_practical_size/review]] — DeepSeek-V3의 대규모 MoE와 달리 Gemma 2는 소형 모델의 효율성과 실용성 강조
-- 🔄 다른 접근: [[papers/649_Qwen25_technical_report/review]] — 둘 다 중국 기업의 최신 대규모 언어 모델이지만 하나는 Alibaba의 Qwen2.5이고 다른 하나는 DeepSeek의 DeepSeek-v3로 서로 다른 기술적 접근법을 사용한다.
+- 🏛 기반 연구: [[papers/263_Deepseek-coder_When_the_large_language_model_meets_programmi/review]] — 같은 개발사의 이전 코드 전문 모델로, DeepSeek-V3의 기술적 발전 과정과 기반을 이해할 수 있습니다.
+- 🔄 다른 접근: [[papers/387_Gpt-4_technical_report/review]] — 대규모 멀티모달 모델의 다른 구현 방식으로, MoE 아키텍처와 기존 접근법의 차이점을 비교할 수 있습니다.
+- 🔄 다른 접근: [[papers/617_Phi-4_technical_report/review]] — 마이크로소프트의 소형 고성능 모델로, 대규모 MoE 모델과 효율적 소형 모델의 서로 다른 접근법을 보여줍니다.
+- 🔗 후속 연구: [[papers/263_Deepseek-coder_When_the_large_language_model_meets_programmi/review]] — 같은 개발사의 후속 모델로, 코드 전문 모델에서 일반 대화형 모델로의 발전 과정을 보여줍니다.
+- 🔄 다른 접근: [[papers/387_Gpt-4_technical_report/review]] — 중국의 오픈소스 대규모 모델과 비교하여, 폐쇄형과 개방형 모델의 성능과 접근성 트레이드오프를 분석할 수 있습니다.
+- 🔄 다른 접근: [[papers/370_Gemma_2_Improving_open_language_models_at_a_practical_size/review]] — DeepSeek-V3는 더 큰 규모의 최신 모델로, Gemma 2의 경량화 전략과 대비되는 대규모 모델 접근법을 보여준다
+- ⚖️ 반론/비판: [[papers/801_The_llama_3_herd_of_models/review]] — 오픈소스 기반 모델과 상업적 폐쇄형 모델의 성능과 접근성 트레이드오프를 비교할 수 있다

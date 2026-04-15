@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.2
 essence: "과학 데이터 파이프라인을 위한 운영 엄격성(operational rigor)이 AI 에이전트와 인간 협업의 성공을 결정하므로, DataJoint 2.0은 관계형 워크플로우 모델을 통해 데이터 구조, 계산 의존성, 무결성 제약을 단일 형식 시스템으로 통합하여 SciOps(과학 운영)의 기반을 제공한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Chemistry_Planning"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yatsenko and Nguyen_2026_DataJoint 2.0 A Computational Substrate for Agentic Scientific Workflows.pdf"
 ---
@@ -100,7 +101,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yatsenko and Nguyen_2026_DataJoint 2.0 A
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — 자율 실험실 프레임워크가 과학 워크플로우 기반 위에서 구현됨
-- 🔗 후속 연구: [[papers/432_Intelligent_experiments_through_real-time_ai_Fast_data_proce/review]] — 실시간 AI 실험이 에이전트 기반 과학 워크플로우로 확장됨
-- 🧪 응용 사례: [[papers/694_Scalable_Cross-Facility_Federated_Learning_for_Scientific_Fo/review]] — 연합학습을 과학 데이터 분석을 위한 계산 기반으로 활용한다.
-- 🏛 기반 연구: [[papers/102_Architecture_Design_for_Human-Driven_Systems/review]] — 인간 중심 시스템 아키텍처 설계가 에이전틱 과학 연구를 위한 계산 기반 구조 구축의 이론적 기초를 제공한다.
+- 🏛 기반 연구: [[papers/361_From_LLM_Reasoning_to_Autonomous_AI_Agents_A_Comprehensive_R/review]] — 과학 워크플로우의 운영 엄격성이 자율 AI 에이전트 협업의 신뢰성 있는 기반을 제공한다
+- 🧪 응용 사례: [[papers/143_AutoP2C_An_LLM-Based_Agent_Framework_for_Code_Repository_Gen/review]] — 관계형 워크플로우 모델이 논문-코드 생성 에이전트의 데이터 무결성 보장에 적용된다
+- 🔗 후속 연구: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — 자율 연구실이 에이전트 과학 워크플로우의 물리적 구현체로서 DataJoint 2.0을 확장한다
+- 🧪 응용 사례: [[papers/361_From_LLM_Reasoning_to_Autonomous_AI_Agents_A_Comprehensive_R/review]] — 과학 워크플로우에서 에이전트 간 협업을 위한 운영 엄격성 프레임워크를 적용할 수 있다

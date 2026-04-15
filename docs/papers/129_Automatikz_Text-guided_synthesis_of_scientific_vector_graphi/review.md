@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.25
 essence: "텍스트 설명으로부터 과학 논문용 벡터 그래픽을 자동으로 생성하기 위해 TikZ라는 추상 그래픽 언어를 중간 표현(intermediate representation)으로 활용하고, 대규모 TikZ 데이터셋(DaTikZ, 120k)을 구축하여 LLaMA와 CLIP 기반 하이브리드 모델(CLiMA)을 개발했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Graphics_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Belouadi et al._2023_Automatikz Text-guided synthesis of scientific vector graphics with tikz.pdf"
 ---
@@ -110,9 +110,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Belouadi et al._2023_Automatikz Text-gui
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/601_PaperBanana_Automating_Academic_Illustration_for_AI_Scientis/review]] — PaperBanana가 AI 과학자 특화인 반면 AutomaTikZ는 일반적인 과학 벡터 그래픽 생성
-- 🔗 후속 연구: [[papers/811_Tikzero_Zero-shot_text-guided_graphics_program_synthesis/review]] — TikZero의 제로샷 그래픽 생성을 대규모 TikZ 데이터셋으로 학습한 발전된 버전
-- 🔄 다른 접근: [[papers/783_Synchart_Synthesizing_charts_from_language_models/review]] — Synchart가 차트 합성에 특화된 반면 AutomaTikZ는 과학 벡터 그래픽 전반을 다룸
-- 🏛 기반 연구: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — 텍스트에서 과학 그림 생성의 기본 아이디어가 TikZ 기반 벡터 그래픽으로 구현됨
-- 🔄 다른 접근: [[papers/601_PaperBanana_Automating_Academic_Illustration_for_AI_Scientis/review]] — 둘 다 과학 시각화 자동화를 다루지만 PaperBanana는 AI 과학자용, AutomaTikZ는 일반 과학용
-- 🔄 다른 접근: [[papers/811_Tikzero_Zero-shot_text-guided_graphics_program_synthesis/review]] — 둘 다 텍스트 기반 과학 벡터 그래픽 합성을 다루지만 하나는 TikZ 프로그램 생성에, 다른 하나는 AutomaTikZ를 통한 자동화에 초점을 맞춘다.
+- 🔄 다른 접근: [[papers/811_Tikzero_Zero-shot_text-guided_graphics_program_synthesis/review]] — 제로샷 그래픽 프로그램 합성과 TikZ 기반 생성은 과학 그래픽 자동화의 서로 다른 접근법을 제시한다
+- 🔗 후속 연구: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — 텍스트-과학 그림 생성 연구가 벡터 그래픽을 넘어 다양한 과학 그림 형태로 확장한다
+- 🔄 다른 접근: [[papers/811_Tikzero_Zero-shot_text-guided_graphics_program_synthesis/review]] — AutomaTikZ가 과학 벡터 그래픽 합성에 집중하는 반면 TikZero는 텍스트 가이드 방식을 사용하여 다른 접근법을 보인다.

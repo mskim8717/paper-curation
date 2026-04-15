@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 혈관 문합(vascular anastomosis)을 자율적으로 수행하는 최초의 로봇 시스템인 마이크로 스마트 조직 자율 로봇(µSTAR)을 개발했으며, OCT 기반 실시간 조직 감지와 신경망 기반 봉합 오류 감지를 통해 경험 많은 외과의들과 경쟁 가능한 수준의 성능을 ex vivo 조직에서 달성했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Laboratory_Biology"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Domain-Specific_Autonomous_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gerber et al._2024_Autonomous robotic system with optical coherence tomography guidance for vascular anastomosis.pdf"
 ---
@@ -118,9 +120,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gerber et al._2024_Autonomous robotic sy
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 의료 수술과 생화학 실험이라는 서로 다른 영역에서 자율 로봇 시스템의 구현 방식을 비교한다.
-- 🔗 후속 연구: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — 의료용 자율 로봇을 양자 컴퓨팅 실험 자동화로 확장하여 더 넓은 과학 실험 영역을 포괄한다.
-- 🏛 기반 연구: [[papers/310_Embodied_Science_Closing_the_Discovery_Loop_with_Agentic_Emb/review]] — 체현된 과학 발견의 구체적 구현 사례로서 물리적 실험과 AI의 결합 가능성을 실증한다.
-- 🔗 후속 연구: [[papers/084_Ai-driven_robotics_for_free-space_optics/review]] — 광학 실험의 로봇 자동화가 OCT를 통한 자율 로봇 시스템으로 확장 가능합니다.
-- 🔄 다른 접근: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 생명과학과 의료 분야에서 각각 단백질 공학과 수술 로봇이라는 서로 다른 자율 실험실 구현을 보여준다.
-- 🧪 응용 사례: [[papers/310_Embodied_Science_Closing_the_Discovery_Loop_with_Agentic_Emb/review]] — 광학 코히런스 단층촬영을 사용한 자율 로봇 시스템은 Embodied Science 패러다임의 구체적인 실현 사례다.
+- 🔄 다른 접근: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 단백질 공학을 위한 자율 실험실로, 혈관 수술과 다른 생물의학 분야에서 로봇 자동화의 구현 사례
+- 🧪 응용 사례: [[papers/097_An_autonomous_AI_agent_for_universal_behavior_analysis/review]] — 범용 행동 분석을 위한 자율 AI 에이전트로, 로봇 수술에서 행동 분석 기술의 확장 적용
+- 🏛 기반 연구: [[papers/863_Value_iteration_for_learning_concurrently_executable_robotic/review]] — 동시 실행 가능한 로봇 기술을 위한 가치 반복 학습으로, 자율 로봇 시스템의 제어 알고리즘 기반을 제공
+- 🧪 응용 사례: [[papers/684_Robot-assisted_mapping_of_chemical_reaction_hyperspaces_and/review]] — 화학 반응을 위한 로봇 지원 매핑 연구로, 의료 로봇 기술의 화학 연구 분야 적용 사례
+- 🔄 다른 접근: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 혈관 문합을 위한 자율 로봇 시스템으로, 단백질 공학과 다른 생물의학 분야에서 로봇 자동화의 구현 사례

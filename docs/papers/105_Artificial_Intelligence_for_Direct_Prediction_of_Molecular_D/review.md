@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "이 논문은 AI4Science의 핵심 세 영역(양자역학, 원자단위 시스템, 연속체 시스템)에 걸쳐 심층적이고 통합된 기술 리뷰를 제공한다. 특히 대칭성(symmetry)과 등변성(equivariance)을 핵심 원리로 하여 이들을 심층 학습 방법에 어떻게 통합하는지를 기술적으로 상세히 설명한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Physics-informed_Neural_Networks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Research_Taxonomy_Surveys"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2023_Artificial Intelligence for Science in Quantum, Atomistic, and Continuum Systems.pdf"
 ---
@@ -145,12 +145,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2023_Artificial Intelligenc
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — 양자역학부터 연속체까지 물리 시스템의 AI 적용에 대한 종합적 기술 리뷰가 AI를 통한 과학적 발견의 이론적 기반을 제공한다
-- 🧪 응용 사례: [[papers/440_Inverse_designing_metamaterials_with_programmable_nonlinear/review]] — 대칭성과 등변성을 활용한 심층학습 방법론이 메타물질의 역설계 문제에서 그래프 신경망과 함께 핵심적으로 활용된다
-- 🔗 후속 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 법칙을 신경망에 통합하는 일반적 원리가 Physics-informed Neural Networks의 구체적인 구현으로 발전했다
-- 🏛 기반 연구: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 과학 기계학습의 핵심 원리를 제시하여 과학 분야 파운데이션 모델 개발의 중요한 이론적 토대를 마련한다
-- 🧪 응용 사례: [[papers/302_Effective_gene_expression_prediction_from_sequence_by_integr/review]] — 장거리 규제 요소를 통합한 Transformer 기반 예측이 물리 시스템에서 자기주목 메커니즘과 대칭성 활용의 생물학적 적용 사례이다
-- 🏛 기반 연구: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — AI4Science의 핵심 기술인 자기지도학습과 기하 심층학습이 과학적 발견 방법론 변화의 구체적인 기술적 토대를 제공한다
-- 🧪 응용 사례: [[papers/440_Inverse_designing_metamaterials_with_programmable_nonlinear/review]] — 물리 시스템에서 대칭성과 등변성을 활용한 심층학습 원리가 메타물질 역설계에서 그래프 신경망과 강화학습에 핵심적으로 적용된다
-- 🔄 다른 접근: [[papers/479_Large_physics_models_towards_a_collaborative_approach_with_l/review]] — 양자, 원자, 연속체 스케일 AI 과학 접근법이 물리학 특화 모델 개발의 다른 관점을 제시한다.
-- 🔗 후속 연구: [[papers/816_Toward_a_Fully_Autonomous_AI-Native_Particle_Accelerator/review]] — 양자, 원자, 연속체 규모의 과학을 위한 AI는 입자 가속기의 AI 기반 설계를 더 광범위한 물리학 분야로 확장한다.
+- 🧪 응용 사례: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — AI4Science의 이론적 프레임워크를 환경과학이라는 구체적 영역에 적용한 실용적 사례
+- 🔄 다른 접근: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — 과학적 발견에서 AI의 역할을 다른 관점에서 조망하는 보완적 리뷰
+- 🔄 다른 접근: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — AI 과학 발견을 기술적 세부사항 대신 거시적 변화와 방법론 관점에서 조망
+- 🧪 응용 사례: [[papers/479_Large_physics_models_towards_a_collaborative_approach_with_l/review]] — 양자, 원자 단위 과학 연구에서 AI 활용 현황이 Large Physics Models의 실제 적용 분야를 보여준다

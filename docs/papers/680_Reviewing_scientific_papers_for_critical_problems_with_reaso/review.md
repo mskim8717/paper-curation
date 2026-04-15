@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어 모델(LLM)을 과학 논문의 비판적 오류 검출 도구로 활용하는 방안을 제시하며, 철회된 arXiv 논문 데이터셋을 바탕으로 추론형 LLM들의 성능과 비용을 평가합니다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/LLM_Review_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Patent_Novelty_Prediction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singhal et al._2025_Reviewing scientific papers for critical problems with reasoning llms Baseline approaches and autom.pdf"
 ---
@@ -92,8 +93,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singhal et al._2025_Reviewing scientific
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — LLM의 일반적 논문 심사 능력 탐색이 비판적 문제 검출이라는 특화된 심사 업무 수행 가능성 평가의 기초가 된다.
-- 🔄 다른 접근: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — 철회된 논문 데이터와 검증된 오류 데이터를 활용한 두 연구 모두 과학적 오류 검출 능력을 평가하지만 서로 다른 데이터셋과 접근법을 사용한다.
-- 🔗 후속 연구: [[papers/692_Safescientist_Toward_risk-aware_scientific_discoveries_by_ll/review]] — 안전한 과학적 발견을 위한 위험 인식 시스템으로 확장하여 오류 검출을 넘어 예방적 안전 조치까지 포함한다.
-- 🔗 후속 연구: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — LLM의 논문 심사 가능성 탐색을 비판적 문제 검출이라는 특화된 영역으로 확장하여 더 구체적인 적용 방안을 제시한다.
-- 🔄 다른 접근: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — 과학 논문 오류 자동 검증에서 서로 다른 데이터셋과 평가 방법을 사용하여 LLM의 학술 검증 능력을 다각도로 평가한다.
+- 🔄 다른 접근: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — 과학 논문의 오류 검출을 위한 다른 LLM 기반 접근법과 벤치마크를 제시한다
+- 🏛 기반 연구: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — 피어 리뷰 품질 개선을 위한 자동화된 오류 검출의 기초 방법론을 제공한다
+- 🧪 응용 사례: [[papers/244_Cross_sectional_pilot_study_on_clinical_review_generation_us/review]] — 임상 리뷰에서 LLM의 한계와 오류 검출의 실제 적용 사례를 보여준다
+- 🔗 후속 연구: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — 과학 논문의 비판적 오류 검출을 통한 피어 리뷰 품질 향상 방안을 제시한다
+- 🧪 응용 사례: [[papers/244_Cross_sectional_pilot_study_on_clinical_review_generation_us/review]] — 과학 논문 비판적 검토에서 임상 리뷰 생성이라는 구체적인 의학 분야 적용 사례를 제시한다
+- 🔄 다른 접근: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — 과학 논문 오류 검증을 위한 다른 벤치마크와 평가 방법론을 제시한다
+- 🔗 후속 연구: [[papers/860_Unveiling_the_sentinels_Assessing_ai_performance_in_cybersec/review]] — 특정 도메인에서 AI의 과학 논문 평가 능력을 더 정교하게 분석한다

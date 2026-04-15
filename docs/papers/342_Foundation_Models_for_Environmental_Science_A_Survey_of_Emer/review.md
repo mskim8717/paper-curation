@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 환경과학 분야에서 파운데이션 모델(Foundation Models)의 응용을 포괄적으로 검토한 최신 서베이이며, 대규모 사전학습을 통해 복잡한 환경생태계 모델링의 새로운 패러다임을 제시한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Biological_Foundation_Models"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2025_Foundation Models for Environmental Science A Survey of Emerging Frontiers.pdf"
 ---
@@ -115,11 +115,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2025_Foundation Models for Env
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/015_A_Perspective_on_Foundation_Models_in_Chemistry/review]] — 환경과학과 화학 분야에서 파운데이션 모델의 적용이라는 다른 도메인별 접근 방식을 사용한다
-- 🏛 기반 연구: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 과학 기계학습을 위한 파운데이션 모델의 일반적 도전과제와 기회를 환경과학에 적용할 수 있다
-- 🔗 후속 연구: [[papers/377_Generative_AI_and_the_Foundation_Model_Era_A_Comprehensive_R/review]] — 생성형 AI와 파운데이션 모델의 포괄적 분석을 환경과학 특화 응용으로 확장할 수 있다
-- 🔗 후속 연구: [[papers/403_Highly_accurate_protein_structure_prediction_with_AlphaFold/review]] — 단백질 구조 예측의 성공이 환경 과학 분야 파운데이션 모델 개발에 중요한 방법론적 영감을 제공한다
-- 🧪 응용 사례: [[papers/377_Generative_AI_and_the_Foundation_Model_Era_A_Comprehensive_R/review]] — 파운데이션 모델의 포괄적 분석을 환경과학 등 특정 과학 분야 적용 사례로 구체화할 수 있다
-- 🔗 후속 연구: [[papers/1086_Foundational_models_for_scientific_discovery/review]] — 환경과학 분야 파운데이션 모델로 과학적 발견 모델을 확장한다.
-- 🔄 다른 접근: [[papers/299_Earthse_A_benchmark_evaluating_earth_scientific_exploration/review]] — 환경과학 파운데이션 모델과 지구과학 탐사 벤치마크의 다른 접근법
-- 🏛 기반 연구: [[papers/831_Towards_llm_agents_for_earth_observation/review]] — 환경과학을 위한 파운데이션 모델 조사가 지구 관측 LLM 에이전트 개발의 이론적 배경을 제공한다.
+- 🏛 기반 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 환경과학용 파운데이션 모델 개발에 생물화학 분야 과학 LLM의 도메인 특화 방법론이 직접 적용됨
+- 🧪 응용 사례: [[papers/377_Generative_AI_and_the_Foundation_Model_Era_A_Comprehensive_R/review]] — 환경과학 특화 모델이 파운데이션 모델 시대의 도메인별 응용 사례로 활용됨
+- 🧪 응용 사례: [[papers/105_Artificial_Intelligence_for_Direct_Prediction_of_Molecular_D/review]] — AI4Science의 이론적 프레임워크를 환경과학이라는 구체적 영역에 적용한 실용적 사례
+- 🔗 후속 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 생물화학 분야 과학 LLM의 방법론이 환경과학용 파운데이션 모델 개발에 직접 적용될 수 있음
+- 🏛 기반 연구: [[papers/377_Generative_AI_and_the_Foundation_Model_Era_A_Comprehensive_R/review]] — 생성형 AI와 파운데이션 모델의 통합적 분석이 환경과학 특화 모델 개발의 이론적 토대를 제공함
+- 🔄 다른 접근: [[papers/479_Large_physics_models_towards_a_collaborative_approach_with_l/review]] — 환경과학 기초모델과 물리학 기초모델이 각각 도메인 특화 AI 개발의 병렬적 접근법이다
+- 🧪 응용 사례: [[papers/695_Scaling_Deep_Learning_for_Materials_Discovery/review]] — 환경과학 분야의 기초 모델들이 GNoME과 같은 대규모 물질 발견 시스템의 실제 응용 사례를 보여준다.
+- 🧪 응용 사례: [[papers/282_DMFlow_Disordered_Materials_Generation_by_Flow_Matching/review]] — 환경과학 기초 모델에서 무질서 재료 생성이 환경 정화 재료 설계에 활용됨
+- 🏛 기반 연구: [[papers/298_Earth-Agent_Unlocking_the_Full_Landscape_of_Earth_Observatio/review]] — 환경 과학 분야의 파운데이션 모델에 대한 포괄적 조사로, Earth-Agent의 기술적 기반을 제공

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 QM9 데이터셋을 기반으로 999개 또는 2998개의 분자 동역학 궤적 및 130,831개의 안정 분자 기하구조에 대한 정밀한 해밀턴(Hamiltonian) 행렬을 제공하는 새로운 양자 해밀턴 데이터셋 QH9를 제시하며, 밀도범함수이론(DFT) 계산 가속화를 위한 머신러닝 모델 개발을 지원한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Protein_Structure_Prediction"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2023_QH9 A Quantum Hamiltonian Prediction Benchmark for QM9 Molecules.pdf"
 ---
@@ -111,13 +111,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2023_QH9 A Quantum Hamiltonian
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/065_Agentic_End-to-End_De_Novo_Protein_Design_for_Tailored_Dynam/review]] — 정밀한 양자 해밀턴 데이터가 단백질 동역학 제어 시스템의 물리적 정확성을 보장하는 기초 데이터를 제공합니다.
-- 🔗 후속 연구: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — 분자 수준 양자 계산을 재료과학 LLM과 결합하여 더 정확한 물성 예측 시스템을 구축합니다.
-- 🧪 응용 사례: [[papers/432_Intelligent_experiments_through_real-time_ai_Fast_data_proce/review]] — 양자 계산의 정밀성을 고에너지 물리학 실험의 실시간 데이터 분석에 활용하는 실용적 사례입니다.
-- 🧪 응용 사례: [[papers/279_Distinguishing_Neutron_Star_vs_Low-Mass_Black_Hole_Binaries/review]] — 양자 해밀토니안 예측이 천체물리학 컴팩트 천체 구분에 응용됨
-- 🏛 기반 연구: [[papers/065_Agentic_End-to-End_De_Novo_Protein_Design_for_Tailored_Dynam/review]] — QH9의 정밀한 양자 해밀턴 데이터는 단백질 동역학 모델링의 물리적 기초를 제공합니다.
-- 🏛 기반 연구: [[papers/260_DeepCRE_Transforming_Drug_RD_via_AI-Driven_Cross-drug_Respon/review]] — 분자 수준의 정밀한 양자 계산 데이터가 약물-세포 상호작용 모델링의 물리적 기초를 제공합니다.
-- 🏛 기반 연구: [[papers/432_Intelligent_experiments_through_real-time_ai_Fast_data_proce/review]] — 정밀한 양자 해밀턴 계산 데이터가 고속 입자 검출 알고리즘의 물리적 모델링 기초를 제공합니다.
-- 🔗 후속 연구: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — 분자 구조 정보 처리를 양자 해밀턴 예측으로 확장하여 더 정밀한 물성 예측을 가능하게 합니다.
-- 🔗 후속 연구: [[papers/304_Efficient_and_Equivariant_Graph_Networks_for_Predicting_Quan/review]] — QM9 분자의 양자 해밀토니안 예측 벤치마크에서 그래프 네트워크 성능을 확장 평가할 수 있다
-- 🧪 응용 사례: [[papers/307_Efficient_Prediction_of_SO3-Equivariant_Hamiltonian_Matrices/review]] — QM9 분자용 양자 해밀턴 예측 벤치마크에 SO(3) 등변 예측 적용
+- 🔄 다른 접근: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — 둘 다 양자 화학 계산을 위한 데이터셋이지만, QH9는 해밀턴 예측에, MMSCI는 대학원 수준 다중 학문에 집중한다
+- 🔗 후속 연구: [[papers/307_Efficient_Prediction_of_SO3-Equivariant_Hamiltonian_Matrices/review]] — SO(3) 등변 해밀턴 행렬의 효율적 예측 연구가 QH9의 정밀한 해밀턴 행렬 제공 데이터셋으로 구체화되었다
+- 🧪 응용 사례: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 재료 발견과 설계를 위한 가설 생성 연구가 QH9 데이터셋을 활용한 DFT 계산 가속화 ML 모델 개발에 실제 적용되었다
+- 🧪 응용 사례: [[papers/304_Efficient_and_Equivariant_Graph_Networks_for_Predicting_Quan/review]] — QM9 분자의 양자 해밀토니안 예측 벤치마크가 QHNet의 양자 해밀토니안 예측 능력을 평가하는 실제 적용 사례이다.
+- 🧪 응용 사례: [[papers/307_Efficient_Prediction_of_SO3-Equivariant_Hamiltonian_Matrices/review]] — SO(3) 등변 해밀톤 예측이 양자 분자 해밀톤 벤치마크에서 전자구조 계산 가속화에 직접 적용됨
+- 🧪 응용 사례: [[papers/1106_The_BOS-Lig_Dataset_Accurate_Ligand_Charges_from_a_Consensus/review]] — 양자 해밀톤 예측에서 정확한 리간드 전하 데이터가 전이금속 착물의 전자구조 계산 정확도를 높임

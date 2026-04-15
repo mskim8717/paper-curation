@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 자동화된 학술 설문지(Survey) 생성을 위한 SURVEYFORGE 프레임워크를 제안하며, 휴리스틱 기반 윤곽 생성, 메모리 기반 문헌 검색, 그리고 다차원 평가 벤치마크(SurveyBench)를 통해 AI 생성 설문과 인간 작성 설문 간의 품질 격차를 줄인다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Language_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Symbolic_PDE_Optimization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yan et al._2025_Surveyforge On the outline heuristics, memory-driven generation, and multi-dimensional evaluation f.pdf"
 ---
@@ -146,10 +148,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yan et al._2025_Surveyforge On the outli
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — 과학 지식에 특화된 Galactica의 능력을 자동 설문지 생성이라는 구체적 작업에 활용
-- 🔗 후속 연구: [[papers/672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/review]] — AI 연구 평가에서 자동화된 문헌 검토와 설문 생성 능력을 체계적으로 평가
-- 🔄 다른 접근: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — 다중 에이전트 리뷰 생성과 달리 단일 프레임워크로 포괄적 설문지를 생성하는 접근
-- 🏛 기반 연구: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 대규모 문헌 리뷰 데이터셋 구축 방법론을 자동 설문지 생성에 적용한 기반
-- 🔄 다른 접근: [[papers/374_Generating_a_structured_summary_of_numerous_academic_papers/review]] — 메모리 기반 설문 생성 프레임워크로 대규모 학술 논문 요약과 다른 접근 방식의 구조화된 요약을 제공한다.
-- 🔗 후속 연구: [[papers/781_Surveyx_Academic_survey_automation_via_large_language_models/review]] — 메모리 기반 서베이 생성과 개요 휴리스틱이 SurveyX 시스템의 다단계 최적화를 보완할 수 있습니다.
-- 🧪 응용 사례: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — 과학 문헌 생성에 특화된 Galactica의 능력을 자동 설문지 생성에 활용하는 응용
+- 🔄 다른 접근: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 학술 문헌 리뷰 자동화라는 동일한 목표를 가지지만 SurveyForge는 설문지 생성에, SciReviewGen은 문헌 리뷰 생성에 특화된 다른 접근법임
+- 🔗 후속 연구: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 지식 그래프를 활용한 다중 문서 과학 요약 방법론을 제시하여 SurveyForge의 메모리 기반 문헌 검색을 더 체계적인 지식 구조화로 확장함
+- 🏛 기반 연구: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 관련 연구 요약의 신경망 기반 접근법을 제시하여 SurveyForge의 자동화된 설문지 생성에서 기존 연구 통합 방법론의 기술적 기반을 제공함
+- 🏛 기반 연구: [[papers/109_Assisting_in_writing_wikipedia-like_articles_from_scratch_wi/review]] — 메모리 기반 설문조사 생성 연구가 위키피디아 기사 작성을 위한 주제 연구와 아웃라인 생성의 방법론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/553_Model-in-the-loop_milo_Accelerating_multimodal_ai_data_annot/review]] — 설문 작성 자동화와 멀티모달 데이터 주석은 인간-AI 협력의 서로 다른 측면을 다루며 상호 보완적이다

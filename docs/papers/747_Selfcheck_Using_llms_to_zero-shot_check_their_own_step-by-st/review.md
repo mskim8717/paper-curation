@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.4
 essence: "대규모 언어 모델(LLM)이 자체 단계별 추론에서 발생한 오류를 외부 자원 없이 인식할 수 있는지 탐구하며, 4단계 분해 검증 방식(SelfCheck)을 통해 제로샷(zero-shot) 오류 감지 및 답변 정확도 향상을 달성한 연구이다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Self-Refining_Text_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scholarly_Question_Answering"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Miao et al._2023_Selfcheck Using llms to zero-shot check their own step-by-step reasoning.pdf"
 ---
@@ -111,9 +111,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Miao et al._2023_Selfcheck Using llms to
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/172_Boolq_Exploring_the_surprising_difficulty_of_natural_yesno_q/review]] — 자연 예/아니오 질문의 어려움을 보인 연구에서 LLM이 자체 추론을 검증할 수 있는지로 확장한 더 고차원적 연구입니다.
-- 🔄 다른 접근: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자체 검증과 자체 개선이라는 서로 다른 LLM 자기 향상 메커니즘을 탐구하는 상호 보완적 연구입니다.
-- 🔗 후속 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 도구를 활용한 자기 수정에서 도구 없이 순수하게 자체 추론을 검증하는 더 순수한 형태의 자기 검증 연구입니다.
-- 🏛 기반 연구: [[papers/172_Boolq_Exploring_the_surprising_difficulty_of_natural_yesno_q/review]] — 자연어 예/아니오 질문의 도전성을 보인 연구가 LLM의 자체 추론 검증 능력 연구의 기초적 동기를 제공합니다.
-- 🔄 다른 접근: [[papers/222_Clam_Selective_clarification_for_ambiguous_questions_with_ge/review]] — LLM의 단계별 자기 점검 방법으로 본 논문의 애매한 질문 처리와 다른 접근법의 품질 보장을 제시한다.
-- 🏛 기반 연구: [[papers/636_Prompt_to_be_consistent_is_better_than_self-consistent_few-s/review]] — LLM의 단계별 자기 검증 능력이 일관성 기반 팩트 체킹에서 논리적 제약 조건을 효과적으로 적용하기 위한 기본 전제가 된다.
+- 🔄 다른 접근: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — Self-Refine의 반복적 자기 개선 방식과 유사하지만 단계별 추론의 오류 검증에 특화된 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — CRITIC의 도구 기반 자기 수정 방법론을 외부 도구 없이 순수하게 LLM 내부 검증으로 확장한다.
+- 🏛 기반 연구: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — LLM의 자기 개선 능력 분석이 단계별 추론 검증이라는 구체적 적용 영역의 이론적 기반이 된다.
+- 🔄 다른 접근: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — SelfCheck의 단계별 추론 검증과 유사하지만 더 포괄적인 출력 개선을 위한 반복적 자기 정제 방법론을 제시한다.
+- 🔗 후속 연구: [[papers/790_Teaching_Large_Language_Models_to_Self-Debug/review]] — LLM의 자기 검증 능력을 코드 디버깅이라는 구체적 도메인으로 확장하여 적용한다

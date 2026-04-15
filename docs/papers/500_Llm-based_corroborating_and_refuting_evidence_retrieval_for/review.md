@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.0
 essence: "CIBER는 검색 증강 생성(RAG) 프레임워크를 확장하여 과학적 주장(claim)을 검증하기 위해 지지 증거와 반박 증거를 체계적으로 식별하고 검색하는 프레임워크이다. 다양한 질문 프로브(probe)를 통해 LLM의 응답 일관성을 평가함으로써 환각(hallucination) 문제를 완화한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Literature_Analysis"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Vargas et al._2025_Llm-based corroborating and refuting evidence retrieval for scientific claim verification.pdf"
 ---
@@ -116,9 +117,10 @@ CIBER는 검색 증강 생성(RAG) 프레임워크를 확장하여 과학적 주
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/579_Nsf-scify_Mining_the_nsf_awards_database_for_scientific_clai/review]] — NSF 과학적 주장 데이터셋을 활용한 증거 검색 및 검증 시스템
-- 🏛 기반 연구: [[papers/426_Improving_Scientific_Hypothesis_Generation_with_Knowledge_Gr/review]] — 지식 그래프 기반 가설 생성이 과학적 주장 검증의 방법론적 기반
-- 🔗 후속 연구: [[papers/567_Multivers_Improving_scientific_claim_verification_with_weak/review]] — 과학적 주장 검증을 약한 지도학습으로 개선한 멀티모달 접근
-- 🔄 다른 접근: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 증거 검색 vs 프로그램 가이드 추론으로 사실 확인의 서로 다른 접근법
-- 🔗 후속 연구: [[papers/426_Improving_Scientific_Hypothesis_Generation_with_Knowledge_Gr/review]] — 지식 그래프 기반 가설 생성을 과학적 주장 검증으로 확장한 방법론
-- 🏛 기반 연구: [[papers/579_Nsf-scify_Mining_the_nsf_awards_database_for_scientific_clai/review]] — 대규모 과학적 주장 데이터셋이 주장 검증 시스템의 핵심 데이터 기반
+- 🏛 기반 연구: [[papers/034_A_Survey_on_RAG_Meeting_LLMs_Towards_Retrieval-Augmented_Lar/review]] — 검색 증강 생성의 기본 원리와 구현 방법론을 제공합니다.
+- 🔗 후속 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프 기반 팩트 검증을 과학적 주장 검증으로 확장한 접근입니다.
+- 🔄 다른 접근: [[papers/540_Mir_Methodology_inspiration_retrieval_for_scientific_researc/review]] — 과학 연구를 위한 다른 형태의 지식 검색 및 활용 방법을 제시합니다.
+- 🔗 후속 연구: [[papers/819_Toward_reliable_biomedical_hypothesis_generation_Evaluating/review]] — 증거 검색 프레임워크를 가설의 진실성 검증으로 확장합니다.
+- 🔄 다른 접근: [[papers/540_Mir_Methodology_inspiration_retrieval_for_scientific_researc/review]] — 과학 연구를 위한 증거 검색의 다른 접근 방식을 제시합니다.
+- 🧪 응용 사례: [[papers/615_PerTurboAgent_A_Self-Planning_Agent_for_Boosting_Sequential/review]] — LLM 기반 증거 검색과 반박을 유전자 섭동 실험에서 기능 검증에 활용하여 더 정확한 유전자 선택 가능
+- 🔗 후속 연구: [[papers/743_Self-critique_guided_iterative_reasoning_for_multi-hop_quest/review]] — LLM 기반 반박 증거 검색을 통해 다중 홉 질의응답에서 자기비판의 정확성을 향상시킬 수 있는 확장된 방법론을 제시한다.

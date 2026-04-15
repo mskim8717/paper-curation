@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 LLM 기반 에이전트가 장기간(>2천만 토큰)에 걸쳐 일관된 성능을 유지하는 능력을 평가하기 위해 자판기 운영이라는 단순하지만 장시간 지속되는 비즈니스 시뮬레이션 환경을 제시한다. 실험 결과 Claude 3.5 Sonnet과 o3-mini는 대부분의 실행에서 수익을 창출하지만 모든 모델이 높은 분산도(variance)를 보이며, 배송 일정 오해석, 주문 망각, 또는 \"멜트다운\" 루프 등으로 인해 장기적으로 성능이 저하됨을 발견했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Realistic_Discovery_Benchmarks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Backlund and Petersson_2025_Vending-Bench A Benchmark for Long-Term Coherence of Autonomous Agents.pdf"
 ---
@@ -121,7 +123,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Backlund and Petersson_2025_Vending-Benc
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — AI 에이전트 신뢰성 과학에 대한 기초 연구로 장기간 일관성 평가의 이론적 근거를 제공한다.
-- 🧪 응용 사례: [[papers/365_Future_of_Work_with_AI_Agents_Auditing_Automation_and_Augmen/review]] — AI 에이전트의 업무 자동화 평가에서 유사한 장기 성능 일관성 문제를 다룬다.
-- 🔗 후속 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — 자율 에이전트 설문조사의 구체적 벤치마크 구현으로 에이전트 평가 방법론을 확장한다.
-- 🏛 기반 연구: [[papers/365_Future_of_Work_with_AI_Agents_Auditing_Automation_and_Augmen/review]] — AI 에이전트의 장기간 일관성 평가에서 업무 자동화 감시 평가의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/698_Scaling_Reproducibility_An_AI-Assisted_Workflow_for_Large-Sc/review]] — 장기 일관성 평가와 대규모 재현성 분석은 모두 AI 시스템 신뢰성을 다루지만 서로 다른 시간적 관점을 가진다.
+- 🏛 기반 연구: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 대규모 언어모델의 신뢰성 평가 방법론이 자율 에이전트 장기 일관성 벤치마크의 기반이 된다.
+- 🔗 후속 연구: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — AI 에이전트 신뢰성 과학이 Vending-Bench의 장기 일관성 평가를 더욱 체계화할 수 있다.
+- 🧪 응용 사례: [[papers/061_Agent_S_An_Open_Agentic_Framework_that_Uses_Computers_Like_a/review]] — GUI 자동화의 장기 일관성 문제를 벤치마킹하여 Agent S 프레임워크의 실제 성능 한계를 평가할 수 있다
+- 🔄 다른 접근: [[papers/698_Scaling_Reproducibility_An_AI-Assisted_Workflow_for_Large-Sc/review]] — 재현성 평가와 장기 일관성 평가는 모두 AI 시스템의 신뢰성을 다루지만 다른 측면을 평가한다.

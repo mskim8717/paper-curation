@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 순수 수치 보상(numerical rewards)의 한계를 극복하기 위해 자연언어 비판(natural language critiques)을 온라인 강화학습(online RL) 프레임워크에 통합한 Critique-GRPO를 제안한다. 이는 LLM의 추론 능력을 향상시키는 새로운 접근 방식이다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Reasoning_Enhancement_via_Reinforcement_Learning"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Critique-GRPO Advancing LLM Reasoning with Natural Language and Numerical Feedback.pdf"
 ---
@@ -127,8 +129,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Critique-GRPO Advancin
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — DeepSeek-R1의 순수 강화학습 기반 추론 능력은 Critique-GRPO의 자연언어 비판과 수치 보상 통합에 기본적인 RL 토대를 제공한다.
-- 🔗 후속 연구: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — PAG의 다중 턴 자기 수정 메커니즘을 Critique-GRPO가 자연언어 비판을 추가하여 더 풍부한 피드백 체계로 발전시킨다.
-- 🏛 기반 연구: [[papers/028_A_survey_of_reasoning_with_foundation_models/review]] — 파운데이션 모델의 추론 능력 서베이는 Critique-GRPO의 자연언어 비판 통합 접근법에 추론 메커니즘의 이론적 배경을 제공한다.
-- 🔗 후속 연구: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — 자연언어 비판을 통합한 Critique-GRPO는 DeepSeek-R1의 순수 RL 접근법에 추가적인 언어적 피드백 메커니즘을 제공한다.
-- 🔄 다른 접근: [[papers/887_Wrong-of-thought_An_integrated_reasoning_framework_with_mult/review]] — 자연어 비판을 통한 LLM 추론 개선 방법이 오류 정보 활용 접근법과 상호 보완적이다.
+- 🏛 기반 연구: [[papers/683_RM-R1_Reward_Modeling_as_Reasoning/review]] — 자연어 비판과 수치 보상의 통합이 추론 기반 보상 모델링의 이론적 근거를 제공한다.
+- 🔄 다른 접근: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 자연어 비판 통합과 다중턴 자기수정을 서로 다른 방식으로 추론 능력을 향상시킨다.
+- 🔗 후속 연구: [[papers/281_Dlpo_Towards_a_robust_efficient_and_generalizable_prompt_opt/review]] — 자연어 비판 기반 최적화가 프롬프트 최적화에서 텍스트 기반 그래디언트로 확장될 수 있다.
+- 🏛 기반 연구: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — 자연어 비판이 생성-검증 갭을 해소하는 구체적인 방법론을 제시한다.
+- 🔗 후속 연구: [[papers/683_RM-R1_Reward_Modeling_as_Reasoning/review]] — 자연어 비판과 수치 보상을 결합하는 접근법이 추론 기반 보상 모델링으로 확장될 수 있다.
+- 🏛 기반 연구: [[papers/785_T-sciq_Teaching_multimodal_chain-of-thought_reasoning_via_mi/review]] — 자연어 비평을 통한 LLM 추론 향상 연구가 T-SciQ의 연쇄적 사고 신호 생성과 활용 방법론에 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/887_Wrong-of-thought_An_integrated_reasoning_framework_with_mult/review]] — 자연어 비판을 통한 LLM 추론 개선과 오류 정보 활용 추론 프레임워크는 상호 보완적인 추론 성능 향상 방법이다.
+- 🔗 후속 연구: [[papers/281_Dlpo_Towards_a_robust_efficient_and_generalizable_prompt_opt/review]] — 자연어 비판 기반 최적화가 텍스트 기반 그래디언트 최적화 전략으로 구체화될 수 있다.
+- 🔗 후속 연구: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — 생성-검증 갭을 자연어 비판을 통해 해소하는 구체적인 방법론으로 발전될 수 있다.

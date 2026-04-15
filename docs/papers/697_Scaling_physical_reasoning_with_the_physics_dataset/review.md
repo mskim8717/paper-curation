@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "대규모 언어 모델(LLM)이 물리학 추론 능력 개발에 충분한 주목을 받지 못했던 문제를 해결하기 위해, 100개 이상의 교과서로부터 정제된 16,568개의 고품질 물리 문제를 포함하는 PHYSICS 데이터셋을 소개한다. 물리 분야에 특화된 평가 프레임워크(Rule+Model)를 최초로 제안하여 단위 변환, 수치 간단히 하기 등의 물리 고유 특성을 반영한 정확한 평가를 가능하게 한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Structured_Research_Frameworks"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Physics_Reasoning_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zheng et al._2025_Scaling physical reasoning with the physics dataset.pdf"
 ---
@@ -106,9 +106,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zheng et al._2025_Scaling physical reaso
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/808_Theoremqa_A_theorem-driven_question_answering_dataset/review]] — TheoremQA의 정리 기반 평가 방식이 PHYSICS 데이터셋의 물리 문제 해결 능력 평가를 더욱 체계화함
-- 🔄 다른 접근: [[papers/706_SciBench_Evaluating_College-Level_Scientific_Problem-Solving/review]] — 둘 다 과학 문제 해결 벤치마크이지만 PHYSICS는 물리 특화, SciBench는 대학 수준 전반을 다루는 차이가 있음
-- 🏛 기반 연구: [[papers/785_T-sciq_Teaching_multimodal_chain-of-thought_reasoning_via_mi/review]] — T-SciQ의 멀티모달 과학 추론 방법이 PHYSICS 데이터셋의 물리 문제 해결 평가 프레임워크 구축에 기여함
-- 🏛 기반 연구: [[papers/279_Distinguishing_Neutron_Star_vs_Low-Mass_Black_Hole_Binaries/review]] — 물리 추론 스케일링이 중력파 신호 분석의 기반이 됨
-- 🏛 기반 연구: [[papers/808_Theoremqa_A_theorem-driven_question_answering_dataset/review]] — PHYSICS 데이터셋의 물리 문제 평가 방식이 TheoremQA의 정리 기반 질문 답변 벤치마크 설계에 참고가 됨
-- 🔗 후속 연구: [[papers/497_LLM_and_Simulation_as_Bilevel_Optimizers_A_New_Paradigm_to_A/review]] — 물리적 추론을 위한 물리학 데이터셋 확장은 LLM과 시뮬레이션의 이단계 최적화를 더 광범위한 물리 현상으로 확장한다.
+- 🧪 응용 사례: [[papers/617_Phi-4_technical_report/review]] — STEM 추론에 특화된 Phi-4 모델의 물리학 문제 해결 능력을 구체적으로 평가할 수 있는 벤치마크를 제공한다.
+- 🔄 다른 접근: [[papers/808_Theoremqa_A_theorem-driven_question_answering_dataset/review]] — STEM 분야의 추론 능력 평가라는 공통 목표를 가지지만 물리학 vs 수학이라는 다른 도메인에 특화된 접근법을 사용한다.
+- 🔗 후속 연구: [[papers/706_SciBench_Evaluating_College-Level_Scientific_Problem-Solving/review]] — 대학 수준 과학 문제 해결 평가를 통해 물리학 추론 능력을 더 넓은 과학 분야로 확장하여 종합적으로 평가할 수 있다.
+- 🔗 후속 연구: [[papers/706_SciBench_Evaluating_College-Level_Scientific_Problem-Solving/review]] — 물리학 추론 데이터셋으로, SciBench의 물리 문제를 보다 구체적이고 전문적인 물리학 추론 평가로 확장합니다.
+- 🔄 다른 접근: [[papers/808_Theoremqa_A_theorem-driven_question_answering_dataset/review]] — STEM 분야의 추론 능력 평가라는 공통 목표를 가지지만 수학 정리 vs 물리학 추론이라는 다른 도메인에 특화된 접근법을 사용한다.
+- 🔗 후속 연구: [[papers/217_Chiral_spin_symmetry_and_hot_QCD/review]] — 물리 데이터셋을 통한 물리적 추론 스케일링이 카이랄 스핀 대칭성의 QCD 열역학 연구를 확장한다
+- 🧪 응용 사례: [[papers/526_MechAgents_Large_language_model_multi-agent_collaborations_c/review]] — 물리학 데이터셋을 활용한 추론 스케일링 연구로 MechAgents가 사용하는 물리 기반 모델링의 대규모 데이터 처리 방법론을 제공함
+- 🔗 후속 연구: [[papers/012_A_Multi-agent_Framework_for_Physical_Laws_Discovery/review]] — 물리학 데이터셋을 활용한 대규모 추론 스케일링을 통해 다중 에이전트 물리 법칙 발견을 더 복잡하고 현실적인 물리 현상으로 확장할 수 있는 가능성을 제시함
+- 🧪 응용 사례: [[papers/617_Phi-4_technical_report/review]] — 물리학 추론 데이터셋을 통해 Phi-4의 STEM 추론 능력을 구체적으로 평가하고 개선할 수 있는 방법을 제시한다.

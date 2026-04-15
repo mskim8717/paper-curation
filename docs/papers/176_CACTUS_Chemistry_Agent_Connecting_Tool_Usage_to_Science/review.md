@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어 모델(LLM)과 화학정보학 도구를 통합한 CACTUS라는 지능형 에이전트를 개발하여, 약물 설계 및 분자 발견 업무에서 기존 LLM의 성능을 대폭 향상시켰다. 오픈소스 LLM 5개 모델의 벤치마킹을 통해 도메인 특화 프롬프트 엔지니어링의 중요성을 입증했다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Chemistry_Tool_Integration_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/McNaughton et al._2024_CACTUS Chemistry Agent Connecting Tool Usage to Science.pdf"
 ---
@@ -101,13 +102,14 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/McNaughton et al._2024_CACTUS Chemistry 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/131_Automating_exploratory_proteomics_research_via_language_mode/review]] — 화학정보학 vs 단백질체학으로 도메인은 다르지만 유사한 자동화 도구 통합 접근
-- 🔄 다른 접근: [[papers/110_AstroAgents_A_Multi-Agent_AI_for_Hypothesis_Generation_from/review]] — 화학정보학 vs 우주생물학으로 도메인은 다르지만 유사한 다중 에이전트 도구 활용
-- 🔗 후속 연구: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — 화학정보학 도구 통합을 화학 증강 대화형 시스템으로 발전시킨 연구
-- 🔄 다른 접근: [[papers/213_ChemReasoner_Heuristic_Search_over_a_Large_Language_Models_K/review]] — 화학 도구 연결 vs 휴리스틱 탐색으로 화학 LLM의 서로 다른 접근법
-- 🔄 다른 접근: [[papers/110_AstroAgents_A_Multi-Agent_AI_for_Hypothesis_Generation_from/review]] — 우주생물학 vs 화학정보학으로 도메인은 다르지만 유사한 다중 에이전트 도구 활용
-- 🔄 다른 접근: [[papers/131_Automating_exploratory_proteomics_research_via_language_mode/review]] — 단백질체학 vs 화학정보학으로 도메인은 다르지만 유사한 자동화 도구 통합 접근
-- 🏛 기반 연구: [[papers/211_ChemGymRL_A_Customizable_Interactive_Framework_for_Reinforce/review]] — 화학정보학 도구 통합이 화학 실험 자동화의 소프트웨어 기반
-- 🧪 응용 사례: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — CRITIC의 도구 기반 자기수정 프레임워크는 CACTUS의 화학 도구 활용에서 실험 결과 검증과 오류 수정에 직접 적용될 수 있다.
-- 🧪 응용 사례: [[papers/214_ChemToolAgent_The_Impact_of_Tools_on_Language_Agents_for_Che/review]] — 과학과 도구 사용 연결 화학 에이전트를 화학 문제 해결에 적용
-- 🔄 다른 접근: [[papers/837_Training_a_Scientific_Reasoning_Model_for_Chemistry/review]] — 둘 다 화학 도메인에서 AI 에이전트를 다루지만 하나는 추론 모델 훈련에, 다른 하나는 도구 사용 연결에 초점을 맞춘다.
+- 🔄 다른 접근: [[papers/214_ChemToolAgent_The_Impact_of_Tools_on_Language_Agents_for_Che/review]] — 화학 에이전트에서 도구 통합과 도구 영향 평가라는 서로 다른 관점에서 LLM 기반 화학 문제 해결을 다룬다
+- 🔗 후속 연구: [[papers/209_ChemAgent_Self-updating_Library_in_Large_Language_Models_Imp/review]] — 화학 도구 연결 에이전트에서 자체 업데이트 라이브러리를 갖춘 화학 에이전트로의 발전된 형태를 보여준다
+- 🏛 기반 연구: [[papers/701_Scholarchemqa_Unveiling_the_power_of_language_models_in_chem/review]] — 화학 질의응답에서의 언어 모델 성능 연구를 화학 도구 사용 에이전트의 기반 지식으로 활용한다
+- 🧪 응용 사례: [[papers/047_ActionIE_Action_Extraction_from_Scientific_Literature_with_P/review]] — 프로그래밍 기반 행동 추출 방법론을 화학 에이전트의 도구 사용 과학 연구에 적용하여 실험 자동화 성능을 향상시킬 수 있다.
+- 🔄 다른 접근: [[papers/130_Automating_Computational_Chemistry_Workflows_via_OpenClaw_an/review]] — 화학 에이전트 도구 연결과 계산화학 워크플로우가 각각 다른 화학 자동화 접근법이다
+- 🔄 다른 접근: [[papers/096_An_automatic_end-to-end_chemical_synthesis_development_platf/review]] — 과학을 위한 도구 사용을 연결하는 화학 에이전트로, 화학 합성 자동화에 대한 다른 에이전트 기반 접근
+- 🧪 응용 사례: [[papers/138_Autonomous_chemical_research_with_large_language_models/review]] — 과학을 위한 도구 사용 연결 화학 에이전트로, Coscientist의 화학 도구 자동화 개념을 더 넓은 화학 작업으로 확장
+- 🧪 응용 사례: [[papers/397_Hallucinations_can_improve_large_language_models_in_drug_dis/review]] — 화학 도구 연결 에이전트에서 구조적 환각이 새로운 분자 발견에 도움이 되는 실제 사례를 제공한다.
+- 🔗 후속 연구: [[papers/651_RAG-Enhanced_Collaborative_LLM_Agents_for_Drug_Discovery/review]] — 화학 도구 연결 에이전트로서 신약 발견에서 RAG 기반 협력의 구체적 구현을 확장한다
+- 🧪 응용 사례: [[papers/837_Training_a_Scientific_Reasoning_Model_for_Chemistry/review]] — 화학 도구 연결과 과학적 추론을 실제 약물 발견 파이프라인에 적용한다
+- 🔄 다른 접근: [[papers/530_Medbiolm_Optimizing_medical_and_biological_qa_with_fine-tune/review]] — 의료/생물학 QA에 특화된 접근법과 화학 분야 도구 사용 에이전트의 서로 다른 전문화 전략을 비교할 수 있다.

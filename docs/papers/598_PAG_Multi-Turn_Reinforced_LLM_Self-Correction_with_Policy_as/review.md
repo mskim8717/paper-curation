@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.3
 essence: "대형 언어모델(LLM)의 자기 수정(self-correction) 능력을 강화하기 위해, 정책(policy)과 검증자(verifier) 역할을 전환하며 다중 턴 강화학습을 통해 검증-수정 워크플로우를 구현한 새로운 프레임워크를 제안한다. 기존 방법과 달리 모델 자신의 검증 단계에서 오류를 명시적으로 감지할 때만 답변을 수정하므로 모델 붕괴를 완화하고 추론과 검증 능력을 함께 향상시킨다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/LLM_Self-Correction_and_Verification"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jiang et al._2025_PAG Multi-Turn Reinforced LLM Self-Correction with Policy as Generative Verifier.pdf"
 ---
@@ -126,14 +128,18 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jiang et al._2025_PAG Multi-Turn Reinfor
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/845_Trust_But_Verify_A_Self-Verification_Approach_to_Reinforceme/review]] — 두 논문 모두 LLM의 자기 수정 능력을 다루되 PAG는 다중 턴 워크플로우, RISE는 검증 가능한 보상을 통한 동시 학습에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — CRITIC의 외부 도구 기반 자기수정을 PAG가 모델 내부의 정책-검증자 역할 전환으로 발전시켜 더 효율적인 워크플로우를 제공한다.
-- 🏛 기반 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — Self-Refine의 반복적 개선 메커니즘은 PAG의 다중 턴 강화학습 기반 자기 수정 프레임워크의 이론적 토대가 된다.
-- 🏛 기반 연구: [[papers/750_SEVerA_Verified_Synthesis_of_Self-Evolving_Agents/review]] — 정책 기반 강화학습이 형식적 안전성 보장의 기반 메커니즘으로 작용함
-- 🏛 기반 연구: [[papers/683_RM-R1_Reward_Modeling_as_Reasoning/review]] — PAG의 다중 턴 자기 수정 프레임워크는 RM-R1의 Chain-of-Rubrics 메커니즘 설계에 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 두 논문 모두 LLM 자기 수정을 다루되 CRITIC은 외부 도구 활용, PAG는 내부 정책-검증자 전환에 의존한다.
-- 🔗 후속 연구: [[papers/243_Critique-GRPO_Advancing_LLM_Reasoning_with_Natural_Language/review]] — PAG의 다중 턴 자기 수정 메커니즘을 Critique-GRPO가 자연언어 비판을 추가하여 더 풍부한 피드백 체계로 발전시킨다.
-- 🔄 다른 접근: [[papers/845_Trust_But_Verify_A_Self-Verification_Approach_to_Reinforceme/review]] — 두 논문 모두 LLM 자기 검증을 다루되 RISE는 검증 가능한 보상 활용, PAG는 다중 턴 정책-검증자 전환에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/800_The_hidden_dimensions_of_llm_alignment_A_multi-dimensional_s/review]] — PAG의 다중 턴 강화학습 자기교정이 안전 정렬의 다차원 방향 상호작용을 더욱 정교하게 제어할 수 있음
-- 🔗 후속 연구: [[papers/281_Dlpo_Towards_a_robust_efficient_and_generalizable_prompt_opt/review]] — 다중 턴 강화 LLM 자기교정에서 견고한 프롬프트 최적화로의 확장
-- 🔄 다른 접근: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — 정책 기반 강화학습과 달리 사후훈련 단계에서 SFT와 RL의 근본적 차이 분석
+- 🔄 다른 접근: [[papers/683_RM-R1_Reward_Modeling_as_Reasoning/review]] — 자기수정을 정책 레벨에서 구현하는 것과 보상 모델에 추론을 통합하는 서로 다른 접근법이다.
+- 🔗 후속 연구: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — 자발적으로 개발되는 자기 검증 패턴을 명시적인 다중턴 프레임워크로 체계화한다.
+- 🏛 기반 연구: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — 생성-검증 갭 문제를 다중턴 강화학습을 통해 해결하려는 구체적인 방법론을 제시한다.
+- 🧪 응용 사례: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 자기수정 메커니즘이 편향 완화를 위한 추론 시간 개입으로 활용될 수 있다.
+- 🔗 후속 연구: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — 자발적으로 개발되는 자기 검증 패턴이 명시적인 다중턴 자기수정 프레임워크로 발전될 수 있다.
+- 🔄 다른 접근: [[papers/683_RM-R1_Reward_Modeling_as_Reasoning/review]] — 보상 모델에 추론을 통합하는 것과 정책 자체에 검증-수정을 통합하는 서로 다른 접근법이다.
+- 🔄 다른 접근: [[papers/447_Iterative_self-incentivization_empowers_large_language_model/review]] — 정보 검색에서의 자기개선과 일반적 자가수정을 서로 다른 도메인에서 접근하는 방법이다.
+- 🏛 기반 연구: [[papers/449_Kimi_k15_Scaling_reinforcement_learning_with_llms/review]] — 개선된 정책 최적화가 다중턴 자기수정 프레임워크의 기반이 될 수 있다.
+- 🔄 다른 접근: [[papers/243_Critique-GRPO_Advancing_LLM_Reasoning_with_Natural_Language/review]] — 자연어 비판 통합과 다중턴 자기수정을 서로 다른 방식으로 추론 능력을 향상시킨다.
+- 🔄 다른 접근: [[papers/845_Trust_But_Verify_A_Self-Verification_Approach_to_Reinforceme/review]] — 자기검증 대신 정책 집계를 통한 자기교정으로 LLM의 신뢰성을 확보하는 다른 접근법을 제시한다.
+- 🔄 다른 접근: [[papers/296_Dynamic_Search_for_Inference-Time_Alignment_in_Diffusion_Mod/review]] — 둘 다 추론 시간 최적화를 다루지만 Dynamic Search는 확산 모델에, PAG는 강화학습 기반 자기수정에 적용됨
+- 🔄 다른 접근: [[papers/249_Curriculum_Reinforcement_Learning_from_Easy_to_Hard_Tasks_Im/review]] — 커리큘럼 강화학습과 정책 집계를 통한 다중 턴 강화학습이 서로 다른 방식으로 단계적 학습 최적화 문제를 해결한다.
+- 🏛 기반 연구: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — 생성-검증 갭이 다중턴 자기수정 프레임워크가 필요한 이유를 설명한다.
+- 🧪 응용 사례: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 다중턴 자기수정 메커니즘이 편향 출력을 실시간으로 식별하고 완화하는 데 활용될 수 있다.
+- 🏛 기반 연구: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — 정책 집계를 통한 다중 턴 강화학습의 기초적인 방법론을 학술 심사평 생성에 적용한다.

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 다국어 Chain-of-Thought(CoT) 추론에서 언어 선택과 가중치 할당을 자동화하는 **AUTOCAP(Automatic Cross-lingual Alignment Planning)** 프레임워크를 제안한다. 기존 방법들의 수동 언어 지정과 동일 가중치 할당의 한계를 극복하여 영점 교차언어(zero-shot cross-lingual) 추론을 개선한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Cross-modal_Language_Detection"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Multi-Hop_Long_Memory_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_Autocap Towards automatic cross-lingual alignment planning for zero-shot chain-of-thought.pdf"
 ---
@@ -118,7 +120,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_Autocap Towards automa
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/755_Simalign_High_quality_word_alignments_without_parallel_train/review]] — AutoCAP이 다국어 추론에서의 자동 언어 선택과 가중치 할당에 초점을 맞춘 반면, SimAlign은 병렬 데이터 없는 단어 수준 정렬에 특화되어 상호 보완적 접근법을 제시함
-- 🔗 후속 연구: [[papers/192_Cchall_A_novel_benchmark_for_joint_cross-lingual_and_cross-m/review]] — 교차언어 및 교차문화 이해를 위한 새로운 벤치마크가 AutoCAP의 영점 교차언어 추론 프레임워크를 문화적 맥락까지 고려하는 더 포괄적인 평가로 확장함
-- 🏛 기반 연구: [[papers/245_Crosslingual_capabilities_and_knowledge_barriers_in_multilin/review]] — 다국어 모델의 언어 간 능력과 지식 장벽에 대한 연구가 AutoCAP의 자동 교차언어 정렬 계획 수립의 이론적 기반과 한계점을 제시함
-- 🔄 다른 접근: [[papers/755_Simalign_High_quality_word_alignments_without_parallel_train/review]] — SimAlign은 병렬 데이터 없는 단어 정렬을, AutoCAP은 다국어 추론에서의 언어 정렬을 다루어 서로 다른 차원의 정렬 문제를 해결함
+- 🏛 기반 연구: [[papers/858_Unsupervised_crosslingual_representation_learning_at_scale/review]] — XLM-R의 교차언어 표현학습이 다국어 CoT 추론에서 언어 선택 자동화의 기반이 된다
+- 🧪 응용 사례: [[papers/245_Crosslingual_capabilities_and_knowledge_barriers_in_multilin/review]] — 다언어 모델의 지식 장벽 분석이 교차언어 정렬 계획에서 언어별 가중치 설정에 활용된다
+- 🔄 다른 접근: [[papers/690_Rule-based_neural_and_llm_back-translation_Comparative_insig/review]] — 신경망과 LLM 기반 역번역이 교차언어 정렬에서 다른 접근법을 제시한다
+- 🔗 후속 연구: [[papers/858_Unsupervised_crosslingual_representation_learning_at_scale/review]] — 교차언어 표현학습을 다국어 추론에서의 언어 선택 자동화로 발전시킨다

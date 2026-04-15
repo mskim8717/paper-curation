@@ -12,7 +12,8 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 실제 임상 기록을 기반으로 한 20,000개의 임상 데이터셋에서 학습하여, 질병 진단에서 추론 능력을 강화한 의료 특화 대규모 언어모델(LLM) ClinicalGPT-R1을 제시한다. 지도학습 미세조정(SFT)과 강화학습(RL)의 두 단계 학습을 통해 진단 추론 능력을 향상시키며, 중국어 진단 작업에서 GPT-4o를 능가하는 성능을 달성한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Computational_Molecular_Science_Models"
   - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhuang et al._2025_Clinicalgpt-r1 Pushing reasoning capability of generalist disease diagnosis with large language mod.pdf"
@@ -120,12 +121,15 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhuang et al._2025_Clinicalgpt-r1 Pushin
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/226_ClinicalGPT_Large_Language_Models_Finetuned_with_Diverse_Med/review]] — ClinicalGPT의 기본 의료 언어모델 구조가 추론 능력 강화를 위한 ClinicalGPT-R1의 기술적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 의료 진단에서 단일 모델과 다중 에이전트 시스템의 서로 다른 접근 방식을 비교하여 임상 환경에 최적화된 솔루션을 찾을 수 있다.
-- 🧪 응용 사례: [[papers/507_Llmeval-med_A_real-world_clinical_benchmark_for_medical_llms/review]] — ClinicalGPT-R1의 진단 추론 능력을 실제 임상 벤치마크에 적용하여 의료 LLM의 실용성을 검증할 수 있다.
-- 🏛 기반 연구: [[papers/507_Llmeval-med_A_real-world_clinical_benchmark_for_medical_llms/review]] — 의료 분야 LLM의 추론 능력 개발 연구로 LLMEval-Med의 평가 기준 설계에 참고가 된다.
-- 🔄 다른 접근: [[papers/244_Cross_sectional_pilot_study_on_clinical_review_generation_us/review]] — 임상 분야 특화 GPT 모델이 일반 LLM과 다른 임상 리뷰 생성 접근법을 보여준다.
-- 🧪 응용 사례: [[papers/006_A_deep_subgrouping_framework_for_precision_drug_repurposing/review]] — 다양한 의료 데이터로 파인튜닝된 ClinicalGPT-R1은 STEDR의 정밀 약물 재창출 프레임워크가 실제 임상에 적용된 사례입니다
-- 🧪 응용 사례: [[papers/359_From_large_language_models_to_multimodal_ai_A_scoping_review/review]] — 생성형 AI의 임상 추론 능력을 의료 분야 멀티모달 시스템 발전의 실제 사례로 보여준다
-- 🔗 후속 연구: [[papers/848_TxAgent_An_AI_Agent_for_Therapeutic_Reasoning_Across_a_Unive/review]] — 임상 추론을 위한 생성형 AI를 정밀 치료를 위한 다도구 AI 에이전트로 확장할 수 있다
-- 🧪 응용 사례: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 임상 추론 능력을 생의학 데이터 과학 가설 검증에 적용할 수 있다
+- 🔄 다른 접근: [[papers/055_Advancing_multimodal_medical_capabilities_of_gemini/review]] — 의료 분야에서 multimodal AI 능력을 다른 접근법으로 구현한 연구로, ClinicalGPT-R1과 상호 보완적이다.
+- 🏛 기반 연구: [[papers/226_ClinicalGPT_Large_Language_Models_Finetuned_with_Diverse_Med/review]] — ClinicalGPT-R1의 기반이 되는 임상 데이터 학습 및 의료 특화 언어모델의 핵심 방법론을 제시한다.
+- 🔗 후속 연구: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — ClinicalGPT-R1의 진단 추론 능력을 multi-agent collaboration으로 확장하여 zero-shot 의료 응용을 구현했다.
+- 🧪 응용 사례: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — ClinicalGPT-R1의 진단 추론 기술을 실제 인간-AI 협력 진단 시스템에 적용한 구체적 사례이다.
+- ⚖️ 반론/비판: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 과학 발견과 대조적으로, 인간 의료진과의 협력이 필수인 의료 AI의 한계를 보여준다.
+- 🔗 후속 연구: [[papers/507_Llmeval-med_A_real-world_clinical_benchmark_for_medical_llms/review]] — 의료 LLM 평가가 임상 추론 능력으로 확장되어 더 포괄적인 의료 AI 평가를 제공한다.
+- 🧪 응용 사례: [[papers/014_A_multimodal_generative_AI_copilot_for_human_pathology/review]] — 일반주의적 진단 추론과 병리학 특화 AI가 의료 진단 분야에서 상호 보완적 역할을 수행한다.
+- 🧪 응용 사례: [[papers/403_Highly_accurate_protein_structure_prediction_with_AlphaFold/review]] — AlphaFold가 예측한 단백질 구조를 임상 의학 분야에 적용하는 실용적 사례
+- 🔗 후속 연구: [[papers/055_Advancing_multimodal_medical_capabilities_of_gemini/review]] — 임상 추론 능력 강화를 통해 Med-Gemini의 의료 진단 성능을 더욱 향상시킬 수 있음
+- 🏛 기반 연구: [[papers/774_STELLA_Towards_a_Biomedical_World_Model_with_Self-Evolving_M/review]] — ClinicalGPT-R1의 추론 능력이 STELLA의 바이오의학 추론 기반을 제공한다.
+- 🧪 응용 사례: [[papers/224_Clinical_entity_augmented_retrieval_for_clinical_information/review]] — 임상 GPT 모델로, 임상 엔티티 증강 검색의 실제 의료 분야 적용 사례를 보여줍니다.
+- 🧪 응용 사례: [[papers/880_What_makes_medical_claims_un_verifiable_analyzing_entity_and/review]] — 임상 추론 능력을 의료 주장의 검증가능성 판단이라는 구체적 작업에 적용한다

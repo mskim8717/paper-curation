@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM) 기반 AI 시스템의 메모리 메커니즘을 인간의 기억 체계와 비교 분석하여, 객체(personal/system), 형태(parametric/non-parametric), 시간(short-term/long-term) 3개 차원의 8개 사분면 분류 체계를 제시하는 종합 리뷰 논문이다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2025_From Human Memory to AI Memory A Survey on Memory Mechanisms in the Era of LLMs.pdf"
 ---
@@ -109,10 +110,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2025_From Human Memory to AI M
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/039_A-MEM_Agentic_Memory_for_LLM_Agents/review]] — 인간 기억 체계를 LLM 에이전트 메모리로 확장한 연구를 에이전틱 메모리로 발전
-- 🧪 응용 사례: [[papers/400_Hiagent_Hierarchical_working_memory_management_for_solving_l/review]] — 인간-AI 메모리 비교 연구를 계층적 작업 메모리 관리로 구현한 응용
-- 🔄 다른 접근: [[papers/412_HuggingGPT_Solving_AI_Tasks_with_ChatGPT_and_its_Friends_in/review]] — 메모리 메커니즘 서베이 vs 계층적 메모리 관리로 서로 다른 메모리 연구 접근
-- 🔗 후속 연구: [[papers/681_Revisiting_Gene_Ontology_Knowledge_Discovery_with_Hierarchic/review]] — AI 메모리 메커니즘을 Gene Ontology 지식 발견으로 확장한 생물정보학 응용
-- 🏛 기반 연구: [[papers/400_Hiagent_Hierarchical_working_memory_management_for_solving_l/review]] — 인간 메모리에서 AI 메모리로의 전환 연구가 작업 메모리 설계의 기초가 됨
-- 🏛 기반 연구: [[papers/412_HuggingGPT_Solving_AI_Tasks_with_ChatGPT_and_its_Friends_in/review]] — 인간 메모리에서 AI 메모리로의 메커니즘 연구가 계층적 작업 메모리 관리의 인지과학적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/039_A-MEM_Agentic_Memory_for_LLM_Agents/review]] — A-MEM의 동적 에이전트 메모리와 From Human Memory to AI Memory는 모두 AI 메모리 시스템을 다루지만, 젯엘카스텐 방법론과 인간-AI 메모리 비교라는 서로 다른 접근법을 취합니다.
+- 🏛 기반 연구: [[papers/039_A-MEM_Agentic_Memory_for_LLM_Agents/review]] — LLM 에이전트의 메모리 메커니즘 구현에 필요한 이론적 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — 연구 커뮤니티 시뮬레이션에서 에이전트 간 메모리 공유 메커니즘 설계에 응용됩니다.
+- 🏛 기반 연구: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — 과학 에이전트의 지식 축적과 기억 체계 구축의 이론적 토대를 제공합니다.
+- 🧪 응용 사례: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — 연구 커뮤니티 시뮬레이션에서 에이전트 메모리 메커니즘이 실제 적용됩니다.
+- 🔗 후속 연구: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — 과학 에이전트의 메모리 메커니즘 설계와 구현에 활용됩니다.
+- 🔗 후속 연구: [[papers/869_Visual_thoughts_A_unified_perspective_of_understanding_multi/review]] — AI 메모리 메커니즘에 대한 종합 조사가 LVLM의 시각적 사고라는 통합된 메모리 기반 추론 메커니즘으로 구체화되었다
+- 🏛 기반 연구: [[papers/772_State-Free_Inference_of_State-Space_Models_The_Transfer_Func/review]] — 인간 기억에서 AI 기억으로의 메커니즘 조사가 상태-자유 추론의 메모리 관리 방법론에 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/039_A-MEM_Agentic_Memory_for_LLM_Agents/review]] — 인간 기억에서 AI 기억으로의 발전 조사가 젯텔카스텐 기반 에이전트 메모리 시스템 설계의 이론적 토대를 제공한다.

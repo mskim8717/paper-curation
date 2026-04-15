@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.2
 essence: "대규모 비전-언어 모델(LVLM)의 멀티모달 체인-오브-쏘트(MCoT) 추론에서 **시각적 사고(Visual Thoughts)**라는 통합된 메커니즘을 발견하였으며, 이는 텍스트 기반과 이미지 교차 방식의 MCoT 모두를 설명하는 새로운 관점을 제시한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Visual_Scientific_Reasoning"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Human_Experience_Studies"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mitchell et al._2025_Visual thoughts A unified perspective of understanding multimodal chain-of-thought.pdf"
 ---
@@ -105,7 +105,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mitchell et al._2025_Visual thoughts A u
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/785_T-sciq_Teaching_multimodal_chain-of-thought_reasoning_via_mi/review]] — 멀티모달 체인-오브-쏘트 추론의 기본 메커니즘이 과학 문제 해결 교육의 이론적 토대를 제공합니다.
-- 🔗 후속 연구: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — 시각적 사고 메커니즘을 과학 연구의 멀티모달 AI 시스템으로 확장하여 더 효과적인 과학적 추론을 가능하게 합니다.
-- 🧪 응용 사례: [[papers/037_A_Survey_on_Uncertainty_Quantification_Methods_for_Deep_Lear/review]] — 시각적 추론에서의 불확실성을 정량화하여 멀티모달 AI 시스템의 신뢰성을 향상시키는 방법을 제시합니다.
-- 🔗 후속 연구: [[papers/785_T-sciq_Teaching_multimodal_chain-of-thought_reasoning_via_mi/review]] — 멀티모달 과학 문제 해결을 시각적 사고라는 통합된 추론 메커니즘으로 확장하여 더 깊은 이해를 제공합니다.
+- 🏛 기반 연구: [[papers/785_T-sciq_Teaching_multimodal_chain-of-thought_reasoning_via_mi/review]] — 혼합 LLM을 통한 멀티모달 추론 교육 연구가 비전-언어 모델의 시각적 사고 메커니즘 발견에 교육 방법론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/355_From_Human_Memory_to_AI_Memory_A_Survey_on_Memory_Mechanisms/review]] — AI 메모리 메커니즘에 대한 종합 조사가 LVLM의 시각적 사고라는 통합된 메모리 기반 추론 메커니즘으로 구체화되었다
+- 🧪 응용 사례: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — 차트 추론을 위한 시각적 명령 튜닝 연구가 LVLM의 시각적 사고 메커니즘을 차트 이해에 실제 적용한 사례다
+- 🔗 후속 연구: [[papers/785_T-sciq_Teaching_multimodal_chain-of-thought_reasoning_via_mi/review]] — 멀티모달 체인 오브 쏘트 이해에 대한 통합된 관점 연구가 T-SciQ의 혼합 LLM 교수 신호를 통한 멀티모달 추론으로 구체화되었다
+- 🏛 기반 연구: [[papers/691_S1-MMAlign_A_Large-Scale_Multi-Disciplinary_Dataset_for_Scie/review]] — 멀티모달 이해에 대한 통합 관점이 S1-MMAlign의 과학 이미지-텍스트 정렬 방법론의 이론적 기반을 제공한다.

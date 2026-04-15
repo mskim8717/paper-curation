@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 위키피디아 편집 이력(edit history)에서 추출한 8개 언어, 4,300만 개의 원자적 편집(atomic edits)으로 구성된 WikiAtomicEdits 코퍼스를 공개한다. 이 코퍼스는 단일 연속 구절의 삽입 또는 삭제 사례만을 포함하며, 이를 통해 편집 과정에서 생성되는 언어가 일반 텍스트와 다르며 의미론과 담론 모델링에 고유한 신호를 제공함을 보여준다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Document_Analysis_and_Retrieval"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Faruqui et al._2018_Wikiatomicedits A multilingual corpus of wikipedia edits for modeling language and discourse.pdf"
 ---
@@ -95,9 +97,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Faruqui et al._2018_Wikiatomicedits A mu
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/485_Learning_to_split_and_rephrase_from_wikipedia_edit_history/review]] — 위키피디아 편집 이력을 활용한 분할 및 재작성 학습이 WikiAtomicEdits 코퍼스에서 발견된 편집 패턴을 실제 텍스트 처리 작업에 적용한 후속 연구임
-- 🧪 응용 사례: [[papers/703_Scholawrite_A_dataset_of_end-to-end_scholarly_writing_proces/review]] — 학술 글쓰기 과정을 단계별로 분석한 ScholaWrite 데이터셋이 WikiAtomicEdits의 편집 과정 모델링을 학술 영역에 특화하여 적용한 사례임
-- 🏛 기반 연구: [[papers/791_Text_editing_by_command/review]] — 명령어 기반 텍스트 편집의 이론적 기반이 WikiAtomicEdits에서 관찰된 원자적 편집 패턴의 체계적 분석에서 도출되었음
-- 🔗 후속 연구: [[papers/485_Learning_to_split_and_rephrase_from_wikipedia_edit_history/review]] — 영어 위키피디아 편집에서 다국어 위키피디아 편집 데이터셋으로 확장하여 더 포괄적인 텍스트 편집 연구를 가능하게 합니다.
-- 🔗 후속 연구: [[papers/791_Text_editing_by_command/review]] — 위키피디아 편집의 기본적 접근을 자연어 명령을 통한 더 사용자 친화적인 대화형 편집으로 확장함
-- 🔗 후속 연구: [[papers/246_Csed_A_chinese_semantic_error_diagnosis_corpus/review]] — 다국어 위키피디아 편집 코퍼스로 본 논문의 중국어 의미 오류 연구를 다국어 텍스트 오류로 확장한다.
+- 🏛 기반 연구: [[papers/485_Learning_to_split_and_rephrase_from_wikipedia_edit_history/review]] — 위키피디아 편집 이력을 언어 모델링에 활용하는 기반 연구가 원자적 편집의 다국어 코퍼스 구축의 이론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/791_Text_editing_by_command/review]] — 텍스트 편집 명령 연구를 위키피디아 편집의 대규모 다국어 코퍼스로 확장하여 실제 편집 패턴 분석을 가능하게 한다.
+- 🧪 응용 사례: [[papers/227_Closing_the_loop_Learning_to_generate_writing_feedback_via_l/review]] — 글쓰기 피드백 생성 연구에서 실제 편집 데이터인 WikiAtomicEdits 코퍼스를 활용하여 편집 패턴 학습에 적용할 수 있다.
+- 🔗 후속 연구: [[papers/690_Rule-based_neural_and_llm_back-translation_Comparative_insig/review]] — 다국어 위키피디아 편집 데이터를 활용하여 저자원 언어 역번역의 성능을 향상시킬 수 있다.
+- 🔗 후속 연구: [[papers/485_Learning_to_split_and_rephrase_from_wikipedia_edit_history/review]] — 위키피디아 편집을 다국어로 확장한 연구로, 영어 중심의 분할-재표현 연구를 더 넓은 언어적 맥락으로 발전시킵니다.
+- 🔄 다른 접근: [[papers/791_Text_editing_by_command/review]] — 위키피디아 편집 데이터를 활용한 텍스트 편집이라는 공통 기반을 가지지만 명령 기반 vs 다국어 원자적 편집이라는 다른 접근법을 사용한다.
+- 🏛 기반 연구: [[papers/375_Generating_full_length_wikipedia_biographies_The_impact_of_g/review]] — 위키피디아 편집 데이터셋은 전기문 생성 시스템의 훈련과 평가에 필수적인 기반 데이터를 제공한다.

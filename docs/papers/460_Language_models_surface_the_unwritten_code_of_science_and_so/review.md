@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "대규모 언어모델(LLM)이 내재된 편향을 진단 도구로 활용하여 과학과 사회의 \"불문율(unwritten code)\" — 암묵적 고정관념, 휴리스틱, 암수정인 규범 — 을 명시적으로 드러내고 비판 대상으로 만들 수 있다는 주장."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tuck and Yang_2025_Language models surface the unwritten code of science and society.pdf"
 ---
@@ -110,9 +112,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tuck and Yang_2025_Language models surfa
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/192_Cchall_A_novel_benchmark_for_joint_cross-lingual_and_cross-m/review]] — LLM의 편향을 진단 도구로 활용하자는 관점과 교차-언어/모달 환각을 문제로 보는 관점이 대조됨
-- 🔗 후속 연구: [[papers/394_Grounding_fallacies_misrepresenting_scientific_publications/review]] — 과학과 사회의 암묵적 편향을 드러내는 일반적 접근을 과학 출판물 오용 탐지라는 구체적 응용으로 확장함
-- 🏛 기반 연구: [[papers/247_Cultural_evolution_in_populations_of_large_language_models/review]] — 대규모 언어모델 집단에서의 문화적 진화 연구가 과학과 사회의 불문율을 드러내는 LLM 활용의 이론적 배경을 제공함
-- 🏛 기반 연구: [[papers/410_How_deep_do_large_language_models_internalize_scientific_lit/review]] — 언어 모델이 과학과 사회의 암묵적 코드를 드러내는 연구로 마태 효과 강화 현상의 이론적 배경을 제공한다.
-- ⚖️ 반론/비판: [[papers/192_Cchall_A_novel_benchmark_for_joint_cross-lingual_and_cross-m/review]] — LLM의 편향을 진단 도구로 활용하자는 관점과 교차-언어/모달 환각을 문제로 보는 관점이 대조됨
-- 🏛 기반 연구: [[papers/394_Grounding_fallacies_misrepresenting_scientific_publications/review]] — 과학과 사회의 암묵적 편향을 드러내는 연구가 과학 출판물을 잘못 인용하는 논리적 오류 탐지의 맥락을 제공함
+- 🏛 기반 연구: [[papers/753_Shared_imagination_Llms_hallucinate_alike/review]] — LLM의 공통된 환각 현상이 과학과 사회의 불문율 표면화에 활용되는 편향 진단의 기술적 기반을 제공한다
+- 🔗 후속 연구: [[papers/394_Grounding_fallacies_misrepresenting_scientific_publications/review]] — 과학 출판물을 잘못 표현하는 논리적 오류 연구가 언어모델이 드러내는 과학계 불문율의 구체적 사례를 제공한다
+- 🧪 응용 사례: [[papers/301_Economic_anthropology_in_the_era_of_generative_artificial_in/review]] — 생성형 AI 시대의 경제 인류학이 언어모델을 통한 사회 불문율 표면화의 인문사회과학적 응용 사례를 보여준다

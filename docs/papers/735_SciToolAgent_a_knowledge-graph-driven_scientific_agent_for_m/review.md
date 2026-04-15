@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 대규모 언어 모델(LLM)을 과학 도구 지식 그래프(SciToolKG)와 통합하여 생물학, 화학, 재료과학 등 다양한 분야의 수백 개 과학 도구를 자동으로 활용할 수 있는 지능형 과학 에이전트를 제시한다. 복잡한 다중 도구 과학 워크플로우 자동화에서 기존 방식 대비 10% 이상의 성능 향상을 달성했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Knowledge_Graph_Reasoning"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Computational_Chemistry_Tools"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ding et al._2025_SciToolAgent a knowledge-graph-driven scientific agent for multitool integration.pdf"
 ---
@@ -113,7 +113,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ding et al._2025_SciToolAgent a knowledg
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/769_StableToolBench_Towards_Stable_Large-Scale_Benchmarking_on_T/review]] — 안정적인 대규모 도구 벤치마킹이 과학 도구 지식 그래프 기반 에이전트의 평가 기반을 제공한다
-- 🔗 후속 연구: [[papers/448_Kgvalidator_A_framework_for_automatic_validation_of_knowledg/review]] — 지식 그래프 검증 프레임워크를 과학 도구 지식 그래프의 품질 보장으로 확장할 수 있다
-- 🧪 응용 사례: [[papers/499_LLM_With_Tools_A_Survey/review]] — 도구를 활용한 LLM 연구의 포괄적 조사를 과학 도구 특화 에이전트 개발에 적용할 수 있다
-- 🔗 후속 연구: [[papers/769_StableToolBench_Towards_Stable_Large-Scale_Benchmarking_on_T/review]] — 대규모 도구 벤치마킹을 과학 도구 지식 그래프 기반의 특화된 평가로 확장할 수 있다
+- 🔄 다른 접근: [[papers/212_Chemist-X_Large_Language_Model-empowered_Agent_for_Reaction/review]] — 과학 도구 활용을 위해 지식 그래프 기반 자동 활용과 RAG 기반 통합 시스템이라는 서로 다른 접근법을 제시함
+- 🔄 다른 접근: [[papers/717_Scienceboard_Evaluating_multimodal_autonomous_agents_in_real/review]] — 과학 도구 자동화를 위해 특화된 지식 그래프 접근법과 범용 멀티모달 평가 환경이라는 상호 보완적 관점을 제공함
+- 🔄 다른 접근: [[papers/212_Chemist-X_Large_Language_Model-empowered_Agent_for_Reaction/review]] — 화학 합성 자동화를 위해 RAG 기반 통합 시스템과 지식 그래프 기반 다중 도구 활용이라는 서로 다른 접근법을 제시함
+- 🔄 다른 접근: [[papers/717_Scienceboard_Evaluating_multimodal_autonomous_agents_in_real/review]] — 과학 워크플로우 평가를 위해 범용 멀티모달 환경과 특화된 지식 그래프 기반 도구 활용이라는 서로 다른 접근법을 제시함
+- 🔄 다른 접근: [[papers/848_TxAgent_An_AI_Agent_for_Therapeutic_Reasoning_Across_a_Unive/review]] — 치료 추론을 위해 생의학 도구 특화 접근법과 범용 과학 도구 지식 그래프 접근법이라는 서로 다른 방법론을 제시함

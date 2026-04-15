@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "단일세포 전사체(single-cell transcriptomics) 데이터를 활용하여 AI 과학자(AI scientist) 시스템의 생물학적 발견 능력을 평가하는 BAISBench 벤치마크를 제시한다. 현재 AI 과학자들은 완전한 자동화된 생물학적 발견에는 못 미치지만, 데이터 기반 생물학 연구 지원에 상당한 잠재력을 보이고 있음을 실증적으로 보여준다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Bioinformatics_Data_Integration"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Single-Cell_RNA_Sequencing_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bajwa et al._2025_Benchmarking ai scientists in omics data-driven biological research.pdf"
 ---
@@ -109,11 +109,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bajwa et al._2025_Benchmarking ai scient
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — 생물의학 AI의 성능 평가라는 동일한 목표를 다른 접근법(벤치마크 vs 통합 에이전트)으로 달성합니다.
-- 🏛 기반 연구: [[papers/089_Aigs_Generating_science_from_ai-powered_automated_falsificat/review]] — 자동화된 과학 발견의 일반적 프레임워크를 생물학 연구라는 특정 도메인에 적용하는 기초를 제공합니다.
-- 🔗 후속 연구: [[papers/710_Sciclaimhunt_A_large_dataset_for_evidence-based_scientific_c/review]] — 과학적 주장 검증을 생물학적 발견 평가로 확장하여 AI 과학자의 신뢰성을 높입니다.
-- 🧪 응용 사례: [[papers/089_Aigs_Generating_science_from_ai-powered_automated_falsificat/review]] — 자동 반증 기반 과학 시스템을 생물학적 발견이라는 구체적 도메인에 적용하여 실용성을 검증합니다.
-- 🧪 응용 사례: [[papers/139_Autonomous_microscopy_experiments_through_large_language_mod/review]] — 자동화된 실험 벤치마크 개발 방법론을 생물학적 데이터 분석에 적용하는 사례를 제공합니다.
-- 🔄 다른 접근: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — 생의학 연구 지원이라는 동일한 목표를 통합 에이전트와 벤치마크 평가라는 상호 보완적 접근으로 달성합니다.
-- 🏛 기반 연구: [[papers/710_Sciclaimhunt_A_large_dataset_for_evidence-based_scientific_c/review]] — 과학적 주장의 증거 기반 검증이 AI 과학자의 생물학적 발견 능력 평가의 기준을 제공합니다.
-- 🔗 후속 연구: [[papers/041_Aaar-10_Assessing_ais_potential_to_assist_research/review]] — 일반적인 AI 연구 지원 평가에서 오믹스 데이터 기반 생물학 연구라는 구체적 도메인으로 확장한 전문 분야 벤치마크입니다.
+- 🔄 다른 접근: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 둘 다 생물의학 분야에서 AI 에이전트의 데이터 과학 능력을 벤치마킹하지만, BAISBench는 단일세포 데이터에, BioDSA-1k는 일반적인 생물의학 데이터에 집중한다
+- 🔗 후속 연구: [[papers/705_SciAgents_Automating_Scientific_Discovery_Through_Bioinspire/review]] — 생체영감 접근법을 통한 과학 발견 자동화 연구가 단일세포 전사체 데이터를 활용한 AI 과학자 시스템의 생물학적 발견 능력 평가로 구체화되었다
+- 🧪 응용 사례: [[papers/528_MedAgentGym_A_Scalable_Agentic_Training_Environment_for_Code/review]] — 의료 AI 에이전트를 위한 확장 가능한 훈련 환경 구축 방법론이 BAISBench의 생물학적 발견 능력 평가 프레임워크에 실제 적용되었다
+- 🧪 응용 사례: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 오믹스 데이터 기반 생물학 연구에서 AI 과학자 벤치마킹이 재료과학 AI 평가 방법론에 참고가 됨

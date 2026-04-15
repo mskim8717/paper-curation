@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어 모델(LLM) 기반 에이전트를 활용한 범용 단일세포 주석(cell annotation) 프레임워크로, 조직 간 일반화, 신규 세포 타입 발견, 데이터 효율성을 동시에 달성한다. scAgent는 160개 세포 타입과 35개 조직에서 우수한 성능을 보여준다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Chemistry_Planning"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mao et al._2025_scAgent Universal Single-Cell Annotation via a LLM Agent.pdf"
 ---
@@ -113,13 +115,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mao et al._2025_scAgent Universal Single
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/064_Agentic_AI_for_Scientific_Discovery_A_Survey_of_Progress_Cha/review]] — 과학 발견을 위한 에이전틱 AI 시스템의 구체적인 생물학 분야 적용 사례로서 단일세포 주석에 특화된다.
-- 🔗 후속 연구: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — LLM 기반 다중 에이전트 세포 분석 프레임워크가 범용 단일세포 주석을 더 포괄적인 세포 분석으로 확장한다.
-- 🏛 기반 연구: [[papers/431_Integrated_analysis_of_multimodal_single-cell_data/review]] — 멀티모달 단일세포 데이터 통합 분석이 LLM 기반 세포 주석 프레임워크의 데이터 처리 기반을 제공한다.
-- 🔄 다른 접근: [[papers/189_CASSIA_a_multi-agent_large_language_model_for_reference_free/review]] — 단일세포 주석 작업에 대한 다른 LLM 기반 접근법
-- 🏛 기반 연구: [[papers/064_Agentic_AI_for_Scientific_Discovery_A_Survey_of_Progress_Cha/review]] — 과학 발견을 위한 에이전틱 AI의 종합적 체계가 단일세포 주석과 같은 구체적인 생물학 응용의 이론적 프레임워크를 제공한다.
-- 🔗 후속 연구: [[papers/431_Integrated_analysis_of_multimodal_single-cell_data/review]] — 가중 최근접 이웃 기반 멀티모달 데이터 통합이 LLM 에이전트를 활용한 범용 단일세포 주석 시스템으로 발전했다
-- 🔗 후속 연구: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — 단일세포 주석화를 위한 LLM 에이전트를 자동화된 분석 파이프라인으로 확장할 수 있다
-- 🔄 다른 접근: [[papers/069_Agentomics-ML_Autonomous_Machine_Learning_Experimentation_Ag/review]] — 단일 세포 주석을 위한 LLM 에이전트의 다른 접근 방식을 제시한다.
-- 🧪 응용 사례: [[papers/344_Foundation_models_in_bioinformatics/review]] — LLM 에이전트 기반 단일 세포 주석화가 생물정보학 기초 모델의 실제 적용 사례를 보여줍니다.
-- 🧪 응용 사례: [[papers/681_Revisiting_Gene_Ontology_Knowledge_Discovery_with_Hierarchic/review]] — LLM 에이전트를 통한 단일 세포 주석의 구체적 적용으로 생물학적 지식 추출을 보여준다.
+- 🔄 다른 접근: [[papers/160_BioAgents_Democratizing_Bioinformatics_Analysis_with_Multi-A/review]] — scAgent가 단일세포 주석에 특화된 반면 BioAgents는 더 넓은 생물정보학 작업을 다루므로 접근법 비교가 가능하다.
+- 🔗 후속 연구: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — CellAgent가 세포 분석의 멀티에이전트 프레임워크를 제공하여 scAgent의 단일세포 주석 기능을 확장할 수 있다.
+- 🏛 기반 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 단일세포 데이터 분석을 위한 대규모 언어모델 확장 기법이 scAgent의 기반 기술이 된다.
+- 🔄 다른 접근: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 단일세포 주석을 텍스트 변환 대신 LLM 에이전트 기반으로 수행하는 다른 접근법
+- 🧪 응용 사례: [[papers/431_Integrated_analysis_of_multimodal_single-cell_data/review]] — 멀티모달 단일세포 분석 기법을 LLM 에이전트 기반 자동 주석으로 활용한 사례
+- 🔗 후속 연구: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — 단일세포 RNA 분석용 다중 에이전트가 범용 단일세포 주석화 에이전트로 확장됨
+- 🔄 다른 접근: [[papers/160_BioAgents_Democratizing_Bioinformatics_Analysis_with_Multi-A/review]] — BioAgents가 범용 생물정보학을 다루는 반면 scAgent는 단일세포 주석에 특화되어 서로 다른 접근법을 보인다.
+- 🧪 응용 사례: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — 단일 세포 주석에서 LLM 에이전트를 활용하는 구체적 응용 사례로, 생물학적 데이터 분석에서의 실제 적용 예시
+- 🔄 다른 접근: [[papers/164_BioInformatics_Agent_BIA_Unleashing_the_Power_of_Large_Langu/review]] — 생물정보학에서 scRNA-seq 데이터 분석과 단일세포 주석이라는 서로 다른 자동화 접근법을 제시한다

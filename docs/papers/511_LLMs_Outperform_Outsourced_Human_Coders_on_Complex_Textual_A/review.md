@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 스페인어 뉴스 기사 210개를 대상으로 GPT-3.5-turbo, GPT-4-turbo, Claude 3 Opus, Claude 3.5 Sonnet 등의 대형언어모델(LLMs)과 외주 인간 코더의 성능을 5가지 자연언어처리(NLP) 과제에서 비교하여, LLMs가 특히 심층적 문맥 이해가 필요한 복잡한 텍스트 분석에서 인간 코더를 일관되게 능가함을 입증한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bermejo et al._2024_LLMs Outperform Outsourced Human Coders on Complex Textual Analysis.pdf"
 ---
@@ -97,6 +99,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bermejo et al._2024_LLMs Outperform Outs
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/206_ChatGPT_outperforms_crowd_workers_for_text-annotation_tasks/review]] — 텍스트 주석 작업에서 ChatGPT가 크라우드 워커를 능가한다는 발견은 LLM이 복잡한 텍스트 분석에서 인간을 능가한다는 연구의 확장이다.
-- ⚖️ 반론/비판: [[papers/611_People_who_frequently_use_ChatGPT_for_writing_tasks_are_accu/review]] — ChatGPT 사용자가 더 정확한 글쓰기 능력 평가를 받는다는 연구는 LLM이 모든 텍스트 작업에서 우수하지 않을 수 있음을 시사한다.
-- 🔄 다른 접근: [[papers/153_Best_humans_still_outperform_artificial_intelligence_in_a_cr/review]] — 비판적 사고가 필요한 작업에서 인간이 AI를 능가한다는 연구는 복잡한 텍스트 분석 영역에서의 상반된 관점을 제시한다.
+- 🔗 후속 연구: [[papers/388_GPT-4o_System_Card/review]] — GPT-4o의 멀티모달 능력이 복잡한 텍스트 분석에서 LLM이 인간을 능가하는 성능의 기술적 기반을 제공함
+- 🏛 기반 연구: [[papers/206_ChatGPT_outperforms_crowd_workers_for_text-annotation_tasks/review]] — 텍스트 어노테이션 작업에서 ChatGPT의 성능 연구가 LLM이 복잡한 언어 분석에서 인간을 능가할 수 있다는 증거의 기초
+- 🔄 다른 접근: [[papers/611_People_who_frequently_use_ChatGPT_for_writing_tasks_are_accu/review]] — 두 연구 모두 LLM의 텍스트 처리 능력을 다루지만 각각 전문가 비교와 사용자 정확도 인식이라는 다른 관점에서 접근함
+- 🏛 기반 연구: [[papers/388_GPT-4o_System_Card/review]] — GPT-4o의 멀티모달 처리 능력은 LLM이 복잡한 텍스트 분석에서 인간을 능가할 수 있는 기술적 기반을 제공함

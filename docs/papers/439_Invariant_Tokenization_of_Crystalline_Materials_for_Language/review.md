@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.1
 essence: "본 연구는 3D 결정 구조(crystal structure)를 언어 모델(LM)이 처리 가능한 1D 수열로 변환하되, SE(3) 불변성과 주기성 불변성을 보장하는 **Mat2Seq** 방법을 제안한다. 이를 통해 동일한 결정에 대해 고유한 수열 표현을 생성하여 언어 모델 기반의 신규 결정 물질 생성을 가능하게 한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Domain-specific_Scientific_Reasoning"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/LLM_Scientific_Research_Acceleration"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yan et al._2025_Invariant Tokenization of Crystalline Materials for Language Model Enabled Generation.pdf"
 ---
@@ -104,11 +105,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yan et al._2025_Invariant Tokenization o
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/487_Leveraging_biomolecule_and_natural_language_through_multi-mo/review]] — 결정 구조 vs 생물분자로 대상은 다르지만 동일한 다중모달 토큰화 접근법
-- 🧪 응용 사례: [[papers/1104_A_Physics-Informed_Chemical_Rule_for_Topological_Materials_D/review]] — 결정 구조 토큰화를 위상 물질 발견에 적용한 구체적인 응용 사례
-- 🏛 기반 연구: [[papers/349_Fragment_and_Geometry_Aware_Tokenization_of_Molecules_for_St/review]] — 분자의 기하학적 토큰화 연구가 결정 구조 불변 토큰화의 방법론적 기초
-- 🔗 후속 연구: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 분자 기하학 토큰화를 결정 구조의 SE(3) 불변성으로 확장한 발전된 연구
-- 🔄 다른 접근: [[papers/487_Leveraging_biomolecule_and_natural_language_through_multi-mo/review]] — 생물분자 vs 결정 구조로 대상은 다르지만 동일한 다중모달 토큰화 접근법
-- 🔗 후속 연구: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 결정체 재료의 불변 토큰화에서 3D 분자 기하학 토큰화로의 확장
-- 🔗 후속 연구: [[papers/125_Automated_latex_code_generation_from_handwritten_math_expres/review]] — 결정 물질의 불변 토크나이제이션 기법이 필기 수학식 이미지의 구조적 표현 학습에 적용될 수 있다.
-- 🏛 기반 연구: [[papers/1104_A_Physics-Informed_Chemical_Rule_for_Topological_Materials_D/review]] — 결정 구조의 불변 토큰화가 위상 물질 발견 규칙의 구조적 인코딩 기반
+- 🔄 다른 접근: [[papers/094_AlphaGenome_advancing_regulatory_variant_effect_prediction_w/review]] — 생물학적 서열 처리의 다른 접근법으로 게놈 예측에 대한 대안적 관점을 제공한다.
+- 🔗 후속 연구: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 분자의 기하학적 정보를 고려한 토큰화로 결정 구조 표현을 확장한다.
+- 🔄 다른 접근: [[papers/349_Fragment_and_Geometry_Aware_Tokenization_of_Molecules_for_St/review]] — 분자 토큰화의 다른 접근법으로 구조-언어 모델 통합을 보여준다.
+- 🔄 다른 접근: [[papers/094_AlphaGenome_advancing_regulatory_variant_effect_prediction_w/review]] — 생물학적 서열을 언어 모델로 처리하는 다른 접근법으로 결정 구조 토큰화를 제시한다.
+- 🏛 기반 연구: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 결정 재료의 불변 토큰화 방법이 분자 기하정보 토큰화의 이론적 배경을 제공함
+- 🏛 기반 연구: [[papers/007_A_fine-tuned_large_language_model_based_molecular_dynamics_a/review]] — 결정성 재료의 불변 토큰화 방법을 제시하여 MDAgent의 재료 시뮬레이션에서 언어모델이 재료 구조를 효과적으로 처리할 수 있는 기술적 기반을 제공함

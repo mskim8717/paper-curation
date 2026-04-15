@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.25
 essence: "대규모 멀티모달 모델(LMM)의 과학 논문 그림 해석 능력을 평가하기 위한 벤치마크 SciFIBench를 제시하며, 2000개의 고품질 문제와 28개 모델의 종합 평가를 통해 현재 LMM의 과학 분야 적용 가능성을 체계적으로 검증한 연구이다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Multimodal_Scientific_Benchmarks"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Physics_Reasoning_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Roberts et al._2024_Scifibench Benchmarking large multimodal models for scientific figure interpretation.pdf"
 ---
@@ -91,18 +93,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Roberts et al._2024_Scifibench Benchmark
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — 차트 이해에 특화된 ChartX와 달리 전반적인 과학 논문 그림 해석 능력을 평가하는 포괄적 벤치마크
-- 🔗 후속 연구: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — 차트를 코드로 변환하는 ChartCoder의 기능을 과학 논문 그림 전반으로 확장한 평가 연구
-- 🧪 응용 사례: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 과학 그림 캡션 생성 모델의 성능을 체계적으로 평가할 수 있는 벤치마크 제공
-- 🏛 기반 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 대규모 차트 이해 데이터셋 MMC의 방법론을 과학 논문 그림으로 확장한 기반
-- 🧪 응용 사례: [[papers/201_ChartLlama_A_Multimodal_LLM_for_Chart_Understanding_and_Gene/review]] — 차트 이해 전용 멀티모달 모델의 방법론이 과학 그림 전반을 다루는 대형 멀티모달 모델 벤치마킹에 핵심적으로 적용된다
-- 🔗 후속 연구: [[papers/091_Aiscivision_A_framework_for_specializing_large_multimodal_mo/review]] — 과학적 수치 이해를 위한 대규모 다중모달 모델 벤치마킹으로 과학 영상 분류를 확장한다.
-- 🧪 응용 사례: [[papers/627_Position_Multimodal_large_language_models_can_significantly/review]] — 과학 도표 이해를 위한 대형 멀티모달 모델 벤치마킹이 과학적 추론 향상의 실제적 평가 기준을 제공한다.
-- 🏛 기반 연구: [[papers/142_AutoNumerics_An_Autonomous_PDE-Agnostic_Multi-Agent_Pipeline/review]] — AutoNumerics의 PDE 해석 자동화는 SciFIBench의 과학적 그림 이해 벤치마크에서 검증된 멀티모달 과학적 추론 능력을 수치해석 영역에 적용합니다.
-- 🧪 응용 사례: [[papers/369_Gemini_a_family_of_highly_capable_multimodal_models/review]] — Gemini의 멀티모달 능력을 과학 분야 특화 벤치마크로 평가하는 연구
-- 🧪 응용 사례: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — MMC의 차트 이해 기술을 과학 분야 특화 멀티모달 벤치마크로 확장
-- 🏛 기반 연구: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — 과학 그림 해석 벤치마크 SciFIBench의 방법론을 차트 특화 영역에 적용한 기반
-- 🔗 후속 연구: [[papers/435_Interfeedback_Unveiling_interactive_intelligence_of_large_mu/review]] — 정적 과학 그림 해석 평가를 대화형 피드백 기반 개선 능력으로 확장한 연구
-- 🔗 후속 연구: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 과학 논문 그림 해석을 차트라는 특정 시각 자료 유형으로 세분화한 확장
-- 🧪 응용 사례: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 과학 그림 해석 벤치마크에서 캡션 생성 모델의 성능을 체계적으로 평가
-- 🏛 기반 연구: [[papers/1127_MMSD20_Towards_a_Reliable_Multi-modal_Sarcasm_Detection_Syst/review]] — 멀티모달 벤치마크 구축 방법론을 풍자 탐지라는 특정 작업에 적용한 기반
+- 🔄 다른 접근: [[papers/524_MatViX_Multimodal_Information_Extraction_from_Visually_Rich/review]] — MatViX는 재료과학에 특화된 다중모달 정보 추출을 다루어, SciFIBench의 범용적 과학 그림 해석과 대비되는 도메인 특화 접근을 보여준다
+- 🔗 후속 연구: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — 차트 추론에 특화된 시각 지시 튜닝 모델로, SciFIBench가 평가하는 과학 그림 이해 능력을 차트 도메인으로 확장한 연구다
+- 🏛 기반 연구: [[papers/727_Scimage_How_good_are_multimodal_large_language_models_at_sci/review]] — 다중모달 대형언어모델의 과학 이미지 이해 능력을 평가하는 연구로, SciFIBench 벤치마크 설계의 이론적 배경을 제공한다
+- 🔗 후속 연구: [[papers/706_SciBench_Evaluating_College-Level_Scientific_Problem-Solving/review]] — 과학 분야 멀티모달 벤치마크로, 대학 수준 과학 문제를 텍스트를 넘어 그림과 차트까지 포함하여 확장 평가합니다.
+- 🏛 기반 연구: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — 과학 도표 이해용 대규모 멀티모달 모델 벤치마킹이 MMSCI의 과학 시각화 이해 방법론에 기반을 제공한다.
+- 🔗 후속 연구: [[papers/737_Sciverse_Unveiling_the_knowledge_comprehension_and_visual_re/review]] — 대규모 다중모달 모델의 과학적 인물 전기 벤치마크를 통해 SCIVERSE의 평가 범위를 확장하고 보완할 수 있다.
+- 🔗 후속 연구: [[papers/627_Position_Multimodal_large_language_models_can_significantly/review]] — 과학적 추론에서 멀티모달 LLM의 잠재력을 실제 과학 벤치마크를 통해 구체적으로 평가하고 검증한다.
+- 🔗 후속 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 과학 분야 멀티모달 벤치마크로, 차트 이해 능력을 과학적 그림과 데이터 해석까지 확장하여 평가합니다.
+- 🔄 다른 접근: [[papers/524_MatViX_Multimodal_Information_Extraction_from_Visually_Rich/review]] — SciFIBench는 과학 논문 그림 해석에 특화된 벤치마크로, MatViX의 재료과학 특화 접근법과 대비되는 범용적 평가 기준을 제시한다

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "자율 실험실(Self-Driving Laboratories, SDL)은 실험 워크플로우의 자동화와 데이터 기반 의사결정을 결합하여 화학 및 재료 과학 연구의 속도를 획기적으로 가속화할 수 있는 기술이다. 이 종합 리뷰는 SDL의 현황, 기반 기술, 실제 응용 사례, 그리고 각 분야의 도전 과제를 체계적으로 분석한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Chemistry_Planning"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tom et al._2024_Self-Driving Laboratories for Chemistry and Materials Science.pdf"
 ---
@@ -107,11 +108,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tom et al._2024_Self-Driving Laboratorie
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/461_LARC_Towards_Human-level_Constrained_Retrosynthesis_Planning/review]] — LARC의 제약조건 기반 역합성 계획은 자율 실험실에서 실제 화학 합성을 자동화하는 핵심 응용 기술입니다
-- 🔗 후속 연구: [[papers/126_Automated_review_generation_method_based_on_large_language_m/review]] — 자율 실험실의 자동화된 실험 워크플로우는 대형 언어모델 기반 자동 리뷰 생성을 실험 설계 영역으로 확장한 응용입니다
-- 🏛 기반 연구: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — 양자 컴퓨팅 실험실 자동화는 자율 실험실 기술의 특수한 분야별 구현 사례를 제공합니다
-- 🧪 응용 사례: [[papers/254_DataJoint_20_A_Computational_Substrate_for_Agentic_Scientifi/review]] — 자율 실험실 프레임워크가 과학 워크플로우 기반 위에서 구현됨
-- 🧪 응용 사례: [[papers/461_LARC_Towards_Human-level_Constrained_Retrosynthesis_Planning/review]] — 자율 실험실 기술은 LARC의 역합성 계획을 실제 화학 실험으로 구현하는 응용 분야입니다
-- 🏛 기반 연구: [[papers/614_Perspective_on_utilizing_foundation_models_for_laboratory_au/review]] — 화학 및 재료 과학을 위한 자율주행 실험실이 실험실 자동화에서 기초 모델 활용의 이론적 토대입니다.
-- 🏛 기반 연구: [[papers/1125_Accelerating_cell_culture_media_development_using_Bayesian_o/review]] — 화학과 재료과학의 자율주행 실험실이 베이지안 최적화의 이론적 기반
-- 🏛 기반 연구: [[papers/1126_Autonomous_platform_for_solution_processing_of_electronic_po/review]] — 화학 및 재료과학을 위한 자율주행 실험실 서베이는 Polybot의 AI 기반 자동화 연구실 설계에 이론적 배경과 방법론적 가이드라인을 제공한다.
+- 🧪 응용 사례: [[papers/072_Agents_for_self-driving_laboratories_applied_to_quantum_comp/review]] — 양자 컴퓨팅 분야의 자율 실험실 구현 사례를 통해 SDL의 실제 적용 가능성과 한계를 구체적으로 확인할 수 있다.
+- 🔗 후속 연구: [[papers/139_Autonomous_microscopy_experiments_through_large_language_mod/review]] — LLM을 활용한 자율 현미경 실험 시스템은 SDL 프레임워크를 특정 실험 영역에 확장 적용한 구체적 사례이다.
+- 🔗 후속 연구: [[papers/254_DataJoint_20_A_Computational_Substrate_for_Agentic_Scientifi/review]] — 자율 연구실이 에이전트 과학 워크플로우의 물리적 구현체로서 DataJoint 2.0을 확장한다
+- 🏛 기반 연구: [[papers/346_Foundation-Model_Surrogates_Enable_Data-Efficient_Active_Lea/review]] — 화학 및 재료과학을 위한 자율 실험실 연구가 ICAL의 소재 발견을 위한 능동 학습 프레임워크 개발에 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/626_Polymer_Brushes_and_Grafted_Polymers_AIML-Driven_Synthesis_S/review]] — 화학 및 재료과학을 위한 자율 실험실 연구가 중합체 브러시의 AI/ML 기반 합성과 최적화 워크플로우 개발에 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/614_Perspective_on_utilizing_foundation_models_for_laboratory_au/review]] — 자율주행 실험실의 일반적 원리와 재료과학 실험실 자동화를 위한 기초 모델 활용은 실험실 자동화의 서로 다른 관점을 제공한다.
+- 🔗 후속 연구: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — 화학 및 재료과학을 위한 자율주행 실험실이 실시간 폐루프 상호작용의 확장된 응용 분야를 제시한다
+- 🏛 기반 연구: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 화학 및 재료 과학을 위한 자율 실험실에 대한 포괄적 조사로, 단백질 공학 자동화의 이론적 배경을 제공
+- 🔗 후속 연구: [[papers/1125_Accelerating_cell_culture_media_development_using_Bayesian_o/review]] — 자율 실험실 개념을 세포배양 최적화에 확장하여 완전 자동화된 생물학 연구 플랫폼 구축 가능
+- 🏛 기반 연구: [[papers/248_Curie_Toward_rigorous_and_automated_scientific_experimentati/review]] — 화학 및 재료 과학을 위한 자율 실험실에 대한 종합적 연구로, 엄밀한 과학 실험의 이론적 배경을 제공

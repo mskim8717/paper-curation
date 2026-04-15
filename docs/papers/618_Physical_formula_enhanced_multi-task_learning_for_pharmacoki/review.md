@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 물리 공식(physical formula) 제약을 다중 작업 학습(multi-task learning)에 통합하여 약동학(pharmacokinetics)의 4가지 핵심 파라미터(AUC, CL, Vdss, T1/2)를 동시에 예측하는 PEMAL 프레임워크를 제시한다. 제한된 데이터와 높은 노이즈 환경에서 물리 제약을 활용한 명시적 작업 간 연결을 통해 예측 정확도와 견고성을 현저히 향상시킨다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Biomedical_Causal_Modeling"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI-Driven_Drug_and_Materials_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_Physical formula enhanced multi-task learning for pharmacokinetics prediction.pdf"
 ---
@@ -134,7 +135,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_Physical formula enhanced
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/576_Nonlinear_stochastic_and_quantum_motion_from_Coulomb_forces/review]] — 물리 법칙 기반의 비선형 상호작용 이해가 약동학 파라미터 간의 물리적 제약 관계 모델링에 도움이 된다.
-- 🔄 다른 접근: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 물리 정보를 신경망에 통합한다는 공통 접근법이지만 약동학 예측과 열관리 설계라는 다른 응용 분야를 다룬다.
-- 🔗 후속 연구: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — 연속 의존성을 고려한 PINN의 개선 방법을 약동학 예측의 물리 제약 통합에 적용할 수 있다.
-- 🏛 기반 연구: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 물리 제약을 신경망에 통합하는 방법론이 열관리 장치 설계 최적화의 기술적 기반이 된다.
+- 🏛 기반 연구: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 물리학 제약을 신경망에 통합하는 기본 방법론으로 약동학 예측의 이론적 기반이 된다
+- 🔄 다른 접근: [[papers/619_Physics_Informed_Deep_Learning_Part_I_Data-driven_Solutions/review]] — 물리 정보 기반 딥러닝의 일반적 접근법을 제시하여 약동학 특화 방법과 비교 관점을 제공한다
+- 🧪 응용 사례: [[papers/516_Machine-Learned_Interatomic_Potentials_for_Predicting_Physic/review]] — 기계학습 원자간 포텐셜을 통해 물리 제약 기반 예측의 다른 응용 사례를 보여준다
+- 🏛 기반 연구: [[papers/006_A_deep_subgrouping_framework_for_precision_drug_repurposing/review]] — 약동학을 위한 물리학 공식 강화 다중 작업 학습이 환자 하위군별 치료 반응 예측의 이론적 기반을 제공한다.

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 **비형식적 증명(informal proofs)을 형식적 증명 스케치(formal proof sketches)로 변환하여 자동 정리 증명기(automated theorem prover)를 유도하는 혁신적 방법론**을 제시한다. 이는 풍부한 수학 텍스트 데이터를 활용하면서도 형식 시스템의 논리적 엄밀성을 보장한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Formal_Theorem_Proving"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Automated_Theorem_Proving"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jiang et al._2022_Draft, sketch, and prove Guiding formal theorem provers with informal proofs.pdf"
 ---
@@ -117,13 +118,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jiang et al._2022_Draft, sketch, and pro
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — GPT-f의 직접적 형식 증명 생성을 비형식 증명 활용으로 개선한 혁신적 방법론
-- 🏛 기반 연구: [[papers/251_Data_for_mathematical_copilots_Better_ways_of_presenting_pro/review]] — 비형식적 증명의 중요성을 강조하며 형식 시스템과의 연결점을 제시
-- 🔄 다른 접근: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — DeepSeek-Prover의 대규모 합성 데이터와 달리 기존 비형식 증명 활용하는 접근법
-- 🧪 응용 사례: [[papers/532_MerLean_An_Agentic_Framework_for_Autoformalization_in_Quantu/review]] — 비형식에서 형식으로의 변환 방법론이 MerLean의 자동형식화 프레임워크에 적용됨
-- 🏛 기반 연구: [[papers/257_Decomposing_the_enigma_Subgoal-based_demonstration_learning/review]] — 형식 정리 증명에서의 초안-스케치-증명 가이드 방법론은 부분목표 기반 시연 학습의 구조화된 증명 과정 설계에 이론적 근거를 제공한다.
-- 🔗 후속 연구: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — GPT-f의 형식적 증명 생성을 비형식적 증명에서 유도하는 방법론으로 발전시킴
-- 🏛 기반 연구: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — 비형식적 증명에서 형식적 증명으로의 변환 방법론이 miniF2F 문제 해결의 기초가 됨
-- 🏛 기반 연구: [[papers/251_Data_for_mathematical_copilots_Better_ways_of_presenting_pro/review]] — 비형식적 증명의 풍부한 정보가 형식적 증명 스케치 생성에 필수적임을 보여줌
-- 🧪 응용 사례: [[papers/532_MerLean_An_Agentic_Framework_for_Autoformalization_in_Quantu/review]] — 비형식에서 형식으로의 증명 변환 방법론을 양자계산 분야에 특화하여 완전 자동화
-- 🔄 다른 접근: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — 비형식 증명 활용과 달리 순수 형식적 데이터 합성으로 성능 향상을 달성
+- 🔗 후속 연구: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — 자동 정리 증명의 기존 연구를 비형식적 증명을 활용하여 형식적 증명으로 유도하는 새로운 방향으로 확장한다.
+- 🔄 다른 접근: [[papers/642_Proving_theorems_recursively/review]] — 재귀적 정리 증명과 다른 접근으로 비형식적 텍스트를 활용한 증명 유도 방법론을 제시한다.
+- 🏛 기반 연구: [[papers/486_Lego-prover_Neural_theorem_proving_with_growing_libraries/review]] — 신경망 정리 증명의 기반 위에서 라이브러리 확장과 비형식적 증명 활용이라는 발전된 방법론을 구축한다.
+- 🔗 후속 연구: [[papers/257_Decomposing_the_enigma_Subgoal-based_demonstration_learning/review]] — 부분목표 기반 학습이 형식 정리 증명에서 초안-스케치-증명 가이드로 발전될 수 있다.
+- 🏛 기반 연구: [[papers/486_Lego-prover_Neural_theorem_proving_with_growing_libraries/review]] — 스케치 기반 정리 증명 방법론이 Lego-prover의 검증된 보조정리를 재사용 가능한 기술로 활용하는 시스템의 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/807_Theoremexplainagent_Towards_video-based_multimodal_explanati/review]] — 형식적 정리 증명 가이드 연구가 TheoremExplainAgent의 정리 이해 및 설명 생성의 이론적 토대를 제공한다.
+- 🏛 기반 연구: [[papers/231_Codegen_An_open_large_language_model_for_code_with_multi-tur/review]] — 형식적 정리 증명을 위한 초안-스케치-증명 방법이 다중 턴 프로그램 합성에서 단계적 코드 생성의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/482_Lean-star_Learning_to_interleave_thinking_and_proving/review]] — 형식 정리 증명 가이딩과 자연언어 생각을 결합한 증명 학습은 모두 AI의 수학적 추론 능력 향상을 다른 방식으로 접근한다.

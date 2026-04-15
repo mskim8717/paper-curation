@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델 기반 깊이 있는 연구 에이전트(Deep Research Agents, DRAs)를 체계적으로 평가하기 위한 최초의 종합 벤치마크 DeepResearch Bench를 제시한다. 22개 분야의 박사 수준 연구 과제 100개와 두 가지 혁신적인 평가 방법론(RACE, FACT)을 통해 DRA의 보고서 생성 품질과 정보 검색 능력을 정량적으로 평가한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Physics_Reasoning_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Du et al._2025_Deepresearch bench A comprehensive benchmark for deep research agents.pdf"
 ---
@@ -122,6 +123,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Du et al._2025_Deepresearch bench A comp
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — 과학 발견에서 LLM 벤치마킹을 깊이 있는 연구 에이전트 평가에 적용
-- 🔄 다른 접근: [[papers/724_SciHorizon_Benchmarking_AI-for-Science_Readiness_from_Scient/review]] — 과학 준비성 벤치마킹과 깊이 있는 연구 에이전트 평가의 다른 접근법
-- 🏛 기반 연구: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — 대학원 수준 다중 분야 다중모달 데이터세트가 연구 벤치마크의 기반 제공
+- 🔄 다른 접근: [[papers/299_Earthse_A_benchmark_evaluating_earth_scientific_exploration/review]] — 깊이 있는 연구 에이전트 평가와 지구과학 탐색 능력 평가 모두 도메인별 AI 연구 능력을 체계적으로 평가하는 서로 다른 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 다단계 과학 도구 사용 벤치마크가 깊이 있는 연구 에이전트의 복합적 연구 과제 수행 능력 평가의 기반을 제공한다.
+- 🔗 후속 연구: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — DeepResearch Bench의 포괄적 평가 체계를 ScienceAgentBench의 엄격한 언어 에이전트 평가로 확장하여 더 정밀한 과학 AI 평가를 구현한다.
+- 🔄 다른 접근: [[papers/299_Earthse_A_benchmark_evaluating_earth_scientific_exploration/review]] — 지구과학 특화 벤치마크와 깊이 있는 연구 에이전트 평가가 서로 다른 도메인에서 AI의 과학 탐색 능력을 체계적으로 평가한다.

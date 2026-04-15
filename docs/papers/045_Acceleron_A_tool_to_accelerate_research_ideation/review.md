@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.0
 essence: "연구자의 아이디어 구상(ideation) 단계를 지원하기 위해 대규모 언어모델(LLM) 기반 에이전트 아키텍처를 활용한 연구 가속화 도구로, 동료(Colleague)와 멘토(Mentor) 페르소나를 통해 연구 제안의 동기 검증(motivation validation)과 방법 합성(method synthesis)을 수행한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Research_Ideation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nigam et al._2024_Acceleron A tool to accelerate research ideation.pdf"
 ---
@@ -119,7 +121,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nigam et al._2024_Acceleron A tool to ac
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/019_A_review_of_llm-assisted_ideation/review]] — 모래시계 아이디에이션 프레임워크의 체계적 검토가 Acceleron의 동료-멘토 페르소나 설계의 이론적 근거를 제공함
-- 🔄 다른 접근: [[papers/442_Iris_Interactive_research_ideation_system_for_accelerating_s/review]] — 둘 다 연구 아이디어 생성 도구이지만 Acceleron은 LLM 에이전트에, IRIS는 대화형 시스템에 집중하는 차이가 있음
-- 🔗 후속 연구: [[papers/729_Scipip_An_llm-based_scientific_paper_idea_proposer/review]] — SciPIP의 과학 논문 아이디어 제안이 Acceleron의 연구 가속화 기능을 구체적인 논문 작성 단계까지 확장함
-- 🔗 후속 연구: [[papers/019_A_review_of_llm-assisted_ideation/review]] — Acceleron의 동료-멘토 페르소나 구조가 모래시계 아이디에이션 프레임워크의 7단계 프로세스를 실제로 구현하는 도구가 됨
+- 🔗 후속 연구: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 다중 전문가 협력 기반 과학적 아이디어 생성과 LLM 에이전트 기반 연구 가속화를 결합하면 더 효과적인 협력적 연구 지원 시스템을 구축할 수 있다.
+- 🔄 다른 접근: [[papers/392_Grapheval_A_lightweight_graph-based_llm_framework_for_idea_e/review]] — 연구 아이디어 생성에서 에이전트 아키텍처 기반 접근법과 그래프 기반 LLM 프레임워크는 서로 다른 구조적 방법론을 제시한다.

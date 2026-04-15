@@ -10,8 +10,10 @@ arxiv: ""
 score: 4.2
 essence: "대규모 언어모델(LLM)을 진화 알고리즘의 변이 연산자로 활용하여 샘플 효율성을 획기적으로 개선한 프로그램 진화 프레임워크이다. 세 가지 핵심 알고리즘 혁신(부모 선택 전략, 코드 신규성 거절 샘플링, 적응형 LLM 앙상블)을 통해 기존 방법 대비 수십 배 적은 평가로 최첨단 솔루션을 발견한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lange et al._2025_ShinkaEvolve Towards Open-Ended And Sample-Efficient Program Evolution.pdf"
 ---
@@ -130,6 +132,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lange et al._2025_ShinkaEvolve Towards O
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/469_Large_Language_Models_as_Evolutionary_Optimizers/review]] — LLM을 진화 최적화에 활용하는 기본 아이디어를 ShinkaEvolve가 프로그램 진화에 특화하여 발전시킴
-- 🏛 기반 연구: [[papers/484_Learning_to_generate_research_idea_with_dynamic_control/review]] — 동적 제어를 통한 연구 아이디어 생성 방법이 ShinkaEvolve의 적응형 LLM 앙상블 전략의 이론적 기반이 됨
-- 🔄 다른 접근: [[papers/466_Large_Language_Model-Based_Evolutionary_Optimizer_Reasoning/review]] — 둘 다 LLM 기반 진화 최적화를 다루지만 ShinkaEvolve는 프로그램에, LLM-EO는 일반적 최적화에 집중함
+- 🔄 다른 접근: [[papers/472_Large_language_models_design_sequence-defined_macromolecules/review]] — 둘 다 LLM을 진화 최적화에 활용하지만 ShinkaEvolve는 프로그램 진화에, 472는 거대분자 설계에 특화됨
+- 🏛 기반 연구: [[papers/468_Large_Language_Models_are_Zero_Shot_Hypothesis_Proposers/review]] — LLM을 진화 최적화에 활용하는 기초 이론적 배경을 제공함
+- 🔗 후속 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — 다중 에이전트 프레임워크를 통해 ShinkaEvolve의 협력적 진화 개념을 확장할 수 있음
+- 🔄 다른 접근: [[papers/472_Large_language_models_design_sequence-defined_macromolecules/review]] — 둘 다 LLM 기반 진화 최적화를 사용하지만 472는 거대분자 설계에, ShinkaEvolve는 프로그램 진화에 적용

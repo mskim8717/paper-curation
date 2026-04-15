@@ -8,8 +8,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 매개변수 편미분방정식(PDEs)의 해를 근사하기 위한 신경 연산자(Neural Operators) 아키텍처들의 실용적 입문서이다. DeepONet, PCANet, FNO 세 가지 핵심 모델을 비교 분석하고, 이들을 Poisson 방정식과 선형 탄성 변형 문제에 적용하며, 베이지안 역문제에서의 대용 모델(Surrogate Model)로의 활용을 제시한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Neural_Differential_Equations"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Neural_Operator_Learning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jha_2025_From Theory to Application A Practical Introduction to Neural Operators in Scientific Computing.pdf"
 ---
@@ -118,8 +119,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jha_2025_From Theory to Application A Pr
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — 인라인 추론을 위한 플러그 앤 플레이 신경 연산자에서 실용적 입문서로의 확장
-- 🏛 기반 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — 신경 상미분방정식이 신경 연산자 아키텍처의 수학적 기반을 제공
-- 🧪 응용 사례: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — LLM을 이용한 동역학계 데이터 기반 발견에 신경 연산자 적용
-- 🔄 다른 접근: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — 연속 의존성 통합과 신경 연산자의 다른 물리 정보 접근법
-- 🏛 기반 연구: [[papers/082_Ai-assisted_design_of_experiments_at_the_frontiers_of_comput/review]] — 신경 연산자가 고차원 실험 설계 최적화의 수학적 기반을 제공
+- 🔗 후속 연구: [[papers/622_Physics-Informed_Neural_Operator_for_Electromagnetic_Inverse/review]] — 신경 연산자 기본 개념이 전자기 역산란 문제의 물리 정보 신경 연산자 구현에 직접 적용됨
+- 🧪 응용 사례: [[papers/307_Efficient_Prediction_of_SO3-Equivariant_Hamiltonian_Matrices/review]] — 신경 연산자 이론이 SO(3) 등변 해밀톤 예측에서 효율적인 매개변수 PDE 해결에 활용됨
+- 🏛 기반 연구: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 신경 연산자 아키텍처와 변형들에 대한 종합적 이해가 실용적 응용의 기반 지식을 제공함
+- 🔗 후속 연구: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 신경 연산자에 대한 실용적 소개서로, 이 논문에서 제시한 과학 머신러닝 파운데이션 모델의 핵심 기술인 신경 연산자의 구체적 적용 방법을 제공한다
+- 🏛 기반 연구: [[papers/307_Efficient_Prediction_of_SO3-Equivariant_Hamiltonian_Matrices/review]] — 신경 연산자 이론과 응용이 해밀톤 행렬 예측에서 물리 정보 통합의 기본 개념을 제공함
+- 🧪 응용 사례: [[papers/622_Physics-Informed_Neural_Operator_for_Electromagnetic_Inverse/review]] — 신경 연산자 이론을 전자기 역산란 문제에 적용하여 물질 특성 재구성의 실용적 사례를 제시

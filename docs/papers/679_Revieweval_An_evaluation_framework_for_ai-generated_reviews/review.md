@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "학술 논문 동료 평가(peer review) 부족 문제를 해결하기 위해 LLM 기반 리뷰 시스템의 신뢰성을 평가하는 종합 프레임워크 ReviewEval과 자체 개선 루프를 갖춘 AI 리뷰어 ReviewAgent를 제안한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Peer_Review"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_Literature_Evaluation_Methods"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/2025 et al._2025_Revieweval An evaluation framework for ai-generated reviews.pdf"
 ---
@@ -141,11 +143,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/2025 et al._2025_Revieweval An evaluatio
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — LLM 기반 리뷰 개선을 위한 구조화된 프레임워크와 함께 AI 리뷰 시스템의 품질과 신뢰성을 종합적으로 향상시킨다.
-- 🔗 후속 연구: [[papers/270_Detecting_llm-written_peer_reviews/review]] — LLM이 작성한 피어 리뷰 탐지 기술을 활용하여 ReviewAgent의 자체 개선 루프에 검증 단계를 추가할 수 있다.
-- 🏛 기반 연구: [[papers/676_Reviewagents_Bridging_the_gap_between_human_and_ai-generated/review]] — 인간과 AI 생성 리뷰 간 격차를 분석한 연구로 ReviewEval 평가 프레임워크 설계의 기준점을 제공한다.
-- 🔄 다른 접근: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — AI 생성 리뷰의 평가 프레임워크와 함께 LLM 기반 리뷰 시스템의 품질 향상을 위한 상호 보완적 접근이다.
-- 🔗 후속 연구: [[papers/739_Seagraph_Unveiling_the_whole_story_of_paper_review_comments/review]] — AI 생성 리뷰 평가 프레임워크로 SEAGraph의 리뷰 댓글 분석 결과를 검증할 수 있다.
-- 🔄 다른 접근: [[papers/184_Can_large_language_models_provide_useful_feedback_on_researc/review]] — AI 생성 리뷰 평가를 위한 서로 다른 접근법을 제시합니다.
-- 🧪 응용 사례: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — 동료 심사에서 자연언어처리의 역할 매핑이 AI 생성 리뷰의 효과적 평가 프레임워크 개발에 핵심적인 가이드라인을 제공한다
-- 🏛 기반 연구: [[papers/654_Re_2_A_consistency-ensured_dataset_for_full-stage_peer_revie/review]] — AI 생성 리뷰 평가 프레임워크가 피어리뷰 데이터셋 구축과 LLM 리뷰 능력 평가의 기준을 제공합니다.
+- 🏛 기반 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 다중턴 대화 기반 피어리뷰 시스템이 AI 생성 리뷰의 신뢰성 평가를 위한 데이터와 방법론을 제공한다.
+- 🔄 다른 접근: [[papers/127_Automatic_evaluation_metrics_for_artificially_generated_scie/review]] — AI 생성 과학 콘텐츠 평가에서 리뷰 시스템과 자동 메트릭이라는 서로 다른 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 전문 분야별 LLM이 리뷰 생성과 평가 프레임워크의 도메인 특화 성능 향상에 기여한다.
+- 🧪 응용 사례: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — LLM 기반 추론을 활용한 자동 피어리뷰 생성이 평가 프레임워크의 실제 적용 사례를 보여준다.
+- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 다중턴 대화 기반 피어리뷰와 AI 생성 리뷰 평가 프레임워크가 상호 보완적인 리뷰 시스템을 구성한다.
+- 🏛 기반 연구: [[papers/629_Pre_A_peer_review_based_large_language_model_evaluator/review]] — AI 생성 리뷰에 대한 평가 프레임워크 연구가 PRE의 동료 평가 메커니즘을 활용한 LLM 평가 시스템의 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — AI 생성 리뷰의 평가 프레임워크 구축을 위한 핵심 생성 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/127_Automatic_evaluation_metrics_for_artificially_generated_scie/review]] — 자동 평가 메트릭과 AI 리뷰 평가 프레임워크가 AI 생성 과학 콘텐츠의 종합적 품질 관리를 제공한다.

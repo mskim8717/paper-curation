@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.25
 essence: "대규모 언어모델(LLM)이 모호한 사용자 입력을 처리할 때 명확화 질문을 통해 상호작용하도록 하는 작업 중립적 프레임워크를 제시하고, 사용자 의도 엔트로피 추정 방식인 INTENT-SIM을 통해 명확화가 필요한 경우를 효과적으로 식별한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Question_Answering"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Self-Clarifying_Reasoning_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang and Choi_2023_Clarify when necessary Resolving ambiguity through interaction with lms.pdf"
 ---
@@ -113,8 +114,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang and Choi_2023_Clarify when necessa
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/222_Clam_Selective_clarification_for_ambiguous_questions_with_ge/review]] — CLAM의 선택적 명확화 방법이 Clarify when necessary의 모호성 해결 프레임워크를 더 정교한 질문 생성과 답변 시스템으로 발전시킨 연구임
-- 🧪 응용 사례: [[papers/641_Prototypical_human-ai_collaboration_behaviors_from_llm-assis/review]] — LLM 지원 글쓰기에서의 인간-AI 협력 행동 분석이 명확화 질문을 통한 상호작용 패턴의 실제 사용 사례를 보여줌
-- 🏛 기반 연구: [[papers/435_Interfeedback_Unveiling_interactive_intelligence_of_large_mu/review]] — 대규모 모델의 인터랙티브 지능에 대한 연구가 사용자 의도 엔트로피 추정과 명확화 필요성 판단의 이론적 배경을 제공함
-- 🧪 응용 사례: [[papers/641_Prototypical_human-ai_collaboration_behaviors_from_llm-assis/review]] — 명확화 질문을 통한 모호성 해결 프레임워크가 실제 LLM 지원 글쓰기 환경에서 관찰된 사용자-AI 상호작용 패턴의 이론적 설명을 제공함
-- 🔗 후속 연구: [[papers/222_Clam_Selective_clarification_for_ambiguous_questions_with_ge/review]] — 상호작용을 통한 모호성 해결 연구로 본 논문의 명확화 프레임워크를 대화형 시스템으로 확장한다.
+- 🔗 후속 연구: [[papers/312_Empowering_language_models_with_active_inquiry_for_deeper_un/review]] — 능동적 질의를 통한 언어모델의 깊은 이해 연구를 모호성 해결을 위한 상호작용 프레임워크로 구체화한다.
+- 🔄 다른 접근: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 도구 통합 자기 수정과 달리 사용자와의 명확화 질문을 통한 상호작용으로 모호성을 해결하는 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/435_Interfeedback_Unveiling_interactive_intelligence_of_large_mu/review]] — 대규모 언어모델의 상호작용 지능 연구가 모호한 입력에 대한 명확화 질문 프레임워크의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/312_Empowering_language_models_with_active_inquiry_for_deeper_un/review]] — 모호성 해결을 위한 상호작용 기반 접근법을 더욱 발전시킨 연구이다.
+- 🔗 후속 연구: [[papers/222_Clam_Selective_clarification_for_ambiguous_questions_with_ge/review]] — 애매한 질문 처리를 위한 CLAM 프레임워크를 상호작용적 애매성 해결로 확장하여 더 정교한 대화형 AI 시스템을 구현한다.

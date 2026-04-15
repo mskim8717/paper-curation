@@ -11,7 +11,7 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 자동 문헌 리뷰 생성을 위한 최초의 대규모 데이터셋인 **SciReviewGen**을 제시한다. 10,000개 이상의 문헌 리뷰와 690,000개의 인용 논문으로 구성되어 있으며, 쿼리 기반 다중 문서 요약(query-focused multi-document summarization) 작업으로 정의한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
+  - "cat/Scientific_Knowledge_Processing_Systems"
   - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kasanishi et al._2023_Scireviewgen a large-scale dataset for automatic literature review generation.pdf"
@@ -118,14 +118,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kasanishi et al._2023_Scireviewgen a lar
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/109_Assisting_in_writing_wikipedia-like_articles_from_scratch_wi/review]] — SciReviewGen이 쿼리 기반 다중 문서 요약으로 문헌 리뷰를 자동 생성하는 반면, STORM은 다관점 질문을 통한 아웃라인 중심 접근법을 사용하여 상호 보완적 전략을 제시함
-- 🔗 후속 연구: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 체크리스트 가이드 반복적 내성을 통한 메타 리뷰 생성이 SciReviewGen의 기본적인 문헌 리뷰 생성을 더 정교한 검토와 평가 과정을 포함하는 메타 수준으로 발전시킨 연구임
-- 🏛 기반 연구: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 관련 연구 섹션의 대규모 데이터셋이 SciReviewGen의 자동 문헌 리뷰 생성 시스템을 훈련하고 평가할 수 있는 핵심적인 데이터 자원을 제공함
-- 🏛 기반 연구: [[papers/780_Surveyforge_On_the_outline_heuristics_memory-driven_generati/review]] — 대규모 문헌 리뷰 데이터셋 구축 방법론을 자동 설문지 생성에 적용한 기반
-- 🔗 후속 연구: [[papers/812_TLDR_Extreme_Summarization_of_Scientific_Documents/review]] — 단일 논문 요약에서 다중 논문을 활용한 자동 문헌 리뷰 생성으로 확장한 발전된 형태의 연구입니다.
-- 🔄 다른 접근: [[papers/109_Assisting_in_writing_wikipedia-like_articles_from_scratch_wi/review]] — STORM이 다관점 질문을 통한 아웃라인 생성에 초점을 맞춘 반면, SciReviewGen은 쿼리 기반 다중 문서 요약으로 접근하여 서로 다른 장문 작성 전략을 제시함
-- 🔗 후속 연구: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 관련 업무 섹션 생성을 자동화된 문헌 리뷰 생성의 더 포괄적인 프로세스로 확장함
-- 🏛 기반 연구: [[papers/108_Ask_retrieve_summarize_A_modular_pipeline_for_scientific_lit/review]] — 자동 문헌 검토를 위한 대규모 데이터셋으로 본 논문의 요약 시스템 학습 기반을 제공한다.
-- 🔗 후속 연구: [[papers/402_Hierarchical_catalogue_generation_for_literature_review_a_be/review]] — 문헌 리뷰 자동 생성에서 단순한 데이터셋을 계층적 카탈로그 구조로 확장한 고도화된 접근법입니다.
-- 🔗 후속 연구: [[papers/742_Select_read_and_write_A_multi-agent_framework_of_full-text-b/review]] — 자동 문헌 리뷰 생성을 다중 에이전트와 그래프 기반 제약을 활용한 더 정교한 관련 연구 섹션 생성으로 발전시킨다.
-- 🧪 응용 사례: [[papers/897_Can_AI_review_the_scientific_literature__and_figure_out_what/review]] — 자동 문헌 검토 생성의 실제 적용 사례와 데이터셋을 제공한다
+- 🔗 후속 연구: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 관련 연구 섹션의 대규모 데이터셋으로, SciReviewGen의 문헌 리뷰 생성을 논문의 특정 섹션으로 확장한 연구 방향을 보여준다
+- 🔄 다른 접근: [[papers/561_Ms2_Multi-document_summarization_of_medical_studies/review]] — 의료 연구의 다중 문서 요약에 특화된 데이터셋으로, SciReviewGen의 범용 과학 문헌 리뷰와 대비되는 도메인별 요약 접근법을 제시한다
+- 🏛 기반 연구: [[papers/812_TLDR_Extreme_Summarization_of_Scientific_Documents/review]] — 과학 문서의 극단적 요약 연구로, SciReviewGen의 다중 문서 요약 기반 문헌 리뷰 생성에 필요한 요약 기술의 기초를 제공한다
+- 🔄 다른 접근: [[papers/374_Generating_a_structured_summary_of_numerous_academic_papers/review]] — 문헌 리뷰 자동 생성에서 구조화된 요약과 대규모 데이터셋 기반 접근법의 차이를 보여준다.
+- 🧪 응용 사례: [[papers/862_Using_artificial_intelligence_for_systematic_review_the_exam/review]] — 자동 문헌고찰 생성 데이터셋이 Elicit과 같은 도구의 성능 검증 기반이다
+- 🔄 다른 접근: [[papers/780_Surveyforge_On_the_outline_heuristics_memory-driven_generati/review]] — 학술 문헌 리뷰 자동화라는 동일한 목표를 가지지만 SurveyForge는 설문지 생성에, SciReviewGen은 문헌 리뷰 생성에 특화된 다른 접근법임
+- 🔗 후속 연구: [[papers/812_TLDR_Extreme_Summarization_of_Scientific_Documents/review]] — 과학 문헌 리뷰 생성을 위한 대규모 데이터셋으로, TLDR의 요약 기술을 종합적인 문헌 검토로 확장한 연구입니다.
+- 🏛 기반 연구: [[papers/561_Ms2_Multi-document_summarization_of_medical_studies/review]] — 자동 문헌 검토 생성에 대한 데이터셋 구축 방법론의 이론적 기반을 제공한다.

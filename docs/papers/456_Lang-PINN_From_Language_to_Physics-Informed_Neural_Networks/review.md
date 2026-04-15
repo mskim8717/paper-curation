@@ -12,8 +12,8 @@ arxiv: ""
 score: 3.75
 essence: "자연언어 기반의 작업 설명으로부터 실행 가능한 Physics-Informed Neural Networks (PINN) 코드를 자동으로 생성하는 LLM 기반 다중 에이전트 시스템을 제안한다. PDE 공식화, 아키텍처 선택, 코드 생성, 피드백 기반 개선의 전체 파이프라인을 통합하여 과학자들의 수동 작업을 대폭 줄인다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Computational_Fluid_Dynamics"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Domain-Specific_Autonomous_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/He et al._2025_Lang-PINN From Language to Physics-Informed Neural Networks via a Multi-Agent Framework.pdf"
 ---
@@ -114,10 +114,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/He et al._2025_Lang-PINN From Language t
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/589_OpenFOAMGPT_A_retrieval-augmented_large_language_model_LLM_a/review]] — 자연어 기반 과학 코드 생성에서 CFD 시뮬레이션과 물리 신경망이라는 다른 도메인을 다룬다.
-- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 정보 신경망의 과학적 기계학습 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 다목적 설계를 위한 물리 정보 신경망의 구체적 응용 사례를 보여준다.
-- 🔗 후속 연구: [[papers/308_El_Agente_An_Autonomous_Agent_for_Quantum_Chemistry/review]] — 언어에서 물리 정보 신경망으로의 변환을 양자화학 계산으로 확장할 수 있다
-- 🧪 응용 사례: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 언어에서 물리정보 신경망으로의 변환 프레임워크를 통해 신경 연산자의 실제 구현 방법을 보여준다.
-- 🔗 후속 연구: [[papers/589_OpenFOAMGPT_A_retrieval-augmented_large_language_model_LLM_a/review]] — 물리 기반 신경망으로 확장하여 자연어에서 실행 가능한 과학 코드 생성의 범위를 넓힌다.
-- 🔗 후속 연구: [[papers/533_Meta-designing_quantum_experiments_with_language_models/review]] — 물리학 정보 신경망과 언어 모델을 결합한 양자 실험 설계 방법론
+- 🔄 다른 접근: [[papers/589_OpenFOAMGPT_A_retrieval-augmented_large_language_model_LLM_a/review]] — Lang-PINN이 자연어에서 물리 신경망으로, OpenFOAMGPT가 CFD 시뮬레이션으로 서로 다른 물리학 자동화를 제공한다.
+- 🔗 후속 연구: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — Unscented Kalman 필터를 통합한 Physics-Informed 신경망이 Lang-PINN의 물리 기반 학습을 향상시킬 수 있다.
+- 🏛 기반 연구: [[papers/619_Physics_Informed_Deep_Learning_Part_I_Data-driven_Solutions/review]] — Physics Informed Deep Learning의 이론적 배경이 Lang-PINN 설계의 기반을 제공한다.
+- 🏛 기반 연구: [[papers/232_CodePDE_An_Inference_Framework_for_LLM-driven_PDE_Solver_Gen/review]] — 자연어에서 물리 정보 신경망으로의 변환에 대한 연구로, 언어 모델과 물리 시뮬레이션 연결의 기초
+- 🔗 후속 연구: [[papers/286_Domain-specific_ReAct_for_physics-integrated_iterative_model/review]] — 언어에서 물리학 정보 신경망으로의 전환을 통해 도메인 특화를 확장한다.
+- 🔗 후속 연구: [[papers/864_VASPilot_MCP-Facilitated_Multi-Agent_Intelligence_for_Autono/review]] — Lang-PINN의 자연어-물리 신경망 변환 기능이 VASPilot의 DFT 계산 자동화와 결합될 수 있다.

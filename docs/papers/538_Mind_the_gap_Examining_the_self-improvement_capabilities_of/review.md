@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대규모 언어모델(LLM)의 자기개선(self-improvement) 메커니즘을 체계적으로 분석하며, **생성-검증 갭(Generation-Verification Gap, GV-Gap)**이라는 핵심 지표를 통해 언어모델이 자신의 출력을 검증하여 성능을 개선할 수 있는 능력의 한계와 가능성을 규명한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Self-improving_Reward_Models"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Reward_Model_Self-Improvement"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Al‐Fuqaha et al._2024_Mind the gap Examining the self-improvement capabilities of large language models.pdf"
 ---
@@ -128,10 +130,14 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Al‐Fuqaha et al._2024_Mind the gap Exa
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/435_Interfeedback_Unveiling_interactive_intelligence_of_large_mu/review]] — 자기개선 메커니즘 분석을 인간-AI 상호작용에서의 피드백 활용 능력으로 확장
-- 🏛 기반 연구: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — SFT와 RL의 일반화 능력 비교 연구에서 자기개선 메커니즘의 이론적 기반 제공
-- 🔄 다른 접근: [[papers/1100_Representative_Informative_and_De-Amplifying_Requirements_fo/review]] — 생성-검증 갭에 집중한 접근과 달리 실험설계 최적화를 통한 모델 신뢰성 향상
-- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — LLM의 자기수정 한계를 지적한 연구와 자기개선 가능성을 탐구한 상반된 관점
-- 🏛 기반 연구: [[papers/435_Interfeedback_Unveiling_interactive_intelligence_of_large_mu/review]] — LLM의 자기개선 능력 분석이 인간 피드백 기반 상호작용 능력 평가의 이론적 기반
-- 🔗 후속 연구: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — 자기개선 메커니즘에서 SFT의 암기와 RL의 일반화 능력 차이를 체계적으로 분석한 확장
-- 🔄 다른 접근: [[papers/1100_Representative_Informative_and_De-Amplifying_Requirements_fo/review]] — 생성-검증 갭 분석과 달리 실험설계 단계에서 모델 오명시 문제를 해결하는 접근
+- 🔗 후속 연구: [[papers/683_RM-R1_Reward_Modeling_as_Reasoning/review]] — 생성-검증 갭 문제를 추론 기반 보상 모델을 통해 해결할 수 있는 방향을 제시한다.
+- 🏛 기반 연구: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 생성-검증 갭이 다중턴 자기수정 프레임워크가 필요한 이유를 설명한다.
+- 🔗 후속 연구: [[papers/243_Critique-GRPO_Advancing_LLM_Reasoning_with_Natural_Language/review]] — 생성-검증 갭을 자연어 비판을 통해 해소하는 구체적인 방법론으로 발전될 수 있다.
+- 🧪 응용 사례: [[papers/281_Dlpo_Towards_a_robust_efficient_and_generalizable_prompt_opt/review]] — 생성-검증 갭 분석이 프롬프트 최적화의 견고성과 일반화 능력 평가에 활용될 수 있다.
+- 🔗 후속 연구: [[papers/683_RM-R1_Reward_Modeling_as_Reasoning/review]] — 생성-검증 갭 문제를 해석 가능한 추론 기반 보상 모델로 해결할 수 있는 방향을 제시한다.
+- 🏛 기반 연구: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 생성-검증 갭 문제를 다중턴 강화학습을 통해 해결하려는 구체적인 방법론을 제시한다.
+- 🔗 후속 연구: [[papers/066_Agentic_Personas_for_Adaptive_Scientific_Explanations_with_K/review]] — 생성-검증 갭을 에이전틱 페르소나를 통한 맞춤형 설명 생성으로 해결할 수 있다.
+- 🏛 기반 연구: [[papers/243_Critique-GRPO_Advancing_LLM_Reasoning_with_Natural_Language/review]] — 자연어 비판이 생성-검증 갭을 해소하는 구체적인 방법론을 제시한다.
+- 🧪 응용 사례: [[papers/281_Dlpo_Towards_a_robust_efficient_and_generalizable_prompt_opt/review]] — 프롬프트 최적화의 견고성과 일반화 향상이 생성-검증 갭 해소에 직접적으로 도움이 된다.
+- 🏛 기반 연구: [[papers/747_Selfcheck_Using_llms_to_zero-shot_check_their_own_step-by-st/review]] — LLM의 자기 개선 능력 분석이 단계별 추론 검증이라는 구체적 적용 영역의 이론적 기반이 된다.
+- ⚖️ 반론/비판: [[papers/470_Large_language_models_can_self-improve/review]] — 자기 개선 능력의 한계를 체계적으로 분석하여, 이 논문이 제시한 자기 개선 가능성에 대한 비판적 관점을 제공한다

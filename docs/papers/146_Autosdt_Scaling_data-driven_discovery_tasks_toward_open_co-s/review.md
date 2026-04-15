@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "LLM의 코딩 능력을 활용하여 자동으로 고품질 데이터 주도형 발견(data-driven discovery) 태스크 5,404개를 수집한 AutoSDT 파이프라인을 제시하고, 이를 통해 구축한 데이터셋으로 미세조정한 모델이 기존 오픈 가중치 모델 대비 대폭 성능 향상을 달성했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/LLM_Agent_Benchmarking"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/2025 et al._2025_Autosdt Scaling data-driven discovery tasks toward open co-scientists.pdf"
 ---
@@ -107,9 +107,6 @@ LLM의 코딩 능력을 활용하여 자동으로 고품질 데이터 주도형 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — AutoSDT로 생성된 고품질 데이터셋이 MLE-bench와 같은 에이전트 평가에 활용될 수 있음
-- 🔄 다른 접근: [[papers/259_DeepAnalyze_Agentic_Large_Language_Models_for_Autonomous_Dat/review]] — 둘 다 자동화된 데이터 과학을 다루지만 AutoSDT는 태스크 생성에, DeepAnalyze는 분석 실행에 특화
-- 🔗 후속 연구: [[papers/277_Discoverybench_Towards_data-driven_discovery_with_large_lang/review]] — AutoSDT의 데이터 주도형 발견 방법론이 DiscoveryBench의 과학적 발견 평가에 적용될 수 있음
-- 🏛 기반 연구: [[papers/293_Ds-agent_Automated_data_science_by_empowering_large_language/review]] — AutoSDT가 제공하는 데이터 발견 태스크가 DS-Agent 같은 데이터 사이언스 에이전트 학습의 기반이 됨
-- 🏛 기반 연구: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — AutoSDT의 데이터 주도형 발견 태스크가 ML 에이전트 평가의 기초 데이터를 제공함
-- 🔄 다른 접근: [[papers/259_DeepAnalyze_Agentic_Large_Language_Models_for_Autonomous_Dat/review]] — AutoSDT가 태스크 생성에 집중하는 반면 DeepAnalyze는 실제 분석 실행을 자동화
+- 🔄 다른 접근: [[papers/457_Language_agents_achieve_superhuman_synthesis_of_scientific_k/review]] — 과학 지식 합성에서 LLM의 역할을 다른 관점에서 접근하여, 데이터 주도 발견과 지식 합성의 차이점을 보여줍니다.
+- 🔗 후속 연구: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 아이디어 개발을 위한 연쇄적 접근법으로, 데이터 주도 발견을 아이디어 생성 단계까지 확장한 방법론을 제시합니다.
+- 🧪 응용 사례: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 과학 연구 시스템으로, 데이터 주도 발견 능력을 실제 과학 연구에 적용한 사례입니다.

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "TOOLMAKER는 과학 논문의 공개 코드 저장소로부터 LLM 호환 도구를 자동으로 생성하는 에이전트 프레임워크로, 기존에 사람이 수동으로 구현해야 했던 복잡한 과학 도구들을 자동화한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Scientist_Research_Protocols"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wölflein et al._2025_LLM Agents Making Agent Tools.pdf"
 ---
@@ -169,7 +169,9 @@ TOOLMAKER는 과학 논문의 공개 코드 저장소로부터 LLM 호환 도구
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/122_Automated_Extraction_of_Mechanical_Constitutive_Models_from/review]] — TOOLMAKER의 코드 저장소 기반 도구 생성과 기계적 구성 모델의 문헌 기반 추출은 서로 다른 소스에서 과학 도구를 자동 생성하는 접근이다.
-- 🔗 후속 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — Toolformer의 언어 모델 자체 도구 사용 학습이 TOOLMAKER의 과학 논문 기반 자동 도구 생성으로 발전한 확장된 형태이다.
-- 🏛 기반 연구: [[papers/499_LLM_With_Tools_A_Survey/review]] — 도구 사용을 위한 LLM 조사 연구가 TOOLMAKER의 과학 도구 자동 생성 및 LLM 호환성 구현의 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/122_Automated_Extraction_of_Mechanical_Constitutive_Models_from/review]] — 기계적 구성 모델의 문헌 기반 추출과 TOOLMAKER의 코드 저장소 기반 도구 생성은 서로 다른 소스에서 과학 지식을 자동화하는 대안적 접근이다.
+- 🔗 후속 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — LLM이 기존 도구를 사용하는 것을 넘어 과학 논문에서 새로운 도구를 자동 생성하는 것으로 도구 사용 능력을 한 단계 발전시킴
+- 🔄 다른 접근: [[papers/268_Democratizing_AI_scientists_using_ToolUniverse/review]] — 과학자를 위한 AI 도구 민주화라는 같은 목표를 가지지만 ToolMaker는 도구 자동 생성에, ToolUniverse는 기존 도구 통합에 집중한 다른 접근법임
+- 🏛 기반 연구: [[papers/769_StableToolBench_Towards_Stable_Large-Scale_Benchmarking_on_T/review]] — 대규모 도구 사용 벤치마킹을 통해 과학 논문에서 도구를 자동 생성하는 ToolMaker의 성능 평가 기준과 안정성 검증 방법을 제공함
+- 🏛 기반 연구: [[papers/067_Agentic_retrieval-augmented_generation_A_survey_on_agentic_r/review]] — RAG 시스템에서 에이전트가 도구를 활용하는 방법론에 대한 기초적 이해를 제공한다
+- 🧪 응용 사례: [[papers/655_ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models/review]] — LLM Agents가 도구를 만드는 연구가 ReAct의 행동 능력을 도구 생성 영역으로 확장한 구체적 적용 사례
+- 🏛 기반 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — LLM이 도구를 마스터하는 기본 능력을 입증하여 과학 논문에서 도구를 자동 생성하는 ToolMaker의 기술적 기반을 제공함

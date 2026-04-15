@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.6
 essence: "차트 이미지에서 직접 생성한 시각적 명령어 데이터로 학습한 멀티모달 모델로, 기존 데이터 테이블 의존성을 제거하고 강력한 비전-언어 백본(PaliGemma)을 활용하여 실제 차트 이해와 추론에서 최고 성능을 달성했다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Literature_Analysis"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_Literature_Evaluation_Methods"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Masry et al._2024_ChartGemma Visual Instruction-tuning for Chart Reasoning in the Wild.pdf"
 ---
@@ -102,8 +104,15 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Masry et al._2024_ChartGemma Visual Inst
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 차트 이해 성능 향상 방법론이 차트 이미지 추론의 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 차트 이해를 위한 서로 다른 멀티모달 접근법을 제시합니다.
-- 🔗 후속 연구: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — ChartGemma의 차트 추론 능력이 더 포괄적인 차트 벤치마크로 확장됩니다.
-- 🧪 응용 사례: [[papers/323_Every_part_matters_Integrity_verification_of_scientific_figu/review]] — 과학 그림의 무결성 검증이 차트 추론 능력에 적용됩니다.
-- 🏛 기반 연구: [[papers/437_Interpreting_Multi-band_Galaxy_Observations_with_Large_Langu/review]] — 차트 추론을 위한 시각적 instruction-tuning 연구는 분광에너지분포 차트 해석에 필요한 시각적 추론 능력의 기초가 된다.
+- 🔄 다른 접근: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 차트 이해를 위한 다른 접근법으로, 대규모 명령어 튜닝 데이터셋 구축 방식의 차이점을 비교할 수 있습니다.
+- 🏛 기반 연구: [[papers/369_Gemini_a_family_of_highly_capable_multimodal_models/review]] — 멀티모달 모델의 기반 기술을 제공하여 차트 추론 능력 개발의 이론적 토대가 됩니다.
+- 🔗 후속 연구: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — 차트 코딩 생성까지 확장한 멀티모달 차트 이해 모델로, 차트 추론을 넘어선 활용 가능성을 보여줍니다.
+- 🔄 다른 접근: [[papers/727_Scimage_How_good_are_multimodal_large_language_models_at_sci/review]] — 과학 이미지 생성과 차트 추론이 서로 다른 시각적 과학 콘텐츠 처리 접근법을 제시한다
+- 🏛 기반 연구: [[papers/200_Chartist_Task-driven_Eye_Movement_Control_for_Chart_Reading/review]] — 차트 추론을 위한 시각적 명령어 튜닝이 작업 기반 안구 움직임 제어 시스템의 시각적 이해 능력 향상에 기반을 제공한다.
+- 🧪 응용 사례: [[papers/869_Visual_thoughts_A_unified_perspective_of_understanding_multi/review]] — 차트 추론을 위한 시각적 명령 튜닝 연구가 LVLM의 시각적 사고 메커니즘을 차트 이해에 실제 적용한 사례다
+- 🔄 다른 접근: [[papers/627_Position_Multimodal_large_language_models_can_significantly/review]] — 차트 추론이라는 특정 영역과 전반적인 과학적 추론이라는 서로 다른 멀티모달 AI 응용 범위를 비교할 수 있다.
+- 🧪 응용 사례: [[papers/369_Gemini_a_family_of_highly_capable_multimodal_models/review]] — 차트 이해라는 구체적 작업에 멀티모달 기술을 적용한 사례로, Gemini의 시각-언어 처리 능력 활용법을 보여줍니다.
+- 🔄 다른 접근: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 차트 이해를 위한 다른 접근법으로, 대규모 명령어 튜닝과 시각적 명령어 튜닝의 방법론적 차이를 비교할 수 있습니다.
+- 🔗 후속 연구: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 차트 추론에 특화된 시각 지시 튜닝 모델로, SciFIBench가 평가하는 과학 그림 이해 능력을 차트 도메인으로 확장한 연구다
+- 🔗 후속 연구: [[papers/783_Synchart_Synthesizing_charts_from_language_models/review]] — 차트 추론을 위한 시각적 지시 튜닝 방법론을 LLM 기반 차트 합성으로 확장한다
+- 🔄 다른 접근: [[papers/802_The_mighty_torr_A_benchmark_for_table_reasoning_and_robustne/review]] — ChartGemma의 차트 추론과 유사한 구조화 데이터 이해이지만 표 형식의 견고성에 특화된 평가 방법론을 제시한다.

@@ -12,8 +12,10 @@ arxiv: ""
 score: 3.8
 essence: "대규모 언어 모델(LLM)과 계산 창의성(CC) 원칙을 결합하여 과학적 아이디어를 자동 생성하고 평가하는 통합 시스템을 제시한다. OpenReview의 600K 과학 리뷰로 훈련된 JUDGE 평가 모델을 통해 생성된 아이디어의 창의성을 자동 검토한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Research_Concept_Extraction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sanyal et al._2025_Spark A system for scientifically creative idea generation.pdf"
 ---
@@ -117,7 +119,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sanyal et al._2025_Spark A system for sc
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/216_Chimera_A_knowledge_base_of_idea_recombination_in_scientific/review]] — 과학적 아이디어 재조합에 대한 지식 기반을 제공하여 창의적 아이디어 생성의 토대를 마련한다
-- 🔄 다른 접근: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — LLM을 사용한 가설 생성이라는 유사한 목표를 다른 방법론으로 접근한다
-- 🔗 후속 연구: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — LLM의 과학적 창의성과 아이디어 품질을 평가하는 벤치마크를 제공한다
-- 🔄 다른 접근: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 과학적 아이디어 생성에서 체인 구조 vs 창의적 시스템의 다른 접근법을 비교할 수 있다
+- 🔄 다른 접근: [[papers/079_Ai_idea_bench_2025_Ai_research_idea_generation_benchmark/review]] — AI 연구 아이디어 생성을 과학적 창의성 vs AI 연구 특화로 다른 접근법을 사용한다
+- 🔗 후속 연구: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 아이디어 개발 체인을 과학적 창의성과 자동 평가가 통합된 시스템으로 확장한다
+- 🏛 기반 연구: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 다중 관점 협력을 통한 아이디어 생성이 과학적 창의성 시스템의 이론적 기반이 된다
+- 🧪 응용 사례: [[papers/565_Multi-novelty_Improve_the_diversity_and_novelty_of_contents/review]] — 다양성 개선 기술을 과학적 아이디어 생성이라는 창의적 작업에 적용한다

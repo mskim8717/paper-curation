@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.1
 essence: "본 논문은 대규모 언어모델(LLM) 기반 다중 에이전트 시스템이 과거 작업 경험을 축적하고 활용하는 \"경험적 협력학습(Experiential Co-Learning)\" 프레임워크를 제안한다. 이를 통해 소프트웨어 개발 작업에서 반복적인 오류를 감소시키고 에이전트 간의 협력 효율성을 현저히 향상시킨다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Code_Generation"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Peer_Review_Assessment"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qian et al._2023_Experiential co-learning of software-developing agents.pdf"
 ---
@@ -120,7 +120,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qian et al._2023_Experiential co-learnin
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/205_Chatdev_Communicative_agents_for_software_development/review]] — 다중 에이전트 소프트웨어 개발에서 커뮤니케이션 기반 협력 방식의 다른 접근법을 제시한다.
-- 🏛 기반 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — 차세대 LLM 애플리케이션을 위한 다중 에이전트 프레임워크의 이론적 토대를 제공한다.
-- 🧪 응용 사례: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 실제 GitHub 이슈 해결을 통해 경험적 협력학습의 효과를 검증할 수 있는 벤치마크를 제공한다.
-- 🔗 후속 연구: [[papers/205_Chatdev_Communicative_agents_for_software_development/review]] — ChatDev의 협력적 소프트웨어 개발은 경험적 공동학습 연구의 소프트웨어 에이전트 학습 기법을 확장하여 실제 개발 프로세스에서 에이전트 간 지식 공유와 역할 전문화를 실현합니다.
+- 🔄 다른 접근: [[papers/205_Chatdev_Communicative_agents_for_software_development/review]] — 둘 다 LLM 기반 다중 에이전트 소프트웨어 개발을 다루지만, 경험적 협력학습은 과거 경험 활용에, ChatDev는 의사소통에 집중한다
+- 🔗 후속 연구: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 실제 GitHub 이슈 해결을 위한 언어 모델 연구가 경험적 협력학습을 통한 소프트웨어 개발 에이전트로 구체화되었다
+- 🧪 응용 사례: [[papers/590_Openhands_An_open_platform_for_ai_software_developers_as_gen/review]] — AI 소프트웨어 개발자를 위한 오픈 플랫폼 연구가 경험적 협력학습 프레임워크를 실제 소프트웨어 개발에 적용한 사례다
+- 🧪 응용 사례: [[papers/205_Chatdev_Communicative_agents_for_software_development/review]] — 소프트웨어 개발 에이전트 협력 기술을 체험적 공동 학습이라는 실제 개발 환경에 적용한 사례를 제시한다

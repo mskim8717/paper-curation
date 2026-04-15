@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "상태공간모델(State-Space Model, SSM)을 전달함수(Transfer Function) 표현으로 재설계하여, 상태 크기의 증가에도 불구하고 메모리와 계산 비용이 증가하지 않는 상태-자유(state-free) 병렬 추론 알고리즘을 제안한다. FFT(Fast Fourier Transform)를 기반으로 한 이 접근법은 기존 S4/S5 대비 35% 더 빠른 학습 속도를 달성한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Neural_Differential_Equations"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Parnichkun et al._2024_State-Free Inference of State-Space Models The Transfer Function Approach.pdf"
 ---
@@ -120,9 +121,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Parnichkun et al._2024_State-Free Infere
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 과학 머신러닝의 파운데이션 모델 패러다임이 상태공간모델의 전달함수 접근법에 기반을 제공한다
-- 🔄 다른 접근: [[papers/454_Lagrangian_neural_networks/review]] — 상태공간 vs 라그랑주 기반 물리 시스템 모델링의 다른 수학적 접근법을 비교할 수 있다
-- 🏛 기반 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — 신경 상미분방정식이 상태공간모델의 전달함수 표현에 수학적 기반을 제공한다
-- 🔄 다른 접근: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — 신경 연산자와 상태공간모델의 물리 기반 추론에서 다른 접근법을 비교할 수 있다
-- 🧪 응용 사례: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 과학 머신러닝 파운데이션 모델 패러다임을 상태공간모델의 물리 시스템 학습에 적용할 수 있다
-- 🔄 다른 접근: [[papers/454_Lagrangian_neural_networks/review]] — 물리 시스템 모델링에서 라그랑주 vs 상태공간 기반의 다른 수학적 접근법을 비교할 수 있다
+- 🔗 후속 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — 상태-자유 추론이 Neural ODE의 연속시간 모델링에서 메모리 효율성을 획기적으로 개선한다.
+- 🔄 다른 접근: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — 전달함수 기반 상태-자유 추론과 Neural-POD의 무한차원 함수공간 접근법은 서로 다른 효율성 향상 방법이다.
+- 🏛 기반 연구: [[papers/355_From_Human_Memory_to_AI_Memory_A_Survey_on_Memory_Mechanisms/review]] — 인간 기억에서 AI 기억으로의 메커니즘 조사가 상태-자유 추론의 메모리 관리 방법론에 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — 상태-자유 추론 방식이 Neural ODE의 연속시간 모델링을 더 효율적인 형태로 발전시킨다.
+- 🔄 다른 접근: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — Neural-POD의 무한차원 직교 기저와 상태-자유 추론의 전달함수 접근법은 서로 다른 차원축소 효율화 방법이다.

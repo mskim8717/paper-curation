@@ -12,8 +12,8 @@ arxiv: ""
 score: 3.0
 essence: "Elicit이라는 AI 도구를 이용한 체계적 문헌고찰(systematic review) 과정이 기존의 전통적 선별 방법과 비교하여 부가가치를 제공하는지 검증한 연구이다. 재현성, 신뢰성, 정확성 세 가지 기준으로 Elicit의 성능을 평가하였다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Peer_Review"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bernard et al._2025_Using artificial intelligence for systematic review the example of elicit.pdf"
 ---
@@ -85,6 +85,8 @@ Elicit이라는 AI 도구를 이용한 체계적 문헌고찰(systematic review)
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/042_Academicbrowse_Benchmarking_academic_browse_ability_of_llms/review]] — 학술 검색 능력 벤치마킹이 AI 도구 기반 체계적 문헌고찰의 검색 단계 성능 평가에 활용된다.
-- 🏛 기반 연구: [[papers/510_Llms_for_literature_review_Are_we_there_yet_arXiv_preprint_a/review]] — 문헌고찰을 위한 LLM 연구 현황이 AI 기반 체계적 리뷰 도구 활용의 이론적 배경을 제공한다.
-- 🧪 응용 사례: [[papers/154_Best_Practices_for_Using_AI_When_Writing_Scientific_Manuscri/review]] — 과학 논문 작성에서의 AI 활용 모범 사례가 체계적 문헌 고찰에서 AI 도구의 효과적이고 윤리적 활용에 직접 적용된다
+- 🔄 다른 접근: [[papers/904_How_AI-powered_science_search_engines_can_speed_up_your_rese/review]] — AI 검색 엔진과 Elicit 도구가 각각 문헌 검색 가속화의 상보적 접근법이다
+- 🔗 후속 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — OpenScholar의 과학문헌 합성 기능을 체계적 문헌고찰로 특화한 구체적 적용이다
+- 🏛 기반 연구: [[papers/510_Llms_for_literature_review_Are_we_there_yet_arXiv_preprint_a/review]] — LLM 기반 문헌고찰 현황 조사가 Elicit과 같은 도구 평가의 기준점을 제공한다
+- 🧪 응용 사례: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 자동 문헌고찰 생성 데이터셋이 Elicit과 같은 도구의 성능 검증 기반이다
+- 🔗 후속 연구: [[papers/904_How_AI-powered_science_search_engines_can_speed_up_your_rese/review]] — AI 검색에서 체계적 문헌고찰 도구로 발전하는 구체적 활용 방향을 제시한다

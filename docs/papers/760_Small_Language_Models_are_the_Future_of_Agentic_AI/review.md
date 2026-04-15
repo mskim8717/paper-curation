@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "현재 에이전트 AI 시스템은 대규모 언어모델(LLM)에 의존하고 있으나, 본 논문은 소규모 언어모델(SLM)이 에이전트의 반복적이고 전문화된 작업에 더 적합하며 경제적이므로 에이전트 AI의 미래를 주도할 것이라는 입장을 제시한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Multi-Agent_System_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Belcak et al._2025_Small Language Models are the Future of Agentic AI.pdf"
 ---
@@ -126,7 +127,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Belcak et al._2025_Small Language Models
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/388_GPT-4o_System_Card/review]] — GPT-4o의 대규모 모델 능력과 달리 소규모 언어모델이 에이전트 AI의 미래라는 관점은 모델 크기에 대한 상반된 시각을 제시한다.
-- 🏛 기반 연구: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — 에이전트 시스템 확장의 과학은 소규모 언어모델이 에이전트 AI에서 어떻게 효과적으로 확장될 수 있는지에 대한 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — LLM 기반 다중 에이전트의 진전 조사는 소규모 언어모델의 에이전트 적합성을 기존 대규모 모델 기반 에이전트 연구와 비교 분석한다.
-- ⚖️ 반론/비판: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — 소형 언어모델이 에이전틱 AI의 미래라는 대안적 관점을 제시한다.
+- 🏛 기반 연구: [[papers/499_LLM_With_Tools_A_Survey/review]] — LLM과 도구 통합에 대한 종합적 조사가 소규모 언어모델 기반 에이전트 설계의 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/136_Automl-gpt_Automatic_machine_learning_with_gpt/review]] — AutoML-GPT의 자동화된 머신러닝 파이프라인이 소규모 언어모델의 효율성을 입증하는 실용적 사례가 된다.
+- ⚖️ 반론/비판: [[papers/617_Phi-4_technical_report/review]] — Phi-4 기술 보고서가 소규모 모델의 성능 한계를 보여주어 SLM 에이전트 주장과 대조적 관점을 제공한다.
+- ⚖️ 반론/비판: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — 대규모 LLM 에이전트 대신 소형 언어모델의 효율성을 강조하는 대안적 접근법을 제시한다
+- 🔗 후속 연구: [[papers/147_Aviary_training_language_agents_on_challenging_scientific_ta/review]] — 소형 언어모델 기반 에이전틱 AI의 미래 전망이 Aviary의 언어 에이전트 훈련 방법론의 발전 방향을 제시한다
+- ⚖️ 반론/비판: [[papers/136_Automl-gpt_Automatic_machine_learning_with_gpt/review]] — AutoML-GPT의 대규모 언어모델 활용이 소규모 언어모델 에이전트 우위 주장과 대조적 관점을 제공한다.
+- 🏛 기반 연구: [[papers/499_LLM_With_Tools_A_Survey/review]] — LLM과 도구 통합에 대한 종합적 조사가 소규모 언어모델 에이전트의 도구 활용 능력 설계의 기반을 제공한다.
+- ⚖️ 반론/비판: [[papers/793_The_Adoption_and_Usage_of_AI_Agents_Early_Evidence_from_Perp/review]] — 대규모 에이전트와 소형 언어모델 기반 에이전트의 실제 활용 가능성을 비교 검토할 수 있다.

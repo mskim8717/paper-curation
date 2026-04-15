@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.5
 essence: "단백질 공학을 완전히 자동화하는 SAMPLE(Self-driving Autonomous Machines for Protein Landscape Exploration) 플랫폼을 제시하며, 지능형 에이전트와 로봇 실험 시스템이 협력하여 글리코사이드 하이드롤라제(GH1)의 열 안정성을 12°C 이상 향상시킨 신약 개발 패러다임을 제안한다. ---"
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Laboratory_Biology"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Autonomous_Biological_Discovery_AI"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rapp et al._2023_Self-driving laboratories to autonomously navigate the protein fitness landscape.pdf"
 ---
@@ -137,13 +138,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rapp et al._2023_Self-driving laboratori
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/141_Autonomous_robotic_system_with_optical_coherence_tomography/review]] — 생명과학과 의료 분야에서 각각 단백질 공학과 수술 로봇이라는 서로 다른 자율 실험실 구현을 보여준다.
-- 🔗 후속 연구: [[papers/099_An_autonomous_laboratory_for_the_accelerated_synthesis_of_in/review]] — 단백질 특화 자동화를 더 넓은 화학 합성 자동화로 확장하여 포괄적인 자율 실험실 구축 방향을 제시한다.
-- 🏛 기반 연구: [[papers/764_Sparks_Multi-Agent_Artificial_Intelligence_Model_Discovers_P/review]] — 자동화된 실험이 AI 기반 과학 발견의 핵심 요소임을 실증적으로 뒷받침한다.
-- 🔗 후속 연구: [[papers/614_Perspective_on_utilizing_foundation_models_for_laboratory_au/review]] — 단백질 공간 자율 탐색을 위한 자율주행 실험실이 재료 과학 자동화를 생물학적 시스템으로 확장합니다.
-- 🔄 다른 접근: [[papers/141_Autonomous_robotic_system_with_optical_coherence_tomography/review]] — 의료 수술과 생화학 실험이라는 서로 다른 영역에서 자율 로봇 시스템의 구현 방식을 비교한다.
-- 🔗 후속 연구: [[papers/381_Genesis_Towards_the_Automation_of_Systems_Biology_Research/review]] — 자율적 단백질 공간 탐색을 위한 실험실 자동화가 Genesis의 대규모 병렬 가설 검증 시스템을 단백질 특화 영역으로 확장한 적용이다.
-- 🔗 후속 연구: [[papers/118_Autobio_A_simulation_and_benchmark_for_robotic_automation_in/review]] — AutoBio의 생물 실험실 로봇 자동화 벤치마크는 단백질 공학을 위한 자율 실험실 연구의 로봇 자동화 개념을 VLA 모델 평가로 확장하여 더 포괄적인 과학 자동화 평가를 제공합니다.
-- 🔗 후속 연구: [[papers/310_Embodied_Science_Closing_the_Discovery_Loop_with_Agentic_Emb/review]] — 단백질 공간 탐색을 위한 자율 연구소는 Embodied Science의 물리적 세계 상호작용 개념을 생물학적 발견으로 확장한다.
-- 🔄 다른 접근: [[papers/851_Uncovering_bottlenecks_and_optimizing_scientific_lab_workflo/review]] — 제약 실험실 최적화와 단백질 공간 자율 탐색에서 실험실 자동화의 다른 응용을 보여준다.
-- 🔗 후속 연구: [[papers/1126_Autonomous_platform_for_solution_processing_of_electronic_po/review]] — 단백질 공간을 자율적으로 탐색하는 실험실에서 고분자 최적화로의 확장
+- 🔄 다른 접근: [[papers/141_Autonomous_robotic_system_with_optical_coherence_tomography/review]] — 혈관 문합을 위한 자율 로봇 시스템으로, 단백질 공학과 다른 생물의학 분야에서 로봇 자동화의 구현 사례
+- 🧪 응용 사례: [[papers/140_Autonomous_reinforcement_learning_agent_for_chemical_vapor_d/review]] — 화학 기상 증착을 위한 자율 강화학습 에이전트로, 자율 실험실 개념을 화학 합성 분야에 적용한 사례
+- 🏛 기반 연구: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — 화학 및 재료 과학을 위한 자율 실험실에 대한 포괄적 조사로, 단백질 공학 자동화의 이론적 배경을 제공
+- 🧪 응용 사례: [[papers/1126_Autonomous_platform_for_solution_processing_of_electronic_po/review]] — 전자 재료의 용액 공정을 위한 자율 플랫폼으로, 자율 실험실 개념의 다른 재료 과학 분야 적용
+- 🔗 후속 연구: [[papers/099_An_autonomous_laboratory_for_the_accelerated_synthesis_of_in/review]] — A-Lab의 고체 무기재료 자동화를 단백질 연구 영역으로 확장한 자율 실험실 개념을 보여준다.
+- 🏛 기반 연구: [[papers/043_Accelerating_Drug_Discovery_Through_Agentic_AI_A_Multi-Agent/review]] — 자율적 실험실 운영의 핵심인 단백질 공간 탐색 방법론을 기반으로 신약 개발 워크플로우를 구축한다
+- 🔄 다른 접근: [[papers/141_Autonomous_robotic_system_with_optical_coherence_tomography/review]] — 단백질 공학을 위한 자율 실험실로, 혈관 수술과 다른 생물의학 분야에서 로봇 자동화의 구현 사례
+- 🏛 기반 연구: [[papers/851_Uncovering_bottlenecks_and_optimizing_scientific_lab_workflo/review]] — 자율 단백질 항법 실험실의 이론적 개념을 실제 제약·바이오 실험실의 운영 최적화에 적용한 구체적 구현
+- 🧪 응용 사례: [[papers/868_Virtual_lab_powered_by_AI_scientists_super-charges_biomedica/review]] — 단백질 접힘 탐색을 위한 자율 실험실로서 AI 과학자 협력의 다른 생물의학 응용을 보여준다

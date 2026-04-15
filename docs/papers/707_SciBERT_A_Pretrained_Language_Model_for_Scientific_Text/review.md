@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.5
 essence: "과학 논문의 NLP 작업을 위해 BERT를 과학 텍스트 코퍼스에서 재학습시킨 도메인 특화 언어 모델 SciBERT를 제안하며, 여러 과학 NLP 태스크에서 기존 BERT를 능가하는 성능을 달성했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Language_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Beltagy et al._2019_SciBERT A Pretrained Language Model for Scientific Text.pdf"
 ---
@@ -86,15 +86,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Beltagy et al._2019_SciBERT A Pretrained
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/152_BERT_Pre-training_of_Deep_Bidirectional_Transformers_for_Lan/review]] — BERT의 일반 도메인 사전학습을 과학 텍스트에 특화시켜 과학 NLP 성능을 향상
-- 🔄 다른 접근: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — SciBERT와 Galactica 모두 과학 텍스트 특화 모델이지만 규모와 접근법이 다름
-- 🏛 기반 연구: [[papers/161_BioBERT_a_pre-trained_biomedical_language_representation_mod/review]] — BioBERT의 생의학 도메인 특화 아이디어를 더 넓은 과학 분야로 확장한 연구
-- 🏛 기반 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — SciBERT가 보여준 과학 도메인 적응의 성공이 과학 특화 LLM 발전의 기초가 됨
-- 🏛 기반 연구: [[papers/161_BioBERT_a_pre-trained_biomedical_language_representation_mod/review]] — 생의학 도메인 특화 BERT 모델의 선구적 연구로서 과학 텍스트 처리를 위한 언어모델 개발의 중요한 출발점이다
-- 🏛 기반 연구: [[papers/167_Biomedlm_A_27_b_parameter_language_model_trained_on_biomedic/review]] — 과학 텍스트용 사전훈련 언어모델 SciBERT가 생명의학 모델의 기반 제공
-- 🏛 기반 연구: [[papers/734_ScispaCy_Fast_and_Robust_Models_for_Biomedical_Natural_Langu/review]] — 생의학 텍스트를 위한 사전훈련 언어 모델인 SciBERT가 scispaCy의 도메인 특화 모델 개발에 기술적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/761_spaCy_Industrial-strength_Natural_Language_Processing_in_Pyt/review]] — SciBERT의 과학 텍스트 사전훈련 모델을 실용적 생의학 NLP 파이프라인으로 확장한 응용 사례이다.
-- 🔗 후속 연구: [[papers/152_BERT_Pre-training_of_Deep_Bidirectional_Transformers_for_Lan/review]] — BERT의 과학 도메인 특화 버전으로 과학 텍스트에서 더 나은 성능을 달성함
-- 🔗 후속 연구: [[papers/340_Fine-tuning_large_language_models_for_domain_adaptation_expl/review]] — SciBERT의 단일 도메인 특화를 여러 모델 병합으로 확장하여 창발적 기능 생성
-- 🏛 기반 연구: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — 과학 텍스트 사전훈련 모델 SciBERT의 접근을 대규모 과학 지식 모델로 확장한 기반
-- 🏛 기반 연구: [[papers/723_Sciglm_Training_scientific_language_models_with_self-reflect/review]] — 과학 텍스트를 위한 사전훈련된 언어 모델로서 SciGLM의 과학 도메인 특화 학습에 기반을 제공한다.
+- 🔗 후속 연구: [[papers/152_BERT_Pre-training_of_Deep_Bidirectional_Transformers_for_Lan/review]] — BERT의 과학 도메인 특화 버전으로, 일반 언어모델을 과학 텍스트에 맞춰 개선한 구체적 적용 사례입니다.
+- 🧪 응용 사례: [[papers/287_Dont_Stop_Pretraining_Adapt_Language_Models_to_Domains_and_T/review]] — 도메인 적응 연구의 과학 분야 구현으로, 언어모델의 도메인별 사전학습 효과를 실증적으로 보여줍니다.
+- 🏛 기반 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 과학 분야 대규모 언어모델에 대한 포괄적 조사로, SciBERT와 같은 과학 특화 모델의 위치와 발전 방향을 제시합니다.
+- 🧪 응용 사례: [[papers/287_Dont_Stop_Pretraining_Adapt_Language_Models_to_Domains_and_T/review]] — 과학 텍스트 도메인에 특화된 BERT 모델로, 도메인 적응 원리의 구체적인 과학 분야 적용 사례입니다.
+- 🔗 후속 연구: [[papers/152_BERT_Pre-training_of_Deep_Bidirectional_Transformers_for_Lan/review]] — BERT의 과학 도메인 특화 버전으로, 일반 언어모델을 과학 텍스트에 적응시키는 구체적 사례를 보여줍니다.
+- 🔗 후속 연구: [[papers/723_Sciglm_Training_scientific_language_models_with_self-reflect/review]] — 과학 텍스트 사전학습 모델을 자기 성찰적 지시 학습으로 확장하여 추론 능력을 크게 향상시킨다.

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 OpenReview에서 수집한 24개 학술회의와 21개 워크숍의 19,926개 논문, 70,668개 리뷰 의견, 53,818개 재반박(rebuttal)으로 구성된 Re2 데이터셋을 제시하며, 일관성이 보장된 피어리뷰 데이터를 통해 대언어모델(LLM)의 리뷰 및 재반박 능력을 향상시키고자 한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Peer_Review"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Re 2 A consistency-ensured dataset for full-stage peer review and multi-turn rebuttal discussions.pdf"
 ---
@@ -107,9 +107,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Re 2 A consistency-ens
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — AI 생성 리뷰 평가 프레임워크가 피어리뷰 데이터셋 구축과 LLM 리뷰 능력 평가의 기준을 제공합니다.
-- 🔗 후속 연구: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — 인간다운 논문 리뷰 개선 방법이 Re2 데이터셋을 활용한 리뷰 품질 향상으로 확장될 수 있습니다.
-- 🔄 다른 접근: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 피어리뷰 과정에서 일관성 보장 데이터셋과 다중 턴 대화 기반 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/803_The_open_review-based_orb_dataset_Towards_automatic_assessme/review]] — 피어 리뷰 전 과정에 대한 일관성 보장 데이터셋이 ORB의 적용 범위를 확장한다.
-- 🔗 후속 연구: [[papers/145_Autoreproduce_Automatic_ai_experiment_reproduction_with_pape/review]] — AUTOREPRODUCE의 실험 자동 재현은 Re²의 전체 과정 피어 리뷰 데이터셋을 활용하여 논문의 일관성을 보장하는 재현 가능한 연구 환경을 구축합니다.
-- 🏛 기반 연구: [[papers/698_Scaling_Reproducibility_An_AI-Assisted_Workflow_for_Large-Sc/review]] — 전체 단계 동료 심사를 위한 일관성 보장 데이터셋은 대규모 재현성 연구에서 AI 워크플로우 검증의 데이터 기반을 제공한다.
+- 🏛 기반 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 피어리뷰를 다중 턴 장기 맥락 대화로 보는 관점과 일관성 보장 피어리뷰 데이터셋은 상호 보완적인 리뷰 시스템 연구이다.
+- 🔗 후속 연구: [[papers/882_When_large_language_models_meet_citation_A_survey/review]] — LLM과 인용 분석 연구와 피어리뷰 전 과정 데이터셋은 모두 학술 출판 과정의 AI 지원을 위한 기초 연구이다.
+- 🧪 응용 사례: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — 피어리뷰를 위한 자연어처리 일반론과 구체적인 피어리뷰 데이터셋 구축은 이론과 실제 데이터의 관계를 보여준다.
+- 🏛 기반 연구: [[papers/591_Openreview_should_be_protected_and_leveraged_as_a_community/review]] — 피어 리뷰 데이터셋의 일관성과 품질 보장을 위한 기본 구조를 제공한다
+- 🔄 다른 접근: [[papers/892_A_year_in_review_open_access_at_OUP/review]] — 피어리뷰 전체 단계에 대한 일관성 보장 데이터셋을 통해 오픈액세스 품질 평가의 다른 관점을 제시한다.
+- 🧪 응용 사례: [[papers/882_When_large_language_models_meet_citation_A_survey/review]] — LLM과 인용 분석 연구의 일반적 원리가 피어리뷰 과정 개선이라는 구체적인 학술 출판 문제에 적용될 수 있다.
+- 🏛 기반 연구: [[papers/145_Autoreproduce_Automatic_ai_experiment_reproduction_with_pape/review]] — 일관성을 보장하는 동료평가 데이터셋을 AI 실험 재현 시스템의 검증 기반으로 활용한다
+- 🏛 기반 연구: [[papers/698_Scaling_Reproducibility_An_AI-Assisted_Workflow_for_Large-Sc/review]] — 일관성이 보장된 동료심사 데이터셋이 재현성 워크플로우 개발의 기반이 된다.

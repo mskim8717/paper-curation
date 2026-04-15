@@ -1,3 +1,19 @@
+---
+title: "010_A_hierarchical_framework_for_measuring_scientific_paper_inno"
+authors:
+  - "Bowen Zhi"
+date: "2025.11"
+doi: ""
+arxiv: ""
+score: 4.0
+essence: "초과 사지(Supernumerary Limbs)가 장착된 인형형 로봇의 안정적인 보행을 위해 학습 기반 저수준 보행 제어와 모델 기반 고수준 동적 평형 제어를 결합한 계층적 제어 아키텍처를 제시한다."
+tags:
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
+  - "topic/ai4s"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhi_2025_A Hierarchical Framework for Humanoid Locomotion with Supernumerary Limbs.pdf"
+---
+
 # A Hierarchical Framework for Humanoid Locomotion with Supernumerary Limbs
 
 > **저자**: Bowen Zhi | **날짜**: 2025-11-25 | **URL**: [https://arxiv.org/abs/2512.00077](https://arxiv.org/abs/2512.00077)
@@ -65,3 +81,10 @@
 - Overall: 4/5
 
 **총평**: 본 논문은 초과 사지가 장착된 인형형 로봇의 보행 안정성 문제를 해결하기 위해 계층적 제어 구조를 통해 학습 기반과 모델 기반 제어를 효과적으로 결합한 독창적인 접근법을 제시하며, 47% DTW 거리 감소 등 정량적 성과를 입증했다. 다만 실제 하드웨어 검증과 복잡한 환경에서의 평가가 필요하다.
+
+## Related Papers
+
+- 🏛 기반 연구: [[papers/148_Axolotl_fairness_through_assisted_self-debiasing_of_large_la/review]] — 대규모 언어모델의 편향성 제거 방법론을 로봇 제어 시스템에 적용하여 더욱 공정하고 안정적인 보행 제어를 구현할 수 있다.
+- 🔗 후속 연구: [[papers/395_Guided_by_guardrails_Control_barrier_functions_as_safety_ins/review]] — 제어 장벽 함수를 초과 사지 로봇의 계층적 제어에 통합하여 안전성을 보장하면서도 동적 평형을 유지할 수 있는 확장된 방법론을 제시한다.
+- 🔄 다른 접근: [[papers/863_Value_iteration_for_learning_concurrently_executable_robotic/review]] — 로봇 제어의 동시 실행이라는 공통 관심사를 가지지만 인형형 보행 vs 일반적 로봇 작업이라는 다른 응용 영역을 다룬다.
+- 🏛 기반 연구: [[papers/863_Value_iteration_for_learning_concurrently_executable_robotic/review]] — 계층적 휴머노이드 로컴션 프레임워크가 중복도를 가진 로봇 시스템의 다중 태스크 제어 이론적 기반을 제공한다.

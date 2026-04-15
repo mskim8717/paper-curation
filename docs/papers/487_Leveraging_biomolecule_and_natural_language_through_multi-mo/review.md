@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "생물분자(단백질, 분자)의 구조 정보와 자연언어 텍스트 데이터를 통합하는 다중모달 학습 방법론을 종합적으로 조사한 논문으로, AI-화학-생물학의 교차 분야에서 생물분자 표현의 새로운 패러다임을 제시한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Domain-specific_Scientific_Reasoning"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dou et al._2024_Leveraging biomolecule and natural language through multi-modal learning A survey.pdf"
 ---
@@ -133,10 +134,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dou et al._2024_Leveraging biomolecule a
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/1060_Accurate_prediction_of_protein_structures_and_interactions_u/review]] — 단백질 구조 예측 연구가 생물분자 다중모달 학습의 핵심 기반 기술
-- 🔄 다른 접근: [[papers/439_Invariant_Tokenization_of_Crystalline_Materials_for_Language/review]] — 생물분자 vs 결정 구조로 대상은 다르지만 동일한 다중모달 토큰화 접근법
-- 🔗 후속 연구: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — 재료과학 파운데이션 모델을 생물분자 영역으로 확장한 연구
-- 🔄 다른 접근: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — 분자 문법 기반 파운데이션 모델과 생물분자 다중모달 학습의 대조적 방법론
-- 🔄 다른 접근: [[papers/439_Invariant_Tokenization_of_Crystalline_Materials_for_Language/review]] — 결정 구조 vs 생물분자로 대상은 다르지만 동일한 다중모달 토큰화 접근법
-- 🔗 후속 연구: [[papers/1060_Accurate_prediction_of_protein_structures_and_interactions_u/review]] — 단백질 구조 예측을 생물분자 다중모달 학습으로 확장한 포괄적 연구
-- 🏛 기반 연구: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — 생체분자와 자연어의 멀티모달 결합 방법론이 분자 이미지와 텍스트 표현 통합의 핵심 기반이 됨
+- 🏛 기반 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료과학을 위한 AI 서베이가 생분자 다중모달 학습의 기반을 제공한다
+- 🔄 다른 접근: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — 생분자와 자연언어 통합 대신 다중모달 분자 문법 기초 모델을 제시한다
+- 🔗 후속 연구: [[papers/459_Language_Models_for_Controllable_DNA_Sequence_Design/review]] — 제어 가능한 DNA 서열 설계를 생분자 다중모달 학습으로 확장한다

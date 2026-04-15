@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 텍스트와 이미지를 모두 포함하는 클레임(주장)을 검증하는 DEFAME이라는 멀티모달 팩트체킹 시스템을 제안한다. 6단계 동적 파이프라인을 통해 외부 도구와 멀티모달 LLM을 활용하여 증거를 검색하고 평가하며, 설명 가능한 검증 보고서를 생성한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Automated_Fact_Checking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tonglet et al._2024_Defame Dynamic evidencebased fact-checking with multimodal experts.pdf"
 ---
@@ -127,11 +129,19 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tonglet et al._2024_Defame Dynamic evide
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — 기존 팩트체킹의 반박 증거 부족 한계를 해결하기 위해 멀티모달 증거를 동적으로 수집하는 발전된 접근법입니다.
-- 🔗 후속 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 텍스트 기반 지식 그래프 추론에서 텍스트와 이미지를 모두 포함하는 멀티모달 팩트체킹으로 확장한 연구입니다.
-- 🔄 다른 접근: [[papers/832_Towards_llm-based_fact_verification_on_news_claims_with_a_hi/review]] — 동적 증거 수집 기반 접근법과 계층적 증거 구조화 접근법이라는 서로 다른 팩트체킹 시스템 설계 철학을 제시합니다.
-- 🔄 다른 접근: [[papers/117_Augmenting_the_veracity_and_explanations_of_complex_fact_che/review]] — 다중 모달 증거 기반 사실 검증과 동적 증거 증강 기반 사실 검증은 모두 복합적 증거를 활용하는 서로 다른 접근법입니다
-- 🔗 후속 연구: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — 단순한 반박 증거 부족 문제를 멀티모달 증거 기반 팩트체킹으로 확장하여 더 현실적인 사실확인 시스템을 구축합니다.
-- 🏛 기반 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프 기반 사실 검증의 구조적 추론 방법이 멀티모달 증거 기반 팩트체킹 시스템의 추론 모듈 설계 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/183_Can_large_language_models_detect_misinformation_in_scientifi/review]] — DEFAME의 멀티모달 동적 증거 기반 접근법이 과학 뉴스 오보 탐지의 텍스트 기반 타당성 평가와 상호 보완적인 검증 방법을 제시함
-- 🔗 후속 연구: [[papers/1127_MMSD20_Towards_a_Reliable_Multi-modal_Sarcasm_Detection_Syst/review]] — 다중 모달 사실 검증을 위한 동적 증거 기반 프레임워크는 멀티모달 풍자 탐지의 신뢰성을 사실 검증 영역으로 확장한 응용입니다
+- 🔄 다른 접근: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — 멀티모달 팩트체킹의 발전된 접근법으로, 텍스트 중심의 NLP 사실확인 한계를 이미지까지 포함하여 해결합니다.
+- 🔗 후속 연구: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 프로그램 기반 추론을 활용한 복합 클레임 팩트체킹으로, DEFAME의 동적 파이프라인과 유사한 구조적 검증 접근법을 제시합니다.
+- 🧪 응용 사례: [[papers/610_Pelican_Correcting_Hallucination_in_Vision-LLMs_via_Claim_De/review]] — 비전-언어 모델의 환각 교정 시스템으로, 멀티모달 팩트체킹의 핵심 기술인 클레임 검증을 실제 모델 신뢰성 향상에 적용합니다.
+- 🔄 다른 접근: [[papers/117_Augmenting_the_veracity_and_explanations_of_complex_fact_che/review]] — 복합적 사실 검증에서 동적 증거 증강 방식과 다중모달 증거 기반 접근법은 서로 다른 관점에서 검증 신뢰성을 향상시킨다.
+- 🔗 후속 연구: [[papers/710_Sciclaimhunt_A_large_dataset_for_evidence-based_scientific_c/review]] — 다중모달 증거 기반 사실 확인 연구가 SciClaimHunt의 과학 논문 기반 주장 검증 데이터셋으로 구체화되었다
+- 🧪 응용 사례: [[papers/852_Understanding_fine-grained_distortions_in_reports_of_scienti/review]] — 멀티모달 팩트체킹 기술을 과학 보도의 시각적 왜곡 감지에 적용할 수 있다
+- 🔄 다른 접근: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — 멀티모달 팩트체킹 시스템으로, 텍스트만의 사실확인 한계를 이미지까지 포함한 종합적 접근으로 해결합니다.
+- 🔗 후속 연구: [[papers/183_Can_large_language_models_detect_misinformation_in_scientifi/review]] — 과학 뉴스의 오보 탐지가 다중모달 사실 확인으로 확장되어 더 포괄적인 검증이 가능하다.
+- 🔗 후속 연구: [[papers/192_Cchall_A_novel_benchmark_for_joint_cross-lingual_and_cross-m/review]] — 동적 증거 기반 다중모달 사실 확인 시스템으로, CCHall에서 발견한 교차-언어/모달 환각 문제를 해결하는 구체적 솔루션을 제시한다
+- 🧪 응용 사례: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 동적 증거 기반 다중모달 사실 확인 시스템으로, 프로그램 가이드 추론 방법론을 실제 다중모달 환경에 적용한 구체적 사례다
+- 🧪 응용 사례: [[papers/394_Grounding_fallacies_misrepresenting_scientific_publications/review]] — 논리적 오류 탐지 방법을 다중 모달 팩트 체킹 시스템에 적용할 수 있는 실용적 연결점을 제공한다.
+- 🏛 기반 연구: [[papers/610_Pelican_Correcting_Hallucination_in_Vision-LLMs_via_Claim_De/review]] — 멀티모달 증거 기반 팩트 체킹의 기초적인 방법론을 시각 언어 모델 환각 보정에 적용한다.
+- 🏛 기반 연구: [[papers/657_Reading_and_Reasoning_over_Chart_Images_for_Evidence-based_A/review]] — 멀티모달 증거를 활용한 동적 팩트 체킹의 기초적인 방법론을 차트 영역에 적용한다.
+- 🔗 후속 연구: [[papers/685_Robust_claim_verification_through_fact_detection/review]] — 멀티모달 팩트체킹을 텍스트 기반 사실 검출로 보완하여 확장한다
+- 🧪 응용 사례: [[papers/057_aedfact_Scientific_fact-checking_made_easier_via_semi-automa/review]] — 멀티모달 팩트체킹을 위한 구체적인 시스템 구현 사례를 보여준다
+- 🏛 기반 연구: [[papers/221_Claimver_Explainable_claim-level_verification_and_evidence_a/review]] — 멀티모달 증거 기반 팩트체킹을 위한 기본적인 증거 귀속 방법론을 제공한다

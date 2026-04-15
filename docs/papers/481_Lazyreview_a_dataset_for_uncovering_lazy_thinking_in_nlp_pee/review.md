@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.4
 essence: "NLP 동료 검토(peer review) 과정에서 발견되는 \"게으른 사고(lazy thinking)\" 를 자동으로 탐지하기 위한 첫 번째 주석 데이터셋 LAZYREVIEW를 제시한다. 500개의 전문가 주석 검토 세그먼트와 1,276개의 자동 주석 세그먼트로 구성되며, 지시 기반 미세 조정(instruction-based fine-tuning)을 통해 대규모 언어 모델(LLM) 성능을 10-20 포인트 향상시킬 수 있음을 보여준다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Expert_Review_Annotation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Knowledge_Graph_Encoding"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Purkayastha et al._2025_Lazyreview a dataset for uncovering lazy thinking in nlp peer reviews.pdf"
 ---
@@ -102,8 +104,8 @@ NLP 동료 검토(peer review) 과정에서 발견되는 "게으른 사고(lazy 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — 동료 검토의 게으른 사고 탐지 연구가 LLM 기반 리뷰 생성 최적화 연구의 품질 평가 기준을 제공합니다.
-- ⚖️ 반론/비판: [[papers/206_ChatGPT_outperforms_crowd_workers_for_text-annotation_tasks/review]] — ChatGPT의 텍스트 주석 우수성과 대조적으로 동료 검토에서 나타나는 LLM의 한계와 게으른 사고 문제를 지적합니다.
-- 🏛 기반 연구: [[papers/883_When_reviewers_lock_horn_Finding_disagreement_in_scientific/review]] — 과학적 검토에서의 의견 불일치 연구가 게으른 사고 탐지 연구의 이론적 배경을 제공합니다.
-- 🔄 다른 접근: [[papers/206_ChatGPT_outperforms_crowd_workers_for_text-annotation_tasks/review]] — 텍스트 주석 작업에서 ChatGPT의 우수성을 보인 반면, 동료 검토에서 LLM의 한계를 다루는 상반된 관점을 제시합니다.
-- 🏛 기반 연구: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — 동료 검토의 게으른 사고 문제를 해결하기 위한 측면 프롬프트 기반 리뷰 생성 최적화 접근법을 제시합니다.
+- 🔗 후속 연구: [[papers/070_Agentreview_Exploring_peer_review_dynamics_with_llm_agents/review]] — LLM 에이전트를 활용한 동료 검토 동역학 탐구로, 게으른 사고 탐지를 동료 검토 과정 전반의 시뮬레이션으로 확장
+- 🔄 다른 접근: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 다중 턴 장문 맥락 대화로서의 동료 검토 연구로, 게으른 사고 탐지와 다른 관점에서 검토 과정을 분석
+- 🧪 응용 사례: [[papers/609_Peerarg_Argumentative_peer_review_with_llms/review]] — LLM을 활용한 논증적 동료 검토 연구로, 게으른 사고 탐지 데이터셋의 실제 검토 개선 적용
+- 🔄 다른 접근: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — 프롬프트 생성을 통한 검토 생성 최적화 연구로, 게으른 사고와 반대로 고품질 검토 생성에 초점
+- 🏛 기반 연구: [[papers/070_Agentreview_Exploring_peer_review_dynamics_with_llm_agents/review]] — 동료 검토에서 게으른 사고 탐지 데이터셋으로, 에이전트 기반 검토 동역학 시뮬레이션의 실제 문제 사례를 제공

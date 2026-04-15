@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 생의학 분야 AI 에이전트의 문헌 이해 능력을 평가하기 위해 **BioKGBench 벤치마크**를 제안한다. 기존 LLM 기반 평가의 환각(hallucination) 문제를 극복하기 위해 구조화된 지식그래프와 비구조화된 학술논문을 모두 활용하는 혼합형 평가 프레임워크를 도입한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Realistic_Discovery_Benchmarks"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/ML_Research_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chang et al._2024_Biokgbench A knowledge graph checking benchmark of ai agent for biomedical science.pdf"
 ---
@@ -153,5 +155,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chang et al._2024_Biokgbench A knowledge
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — 유전자 분석에서 검증된 자기검증 방법론을 지식 그래프 검사로 확장하여 더 넓은 생명과학 응용을 가능하게 한다.
-- 🔗 후속 연구: [[papers/164_BioInformatics_Agent_BIA_Unleashing_the_Power_of_Large_Langu/review]] — BIA의 단일세포 RNA 시퀀싱 자동화는 BioKGBench의 생물학 지식그래프 검증 기능을 확장하여 실시간 데이터 분석과 결과 해석을 통합한 완전한 생물정보학 워크플로우를 제공합니다.
+- 🏛 기반 연구: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 생의학 데이터 과학 에이전트 벤치마크의 기반 위에서 지식그래프 검증이라는 구체적 평가 방법론을 제시한다.
+- 🔗 후속 연구: [[papers/711_Sciclaims_An_end-to-end_generative_system_for_biomedical_cla/review]] — 생의학 클레임의 엔드투엔드 생성 시스템을 지식그래프 기반 검증 벤치마크로 확장하여 클레임 평가 방법론을 제공한다.
+- 🔄 다른 접근: [[papers/448_Kgvalidator_A_framework_for_automatic_validation_of_knowledg/review]] — 지식그래프 검증의 일반적 프레임워크와 달리 생의학 특화 AI 에이전트 평가에 특화된 벤치마크를 제시한다.
+- 🏛 기반 연구: [[papers/166_Biomaze_Benchmarking_and_enhancing_large_language_models_for/review]] — 생물학 지식 그래프 체킹이 경로 추론 검증의 기반 방법론을 제공한다
+- 🔗 후속 연구: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 생의학 지식그래프 검증 벤치마크를 실제 가설 검증 워크플로우를 포함한 더 포괄적인 데이터 과학 에이전트 평가로 확장한다.
+- 🔗 후속 연구: [[papers/448_Kgvalidator_A_framework_for_automatic_validation_of_knowledg/review]] — BioKGBench의 지식 그래프 검증 벤치마크가 KGValidator의 자동 검증 프레임워크를 생물의학 도메인으로 확장한다.
+- 🔗 후속 연구: [[papers/1106_The_BOS-Lig_Dataset_Accurate_Ligand_Charges_from_a_Consensus/review]] — 바이오메디컬 지식 그래프 검증 프레임워크를 리간드 전하 검증 워크플로우에 적용하여 정확도 향상 가능

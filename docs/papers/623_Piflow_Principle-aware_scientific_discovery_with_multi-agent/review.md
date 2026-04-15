@@ -10,8 +10,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 LLM 기반 멀티에이전트 시스템(MAS)의 과학적 발견 과정을 정보이론적 원리에 기반한 불확실성 감소 문제로 재정의하고, 과학 법칙으로 안내되는 Min-Max 최적화 프레임워크 PiFlow를 제안한다. 이를 통해 기존의 무작위적 가설화와 증거 연결 실패 문제를 해결하면서도 기존 에이전트 아키텍처와의 플러그-앤-플레이 호환성을 달성한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Hypothesis_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Autonomous_Biological_Discovery_AI"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pu et al._2025_Piflow Principle-aware scientific discovery with multi-agent collaboration.pdf"
 ---
@@ -119,4 +121,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pu et al._2025_Piflow Principle-aware sc
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/633_Prim_Principle-inspired_material_discovery_through_multi-age/review]] — 원리 인식 과학 발견의 다중 에이전트 협력 프레임워크로 유사한 방법론을 확장한다.
+- 🧪 응용 사례: [[papers/110_AstroAgents_A_Multi-Agent_AI_for_Hypothesis_Generation_from/review]] — 천체물리 다중 에이전트 시스템이 원리 기반 과학 발견의 실제 천문학 적용 사례를 제공한다
+- 🔄 다른 접근: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 대칭성을 고려한 기호적 미분방정식 발견과 원리 인식 발견은 서로 다른 물리 법칙 탐사 접근법을 제시한다
+- 🔗 후속 연구: [[papers/633_Prim_Principle-inspired_material_discovery_through_multi-age/review]] — Piflow의 원리 인식 과학 발견이 Prim의 물질 발견 접근법을 더욱 체계화할 수 있다.

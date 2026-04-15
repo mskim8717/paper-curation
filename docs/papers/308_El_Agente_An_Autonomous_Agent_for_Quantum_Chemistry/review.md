@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "본 연구는 LLM 기반 다중 에이전트 시스템(El Agente Q)을 통해 양자화학 워크플로우를 자연언어 프롬프트로부터 동적으로 생성·실행하는 자율 시스템을 제시한다. 계층적 메모리 프레임워크, 적응적 도구 선택, 자동 오류 복구를 특징으로 하며, 대학 수준의 과제에서 >87%의 성공률을 달성한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Domain-specific_Language_Agents"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Multi-Domain_Experimental_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zou et al._2025_El Agente An Autonomous Agent for Quantum Chemistry.pdf"
 ---
@@ -126,8 +126,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zou et al._2025_El Agente An Autonomous 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/212_Chemist-X_Large_Language_Model-empowered_Agent_for_Reaction/review]] — 화학 분야 자동화를 위해 양자화학과 합성 반응이라는 다른 전문 영역에서 LLM 에이전트를 활용한다
-- 🏛 기반 연구: [[papers/620_Physics-Informed_Autonomous_LLM_Agents_for_Explainable_Power/review]] — 물리 정보 기반 자율 LLM 에이전트의 설명 가능성을 양자화학 워크플로우에 적용할 수 있다
-- 🔗 후속 연구: [[papers/456_Lang-PINN_From_Language_to_Physics-Informed_Neural_Networks/review]] — 언어에서 물리 정보 신경망으로의 변환을 양자화학 계산으로 확장할 수 있다
-- 🔄 다른 접근: [[papers/212_Chemist-X_Large_Language_Model-empowered_Agent_for_Reaction/review]] — 화학 실험 자동화를 위해 반응 조건 최적화와 양자화학 워크플로우라는 다른 특화 영역에 접근한다
-- 🔄 다른 접근: [[papers/130_Automating_Computational_Chemistry_Workflows_via_OpenClaw_an/review]] — 양자화학을 위한 자율 에이전트가 계산화학 워크플로우 자동화의 다른 구현 방식을 제시한다.
+- 🔄 다른 접근: [[papers/212_Chemist-X_Large_Language_Model-empowered_Agent_for_Reaction/review]] — 양자화학과 화학 합성이라는 서로 다른 화학 분야에 LLM 기반 자율 에이전트를 적용한 상호 보완적 접근법임
+- 🧪 응용 사례: [[papers/137_Autonomous_Agents_for_Scientific_Discovery_Orchestrating_Sci/review]] — 양자화학 전용 에이전트가 과학 발견 자율화라는 더 넓은 패러다임의 구체적 실현 사례로 활용됨
+- 🏛 기반 연구: [[papers/137_Autonomous_Agents_for_Scientific_Discovery_Orchestrating_Sci/review]] — 과학 발견 자율화의 포괄적 패러다임이 양자화학 전용 에이전트라는 구체적 구현 사례의 이론적 기반을 제공함

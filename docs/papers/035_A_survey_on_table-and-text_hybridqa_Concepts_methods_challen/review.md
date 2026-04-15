@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.25
 essence: "테이블과 텍스트 혼합 질의응답(Table-and-Text Hybrid Question Answering, HybridQA)은 이질적 데이터를 결합하여 답변을 생성하는 도전적인 NLP 과제이며, 본 논문은 현재까지의 벤치마크, 방법론, 핵심 과제, 향후 방향을 체계적으로 정리한 최초의 포괄적 설문이다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Multi-Hop_Reasoning_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Multi-Hop_Long_Memory_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2022_A survey on table-and-text hybridqa Concepts, methods, challenges and future directions.pdf"
 ---
@@ -105,6 +106,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2022_A survey on table-and-t
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/841_Tree-of-table_Unleashing_the_power_of_llms_for_enhanced_larg/review]] — 테이블 기반 QA가 LLM의 대규모 테이블 추론 능력으로 확장됨
-- 🏛 기반 연구: [[papers/787_Tablemaster_A_recipe_to_advance_table_understanding_with_lan/review]] — 테이블 이해 기술이 하이브리드 QA의 핵심 구성 요소가 됨
-- 🏛 기반 연구: [[papers/841_Tree-of-table_Unleashing_the_power_of_llms_for_enhanced_larg/review]] — 테이블-텍스트 하이브리드 QA에 대한 조사는 대규모 테이블 이해를 위한 계층적 Table-Tree 구성의 이론적 기반을 제공합니다
+- 🔗 후속 연구: [[papers/199_ChartInstruct_Instruction_Tuning_for_Chart_Comprehension_and/review]] — 차트 이해가 테이블-텍스트 혼합 QA의 시각적 데이터 처리 능력을 확장한다
+- 🔄 다른 접근: [[papers/787_Tablemaster_A_recipe_to_advance_table_understanding_with_lan/review]] — 테이블 이해를 위한 다른 접근법으로 하이브리드 QA와 상호 보완적 관점을 제공한다
+- 🧪 응용 사례: [[papers/841_Tree-of-table_Unleashing_the_power_of_llms_for_enhanced_larg/review]] — 테이블 기반 LLM이 하이브리드 QA의 구조화된 데이터 처리에 직접 적용된다
+- 🏛 기반 연구: [[papers/199_ChartInstruct_Instruction_Tuning_for_Chart_Comprehension_and/review]] — 테이블-텍스트 혼합 QA가 차트 이해에서 구조화된 데이터 처리의 기초 방법론을 제공한다
+- 🔗 후속 연구: [[papers/799_The_frontier_of_simulation-based_inference/review]] — 딥러닝을 위한 불확실성 정량화 서베이가 시뮬레이션 기반 추론의 불확실성 처리 방법론을 확장한다
+- 🏛 기반 연구: [[papers/787_Tablemaster_A_recipe_to_advance_table_understanding_with_lan/review]] — 테이블-텍스트 하이브리드 QA 연구의 기초 개념과 방법론이 TableMaster 프레임워크 설계의 이론적 토대를 제공한다.

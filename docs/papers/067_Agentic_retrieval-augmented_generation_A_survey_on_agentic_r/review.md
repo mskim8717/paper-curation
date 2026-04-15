@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)의 정적 학습 데이터 의존성을 극복하기 위해 자율 AI 에이전트를 RAG 파이프라인에 통합한 Agentic RAG 시스템에 대한 포괄적인 설문 논문이다. 이는 반성(reflection), 계획(planning), 도구 활용(tool use), 다중 에이전트 협력을 통해 동적 검색 전략과 적응형 워크플로우를 가능하게 한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Retrieval-augmented_Generation_Systems"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singh et al._2025_Agentic retrieval-augmented generation A survey on agentic rag.pdf"
 ---
@@ -95,4 +95,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singh et al._2025_Agentic retrieval-augm
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — 과학 연구를 위한 검색 증강 생성 에이전트의 실제 구현 사례를 제시한다.
+- 🔗 후속 연구: [[papers/034_A_Survey_on_RAG_Meeting_LLMs_Towards_Retrieval-Augmented_Lar/review]] — 기본적인 RAG 시스템을 자율적 에이전트 기반의 동적 검색 시스템으로 고도화한 발전된 접근법이다
+- 🧪 응용 사례: [[papers/018_A_retrieval-augmented_knowledge_mining_method_with_deep_thin/review]] — 에이전트 기반 RAG의 이론적 프레임워크를 실제 지식 채굴 작업에 적용한 구체적 사례이다
+- 🏛 기반 연구: [[papers/496_LLM_Agents_Making_Agent_Tools/review]] — RAG 시스템에서 에이전트가 도구를 활용하는 방법론에 대한 기초적 이해를 제공한다
+- 🔗 후속 연구: [[papers/018_A_retrieval-augmented_knowledge_mining_method_with_deep_thin/review]] — 정적 RAG를 넘어 자율적 에이전트 기반의 동적 RAG 시스템으로 발전시킨 접근법을 보여준다

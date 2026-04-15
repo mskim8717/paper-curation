@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 생의학 발견을 가속화하기 위해 대규모 언어 모델(LLM), 기계 학습(ML) 도구, 실험 플랫폼을 통합한 AI 에이전트 시스템의 구성과 활용을 제시한다. 이는 인간 과학자를 배제하지 않고 AI의 데이터 분석 능력과 인간의 창의성을 결합한 협업 발견 체계이다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/LLM_Scientific_Research_Acceleration"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gao et al._2024_Empowering Biomedical Discovery with AI Agents.pdf"
 ---
@@ -118,8 +119,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gao et al._2024_Empowering Biomedical Di
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/847_Two_heads_are_better_than_one_A_multi-agent_system_has_the_p/review]] — 생의학 AI 에이전트를 다중 에이전트 과학 연구 시스템으로 일반화한 확장 연구
-- 🔄 다른 접근: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 생의학 발견 vs 의료 진단에서 서로 다른 생의학 AI 에이전트 응용 영역
-- 🔗 후속 연구: [[papers/774_STELLA_Towards_a_Biomedical_World_Model_with_Self-Evolving_M/review]] — 생의학 AI 에이전트를 자기진화형 세계 모델로 발전시킨 차세대 시스템
-- 🧪 응용 사례: [[papers/616_PharmAgents_Building_a_Virtual_Pharma_with_Large_Language_Mo/review]] — 생의학 발견을 가상 제약회사 시스템으로 구현한 구체적인 응용 사례
-- 🏛 기반 연구: [[papers/847_Two_heads_are_better_than_one_A_multi-agent_system_has_the_p/review]] — 생의학 AI 에이전트 시스템이 다중 에이전트 과학 연구의 도메인별 기반
+- 🔄 다른 접근: [[papers/131_Automating_exploratory_proteomics_research_via_language_mode/review]] — 생의학 자동화의 다른 접근법으로 단백질체학 특화 시스템을 제시한다.
+- 🔗 후속 연구: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 제로샷 협력을 통해 생의학 AI 에이전트의 능력을 확장한 연구이다.
+- 🧪 응용 사례: [[papers/177_Can_ai_agents_design_and_implement_drug_discovery_pipelines/review]] — 약물 발견 파이프라인에 AI 에이전트를 구체적으로 적용하는 사례를 보여준다.
+- 🔄 다른 접근: [[papers/131_Automating_exploratory_proteomics_research_via_language_mode/review]] — 생의학 발견 자동화의 다른 접근법으로 AI 에이전트 통합을 제시한다.

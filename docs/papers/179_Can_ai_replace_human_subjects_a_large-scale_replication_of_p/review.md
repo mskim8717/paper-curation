@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "대규모 심리학 실험 156개를 GPT-4, Claude 3.5 Sonnet, DeepSeek v3 등 3개의 최신 LLM으로 재현한 결과, LLM은 주효과 73-81%의 높은 재현율을 보이지만 인종, 성별 등 사회적으로 민감한 주제에서는 현저히 낮은 성과를 보였으며, 효과크기가 인간 연구보다 2-3배 크다는 체계적 편차를 드러냈다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Literature_Analysis"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kessler et al._2024_Can ai replace human subjects a large-scale replication of psychological experiments with llms.pdf"
 ---
@@ -114,12 +115,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kessler et al._2024_Can ai replace human
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/821_Towards_a_client-centered_assessment_of_llm_therapists_by_cl/review]] — 심리학 실험 재현을 LLM 치료사의 클라이언트 중심 평가로 확장한 의료 응용
-- 🏛 기반 연구: [[papers/237_Confidence_in_Large_Language_Model_Evaluation_A_Bayesian_App/review]] — 제한된 샘플에서 LLM 평가하는 베이지안 방법론이 심리학 실험 재현의 통계적 기반
-- 🔗 후속 연구: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — 심리학 실험 재현을 사회적으로 정렬된 언어모델 훈련으로 발전시킨 연구
-- 🔄 다른 접근: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — 심리학 실험 재현 vs 사회심리학과 LLM 추론 연결의 서로 다른 심리학 접근
-- 🏛 기반 연구: [[papers/821_Towards_a_client-centered_assessment_of_llm_therapists_by_cl/review]] — 심리학 실험 재현 연구가 LLM 치료사 평가에서 인간 행동 시뮬레이션의 기반
-- 🔗 후속 연구: [[papers/237_Confidence_in_Large_Language_Model_Evaluation_A_Bayesian_App/review]] — 베이지안 LLM 평가 방법론을 대규모 심리학 실험 재현 검증으로 확장한 응용
-- 🔄 다른 접근: [[papers/188_Can_we_automatize_scientific_discovery_in_the_cognitive_scie/review]] — 인간 피험자 대체 AI와 인지과학 자동화의 다른 접근법
-- 🔄 다른 접근: [[papers/757_Simulating_tabular_datasets_through_llms_to_rapidly_explore/review]] — LLM을 활용한 가설 탐색에서 데이터셋 시뮬레이션과 실제 인간 대상 연구 복제의 서로 다른 접근법을 비교하여 각각의 유효성을 검증할 수 있다.
-- 🔗 후속 연구: [[papers/477_Large_language_models_pass_the_turing_test/review]] — LLM이 인간을 대체할 수 있는 가능성을 사회과학 실험 맥락에서 체계적으로 검증
+- 🔄 다른 접근: [[papers/821_Towards_a_client-centered_assessment_of_llm_therapists_by_cl/review]] — 심리학 실험 재현 대신 LLM 치료사의 클라이언트 중심 평가를 제시한다
+- 🏛 기반 연구: [[papers/247_Cultural_evolution_in_populations_of_large_language_models/review]] — LLM의 문화적 진화가 인간 대체 실험의 기반 이론을 제공한다
+- 🔗 후속 연구: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — 사회적으로 정렬된 언어 모델 훈련을 심리학 실험 재현으로 확장한다
+- 🔄 다른 접근: [[papers/821_Towards_a_client-centered_assessment_of_llm_therapists_by_cl/review]] — 치료사 평가 대신 심리학 실험 재현을 통한 인간 대체 가능성을 탐구한다
+- 🏛 기반 연구: [[papers/237_Confidence_in_Large_Language_Model_Evaluation_A_Bayesian_App/review]] — 제한된 샘플에서의 베이지안 평가가 대규모 심리학 실험 재현의 기반이 된다
+- 🧪 응용 사례: [[papers/077_AI_for_social_science_and_social_science_of_AI_A_Survey/review]] — 인간 주체를 AI가 대체할 수 있는지에 대한 복제 연구가 사회과학에서 AI 활용의 구체적 사례이다
+- 🏛 기반 연구: [[papers/097_An_autonomous_AI_agent_for_universal_behavior_analysis/review]] — AI가 인간 피험자를 대체할 수 있는지에 대한 연구를 행동 분석 자동화의 이론적 기반으로 활용한다

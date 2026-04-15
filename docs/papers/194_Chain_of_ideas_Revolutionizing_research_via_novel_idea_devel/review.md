@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "LLM 기반 에이전트가 과학 문헌을 체인 구조로 조직하여 연구 분야의 진화 과정을 명확히 반영함으로써, 인간 연구자 수준의 참신한 연구 아이디어 생성을 자동화한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Hypothesis_Generation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Roumeliotis and Tselikas_2024_Chain of ideas Revolutionizing research via novel idea development with llm agents.pdf"
 ---
@@ -144,13 +146,18 @@ LLM 기반 에이전트가 과학 문헌을 체인 구조로 조직하여 연구
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 과학 문헌의 체인 구조 조직화가 재료 발견 가설 생성의 방법론적 기반을 제공한다
-- 🔄 다른 접근: [[papers/392_Grapheval_A_lightweight_graph-based_llm_framework_for_idea_e/review]] — 연구 아이디어 생성에서 체인 구조 vs 그래프 기반의 다른 조직화 접근법을 비교할 수 있다
-- 🔗 후속 연구: [[papers/668_ResearchAgent_Iterative_Research_Idea_Generation_over_Scient/review]] — 과학 지식 그래프 기반 가설 생성을 문헌 체인 구조로 확장한 연구다
-- 🔄 다른 접근: [[papers/762_Spark_A_system_for_scientifically_creative_idea_generation/review]] — 과학적 아이디어 생성에서 체인 구조 vs 창의적 시스템의 다른 접근법을 비교할 수 있다
-- 🔄 다른 접근: [[papers/714_Scideator_Human-llm_scientific_idea_generation_grounded_in_r/review]] — 혁신적 연구 아이디어 개발을 위한 아이디어 연쇄 접근법이 논문 기반 아이디어 생성과 다른 방법론을 제시한다.
-- 🔗 후속 연구: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 과학 문헌의 체인 구조 조직화 방법론을 재료 발견 가설 생성에 적용한 확장 연구다
-- 🔄 다른 접근: [[papers/392_Grapheval_A_lightweight_graph-based_llm_framework_for_idea_e/review]] — 연구 아이디어 평가에서 그래프 기반 vs 체인 구조의 다른 조직화 접근법을 비교할 수 있다
-- 🏛 기반 연구: [[papers/019_A_review_of_llm-assisted_ideation/review]] — Chain of Ideas의 혁신적 아이디어 개발 방법론이 LLM 기반 아이디에이션 프레임워크 설계의 핵심 이론적 기반임
-- 🔗 후속 연구: [[papers/155_Beyond_Brainstorming_What_Drives_High-Quality_Scientific_Ide/review]] — 아이디어 체인 혁신 연구에서 구조화된 다중 에이전트 토론으로의 확장
-- 🏛 기반 연구: [[papers/725_Sciidea_Context-aware_scientific_ideation_using_token_and_se/review]] — 아이디어 체인 방법론이 문맥 인식적 과학 아이디어 생성의 기본적인 사고 구조와 혁신 과정을 제공한다.
+- 🏛 기반 연구: [[papers/143_AutoP2C_An_LLM-Based_Agent_Framework_for_Code_Repository_Gen/review]] — 연구 아이디어 생성이 논문 구현 자동화의 선행 단계로서 전체 연구 자동화를 완성한다
+- 🔄 다른 접근: [[papers/509_Llms_can_realize_combinatorial_creativity_generating_creativ/review]] — 체인 구조 아이디어 개발과 조합적 창의성이 모두 LLM의 참신한 아이디어 생성을 다룬다
+- 🔗 후속 연구: [[papers/392_Grapheval_A_lightweight_graph-based_llm_framework_for_idea_e/review]] — 아이디어 생성 후 그래프 기반 평가가 연구 아이디어의 품질 검증을 제공한다
+- 🔗 후속 연구: [[papers/143_AutoP2C_An_LLM-Based_Agent_Framework_for_Code_Repository_Gen/review]] — 연구 아이디어 생성을 실행 가능한 코드로 구현하는 전체 파이프라인을 완성한다
+- 🔄 다른 접근: [[papers/509_Llms_can_realize_combinatorial_creativity_generating_creativ/review]] — 조합적 창의성 이론과 체인 구조 아이디어 개발이 모두 LLM의 창의적 아이디어 생성을 다룬다
+- 🔄 다른 접근: [[papers/366_Futuregen_Llm-rag_approach_to_generate_the_future_work_of_sc/review]] — 과학 논문의 미래 연구 방향 생성에서 RAG 기반 접근법과 아이디어 체인 방법론은 서로 다른 창의적 생성 전략이다.
+- 🔗 후속 연구: [[papers/442_Iris_Interactive_research_ideation_system_for_accelerating_s/review]] — 연구 아이디어 생성을 몬테카를로 트리 탐색으로 확장한다
+- 🔄 다른 접근: [[papers/484_Learning_to_generate_research_idea_with_dynamic_control/review]] — 동적 제어 대신 아이디어 체인 방식으로 연구 아이디어 생성의 창의성과 실현성을 균형 잡는 다른 접근법을 제시한다.
+- 🧪 응용 사례: [[papers/714_Scideator_Human-llm_scientific_idea_generation_grounded_in_r/review]] — 아이디어 개발을 위한 체인 방식이 구조화된 요소 재조합의 구체적 실행 방법이다
+- 🔄 다른 접근: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 둘 다 연구 아이디어 생성을 다루지만 418은 재료 발견에, Chain of Ideas는 일반적 연구 혁신에 특화
+- 🏛 기반 연구: [[papers/392_Grapheval_A_lightweight_graph-based_llm_framework_for_idea_e/review]] — 연구 아이디어 생성 후 그래프 기반 분해와 평가가 아이디어 품질 검증을 제공한다
+- 🔗 후속 연구: [[papers/079_Ai_idea_bench_2025_Ai_research_idea_generation_benchmark/review]] — 연구 아이디어 개발의 체계적 접근을 다루어 AI Idea Bench가 측정하려는 아이디어 생성 역량의 실용적 활용 방안을 제시함
+- 🔗 후속 연구: [[papers/146_Autosdt_Scaling_data-driven_discovery_tasks_toward_open_co-s/review]] — 아이디어 개발을 위한 연쇄적 접근법으로, 데이터 주도 발견을 아이디어 생성 단계까지 확장한 방법론을 제시합니다.
+- 🏛 기반 연구: [[papers/411_How_do_humans_and_language_models_reason_about_creativity_a/review]] — 창의성 평가를 위한 아이디어 생성 및 개발 방법론의 기초 프레임워크를 제공한다
+- 🔗 후속 연구: [[papers/762_Spark_A_system_for_scientifically_creative_idea_generation/review]] — 아이디어 개발 체인을 과학적 창의성과 자동 평가가 통합된 시스템으로 확장한다

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 지식 그래프(Knowledge Graph)와 대형 언어모델(LLM)을 활용하여 AI 학생들의 개인화된 학습 경로를 제시하고 연구 아이디어 생성을 지원하는 GoAI 시스템을 제안한다. 이는 빠르게 확장되는 AI 문헌의 바다에서 학생들이 겪는 \"정보-혁신 간극\"을 해소한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Hypothesis_Generation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Research_Literature_Analysis_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_Graph of ai ideas Leveraging knowledge graphs and llms for ai research idea generation.pdf"
 ---
@@ -121,11 +123,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_Graph of ai ideas Lever
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/426_Improving_Scientific_Hypothesis_Generation_with_Knowledge_Gr/review]] — AI 연구 vs 일반 과학 가설 생성으로 지식 그래프 활용의 서로 다른 도메인 적용
-- 🔗 후속 연구: [[papers/540_Mir_Methodology_inspiration_retrieval_for_scientific_researc/review]] — AI 아이디어 지식 그래프를 방법론적 영감 검색으로 확장한 연구 지원 시스템
-- 🏛 기반 연구: [[papers/079_Ai_idea_bench_2025_Ai_research_idea_generation_benchmark/review]] — AI 아이디어 생성 벤치마크가 지식 그래프 기반 학습 경로의 평가 기준
-- 🔄 다른 접근: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 지식 그래프 vs 다중 헤드 접근으로 과학 아이디어 생성의 서로 다른 방법론
-- 🔄 다른 접근: [[papers/426_Improving_Scientific_Hypothesis_Generation_with_Knowledge_Gr/review]] — 같은 지식 그래프 활용 접근이지만 AI 연구 아이디어 생성에 특화된 시스템
-- 🏛 기반 연구: [[papers/540_Mir_Methodology_inspiration_retrieval_for_scientific_researc/review]] — AI 아이디어 지식 그래프가 방법론적 영감 검색의 구조적 표현 기반
-- 🔗 후속 연구: [[papers/632_Predicting_the_future_of_ai_with_ai_High-quality_link_predic/review]] — AI 아이디어 지식 그래프를 활용한 연구 방향 예측으로 링크 예측 접근법을 확장할 수 있다
-- 🔗 후속 연구: [[papers/392_Grapheval_A_lightweight_graph-based_llm_framework_for_idea_e/review]] — AI 아이디어의 지식 그래프를 경량 그래프 기반 평가 프레임워크로 확장한 연구다
+- 🏛 기반 연구: [[papers/032_A_Survey_on_Knowledge_Graphs_Representation_Acquisition_and/review]] — 지식 그래프 표현 및 구축 방법론의 핵심 이론적 기반을 제공합니다.
+- 🔄 다른 접근: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — 지식 그래프 기반 과학적 아이디어 생성의 다른 접근법을 제시합니다.
+- 🔗 후속 연구: [[papers/728_SciMON_Scientific_Inspiration_Machines_Optimized_for_Novelty/review]] — 참신성 최적화된 아이디어 생성을 위한 지식 그래프 활용 방안을 확장합니다.
+- 🏛 기반 연구: [[papers/728_SciMON_Scientific_Inspiration_Machines_Optimized_for_Novelty/review]] — 지식 그래프 기반 아이디어 생성의 참신성 최적화에 활용됩니다.
+- 🔄 다른 접근: [[papers/392_Grapheval_A_lightweight_graph-based_llm_framework_for_idea_e/review]] — 지식 그래프와 LLM을 활용한 아이디어 분석의 다른 접근법으로 상호 보완적이다
+- 🏛 기반 연구: [[papers/216_Chimera_A_knowledge_base_of_idea_recombination_in_scientific/review]] — AI 아이디어의 지식그래프 활용 연구가 과학 문헌의 아이디어 재조합 지식베이스 구축을 위한 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — AI 아이디어 그래프가 지식 그래프와 LLM을 활용한 연구 아이디어 생성의 실제 구현 사례를 제시한다.
+- 🔄 다른 접근: [[papers/313_Enabling_ai_scientists_to_recognize_innovation_A_domain-agno/review]] — 상대 이웃 밀도를 통한 혁신성 평가와 지식 그래프 기반 AI 아이디어 분석이 서로 다른 방법으로 연구 아이디어의 질을 평가한다.

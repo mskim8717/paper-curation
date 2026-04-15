@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.5
 essence: "웹 에이전트의 능력을 평가하기 위해 1,266개의 어려운 질문으로 구성된 BrowseComp 벤치마크를 제시한다. 이 벤치마크는 깊이 있는 웹 탐색과 창의적인 검색 능력을 요구하면서도 답변이 짧고 검증이 용이한 특징을 갖는다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scholarly_Document_QA"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/ML_Research_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wei et al._2025_Browsecomp A simple yet challenging benchmark for browsing agents.pdf"
 ---
@@ -101,10 +103,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wei et al._2025_Browsecomp A simple yet 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/793_The_Adoption_and_Usage_of_AI_Agents_Early_Evidence_from_Perp/review]] — 웹 에이전트 평가를 위한 벤치마크로서 AI 에이전트 사용 패턴 연구와 상호 보완적인 평가 관점을 제시합니다.
-- 🏛 기반 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 도구 사용을 학습하는 언어모델 연구의 기반 위에서 더 복잡한 웹 브라우징 능력을 평가하는 벤치마크를 구축합니다.
-- 🔗 후속 연구: [[papers/450_Knowledge_navigator_Llm-guided_browsing_framework_for_explor/review]] — LLM 가이드 브라우징 프레임워크의 성능을 체계적으로 평가할 수 있는 도전적인 벤치마크를 제공합니다.
-- 🏛 기반 연구: [[papers/874_WebWatcher_Breaking_New_Frontier_of_Vision-Language_Deep_Res/review]] — 웹 브라우징의 기본적인 도전 과제를 다루는 벤치마크로 복잡한 웹 탐색의 기초를 제공한다.
-- 🧪 응용 사례: [[papers/793_The_Adoption_and_Usage_of_AI_Agents_Early_Evidence_from_Perp/review]] — AI 에이전트 사용 패턴 연구의 실제 평가를 위한 도전적인 웹 브라우징 벤치마크를 제공합니다.
-- 🏛 기반 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 언어모델의 도구 사용 학습 연구가 복잡한 웹 브라우징 에이전트 평가 벤치마크의 기술적 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/450_Knowledge_navigator_Llm-guided_browsing_framework_for_explor/review]] — 단순한 브라우징 과제를 대규모 과학 문헌의 체계적 탐색으로 확장한 고도화된 시스템입니다.
+- 🔗 후속 연구: [[papers/888_X-webagentbench_A_multilingual_interactive_web_benchmark_for/review]] — 다국어 웹 에이전트 벤치마크로, 브라우징 에이전트의 능력을 다양한 언어 환경으로 확장하여 평가합니다.
+- 🔄 다른 접근: [[papers/450_Knowledge_navigator_Llm-guided_browsing_framework_for_explor/review]] — 지식 기반 브라우징 프레임워크로, 웹 탐색에서 LLM의 안내 역할을 다른 접근법으로 구현합니다.
+- 🧪 응용 사례: [[papers/872_Webdancer_Towards_autonomous_information_seeking_agency/review]] — 자율적 정보 탐색 에이전시로, 브라우징 에이전트의 실제 정보 검색 능력을 보여주는 응용 사례입니다.
+- 🏛 기반 연구: [[papers/042_Academicbrowse_Benchmarking_academic_browse_ability_of_llms/review]] — 웹 브라우징 능력 평가가 학술 검색 능력 벤치마크 개발의 방법론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/450_Knowledge_navigator_Llm-guided_browsing_framework_for_explor/review]] — 브라우징 복잡성 벤치마크가 대규모 과학 문헌에서 탐색적 검색 시스템의 성능을 평가하는 기준을 제공한다.

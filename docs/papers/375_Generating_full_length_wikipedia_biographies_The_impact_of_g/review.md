@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 웹 검색 기반 정보 검색(retrieval-augmented generation)과 사전학습 모델을 활용하여 전체 길이의 위키피디아 전기문을 자동 생성하는 시스템을 제시하며, 특히 웹상 정보가 부족한 여성 인물 전기 생성에서 성별 편향의 영향을 분석한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Diversity"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chung et al._2022_Generating full length wikipedia biographies The impact of gender bias on the retrieval-based gener.pdf"
 ---
@@ -90,6 +91,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chung et al._2022_Generating full length
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — 언어 모델과의 글쓰기가 콘텐츠 다양성에 미치는 영향 연구로 본 논문의 성별 편향 분석의 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — 스토리 작성을 위한 인간-AI 협업 편집기로 본 논문과 다른 장르에서의 생성 및 편향 문제를 다룬다.
-- 🔗 후속 연구: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 대규모 언어 모델을 위한 추론 시간 편향 제거 프레임워크로 본 논문의 성별 편향 문제를 해결하는 방법론을 제시한다.
+- 🔗 후속 연구: [[papers/109_Assisting_in_writing_wikipedia-like_articles_from_scratch_wi/review]] — 위키피디아 문서 처음부터 작성하는 연구의 특수 케이스로서 전기문 생성에 특화된 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/884_Wikiatomicedits_A_multilingual_corpus_of_wikipedia_edits_for/review]] — 위키피디아 편집 데이터셋은 전기문 생성 시스템의 훈련과 평가에 필수적인 기반 데이터를 제공한다.
+- 🔄 다른 접근: [[papers/485_Learning_to_split_and_rephrase_from_wikipedia_edit_history/review]] — 위키피디아 편집 히스토리 기반 텍스트 분할/재구성과 검색 증강 생성은 모두 위키피디아 콘텐츠 개선을 위한 다른 접근법이다.
+- ⚖️ 반론/비판: [[papers/373_Generalization_Bias_in_Large_Language_Model_Summarization_of/review]] — LLM 요약의 일반화 편향 문제는 성별 편향을 겪는 전기문 생성 시스템의 한계를 더 넓은 관점에서 조명한다.

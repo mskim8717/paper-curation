@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 파운데이션 모델(Foundation Models)의 대화형 환경에서의 능동적 탐색(active exploration) 능력을 체계적으로 평가한다. Feature World와 Alchemy 환경을 통해 효율적 정보 수집, 메타러닝(meta-learning), 전략 적응(strategy adaptation)의 세 가지 핵심 능력을 측정하며, 특히 요약(summarization) 프롬프팅이 복잡한 다중 시행 환경에서 메타러닝을 가능하게 함을 발견했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/LLM_Agent_Benchmarking"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/ML_Research_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sawyer et al._2024_Can foundation models actively gather information in interactive environments to test hypotheses ar.pdf"
 ---
@@ -126,10 +127,14 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sawyer et al._2024_Can foundation models
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/review]] — 대화형 환경에서의 능동적 탐색 능력 평가가 AI 연구 에이전트 평가의 방법론적 기반
-- 🔄 다른 접근: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — API 도구 사용과 달리 환경과의 능동적 상호작용을 통한 정보 수집 능력에 집중
-- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — ML 실험 에이전트가 능동적 탐색을 통해 효율적으로 실험을 설계하는 능력 평가로 확장
-- 🔄 다른 접근: [[papers/400_Hiagent_Hierarchical_working_memory_management_for_solving_l/review]] — 계층적 메모리 관리와 달리 능동적 환경 탐색을 통한 문제 해결 접근
-- 🔗 후속 연구: [[papers/890_Your_Brain_on_ChatGPT_Accumulation_of_Cognitive_Debt_when_Us/review]] — 대화형 정보 수집에서 기초 모델의 능력을 탐구하여 AI 의존성의 인지적 영향을 더 깊이 이해할 수 있습니다.
-- 🏛 기반 연구: [[papers/672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/review]] — 대화형 환경에서의 능동적 탐색 능력 평가 방법론을 연구 에이전트 평가에 적용한 기반
-- 🔄 다른 접근: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — 능동적 정보 수집에 중점을 둔 접근과 달리 구체적 API 도구 활용 능력에 집중
+- 🏛 기반 연구: [[papers/050_Adasociety_An_adaptive_environment_with_social_structures_fo/review]] — 대화형 환경에서의 능동적 탐색 평가가 적응형 다중 에이전트 환경 설계의 기반이 된다.
+- 🔗 후속 연구: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — 일반적인 대화형 환경에서의 탐색 능력이 웹 환경에서의 특화된 장기 의사결정으로 발전될 수 있다.
+- 🏛 기반 연구: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — 대화형 환경에서의 능동적 탐색이 웹 탐색과 정보 수집의 기반 능력이 된다.
+- 🔗 후속 연구: [[papers/447_Iterative_self-incentivization_empowers_large_language_model/review]] — 능동적 정보 수집이 검색 에이전트의 자기개선을 위한 구체적인 적용으로 발전될 수 있다.
+- 🏛 기반 연구: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — 웹 환경에서의 동적 정보 수집이 대화형 환경에서의 능동적 탐색 능력에 기반한다.
+- 🔗 후속 연구: [[papers/447_Iterative_self-incentivization_empowers_large_language_model/review]] — 정보 검색에서의 자기개선이 일반적인 대화형 환경에서의 능동적 정보 수집으로 확장될 수 있다.
+- 🔗 후속 연구: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — 웹 환경에서의 장기 의사결정이 일반적인 대화형 환경에서의 능동적 탐색으로 확장될 수 있다.
+- 🏛 기반 연구: [[papers/872_Webdancer_Towards_autonomous_information_seeking_agency/review]] — 상호작용 환경에서 정보 수집하는 파운데이션 모델의 기초 연구가 자율적 정보 탐색 시스템의 이론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/050_Adasociety_An_adaptive_environment_with_social_structures_fo/review]] — 적응형 사회 구조가 파운데이션 모델의 대화형 환경에서의 탐색 능력을 평가하는 프레임워크로 활용될 수 있다.
+- 🔄 다른 접근: [[papers/1092_Table-llm-specialist_Language_model_specialists_for_tables_u/review]] — 테이블 작업에서의 자동 훈련 데이터 생성과 대화형 환경에서의 능동적 탐색을 서로 다른 관점에서 접근한다.
+- 🔄 다른 접근: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 도구 사용 학습을 자가감독 방식과 대화형 환경에서의 능동적 탐색이라는 다른 관점으로 접근한다.

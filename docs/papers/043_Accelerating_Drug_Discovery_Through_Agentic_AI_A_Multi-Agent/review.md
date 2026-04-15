@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "자동화된 AI 기반 실험(self-driving labs)에서 복잡한 워크플로우를 조정하고, 다양한 기기와 AI 모델을 통합하며, 데이터를 효율적으로 관리하는 통합 플랫폼인 Artificial을 제시한다. NVIDIA BioNeMo 같은 AI/ML 모델을 통해 분자 상호작용 예측 및 생물분자 분석을 가능하게 함으로써 신약 개발을 가속화한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Drug_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/AI_Scientist_Research_Protocols"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Abdollahi et al._2025_Accelerating drug discovery with artificial a whole-lab orchestration and scheduling system for sel.pdf"
 ---
@@ -130,5 +131,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Abdollahi et al._2025_Accelerating drug 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/099_An_autonomous_laboratory_for_the_accelerated_synthesis_of_in/review]] — 자율 실험실의 무기 고체 합성 자동화가 Artificial 플랫폼의 신약 개발 워크플로우 조정 능력을 소재 과학으로 확장함
-- 🏛 기반 연구: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — 양자 컴퓨팅 실험실 자동화 방법이 Artificial의 복잡한 기기 통합과 AI 모델 조정 기술의 기반이 됨
+- 🔄 다른 접근: [[papers/118_Autobio_A_simulation_and_benchmark_for_robotic_automation_in/review]] — 실제 신약 개발을 위한 통합 플랫폼과 생물 실험실 로봇 자동화 벤치마크라는 상호 보완적인 관점에서 실험실 자동화를 다룬다
+- 🏛 기반 연구: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 자율적 실험실 운영의 핵심인 단백질 공간 탐색 방법론을 기반으로 신약 개발 워크플로우를 구축한다
+- 🧪 응용 사례: [[papers/806_The_Virtual_Lab_AI_Agents_Design_New_SARS-CoV-2_Nanobodies_w/review]] — AI 기반 실험실 자동화 플랫폼의 구체적인 응용 사례로 SARS-CoV-2 나노바디 설계를 통한 검증을 제시한다

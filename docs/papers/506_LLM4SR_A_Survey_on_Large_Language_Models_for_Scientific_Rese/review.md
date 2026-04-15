@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.3
 essence: "대규모 언어 모델(LLM)이 과학 연구의 전 주기(가설 발견, 실험 계획, 논문 작성, 동료 심사)에 어떻게 적용되고 있는지를 최초로 체계적으로 분석한 종합 서베이이다. 이 논문은 각 연구 단계별 LLM의 독특한 역할, 과제별 방법론, 평가 벤치마크를 종합적으로 정리한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Literature_Analysis"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luo et al._2025_LLM4SR A Survey on Large Language Models for Scientific Research.pdf"
 ---
@@ -148,10 +149,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luo et al._2025_LLM4SR A Survey on Large
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/086_AI-Researcher_Autonomous_Scientific_Innovation/review]] — 과학 연구 자동화에 대한 포괄적 서베이가 AI-Researcher 시스템의 이론적 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — LLM 기반 과학 지능에 대한 서로 다른 관점의 서베이를 제시합니다.
-- 🔗 후속 연구: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — 과학 연구의 LLM 활용이 AI 시대의 과학적 발견으로 확장됩니다.
-- 🏛 기반 연구: [[papers/184_Can_large_language_models_provide_useful_feedback_on_researc/review]] — 과학 연구에서 LLM 활용 전반에 대한 체계적 분석의 기반을 제공합니다.
-- 🧪 응용 사례: [[papers/510_Llms_for_literature_review_Are_we_there_yet_arXiv_preprint_a/review]] — 과학 연구에서의 LLM 활용이 문헌 리뷰 작성에 적용됩니다.
-- 🧪 응용 사례: [[papers/086_AI-Researcher_Autonomous_Scientific_Innovation/review]] — 과학 연구의 LLM 활용 서베이가 자율적 연구 시스템 개발에 적용됩니다.
-- 🔗 후속 연구: [[papers/1106_The_BOS-Lig_Dataset_Accurate_Ligand_Charges_from_a_Consensus/review]] — 과학 연구용 LLM 조사에서 단핵 전이금속 착물 데이터세트로의 확장
+- 🔗 후속 연구: [[papers/064_Agentic_AI_for_Scientific_Discovery_A_Survey_of_Progress_Cha/review]] — 과학 발견에서 에이전틱 AI의 진전과 도전을 구체적으로 분석한다
+- 🔄 다른 접근: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — LLM 기반 과학 지능에 대한 다른 관점의 종합적 서베이를 제공한다
+- 🏛 기반 연구: [[papers/056_Advancing_the_scientific_method_with_large_language_models_F/review]] — 과학적 방법론과 LLM을 결합한 기본 프레임워크를 제시한다
+- 🔄 다른 접근: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — 둘 다 과학 연구에서 LLM 활용을 종합적으로 다루지만, 첫 번째는 AI 지원 변환에, 두 번째는 과학 연구 전반에 집중한다

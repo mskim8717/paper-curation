@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 행동신경과학 연구에서 데이터 준비부터 패턴 해석까지 시간 소비적이고 전문가 의존적인 단계들을 AI로 자동화하는 통합 파이프라인을 제시한다. In-Context Learning(ICL)과 향상된 텐서 분해를 활용하여 도메인 전문가가 프로그래밍 지식 없이도 공포 과일반화(fear generalization) 연구에서 신경 패턴을 발굴할 수 있는 사용자 친화적 인터페이스를 구현했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Biomedical_Research_Agents"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Physics-Informed_Neural_Operators"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Goulart et al._2026_Transforming Behavioral Neuroscience Discovery with In-Context Learning and AI-Enhanced Tensor Metho.pdf"
 ---
@@ -131,6 +131,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Goulart et al._2026_Transforming Behavio
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — 생명의학 분야의 일반적인 AI 에이전트 프레임워크를 신경과학 특화 도구로 응용할 수 있다.
-- 🔄 다른 접근: [[papers/130_Automating_Computational_Chemistry_Workflows_via_OpenClaw_an/review]] — 계산화학 분야의 도메인 특화 자동화 파이프라인 접근법이 행동신경과학에도 적용 가능하다.
-- 🧪 응용 사례: [[papers/097_An_autonomous_AI_agent_for_universal_behavior_analysis/review]] — 범용 동물 행동 분석 에이전트 BehaveAgent는 행동신경과학의 맥락적 발견 변화 연구에서 제시된 AI 기반 행동 분석 기법을 실제 연구 환경에 적용합니다.
+- 🔄 다른 접근: [[papers/097_An_autonomous_AI_agent_for_universal_behavior_analysis/review]] — 행동신경과학과 범용 행동 분석을 위한 서로 다른 AI 자동화 접근법을 제시하여 행동 연구의 다양한 AI 적용 가능성을 보여준다.
+- 🔗 후속 연구: [[papers/860_Unveiling_the_sentinels_Assessing_ai_performance_in_cybersec/review]] — 인컨텍스트 학습 기반 행동 패턴 발굴과 AI 성능 평가는 모두 전문 지식 없이 복잡한 데이터를 분석하는 AI 도구 개발을 다룬다.
+- 🏛 기반 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 멀티에이전트 시스템의 설계 원리가 행동신경과학 연구 파이프라인의 자동화에 적용될 수 있다.
+- 🏛 기반 연구: [[papers/413_Human-ai_teaming_using_large_language_models_Boosting_brain-/review]] — 행동 신경과학 발견을 위한 인컨텍스트 변환 연구가 인간-AI 협력 기반 뇌-컴퓨터 인터페이스의 신경과학적 기반을 제공한다
+- 🧪 응용 사례: [[papers/097_An_autonomous_AI_agent_for_universal_behavior_analysis/review]] — 보편적 행동 분석 에이전트의 기술을 행동 신경과학 발견이라는 구체적인 연구 분야에 적용하여 실제 과학적 발견을 가능하게 한다

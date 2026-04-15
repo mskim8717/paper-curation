@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 차트 이미지를 코드로 변환하는 전문화된 멀티모달 대형언어모델(MLLM)인 ChartCoder를 제안하며, 이를 위해 대규모 차트-코드 데이터셋(Chart2Code-160k)과 단계적 생각(Snippet-of-Thought, SoT) 방법론을 소개한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Chart_Analysis"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Code_Generation_Multimodal_Models"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2025_Chartcoder Advancing multimodal large language model for chart-to-code generation.pdf"
 ---
@@ -115,13 +117,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2025_Chartcoder Advancing mu
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — 차트 이해와 추론에 중점을 둔 ChartX와 달리 차트-코드 변환이라는 구체적 작업에 특화
-- 🔗 후속 연구: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 범용 차트 이해 모델 ChartAssistant의 기능을 코드 생성이라는 특정 작업으로 세분화한 발전
-- 🏛 기반 연구: [[papers/231_Codegen_An_open_large_language_model_for_code_with_multi-tur/review]] — CodeGen의 다중 턴 프로그램 합성 방법론을 차트-코드 변환에 적용한 기반
-- 🔄 다른 접근: [[papers/811_Tikzero_Zero-shot_text-guided_graphics_program_synthesis/review]] — 텍스트에서 그래픽 프로그램을 합성하는 TikZero와 유사하게 차트 이미지에서 코드를 생성하는 접근
-- 🔄 다른 접근: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 둘 다 차트 이해에 특화되었지만 ChartCoder는 코딩 접근법을, MMC는 명령어 튜닝을 사용
-- 🔗 후속 연구: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 차트를 코드로 변환하는 ChartCoder의 기능을 과학 논문 그림 전반으로 확장한 평가 연구
-- 🔄 다른 접근: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — 코드 생성에 특화된 ChartCoder와 달리 차트 이해 전반을 다루는 종합적 접근
-- 🏛 기반 연구: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 범용 차트 이해 모델이 차트-코드 변환이라는 특화 작업의 기반 기술
-- 🏛 기반 연구: [[papers/231_Codegen_An_open_large_language_model_for_code_with_multi-tur/review]] — 다중 턴 프로그램 합성 방법론이 차트-코드 변환에서 단계적 생성 접근의 기반
-- 🔄 다른 접근: [[papers/709_SciCap_A_Knowledge_Augmented_Dataset_to_Study_the_Challenges/review]] — 둘 다 멀티모달 차트 이해를 다루지만 하나는 과학 논문의 지식 증강에, 다른 하나는 일반적인 차트 코딩에 초점을 맞춘다.
+- 🔄 다른 접근: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 차트-to-코드 생성에서 이중 모드 보상 메커니즘을 사용하는 접근법으로, ChartCoder의 전문화된 모델 접근과 대비되는 보상 학습 기반 방법을 제시한다
+- 🏛 기반 연구: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — 차트 이해를 위한 포괄적 벤치마크와 기초 모델로, ChartCoder의 차트-to-코드 전문화에 필요한 기본적 차트 이해 능력 평가 기준을 제공한다
+- ⚖️ 반론/비판: [[papers/783_Synchart_Synthesizing_charts_from_language_models/review]] — 언어모델에서 차트를 합성하는 역방향 작업으로, ChartCoder의 차트에서 코드로의 변환과 정반대 방향의 연구 접근을 보여준다
+- 🔄 다른 접근: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — ChartCoder는 차트-to-코드 변환에 특화된 전용 모델로, 이 논문의 이중 모드 보상 메커니즘과 다른 접근법을 제시한다
+- 🔗 후속 연구: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — 차트 코딩 생성까지 확장한 멀티모달 차트 이해 모델로, 차트 추론을 넘어선 활용 가능성을 보여줍니다.
+- 🔗 후속 연구: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — ChartCoder는 ChartX의 차트 이해 평가를 차트-to-코드 생성이라는 구체적 응용 작업으로 발전시킨 연구 방향이다

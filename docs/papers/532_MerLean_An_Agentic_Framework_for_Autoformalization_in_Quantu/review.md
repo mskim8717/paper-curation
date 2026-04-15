@@ -10,8 +10,10 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 양자계산 이론 논문을 자동으로 기계검증 가능한 Lean 4 코드로 변환하는 완전 자동화 에이전트 프레임워크 MerLean을 제시한다. 3개 양자계산 논문에서 114개 명제로부터 2,050개 Lean 선언을 생성하며 전체 논문의 자동형식화에 성공했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Formal_Theorem_Proving"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ren et al._2026_MerLean An Agentic Framework for Autoformalization in Quantum Computation.pdf"
 ---
@@ -107,9 +109,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ren et al._2026_MerLean An Agentic Frame
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 비형식에서 형식으로의 증명 변환 방법론을 양자계산 분야에 특화하여 완전 자동화
-- 🏛 기반 연구: [[papers/533_Meta-designing_quantum_experiments_with_language_models/review]] — 양자계산 도메인에서 MerLean의 자동형식화가 메타 실험 설계의 기초가 됨
-- 🔄 다른 접근: [[papers/239_CRISPR-GPT_for_agentic_automation_of_gene-editing_experiment/review]] — 둘 다 자동화된 과학 연구를 다루지만 MerLean은 형식화에, CRISPR-GPT는 실험에 특화
-- 🧪 응용 사례: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — MerLean의 자동형식화 기술이 양자컴퓨팅 실험 자동화에 이론적 기반 제공
-- 🧪 응용 사례: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 비형식에서 형식으로의 변환 방법론이 MerLean의 자동형식화 프레임워크에 적용됨
-- 🔗 후속 연구: [[papers/533_Meta-designing_quantum_experiments_with_language_models/review]] — MerLean의 이론적 자동형식화를 실제 양자 실험 설계로 확장한 응용 연구
+- 🔗 후속 연구: [[papers/513_M2F_Automated_Formalization_of_Mathematical_Literature_at_Sc/review]] — 수학 문헌의 대규모 자동 형식화 연구를 양자계산 이론이라는 특화 도메인으로 확장하여 완전 자동화를 달성한다.
+- 🔄 다른 접근: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — Lean 기반 정리 증명과 유사한 형식화 도구를 사용하지만 양자계산 논문의 완전 자동화에 특화된 에이전트 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/533_Meta-designing_quantum_experiments_with_language_models/review]] — 양자 실험 설계의 언어모델 기반 방법론이 양자계산 이론의 자동 형식화를 위한 도메인 지식 기반을 제공한다.
+- 🔄 다른 접근: [[papers/807_Theoremexplainagent_Towards_video-based_multimodal_explanati/review]] — 정리의 형식화에 초점을 맞춘 MerLean과 달리 TheoremExplainAgent는 시각적 설명에 중점을 둔다.
+- 🔄 다른 접근: [[papers/513_M2F_Automated_Formalization_of_Mathematical_Literature_at_Sc/review]] — 양자 역학에서 자동 형식화를 위한 에이전트 프레임워크로, 수학 교과서 형식화와 다른 도메인에서의 접근
+- 🔗 후속 연구: [[papers/533_Meta-designing_quantum_experiments_with_language_models/review]] — 양자계산 도메인의 자동화를 이론 형식화에서 실험 설계로 확장하여 상호 보완적 접근을 제시한다.

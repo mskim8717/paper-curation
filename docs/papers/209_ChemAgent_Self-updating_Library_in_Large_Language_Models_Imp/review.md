@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.3
 essence: "대규모 언어 모델(LLM)의 화학 추론 능력을 향상시키기 위해 동적으로 업데이트되는 자체 학습 라이브러리 시스템을 제안한다. 계획 메모리, 실행 메모리, 지식 메모리의 세 가지 메모리 구성요소를 통해 문제를 분해하고 과거 경험을 활용하여 정확도를 최대 46% 향상시킨다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2025_ChemAgent Self-updating Library in Large Language Models Improves Chemical Reasoning.pdf"
 ---
@@ -113,8 +115,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2025_ChemAgent Self-updating
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/556_MolQuest_A_Benchmark_for_Agentic_Evaluation_of_Abductive_Rea/review]] — 화학 추론을 위한 자체 업데이트 라이브러리가 분자 구조 해석의 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — 화학 추론 능력이 더 포괄적인 화학 도구 활용으로 확장됩니다.
-- 🔄 다른 접근: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — LLM의 화학 능력 향상을 위한 서로 다른 접근법을 제시합니다.
-- 🧪 응용 사례: [[papers/556_MolQuest_A_Benchmark_for_Agentic_Evaluation_of_Abductive_Rea/review]] — ChemAgent의 화학 추론 능력이 분자 구조 해석 평가에 활용됩니다.
-- 🔄 다른 접근: [[papers/214_ChemToolAgent_The_Impact_of_Tools_on_Language_Agents_for_Che/review]] — 자가 업데이트 화학 라이브러리와 도구 통합 화학 에이전트의 다른 접근법
+- 🔄 다른 접근: [[papers/528_MedAgentGym_A_Scalable_Agentic_Training_Environment_for_Code/review]] — 화학 도메인 대신 생의학 데이터 과학에서 메모리 기반 학습을 구현한다
+- 🏛 기반 연구: [[papers/039_A-MEM_Agentic_Memory_for_LLM_Agents/review]] — LLM 에이전트의 메모리 메커니즘에 대한 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/214_ChemToolAgent_The_Impact_of_Tools_on_Language_Agents_for_Che/review]] — 도구 사용 능력을 동적 라이브러리 시스템으로 확장하여 화학 추론을 강화한다
+- 🔄 다른 접근: [[papers/528_MedAgentGym_A_Scalable_Agentic_Training_Environment_for_Code/review]] — 생의학 코딩 환경 대신 화학에서 자체 업데이트 라이브러리 시스템을 제시한다
+- 🔗 후속 연구: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 화학 도구 연결 에이전트에서 자체 업데이트 라이브러리를 갖춘 화학 에이전트로의 발전된 형태를 보여준다
+- 🔄 다른 접근: [[papers/213_ChemReasoner_Heuristic_Search_over_a_Large_Language_Models_K/review]] — 자체 업데이트 화학 라이브러리와 LLM 지식 탐색은 화학 발견에서 서로 다른 지식 활용 방식을 제시한다

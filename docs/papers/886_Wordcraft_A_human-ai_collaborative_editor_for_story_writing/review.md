@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "신경 언어 모델의 능력을 활용하여 인간 작가와 AI 어시스턴트가 협력하는 스토리 쓰기 도구를 제시한다. Few-shot 학습과 대화형 인터페이스를 통해 단일 언어 모델으로 다양한 창작 작업을 지원한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Personalization"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Coenen et al._2021_Wordcraft A human-ai collaborative editor for story writing.pdf"
 ---
@@ -100,16 +102,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Coenen et al._2021_Wordcraft A human-ai 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/702_Scholarcopilot_Training_large_language_models_for_academic_w/review]] — 인간-AI 협업 글쓰기의 기본 개념이 학술 논문 작성이라는 전문적 영역에서 인용 검색과 동적 생성을 통합한 특화된 시스템으로 발전한다.
-- 🔗 후속 연구: [[papers/775_Step-back_profiling_Distilling_user_history_for_personalized/review]] — 인간-AI 협업 글쓰기를 다중 저자 과학 논문 작성으로 확장하여 개인화된 사용자 프로필 기반의 협업 지원이 가능하다.
-- 🏛 기반 연구: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 인간-AI 협업 편집의 기본 프레임워크가 제어 가능한 학술 논문 수정을 위한 협업 모델의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — GPT-3 기반 창작 글쓰기 협력 연구가 스토리 작성을 위한 인간-AI 협력 에디터 개발로 확장되었다
-- 🔄 다른 접근: [[papers/116_Augmenting_the_author_Exploring_the_potential_of_ai_collabor/review]] — 학술 논문 작성에서 스토리 작성으로 확장된 인간-AI 협력적 글쓰기 도구의 다른 응용을 보여준다.
-- 🏛 기반 연구: [[papers/703_Scholawrite_A_dataset_of_end-to-end_scholarly_writing_proces/review]] — 인간의 비선형적 글쓰기 과정에 대한 이해가 AI 협력 스토리 편집기 개발의 인간-AI 상호작용 설계 기초가 됩니다.
-- 🔗 후속 연구: [[papers/109_Assisting_in_writing_wikipedia-like_articles_from_scratch_wi/review]] — Wordcraft의 인간-AI 협업 편집 프레임워크가 STORM의 자동 기사 생성을 인터랙티브한 공동 창작 과정으로 발전시킨 연구임
-- 🔗 후속 연구: [[papers/656_Read_revise_repeat_A_system_demonstration_for_human-in-the-l/review]] — 기본적인 인간-AI 협력 글쓰기를 반복적 개정과 피드백 통합을 통한 더 정교한 협력 편집 시스템으로 확장함
-- 🔄 다른 접근: [[papers/375_Generating_full_length_wikipedia_biographies_The_impact_of_g/review]] — 스토리 작성을 위한 인간-AI 협업 편집기로 본 논문과 다른 장르에서의 생성 및 편향 문제를 다룬다.
-- 🏛 기반 연구: [[papers/515_Machine-in-the-loop_rewriting_for_creative_image_captioning/review]] — 인간-AI 협업 편집기의 기본 개념이 창의적 이미지 캡션 작성의 기계-인-루프 시스템에 이론적 기반을 제공합니다.
-- 🏛 기반 연구: [[papers/702_Scholarcopilot_Training_large_language_models_for_academic_w/review]] — 인간-AI 협업 글쓰기의 기본 개념이 학술 논문 작성이라는 전문적 영역에서 인용 검색과 생성을 통합한 특화된 시스템으로 발전한다.
-- 🏛 기반 연구: [[papers/775_Step-back_profiling_Distilling_user_history_for_personalized/review]] — 인간-AI 협업 글쓰기의 기본 개념이 다중 저자 과학 논문 작성이라는 복잡한 협업 시나리오로 확장되어 개인화 기법을 통해 구현된다.
-- 🔗 후속 연구: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 인간-AI 협업 글쓰기의 기본 개념을 제어 가능하고 맥락을 인식하는 학술 논문 수정이라는 특화된 기능으로 확장한다.
+- 🔗 후속 연구: [[papers/565_Multi-novelty_Improve_the_diversity_and_novelty_of_contents/review]] — 콘텐츠 생성의 다양성 개선 연구를 인간-AI 협력 창작이라는 실제 응용으로 확장한다
+- 🔄 다른 접근: [[papers/116_Augmenting_the_author_Exploring_the_potential_of_ai_collabor/review]] — AI와의 창작 협업을 스토리 쓰기 vs 학술 글쓰기로 다른 영역에서 접근한다
+- 🏛 기반 연구: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 인간-AI 협력 글쓰기의 이론적 기반이 창작 도구 개발에 필수적이다
+- 🔄 다른 접근: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 학술 글쓰기가 아닌 창작 분야에서 인간-AI 협력을 탐구하는 다른 접근법
+- 🔗 후속 연구: [[papers/515_Machine-in-the-loop_rewriting_for_creative_image_captioning/review]] — 인간-AI 협업 스토리 작성 에디터의 개념을 창의적 이미지 캡션 작성으로 특화하여 발전시킨 응용 사례이다.
+- 🏛 기반 연구: [[papers/565_Multi-novelty_Improve_the_diversity_and_novelty_of_contents/review]] — 콘텐츠 생성 다양성 개선이 인간-AI 협력 창작의 기술적 기반을 제공한다

@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)이 생성한 연구 아이디어의 혁신성을 자동 평가하기 위해 **상대 이웃 밀도(Relative Neighbor Density, RND)** 알고리즘을 제안한다. 이 방법은 절대적 국소 밀도가 아닌 의미론적 이웃들의 상대적 밀도 분포를 분석하여 도메인 간 일관된 성능을 달성한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Knowledge_Graph_Encoding"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Arrieta et al._2025_Enabling ai scientists to recognize innovation A domain-agnostic algorithm for assessing novelty.pdf"
 ---
@@ -84,9 +86,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Arrieta et al._2025_Enabling ai scientis
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/010_A_hierarchical_framework_for_measuring_scientific_paper_inno/review]] — 과학 논문 혁신 측정을 위한 계층적 프레임워크로 본 논문의 혁신성 평가와 다른 접근법을 제시한다.
-- 🧪 응용 사례: [[papers/178_Can_ai_examine_novelty_of_patents_Novelty_evaluation_based_o/review]] — AI의 특허 신규성 평가 능력 연구에서 본 논문의 혁신성 인식 알고리즘을 특허 도메인에 적용할 수 있다.
-- 🏛 기반 연구: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — LLM의 과학적 창의성과 아이디어 생성 평가 벤치마크로 본 논문의 혁신성 평가 방법론의 기반을 제공한다.
-- 🧪 응용 사례: [[papers/241_Criteria-first_semantics-later_reproducible_structure_discov/review]] — 도메인 독립적 구조 추출을 과학적 혁신 인식에 적용할 수 있다.
-- 🔗 후속 연구: [[papers/779_Supporting_assessment_of_novelty_of_design_problems_using_co/review]] — 혁신 인식을 위한 도메인 무관 방법론을 설계 문제의 신규성 평가라는 구체적 영역에 적용한다.
-- 🔄 다른 접근: [[papers/178_Can_ai_examine_novelty_of_patents_Novelty_evaluation_based_o/review]] — AI 과학자의 혁신 인식을 위한 도메인 무관 알고리즘으로 특허 신규성과 유사한 평가 문제를 다른 접근법으로 해결한다.
+- 🔗 후속 연구: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — LLM 생성 아이디어의 신규성 평가를 상대 이웃 밀도 알고리즘으로 자동화하여 대규모 아이디어 혁신성 평가를 가능하게 한다.
+- 🏛 기반 연구: [[papers/107_Artificial_intelligence_tools_expand_scientists_impact_but_c/review]] — AI 도구가 과학자 집단의 탐색 범위에 미치는 영향 분석이 개별 아이디어의 혁신성 자동 평가 시스템 개발의 기반을 제공한다.
+- 🔄 다른 접근: [[papers/391_Graph_of_ai_ideas_Leveraging_knowledge_graphs_and_llms_for_a/review]] — 상대 이웃 밀도를 통한 혁신성 평가와 지식 그래프 기반 AI 아이디어 분석이 서로 다른 방법으로 연구 아이디어의 질을 평가한다.
+- 🏛 기반 연구: [[papers/241_Criteria-first_semantics-later_reproducible_structure_discov/review]] — 도메인 독립적 혁신 인식 방법론이 의미론에서 분리된 구조 발견의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/779_Supporting_assessment_of_novelty_of_design_problems_using_co/review]] — 혁신 인식을 위한 도메인 독립적인 확장된 평가 프레임워크를 보여준다
+- 🔗 후속 연구: [[papers/107_Artificial_intelligence_tools_expand_scientists_impact_but_c/review]] — AI 도구 채택의 집단적 영향 분석을 개별 아이디어의 혁신성 평가로 확장하여 더 세밀한 분석을 가능하게 한다.
+- 🏛 기반 연구: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — LLM 생성 아이디어의 신규성 평가 연구가 AI 과학자의 혁신성 인식 알고리즘 개발의 실증적 기반을 제공한다.

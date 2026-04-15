@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>InternAgent: When Agent Becomes the Scientist–Building Closed-Loop System from Hypothesis to Verification</title>
+<title>Novelseek: When agent becomes the scientist–building closed-loop system from hypothesis to verification</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css">
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']]}};</script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
@@ -62,160 +62,60 @@ a { color: #A62018; }
 </style>
 </head>
 <body>
-<h1>InternAgent: When Agent Becomes the Scientist–Building Closed-Loop System from Hypothesis to Verification</h1>
-<blockquote><p><strong>저자</strong>: Shanghai Artificial Intelligence Laboratory (InternAgent Team) | <strong>날짜</strong>: 2025 | <strong>DOI</strong>: <a href="https://doi.org/10.48550/arXiv.2505.16938" target="_blank">10.48550/arXiv.2505.16938</a></p></blockquote>
+<h1>Novelseek: When agent becomes the scientist–building closed-loop system from hypothesis to verification</h1>
+<blockquote><p><strong>저자</strong>: Sylvain Kubler, Andrea Buda, Jérémy Robert, Kary Främling, Yves Le Traon | <strong>날짜</strong>: 2025 | <strong>DOI</strong>: <a href="https://doi.org/10.48550/arXiv.2505.16938" target="_blank">10.48550/arXiv.2505.16938</a></p></blockquote>
 <hr>
 <div class="essence-box"><h2>Essence</h2>
-<div class="review-fig"><img src="figures/fig1.webp" alt="Figure 1">
-<p class="fig-caption"><em>InternAgent가 지원하는 12가지 과학 연구 작업: 반응 수율 예측, 분자 동역학, 전력 흐름 추정, 시계열 예측, 전사 예측, 인핸서 활성도 예측, 감정 분류, 2D/3D 이미지 분류, 의미론적 분할, 자율 주행</em></p></div>
-<p>InternAgent는 대규모 언어 모델(LLM) 기반의 통합 폐루프(closed-loop) 다중 에이전트 프레임워크로, 가설 생성부터 실험 검증까지 과학 연구의 전체 사이클을 자동화하는 자율 과학 연구(Autonomous Scientific Research, ASR) 시스템이다. 이 시스템은 인간 전문가의 피드백을 통합하면서도 12개의 서로 다른 과학 분야(화학, 생물학, 컴퓨터 비전, NLP 등)에서 성능 향상을 달성했다.</p></div>
+<div class="review-fig"><img src="figures/fig2.webp" alt="Figure 2">
+<p class="fig-caption"><em>Figure 2: InternAgent covers three main capabilities: 1) Self-evolving Idea Generation with</em></p></div>
+<p>InternAgent는 자율 과학 연구(ASR)를 수행하기 위한 통합 다중 에이전트 폐루프 프레임워크로, 가설 생성부터 검증까지 12개 분야의 과학 연구 작업을 자동화한다.</p></div>
 <div class="section-box"><h2>Motivation</h2>
 <ul>
-<li><strong>Known</strong>:
-<ul>
-<li>LLM과 로봇공학을 활용한 자율 과학 발견(ASD)의 잠재력이 인정되고 있음</li>
-<li>데이터 분석, 가설 생성, 실험 설계, 결과 해석 자동화의 가능성</li>
-</ul>
-</li>
-<li><strong>Gap</strong>:
-<ul>
-<li>효과적이고 참신한 연구 제안(proposal)을 생성하는 어려움: AI 모델이 기존 데이터와 패턴에 의존하여 진정한 창의성과 과학적 타당성의 균형을 맞추기 어려움</li>
-<li>폐루프 피드백의 부재: 실험 설계 → 실행 → 분석 → 반복적 가설 개선의 seamless한 통합 부족</li>
-<li>예상 변수와 노이즈가 많은 실제 실험 환경에 대한 적응 능력 한계</li>
-</ul>
-</li>
-<li><strong>Why</strong>:
-<ul>
-<li>자동화된 과학 연구 시스템이 진정한 폐루프 구조를 갖춘다면, 인간 연구자의 몇 개월에 걸친 노력을 몇 시간으로 단축할 수 있음</li>
-<li>다양한 과학 분야에 확장 가능한 통합 프레임워크의 필요성</li>
-</ul>
-</li>
-<li><strong>Approach</strong>:
-<ul>
-<li>4가지 주요 모듈을 갖춘 종단간(end-to-end) 자동 연구 파이프라인 구축</li>
-<li>자체 진화 아이디어 생성(Self-Evolving Idea Generation), 인간 대화형 피드백, 아이디어-방법론 구성, 다중 라운드 실험 계획 및 실행</li>
-</ul>
+<li><strong>Known</strong>: LLM과 로봇공학을 이용한 자동 과학 발견(ASD)의 가능성이 알려져 있으며, 데이터 분석, 가설 생성, 실험 설계 자동화의 효율성이 입증되었다.</li>
+<li><strong>Gap</strong>: 기존 자율 시스템은 효과적이고 새로운 제안 생성과 실험 검증을 위한 폐루프 피드백 구현에 어려움을 겪고 있으며, 실제 실험의 불확실성과 적응성 문제가 해결되지 않았다.</li>
+<li><strong>Why</strong>: AI가 과학 연구 패러다임을 가속화하고 인간 연구자가 수개월 걸리는 성능 개선을 시간 단위로 달성할 수 있게 하여 연구 효율성과 혁신 속도를 획기적으로 향상시킬 수 있기 때문이다.</li>
+<li><strong>Approach</strong>: InternAgent는 자기 진화형 아이디어 생성, 인간-상호작용 피드백, 아이디어-방법론 구성, 다중 라운드 실험 계획 및 실행의 네 가지 주요 모듈을 통해 폐루프 자동 연구 파이프라인을 구현한다.</li>
 </ul></div>
 <div class="section-box"><h2>Achievement</h2>
-<div class="review-fig"><img src="figures/fig2.webp" alt="Figure 2">
-<p class="fig-caption"><em>InternAgent의 3가지 핵심 능력: 1) 인간 대화형 피드백이 있는 자체 진화 아이디어 생성, 2) 아이디어-방법론 구성, 3) 진화적 실험 계획 및 실행</em></p></div>
-<ol>
-<li><strong>성능 향상 (시간 효율성)</strong>:
+<div class="review-fig"><img src="figures/fig1.webp" alt="Figure 1">
+<p class="fig-caption"><em>Figure 1: InternAgent can support 12 types of scientific research tasks ranging from the AI</em></p></div>
 <ul>
-<li>반응 수율 예측(Reaction Yield Prediction): 기저선 27.6% → 35.4% (12시간 내)</li>
-<li>인핸서 활성도 예측(Enhancer Activity Prediction): 피어슨 상관계수 0.65 → 0.79 (4시간 내)</li>
-<li>2D 의미론적 분할(2D Semantic Segmentation): 정확도 78.8% → 81.0% (30시간 내)</li>
-<li>인간 연구자는 유사한 성능 향상에 수개월 소요</li>
-</ul>
-</li>
-<li><strong>12개 과학 분야의 확장성</strong>:
-<ul>
-<li>AI 작업(이미지 분류, 감정 분류) 및 과학 작업(화학, 생물학, 분자 동역학) 모두 지원</li>
-<li>단일 통합 프레임워크로 이질적인 문제 해결</li>
-</ul>
-</li>
-<li><strong>대규모 코드 베이스 처리</strong>:
-<ul>
-<li>단순 파일 수정을 넘어 다중 파일로 구성된 프로젝트 레벨의 수정 및 디버깅 수행</li>
-</ul>
-</ol></div>
+<li><strong>확장성</strong>: Reaction Yield Prediction, Molecular Dynamics, Power Flow Estimation, Time Series Forecasting 등 12개 과학 연구 작업에서 검증되었으며, 기본 코드의 성능 향상을 위한 혁신적 아이디어 생성 가능</li>
+<li><strong>상호작용성</strong>: 도메인 전문가 피드백과 다중 에이전트 상호작용을 위한 인터페이스를 제공하여 인간 전문가 지식의 통합을 지원</li>
+<li><strong>효율성</strong>: Reaction Yield Prediction에서 12시간 내 27.6%→35.4% 향상, Enhancer Activity Prediction에서 4시간 내 Pearson correlation 0.65→0.79 향상, 2D Semantic Segmentation에서 30시간 내 정밀도 78.8%→81.0% 향상</li>
+</ul></div>
 <div class="section-box"><h2>How</h2>
-<div class="review-fig"><img src="figures/fig3.webp" alt="Figure 3">
-<p class="fig-caption"><em>반응 수율 예측 작업에 대한 InternAgent의 자체 진화 아이디어 경로</em></p></div>
-<h3>2.1 자체 진화 아이디어 생성 모듈 (Self-Evolving Idea Generation)</h3>
-<p><strong>Survey Agent (조사 에이전트)</strong>:</p>
+<div class="review-fig"><img src="figures/fig2.webp" alt="Figure 2">
+<p class="fig-caption"><em>Figure 2: InternAgent covers three main capabilities: 1) Self-evolving Idea Generation with</em></p></div>
 <ul>
-<li><strong>문헌 리뷰 모드(Literature Review Mode)</strong>:
-<ul>
-<li>연구 작업을 키워드 조합으로 분해: $P : T \rightarrow K$</li>
-<li>학술 데이터베이스에서 광범위하게 논문 수집</li>
-<li>추상(abstract) 분석을 통해 관련성 평가: $R : L_{abs} \times T \rightarrow [0,1]$</li>
-<li>0~1 점수로 각 논문의 관련성 정량화</li>
-</ul>
-</li>
-<li><strong>심층 연구 모드(Deep Research Mode)</strong>:
-<ul>
-<li>초기 조사 이후 관련 논문의 전문(full text) 다운로드 및 분석</li>
-<li>상세 분석으로부터 새로운 키워드 생성: $P : L \rightarrow K'$</li>
-<li>확장된 키워드 조합으로 추가 문헌 탐색</li>
-</ul>
-</ul>
-<p><strong>Idea Innovation Agent</strong>:</p>
-<ul>
-<li>생성된 문헌으로부터 혁신적 아이디어 제안</li>
-<li>기존 방법론의 한계 식별 및 개선 방향 도출</li>
-</ul>
-<p><strong>Assessment Agent</strong>:</p>
-<ul>
-<li>생성된 아이디어의 품질, 참신성, 과학적 타당성 평가</li>
-<li>도메인 전문가와의 협업을 통한 스코링 및 순위 매김</li>
-</ul>
-<p><strong>Human-Interactive Feedback</strong>:</p>
-<ul>
-<li>인간 전문가의 평가를 통해 아이디어 개선</li>
-<li>AI 기반 평가와 인간 판단의 선택적 통합</li>
-</ul>
-<h3>2.2 아이디어-방법론 구성 모듈 (Idea-to-Methodology Construction)</h3>
-<p><strong>Method Development Agent</strong>:</p>
-<ul>
-<li>추상적 아이디어를 구체적, 구현 가능한 방법론으로 변환</li>
-<li>알고리즘 설명, 수학적 정식화, 의사 코드(pseudocode) 작성</li>
-<li>방법론의 각 모듈이 명확하게 분해되어 실험 검증 가능하도록 설계</li>
-</ul>
-<p><strong>Code Review Agent</strong>:</p>
-<ul>
-<li>생성된 코드의 구문, 논리, 효율성 검토</li>
-<li>에러 추적(error traceback) 분석 및 피드백</li>
-</ul>
-<h3>2.3 진화적 실험 계획 및 실행 모듈 (Evolutionary Experimental Planning and Execution)</h3>
-<p><strong>Coding Agent</strong> (Openhands, Aider, AutoDebug 서버 활용):</p>
-<ul>
-<li>아이디어에 기반한 코드 자동 생성</li>
-<li>런타임 에러 자동 디버깅</li>
-<li>반복적 코드 개선</li>
-</ul>
-<p><strong>Orchestration Agent (조율 에이전트)</strong>:</p>
-<ul>
-<li>워크플로우 계획 및 메모리 관리</li>
-<li>각 단계 간의 매끄러운 전환 관리</li>
-<li>실험 피드백의 폐루프 운영</li>
-</ul>
-<p><strong>Multi-round Experiment Loop</strong>:</p>
-<ul>
-<li>계획 → 실행 → 결과 분석 → 다음 단계 계획의 반복</li>
-<li>각 라운드에서 성능 메트릭 추적 및 개선 평가</li>
-</ul>
-<hr></div>
+<li>Self-evolving Idea Generation Agent: Survey Agent를 통한 관련 문헌 검색, Deep Research를 통한 도메인 지식 확보, Idea Innovation Agent를 통한 혁신적 아이디어 생성</li>
+<li>Human-interactive Feedback: Assessment Agent와 Code Review Agent를 통한 아이디어 평가 및 피드백 루프 구현</li>
+<li>Idea-to-Methodology Construction: Method Development Agent가 추상적 아이디어를 구현 가능한 상세 방법론으로 변환</li>
+<li>Evolutionary Experimental Planning and Execution: Coding Agent가 코드 생성 및 디버깅, AutoDebug Server (Openhands, Aider 등)를 통한 자동 오류 수정, 다중 라운드 실험 계획으로 각 모듈의 효과 검증</li>
+<li>Orchestration Agent: 워크플로우 계획과 메모리 관리를 통한 전체 프로세스 조율</li>
+</ul></div>
 <div class="section-box"><h2>Originality</h2>
 <ul>
-<li><strong>폐루프 아키텍처의 진정한 구현</strong>: 단순 아이디어 생성을 넘어 가설 검증까지 자동화된 완전한 연구 사이클 구현</li>
-<li><strong>인간-AI 협업 메커니즘</strong>: 인간 전문가의 피드백 인터페이스를 시스템 내에 내재화하여 도메인 지식의 효과적 통합</li>
-<li><strong>다중 에이전트 전문화</strong>: Survey, Idea Innovation, Assessment, Method Development, Code Review 등 역할별 특화된 에이전트 설계로 각 단계의 품질 향상</li>
-<li><strong>광범위한 작업 다양성</strong>: 12개의 이질적인 과학 분야에서 동일한 프레임워크의 적용 가능성 입증</li>
-<li><strong>실제 프로젝트 규모 처리</strong>: 단순 코드 파일이 아닌 복잡한 리포지토리 레벨의 수정 및 디버깅 자동화</li>
-</ul>
-<hr></div>
+<li>폐루프 자동 연구 시스템의 첫 통합 구현으로, 가설 생성에서 실험 검증까지 전체 과학 연구 사이클을 자동화</li>
+<li>12개 이상의 다양한 과학 분야(화학, 생물학, 컴퓨터 비전, NLP 등)에 걸쳐 통합 프레임워크 적용 가능함을 입증</li>
+<li>인간-AI 협력 모드를 통합하여 도메인 전문가 지식을 자동 시스템에 유연하게 반영 가능하게 설계</li>
+<li>Self-evolving idea generation 메커니즘으로 기존의 정적 아이디어 생성이 아닌 반복적 개선 과정 구현</li>
+</ul></div>
 <div class="section-box"><h2>Limitation &amp; Further Study</h2>
 <ul>
-<li><strong>참신성 평가의 주관성</strong>: 아이디어의 참신성을 정량적으로 평가하는 명확한 메트릭 부족; 인간 평가에 의존하는 경향</li>
-<li><strong>실험 환경의 제한성</strong>: 현재 대부분의 검증이 시뮬레이션 또는 기존 데이터셋 기반이며, 실제 물리적 실험(습식 화학, 생물학 실험)과의 통합은 미흡</li>
-<li><strong>계산 비용</strong>: 12시간~30시간의 처리 시간은 여전히 상당한 컴퓨팅 자원 요구; 스케일링에 따른 비용 최적화 필요</li>
-<li><strong>도메인 일반화의 한계</strong>: 특정 도메인의 전문 지식이 부족한 분야에서의 성능 저하 가능성</li>
-<li><strong>후속 연구 방향</strong>:
-<ul>
-<li>실제 로봇 시스템과의 통합을 통한 물리적 실험 자동화</li>
-<li>더욱 강력한 폐루프 피드백 메커니즘 (불확실성 처리, 장기 실험 최적화)</li>
-<li>다중 모달(multimodal) 데이터 기반의 아이디어 생성</li>
-<li>아이디어 참신성의 정량적 평가 지표 개발</li>
-</ul>
-</ul>
-<hr></div>
+<li>논문이 기술적 디테일을 충분히 제공하지 않아 각 에이전트의 구체적인 구현과 상호작용 메커니즘이 명확하지 않음</li>
+<li>12개 작업 대부분에서 성능 지표가 명확하게 제시되지 않았으며, 통계적 유의성 검증이 부족함</li>
+<li>인간 연구자와의 직접 비교가 제한적이며, 실제 연구 환경에서의 적용 가능성에 대한 평가가 부족</li>
+<li>실패 사례나 시스템의 한계에 대한 분석이 거의 없어, 어떤 유형의 문제에서 성능이 저하되는지 파악 어려움</li>
+<li>후속 연구로 각 모듈의 독립적 성능 분석, 다양한 실험 환경에서의 검증, 다른 자율 연구 시스템과의 비교 필요</li>
+</ul></div>
 <div class="section-box"><h2>Evaluation</h2>
-
-<p><strong>총평</strong>: InternAgent는 가설 생성부터 검증까지 자동화된 폐루프 과학 연구 시스템을 구현한 의미 있는 작업이며, 12개 분야의 실제 성능 향상으로 실용성을 입증했다. 다만 일부 기술적 세부사항의 명확화와 실제 물리적 실험으로의 확장이 향후 과제이다.</p></div>
-<div class="connections-box"><h2>같이 보면 좋은 논문</h2><div class="conn-item foundation"><div class="conn-type">기반 연구</div><div class="conn-title"><a href="../825_Towards_an_AI_co-scientist/index.html">Towards an AI co-scientist</a></div><div class="conn-reason">AI 공동 과학자 연구는 InternAgent가 인간 전문가 피드백을 통합하면서 자율 과학 연구를 수행하는 이론적 기반을 제공한다.</div></div>
-<div class="conn-item alternative"><div class="conn-type">다른 접근</div><div class="conn-title"><a href="../285_Dolphin_Closed-loop_open-ended_auto-research_through_thinkin/index.html">Dolphin: Closed-loop open-ended auto-research through thinking, practice, and feedback</a></div><div class="conn-reason">InternAgent와 DOLPHIN 모두 폐쇄 루프 과학 연구 자동화를 추구하지만 다중 분야 vs 오픈엔드 접근방식이 다르다.</div></div>
-<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/index.html">The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search</a></div><div class="conn-reason">AI Scientist-v2는 InternAgent의 통합 폐루프 다중 에이전트 프레임워크를 에이전트 기반 트리 서치로 발전시켜 동료 심사까지 포함한다.</div></div></div>
+<div class="eval-badges"><span class="eval-badge">Novelty: 4/5</span> <span class="eval-badge">Technical Soundness: 3/5</span> <span class="eval-badge">Significance: 4/5</span> <span class="eval-badge">Clarity: 3/5</span> <span class="eval-badge">Overall: 4/5</span></div>
+<p><strong>총평</strong>: InternAgent는 LLM 기반 자동 과학 연구의 폐루프 구현을 최초로 시도한 야심찬 프로젝트로, 다양한 과학 분야에서 인상적인 성능 향상을 시연했다. 다만 기술 상세 부족과 평가 방법론 미흡으로 인해 결과의 신뢰성과 일반화 가능성에 대한 의문이 남아있다.</p></div>
+<div class="connections-box"><h2>같이 보면 좋은 논문</h2><div class="conn-item foundation"><div class="conn-type">기반 연구</div><div class="conn-title"><a href="../672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/index.html">ResearchGym: Evaluating Language Model Agents on Real-World AI Research</a></div><div class="conn-reason">ResearchGym의 실제 연구 환경 시뮬레이션이 NovelSeek 같은 자동화 연구 시스템의 평가 기준을 제공함</div></div>
+<div class="conn-item alternative"><div class="conn-type">다른 접근</div><div class="conn-title"><a href="../285_Dolphin_Closed-loop_open-ended_auto-research_through_thinkin/index.html">Dolphin: Closed-loop open-ended auto-research through thinking, practice, and feedback</a></div><div class="conn-reason">폐쇄 루프 자동 연구와 과학자가 되는 에이전트라는 서로 다른 접근법으로 연구 자동화를 구현한다</div></div>
+<div class="conn-item alternative"><div class="conn-type">다른 접근</div><div class="conn-title"><a href="../436_InternAgent_When_Agent_Becomes_the_Scientist_--_Building_Clo/index.html">InternAgent: When Agent Becomes the Scientist -- Building Closed-Loop System from Hypothesis to Verification</a></div><div class="conn-reason">NovelSeek과 InternAgent는 동일한 폐루프 과학 연구 자동화를 구현하지만 서로 다른 세부 아키텍처와 평가 방식을 채택함</div></div>
+<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/index.html">The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery</a></div><div class="conn-reason">AI Scientist의 완전 자동화 과학 발견을 NovelSeek이 다중 에이전트 협력을 통해 실용적으로 구현한 확장</div></div></div>
 <div class="back"><a href="../../ai4s/index.html">&larr; 목록으로 돌아가기</a></div>
 <div id="lightbox" class="lightbox"><img id="lightbox-img" alt=""></div>
 <script>

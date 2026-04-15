@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.5
 essence: ""
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Protein-Drug_Design_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Autonomous_Biological_Discovery_AI"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dauparas et al._2022_Robust deep learning based protein sequence design using ProteinMPNN.pdf"
 ---
@@ -125,11 +127,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dauparas et al._2022_Robust deep learnin
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/171_Boltz-1_Democratizing_Biomolecular_Interaction_Modeling/review]] — 구조 예측과 서열 설계를 결합하여 통합적 단백질 엔지니어링 파이프라인을 구성한다.
-- 🧪 응용 사례: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — 단백질 서열 설계 기법을 바이러스 단백질 구조 연구에 적용할 수 있다.
-- 🔗 후속 연구: [[papers/638_ProtAgents_protein_discovery_via_large_language_model_multi-/review]] — 단백질 설계를 LLM 기반 다중 에이전트 시스템으로 확장한다.
-- 🔗 후속 연구: [[papers/1060_Accurate_prediction_of_protein_structures_and_interactions_u/review]] — 단백질 구조 예측을 견고한 딥러닝 기반 서열 설계로 발전시킨 연구
-- 🔗 후속 연구: [[papers/256_De_novo_design_of_protein_structure_and_function_with_RFdiff/review]] — 강건한 단백질 서열 설계를 목표 동역학을 갖는 구조 설계로 확장할 수 있다
-- 🔗 후속 연구: [[papers/171_Boltz-1_Democratizing_Biomolecular_Interaction_Modeling/review]] — 단백질 구조 예측을 서열 설계와 결합하여 통합적 단백질 엔지니어링을 가능하게 한다.
-- 🔗 후속 연구: [[papers/634_PRIME_A_Multi-Agent_Environment_for_Orchestrating_Dynamic_Co/review]] — PRIME의 동적 계산 워크플로우 조율 기법을 견고한 딥러닝 기반 단백질 서열 설계로 확장하여 더 신뢰할 수 있는 단백질 공학 시스템을 구축할 수 있다.
-- 🔗 후속 연구: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — ProteinMPNN의 서열 설계 기법을 스파이크 단백질 동역학 연구에 적용할 수 있다.
+- 🔄 다른 접근: [[papers/171_Boltz-1_Democratizing_Biomolecular_Interaction_Modeling/review]] — ProteinMPNN의 서열 설계와 Boltz-1의 구조 예측은 단백질 연구의 상호 보완적인 두 접근법이다.
+- 🔗 후속 연구: [[papers/749_Sequence_modeling_and_design_from_molecular_to_genome_scale/review]] — 분자에서 게놈 규모까지의 서열 모델링과 설계가 ProteinMPNN의 단백질 서열 설계를 더 큰 규모로 확장한다.
+- 🧪 응용 사례: [[papers/638_ProtAgents_protein_discovery_via_large_language_model_multi-/review]] — 대규모 언어모델 기반 멀티에이전트를 통한 단백질 발견이 ProteinMPNN의 설계 능력을 실제 연구에 적용한다.
+- 🏛 기반 연구: [[papers/065_Agentic_End-to-End_De_Novo_Protein_Design_for_Tailored_Dynam/review]] — 단백질 서열 설계의 기본적인 딥러닝 접근법에 대한 기초적 이해를 제공한다
+- 🧪 응용 사례: [[papers/112_Atomically_accurate_de_novo_design_of_antibodies_with_RFdiff/review]] — 단백질 서열 설계의 견고한 딥러닝이 항체 설계 파이프라인의 실제 적용 기반이다
+- 🔄 다른 접근: [[papers/171_Boltz-1_Democratizing_Biomolecular_Interaction_Modeling/review]] — Boltz-1의 생체분자 복합체 구조 예측과 ProteinMPNN의 단백질 서열 설계는 구조생물학의 서로 다른 측면을 다룬다.
+- 🏛 기반 연구: [[papers/482_Lean-star_Learning_to_interleave_thinking_and_proving/review]] — 형식 올림피아드 수준 벤치마크가 자연언어 생각과 형식 증명을 결합한 모델의 성능을 평가하는 기준을 제공한다.

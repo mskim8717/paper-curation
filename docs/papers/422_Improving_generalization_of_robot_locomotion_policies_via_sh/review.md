@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.0
 essence: "미분 가능 시뮬레이터 기반의 1차 정책 최적화(first-order policy gradient) 방법은 샘플 효율성은 우수하나 일반화 성능이 떨어진다는 문제를 해결하기 위해, Sharpness-Aware Minimization (SAM) 기법을 로봇 강화학습에 처음 도입한 연구이다. SHAC-ASAM 알고리즘을 통해 손실 함수의 평평한 극소점(flat minima)을 찾음으로써 접촉 기반 로봇 제어 환경에서 견고성과 효율성을 동시에 달성한다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Robot_Control_and_Policy_Robustness"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Song et al._2024_Improving generalization of robot locomotion policies via sharpness-aware reinforcement learning.pdf"
 ---
@@ -128,12 +129,15 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Song et al._2024_Improving generalizatio
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — 샤프니스 인식 최소화를 통한 일반화 성능 향상은 소프트 연속 팔의 심-투-리얼 전이 성공률을 더욱 개선할 수 있는 이론적 근거를 제공한다.
-- 🔗 후속 연구: [[papers/688_Robustness_evaluation_of_offline_reinforcement_learning_for/review]] — 오프라인 강화학습의 견고성 평가 연구는 샤프니스 인식 최소화 기법이 실제 로봇 제어에서 어떤 견고성 개선을 가져오는지 실증적으로 분석할 수 있다.
-- 🧪 응용 사례: [[papers/863_Value_iteration_for_learning_concurrently_executable_robotic/review]] — 동시 실행 가능한 로봇 제어 태스크 학습에서 샤프니스 인식 최소화는 각 태스크의 일반화 성능을 향상시켜 더 안정적인 멀티태스킹을 가능하게 한다.
-- 🏛 기반 연구: [[papers/759_SLE-FNO_Single-Layer_Extensions_for_Task-Agnostic_Continual/review]] — 로봇 운동 정책의 일반화 개선이 SLE-FNO의 분포 변화 적응과 지속학습의 기반 원리를 제공한다.
-- 🔗 후속 연구: [[papers/449_Kimi_k15_Scaling_reinforcement_learning_with_llms/review]] — 로봇 정책의 일반화 성능 향상을 위한 SAM 기법은 Kimi k1.5의 정책 최적화 방법론에 샤프니스 인식 최소화를 도입할 수 있다.
-- 🔗 후속 연구: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — 일반화 성능 향상을 위한 샤프니스 인식 최소화 기법은 소프트 연속 팔의 심-투-리얼 전이 성능을 더욱 개선할 수 있다.
-- 🔗 후속 연구: [[papers/662_Reinforcement_Learning_for_Dynamic_Microfluidic_Control/review]] — 샤프니스 인식 최소화를 통한 일반화 개선은 오프라인 강화학습의 견고성 문제를 모델 최적화 관점에서 해결하는 추가적인 방법론을 제시한다.
-- 🏛 기반 연구: [[papers/863_Value_iteration_for_learning_concurrently_executable_robotic/review]] — 샤프니스 인식 최소화를 통한 일반화 성능 향상은 동시 실행 로봇 태스크 학습에서 각 태스크의 안정적인 수렴과 성능 개선에 이론적 토대를 제공한다.
-- 🧪 응용 사례: [[papers/003_A_comprehensive_survey_of_cross-domain_policy_transfer_for_e/review]] — 로봇 보행 정책의 일반화 개선을 통해 크로스 도메인 정책 전이의 실제 적용 사례를 제시한다.
+- 🔄 다른 접근: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — 로봇 정책의 일반화를 샤프니스 인식 최적화와 운동학 분리라는 서로 다른 방법으로 달성한다.
+- 🔗 후속 연구: [[papers/395_Guided_by_guardrails_Control_barrier_functions_as_safety_ins/review]] — 샤프니스 인식 최적화가 안전한 학습을 위한 제어 장벽 함수와 결합되어 더 견고한 정책을 생성할 수 있다.
+- 🔄 다른 접근: [[papers/050_Adasociety_An_adaptive_environment_with_social_structures_fo/review]] — 로봇 정책의 일반화와 다중 에이전트 환경에서의 적응을 서로 다른 관점에서 접근한다.
+- 🏛 기반 연구: [[papers/688_Robustness_evaluation_of_offline_reinforcement_learning_for/review]] — 샤프니스 인식 최적화가 오프라인 RL의 행동 섭동에 대한 견고성 향상에 기여할 수 있다.
+- 🏛 기반 연구: [[papers/211_ChemGymRL_A_Customizable_Interactive_Framework_for_Reinforce/review]] — 로봇 이동 정책의 일반화 개선 기법을 화학 실험 자동화의 강화학습 에이전트 훈련에 활용한다
+- 🔄 다른 접근: [[papers/748_Semi-Supervised_2D_Human_Pose_Estimation_Driven_by_Position/review]] — 로봇 움직임 정책의 일반화 개선으로 포즈 추정 일반화의 다른 접근법을 보여준다.
+- 🔄 다른 접근: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — 로봇 제어의 일반화를 운동학 분리와 샤프니스 인식 최적화라는 서로 다른 접근법으로 달성한다.
+- 🏛 기반 연구: [[papers/395_Guided_by_guardrails_Control_barrier_functions_as_safety_ins/review]] — 제어 장벽 함수를 통한 안전한 학습이 로봇 정책의 일반화 성능 향상에 필요한 안전성 기반을 제공한다.
+- 🔗 후속 연구: [[papers/688_Robustness_evaluation_of_offline_reinforcement_learning_for/review]] — 오프라인 RL의 견고성 문제가 샤프니스 인식 최적화를 통해 해결될 수 있는 가능성을 제시한다.
+- 🔗 후속 연구: [[papers/863_Value_iteration_for_learning_concurrently_executable_robotic/review]] — 로봇 이동 정책의 일반화를 개선하는 연구가 다중 태스크 동시 실행을 위한 독립성 학습으로 확장될 수 있다.
+- 🔄 다른 접근: [[papers/003_A_comprehensive_survey_of_cross-domain_policy_transfer_for_e/review]] — 둘 다 로봇 정책의 일반화를 다루지만, 크로스 도메인 전이는 도메인 간 전이에, 다른 연구는 공유 표현 학습에 집중한다
+- 🔄 다른 접근: [[papers/050_Adasociety_An_adaptive_environment_with_social_structures_fo/review]] — 다중 에이전트 환경에서의 적응과 로봇 정책의 일반화를 서로 다른 관점에서 접근한다.

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "비모국어 부정확한 초안 문장을 유창하고 완성된 학술 문장으로 자동 변환하는 문장 수준 수정(Sentence-level Revision, SentRev) 작업을 제안하고, 이를 위한 SMITH 데이터셋을 구축하여 기준선 성능을 설정한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Self-Refining_Text_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ito et al._2019_Diamonds in the rough Generating fluent sentences from early-stage drafts for academic writing assi.pdf"
 ---
@@ -108,6 +109,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ito et al._2019_Diamonds in the rough Ge
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/272_Diamonds_in_the_rough_Generating_fluent_sentences_from_early/review]] — 비모국어 화자의 초안을 유창한 학술 문장으로 변환하는 문장 수준 수정 작업의 핵심 방법론을 제시한다.
-- 🔗 후속 연구: [[papers/791_Text_editing_by_command/review]] — 명령을 통한 텍스트 편집 방법으로 본 논문의 문장 수정을 더 일반적인 텍스트 편집으로 확장한다.
-- 🔄 다른 접근: [[papers/656_Read_revise_repeat_A_system_demonstration_for_human-in-the-l/review]] — 인간-루프 반복 시스템으로 본 논문의 자동 수정과 다른 접근법인 인간 참여형 수정을 제시한다.
+- 🔄 다른 접근: [[papers/246_Csed_A_chinese_semantic_error_diagnosis_corpus/review]] — 초안 문장 수정과 중국어 의미 오류 진단이라는 서로 다른 언어 품질 개선 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/571_Neural_automated_writing_evaluation_with_corrective_feedback/review]] — 교정 피드백을 통한 자동화된 글쓰기 평가와 초안 문장 수정이 글쓰기 지원에서 상호 보완적 기능을 제공한다.
+- 🏛 기반 연구: [[papers/515_Machine-in-the-loop_rewriting_for_creative_image_captioning/review]] — 창의적 이미지 캡션을 위한 기계-인-루프 재작성이 문장 수준 수정의 방법론적 토대를 제공한다.
+- 🧪 응용 사례: [[papers/227_Closing_the_loop_Learning_to_generate_writing_feedback_via_l/review]] — 글쓰기 피드백 생성 학습이 초안 문장 수정에서 구체적인 개선 방향 제시에 실제 적용된다.
+- 🔗 후속 연구: [[papers/246_Csed_A_chinese_semantic_error_diagnosis_corpus/review]] — 중국어 의미 오류 진단과 초안 문장 수정이 언어 품질 개선을 위한 상호 보완적 시스템을 구성한다.

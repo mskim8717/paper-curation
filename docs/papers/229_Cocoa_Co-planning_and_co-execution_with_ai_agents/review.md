@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 AI 에이전트와의 협업에서 계획(planning)과 실행(execution)을 엄격하게 분리하지 않고 유연하게 인터리빙(interleaving)하며, 인간과 에이전트 간 업무 위임 권한을 동적으로 조정할 수 있는 상호작용 설계를 제시한다. 계산 노트북(computational notebook) 패러다임의 영감을 받아 과학 연구 작업을 위한 문서 기반 협업 시스템 Cocoa를 개발했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-agent_Task_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/CRISPR_and_Drug_Discovery_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Feng et al._2024_Cocoa Co-planning and co-execution with ai agents.pdf"
 ---
@@ -133,3 +133,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Feng et al._2024_Cocoa Co-planning and c
 - **Overall**: 4.25/5
 
 **총평**: 본 논문은 AI 에이전트와의 장기 협업에서 계획과 실행의 인터리빙, 동적 권한 위임이라는 실질적이고 중요한 설계 문제를 다루며, 체계적인 연구 방법론(형성 연구-설계-이중 평가)과 현장 검증을 통해 신뢰할 수 있는 결과를 제시한다. 특히 과학 연구 도메인의 복잡한 협업 요구를 충족하는 구체적인 설계안을 제안한 점이 실무적 가치가 높다.
+
+## Related Papers
+
+- 🧪 응용 사례: [[papers/413_Human-ai_teaming_using_large_language_models_Boosting_brain-/review]] — 뇌파 신호 활용 인간-AI 팀워크가 계획-실행 협업 패러다임의 실제 응용 사례를 제공한다
+- 🏛 기반 연구: [[papers/102_Architecture_Design_for_Human-Driven_Systems/review]] — 인간 중심 시스템 아키텍처 설계가 협업적 계획-실행 시스템의 설계 원리를 제공한다
+- 🏛 기반 연구: [[papers/553_Model-in-the-loop_milo_Accelerating_multimodal_ai_data_annot/review]] — 계획과 실행을 유연하게 조정하는 협업 설계가 인간-모델 협력 주석 시스템의 이론적 기반을 제공한다

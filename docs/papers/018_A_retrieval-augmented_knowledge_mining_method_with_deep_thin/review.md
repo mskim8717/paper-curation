@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "생의학 연구를 위해 Deep Thinking LLM과 Retrieval-Augmented Generation(RAG)을 통합한 지식 채굴 방법론을 제안하며, BioStrataKG 지식 그래프와 BioCDQA 데이터셋을 구축하고 IP-RAR 프레임워크로 문서 간 추론 능력을 향상시킨다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Retrieval-augmented_Generation_Systems"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Feng et al._2025_A retrieval-augmented knowledge mining method with deep thinking LLMs for biomedical research and cl.pdf"
 ---
@@ -93,4 +93,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Feng et al._2025_A retrieval-augmented k
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — 과학 연구를 위한 검색 증강 생성 에이전트의 실제 구현 사례를 보여준다.
+- 🏛 기반 연구: [[papers/034_A_Survey_on_RAG_Meeting_LLMs_Towards_Retrieval-Augmented_Lar/review]] — 두 논문 모두 RAG 기반 시스템을 다루며 지식 검색과 생성의 통합 방법론을 제시한다
+- 🔗 후속 연구: [[papers/067_Agentic_retrieval-augmented_generation_A_survey_on_agentic_r/review]] — 정적 RAG를 넘어 자율적 에이전트 기반의 동적 RAG 시스템으로 발전시킨 접근법을 보여준다
+- 🧪 응용 사례: [[papers/457_Language_agents_achieve_superhuman_synthesis_of_scientific_k/review]] — 지식 채굴 방법론을 실제 과학 지식 합성 작업에 적용한 구체적 사례를 제공한다
+- 🧪 응용 사례: [[papers/034_A_Survey_on_RAG_Meeting_LLMs_Towards_Retrieval-Augmented_Lar/review]] — 일반적 RAG-LLM 통합 이론을 생의학 지식 채굴이라는 구체적 도메인에 적용한 사례이다
+- 🧪 응용 사례: [[papers/067_Agentic_retrieval-augmented_generation_A_survey_on_agentic_r/review]] — 에이전트 기반 RAG의 이론적 프레임워크를 실제 지식 채굴 작업에 적용한 구체적 사례이다

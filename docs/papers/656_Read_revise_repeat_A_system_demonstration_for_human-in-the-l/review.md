@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 인간 피드백을 통합한 반복적 텍스트 개정 시스템 R3(Read, Revise, Repeat)을 제시한다. 사용자가 모델의 편집 제안을 수용/거절하며 상호작용하는 방식으로 고품질 텍스트 개정을 달성한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Self-Refining_Text_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Self-Clarifying_Reasoning_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Corradini et al._2022_Read, revise, repeat A system demonstration for human-in-the-loop iterative text revision.pdf"
 ---
@@ -91,9 +92,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Corradini et al._2022_Read, revise, repe
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/227_Closing_the_loop_Learning_to_generate_writing_feedback_via_l/review]] — 둘 다 인간-AI 협력 글쓰기를 다루지만 하나는 직접적 인간 피드백, 다른 하나는 학생 시뮬레이터 기반 접근임
-- 🏛 기반 연구: [[papers/791_Text_editing_by_command/review]] — 자연어 명령을 통한 텍스트 편집의 기초적 접근이 인간 피드백 기반 반복적 텍스트 개정 시스템의 이론적 토대를 제공함
-- 🔗 후속 연구: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — 기본적인 인간-AI 협력 글쓰기를 반복적 개정과 피드백 통합을 통한 더 정교한 협력 편집 시스템으로 확장함
-- 🔄 다른 접근: [[papers/227_Closing_the_loop_Learning_to_generate_writing_feedback_via_l/review]] — 둘 다 인간-AI 협력 글쓰기를 다루지만, 하나는 학생 시뮬레이터 기반 피드백, 다른 하나는 직접적 인간 피드백 방식임
-- 🔗 후속 연구: [[papers/791_Text_editing_by_command/review]] — 자연어 명령 기반 텍스트 편집을 인간 피드백과 통합한 더 발전된 대화형 편집 시스템으로 확장함
-- 🔄 다른 접근: [[papers/272_Diamonds_in_the_rough_Generating_fluent_sentences_from_early/review]] — 인간-루프 반복 시스템으로 본 논문의 자동 수정과 다른 접근법인 인간 참여형 수정을 제시한다.
+- 🔄 다른 접근: [[papers/435_Interfeedback_Unveiling_interactive_intelligence_of_large_mu/review]] — 인간 피드백을 통한 AI 시스템 개선이라는 공통 목표를 가지지만 텍스트 개정 vs 다중모달 상호작용이라는 다른 영역을 다룬다.
+- 🏛 기반 연구: [[papers/791_Text_editing_by_command/review]] — 자연어 명령을 통한 텍스트 편집의 이론적 기반을 제공하여 반복적 개정 시스템의 동작 원리를 설명한다.
+- 🔗 후속 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자기 피드백을 통한 반복적 개선 방법론을 통해 인간 피드백 없이도 텍스트 품질을 향상시킬 수 있는 확장된 접근법을 제시한다.
+- 🧪 응용 사례: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 협력적 글쓰기 데이터셋을 실제 논문 작성 지원 시스템에 적용한 실용적 사례
+- 🔄 다른 접근: [[papers/435_Interfeedback_Unveiling_interactive_intelligence_of_large_mu/review]] — 인간 피드백을 통한 모델 개선이라는 공통 목표를 가지지만 다중모달 vs 텍스트 개정이라는 다른 접근법을 사용한다.
+- 🔗 후속 연구: [[papers/791_Text_editing_by_command/review]] — 인간 피드백 기반 텍스트 개정 시스템에 자연어 명령 편집 기능을 통합하여 더욱 유연한 상호작용을 가능하게 한다.
+- 🏛 기반 연구: [[papers/515_Machine-in-the-loop_rewriting_for_creative_image_captioning/review]] — 인간 중심 반복 개선 시스템이 기계-인-루프 창의적 재작성의 이론적 기반과 사용자 상호작용 설계 원칙을 제공한다.

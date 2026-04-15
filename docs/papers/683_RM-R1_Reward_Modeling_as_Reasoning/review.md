@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.4
 essence: "보상 모델(Reward Model, RM)에 추론 능력을 통합함으로써 해석 가능성과 성능을 모두 향상시킨 새로운 클래스의 생성형 보상 모델인 RM-R1을 제시한다. Chain-of-Rubrics(CoR) 메커니즘을 통해 작업 특성에 맞춘 맞춤형 추론 전략을 적용하여 70B, 340B 모델과 GPT-4o를 최대 4.9% 능가한다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Reasoning_Enhancement_via_Reinforcement_Learning"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_RM-R1 Reward Modeling as Reasoning.pdf"
 ---
@@ -99,7 +100,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_RM-R1 Reward Modeling a
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/845_Trust_But_Verify_A_Self-Verification_Approach_to_Reinforceme/review]] — 두 논문 모두 보상 모델의 검증 능력을 다루되 RM-R1은 추론 통합, RISE는 자기검증 학습에 초점을 맞춘다.
-- 🏛 기반 연구: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — PAG의 다중 턴 자기 수정 프레임워크는 RM-R1의 Chain-of-Rubrics 메커니즘 설계에 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/322_Evaluation_of_openai_o1_Opportunities_and_challenges_of_agi/review]] — OpenAI o1의 추론 능력 평가는 RM-R1의 생성형 보상 모델이 실제로 달성할 수 있는 성능 상한을 보여준다.
-- 🔗 후속 연구: [[papers/845_Trust_But_Verify_A_Self-Verification_Approach_to_Reinforceme/review]] — RM-R1의 추론 능력을 통합한 보상 모델링은 RISE의 검증 가능한 보상 시스템에 더 정교한 평가 메커니즘을 제공한다.
+- 🔗 후속 연구: [[papers/243_Critique-GRPO_Advancing_LLM_Reasoning_with_Natural_Language/review]] — 자연어 비판과 수치 보상을 결합하는 접근법이 추론 기반 보상 모델링으로 확장될 수 있다.
+- 🔄 다른 접근: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 보상 모델에 추론을 통합하는 것과 정책 자체에 검증-수정을 통합하는 서로 다른 접근법이다.
+- 🏛 기반 연구: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — 추론 기반 보상 모델이 LLM의 자발적 추론 패턴 개발을 더 효과적으로 유도할 수 있다.
+- 🔗 후속 연구: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — 생성-검증 갭 문제를 해석 가능한 추론 기반 보상 모델로 해결할 수 있는 방향을 제시한다.
+- 🔄 다른 접근: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 자기수정을 정책 레벨에서 구현하는 것과 보상 모델에 추론을 통합하는 서로 다른 접근법이다.
+- 🏛 기반 연구: [[papers/243_Critique-GRPO_Advancing_LLM_Reasoning_with_Natural_Language/review]] — 자연어 비판과 수치 보상의 통합이 추론 기반 보상 모델링의 이론적 근거를 제공한다.
+- 🔗 후속 연구: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — 생성-검증 갭 문제를 추론 기반 보상 모델을 통해 해결할 수 있는 방향을 제시한다.

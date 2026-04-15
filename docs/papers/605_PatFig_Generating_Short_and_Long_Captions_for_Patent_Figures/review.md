@@ -10,8 +10,10 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 유럽 특허청(EPO)의 11,000개 이상 특허에서 추출한 30,000개 이상의 특허 도형으로 구성된 대규모 데이터셋 **Qatent PatFig**를 소개하며, 대규모 비전-언어 모델(LVLM)을 미세조정하여 특허 도형에 대한 짧고 긴 캡션을 자동 생성하는 방법을 제시한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Figure_Captioning"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Chart_and_Figure_Captioning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Aubakirova et al._2023_PatFig Generating Short and Long Captions for Patent Figures.pdf"
 ---
@@ -116,6 +118,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Aubakirova et al._2023_PatFig Generating
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/178_Can_ai_examine_novelty_of_patents_Novelty_evaluation_based_o/review]] — 둘 다 AI의 특허 분야 활용을 다루지만 하나는 특허 도형 캡션 생성에, 다른 하나는 특허 신규성 검토에 초점을 맞춘다.
-- 🏛 기반 연구: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 범용 차트 멀티모달 언어 모델이 특허 도형의 다양한 시각적 요소를 이해하고 캡션을 생성하는 기반을 제공한다.
-- 🔗 후속 연구: [[papers/564_Multi-llm_collaborative_caption_generation_in_scientific_doc/review]] — 과학 문서에서 다중 LLM 협업 캡션 생성 기법이 특허 도형의 복잡한 기술적 내용을 더욱 정확하게 캡션화하는데 활용될 수 있다.
+- 🔄 다른 접근: [[papers/338_Figuring_out_figures_Using_textual_references_to_caption_sci/review]] — 도형 캡션 생성을 특허 vs 과학 논문 도메인에서 각각 다른 접근법으로 구현한다
+- 🔗 후속 연구: [[papers/125_Automated_latex_code_generation_from_handwritten_math_expres/review]] — 멀티모달 처리를 수학식 LaTeX 변환에서 특허 도형 캡션으로 확장한다
+- ⚖️ 반론/비판: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — 특허 도형을 캡션화 vs 텍스트에서 생성하는 정반대 방향의 접근법이다
+- 🔄 다른 접근: [[papers/125_Automated_latex_code_generation_from_handwritten_math_expres/review]] — 수학식 이미지를 LaTeX vs 특허 도형을 캡션으로 변환하는 서로 다른 멀티모달 접근법이다
+- 🏛 기반 연구: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — 특허 도형 캡션 생성 기술이 과학 도형 생성의 멀티모달 기반을 제공한다
+- 🔄 다른 접근: [[papers/338_Figuring_out_figures_Using_textual_references_to_caption_sci/review]] — 도형 캡션 생성을 과학 논문 vs 특허 문서에서 각각 다른 맥락으로 접근한다

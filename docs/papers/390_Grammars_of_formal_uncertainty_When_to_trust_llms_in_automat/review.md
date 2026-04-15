@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "LLM의 본질적인 확률성(probabilistic nature)과 형식검증의 결정론적 요구(deterministic guarantees) 사이의 근본적 긴장을 해소하기 위해, 확률문맥자유문법(PCFG, Probabilistic Context-Free Grammar) 기반 프레임워크를 도입하여 LLM 생성 SMT-LIB 프로그램의 불확실성을 체계적으로 정량화하고, 이를 통해 선택적 검증(selective verification)으로 14-100% 오류율을 감소시킨다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/LLM_Trustworthiness_and_Safety_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ganguly et al._2025_Grammars of formal uncertainty When to trust llms in automated reasoning tasks.pdf"
 ---
@@ -119,7 +121,6 @@ LLM과 형식검증 간의 근본적 긴장을 PCFG 프레임워크로 우아하
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/674_ReTool_Reinforcement_Learning_for_Strategic_Tool_Use_in_LLMs/review]] — 확률문맥자유문법 기반 불확실성 정량화와 강화학습 기반 전략적 도구 사용은 LLM의 신뢰성 문제를 서로 다른 방식으로 해결하는 접근이다.
-- 🔗 후속 연구: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 대규모 언어 모델의 신뢰성 종합 평가가 형식 검증에서의 불확실성 정량화를 더 광범위한 신뢰성 차원으로 확장한 연구이다.
-- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — LLM의 자기 수정 추론 한계 연구가 확률적 언어 모델의 결정론적 보장 제공 가능성에 대한 반대 관점을 제시한다.
-- 🔄 다른 접근: [[papers/674_ReTool_Reinforcement_Learning_for_Strategic_Tool_Use_in_LLMs/review]] — ReTool의 강화학습 기반 전략적 도구 사용과 확률문맥자유문법 기반 불확실성 정량화는 LLM 신뢰성을 서로 다른 방식으로 개선하는 접근이다.
+- 🏛 기반 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — LLM을 활용한 정리 증명의 기본 방법론을 제시하여 형식검증에서 LLM 사용 시 불확실성 정량화의 이론적 기반을 제공함
+- 🔗 후속 연구: [[papers/750_SEVerA_Verified_Synthesis_of_Self-Evolving_Agents/review]] — 에이전트 합성의 형식검증을 다루어 PCFG 기반 불확실성 정량화를 자기진화 에이전트의 안전성 보장으로 확장함
+- 🔄 다른 접근: [[papers/037_A_Survey_on_Uncertainty_Quantification_Methods_for_Deep_Lear/review]] — 딥러닝에서 불확실성 정량화를 포괄적으로 다루지만 LLM 특화 대신 일반적인 딥러닝 모델에 집중한 다른 접근법임

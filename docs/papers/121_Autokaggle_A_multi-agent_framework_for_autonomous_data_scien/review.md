@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.1
 essence: "AutoKaggle은 LLM 기반의 다중 에이전트 시스템으로 Kaggle 데이터 과학 경진대회에서 전체 데이터 파이프라인을 자동으로 수행하는 프레임워크입니다. 8개의 Kaggle 경진대회에서 0.85의 검증 제출 성공률과 0.82의 종합 점수를 달성하여 실무 수준의 성능을 입증합니다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-agent_Task_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Scientist_Research_Protocols"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_Autokaggle A multi-agent framework for autonomous data science competitions.pdf"
 ---
@@ -121,10 +121,9 @@ AutoKaggle은 LLM 기반의 다중 에이전트 시스템으로 Kaggle 데이터
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/594_OSDA_Agent_Leveraging_Large_Language_Models_for_De_Novo_Desi/review]] — AutoKaggle과 DS-Agent는 모두 데이터 과학 자동화를 목표로 하지만, Kaggle 경진대회 특화와 일반적 데이터 과학 워크플로우라는 서로 다른 접근법을 취합니다.
-- 🔗 후속 연구: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — AutoKaggle의 다중 에이전트 프레임워크는 Data Interpreter의 LLM 기반 데이터 과학 자동화 기법을 확장하여 경진대회 환경에 특화된 솔루션을 제공합니다.
-- 🔗 후속 연구: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — 데이터 사이언스 워크플로우 자동화 개념이 Kaggle 경진대회와 같은 구체적인 데이터 과학 문제 해결을 위한 멀티 에이전트 시스템으로 확장되었다
-- 🏛 기반 연구: [[papers/476_Large_language_models_orchestrating_structured_reasoning_ach/review]] — 자동화된 데이터 과학의 다중 에이전트 접근법에 대한 구체적 구현 사례를 제공한다.
-- 🏛 기반 연구: [[papers/594_OSDA_Agent_Leveraging_Large_Language_Models_for_De_Novo_Desi/review]] — 자동화된 데이터 과학의 다중 에이전트 프레임워크에 대한 구체적 구현 사례를 제공한다.
-- 🔗 후속 연구: [[papers/650_RD-Agent_Automating_Data-Driven_AI_Solution_Building_Through/review]] — AutoKaggle의 자율 데이터 과학을 위한 다중 에이전트 프레임워크는 R&D-Agent의 협력적 탐색 과정을 캐글 경쟁 환경으로 확장한다.
-- 🧪 응용 사례: [[papers/136_Automl-gpt_Automatic_machine_learning_with_gpt/review]] — Kaggle 경진대회 자동화를 통한 AutoML의 구체적 적용 사례를 제시한다.
+- 🔄 다른 접근: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 데이터 과학 자동화라는 동일한 목표를 가지지만 AutoKaggle은 경진대회에, MLAgentBench는 일반적인 기계학습 벤치마킹에 특화된 다른 접근법임
+- 🔗 후속 연구: [[papers/293_Ds-agent_Automated_data_science_by_empowering_large_language/review]] — LLM을 통한 데이터 과학 자동화를 다루어 AutoKaggle의 Kaggle 특화 접근법을 더 광범위한 데이터 과학 작업 자동화로 확장함
+- 🏛 기반 연구: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — LLM 에이전트를 활용한 데이터 과학 작업의 기본 방법론을 제시하여 AutoKaggle의 다중 에이전트 데이터 파이프라인 자동화의 이론적 기반을 제공함
+- 🔄 다른 접근: [[papers/069_Agentomics-ML_Autonomous_Machine_Learning_Experimentation_Ag/review]] — 데이터 과학 자동화에서 게노믹스 특화와 범용 접근법의 서로 다른 전문화 전략을 보여준다
+- 🔄 다른 접근: [[papers/476_Large_language_models_orchestrating_structured_reasoning_ach/review]] — 다중 에이전트 프레임워크를 통한 자율적 데이터 과학 접근으로, 단일 에이전트의 구조화된 추론과 다른 방식을 제시
+- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 데이터 사이언스 작업의 완전 자동화를 통해 MLAgentBench의 평가 범위를 실제 업무 환경으로 확장한다.

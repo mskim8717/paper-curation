@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.4
 essence: "대규모 추론 모델(LRM)의 정적 지식 의존성을 극복하기 위해, 웹 탐색과 정보 수집을 추론 과정에 통합하는 자율 딥 리서치 에이전트를 제시한다. WebThinker는 LRM이 웹 페이지를 동적으로 탐색하고 실시간으로 보고서를 작성할 수 있도록 지원한다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Search-Augmented_Language_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/CRISPR_and_Drug_Discovery_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2025_WebThinker Empowering Large Reasoning Models with Deep Research Capability.pdf"
 ---
@@ -126,9 +127,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2025_WebThinker Empowering Lar
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — 두 논문 모두 추론 과정에서의 검색 통합을 다루되 WebThinker는 웹 탐색, Search-R1은 검색 엔진 활용에 특화되어 있다.
-- 🔗 후속 연구: [[papers/667_ReSearch_Learning_to_Reason_with_Search_for_LLMs_via_Reinfor/review]] — ReSearch의 강화학습 기반 검색 학습은 WebThinker의 웹 탐색 능력을 더욱 체계적이고 자동화된 방식으로 발전시킨다.
-- 🧪 응용 사례: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — WebThinker의 동적 웹 탐색 능력은 OpenReviewer의 과학 문헌 생성 작업에서 실시간 정보 수집을 통해 더 정확한 리뷰를 생성할 수 있다.
-- 🔗 후속 연구: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — WebThinker의 웹 탐색 능력은 Search-R1의 검색 엔진 활용을 더 동적이고 상호작용적인 정보 수집으로 발전시킨다.
-- 🏛 기반 연구: [[papers/667_ReSearch_Learning_to_Reason_with_Search_for_LLMs_via_Reinfor/review]] — WebThinker의 웹 탐색과 정보 수집 통합은 ReSearch의 검색 쿼리와 추론 체인 생성에 더 동적인 정보 수집 방법론을 제공한다.
-- 🔄 다른 접근: [[papers/874_WebWatcher_Breaking_New_Frontier_of_Vision-Language_Deep_Res/review]] — 웹 기반 정보 탐색에서 심층 추론 능력을 강조하는 다른 접근 방식을 제시한다.
+- 🔗 후속 연구: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — 웹 탐색과 정보 수집을 추론 과정에 통합하는 것이 검색 엔진 활용 추론으로 구체화될 수 있다.
+- 🏛 기반 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 웹 탐색이라는 특화된 도구 사용이 일반적인 자가감독 도구 학습 원리에 기반한다.
+- 🔄 다른 접근: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — 웹 탐색을 추론에 통합하는 것과 웹 에이전트 자체를 RL로 훈련하는 서로 다른 접근법이다.
+- 🏛 기반 연구: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 웹 환경에서의 동적 정보 수집이 대화형 환경에서의 능동적 탐색 능력에 기반한다.
+- 🔄 다른 접근: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — 웹 환경에서의 에이전트 훈련과 추론 모델의 웹 탐색 통합을 서로 다른 관점에서 접근한다.
+- 🏛 기반 연구: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — 추론 중 검색 활용이 웹 탐색과 정보 수집을 통합하는 더 포괄적인 접근법의 기반이 된다.
+- 🔗 후속 연구: [[papers/667_ReSearch_Learning_to_Reason_with_Search_for_LLMs_via_Reinfor/review]] — 추론 중 검색이 웹 탐색과 정보 수집을 통합하는 더 포괄적인 접근법으로 발전될 수 있다.
+- 🔗 후속 연구: [[papers/872_Webdancer_Towards_autonomous_information_seeking_agency/review]] — 웹 추론 모델이 자율적 정보 탐색 에이전트의 깊이 있는 연구 수행 능력으로 확장될 수 있다.
+- 🏛 기반 연구: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 대화형 환경에서의 능동적 탐색이 웹 탐색과 정보 수집의 기반 능력이 된다.
+- 🔗 후속 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 자가감독 도구 학습이 웹 탐색과 정보 수집이라는 특화된 도구 사용으로 발전될 수 있다.

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "본 연구는 사용자가 정의한 필터링 알고리즘을 자동으로 데이터 수집 전략으로 변환하여, 복잡한 재료 설계 목표를 달성하기 위한 Bayesian Algorithm Execution (BAX) 기반 프레임워크를 제시한다. 이를 통해 최적화나 전체 함수 추정이 아닌 특정 설계 공간의 부분집합 탐색을 효율적으로 수행할 수 있다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Retrosynthesis_Strategy_Planning"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chitturi et al._2023_Targeted materials discovery using Bayesian algorithm execution.pdf"
 ---
@@ -113,14 +113,14 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chitturi et al._2023_Targeted materials 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/461_LARC_Towards_Human-level_Constrained_Retrosynthesis_Planning/review]] — 베이지안 알고리즘 실행과 LLM 기반 역합성 계획은 모두 복잡한 재료/화학 설계 목표 달성을 위한 서로 다른 AI 기반 접근법입니다
-- 🏛 기반 연구: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 대형 언어모델을 이용한 재료 발견 가설 생성은 베이지안 알고리즘 실행의 재료 설계 목표 설정에 이론적 기반을 제공합니다
-- 🧪 응용 사례: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — 재료 발견을 위한 파운데이션 모델은 베이지안 알고리즘 실행이 타겟으로 하는 재료 설계 분야의 실제 응용 사례입니다
-- 🔄 다른 접근: [[papers/461_LARC_Towards_Human-level_Constrained_Retrosynthesis_Planning/review]] — 베이지안 알고리즘 실행을 통한 재료 발견과 LLM 기반 역합성 계획은 서로 다른 AI 접근법으로 화학 문제를 해결합니다
-- 🏛 기반 연구: [[papers/258_Deep_active_learning_based_experimental_design_to_uncover_sy/review]] — 베이지안 알고리즘 실행을 통한 타겟 재료 발견이 생물학적 상호작용 탐색의 방법론적 기반을 제공합니다.
-- 🧪 응용 사례: [[papers/799_The_frontier_of_simulation-based_inference/review]] — 베이지안 추론을 재료 발견의 타겟 최적화에 적용한다.
-- 🔗 후속 연구: [[papers/867_Verifier-Constrained_Flow_Expansion_for_Discovery_Beyond_the/review]] — 베이지안 알고리즘 실행을 통한 표적 소재 발견이 Flow 확장의 검증기 제약 최적화 프레임워크에 직접 적용됨
-- 🔗 후속 연구: [[papers/024_A_sober_look_at_llms_for_material_discovery_Are_they_actuall/review]] — 베이지안 알고리즘을 통한 표적 소재 발견이 LLM의 분자 공간 베이지안 최적화 유용성을 실제로 검증함
-- 🏛 기반 연구: [[papers/1100_Representative_Informative_and_De-Amplifying_Requirements_fo/review]] — 베이지안 실험설계 방법론을 모델 신뢰성 향상에 적용한 이론적 기반
-- 🔄 다른 접근: [[papers/1104_A_Physics-Informed_Chemical_Rule_for_Topological_Materials_D/review]] — 베이지안 알고리즘 vs 물리 기반 화학 규칙으로 재료 발견의 서로 다른 접근법
-- 🔗 후속 연구: [[papers/1125_Accelerating_cell_culture_media_development_using_Bayesian_o/review]] — 베이지안 알고리즘 실행을 통한 표적 재료 발견은 세포 배양 배지 개발의 베이지안 최적화 프레임워크를 재료 발견으로 확장한다.
+- 🔗 후속 연구: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 재료 발견을 위한 가설 생성과 BAX 기반 알고리즘 실행을 결합하면 더 효과적인 재료 설계 파이프라인을 구축할 수 있다.
+- 🧪 응용 사례: [[papers/695_Scaling_Deep_Learning_for_Materials_Discovery/review]] — 딥러닝 기반 재료 발견 확장 연구에 BAX 프레임워크의 효율적 탐색 전략을 적용하여 성능을 향상시킬 수 있다.
+- 🔗 후속 연구: [[papers/466_Large_Language_Model-Based_Evolutionary_Optimizer_Reasoning/review]] — 베이지안 알고리즘 실행을 통한 타겟 물질 발견이 LEO의 언어모델 기반 진화적 최적화와 결합될 수 있다.
+- 🔄 다른 접근: [[papers/346_Foundation-Model_Surrogates_Enable_Data-Efficient_Active_Lea/review]] — 둘 다 소재 발견을 위한 베이지안 최적화를 사용하지만, ICAL은 기초 모델 서로게이트에, 타겟 연구는 베이지안 알고리즘 실행에 집중한다
+- 🏛 기반 연구: [[papers/258_Deep_active_learning_based_experimental_design_to_uncover_sy/review]] — 타겟 재료 발견의 기반이 되는 베이지안 알고리즘과 능동학습 방법론에 대한 기초적 이해를 제공한다
+- 🏛 기반 연구: [[papers/684_Robot-assisted_mapping_of_chemical_reaction_hyperspaces_and/review]] — 베이지안 알고리즘을 통한 타겟 재료 발견 방법론이 로봇 기반 화학반응 초공간 매핑의 이론적 기초를 제공한다
+- 🔗 후속 연구: [[papers/695_Scaling_Deep_Learning_for_Materials_Discovery/review]] — 베이지안 알고리즘 실행을 통한 표적 물질 발견이 GNoME의 대규모 물질 탐색을 더욱 정교하게 발전시킨다.
+- 🔗 후속 연구: [[papers/024_A_sober_look_at_llms_for_material_discovery_Are_they_actuall/review]] — 베이지안 최적화를 활용한 재료 발견에서 LLM 평가와 타겟 재료 발견이 상호 보완적 접근법을 보여준다.
+- 🔗 후속 연구: [[papers/1100_Representative_Informative_and_De-Amplifying_Requirements_fo/review]] — 모델 오명시를 고려한 실험설계를 베이지안 알고리즘 실행을 통한 타겟 재료 발견으로 확장하여 실제 재료과학 문제에 적용한다.
+- 🔗 후속 연구: [[papers/1104_A_Physics-Informed_Chemical_Rule_for_Topological_Materials_D/review]] — 베이지안 알고리즘 실행을 통한 타겟 재료 발견과 위상 물질 화학 규칙을 결합하여 더 효율적인 탐색이 가능함
+- 🏛 기반 연구: [[papers/1125_Accelerating_cell_culture_media_development_using_Bayesian_o/review]] — 베이지안 알고리즘 실행의 타겟 재료 발견 접근법이 세포배양 최적화의 이론적 기반을 제공함

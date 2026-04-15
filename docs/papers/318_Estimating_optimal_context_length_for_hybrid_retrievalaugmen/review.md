@@ -9,8 +9,9 @@ arxiv: ""
 score: 3.5
 essence: "최근 대형 언어모델(LLM)의 장문맥 처리 능력 향상에도 불구하고, 실제로는 선언된 문맥 길이에서 효과적이지 못한 한계가 있다. 본 논문은 검색증강생성(RAG)과 장문맥 모델을 결합하되, 다중문서 요약 작업에 최적화된 검색 문맥 길이를 체계적으로 추정하는 방법을 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Long_Context_Embeddings"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Citation-Based_Evidence_Generation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kaddour et al._2025_Estimating optimal context length for hybrid retrievalaugmented multi-document summarization.pdf"
 ---
@@ -126,8 +127,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kaddour et al._2025_Estimating optimal c
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/452_L-citeeval_Do_longcontext_models_truly_leverage_context_for/review]] — 장문맥 모델의 실제 활용도를 다중문서 요약에서 구체적으로 검증하고 최적화한다
-- 🏛 기반 연구: [[papers/036_A_survey_on_transformer_context_extension_Approaches_and_eva/review]] — 트랜스포머 문맥 확장에 대한 전반적 조사를 바탕으로 실용적 최적화를 제시한다
-- 🧪 응용 사례: [[papers/034_A_Survey_on_RAG_Meeting_LLMs_Towards_Retrieval-Augmented_Lar/review]] — RAG와 LLM 결합의 구체적 구현 사례로 검색 문맥 길이 최적화를 다룬다
-- 🧪 응용 사례: [[papers/452_L-citeeval_Do_longcontext_models_truly_leverage_context_for/review]] — 하이브리드 검색 증강 생성의 최적 맥락 길이 추정은 장문맥 모델 평가의 실제 응용 사례입니다
-- 🧪 응용 사례: [[papers/036_A_survey_on_transformer_context_extension_Approaches_and_eva/review]] — 하이브리드 검색-증강 생성에서 최적 컨텍스트 길이 추정 방법으로 본 논문의 컨텍스트 확장 기법을 실용적으로 활용한다.
+- 🏛 기반 연구: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — 검색 증강 언어모델의 기본 원리가 하이브리드 RAG 최적화의 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/034_A_Survey_on_RAG_Meeting_LLMs_Towards_Retrieval-Augmented_Lar/review]] — RAG와 LLM 결합 연구를 다중문서 요약에 최적화된 구체적 응용으로 확장한다
+- 🧪 응용 사례: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 과학 문헌 합성 시스템에 최적화된 검색 컨텍스트 길이 추정을 실제 적용한다
+- 🧪 응용 사례: [[papers/005_A_comprehensive_survey_on_long_context_language_modeling/review]] — 장문맥 모델링 조사 결과를 하이브리드 RAG 시스템의 최적 문맥 길이 추정에 실제로 적용할 수 있다.

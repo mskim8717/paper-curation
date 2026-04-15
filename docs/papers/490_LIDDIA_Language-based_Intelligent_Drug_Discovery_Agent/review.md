@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대규모 언어 모델(LLM)의 추론 능력을 활용하여 전임상 신약개발 과정을 자동화하는 지능형 에이전트 LIDDIA를 제시한다. LIDDIA는 계산 도구들을 결합하여 분자 생성, 최적화, 선별을 통해 주요 약학적 기준을 만족하는 신규 치료약물 후보를 식별할 수 있다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Drug_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/CRISPR_and_Drug_Discovery_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Averly et al._2025_LIDDIA Language-based Intelligent Drug Discovery Agent.pdf"
 ---
@@ -103,10 +104,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Averly et al._2025_LIDDIA Language-based
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/177_Can_ai_agents_design_and_implement_drug_discovery_pipelines/review]] — 같은 신약개발 자동화를 다루지만 LIDDIA는 전임상 과정 전반을, Deep Thought는 파이프라인 설계에 집중한 차이점을 보임
-- 🔗 후속 연구: [[papers/213_ChemReasoner_Heuristic_Search_over_a_Large_Language_Models_K/review]] — LIDDIA의 분자 생성 기능이 ChemReasoner의 화학 추론 능력과 결합하면 더 정교한 신약 후보 발견이 가능함
-- 🏛 기반 연구: [[papers/290_DrugAgent_Automating_AI-aided_Drug_Discovery_Programming_thr/review]] — DrugAgent의 AI 기반 프로그래밍 자동화 접근법이 LIDDIA의 계산 도구 통합 방법론의 기반이 됨
-- 🔗 후속 연구: [[papers/856_Unimatch_Universal_matching_from_atom_to_task_for_few-shot_d/review]] — 언어 기반 지능형 약물 발견 에이전트가 계층적 매칭을 실제 약물 발견 워크플로우로 확장한다.
-- 🔄 다른 접근: [[papers/292_Drugpilot_Llm-based_parameterized_reasoning_agent_for_drug_d/review]] — 신약 발견에서 LLM 기반 에이전트의 다른 설계 접근법과 구현 방식을 비교할 수 있다
-- 🔄 다른 접근: [[papers/177_Can_ai_agents_design_and_implement_drug_discovery_pipelines/review]] — 둘 다 AI 기반 신약 발견을 다루지만 Deep Thought는 파이프라인 설계에, LIDDIA는 전체 전임상 과정에 집중함
-- 🔄 다른 접근: [[papers/291_Drugclip_Contrastive_drug-disease_interaction_for_drug_repur/review]] — 언어 기반 지능형 약물 발견과 대조학습 재창출의 다른 접근법
+- 🔄 다른 접근: [[papers/177_Can_ai_agents_design_and_implement_drug_discovery_pipelines/review]] — LIDDIA의 언어 기반 신약 발견과 DO Challenge의 AI 에이전트 파이프라인 설계는 각각 다른 접근으로 신약 개발 자동화를 추구한다
+- 🔗 후속 연구: [[papers/292_Drugpilot_Llm-based_parameterized_reasoning_agent_for_drug_d/review]] — DrugPilot의 LLM 기반 매개변수 추론 에이전트가 LIDDIA의 언어 기반 신약 발견 방법론을 확장한다
+- 🏛 기반 연구: [[papers/651_RAG-Enhanced_Collaborative_LLM_Agents_for_Drug_Discovery/review]] — RAG 강화 협력 LLM 에이전트가 LIDDIA의 신약 발견을 위한 지식 검색 및 추론 기반을 제공한다
+- 🔗 후속 연구: [[papers/260_DeepCRE_Transforming_Drug_RD_via_AI-Driven_Cross-drug_Respon/review]] — 언어 기반 지능형 약물 발견 에이전트 연구가 DeepCRE의 AI 기반 약물 R&D 변혁 시스템으로 구체적으로 발전되었다
+- 🔄 다른 접근: [[papers/177_Can_ai_agents_design_and_implement_drug_discovery_pipelines/review]] — DO Challenge의 파이프라인 설계 평가와 LIDDIA의 언어 기반 접근법은 신약 발견 AI 에이전트의 서로 다른 평가 관점을 제시한다
+- 🔗 후속 연구: [[papers/616_PharmAgents_Building_a_Virtual_Pharma_with_Large_Language_Mo/review]] — LIDDIA의 언어 기반 신약 발견이 PharmAgents의 다중 에이전트 가상 제약사를 언어 모델 특화로 확장한 형태
+- 🔄 다른 접근: [[papers/290_DrugAgent_Automating_AI-aided_Drug_Discovery_Programming_thr/review]] — 언어 기반 지능형 약물 발견과 LLM 기반 프로그래밍 에이전트는 약물 발견의 서로 다른 자동화 접근법을 제시한다

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 AI(인공지능)와 과학 연구의 융합을 포괄적으로 다룬 보고서로, 과학적 발견의 새로운 패러다임으로서 \"AI for Science(AI4S)\"의 정의, 발전 추세, 그리고 9개 분야에서의 구체적 적용 현황을 제시한다. 2015-2024년 글로벌 학술 출판 데이터를 기반으로 AI 혁신이 기존의 실험 과학, 이론 과학, 계산 과학에 이어 새로운 다섯 번째 연구 패러다임을 형성하고 있음을 보여준다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/AI_for_Science_Taxonomy"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Farrell et al._2025_AI for Science 2025 1.pdf"
 ---
@@ -95,7 +95,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Farrell et al._2025_AI for Science 2025 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1093_The_fifth_era_of_science_Artificial_scientific_intelligence/review]] — 과학의 다섯 번째 시대로서 인공 과학 지능에 대한 다른 관점을 제공한다.
-- 🏛 기반 연구: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — 인공지능 시대 과학적 발견의 이론적 토대를 제공한다.
-- 🏛 기반 연구: [[papers/824_Towards_AI_for_science_developing_a_conceptual_basis_for_tra/review]] — AI for Science의 전반적인 동향이 대학 도서관의 연구지원 서비스 재정의에 기초가 된다.
-- 🏛 기반 연구: [[papers/895_AI_will_transform_science__now_researchers_must_tame_it/review]] — AI for Science의 전반적 현황을 다루어 과학 연구 변화의 기초 배경을 제공한다
+- 🔄 다른 접근: [[papers/040_AAAI_Presidential_Panel_Report_on_the_Future_of_AI_Research/review]] — 과학에서 AI의 역할을 각각 과학 발견과 연구 커뮤니티 관점에서 다르게 접근한 보완적 분석이다
+- 🔗 후속 연구: [[papers/088_AI4Research_A_Survey_of_Artificial_Intelligence_for_Scientif/review]] — AI4Science를 과학 연구 프로세스 자동화라는 더 구체적이고 실용적 관점으로 발전시켰다
+- 🏛 기반 연구: [[papers/1093_The_fifth_era_of_science_Artificial_scientific_intelligence/review]] — AI가 주도하는 과학의 새로운 패러다임에 대한 철학적이고 근본적인 관점을 제공한다
+- 🏛 기반 연구: [[papers/088_AI4Research_A_Survey_of_Artificial_Intelligence_for_Scientif/review]] — 과학 연구 자동화의 기반이 되는 AI for Science의 전반적 패러다임과 발전 방향을 제공한다
+- 🔄 다른 접근: [[papers/040_AAAI_Presidential_Panel_Report_on_the_Future_of_AI_Research/review]] — AI 연구의 미래를 각각 연구 커뮤니티와 과학 발견 관점에서 다르게 조망한 보완적 분석이다
+- 🔗 후속 연구: [[papers/1093_The_fifth_era_of_science_Artificial_scientific_intelligence/review]] — AI for Science를 넘어 AI가 과학 발견을 주도하는 새로운 패러다임으로 확장한 미래 비전이다
+- 🔗 후속 연구: [[papers/834_Towards_Scientific_Discovery_with_Generative_AI_Progress_Opp/review]] — AI for Science 2025 전망이 생성형 AI 기반 과학 발견의 미래 발전 방향을 확장 제시한다
+- 🔗 후속 연구: [[papers/076_AI_for_Science_An_Emerging_Agenda/review]] — AI for Science 2025 전망이 학제간 협력 중심의 AI for Science 의제의 미래 발전 방향을 확장 제시한다

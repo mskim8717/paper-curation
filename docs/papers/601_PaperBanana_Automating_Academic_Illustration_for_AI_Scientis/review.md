@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 자율 AI 과학자(Autonomous AI Scientists)의 시각화 병목을 해결하기 위해, 에이전트 기반 프레임워크 PaperBanana를 제안한다. 이는 VLM(Vision Language Model)과 이미지 생성 모델을 활용하여 학술 출판 기준을 충족하는 다이어그램과 플롯을 자동으로 생성한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Figure_Captioning"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Chart_and_Figure_Captioning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhu et al._2026_PaperBanana Automating Academic Illustration for AI Scientists.pdf"
 ---
@@ -113,10 +114,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhu et al._2026_PaperBanana Automating A
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/129_Automatikz_Text-guided_synthesis_of_scientific_vector_graphi/review]] — 둘 다 과학 시각화 자동화를 다루지만 PaperBanana는 AI 과학자용, AutomaTikZ는 일반 과학용
-- 🔗 후속 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — FigCaps-HF의 캡션 생성을 넘어 전체 다이어그램과 플롯을 자동 생성하는 발전된 시스템
-- 🔄 다른 접근: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — FigGen과 유사하게 텍스트에서 과학 그림 생성하지만 에이전트 기반 접근법 사용
-- 🔗 후속 연구: [[papers/597_P2p_Automated_paper-to-poster_generation_and_fine-grained_be/review]] — P2P의 포스터 생성 기술을 학술 논문의 전체 일러스트레이션으로 확장
-- 🔗 후속 연구: [[papers/600_Paper2Web_Lets_Make_Your_Paper_Alive/review]] — 논문 일러스트레이션 자동화를 전체 웹사이트 변환으로 확장한 발전된 형태
-- 🔄 다른 접근: [[papers/129_Automatikz_Text-guided_synthesis_of_scientific_vector_graphi/review]] — PaperBanana가 AI 과학자 특화인 반면 AutomaTikZ는 일반적인 과학 벡터 그래픽 생성
-- 🔄 다른 접근: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — 둘 다 AI를 이용한 과학 일러스트레이션 자동화를 다루지만 하나는 확산 모델 기반 과학 도형 생성에, 다른 하나는 학술 일러스트레이션 자동화에 초점을 맞춘다.
+- 🔗 후속 연구: [[papers/597_P2p_Automated_paper-to-poster_generation_and_fine-grained_be/review]] — Paper2Poster의 논문-포스터 생성을 학술 일러스트레이션 자동화로 확장하여 더 포괄적인 시각화 솔루션을 제시한다.
+- 🔄 다른 접근: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — Figure-to-Caption 생성과 반대 방향으로 텍스트에서 학술 일러스트레이션을 생성하는 역방향 문제를 다룬다.
+- 🧪 응용 사례: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI 과학자의 시각화 병목 문제를 해결하기 위해 에이전트 기반 자동 일러스트레이션 생성이라는 구체적 솔루션을 제공한다.
+- 🔗 후속 연구: [[papers/599_Paper2poster_Towards_multimodal_poster_automation_from_scien/review]] — AI 과학자를 위한 학술 일러스트레이션 자동화를 통해 포스터 생성의 시각적 요소를 더욱 풍부하게 만들 수 있다.

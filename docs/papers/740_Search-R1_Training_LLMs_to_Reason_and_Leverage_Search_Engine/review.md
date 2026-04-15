@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "강화학습(RL)을 통해 대언어모델(LLM)이 추론 과정 중 검색 엔진을 자동으로 호출하고 활용하는 방법을 학습하는 프레임워크 Search-R1을 제안하며, 기존 RAG 대비 최대 41%의 성능 향상을 달성한다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Search-Augmented_Language_Models"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jin et al._2025_Search-R1 Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning.pdf"
 ---
@@ -107,11 +109,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jin et al._2025_Search-R1 Training LLMs 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/667_ReSearch_Learning_to_Reason_with_Search_for_LLMs_via_Reinfor/review]] — 두 논문 모두 검색 기반 추론을 다루되 Search-R1은 검색 엔진 활용, ReSearch는 다중홉 질문 답변에 특화되어 있다.
-- 🔗 후속 연구: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — WebThinker의 웹 탐색 능력은 Search-R1의 검색 엔진 활용을 더 동적이고 상호작용적인 정보 수집으로 발전시킨다.
-- 🏛 기반 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 검색 증강 생성 서베이는 Search-R1의 강화학습 기반 검색 통합 방법론에 RAG 시스템의 이론적 배경과 설계 원칙을 제공한다.
-- 🔄 다른 접근: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — 두 논문 모두 추론 과정에서의 검색 통합을 다루되 WebThinker는 웹 탐색, Search-R1은 검색 엔진 활용에 특화되어 있다.
-- 🔄 다른 접근: [[papers/667_ReSearch_Learning_to_Reason_with_Search_for_LLMs_via_Reinfor/review]] — 두 논문 모두 강화학습 기반 검색을 다루되 ReSearch는 다중홉 질문 답변, Search-R1은 검색 엔진과의 통합에 특화되어 있다.
-- 🔗 후속 연구: [[papers/296_Dynamic_Search_for_Inference-Time_Alignment_in_Diffusion_Mod/review]] — Search-R1의 검색 기반 추론이 확산 모델의 동적 탐색 과정에서 더 효과적인 빔 폭 조정을 가능하게 함
-- 🔄 다른 접근: [[papers/281_Dlpo_Towards_a_robust_efficient_and_generalizable_prompt_opt/review]] — 검색 엔진 활용 LLM 훈련과 프롬프트 최적화의 다른 성능 향상 접근법
-- 🔄 다른 접근: [[papers/842_Tree-planner_Efficient_close-loop_task_planning_with_large_l/review]] — 강화학습 기반 검색 및 추론 훈련으로 계획 수립의 다른 접근 방식을 보여준다.
+- 🔄 다른 접근: [[papers/667_ReSearch_Learning_to_Reason_with_Search_for_LLMs_via_Reinfor/review]] — 추론 중 검색 활용을 RL 기반과 자동 학습이라는 서로 다른 방법으로 접근한다.
+- 🏛 기반 연구: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — 추론 중 검색 활용이 웹 탐색과 정보 수집을 통합하는 더 포괄적인 접근법의 기반이 된다.
+- 🔗 후속 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 도구 상호작용을 통한 자가수정이 추론 중 검색 통합이라는 특화된 형태로 발전될 수 있다.
+- 🔄 다른 접근: [[papers/447_Iterative_self-incentivization_empowers_large_language_model/review]] — 추론 중 검색 활용과 검색 에이전트의 자기개선을 서로 다른 관점에서 다룬다.
+- 🔗 후속 연구: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — 웹 탐색과 정보 수집을 추론 과정에 통합하는 것이 검색 엔진 활용 추론으로 구체화될 수 있다.
+- 🔄 다른 접근: [[papers/447_Iterative_self-incentivization_empowers_large_language_model/review]] — 검색 에이전트의 자기개선과 추론 중 검색 활용을 서로 다른 관점에서 다룬다.
+- 🔄 다른 접근: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 도구 상호작용을 통한 자가수정과 추론 중 검색 통합을 서로 다른 관점에서 접근한다.
+- 🔄 다른 접근: [[papers/667_ReSearch_Learning_to_Reason_with_Search_for_LLMs_via_Reinfor/review]] — 추론 중 검색 활용을 자동 학습과 RL 기반이라는 서로 다른 방법으로 접근한다.

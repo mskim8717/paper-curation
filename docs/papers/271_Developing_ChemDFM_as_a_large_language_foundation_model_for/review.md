@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "화학 분야의 다양한 작업을 처리할 수 있는 대규모 언어 모델 ChemDFM을 개발했으며, GPT-4를 능가하는 성능을 달성하면서도 화학 분야의 자유로운 대화형 AI 조수 역할을 수행할 수 있다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Evolutionary_Chemistry_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Agent-Based_CFD_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2024_Developing ChemDFM as a large language foundation model for chemistry.pdf"
 ---
@@ -120,9 +121,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2024_Developing ChemDFM as a
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — 화학 분야 LLM의 다른 구현 방식으로 도구 통합 vs 파운데이션 모델 접근
-- 🏛 기반 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료과학 AI 조사가 화학 LLM 개발의 광범위한 맥락을 제공함
-- 🔗 후속 연구: [[papers/382_Genome_modeling_and_design_across_all_domains_of_life_with_E/review]] — 화학 분야 LLM과 유전체 모델링을 결합한 더 큰 생명과학 프레임워크 구축 가능
-- 🔄 다른 접근: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — 화학 AI 에이전트의 다른 구현 방식으로 도구 통합 vs 파운데이션 모델
-- 🧪 응용 사례: [[papers/167_Biomedlm_A_27_b_parameter_language_model_trained_on_biomedic/review]] — 화학 분야 대형 언어 파운데이션 모델 개발에 생명의학 모델 적용
-- 🏛 기반 연구: [[papers/226_ClinicalGPT_Large_Language_Models_Finetuned_with_Diverse_Med/review]] — 화학 분야 대형 언어 기초 모델 개발 경험이 의료 분야 특화 모델 구축에 필요한 도메인 적응 전략을 제공한다.
+- 🏛 기반 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 생물학 및 화학 분야 과학 LLM 설문이 화학 전문 언어모델 개발의 포괄적 배경을 제공한다
+- 🔄 다른 접근: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료과학용 AI 설문과 화학 전문 LLM은 서로 다른 물리과학 도메인에서의 AI 적용을 다룬다

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 중국어 기반의 첫 번째 포괄적 사실 검증 벤치마크인 **TrendFact**를 제시하며, 설명 생성 일관성(ECS)과 핫스팟 인식 능력(HPA)을 평가하는 새로운 메트릭을 도입한다. 추가적으로 동적 증거 증강과 영향도 점수 기반 반복적 자기 성찰을 결합한 **FactISR** 프레임워크를 제안하여 대형 언어 모델의 사실 검증 성능을 향상시킨다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Multi-Hop_Reasoning_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_Augmenting the veracity and explanations of complex fact checking via iterative self-revision with l.pdf"
 ---
@@ -142,7 +142,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_Augmenting the veracit
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 프로그램 안내 추론을 통한 복잡한 주장 사실 검증은 TrendFact의 중국어 사실 검증을 더욱 정교한 추론 방식으로 확장한 방법론입니다
-- 🏛 기반 연구: [[papers/441_Investigating_zero-and_few-shot_generalization_in_fact_verif/review]] — 사실 검증에서 제로샷과 퓨샷 일반화 조사는 복잡한 사실 검증에서 설명 일관성과 핫스팟 인식 능력 평가의 이론적 기반을 제공합니다
-- 🔄 다른 접근: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 다중 모달 증거 기반 사실 검증과 동적 증거 증강 기반 사실 검증은 모두 복합적 증거를 활용하는 서로 다른 접근법입니다
-- 🏛 기반 연구: [[papers/124_Automated_justification_production_for_claim_veracity_in_fac/review]] — 팩트체킹 시스템의 정확성과 설명력 향상을 위한 기반 연구로서 정당화 생성의 이론적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 복합적 사실 검증에서 동적 증거 증강 방식과 다중모달 증거 기반 접근법은 서로 다른 관점에서 검증 신뢰성을 향상시킨다.
+- 🔗 후속 연구: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 프로그램 기반 추론을 활용한 복합 주장 사실 검증과 중국어 기반 사실 검증을 결합하면 다국어 복합 추론 시스템을 구축할 수 있다.

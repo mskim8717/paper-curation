@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.0
 essence: "재료 과학(Materials Science)에서 기초 모델(Foundation Models), LLM 에이전트, 데이터셋, 도구를 종합적으로 조사한 서베이로, 과학 발견을 위한 확장 가능하고 범용적인 멀티모달 AI 시스템의 구현을 다룬다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Van et al._2025_A Survey of AI for Materials Science Foundation Models, LLM Agents, Datasets, and Tools.pdf"
 ---
@@ -92,13 +94,23 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Van et al._2025_A Survey of AI for Mater
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — 소재 발견을 위한 기초 모델의 현재 상태 분석이 AI 소재 과학 서베이의 기초 모델 섹션에 핵심 정보를 제공함
-- 🔗 후속 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 생물학적 화학적 과학 LLM 서베이가 AI 소재 과학 서베이의 생명과학 응용 분야를 보완하고 확장함
-- 🏛 기반 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 멀티 에이전트 LLM 발전 조사가 AI 소재 과학에서 LLM 에이전트 활용 방안의 이론적 기반을 제공함
-- 🏛 기반 연구: [[papers/271_Developing_ChemDFM_as_a_large_language_foundation_model_for/review]] — 재료과학 AI 조사가 화학 LLM 개발의 광범위한 맥락을 제공함
-- 🔗 후속 연구: [[papers/015_A_Perspective_on_Foundation_Models_in_Chemistry/review]] — 재료 과학을 위한 AI 조사와 LLM 기반 파운데이션 모델은 화학 분야 대규모 사전학습 모델의 응용 영역을 재료과학으로 확장합니다
-- 🏛 기반 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 재료과학 분야 AI 연구의 포괄적 기반을 제공하여 생물학/화학 특화 LLM과 상호 보완한다
-- 🏛 기반 연구: [[papers/465_Large_Language_Model_in_Materials_Science_Roles_Challenges_a/review]] — 재료 과학을 위한 AI/ML 서베이가 재료 과학에서 LLM 역할 분석의 기초적 배경을 제공합니다.
-- 🔗 후속 연구: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — 재료과학 AI의 포괄적 현황을 파운데이션 모델 관점에서 체계화한다.
-- 🏛 기반 연구: [[papers/398_Harnessing_large_language_models_for_scientific_novelty_dete/review]] — 재료과학에서 AI와 LLM 활용의 포괄적 조망을 제공하여 MOF 연구의 이론적 맥락을 제시한다.
-- 🏛 기반 연구: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — 재료과학을 위한 AI 조사 연구는 HoneyComb의 LLM 기반 재료과학 에이전트 시스템 설계의 이론적 배경을 제공한다.
+- 🧪 응용 사례: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — 서베이에서 제시한 멀티모달 AI 시스템 구현 방향이 분자 문법 학습 프레임워크에 구체적으로 적용됨
+- 🔗 후속 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 생물학 및 화학 분야 과학 언어 모델에 대한 세부 조사로 재료과학 AI 서베이를 보완함
+- 🧪 응용 사례: [[papers/151_Benchmarking_ai_scientists_in_omics_data-driven_biological_r/review]] — 오믹스 데이터 기반 생물학 연구에서 AI 과학자 벤치마킹이 재료과학 AI 평가 방법론에 참고가 됨
+- 🔄 다른 접근: [[papers/271_Developing_ChemDFM_as_a_large_language_foundation_model_for/review]] — 재료과학용 AI 설문과 화학 전문 LLM은 서로 다른 물리과학 도메인에서의 AI 적용을 다룬다
+- 🔗 후속 연구: [[papers/015_A_Perspective_on_Foundation_Models_in_Chemistry/review]] — 재료과학을 위한 AI 조사와 화학 분야 파운데이션 모델 관점을 결합하면 화학-재료과학 융합 영역의 AI 활용 전략을 수립할 수 있다.
+- 🏛 기반 연구: [[papers/316_Enhancing_chemical_reaction_and_retrosynthesis_prediction_wi/review]] — 재료과학 분야 AI 기초 모델 연구가 화학 반응 예측 LLM의 이론적 토대가 된다
+- 🧪 응용 사례: [[papers/856_Unimatch_Universal_matching_from_atom_to_task_for_few-shot_d/review]] — 재료과학 AI 기초 모델의 원리를 few-shot 약물 발견의 구체적 문제에 적용한다
+- 🏛 기반 연구: [[papers/487_Leveraging_biomolecule_and_natural_language_through_multi-mo/review]] — 재료과학을 위한 AI 서베이가 생분자 다중모달 학습의 기반을 제공한다
+- 🏛 기반 연구: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 재료과학을 위한 AI 조사 연구가 지식 안내형 LLM 개발의 기초 모델과 방법론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/344_Foundation_models_in_bioinformatics/review]] — 재료과학을 위한 AI 설문조사와 생물정보학 기초 모델 연구는 상호 보완적인 과학 분야별 AI 적용 현황을 제공한다.
+- 🏛 기반 연구: [[papers/465_Large_Language_Model_in_Materials_Science_Roles_Challenges_a/review]] — 재료 발견을 위한 AI 설문조사는 재료과학에서 LLM의 역할과 도전과제를 이해하는 포괄적 배경을 제공한다.
+- 🏛 기반 연구: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — AI와 재료과학을 위한 파운데이션 모델 서베이가 재료 발견에 특화된 파운데이션 모델의 이론적 배경을 제공한다
+- 🧪 응용 사례: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 재료 발견을 위한 가설 생성이 재료과학 AI 서베이에서 제시한 LLM 에이전트 활용 방향의 구체적 사례
+- 🔗 후속 연구: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — AI 기반 재료과학 연구의 포괄적 조사를 통해 ChemCrow가 화학에서 보인 성과를 재료과학 전반으로 확장할 수 있는 가능성을 제시함
+- 🏛 기반 연구: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — 재료과학 AI 시스템 구축의 포괄적 기반 지식을 제공하여 분자 문법 학습에 필요한 멀티모달 접근법 이해를 도움
+- 🧪 응용 사례: [[papers/024_A_sober_look_at_llms_for_material_discovery_Are_they_actuall/review]] — 재료 과학에서 AI 조사와 LLM의 실제 유용성 평가가 재료 발견 분야의 포괄적 이해를 제공한다.
+- 🏛 기반 연구: [[papers/398_Harnessing_large_language_models_for_scientific_novelty_dete/review]] — 재료 과학에서 AI/LLM 활용에 대한 포괄적 조사로, MOF 데이터 분석 연구의 이론적 기반을 제공
+- 🧪 응용 사례: [[papers/524_MatViX_Multimodal_Information_Extraction_from_Visually_Rich/review]] — 재료과학 분야 AI/ML 조사 연구로, MatViX가 목표로 하는 재료과학 논문에서의 정보 추출 응용 분야에 대한 포괄적 배경을 제공한다
+- 🏛 기반 연구: [[papers/701_Scholarchemqa_Unveiling_the_power_of_language_models_in_chem/review]] — 재료 과학을 위한 AI 기반 모델에 대한 종합적 조사를 통해 화학 QA 시스템의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/1104_A_Physics-Informed_Chemical_Rule_for_Topological_Materials_D/review]] — 재료과학 기초 모델과 데이터셋 구축 방향이 위상 물질 발견을 위한 물리 기반 규칙 개발에 필수적 배경 제공

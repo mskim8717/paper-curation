@@ -10,8 +10,10 @@ arxiv: ""
 score: 4.0
 essence: "100명 이상의 NLP 연구자를 모집하여 LLM이 생성한 연구 아이디어와 인간 전문가의 아이디어를 맹검 비교한 결과, LLM 생성 아이디어가 신규성(novelty)에서 유의미하게 우수함을 발견했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Question_Answering"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Research_Concept_Extraction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Si et al._2024_Can LLMs Generate Novel Research Ideas A Large-Scale Human Study with 100+ NLP Researchers 1.pdf"
 ---
@@ -91,12 +93,14 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Si et al._2024_Can LLMs Generate Novel R
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/376_Generation_and_human-expert_evaluation_of_interesting_resear/review]] — 흥미로운 연구 아이디어의 생성과 인간 전문가 평가 방법론으로 본 논문의 대규모 인간 연구 설계 기반을 제공한다.
-- 🔗 후속 연구: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — 대규모 언어 모델을 사용한 가설 생성 연구로 본 논문의 연구 아이디어 생성을 가설 차원으로 확장한다.
-- 🔄 다른 접근: [[papers/630_Predicting_empirical_ai_research_outcomes_with_language_mode/review]] — 언어 모델로 실증 AI 연구 결과를 예측하는 연구로 본 논문과 다른 방식의 연구 아이디어 품질 평가를 제시한다.
-- 🏛 기반 연구: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — LLM이 새로운 연구 아이디어를 생성할 수 있는지에 대한 대규모 인간 평가가 과학적 창의성 벤치마크의 기반 연구이다.
-- 🧪 응용 사례: [[papers/066_Agentic_Personas_for_Adaptive_Scientific_Explanations_with_K/review]] — 대규모 인간 평가를 통한 LLM의 새로운 연구 아이디어 생성 연구는 Agentic Personas의 적응형 설명 효과를 실증적으로 검증하는 방법론을 제시한다.
-- 🏛 기반 연구: [[papers/484_Learning_to_generate_research_idea_with_dynamic_control/review]] — 대규모 인간 평가를 통한 LLM의 새로운 연구 아이디어 생성 연구는 동적 제어 프레임워크의 참신성과 실현성 평가 기준에 실증적 근거를 제공한다.
-- 🏛 기반 연구: [[papers/079_Ai_idea_bench_2025_Ai_research_idea_generation_benchmark/review]] — 인간 평가자를 통한 LLM 연구 아이디어 평가 방법론이 AI Idea Bench 벤치마크 설계의 핵심적인 기반이다.
-- ⚖️ 반론/비판: [[papers/277_Discoverybench_Towards_data-driven_discovery_with_large_lang/review]] — 인간 평가자들이 LLM이 생성한 새로운 연구 아이디어를 선호한다는 발견은 DiscoveryBench의 25% 성공률과 대조적이다.
-- ⚖️ 반론/비판: [[papers/153_Best_humans_still_outperform_artificial_intelligence_in_a_cr/review]] — LLM이 생성한 연구 아이디어의 신규성이 우수하다는 결과로 본 논문의 최상위 인간 창의성 우위와 대조되는 관점을 제시한다.
+- ⚖️ 반론/비판: [[papers/107_Artificial_intelligence_tools_expand_scientists_impact_but_c/review]] — LLM이 인간보다 참신한 연구 아이디어를 생성한다는 발견이 AI 도구가 탐색 범위를 축소시킨다는 결과와 상반된 관점을 제시한다.
+- 🏛 기반 연구: [[papers/313_Enabling_ai_scientists_to_recognize_innovation_A_domain-agno/review]] — LLM 생성 아이디어의 신규성 평가 연구가 AI 과학자의 혁신성 인식 알고리즘 개발의 실증적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/376_Generation_and_human-expert_evaluation_of_interesting_resear/review]] — LLM 아이디어 생성 능력 평가를 전문가 평가와 결합하여 더 포괄적인 연구 아이디어 품질 평가 시스템을 구축한다.
+- 🏛 기반 연구: [[papers/484_Learning_to_generate_research_idea_with_dynamic_control/review]] — 인간 대비 LLM의 새로운 연구 아이디어 생성 능력에 대한 기초 연구가 동적 제어 시스템의 필요성을 뒷받침한다.
+- 🧪 응용 사례: [[papers/580_Oag-bench_A_human-curated_benchmark_for_academic_graph_minin/review]] — OAG-Bench의 학술 그래프 데이터가 LLM의 새로운 연구 아이디어 생성 능력 평가에 활용될 수 있음
+- 🔄 다른 접근: [[papers/632_Predicting_the_future_of_ai_with_ai_High-quality_link_predic/review]] — AI 연구 예측을 위해 의미적 네트워크 기반 링크 예측과 LLM 기반 아이디어 생성이라는 서로 다른 접근법을 제시함
+- 🔗 후속 연구: [[papers/557_MOOSE-Chem_Large_Language_Models_for_Rediscovering_Unseen_Ch/review]] — LLM의 새로운 연구 아이디어 생성 능력이 MOOSE-Chem의 미발견 화학 가설 재발견을 더 창의적인 형태로 확장한다.
+- 🏛 기반 연구: [[papers/079_Ai_idea_bench_2025_Ai_research_idea_generation_benchmark/review]] — AI 연구 아이디어 생성 성능을 인간과 비교 평가하는 기본 방법론을 제시하여 AI Idea Bench의 평가 프레임워크 설계에 핵심 기반이 됨
+- ⚖️ 반론/비판: [[papers/107_Artificial_intelligence_tools_expand_scientists_impact_but_c/review]] — AI 도구가 과학자의 탐색 범위를 축소시킨다는 발견과 LLM이 더 참신한 연구 아이디어를 생성한다는 결과가 대조적인 관점을 제시한다.
+- 🏛 기반 연구: [[papers/409_How_ai_ideas_affect_the_creativity_diversity_and_evolution_o/review]] — LLM의 새로운 연구 아이디어 생성 능력이 AI 아이디어가 인간 창의성에 미치는 영향 연구의 기초가 된다.
+- 🔗 후속 연구: [[papers/313_Enabling_ai_scientists_to_recognize_innovation_A_domain-agno/review]] — LLM 생성 아이디어의 신규성 평가를 상대 이웃 밀도 알고리즘으로 자동화하여 대규모 아이디어 혁신성 평가를 가능하게 한다.

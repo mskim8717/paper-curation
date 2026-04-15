@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 재료 과학 연구의 실험실 자동화를 위해 기초 모델(foundation models)을 활용할 수 있는 방안을 탐색하는 종합 리뷰이다. 기초 모델의 인지적 역할(실험 계획, 데이터 분석)과 물리적 역할(하드웨어 제어)을 강조하며, 개방형 환경에서의 완전 자동화 실험실 구현을 위한 로드맵을 제시한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Manufacturing_Process_Control"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Bioinformatics_Integration"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hatakeyama‐Sato et al._2025_Perspective on utilizing foundation models for laboratory automation in materials research.pdf"
 ---
@@ -103,8 +103,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hatakeyama‐Sato et al._2025_Perspectiv
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — 화학 및 재료 과학을 위한 자율주행 실험실이 실험실 자동화에서 기초 모델 활용의 이론적 토대입니다.
-- 🧪 응용 사례: [[papers/297_EAA_Automating_materials_characterization_with_vision_langua/review]] — 비전 언어 모델 기반 실험 자동화 에이전트가 재료 과학 실험실 자동화의 구체적 구현 사례입니다.
-- 🔗 후속 연구: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 단백질 공간 자율 탐색을 위한 자율주행 실험실이 재료 과학 자동화를 생물학적 시스템으로 확장합니다.
-- 🏛 기반 연구: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — 재료 과학 실험실 자동화를 위한 기초 모델 활용 방안이 양자 컴퓨팅 자동화의 이론적 기반을 제공합니다.
-- 🏛 기반 연구: [[papers/297_EAA_Automating_materials_characterization_with_vision_langua/review]] — 실험실 자동화를 위한 기초 모델 활용 전략이 EAA 시스템 설계의 이론적 토대를 제공합니다.
+- 🧪 응용 사례: [[papers/297_EAA_Automating_materials_characterization_with_vision_langua/review]] — 실험실 자동화를 위한 기초 모델 활용 관점과 비전 언어 모델 기반 재료 특성화 자동화는 상호 보완적인 자동화 접근법이다.
+- 🔗 후속 연구: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — 자율주행 실험실의 일반적 원리와 재료과학 실험실 자동화를 위한 기초 모델 활용은 실험실 자동화의 서로 다른 관점을 제공한다.
+- 🏛 기반 연구: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — 과학 실무 자동화의 기회와 도전에 관한 포괄적 논의는 기초 모델 기반 실험실 자동화 연구의 맥락을 제공한다.
+- 🔗 후속 연구: [[papers/297_EAA_Automating_materials_characterization_with_vision_langua/review]] — 기초 모델을 실험실 자동화에 활용하는 관점에서 EAA의 비전 언어 모델 접근법을 더 넓은 맥락에서 이해할 수 있다.

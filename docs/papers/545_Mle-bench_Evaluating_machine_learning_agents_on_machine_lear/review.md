@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.6
 essence: "본 논문은 AI 에이전트의 머신러닝 엔지니어링(MLE) 능력을 평가하기 위해 Kaggle의 75개 경쟁 문제로 구성된 벤치마크 MLE-bench를 소개한다. 최고 성능 모델(o1-preview with AIDE 스캐폴딩)이 16.9%의 경쟁에서 Kaggle 동메달 이상 수준을 달성했으며, 자원 스케일링과 사전학습 데이터 오염의 영향을 광범위하게 분석했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/LLM_Agent_Benchmarking"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chan et al._2024_Mle-bench Evaluating machine learning agents on machine learning engineering.pdf"
 ---
@@ -146,10 +146,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chan et al._2024_Mle-bench Evaluating ma
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — MLE-bench가 Kaggle 기반인 반면 ResearchCodeBench는 최신 ML 연구 논문 구현에 특화됨
-- 🏛 기반 연구: [[papers/146_Autosdt_Scaling_data-driven_discovery_tasks_toward_open_co-s/review]] — AutoSDT의 데이터 주도형 발견 태스크가 ML 에이전트 평가의 기초 데이터를 제공함
-- 🔄 다른 접근: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 둘 다 ML 에이전트를 평가하지만 MLAgentBench는 더 일반적인 ML 작업에 초점
-- 🔗 후속 연구: [[papers/294_Dsbench_How_far_are_data_science_agents_to_becoming_data_sci/review]] — MLE-bench의 평가 방식을 데이터 사이언스 전반으로 확장한 벤치마크
-- 🧪 응용 사례: [[papers/146_Autosdt_Scaling_data-driven_discovery_tasks_toward_open_co-s/review]] — AutoSDT로 생성된 고품질 데이터셋이 MLE-bench와 같은 에이전트 평가에 활용될 수 있음
-- 🔄 다른 접근: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — MLE-bench가 Kaggle 문제인 반면 ResearchCodeBench는 최신 연구 논문의 새로운 아이디어 구현에 집중
-- 🔄 다른 접근: [[papers/548_Mlr-bench_Evaluating_ai_agents_on_open-ended_machine_learnin/review]] — 둘 다 머신러닝 연구 수행 능력을 평가하는 벤치마크이지만 하나는 오픈엔디드 연구에, 다른 하나는 특정 머신러닝 에이전트에 초점을 맞춘다.
+- 🔄 다른 접근: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 머신러닝 에이전트 평가를 위한 다른 벤치마크로, 실제 연구 환경에서의 에이전트 능력 측정 방법론을 비교할 수 있습니다.
+- 🔗 후속 연구: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — 연구 코드 구현에 특화된 벤치마크로, MLE 능력을 보다 구체적인 프로그래밍 관점에서 평가합니다.
+- 🧪 응용 사례: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — 완전 자동화된 과학 발견 시스템으로, MLE-bench에서 측정하는 능력들의 실제 응용 사례를 제시합니다.
+- 🏛 기반 연구: [[papers/326_Exp-bench_Can_ai_conduct_ai_research_experiments_arXiv_prepr/review]] — 머신러닝 에이전트의 ML 작업 수행 능력을 평가하는 기초적 벤치마크로, EXP-Bench의 완전한 실험 평가에 필요한 기본적 ML 능력 평가 틀을 제공한다
+- 🔄 다른 접근: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — 기계학습 에이전트 평가 벤치마크라는 공통점이 있지만 최신 연구 아이디어 구현에 특화된 차별화된 접근을 제시한다.
+- 🏛 기반 연구: [[papers/672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/review]] — 머신러닝 에이전트의 ML 작업 수행 능력을 평가하는 벤치마크로, ResearchGym의 AI 연구 평가 개념의 기초적 틀을 제공한다
+- 🔄 다른 접근: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 머신러닝 실험 자동화라는 같은 목표를 가지지만 언어모델 기반 vs 기존 ML 방법론이라는 다른 접근법을 사용한다.
+- 🔄 다른 접근: [[papers/548_Mlr-bench_Evaluating_ai_agents_on_open-ended_machine_learnin/review]] — AI 에이전트의 머신러닝 연구 능력을 평가하는 두 가지 다른 벤치마크 접근법을 비교할 수 있다.

@@ -9,8 +9,8 @@ arxiv: ""
 score: 3.8
 essence: "본 논문은 증거(evidence)에서 추출한 간결한 사실(short facts)을 통해 주장 검증(claim verification)의 견고성과 추론 능력을 향상시키는 FactDetect 방법을 제안한다. 멀티태스크 학습과 LLM 기반 제로샷 프롬프팅에서 모두 적용 가능한 데이터 증강 전략이다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Zero-Shot_Claim_Verification"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/LeCun et al._2024_Robust claim verification through fact detection.pdf"
 ---
@@ -117,9 +117,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/LeCun et al._2024_Robust claim verificat
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/057_aedfact_Scientific_fact-checking_made_easier_via_semi-automa/review]] — 사실 검증의 일반적 방법론을 과학적 팩트체킹이라는 구체적 영역에 적용한다
-- 🔄 다른 접근: [[papers/221_Claimver_Explainable_claim-level_verification_and_evidence_a/review]] — 주장 검증을 위한 다른 접근법으로 지식 그래프를 활용한 설명가능한 방법을 제시한다
-- 🔗 후속 연구: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 의료 분야로 특화하여 사실 검증에 설명가능성을 추가한 확장 연구이다
-- 🏛 기반 연구: [[papers/057_aedfact_Scientific_fact-checking_made_easier_via_semi-automa/review]] — 일반적인 사실 검증 방법론을 과학적 맥락에 특화된 형태로 구현한다
-- 🔄 다른 접근: [[papers/221_Claimver_Explainable_claim-level_verification_and_evidence_a/review]] — 간결한 사실 추출 방식 대신 지식 그래프를 활용한 설명가능한 주장 검증을 제시한다
-- 🔗 후속 연구: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 일반적인 사실 검증을 의료 분야로 특화하고 설명가능성을 추가한 확장 연구이다
+- 🏛 기반 연구: [[papers/852_Understanding_fine-grained_distortions_in_reports_of_scienti/review]] — 견고한 주장 검증 방법론이 과학 보도 왜곡 감지의 기술적 기반을 제공한다
+- 🔄 다른 접근: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 주장 검증을 일반 도메인 vs 의료 도메인에서 각각 다른 방식으로 접근한다
+- 🔗 후속 연구: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 멀티모달 팩트체킹을 텍스트 기반 사실 검출로 보완하여 확장한다
+- 🏛 기반 연구: [[papers/124_Automated_justification_production_for_claim_veracity_in_fac/review]] — 견고한 주장 검증 연구가 자동 정당화 생성에서 신뢰할 수 있는 증거 기반 추론의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/852_Understanding_fine-grained_distortions_in_reports_of_scienti/review]] — 일반적인 주장 검증에서 한 단계 나아가 과학 보도의 세밀한 왜곡 패턴을 체계적으로 분석한다
+- 🏛 기반 연구: [[papers/183_Can_large_language_models_detect_misinformation_in_scientifi/review]] — 강건한 주장 검증 방법론이 과학 뉴스 오보 탐지의 핵심 기술적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 주장 검증을 의료 도메인 특화 vs 일반적 견고성 개선으로 다르게 접근한다

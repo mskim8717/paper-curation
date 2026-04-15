@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.4
 essence: "대규모 언어모델(LLM)이 과학 발견에서 단순한 작업 자동화 도구에서 자율적 에이전트로 진화하는 패러다임 변화를 체계적으로 분석한 종합 조사 논문이다. 과학적 방법론의 단계별 관점에서 LLM의 자율성 수준을 3단계 분류법으로 제시하며, 미래의 AI 기반 과학 발견의 방향을 제시한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Publishing_Trends"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Automated_Scientific_Review"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zheng et al._2025_From Automation to Autonomy A Survey on Large Language Models in Scientific Discovery.pdf"
 ---
@@ -99,7 +101,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zheng et al._2025_From Automation to Aut
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/004_A_Comprehensive_Survey_of_Scientific_Large_Language_Models_a/review]] — 과학 분야 LLM의 포괄적 조사로 자율성보다는 응용 분야에 초점을 맞춘 상호 보완적 관점을 제공한다.
-- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 AI 과학자 개발 사례로 본 논문이 제시한 자율적 에이전트로의 진화를 실제 구현한다.
-- 🏛 기반 연구: [[papers/824_Towards_AI_for_science_developing_a_conceptual_basis_for_tra/review]] — AI for Science의 개념적 기반을 제공하여 자동화에서 자율성으로의 패러다임 전환을 이론적으로 뒷받침한다.
-- 🔄 다른 접근: [[papers/004_A_Comprehensive_Survey_of_Scientific_Large_Language_Models_a/review]] — LLM의 자율성 진화보다는 분야별 응용에 초점을 맞춘 상호 보완적 조사 연구이다.
+- 🏛 기반 연구: [[papers/041_Aaar-10_Assessing_ais_potential_to_assist_research/review]] — 과학 발견에서 LLM의 자율성 발전 과정을 구체적 평가 방법론으로 뒷받침한다.
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI의 과학적 자율성 발전을 이론적 분석에서 실제 구현 단계로 확장시킨다.
+- 🔄 다른 접근: [[papers/352_From_AI_for_Science_to_Agentic_Science_A_Survey_on_Autonomou/review]] — 과학에서 AI 자율성 발전을 서로 다른 관점에서 체계적으로 조망한다.

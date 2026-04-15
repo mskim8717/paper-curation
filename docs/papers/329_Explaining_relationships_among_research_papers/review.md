@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 연구 논문들 간의 복잡한 관계를 포착하기 위해 특성 기반(feature-based) LLM 프롬프팅 접근법을 제안하며, 단순 인용문 생성을 넘어 여러 논문을 한 번에 처리하고 이들을 연결하는 전환 문장(transition sentence)을 생성한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Hierarchical_Knowledge_Graphs"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gartner and Cardon_2024_Explaining relationships among research papers.pdf"
 ---
@@ -134,8 +135,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gartner and Cardon_2024_Explaining relat
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/215_Chime_Llm-assisted_hierarchical_organization_of_scientific_s/review]] — 과학 연구의 계층적 조직화 시스템으로 본 논문의 논문 간 관계 설명을 위한 구조적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/564_Multi-llm_collaborative_caption_generation_in_scientific_doc/review]] — 과학 문서에서 다중 LLM 협업 캡션 생성으로 본 논문의 여러 논문 처리를 다중 모델 협업으로 확장한다.
-- 🔄 다른 접근: [[papers/789_Taxonomy_tree_generation_from_citation_graph/review]] — 인용 그래프에서 분류 체계 트리 생성으로 본 논문과 다른 방식의 논문 간 관계 구조화를 제시한다.
-- 🏛 기반 연구: [[papers/338_Figuring_out_figures_Using_textual_references_to_caption_sci/review]] — 연구 논문 간의 관계 설명 기법이 과학 도형과 텍스트 참조 간의 연결 관계를 이해하는 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/215_Chime_Llm-assisted_hierarchical_organization_of_scientific_s/review]] — 연구 논문들 간의 관계 설명을 통해 본 논문의 계층적 조직화를 논문 간 연결성 분석으로 확장한다.
+- 🏛 기반 연구: [[papers/238_Controllable_citation_sentence_generation_with_language_mode/review]] — 제어 가능한 인용 문장 생성 기법이 여러 논문 간의 복잡한 관계를 설명하는 전환 문장 생성의 핵심 기술적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/1091_Scirgc_Multi-granularity_citation_recommendation_and_citatio/review]] — 논문 간 관계 설명을 인용 의도 인식과 결합하여 더 정교하고 맥락적으로 적절한 학술 글쓰기 지원 시스템을 구축한다.
+- 🔄 다른 접근: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 특성 기반 LLM 프롬프팅과 신경 기반 맥락 중심 접근법이 서로 다른 방식으로 관련 연구 요약 문제를 해결한다.
+- 🏛 기반 연구: [[papers/190_Causal_intervention_for_abstractive_related_work_generation/review]] — 연구 논문 간 관계 설명이 인과 개입 기반 관련 업무 생성의 이론적 배경을 제공한다.
+- 🏛 기반 연구: [[papers/1091_Scirgc_Multi-granularity_citation_recommendation_and_citatio/review]] — 논문 간 관계 설명 연구가 인용 의도 인식과 네트워크 기반 추천 시스템의 핵심 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/238_Controllable_citation_sentence_generation_with_language_mode/review]] — 제어 가능한 인용 문장 생성을 여러 논문 간의 관계 설명으로 확장하여 더 포괄적인 학술 글쓰기 지원을 제공한다.

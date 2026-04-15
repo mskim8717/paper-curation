@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.0
 essence: "기존의 사전 계획(pre-writing planning) 기반 접근법의 경직성을 극복하기 위해, 본 논문은 검색(Retrieval), 추론(Reasoning), 작성(Composition) 세 가지 인지 과제를 동적으로 통합하는 이질적 재귀적 계획(Heterogeneous Recursive Planning) 프레임워크를 제시한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Miraglia_2025_Beyond outlining Heterogeneous recursive planning for adaptive long-form writing with language mode.pdf"
 ---
@@ -95,5 +96,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Miraglia_2025_Beyond outlining Heterogen
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/833_Towards_reasoning_era_A_survey_of_long_chain-of-thought_for/review]] — 이질적 재귀적 계획의 장문 생성은 긴 추론 사슬 서베이에서 분석된 추론 시대의 방법론적 기반 위에 검색-추론-작성 통합 프레임워크를 구축합니다.
-- 🧪 응용 사례: [[papers/876_What_are_the_essential_factors_in_crafting_effective_long_co/review]] — 동적 인지 과제 통합 프레임워크는 효과적인 긴 맥락 제작 연구에서 제시된 요소들을 실제 학술 글쓰기 자동화에 적용하여 맥락 인식 생성을 실현합니다.
+- 🏛 기반 연구: [[papers/625_PlanGenLLMs_A_Modern_Survey_of_LLM_Planning_Capabilities/review]] — LLM 계획 능력에 대한 현대적 조사를 이질적 재귀적 계획 프레임워크의 이론적 기반으로 제공한다
+- 🔄 다른 접근: [[papers/842_Tree-planner_Efficient_close-loop_task_planning_with_large_l/review]] — 장기 형태 적응형 계획과 효율적인 폐쇄 루프 작업 계획이라는 서로 다른 계획 수립 접근법을 비교할 수 있다
+- 🧪 응용 사례: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 이질적 재귀적 계획 기법을 체크리스트 기반 반복적 메타 리뷰 생성이라는 구체적인 학술 작업에 적용한다

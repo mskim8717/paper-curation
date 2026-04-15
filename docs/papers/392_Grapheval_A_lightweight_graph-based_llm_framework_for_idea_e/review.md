@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.2
 essence: "복잡한 연구 아이디어를 이해 가능한 관점들로 분해하고 이를 그래프로 연결하여 라벨 전파(label propagation) 또는 그래프 신경망(GNN)을 통해 견고하고 편향 없는 아이디어 평가를 수행하는 경량 프레임워크다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Research_Ideation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2025_Grapheval A lightweight graph-based llm framework for idea evaluation.pdf"
 ---
@@ -107,11 +108,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2025_Grapheval A lightweight g
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 연구 아이디어 평가에서 그래프 기반 vs 체인 구조의 다른 조직화 접근법을 비교할 수 있다
-- 🧪 응용 사례: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 그래프 기반 아이디어 평가 프레임워크를 재료 발견 가설 평가에 적용할 수 있다
-- 🔗 후속 연구: [[papers/391_Graph_of_ai_ideas_Leveraging_knowledge_graphs_and_llms_for_a/review]] — AI 아이디어의 지식 그래프를 경량 그래프 기반 평가 프레임워크로 확장한 연구다
-- 🔄 다른 접근: [[papers/149_Bayes-Entropy_Collaborative_Driven_Agents_for_Research_Hypot/review]] — 연구 가설 생성에서 그래프 기반 vs 베이즈-엔트로피 협업의 다른 접근법을 비교할 수 있다
-- 🔗 후속 연구: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — 그래프 기반 LLM 프레임워크를 통한 아이디어 평가가 과학적 아이디어 생성 벤치마크의 평가 체계를 확장한다.
-- 🔄 다른 접근: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 연구 아이디어 생성에서 체인 구조 vs 그래프 기반의 다른 조직화 접근법을 비교할 수 있다
-- 🧪 응용 사례: [[papers/155_Beyond_Brainstorming_What_Drives_High-Quality_Scientific_Ide/review]] — 그래프 기반 LLM 프레임워크를 과학 아이디어 평가에 적용한 사례
-- 🧪 응용 사례: [[papers/216_Chimera_A_knowledge_base_of_idea_recombination_in_scientific/review]] — GraphEval의 LLM 기반 아이디어 평가 프레임워크가 Chimera에서 추출된 재조합 패턴의 품질과 창의성을 체계적으로 평가할 수 있는 도구를 제공함
+- 🏛 기반 연구: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 연구 아이디어 생성 후 그래프 기반 분해와 평가가 아이디어 품질 검증을 제공한다
+- 🧪 응용 사례: [[papers/509_Llms_can_realize_combinatorial_creativity_generating_creativ/review]] — 조합적 창의성으로 생성된 아이디어를 그래프 구조로 분해하여 객관적 평가를 수행한다
+- 🔄 다른 접근: [[papers/391_Graph_of_ai_ideas_Leveraging_knowledge_graphs_and_llms_for_a/review]] — 지식 그래프와 LLM을 활용한 아이디어 분석의 다른 접근법으로 상호 보완적이다
+- 🏛 기반 연구: [[papers/509_Llms_can_realize_combinatorial_creativity_generating_creativ/review]] — 조합적 창의성으로 생성된 아이디어를 그래프 기반으로 분해하고 평가하는 후속 과정을 제공한다
+- 🔗 후속 연구: [[papers/484_Learning_to_generate_research_idea_with_dynamic_control/review]] — 그래프 기반 평가 프레임워크를 통해 아이디어 생성의 세 차원 균형을 더 체계적으로 측정하고 개선할 수 있다.
+- 🔗 후속 연구: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 아이디어 생성 후 그래프 기반 평가가 연구 아이디어의 품질 검증을 제공한다
+- 🔄 다른 접근: [[papers/045_Acceleron_A_tool_to_accelerate_research_ideation/review]] — 연구 아이디어 생성에서 에이전트 아키텍처 기반 접근법과 그래프 기반 LLM 프레임워크는 서로 다른 구조적 방법론을 제시한다.

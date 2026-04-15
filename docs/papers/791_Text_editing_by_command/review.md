@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "기존의 원샷(one-shot) 텍스트 생성 패러다임을 벗어나, 사용자의 자연어 명령(command)을 따르는 대화형 텍스트 편집 작업을 제안한다. 위키피디아 편집 이력에서 수집한 WikiDocEdits 데이터셋과 트랜스포머 기반 편집 모델을 통해 동적 제약조건을 반영한 문서 생성이 가능함을 보인다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Self-Refining_Text_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/GPT-Based_Text_Review_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Team_2020_Text editing by command.pdf"
 ---
@@ -96,10 +98,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Team_2020_Text editing by command.pdf"
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/656_Read_revise_repeat_A_system_demonstration_for_human-in-the-l/review]] — 자연어 명령 기반 텍스트 편집을 인간 피드백과 통합한 더 발전된 대화형 편집 시스템으로 확장함
-- 🏛 기반 연구: [[papers/485_Learning_to_split_and_rephrase_from_wikipedia_edit_history/review]] — 위키피디아 편집 이력을 활용한 텍스트 분할과 재구성 연구가 자연어 명령 기반 텍스트 편집의 방법론적 기초를 제공함
-- 🔗 후속 연구: [[papers/884_Wikiatomicedits_A_multilingual_corpus_of_wikipedia_edits_for/review]] — 위키피디아 편집의 기본적 접근을 자연어 명령을 통한 더 사용자 친화적인 대화형 편집으로 확장함
-- 🔄 다른 접근: [[papers/485_Learning_to_split_and_rephrase_from_wikipedia_edit_history/review]] — 데이터 마이닝 기반 문장 분할과 명령어 기반 텍스트 편집이라는 서로 다른 텍스트 변형 접근법을 제시합니다.
-- 🏛 기반 연구: [[papers/884_Wikiatomicedits_A_multilingual_corpus_of_wikipedia_edits_for/review]] — 명령어 기반 텍스트 편집의 이론적 기반이 WikiAtomicEdits에서 관찰된 원자적 편집 패턴의 체계적 분석에서 도출되었음
-- 🏛 기반 연구: [[papers/656_Read_revise_repeat_A_system_demonstration_for_human-in-the-l/review]] — 자연어 명령을 통한 텍스트 편집의 기초적 접근이 인간 피드백 기반 반복적 텍스트 개정 시스템의 이론적 토대를 제공함
-- 🔗 후속 연구: [[papers/272_Diamonds_in_the_rough_Generating_fluent_sentences_from_early/review]] — 명령을 통한 텍스트 편집 방법으로 본 논문의 문장 수정을 더 일반적인 텍스트 편집으로 확장한다.
+- 🔗 후속 연구: [[papers/656_Read_revise_repeat_A_system_demonstration_for_human-in-the-l/review]] — 인간 피드백 기반 텍스트 개정 시스템에 자연어 명령 편집 기능을 통합하여 더욱 유연한 상호작용을 가능하게 한다.
+- 🏛 기반 연구: [[papers/485_Learning_to_split_and_rephrase_from_wikipedia_edit_history/review]] — 위키피디아 편집 이력을 활용한 언어 모델 학습의 이론적 기반을 제공하여 명령 기반 텍스트 편집의 방법론적 근거를 설명한다.
+- 🔄 다른 접근: [[papers/884_Wikiatomicedits_A_multilingual_corpus_of_wikipedia_edits_for/review]] — 위키피디아 편집 데이터를 활용한 텍스트 편집이라는 공통 기반을 가지지만 명령 기반 vs 다국어 원자적 편집이라는 다른 접근법을 사용한다.
+- 🔗 후속 연구: [[papers/512_Lm-combiner_A_contextual_rewriting_model_for_chinese_grammat/review]] — 명령어 기반 텍스트 편집 연구를 중국어 문법 오류의 맥락적 재작성으로 특화하여 발전시킨 접근법이다.
+- 🧪 응용 사례: [[papers/485_Learning_to_split_and_rephrase_from_wikipedia_edit_history/review]] — 명령어 기반 텍스트 편집 시스템으로, 분할-재표현 기술을 실제 텍스트 편집 도구에 적용한 사례입니다.
+- 🔗 후속 연구: [[papers/884_Wikiatomicedits_A_multilingual_corpus_of_wikipedia_edits_for/review]] — 텍스트 편집 명령 연구를 위키피디아 편집의 대규모 다국어 코퍼스로 확장하여 실제 편집 패턴 분석을 가능하게 한다.
+- 🏛 기반 연구: [[papers/656_Read_revise_repeat_A_system_demonstration_for_human-in-the-l/review]] — 자연어 명령을 통한 텍스트 편집의 이론적 기반을 제공하여 반복적 개정 시스템의 동작 원리를 설명한다.
+- 🧪 응용 사례: [[papers/246_Csed_A_chinese_semantic_error_diagnosis_corpus/review]] — 명령어 기반 텍스트 편집이 중국어 의미 오류 진단 후 오류 수정에 실제 적용될 수 있는 방법을 제시한다.

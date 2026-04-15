@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "기존 멀티모달 대형언어모델(LLM)들이 일반적인 시각-언어 작업에서는 우수하나, 차트 해석 같은 특정 도메인 데이터 이해에는 크게 부족하다는 문제를 해결하기 위해, **GPT-4 기반의 자동화된 3단계 데이터 생성 파이프라인**을 제안하고, 이로부터 학습한 **ChartLlama**가 기존 벤치마크에서 최고 성능을 달성한 연구다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Visual_Scientific_Reasoning"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Peer_Review_Assessment"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Han et al._2023_ChartLlama A Multimodal LLM for Chart Understanding and Generation.pdf"
 ---
@@ -100,7 +100,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Han et al._2023_ChartLlama A Multimodal 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 차트 이해와 생성에 특화된 멀티모달 LLM이 대규모 차트 데이터셋을 활용한 범용 차트 이해 모델로 발전했다
-- 🧪 응용 사례: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 차트 이해 전용 멀티모달 모델의 방법론이 과학 그림 전반을 다루는 대형 멀티모달 모델 벤치마킹에 핵심적으로 적용된다
-- 🔗 후속 연구: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 차트 해석과 생성 능력이 멀티모달 대형언어모델의 차트-코드 생성 성능 향상으로 직접 확장되었다
-- 🔄 다른 접근: [[papers/783_Synchart_Synthesizing_charts_from_language_models/review]] — 전문 차트 이해 모델과 언어모델을 통한 차트 합성이 차트 처리의 해석과 생성 측면에서 상호 보완적 접근법을 제시한다
+- 🔄 다른 접근: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 차트 이해를 위한 멀티모달 LLM을 다른 아키텍처와 접근법으로 구현한 대안적 연구
+- 🏛 기반 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 차트 이해 모델 개발을 위한 대규모 멀티모달 데이터셋과 벤치마크 기반
+- ⚖️ 반론/비판: [[papers/783_Synchart_Synthesizing_charts_from_language_models/review]] — 차트 이해 대신 언어모델로 차트를 직접 생성하는 반대 방향의 접근법
+- 🔄 다른 접근: [[papers/091_Aiscivision_A_framework_for_specializing_large_multimodal_mo/review]] — 과학 시각화에서 영상 분류와 차트 생성이라는 서로 다른 접근 방향을 보여준다

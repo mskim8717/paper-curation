@@ -11,8 +11,9 @@ arxiv: ""
 score: 3.8
 essence: "본 논문은 OpenFOAM 기반 전산유체역학(CFD) 시뮬레이션을 위해 검색 증강 생성(RAG) 기술로 강화된 대규모 언어모델(LLM) 기반 에이전트 OpenFOAMGPT를 제시한다. GPT-4o와 o1 preview 모델을 활용하여 영점 샷(zero-shot) 시뮬레이션 설정부터 경계조건 수정, 난류 모델 조정, 코드 번역까지 다양한 작업을 자동화한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Computational_Fluid_Dynamics"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pandey et al._2025_OpenFOAMGPT A retrieval-augmented large language model (LLM) agent for OpenFOAM-based computational.pdf"
 ---
@@ -142,9 +143,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pandey et al._2025_OpenFOAMGPT A retriev
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/864_VASPilot_MCP-Facilitated_Multi-Agent_Intelligence_for_Autono/review]] — CFD 시뮬레이션 자동화와 유사하게 DFT 계산을 자동화하는 다중 에이전트 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/456_Lang-PINN_From_Language_to_Physics-Informed_Neural_Networks/review]] — 물리 기반 신경망으로 확장하여 자연어에서 실행 가능한 과학 코드 생성의 범위를 넓힌다.
-- 🧪 응용 사례: [[papers/130_Automating_Computational_Chemistry_Workflows_via_OpenClaw_an/review]] — 계산 화학 워크플로우 자동화의 구체적 구현으로 OpenClaw와 유사한 자동화 접근법을 보여준다.
-- 🔗 후속 연구: [[papers/587_OpenFOAM_The_Open_Source_Computational_Fluid_Dynamics_Toolbo/review]] — 기본적인 CFD 도구 활용을 완전 자동화된 시뮬레이션 시스템으로 발전시킨 기술적 진보를 보여준다.
-- 🔄 다른 접근: [[papers/864_VASPilot_MCP-Facilitated_Multi-Agent_Intelligence_for_Autono/review]] — OpenFOAM CFD 자동화와 유사하게 VASP DFT 계산을 자동화하는 다중 에이전트 시스템을 제시한다.
-- 🔄 다른 접근: [[papers/456_Lang-PINN_From_Language_to_Physics-Informed_Neural_Networks/review]] — 자연어 기반 과학 코드 생성에서 CFD 시뮬레이션과 물리 신경망이라는 다른 도메인을 다룬다.
+- 🔄 다른 접근: [[papers/864_VASPilot_MCP-Facilitated_Multi-Agent_Intelligence_for_Autono/review]] — OpenFOAMGPT와 VASPilot은 각각 CFD와 DFT 계산에 특화된 LLM 기반 자동화를 제공한다.
+- 🔗 후속 연구: [[papers/588_OpenFOAMGPT_20_end-to-end_trustworthy_automation_for_computa/review]] — OpenFOAMGPT 2.0의 종단간 신뢰성 있는 자동화가 기존 OpenFOAMGPT의 기능을 확장한다.
+- 🏛 기반 연구: [[papers/535_MetaOpenFOAM_an_LLM-based_multi-agent_framework_for_CFD/review]] — CFD를 위한 다중에이전트 프레임워크가 OpenFOAMGPT 개발의 방법론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/588_OpenFOAMGPT_20_end-to-end_trustworthy_automation_for_computa/review]] — OpenFOAMGPT 1.0의 RAG 기반 접근법이 2.0 버전의 엔드투엔드 자동화 시스템 개발의 기술적 기반
+- 🔄 다른 접근: [[papers/864_VASPilot_MCP-Facilitated_Multi-Agent_Intelligence_for_Autono/review]] — VASPilot과 OpenFOAMGPT는 서로 다른 계산 물리학 도구(VASP vs OpenFOAM)에 대한 LLM 기반 자동화를 제공한다.
+- 🔄 다른 접근: [[papers/456_Lang-PINN_From_Language_to_Physics-Informed_Neural_Networks/review]] — Lang-PINN이 자연어에서 물리 신경망으로, OpenFOAMGPT가 CFD 시뮬레이션으로 서로 다른 물리학 자동화를 제공한다.

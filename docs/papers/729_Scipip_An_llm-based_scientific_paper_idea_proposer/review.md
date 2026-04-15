@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "LLM 기반 과학 논문 아이디어 생성 시스템으로, 의미론적(semantic) 문헌 검색과 이중 경로(dual-path) 아이디어 생성을 통해 더욱 참신하고 실현 가능한 연구 아이디어를 제안한다. 기존의 키워드 기반 검색의 한계를 극복하고 전체 논문 내용을 활용한 통합적 아이디어 생성을 핵심으로 한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Hypothesis_Generation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "sub/Research_Literature_Analysis_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Scipip An llm-based scientific paper idea proposer.pdf"
 ---
@@ -166,13 +168,9 @@ LLM 기반 과학 논문 아이디어 생성 시스템으로, 의미론적(seman
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/728_SciMON_Scientific_Inspiration_Machines_Optimized_for_Novelty/review]] — SciPIP의 의미론적 검색과 이중 경로 생성이 SciMON의 참신성 최적화와 함께 LLM 기반 과학 아이디어 생성의 서로 다른 품질 향상 전략이다.
-- 🏛 기반 연구: [[papers/730_Sciqag_A_framework_for_auto-generated_science_question_answe/review]] — SciPIP의 과학 논문 아이디어 생성 방법론이 SciQAG의 질의응답 데이터 생성을 위한 기반 기술로 활용될 수 있다.
-- 🔗 후속 연구: [[papers/186_Can_large_language_models_unlock_novel_scientific_research_i/review]] — SciPIP의 구체적인 아이디어 생성 시스템이 LLM의 일반적인 과학 아이디어 생성 능력 평가를 실용적으로 구현한 사례이다.
-- 🧪 응용 사례: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — SciPIP로 생성된 연구 아이디어를 ResearchCodeAgent로 실제 구현 가능한 코드로 변환하여 아이디어에서 실행까지의 완전한 자동화를 달성할 수 있다.
-- 🔄 다른 접근: [[papers/728_SciMON_Scientific_Inspiration_Machines_Optimized_for_Novelty/review]] — SciMON의 참신성 최적화와 SciPIP의 이중 경로 아이디어 생성이 모두 LLM 기반 과학 아이디어 생성의 품질 향상을 위한 서로 다른 접근법이다.
-- 🔗 후속 연구: [[papers/730_Sciqag_A_framework_for_auto-generated_science_question_answe/review]] — SciPIP의 아이디어 생성 결과물을 SciQAG의 질의응답 쌍 생성에 활용하여 과학 지식의 자동 구조화를 확장할 수 있다.
-- 🧪 응용 사례: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — SciPIP로 생성된 연구 아이디어를 ResearchCodeAgent가 실제 구현 코드로 변환하여 아이디어 실현의 자동화를 완성한다.
-- 🔗 후속 연구: [[papers/045_Acceleron_A_tool_to_accelerate_research_ideation/review]] — SciPIP의 과학 논문 아이디어 제안이 Acceleron의 연구 가속화 기능을 구체적인 논문 작성 단계까지 확장함
-- 🔗 후속 연구: [[papers/725_Sciidea_Context-aware_scientific_ideation_using_token_and_se/review]] — SCI-IDEA의 토큰 기반 아이디어 생성을 과학 논문 아이디어 제안으로 확장하여 더 구체적이고 실현 가능한 연구 제안을 생성할 수 있다.
-- 🔗 후속 연구: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — 일반적인 연구 아이디어 생성을 대규모 지식 그래프와 실제 연구자 평가를 통한 더 체계적이고 검증된 접근법으로 확장함
+- 🔄 다른 접근: [[papers/603_PaperRobot_Incremental_Draft_Generation_of_Scientific_Ideas/review]] — 과학 논문 아이디어 생성을 위한 다른 자동화 접근법을 제시합니다.
+- 🔗 후속 연구: [[papers/540_Mir_Methodology_inspiration_retrieval_for_scientific_researc/review]] — 방법론적 영감 검색을 논문 아이디어 생성 과정에 통합합니다.
+- 🏛 기반 연구: [[papers/728_SciMON_Scientific_Inspiration_Machines_Optimized_for_Novelty/review]] — 참신성 최적화된 아이디어 생성의 방법론적 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/366_Futuregen_Llm-rag_approach_to_generate_the_future_work_of_sc/review]] — 과학 논문 아이디어 제안 시스템과 미래 연구 방향 생성을 결합하면 연구 기획부터 후속 연구까지 포괄하는 통합 시스템을 구축할 수 있다.
+- 🔗 후속 연구: [[papers/603_PaperRobot_Incremental_Draft_Generation_of_Scientific_Ideas/review]] — 과학 논문 아이디어 생성을 실제 논문 작성까지 확장한 시스템입니다.
+- 🔗 후속 연구: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 과학 논문 아이디어 제안과 재료 설계 가설 생성을 결합하여 포괄적인 연구 제안 시스템 구축

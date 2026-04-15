@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "이 논문은 대규모 언어모델(LLM) 인구에서 문화진화를 시뮬레이션하는 프레임워크를 제안하며, 네트워크 구조, 성격, 정보 변환 방식 등 문화진화의 주요 변수들을 조작하면서 기계가 생성하는 문화의 역학을 탐구한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Evolutionary_Chemistry_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Perez et al._2024_Cultural evolution in populations of large language models.pdf"
 ---
@@ -101,10 +101,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Perez et al._2024_Cultural evolution in 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — LLM 기반 사회 시뮬레이션을 문화진화 관점에서 더 구체적으로 다루며 네트워크 구조와 정보 변환의 역학을 탐구한다.
-- 🏛 기반 연구: [[papers/319_Ethnography_and_machine_learning_Synergies_and_new_direction/review]] — 민족지학과 머신러닝의 결합이 LLM 인구에서의 문화진화 연구에 방법론적 기초를 제공한다.
-- 🧪 응용 사례: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — 시뮬레이션된 인간 환경에서 사회적으로 정렬된 언어 모델 훈련이 LLM 문화진화의 실제 적용 사례이다.
-- 🧪 응용 사례: [[papers/319_Ethnography_and_machine_learning_Synergies_and_new_direction/review]] — 민족지학적 현장 연구 방법론이 LLM 인구의 문화진화 시뮬레이션에서 사회 역학 분석에 직접 적용될 수 있다.
-- 🏛 기반 연구: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — LLM 인구의 문화진화가 개별 에이전트부터 사회 전체까지의 다층적 시뮬레이션 체계의 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/460_Language_models_surface_the_unwritten_code_of_science_and_so/review]] — 대규모 언어모델 집단에서의 문화적 진화 연구가 과학과 사회의 불문율을 드러내는 LLM 활용의 이론적 배경을 제공함
-- 🏛 기반 연구: [[papers/301_Economic_anthropology_in_the_era_of_generative_artificial_in/review]] — 대규모 언어모델에서 문화적 진화의 기초적 이해를 제공한다
+- 🏛 기반 연구: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — LLM 기반 사회적 정렬 학습이 문화진화 시뮬레이션의 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — 개별 에이전트 문화진화를 사회 전체 시뮬레이션으로 확장하는 포괄적 체계를 제시한다
+- 🏛 기반 연구: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — LLM 인구의 문화진화가 개별-사회 시뮬레이션 체계의 핵심 구성요소가 된다
+- 🏛 기반 연구: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — LLM의 문화적 진화가 인간 대체 실험의 기반 이론을 제공한다

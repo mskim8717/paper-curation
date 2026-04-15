@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 멀티모달 대규모 언어 모델(MLLM)이 차트를 이해할 때 시각적 피드백을 통한 반복적 스케칭(Sketch-CoT)으로 추론 과정을 개선하는 방법을 제안한다. 인간의 인지 행동에서 영감을 받아, 모델이 중간 추론 단계를 차트에 직접 주석 처리하고 이를 다시 입력으로 제공하여 멀티모달 상호작용을 통한 깊이 있는 이해를 실현한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Visual_Scientific_Reasoning"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Domain-Specific_LLM_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2025_Chartsketcher Reasoning with multimodal feedback and reflection for chart understanding.pdf"
 ---
@@ -114,6 +114,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2025_Chartsketcher Reasoning
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/200_Chartist_Task-driven_Eye_Movement_Control_for_Chart_Reading/review]] — 차트 추론에서 스케칭 기반 접근법과 시각적 지시 튜닝 기반 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 대규모 멀티모달 차트 이해 데이터셋이 반복적 스케칭 방법론의 성능 평가에 확장 적용될 수 있습니다.
-- 🏛 기반 연구: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 멀티모달 대형 언어 모델의 차트-코드 생성 능력 향상이 시각적 피드백 기반 추론의 이론적 기반입니다.
+- 🏛 기반 연구: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 멀티모달 차트 이해의 기반이 되는 코드 생성과 LLM 활용 방법론에 대한 기본적 이해를 제공한다
+- 🔄 다른 접근: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 차트 이해에서 반복적 스케칭과 범용 어시스턴트라는 서로 다른 접근 전략을 보여준다
+- 🔗 후속 연구: [[papers/783_Synchart_Synthesizing_charts_from_language_models/review]] — 차트 이해를 넘어 차트 합성이라는 역방향 작업으로 확장한 발전된 응용 분야이다

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "화학 학술 논문으로부터 구성된 첫 대규모 화학 QA 데이터셋 ScholarChemQA를 제시하고, 불균형한 라벨 분포와 대량의 미표지 데이터를 다루는 QAMatch 모델을 제안하여 LLM을 능가하는 성능을 달성했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Question_Answering"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scholarly_Question_Answering"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2024_Scholarchemqa Unveiling the power of language models in chemical research question answering.pdf"
 ---
@@ -101,8 +101,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2024_Scholarchemqa Unveiling
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/743_Self-critique_guided_iterative_reasoning_for_multi-hop_quest/review]] — 화학 도메인의 특화된 QA를 다중 홉 질의응답의 일반적 추론 방법으로 확장하여 더 복잡한 추론 과정을 다룸
-- 🔄 다른 접근: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — 둘 다 도메인 특화된 QA 데이터셋을 다루지만 하나는 화학, 다른 하나는 의학 분야에 중점을 둠
-- 🏛 기반 연구: [[papers/726_Sciknoweval_Evaluating_multi-level_scientific_knowledge_of_l/review]] — 과학적 지식 평가의 기초적 접근이 화학 분야 특화 QA 시스템 개발의 이론적 배경을 제공함
-- 🔗 후속 연구: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — ScholarChemQA가 PubMedQA의 생의학 질의응답 접근법을 화학 영역으로 확장하여 언어모델의 과학 분야별 전문 지식 활용 능력을 체계적으로 평가함
-- 🏛 기반 연구: [[papers/743_Self-critique_guided_iterative_reasoning_for_multi-hop_quest/review]] — 도메인 특화 QA의 기초적 접근이 자기비판 기반 반복적 추론이라는 더 고도화된 질의응답 방법의 토대를 제공함
+- 🧪 응용 사례: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — 화학 연구를 위한 대규모 언어모델 도구 증강을 통해 ScholarChemQA 데이터셋의 실제 연구 활용도를 높일 수 있다.
+- 🏛 기반 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료 과학을 위한 AI 기반 모델에 대한 종합적 조사를 통해 화학 QA 시스템의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/557_MOOSE-Chem_Large_Language_Models_for_Rediscovering_Unseen_Ch/review]] — LLM을 통한 미발견 화학 반응 재발견을 통해 화학 QA 시스템의 지식 범위를 확장하고 새로운 발견을 가능하게 한다.
+- 🏛 기반 연구: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 화학 질의응답에서의 언어 모델 성능 연구를 화학 도구 사용 에이전트의 기반 지식으로 활용한다
+- 🔄 다른 접근: [[papers/730_Sciqag_A_framework_for_auto-generated_science_question_answe/review]] — 화학 분야 특화 질의응답으로 과학 QA 생성의 다른 도메인 적용 사례이다.
+- 🧪 응용 사례: [[papers/214_ChemToolAgent_The_Impact_of_Tools_on_Language_Agents_for_Che/review]] — 화학 도구 에이전트의 성능을 화학 질의응답이라는 구체적인 벤치마크를 통해 평가할 수 있다
+- 🔗 후속 연구: [[papers/837_Training_a_Scientific_Reasoning_Model_for_Chemistry/review]] — 화학 질의응답에서 한 단계 나아가 복합적 화학 추론과 구조 생성까지 통합한다
+- 🔗 후속 연구: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — 화학 분야에 특화된 질의응답 데이터셋으로, PubMedQA의 생의학 분야 접근을 화학 도메인으로 확장한 연구 방향을 보여준다

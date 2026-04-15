@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "ChemCrow는 GPT-4에 18개의 화학 전문가 도구를 통합하여 합성 계획, 약물 발견, 재료 설계 등 다양한 화학 작업을 자동으로 수행할 수 있는 LLM 화학 에이전트이다. 이 시스템은 곤충 기피제와 유기촉매 합성을 자율적으로 실행하고 새로운 색소체 발견을 주도하여, 계산 화학과 실험 화학 사이의 격차를 효과적으로 연결한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Chemistry_Tool_Integration_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/M. Bran et al._2024_Augmenting large language models with chemistry tools.pdf"
 ---
@@ -116,18 +117,13 @@ ChemCrow는 GPT-4에 18개의 화학 전문가 도구를 통합하여 합성 계
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/557_MOOSE-Chem_Large_Language_Models_for_Rediscovering_Unseen_Ch/review]] — LLM에 화학 도구를 통합하는 방법론이 미발견 화학 가설 재발견의 기반을 제공한다
-- 🔄 다른 접근: [[papers/638_ProtAgents_protein_discovery_via_large_language_model_multi-/review]] — 화학 vs 단백질 분야에서 LLM 기반 전문 도구 통합의 다른 적용을 비교할 수 있다
-- 🔄 다른 접근: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — 화학 분야에서 LLM 도구 증강의 다른 접근법과 구현 방식을 비교할 수 있다
-- 🔗 후속 연구: [[papers/292_Drugpilot_Llm-based_parameterized_reasoning_agent_for_drug_d/review]] — 화학 도구 통합 방법론을 신약 개발의 전체 파이프라인으로 확장한 연구다
-- 🏛 기반 연구: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — LLM에 화학 도구 통합의 기본 연구가 ChemCrow의 직접적 기반
-- 🔄 다른 접근: [[papers/209_ChemAgent_Self-updating_Library_in_Large_Language_Models_Imp/review]] — LLM의 화학 능력 향상을 위한 서로 다른 접근법을 제시합니다.
-- 🔗 후속 연구: [[papers/557_MOOSE-Chem_Large_Language_Models_for_Rediscovering_Unseen_Ch/review]] — LLM에 화학 도구를 통합한 방법론을 미발견 화학 가설 재발견에 확장 적용할 수 있다
-- 🏛 기반 연구: [[papers/638_ProtAgents_protein_discovery_via_large_language_model_multi-/review]] — LLM에 전문 도구를 통합하는 방법론이 단백질 설계 다중 에이전트 시스템의 기반을 제공한다
-- 🏛 기반 연구: [[papers/292_Drugpilot_Llm-based_parameterized_reasoning_agent_for_drug_d/review]] — LLM에 전문 도구를 통합하는 방법론이 매개변수화된 추론 에이전트의 기반을 제공한다
-- 🔗 후속 연구: [[papers/480_Large-Language-Model-Based_AI_Agent_for_Organic_Semiconducto/review]] — LLM과 머신러닝 알고리즘 결합을 화학 도구 통합에서 반도체 소자 개발로 확장한 연구다
-- 🏛 기반 연구: [[papers/214_ChemToolAgent_The_Impact_of_Tools_on_Language_Agents_for_Che/review]] — 화학 도구로 LLM 확장하기가 화학 문제 해결 도구의 기반 제공
-- 🏛 기반 연구: [[papers/554_Modular_large_language_model_agents_for_multi-task_computati/review]] — 화학 도구로 증강된 대규모 언어 모델이 PharmAgents의 신약 개발 전 과정 자동화를 위한 핵심적인 기술적 토대를 제공한다.
-- 🏛 기반 연구: [[papers/239_CRISPR-GPT_for_agentic_automation_of_gene-editing_experiment/review]] — 화학 도구로 강화된 LLM 연구는 CRISPR-GPT가 유전체 공학 도메인 지식을 통합하는 방법론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/837_Training_a_Scientific_Reasoning_Model_for_Chemistry/review]] — 대규모 언어 모델에 화학 도구를 증강하는 방법이 ether0의 화학 구조 출력 능력 향상에 활용될 수 있다.
-- 🧪 응용 사례: [[papers/1106_The_BOS-Lig_Dataset_Accurate_Ligand_Charges_from_a_Consensus/review]] — 화학 도구로 대규모 언어 모델을 증강하여 본 논문의 리간드 전하 데이터를 화학 언어 모델링에 활용할 수 있다.
+- 🏛 기반 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — LLM이 도구를 효과적으로 사용할 수 있는 기본 능력을 입증하여 화학 전문 도구 통합의 이론적 기반을 제공함
+- 🔄 다른 접근: [[papers/292_Drugpilot_Llm-based_parameterized_reasoning_agent_for_drug_d/review]] — 둘 다 화학/약물 발견 분야의 LLM 에이전트이지만 ChemCrow는 범용 화학 도구에, DrugPilot은 신약 개발 특화에 집중한 차별화된 접근법임
+- 🔗 후속 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — AI 기반 재료과학 연구의 포괄적 조사를 통해 ChemCrow가 화학에서 보인 성과를 재료과학 전반으로 확장할 수 있는 가능성을 제시함
+- 🔄 다른 접근: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — 화학 도구로 증강된 LLM의 다른 구현 방식으로 상호 보완적 접근법을 제시한다
+- 🧪 응용 사례: [[papers/461_LARC_Towards_Human-level_Constrained_Retrosynthesis_Planning/review]] — 화학 도구 증강 LLM의 원리를 인간 전문가 수준의 실용적 합성 계획에 적용한다
+- 🧪 응용 사례: [[papers/046_Accurate_structure_prediction_of_biomolecular_interactions_w/review]] — 분자 구조 예측을 화학 도구와 결합하여 실제 연구에 활용하는 응용 사례
+- 🔄 다른 접근: [[papers/292_Drugpilot_Llm-based_parameterized_reasoning_agent_for_drug_d/review]] — 둘 다 화학/약물 분야의 LLM 에이전트이지만 DrugPilot은 신약 개발 전 과정에, ChemCrow는 범용 화학 작업에 특화된 서로 다른 접근법임
+- 🏛 기반 연구: [[papers/214_ChemToolAgent_The_Impact_of_Tools_on_Language_Agents_for_Che/review]] — 화학 도구로 대형 언어 모델을 증강하는 기본 방법론을 도구 에이전트의 영향 분석에 활용한다
+- 🏛 기반 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — 16,000개 이상의 실제 도구 사용 능력을 통해 ChemCrow가 18개 화학 도구를 통합하는 것의 확장성과 일반화 가능성을 보여주는 기반 연구임
+- 🧪 응용 사례: [[papers/701_Scholarchemqa_Unveiling_the_power_of_language_models_in_chem/review]] — 화학 연구를 위한 대규모 언어모델 도구 증강을 통해 ScholarChemQA 데이터셋의 실제 연구 활용도를 높일 수 있다.

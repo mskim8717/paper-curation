@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.1
 essence: "본 논문은 대규모 언어 모델(LLM)을 기반으로 한 인간-AI 협력 프레임워크를 제시하며, 이를 뇌-컴퓨터 인터페이스(BCI) 및 뇌 신호 분석 연구에 적용하는 ChatBCI 도구를 소개한다. 완전 자동화된 \"AI 연구자\"보다는 인간 전문가의 암묵적 지식을 활용하는 협력적 접근을 강조한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Multimodal_Scientific_Reasoning"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Scientist_System_Development"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Brown_2024_Human-ai teaming using large language models Boosting brain-computer interfacing (bci) and brain re.pdf"
 ---
@@ -155,7 +157,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Brown_2024_Human-ai teaming using large 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — MedAgents의 제로샷 의료 협력이 ChatBCI의 뇌-컴퓨터 인터페이스 연구에서 인간-AI 협력 방식을 확장함
-- 🧪 응용 사례: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — PatientSim의 환자 시뮬레이션이 ChatBCI의 뇌 신호 분석 연구에서 실제 임상 시나리오 검증에 활용됨
-- 🏛 기반 연구: [[papers/412_HuggingGPT_Solving_AI_Tasks_with_ChatGPT_and_its_Friends_in/review]] — HiAgent의 계층적 작업 메모리 관리가 ChatBCI의 복잡한 뇌 신호 분석 과정에서 정보 처리 효율성을 높임
-- 🔗 후속 연구: [[papers/233_Cognitio_emergens_Agency_dimensions_and_dynamics_in_human-ai/review]] — 뇌-컴퓨터 인터페이스 분야에서 인간-AI 팀워크의 실제 구현 방법을 제시한다.
+- 🏛 기반 연구: [[papers/839_Transforming_Behavioral_Neuroscience_Discovery_with_In-Conte/review]] — 행동 신경과학 발견을 위한 인컨텍스트 변환 연구가 인간-AI 협력 기반 뇌-컴퓨터 인터페이스의 신경과학적 기반을 제공한다
+- 🔄 다른 접근: [[papers/358_From_Labor_to_Collaboration_A_Methodological_Experiment_Usin/review]] — 노동에서 협력으로의 방법론적 실험이 ChatBCI의 인간-AI 협력과는 다른 관점에서 인간-AI 상호작용을 탐구한다
+- 🔗 후속 연구: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 인간-AI 협력 작성 데이터셋 설계가 ChatBCI의 인간-AI 협력 프레임워크의 확장된 응용 방향을 제시한다
+- 🔗 후속 연구: [[papers/922_Vibe_physics_The_AI_grad_student/review]] — 뇌과학에서 인간-AI 팀워크 향상 연구로 물리학 이외 분야의 협력 모델을 확장한다
+- 🧪 응용 사례: [[papers/175_Building_machines_that_learn_and_think_with_people/review]] — 뇌-컴퓨터 인터페이스 분야에서 인간-AI 팀워크를 활용한 구체적 응용 사례로서 사고 파트너 개념의 실제 구현 방안을 제시함
+- 🏛 기반 연구: [[papers/233_Cognitio_emergens_Agency_dimensions_and_dynamics_in_human-ai/review]] — 대규모 언어모델을 활용한 인간-AI 팀워크가 Cognitio emergens의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/435_Interfeedback_Unveiling_interactive_intelligence_of_large_mu/review]] — 인간-AI 협업에서의 상호작용 능력 평가에 대한 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/229_Cocoa_Co-planning_and_co-execution_with_ai_agents/review]] — 뇌파 신호 활용 인간-AI 팀워크가 계획-실행 협업 패러다임의 실제 응용 사례를 제공한다

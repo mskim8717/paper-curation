@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "과학 논문의 도표 캡션 자동 생성을 지식 증강 이미지 캡셔닝(knowledge-augmented image captioning) 문제로 재정의하고, 멘션 문단(mention-paragraph)과 OCR 토큰을 포함한 SciCap+ 데이터셋을 구축하여 다중모드(multimodal) 컨텍스트 정보가 캡션 생성에 미치는 영향을 분석한 연구이다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Figure_Captioning"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Chart_and_Figure_Captioning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2023_SciCap+ A Knowledge Augmented Dataset to Study the Challenges of Scientific Figure Captioning.pdf"
 ---
@@ -108,7 +108,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2023_SciCap+ A Knowledge Aug
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/338_Figuring_out_figures_Using_textual_references_to_caption_sci/review]] — 텍스트 참조를 활용한 과학 도형 캡션 생성이 SciCap+의 지식 증강 접근법과 상호 보완적인 멀티모달 컨텍스트를 제공한다.
-- 🏛 기반 연구: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — 다목적 차트 및 시각화 모델이 SciCap+의 과학 도형 이해에 필요한 기반 기술을 제공한다.
-- 🔄 다른 접근: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — 둘 다 멀티모달 차트 이해를 다루지만 하나는 과학 논문의 지식 증강에, 다른 하나는 일반적인 차트 코딩에 초점을 맞춘다.
-- 🏛 기반 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 과학 캡션 생성의 도전과제 분석이 RLHF 기반 개선 방법론의 기반
+- 🔗 후속 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — SciCap 데이터셋에 지식 증강 요소를 추가하여 과학 도형 캡션 생성의 복잡성을 더욱 체계적으로 분석한다.
+- 🔄 다른 접근: [[papers/564_Multi-llm_collaborative_caption_generation_in_scientific_doc/review]] — 지식 증강 데이터셋과 다중 LLM 협업이라는 서로 다른 과학 캡션 생성 개선 방법을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 대규모 멀티모달 차트 이해의 기초적인 방법론을 과학 도형 캡션 생성에 적용한다.
+- 🔗 후속 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 기본 데이터셋을 지식 증강으로 확장하여 과학 도형 캡션 생성의 도전과제를 더 깊이 분석한다.
+- 🔗 후속 연구: [[papers/564_Multi-llm_collaborative_caption_generation_in_scientific_doc/review]] — 지식 증강 데이터셋을 활용하여 다중 LLM 협업 캡션 생성의 성능을 더욱 향상시킬 수 있다.

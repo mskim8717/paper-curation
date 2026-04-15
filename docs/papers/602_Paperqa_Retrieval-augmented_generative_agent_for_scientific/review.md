@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: ""
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scholarly_Document_QA"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scholarly_Question_Answering"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lála et al._2023_Paperqa Retrieval-augmented generative agent for scientific research.pdf"
 ---
@@ -140,21 +141,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lála et al._2023_Paperqa Retrieval-augm
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/457_Language_agents_achieve_superhuman_synthesis_of_scientific_k/review]] — PaperQA의 기본적인 검색 증강 생성 에이전트 구조가 PaperQA2의 환각 해결과 초인적 과학 지식 합성 능력의 기초 프레임워크를 제공함
-- 🧪 응용 사례: [[papers/715_Scidqa_A_deep_reading_comprehension_dataset_over_scientific/review]] — SciDQA의 깊이 있는 과학 논문 이해 평가가 PaperQA 시스템의 복잡한 과학 텍스트 처리 능력을 검증할 수 있는 구체적 벤치마크를 제공함
-- 🔄 다른 접근: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — OpenScholar의 과학 문헌 합성 접근법이 PaperQA의 검색 증강 방식과 다른 각도에서 대규모 과학 지식 처리 문제를 해결하는 대안적 방법론을 제시함
-- 🏛 기반 연구: [[papers/042_Academicbrowse_Benchmarking_academic_browse_ability_of_llms/review]] — 과학 문헌의 검색 증강 생성 에이전트로 학술 정보 검색 능력 평가의 기술적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/667_ReSearch_Learning_to_Reason_with_Search_for_LLMs_via_Reinfor/review]] — PaperQA의 과학 문헌 검색 증강 생성은 ReSearch의 강화학습 기반 검색 학습을 학술 문헌 도메인에 직접 적용한 실제 사례를 보여준다.
-- 🔄 다른 접근: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 과학 논문 정보 처리를 위해 일반 RAG와 과학 특화 검색 증강 생성이라는 다른 접근법을 사용한다
-- 🧪 응용 사례: [[papers/018_A_retrieval-augmented_knowledge_mining_method_with_deep_thin/review]] — 과학 연구를 위한 검색 증강 생성 에이전트의 실제 구현 사례를 보여준다.
-- 🧪 응용 사례: [[papers/067_Agentic_retrieval-augmented_generation_A_survey_on_agentic_r/review]] — 과학 연구를 위한 검색 증강 생성 에이전트의 실제 구현 사례를 제시한다.
-- 🧪 응용 사례: [[papers/904_How_AI-powered_science_search_engines_can_speed_up_your_rese/review]] — 과학 논문 검색을 위한 검색증강 생성 에이전트가 AI 과학 검색 엔진의 구체적 구현 사례이다.
-- 🔗 후속 연구: [[papers/295_Dynamic_multi-agent_orchestration_and_retrieval_for_multi-so/review]] — 과학 논문 검색 증강 생성 에이전트로 다중 소스 질의응답의 과학 분야 특화 확장을 보여준다.
-- 🔗 후속 연구: [[papers/338_Figuring_out_figures_Using_textual_references_to_caption_sci/review]] — 검색 증강 생성 에이전트를 이용한 과학 QA 시스템이 과학 도형 캡션 생성에서 참조 텍스트 활용을 더욱 정교화할 수 있다.
-- 🔗 후속 연구: [[papers/457_Language_agents_achieve_superhuman_synthesis_of_scientific_k/review]] — PaperQA2가 PaperQA의 기본 검색 증강 접근법을 환각 문제 해결과 모순 탐지 기능으로 대폭 개선하여 박사급 성능을 달성한 직접적 후속 연구임
-- 🏛 기반 연구: [[papers/715_Scidqa_A_deep_reading_comprehension_dataset_over_scientific/review]] — PaperQA의 과학 연구용 검색 증강 생성 에이전트가 SciDQA의 복잡한 과학 논문 이해 과제를 실제로 해결할 수 있는 기술적 기반을 제공함
-- 🔄 다른 접근: [[papers/087_Ai2_scholar_qa_Organized_literature_synthesis_with_attributi/review]] — 과학적 질문 답변을 위한 검색-증강 생성 시스템으로 유사한 기능을 다른 방식으로 구현한다.
-- 🔄 다른 접근: [[papers/424_Improving_health_question_answering_with_reliable_and_time-a/review]] — 과학 논문 검색에서 시간 인식 증거 최적화와 검색 증강 생성 에이전트의 서로 다른 접근법을 비교할 수 있습니다.
-- 🔄 다른 접근: [[papers/450_Knowledge_navigator_Llm-guided_browsing_framework_for_explor/review]] — 과학 문헌 탐색에서 LLM 가이드 클러스터링과 검색 증강 생성 에이전트의 서로 다른 조직화 방법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/711_Sciclaims_An_end-to-end_generative_system_for_biomedical_cla/review]] — 과학적 질의응답을 위한 검색 증강 에이전트를 생의학 주장 분석이라는 특화된 도메인으로 확장하여 더 정밀한 증거 검색과 검증이 가능하다.
-- 🔗 후속 연구: [[papers/488_Leveraging_LLMs_in_Scholarly_Knowledge_Graph_Question_Answer/review]] — 과학적 질의응답을 검색 증강 생성 에이전트로 확장한 연구이다
+- 🔄 다른 접근: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 검색 증강 생성과 과학문헌 합성은 과학 연구에서 서로 다른 정보 활용 접근법을 제시한다
+- 🏛 기반 연구: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — 검색 증강 언어모델 사전훈련이 과학 연구용 RAG 에이전트의 기초 방법론을 제공한다
+- 🔗 후속 연구: [[papers/874_WebWatcher_Breaking_New_Frontier_of_Vision-Language_Deep_Res/review]] — PaperQA의 과학 문헌 검색 기능이 WebWatcher의 멀티모달 정보 추구 능력과 결합될 수 있다.
+- 🔄 다른 접근: [[papers/109_Assisting_in_writing_wikipedia-like_articles_from_scratch_wi/review]] — PaperQA의 검색 증강 생성과 유사하지만 단일 질의가 아닌 포괄적 기사 작성을 위한 다관점 연구 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/457_Language_agents_achieve_superhuman_synthesis_of_scientific_k/review]] — PaperQA의 초기 버전으로, PaperQA2의 환각 문제 해결과 성능 향상의 기술적 기반을 제공한다
+- 🧪 응용 사례: [[papers/021_A_Review_on_Scientific_Knowledge_Extraction_using_Large_Lang/review]] — 과학적 지식 추출 이론을 실제 논문 검색 및 요약 에이전트로 구현한 실용적 사례를 제시한다.

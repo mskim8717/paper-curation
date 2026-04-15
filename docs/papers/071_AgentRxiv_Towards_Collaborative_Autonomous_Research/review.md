@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 LLM 에이전트들이 공유 프리프린트 서버를 통해 연구 결과를 주고받으며 협업하는 AgentRxiv 프레임워크를 제시한다. 단독으로 동작하는 기존 자율 연구 시스템의 한계를 극복하여, 에이전트들이 서로의 발견을 기반으로 누적적으로 개선할 수 있게 한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Scientific_Frameworks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Schmidgall and Moor_2025_AgentRxiv Towards Collaborative Autonomous Research.pdf"
 ---
@@ -104,8 +105,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Schmidgall and Moor_2025_AgentRxiv Towar
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/825_Towards_an_AI_co-scientist/review]] — AgentRxiv의 협업적 연구 공유 메커니즘과 AI co-scientist의 생성-토론-진화 방식은 서로 다른 접근으로 에이전트 간 지식 축적을 달성한다.
-- 🔗 후속 연구: [[papers/826_Towards_Autonomous_Mathematics_Research/review]] — 수학 연구의 자율적 정리 발견을 위한 Aletheia가 AgentRxiv의 협업적 연구 프레임워크를 전문 수학 도메인으로 확장한 사례이다.
-- 🏛 기반 연구: [[papers/668_ResearchAgent_Iterative_Research_Idea_Generation_over_Scient/review]] — ResearchAgent의 반복적 아이디어 생성 메커니즘이 AgentRxiv의 누적적 지식 개선 시스템의 기반이 되는 기술적 토대이다.
-- 🔄 다른 접근: [[papers/825_Towards_an_AI_co-scientist/review]] — AI co-scientist의 생성-토론-진화 방식과 AgentRxiv의 프리프린트 서버 기반 협업은 서로 다른 메커니즘으로 에이전트 간 지식 발전을 달성한다.
-- 🔗 후속 연구: [[papers/826_Towards_Autonomous_Mathematics_Research/review]] — AgentRxiv의 협업적 연구 프레임워크가 Aletheia의 수학 연구 자동화를 위한 다중 에이전트 지식 공유 시스템으로 확장된 형태이다.
+- 🔄 다른 접근: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — 인간 연구 커뮤니티 시뮬레이터와 에이전트 협업 연구는 과학 커뮤니티 모델링의 서로 다른 접근법을 제시한다
+- 🔗 후속 연구: [[papers/817_Toward_a_Team_of_AI-made_Scientists_for_Scientific_Discovery/review]] — AI 제작 과학자 팀 구축이 협업적 자율 연구를 실제 과학자 에이전트 시스템으로 확장한다
+- 🔗 후속 연구: [[papers/668_ResearchAgent_Iterative_Research_Idea_Generation_over_Scient/review]] — 협업적 자율 연구 시스템이 개별 연구 에이전트를 다중 에이전트 협력으로 확장한다

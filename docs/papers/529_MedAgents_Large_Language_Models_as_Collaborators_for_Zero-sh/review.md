@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "대규모 언어 모델(LLM)의 의료 추론 능력을 향상시키기 위해 다학제 협력 프레임워크를 제안하며, 역할 놀이와 반복적 토론을 통해 훈련 없이도 의료 지식을 효과적으로 활용한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Clinical_Multi-Agent_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Scientist_Research_Protocols"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2023_MedAgents Large Language Models as Collaborators for Zero-shot Medical Reasoning.pdf"
 ---
@@ -114,14 +114,21 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2023_MedAgents Large Languag
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/014_A_multimodal_generative_AI_copilot_for_human_pathology/review]] — 제로샷 의료 진단을 위한 다중 에이전트 협업으로 PathChat의 병리학 전문 기능을 확장한다.
-- 🔗 후속 연구: [[papers/244_Cross_sectional_pilot_study_on_clinical_review_generation_us/review]] — 제로샷 협업을 위한 의료 에이전트들이 임상 리뷰 생성을 다중 에이전트 협업으로 확장한다.
-- 🏛 기반 연구: [[papers/189_CASSIA_a_multi-agent_large_language_model_for_reference_free/review]] — 의료 분야 다중 에이전트 협력이 생물학적 데이터 분석의 기반이 됨
-- 🔄 다른 접근: [[papers/311_Empowering_Biomedical_Discovery_with_AI_Agents/review]] — 생의학 발견 vs 의료 진단에서 서로 다른 생의학 AI 에이전트 응용 영역
-- 🔗 후속 연구: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 다중 에이전트 의료 협업을 생의학 연구 가설 검증 시나리오에 적용한 확장 연구다
-- 🔗 후속 연구: [[papers/413_Human-ai_teaming_using_large_language_models_Boosting_brain-/review]] — MedAgents의 제로샷 의료 협력이 ChatBCI의 뇌-컴퓨터 인터페이스 연구에서 인간-AI 협력 방식을 확장함
-- 🏛 기반 연구: [[papers/068_AgentMD_Empowering_Language_Agents_for_Risk_Prediction_with/review]] — MedAgents의 제로샷 의료 협력 방법론이 AgentMD의 임상 계산기 자동 큐레이션과 환자 기록 적용에 기반을 제공함
-- 🔄 다른 접근: [[papers/160_BioAgents_Democratizing_Bioinformatics_Analysis_with_Multi-A/review]] — 생물정보학 분야에서 소형 언어모델 기반과 대형 언어모델 기반의 다중 에이전트 시스템 접근법을 비교하여 각각의 장단점을 분석할 수 있다.
-- 🔄 다른 접근: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — 의료 진단에서 단일 모델과 다중 에이전트 시스템의 서로 다른 접근 방식을 비교하여 임상 환경에 최적화된 솔루션을 찾을 수 있다.
-- 🔄 다른 접근: [[papers/027_A_survey_of_llm-based_agents_in_medicine_How_far_are_we_from/review]] — 의료 LLM 에이전트 서베이와 MedAgents는 모두 의료 AI 에이전트를 다루지만, 포괄적 현황 분석과 제로샷 의료 진단이라는 서로 다른 관점을 제시합니다.
-- 🔗 후속 연구: [[papers/663_Reinforcing_clinical_decision_support_through_multi-agent_sy/review]] — 제로샷 의료 분류를 위한 LLM 기반 다중 에이전트로 의료 AI 협력을 확장한다.
+- 🏛 기반 연구: [[papers/027_A_survey_of_llm-based_agents_in_medicine_How_far_are_we_from/review]] — 의료 분야 LLM 에이전트 설문이 의료진 협력 에이전트 개발의 포괄적 이론적 배경을 제공한다
+- 🔗 후속 연구: [[papers/058_Agent_hospital_A_simulacrum_of_hospital_with_evolvable_medic/review]] — 병원 시뮬레이션 환경이 다학제 협력을 넘어 의료 에이전트의 진화적 학습을 가능하게 한다
+- 🔄 다른 접근: [[papers/507_Llmeval-med_A_real-world_clinical_benchmark_for_medical_llms/review]] — 의료 LLM을 벤치마크 평가와 실제 협력 시나리오에서 각각 다른 방식으로 검증한다.
+- 🔄 다른 접근: [[papers/014_A_multimodal_generative_AI_copilot_for_human_pathology/review]] — 병리학 전용 AI와 제로샷 의료 다중 에이전트 시스템이라는 서로 다른 의료 AI 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/311_Empowering_Biomedical_Discovery_with_AI_Agents/review]] — 제로샷 협력을 통해 생의학 AI 에이전트의 능력을 확장한 연구이다.
+- 🔗 후속 연구: [[papers/848_TxAgent_An_AI_Agent_for_Therapeutic_Reasoning_Across_a_Unive/review]] — 치료 추론 에이전트가 의료 진단용 다중 LLM 협업 시스템으로 확장됨
+- 🔄 다른 접근: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — 둘 다 의료/생의학 분야의 다중 작업을 위한 AI 에이전트이지만, Biomni는 통합된 도구 환경에, MedAgents는 협력 기반 제로샷 학습에 중점을 둔다
+- 🔄 다른 접근: [[papers/612_PersonaAI_An_Interactive_Agentic-AI_Framework_for_Autonomous/review]] — 의학 분야에서 서로 다른 접근법(노화 연구 vs 제로샷 협력)을 통해 LLM 에이전트의 의학적 활용 가능성을 보여준다.
+- 🔄 다른 접근: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 생의학 분야 제로샷 다중 에이전트와 달리 가설 중심의 체계적 벤치마크를 통해 AI 에이전트의 연구 능력을 평가한다.
+- 🔄 다른 접근: [[papers/638_ProtAgents_protein_discovery_via_large_language_model_multi-/review]] — MedAgents의 제로샷 의료 진단과 ProtAgents의 단백질 발견은 각각 의료와 분자생물학 분야에서 다중 에이전트 LLM 협업을 구현한다
+- 🔄 다른 접근: [[papers/169_Bioprobench_Comprehensive_dataset_and_benchmark_in_biologica/review]] — zero-shot 의료 진단을 위한 다중 에이전트 협업 접근법으로, BioProBench의 개별 모델 평가와 대비되는 협업 기반 의료 AI 접근을 보여준다
+- 🔄 다른 접근: [[papers/350_Frame_Feedback-refined_agent_methodology_for_enhancing_medic/review]] — 의료 연구 논문 생성과 제로샷 의료 진단에서 피드백 기반 다중 에이전트 시스템과 협력적 LLM 접근법의 차이를 비교할 수 있다.
+- 🔗 후속 연구: [[papers/159_Bio-sieve_exploring_instruction_tuning_large_language_models/review]] — 의료 문헌 스크리닝 자동화를 다중 에이전트 협업 시스템으로 확장하여 더 복잡한 의료 진단 작업을 처리할 수 있다.
+- 🔗 후속 연구: [[papers/160_BioAgents_Democratizing_Bioinformatics_Analysis_with_Multi-A/review]] — MedAgents의 제로샷 의료 협업이 BioAgents의 생물정보학 민주화를 의료 도메인으로 확장한다.
+- 🔗 후속 연구: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — ClinicalGPT-R1의 진단 추론 능력을 multi-agent collaboration으로 확장하여 zero-shot 의료 응용을 구현했다.
+- 🧪 응용 사례: [[papers/027_A_survey_of_llm-based_agents_in_medicine_How_far_are_we_from/review]] — 의료 LLM 에이전트의 이론적 프레임워크를 실제 제로샷 의료 협업 시나리오에 적용한 사례를 제공한다
+- 🔗 후속 연구: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — 제로샷 의료 진단에서 다중 에이전트 협력을 대화형 인간-AI 협력으로 발전시킨 접근
+- 🔗 후속 연구: [[papers/530_Medbiolm_Optimizing_medical_and_biological_qa_with_fine-tune/review]] — 단일 모델 기반 의료 QA에서 다중 에이전트 협력 기반 제로샷 진단으로 발전된 형태를 보여준다.

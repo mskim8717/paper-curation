@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 가설 생성, 실험 설계, 데이터 분석 등 과학적 발견 전 과정을 자동화하는 LLM 기반 과학 에이전트(Scientific Agent)의 아키텍처, 설계, 벤치마크, 응용, 윤리적 고려사항을 포괄적으로 검토한 서베이 논문이다. 일반 목적의 LLM과 달리 도메인 특화 지식, 고급 도구 집합, 강건한 검증 메커니즘을 통합하여 재현성 있는 과학적 발견을 주도한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Research_Literature_Analysis_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ren et al._2025_Towards Scientific Intelligence A Survey of LLM-based Scientific Agents.pdf"
 ---
@@ -108,14 +109,14 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ren et al._2025_Towards Scientific Intel
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/038_A_vision_for_auto_research_with_llm_agents/review]] — Scientific Agent 서베이가 Auto Research 비전을 구체적인 에이전트 아키텍처와 설계 원칙으로 발전시켜 실현 가능한 로드맵을 제시한다.
-- 🧪 응용 사례: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — Scientific Agent의 이론적 프레임워크가 ResearchTown의 멀티에이전트 시뮬레이션에서 실제 구현되어 연구 자동화의 실현 가능성을 검증할 수 있다.
-- 🏛 기반 연구: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — Scientific Agent의 강건한 검증 메커니즘 요구사항이 TruthHypo의 진실성 평가와 환각 탐지 연구의 필요성을 뒷받침한다.
-- 🧪 응용 사례: [[papers/286_Domain-specific_ReAct_for_physics-integrated_iterative_model/review]] — Scientific Agent의 도메인 특화 지식 통합 방법론이 물리학 통합 모델링의 ReAct 프레임워크에서 실제 적용 사례로 구현된다.
-- 🔄 다른 접근: [[papers/506_LLM4SR_A_Survey_on_Large_Language_Models_for_Scientific_Rese/review]] — LLM 기반 과학 지능에 대한 서로 다른 관점의 서베이를 제시합니다.
-- 🔗 후속 연구: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — ResearchTown의 멀티에이전트 시뮬레이션이 Scientific Agent 서베이에서 제시하는 이론적 프레임워크의 실제 구현 사례로 활용될 수 있다.
-- 🧪 응용 사례: [[papers/730_Sciqag_A_framework_for_auto-generated_science_question_answe/review]] — SciQAG의 고품질 QA 데이터가 Scientific Agent의 지식 기반 구축과 추론 능력 향상을 위한 핵심 자원으로 활용될 수 있다.
-- 🏛 기반 연구: [[papers/748_Semi-Supervised_2D_Human_Pose_Estimation_Driven_by_Position/review]] — 도메인 특화 과학 추론 사례로서 Scientific Agent 설계에서 특정 영역 전문성 통합 방법론의 실제 구현 예시를 제공한다.
-- 🏛 기반 연구: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — TruthHypo의 환각 탐지와 진실성 평가가 Scientific Agent의 신뢰성 있는 과학적 발견을 위한 핵심적인 검증 메커니즘을 제공한다.
-- 🧪 응용 사례: [[papers/286_Domain-specific_ReAct_for_physics-integrated_iterative_model/review]] — 에너지 공학의 도메인 특화 ReAct 프레임워크가 Scientific Agent 서베이에서 제시하는 도메인 전문성 통합 방법론의 실제 구현 사례이다.
-- 🏛 기반 연구: [[papers/038_A_vision_for_auto_research_with_llm_agents/review]] — Auto Research 비전이 Scientific Agent 서베이에서 체계화되어 구체적인 아키텍처와 구현 방법론으로 발전한다.
+- 🏛 기반 연구: [[papers/064_Agentic_AI_for_Scientific_Discovery_A_Survey_of_Progress_Cha/review]] — 과학 발견을 위한 에이전트 AI의 전반적인 현황과 도전과제를 제공합니다.
+- 🧪 응용 사례: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — 과학 에이전트 프레임워크를 연구 커뮤니티 시뮬레이션에 적용합니다.
+- 🔗 후속 연구: [[papers/355_From_Human_Memory_to_AI_Memory_A_Survey_on_Memory_Mechanisms/review]] — 과학 에이전트의 메모리 메커니즘 설계와 구현에 활용됩니다.
+- 🏛 기반 연구: [[papers/004_A_Comprehensive_Survey_of_Scientific_Large_Language_Models_a/review]] — LLM 기반 과학적 지능에 대한 조사가 과학 분야 LLM의 구체적 응용 연구를 위한 토대를 제공한다.
+- 🏛 기반 연구: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — LLM 기반 과학적 지능에 대한 종합적 조사가 ResearchBench 벤치마크 설계의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/506_LLM4SR_A_Survey_on_Large_Language_Models_for_Scientific_Rese/review]] — LLM 기반 과학 지능에 대한 다른 관점의 종합적 서베이를 제공한다
+- 🏛 기반 연구: [[papers/355_From_Human_Memory_to_AI_Memory_A_Survey_on_Memory_Mechanisms/review]] — 과학 에이전트의 지식 축적과 기억 체계 구축의 이론적 토대를 제공합니다.
+- 🔗 후속 연구: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — 과학 에이전트 프레임워크를 연구 커뮤니티 전체로 확장한 접근입니다.
+- 🔗 후속 연구: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — 과학 에이전트 시스템에 사회적 책임성과 윤리적 고려사항을 통합합니다.
+- 🔗 후속 연구: [[papers/363_From_Reasoning_to_Learning_A_Survey_on_Hypothesis_Discovery/review]] — LLM 기반 과학적 지능 서베이가 가설 발견과 규칙 학습을 포함한 더 넓은 과학적 추론 능력의 발전 방향을 제시한다
+- 🧪 응용 사례: [[papers/354_From_GPU_Engineering_to_Scientific_Discovery_Parallelism_Tec/review]] — 과학 에이전트 시스템의 효율적인 구현을 위한 병렬화 기법을 제공합니다.

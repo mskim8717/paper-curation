@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "SciGLM은 자기 성찰적(self-reflective) 주석 생성 프레임워크를 통해 고품질의 과학 지시 데이터를 자동으로 큐레이션하고, 이를 이용해 여러 언어 모델을 파인튜닝함으로써 대학 수준의 과학 추론 능력을 갖춘 과학 언어 모델을 구축한다. GPT-3.5와 GPT-4 같은 고급 LLM도 기본적인 과학 문제에서 28.52%의 낮은 정확도를 보이는 문제를 해결하기 위해, 물리, 화학, 수학, 형식적 증명(Lean)을 포함하는 254,051개의 고품질 과학 지시문을 포함한 SciInstruct 데이터셋을 구축했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Domain-adapted_Instruction_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Physics_Reasoning_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_Sciglm Training scientific language models with self-reflective instruction annotation and tuning.pdf"
 ---
@@ -117,6 +118,6 @@ SciGLM은 자기 성찰적(self-reflective) 주석 생성 프레임워크를 통
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/837_Training_a_Scientific_Reasoning_Model_for_Chemistry/review]] — 둘 다 도메인 특화 과학 추론 모델을 구축하지만 하나는 자기 성찰적 지시 데이터를 사용하고 다른 하나는 화학 도메인에 특화된 강화학습을 사용한다.
-- 🏛 기반 연구: [[papers/707_SciBERT_A_Pretrained_Language_Model_for_Scientific_Text/review]] — 과학 텍스트를 위한 사전훈련된 언어 모델로서 SciGLM의 과학 도메인 특화 학습에 기반을 제공한다.
-- 🔗 후속 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 생물학 및 화학 분야의 과학 대규모 언어 모델에 대한 포괄적인 조사로서 SciGLM의 연구를 더 넓은 맥락에서 이해할 수 있게 한다.
+- 🔄 다른 접근: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — 과학 언어 모델에서 자기 성찰적 학습과 대규모 과학 데이터 사전학습이라는 서로 다른 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/707_SciBERT_A_Pretrained_Language_Model_for_Scientific_Text/review]] — 과학 텍스트 사전학습 모델을 자기 성찰적 지시 학습으로 확장하여 추론 능력을 크게 향상시킨다.
+- 🏛 기반 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자기 피드백을 통한 반복적 개선의 기초 방법론을 과학 언어 모델 훈련에 적용한다.

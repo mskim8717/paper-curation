@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "다국어 음성언어이해(multilingual spoken language understanding, SLU) 태스크에서 일관성 정규화(consistency regularization)와 하이브리드 데이터 증강(hybrid data augmentation) 전략을 결합하여 의도 탐지(intent detection)와 슬롯 채우기(slot filling) 성능을 향상시킨 연구이다. MASSIVE 데이터셋에서 전체 데이터셋 설정에서 1위를 달성했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Document_Analysis_and_Retrieval"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Zero-Shot_Claim_Verification"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zheng et al._2023_Hit-scir at mmnlu22 Consistency regularization for multilingual spoken language understanding.pdf"
 ---
@@ -118,8 +118,9 @@ L = L_I + λ₁L_S + λ₂R_I + λ₃R_S
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/206_ChatGPT_outperforms_crowd_workers_for_text-annotation_tasks/review]] — 텍스트 주석 작업에서 ChatGPT의 기본 성능이 다국어 음성언어이해의 데이터 증강 전략 개발에 기초가 됩니다.
-- 🔄 다른 접근: [[papers/421_Improving_demonstration_diversity_by_human-free_fusing_for_t/review]] — Text-to-SQL에서의 무인 융합 다양성 향상과 SLU에서의 일관성 정규화가 서로 다른 다양성 증진 방법을 제시합니다.
-- 🔗 후속 연구: [[papers/423_Improving_grammatical_error_correction_via_contextual_data_a/review]] — 문법 오류 수정의 문맥 기반 데이터 증강 방법을 다국어 음성언어이해에 적용하여 성능을 향상시킬 수 있습니다.
-- 🔄 다른 접근: [[papers/421_Improving_demonstration_diversity_by_human-free_fusing_for_t/review]] — 다양성 향상에서 무인 융합 방법과 일관성 정규화 방법이 서로 다른 접근 방식을 제시합니다.
-- 🔄 다른 접근: [[papers/423_Improving_grammatical_error_correction_via_contextual_data_a/review]] — 문법 오류 수정과 다국어 음성언어이해에서 각각 문맥 기반과 일관성 기반의 서로 다른 데이터 증강 방법을 사용합니다.
+- 🔄 다른 접근: [[papers/512_Lm-combiner_A_contextual_rewriting_model_for_chinese_grammat/review]] — 중국어 문법 오류 수정과 다국어 음성언어이해는 모두 다국어 환경에서의 언어 품질 개선을 다른 방식으로 접근한다.
+- 🔗 후속 연구: [[papers/423_Improving_grammatical_error_correction_via_contextual_data_a/review]] — 문법 오류 수정의 문맥 기반 데이터 증강 방법론을 다국어 음성언어이해의 일관성 정규화로 확장한 접근법이다.
+- 🏛 기반 연구: [[papers/246_Csed_A_chinese_semantic_error_diagnosis_corpus/review]] — 중국어 의미 오류 진단 말뭉치는 다국어 언어이해 시스템의 오류 패턴 분석에 기초 데이터를 제공한다.
+- 🧪 응용 사례: [[papers/755_Simalign_High_quality_word_alignments_without_parallel_train/review]] — 병렬 데이터 없는 고품질 단어 정렬 기법이 다국어 음성언어이해의 의도-슬롯 매핑 성능 향상에 적용될 수 있다.
+- 🧪 응용 사례: [[papers/512_Lm-combiner_A_contextual_rewriting_model_for_chinese_grammat/review]] — 다국어 음성언어이해의 일관성 정규화 기법이 중국어 문법 오류 수정의 과도교정 방지에 실제 적용될 수 있다.
+- 🧪 응용 사례: [[papers/423_Improving_grammatical_error_correction_via_contextual_data_a/review]] — 다국어 음성언어이해의 일관성 정규화 기법이 문법 오류 수정의 문맥 기반 증강에 실제 적용될 수 있다.

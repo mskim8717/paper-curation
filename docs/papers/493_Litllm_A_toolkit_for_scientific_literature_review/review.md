@@ -12,8 +12,8 @@ arxiv: ""
 score: 3.5
 essence: "LitLLM은 대규모 언어모델(LLM)과 검색 증강 생성(RAG) 기술을 결합하여 과학 논문의 관련 연구(Related Work) 섹션 작성을 자동화하는 대화형 도구이다. 시스템은 사용자 제공 초록으로부터 키워드 추출, 논문 검색 및 재순위화, 문헌 리뷰 생성의 모듈화된 파이프라인을 통해 환각(hallucination) 문제를 해결한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Benchmarking_Taxonomy"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Agarwal et al._2024_Litllm A toolkit for scientific literature review.pdf"
 ---
@@ -129,8 +129,4 @@ LitLLM은 대규모 언어모델(LLM)과 검색 증강 생성(RAG) 기술을 결
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/064_Agentic_AI_for_Scientific_Discovery_A_Survey_of_Progress_Cha/review]] — 과학 문헌 리뷰 자동화 도구가 과학 발견을 위한 에이전틱 AI 시스템의 구체적인 문헌 분석 응용 사례이다.
-- 🏛 기반 연구: [[papers/090_AIRS-Bench_a_Suite_of_Tasks_for_Frontier_AI_Research_Science/review]] — 프론티어 AI 연구 과학 에이전트 평가에서 문헌 분석과 리뷰 생성이 중요한 구성 요소로서 기반을 제공한다.
-- 🔗 후속 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 검색 증강 생성을 통한 과학 문헌 합성이 LitLLM의 관련 연구 섹션 작성을 더 포괄적인 문헌 통합으로 확장한다.
-- 🧪 응용 사례: [[papers/090_AIRS-Bench_a_Suite_of_Tasks_for_Frontier_AI_Research_Science/review]] — 과학 문헌 리뷰 자동화가 AI 연구 과학 에이전트의 실제 연구 워크플로우 중 하나인 문헌 분석에 적용된다.
-- 🔗 후속 연구: [[papers/510_Llms_for_literature_review_Are_we_there_yet_arXiv_preprint_a/review]] — 문헌 리뷰가 더 포괄적인 과학 문헌 검토 도구로 확장됩니다.
+- 🔄 다른 접근: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 문헌 리뷰 자동화와 과학 문헌 종합이 서로 다른 접근으로 학술 정보 처리 문제를 해결한다

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.4
 essence: "AI 에이전트 기반의 자동화된 워크플로우를 통해 공개 10X Genomics 단일세포 RNA 시퀀싱 데이터를 발굴하고 표준화된 방식으로 처리하여, 가장 규모가 크고 다양한 단일세포 데이터 저장소 scBaseCamp를 구축했다. 이는 AI 기반 가상세포 모델 개발을 위한 훈련 데이터로 활용될 수 있으며, 데이터 처리 파이프라인의 표준화를 통해 분석 아티팩트를 최소화한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Bioinformatics_Data_Integration"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Single-Cell_RNA_Sequencing_Analysis"
   - "topic/ai4s"
 ---
 
@@ -120,10 +120,7 @@ AI 에이전트 기반의 자동화된 워크플로우를 통해 공개 10X Geno
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — 단일세포 RNA 시퀀싱 데이터 처리를 위해 AI 에이전트 기반 자동화와 대규모 표준화라는 다른 접근법을 사용한다
-- 🏛 기반 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 단일세포 데이터의 대규모 언어모델 스케일링을 위한 고품질 훈련 데이터 기반을 제공한다
-- 🧪 응용 사례: [[papers/306_Efficient_fine-tuning_of_single-cell_foundation_models_enabl/review]] — 표준화된 단일세포 데이터를 파운데이션 모델의 효율적 파인튜닝에 활용할 수 있다
-- 🏛 기반 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 단일세포 데이터의 LLM 처리 기술이 AI 에이전트 기반 단일세포 데이터베이스 구축과 표준화에 필수적인 기반 기술을 제공한다
-- 🧪 응용 사례: [[papers/431_Integrated_analysis_of_multimodal_single-cell_data/review]] — 멀티모달 단일세포 데이터 분석 기술이 AI 에이전트 기반 단일세포 데이터베이스 구축과 표준화 작업에 핵심적으로 활용된다
-- 🔄 다른 접근: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — 단일세포 분석 자동화를 위해 LLM 다중 에이전트 프레임워크와 AI 기반 대규모 데이터 표준화라는 다른 접근법을 사용한다
-- 🔗 후속 연구: [[papers/699_SCANPY_large-scale_single-cell_gene_expression_data_analysis/review]] — SCANPY의 데이터 처리 능력을 AI 에이전트 기반 자동화로 확장한다.
+- 🔄 다른 접근: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — 단일세포 데이터 처리를 위해 AI 에이전트 기반 자동화와 LLM 기반 다중 에이전트 프레임워크라는 서로 다른 접근법을 제시함
+- 🔗 후속 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — AI 에이전트로 구축한 단일세포 데이터가 차세대 단일세포 분석용 대규모 언어모델의 훈련 데이터로 직접 활용됨
+- 🔄 다른 접근: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — 단일세포 분석을 위해 LLM 기반 다중 에이전트 프레임워크와 AI 에이전트 기반 데이터 처리 자동화라는 서로 다른 접근법을 제시함
+- 🏛 기반 연구: [[papers/306_Efficient_fine-tuning_of_single-cell_foundation_models_enabl/review]] — AI 에이전트가 큐레이션한 단일세포 데이터베이스가 단일세포 기초 모델 훈련의 데이터 기반을 제공한다.

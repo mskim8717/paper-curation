@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 생물학 및 화학 분야의 특화된 과학 언어를 처리하도록 설계된 대규모 언어 모델(과학 LLM)에 대한 최초의 포괄적 조사연구다. 텍스트, 분자(SMILES, SELFIES), 단백질(아미노산 서열), 게놈(DNA 서열) 및 이들의 멀티모달 조합을 다루며, 모델 아키텍처, 학습 데이터셋, 평가 방법론을 상세히 분석한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Biological_Foundation_Models"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_Scientific Large Language Models A Survey on Biological & Chemical Domains.pdf"
 ---
@@ -144,15 +144,19 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_Scientific Large Langu
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료과학 분야 AI 연구의 포괄적 기반을 제공하여 생물학/화학 특화 LLM과 상호 보완한다
-- 🔄 다른 접근: [[papers/465_Large_Language_Model_in_Materials_Science_Roles_Challenges_a/review]] — 재료과학에서 LLM 활용에 대해 생물학/화학과는 다른 도전과제와 기회를 제시한다
-- 🧪 응용 사례: [[papers/167_Biomedlm_A_27_b_parameter_language_model_trained_on_biomedic/review]] — 생의학 특화 언어모델의 성공 사례를 생물학/화학 분야 LLM 개발에 참고할 수 있다
-- 🔗 후속 연구: [[papers/004_A_Comprehensive_Survey_of_Scientific_Large_Language_Models_a/review]] — 생물학과 화학 분야 과학 LLM에 특화된 조사로 포괄적 조사를 세분화하여 심화한다.
-- 🏛 기반 연구: [[papers/161_BioBERT_a_pre-trained_biomedical_language_representation_mod/review]] — 생의학 도메인 특화 언어모델의 초기 연구로서 이후 과학 분야 대형언어모델 발전의 중요한 기반이 되었다
-- 🔄 다른 접근: [[papers/359_From_large_language_models_to_multimodal_ai_A_scoping_review/review]] — 생의학 분야 멀티모달 AI와 생물학/화학 특화 언어모델이라는 다른 접근으로 의료 AI를 발전시킨다
-- 🔄 다른 접근: [[papers/029_A_Survey_of_Scientific_Large_Language_Models_From_Data_Found/review]] — 생물학과 화학 분야 과학 LLM에 대한 다른 관점의 종합 조사를 제시한다.
-- 🔗 후속 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 생물학적 화학적 과학 LLM 서베이가 AI 소재 과학 서베이의 생명과학 응용 분야를 보완하고 확장함
-- 🔄 다른 접근: [[papers/167_Biomedlm_A_27_b_parameter_language_model_trained_on_biomedic/review]] — 생물학과 화학 분야 과학 LLM 조사와 생명의학 특화 모델의 다른 접근법
-- 🏛 기반 연구: [[papers/707_SciBERT_A_Pretrained_Language_Model_for_Scientific_Text/review]] — SciBERT가 보여준 과학 도메인 적응의 성공이 과학 특화 LLM 발전의 기초가 됨
-- 🔗 후속 연구: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — 생물학과 화학 분야 과학 언어모델 연구의 포괄적 확장 사례
-- 🔗 후속 연구: [[papers/723_Sciglm_Training_scientific_language_models_with_self-reflect/review]] — 생물학 및 화학 분야의 과학 대규모 언어 모델에 대한 포괄적인 조사로서 SciGLM의 연구를 더 넓은 맥락에서 이해할 수 있게 한다.
+- 🔄 다른 접근: [[papers/475_Large_language_models_meet_nlp_A_survey/review]] — 생물화학 분야 특화 LLM과 일반적인 NLP 응용 LLM이라는 서로 다른 도메인 특화 접근법을 비교할 수 있음
+- 🔗 후속 연구: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 생물화학 분야 과학 LLM의 방법론이 환경과학용 파운데이션 모델 개발에 직접 적용될 수 있음
+- 🔗 후속 연구: [[papers/004_A_Comprehensive_Survey_of_Scientific_Large_Language_Models_a/review]] — 생물학과 화학 분야 과학 LLM에 대한 특화된 조사와 전반적인 과학 LLM 조사가 상호 보완된다.
+- 🏛 기반 연구: [[papers/504_Llm-srbench_A_new_benchmark_for_scientific_equation_discover/review]] — 과학 분야 LLM 설문이 방정식 발견 벤치마크 설계의 이론적 배경을 제공한다
+- 🏛 기반 연구: [[papers/749_Sequence_modeling_and_design_from_molecular_to_genome_scale/review]] — Evo와 같은 생물학적 대규모 언어 모델의 전반적인 설계 원리와 방법론적 기초를 제공한다.
+- 🏛 기반 연구: [[papers/271_Developing_ChemDFM_as_a_large_language_foundation_model_for/review]] — 생물학 및 화학 분야 과학 LLM 설문이 화학 전문 언어모델 개발의 포괄적 배경을 제공한다
+- 🏛 기반 연구: [[papers/015_A_Perspective_on_Foundation_Models_in_Chemistry/review]] — 생물학과 화학 분야의 과학적 대형 언어모델 조사가 화학 분야 파운데이션 모델 개발의 포괄적 배경지식을 제공한다.
+- 🔗 후속 연구: [[papers/161_BioBERT_a_pre-trained_biomedical_language_representation_mod/review]] — BioBERT의 생의학 언어모델을 화학 분야까지 확장한 과학 전용 대규모 언어모델 발전
+- 🔗 후속 연구: [[papers/359_From_large_language_models_to_multimodal_ai_A_scoping_review/review]] — 의료 분야 멀티모달 AI가 생물화학 분야 과학 LLM의 멀티모달 확장 방향을 제시함
+- 🏛 기반 연구: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 환경과학용 파운데이션 모델 개발에 생물화학 분야 과학 LLM의 도메인 특화 방법론이 직접 적용됨
+- 🔄 다른 접근: [[papers/475_Large_language_models_meet_nlp_A_survey/review]] — 일반적인 NLP 응용 LLM과 생물화학 분야 특화 LLM이라는 서로 다른 도메인 접근법을 비교할 수 있음
+- 🔄 다른 접근: [[papers/029_A_Survey_of_Scientific_Large_Language_Models_From_Data_Found/review]] — 생물학 및 화학 분야에 특화된 과학 LLM에 대한 다른 관점의 포괄적 분석을 제시한다
+- 🏛 기반 연구: [[papers/479_Large_physics_models_towards_a_collaborative_approach_with_l/review]] — 생물학 및 화학 분야 과학 LLM 서베이가 물리학 특화 모델 개발의 참고 기반을 제공한다
+- 🔗 후속 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 생물학 및 화학 분야 과학 언어 모델에 대한 세부 조사로 재료과학 AI 서베이를 보완함
+- 🏛 기반 연구: [[papers/707_SciBERT_A_Pretrained_Language_Model_for_Scientific_Text/review]] — 과학 분야 대규모 언어모델에 대한 포괄적 조사로, SciBERT와 같은 과학 특화 모델의 위치와 발전 방향을 제시합니다.
+- 🔗 후속 연구: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — 생물학과 화학 분야의 과학적 언어모델에 대한 포괄적 조사를 통해 Galactica의 영향과 후속 연구를 확인할 수 있다.

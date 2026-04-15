@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.5
 essence: "트랜스포머 기반 생성 언어 모델을 자동 정리 증명(automated theorem proving)에 적용하여, 신경망이 형식 수학 추론 작업을 수행할 수 있음을 최초로 입증한 연구이다. GPT-f 시스템은 Metamath 라이브러리에 채택된 새로운 증명들을 생성함으로써, 딥러닝 기반 시스템이 공식 수학 커뮤니티에 기여한 첫 사례가 되었다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Formal_Theorem_Proving"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Automated_Theorem_Proving"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Polu and Sutskever_2020_Generative language modeling for automated theorem proving.pdf"
 ---
@@ -99,13 +100,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Polu and Sutskever_2020_Generative langu
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — GPT-f의 초기 형식 증명 연구를 대규모 합성 데이터로 발전시켜 성능을 크게 개선함
-- 🧪 응용 사례: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — GPT-f가 증명한 자동 정리 증명 가능성을 올림피아드 수준 문제로 확장한 벤치마크
-- 🔗 후속 연구: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — GPT-f의 형식적 증명 생성을 비형식적 증명에서 유도하는 방법론으로 발전시킴
-- 🔗 후속 연구: [[papers/642_Proving_theorems_recursively/review]] — GPT-f의 정리 증명 기법을 재귀적 증명 방법론으로 확장한 연구
-- 🔗 후속 연구: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — GPT-f가 보여준 신경 정리 증명 가능성을 올림피아드 수준의 표준화된 벤치마크로 발전시킴
-- 🔗 후속 연구: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — GPT-f의 직접적 형식 증명 생성을 비형식 증명 활용으로 개선한 혁신적 방법론
-- 🔗 후속 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — GPT-f의 초기 형식 증명 연구를 대규모 합성 데이터와 Lean 4로 크게 발전시킴
-- 🔗 후속 연구: [[papers/642_Proving_theorems_recursively/review]] — 생성형 언어모델 기반 정리 증명을 재귀적 계층 구조로 발전시킨 확장 연구
-- 🧪 응용 사례: [[papers/030_A_survey_on_deep_learning_for_theorem_proving/review]] — 생성형 정리 증명 연구에서 제시된 심층학습 기법들의 구체적 응용 사례
-- 🔗 후속 연구: [[papers/489_Lf_a_foundational_higher-order-logic/review]] — 자동화된 정리 증명을 위한 생성 언어 모델링이 LF 논리 체계에서의 형식적 추론에 적용될 수 있다.
+- 🔗 후속 연구: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — 형식 수학을 위한 표준화된 벤치마크로, 생성 언어모델의 정리 증명 능력을 체계적으로 평가할 수 있는 도구를 제공합니다.
+- 🔗 후속 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — LLM 기반 정리 증명을 더 발전시킨 후속 연구로, 생성 언어모델의 수학적 추론 능력 향상을 보여줍니다.
+- 🧪 응용 사례: [[papers/486_Lego-prover_Neural_theorem_proving_with_growing_libraries/review]] — 신경망 기반 정리 증명기의 실제 구현으로, 생성 언어모델을 활용한 형식 수학의 발전된 응용 사례입니다.
+- 🏛 기반 연구: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — 생성 언어모델을 정리 증명에 적용한 초기 연구로, miniF2F 벤치마크가 평가하고자 하는 능력의 이론적 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 자동 정리 증명의 기존 연구를 비형식적 증명을 활용하여 형식적 증명으로 유도하는 새로운 방향으로 확장한다.
+- 🏛 기반 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — 두 논문 모두 자동 정리 증명에 생성형 언어모델을 활용하여 형식 수학의 자동화를 추구한다
+- 🔄 다른 접근: [[papers/030_A_survey_on_deep_learning_for_theorem_proving/review]] — 정리 증명 자동화라는 공통 목표를 가지지만 심층학습 서베이 vs 생성적 언어모델이라는 다른 관점에서 접근한다.
+- 🏛 기반 연구: [[papers/1095_Towards_large_language_models_as_copilots_for_theorem_provin/review]] — 자동 정리 증명을 위한 생성적 언어 모델링이 Lean Copilot의 neuro-symbolic 프레임워크의 핵심 기반을 제공한다.
+- 🔗 후속 연구: [[papers/482_Lean-star_Learning_to_interleave_thinking_and_proving/review]] — 자동 정리 증명을 위한 생성 기계학습을 자연언어 사고 과정과 결합하여 더 인간적인 증명 방식으로 발전시켰다.
+- 🧪 응용 사례: [[papers/489_Lf_a_foundational_higher-order-logic/review]] — 고차 논리 체계를 자동 정리 증명이라는 구체적인 수학적 응용에 적용한다

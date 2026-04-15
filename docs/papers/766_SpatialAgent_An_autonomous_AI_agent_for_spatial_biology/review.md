@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.25
 essence: "공간생물학(spatial biology) 연구의 전체 파이프라인을 자동화하는 LLM 기반 자율 AI 에이전트를 제시하며, 유전자 패널 설계에서 인간 전문가를 능가하고 세포-세포 상호작용 분석을 자동 수행한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Embodied_AI_Research"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Domain-Specific_Autonomous_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_SpatialAgent An autonomous AI agent for spatial biology.pdf"
 ---
@@ -93,3 +93,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_SpatialAgent An autonom
 - Overall: 4.25/5
 
 **총평**: SpatialAgent는 공간생물학의 복잡하고 노동집약적 워크플로우를 자율 LLM 에이전트로 처음 체계적으로 자동화한 의미 있는 연구이며, 인간 전문가 능가 및 하이브리드 협력 효과 입증으로 과학 발견 가속화 잠재력을 보여준다. 다만 평가 범위 확대, 오류 분석 심화, 실제 임상 통합 검증이 실용화를 위해 필수적이다.
+
+## Related Papers
+
+- 🔄 다른 접근: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — 세포 에이전트 프레임워크와 공간생물학 에이전트는 생물학 연구 자동화의 서로 다른 접근법을 제시한다
+- 🏛 기반 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 단일세포 분석용 LLM 확장 연구가 공간생물학 자동화의 기술적 기반을 제공한다
+- 🔗 후속 연구: [[papers/062_Agent-based_multimodal_information_extraction_for_nanomateri/review]] — 멀티모달 정보 추출 기술을 나노물질에서 공간 생물학이라는 더 복잡한 생물학적 도메인으로 확장한 응용이다
+- 🔄 다른 접근: [[papers/681_Revisiting_Gene_Ontology_Knowledge_Discovery_with_Hierarchic/review]] — 공간 생물학의 자율 AI 에이전트와 달리 유전자 온톨로지 기반의 다중 에이전트 협력 접근

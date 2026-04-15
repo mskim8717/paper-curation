@@ -9,8 +9,10 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 대규모 언어모델(LLM)을 활용하여 실제 개체(사람, 국가, 동물 등)의 속성을 추정하고 표 형식의 데이터셋을 시뮬레이션함으로써, 질적(qualitative) 가설을 정량적으로 빠르게 탐색할 수 있는 방법을 제시한다. 예를 들어 \"공포 작가들이 다른 작가들보다 더 힘든 어린 시절을 보냈는가?\"라는 질문을 LLM 기반 데이터 시뮬레이션으로 신속하게 프로토타이핑할 수 있다는 것을 보여준다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Hypothesis_Generation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Research_Ideation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Simulating tabular datasets through llms to rapidly explore hypotheses about real-world entities.pdf"
 ---
@@ -108,6 +110,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Simulating tabular data
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — LLM을 활용한 가설 탐색에서 데이터셋 시뮬레이션과 실제 인간 대상 연구 복제의 서로 다른 접근법을 비교하여 각각의 유효성을 검증할 수 있다.
-- 🔗 후속 연구: [[papers/492_Literature_meets_data_A_synergistic_approach_to_hypothesis_g/review]] — LLM 기반 데이터 시뮬레이션 방법을 문헌과 데이터의 시너지적 가설 접근법으로 확장하여 더 포괄적인 연구 설계를 가능하게 한다.
-- 🧪 응용 사례: [[papers/668_ResearchAgent_Iterative_Research_Idea_Generation_over_Scient/review]] — 표 형식 데이터셋 시뮬레이션 기법을 과학 지식 그래프 기반 연구 아이디어 생성에 적용하여 더 체계적인 가설 검증 과정을 구축할 수 있다.
+- 🔗 후속 연구: [[papers/631_Predicting_field_experiments_with_large_language_models/review]] — LLM 기반 현장 실험 예측을 표 형태 데이터 시뮬레이션을 통한 가설 탐색으로 확장한다
+- 🏛 기반 연구: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — LLM을 활용한 가설 생성 연구가 표 데이터 시뮬레이션을 통한 가설 검증의 이론적 기반을 제공한다
+- 🧪 응용 사례: [[papers/277_Discoverybench_Towards_data-driven_discovery_with_large_lang/review]] — 데이터 기반 발견 기법을 LLM을 통한 테이블 형태 데이터셋 시뮬레이션이라는 구체적인 응용에 적용한다

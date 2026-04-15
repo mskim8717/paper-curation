@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대규모 언어모델(LLM)이 인간 선호도 데이터로부터 암묵적으로 자기 개선 목표를 학습할 수 있도록 하는 **PIT(ImPlicit Self-ImprovemenT)** 프레임워크를 제안한다. 기존 프롬프팅 기반 자기 개선 방법들과 달리, 명시적인 평가 기준(rubric) 설계 없이 보상 모델 학습에 사용되는 선호도 데이터만으로 응답 품질을 개선할 수 있다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Self-Refining_Text_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Cross-Modal_Data_Augmentation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2023_Enabling language models to implicitly learn self-improvement.pdf"
 ---
@@ -109,6 +111,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2023_Enabling language model
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 둘 다 LLM의 자기개선을 다루지만 하나는 암묵적 학습, 다른 하나는 명시적 자기반성을 사용함
-- 🏛 기반 연구: [[papers/470_Large_language_models_can_self-improve/review]] — LLM의 일반적인 자기개선 능력에 대한 기초 연구가 암묵적 자기개선 프레임워크 개발의 이론적 토대를 제공함
-- 🔗 후속 연구: [[papers/314_Enabling_language_models_to_implicitly_learn_self-improvemen/review]] — 기본적인 자기개선을 인간 선호도 데이터를 활용한 더 정교한 암묵적 학습 방법으로 확장함
+- 🔄 다른 접근: [[papers/470_Large_language_models_can_self-improve/review]] — 명시적 추론 경로 생성을 통한 자기 개선과 달리, PIT는 인간 선호도 데이터로부터 암묵적으로 개선 목표를 학습하는 다른 접근법을 제시한다
+- 🔗 후속 연구: [[papers/227_Closing_the_loop_Learning_to_generate_writing_feedback_via_l/review]] — 언어 모델 기반 시뮬레이터를 활용한 반복적 최적화 접근법으로, PIT의 암묵적 자기 개선을 구체적 응용 영역으로 확장한다
+- 🏛 기반 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자기 피드백을 통한 반복적 개선의 기본 프레임워크로, PIT의 암묵적 자기 개선 학습에 필요한 기초적 자기 개선 메커니즘을 제공한다
+- 🔄 다른 접근: [[papers/470_Large_language_models_can_self-improve/review]] — PIT는 인간 선호도 데이터로부터 암묵적 자기 개선을 학습하는 방법으로, 명시적 자기 일관성 기반 접근법과 대비된다
+- 🔄 다른 접근: [[papers/227_Closing_the_loop_Learning_to_generate_writing_feedback_via_l/review]] — 인간 선호도 데이터를 통한 암묵적 자기 개선 접근법으로, 이 논문의 명시적 시뮬레이터 기반 피드백 학습과 대비되는 방법론을 제시한다

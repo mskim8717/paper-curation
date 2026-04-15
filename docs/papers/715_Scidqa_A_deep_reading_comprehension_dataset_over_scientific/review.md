@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 과학 논문의 깊이 있는 이해를 요구하는 새로운 질의응답(QA) 데이터셋 SCIDQA를 소개한다. OpenReview 플랫폼의 피어 리뷰에서 수집한 2,937개의 QA 쌍으로 구성되어 있으며, 표, 그림, 다중 문서 추론을 포함한 복잡한 과학 텍스트 이해를 평가한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scholarly_Document_QA"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scholarly_Question_Answering"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singh et al._2024_Scidqa A deep reading comprehension dataset over scientific papers.pdf"
 ---
@@ -119,10 +119,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singh et al._2024_Scidqa A deep reading 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/802_The_mighty_torr_A_benchmark_for_table_reasoning_and_robustne/review]] — SciDQA가 과학 논문의 깊이 있는 이해에 초점을 맞춘 반면, ToRR는 표 형식 견고성 평가에 특화되어 서로 다른 각도에서 LLM의 과학 텍스트 처리 능력을 평가함
-- 🔗 후속 연구: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — PubMedQA의 생의학 질의응답을 전체 과학 논문으로 확장하여 표, 그림, 다중 문서 추론을 포함한 더 복잡한 과학 텍스트 이해 평가로 발전시킨 연구임
-- 🏛 기반 연구: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — PaperQA의 과학 연구용 검색 증강 생성 에이전트가 SciDQA의 복잡한 과학 논문 이해 과제를 실제로 해결할 수 있는 기술적 기반을 제공함
-- 🔄 다른 접근: [[papers/802_The_mighty_torr_A_benchmark_for_table_reasoning_and_robustne/review]] — ToRR이 표 추론 견고성에 초점을 맞춘 반면, SciDQA는 과학 논문의 깊이 있는 이해를 평가하여 서로 다른 각도에서 LLM 평가를 다룸
-- 🧪 응용 사례: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — SciDQA의 깊이 있는 과학 논문 이해 평가가 PaperQA 시스템의 복잡한 과학 텍스트 처리 능력을 검증할 수 있는 구체적 벤치마크를 제공함
-- 🔄 다른 접근: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — PubMedQA가 생의학 초록 기반 yes/no 답변에 특화된 반면, SciDQA는 전체 과학 논문의 깊이 있는 이해를 요구하여 서로 다른 복잡도의 과학 QA를 다룸
-- 🏛 기반 연구: [[papers/488_Leveraging_LLMs_in_Scholarly_Knowledge_Graph_Question_Answer/review]] — 과학 문서에 대한 깊이 있는 읽기 이해의 기초를 제공한다
+- 🔄 다른 접근: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — PubMedQA는 생의학 분야에 특화된 질의응답 데이터셋으로, SciDQA의 범용 과학 논문 이해와 다른 도메인별 접근법을 보여준다
+- 🔗 후속 연구: [[papers/808_Theoremqa_A_theorem-driven_question_answering_dataset/review]] — 정리 중심의 질의응답 데이터셋으로, SciDQA의 과학 논문 독해 이해를 수학적 추론 영역으로 확장한 연구 방향이다
+- 🏛 기반 연구: [[papers/706_SciBench_Evaluating_College-Level_Scientific_Problem-Solving/review]] — 대학 수준의 과학 문제 해결 벤치마크로, SciDQA의 과학 텍스트 이해 평가에 필요한 기초적인 과학 지식 평가 틀을 제공한다
+- 🔗 후속 연구: [[papers/172_Boolq_Exploring_the_surprising_difficulty_of_natural_yesno_q/review]] — 과학 논문에 대한 깊이 있는 읽기 이해로, BoolQ의 기본적인 예/아니오 질문을 과학 문헌의 복잡한 추론으로 발전시킵니다.
+- 🔄 다른 접근: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — SciDQA는 과학 논문의 깊이 있는 독해 이해를 평가하는 데이터셋으로, PubMedQA의 생의학 특화 접근과 대비되는 범용 과학 QA 평가를 제공한다

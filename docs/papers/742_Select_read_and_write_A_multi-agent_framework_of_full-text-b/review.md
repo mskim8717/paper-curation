@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.0
 essence: "학술 논문의 관련 연구(Related Work) 섹션 자동 생성을 위해 전체 텍스트 기반 다중 에이전트 프레임워크를 제안한다. 셀렉터-리더-라이터 구조와 그래프 기반 제약을 통해 참고 문헌 간의 관계를 명시적으로 포착하고 깊이 있는 이해를 달성한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/LLM_Review_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Knowledge_Graph_Encoding"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_Select, read, and write A multi-agent framework of full-text-based related work generation.pdf"
 ---
@@ -128,8 +129,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_Select, read, and write 
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/752_Shallow_synthesis_of_knowledge_in_gpt-generated_texts_A_case/review]] — 전체 텍스트 기반 관련 연구 자동 생성의 가능성과 GPT의 문헌 종합 한계를 대비하여 현재 기술의 실제 능력과 한계를 균형있게 파악할 수 있다.
-- 🏛 기반 연구: [[papers/789_Taxonomy_tree_generation_from_citation_graph/review]] — 인용 그래프에서 분류 체계 생성이 관련 연구 섹션에서 참고 문헌 간의 관계를 체계적으로 구조화하는 기본 프레임워크를 제공한다.
-- 🔗 후속 연구: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 자동 문헌 리뷰 생성을 다중 에이전트와 그래프 기반 제약을 활용한 더 정교한 관련 연구 섹션 생성으로 발전시킨다.
-- ⚖️ 반론/비판: [[papers/752_Shallow_synthesis_of_knowledge_in_gpt-generated_texts_A_case/review]] — GPT의 문헌 종합 한계와 전체 텍스트 기반 관련 연구 생성의 가능성을 비교하여 현재 AI 기술의 실제 성능과 개선 방향을 파악할 수 있다.
-- 🔗 후속 연구: [[papers/789_Taxonomy_tree_generation_from_citation_graph/review]] — 인용 그래프에서 생성된 분류 체계가 관련 연구 섹션 작성에서 문헌 간의 계층적 관계를 체계적으로 구조화하는 핵심 도구로 활용된다.
+- 🔗 후속 연구: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 신경망 기반 관련 연구 요약을 전체 텍스트 기반 다중 에이전트로 확장하여 성능을 크게 향상시킨다.
+- 🔄 다른 접근: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 관련 연구 생성에서 다중 에이전트 협업과 지식 그래프 중심이라는 서로 다른 구조적 접근법을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — 다중 에이전트 시스템의 기초적인 협업 방법론을 학술 논문의 관련 연구 생성에 적용한다.
+- 🔄 다른 접근: [[papers/402_Hierarchical_catalogue_generation_for_literature_review_a_be/review]] — 다중 에이전트 기반 전문 검토 작성과 계층적 카탈로그 생성은 모두 과학 문헌의 체계적 조직화를 다른 방식으로 접근한다.
+- 🔗 후속 연구: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 전체 텍스트 기반 다중 에이전트 접근법으로 관련 연구 생성의 성능을 크게 향상시킨 발전된 형태다.
+- 🏛 기반 연구: [[papers/752_Shallow_synthesis_of_knowledge_in_gpt-generated_texts_A_case/review]] — GPT의 한계점 분석을 바탕으로 다중 에이전트 기반 전체 텍스트 접근법의 필요성을 제시한다.

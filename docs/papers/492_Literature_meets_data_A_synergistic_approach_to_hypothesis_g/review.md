@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 대규모 언어모델(LLM)을 활용하여 문헌 기반의 이론적 통찰과 데이터 기반의 패턴 발견을 통합하는 최초의 가설 생성 방법을 제안한다. 통합 접근은 기존의 단일 접근 방식보다 우수한 일반화 성능을 보이며, 인간 의사결정 개선에도 실질적 도움을 준다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_Literature meets data A synergistic approach to hypothesis generation.pdf"
 ---
@@ -121,11 +121,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_Literature meets data A 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/216_Chimera_A_knowledge_base_of_idea_recombination_in_scientific/review]] — 문헌과 데이터의 시너지 접근법이 기존 아이디어 재조합 패턴 분석과 달리 이론적 통찰과 실증적 패턴을 통합하여 새로운 가설을 생성하는 차별화된 방법론을 제시함
-- 🔗 후속 연구: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — 신뢰할 수 있는 생의학 가설 생성 평가가 문헌-데이터 통합 접근법을 의료 영역에 특화하여 가설 품질과 신뢰성을 체계적으로 검증하는 확장 연구임
-- 🏛 기반 연구: [[papers/666_Research_hypothesis_generation_over_scientific_knowledge_gra/review]] — 과학 지식 그래프를 활용한 연구 가설 생성이 문헌과 데이터 통합 방법론의 구조화된 지식 표현과 추론 과정의 이론적 기반을 제공함
-- 🔄 다른 접근: [[papers/540_Mir_Methodology_inspiration_retrieval_for_scientific_researc/review]] — 방법론적 영감 vs 문헌-데이터 결합으로 가설 생성의 서로 다른 접근법
-- 🔗 후속 연구: [[papers/757_Simulating_tabular_datasets_through_llms_to_rapidly_explore/review]] — LLM 기반 데이터 시뮬레이션 방법을 문헌과 데이터의 시너지적 가설 접근법으로 확장하여 더 포괄적인 연구 설계를 가능하게 한다.
-- 🔄 다른 접근: [[papers/216_Chimera_A_knowledge_base_of_idea_recombination_in_scientific/review]] — Chimera가 기존 아이디어 재조합 패턴을 분석하는 반면, Literature meets data는 문헌과 데이터를 통합하여 새로운 가설을 생성하는 상반된 접근법을 사용함
-- 🔗 후속 연구: [[papers/330_Exploiting_LLMs_for_Automatic_Hypothesis_Assessment_via_a_Lo/review]] — 문헌과 데이터를 결합한 시너지적 가설 접근법으로 본 논문의 LLM 가설 평가를 데이터 기반 연구로 확장한다.
-- 🔄 다른 접근: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — 가설 생성에서 순수 LLM 접근법과 문헌-데이터 시너지 접근법의 서로 다른 방법론을 비교할 수 있습니다.
+- 🧪 응용 사례: [[papers/132_Automating_psychological_hypothesis_generation_with_AI_when/review]] — 심리학 분야에서 LLM과 인과 지식 그래프를 결합한 가설 생성 사례로, 이 논문의 문헌-데이터 통합 방법론의 구체적 적용 예시다
+- 🏛 기반 연구: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — LLM 기반 가설 생성에 대한 체계적 조사로, 문헌과 데이터를 통합한 가설 생성 방법론의 이론적 배경을 제공한다
+- 🔄 다른 접근: [[papers/763_Sparks_of_science_Hypothesis_generation_using_structured_pap/review]] — 구조화된 패러다임을 사용한 가설 생성 접근법으로, 이 논문의 문헌-데이터 시너지 방법과 다른 체계적 접근을 보여준다
+- 🧪 응용 사례: [[papers/190_Causal_intervention_for_abstractive_related_work_generation/review]] — 문헌과 데이터의 시너지적 접근법이 인과 관계 이론을 활용한 관련 업무 생성에 실제 적용된다.
+- 🏛 기반 연구: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 문헌과 데이터의 시너지 접근법이 생의학 가설 검증을 위한 AI 에이전트 평가 벤치마크의 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/132_Automating_psychological_hypothesis_generation_with_AI_when/review]] — 문헌과 데이터를 통합한 가설 생성 방법론을 심리학 분야에 구체적으로 적용한 실증 사례로, 일반적 접근법의 실제 활용 예시다
+- 🔗 후속 연구: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — 문헌과 데이터의 시너지 접근법을 다중 슬롯 머신 이론으로 체계화하여 더 정교한 가설 생성 메커니즘을 제시한다.

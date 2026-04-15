@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 **적응형 물리적 환경과 동적 사회 구조를 결합한 다중 에이전트 의사결정 환경(AdaSociety)**을 제시한다. 에이전트들이 행동함에 따라 과제가 자동으로 생성되며, 사회적 연결이 보상과 정보 접근을 형성하여 다양한 학습 문제를 제공한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-agent_Task_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bi et al._2024_Adasociety An adaptive environment with social structures for multi-agent decision-making.pdf"
 ---
@@ -117,6 +119,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bi et al._2024_Adasociety An adaptive en
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — AutoGen의 다중 에이전트 대화 메커니즘이 AdaSociety의 사회적 구조 기반 협력 환경 구축에 핵심적인 기술적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/175_Building_machines_that_learn_and_think_with_people/review]] — AdaSociety의 적응형 사회 구조가 Building machines의 협력적 인지 프레임워크를 다중 에이전트 환경에서 구현한 확장 사례이다.
-- 🧪 응용 사례: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — AdaSociety의 동적 사회 구조 시뮬레이션이 사회과학 연구의 사회 시뮬레이션 방법론을 실제 구현한 응용 사례이다.
+- 🏛 기반 연구: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — 적응형 환경에서의 다중 에이전트 학습이 웹 에이전트의 복잡한 환경 적응 능력의 기반이 된다.
+- 🔗 후속 연구: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 적응형 사회 구조가 파운데이션 모델의 대화형 환경에서의 탐색 능력을 평가하는 프레임워크로 활용될 수 있다.
+- 🔄 다른 접근: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 다중 에이전트 환경에서의 적응과 로봇 정책의 일반화를 서로 다른 관점에서 접근한다.
+- 🧪 응용 사례: [[papers/688_Robustness_evaluation_of_offline_reinforcement_learning_for/review]] — 적응형 환경이 오프라인 RL 방법들의 견고성을 평가하는 벤치마크로 활용될 수 있다.
+- 🧪 응용 사례: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — 웹 에이전트 훈련 방법론이 적응형 다중 에이전트 환경에서 실제로 적용될 수 있다.
+- 🔄 다른 접근: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 로봇 정책의 일반화와 다중 에이전트 환경에서의 적응을 서로 다른 관점에서 접근한다.
+- 🧪 응용 사례: [[papers/688_Robustness_evaluation_of_offline_reinforcement_learning_for/review]] — 오프라인 RL 방법들의 견고성이 적응형 다중 에이전트 환경에서 평가될 수 있다.
+- 🔗 후속 연구: [[papers/102_Architecture_Design_for_Human-Driven_Systems/review]] — 사회적 구조를 가진 적응형 AI 환경으로 인간 행동 통합 아키텍처를 확장한다
+- 🏛 기반 연구: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 대화형 환경에서의 능동적 탐색 평가가 적응형 다중 에이전트 환경 설계의 기반이 된다.

@@ -10,8 +10,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어 모델(LLM)을 이용하여 경제학 문헌의 현장 실험(field experiment) 결과를 자동으로 예측하는 프레임워크를 제안하고, 276개 실험에서 78%의 예측 정확도를 달성했다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Human-AI_Experimental_Design"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_Predicting field experiments with large language models.pdf"
 ---
@@ -96,8 +98,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_Predicting field experi
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/186_Can_large_language_models_unlock_novel_scientific_research_i/review]] — 경제학 실험 예측과 일반적인 과학 아이디어 생성에서 LLM의 예측 능력을 다른 도메인에서 비교 검증할 수 있다.
-- 🔗 후속 연구: [[papers/286_Domain-specific_ReAct_for_physics-integrated_iterative_model/review]] — 경제학에서의 실험 예측 방법론을 물리학 통합 모델링에 적용하여 도메인 간 방법론 전이 가능성을 탐구할 수 있다.
-- ⚖️ 반론/비판: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — 실험 예측의 높은 정확도와 과학 가설 생성의 진실성 문제를 대조하여 LLM의 도메인별 신뢰성 차이를 분석할 수 있다.
-- 🧪 응용 사례: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — 경제학 실험 예측 방법론을 사회적 책임 AI의 인과학습 도구 평가에 적용하여 편향성 완화 효과를 실증적으로 검증할 수 있다.
-- 🧪 응용 사례: [[papers/558_Moose-chem3_Toward_experiment-guided_hypothesis_ranking_via/review]] — 시뮬레이션 기반 실험 설계를 실제 필드 실험 예측에 적용한 사례
+- 🏛 기반 연구: [[papers/474_Large_language_models_for_zero-shot_inference_of_causal_stru/review]] — 인과 구조 추론을 위한 LLM의 기본 능력과 방법론을 제공합니다.
+- 🧪 응용 사례: [[papers/585_Openai_o1_system_card/review]] — OpenAI o1의 고급 추론 능력을 경제학 연구에 적용한 사례입니다.
+- 🔗 후속 연구: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — 사회적 책임성을 고려한 인과학습을 경제학 실험 예측에 적용합니다.
+- 🧪 응용 사례: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — 사회적 책임성을 고려한 인과학습을 경제학 실험 예측에 적용합니다.
+- 🧪 응용 사례: [[papers/106_Artificial_Intelligence_in_Research_and_Development/review]] — 언어모델을 통한 현장 실험 예측이 AI의 연구 아이디어 생산함수 영향에 대한 구체적 응용 사례를 보여준다
+- 🔗 후속 연구: [[papers/757_Simulating_tabular_datasets_through_llms_to_rapidly_explore/review]] — LLM 기반 현장 실험 예측을 표 형태 데이터 시뮬레이션을 통한 가설 탐색으로 확장한다
+- 🧪 응용 사례: [[papers/585_Openai_o1_system_card/review]] — 강화학습 기반 추론 능력을 경제학 실험 예측에 적용한 사례입니다.

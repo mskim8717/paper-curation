@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.1
 essence: "다중 모달 기반 모델(MMFM)의 화학 지식을 활용하여 분자를 이미지와 텍스트로 표현하고, 계층적 분해 알고리즘과 연쇄 추론(chain-of-thought)을 결합해 해석 가능한 분자 그래프 문법(graph grammar)을 자동으로 학습하는 프레임워크를 제안한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Multimodal_Scientific_Reasoning"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sun et al._2025_Foundation Molecular Grammar Multi-Modal Foundation Models Induce Interpretable Molecular Graph Lan.pdf"
 ---
@@ -142,9 +144,14 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sun et al._2025_Foundation Molecular Gra
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/555_Molgan_An_implicit_generative_model_for_small_molecular_grap/review]] — MolGAN의 분자 생성 결과를 Foundation Molecular Grammar의 해석 가능한 문법 구조로 체계적으로 분석할 수 있음
-- 🏛 기반 연구: [[papers/487_Leveraging_biomolecule_and_natural_language_through_multi-mo/review]] — 생체분자와 자연어의 멀티모달 결합 방법론이 분자 이미지와 텍스트 표현 통합의 핵심 기반이 됨
-- 🔗 후속 연구: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 분자의 기하학적 토큰화 방법이 Foundation Molecular Grammar의 계층적 분해 알고리즘을 더욱 정교화함
-- 🔄 다른 접근: [[papers/487_Leveraging_biomolecule_and_natural_language_through_multi-mo/review]] — 분자 문법 기반 파운데이션 모델과 생물분자 다중모달 학습의 대조적 방법론
-- 🔗 후속 연구: [[papers/349_Fragment_and_Geometry_Aware_Tokenization_of_Molecules_for_St/review]] — 멀티모달 분자 문법 기초 모델이 프래그먼트 기반 분자 토큰화 방법을 더 포괄적으로 확장할 수 있습니다.
-- 🔗 후속 연구: [[papers/555_Molgan_An_implicit_generative_model_for_small_molecular_grap/review]] — Foundation Molecular Grammar의 해석 가능한 분자 문법이 MolGAN의 생성 결과를 체계적으로 분석하는 도구로 활용됨
+- 🏛 기반 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료과학 AI 시스템 구축의 포괄적 기반 지식을 제공하여 분자 문법 학습에 필요한 멀티모달 접근법 이해를 도움
+- 🔄 다른 접근: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 둘 다 분자의 기하학적 정보를 언어 모델에 통합하지만 Foundation Grammar는 멀티모달 접근, Geo2Seq는 토큰화 방식 사용
+- 🔗 후속 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 과학 문헌 검색 및 합성 기능을 통해 분자 문법 학습에 필요한 화학 지식을 체계적으로 확장할 수 있음
+- 🏛 기반 연구: [[papers/749_Sequence_modeling_and_design_from_molecular_to_genome_scale/review]] — Evo의 multi-modal foundation model 구조의 이론적 기반을 제공하는 분자 문법 연구이다.
+- 🔗 후속 연구: [[papers/094_AlphaGenome_advancing_regulatory_variant_effect_prediction_w/review]] — 분자 문법 기반 멀티모달 모델로 게놈 예측을 더욱 확장할 수 있다.
+- 🔄 다른 접근: [[papers/487_Leveraging_biomolecule_and_natural_language_through_multi-mo/review]] — 생분자와 자연언어 통합 대신 다중모달 분자 문법 기초 모델을 제시한다
+- 🔄 다른 접근: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — 둘 다 분자 구조 정보를 언어 모델과 통합하지만, MatterChat은 완전한 구조 보존에, Foundation Molecular Grammar는 다중 모달 문법에 집중한다
+- 🏛 기반 연구: [[papers/349_Fragment_and_Geometry_Aware_Tokenization_of_Molecules_for_St/review]] — 분자 문법 기초 모델은 구조 기반 약물 설계를 위한 분자 토크나이제이션 연구의 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 서베이에서 제시한 멀티모달 AI 시스템 구현 방향이 분자 문법 학습 프레임워크에 구체적으로 적용됨
+- 🔄 다른 접근: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 둘 다 분자 기하정보를 언어 모델에 통합하지만 Geo2Seq는 토큰화 방식, Foundation Grammar는 멀티모달 접근 사용
+- 🏛 기반 연구: [[papers/681_Revisiting_Gene_Ontology_Knowledge_Discovery_with_Hierarchic/review]] — 다중 모달 분자 문법 기반 모델이 유전자 온톨로지 정보를 더 효과적으로 처리할 수 있는 기술적 토대

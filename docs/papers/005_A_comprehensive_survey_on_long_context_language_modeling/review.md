@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "장문맥 언어모델(LCLM) 구축, 훈련, 배포, 평가를 위한 포괄적 조사로, 데이터 전략부터 인프라, 평가 패러다임, 응용 분야까지 체계적으로 정리한 대규모 서베이 논문."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Working_Memory_Benchmarks"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_A comprehensive survey on long context language modeling.pdf"
 ---
@@ -95,12 +95,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_A comprehensive survey o
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/452_L-citeeval_Do_longcontext_models_truly_leverage_context_for/review]] — 장문맥 언어모델의 포괄적 조사에서 제시된 이론과 방법론은 L-CiteEval의 장문맥 모델 인용 정확도 평가에 직접 적용됩니다
-- 🔗 후속 연구: [[papers/876_What_are_the_essential_factors_in_crafting_effective_long_co/review]] — 효과적인 장문맥 제작 요소 연구는 장문맥 언어모델링 조사에서 다룬 데이터 전략과 평가 방법을 더욱 구체화한 연구입니다
-- 🏛 기반 연구: [[papers/036_A_survey_on_transformer_context_extension_Approaches_and_eva/review]] — 트랜스포머 맥락 확장 접근법과 평가에 대한 조사는 장문맥 언어모델링의 핵심 기술적 기반을 제공합니다
-- 🏛 기반 연구: [[papers/876_What_are_the_essential_factors_in_crafting_effective_long_co/review]] — 장문맥 언어 모델링에 대한 종합적 조사가 다중 홉 데이터 합성의 이론적 배경
-- 🏛 기반 연구: [[papers/452_L-citeeval_Do_longcontext_models_truly_leverage_context_for/review]] — 장문맥 모델의 포괄적 조사는 인용 정확도 평가 벤치마크의 이론적 기반을 제공합니다
-- 🏛 기반 연구: [[papers/495_Llm__mapreduce-v2_Entropy-driven_convolutional_test-time_sca/review]] — 긴 컨텍스트 언어 모델링에 대한 종합적 조사가 극도로 긴 입력 처리 방법론의 이론적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/810_Through_the_lens_of_core_competency_Survey_on_evaluation_of/review]] — 긴 문맥 언어 모델링에 대한 포괄적 조사가 핵심 역량 프레임워크의 평가 방법론을 확장한다.
-- 🔗 후속 연구: [[papers/368_Gemini_15_Unlocking_multimodal_understanding_across_millions/review]] — 긴 컨텍스트 언어 모델링에 대한 포괄적인 조사가 Gemini 1.5의 초장기 컨텍스트 처리 능력의 이론적 배경과 한계를 분석한다.
-- 🔄 다른 접근: [[papers/036_A_survey_on_transformer_context_extension_Approaches_and_eva/review]] — 긴 컨텍스트 언어 모델링에 대한 또 다른 포괄적 서베이로 상호 보완적 관점을 제공한다.
+- 🔄 다른 접근: [[papers/036_A_survey_on_transformer_context_extension_Approaches_and_eva/review]] — 장문맥 언어모델링과 트랜스포머 문맥 확장은 모두 긴 문서 처리 능력 향상을 위한 상호보완적인 기술적 접근법이다.
+- 🧪 응용 사례: [[papers/318_Estimating_optimal_context_length_for_hybrid_retrievalaugmen/review]] — 장문맥 모델링 조사 결과를 하이브리드 RAG 시스템의 최적 문맥 길이 추정에 실제로 적용할 수 있다.
+- 🏛 기반 연구: [[papers/876_What_are_the_essential_factors_in_crafting_effective_long_co/review]] — 장문맥 언어 모델링 설문이 효과적인 장문맥 데이터 생성의 이론적 배경을 제공한다
+- 🧪 응용 사례: [[papers/452_L-citeeval_Do_longcontext_models_truly_leverage_context_for/review]] — 장문맥 언어 모델링 설문의 기술들이 인용 정확도 평가 벤치마크에 직접 적용된다

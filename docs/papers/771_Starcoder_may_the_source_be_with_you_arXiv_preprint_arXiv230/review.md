@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.5
 essence: "BigCode 커뮤니티가 개발한 StarCoder는 155억 파라미터 규모의 오픈 소스 코드 생성 대형언어모델(Code LLM)로, 책임감 있는 AI 개발을 위해 저작권, 개인정보, 투명성을 고려하여 설계되었으며, 기존 모든 오픈 코드 LLM을 능가하는 성능을 달성했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Code_Generation"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Romera‐Paredes et al._2023_Starcoder may the source be with you! arXiv preprint arXiv2305.06161, 2023..pdf"
 ---
@@ -87,10 +87,7 @@ BigCode 커뮤니티가 개발한 StarCoder는 155억 파라미터 규모의 오
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — 오픈소스 코드 생성 모델의 책임감 있는 개발 원칙이 차세대 대규모 코드 모델 개발의 중요한 윤리적, 기술적 기반이 되었다
-- 🏛 기반 연구: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — Codex의 코드 생성 평가 체계가 오픈소스 대형언어모델 기반 코드 생성의 성능 측정과 개선에 핵심적인 방법론을 제공했다
-- 🧪 응용 사례: [[papers/154_Best_Practices_for_Using_AI_When_Writing_Scientific_Manuscri/review]] — 오픈소스 코드 생성 모델의 책임감 있는 개발 사례가 과학 연구에서 AI 도구의 윤리적 사용 가이드라인에 중요한 실천적 모범을 제시한다
-- 🏛 기반 연구: [[papers/135_Automl_in_the_age_of_large_language_models_Current_challenge/review]] — 오픈소스 코드 LLM의 투명성과 성능이 AutoML과 LLM의 상생적 통합을 통한 코드 생성 최적화에 필수적인 기반을 제공한다
-- 🏛 기반 연구: [[papers/135_Automl_in_the_age_of_large_language_models_Current_challenge/review]] — 대형언어모델과 자동 기계학습의 상생적 통합 연구가 오픈소스 코드 생성 모델의 개발과 최적화에 핵심적인 이론적 토대가 된다
-- 🏛 기반 연구: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — Codex의 코드 생성 능력 평가 방법론이 오픈소스 코드 생성 대형언어모델의 성능 측정과 벤치마킹에 중요한 기반이 되었다
-- 🔗 후속 연구: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — StarCoder의 오픈소스 코드 생성 모델이 더 큰 규모와 다양한 언어 지원으로 발전한 차세대 버전이다
+- 🏛 기반 연구: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — StarCoder 2로 발전하기 전 오픈소스 코드 LLM의 기초가 된 첫 번째 모델
+- 🔄 다른 접근: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — GitHub 코드 학습과 함수 생성에서 다른 접근 방식을 취한 대안적 코드 모델
+- 🔗 후속 연구: [[papers/263_Deepseek-coder_When_the_large_language_model_meets_programmi/review]] — 오픈소스 코드 모델의 발전을 더욱 포괄적인 코드 이해와 추론으로 확장
+- 🔗 후속 연구: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — StarCoder의 기본 버전을 더 큰 규모와 향상된 성능으로 발전시킨 차세대 모델

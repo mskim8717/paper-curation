@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM) 시대에 OpenReview 플랫폼—논문, 리뷰, 저자 반박, 메타리뷰, 최종 결정을 포함한 구조화된 전문가 피드백 저장소—을 학술 공동체의 핵심 자산으로 보호하고 활용해야 함을 주장하는 입장 논문이다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Peer_Review"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Automated_Scientific_Review"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cowls et al._2025_Openreview should be protected and leveraged as a community asset for research in the era of large l.pdf"
 ---
@@ -100,11 +101,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cowls et al._2025_Openreview should be p
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/870_Vulnerability_of_text-matching_in_mlai_conference_reviewer_a/review]] — 심사위원 배정 시스템의 취약성 연구에서 OpenReview 데이터를 활용하여 보안 강화 방안을 개발할 수 있다.
-- 🔄 다른 접근: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — AI 학술대회 피어 리뷰 위기 해결을 위한 다른 접근으로 커뮤니티 자산 보호와 저자 피드백 시스템을 함께 고려해야 한다.
-- 🏛 기반 연구: [[papers/803_The_open_review-based_orb_dataset_Towards_automatic_assessme/review]] — 오픈 리뷰 기반 데이터셋으로 자동 평가 연구의 기반이 되어 OpenReview 플랫폼의 가치를 실증적으로 보여준다.
-- 🏛 기반 연구: [[papers/870_Vulnerability_of_text-matching_in_mlai_conference_reviewer_a/review]] — OpenReview 플랫폼의 데이터를 활용한 연구로 심사위원 배정 알고리즘 개선의 필요성을 뒷받침한다.
-- 🔄 다른 접근: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — OpenReview 플랫폼 보호와 함께 AI 학술대회 피어 리뷰 위기 해결을 위한 상호 보완적 접근이다.
-- ⚖️ 반론/비판: [[papers/892_A_year_in_review_open_access_at_OUP/review]] — OpenReview 커뮤니티 자원 보호 논의가 상업적 OA 출판 모델의 한계를 지적한다.
-- 🔗 후속 연구: [[papers/274_Discipline-specific_open_access_publishing_practices_and_bar/review]] — OpenReview 커뮤니티 자산 보호 논의가 분야별 개방형 출판 관행의 구체적 사례로 확장됩니다.
-- 🏛 기반 연구: [[papers/885_Withdrarxiv_A_large-scale_dataset_for_retraction_study/review]] — 철회 논문 데이터셋 연구가 OpenReview와 같은 학술 커뮤니티 플랫폼 보호의 중요성을 뒷받침하는 실증적 근거를 제공합니다.
+- 🏛 기반 연구: [[papers/654_Re_2_A_consistency-ensured_dataset_for_full-stage_peer_revie/review]] — 피어 리뷰 데이터셋의 일관성과 품질 보장을 위한 기본 구조를 제공한다
+- 🔗 후속 연구: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — 피어 리뷰 시스템 개선을 위한 구체적인 개혁 방안과 실행 전략을 제시한다
+- 🧪 응용 사례: [[papers/244_Cross_sectional_pilot_study_on_clinical_review_generation_us/review]] — 임상 리뷰 생성에서 피어 리뷰 품질 개선의 실제 적용 사례를 보여준다
+- 🧪 응용 사례: [[papers/113_Attracting_new_users_or_business_as_usual_A_case_study_of_co/review]] — OpenReview 커뮤니티 자원 보호가 오픈액세스 학술 출판의 실제적 구현 사례를 보여준다.
+- 🏛 기반 연구: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — 피어 리뷰 시스템의 구조적 문제 해결을 위한 데이터 기반 접근의 기초를 마련한다
+- 🏛 기반 연구: [[papers/244_Cross_sectional_pilot_study_on_clinical_review_generation_us/review]] — 임상 리뷰 품질 개선을 위한 피어 리뷰 시스템 활용의 기초적 접근을 제공한다

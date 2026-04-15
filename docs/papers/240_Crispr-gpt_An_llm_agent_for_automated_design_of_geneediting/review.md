@@ -7,132 +7,94 @@ authors:
   - "Kanghong Zhan"
   - "Dyllan Liu"
 date: "2024"
-doi: "s41551-025-01463-z"
+doi: ""
 arxiv: ""
-score: 4.3
-essence: "본 논문은 대규모 언어 모델(LLM)을 도메인 특화 지식과 외부 도구로 증강한 CRISPR-GPT 에이전트를 제시하여, 유전자 편집 실험의 설계 과정을 자동화한다. 일반 LLM의 할루시네이션(hallucination) 문제를 극복하고 생물학 초보자도 체계적으로 CRISPR 기반 유전자 편집 실험을 설계할 수 있도록 지원한다."
+score: 4.0
+essence: "CRISPR-GPT는 LLM 에이전트에 도메인 지식과 외부 도구를 통합하여 CRISPR 기반 유전자 편집 실험의 설계 과정을 자동화하고 향상시키는 시스템이다. 이는 비전문가 연구자도 가이드 RNA 설계부터 검증 실험까지 전체 프로세스를 수행할 수 있도록 지원한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/CRISPR_Tool_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/CRISPR_and_Drug_Discovery_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qu et al._2024_Crispr-gpt An llm agent for automated design of geneediting experiments.pdf"
 ---
 
 # Crispr-gpt: An llm agent for automated design of geneediting experiments
 
-> **저자**: Yuanhao Qu, Kaixuan Huang, Ming Yin, Kanghong Zhan, Dyllan Liu, Di Yin, Henry C. Cousins, William A. Johnson, Xiaotong Wang, Mihir Shah, Russ B. Altman, Denny Zhou, Mengdi Wang, Le Cong | **날짜**: 2024 | **DOI**: [s41551-025-01463-z](https://www.nature.com/articles/s41551-025-01463-z)
+> **저자**: Yuanhao Qu, Kaixuan Huang, Ming Yin, Kanghong Zhan, Dyllan Liu, Di Yin, Henry C. Cousins, William A. Johnson, Mengdi Wang, Mihir Shah, Russ B. Altman, Denny Zhou, Mengdi Wang, Le Cong | **날짜**: 2024 | **URL**: [https://arxiv.org/abs/2404.18021](https://arxiv.org/abs/2404.18021)
 
 ---
 
 ## Essence
 
 ![Figure 1](figures/fig1.webp)
-*CRISPR-GPT 에이전트 개요: LLM 기반 설계 및 계획 엔진(좌측), 4가지 핵심 메타-태스크(우측 상단), 보조 기능 및 통합 도구킷(우측 하단)*
 
-본 논문은 대규모 언어 모델(LLM)을 도메인 특화 지식과 외부 도구로 증강한 CRISPR-GPT 에이전트를 제시하여, 유전자 편집 실험의 설계 과정을 자동화한다. 일반 LLM의 할루시네이션(hallucination) 문제를 극복하고 생물학 초보자도 체계적으로 CRISPR 기반 유전자 편집 실험을 설계할 수 있도록 지원한다.
+*Figure 1: Overview of CRISPR-GPT Agent.*
+
+CRISPR-GPT는 LLM 에이전트에 도메인 지식과 외부 도구를 통합하여 CRISPR 기반 유전자 편집 실험의 설계 과정을 자동화하고 향상시키는 시스템이다. 이는 비전문가 연구자도 가이드 RNA 설계부터 검증 실험까지 전체 프로세스를 수행할 수 있도록 지원한다.
 
 ## Motivation
 
-- **Known**: 
-  - CRISPR 기술은 유전자 편집의 혁신적 도구이며 유전질환 치료부터 암, 신경퇴행질환 등 다양한 질병 치료에 응용 가능
-  - LLM은 뛰어난 언어 능력과 광범위한 세계 지식을 보유하고 있으며, 외부 도구 통합으로 문제 해결 능력 향상 가능 (ChemCrow, Coscientist 사례)
-
-- **Gap**: 
-  - 일반 목적의 LLM(ChatGPT-3/4)은 생물학적 설계 문제에 대해 높은 신뢰도로 부정확한 응답 생성(guide RNA 설계 시 게놈의 실제 영역과 무관한 서열 제시)
-  - gRNA 효율성, off-target 효과 예측, 구체적 프로토콜 등 실험에 필수적인 상세 정보 부재
-  - CRISPR 시스템 선택, gRNA 설계, 전달 방법, off-target 예측, 프로토콜 작성, 검증 방법 등 복합적 의사결정이 필요한데, 초보자가 접근하기 어려움
-
-- **Why**: 
-  - 유전자 편집 기술의 접근성 확대 및 과학적 발전 가속화 필요
-  - 도메인 특화 지식 + LLM의 추론 능력 + 전문 도구 통합으로 신뢰성 높은 자동화 설계 시스템 구축 가능
-
-- **Approach**: 
-  - 도메인 전문가 지식과 최신 문헌 기반 LLM 에이전트 개발
-  - 상태 머신(state machine)을 통한 체계적 태스크 분해
-  - 외부 API/도구(guideRNA 설계 도구, CRISPRPick, BLAST 등) 통합
-  - 윤리 및 안전 가드레일 설정
+- **Known**: LLM은 광범위한 언어 능력을 보유하고 있으며, 최근 연구는 외부 도구 통합을 통해 문제 해결 능력을 향상시켰다. 그러나 일반 목적의 LLM은 CRISPR 설계 같은 전문 생물학 영역에서 환각(hallucination) 문제와 정확한 도메인 지식 부재로 인해 실패한다.
+- **Gap**: 일반 목적의 LLM은 가이드 RNA 서열 설계에서 잘못된 정보를 고신뢰도로 제시하고, 오프타겟 효과 예측, 전달 방법 선택 등 복잡한 CRISPR 실험 설계에 필요한 구체적이고 최신의 도메인 지식이 부족하다.
+- **Why**: CRISPR 기술의 접근성을 높이고 비전문가도 정확한 실험 설계가 가능하도록 함으로써 생의학 연구 가속화 및 치료법 개발을 촉진할 수 있다.
+- **Approach**: LLM의 추론 능력에 Broad Institute의 gRNA 라이브러리, CRISPRPick toolkit 등의 계산 도구와 전문가 지식을 통합한 에이전트 기반 시스템을 구축하여, chain-of-thought 추론과 상태 머신을 활용해 단계적으로 실험 설계를 자동화한다.
 
 ## Achievement
 
 ![Figure 2](figures/fig2.webp)
-*CRISPR-GPT의 구성 요소: LLM Planner, Tool Provider, Task Executor, LLM Agent가 인간-AI 협업을 통해 복합 태스크 자동화*
 
-1. **자동화된 종합 설계 파이프라인**: 4가지 핵심 메타-태스크(CRISPR 시스템 선택, gRNA 설계, 전달 방법 추천, 검증 프로토콜)와 22개의 세부 태스크를 상태 머신으로 구현하여, 초보자도 체계적으로 실험 설계 가능
+*Figure 2: Components of CRISPR-GPT enable human-AI collaboration to automate*
 
-2. **도메인 특화 정확성 향상**: Broad Institute의 표준 guideRNA 라이브러리, CRISPRPick 도구킷, NCBI BLAST 등 전문 자원 통합으로 할루시네이션 문제 해결 및 신뢰성 있는 설계 결과 제공
-
-3. **인간-AI 협업 프레임워크**: 사용자가 실시간으로 LLM 에이전트의 생성 결과를 모니터링하고 수정 가능한 대화형 인터페이스 제공
-
-4. **확장 가능한 아키텍처**: Freestyle Q&A 모드, Off-target 예측 전용 모드 등 추가 기능 지원 및 맞춤형 태스크 체인 생성 가능
-
-5. **윤리적 안전장치**: 인간 대상 사용 제한, 유전정보 프라이버시 보호, 의도하지 않은 결과 알림 등 포함
+- **CRISPR 시스템 선택**: 실험 요구사항에 맞는 CRISPR 시스템(Cas9, CRISPRa/i, prime editing, base editing)을 자동으로 선택
+- **gRNA 설계 최적화**: Broad Institute의 금표준 라이브러리 및 CRISPRPick toolkit을 활용하여 효율성과 특이성이 높은 가이드 RNA 서열 설계
+- **세포 전달 방법 추천**: 표적 세포에 CRISPR 성분을 효과적으로 도입하는 최적의 방법 제시
+- **오프타겟 효과 예측**: 의도하지 않은 DNA 변화 가능성을 체계적으로 평가
+- **실험 프로토콜 자동 작성**: 목표에 맞춘 단계별 실험 절차 제공
+- **검증 방법 및 프라이머 설계**: 편집 결과 검증을 위한 방법과 관련 프라이머 자동 설계
+- **자유형 Q&A 및 심화 분석**: ad hoc 질의 응답과 사전 설계된 gRNA에 대한 심층 오프타겟 분석 제공
 
 ## How
 
 ![Figure 3](figures/fig3.webp)
-*태스크 분해 프로세스 및 상태 머신 구현 알고리즘*
 
-- **LLM Planner**: 사용자의 요청을 분석하여 4가지 사전 정의된 메타-태스크 선택 또는 맞춤형 태스크 체인 생성
+*Figure 3: Task decomposition process and state machine implementation algorithm.*
 
-- **Task Executor (상태 머신 기반)**:
-  - 22개 태스크를 상태 머신으로 구현
-  - 각 상태(state)는 특정 부분 목표(sub-goal)를 담당
-  - 잘 정의된 전환 로직으로 진행 상황에 따라 다음 상태로 자동 전이
-  - 사용자와 다중 라운드 텍스트 상호작용을 통해 의사결정 안내
-
-- **Tool Provider**:
-  - 외부 API/도구를 상태 내부에 래핑(wrapping)
-  - LLM 친화적 텍스트 인터페이스로 변환하여 노출
-  - 적절한 도구 선택 및 호출 시점 판단
-
-- **LLM Agent**:
-  - Task Executor와 상호작용하여 사용자를 대신해 입출력 관리
-  - Chain-of-thought 추론 모델 기반 의사결정
-
-- **외부 자원 통합**:
-  - Broad Institute guideRNA 표준 라이브러리
-  - CRISPRPick 도구킷 (gRNA 효율성 및 특이성 최적화)
-  - NCBI BLAST (off-target 효과 예측)
-  - 최신 문헌 및 전문가 지식 베이스
+- LLM 기반의 설계 및 계획 엔진을 중심으로 구성하여 전문가 지식과 최근 문헌 검토를 통합
+- gRNA 라이브러리 및 CRISPRPick과 같은 계산 toolkit을 에이전트에 통합하여 도구 호출 기능 제공
+- Chain-of-thought 추론 모델 및 상태 머신을 활용하여 복잡한 설계 프로세스를 관리 가능한 단계로 단순화
+- NCBI BLAST와 같은 외부 데이터베이스와의 연계를 통해 생성된 서열의 유효성 검증
+- Interactive module을 통해 사용자와의 협업적 반복 개선 지원
+- 실제 사용 사례를 통한 에이전트 유효성 검증
 
 ## Originality
 
-- **도메인 특화 LLM 에이전트의 구체적 실구현**: 일반 LLM의 생물학 설계 한계를 명확히 지적하고, 전문 지식과 도구 통합으로 극복한 첫 번째 유전자 편집 특화 에이전트
-
-- **상태 머신 기반 태스크 분해**: 사전에 22개 태스크를 수작업으로 설계하여 명시적 제어 흐름 구현, 일반적 LLM 에이전트의 오류 가능성 감소
-
-- **실제 연구 환경 반영**: Broad Institute 표준 라이브러리, CRISPRPick 등 업계 표준 도구 직접 통합
-
-- **윤리 및 안전 고려**: 인간 대상 사용 제한, 프라이버시 보호 등 책임감 있는 AI 개발 원칙 적용
-
-- **인간-AI 협업 설계**: 사용자가 실시간 모니터링 및 수정 가능한 대화형 인터페이스로 투명성 및 제어 가능성 보장
+- 일반 목적 LLM의 생물학적 hallucination 문제를 명시적으로 식별하고 이를 해결하기 위한 체계적 접근
+- 도메인 특화 도구(CRISPRPick, gRNA 라이브러리)와 LLM의 추론 능력을 처음 통합한 CRISPR 설계 에이전트
+- Chain-of-thought 추론과 상태 머신을 결합하여 생물학 실험 설계의 복잡성을 자동화하는 새로운 프레임워크
+- 비전문가를 위한 진입 장벽을 낮추는 동시에 도메인 정확성을 유지하는 혁신적 접근
 
 ## Limitation & Further Study
 
-- **학습 데이터 현재성(Recency)**: LLM의 학습 종료 시점 이후 발표된 최신 CRISPR 연구 및 기술을 반영하지 못할 수 있음 → 정기적 지식 베이스 업데이트 필요
-
-- **초기 평가의 제한성**: 논문의 "실제 사용 사례(real-world use case)" 검증 규모 및 범위가 명시되지 않음 → 더 광범위한 사용자 연구 및 임상 적용 전 평가 필요
-
-- **도메인 외 태스크 확장성 미흡**: 현재는 CRISPR 특화로 설계되어, 다른 유전자 편집 기술(ZFN, TALEN 등)이나 합성생물학 분야 확장성 제한
-
-- **Off-target 예측 정확성**: NCBI BLAST 기반 예측의 정확성 한계 → 더 정교한 머신러닝 기반 off-target 예측 모델 통합 필요
-
-- **프로토콜 최적화의 한계**: 생성된 프로토콜이 특정 세포 타입, 조직, 생물체별 미묘한 차이 반영 부족 → 데이터 기반 프로토콜 최적화 및 적응형 학습 메커니즘 개발 필요
-
-- **후속 연구 방향**:
-  - 다양한 생물학적 맥락에서의 성능 평가
-  - 사용자 피드백 기반 지속적 개선
-  - 규제 및 윤리 지침의 진화에 따른 가드레일 업데이트
-  - 다중 모달 데이터(이미지, 실험 이력) 통합
-  - 자동 실험 플랫폼과의 통합
-
+- 일반 목적 LLM의 hallucination 완전 제거 불가능 - 지속적 모니터링 및 검증 필요
+- 도구 통합이 Broad Institute 라이브러리 및 CRISPRPick 등 제한된 리소스에 의존
+- 윤리 및 규제 고려사항에 대한 심층 논의 부재 - 자동화 유전자 편집 설계의 책임 있는 사용에 대한 추가 지침 필요
+- 실제 실험 수행 단계의 자동화 미포함 - 설계 단계만 자동화
+- 다양한 생물 시스템(식물, 미생물 등)에 대한 적용 범위 제한 가능성
+- 후속 연구: 더 많은 실제 사용 사례를 통한 검증, 추가 도메인 도구 통합, 윤리 프레임워크 개발
 
 ## Evaluation
 
-- Novelty: 4.5/5
-- Technical Soundness: 4/5
-- Significance: 4.5/5
+- Novelty: 4/5
+- Technical Soundness: 3/5
+- Significance: 4/5
 - Clarity: 4/5
-- Overall: 4.3/5
+- Overall: 4/5
 
-**총평**: 본 논문은 일반 LLM의 생물학 설계 실패 사례를 체계적으로 분석하고, 도메인 특화 지식 및 외부 도구 통합을 통해 CRISPR 유전자 편집 실험 설계를 자동화하는 실질적이고 혁신적인 접근을 제시했다. 상태 머신 기반 구조로 강건성을 확보하고 윤리 가드레일을 포함한 책임감 있는 개발이 돋보이나, 평가 규모 확대 및 다양한 생물학적 맥락에서의 성능 검증이 추가로 필요하다.
+**총평**: CRISPR-GPT는 LLM의 추론 능력과 도메인 특화 도구를 창의적으로 결합하여 유전자 편집 실험 설계를 민주화하는 중요한 기여이다. 일반 목적 LLM의 한계를 명확히 식별하고 체계적으로 해결한 점과 실제 사용성을 갖춘 통합 시스템을 제시한 점이 높이 평가된다.
+
+## Related Papers
+
+- 🔄 다른 접근: [[papers/239_CRISPR-GPT_for_agentic_automation_of_gene-editing_experiment/review]] — 동일한 CRISPR-GPT 시스템에 대한 다른 관점의 연구로 유전자 편집 실험 자동화의 완전한 이해를 제공한다
+- 🔗 후속 연구: [[papers/290_DrugAgent_Automating_AI-aided_Drug_Discovery_Programming_thr/review]] — CRISPR 유전자 편집 자동화에서 AI 기반 약물 발견 프로그래밍이라는 더 광범위한 생물의학 자동화로 발전한다
+- 🏛 기반 연구: [[papers/144_AutoProteinEngine_A_Large_Language_Model_Driven_Agent_Framew/review]] — 단백질 엔지니어링을 위한 LLM 기반 에이전트 프레임워크를 CRISPR 실험 설계의 기반 기술로 활용한다
+- 🔄 다른 접근: [[papers/239_CRISPR-GPT_for_agentic_automation_of_gene-editing_experiment/review]] — CRISPR 유전자 편집 실험 자동화에서 동일한 시스템을 다른 관점에서 접근한 연구로 상호 보완적인 이해를 제공한다

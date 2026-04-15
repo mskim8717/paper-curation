@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 신경망 기반 정보검색에서 희소(sparse) 렉시컬 표현을 학습하는 SPLADE 모델을 개선하여, 밀집 표현(dense embedding)의 효율성과 전통적 가방 단어(bag-of-words) 모델의 해석가능성을 결합한 첫 단계 검색기를 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Long_Context_Embeddings"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Knowledge_Graph_Encoding"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Formal et al._2021_Splade v2 Sparse lexical and expansion model for information retrieval.pdf"
 ---
@@ -132,8 +133,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Formal et al._2021_Splade v2 Sparse lexi
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/335_Few-shot_Learning_with_Retrieval_Augmented_Language_Models/review]] — 희소 렉시컬 표현과 밀집 표현 기반 검색 증강이라는 서로 다른 정보검색 패러다임의 장단점을 비교할 수 있습니다.
-- 🏛 기반 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 희소-밀집 하이브리드 검색 모델이 대규모 과학문헌 검색 시스템의 첫 단계 검색기로 활용될 수 있는 기술적 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — REALM의 밀집 표현 기반 검색을 희소 표현과 결합한 발전된 형태의 검색 증강 사전학습 모델입니다.
-- 🔗 후속 연구: [[papers/224_Clinical_entity_augmented_retrieval_for_clinical_information/review]] — 희소 렉시컬 검색 모델을 임상 엔티티 기반 검색으로 발전시킨 도메인 특화 응용 연구입니다.
-- 🔄 다른 접근: [[papers/335_Few-shot_Learning_with_Retrieval_Augmented_Language_Models/review]] — 밀집 표현 기반 검색 증강과 희소 렉시컬 표현 기반 검색의 서로 다른 정보검색 접근법을 제시합니다.
+- 🏛 기반 연구: [[papers/034_A_Survey_on_RAG_Meeting_LLMs_Towards_Retrieval-Augmented_Lar/review]] — 검색 증강 언어모델에 대한 포괄적 조사로, SPLADE와 같은 희소 검색 모델의 이론적 배경과 발전 맥락을 제공합니다.
+- 🔄 다른 접근: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — 밀집 표현 기반 검색과 희소 렉시컬 표현의 다른 접근법으로, 정보검색에서의 상호 보완적 방법론을 보여줍니다.
+- 🧪 응용 사례: [[papers/404_Hiperrag_High-performance_retrieval_augmented_generation_for/review]] — 고성능 검색 증강 생성 시스템으로, SPLADE의 희소 검색 기술을 실제 RAG 시스템에 적용한 발전된 사례입니다.

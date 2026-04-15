@@ -8,8 +8,9 @@ arxiv: ""
 score: 3.8
 essence: "인간-AI 과학 협력을 단순한 도구 관계에서 공진화(co-evolutionary) 파트너십으로 재개념화하며, 세 가지 상호연관된 구성 요소(Agency Configurations, Epistemic Dimensions, Partnership Dynamics)를 통해 인간과 AI가 독립적으로는 달성할 수 없는 지식이 어떻게 창발하는지 설명한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luo et al._2025_Cognitio emergens Agency, dimensions, and dynamics in human-ai knowledge co-creation.pdf"
 ---
@@ -85,7 +86,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luo et al._2025_Cognitio emergens Agency
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — 인간-AI 협력의 이론적 프레임워크를 의료 진단 분야에 구체적으로 적용한 사례를 보여준다.
-- 🔗 후속 연구: [[papers/413_Human-ai_teaming_using_large_language_models_Boosting_brain-/review]] — 뇌-컴퓨터 인터페이스 분야에서 인간-AI 팀워크의 실제 구현 방법을 제시한다.
-- 🏛 기반 연구: [[papers/175_Building_machines_that_learn_and_think_with_people/review]] — 인간과 함께 학습하고 사고하는 기계 구축의 근본적 철학과 방법론을 제공한다.
-- 🏛 기반 연구: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — 인간-AI 지식 협력의 이론적 프레임워크를 의료 진단 분야에 구체적으로 적용한다.
+- 🔗 후속 연구: [[papers/116_Augmenting_the_author_Exploring_the_potential_of_ai_collabor/review]] — 학술 논문 작성에서의 AI 협업이 인간-AI 지식 공진화 프레임워크의 구체적 적용 사례가 된다.
+- 🏛 기반 연구: [[papers/413_Human-ai_teaming_using_large_language_models_Boosting_brain-/review]] — 대규모 언어모델을 활용한 인간-AI 팀워크가 Cognitio emergens의 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — 과학 실천 자동화의 기회와 도전이 인간-AI 지식 협업의 실제적 맥락을 보여준다.
+- 🏛 기반 연구: [[papers/874_WebWatcher_Breaking_New_Frontier_of_Vision-Language_Deep_Res/review]] — 인간-AI 지식 협업의 이론적 프레임워크가 WebWatcher의 비전-언어 연구 에이전트 설계의 기반이 된다.
+- 🧪 응용 사례: [[papers/116_Augmenting_the_author_Exploring_the_potential_of_ai_collabor/review]] — 학술 논문 작성에서의 AI 협업이 인간-AI 지식 공진화의 구체적 실현 방식을 보여준다.

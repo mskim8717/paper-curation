@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.2
 essence: "대형 언어 모델(LLM)을 형식 정리 증명(formal theorem proving)에 활용할 때, 시연 예제의 구조화와 조직화 방식을 개선함으로써 증명 성공률을 38.9%에서 45.5%로 향상시키는 부분목표 기반 학습 프레임워크를 제안한다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Autonomous_Agent_Learning_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2023_Decomposing the enigma Subgoal-based demonstration learning for formal theorem proving.pdf"
 ---
@@ -99,6 +100,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2023_Decomposing the enigma 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/484_Learning_to_generate_research_idea_with_dynamic_control/review]] — 두 논문 모두 연구 방법론 개선을 다루되 형식 정리 증명은 구조화된 시연, 연구 아이디어 생성은 동적 제어에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — DeepSeek-Prover의 대규모 언어모델 정리 증명은 부분목표 기반 시연 학습을 LLM 기반 자동 증명 시스템으로 확장한다.
-- 🏛 기반 연구: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 형식 정리 증명에서의 초안-스케치-증명 가이드 방법론은 부분목표 기반 시연 학습의 구조화된 증명 과정 설계에 이론적 근거를 제공한다.
+- 🧪 응용 사례: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — 형식 정리 증명에서 RL이 SFT보다 우수한 일반화 성능을 보인다는 발견의 구체적 사례이다.
+- 🔗 후속 연구: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 부분목표 기반 학습이 형식 정리 증명에서 초안-스케치-증명 가이드로 발전될 수 있다.
+- 🧪 응용 사례: [[papers/826_Towards_Autonomous_Mathematics_Research/review]] — 부분목표 기반 시연 학습이 자율적 수학 연구를 위한 구조화된 접근법으로 활용될 수 있다.
+- 🏛 기반 연구: [[papers/486_Lego-prover_Neural_theorem_proving_with_growing_libraries/review]] — 형식 정리 증명의 구조화된 학습이 일반적인 라이브러리 기반 정리 증명의 기반이 된다.
+- 🧪 응용 사례: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — RL의 규칙 기반 추론 우위성이 형식 정리 증명에서 구체적으로 검증된다.

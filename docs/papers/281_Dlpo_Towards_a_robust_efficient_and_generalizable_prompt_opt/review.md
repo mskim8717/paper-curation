@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어 모델(LLM)의 프롬프트 최적화에서 기존 반사(reflection) 기반 방법의 불안정성, 낮은 수렴 속도, 제한된 일반화 능력을 해결하기 위해 전통 딥러닝 기법에서 영감을 얻은 7가지 텍스트 기반 그래디언트 최적화 전략을 제시한다. 이를 통해 프롬프트 최적화의 견고성(robustness), 효율성(efficiency), 일반화 능력(generalizability)을 동시에 향상시킨다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Safety_and_Bias"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Diffusion_Model_Inference"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Peng et al._2025_Dlpo Towards a robust, efficient, and generalizable prompt optimization framework from a deep-learn.pdf"
 ---
@@ -113,7 +115,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Peng et al._2025_Dlpo Towards a robust, 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 다중 턴 강화 LLM 자기교정에서 견고한 프롬프트 최적화로의 확장
-- 🔄 다른 접근: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — 검색 엔진 활용 LLM 훈련과 프롬프트 최적화의 다른 성능 향상 접근법
-- 🏛 기반 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자기 피드백을 통한 반복적 개선이 프롬프트 최적화의 기반 방법론 제공
-- 🧪 응용 사례: [[papers/447_Iterative_self-incentivization_empowers_large_language_model/review]] — 반복적 자기 인센티브화를 프롬프트 최적화 안정성 향상에 적용
+- 🔗 후속 연구: [[papers/243_Critique-GRPO_Advancing_LLM_Reasoning_with_Natural_Language/review]] — 자연어 비판 기반 최적화가 텍스트 기반 그래디언트 최적화 전략으로 구체화될 수 있다.
+- 🔗 후속 연구: [[papers/066_Agentic_Personas_for_Adaptive_Scientific_Explanations_with_K/review]] — 텍스트 기반 그래디언트 최적화가 에이전틱 페르소나의 견고성과 일반화 능력 향상에 기여할 수 있다.
+- 🧪 응용 사례: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — 프롬프트 최적화의 견고성과 일반화 향상이 생성-검증 갭 해소에 직접적으로 도움이 된다.
+- 🧪 응용 사례: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 견고한 프롬프트 최적화가 인간-AI 협업에서 제어 가능한 학술 콘텐츠 생성에 활용될 수 있다.
+- 🏛 기반 연구: [[papers/066_Agentic_Personas_for_Adaptive_Scientific_Explanations_with_K/review]] — 전문가의 인식론적 입장을 반영한 적응형 설명이 프롬프트 최적화의 견고성 향상에 기여할 수 있다.
+- 🔗 후속 연구: [[papers/243_Critique-GRPO_Advancing_LLM_Reasoning_with_Natural_Language/review]] — 자연어 비판 기반 최적화가 프롬프트 최적화에서 텍스트 기반 그래디언트로 확장될 수 있다.
+- 🧪 응용 사례: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — 생성-검증 갭 분석이 프롬프트 최적화의 견고성과 일반화 능력 평가에 활용될 수 있다.

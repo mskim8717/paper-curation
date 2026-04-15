@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)의 \"표면적 자기반성(superficial self-reflection)\" 문제를 해결하기 위해, 검증 가능한 보상(verifiable rewards)을 활용하여 문제 풀이 능력과 자기검증 능력을 **동시에 온라인으로 학습**하는 RISE 프레임워크를 제안한다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/LLM_Self-Correction_and_Verification"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_Trust, But Verify A Self-Verification Approach to Reinforcement Learning with Verifiable Rewards.pdf"
 ---
@@ -107,9 +109,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_Trust, But Verify A Self
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 두 논문 모두 LLM 자기 검증을 다루되 RISE는 검증 가능한 보상 활용, PAG는 다중 턴 정책-검증자 전환에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/683_RM-R1_Reward_Modeling_as_Reasoning/review]] — RM-R1의 추론 능력을 통합한 보상 모델링은 RISE의 검증 가능한 보상 시스템에 더 정교한 평가 메커니즘을 제공한다.
-- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — 대규모 언어모델이 아직 추론을 자기수정할 수 없다는 연구 결과는 RISE의 동시 학습 접근법이 해결하고자 하는 핵심 한계를 명확히 보여준다.
-- 🔄 다른 접근: [[papers/683_RM-R1_Reward_Modeling_as_Reasoning/review]] — 두 논문 모두 보상 모델의 검증 능력을 다루되 RM-R1은 추론 통합, RISE는 자기검증 학습에 초점을 맞춘다.
-- 🔄 다른 접근: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 두 논문 모두 LLM의 자기 수정 능력을 다루되 PAG는 다중 턴 워크플로우, RISE는 검증 가능한 보상을 통한 동시 학습에 초점을 맞춘다.
-- 🔄 다른 접근: [[papers/396_Hallucination_mitigation_using_agentic_ai_natural_language-b/review]] — 강화학습 기반 자기 검증을 통한 환각 문제 해결의 다른 접근 방식을 제시한다.
+- 🔄 다른 접근: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 자기검증 대신 정책 집계를 통한 자기교정으로 LLM의 신뢰성을 확보하는 다른 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/148_Axolotl_fairness_through_assisted_self-debiasing_of_large_la/review]] — 편향 완화를 위한 자기교정 메커니즘을 검증 가능한 보상 시스템으로 확장하여 더 체계적인 신뢰성을 구축할 수 있다.
+- 🏛 기반 연구: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — LLM의 가설 생성 능력에 대한 기초 연구가 자기검증 시스템의 이론적 토대를 제공한다.
+- 🧪 응용 사례: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 과학 연구에서 자기검증 메커니즘이 AI 과학자의 신뢰성 확보에 직접 적용될 수 있다.
+- 🔄 다른 접근: [[papers/750_SEVerA_Verified_Synthesis_of_Self-Evolving_Agents/review]] — 강화학습에서 자기검증 접근을 통한 신뢰성 확보 방법으로, 형식적 검증과 다른 신뢰성 보장 기법을 제시
+- 🏛 기반 연구: [[papers/148_Axolotl_fairness_through_assisted_self-debiasing_of_large_la/review]] — 자기검증 접근법이 편향 완화를 위한 자기수정 메커니즘의 신뢰성을 높이는 기반 기술이 될 수 있다.

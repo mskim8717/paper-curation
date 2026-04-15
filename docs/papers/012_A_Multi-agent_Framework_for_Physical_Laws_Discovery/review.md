@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)을 기반으로 하는 다중 에이전트 프레임워크를 개발하여 물리 법칙의 자동 발견을 수행하고, 재료과학의 세 가지 문제에서 해석 가능하고 예측력 높은 수식을 발견했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Hypothesis_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Multi-Agent_System_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2024_A Multi-agent Framework for Physical Laws Discovery.pdf"
 ---
@@ -80,6 +82,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2024_A Multi-agent Framework f
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 다중 에이전트 물리 법칙 발견 프레임워크는 Discovering symbolic differential equations with symmetry 연구가 제시한 대칭성 기반 방정식 발견 기법을 실제 재료과학 문제에 적용합니다.
-- 🔗 후속 연구: [[papers/504_Llm-srbench_A_new_benchmark_for_scientific_equation_discover/review]] — 물리 법칙 자동 발견 프레임워크는 LLM-SRBench의 과학 방정식 발견 벤치마크를 다중 에이전트 협업을 통해 실제 연구 환경으로 확장합니다.
-- 🔗 후속 연구: [[papers/085_Ai-newton_A_concept-driven_physical_law_discovery_system_wit/review]] — 물리 법칙 발견을 위한 다중 에이전트 프레임워크의 개념적 기반을 실제 작동하는 시스템으로 구현한다.
+- 🏛 기반 연구: [[papers/526_MechAgents_Large_language_model_multi-agent_collaborations_c/review]] — 다중 에이전트 기반 물리 법칙 발견의 일반적 프레임워크를 제시하여 MechAgents의 역학 특화 문제 해결 접근법의 이론적 토대를 마련함
+- 🔗 후속 연구: [[papers/697_Scaling_physical_reasoning_with_the_physics_dataset/review]] — 물리학 데이터셋을 활용한 대규모 추론 스케일링을 통해 다중 에이전트 물리 법칙 발견을 더 복잡하고 현실적인 물리 현상으로 확장할 수 있는 가능성을 제시함
+- 🔄 다른 접근: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 물리 법칙 발견을 다루지만 Multi-agent Framework는 에이전트 기반 접근에, 대칭성을 가진 미분방정식 발견은 수학적 접근에 집중한 다른 방법론임
+- 🔄 다른 접근: [[papers/085_Ai-newton_A_concept-driven_physical_law_discovery_system_wit/review]] — 물리 법칙 발견을 위한 다중 에이전트 프레임워크로, 단일 시스템 기반 발견과 다중 에이전트 협력을 비교
+- 🔗 후속 연구: [[papers/526_MechAgents_Large_language_model_multi-agent_collaborations_c/review]] — 물리 법칙 발견이라는 공통 목표에서 MechAgents는 역학 문제 해결에 특화되고 Multi-agent Framework는 일반적인 물리 법칙 발견에 집중한 상호 보완적 확장 관계임

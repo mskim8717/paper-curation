@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 비전 언어 모델(Vision Language Model, VLM) 기반 에이전트 시스템인 EAA(Experiment Automation Agents)를 제시하며, 이는 복잡한 미시경 실험 워크플로우를 자동화하기 위해 멀티모달 추론, 도구 기반 행동, 장기 메모리를 통합한다. Advanced Photon Source의 이미징 빔라인에서 자동 영역판 초점 맞춤, 자연언어 기반 특성 검색, 대화형 데이터 획득을 구현하여 사용자 접근성을 대폭 개선한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Manufacturing_Process_Control"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Domain-Specific_LLM_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Du et al._2026_EAA Automating materials characterization with vision language model agents.pdf"
 ---
@@ -125,8 +125,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Du et al._2026_EAA Automating materials 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/139_Autonomous_microscopy_experiments_through_large_language_mod/review]] — 재료 특성화 자동화에서 비전 언어 모델과 대형 언어 모델 기반 접근법을 비교할 수 있습니다.
-- 🏛 기반 연구: [[papers/614_Perspective_on_utilizing_foundation_models_for_laboratory_au/review]] — 실험실 자동화를 위한 기초 모델 활용 전략이 EAA 시스템 설계의 이론적 토대를 제공합니다.
-- 🔗 후속 연구: [[papers/553_Model-in-the-loop_milo_Accelerating_multimodal_ai_data_annot/review]] — 멀티모달 AI 데이터 분석 가속화 접근법이 복잡한 미시경 실험 워크플로우 자동화로 확장될 수 있습니다.
-- 🔗 후속 연구: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — 실험실 자동화에서 비전 언어 모델을 활용한 미시경 실험으로 k-agents 프레임워크를 확장할 수 있습니다.
-- 🧪 응용 사례: [[papers/614_Perspective_on_utilizing_foundation_models_for_laboratory_au/review]] — 비전 언어 모델 기반 실험 자동화 에이전트가 재료 과학 실험실 자동화의 구체적 구현 사례입니다.
+- 🏛 기반 연구: [[papers/139_Autonomous_microscopy_experiments_through_large_language_mod/review]] — 두 논문 모두 대규모 언어모델을 활용한 자율 실험실 자동화 시스템을 다루며, 실험 워크플로우 자동화의 핵심 원리를 공유한다.
+- 🔗 후속 연구: [[papers/614_Perspective_on_utilizing_foundation_models_for_laboratory_au/review]] — 기초 모델을 실험실 자동화에 활용하는 관점에서 EAA의 비전 언어 모델 접근법을 더 넓은 맥락에서 이해할 수 있다.
+- 🧪 응용 사례: [[papers/118_Autobio_A_simulation_and_benchmark_for_robotic_automation_in/review]] — 생물학 실험실 자동화 벤치마크와 재료 특성화 자동화는 모두 과학 실험 자동화라는 공통 목표를 가진다.
+- 🧪 응용 사례: [[papers/084_Ai-driven_robotics_for_free-space_optics/review]] — 재료 특성화 자동화에 컴퓨터 비전 기반 로봇 시스템을 적용하는 실제 사례를 보여준다.
+- 🧪 응용 사례: [[papers/614_Perspective_on_utilizing_foundation_models_for_laboratory_au/review]] — 실험실 자동화를 위한 기초 모델 활용 관점과 비전 언어 모델 기반 재료 특성화 자동화는 상호 보완적인 자동화 접근법이다.

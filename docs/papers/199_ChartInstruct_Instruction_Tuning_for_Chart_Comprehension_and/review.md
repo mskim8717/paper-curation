@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 차트 이해와 추론을 위한 대규모 지시문 튜닝 데이터셋(191K 지시문, 71K 차트)을 제시하고, 차트 특화 비전-언어 모델(VLM)의 일반화 능력을 대폭 향상시키는 두 가지 시스템을 제안한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Masry et al._2024_ChartInstruct Instruction Tuning for Chart Comprehension and Reasoning 1.pdf"
 ---
@@ -117,9 +119,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Masry et al._2024_ChartInstruct Instruct
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 차트 이해에서 코드 생성으로의 자연스러운 발전 단계
-- 🏛 기반 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 대규모 차트 데이터셋이 차트 이해 모델 훈련의 기반이 됨
-- 🏛 기반 연구: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 차트 이해 능력이 차트-투-코드 생성의 전제 조건이 됨
-- 🏛 기반 연구: [[papers/566_Multimodal_deepresearcher_Generating_text-chart_interleaved/review]] — 차트 이해와 생성을 위한 인스트럭션 튜닝은 멀티모달 보고서 생성에서 FDV 표현의 기반 기술입니다
-- 🔄 다른 접근: [[papers/200_Chartist_Task-driven_Eye_Movement_Control_for_Chart_Reading/review]] — 차트 읽기 시선 제어 vs 차트 이해 지시 튜닝의 서로 다른 차트 AI 접근법
-- 🔗 후속 연구: [[papers/783_Synchart_Synthesizing_charts_from_language_models/review]] — 차트 이해 및 추론을 위한 지시 튜닝 방법론이 SynChart 데이터셋으로 학습된 모델의 성능 향상에 활용될 수 있다.
+- 🏛 기반 연구: [[papers/035_A_survey_on_table-and-text_hybridqa_Concepts_methods_challen/review]] — 테이블-텍스트 혼합 QA가 차트 이해에서 구조화된 데이터 처리의 기초 방법론을 제공한다
+- 🏛 기반 연구: [[papers/879_What_factors_affect_multimodal_in-context_learning_an_in-dep/review]] — 멀티모달 인-컨텍스트 학습 요인이 차트 이해 지시문 튜닝 설계에 영향을 준다
+- 🔄 다른 접근: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 범용 차트 언어 모델과 특화된 차트 이해 시스템이 상호 보완적 접근법을 제공한다
+- 🧪 응용 사례: [[papers/879_What_factors_affect_multimodal_in-context_learning_an_in-dep/review]] — 차트 이해 지시문 튜닝에서 시연 검색과 순서 지정 전략을 적용할 수 있다
+- 🔗 후속 연구: [[papers/035_A_survey_on_table-and-text_hybridqa_Concepts_methods_challen/review]] — 차트 이해가 테이블-텍스트 혼합 QA의 시각적 데이터 처리 능력을 확장한다
+- 🔄 다른 접근: [[papers/566_Multimodal_deepresearcher_Generating_text-chart_interleaved/review]] — 차트 이해를 위한 언어모델 학습 방법론에서 FDV 기반 접근법과 instruction tuning 방식의 차이를 비교할 수 있다.

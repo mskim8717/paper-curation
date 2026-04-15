@@ -12,10 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "대규모 언어 모델(LLM) 기반 자율 에이전트(Scientific Agents)가 과학 발견의 전체 생명주기를 자동화하고 가속화할 수 있는 새로운 패러다임을 제시한다. 이들 에이전트는 자연언어, 프로그래밍 코드, 물리 정보를 통합하여 인간 과학자, 계산 도구, 물리 장비와 유연하게 상호작용한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Multi-Domain_Experimental_Agents"
   - "topic/ai4s"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2025_Autonomous Agents for Scientific Discovery Orchestrating Scientists, Language, Code, and Physics.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2026_Autonomous Agents for Scientific Discovery Orchestrating Scientists, Language, Code, and Physics.pdf"
 ---
 
 # Autonomous Agents for Scientific Discovery: Orchestrating Scientists, Language, Code, and Physics
@@ -134,6 +134,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2025_Autonomous Agents for S
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/088_AI4Research_A_Survey_of_Artificial_Intelligence_for_Scientif/review]] — 과학 발견 자동화의 구체적 구현체로서 AI4Research 프레임워크의 실제 적용 사례를 보여준다
-- 🏛 기반 연구: [[papers/352_From_AI_for_Science_to_Agentic_Science_A_Survey_on_Autonomou/review]] — 과학을 위한 AI에서 에이전트 과학으로의 전환에 대한 포괄적 조사가 자율 과학 발견의 이론적 토대를 제공한다
-- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 과학 발견을 자율 과학 에이전트의 구체적 실현으로 확장할 수 있다
+- 🏛 기반 연구: [[papers/308_El_Agente_An_Autonomous_Agent_for_Quantum_Chemistry/review]] — 과학 발견 자율화의 포괄적 패러다임이 양자화학 전용 에이전트라는 구체적 구현 사례의 이론적 기반을 제공함
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 과학 발견 자율 에이전트의 이론적 프레임워크가 완전 자동화된 과학 연구 시스템으로 구체화됨
+- 🧪 응용 사례: [[papers/308_El_Agente_An_Autonomous_Agent_for_Quantum_Chemistry/review]] — 양자화학 전용 에이전트가 과학 발견 자율화라는 더 넓은 패러다임의 구체적 실현 사례로 활용됨
+- 🧪 응용 사례: [[papers/792_Text2world_Benchmarking_large_language_models_for_symbolic_w/review]] — 자율 과학 발견 에이전트가 세계 모델링을 실제 과학 연구에 적용한다

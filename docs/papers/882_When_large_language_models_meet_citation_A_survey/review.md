@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어 모델(LLM)과 학술 인용 분석 간의 상호 보완 관계를 체계적으로 정리한 최초의 종합 조사 연구이다. LLM이 인용 분석 작업의 성능을 향상시키고, 역으로 인용 데이터가 LLM의 텍스트 표현을 개선하는 양방향 이익 구조를 제시한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Data_Interpretation"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2023_When large language models meet citation A survey.pdf"
 ---
@@ -101,6 +101,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2023_When large language mo
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/020_A_Review_of_Relational_Machine_Learning_for_Knowledge_Graphs/review]] — 지식 그래프와 관계형 머신러닝 기반이 LLM-인용 분석 결합의 이론적 토대를 제공한다.
-- 🧪 응용 사례: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — 인용 텍스트 생성의 구체적 방법론이 LLM과 인용 분석의 실제 응용 사례를 보여준다.
-- 🧪 응용 사례: [[papers/892_A_year_in_review_open_access_at_OUP/review]] — 대규모 언어 모델과 인용 연구가 오픈 액세스 출판물의 인용 패턴 분석에 적용된다.
+- 🔄 다른 접근: [[papers/393_Graphusion_a_rag_framework_for_knowledge_graph_construction/review]] — 학술 인용 분석과 지식그래프 구축은 모두 학술 문헌에서 지식을 추출하고 연결하지만 서로 다른 접근법을 사용한다.
+- 🧪 응용 사례: [[papers/654_Re_2_A_consistency-ensured_dataset_for_full-stage_peer_revie/review]] — LLM과 인용 분석 연구의 일반적 원리가 피어리뷰 과정 개선이라는 구체적인 학술 출판 문제에 적용될 수 있다.
+- 🔗 후속 연구: [[papers/781_Surveyx_Academic_survey_automation_via_large_language_models/review]] — LLM과 학술 인용의 결합 연구와 자동 서베이 생성은 모두 학술 문헌 처리 자동화의 상호 보완적 측면을 다룬다.
+- 🔄 다른 접근: [[papers/393_Graphusion_a_rag_framework_for_knowledge_graph_construction/review]] — LLM과 인용 분석의 결합이라는 공통 주제를 다루지만, 지식그래프 구축과 인용 분석이라는 서로 다른 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/654_Re_2_A_consistency-ensured_dataset_for_full-stage_peer_revie/review]] — LLM과 인용 분석 연구와 피어리뷰 전 과정 데이터셋은 모두 학술 출판 과정의 AI 지원을 위한 기초 연구이다.
+- 🔗 후속 연구: [[papers/781_Surveyx_Academic_survey_automation_via_large_language_models/review]] — LLM과 학술 인용 분석의 결합과 자동 서베이 생성은 모두 학술 문헌 처리의 AI 지원을 위한 상호 보완적 연구이다.
+- 🏛 기반 연구: [[papers/702_Scholarcopilot_Training_large_language_models_for_academic_w/review]] — 대형 언어 모델과 인용의 만남에 대한 포괄적 조사 연구를 학술 글쓰기에 실용적으로 적용한다.

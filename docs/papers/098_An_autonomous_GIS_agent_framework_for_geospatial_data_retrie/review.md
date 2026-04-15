@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)을 기반으로 지리정보시스템(GIS) 에이전트가 자동으로 지리공간 데이터를 발견하고 다운로드할 수 있는 프레임워크를 제안한다. 데이터 소스 색인과 핸드북 인벤토리로 구성된 플러그-앤-플레이 구조를 통해 OpenStreetMap, 미국 인구조사국 데이터, 위성 이미지 등 다양한 출처에서 80-90%의 높은 성공률로 데이터를 자동 검색한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/GIS_Research_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/GIS_Workflow_Automation_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ning et al._2024_An autonomous GIS agent framework for geospatial data retrieval.pdf"
 ---
@@ -109,5 +109,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ning et al._2024_An autonomous GIS agent
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/298_Earth-Agent_Unlocking_the_Full_Landscape_of_Earth_Observatio/review]] — 자율 GIS 에이전트 프레임워크는 Earth-Agent의 지구 관측 데이터 분석 기능을 확장하여 지리공간 데이터의 자동 발견과 다운로드까지 포괄하는 완전한 지리정보 처리 파이프라인을 제공합니다.
-- 🔄 다른 접근: [[papers/384_GIS_Copilot_towards_an_autonomous_GIS_agent_for_spatial_anal/review]] — 자율 GIS 에이전트와 GIS Copilot은 모두 지리정보시스템 자동화를 다루지만, 데이터 수집 특화와 공간 분석 지원이라는 서로 다른 기능에 중점을 둡니다.
+- 🔗 후속 연구: [[papers/384_GIS_Copilot_towards_an_autonomous_GIS_agent_for_spatial_anal/review]] — 자동 지리공간 데이터 검색에서 자율적 GIS 분석이라는 더 포괄적인 공간 분석 자동화로 발전한다
+- 🧪 응용 사례: [[papers/831_Towards_llm_agents_for_earth_observation/review]] — 지리공간 데이터 자동 검색 기술을 지구 관측이라는 더 광범위한 과학 연구 영역에 적용한 사례를 제시한다
+- 🏛 기반 연구: [[papers/298_Earth-Agent_Unlocking_the_Full_Landscape_of_Earth_Observatio/review]] — 지구 관측 데이터의 전체적인 활용 방법론을 자동 지리공간 데이터 검색 시스템의 기반으로 제공한다
+- 🔄 다른 접근: [[papers/298_Earth-Agent_Unlocking_the_Full_Landscape_of_Earth_Observatio/review]] — 지리공간 데이터 검색 및 분석을 위한 자율 GIS 에이전트 프레임워크로, 유사한 도메인에서 다른 구현 방식을 보여줌

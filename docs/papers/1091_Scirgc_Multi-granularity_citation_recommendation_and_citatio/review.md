@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "SciRGC 프레임워크는 인용 의도(citation intent) 인식과 인용 네트워크를 활용하여 학술 논문의 적절한 인용 문헌을 추천하고 고품질의 인용 문장을 생성하는 다단계 시스템을 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Citation_Context_Generation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Citation-Based_Evidence_Generation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_Scirgc Multi-granularity citation recommendation and citation sentence preference alignment.pdf"
 ---
@@ -86,8 +87,9 @@ SciRGC 프레임워크는 인용 의도(citation intent) 인식과 인용 네트
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — 로컬 인용 생성을 위한 BART 기반 접근법으로 본 논문의 인용 추천과 다른 방식의 인용 생성을 제시한다.
-- 🔗 후속 연구: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — 해석 가능한 로컬 인용 추천 시스템으로 본 논문의 인용 추천 기능을 설명 가능성 측면에서 확장한다.
-- 🏛 기반 연구: [[papers/273_Directed_criteria_citation_recommendation_and_ranking_throug/review]] — 방향성 기준 인용 추천 및 순위화를 통해 본 논문의 인용 네트워크 활용 방법론의 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/220_Cited_text_spans_for_citation_text_generation/review]] — 다중 단위 인용 추천 및 문장 생성에서 본 논문의 CTS 방법론을 인용 의도와 결합한 기반을 제공한다.
-- 🔗 후속 연구: [[papers/238_Controllable_citation_sentence_generation_with_language_mode/review]] — 인용 의도를 포함한 다단계 인용 시스템으로 본 논문의 인용 의도 제어를 더 포괄적 프레임워크로 확장한다.
+- 🔗 후속 연구: [[papers/238_Controllable_citation_sentence_generation_with_language_mode/review]] — 제어 가능한 인용 문장 생성을 다단계 인용 추천 및 문장 생성 시스템으로 확장하여 더 포괄적인 학술 글쓰기 지원을 제공한다.
+- 🏛 기반 연구: [[papers/329_Explaining_relationships_among_research_papers/review]] — 논문 간 관계 설명 연구가 인용 의도 인식과 네트워크 기반 추천 시스템의 핵심 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — 증거 기반 해석 가능한 지역 인용 추천과 의도 기반 다단계 인용 추천이 서로 다른 접근법으로 같은 문제를 해결한다.
+- 🏛 기반 연구: [[papers/150_Benchmark_for_evaluation_and_analysis_of_citation_recommenda/review]] — 다중 세분화 인용 추천 시스템 개발을 위한 평가 방법론적 기초를 제공한다.
+- 🏛 기반 연구: [[papers/238_Controllable_citation_sentence_generation_with_language_mode/review]] — 제어 가능한 인용 문장 생성 기법이 다단계 인용 추천 및 문장 생성 시스템의 핵심 기술적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/329_Explaining_relationships_among_research_papers/review]] — 논문 간 관계 설명을 인용 의도 인식과 결합하여 더 정교하고 맥락적으로 적절한 학술 글쓰기 지원 시스템을 구축한다.

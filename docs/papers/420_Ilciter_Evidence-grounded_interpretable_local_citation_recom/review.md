@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 학술 논문 인용 추천 작업에 **해석가능성(interpretability)**을 도입하기 위해, 쿼리(claim 또는 entity mention)에 대해 인용할 논문을 추천할 때 기존 문헌에서 추출한 유사한 증거 스팬(evidence span)을 근거로 제시하는 새로운 접근방식 ILCiteR을 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Citation_Context_Generation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Roy and Han_2024_Ilciter Evidence-grounded interpretable local citation recommendation.pdf"
 ---
@@ -114,10 +115,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Roy and Han_2024_Ilciter Evidence-ground
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — 지역 인용 생성의 기본 방법론이 증거 기반 해석가능한 인용 추천의 이론적 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/220_Cited_text_spans_for_citation_text_generation/review]] — 인용 텍스트 스팬 추출을 해석가능한 증거 스팬 제시로 발전시켜 더 투명한 인용 추천을 가능하게 합니다.
-- 🔄 다른 접근: [[papers/150_Benchmark_for_evaluation_and_analysis_of_citation_recommenda/review]] — 인용 추천 평가에서 해석가능성 중심 접근법과 전통적인 벤치마킹 방식의 서로 다른 관점을 제시합니다.
-- 🔗 후속 연구: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — 생성형 인용 모델에서 증거 기반 해석 가능한 로컬 인용 추천으로 발전한 더 정교한 인용 추천 시스템입니다.
-- 🔗 후속 연구: [[papers/1091_Scirgc_Multi-granularity_citation_recommendation_and_citatio/review]] — 해석 가능한 로컬 인용 추천 시스템으로 본 논문의 인용 추천 기능을 설명 가능성 측면에서 확장한다.
-- 🔄 다른 접근: [[papers/220_Cited_text_spans_for_citation_text_generation/review]] — 해석 가능한 로컬 인용 추천으로 본 논문의 인용 생성과 다른 접근법인 인용 추천 시스템을 제시한다.
-- 🔄 다른 접근: [[papers/273_Directed_criteria_citation_recommendation_and_ranking_throug/review]] — 신용평가 문서의 인용 추천을 일반적인 해석가능한 지역 인용 추천과 다른 접근법으로 처리한다
+- 🔗 후속 연구: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — 지역 인용 추천을 위한 기본 생성 모델을 증거 기반 해석가능성으로 발전시켜 더 신뢰할 수 있는 추천 시스템을 제시한다.
+- 🔄 다른 접근: [[papers/406_Hlm-cite_Hybrid_language_model_workflow_for_text-based_scien/review]] — 하이브리드 언어모델 기반 인용 추천과 증거 기반 해석가능 인용 추천은 모두 과학 인용의 정확성 향상을 다른 방식으로 접근한다.
+- 🏛 기반 연구: [[papers/150_Benchmark_for_evaluation_and_analysis_of_citation_recommenda/review]] — 인용 추천 평가 벤치마크는 해석가능한 인용 추천 시스템의 성능을 객관적으로 측정할 수 있는 기준을 제공한다.
+- 🧪 응용 사례: [[papers/238_Controllable_citation_sentence_generation_with_language_mode/review]] — 제어 가능한 인용 문장 생성 기법이 증거 기반 인용 추천의 실제 구현에서 설명 가능한 인용문 생성에 활용된다.
+- 🏛 기반 연구: [[papers/406_Hlm-cite_Hybrid_language_model_workflow_for_text-based_scien/review]] — 증거 기반 인용 추천의 해석 가능성을 높이는 기초 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — ILCiteR의 지역 인용 추천 방법론을 생성형 모델 기반으로 발전시켜 엔드투엔드 학습을 가능하게 한다.
+- 🔄 다른 접근: [[papers/1091_Scirgc_Multi-granularity_citation_recommendation_and_citatio/review]] — 증거 기반 해석 가능한 지역 인용 추천과 의도 기반 다단계 인용 추천이 서로 다른 접근법으로 같은 문제를 해결한다.
+- 🔗 후속 연구: [[papers/273_Directed_criteria_citation_recommendation_and_ranking_throug/review]] — 인용 추천을 트랜스포머 기반 그래프 신경망으로 확장하여 성능을 개선한다

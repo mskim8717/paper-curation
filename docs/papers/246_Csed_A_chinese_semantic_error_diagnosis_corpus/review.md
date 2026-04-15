@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 중국어 의미 오류 진단(Chinese Semantic Error Diagnosis, CSED)을 위한 최초의 대규모 코퍼스를 구축하고 이를 기반으로 구문 정보를 활용한 모델을 제안한다. 철자 오류와 문법 오류와 달리 의미 오류는 문장이 유창해 보이면서도 의미적으로 부적절한 복잡한 오류로, 이를 체계적으로 연구하기 위한 첫 공개 데이터셋을 제공한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Document_Analysis_and_Retrieval"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Patent_Novelty_Prediction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sun et al._2023_Csed A chinese semantic error diagnosis corpus.pdf"
 ---
@@ -95,7 +97,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sun et al._2023_Csed A chinese semantic 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/512_Lm-combiner_A_contextual_rewriting_model_for_chinese_grammat/review]] — 중국어 문법을 위한 맥락적 재작성 모델로 본 논문의 중국어 의미 오류와 다른 유형의 언어 오류 처리를 제시한다.
-- 🏛 기반 연구: [[papers/423_Improving_grammatical_error_correction_via_contextual_data_a/review]] — 맥락적 데이터 증강을 통한 문법 오류 수정 개선으로 본 논문의 의미 오류 진단 방법론의 기반을 제공한다.
-- 🔗 후속 연구: [[papers/884_Wikiatomicedits_A_multilingual_corpus_of_wikipedia_edits_for/review]] — 다국어 위키피디아 편집 코퍼스로 본 논문의 중국어 의미 오류 연구를 다국어 텍스트 오류로 확장한다.
-- 🔄 다른 접근: [[papers/512_Lm-combiner_A_contextual_rewriting_model_for_chinese_grammat/review]] — 둘 다 중국어 언어 오류 처리를 다루지만 하나는 문법 오류 수정이고 다른 하나는 의미 오류 진단에 초점을 맞춘다.
+- 🔄 다른 접근: [[papers/185_Can_large_language_models_understand_you_better_an_mbti_pers/review]] — 중국어 의미 오류 진단과 MBTI 성격 탐지라는 서로 다른 언어 이해 능력 평가 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/272_Diamonds_in_the_rough_Generating_fluent_sentences_from_early/review]] — 중국어 의미 오류 진단과 초안 문장 수정이 언어 품질 개선을 위한 상호 보완적 시스템을 구성한다.
+- 🏛 기반 연구: [[papers/512_Lm-combiner_A_contextual_rewriting_model_for_chinese_grammat/review]] — 중국어 문법 수정을 위한 맥락적 재작성 모델이 의미 오류 진단의 방법론적 토대를 제공한다.
+- 🧪 응용 사례: [[papers/791_Text_editing_by_command/review]] — 명령어 기반 텍스트 편집이 중국어 의미 오류 진단 후 오류 수정에 실제 적용될 수 있는 방법을 제시한다.
+- 🏛 기반 연구: [[papers/512_Lm-combiner_A_contextual_rewriting_model_for_chinese_grammat/review]] — 중국어 의미 오류 진단 말뭉치가 중국어 문법 오류 수정 시스템의 오류 패턴 분석과 필터링 모델 훈련에 기초 데이터를 제공한다.
+- 🔄 다른 접근: [[papers/185_Can_large_language_models_understand_you_better_an_mbti_pers/review]] — MBTI 성격 탐지와 중국어 의미 오류 진단이라는 서로 다른 언어 이해 능력 평가 접근법을 제시한다.
+- 🔄 다른 접근: [[papers/272_Diamonds_in_the_rough_Generating_fluent_sentences_from_early/review]] — 초안 문장 수정과 중국어 의미 오류 진단이라는 서로 다른 언어 품질 개선 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/405_Hit-scir_at_mmnlu22_Consistency_regularization_for_multiling/review]] — 중국어 의미 오류 진단 말뭉치는 다국어 언어이해 시스템의 오류 패턴 분석에 기초 데이터를 제공한다.
+- 🏛 기반 연구: [[papers/423_Improving_grammatical_error_correction_via_contextual_data_a/review]] — 중국어 의미 오류 진단 말뭉치가 다국어 환경에서의 문법 오류 패턴 분석과 교정에 기초 데이터를 제공한다.

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "생물학적 실험 프로토콜의 절차적 추론(procedural reasoning)을 평가하기 위한 대규모 데이터셋 및 벤치마크를 제시한다. BioProCorpus(27,000개 프로토콜)로부터 구성된 550,000개 이상의 구조화된 작업 인스턴스를 통해 LLM의 안전성, 정확성, 인과적 논리 이해도를 진단한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Structured_Research_Frameworks"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Physics_Reasoning_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Maze et al._2025_Bioprobench Comprehensive dataset and benchmark in biological protocol understanding and reasoning.pdf"
 ---
@@ -104,8 +105,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Maze et al._2025_Bioprobench Comprehensi
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 생물학 vs 생의학 실험에서 AI 에이전트의 절차적 추론 평가의 다른 접근법을 비교할 수 있다
-- 🔗 후속 연구: [[papers/118_Autobio_A_simulation_and_benchmark_for_robotic_automation_in/review]] — 생물학적 실험 자동화 벤치마크를 로봇 자동화 시뮬레이션으로 확장한 연구다
-- 🧪 응용 사례: [[papers/142_AutoNumerics_An_Autonomous_PDE-Agnostic_Multi-Agent_Pipeline/review]] — 자율적 다중 에이전트 시스템을 생물학적 실험 프로토콜 수행에 적용할 수 있다
-- 🏛 기반 연구: [[papers/159_Bio-sieve_exploring_instruction_tuning_large_language_models/review]] — 생의학 분야 LLM 지시 튜닝이 생물학적 프로토콜 이해의 기반을 제공한다
-- 🔄 다른 접근: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 생의학 vs 생물학 실험 프로토콜에서 AI 에이전트 평가의 다른 접근법을 비교할 수 있다
+- 🔗 후속 연구: [[papers/528_MedAgentGym_A_Scalable_Agentic_Training_Environment_for_Code/review]] — 의료 분야 에이전트 훈련을 위한 확장 가능한 환경으로, BioProBench의 생물학적 프로토콜 평가를 의료 도메인의 실제 적용으로 확장한다
+- 🏛 기반 연구: [[papers/166_Biomaze_Benchmarking_and_enhancing_large_language_models_for/review]] — 생의학 분야 대형언어모델의 기초 능력을 평가하는 벤치마크로, BioProBench의 절차적 추론 평가에 필요한 기본적 생의학 지식 이해 평가 틀을 제공한다
+- 🔄 다른 접근: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — zero-shot 의료 진단을 위한 다중 에이전트 협업 접근법으로, BioProBench의 개별 모델 평가와 대비되는 협업 기반 의료 AI 접근을 보여준다

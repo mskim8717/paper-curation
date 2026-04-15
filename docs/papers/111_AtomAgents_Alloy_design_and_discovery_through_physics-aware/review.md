@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대규모 언어 모델(LLM)과 물리 기반 시뮬레이션을 결합한 다중 에이전트 AI 시스템(AtomAgents)을 제안하여, 합금 설계 및 발견 과정을 자동화하고 인간 개입을 최소화하면서도 물리적 정확성을 유지하는 혁신적인 접근법을 제시한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Multi-Domain_Experimental_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ghafarollahi and Buehler_2024_AtomAgents Alloy design and discovery through physics-aware multi-modal multi-agent artificial inte.pdf"
 ---
@@ -112,10 +112,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ghafarollahi and Buehler_2024_AtomAgents
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/072_Agents_for_self-driving_laboratories_applied_to_quantum_comp/review]] — 물리 기반 다중 에이전트 시스템을 다른 도메인(합금 vs 양자)에 적용하여 방법론의 범용성을 확인합니다.
-- 🔗 후속 연구: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — 재료과학에서 원자 구조 정보를 활용하는 AI 시스템으로 합금 설계 방법을 확장합니다.
-- 🏛 기반 연구: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 재료과학 분야 LLM 활용의 이론적 기초와 체계적 방법론을 제공합니다.
-- 🔄 다른 접근: [[papers/072_Agents_for_self-driving_laboratories_applied_to_quantum_comp/review]] — 동일한 다중 에이전트 자동화 접근법을 다른 물리 시스템(양자 vs 합금)에 적용하여 방법론의 일반성을 보입니다.
-- 🔗 후속 연구: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 재료과학 LLM의 이론적 방법론을 합금 설계라는 구체적 응용으로 확장하는 실용적 사례입니다.
-- 🏛 기반 연구: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — 원자 구조 정보를 완전히 보존하는 기술이 물리 기반 합금 설계의 정확성을 높이는 기초를 제공합니다.
-- 🧪 응용 사례: [[papers/522_MatPilot_an_LLM-enabled_AI_Materials_Scientist_under_the_Fra/review]] — MatPilot의 재료 발견 방법론을 합금 설계 분야에 적용하여 물리학 기반 AI 접근법과의 시너지를 창출할 수 있다.
+- 🔄 다른 접근: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — 둘 다 재료과학에서 LLM 기반 다중 에이전트 시스템을 사용하지만, AtomAgents는 합금 설계에, HoneyComb은 일반적인 재료 과학 작업에 특화되어 있다
+- 🏛 기반 연구: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 재료과학에서 지식 안내형 LLM 활용 방법론이 AtomAgents의 물리 기반 다중 모달 설계 시스템 구축에 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — 재료 발견을 위한 기초 모델의 현재 상태와 한계를 분석한 연구를 바탕으로 AtomAgents가 실제 구현된 해결책을 제시한다
+- 🧪 응용 사례: [[papers/372_General-Purpose_Machine-Learned_Potential_for_CrCoNi_Alloys/review]] — 물리인식 원자 에이전트를 통한 합금 설계가 CrCoNi NEP 포텐셜의 실제 합금 개발 적용을 보여준다.
+- 🔗 후속 연구: [[papers/522_MatPilot_an_LLM-enabled_AI_Materials_Scientist_under_the_Fra/review]] — 물리학 인식 합금 설계 에이전트로서 AI 재료 과학자의 구체적 응용 사례를 확장한다

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 화학 구조 해석 작업을 동적 다중 턴 에이전트 평가 벤치마크로 재정의한 MolQuest를 제안한다. 정적 QA 형식의 기존 과학 벤치마크의 한계를 극복하기 위해, 실제 화학 문헌 데이터 기반의 상호작용적 환경에서 LLM의 귀추적 추론(abductive reasoning) 및 전략적 의사결정 능력을 평가한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Domain-specific_Scientific_Reasoning"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Han et al._2026_MolQuest A Benchmark for Agentic Evaluation of Abductive Reasoning in Chemical Structure Elucidatio.pdf"
 ---
@@ -120,8 +120,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Han et al._2026_MolQuest A Benchmark for
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/209_ChemAgent_Self-updating_Library_in_Large_Language_Models_Imp/review]] — ChemAgent의 화학 추론 능력이 분자 구조 해석 평가에 활용됩니다.
-- 🔗 후속 연구: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 분자 추론이 다단계 과학 도구 사용 벤치마크로 확장됩니다.
-- 🏛 기반 연구: [[papers/726_Sciknoweval_Evaluating_multi-level_scientific_knowledge_of_l/review]] — 다층적 과학 지식 평가가 화학 귀추적 추론의 기반을 제공합니다.
-- 🏛 기반 연구: [[papers/209_ChemAgent_Self-updating_Library_in_Large_Language_Models_Imp/review]] — 화학 추론을 위한 자체 업데이트 라이브러리가 분자 구조 해석의 기반을 제공합니다.
-- 🧪 응용 사례: [[papers/726_Sciknoweval_Evaluating_multi-level_scientific_knowledge_of_l/review]] — 다층적 과학 지식 평가가 화학 추론 벤치마크에 적용됩니다.
+- 🏛 기반 연구: [[papers/726_Sciknoweval_Evaluating_multi-level_scientific_knowledge_of_l/review]] — 과학 지식 평가의 다층적 접근법이 귀추적 추론 평가의 기반이 된다
+- 🔄 다른 접근: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 화학 구조 해석 대신 다단계 과학 도구 사용을 벤치마킹한다
+- 🔗 후속 연구: [[papers/672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/review]] — 실세계 연구 환경에서 LLM 에이전트 평가를 확장한다
+- 🔗 후속 연구: [[papers/726_Sciknoweval_Evaluating_multi-level_scientific_knowledge_of_l/review]] — 다층적 과학 지식 평가를 화학 구조 해석의 귀추적 추론으로 확장한다

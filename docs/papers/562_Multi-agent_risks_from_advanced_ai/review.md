@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "다중 에이전트 AI 시스템의 대규모 배포로 인해 발생하는 새로운 위험들을 체계적으로 분류하고, 3가지 주요 실패 모드(miscoordination, conflict, collusion)와 7가지 위험 요소(information asymmetries, network effects, selection pressures 등)를 제시한 구조화된 분류 체계이다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Research_Taxonomy_Surveys"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hammond et al._2025_Multi-agent risks from advanced ai.pdf"
 ---
@@ -104,10 +104,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hammond et al._2025_Multi-agent risks fr
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/044_Accelerating_Scientific_Research_with_Gemini_Case_Studies_an/review]] — 안전한 인간-AI 협력을 구현하기 위해 다중 에이전트 시스템의 잠재적 위험 요소들을 미리 이해해야 합니다.
-- 🧪 응용 사례: [[papers/378_Generative_AI_Uses_and_Risks_for_Knowledge_Workers_in_a_Scie/review]] — 다중 에이전트 위험의 이론적 분석을 실제 과학 조직의 AI 도입 사례에서 검증할 수 있습니다.
-- ⚖️ 반론/비판: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — 과학 연구 변혁의 긍정적 전망과 대조적으로 AI 시스템 배포의 잠재적 위험성을 체계적으로 분석합니다.
-- 🏛 기반 연구: [[papers/044_Accelerating_Scientific_Research_with_Gemini_Case_Studies_an/review]] — 다중 에이전트 시스템의 위험 요소들을 이해해야 안전한 인간-AI 과학 협력이 가능합니다.
-- 🧪 응용 사례: [[papers/378_Generative_AI_Uses_and_Risks_for_Knowledge_Workers_in_a_Scie/review]] — 다중 에이전트 AI 시스템의 위험 요소들이 실제 과학 조직에서 어떻게 나타나는지 구체적 사례를 보입니다.
-- ⚖️ 반론/비판: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — AI의 과학 연구 변혁 가능성에 대한 낙관적 전망과 대조적으로 다중 에이전트 시스템의 위험성을 제시합니다.
-- 🔗 후속 연구: [[papers/106_Artificial_Intelligence_in_Research_and_Development/review]] — AI의 R&D 영향을 다중 에이전트 위험성 관점에서 확장한다.
+- 🔗 후속 연구: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — 에이전트 시스템 확장의 과학 연구가 다중 에이전트 AI의 대규모 배포로 인한 구체적인 위험 분류 체계로 발전되었다
+- 🧪 응용 사례: [[papers/831_Towards_llm_agents_for_earth_observation/review]] — 지구 관측을 위한 LLM 에이전트 연구가 다중 에이전트 시스템의 위험 요소 중 하나인 네트워크 효과와 선택 압력을 실제 사례로 보여준다
+- 🏛 기반 연구: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — AI 에이전트 신뢰성에 대한 과학 연구가 다중 에이전트 시스템의 위험 분류와 실패 모드 분석의 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/106_Artificial_Intelligence_in_Research_and_Development/review]] — 고급 AI로부터의 다중 에이전트 위험 분석이 AI의 R&D 생산함수 영향 평가의 위험 관리 기반을 제공한다
+- ⚖️ 반론/비판: [[papers/895_AI_will_transform_science__now_researchers_must_tame_it/review]] — 고급 AI로부터의 다중 에이전트 위험을 제시하여 AI 과학 통합의 주의사항을 보완한다
+- ⚖️ 반론/비판: [[papers/738_SCP_Accelerating_Discovery_with_a_Global_Web_of_Autonomous_S/review]] — 고급 AI의 다중 에이전트 리스크 분석이 글로벌 자율 과학 네트워크의 잠재적 위험성을 경고한다

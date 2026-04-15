@@ -10,7 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "과학 문헌의 지수적 증가 문제를 해결하기 위해, 검색-증강-생성(RAG) 기반의 모듈식 다중문서 요약(MDS) 파이프라인인 XSum을 제안한다. 질문 생성 모듈과 편집 모듈의 두 가지 혁신적 컴포넌트를 통해 정확하고 인용이 풍부한 과학 문헌 요약을 생성한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
   - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2025_Ask, retrieve, summarize A modular pipeline for scientific literature summarization.pdf"
@@ -118,8 +120,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2025_Ask, retrieve, summarize 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/812_TLDR_Extreme_Summarization_of_Scientific_Documents/review]] — 과학 문서의 극단적 요약 방법으로 본 논문의 다중문서 요약과 다른 접근법을 제시한다.
-- 🏛 기반 연구: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 자동 문헌 검토를 위한 대규모 데이터셋으로 본 논문의 요약 시스템 학습 기반을 제공한다.
-- 🔗 후속 연구: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 지식 그래프에서 다중 문서 과학 요약을 수행하여 본 논문의 요약 방법론을 구조화된 지식과 결합한다.
-- 🏛 기반 연구: [[papers/604_Pasa_An_llm_agent_for_comprehensive_academic_paper_search/review]] — 모듈러 검색 파이프라인이 포괄적 논문 검색의 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/087_Ai2_scholar_qa_Organized_literature_synthesis_with_attributi/review]] — 과학 문헌 요약을 위한 모듈식 파이프라인으로 본 시스템의 문헌 합성 기능을 보완한다.
+- 🔄 다른 접근: [[papers/087_Ai2_scholar_qa_Organized_literature_synthesis_with_attributi/review]] — 과학 문헌 요약과 질의응답 모두 RAG 기반이지만 서로 다른 정보 제시 방식을 통해 사용자의 다양한 요구를 충족한다.
+- 🔗 후속 연구: [[papers/215_Chime_Llm-assisted_hierarchical_organization_of_scientific_s/review]] — 계층적 문헌 조직화를 다중문서 요약 파이프라인에 통합하여 더 체계적인 문헌 검토를 가능하게 한다.
+- 🏛 기반 연구: [[papers/561_Ms2_Multi-document_summarization_of_medical_studies/review]] — 의료 연구의 다중문서 요약 기법이 일반적인 과학 문헌 요약 시스템 개발의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/368_Gemini_15_Unlocking_multimodal_understanding_across_millions/review]] — 긴 과학 문헌 처리 능력을 모듈화된 검색-요약 파이프라인으로 활용한 발전된 형태를 제시한다.
+- 🔄 다른 접근: [[papers/087_Ai2_scholar_qa_Organized_literature_synthesis_with_attributi/review]] — 과학 문헌 질의응답과 문서 요약 모두 RAG 기반 접근법을 사용하지만 서로 다른 출력 형태를 제공한다.
+- 🏛 기반 연구: [[papers/215_Chime_Llm-assisted_hierarchical_organization_of_scientific_s/review]] — LLM 기반 계층적 논문 조직화가 과학 문헌의 체계적 요약과 검색을 위한 구조적 기반을 제공한다.

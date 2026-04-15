@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대규모 언어 모델(LLM)이 교차-언어 및 교차-모달 상황에서 동시에 겪는 환각(hallucination) 문제를 평가하기 위한 새로운 벤치마크 **CCHall(Cross-lingual and Cross-modal Hallucinations)**을 제시한다. 기존 연구가 단일 시나리오(교차-언어 또는 교차-모달)에만 집중한 반면, 이 연구는 두 문제가 결합된 실제 상황을 평가하는 최초의 종합 벤치마크를 개발했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Cross-modal_Language_Detection"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Cchall A novel benchmark for joint cross-lingual and cross-modal hallucinations detection in large.pdf"
 ---
@@ -104,8 +105,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Cchall A novel benchma
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/460_Language_models_surface_the_unwritten_code_of_science_and_so/review]] — LLM의 편향을 진단 도구로 활용하자는 관점과 교차-언어/모달 환각을 문제로 보는 관점이 대조됨
-- 🏛 기반 연구: [[papers/753_Shared_imagination_Llms_hallucinate_alike/review]] — LLM들이 유사한 환각을 보인다는 기초 연구가 교차-언어/모달 환각 벤치마크 개발의 이론적 근거를 제공함
-- 🔗 후속 연구: [[papers/827_Towards_effective_extraction_and_evaluation_of_factual_claim/review]] — 팩트체킹에서 주장 추출의 모호성 처리 문제가 교차-언어/모달 상황에서 더욱 복잡해지는 확장된 도전과제임
-- 🔗 후속 연구: [[papers/119_Autocap_Towards_automatic_cross-lingual_alignment_planning_f/review]] — 교차언어 및 교차문화 이해를 위한 새로운 벤치마크가 AutoCAP의 영점 교차언어 추론 프레임워크를 문화적 맥락까지 고려하는 더 포괄적인 평가로 확장함
-- ⚖️ 반론/비판: [[papers/460_Language_models_surface_the_unwritten_code_of_science_and_so/review]] — LLM의 편향을 진단 도구로 활용하자는 관점과 교차-언어/모달 환각을 문제로 보는 관점이 대조됨
+- 🔗 후속 연구: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 동적 증거 기반 다중모달 사실 확인 시스템으로, CCHall에서 발견한 교차-언어/모달 환각 문제를 해결하는 구체적 솔루션을 제시한다
+- 🏛 기반 연구: [[papers/245_Crosslingual_capabilities_and_knowledge_barriers_in_multilin/review]] — 다국어 대형언어모델의 교차언어 능력과 지식 장벽을 체계적으로 분석하여, CCHall의 교차언어 환각 평가에 필요한 이론적 기반을 제공한다
+- ⚖️ 반론/비판: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — NLP 사실 확인에서 반박 증거의 부족 문제를 지적하여, CCHall의 포괄적 환각 평가 접근법의 한계와 개선 방향을 제시한다
+- 🔗 후속 연구: [[papers/245_Crosslingual_capabilities_and_knowledge_barriers_in_multilin/review]] — 교차언어 지식 장벽 문제가 교차-언어 및 교차-모달 환각으로 확장되어 나타나는 구체적 증상을 CCHall 벤치마크를 통해 평가한다

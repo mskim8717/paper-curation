@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 과학 문헌 리뷰 자동 생성 과정에서 계층적 카탈로그(목차)의 중요성을 강조하고, 참고 논문들을 입력받아 리뷰 논문의 계층적 카탈로그를 생성하는 새로운 과제(HiCatGLR)를 제안한다. 7.6k개의 리뷰 카탈로그와 389k개의 참고 논문으로 구성된 벤치마크 데이터셋을 구축하고, 구조적 특성을 반영한 평가 지표를 설계하여 다양한 최신 모델의 성능을 평가한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Hierarchical_Knowledge_Graphs"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhu et al._2023_Hierarchical catalogue generation for literature review a benchmark.pdf"
 ---
@@ -122,9 +123,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhu et al._2023_Hierarchical catalogue g
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 문헌 리뷰 자동 생성에서 단순한 데이터셋을 계층적 카탈로그 구조로 확장한 고도화된 접근법입니다.
-- 🏛 기반 연구: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 다중 문서 요약의 지식 그래프 활용이 계층적 카탈로그 생성의 구조적 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/450_Knowledge_navigator_Llm-guided_browsing_framework_for_explor/review]] — 문헌 탐색에서 계층적 카탈로그 구조와 LLM 가이드 클러스터링의 서로 다른 조직화 방식을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/374_Generating_a_structured_summary_of_numerous_academic_papers/review]] — 문헌 리뷰를 위한 계층적 카탈로그 생성 방법으로 BigSurvey 데이터셋의 구조화된 요약과 보완적이다.
-- 🔄 다른 접근: [[papers/215_Chime_Llm-assisted_hierarchical_organization_of_scientific_s/review]] — 문헌 검토를 위한 계층적 카탈로그 생성의 다른 접근법으로 본 논문과 유사한 목표를 다른 방식으로 달성한다.
-- 🏛 기반 연구: [[papers/450_Knowledge_navigator_Llm-guided_browsing_framework_for_explor/review]] — 계층적 카탈로그 생성의 구조적 접근법이 LLM 가이드 탐색 프레임워크의 조직화 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 관련 연구 요약 생성을 넘어서 전체 리뷰 논문의 구조적 목차까지 생성하는 더 포괄적인 접근법으로 발전시켰다.
+- 🏛 기반 연구: [[papers/789_Taxonomy_tree_generation_from_citation_graph/review]] — 인용 그래프에서 분류 체계 생성 연구는 논문 간 관계를 기반으로 계층적 구조를 만드는 핵심 방법론을 제공한다.
+- 🔄 다른 접근: [[papers/742_Select_read_and_write_A_multi-agent_framework_of_full-text-b/review]] — 다중 에이전트 기반 전문 검토 작성과 계층적 카탈로그 생성은 모두 과학 문헌의 체계적 조직화를 다른 방식으로 접근한다.
+- 🧪 응용 사례: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 관련 연구 섹션 대규모 데이터셋이 계층적 카탈로그 생성 시스템의 훈련과 평가에 직접 활용될 수 있다.
+- 🔄 다른 접근: [[papers/215_Chime_Llm-assisted_hierarchical_organization_of_scientific_s/review]] — 계층적 카탈로그 생성의 LLM 기반 접근법과 문헌 검토를 위한 자동화된 접근법이 서로 다른 방식으로 문헌 조직화 문제를 해결한다.

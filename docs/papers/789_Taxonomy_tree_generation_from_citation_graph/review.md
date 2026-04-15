@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "인용 그래프(Citation Graph)로부터 계층적 분류 체계(Taxonomy Tree)를 자동으로 생성하는 엔드-투-엔드 프레임워크 HiGTL을 제안한다. 텍스트 콘텐츠와 인용 구조를 결합하여 의미론적으로 일관성 있고 구조적으로 응집력 있는 분류 체계를 구축한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Hierarchical_Knowledge_Graphs"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2024_Taxonomy tree generation from citation graph.pdf"
 ---
@@ -109,10 +110,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2024_Taxonomy tree generation 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/742_Select_read_and_write_A_multi-agent_framework_of_full-text-b/review]] — 인용 그래프에서 생성된 분류 체계가 관련 연구 섹션 작성에서 문헌 간의 계층적 관계를 체계적으로 구조화하는 핵심 도구로 활용된다.
-- 🔄 다른 접근: [[papers/752_Shallow_synthesis_of_knowledge_in_gpt-generated_texts_A_case/review]] — 구조적 인용 그래프 분석을 통한 체계적 분류 생성이 GPT의 얕은 문헌 종합 문제에 대한 대안적 해결 방안을 제시한다.
-- 🏛 기반 연구: [[papers/330_Exploiting_LLMs_for_Automatic_Hypothesis_Assessment_via_a_Lo/review]] — 연구 논문 간의 관계 설명에 필요한 기본적인 분류 체계가 인용 그래프에서 자동으로 생성되어 체계적인 문헌 구조화를 가능하게 한다.
-- 🏛 기반 연구: [[papers/215_Chime_Llm-assisted_hierarchical_organization_of_scientific_s/review]] — 인용 그래프에서 분류 체계 트리 생성 방법으로 본 논문의 계층적 트리 구조 조직화 기반을 제공한다.
-- 🔄 다른 접근: [[papers/329_Explaining_relationships_among_research_papers/review]] — 인용 그래프에서 분류 체계 트리 생성으로 본 논문과 다른 방식의 논문 간 관계 구조화를 제시한다.
-- 🏛 기반 연구: [[papers/742_Select_read_and_write_A_multi-agent_framework_of_full-text-b/review]] — 인용 그래프에서 분류 체계 생성이 관련 연구 섹션에서 참고 문헌 간의 관계를 체계적으로 구조화하는 기본 프레임워크를 제공한다.
-- 🔄 다른 접근: [[papers/752_Shallow_synthesis_of_knowledge_in_gpt-generated_texts_A_case/review]] — 인용 그래프 분석과 분류 체계 생성은 문헌 종합의 구조적 한계를 극복하기 위한 대안적 접근 방법을 제시한다.
+- 🏛 기반 연구: [[papers/020_A_Review_of_Relational_Machine_Learning_for_Knowledge_Graphs/review]] — 지식 그래프 표현과 획득에 대한 이론적 기반을 인용 그래프 기반 분류체계 생성에 적용한다
+- 🧪 응용 사례: [[papers/913_Semantic_Scholar/review]] — 대규모 학술 논문 코퍼스를 활용하여 실제 인용 그래프에서 분류체계를 생성하는 실용적 응용이다
+- 🔗 후속 연구: [[papers/273_Directed_criteria_citation_recommendation_and_ranking_throug/review]] — 인용 그래프를 활용한 추천에서 한 단계 나아가 계층적 분류체계를 자동 생성한다
+- 🏛 기반 연구: [[papers/402_Hierarchical_catalogue_generation_for_literature_review_a_be/review]] — 인용 그래프에서 분류 체계 생성 연구는 논문 간 관계를 기반으로 계층적 구조를 만드는 핵심 방법론을 제공한다.
+- 🧪 응용 사례: [[papers/913_Semantic_Scholar/review]] — 대규모 학술 데이터베이스를 인용 그래프 기반 분류체계 생성의 실제 데이터소스로 활용한다
+- 🧪 응용 사례: [[papers/488_Leveraging_LLMs_in_Scholarly_Knowledge_Graph_Question_Answer/review]] — 학술 지식 그래프 질의를 인용 그래프에서 생성된 분류체계에 적용할 수 있다
+- 🏛 기반 연구: [[papers/273_Directed_criteria_citation_recommendation_and_ranking_throug/review]] — 링크 예측 기술이 인용 그래프에서 분류체계 생성의 핵심 방법론적 기반이 된다

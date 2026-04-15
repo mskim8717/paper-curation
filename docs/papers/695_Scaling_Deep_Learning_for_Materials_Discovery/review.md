@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.8
 essence: "그래프 신경망(GNN)을 대규모로 학습시킨 GNoME(Graph Networks for Materials Exploration) 모델을 통해 물질 안정성 예측에서 전례 없는 일반화 성능을 달성하였으며, 220만 개의 신규 안정 결정질 구조를 발견하여 인류가 알고 있는 안정 물질을 약 10배 확장했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Materials_Discovery_Hypotheses"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Molecular_Discovery_Foundation_Models"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Merchant et al._2023_Scaling Deep Learning for Materials Discovery.pdf"
 ---
@@ -142,12 +143,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Merchant et al._2023_Scaling Deep Learni
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — GNoME의 성공이 재료발견 분야 파운데이션 모델 발전의 중요한 사례가 된다.
-- 🧪 응용 사례: [[papers/372_General-Purpose_Machine-Learned_Potential_for_CrCoNi_Alloys/review]] — 대규모 재료 발견 결과를 특정 합금 시스템의 머신러닝 포텐셜 개발에 적용한다.
-- 🔗 후속 연구: [[papers/241_Criteria-first_semantics-later_reproducible_structure_discov/review]] — 재료 구조 발견을 이미지 기반 구조 추출 방법론으로 확장할 수 있다.
-- 🧪 응용 사례: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — 파운데이션 모델 이론을 GNoME 같은 대규모 재료 발견에 실제 적용한 사례이다.
-- 🧪 응용 사례: [[papers/372_General-Purpose_Machine-Learned_Potential_for_CrCoNi_Alloys/review]] — 대규모 재료 발견 결과를 특정 합금 시스템의 정밀 모델링에 적용한다.
-- 🏛 기반 연구: [[papers/241_Criteria-first_semantics-later_reproducible_structure_discov/review]] — 구조 발견 방법론이 대규모 재료 발견 결과의 해석과 검증에 필요하다.
-- 🔗 후속 연구: [[papers/1099_Generative_Inversion_of_Spectroscopic_Data_for_Amorphous_Str/review]] — 재료 발견을 위한 딥러닝 확장성에서 분광 데이터 역변환으로의 발전
-- 🏛 기반 연구: [[papers/758_Simulations_in_the_era_of_exascale_computing/review]] — 재료 발견을 위한 딥러닝 확장 연구가 엑사스케일 컴퓨팅 활용의 기술적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/354_From_GPU_Engineering_to_Scientific_Discovery_Parallelism_Tec/review]] — 재료 발견을 위한 딥러닝 확장 연구가 GPU 병렬화 기법의 실제 적용 사례와 최적화 필요성을 제시한다.
+- 🔄 다른 접근: [[papers/555_Molgan_An_implicit_generative_model_for_small_molecular_grap/review]] — GNoME의 대규모 안정 물질 발견과 MolGAN의 소분자 그래프 생성은 서로 다른 규모의 물질 설계 접근법이다.
+- 🧪 응용 사례: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 환경과학 분야의 기초 모델들이 GNoME과 같은 대규모 물질 발견 시스템의 실제 응용 사례를 보여준다.
+- 🔗 후속 연구: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 알고리즘 실행을 통한 표적 물질 발견이 GNoME의 대규모 물질 탐색을 더욱 정교하게 발전시킨다.
+- 🧪 응용 사례: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 딥러닝 기반 재료 발견 확장 연구에 BAX 프레임워크의 효율적 탐색 전략을 적용하여 성능을 향상시킬 수 있다.
+- 🔗 후속 연구: [[papers/346_Foundation-Model_Surrogates_Enable_Data-Efficient_Active_Lea/review]] — 재료 발견을 위한 딥러닝 확장 연구가 TabPFN 기반 문맥 내 능동 학습으로 구체적으로 발전되었다
+- 🔄 다른 접근: [[papers/555_Molgan_An_implicit_generative_model_for_small_molecular_grap/review]] — MolGAN의 소분자 그래프 생성과 GNoME의 대규모 결정질 구조 발견은 서로 다른 규모의 물질 생성 접근법이다.
+- 🔗 후속 연구: [[papers/758_Simulations_in_the_era_of_exascale_computing/review]] — 재료 발견을 위한 딥러닝 확장 연구로 엑사스케일 시뮬레이션의 AI 결합 방향을 제시한다

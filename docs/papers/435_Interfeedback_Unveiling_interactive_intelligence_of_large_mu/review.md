@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "대형 다중모달 모델(LMM)이 인간의 피드백을 통해 자신의 응답을 개선할 수 있는 상호작용 능력을 평가하는 최초의 벤치마크를 제시한다. 기존 벤치마크들이 정적 평가에 집중한 반면, 본 연구는 대화형 인간-AI 상호작용 시나리오에서의 모델 성능을 측정한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Multimodal_Scientific_Benchmarks"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/ML_Research_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2025_Interfeedback Unveiling interactive intelligence of large multimodal models via human feedback.pdf"
 ---
@@ -130,12 +130,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2025_Interfeedback Unveiling
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — LLM의 자기개선 능력 분석이 인간 피드백 기반 상호작용 능력 평가의 이론적 기반
-- 🔗 후속 연구: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 정적 과학 그림 해석 평가를 대화형 피드백 기반 개선 능력으로 확장한 연구
-- 🔄 다른 접근: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 도구 기반 자기수정과 달리 인간 피드백을 통한 상호작용적 개선 능력에 집중
-- 🧪 응용 사례: [[papers/1127_MMSD20_Towards_a_Reliable_Multi-modal_Sarcasm_Detection_Syst/review]] — 멀티모달 풍자 탐지에서 인간 피드백을 활용한 모델 개선 능력 평가에 적용 가능
-- 🔗 후속 연구: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — 자기개선 메커니즘 분석을 인간-AI 상호작용에서의 피드백 활용 능력으로 확장
-- 🔗 후속 연구: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 인간 피드백 기반 개선을 편향 제거라는 구체적 목표로 특화한 확장
-- 🔄 다른 접근: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 멀티모달 상호작용과 달리 과학 그림 캡션 생성에 특화된 인간 피드백 활용
-- 🏛 기반 연구: [[papers/223_Clarify_when_necessary_Resolving_ambiguity_through_interacti/review]] — 대규모 모델의 인터랙티브 지능에 대한 연구가 사용자 의도 엔트로피 추정과 명확화 필요성 판단의 이론적 배경을 제공함
-- 🧪 응용 사례: [[papers/1127_MMSD20_Towards_a_Reliable_Multi-modal_Sarcasm_Detection_Syst/review]] — 멀티모달 풍자 탐지에서 인간 피드백을 통한 모델 성능 개선 능력 평가에 적용
+- 🔄 다른 접근: [[papers/656_Read_revise_repeat_A_system_demonstration_for_human-in-the-l/review]] — 인간 피드백을 통한 모델 개선이라는 공통 목표를 가지지만 다중모달 vs 텍스트 개정이라는 다른 접근법을 사용한다.
+- 🧪 응용 사례: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — 대화형 AI 시스템의 편향성 있는 평가 문제를 해결하기 위한 실제 벤치마크 적용 사례를 제공한다.
+- 🏛 기반 연구: [[papers/413_Human-ai_teaming_using_large_language_models_Boosting_brain-/review]] — 인간-AI 협업에서의 상호작용 능력 평가에 대한 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/312_Empowering_language_models_with_active_inquiry_for_deeper_un/review]] — 대형 언어모델의 상호작용 지능을 평가하는 구체적인 프레임워크를 제공한다.
+- 🏛 기반 연구: [[papers/223_Clarify_when_necessary_Resolving_ambiguity_through_interacti/review]] — 대규모 언어모델의 상호작용 지능 연구가 모호한 입력에 대한 명확화 질문 프레임워크의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/656_Read_revise_repeat_A_system_demonstration_for_human-in-the-l/review]] — 인간 피드백을 통한 AI 시스템 개선이라는 공통 목표를 가지지만 텍스트 개정 vs 다중모달 상호작용이라는 다른 영역을 다룬다.

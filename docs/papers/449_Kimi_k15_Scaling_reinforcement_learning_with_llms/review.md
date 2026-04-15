@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 대규모 언어모델(LLM)의 강화학습(RL) 기반 훈련을 통해 추론 성능을 대폭 향상시킨 Kimi k1.5 모델을 제시한다. 긴 맥락(long context) 확장과 개선된 정책 최적화를 기반으로 복잡한 기법(MCTS, 가치함수 등) 없이도 o1 수준의 성능을 달성했다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Reasoning_Enhancement_via_Reinforcement_Learning"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Team et al._2025_Kimi k1.5 Scaling reinforcement learning with llms.pdf"
 ---
@@ -138,7 +138,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Team et al._2025_Kimi k1.5 Scaling reinf
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — 두 논문 모두 강화학습으로 LLM 추론을 향상시키되 Kimi k1.5는 긴 맥락 확장, DeepSeek-R1은 순수 RL에 중점을 둔다.
-- 🔗 후속 연구: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 로봇 정책의 일반화 성능 향상을 위한 SAM 기법은 Kimi k1.5의 정책 최적화 방법론에 샤프니스 인식 최소화를 도입할 수 있다.
-- 🏛 기반 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — 대규모 언어모델 기반 자율 에이전트 서베이는 Kimi k1.5의 강화학습 기반 에이전트 설계에 이론적 배경과 방법론적 근거를 제공한다.
-- 🔄 다른 접근: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — 두 논문 모두 강화학습으로 LLM의 추론 능력을 향상시키되 DeepSeek-R1은 순수 RL, Kimi k1.5는 긴 맥락과 정책 최적화를 강조한다.
+- 🔄 다른 접근: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — 긴 맥락 확장과 정책 최적화를 통해 추론 성능 향상이라는 같은 목표를 다른 방법으로 접근한다.
+- 🔗 후속 연구: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — 복잡한 기법 없이도 RL이 SFT보다 우수한 일반화를 보인다는 발견을 실증적으로 뒷받침한다.
+- 🏛 기반 연구: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 개선된 정책 최적화가 다중턴 자기수정 프레임워크의 기반이 될 수 있다.
+- ⚖️ 반론/비판: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — LLM에서는 복잡한 기법 없이 성능을 달성했지만 로봇 제어에서는 여전히 정교한 설계가 필요함을 보여준다.
+- 🔄 다른 접근: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — 순수 RL을 통한 추론 능력 향상이라는 같은 목표를 다른 모델 구조와 최적화 방법으로 접근한다.
+- ⚖️ 반론/비판: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — LLM에서는 복잡한 기법 없이 성능을 달성했지만 로봇 제어에서는 여전히 정교한 설계가 필요함을 보여준다.
+- 🔗 후속 연구: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — RL의 일반화 우위성이 복잡한 기법 없이도 o1 수준 성능 달성을 가능하게 하는 원리를 설명한다.

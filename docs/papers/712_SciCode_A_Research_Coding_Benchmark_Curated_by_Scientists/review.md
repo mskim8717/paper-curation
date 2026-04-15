@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "과학자들이 직접 큐레이션한 과학 연구 문제 중심의 코딩 벤치마크를 제시하여, 언어 모델(LM)의 실제 과학 보조 능력을 평가할 수 있는 고품질 평가 도구를 개발하였다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Code_Generation"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tian et al._2024_SciCode A Research Coding Benchmark Curated by Scientists.pdf"
 ---
@@ -84,10 +84,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tian et al._2024_SciCode A Research Codi
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — 일반적인 프로그래밍 함수 생성 평가를 과학자들이 직접 설계한 실제 과학 연구 문제 해결 능력 평가로 발전시켰다
-- 🏛 기반 연구: [[papers/170_Blade_Benchmarking_language_model_agents_for_data-driven_sci/review]] — 과학 연구 문제 중심의 코딩 벤치마크가 언어모델 에이전트의 데이터 기반 과학 발견 능력 평가에 중요한 기준을 제시한다
-- 🔄 다른 접근: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — 과학자 큐레이션 코딩 벤치마크와 기계학습 연구 코드 벤치마킹이 각각 과학 연구와 ML 연구 맥락에서 코드 생성 능력을 평가한다
-- 🔗 후속 연구: [[papers/548_Mlr-bench_Evaluating_ai_agents_on_open-ended_machine_learnin/review]] — 과학 연구 중심 코딩 벤치마크가 개방형 기계학습 연구 평가로 확장되어 더 포괄적인 AI 연구 능력을 측정한다
-- 🏛 기반 연구: [[papers/170_Blade_Benchmarking_language_model_agents_for_data-driven_sci/review]] — 과학 연구 문제 중심의 코딩 능력 평가가 데이터 기반 과학 발견을 위한 언어모델 에이전트 성능 측정의 중요한 기반이 된다
-- 🔗 후속 연구: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — 일반적인 코드 생성 평가가 과학자들이 직접 큐레이션한 과학 연구 문제 중심의 코딩 벤치마크로 구체화되었다
-- 🧪 응용 사례: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — 다양한 프로그래밍 언어를 지원하는 코드 생성 모델이 과학자들의 실제 연구 문제 해결 능력 평가에 핵심적인 도구로 활용된다
+- 🏛 기반 연구: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — 과학 코딩 벤치마크가 평가하는 LLM의 기본적인 코딩 능력과 함수 생성 기반
+- 🔗 후속 연구: [[papers/170_Blade_Benchmarking_language_model_agents_for_data-driven_sci/review]] — 과학 문제 해결을 위한 코딩 능력을 데이터 기반 과학 발견으로 확장한 평가
+- 🔄 다른 접근: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — 과학자 큐레이션 벤치마크 대신 새로운 ML 방법 구현에 초점을 맞춘 다른 평가법
+- 🏛 기반 연구: [[papers/803_The_open_review-based_orb_dataset_Towards_automatic_assessme/review]] — 과학자가 큐레이션한 코딩 벤치마크 방법론을 피어리뷰 데이터셋 구축에 적용할 수 있다.
+- 🧪 응용 사례: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — 과학자들이 큐레이션한 코드 벤치마크로 Code Llama의 과학적 코딩 능력을 평가할 수 있다
+- 🏛 기반 연구: [[papers/170_Blade_Benchmarking_language_model_agents_for_data-driven_sci/review]] — 과학 연구 문제의 코딩 능력을 평가하는 기반이 되는 벤치마크 방법론
+- 🧪 응용 사례: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — 코드 생성 모델의 능력을 과학 연구 문제 해결이라는 구체적 영역에 적용한 평가

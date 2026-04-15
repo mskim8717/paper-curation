@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)을 활용하여 원본 웹 코퍼스로부터 자동으로 새로운 사회과학 학술 가설을 발견하는 첫 번째 시스템을 제안한다. 기존의 제한된 폐쇄 도메인 환경과 상식 수준의 가설을 넘어, 개방 도메인 관찰로부터 학술 문헌에 존재하지 않는 혁신적이고 타당한 과학 가설 생성을 달성했다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Peer_Review"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Automated_Scientific_Review"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2023_Large Language Models for Automated Open-domain Scientific Hypotheses Discovery.pdf"
 ---
@@ -101,6 +101,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2023_Large Language Models f
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — LLM을 활용한 가설 생성의 다른 접근법으로 개방 도메인과 일반적 방법론을 비교할 수 있다.
-- 🔗 후속 연구: [[papers/666_Research_hypothesis_generation_over_scientific_knowledge_gra/review]] — 과학 지식 그래프 기반 연구 가설 생성으로 웹 코퍼스에서 발견한 가설을 체계적으로 검증할 수 있다.
-- 🏛 기반 연구: [[papers/330_Exploiting_LLMs_for_Automatic_Hypothesis_Assessment_via_a_Lo/review]] — 프로그램 기반 추론을 통한 자동 가설 평가로 혁신적 가설의 타당성 검증 방법론을 제공한다.
+- 🏛 기반 연구: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — LLM을 이용한 가설 생성의 기본 방법론과 이론적 배경을 제공한다
+- 🔗 후속 연구: [[papers/426_Improving_Scientific_Hypothesis_Generation_with_Knowledge_Gr/review]] — 지식 그래프를 활용한 과학 가설 생성의 개선된 접근법을 제시한다
+- 🔄 다른 접근: [[papers/630_Predicting_empirical_ai_research_outcomes_with_language_mode/review]] — 과학적 가설의 성공 가능성을 사전 예측하는 다른 관점의 연구를 보여준다
+- ⚖️ 반론/비판: [[papers/630_Predicting_empirical_ai_research_outcomes_with_language_mode/review]] — 가설 생성에서 사후 검증이 아닌 사전 성공 예측의 다른 관점을 제시한다

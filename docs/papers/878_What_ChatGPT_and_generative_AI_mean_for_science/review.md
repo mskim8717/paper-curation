@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.5
 essence: "생성형 AI(generative AI) 및 대규모 언어모델(Large Language Models, LLMs)이 과학 연구에 미치는 긍정적 잠재력과 부작용을 종합적으로 검토한 자연(Nature) 저널의 특집 기사로, 과학자들의 흥분과 우려가 공존하는 현 상황을 분석한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Science_Communication"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Stokel-Walker and Noorden_What ChatGPT and generative AI mean for science.pdf"
 ---
@@ -107,8 +109,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Stokel-Walker and Noorden_What ChatGPT a
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — 생성형 AI의 과학적 영향에 대한 종합적 분석이 과학 자동화 논의의 기반이 된다.
-- 🏛 기반 연구: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — 생성형 AI의 과학적 잠재력이 AI Scientist 개발의 동기와 방향을 제시한다.
-- 🔗 후속 연구: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — ChatGPT의 과학적 영향을 LLM 전반의 과학 변화로 확장하여 분석한다.
-- 🏛 기반 연구: [[papers/899_ChatGPT_and_science_the_AI_system_was_a_force_in_2023__for_g/review]] — ChatGPT와 생성형 AI가 과학에 미치는 일반적 의미가 2023년 구체적 영향 분석의 토대가 된다.
-- 🏛 기반 연구: [[papers/557_MOOSE-Chem_Large_Language_Models_for_Rediscovering_Unseen_Ch/review]] — 생성형 AI가 과학 연구에 미치는 전반적 영향에 대한 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/899_ChatGPT_and_science_the_AI_system_was_a_force_in_2023__for_g/review]] — 2023년 ChatGPT의 과학계 영향력 분석이 생성형 AI가 과학에 미치는 의미에 대한 구체적 사례를 제공한다
+- ⚖️ 반론/비판: [[papers/890_Your_Brain_on_ChatGPT_Accumulation_of_Cognitive_Debt_when_Us/review]] — ChatGPT 사용 시 인지 부채 누적 연구가 생성형 AI의 긍정적 과학적 잠재력에 대한 비판적 관점을 제시한다
+- 🔄 다른 접근: [[papers/444_Is_it_OK_for_AI_to_write_science_papers_Nature_survey_shows/review]] — AI의 과학 논문 작성 허용 여부에 대한 Nature 설문이 생성형 AI의 과학적 의미를 실무적 관점에서 다룬다
+- 🏛 기반 연구: [[papers/508_LLMs_as_Research_Tools_A_Large_Scale_Survey_of_Researchers_U/review]] — ChatGPT와 생성 AI의 과학 분야 의미 분석이 연구자 LLM 활용 연구의 배경을 제공한다
+- 🔄 다른 접근: [[papers/899_ChatGPT_and_science_the_AI_system_was_a_force_in_2023__for_g/review]] — ChatGPT와 생성형 AI가 과학에 미치는 영향에 대한 서로 다른 시기와 관점의 분석을 통해 AI 과학 도구 발전을 종합적으로 이해할 수 있다.
+- 🏛 기반 연구: [[papers/206_ChatGPT_outperforms_crowd_workers_for_text-annotation_tasks/review]] — 생성 AI가 과학에 미치는 광범위한 영향을 논의하여, 텍스트 주석 작업의 맥락을 제공합니다.

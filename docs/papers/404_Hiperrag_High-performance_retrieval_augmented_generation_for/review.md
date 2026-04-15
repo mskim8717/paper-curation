@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 360만 개 이상의 과학 논문을 처리하기 위해 고성능 컴퓨팅(HPC)을 활용한 검색-증강 생성(RAG) 시스템 HiPerRAG를 제시하며, 과학 문헌의 복잡한 구조를 처리하는 새로운 문서 파싱 기법(Oreo)과 과학 텍스트 특화 인코더(ColTrast)를 개발했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Retrieval-augmented_Generation_Systems"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Bioinformatics_Integration"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gökdemir et al._2025_Hiperrag High-performance retrieval augmented generation for scientific insights.pdf"
 ---
@@ -127,8 +127,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gökdemir et al._2025_Hiperrag High-perf
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 대형 언어 모델을 위한 검색 증강 생성 서베이가 과학 문헌 특화 RAG 시스템 설계의 이론적 기반입니다.
-- 🔄 다른 접근: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — 과학 문헌 처리에서 멀티모달 사전훈련과 고성능 컴퓨팅 기반 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 과학 문헌 합성을 위한 검색 증강 방법이 HiPerRAG의 대규모 처리 능력과 결합될 수 있습니다.
-- 🔗 후속 연구: [[papers/393_Graphusion_a_rag_framework_for_knowledge_graph_construction/review]] — 고성능 RAG 시스템의 과학 문헌 처리 기법이 지식그래프 기반 검색 증강에 확장 적용될 수 있습니다.
-- 🔗 후속 연구: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — REALM의 검색 증강 개념을 고성능으로 최적화한 HiPerRAG로 발전
+- 🏛 기반 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 검색 증강 생성의 일반적 이론과 방법론은 과학 문헌 특화 HiPerRAG 시스템 설계의 핵심 기반이다.
+- 🔄 다른 접근: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 과학 문헌 검색과 합성을 위한 서로 다른 접근법을 제시하여, 대규모 과학 지식 처리 시스템 설계 관점을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/393_Graphusion_a_rag_framework_for_knowledge_graph_construction/review]] — 과학 문헌에서 구축된 지식그래프는 고성능 검색 증강 생성 시스템의 지식 기반으로 활용될 수 있다.
+- 🔗 후속 연구: [[papers/034_A_Survey_on_RAG_Meeting_LLMs_Towards_Retrieval-Augmented_Lar/review]] — 기본 RAG를 고성능 RAG 시스템으로 발전시킨 성능 최적화 방법론을 제시한다
+- 🔗 후속 연구: [[papers/393_Graphusion_a_rag_framework_for_knowledge_graph_construction/review]] — 대규모 과학 문헌에서 지식그래프를 구축하는 Graphusion과 이를 검색에 활용하는 HiPerRAG는 상호 보완적인 지식 처리 파이프라인을 형성한다.
+- 🔄 다른 접근: [[papers/348_FRAG_A_Flexible_Modular_Framework_for_Retrieval-Augmented_Ge/review]] — 고성능 RAG와 모듈식 FRAG가 서로 다른 접근으로 검색 품질 향상을 추구한다
+- 🧪 응용 사례: [[papers/768_Splade_v2_Sparse_lexical_and_expansion_model_for_information/review]] — 고성능 검색 증강 생성 시스템으로, SPLADE의 희소 검색 기술을 실제 RAG 시스템에 적용한 발전된 사례입니다.

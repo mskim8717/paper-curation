@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.1
 essence: "본 논문은 대규모 언어모델(LLM) 기반 자율 AI 에이전트가 신약 발견(drug discovery) 파이프라인을 독립적으로 설계하고 구현할 수 있는지 평가하기 위한 **DO Challenge 벤치마크**를 제시하고, 이에 기반한 멀티-에이전트 시스템 **Deep Thought**의 성능을 분석한 연구이다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Drug_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/CRISPR_and_Drug_Discovery_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Smbatyan et al._2025_Can ai agents design and implement drug discovery pipelines arXiv preprint arXiv2504.19912, 2025..pdf"
 ---
@@ -108,10 +109,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Smbatyan et al._2025_Can ai agents desig
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/490_LIDDIA_Language-based_Intelligent_Drug_Discovery_Agent/review]] — 둘 다 AI 기반 신약 발견을 다루지만 Deep Thought는 파이프라인 설계에, LIDDIA는 전체 전임상 과정에 집중함
-- 🏛 기반 연구: [[papers/594_OSDA_Agent_Leveraging_Large_Language_Models_for_De_Novo_Desi/review]] — DS-Agent의 데이터 과학 자동화 방법론이 Deep Thought의 신약 발견 파이프라인 구현 능력의 기반이 됨
-- 🔗 후속 연구: [[papers/326_Exp-bench_Can_ai_conduct_ai_research_experiments_arXiv_prepr/review]] — Exp-bench의 AI 연구 실험 수행 평가가 Deep Thought의 신약 발견 연구 자동화 성능을 검증하는 도구로 활용됨
-- 🔄 다른 접근: [[papers/415_Hunt_Globally_Wide_Search_AI_Agents_for_Drug_Asset_Scouting/review]] — 약물 자산 탐색에서 다국어 멀티에이전트와 AI 에이전트 기반 파이프라인 설계 접근법을 비교할 수 있습니다.
-- 🔄 다른 접근: [[papers/490_LIDDIA_Language-based_Intelligent_Drug_Discovery_Agent/review]] — 같은 신약개발 자동화를 다루지만 LIDDIA는 전임상 과정 전반을, Deep Thought는 파이프라인 설계에 집중한 차이점을 보임
-- 🏛 기반 연구: [[papers/514_MAC-AMP_A_Closed-Loop_Multi-Agent_Collaboration_System_for_M/review]] — AI 에이전트의 약물 발견 파이프라인 설계 능력이 MAC-AMP의 폐루프 항균펩타이드 개발 시스템 구축의 기본적인 기술적 토대이다.
-- 🧪 응용 사례: [[papers/616_PharmAgents_Building_a_Virtual_Pharma_with_Large_Language_Mo/review]] — AI 에이전트가 약물 발견 파이프라인을 설계하고 구현할 수 있는지에 대한 구체적 검증을 제공한다.
+- 🔄 다른 접근: [[papers/490_LIDDIA_Language-based_Intelligent_Drug_Discovery_Agent/review]] — DO Challenge의 파이프라인 설계 평가와 LIDDIA의 언어 기반 접근법은 신약 발견 AI 에이전트의 서로 다른 평가 관점을 제시한다
+- 🏛 기반 연구: [[papers/290_DrugAgent_Automating_AI-aided_Drug_Discovery_Programming_thr/review]] — DrugAgent의 AI 기반 신약 발견 프로그래밍 자동화가 신약 발견 파이프라인 설계를 위한 기술적 기반을 제공한다
+- 🔗 후속 연구: [[papers/616_PharmAgents_Building_a_Virtual_Pharma_with_Large_Language_Mo/review]] — PharmAgents의 가상 제약회사 구축이 신약 발견 파이프라인 설계의 확장된 응용 시나리오를 제시한다
+- 🧪 응용 사례: [[papers/311_Empowering_Biomedical_Discovery_with_AI_Agents/review]] — 약물 발견 파이프라인에 AI 에이전트를 구체적으로 적용하는 사례를 보여준다.
+- 🔄 다른 접근: [[papers/490_LIDDIA_Language-based_Intelligent_Drug_Discovery_Agent/review]] — LIDDIA의 언어 기반 신약 발견과 DO Challenge의 AI 에이전트 파이프라인 설계는 각각 다른 접근으로 신약 개발 자동화를 추구한다

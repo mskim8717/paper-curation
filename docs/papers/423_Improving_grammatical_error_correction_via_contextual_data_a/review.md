@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 문법 오류 수정(Grammatical Error Correction, GEC) 작업에서 합성 데이터의 불일치한 오류 분포와 노이즈 레이블 문제를 해결하기 위해 **문맥 기반 데이터 증강(contextual data augmentation)** 방법을 제안한다. 규칙 기반 치환과 모델 기반 생성을 결합하여 오류 패턴에 대한 풍부한 문맥을 생성하고, 재레이블링을 통해 합성 데이터의 노이즈를 완화한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Self-Refining_Text_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Cross-Modal_Data_Augmentation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Improving grammatical error correction via contextual data augmentation.pdf"
 ---
@@ -117,10 +118,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Improving grammatical e
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자기 피드백을 통한 반복 개선이 문맥 기반 데이터 증강의 자기 개선 메커니즘에 기초를 제공합니다.
-- 🔄 다른 접근: [[papers/405_Hit-scir_at_mmnlu22_Consistency_regularization_for_multiling/review]] — 문법 오류 수정과 다국어 음성언어이해에서 각각 문맥 기반과 일관성 기반의 서로 다른 데이터 증강 방법을 사용합니다.
-- 🔗 후속 연구: [[papers/227_Closing_the_loop_Learning_to_generate_writing_feedback_via_l/review]] — 작문 피드백 생성을 문법 오류 수정의 문맥 기반 증강으로 확장하여 더 정교한 오류 패턴 학습을 제공합니다.
-- 🏛 기반 연구: [[papers/571_Neural_automated_writing_evaluation_with_corrective_feedback/review]] — 문법 오류 수정을 위한 맥락적 데이터 증강 연구는 자동 쓰기 평가와 문법 오류 수정 통합 시스템의 기술적 기반이다.
-- 🏛 기반 연구: [[papers/512_Lm-combiner_A_contextual_rewriting_model_for_chinese_grammat/review]] — 문법 오류 수정의 맥락 데이터 증강 기법을 제공하여 LM-Combiner의 재작성 모델 성능 개선에 활용할 수 있다.
-- 🏛 기반 연구: [[papers/246_Csed_A_chinese_semantic_error_diagnosis_corpus/review]] — 맥락적 데이터 증강을 통한 문법 오류 수정 개선으로 본 논문의 의미 오류 진단 방법론의 기반을 제공한다.
-- 🔗 후속 연구: [[papers/405_Hit-scir_at_mmnlu22_Consistency_regularization_for_multiling/review]] — 문법 오류 수정의 문맥 기반 데이터 증강 방법을 다국어 음성언어이해에 적용하여 성능을 향상시킬 수 있습니다.
+- 🔄 다른 접근: [[papers/512_Lm-combiner_A_contextual_rewriting_model_for_chinese_grammat/review]] — 중국어 문법 오류 수정과 영어 문법 오류 수정은 모두 언어별 문법 교정을 다루지만 서로 다른 언어적 특성을 고려한다.
+- 🔗 후속 연구: [[papers/421_Improving_demonstration_diversity_by_human-free_fusing_for_t/review]] — 문맥 기반 데이터 증강의 핵심 개념이 Text-to-SQL 시연 다양성 향상으로 응용되어 더 넓은 자연어 처리 영역으로 확장되었다.
+- 🏛 기반 연구: [[papers/246_Csed_A_chinese_semantic_error_diagnosis_corpus/review]] — 중국어 의미 오류 진단 말뭉치가 다국어 환경에서의 문법 오류 패턴 분석과 교정에 기초 데이터를 제공한다.
+- 🧪 응용 사례: [[papers/405_Hit-scir_at_mmnlu22_Consistency_regularization_for_multiling/review]] — 다국어 음성언어이해의 일관성 정규화 기법이 문법 오류 수정의 문맥 기반 증강에 실제 적용될 수 있다.
+- 🔄 다른 접근: [[papers/512_Lm-combiner_A_contextual_rewriting_model_for_chinese_grammat/review]] — 중국어와 영어 문법 오류 수정은 모두 언어별 특성을 고려한 문법 교정 시스템이지만 서로 다른 언어적 도전을 다룬다.
+- 🔗 후속 연구: [[papers/405_Hit-scir_at_mmnlu22_Consistency_regularization_for_multiling/review]] — 문법 오류 수정의 문맥 기반 데이터 증강 방법론을 다국어 음성언어이해의 일관성 정규화로 확장한 접근법이다.
+- 🏛 기반 연구: [[papers/421_Improving_demonstration_diversity_by_human-free_fusing_for_t/review]] — 문법 오류 수정의 문맥 기반 데이터 증강 방법론이 Text-to-SQL 시연 다양성 향상의 이론적 기반을 제공한다.

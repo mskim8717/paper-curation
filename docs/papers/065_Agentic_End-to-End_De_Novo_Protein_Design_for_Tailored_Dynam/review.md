@@ -6,11 +6,11 @@ authors:
 date: "2025"
 doi: "10.48550/arXiv.2502.10173"
 arxiv: ""
-score: 4.2
-essence: "단백질의 동역학적 특성을 직접 제어할 수 있는 생성형 AI 프레임워크 VibeGen을 제시하며, 이는 정규 모드(normal mode) 진동을 기반으로 새로운 단백질 서열을 설계할 수 있다."
+score: 4.0
+essence: "VibeGen은 language diffusion model을 사용하여 지정된 normal mode 진동을 기반으로 단백질을 de novo로 설계하는 agentic 이중 모델 프레임워크로, protein designer와 protein predictor가 협력하여 정확하고 다양한 설계를 실현한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Protein_Structure_Prediction"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Multi-Domain_Experimental_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ni and Buehler_2025_Agentic End-to-End De Novo Protein Design for Tailored Dynamics Using a Language Diffusion Model.pdf"
 ---
@@ -23,84 +23,69 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ni and Buehler_2025_Agentic End-to-End D
 
 ## Essence
 
-단백질의 동역학적 특성을 직접 제어할 수 있는 생성형 AI 프레임워크 VibeGen을 제시하며, 이는 정규 모드(normal mode) 진동을 기반으로 새로운 단백질 서열을 설계할 수 있다.
+![Figure 1](figures/fig1.webp)
+
+*Fig. 1. Workflow of developing the end-to-end protein generation model based on dynamics signature, featuring an*
+
+VibeGen은 language diffusion model을 사용하여 지정된 normal mode 진동을 기반으로 단백질을 de novo로 설계하는 agentic 이중 모델 프레임워크로, protein designer와 protein predictor가 협력하여 정확하고 다양한 설계를 실현한다.
 
 ## Motivation
 
-- **Known**: 단백질은 정적 구조가 아닌 동적 분자 기계(molecular machine)이며, 촉매작용, 신호전달, 구조 적응 등의 생물학적 기능이 분자의 운동과 밀접하게 연결되어 있다. AlphaFold2와 RoseTTAFold 등의 도구는 3D 구조 예측에 성공했으나 정적 형태에만 집중한다.
-
-- **Gap**: 원하는 동역학적 특성을 가진 단백질을 설계하는 것은 여전히 어려운 과제이다. 현존의 단백질 설계 방법들은 주로 구조의 기하학적 특성에 중점을 두며, 동역학을 직접 제어할 수 있는 메커니즘이 부족하다.
-
-- **Why**: 저주파 진동(low-frequency vibrations)은 촉매 반응의 에너지 장벽을 낮추고, 대규모 구조 변화를 촉진하며, 리간드 결합을 용이하게 한다. 질병(암 p53 돌연변이, 낭성섬유증 등)은 종종 이러한 동역학의 장애로 발생한다.
-
-- **Approach**: 이중 모델 에이전트 아키텍처(dual-model agentic architecture)를 개발하여, 단백질 디자이너(PD)는 진동 모드에 기반해 서열을 생성하고, 단백질 예측기(PP)는 설계된 서열의 동역학적 정확성을 평가한다.
+- **Known**: AlphaFold2와 RoseTTAFold 같은 deep learning 기반 folding 도구들이 3D 구조 예측에 성공했으며, diffusion model 기반의 RFdiffusion 등이 de novo 단백질 설계를 수행하고 있다. 단백질의 dynamics가 효소 활성, allosteric 메커니즘 등 생물학적 기능에 필수적임이 알려져 있다.
+- **Gap**: 기존 단백질 설계 방법들은 주로 정적 구조에 초점을 맞추고 dynamics를 직접 조건으로 하지 않으며, 현재까지 dynamics 정보를 체계적으로 활용한 효율적인 end-to-end 설계 방법이 부족하다.
+- **Why**: 단백질의 동적 성질은 촉매 반응, 신호 전달, 기계적 반응 등 핵심 기능을 결정하므로, dynamics 기반 설계는 유연한 효소, 동적 scaffold, 바이오재료 등 새로운 단백질 엔지니어링 경로를 열 수 있다.
+- **Approach**: Normal mode analysis (NMA)를 통해 PDB 단백질들의 low-frequency vibrational mode를 추출하고, protein language diffusion model 기반의 dual-agent 아키텍처(protein designer와 protein predictor)를 학습하여 normal mode 형태를 조건으로 하는 sequence 생성과 성능 예측을 동시에 수행한다.
 
 ## Achievement
 
-![Figure 1](figures/fig1.webp)
-*워크플로우: (A) PDB 단백질로부터 NMA 및 MD를 통한 동역학 시그니처 수집, (B) 단백질 디자이너와 예측기의 협력 작동, (C) 설계된 단백질의 검증 및 분석*
+![Figure 4](figures/fig4.webp)
 
-1. **동역학 기반 역설계 성공**: 지정된 정규 모드 진폭을 정확하게 재현하는 단백질 서열을 설계했으며, 전원자(full-atom) 분자 동역학 시뮬레이션으로 검증됨.
+*Fig. 4 shows some examples of the designed proteins and their normal mode shapes measured using our protocol.*
 
-2. **De novo 단백질 생성**: 설계된 서열은 자연 단백질과 유사성이 거의 없는 완전히 새로운 것으로, 진화적 제약을 벗어난 단백질 공간을 확장함.
-
-3. **다양성과 정확성의 균형**: 이중 에이전트 협력 프레임워크가 단일 모델보다 우수한 성능을 보이며, 설계 다양성, 정확성, 신규성의 시너지 달성.
+- **Sequence-dynamics 양방향 연결**: Sequence에서 normal mode를 예측하고, 반대로 normal mode 형태로부터 sequence를 생성하는 bidirectional 관계를 학습하여 직접 검증했다.
+- **De novo 단백질 설계**: 생성된 모든 sequence가 de novo이며 천연 단백질과 유의미한 유사성을 보이지 않아 진화 제약을 벗어난 단백질 공간을 확장했다.
+- **설계 정확도 검증**: 생성된 단백질들이 full-atom MD 시뮬레이션을 통해 지정된 normal mode 진폭을 정확하게 재현하면서도 안정적이고 기능 관련 구조를 채택함을 확인했다.
+- **다양성과 정확도의 균형**: Dual-agent 협력 구조가 단일 모델 대비 diversity, accuracy, novelty의 synergy를 달성했다.
 
 ## How
 
-![Figure 2](figures/fig2.webp)
-*정규 모드 분석: (A) 최저 비자명 정규 모드의 변위장, (B) 백본을 따라 Cα 원자의 변위 성분 분포*
+![Figure 1](figures/fig1.webp)
 
-![Figure 3](figures/fig3.webp)
-*단백질 생성 모델 구조: 단백질 디자이너(PD)와 단백질 예측기(PP)의 이중 모델 아키텍처*
+*Fig. 1. Workflow of developing the end-to-end protein generation model based on dynamics signature, featuring an*
 
-- **데이터셋 구성**: 대규모 PDB 단백질에 대해 CHARMM 포스필드를 이용한 전원자 MD 이완 후 Hessian 행렬의 고유값 문제를 풀어 NMA 수행. 첫 6개의 자명한 강체 운동 모드를 제외하고 7번째 모드부터 시작하는 저주파 비자명 모드(non-trivial modes) 분석.
-
-- **정규 모드 표현**: 백본의 이질적 변위장 분포를 Cα 원자의 변위 성분으로 샘플링하여 단백질 동역학의 핵심 시그니처로 활용.
-
-- **언어 확산 모델(pLDM)**: 단백질 디자이너와 예측기 모두 단백질 언어 확산 모델 기반으로 구성하여 서열-동역학 양방향 관계 학습.
-
-- **에이전트 협력**: 배포 시점에 PD와 PP가 협력적으로 작동하며, PD는 주어진 정규 모드 형태에 기반해 서열 생성, PP는 실시간으로 성능 예측.
+- PDB 단백질 데이터베이스에서 normal mode analysis 및 full-atom MD를 통해 low-frequency vibrational mode 특성(mode shape, 진폭 분포)을 수집하여 dataset 구성
+- Protein language diffusion model (pLDM) 기반으로 두 개의 에이전트 학습: (1) Protein Designer (PD) - normal mode shape가 주어졌을 때 sequence 생성, (2) Protein Predictor (PP) - sequence로부터 normal mode shape 예측
+- 배포 시 PD와 PP의 iterative 협력: PD가 생성한 sequence에 대해 PP가 실시간으로 normal mode 성능을 예측하고 feedback을 제공하여 설계 정확도 향상
+- 설계된 sequence에 대해 3D 구조 fold 및 relaxation, NMA를 통한 normal mode 추출, 설계 목표 달성도 평가
+- De novo 여부 판정, 구조적 특성 분석, novelty 평가를 통한 다각적 검증
 
 ## Originality
 
-- **처음으로 동역학 조건부 생성 설계**: 기존 단백질 설계 방법들이 정적 구조에만 집중하는 반면, 이 연구는 저주파 정규 모드를 직접 설계 조건으로 사용하는 최초의 체계적 시도.
-
-- **이중 에이전트 협력 메커니즘**: 생성기와 검증기의 상호작용으로 다양성과 정확성을 동시에 확보하는 혁신적 접근법.
-
-- **전원자 MD 기반 검증**: NMA와 MD 시뮬레이션을 통한 직접적이고 엄밀한 동역학적 정확성 검증으로 신뢰성 확보.
-
-- **서열-구조-동역학-기능의 통합 링크**: 기존에는 분리되어 연구되던 이 네 요소들 간의 직접적인 양방향 연결 고리를 최초로 확립.
+- 단백질 설계에 normal mode 진동을 직접 design objective로 도입한 최초의 end-to-end 접근법
+- Language diffusion model을 활용한 sequence-dynamics 양방향 매핑의 구현
+- Agentic dual-model 아키텍처를 통해 diversity, accuracy, novelty를 동시에 최적화하는 collaborative 프레임워크 제안
+- De novo 단계에서의 dynamics 조건부 설계로 기존 진화 제약을 초월한 단백질 공간 탐색
 
 ## Limitation & Further Study
 
-- **단일 모드 제한**: 현재는 가장 낮은 주파수의 첫 번째 비자명 모드만 대상으로 하며, 여러 모드의 동시 제어에 대한 확장성 미검증.
-
-- **동역학적 기능성 검증 부족**: 설계된 단백질이 실제로 촉매 기능, 리간드 결합, 신호전달 등의 생물학적 기능을 수행하는지에 대한 실험적 검증 미실시.
-
-- **계산 복잡도 분석 미흡**: 다양한 크기의 단백질에 대한 계산 비용, 확장성, 수렴 속도에 관한 상세 분석 부재.
-
-- **후속 연구**: (1) 다중 정규 모드 동시 제어 framework 개발, (2) 실험실 검증 및 생물학적 기능성 평가, (3) 다중 모달 설계 목표(예: 구조 + 동역학 + 결합 특이성) 통합, (4) LLM 기반 멀티에이전트 시스템과의 통합 확대.
+- **계산 비용**: Full-atom MD 검증이 필요하여 대규모 고속 스크리닝에는 제한이 있음. 향후 더 빠른 dynamics 예측 모델 개발 필요.
+- **생물학적 기능 검증 부재**: 설계된 단백질의 실제 효소 활성, 결합능, 신호 전달 등 생물학적 기능을 실험적으로 검증하지 않음. 생체 외 실험 검증 필요.
+- **Normal mode 단독 초점**: 저주파 진동만을 고려하여 고주파 dynamics나 다중 시간 스케일 동작(millisecond domain rearrangements)은 미처리 상태.
+- **다중 모드 설계 제한**: 단일 normal mode 조건부 설계만 시연하였고, 복합 dynamics 특성(여러 mode의 조합, 특정 동역학 경로)을 동시에 지정하는 능력 미구현.
+- **일반화성**: 특정 protein family나 구조 type에 대한 일반화 성능 평가 부재. 향후 diverse한 단백질 클래스에 대한 성능 검토 필요.
 
 ## Evaluation
 
-- **Novelty**: 4.5/5 — 동역학 조건부 생성 설계와 이중 에이전트 협력 메커니즘이 새로우며, de novo 단백질 생성도 의미 있음. 다만 기술적 기초는 기존 diffusion model 활용.
+- Novelty: 4/5
+- Technical Soundness: 3/5
+- Significance: 4/5
+- Clarity: 4/5
+- Overall: 4/5
 
-- **Technical Soundness**: 4/5 — NMA와 MD 기반 검증이 엄밀하고, 이중 모델 설계가 논리적. 다만 단일 모드 제한, 통계적 신뢰도 분석 부재, 계산 복잡도 미분석이 약점.
-
-- **Significance**: 4.5/5 — 단백질 공학의 중요한 미해결 문제(동역학 기반 설계)에 첫 해결책 제시. 유연한 효소, 동적 스캐폴드, 바이오재료 설계에 광범위한 적용 가능성.
-
-- **Clarity**: 4/5 — 전체 워크플로우와 동기가 명확하나, 모델 아키텍처 세부사항(학습 손실함수, 하이퍼파라미터, 학습 곡선 등)이 제시된 텍스트에서 충분하지 않음.
-
-- **Overall**: 4.2/5
-
-**총평**: 이 연구는 단백질 설계에 동역학적 고려를 체계적으로 통합한 혁신적 시도로, 이중 에이전트 협력 프레임워크를 통해 de novo 단백질을 생성하는 데 성공했다. 전원자 MD 기반 검증으로 신뢰성을 확보했으나, 실험적 검증, 다중 모드 확장, 생물학적 기능성 입증이 후속 과제이다.
+**총평**: 본 논문은 단백질 설계에 dynamics 정보를 직접 통합한 혁신적인 end-to-end 프레임워크를 제시하며, language diffusion model과 agentic 협력 구조를 통해 de novo 단백질 생성에서 sequence-dynamics 관계의 양방향 매핑을 성공적으로 구현했다. 설계된 단백질들이 MD 검증을 통해 목표 dynamics를 정확히 재현하면서도 진화 제약을 벗어난 완전 신규 sequence임을 입증한 점에서 단백질 엔지니어링에 상당한 기여를 하나, 생물학적 기능 실험 검증과 복합 dynamics 설계까지 확장하는 것이 향후 과제이다.
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/646_QH9_A_Quantum_Hamiltonian_Prediction_Benchmark_for_QM9_Molec/review]] — QH9의 정밀한 양자 해밀턴 데이터는 단백질 동역학 모델링의 물리적 기초를 제공합니다.
-- 🔄 다른 접근: [[papers/638_ProtAgents_protein_discovery_via_large_language_model_multi-/review]] — 동일한 단백질 발견 문제를 다중 에이전트 접근법으로 해결하여 상호 보완적인 방법론을 제시합니다.
-- 🔗 후속 연구: [[papers/403_Highly_accurate_protein_structure_prediction_with_AlphaFold/review]] — AlphaFold의 구조 예측을 넘어 동역학적 특성까지 제어 가능한 단백질 설계로 확장합니다.
-- 🔄 다른 접근: [[papers/256_De_novo_design_of_protein_structure_and_function_with_RFdiff/review]] — 목표 동역학을 위한 단백질 설계에서 진동 조건 기반과 에이전트 기반이라는 다른 접근 방식을 사용한다
-- 🏛 기반 연구: [[papers/646_QH9_A_Quantum_Hamiltonian_Prediction_Benchmark_for_QM9_Molec/review]] — 정밀한 양자 해밀턴 데이터가 단백질 동역학 제어 시스템의 물리적 정확성을 보장하는 기초 데이터를 제공합니다.
-- 🔄 다른 접근: [[papers/638_ProtAgents_protein_discovery_via_large_language_model_multi-/review]] — 단백질 설계에서 다중 에이전트 vs 엔드투엔드 단일 시스템의 다른 접근법을 비교할 수 있다
+- 🔄 다른 접근: [[papers/403_Highly_accurate_protein_structure_prediction_with_AlphaFold/review]] — 단백질 구조 예측에서 구조 기반 설계로 패러다임을 전환한 다른 접근법을 보여준다
+- 🔗 후속 연구: [[papers/112_Atomically_accurate_de_novo_design_of_antibodies_with_RFdiff/review]] — 기존 단백질 설계 방법을 동역학 기반의 더 정교한 설계 프레임워크로 발전시켰다
+- 🏛 기반 연구: [[papers/686_Robust_deep_learning_based_protein_sequence_design_using_Pro/review]] — 단백질 서열 설계의 기본적인 딥러닝 접근법에 대한 기초적 이해를 제공한다

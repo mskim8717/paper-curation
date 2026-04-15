@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "기초 모델(FM)이 생물정보학에 도입되면서 AI는 대규모 미표지 데이터 처리, 사전학습(pre-training) 프레임워크, 모델 평가 및 해석 가능성 등 역사적 과제들을 해결하고 있다. 본 논문은 언어 FM, 시각 FM, 그래프 FM, 다중모달 FM의 4가지 유형으로 분류된 기초 모델들이 게놈학, 전사체학, 단백질학, 약물 발견, 단일 세포 분석 등 다양한 생물정보학 응용에서 달성한 최근 성과를 종합적으로 검토한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Biological_Foundation_Models"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Peer_Review_Assessment"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Guo et al._2025_Foundation models in bioinformatics.pdf"
 ---
@@ -111,7 +111,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Guo et al._2025_Foundation models in bio
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/161_BioBERT_a_pre-trained_biomedical_language_representation_mod/review]] — BioBERT의 생의학 언어 표현 사전훈련이 생물정보학 기초 모델 발전의 중요한 선행 연구입니다.
-- 🔗 후속 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 단일 세포 분석을 위한 대형 언어 모델 확장이 생물정보학 기초 모델의 구체적 응용 사례입니다.
-- 🧪 응용 사례: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — LLM 에이전트 기반 단일 세포 주석화가 생물정보학 기초 모델의 실제 적용 사례를 보여줍니다.
-- 🏛 기반 연구: [[papers/774_STELLA_Towards_a_Biomedical_World_Model_with_Self-Evolving_M/review]] — 바이오인포매틱스의 기초 모델 연구는 STELLA의 자기진화형 바이오의학 월드 모델 개발에 이론적 토대를 제공한다.
+- 🏛 기반 연구: [[papers/161_BioBERT_a_pre-trained_biomedical_language_representation_mod/review]] — BioBERT는 생물정보학 분야 언어 모델의 선구적 연구로, 기초 모델의 생물정보학 적용 발전사를 이해하는 데 필수적이다.
+- 🔄 다른 접근: [[papers/465_Large_Language_Model_in_Materials_Science_Roles_Challenges_a/review]] — 생물정보학과 재료과학에서 각각 기초 모델의 역할을 체계적으로 분석하여, 과학 분야별 LLM 적용 전략을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료과학을 위한 AI 설문조사와 생물정보학 기초 모델 연구는 상호 보완적인 과학 분야별 AI 적용 현황을 제공한다.
+- 🔄 다른 접근: [[papers/465_Large_Language_Model_in_Materials_Science_Roles_Challenges_a/review]] — 재료과학과 생물정보학에서 각각 대규모 언어모델의 역할을 분석하여, 과학 분야별 LLM 적용 전략을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/734_ScispaCy_Fast_and_Robust_Models_for_Biomedical_Natural_Langu/review]] — 생명정보학에서 파운데이션 모델의 기초적인 이론과 방법론을 실용적인 NLP 도구로 구현한다.

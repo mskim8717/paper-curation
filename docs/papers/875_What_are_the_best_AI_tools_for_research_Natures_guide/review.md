@@ -8,8 +8,9 @@ arxiv: ""
 score: 4.0
 essence: "연구자들을 위한 다양한 대규모 언어모델(LLM)의 특성과 활용 방안을 소개하는 가이드로, 각 모델의 강점과 한계를 실제 사용 사례와 함께 제시한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/AI_Science_Communication"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gibney_2025_What are the best AI tools for research Nature’s guide.pdf"
 ---
@@ -86,8 +87,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gibney_2025_What are the best AI tools f
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/796_The_AI_writing_on_the_wall/review]] — 생성형 AI의 과학 저술 영향에 대한 기본 이해를 바탕으로 연구자들이 실제로 활용할 수 있는 구체적인 AI 도구 가이드를 제공한다.
-- 🔄 다른 접근: [[papers/074_AI_for_research_the_ultimate_guide_to_choosing_the_right_too/review]] — 연구용 AI 도구 선택 가이드와 연구용 AI 도구 선택 가이드는 서로 다른 관점에서 연구자들의 AI 도구 활용을 지원한다.
-- 🏛 기반 연구: [[papers/508_LLMs_as_Research_Tools_A_Large_Scale_Survey_of_Researchers_U/review]] — 연구자들의 LLM 활용에 대한 대규모 설문 조사가 AI 도구 가이드 작성에 필요한 실제 사용 패턴과 요구사항을 파악하는 기초 데이터를 제공한다.
-- 🔄 다른 접근: [[papers/074_AI_for_research_the_ultimate_guide_to_choosing_the_right_too/review]] — Nature의 연구용 AI 도구 가이드가 궁극적 도구 선택 가이드의 다른 관점과 접근법을 제시한다.
-- 🏛 기반 연구: [[papers/796_The_AI_writing_on_the_wall/review]] — 생성형 AI의 과학 저술 영향 분석이 연구자들의 AI 도구 선택과 활용 방안에 대한 기본적인 이해와 가이드라인을 제공한다.
+- 🔗 후속 연구: [[papers/074_AI_for_research_the_ultimate_guide_to_choosing_the_right_too/review]] — 연구를 위한 AI 도구 선택 가이드를 더욱 포괄적으로 확장하여 실용적 조언을 제공한다
+- 🧪 응용 사례: [[papers/467_Large_Language_Models/review]] — 수학/물리학자를 위한 LLM 강의노트의 실용적 적용 가이드로서 구체적 활용법을 제시한다
+- 🏛 기반 연구: [[papers/088_AI4Research_A_Survey_of_Artificial_Intelligence_for_Scientif/review]] — 과학 연구를 위한 AI의 포괄적 조사로서 도구 가이드의 이론적 기반을 제공한다
+- 🔄 다른 접근: [[papers/074_AI_for_research_the_ultimate_guide_to_choosing_the_right_too/review]] — Nature 가이드와 함께 연구용 AI 도구 선택을 위한 상호 보완적인 실용 지침서이다

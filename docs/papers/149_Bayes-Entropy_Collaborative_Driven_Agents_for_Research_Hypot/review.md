@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 베이지안 추론(Bayesian reasoning)과 정보엔트로피(information entropy) 기반 탐색을 결합하여 과학적 가설의 자동 생성 및 반복적 최적화를 수행하는 다중에이전트 프레임워크 HypoAgents를 제안한다. 기존의 대규모언어모델(LLM) 기반 방법들이 불확실성을 체계적으로 모델링하지 못했던 문제를 해결하기 위해, 폐쇄루프 피드백 메커니즘을 통해 가설 집합을 반복적으로 개선한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Hypothesis_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Autonomous_Biological_Discovery_AI"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Duan et al._2025_Bayes-Entropy Collaborative Driven Agents for Research Hypotheses Generation and Optimization.pdf"
 ---
@@ -101,10 +102,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Duan et al._2025_Bayes-Entropy Collabora
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/417_HypoBench_Towards_Systematic_and_Principled_Benchmarking_for/review]] — HypoAgents의 베이지안 기반 가설 생성은 HypoBench의 체계적 가설 벤치마킹 연구에서 제시된 평가 기준을 실제 연구 가설 최적화 시스템에 적용합니다.
-- 🔗 후속 연구: [[papers/666_Research_hypothesis_generation_over_scientific_knowledge_gra/review]] — HypoAgents는 지식그래프 기반 연구 가설 생성을 베이지안 추론과 정보엔트로피를 결합하여 확장함으로써 더 체계적이고 불확실성을 고려한 가설 생성을 실현합니다.
-- 🔄 다른 접근: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 과학 가설 생성을 위한 서로 다른 협업 접근법을 제시합니다.
-- 🔄 다른 접근: [[papers/468_Large_Language_Models_are_Zero_Shot_Hypothesis_Proposers/review]] — 베이즈-엔트로피 협력 기반 가설 생성이 제로샷 방식과는 다른 체계적 접근법을 보여준다.
-- 🔗 후속 연구: [[papers/031_A_Survey_on_Hypothesis_Generation_for_Scientific_Discovery_i/review]] — 베이즈-엔트로피 협력 기반 에이전트를 통해 연구 가설 생성을 확장한다.
-- 🔄 다른 접근: [[papers/392_Grapheval_A_lightweight_graph-based_llm_framework_for_idea_e/review]] — 연구 가설 생성에서 그래프 기반 vs 베이즈-엔트로피 협업의 다른 접근법을 비교할 수 있다
-- 🔗 후속 연구: [[papers/569_Nanostructured_Material_Design_via_a_Retrieval-Augmented_Gen/review]] — Bayes-Entropy 협력 에이전트의 연구 가설 생성 방법이 ACCELMAT의 다중 에이전트 구조를 더욱 정교화할 수 있음
+- 🏛 기반 연구: [[papers/277_Discoverybench_Towards_data-driven_discovery_with_large_lang/review]] — 데이터 기반 발견 벤치마크를 베이지안-엔트로피 기반 가설 생성 시스템의 성능 평가 기준으로 활용한다
+- 🔗 후속 연구: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — 베이지안 추론 기반 가설 생성에서 신뢰할 수 있는 생물의학 가설 생성이라는 더 특화된 응용으로 발전한다
+- 🧪 응용 사례: [[papers/132_Automating_psychological_hypothesis_generation_with_AI_when/review]] — 심리학적 가설 생성 자동화에 베이지안-엔트로피 협력 방법론을 적용하여 인문사회과학 연구에서도 활용할 수 있다
+- 🔄 다른 접근: [[papers/558_Moose-chem3_Toward_experiment-guided_hypothesis_ranking_via/review]] — 베이즈-엔트로피 협력 방식으로 가설 순위 지정의 다른 접근법을 제시한다.
+- 🧪 응용 사례: [[papers/031_A_Survey_on_Hypothesis_Generation_for_Scientific_Discovery_i/review]] — 베이지안 엔트로피를 활용한 협력적 가설 생성의 구체적 구현 방법을 보여준다
+- 🧪 응용 사례: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — 베이즈-엔트로피 협업 에이전트가 연구 가설 생성에서 탐색-활용 균형을 실제 구현한 사례를 제공한다.

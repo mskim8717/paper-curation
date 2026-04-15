@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "재료과학과 화학 분야에서 대규모 언어모델(LLM)의 34가지 응용 사례를 분석하여 자동화, 어시스턴트, 에이전트 및 가속화된 과학 발견을 위한 LLM의 역할을 제시한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Domain-specific_Language_Agents"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Multi-Domain_Experimental_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_34 examples of llm applications in materials science and chemistry Towards automation, assistants,.pdf"
 ---
@@ -96,5 +96,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_34 examples of llm appl
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/465_Large_Language_Model_in_Materials_Science_Roles_Challenges_a/review]] — 재료과학에서 대규모 언어모델의 역할과 도전과제에 대한 이론적 토대를 제공한다.
-- 🧪 응용 사례: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — 재료과학 특화 다중모달 LLM의 구체적인 구현 사례를 보여준다.
+- 🔗 후속 연구: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 재료과학에서 지식 안내형 LLM 방법론 연구가 34가지 구체적인 응용 사례 분석으로 발전되어 실제 적용 가능성을 보여준다
+- 🏛 기반 연구: [[papers/465_Large_Language_Model_in_Materials_Science_Roles_Challenges_a/review]] — 재료과학에서 LLM의 역할과 도전에 대한 종합 분석이 34가지 실제 응용 사례 연구의 이론적 배경을 제공한다
+- 🧪 응용 사례: [[papers/522_MatPilot_an_LLM-enabled_AI_Materials_Scientist_under_the_Fra/review]] — MatPilot AI 재료 과학자 연구가 재료과학과 화학 분야 LLM 응용 사례 중 하나의 구체적인 구현 예시다

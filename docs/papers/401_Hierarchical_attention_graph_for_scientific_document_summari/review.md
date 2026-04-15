@@ -11,7 +11,7 @@ arxiv: ""
 score: 4.0
 essence: "과학 논문 같은 장문서의 추출 요약을 위해 그래프 신경망을 활용하여 **문장 내 관계(지역 수준)**와 **문장 간 고차 관계(전역 수준)**를 계층적으로 동시에 모델링하는 HAESum 방법 제시."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
+  - "cat/Scientific_Knowledge_Processing_Systems"
   - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2024_Hierarchical attention graph for scientific document summarization in global and local level.pdf"
@@ -103,8 +103,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2024_Hierarchical attention 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 과학 문서 요약에서 계층적 어텐션 그래프와 지식 그래프 중심 접근법의 성능을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 관련 연구 요약에서 단순 문맥 주의 메커니즘을 계층적 그래프 구조로 발전시킨 진보된 방법입니다.
-- 🧪 응용 사례: [[papers/812_TLDR_Extreme_Summarization_of_Scientific_Documents/review]] — 과학 문서의 극한 요약에 계층적 관계 모델링을 적용하여 더 정확한 요약을 생성할 수 있습니다.
-- 🔄 다른 접근: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 과학 문서 요약에서 지식 그래프 중심 접근법과 계층적 어텐션 그래프 방식의 서로 다른 구조적 모델링을 비교할 수 있습니다.
-- 🏛 기반 연구: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 문맥 기반 주의 메커니즘이 계층적 어텐션 그래프의 지역-전역 관계 모델링에 기초적인 방법론을 제공합니다.
+- 🔄 다른 접근: [[papers/812_TLDR_Extreme_Summarization_of_Scientific_Documents/review]] — 과학 문서의 극한 요약과 계층적 어텐션 그래프 요약은 모두 긴 과학 문서의 핵심 정보 추출을 다른 방식으로 접근한다.
+- 🔗 후속 연구: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 관련 연구 요약의 맥락 기반 신경망 접근법을 그래프 기반 계층적 모델링으로 발전시켜 더 복잡한 문서 구조를 처리한다.
+- 🏛 기반 연구: [[papers/092_Align_then_Fusion_Generalized_Large-scale_Multi-view_Cluster/review]] — 대규모 다중 시점 클러스터링의 정렬-융합 프레임워크는 문서 내 다층 관계 모델링의 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/778_Summarizing_multiple_documents_with_conversational_structure/review]] — 대화 구조를 가진 다중 문서 요약 기법이 과학 문서의 계층적 구조 모델링에 직접 적용될 수 있다.

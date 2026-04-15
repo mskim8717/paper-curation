@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 과학적 작업을 해결하기 위한 언어 에이전트(language agent)를 훈련하기 위한 확장 가능한 체육관 프레임워크인 Aviary를 제시한다. 저자들은 언어 에이전트를 언어-기반 부분 관찰 가능 마르코프 결정 과정(language decision process, LDP)으로 형식화하고, DNA 조작, 과학 문헌 질문 응답, 단백질 안정성 공학 등 3개의 과학 환경을 포함한 5개 환경을 구현했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Realistic_Discovery_Benchmarks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Narayanan et al._2024_Aviary training language agents on challenging scientific tasks.pdf"
 ---
@@ -108,7 +110,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Narayanan et al._2024_Aviary training la
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 언어 에이전트의 머신러닝 능력 평가를 과학적 작업이라는 더 도전적인 환경으로 확장한다.
-- 🔗 후속 연구: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 기본적인 과학적 작업 훈련을 다단계 도구 활용을 포함한 복합적 과학적 추론으로 발전시킨다.
-- 🧪 응용 사례: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — 과학적 작업에서 훈련된 언어 에이전트가 완전 자동화된 과학 연구의 핵심 구성요소로 활용될 수 있음을 보여준다.
-- 🔄 다른 접근: [[papers/717_Scienceboard_Evaluating_multimodal_autonomous_agents_in_real/review]] — 과학 언어 에이전트 훈련을 위해 현실적 워크플로우 평가와 도전적 과학 작업이라는 다른 접근법을 사용한다
+- 🏛 기반 연구: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — SciAgentGym의 과학 도구 사용 벤치마크가 Aviary의 과학적 언어 에이전트 훈련을 위한 평가 기반을 제공한다
+- 🔄 다른 접근: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — MLAgentBench의 기계학습 에이전트 평가와 Aviary의 과학 언어 에이전트 훈련은 서로 다른 관점에서 AI 에이전트의 과학적 능력을 다룬다
+- 🔗 후속 연구: [[papers/760_Small_Language_Models_are_the_Future_of_Agentic_AI/review]] — 소형 언어모델 기반 에이전틱 AI의 미래 전망이 Aviary의 언어 에이전트 훈련 방법론의 발전 방향을 제시한다
+- 🔗 후속 연구: [[papers/517_Malinowski_in_the_age_of_ai_Can_large_language_models_create/review]] — 과학적 작업을 위한 언어 에이전트 훈련 프레임워크로 인류학 게임 창작을 확장한다

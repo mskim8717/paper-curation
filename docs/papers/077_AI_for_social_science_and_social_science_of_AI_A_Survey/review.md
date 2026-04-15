@@ -12,8 +12,8 @@ arxiv: ""
 score: 3.0
 essence: "본 논문은 대규모 언어모델(LLM)의 발전을 기반으로 AI와 사회과학의 결합을 \"**AI for social science**\"(도구로서의 AI)과 \"**social science of AI**\"(연구 대상으로서의 AI)의 두 가지 방향으로 체계적으로 분류하고, 각 방향의 연구 현황, 한계, 미래 방향을 종합적으로 검토하는 서베이 논문이다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/AI_for_Science_Taxonomy"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Research_Taxonomy_Surveys"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xu et al._2024_AI for social science and social science of AI A Survey.pdf"
 ---
@@ -118,6 +118,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xu et al._2024_AI for social science and
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — LLM이 주도하는 사회 시뮬레이션 조사가 AI와 사회과학 결합의 구체적 응용 사례를 보여준다.
-- 🧪 응용 사례: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — LLM 추론에서 갈등 인식 사회심리학 연구가 사회과학을 위한 AI의 실제 활용 방법을 제시한다.
-- 🔗 후속 연구: [[papers/358_From_Labor_to_Collaboration_A_Methodological_Experiment_Usin/review]] — 사회과학을 위한 AI와 AI의 사회과학 연구가 인문사회과학에 특화된 AI 에이전트 협업 방법론으로 구체적으로 확장된 연구이다.
+- 🔗 후속 연구: [[papers/810_Through_the_lens_of_core_competency_Survey_on_evaluation_of/review]] — LLM 평가를 사회과학 영역으로 확장하여 AI와 사회과학의 상호작용을 체계적으로 분석한다
+- 🧪 응용 사례: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — 인간 주체를 AI가 대체할 수 있는지에 대한 복제 연구가 사회과학에서 AI 활용의 구체적 사례이다
+- 🏛 기반 연구: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — LLM 에이전트 협력 메커니즘 연구가 AI와 사회과학 융합의 이론적 기반을 제공한다
+- 🔄 다른 접근: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — 사회적으로 정렬된 언어모델 훈련과 사회과학 연구가 각각 다른 AI-사회 통합 접근법이다

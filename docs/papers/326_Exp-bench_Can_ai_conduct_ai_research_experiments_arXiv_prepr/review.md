@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "AI가 완전한 종료-대-종료(end-to-end) 연구 실험을 수행할 수 있는 능력을 체계적으로 평가하기 위해 EXP-Bench 벤치마크를 제시하며, NeurIPS/ICLR 논문 461개 작업에서 현재 AI 에이전트들이 0.5%의 완전 실험 성공률에 그치고 있음을 보였다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Realistic_Discovery_Benchmarks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/2025_Exp-bench Can ai conduct ai research experiments arXiv preprint arXiv2505.24785, 2025..pdf"
 ---
@@ -139,8 +140,7 @@ AI가 완전한 종료-대-종료(end-to-end) 연구 실험을 수행할 수 있
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/079_Ai_idea_bench_2025_Ai_research_idea_generation_benchmark/review]] — EXP-Bench의 완전한 실험 수행 능력 평가와 AI Idea Bench의 아이디어 생성 능력 평가는 AI 연구 역량을 서로 다른 단계에서 측정하는 보완적 접근이다.
-- 🔗 후속 연구: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — ResearchBench가 EXP-Bench의 실험 수행 평가를 더 광범위한 과학적 발견 과정으로 확장한 종합적 벤치마크이다.
-- ⚖️ 반론/비판: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI Scientist의 완전 자동화된 과학 발견 주장에 대해 EXP-Bench가 현재 AI 에이전트의 실제 실험 성공률 한계를 실증적으로 반박한다.
-- 🔗 후속 연구: [[papers/177_Can_ai_agents_design_and_implement_drug_discovery_pipelines/review]] — Exp-bench의 AI 연구 실험 수행 평가가 Deep Thought의 신약 발견 연구 자동화 성능을 검증하는 도구로 활용됨
-- 🔄 다른 접근: [[papers/079_Ai_idea_bench_2025_Ai_research_idea_generation_benchmark/review]] — AI Idea Bench의 아이디어 생성 평가와 EXP-Bench의 실험 수행 평가는 AI 연구 능력을 서로 다른 단계에서 측정하는 보완적 접근이다.
+- 🔄 다른 접근: [[papers/672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/review]] — ResearchGym이 실제 AI 연구 평가에 초점을 맞춘 반면, EXP-Bench는 완전한 종료-대-종료 실험 수행 능력을 평가하는 상호 보완적 접근을 제시한다
+- 🏛 기반 연구: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — 머신러닝 에이전트의 ML 작업 수행 능력을 평가하는 기초적 벤치마크로, EXP-Bench의 완전한 실험 평가에 필요한 기본적 ML 능력 평가 틀을 제공한다
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 과학 연구 시스템으로, EXP-Bench에서 평가한 실험 수행 능력의 한계를 극복하는 더 발전된 AI 과학자 구현을 보여준다
+- 🔄 다른 접근: [[papers/672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/review]] — EXP-Bench는 AI의 완전한 실험 수행 능력을 평가하는 벤치마크로, ResearchGym의 연구 평가 접근법과 상호 보완적인 평가 기준을 제공한다

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "과학 뉴스 기사의 오보(misinformation)를 탐지하기 위해 대규모 언어모델(LLM)의 능력을 평가하고, 과학적 타당성 차원(Dimensions of Validity, DoV)을 정의하여 prompt engineering을 통해 미명시적 주장(explicit claim) 없이도 오보를 검출할 수 있는 세 가지 아키텍처를 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Automated_News_Verification"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Patent_Novelty_Prediction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Angelis et al._2024_Can large language models detect misinformation in scientific news reporting arXiv preprint arXiv2.pdf"
 ---
@@ -86,6 +88,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Angelis et al._2024_Can large language m
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/859_Unsupervised_pretraining_for_fact_verification_by_language_m/review]] — 과학 뉴스의 오보 탐지를 위한 타당성 차원 정의가 SFAVEL의 클레임-근거 의미론적 정렬 학습의 이론적 기반을 제공함
-- 🔗 후속 연구: [[papers/880_What_makes_medical_claims_un_verifiable_analyzing_entity_and/review]] — 의료 클레임의 검증 가능성 분석이 과학 뉴스 오보 탐지에서 사용된 과학적 타당성 평가 방법론을 의료 영역으로 확장한 연구임
-- 🔄 다른 접근: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — DEFAME의 멀티모달 동적 증거 기반 접근법이 과학 뉴스 오보 탐지의 텍스트 기반 타당성 평가와 상호 보완적인 검증 방법을 제시함
+- 🔗 후속 연구: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 과학 뉴스의 오보 탐지가 다중모달 사실 확인으로 확장되어 더 포괄적인 검증이 가능하다.
+- 🔄 다른 접근: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 과학적 주장의 검증을 명시적 주장과 복잡한 주장에서 각각 다른 방법론으로 접근한다.
+- 🏛 기반 연구: [[papers/685_Robust_claim_verification_through_fact_detection/review]] — 강건한 주장 검증 방법론이 과학 뉴스 오보 탐지의 핵심 기술적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/907_Is_AI_ready_to_mass-produce_lay_summaries_of_research_articl/review]] — 과학 논문의 오정보 탐지 연구를 일반 대중용 요약 생성 품질 평가로 확장한 관련 연구이다
+- 🔄 다른 접근: [[papers/093_All_that_glitters_is_not_novel_Plagiarism_in_ai_generated_re/review]] — AI 생성 콘텐츠의 신뢰성 문제를 연구 문서와 과학 뉴스 차원에서 각각 검증한다.
+- 🔗 후속 연구: [[papers/394_Grounding_fallacies_misrepresenting_scientific_publications/review]] — 과학적 허위정보 탐지에서 논리적 오류 분석과 LLM 기반 탐지 방법이 상호 보완적으로 작용한다.
+- 🔗 후속 연구: [[papers/057_aedfact_Scientific_fact-checking_made_easier_via_semi-automa/review]] — 과학적 잘못된 정보 탐지를 위한 더 정교한 LLM 기반 접근법을 제시한다

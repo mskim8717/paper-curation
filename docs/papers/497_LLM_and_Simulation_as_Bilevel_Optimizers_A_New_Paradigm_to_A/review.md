@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)의 추론 능력과 물리 시뮬레이션의 계산 정확성을 결합한 **이단계 최적화 프레임워크(bilevel optimization)**를 제안하여, 물리 과학 발견(구성법칙 발견, 분자 설계)에서 인간 기대를 초월한 새로운 해를 찾을 수 있음을 보여준다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/AI-Powered_Research_Planning"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Autonomous_Biological_Discovery_AI"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ma et al._2024_LLM and Simulation as Bilevel Optimizers A New Paradigm to Advance Physical Scientific Discovery.pdf"
 ---
@@ -127,6 +128,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ma et al._2024_LLM and Simulation as Bil
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리학 정보 기반 신경망을 통한 과학적 머신러닝은 LLM과 물리 시뮬레이션을 결합한 이단계 최적화의 이론적 기반이다.
-- 🔗 후속 연구: [[papers/697_Scaling_physical_reasoning_with_the_physics_dataset/review]] — 물리적 추론을 위한 물리학 데이터셋 확장은 LLM과 시뮬레이션의 이단계 최적화를 더 광범위한 물리 현상으로 확장한다.
-- 🧪 응용 사례: [[papers/619_Physics_Informed_Deep_Learning_Part_I_Data-driven_Solutions/review]] — 물리학 정보 기반 딥러닝의 데이터 중심 솔루션은 LLM과 시뮬레이션 결합의 구체적인 물리 문제 적용 사례다.
+- 🔗 후속 연구: [[papers/502_Llm-feynman_Leveraging_large_language_models_for_universal_s/review]] — LLM-Feynman의 과학 공식 발견이 이단계 최적화의 물리 법칙 발견을 수학적 표현 생성으로 확장한 형태
+- 🔄 다른 접근: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — 두 연구 모두 LLM과 물리 시뮬레이션을 결합하지만 각각 이단계 최적화와 동역학 방정식 발견이라는 다른 문제에 접근함
+- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 정보 신경망 연구가 LLM과 물리 시뮬레이션 결합 접근법의 과학적 기반을 제공함

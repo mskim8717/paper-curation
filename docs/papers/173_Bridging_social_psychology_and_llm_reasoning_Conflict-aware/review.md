@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.1
 essence: "학술 동료심사 시스템의 메타-리뷰(종합의견) 자동생성을 위해 Kahneman의 이원인지이론(dual-process theory)을 LLM에 적용한 인지정렬프레임워크(CAF)를 제안하며, 기존 LLM 방식의 앵커링 효과(anchoring effect)와 동조편향(conformity bias)을 정량화하고 완화한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Multi-Hop_Reasoning_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hadi et al._2025_Bridging social psychology and llm reasoning Conflict-aware meta-review generation via cognitive al.pdf"
 ---
@@ -93,13 +95,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hadi et al._2025_Bridging social psychol
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/537_Mind_the_blind_spots_A_focus-level_evaluation_framework_for/review]] — 포커스 레벨 평가와 인지정렬프레임워크는 모두 LLM 리뷰 시스템의 편향 문제를 다루는 상호 보완적인 접근법입니다
-- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 다중 턴 장문맥 대화로서의 동료심사는 메타-리뷰의 갈등 인식 프레임워크를 실제 리뷰 프로세스로 확장한 응용입니다
-- 🏛 기반 연구: [[papers/883_When_reviewers_lock_horn_Finding_disagreement_in_scientific/review]] — 과학적 리뷰에서 의견 불일치 발견은 메타-리뷰에서 갈등 인식 및 완화의 이론적 기반이 되는 현상을 분석합니다
-- 🔄 다른 접근: [[papers/537_Mind_the_blind_spots_A_focus-level_evaluation_framework_for/review]] — 인지정렬프레임워크의 앵커링 효과 완화와 포커스 레벨 평가는 모두 LLM 리뷰의 편향 문제를 다루는 상호 보완적 접근법입니다
-- 🔗 후속 연구: [[papers/319_Ethnography_and_machine_learning_Synergies_and_new_direction/review]] — 사회심리학과 LLM 추론의 결합이 민족지학과 머신러닝 융합의 구체적인 확장 사례이다.
-- 🔄 다른 접근: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — 심리학 실험 재현 vs 사회심리학과 LLM 추론 연결의 서로 다른 심리학 접근
-- 🏛 기반 연구: [[papers/458_Language_agents_mirror_human_causal_reasoning_biases/review]] — 사회 심리학과 LLM 추론의 연결이 언어 에이전트 편향 연구의 이론적 기반을 제공한다
-- 🧪 응용 사례: [[papers/077_AI_for_social_science_and_social_science_of_AI_A_Survey/review]] — LLM 추론에서 갈등 인식 사회심리학 연구가 사회과학을 위한 AI의 실제 활용 방법을 제시한다.
-- 🧪 응용 사례: [[papers/498_LLM_as_a_Mastermind_A_Survey_of_Strategic_Reasoning_with_Lar/review]] — 사회심리학과 LLM 추론의 갈등 인식 연구가 다중 에이전트 환경에서의 전략적 추론 메커니즘에 직접 적용되는 심리학적 통찰이다.
-- 🏛 기반 연구: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — 사회심리학과 LLM 추론의 갈등 인식 연구는 LLM 에이전트 간 협력 메커니즘 탐색의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 학술 심사에서 인지편향 완화 접근법과 다중턴 대화 기반 접근법은 서로 다른 관점에서 심사 품질 향상을 추구한다.
+- 🔗 후속 연구: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 체크리스트 기반 메타리뷰 생성과 갈등 인식 프레임워크를 결합하면 더 공정하고 체계적인 종합의견을 생성할 수 있다.
+- 🏛 기반 연구: [[papers/660_Reimagining_urban_science_Scaling_causal_inference_with_larg/review]] — 사회심리학과 LLM 추론의 결합 연구는 도시 사회과학 연구 자동화의 인지적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — 사회심리학과 LLM 추론의 갈등 인식 연구가 협력 메커니즘의 이론적 기반이 된다
+- 🧪 응용 사례: [[papers/185_Can_large_language_models_understand_you_better_an_mbti_pers/review]] — 사회심리학과 LLM 추론의 연결이 성격 탐지에서 심리학적 이론 적용의 실제 사례를 보여준다.

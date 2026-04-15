@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)을 활용하여 원본 단백질체학(proteomics) 데이터로부터 자동으로 과학적 발견을 수행하는 PROTEUS 시스템을 제시한다. 인간의 개입 없이 계층적 계획 수립, 생물정보학 도구 실행, 반복적 분석 워크플로우 정제를 통해 고품질의 생물학적 가설을 생성한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Domain-specific_Scientific_Reasoning"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Langfelder and Horvath_2024_Automating exploratory proteomics research via language models.pdf"
 ---
@@ -109,9 +110,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Langfelder and Horvath_2024_Automating e
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/558_Moose-chem3_Toward_experiment-guided_hypothesis_ranking_via/review]] — 단백질체학 자동 분석이 실험 피드백 기반 가설 평가의 생물정보학 기반
-- 🔄 다른 접근: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 단백질체학 vs 화학정보학으로 도메인은 다르지만 유사한 자동화 도구 통합 접근
-- 🔗 후속 연구: [[papers/164_BioInformatics_Agent_BIA_Unleashing_the_Power_of_Large_Langu/review]] — 생물정보학 에이전트를 단백질체학 특화 자동 발견으로 구체화한 응용
-- 🔄 다른 접근: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — 단백질체학 vs 유전자 세트 분석으로 생물정보학의 서로 다른 자동화 영역
-- 🔗 후속 연구: [[papers/558_Moose-chem3_Toward_experiment-guided_hypothesis_ranking_via/review]] — 단백질체학 자동 분석을 시뮬레이션 실험 설계로 확장한 방법론
-- 🔄 다른 접근: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 화학정보학 vs 단백질체학으로 도메인은 다르지만 유사한 자동화 도구 통합 접근
+- 🔗 후속 연구: [[papers/268_Democratizing_AI_scientists_using_ToolUniverse/review]] — 과학 도구 생태계를 활용하여 단백질체학 자동화를 더욱 확장할 수 있다.
+- 🔄 다른 접근: [[papers/311_Empowering_Biomedical_Discovery_with_AI_Agents/review]] — 생의학 발견 자동화의 다른 접근법으로 AI 에이전트 통합을 제시한다.
+- 🧪 응용 사례: [[papers/164_BioInformatics_Agent_BIA_Unleashing_the_Power_of_Large_Langu/review]] — 생물정보학 에이전트로 단백질체학 자동화를 구체적으로 구현한 사례이다.
+- 🔄 다른 접근: [[papers/268_Democratizing_AI_scientists_using_ToolUniverse/review]] — 단백질체학 자동화와 유사하게 과학 도구 생태계를 민주화하는 다른 접근법이다.
+- 🔄 다른 접근: [[papers/311_Empowering_Biomedical_Discovery_with_AI_Agents/review]] — 생의학 자동화의 다른 접근법으로 단백질체학 특화 시스템을 제시한다.

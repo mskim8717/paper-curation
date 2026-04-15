@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "대규모 언어 모델(LLM)이 과학 논문의 참고문헌 생성 시 이미 인용도가 높은 논문들을 지속적으로 선호함으로써 인용의 마태 효과(Matthew effect)를 강화하며, 이는 학문 영역 간 편향의 차이에도 불구하고 일관되게 나타난다. 이러한 현상은 과학 지식의 발견과 확산 방식을 재형성할 가능성이 있다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Publishing_Trends"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Academic_Citation_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Algaba et al._2025_How deep do large language models internalize scientific literature and citation practices arXiv pr.pdf"
 ---
@@ -107,9 +108,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Algaba et al._2025_How deep do large lan
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/373_Generalization_Bias_in_Large_Language_Model_Summarization_of/review]] — LLM의 과학 요약에서 일반화 편향을 다루어 인용 편향과 함께 LLM의 과학 문헌 처리 한계를 보완적으로 이해할 수 있다.
-- 🔗 후속 연구: [[papers/478_Large_language_models_penetration_in_scholarly_writing_and_p/review]] — 학술 저술에서 LLM 사용 추세 분석의 한 부분으로 참고문헌 생성 시 편향 패턴을 실증적으로 입증한다.
-- 🏛 기반 연구: [[papers/460_Language_models_surface_the_unwritten_code_of_science_and_so/review]] — 언어 모델이 과학과 사회의 암묵적 코드를 드러내는 연구로 마태 효과 강화 현상의 이론적 배경을 제공한다.
-- 🔄 다른 접근: [[papers/373_Generalization_Bias_in_Large_Language_Model_Summarization_of/review]] — LLM이 과학 문헌을 내재화하는 방식의 편향을 다루어 일반화 편향과 함께 종합적 이해가 필요하다.
-- 🔄 다른 접근: [[papers/478_Large_language_models_penetration_in_scholarly_writing_and_p/review]] — LLM이 과학 문헌을 내재화하는 방식과 함께 학술 워크플로우 전반의 LLM 영향을 종합적으로 이해할 수 있다.
-- 🔗 후속 연구: [[papers/508_LLMs_as_Research_Tools_A_Large_Scale_Survey_of_Researchers_U/review]] — LLM이 과학 문헌을 얼마나 깊이 내재화하는지에 대한 연구가 연구자들의 LLM 활용 방식 이해를 확장한다.
+- 🏛 기반 연구: [[papers/004_A_Comprehensive_Survey_of_Scientific_Large_Language_Models_a/review]] — 과학 분야 LLM의 종합적 분석이 인용 편향 문제 이해를 위한 이론적 배경을 제공한다.
+- 🔄 다른 접근: [[papers/330_Exploiting_LLMs_for_Automatic_Hypothesis_Assessment_via_a_Lo/review]] — LLM의 과학 지식 내재화에서 인용 편향과 가설 평가라는 서로 다른 측면을 조명한다.
+- 🔗 후속 연구: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — 지식 그래프를 활용한 과학 아이디어 생성이 인용 편향 문제 해결의 대안적 접근법을 제시한다.
+- ⚖️ 반론/비판: [[papers/457_Language_agents_achieve_superhuman_synthesis_of_scientific_k/review]] — LLM의 과학 지식 합성 능력과 인용 편향 문제 간의 상반된 관점을 보여준다.
+- 🧪 응용 사례: [[papers/004_A_Comprehensive_Survey_of_Scientific_Large_Language_Models_a/review]] — 과학 분야 LLM의 종합적 분석이 인용 편향 같은 구체적인 문제 연구를 위한 배경 지식을 제공한다.
+- 🏛 기반 연구: [[papers/330_Exploiting_LLMs_for_Automatic_Hypothesis_Assessment_via_a_Lo/review]] — LLM의 과학 문헌 내재화 분석이 변수 상관관계의 놀라움 정도 평가를 위한 이론적 배경을 제공한다.
+- 🔗 후속 연구: [[papers/752_Shallow_synthesis_of_knowledge_in_gpt-generated_texts_A_case/review]] — 대형 언어 모델의 과학 문헌 내재화 정도를 관련 연구 작성 맥락에서 구체적으로 분석한다.

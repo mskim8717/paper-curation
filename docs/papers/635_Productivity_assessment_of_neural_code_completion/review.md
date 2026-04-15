@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "신경망 기반 코드 완성 도구의 개발자 생산성 향상 효과를 측정하기 위해, GitHub Copilot 사용자 2,631명의 설문 응답과 실제 사용 데이터를 연계 분석하여 **제안 수락률(acceptance rate)이 개발자의 생산성 인식을 가장 잘 예측하는 지표임을 입증**한 실증 연구이다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Human-AI_Performance_Detection"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ziegler et al._2022_Productivity assessment of neural code completion.pdf"
 ---
@@ -102,8 +103,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ziegler et al._2022_Productivity assessm
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/283_Do_Users_Write_More_Insecure_Code_with_AI_Assistants/review]] — AI 코딩 도구의 생산성 평가에서 보안성 관점과 생산성 관점이라는 서로 다른 측정 기준을 제시하여 종합적 평가가 필요함을 보여준다.
-- 🔗 후속 연구: [[papers/894_AI_Copilot_Code_Quality_2025_Data_Suggests_4x_Growth_in_Code/review]] — 코드 완성 도구의 생산성 측정을 코드 품질 평가로 확장하여 더 포괄적인 AI 코딩 도구 평가 프레임워크를 구축한다.
-- 🏛 기반 연구: [[papers/611_People_who_frequently_use_ChatGPT_for_writing_tasks_are_accu/review]] — ChatGPT 사용자의 글쓰기 정확성 연구가 신경망 코드 완성 도구 사용자의 생산성 평가 방법론에 기초적인 사용자 행동 분석 틀을 제공한다.
-- 🔗 후속 연구: [[papers/894_AI_Copilot_Code_Quality_2025_Data_Suggests_4x_Growth_in_Code/review]] — 신경 코드 완성의 생산성 평가 연구가 AI Copilot 코드 품질의 4배 성장이 실제 개발자 생산성에 미치는 영향을 분석하는데 활용될 수 있다.
-- ⚖️ 반론/비판: [[papers/283_Do_Users_Write_More_Insecure_Code_with_AI_Assistants/review]] — AI 코드 어시스턴트의 생산성 향상 효과와 보안 취약점 증가라는 상반된 관점을 제시함
+- 🔄 다른 접근: [[papers/283_Do_Users_Write_More_Insecure_Code_with_AI_Assistants/review]] — AI 어시스턴트가 코드 보안성에 미치는 영향을 다른 관점에서 평가한다
+- 🏛 기반 연구: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — 코드 생성 언어모델 평가를 위한 기본적인 방법론과 지표를 제공한다
+- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 머신러닝 에이전트 평가를 위한 더 포괄적인 벤치마킹 체계를 제시한다
+- 🔗 후속 연구: [[papers/283_Do_Users_Write_More_Insecure_Code_with_AI_Assistants/review]] — AI 코드 어시스턴트의 보안 문제가 신경 코드 완성의 생산성 평가로 확장 연구될 수 있다.

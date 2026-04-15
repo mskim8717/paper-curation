@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 DNA 서열과 에피지노믹 신호로부터 유전자 발현을 예측하되, 능동적으로 상호작용하는 조절 요소(regulatory elements)를 자동으로 발견하는 **Seq2Exp** 프레임워크를 제안한다. 정보 병목(information bottleneck) 원리를 활용하여 인과적 조절 요소만을 추출함으로써 기존 방법들을 능가하는 성능을 달성한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Domain-specific_Scientific_Reasoning"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Su et al._2025_Learning to Discover Regulatory Elements for Gene Expression Prediction.pdf"
 ---
@@ -146,7 +147,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Su et al._2025_Learning to Discover Regu
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/094_AlphaGenome_advancing_regulatory_variant_effect_prediction_w/review]] — 유전자 발현 예측을 위한 서로 다른 조절 요소 발견 접근법을 제시합니다.
-- 🏛 기반 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 단일 세포 분석을 위한 대규모 언어모델이 유전자 발현 예측의 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/302_Effective_gene_expression_prediction_from_sequence_by_integr/review]] — 조절 요소 발견이 더 효과적인 유전자 발현 예측으로 확장됩니다.
-- 🔄 다른 접근: [[papers/094_AlphaGenome_advancing_regulatory_variant_effect_prediction_w/review]] — 둘 다 DNA 서열로부터 유전자 발현을 예측하되 서로 다른 접근법을 사용합니다.
+- 🔄 다른 접근: [[papers/166_Biomaze_Benchmarking_and_enhancing_large_language_models_for/review]] — 조절 요소 발견 대신 생물학적 경로에서의 다단계 추론에 집중한다
+- 🏛 기반 연구: [[papers/046_Accurate_structure_prediction_of_biomolecular_interactions_w/review]] — 생분자 상호작용의 정확한 구조 예측이 조절 요소 발견의 기반이 된다
+- 🔗 후속 연구: [[papers/349_Fragment_and_Geometry_Aware_Tokenization_of_Molecules_for_St/review]] — 분자 토큰화 방법을 유전자 조절 요소 발견으로 확장한다
+- 🔄 다른 접근: [[papers/166_Biomaze_Benchmarking_and_enhancing_large_language_models_for/review]] — 생물학적 경로 추론 대신 유전자 발현 예측을 위한 조절 요소 발견에 집중한다

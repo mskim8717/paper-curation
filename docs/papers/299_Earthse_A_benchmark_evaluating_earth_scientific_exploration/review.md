@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 **지구과학 분야에 특화된 최초의 포괄적 벤치마크 EarthSE를 제시**하며, 10만 건의 학술논문 코퍼스를 기반으로 기초 지식부터 고급 과학탐사 능력까지 평가할 수 있는 다층 평가 프레임워크를 구축했다. 특히 개방형 다중 턴 대화를 통해 LLM의 과학탐사 능력(방법론 귀납, 한계 분석, 개념 제안)을 평가하는 새로운 평가 메트릭을 도입했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen and Mingins_2025_Earthse A benchmark evaluating earth scientific exploration capability for large language models.pdf"
 ---
@@ -132,7 +133,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen and Mingins_2025_Earthse A benchmar
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/831_Towards_llm_agents_for_earth_observation/review]] — 지구 관측용 LLM 에이전트에서 지구과학 탐사 능력 벤치마크로의 확장
-- 🧪 응용 사례: [[papers/298_Earth-Agent_Unlocking_the_Full_Landscape_of_Earth_Observatio/review]] — 지구 관측 전체 환경 탐색을 지구과학 탐사 벤치마크에 적용
-- 🏛 기반 연구: [[papers/706_SciBench_Evaluating_College-Level_Scientific_Problem-Solving/review]] — 대학 수준 과학 문제 해결 평가가 지구과학 벤치마크의 기반 제공
-- 🔄 다른 접근: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 환경과학 파운데이션 모델과 지구과학 탐사 벤치마크의 다른 접근법
+- 🔄 다른 접근: [[papers/261_Deepresearch_bench_A_comprehensive_benchmark_for_deep_resear/review]] — 지구과학 특화 벤치마크와 깊이 있는 연구 에이전트 평가가 서로 다른 도메인에서 AI의 과학 탐색 능력을 체계적으로 평가한다.
+- 🔗 후속 연구: [[papers/298_Earth-Agent_Unlocking_the_Full_Landscape_of_Earth_Observatio/review]] — 지구과학 탐색 능력 평가를 Earth-Agent의 지구 관측 데이터 활용 능력으로 확장하여 더 실용적인 지구과학 AI 시스템을 구현한다.
+- 🏛 기반 연구: [[papers/831_Towards_llm_agents_for_earth_observation/review]] — 지구 관측을 위한 LLM 에이전트 연구가 지구과학 분야 AI의 탐색 및 발견 능력 평가의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/261_Deepresearch_bench_A_comprehensive_benchmark_for_deep_resear/review]] — 깊이 있는 연구 에이전트 평가와 지구과학 탐색 능력 평가 모두 도메인별 AI 연구 능력을 체계적으로 평가하는 서로 다른 접근법을 제시한다.

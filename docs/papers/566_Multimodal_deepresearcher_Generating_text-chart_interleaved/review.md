@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대규모 언어 모델(LLM)을 활용하여 텍스트와 차트가 유기적으로 통합된 멀티모달 보고서를 자동으로 생성하는 시스템을 제안한다. 핵심 혁신은 시각화를 구조화된 텍스트 표현(FDV: Formal Description of Visualization)으로 변환하여 LLM의 맥락 학습(in-context learning)을 가능하게 한 점이다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_Multimodal deepresearcher Generating text-chart interleaved reports from scratch with agentic frame.pdf"
 ---
@@ -131,8 +131,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_Multimodal deepresearch
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/199_ChartInstruct_Instruction_Tuning_for_Chart_Comprehension_and/review]] — 차트 이해와 생성을 위한 인스트럭션 튜닝은 멀티모달 보고서 생성에서 FDV 표현의 기반 기술입니다
-- 🔄 다른 접근: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 멀티모달 대형 언어모델의 차트-코드 생성과 텍스트-차트 통합 보고서는 서로 다른 형태의 시각화 자동화 접근법입니다
-- 🔗 후속 연구: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — 과학적 그림 생성 기술은 텍스트와 차트 통합 보고서에서 시각화 요소를 더욱 풍부하게 만드는 확장 기술입니다
-- 🧪 응용 사례: [[papers/691_S1-MMAlign_A_Large-Scale_Multi-Disciplinary_Dataset_for_Scie/review]] — 멀티모달 과학 연구 생성에 대규모 과학 이미지-텍스트 데이터셋을 적용할 수 있다
-- 🔗 후속 연구: [[papers/627_Position_Multimodal_large_language_models_can_significantly/review]] — 멀티모달 과학적 추론 능력을 텍스트-차트 상호작용 연구 생성에 구체적으로 적용할 수 있다.
+- 🔄 다른 접근: [[papers/199_ChartInstruct_Instruction_Tuning_for_Chart_Comprehension_and/review]] — 차트 이해를 위한 언어모델 학습 방법론에서 FDV 기반 접근법과 instruction tuning 방식의 차이를 비교할 수 있다.
+- 🔗 후속 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 멀티모달 차트 이해 데이터셋과 함께 활용하면 텍스트-차트 통합 보고서 생성의 성능을 더욱 향상시킬 수 있다.
+- 🔗 후속 연구: [[papers/807_Theoremexplainagent_Towards_video-based_multimodal_explanati/review]] — 텍스트-차트 통합 생성 연구를 정리 증명의 긴 형식 비디오 설명으로 확장한 멀티모달 접근법이다.

@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 생의학 연구에서 AI 에이전트의 가설 검증 능력을 평가하기 위해 1,029개의 가설 중심 과제와 1,177개의 분석 계획으로 구성된 BIODSA-1K 벤치마크를 제시한다. 329개 출판 논문에서 추출된 이 벤치마크는 실제 연구 워크플로우를 반영하며, 검증 불가능한 가설 사례를 포함하여 현실적인 데이터 과학 시나리오를 평가한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Physics_Reasoning_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_Biodsa-1k Benchmarking data science agents for biomedical research.pdf"
 ---
@@ -117,10 +118,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_Biodsa-1k Benchmarking 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/169_Bioprobench_Comprehensive_dataset_and_benchmark_in_biologica/review]] — 생의학 vs 생물학 실험 프로토콜에서 AI 에이전트 평가의 다른 접근법을 비교할 수 있다
-- 🧪 응용 사례: [[papers/306_Efficient_fine-tuning_of_single-cell_foundation_models_enabl/review]] — 단일세포 모델의 약물 반응 예측 능력을 생의학 가설 검증 벤치마크에서 평가할 수 있다
-- 🔗 후속 연구: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 다중 에이전트 의료 협업을 생의학 연구 가설 검증 시나리오에 적용한 확장 연구다
-- 🧪 응용 사례: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — 임상 추론 능력을 생의학 데이터 과학 가설 검증에 적용할 수 있다
-- 🏛 기반 연구: [[papers/528_MedAgentGym_A_Scalable_Agentic_Training_Environment_for_Code/review]] — 생의학 데이터 과학 벤치마크가 에이전트 훈련 환경의 기반을 제공합니다.
-- 🧪 응용 사례: [[papers/306_Efficient_fine-tuning_of_single-cell_foundation_models_enabl/review]] — 단일세포 기초 모델의 약물 반응 예측을 생의학 연구 가설 검증에 적용할 수 있다
-- 🔄 다른 접근: [[papers/169_Bioprobench_Comprehensive_dataset_and_benchmark_in_biologica/review]] — 생물학 vs 생의학 실험에서 AI 에이전트의 절차적 추론 평가의 다른 접근법을 비교할 수 있다
+- 🔗 후속 연구: [[papers/165_Biokgbench_A_knowledge_graph_checking_benchmark_of_ai_agent/review]] — 생의학 지식그래프 검증 벤치마크를 실제 가설 검증 워크플로우를 포함한 더 포괄적인 데이터 과학 에이전트 평가로 확장한다.
+- 🔄 다른 접근: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 생의학 분야 제로샷 다중 에이전트와 달리 가설 중심의 체계적 벤치마크를 통해 AI 에이전트의 연구 능력을 평가한다.
+- 🏛 기반 연구: [[papers/492_Literature_meets_data_A_synergistic_approach_to_hypothesis_g/review]] — 문헌과 데이터의 시너지 접근법이 생의학 가설 검증을 위한 AI 에이전트 평가 벤치마크의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/528_MedAgentGym_A_Scalable_Agentic_Training_Environment_for_Code/review]] — 생의학 데이터 과학 에이전트 벤치마킹의 기반 방법론을 제공한다
+- 🔄 다른 접근: [[papers/151_Benchmarking_ai_scientists_in_omics_data-driven_biological_r/review]] — 둘 다 생물의학 분야에서 AI 에이전트의 데이터 과학 능력을 벤치마킹하지만, BAISBench는 단일세포 데이터에, BioDSA-1k는 일반적인 생물의학 데이터에 집중한다
+- 🏛 기반 연구: [[papers/164_BioInformatics_Agent_BIA_Unleashing_the_Power_of_Large_Langu/review]] — 생물의학 연구를 위한 데이터 과학 에이전트 벤치마크를 생물정보학 에이전트의 성능 평가 기준으로 활용한다
+- 🏛 기반 연구: [[papers/817_Toward_a_Team_of_AI-made_Scientists_for_Scientific_Discovery/review]] — 바이오의학 연구 에이전트 벤치마크가 AI 과학자 팀 평가의 기반 방법론을 제공한다.
+- 🏛 기반 연구: [[papers/165_Biokgbench_A_knowledge_graph_checking_benchmark_of_ai_agent/review]] — 생의학 데이터 과학 에이전트 벤치마크의 기반 위에서 지식그래프 검증이라는 구체적 평가 방법론을 제시한다.

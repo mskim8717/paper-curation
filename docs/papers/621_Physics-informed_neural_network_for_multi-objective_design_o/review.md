@@ -1,3 +1,25 @@
+---
+title: "621_Physics-informed_neural_network_for_multi-objective_design_o"
+authors:
+  - "Ines Sorrentino"
+  - "Giulio Romualdi"
+  - "Lorenzo Moretti"
+  - "Silvio Traversaro"
+  - "Daniele Pucci"
+date: "2025.07"
+doi: ""
+arxiv: ""
+score: 4.0
+essence: "본 논문은 Physics-Informed Neural Networks (PINNs)와 Unscented Kalman Filter (UKF)를 결합하여 휴머노이드 로봇의 관절 토크 센서 없이 전신 토크 제어를 수행하는 프레임워크를 제시한다. 이 방식은 마찰 모델링과 토크 추정을 통합하여 실시간 토크 제어 아키텍처를 구현한다."
+tags:
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Neural_Operator_Learning"
+  - "topic/ai4s"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sorrentino et al._2025_Physics-Informed Neural Networks with Unscented Kalman Filter for Sensorless Joint Torque Estimation.pdf"
+---
+
 # Physics-Informed Neural Networks with Unscented Kalman Filter for Sensorless Joint Torque Estimation in Humanoid Robots
 
 > **저자**: Ines Sorrentino, Giulio Romualdi, Lorenzo Moretti, Silvio Traversaro, Daniele Pucci | **날짜**: 2025-07-14 | **URL**: [https://arxiv.org/abs/2507.10105](https://arxiv.org/abs/2507.10105)
@@ -68,3 +90,13 @@
 - Overall: 4/5
 
 **총평**: 본 논문은 PINNs과 UKF의 혁신적 통합을 통해 센서 없는 토크 제어라는 실질적 문제를 해결하며, ergoCub에서의 엄밀한 실험 검증과 확장성 시연으로 휴머노이드 로봇의 실시간 준수 제어를 위한 강력한 기초를 제공한다.
+
+## Related Papers
+
+- 🔄 다른 접근: [[papers/622_Physics-Informed_Neural_Operator_for_Electromagnetic_Inverse/review]] — 둘 다 물리 정보 신경 연산자를 사용하지만 621은 로봇 토크 제어에, 622는 전자기 역산란 문제에 적용
+- 🏛 기반 연구: [[papers/454_Lagrangian_neural_networks/review]] — 라그랑지안 신경망의 물리 법칙 보존이 휴머노이드 로봇의 동역학 모델링에 이론적 기반을 제공함
+- 🔗 후속 연구: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 언센티드 칼만 필터를 결합한 물리정보 신경망 연구가 물리정보 통합 변형을 포함한 신경 연산자 아키텍처로 발전되었다
+- 🔄 다른 접근: [[papers/619_Physics_Informed_Deep_Learning_Part_I_Data-driven_Solutions/review]] — 칼만 필터를 통합한 PINN과 기본 PINN은 불확실성 처리에서 서로 다른 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/618_Physical_formula_enhanced_multi-task_learning_for_pharmacoki/review]] — 물리학 제약을 신경망에 통합하는 기본 방법론으로 약동학 예측의 이론적 기반이 된다
+- 🔄 다른 접근: [[papers/622_Physics-Informed_Neural_Operator_for_Electromagnetic_Inverse/review]] — 둘 다 물리 정보 신경 연산자를 사용하지만 622는 전자기 역산란에, 621은 로봇 토크 제어에 적용
+- 🔗 후속 연구: [[papers/456_Lang-PINN_From_Language_to_Physics-Informed_Neural_Networks/review]] — Unscented Kalman 필터를 통합한 Physics-Informed 신경망이 Lang-PINN의 물리 기반 학습을 향상시킬 수 있다.

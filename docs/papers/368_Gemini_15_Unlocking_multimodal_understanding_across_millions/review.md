@@ -12,8 +12,8 @@ arxiv: ""
 score: 0
 essence: "Gemini 1.5는 최대 1,000만 토큰의 컨텍스트를 처리할 수 있는 멀티모달 대규모 언어 모델로, 기존 모델들(Claude 3.0의 20만 토큰, GPT-4 Turbo의 12.8만 토큰)보다 획기적으로 확장된 컨텍스트 윈도우를 구현했다. Gemini 1.5 Pro와 Flash 두 가지 변형은 긴 문서, 영상, 오디오에 대한 검색 및 추론 능력에서 최첨단 성능을 달성하면서도 계산 효율성을 유지한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Multimodal_Scientific_Benchmarks"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Reid et al._2024_Gemini 1.5 Unlocking multimodal understanding across millions of tokens of context.pdf"
 ---
@@ -104,8 +104,9 @@ Gemini 1.5는 최대 1,000만 토큰의 컨텍스트를 처리할 수 있는 멀
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/036_A_survey_on_transformer_context_extension_Approaches_and_eva/review]] — 트랜스포머 컨텍스트 확장 방법에 대한 조사가 Gemini 1.5의 1천만 토큰 컨텍스트 처리 기술을 이해하는 기반을 제공한다.
-- 🔗 후속 연구: [[papers/005_A_comprehensive_survey_on_long_context_language_modeling/review]] — 긴 컨텍스트 언어 모델링에 대한 포괄적인 조사가 Gemini 1.5의 초장기 컨텍스트 처리 능력의 이론적 배경과 한계를 분석한다.
-- ⚖️ 반론/비판: [[papers/452_L-citeeval_Do_longcontext_models_truly_leverage_context_for/review]] — 긴 컨텍스트 모델이 실제로 컨텍스트를 제대로 활용하는지에 대한 비판적 평가가 Gemini 1.5의 1천만 토큰 처리 주장을 검증한다.
-- 🔗 후속 연구: [[papers/858_Unsupervised_crosslingual_representation_learning_at_scale/review]] — 다언어 표현학습이 멀티모달 이해로 확장되는 자연스러운 발전 경로
-- 🔗 후속 연구: [[papers/369_Gemini_a_family_of_highly_capable_multimodal_models/review]] — Gemini 1.5로 발전하면서 더 긴 컨텍스트와 향상된 멀티모달 이해 능력을 제공
+- 🔄 다른 접근: [[papers/649_Qwen25_technical_report/review]] — 긴 컨텍스트 처리에 대한 두 모델의 서로 다른 아키텍처와 최적화 전략을 비교할 수 있다.
+- 🧪 응용 사례: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — 멀티모달 긴 컨텍스트 이해 능력을 대학원 수준 과학 문제 해결에 적용한 실제 사례를 보여준다.
+- 🔗 후속 연구: [[papers/108_Ask_retrieve_summarize_A_modular_pipeline_for_scientific_lit/review]] — 긴 과학 문헌 처리 능력을 모듈화된 검색-요약 파이프라인으로 활용한 발전된 형태를 제시한다.
+- 🧪 응용 사례: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — 대용량 컨텍스트 처리 능력을 데이터 사이언스 분석 에이전트에 적용한 구체적 활용 사례를 보여준다.
+- 🔗 후속 연구: [[papers/369_Gemini_a_family_of_highly_capable_multimodal_models/review]] — Gemini의 확장된 버전으로, 멀티모달 이해 능력을 더 긴 컨텍스트로 발전시킨 후속 연구입니다.
+- 🔄 다른 접근: [[papers/649_Qwen25_technical_report/review]] — 긴 컨텍스트 처리를 위한 서로 다른 모델 아키텍처와 학습 방법론을 비교할 수 있다.

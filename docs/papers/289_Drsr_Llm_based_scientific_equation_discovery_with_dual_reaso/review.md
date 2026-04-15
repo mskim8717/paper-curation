@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 대규모 언어모델(LLM)을 활용한 기호 회귀(Symbolic Regression)에서 **데이터 구조 분석**과 **생성 이력 반영**의 이중 추론을 통해 과학 방정식 발견의 정확성과 효율성을 획기적으로 향상시킨다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 ---
 
@@ -137,11 +138,11 @@ tags:
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/504_Llm-srbench_A_new_benchmark_for_scientific_equation_discover/review]] — 과학 방정식 발견을 위한 LLM 기반 기호 회귀에서 더 포괄적인 과학 방정식 발견 벤치마크로 확장한 평가 프레임워크입니다.
-- 🔄 다른 접근: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — 데이터와 경험의 이중 추론 접근법과 대규모 언어모델을 활용한 동역학 시스템 발견이라는 서로 다른 방정식 발견 방법론입니다.
-- 🏛 기반 연구: [[papers/426_Improving_Scientific_Hypothesis_Generation_with_Knowledge_Gr/review]] — 지식 그래프를 활용한 과학 가설 생성 연구가 방정식 발견에서 경험적 지식을 활용하는 접근법의 이론적 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/504_Llm-srbench_A_new_benchmark_for_scientific_equation_discover/review]] — 동일한 과학 방정식 발견 문제를 데이터와 경험 기반 이중 추론으로 접근
-- 🔗 후속 연구: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 데이터와 경험의 이중 추론을 통한 방정식 발견은 대칭 불변량 제약을 더욱 발전시킨 방법론입니다
-- 🔗 후속 연구: [[papers/1083_A_framework_for_discovering_scientific_equations_with_large/review]] — 과학 방정식 발견에서 데이터와 경험의 이중 추론으로 확장된 프레임워크
-- 🔄 다른 접근: [[papers/547_Mllm-based_discovery_of_intrinsic_coordinates_and_governing/review]] — 과학 방정식 발견이라는 공통 목표를 가지지만 멀티모달 접근법과 데이터-경험 이중 추론이라는 다른 방법을 사용한다.
-- 🔄 다른 접근: [[papers/502_Llm-feynman_Leveraging_large_language_models_for_universal_s/review]] — 둘 다 과학 공식 발견을 목표로 하지만 하나는 LLM 기반이고 다른 하나는 데이터와 경험의 이중 추론을 사용한다.
+- 🔄 다른 접근: [[papers/504_Llm-srbench_A_new_benchmark_for_scientific_equation_discover/review]] — 과학 방정식 발견을 위한 LLM 기반 벤치마크와 유사한 목표이지만 이중 추론 메커니즘으로 차별화된 접근을 제시한다.
+- 🔗 후속 연구: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 재료 발견을 위한 가설 생성 연구를 데이터 구조와 생성 이력을 활용한 기호 회귀로 확장한다.
+- 🏛 기반 연구: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 대칭성을 고려한 기호 미분방정식 발견 연구가 LLM 기반 과학 방정식 발견의 이론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/504_Llm-srbench_A_new_benchmark_for_scientific_equation_discover/review]] — 데이터와 경험의 이중 추론 방법이 LLM-SRBench의 암기 방지 접근법을 보완한다
+- 🔄 다른 접근: [[papers/241_Criteria-first_semantics-later_reproducible_structure_discov/review]] — 과학적 구조 발견을 이미지 기반과 방정식 기반에서 각각 기준-우선 접근법으로 시도한다.
+- 🔄 다른 접근: [[papers/547_Mllm-based_discovery_of_intrinsic_coordinates_and_governing/review]] — 둘 다 LLM을 이용한 과학 방정식 발견을 다루지만 MLLM은 동영상 데이터에, DrSR은 데이터와 경험 이중 추론에 특화
+- 🧪 응용 사례: [[papers/085_Ai-newton_A_concept-driven_physical_law_discovery_system_wit/review]] — LLM 기반 과학 방정식 발견에 대한 연구로, AI-Newton의 물리 법칙 발견을 방정식 발견으로 확장 적용
+- 🔗 후속 연구: [[papers/502_Llm-feynman_Leveraging_large_language_models_for_universal_s/review]] — DrSR의 데이터와 경험 이중 추론 방식이 LLM-Feynman의 도메인 지식 통합 접근법을 더 체계화한 확장

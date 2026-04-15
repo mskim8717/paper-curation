@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 현실적인 과학 워크플로우에서 멀티모달 자율 에이전트를 평가하기 위한 **SCIENCEBOARD** 환경과 벤치마크를 제시한다. 생화학, 천문학, 지정보학 등 6개 과학 도메인에서 169개의 고품질 작업을 통해 최신 LLM/VLM 기반 에이전트들이 15% 이하의 성공률을 보이며, 현재 기술의 한계를 명시적으로 드러낸다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Domain-Specific_LLM_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Koh et al._2025_Scienceboard Evaluating multimodal autonomous agents in realistic scientific workflows.pdf"
 ---
@@ -141,7 +141,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Koh et al._2025_Scienceboard Evaluating 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/769_StableToolBench_Towards_Stable_Large-Scale_Benchmarking_on_T/review]] — 안정적인 도구 사용 벤치마킹이 현실적 과학 워크플로우에서 멀티모달 에이전트 평가의 기반 기술을 제공한다
-- 🔄 다른 접근: [[papers/147_Aviary_training_language_agents_on_challenging_scientific_ta/review]] — 과학 언어 에이전트 훈련을 위해 현실적 워크플로우 평가와 도전적 과학 작업이라는 다른 접근법을 사용한다
-- 🔗 후속 연구: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 다단계 과학 도구 사용 벤치마킹을 현실적 과학 워크플로우의 멀티모달 환경으로 확장할 수 있다
-- 🧪 응용 사례: [[papers/769_StableToolBench_Towards_Stable_Large-Scale_Benchmarking_on_T/review]] — 안정적인 도구 벤치마킹을 현실적 과학 워크플로우의 멀티모달 에이전트 평가에 적용할 수 있다
+- 🔄 다른 접근: [[papers/735_SciToolAgent_a_knowledge-graph-driven_scientific_agent_for_m/review]] — 과학 워크플로우 평가를 위해 범용 멀티모달 환경과 특화된 지식 그래프 기반 도구 활용이라는 서로 다른 접근법을 제시함
+- 🏛 기반 연구: [[papers/769_StableToolBench_Towards_Stable_Large-Scale_Benchmarking_on_T/review]] — 과학 에이전트 평가의 신뢰성을 위해 안정적인 대규모 벤치마킹 방법론이 필수적임
+- 🔄 다른 접근: [[papers/735_SciToolAgent_a_knowledge-graph-driven_scientific_agent_for_m/review]] — 과학 도구 자동화를 위해 특화된 지식 그래프 접근법과 범용 멀티모달 평가 환경이라는 상호 보완적 관점을 제공함
+- 🧪 응용 사례: [[papers/769_StableToolBench_Towards_Stable_Large-Scale_Benchmarking_on_T/review]] — 안정적인 도구 학습 벤치마크가 과학 에이전트의 멀티모달 워크플로우 평가 신뢰성 확보에 직접 활용됨

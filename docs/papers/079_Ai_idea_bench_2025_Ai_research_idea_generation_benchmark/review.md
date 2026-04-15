@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "대규모 언어 모델(LLM)의 AI 연구 아이디어 생성 능력을 정량적으로 평가하기 위해 3,495개의 AI 논문과 이를 영감준 논문들로 구성된 포괄적인 벤치마크 데이터셋 및 평가 프레임워크를 제시한다. 기존 평가 방식의 데이터 누수, 불완전한 ground truth, 제한된 실행 가능성 분석 문제를 해결한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/AI-Powered_Research_Planning"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 ---
 
@@ -114,10 +115,11 @@ tags:
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/326_Exp-bench_Can_ai_conduct_ai_research_experiments_arXiv_prepr/review]] — AI Idea Bench의 아이디어 생성 평가와 EXP-Bench의 실험 수행 평가는 AI 연구 능력을 서로 다른 단계에서 측정하는 보완적 접근이다.
-- 🔗 후속 연구: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — ResearchBench가 AI Idea Bench의 아이디어 생성 벤치마크를 실제 과학적 발견 과정 전반으로 확장한 포괄적 평가 프레임워크이다.
-- 🏛 기반 연구: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — 인간 평가자를 통한 LLM 연구 아이디어 평가 방법론이 AI Idea Bench 벤치마크 설계의 핵심적인 기반이다.
-- 🔗 후속 연구: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 과학 아이디어 생성이 AI 연구 아이디어 생성 벤치마크로 확장됩니다.
-- 🏛 기반 연구: [[papers/391_Graph_of_ai_ideas_Leveraging_knowledge_graphs_and_llms_for_a/review]] — AI 아이디어 생성 벤치마크가 지식 그래프 기반 학습 경로의 평가 기준
-- 🧪 응용 사례: [[papers/632_Predicting_the_future_of_ai_with_ai_High-quality_link_predic/review]] — AI 연구 아이디어 생성 벤치마크를 미래 AI 연구 방향 예측의 실제 평가 도구로 활용할 수 있다
-- 🔄 다른 접근: [[papers/326_Exp-bench_Can_ai_conduct_ai_research_experiments_arXiv_prepr/review]] — EXP-Bench의 완전한 실험 수행 능력 평가와 AI Idea Bench의 아이디어 생성 능력 평가는 AI 연구 역량을 서로 다른 단계에서 측정하는 보완적 접근이다.
+- 🏛 기반 연구: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — AI 연구 아이디어 생성 성능을 인간과 비교 평가하는 기본 방법론을 제시하여 AI Idea Bench의 평가 프레임워크 설계에 핵심 기반이 됨
+- 🔄 다른 접근: [[papers/577_Nova_An_iterative_planning_and_search_approach_to_enhance_no/review]] — 아이디어 생성 능력 평가라는 같은 목표를 가지지만, 벤치마크 구축 대신 실제 생성 성능 향상에 집중한 대안적 접근법임
+- 🔗 후속 연구: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 연구 아이디어 개발의 체계적 접근을 다루어 AI Idea Bench가 측정하려는 아이디어 생성 역량의 실용적 활용 방안을 제시함
+- 🔄 다른 접근: [[papers/577_Nova_An_iterative_planning_and_search_approach_to_enhance_no/review]] — 아이디어 생성 능력을 다루지만 Nova는 실제 생성 성능 향상에, AI Idea Bench는 평가 벤치마크 구축에 집중한 상호 보완적인 다른 접근법임
+- 🔄 다른 접근: [[papers/090_AIRS-Bench_a_Suite_of_Tasks_for_Frontier_AI_Research_Science/review]] — AI 연구 아이디어 생성 벤치마크에서 AIRS-Bench와 AI Idea Bench는 서로 다른 접근 방식을 보여준다.
+- 🧪 응용 사례: [[papers/484_Learning_to_generate_research_idea_with_dynamic_control/review]] — AI 연구 아이디어 생성 벤치마크에서 제안된 동적 제어 프레임워크의 실제 성능을 평가할 수 있다.
+- 🏛 기반 연구: [[papers/376_Generation_and_human-expert_evaluation_of_interesting_resear/review]] — AI 연구 아이디어 생성 벤치마크는 SciMuse 같은 시스템의 성능을 객관적으로 평가할 수 있는 표준을 제공한다.
+- 🔄 다른 접근: [[papers/762_Spark_A_system_for_scientifically_creative_idea_generation/review]] — AI 연구 아이디어 생성을 과학적 창의성 vs AI 연구 특화로 다른 접근법을 사용한다

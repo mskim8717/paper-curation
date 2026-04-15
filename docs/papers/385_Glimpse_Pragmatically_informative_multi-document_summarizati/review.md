@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.1
 essence: "학술 동료 평가(peer review) 과정에서 영역 의장(area chair)이 다수의 리뷰를 효율적으로 처리하도록 돕기 위해, 합의(consensus)만이 아닌 공통점과 고유한 의견을 모두 추출하는 차별적 다중 문서 요약(discriminative multi-document summarization) 방법인 GLIMPSE를 제안한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/Expert_Review_Automation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Veletsianos et al._2024_Glimpse Pragmatically informative multi-document summarization for scholarly reviews.pdf"
 ---
@@ -100,7 +101,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Veletsianos et al._2024_Glimpse Pragmati
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/022_A_sentiment_consolidation_framework_for_meta-review_generati/review]] — 메타 리뷰 생성을 위한 감정 통합 프레임워크로 다중 문서 요약과 다른 접근 방식의 리뷰 종합을 제공한다.
-- 🔗 후속 연구: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 체크리스트 기반 반복적 메타 리뷰 생성과 함께 영역 의장의 리뷰 처리 효율성을 종합적으로 개선한다.
-- 🏛 기반 연구: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 지식 그래프 기반 다중 문서 요약 기법으로 차별적 다중 문서 요약의 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 다중 문서 요약의 실용적 정보 제공이 체크리스트 기반 메타리뷰 생성의 구조화된 요약 기법에 기초를 제공합니다.
+- 🔄 다른 접근: [[papers/374_Generating_a_structured_summary_of_numerous_academic_papers/review]] — 다중 문서 요약에서 차별적 접근법과 구조화된 요약 생성이라는 서로 다른 전략을 제시한다.
+- 🧪 응용 사례: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 차별적 다중 문서 요약 기법이 피어리뷰 프로세스에서 검토자 의견 분석에 실제 적용된다.
+- 🔗 후속 연구: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 체크리스트 기반 메타리뷰 생성과 차별적 요약이 리뷰 품질 향상을 위한 상호 보완적 방법을 제공한다.
+- 🏛 기반 연구: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — 다중 에이전트 리뷰 생성에서 합의와 차이점 추출이라는 핵심 방법론을 공유한다.
+- 🔄 다른 접근: [[papers/374_Generating_a_structured_summary_of_numerous_academic_papers/review]] — 다중 문서 요약에서 구조화된 접근법과 차별적 요약 방식이라는 서로 다른 전략을 제시한다.
+- 🏛 기반 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 다중 문서 요약 기법이 피어리뷰 프로세스에서 여러 검토자 의견의 통합적 분석을 위한 토대를 제공한다.

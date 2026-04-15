@@ -68,58 +68,56 @@ a { color: #A62018; }
 <div class="essence-box"><h2>Essence</h2>
 <div class="review-fig"><img src="figures/fig1.webp" alt="Figure 1">
 <p class="fig-caption"><em>Figure 1: Taxonomy of Methods for Scientiﬁc Hypothesis Generation (SHG).</em></p></div>
-<p>본 논문은 과학적 발견 과정에서 가설 생성을 자동화하기 위한 대규모 언어모델(LLM: Large Language Models)의 활용에 관한 종합적 설문 연구이며, 기존 방법론부터 최신 프레임워크까지 체계적으로 분류하고 평가전략을 제시한다.</p></div>
+<p>본 논문은 과학적 발견에서 가설 생성을 위한 Large Language Models의 활용에 관한 포괄적인 서베이로, 프롬프팅부터 복잡한 프레임워크까지의 기존 방법들을 분류하고 평가 전략 및 향후 방향을 제시한다.</p></div>
 <div class="section-box"><h2>Motivation</h2>
 <ul>
-<li><strong>Known</strong>: 가설 생성은 과학적 발견의 기초이며, 전통적으로 인간의 직관과 경험에 의존해왔다. 최근 LLM의 발전으로 가설 생성 자동화 가능성이 제기되고 있다.</li>
-<li><strong>Gap</strong>: 정보 과부하와 학문 분화로 인해 전통적 접근법의 한계가 드러나고 있으며, LLM 기반 가설 생성의 평가 방법, 신규성 보증, 인간-AI 협력 방식 등이 체계적으로 정리되지 않았다.</li>
-<li><strong>Why</strong>: 과학문헌의 급속한 증가로 인해 연구자들이 학제 간 지식을 통합하기 어려워지고 있으므로, LLM을 통해 혁신적인 가설을 발굴하고 새로운 과학적 발견을 가속화할 수 있다.</li>
-<li><strong>Approach</strong>: arXiv API를 통해 2005-2025년 기간의 관련 논문을 체계적으로 검색하고, 인간중심 방식부터 LBD(Literature-Based Discovery), 텍스트마이닝, 그래프기반 모델, LLM 기반 방법까지 진화 과정을 분석하며 분류 체계를 구축한다.</li>
+<li><strong>Known</strong>: LLMs는 광범위한 과학 문헌을 처리하고 합성할 수 있으며, literature-based discovery (LBD)부터 text mining, knowledge graph 기반 방법까지 다양한 전산 기법들이 가설 생성에 활용되어 왔다.</li>
+<li><strong>Gap</strong>: 정보 과잉과 학제 간 단편화로 인해 연구자들이 새로운 통찰력을 발견하기 어려우며, LLM 기반 가설 생성의 품질 평가, 새로움 보장, 다양성 확보 등에 대한 체계적인 접근이 부족하다.</li>
+<li><strong>Why</strong>: 과학 문헌의 급격한 증가로 인한 정보 과부하와 학문 간 고립이 발견 과정을 방해하고 있으며, LLMs의 가능성을 효과적으로 활용하기 위한 체계적 이해가 필요하다.</li>
+<li><strong>Approach</strong>: 체계적 문헌 검색을 통해 2005-2025년의 arXiv 논문들을 수집하고 분류하며, human-centric 방법부터 LBD, text mining, supervised learning, graph-based 방법, LLM-driven 접근까지의 진화를 추적한다.</li>
 </ul></div>
 <div class="section-box"><h2>Achievement</h2>
 <div class="review-fig"><img src="figures/fig1.webp" alt="Figure 1">
 <p class="fig-caption"><em>Figure 1: Taxonomy of Methods for Scientiﬁc Hypothesis Generation (SHG).</em></p></div>
 <ul>
-<li><strong>종합적 분류 체계 제시</strong>: 인간중심, LBD, 텍스트마이닝, 감독학습, 그래프기반, LLM 기반 방법으로 계층화된 가설 생성 방법론의 분류체계 개발</li>
-<li><strong>LLM 기반 방법론 분석</strong>: 프롬프팅(Prompting), 파인튜닝(Fine-Tuning), RAG(Retrieval-Augmented Generation), 지식그래프 통합 등 다양한 LLM 활용 기법의 체계적 분류</li>
-<li><strong>가설 품질 개선 기법 정리</strong>: 신규성 촉진(Novelty Boosting), 구조화된 추론(Structured Reasoning) 등 생성 가설의 질을 높이기 위한 기법들의 문헌 정리</li>
-<li><strong>평가 전략 개요 제공</strong>: 생성 가설의 신규성, 관련성, 실현 가능성, 중요성, 명확성을 평가하기 위한 다양한 지표와 방법론 제시</li>
-<li><strong>미래 방향 제시</strong>: 멀티모달 통합, 인간-AI 협력, 해석 가능성 등 향후 연구 과제 도출</li>
+<li><strong>포괄적 분류 체계</strong>: Human-centric, LBD, Text-Mining, Supervised Learning, Graph Based, LLM-Driven 방법을 포함한 과학적 가설 생성 방법의 체계적 분류 제시</li>
+<li><strong>LLM 기반 방법론 상세 분석</strong>: Prompting, Fine-Tuning, RAG, Knowledge Graphs, Structured Hypothesis Generation (SHG) 등 다양한 LLM 활용 기법 검토</li>
+<li><strong>품질 향상 기법 검토</strong>: Novelty boosting과 structured reasoning을 포함한 가설 품질 개선 방법론 분석</li>
+<li><strong>평가 전략 개요 제공</strong>: 생성된 가설의 평가 방법에 대한 종합적 검토</li>
+<li><strong>미래 방향 제시</strong>: Multimodal integration과 human-AI collaboration을 포함한 향후 연구 방향 논의</li>
 </ul></div>
 <div class="section-box"><h2>How</h2>
-<div class="review-fig"><img src="figures/fig1.webp" alt="Figure 1">
-<p class="fig-caption"><em>Figure 1: Taxonomy of Methods for Scientiﬁc Hypothesis Generation (SHG).</em></p></div>
 <ul>
-<li>arXiv API를 통한 체계적 문헌 검색: 핵심개념(가설생성, 과학적발견), 전통기법(LBD, 문헌마이닝), 최신기법(NLP, LLM) 검색어 활용</li>
-<li>포함 기준(Inclusion Criteria) 수립: 자동화된 가설생성 방법 제안, NLP/지식그래프/LLM을 통한 과학발견, 이론적 통찰 제공 논문 선정</li>
-<li>수동 검토 및 분류: 제목/초록 기반 1차 필터링 후, 방법론 패러다임별(LBD, NLP, LLM), 과학 영역별(생의학, 천체물리, 화학), 가설 표현 방식별 분류</li>
-<li>계층적 분류 체계 구축: Figure 1의 분류도를 통해 인간중심→LBD→텍스트마이닝→감독학습→그래프기반→LLM으로의 진화 과정 시각화</li>
-<li>각 방법론의 사례 분석: ARROWSMITH, MOLIERE, KnIT, DiseaseConnect, BrainSCANr 등 구체적 시스템들의 기법과 성과 상세 검토</li>
+<li>arXiv API를 이용한 체계적 문헌 검색 전략 (core concepts, recent techniques, traditional techniques 키워드 활용)</li>
+<li>제목과 초록 기반 초차 필터링 후 관련성 검증을 위한 수동 검토</li>
+<li>Methodological paradigm, scientific domain, hypothesis representation에 따른 분류</li>
+<li>기술의 시간적 진화 및 가설 형식화 방식의 변화 추적</li>
+<li>Literature-based discovery의 역사적 기초(Swanson의 undiscovered public knowledge 개념)부터 최신 LLM 기법까지의 시계열 분석</li>
 </ul></div>
 <div class="section-box"><h2>Originality</h2>
 <ul>
-<li><strong>종합적 범위</strong>: 70년 대 인간중심 방식부터 2025년 최신 LLM 기법까지 20년 이상의 연구 진화를 단일 분류체계로 통합한 최초의 설문</li>
-<li><strong>이론-실제 연계</strong>: 과학철학(Popper의 반증주의)과 실무적 시스템(ARROWSMITH 등)을 연결하여 가설생성의 개념적 기초 제시</li>
-<li><strong>LLM 특화 분석</strong>: 프롬프팅, RAG, 지식그래프 통합 등 LLM 특화 기법들을 처음으로 가설생성 맥락에서 체계적으로 정리</li>
-<li><strong>평가 기준 정립</strong>: 신규성, 관련성, 실현가능성, 중요성, 명확성 등 다원적 평가 차원 제시로 LLM 생성 가설의 객관적 평가 방안 제공</li>
-<li><strong>학제간 관점</strong>: 천문학, 생의학, 화학 등 다양한 과학 영역에서의 사례를 통해 도메인별 특성을 반영한 분석</li>
+<li>LLM 시대의 가설 생성에 대한 최초의 포괄적 서베이로, 전통적 방법부터 최신 기술까지의 통합적 관점 제시</li>
+<li>Human-centric 방법에서 LLM-driven 방법으로의 진화 과정을 체계적으로 매핑</li>
+<li>다양한 학제 간(생의학, 천체물리학, 화학 등) 적용 사례를 포함한 광범위한 범위</li>
+<li>단순한 문헌 정리를 넘어 평가 전략, 도전 과제, 미래 방향을 포함한 심화된 분석</li>
 </ul></div>
 <div class="section-box"><h2>Limitation &amp; Further Study</h2>
 <ul>
-<li><strong>평가 방법론 미성숙</strong>: LLM 생성 가설의 실제 '신규성'을 검증하는 객관적 지표 부재 - 기존 지식과의 중복도 측정 기준 불명확", '<strong>편향성 문제 미해결</strong>: 학습데이터의 편향이 생성 가설에 미치는 영향에 대한 구체적 분석 및 대응책 부족</li>
-<li><strong>인간-AI 협력 모델 부족</strong>: 논문에서 제시된 인간-AI 협력의 구체적 워크플로우와 상호작용 설계 사례 제한적</li>
-<li><strong>멀티모달 통합 미시도</strong>: 텍스트 기반 LLM 중심 분석으로, 이미지, 그래프, 실험데이터 등 멀티모달 정보 활용 방안 부재</li>
-<li><strong>실증적 검증 부족</strong>: 설문 논문으로서 각 방법론의 실제 성능 비교, 성공사례의 양적 평가, 실패 사례의 원인 분석이 제한적</li>
-<li><strong>후속 연구 방향</strong>: (1) LLM 생성 가설의 실제 과학적 타당성 실험적 검증 체계 개발, (2) 학문 분야별 맞춤형 평가 기준 수립, (3) 대규모 비교 연구(벤치마크) 수행, (4) 인간 전문가의 반복적 피드백을 학습하는 적응형 시스템 개발</li>
+<li>현재 arXiv 프리프린트 기반 수집으로 인해 peer-review된 최종 논문보다 미성숙한 연구 포함 가능성</li>
+<li>LLM 기반 가설 생성의 실제 과학적 검증 및 임팩트에 대한 경험적 데이터 부족</li>
+<li>구체적인 평가 메트릭 및 벤치마크 데이터셋의 부재로 인한 정량적 비교 분석 한계</li>
+<li>학제별 특수성이 충분히 반영되지 않아 일반화의 한계 가능성</li>
+<li>후속 연구: 실제 과학적 발견으로 검증된 LLM 기반 가설의 사례 축적, 표준화된 평가 프레임워크 개발, multimodal LLM의 효과성 실증 연구, human-AI 협력의 장기적 영향 분석</li>
 </ul></div>
 <div class="section-box"><h2>Evaluation</h2>
-<div class="eval-badges"><span class="eval-badge">Novelty: 4/5</span> <span class="eval-badge">Technical Soundness: 3/5</span> <span class="eval-badge">Significance: 4/5</span> <span class="eval-badge">Clarity: 4/5</span> <span class="eval-badge">Overall: 4/5</span></div>
-<p><strong>총평</strong>: 본 논문은 급속히 발전하는 LLM 기반 가설생성 분야에서 처음으로 70년 역사를 포괄하는 통합 분류체계를 제시하여 연구자들의 이정표 역할을 할 수 있으며, 신규성-평가-인간협력 등 핵심 과제를 명확히 하여 향후 연구방향을 제시하는 높은 가치의 설문 연구이다.</p></div>
-<div class="connections-box"><h2>같이 보면 좋은 논문</h2><div class="conn-item foundation"><div class="conn-type">기반 연구</div><div class="conn-title"><a href="../419_Hypothesis_Generation_with_Large_Language_Models/index.html">Hypothesis Generation with Large Language Models</a></div><div class="conn-reason">과학적 발견에서 가설 생성에 대한 포괄적 조사가 LLM 기반 가설 생성 알고리즘 개발의 이론적 토대를 마련합니다.</div></div>
-<div class="conn-item foundation"><div class="conn-type">기반 연구</div><div class="conn-title"><a href="../418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/index.html">Hypothesis Generation for Materials Discovery and Design Using Goal-Driven and Constraint-Guided LLM Agents</a></div><div class="conn-reason">과학적 발견을 위한 가설 생성의 이론적 기반과 방법론을 제공한다</div></div>
-<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../149_Bayes-Entropy_Collaborative_Driven_Agents_for_Research_Hypot/index.html">Bayes-Entropy Collaborative Driven Agents for Research Hypotheses Generation and Optimization</a></div><div class="conn-reason">베이즈-엔트로피 협력 기반 에이전트를 통해 연구 가설 생성을 확장한다.</div></div>
-<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../363_From_Reasoning_to_Learning_A_Survey_on_Hypothesis_Discovery/index.html">From Reasoning to Learning: A Survey on Hypothesis Discovery and Rule Learning with Large Language Models</a></div><div class="conn-reason">과학적 발견에서 가설 생성에 대한 종합적 설문을 LLM 관점에서 확장한다.</div></div>
-<div class="conn-item application"><div class="conn-type">응용 사례</div><div class="conn-title"><a href="../666_Research_hypothesis_generation_over_scientific_knowledge_gra/index.html">Research hypothesis generation over scientific knowledge graphs</a></div><div class="conn-reason">과학 지식 그래프를 활용한 연구 가설 생성의 구체적인 구현 방법을 보여준다.</div></div></div>
+<div class="eval-badges"><span class="eval-badge">Novelty: 3/5</span> <span class="eval-badge">Technical Soundness: 3/5</span> <span class="eval-badge">Significance: 4/5</span> <span class="eval-badge">Clarity: 4/5</span> <span class="eval-badge">Overall: 4/5</span></div>
+<p><strong>총평</strong>: 본 논문은 과학적 가설 생성 분야에서 LLMs의 역할과 가능성을 정리한 시의적절한 종합 서베이로, 연구자들을 위한 포괄적 참고 자료를 제공한다. 다만 실제 과학적 검증 데이터와 정량적 평가 메트릭의 부족으로 인해 실무 적용 가능성에 대한 추가 실증 연구가 필요하다.</p></div>
+<div class="connections-box"><h2>같이 보면 좋은 논문</h2><div class="conn-item foundation"><div class="conn-type">기반 연구</div><div class="conn-title"><a href="../419_Hypothesis_Generation_with_Large_Language_Models/index.html">Hypothesis Generation with Large Language Models</a></div><div class="conn-reason">과학적 가설 생성의 기본 원리와 LLM 활용 방법론에 대한 기초적 이해를 제공한다</div></div>
+<div class="conn-item foundation"><div class="conn-type">기반 연구</div><div class="conn-title"><a href="../442_Iris_Interactive_research_ideation_system_for_accelerating_s/index.html">Iris: Interactive research ideation system for accelerating scientific discovery</a></div><div class="conn-reason">과학적 발견을 위한 가설 생성 서베이가 인터랙티브 시스템의 기반이 된다</div></div>
+<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../417_HypoBench_Towards_Systematic_and_Principled_Benchmarking_for/index.html">HypoBench: Towards Systematic and Principled Benchmarking for Hypothesis Generation</a></div><div class="conn-reason">가설 생성을 체계적으로 벤치마킹하고 평가하는 방법론으로 발전시킨다</div></div>
+<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../763_Sparks_of_science_Hypothesis_generation_using_structured_pap/index.html">Sparks of science: Hypothesis generation using structured paper data</a></div><div class="conn-reason">과학 발견을 위한 가설 생성 조사 연구로서 구조화된 데이터 활용의 포괄적 맥락을 제공한다</div></div>
+<div class="conn-item application"><div class="conn-type">응용 사례</div><div class="conn-title"><a href="../149_Bayes-Entropy_Collaborative_Driven_Agents_for_Research_Hypot/index.html">Bayes-Entropy Collaborative Driven Agents for Research Hypotheses Generation and Optimization</a></div><div class="conn-reason">베이지안 엔트로피를 활용한 협력적 가설 생성의 구체적 구현 방법을 보여준다</div></div>
+<div class="conn-item application"><div class="conn-type">응용 사례</div><div class="conn-title"><a href="../719_Scientific_Hypothesis_Generation_and_Validation_Methods_Data/index.html">Scientific hypothesis generation by large language models: laboratory validation in breast cancer treatment</a></div><div class="conn-reason">과학 발견을 위한 가설 생성 설문의 일반적 원리가 유방암 치료라는 구체적 의학 문제에 적용된다.</div></div></div>
 <div class="back"><a href="../../ai4s/index.html">&larr; 목록으로 돌아가기</a></div>
 <div id="lightbox" class="lightbox"><img id="lightbox-img" alt=""></div>
 <script>

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 자동 과학 발견(automated scientific discovery)에서 가설 순위 지정(hypothesis ranking)을 위해 **시뮬레이션된 실험 피드백(simulated experimental feedback)**을 활용하는 새로운 과제를 제안한다. 실험실 실험이 비싸고 처리량이 제한적인 자연과학 영역에서, 실제 실험을 반복 수행하지 않으면서도 실험 기반 순위 지정 정책을 개발할 수 있는 고충실도(high-fidelity) 시뮬레이터와 맥락 내 강화학습(in-context reinforcement learni"
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Human-AI_Experimental_Design"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "sub/Research_Literature_Analysis_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Moose-chem3 Toward experiment-guided hypothesis ranking via simulated experimental feedback.pdf"
 ---
@@ -138,10 +139,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Moose-chem3 Toward exp
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/211_ChemGymRL_A_Customizable_Interactive_Framework_for_Reinforce/review]] — 화학 실험 시뮬레이션 환경이 실험 피드백 기반 가설 평가의 기술적 기초
-- 🔗 후속 연구: [[papers/131_Automating_exploratory_proteomics_research_via_language_mode/review]] — 단백질체학 자동 분석을 시뮬레이션 실험 설계로 확장한 방법론
-- 🧪 응용 사례: [[papers/631_Predicting_field_experiments_with_large_language_models/review]] — 시뮬레이션 기반 실험 설계를 실제 필드 실험 예측에 적용한 사례
-- 🔄 다른 접근: [[papers/248_Curie_Toward_rigorous_and_automated_scientific_experimentati/review]] — 엄격한 과학 실험 자동화 vs 시뮬레이션 기반 접근의 대조적 방법론
-- 🏛 기반 연구: [[papers/131_Automating_exploratory_proteomics_research_via_language_mode/review]] — 단백질체학 자동 분석이 실험 피드백 기반 가설 평가의 생물정보학 기반
-- 🔗 후속 연구: [[papers/211_ChemGymRL_A_Customizable_Interactive_Framework_for_Reinforce/review]] — 화학 실험 시뮬레이션 환경이 실험 피드백 기반 가설 평가의 기술적 확장
-- 🔗 후속 연구: [[papers/557_MOOSE-Chem_Large_Language_Models_for_Rediscovering_Unseen_Ch/review]] — 실험 가이드 기반 가설 순위화로 화학 가설 재발견 방법론을 확장할 수 있다
+- 🔄 다른 접근: [[papers/149_Bayes-Entropy_Collaborative_Driven_Agents_for_Research_Hypot/review]] — 베이즈-엔트로피 협력 방식으로 가설 순위 지정의 다른 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/123_Automated_Hypothesis_Validation_with_Agentic_Sequential_Fals/review]] — 순차적 반증을 통한 가설 검증으로 실험 피드백 기반 접근법을 확장한다.
+- 🧪 응용 사례: [[papers/417_HypoBench_Towards_Systematic_and_Principled_Benchmarking_for/review]] — 가설 생성을 위한 체계적 벤치마킹으로 실험 유도 순위 지정을 평가할 수 있다.

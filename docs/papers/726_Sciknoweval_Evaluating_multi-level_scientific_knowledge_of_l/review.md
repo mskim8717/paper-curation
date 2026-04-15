@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 대규모 언어모델(LLM)의 과학 지식을 5단계(기억, 이해, 추론, 판별, 적용)로 체계적으로 평가하는 28K 규모의 종합 벤치마크 데이터셋 SciKnowEval을 제안한다. 생물학, 화학, 물리학, 재료과학 4개 영역에서 LLM의 과학적 역량을 다층적으로 진단하고 20개 모델을 평가하여 개선의 필요성을 제시한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Domain-specific_Scientific_Reasoning"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Feng et al._2024_Sciknoweval Evaluating multi-level scientific knowledge of large language models.pdf"
 ---
@@ -100,9 +101,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Feng et al._2024_Sciknoweval Evaluating 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/556_MolQuest_A_Benchmark_for_Agentic_Evaluation_of_Abductive_Rea/review]] — 다층적 과학 지식 평가가 화학 추론 벤치마크에 적용됩니다.
-- 🧪 응용 사례: [[papers/166_Biomaze_Benchmarking_and_enhancing_large_language_models_for/review]] — 과학 지식 평가가 생물학적 경로 추론에 적용됩니다.
-- 🔄 다른 접근: [[papers/713_Scicueval_A_comprehensive_dataset_for_evaluating_scientific/review]] — 과학 지식 평가를 위한 서로 다른 포괄적 접근법을 제시합니다.
-- 🏛 기반 연구: [[papers/556_MolQuest_A_Benchmark_for_Agentic_Evaluation_of_Abductive_Rea/review]] — 다층적 과학 지식 평가가 화학 귀추적 추론의 기반을 제공합니다.
-- 🏛 기반 연구: [[papers/166_Biomaze_Benchmarking_and_enhancing_large_language_models_for/review]] — 다층적 생물학 지식 평가가 경로 추론 벤치마크의 기반을 제공합니다.
-- 🏛 기반 연구: [[papers/701_Scholarchemqa_Unveiling_the_power_of_language_models_in_chem/review]] — 과학적 지식 평가의 기초적 접근이 화학 분야 특화 QA 시스템 개발의 이론적 배경을 제공함
+- 🔗 후속 연구: [[papers/556_MolQuest_A_Benchmark_for_Agentic_Evaluation_of_Abductive_Rea/review]] — 다층적 과학 지식 평가를 화학 구조 해석의 귀추적 추론으로 확장한다
+- 🔄 다른 접근: [[papers/736_SciTrust_Evaluating_the_Trustworthiness_of_Large_Language_Mo/review]] — 과학 지식 평가 대신 LLM의 신뢰성 평가에 집중한다
+- 🧪 응용 사례: [[papers/015_A_Perspective_on_Foundation_Models_in_Chemistry/review]] — 화학 분야 기초 모델에 대한 관점을 과학 지식 평가에 적용한다
+- 🔄 다른 접근: [[papers/713_Scicueval_A_comprehensive_dataset_for_evaluating_scientific/review]] — 과학 지식 평가에서 맥락 이해 중심 접근법과 다층적 지식 평가 방식은 서로 다른 관점에서 LLM의 과학적 역량을 측정한다.
+- 🏛 기반 연구: [[papers/556_MolQuest_A_Benchmark_for_Agentic_Evaluation_of_Abductive_Rea/review]] — 과학 지식 평가의 다층적 접근법이 귀추적 추론 평가의 기반이 된다
+- 🏛 기반 연구: [[papers/181_Can_gpt-4v_ision_serve_medical_applications_case_studies_on/review]] — 다차원 과학 지식 평가 방법론이 의료 영상 진단에서 AI 모델의 임상 지식 평가에 적용됨

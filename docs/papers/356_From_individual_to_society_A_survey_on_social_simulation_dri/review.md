@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어 모델(LLM) 기반 에이전트를 활용하여 개별 인간 행동부터 복잡한 사회 역학까지 다층적으로 시뮬레이션하는 포괄적인 체계를 제시한다. 이 논문은 개인 수준의 정교한 모델링에서 사회 규모의 다양한 상호작용까지 진행하는 시뮬레이션의 발전 과정을 체계적으로 분류하고 분석한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Multi-Hop_Reasoning_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mou et al._2024_From individual to society A survey on social simulation driven by large language model-based agent.pdf"
 ---
@@ -147,15 +148,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mou et al._2024_From individual to socie
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/247_Cultural_evolution_in_populations_of_large_language_models/review]] — LLM 인구의 문화진화가 개별 에이전트부터 사회 전체까지의 다층적 시뮬레이션 체계의 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/319_Ethnography_and_machine_learning_Synergies_and_new_direction/review]] — 민족지학과 머신러닝의 결합된 방법론이 사회 시뮬레이션에서 현실적인 인간 행동 모델링에 적용된다.
-- 🔗 후속 연구: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — 시뮬레이션된 인간 환경에서의 언어모델 훈련이 사회 시뮬레이션 체계를 실제 모델 개발로 확장한 사례이다.
-- 🏛 기반 연구: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — 대형 언어모델이 주도하는 사회 시뮬레이션 조사는 시뮬레이션된 인간 사회에서의 언어모델 정렬 학습의 이론적 기반을 제공합니다
-- 🔗 후속 연구: [[papers/247_Cultural_evolution_in_populations_of_large_language_models/review]] — LLM 기반 사회 시뮬레이션을 문화진화 관점에서 더 구체적으로 다루며 네트워크 구조와 정보 변환의 역학을 탐구한다.
-- 🏛 기반 연구: [[papers/319_Ethnography_and_machine_learning_Synergies_and_new_direction/review]] — 사회과학 방법론의 통합이 LLM 기반 사회 시뮬레이션의 개인-사회 다층 분석에 이론적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/660_Reimagining_urban_science_Scaling_causal_inference_with_larg/review]] — 사회 시뮬레이션 기반 개인-사회 연구가 도시 과학의 인과 추론을 더 복합적인 사회 시스템으로 확장합니다.
-- 🔗 후속 연구: [[papers/077_AI_for_social_science_and_social_science_of_AI_A_Survey/review]] — LLM이 주도하는 사회 시뮬레이션 조사가 AI와 사회과학 결합의 구체적 응용 사례를 보여준다.
-- 🏛 기반 연구: [[papers/188_Can_we_automatize_scientific_discovery_in_the_cognitive_scie/review]] — 사회 시뮬레이션 조사가 인지과학 자동화의 이론적 기반을 제공
-- 🧪 응용 사례: [[papers/050_Adasociety_An_adaptive_environment_with_social_structures_fo/review]] — AdaSociety의 동적 사회 구조 시뮬레이션이 사회과학 연구의 사회 시뮬레이션 방법론을 실제 구현한 응용 사례이다.
-- 🧪 응용 사례: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — 개인에서 사회로의 사회 시뮬레이션 조사는 LLM 에이전트 협력 메커니즘을 대규모 사회적 현상 연구에 적용한다.
-- 🧪 응용 사례: [[papers/301_Economic_anthropology_in_the_era_of_generative_artificial_in/review]] — 사회 시뮬레이션을 통한 개인에서 사회로의 확장을 경제 인류학적 맥락에서 구현한다
+- 🏛 기반 연구: [[papers/247_Cultural_evolution_in_populations_of_large_language_models/review]] — LLM 인구의 문화진화가 개별-사회 시뮬레이션 체계의 핵심 구성요소가 된다
+- 🧪 응용 사례: [[papers/064_Agentic_AI_for_Scientific_Discovery_A_Survey_of_Progress_Cha/review]] — 사회 시뮬레이션 체계를 과학 발견 자동화에 구체적으로 적용하는 방법을 제시한다
+- 🏛 기반 연구: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — 사회 시뮬레이션 기반 연구의 포괄적 조사가 시뮬레이션된 인간 사회에서의 언어모델 학습 방법론의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/247_Cultural_evolution_in_populations_of_large_language_models/review]] — 개별 에이전트 문화진화를 사회 전체 시뮬레이션으로 확장하는 포괄적 체계를 제시한다
+- 🔗 후속 연구: [[papers/660_Reimagining_urban_science_Scaling_causal_inference_with_larg/review]] — 사회 시뮬레이션 설문과 도시 인과 추론 자동화는 모두 사회과학 연구의 AI 기반 확장을 다루는 상호 보완적 연구이다.
+- 🔗 후속 연구: [[papers/188_Can_we_automatize_scientific_discovery_in_the_cognitive_scie/review]] — 사회 시뮬레이션 기반 개인에서 사회로의 서베이가 인지과학 자동화의 사회적 확장 방향을 제시한다
+- 🔗 후속 연구: [[papers/358_From_Labor_to_Collaboration_A_Methodological_Experiment_Usin/review]] — 사회 시뮬레이션 연구의 포괄적 조사를 통해 인문사회과학에서 AI 에이전트 활용을 개별 연구에서 사회 전체 현상 연구로 확장함

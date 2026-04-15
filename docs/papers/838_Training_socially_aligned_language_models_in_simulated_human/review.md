@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 시뮬레이션된 사회적 상호작용을 통해 언어모델을 사회적으로 정렬(socially aligned)시키는 새로운 학습 패러다임을 제시한다. 기존 감독 학습이나 보상 모델링의 한계를 극복하기 위해 다중 에이전트 시뮬레이션 환경(SANDBOX)에서 생성된 상호작용 데이터를 활용하여 보다 견고하고 확장 가능한 정렬 방법을 제안한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Arrieta et al._2023_Training socially aligned language models in simulated human society.pdf"
 ---
@@ -122,13 +122,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Arrieta et al._2023_Training socially al
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — 대형 언어모델이 주도하는 사회 시뮬레이션 조사는 시뮬레이션된 인간 사회에서의 언어모델 정렬 학습의 이론적 기반을 제공합니다
-- 🔄 다른 접근: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — LLM 에이전트의 협업 메커니즘 탐구와 시뮬레이션된 사회적 상호작용은 모두 AI의 사회적 학습을 위한 서로 다른 접근법입니다
-- 🧪 응용 사례: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — 의사-환자 시뮬레이션은 사회적으로 정렬된 언어모델 학습이 의료 분야에 적용된 구체적인 사례입니다
-- 🧪 응용 사례: [[papers/247_Cultural_evolution_in_populations_of_large_language_models/review]] — 시뮬레이션된 인간 환경에서 사회적으로 정렬된 언어 모델 훈련이 LLM 문화진화의 실제 적용 사례이다.
-- 🔗 후속 연구: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — 시뮬레이션된 인간 환경에서의 언어모델 훈련이 사회 시뮬레이션 체계를 실제 모델 개발로 확장한 사례이다.
-- 🔗 후속 연구: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — 심리학 실험 재현을 사회적으로 정렬된 언어모델 훈련으로 발전시킨 연구
-- 🏛 기반 연구: [[papers/175_Building_machines_that_learn_and_think_with_people/review]] — 사회적으로 정렬된 언어 모델 훈련 방법이 인간과 협력적으로 사고하는 AI 파트너 개발의 핵심 기술적 토대이다.
-- 🔗 후속 연구: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — 시뮬레이션된 인간 사회에서 사회적으로 정렬된 언어 모델 훈련은 에이전트 협력 메커니즘을 실제 사회적 맥락으로 확장한다.
-- 🏛 기반 연구: [[papers/477_Large_language_models_pass_the_turing_test/review]] — 사회적으로 정렬된 언어 모델 학습이 튜링 테스트 통과의 기반 기술이 됨
-- 🏛 기반 연구: [[papers/185_Can_large_language_models_understand_you_better_an_mbti_pers/review]] — 시뮬레이션된 인간 사회에서 사회적으로 정렬된 언어 모델 훈련 연구로 본 논문의 성격 탐지 데이터셋 구축의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — LLM 에이전트 간 협력 메커니즘 연구와 시뮬레이션 기반 사회적 정렬을 결합하면 더 현실적인 다중 에이전트 시스템을 구축할 수 있다.
+- 🏛 기반 연구: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — 사회 시뮬레이션 기반 연구의 포괄적 조사가 시뮬레이션된 인간 사회에서의 언어모델 학습 방법론의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/247_Cultural_evolution_in_populations_of_large_language_models/review]] — LLM 기반 사회적 정렬 학습이 문화진화 시뮬레이션의 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — 사회적으로 정렬된 언어 모델 훈련을 심리학 실험 재현으로 확장한다
+- 🔄 다른 접근: [[papers/077_AI_for_social_science_and_social_science_of_AI_A_Survey/review]] — 사회적으로 정렬된 언어모델 훈련과 사회과학 연구가 각각 다른 AI-사회 통합 접근법이다
+- 🏛 기반 연구: [[papers/185_Can_large_language_models_understand_you_better_an_mbti_pers/review]] — 시뮬레이션된 인간 사회에서 언어모델 훈련이 성격 탐지 모델 개발의 방법론적 토대를 제공한다.

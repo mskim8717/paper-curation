@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 그래프 구조 데이터에 직접 작동하는 GAN 기반 암묵적(implicit) 생성 모델을 제안하여, 분자 설계에서 비용이 큰 그래프 매칭 절차와 노드 순서 휴리스틱을 우회하고 높은 유효성의 화학 화합물을 생성한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/3D_Molecular_Generation"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cao and Kipf_2018_Molgan An implicit generative model for small molecular graphs.pdf"
 ---
@@ -117,10 +118,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cao and Kipf_2018_Molgan An implicit gen
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/867_Verifier-Constrained_Flow_Expansion_for_Discovery_Beyond_the/review]] — 분자 생성에서 MolGAN은 GAN 기반 암묵적 방법을, Flow 확장은 명시적 확률 모델을 사용하는 대조적 접근법
-- 🔗 후속 연구: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — Foundation Molecular Grammar의 해석 가능한 분자 문법이 MolGAN의 생성 결과를 체계적으로 분석하는 도구로 활용됨
-- 🏛 기반 연구: [[papers/282_DMFlow_Disordered_Materials_Generation_by_Flow_Matching/review]] — DMFlow의 무질서 물질 생성 방법론이 MolGAN의 분자 그래프 생성 알고리즘 개발에 기초가 됨
-- 🏛 기반 연구: [[papers/349_Fragment_and_Geometry_Aware_Tokenization_of_Molecules_for_St/review]] — 소분자 그래프 생성을 위한 암시적 생성 모델이 구조 기반 분자 토큰화의 방법론적 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/867_Verifier-Constrained_Flow_Expansion_for_Discovery_Beyond_the/review]] — 분자 생성에서 Flow 확장은 명시적 확률 모델을, MolGAN은 GAN 기반 암묵적 방법을 사용하는 대조적 접근법
-- 🔗 후속 연구: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — MolGAN의 분자 생성 결과를 Foundation Molecular Grammar의 해석 가능한 문법 구조로 체계적으로 분석할 수 있음
-- 🏛 기반 연구: [[papers/282_DMFlow_Disordered_Materials_Generation_by_Flow_Matching/review]] — 소분자용 암시적 생성모델 MolGAN이 무질서 재료 생성의 기반 제공
+- 🔄 다른 접근: [[papers/695_Scaling_Deep_Learning_for_Materials_Discovery/review]] — MolGAN의 소분자 그래프 생성과 GNoME의 대규모 결정질 구조 발견은 서로 다른 규모의 물질 생성 접근법이다.
+- 🔗 후속 연구: [[papers/282_DMFlow_Disordered_Materials_Generation_by_Flow_Matching/review]] — 무질서 재료 생성을 위한 플로우 매칭이 MolGAN의 분자 그래프 생성을 더 복잡한 재료 시스템으로 확장한다.
+- 🏛 기반 연구: [[papers/349_Fragment_and_Geometry_Aware_Tokenization_of_Molecules_for_St/review]] — 분자의 프래그먼트와 기하학 인식 토큰화가 MolGAN의 분자 그래프 생성에 구조적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/305_Efficient_Evolutionary_Search_Over_Chemical_Space_with_Large/review]] — 화학 공간 탐색의 기반이 되는 분자 그래프 생성과 최적화 방법론
+- 🔄 다른 접근: [[papers/695_Scaling_Deep_Learning_for_Materials_Discovery/review]] — GNoME의 대규모 안정 물질 발견과 MolGAN의 소분자 그래프 생성은 서로 다른 규모의 물질 설계 접근법이다.
+- 🏛 기반 연구: [[papers/397_Hallucinations_can_improve_large_language_models_in_drug_dis/review]] — 분자 그래프 생성 모델의 암묵적 생성 과정은 환각이 분자 특성 예측에 도움되는 이론적 기반을 제공한다.

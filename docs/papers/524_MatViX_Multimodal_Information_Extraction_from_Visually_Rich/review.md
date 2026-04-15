@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "재료과학 분야의 과학 논문에서 텍스트, 표, 그림에 분산된 구조화된 정보를 추출하는 멀티모달 정보 추출(Multimodal Information Extraction, MIE) 벤치마크를 제시한다. 324개의 전문가 주석 논문과 1,688개의 복잡한 구조화된 JSON 파일로 구성된 MATVIX 데이터셋을 소개하며, 비전-랭귀지 모델(Vision-Language Models, VLMs)의 성능을 평가한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Publication_Concept_Extraction"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Khalighinejad et al._2024_MatViX Multimodal Information Extraction from Visually Rich Articles.pdf"
 ---
@@ -101,7 +102,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Khalighinejad et al._2024_MatViX Multimo
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/564_Multi-llm_collaborative_caption_generation_in_scientific_doc/review]] — 다중 LLM 협업 캡션 생성이 MatViX의 멀티모달 정보 추출을 과학 문서의 시각적 요소 설명 생성으로 확장한 구체적 응용 연구임
-- 🏛 기반 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 과학 그림을 위한 캡션 생성 기술이 재료과학 논문의 복잡한 시각적 정보를 구조화된 텍스트로 변환하는 MatViX 시스템의 핵심 구성 요소를 제공함
-- 🔄 다른 접근: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — FigCaps-HF의 그림-캡션 생성 프레임워크가 MatViX의 멀티모달 추출과 다른 접근법으로 과학 문서의 시각적 정보를 처리하는 상호 보완적 방법론임
-- 🔄 다른 접근: [[papers/062_Agent-based_multimodal_information_extraction_for_nanomateri/review]] — nanoMINER와 MatViX는 모두 과학 논문에서 구조화된 정보 추출을 다루지만, 나노물질 특화와 시각적 정보 처리라는 서로 다른 초점을 가집니다.
+- 🔄 다른 접근: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — SciFIBench는 과학 논문 그림 해석에 특화된 벤치마크로, MatViX의 재료과학 특화 접근법과 대비되는 범용적 평가 기준을 제시한다
+- 🧪 응용 사례: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료과학 분야 AI/ML 조사 연구로, MatViX가 목표로 하는 재료과학 논문에서의 정보 추출 응용 분야에 대한 포괄적 배경을 제공한다
+- 🔗 후속 연구: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — 대학원 수준의 다학문 다중모달 과학 데이터셋으로, MatViX의 재료과학 특화 접근을 더 넓은 과학 분야로 확장한 연구다
+- 🔗 후속 연구: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — 시각적으로 풍부한 정보에서 멀티모달 정보 추출 연구가 MatterChat의 물질 성질 예측과 과학적 추론 능력으로 구체화되었다
+- 🏛 기반 연구: [[papers/062_Agent-based_multimodal_information_extraction_for_nanomateri/review]] — 시각적으로 풍부한 과학 문서에서의 멀티모달 정보 추출 기술을 나노물질 특화 에이전트 시스템의 기반으로 활용한다
+- 🔄 다른 접근: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — MatViX는 재료과학에 특화된 다중모달 정보 추출을 다루어, SciFIBench의 범용적 과학 그림 해석과 대비되는 도메인 특화 접근을 보여준다

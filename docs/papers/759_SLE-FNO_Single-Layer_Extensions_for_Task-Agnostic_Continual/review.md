@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "과학기계학습(SciML) 모델의 배포 후 분포 변화(distribution shift)에 적응하면서 이전 학습 지식을 보존해야 하는 지속학습(continual learning) 문제를 해결하기 위해, Fourier Neural Operator(FNO)에 단일 레이어 확장(Single-Layer Extension)을 결합한 SLE-FNO를 제안한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Evolutionary_Chemistry_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Field-Specific_ML_Survey_Methods"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Elhadidy et al._2026_SLE-FNO Single-Layer Extensions for Task-Agnostic Continual Learning in Fourier Neural Operators.pdf"
 ---
@@ -121,7 +122,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Elhadidy et al._2026_SLE-FNO Single-Laye
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — 과학 머신러닝 모델의 지속학습이 LLM 기반 동역학 시스템 발견에서 새로운 데이터 적응에 적용된다.
-- 🏛 기반 연구: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 로봇 운동 정책의 일반화 개선이 SLE-FNO의 분포 변화 적응과 지속학습의 기반 원리를 제공한다.
-- 🔗 후속 연구: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — 플러그앤플레이 신경 연산자 프레임워크가 FNO의 단일 레이어 확장을 더 범용적인 인컨텍스트 추론으로 확장한다.
-- 🏛 기반 연구: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — 과학 머신러닝에서의 지속학습 문제가 LLM 기반 동역학 시스템 발견의 지식 보존과 적응에 기반을 제공한다.
+- 🔄 다른 접근: [[papers/495_Llm__mapreduce-v2_Entropy-driven_convolutional_test-time_sca/review]] — 과학 모델의 지속학습과 장문 생성 스케일링이 서로 다른 적응 메커니즘을 제시한다
+- 🏛 기반 연구: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 과학 기계학습을 위한 기초 모델 연구가 SLE-FNO의 지속학습 접근법에 이론적 토대를 제공한다
+- 🏛 기반 연구: [[papers/495_Llm__mapreduce-v2_Entropy-driven_convolutional_test-time_sca/review]] — 과학 기계학습의 지속학습 원리가 장문 생성의 테스트 타임 스케일링 기법에 이론적 기반을 제공한다

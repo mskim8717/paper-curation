@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 대규모 언어모델(LLM)의 기술 판단 능력을 평가하기 위해 USPTO 특허 분류 작업을 활용하여, 모델이 보유한 지식(lay-in knowledge)과 실제 활용하는 지식(working knowledge) 간의 격차를 진단하는 프레임워크를 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Self-Refining_Text_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Patent_Novelty_Prediction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_Introspective growth Automatically advancing llm expertise in technology judgment.pdf"
 ---
@@ -93,6 +94,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_Introspective growth Aut
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — Self-Refine의 반복적 자기 정제 메커니즘이 특허 분류 작업에서 LLM의 기술 판단 능력을 점진적으로 향상시키는 구체적 적용 사례를 보여줌
-- 🔗 후속 연구: [[papers/484_Learning_to_generate_research_idea_with_dynamic_control/review]] — 동적 제어를 통한 연구 아이디어 생성 학습이 내성적 성장의 자동화된 전문성 발전을 창의적 아이디어 생성 영역으로 확장한 연구임
-- 🏛 기반 연구: [[papers/750_SEVerA_Verified_Synthesis_of_Self-Evolving_Agents/review]] — 자기 진화 에이전트의 검증된 합성 방법론이 LLM의 내성적 전문성 성장 과정의 안전성과 신뢰성을 보장하는 이론적 기반을 제공함
+- 🔄 다른 접근: [[papers/283_Do_Users_Write_More_Insecure_Code_with_AI_Assistants/review]] — LLM의 전문 지식 활용과 코딩 보안성에서 각각 지식-성능 격차 문제를 다룬다.
+- 🏛 기반 연구: [[papers/836_Towards_uncovering_how_large_language_model_works_An_explain/review]] — LLM 작동 원리에 대한 설명 가능성 연구가 기술 판단에서의 지식 격차 진단을 뒷받침한다.
+- 🔗 후속 연구: [[papers/322_Evaluation_of_openai_o1_Opportunities_and_challenges_of_agi/review]] — OpenAI o1의 AGI 평가가 LLM의 기술 전문성 자동 발전 가능성으로 확장될 수 있다.
+- 🔄 다른 접근: [[papers/283_Do_Users_Write_More_Insecure_Code_with_AI_Assistants/review]] — AI 도구 사용이 전문성에 미치는 부정적 영향을 코딩 보안과 기술 판단에서 각각 검증한다.

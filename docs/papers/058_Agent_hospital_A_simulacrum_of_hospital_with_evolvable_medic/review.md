@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 대규모 언어모델(LLM)을 기반으로 한 자율 에이전트들이 병원 환경을 시뮬레이션하는 \"Agent Hospital\"을 제안하며, 의사 에이전트가 수만 건의 환자 치료를 통해 진화하여 실제 의료 시험 벤치마크에서 성능을 달성한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Clinical_Multi-Agent_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Domain-Specific_Autonomous_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_Agent hospital A simulacrum of hospital with evolvable medical agents.pdf"
 ---
@@ -118,4 +119,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_Agent hospital A simulacr
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/433_Interactive_agents_Simulating_counselor-client_psychological/review]] — Agent hospital의 진화하는 의료진 시뮬레이션은 심리 상담 에이전트의 상호작용을 복잡한 병원 환경으로 확장한다.
+- 🔗 후속 연구: [[papers/078_Ai_hospital_Benchmarking_large_language_models_in_a_multi-ag/review]] — 다중 에이전트 의료 환경 벤치마크가 병원 시뮬레이션을 넘어 AI 에이전트의 체계적 평가로 확장한다
+- 🔄 다른 접근: [[papers/433_Interactive_agents_Simulating_counselor-client_psychological/review]] — 상담사-내담자 심리 상호작용 시뮬레이션과 의료 에이전트 시뮬레이션은 서로 다른 인간 서비스 분야를 다룬다
+- 🔄 다른 접근: [[papers/078_Ai_hospital_Benchmarking_large_language_models_in_a_multi-ag/review]] — 의료 AI 벤치마킹에서 고정된 시나리오와 진화 가능한 병원 환경이라는 서로 다른 평가 방법론을 제시한다
+- 🏛 기반 연구: [[papers/433_Interactive_agents_Simulating_counselor-client_psychological/review]] — 에이전트 기반 병원 시뮬레이션 연구가 상담사-내담자 상호작용 모델링의 방법론적 기반을 제공함
+- 🔗 후속 연구: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 병원 시뮬레이션 환경이 다학제 협력을 넘어 의료 에이전트의 진화적 학습을 가능하게 한다
+- 🔄 다른 접근: [[papers/644_Psyche_A_multi-faceted_patient_simulation_framework_for_eval/review]] — 정신과 환자 시뮬레이션과 병원 에이전트 시뮬레이션은 의료 분야에서 서로 다른 시뮬레이션 접근법을 제시한다

@@ -12,8 +12,8 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 LangGraph 기반의 에이전틱 AI 시스템(CTRA)을 제안하여 제약·바이오 실험실의 운영 데이터를 자동으로 분석하고 병목 지점을 식별함으로써 사이클 타임을 단축하는 방법을 제시한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/AI-Powered_Research_Planning"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Greenwald et al._2025_Uncovering bottlenecks and optimizing scientific lab workflows with cycle time reduction agents.pdf"
 ---
@@ -124,5 +124,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Greenwald et al._2025_Uncovering bottlen
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 제약 실험실 최적화와 단백질 공간 자율 탐색에서 실험실 자동화의 다른 응용을 보여준다.
-- 🔗 후속 연구: [[papers/432_Intelligent_experiments_through_real-time_ai_Fast_data_proce/review]] — 실시간 AI를 통한 지능형 실험으로 실험실 워크플로우 최적화를 확장한다.
+- 🧪 응용 사례: [[papers/634_PRIME_A_Multi-Agent_Environment_for_Orchestrating_Dynamic_Co/review]] — 단백질 공학의 복잡한 계산 워크플로우 최적화와 달리 제약·바이오 실험실의 운영 효율성 개선에 특화된 실제 적용
+- 🏛 기반 연구: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 자율 단백질 항법 실험실의 이론적 개념을 실제 제약·바이오 실험실의 운영 최적화에 적용한 구체적 구현
+- 🔗 후속 연구: [[papers/096_An_automatic_end-to-end_chemical_synthesis_development_platf/review]] — 화학 합성 개발 플랫폼의 자동화를 실험실 전체 운영 워크플로우 최적화로 확장한 발전된 접근
+- 🔄 다른 접근: [[papers/310_Embodied_Science_Closing_the_Discovery_Loop_with_Agentic_Emb/review]] — 체화된 과학적 발견보다 기존 실험실 데이터 분석을 통한 효율성 개선에 집중하는 다른 접근
+- 🧪 응용 사례: [[papers/139_Autonomous_microscopy_experiments_through_large_language_mod/review]] — 과학 실험실 워크플로우의 병목점 발견과 최적화 방법론이 AILA의 자동화된 현미경 실험 시스템 구축에 실제 적용되었다
+- 🏛 기반 연구: [[papers/634_PRIME_A_Multi-Agent_Environment_for_Orchestrating_Dynamic_Co/review]] — 단백질 공학 워크플로우 자동화의 성공 사례가 실험실 운영 최적화 시스템 개발에 방법론적 기반 제공
+- 🧪 응용 사례: [[papers/118_Autobio_A_simulation_and_benchmark_for_robotic_automation_in/review]] — 생물 실험실 자동화 벤치마크의 실제 적용을 통해 과학 실험실 워크플로우의 병목 지점을 발견하고 최적화할 수 있다

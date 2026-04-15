@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.25
 essence: "대규모 언어모델(LLM)을 기반으로 한 다중 에이전트 프레임워크인 CellAgent를 제안하여, 단일세포 RNA 염기서열 분석(scRNA-seq) 작업을 자동으로 수행하고 인간의 개입 없이 고품질의 분석 결과를 제공한다. 복잡한 생물정보학 분석 워크플로우의 자동화를 통해 생물학 연구자의 기술적 진입장벽을 크게 낮춘다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Single-cell_RNA_Sequencing"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Single-Cell_RNA_Sequencing_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xiao et al._2024_CellAgent An LLM-driven Multi-Agent Framework for Automated Single-cell Data Analysis.pdf"
 ---
@@ -110,13 +110,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xiao et al._2024_CellAgent An LLM-driven
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/700_scBaseCount_an_AI_agent-curated_uniformly_processed_and_auto/review]] — 단일세포 분석 자동화를 위해 LLM 다중 에이전트 프레임워크와 AI 기반 대규모 데이터 표준화라는 다른 접근법을 사용한다
-- 🏛 기반 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — 다중 에이전트 시스템의 일반적 프레임워크가 단일세포 분석 특화 에이전트의 기술적 기반을 제공한다
-- 🔗 후속 연구: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — 단일세포 주석화를 위한 LLM 에이전트를 자동화된 분석 파이프라인으로 확장할 수 있다
-- 🔗 후속 연구: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — LLM 기반 다중 에이전트 세포 분석 프레임워크가 범용 단일세포 주석을 더 포괄적인 세포 분석으로 확장한다.
-- 🧪 응용 사례: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 대규모 언어모델을 활용한 단일세포 분석이 세포 생물학 연구 자동화를 위한 멀티 에이전트 시스템에 핵심적으로 활용될 수 있다
-- 🏛 기반 연구: [[papers/431_Integrated_analysis_of_multimodal_single-cell_data/review]] — 멀티모달 단일세포 데이터 통합 분석 기술이 세포 생물학 연구 자동화를 위한 멀티 에이전트 시스템의 핵심 분석 기반을 제공한다
-- 🔄 다른 접근: [[papers/700_scBaseCount_an_AI_agent-curated_uniformly_processed_and_auto/review]] — 단일세포 RNA 시퀀싱 데이터 처리를 위해 AI 에이전트 기반 자동화와 대규모 표준화라는 다른 접근법을 사용한다
-- 🔗 후속 연구: [[papers/069_Agentomics-ML_Autonomous_Machine_Learning_Experimentation_Ag/review]] — 세포 생물학 자동화를 위한 LLM 기반 다중 에이전트 프레임워크로 확장한다.
-- 🔗 후속 연구: [[papers/062_Agent-based_multimodal_information_extraction_for_nanomateri/review]] — 나노물질 정보 추출을 위한 nanoMINER는 CellAgent의 세포 데이터 자동화 기법을 재료과학 영역으로 확장하여 멀티모달 과학 데이터 처리의 새로운 응용을 제시합니다.
-- 🔗 후속 연구: [[papers/357_From_intention_to_implementation_automating_biomedical_resea/review]] — CellAgent의 LLM 기반 다중 에이전트 세포 분석 프레임워크는 BioResearcher의 바이오메디컬 자동화를 세포 수준으로 확장한다.
+- 🔄 다른 접근: [[papers/700_scBaseCount_an_AI_agent-curated_uniformly_processed_and_auto/review]] — 단일세포 분석을 위해 LLM 기반 다중 에이전트 프레임워크와 AI 에이전트 기반 데이터 처리 자동화라는 서로 다른 접근법을 제시함
+- 🔗 후속 연구: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — 단일세포 RNA 분석용 다중 에이전트가 범용 단일세포 주석화 에이전트로 확장됨
+- 🔗 후속 연구: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — CellAgent가 세포 분석의 멀티에이전트 프레임워크를 제공하여 scAgent의 단일세포 주석 기능을 확장할 수 있다.
+- 🔗 후속 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 단일세포 분석을 LLM 에이전트 프레임워크로 자동화하여 더욱 발전시킨 연구
+- 🔄 다른 접근: [[papers/700_scBaseCount_an_AI_agent-curated_uniformly_processed_and_auto/review]] — 단일세포 데이터 처리를 위해 AI 에이전트 기반 자동화와 LLM 기반 다중 에이전트 프레임워크라는 서로 다른 접근법을 제시함
+- 🔗 후속 연구: [[papers/306_Efficient_fine-tuning_of_single-cell_foundation_models_enabl/review]] — CellAgent의 LLM 기반 멀티에이전트 프레임워크가 단일세포 기초 모델을 더 자동화된 형태로 발전시킨다.
+- 🔄 다른 접근: [[papers/505_Llm4grn_Discovering_causal_gene_regulatory_networks_with_llm/review]] — LLM 기반 다중 에이전트 세포 분석 프레임워크와 단일세포 데이터 기반 유전자 네트워크 발견은 모두 세포 생물학 연구의 다른 접근법이다.
+- 🔗 후속 연구: [[papers/357_From_intention_to_implementation_automating_biomedical_resea/review]] — CellAgent의 세포 분석 특화 기능은 BioResearcher의 포괄적 바이오메디컬 연구 자동화를 특정 영역으로 확장한 형태
+- 🔄 다른 접근: [[papers/766_SpatialAgent_An_autonomous_AI_agent_for_spatial_biology/review]] — 세포 에이전트 프레임워크와 공간생물학 에이전트는 생물학 연구 자동화의 서로 다른 접근법을 제시한다

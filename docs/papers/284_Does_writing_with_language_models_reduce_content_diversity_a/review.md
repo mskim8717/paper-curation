@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.2
 essence: "인간 피드백으로 미세조정된 언어모델(InstructGPT)을 사용한 협력 글쓰기가 통계적으로 유의미하게 내용 다양성을 감소시키는지를 제어된 실험을 통해 측정한 연구이다. 기본 모델(GPT3)은 유의미한 영향을 보이지 않았다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Diversity"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Padmakumar and He_2023_Does writing with language models reduce content diversity arXiv preprint arXiv2309.05196, 2023..pdf"
 ---
@@ -113,17 +114,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Padmakumar and He_2023_Does writing with
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/283_Do_Users_Write_More_Insecure_Code_with_AI_Assistants/review]] — AI 어시스턴트 사용의 부정적 측면을 각각 다양성과 보안 관점에서 다른 각도로 조사함
-- ⚖️ 반론/비판: [[papers/227_Closing_the_loop_Learning_to_generate_writing_feedback_via_l/review]] — AI가 콘텐츠 다양성을 감소시킨다는 우려와 교육적 피드백 개선에 도움된다는 관점이 상반됨
-- 🔗 후속 연구: [[papers/611_People_who_frequently_use_ChatGPT_for_writing_tasks_are_accu/review]] — 언어모델 사용이 글쓰기에 미치는 영향을 다양성 감소에서 정확성 인식으로 확장하여 더 포괄적인 사용자 행동 분석을 제공함
-- ⚖️ 반론/비판: [[papers/571_Neural_automated_writing_evaluation_with_corrective_feedback/review]] — 언어 모델과 함께 글쓰기할 때 내용 다양성이 감소한다는 연구는 자동 쓰기 평가 시스템이 창의성에 미칠 부정적 영향을 시사한다.
-- ⚖️ 반론/비판: [[papers/107_Artificial_intelligence_tools_expand_scientists_impact_but_c/review]] — 언어 모델과의 글쓰기가 콘텐츠 다양성을 줄이는지 조사하여 본 논문의 탐색 범위 축소 현상을 다른 관점에서 검증한다.
-- 🔗 후속 연구: [[papers/409_How_ai_ideas_affect_the_creativity_diversity_and_evolution_o/review]] — 언어모델과의 글쓰기가 콘텐츠 다양성을 감소시킨다는 발견이 AI 아이디어 노출의 창의성과 다양성에 대한 영향을 더 광범위한 맥락에서 검증함
-- 🔗 후속 연구: [[papers/641_Prototypical_human-ai_collaboration_behaviors_from_llm-assis/review]] — 언어모델과의 글쓰기가 콘텐츠 다양성에 미치는 영향 연구가 인간-AI 협력 행동 분석을 창작물의 품질 변화 측면으로 확장한 심화 연구임
-- ⚖️ 반론/비판: [[papers/227_Closing_the_loop_Learning_to_generate_writing_feedback_via_l/review]] — AI 어시스턴트가 학습에 도움이 된다는 관점과 콘텐츠 다양성을 감소시킨다는 우려가 상반됨
-- 🔄 다른 접근: [[papers/283_Do_Users_Write_More_Insecure_Code_with_AI_Assistants/review]] — AI 어시스턴트 사용의 부정적 측면을 각각 보안과 다양성 관점에서 다른 각도로 조사함
-- 🏛 기반 연구: [[papers/375_Generating_full_length_wikipedia_biographies_The_impact_of_g/review]] — 언어 모델과의 글쓰기가 콘텐츠 다양성에 미치는 영향 연구로 본 논문의 성별 편향 분석의 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/414_Human-llm_coevolution_Evidence_from_academic_writing/review]] — AI 작문 도구 사용이 콘텐츠 다양성에 미치는 영향을 통계적 분석과 실험적 접근법으로 각각 다르게 탐구합니다.
-- ⚖️ 반론/비판: [[papers/900_ChatGPT_has_entered_the_classroom_how_LLMs_could_transform_e/review]] — AI 도구 사용이 교육 콘텐츠 다양성에 미치는 부정적 영향을 제시한다
-- 🔗 후속 연구: [[papers/607_Patterns_and_purposes_A_cross-journal_analysis_of_ai_tool_us/review]] — AI 도구 사용이 콘텐츠 다양성에 미치는 영향을 학술 저술의 구체적 맥락에서 실증한다
-- ⚖️ 반론/비판: [[papers/565_Multi-novelty_Improve_the_diversity_and_novelty_of_contents/review]] — AI 생성 콘텐츠 다양성 감소 문제에 대한 구체적인 해결책을 제시한다
+- 🏛 기반 연구: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — 언어모델 협력 글쓰기의 다양성 영향이 LLM 채택 패턴의 대규모 분석으로 확장 검증된다.
+- 🔄 다른 접근: [[papers/641_Prototypical_human-ai_collaboration_behaviors_from_llm-assis/review]] — 언어모델과의 협력 글쓰기 효과를 콘텐츠 다양성과 협력 행동 패턴으로 각각 분석한다.
+- 🔗 후속 연구: [[papers/565_Multi-novelty_Improve_the_diversity_and_novelty_of_contents/review]] — 다양성 감소 문제가 다중 새로움 콘텐츠 생성 연구로 해결책 모색이 가능하다.
+- ⚖️ 반론/비판: [[papers/853_Understanding_how_paper_writers_use_ai-generated_captions_in/review]] — 언어 모델을 사용한 글쓰기의 다양성 감소 우려와 AI 생성 캡션의 실제 사용 패턴은 AI 글쓰기 도구의 서로 다른 측면을 보여준다.
+- 🔗 후속 연구: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — LLM 사용이 학술 글쓰기 다양성에 미치는 영향을 실험적으로 검증한 연구의 대규모 실증 확장판이다.
+- 🏛 기반 연구: [[papers/641_Prototypical_human-ai_collaboration_behaviors_from_llm-assis/review]] — 언어모델과의 협력 글쓰기가 콘텐츠 다양성에 미치는 영향의 실증적 근거를 제공한다.
+- 🏛 기반 연구: [[papers/283_Do_Users_Write_More_Insecure_Code_with_AI_Assistants/review]] — AI 어시스턴트의 보안 취약점이 언어모델 협력 글쓰기의 잠재적 위험성을 시사한다.
+- 🏛 기반 연구: [[papers/051_Admissions_in_the_age_of_AI_detecting_AI-generated_applicati/review]] — 언어모델 사용이 콘텐츠 다양성에 미치는 영향 연구가 AI 생성 콘텐츠 탐지의 이론적 배경을 제공한다.
+- ⚖️ 반론/비판: [[papers/565_Multi-novelty_Improve_the_diversity_and_novelty_of_contents/review]] — 언어모델 사용이 콘텐츠 다양성을 감소 vs 증진시킨다는 상반된 관점을 제시한다

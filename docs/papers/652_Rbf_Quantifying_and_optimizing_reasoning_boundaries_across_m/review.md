@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 **추론 경계 프레임워크++(RBF++)**를 제안하여 대형 언어 모델(LLM)의 체인-오브-씽크(CoT) 추론 능력의 한계를 정량화하고 최적화하는 방법론을 제시한다. 계측 가능한 능력과 계측 불가능한 능력(멀티모달 지각 등) 모두에 대해 체계적으로 추론 경계를 분석하고 최적화 전략을 도출한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Multi-Hop_Reasoning_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lingala_2025_Rbf++ Quantifying and optimizing reasoning boundaries across measurable and unmeasurable capabiliti.pdf"
 ---
@@ -136,10 +137,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lingala_2025_Rbf++ Quantifying and optim
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/841_Tree-of-table_Unleashing_the_power_of_llms_for_enhanced_larg/review]] — Tree-of-table의 계층적 테이블 추론과 RBF++의 추론 경계 최적화는 모두 복잡한 추론 능력 향상을 위한 서로 다른 구조적 접근법입니다
-- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — 대형 언어모델의 자기 교정 추론 불가능성은 RBF++의 추론 경계 최적화 가능성과 대조되는 관점을 제시합니다
-- 🏛 기반 연구: [[papers/844_Truly_assessing_fluid_intelligence_of_large_language_models/review]] — 대형 언어모델의 유동 지능 평가는 추론 경계 정량화를 위한 근본적인 인지 능력 측정 기준을 제공합니다
-- 🔗 후속 연구: [[papers/844_Truly_assessing_fluid_intelligence_of_large_language_models/review]] — 추론 경계 최적화가 유동 지능의 동적 추론 평가를 확장함
-- 🔄 다른 접근: [[papers/841_Tree-of-table_Unleashing_the_power_of_llms_for_enhanced_larg/review]] — RBF++의 추론 경계 최적화와 Tree-of-table의 계층적 구조 추론은 모두 복잡한 추론 문제를 해결하기 위한 서로 다른 구조적 접근법입니다
-- 🔗 후속 연구: [[papers/037_A_Survey_on_Uncertainty_Quantification_Methods_for_Deep_Lear/review]] — 추론 경계를 정량화하고 최적화하는 방법으로 딥러닝 불확실성 정량화 기법을 확장합니다.
-- 🧪 응용 사례: [[papers/028_A_survey_of_reasoning_with_foundation_models/review]] — 다양한 작업에서 추론 경계를 정량화하고 최적화하는 구체적인 방법론을 제시한다.
+- 🔄 다른 접근: [[papers/537_Mind_the_blind_spots_A_focus-level_evaluation_framework_for/review]] — LLM 평가에서 추론 경계 분석과 focus-level 평가는 모두 모델의 한계를 체계적으로 파악하는 상호보완적 접근법이다.
+- 🔗 후속 연구: [[papers/800_The_hidden_dimensions_of_llm_alignment_A_multi-dimensional_s/review]] — LLM 정렬의 다차원적 분석과 추론 경계 최적화를 결합하면 더 포괄적인 모델 능력 향상 전략을 수립할 수 있다.
+- 🔗 후속 연구: [[papers/844_Truly_assessing_fluid_intelligence_of_large_language_models/review]] — 추론 경계 최적화가 유동 지능의 규칙 일반화 능력 향상에 직접 적용된다

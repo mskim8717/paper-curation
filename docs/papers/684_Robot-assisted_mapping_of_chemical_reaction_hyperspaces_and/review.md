@@ -12,8 +12,9 @@ arxiv: ""
 score: 5.0
 essence: "저비용 로봇 플랫폼과 광학 검출을 통해 수천 개의 반응 조건에서 화학반응의 초공간(hyperspace) 전체를 매핑하여, 예측 불가능했던 반응 수율 분포, 숨겨진 중간체, 주생성물 전환점을 체계적으로 발견하는 새로운 방법론을 제시한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/AI-Driven_Drug_and_Materials_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jia et al._2025_Robot-assisted mapping of chemical reaction hyperspaces and networks 1.pdf"
 ---
@@ -104,11 +105,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jia et al._2025_Robot-assisted mapping o
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/099_An_autonomous_laboratory_for_the_accelerated_synthesis_of_in/review]] — 둘 다 자율 실험실 개념이지만 A-Lab은 무기재료, 이 논문은 화학반응에 특화되어 있다.
-- 🔗 후속 연구: [[papers/138_Autonomous_chemical_research_with_large_language_models/review]] — LLM 기반 화학 자동화를 로봇 플랫폼으로 확장하여 더 체계적인 반응 매핑을 제공한다.
-- 🔄 다른 접근: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — 실시간 실험-이론 폐루프 시스템의 다른 구현 방식을 보여준다.
-- 🔄 다른 접근: [[papers/099_An_autonomous_laboratory_for_the_accelerated_synthesis_of_in/review]] — 화학반응 매핑과 재료 합성 자동화라는 서로 다른 자율실험실 응용분야를 다룬다.
-- 🔄 다른 접근: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — 실험-이론 통합을 재료 vs 화학반응 매핑에 각각 적용한다.
-- 🔗 후속 연구: [[papers/096_An_automatic_end-to-end_chemical_synthesis_development_platf/review]] — 종단간 합성 개발을 로봇 기반 반응 매핑으로 확장한다.
-- 🏛 기반 연구: [[papers/138_Autonomous_chemical_research_with_large_language_models/review]] — LLM 기반 화학 실험 설계가 로봇 기반 반응 매핑의 인지적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/1126_Autonomous_platform_for_solution_processing_of_electronic_po/review]] — 화학 반응 하이퍼공간 로봇 지원 매핑이 자동화 플랫폼의 기반 제공
+- 🔄 다른 접근: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — 재료 탐색에서 실시간 실험-이론 폐루프와 화학반응 초공간 매핑은 각각 다른 방식으로 고차원 실험 공간을 효율적으로 탐색한다
+- 🏛 기반 연구: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 알고리즘을 통한 타겟 재료 발견 방법론이 로봇 기반 화학반응 초공간 매핑의 이론적 기초를 제공한다
+- 🔗 후속 연구: [[papers/258_Deep_active_learning_based_experimental_design_to_uncover_sy/review]] — 딥러닝 기반 능동학습을 통한 시스템 발견이 로봇 기반 화학반응 매핑의 지능화된 확장 방향을 제시한다
+- 🔄 다른 접근: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — Sn-Bi 박막 상태도 매핑과 화학반응 초공간 매핑은 각각 재료과학과 화학에서 실시간 자동 실험 최적화를 구현한다
+- 🧪 응용 사례: [[papers/141_Autonomous_robotic_system_with_optical_coherence_tomography/review]] — 화학 반응을 위한 로봇 지원 매핑 연구로, 의료 로봇 기술의 화학 연구 분야 적용 사례

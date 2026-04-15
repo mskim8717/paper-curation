@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 실증 연구의 재현성(reproducibility) 문제를 해결하기 위해 에이전트형 AI 워크플로우를 개발하고, 도구변수(instrumental variable, IV) 설계 92개 연구에서 87%의 종단 성공률을 달성했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/AI-Powered_Research_Planning"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Scientist_Research_Protocols"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xu and Yang_2026_Scaling Reproducibility An AI-Assisted Workflow for Large-Scale Reanalysis.pdf"
 ---
@@ -91,6 +91,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xu and Yang_2026_Scaling Reproducibility
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/654_Re_2_A_consistency-ensured_dataset_for_full-stage_peer_revie/review]] — 전체 단계 동료 심사를 위한 일관성 보장 데이터셋은 대규모 재현성 연구에서 AI 워크플로우 검증의 데이터 기반을 제공한다.
-- 🧪 응용 사례: [[papers/885_Withdrarxiv_A_large-scale_dataset_for_retraction_study/review]] — 철회된 논문에 대한 대규모 데이터셋 연구는 AI 지원 재현성 워크플로우가 해결해야 할 연구 신뢰성 문제의 실제 사례를 보여준다.
-- 🔗 후속 연구: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — 인간 유사 논문 리뷰를 위한 DeepReview는 재현성 연구의 AI 워크플로우를 논문 품질 평가까지 확장한다.
+- 🔄 다른 접근: [[papers/865_Vending-Bench_A_Benchmark_for_Long-Term_Coherence_of_Autonom/review]] — 재현성 평가와 장기 일관성 평가는 모두 AI 시스템의 신뢰성을 다루지만 다른 측면을 평가한다.
+- 🏛 기반 연구: [[papers/654_Re_2_A_consistency-ensured_dataset_for_full-stage_peer_revie/review]] — 일관성이 보장된 동료심사 데이터셋이 재현성 워크플로우 개발의 기반이 된다.
+- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 멀티턴 동료심사 시스템이 대규모 재현성 분석의 품질 평가 메커니즘으로 활용될 수 있다.
+- 🔗 후속 연구: [[papers/145_Autoreproduce_Automatic_ai_experiment_reproduction_with_pape/review]] — AI 지원 워크플로우를 통한 대규모 재현성 확장 연구로 자동 실험 재현 기술이 발전한다
+- 🔄 다른 접근: [[papers/865_Vending-Bench_A_Benchmark_for_Long-Term_Coherence_of_Autonom/review]] — 장기 일관성 평가와 대규모 재현성 분석은 모두 AI 시스템 신뢰성을 다루지만 서로 다른 시간적 관점을 가진다.

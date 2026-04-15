@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.4
 essence: "과학적 추론의 복잡성을 다단계 도구 활용으로 평가하기 위해, 본 논문은 4개 과학 분야에 걸쳐 1,780개의 도메인 특화 도구를 통합한 인터랙티브 환경 **SciAgentGym**과 이를 평가하는 **SciAgentBench**를 제시합니다. 나아가 도구 간 논리적 의존성을 학습하기 위해 **SciForge** 데이터 합성 방법을 제안하여, 8B 모델이 235B 이상 규모 모델을 능가하는 성과를 달성합니다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Realistic_Discovery_Benchmarks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/GIS_Workflow_Automation_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shen et al._2026_SciAgentGym Benchmarking Multi-Step Scientific Tool-use in LLM Agents.pdf"
 ---
@@ -145,16 +146,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shen et al._2026_SciAgentGym Benchmarkin
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — 도구 활용 중심 평가와 데이터 기반 발견 평가라는 서로 다른 관점으로 과학 에이전트의 능력을 측정한다.
-- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 머신러닝 에이전트 평가를 다학제적 과학 도구 활용으로 확장하여 더 포괄적인 과학적 추론 평가를 제공한다.
-- 🏛 기반 연구: [[papers/792_Text2world_Benchmarking_large_language_models_for_symbolic_w/review]] — 복잡한 도구 활용 평가에 필요한 기본적인 세계 모델링 능력의 중요성을 입증한다.
-- 🔗 후속 연구: [[papers/556_MolQuest_A_Benchmark_for_Agentic_Evaluation_of_Abductive_Rea/review]] — 분자 추론이 다단계 과학 도구 사용 벤치마크로 확장됩니다.
-- 🔗 후속 연구: [[papers/717_Scienceboard_Evaluating_multimodal_autonomous_agents_in_real/review]] — 다단계 과학 도구 사용 벤치마킹을 현실적 과학 워크플로우의 멀티모달 환경으로 확장할 수 있다
-- 🏛 기반 연구: [[papers/069_Agentomics-ML_Autonomous_Machine_Learning_Experimentation_Ag/review]] — 다단계 과학 도구 사용 벤치마킹의 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/081_Ai_scientists_fail_without_strong_implementation_capability/review]] — 과학 도구 사용 벤치마크를 통해 AI의 실제 과학 수행 능력을 검증할 수 있다
-- 🏛 기반 연구: [[papers/634_PRIME_A_Multi-Agent_Environment_for_Orchestrating_Dynamic_Co/review]] — 다단계 과학 도구 사용을 위한 멀티 에이전트 벤치마킹이 단백질 공학 도구 통합 시스템의 성능 평가 기준을 제공한다.
-- 🏛 기반 연구: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 현실적인 벤치마크 설계의 중요성을 보여주며 다단계 도구 활용 평가의 필요성을 뒷받침한다.
-- 🔄 다른 접근: [[papers/792_Text2world_Benchmarking_large_language_models_for_symbolic_w/review]] — 기호적 세계 모델링과 다단계 도구 활용이라는 서로 다른 방식으로 LLM의 복합적 추론 능력을 평가한다.
-- 🔗 후속 연구: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — 도구 활용 평가를 넘어 데이터 기반 과학 발견의 전체적 과정에 대한 포괄적 평가 체계를 제공한다.
-- 🔗 후속 연구: [[papers/147_Aviary_training_language_agents_on_challenging_scientific_ta/review]] — 기본적인 과학적 작업 훈련을 다단계 도구 활용을 포함한 복합적 과학적 추론으로 발전시킨다.
-- 🔄 다른 접근: [[papers/277_Discoverybench_Towards_data-driven_discovery_with_large_lang/review]] — SciAgentGym과 DiscoveryBench 모두 과학적 도구 사용을 평가하지만 다단계 vs 데이터 중심 발견에 초점을 둔다.
+- 🔄 다른 접근: [[papers/429_Infiagent-dabench_Evaluating_agents_on_data_analysis_tasks/review]] — 데이터 분석 작업에서 에이전트 평가를 위한 다른 벤치마크로, 단일 작업 평가와 다중 단계 도구 사용 평가를 비교
+- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 머신러닝 에이전트 벤치마크로, 과학적 도구 사용을 머신러닝 실험 전반으로 확장하는 평가 프레임워크
+- 🏛 기반 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 언어 모델이 도구 사용을 스스로 학습하는 방법에 대한 연구로, 다단계 과학적 도구 사용의 이론적 기반
+- 🏛 기반 연구: [[papers/499_LLM_With_Tools_A_Survey/review]] — 도구를 활용한 LLM에 대한 포괄적 조사로, 과학적 도구 사용 벤치마킹의 기초 이론을 제공
+- 🔄 다른 접근: [[papers/556_MolQuest_A_Benchmark_for_Agentic_Evaluation_of_Abductive_Rea/review]] — 화학 구조 해석 대신 다단계 과학 도구 사용을 벤치마킹한다
+- 🏛 기반 연구: [[papers/261_Deepresearch_bench_A_comprehensive_benchmark_for_deep_resear/review]] — 다단계 과학 도구 사용 벤치마크가 깊이 있는 연구 에이전트의 복합적 연구 과제 수행 능력 평가의 기반을 제공한다.
+- 🏛 기반 연구: [[papers/147_Aviary_training_language_agents_on_challenging_scientific_ta/review]] — SciAgentGym의 과학 도구 사용 벤치마크가 Aviary의 과학적 언어 에이전트 훈련을 위한 평가 기반을 제공한다
+- 🧪 응용 사례: [[papers/530_Medbiolm_Optimizing_medical_and_biological_qa_with_fine-tune/review]] — 의료 QA 성능을 실제 과학 도구 사용 벤치마크에서 평가할 수 있는 테스트 환경을 제공한다.

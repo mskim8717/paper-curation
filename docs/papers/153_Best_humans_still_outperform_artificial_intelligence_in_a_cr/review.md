@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 대체 용도 과제(Alternate Uses Task, AUT)를 통해 인간과 AI 챗봇의 창의성을 비교하였으며, 평균적으로는 AI가 우수하지만 최상위 인간의 창의적 아이디어는 여전히 AI와 동등하거나 초과한다는 것을 발견했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Human-AI_Performance_Detection"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Koivisto and Grassini_2023_Best humans still outperform artificial intelligence in a creative divergent thinking task.pdf"
 ---
@@ -102,7 +104,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Koivisto and Grassini_2023_Best humans s
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — LLM이 생성한 연구 아이디어의 신규성이 우수하다는 결과로 본 논문의 최상위 인간 창의성 우위와 대조되는 관점을 제시한다.
-- 🏛 기반 연구: [[papers/411_How_do_humans_and_language_models_reason_about_creativity_a/review]] — 인간과 언어 모델의 창의성에 대한 추론 방식을 분석하여 본 논문의 창의성 비교 연구의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/509_Llms_can_realize_combinatorial_creativity_generating_creativ/review]] — LLM의 조합적 창의성 실현 가능성을 보여주어 본 논문의 창의성 평가를 다른 창의성 유형으로 확장한다.
-- 🔄 다른 접근: [[papers/511_LLMs_Outperform_Outsourced_Human_Coders_on_Complex_Textual_A/review]] — 비판적 사고가 필요한 작업에서 인간이 AI를 능가한다는 연구는 복잡한 텍스트 분석 영역에서의 상반된 관점을 제시한다.
+- 🔄 다른 접근: [[papers/024_A_sober_look_at_llms_for_material_discovery_Are_they_actuall/review]] — 창의성 영역에서 인간과 AI 비교와 재료 발견에서 LLM 실용성 평가라는 서로 다른 AI 능력 평가 접근법을 보여준다.
+- 🏛 기반 연구: [[papers/155_Beyond_Brainstorming_What_Drives_High-Quality_Scientific_Ide/review]] — 창의적 아이디어 생성에서 인간과 AI 비교가 고품질 과학 아이디어 생성 요인 분석의 배경을 제공한다.
+- 🔗 후속 연구: [[papers/509_Llms_can_realize_combinatorial_creativity_generating_creativ/review]] — 조합적 창의성 실현과 창의적 다양성 과제가 LLM의 창의적 능력에 대한 포괄적 이해를 제공한다.
+- 🧪 응용 사례: [[papers/411_How_do_humans_and_language_models_reason_about_creativity_a/review]] — 인간과 언어모델의 창의성 추론 비교가 창의적 능력 평가의 실제 적용 사례를 보여준다.
+- 🔄 다른 접근: [[papers/024_A_sober_look_at_llms_for_material_discovery_Are_they_actuall/review]] — 재료 발견에서 LLM의 실용성과 창의성 영역에서 인간과 AI 비교라는 서로 다른 관점을 제시한다.
+- 🧪 응용 사례: [[papers/155_Beyond_Brainstorming_What_Drives_High-Quality_Scientific_Ide/review]] — 인간과 AI의 창의성 비교가 구조화된 다중 에이전트 토론의 효과성 분석에 실제 적용된다.

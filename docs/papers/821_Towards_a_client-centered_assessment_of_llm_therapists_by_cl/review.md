@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대규모 언어모델(LLM)을 시뮬레이션된 클라이언트로 활용하여 LLM 치료사를 클라이언트 중심의 관점에서 평가하는 **ClientCAST** 프레임워크를 제안한다. 의료교육의 표준화된 환자(standardized patient) 방식을 LLM 기반으로 확장함으로써 윤리적·기술적 도전과제를 해결한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Domain-specific_Scientific_Reasoning"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Towards a client-centered assessment of llm therapists by client simulation.pdf"
 ---
@@ -117,11 +119,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Towards a client-center
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — 심리학 실험 재현 연구가 LLM 치료사 평가에서 인간 행동 시뮬레이션의 기반
-- 🔗 후속 연구: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — 표준화된 환자 개념을 LLM 치료사 평가로 확장한 의료 시뮬레이션 발전
-- 🔄 다른 접근: [[papers/644_Psyche_A_multi-faceted_patient_simulation_framework_for_eval/review]] — 치료사 평가 vs 다면적 환자 시뮬레이션으로 의료 AI 평가의 서로 다른 접근
-- 🧪 응용 사례: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — 클라이언트 시뮬레이션을 실제 진단 향상에 적용한 Human-AI 협력 사례
-- 🔗 후속 연구: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — 심리학 실험 재현을 LLM 치료사의 클라이언트 중심 평가로 확장한 의료 응용
-- 🧪 응용 사례: [[papers/360_From_lived_experience_to_insight_Unpacking_the_psychological/review]] — LLM 치료사의 클라이언트 중심 평가를 AI 에이전트의 심리적 영향 평가 방법론으로 활용할 수 있다
-- 🧪 응용 사례: [[papers/433_Interactive_agents_Simulating_counselor-client_psychological/review]] — 클라이언트 중심 LLM 치료사 평가 연구는 심리 상담 대화 생성 프레임워크의 실제 치료 효과성을 검증한다.
-- 🧪 응용 사례: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — 클라이언트 중심 LLM 치료사 평가로 의료 분야 인간-AI 협력의 다른 적용을 보여준다.
+- 🏛 기반 연구: [[papers/800_The_hidden_dimensions_of_llm_alignment_A_multi-dimensional_s/review]] — LLM 정렬의 다차원 분석이 치료사 평가의 안전성 기반을 제공한다
+- 🔄 다른 접근: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — 치료사 평가 대신 심리학 실험 재현을 통한 인간 대체 가능성을 탐구한다
+- 🔗 후속 연구: [[papers/433_Interactive_agents_Simulating_counselor-client_psychological/review]] — 상담 심리학 상호작용을 클라이언트 시뮬레이션 평가로 확장한다
+- 🔄 다른 접근: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — 심리학 실험 재현 대신 LLM 치료사의 클라이언트 중심 평가를 제시한다
+- 🏛 기반 연구: [[papers/800_The_hidden_dimensions_of_llm_alignment_A_multi-dimensional_s/review]] — 다차원 안전 분석이 클라이언트 중심 평가의 기반 방법론을 제공한다
+- 🧪 응용 사례: [[papers/477_Large_language_models_pass_the_turing_test/review]] — 클라이언트 중심 LLM 치료사 평가가 튜링 테스트 통과 모델의 실제 인간-AI 상호작용 응용 사례를 제시한다
+- 🔗 후속 연구: [[papers/185_Can_large_language_models_understand_you_better_an_mbti_pers/review]] — 심리학적 성격 진단과 클라이언트 중심 LLM 치료사 평가가 인간 이해에서 상호 보완적 관점을 제공한다.

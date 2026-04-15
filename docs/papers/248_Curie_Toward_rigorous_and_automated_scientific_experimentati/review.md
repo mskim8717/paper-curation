@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 대규모 언어 모델(LLM) 기반 AI 에이전트를 활용하여 엄밀하고 자동화된 과학 실험 수행을 가능하게 하는 프레임워크 Curie를 제안한다. 신뢰성(reliability), 방법론적 통제(methodical control), 해석가능성(interpretability)을 갖춘 세 가지 핵심 모듈을 통해 실험 과정에 엄밀함을 내재화하고, 기존 베이스라인 대비 3.4배 향상된 성능을 달성한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Hypothesis_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/CRISPR_and_Drug_Discovery_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kon et al._2025_Curie Toward rigorous and automated scientific experimentation with ai agents.pdf"
 ---
@@ -117,4 +117,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kon et al._2025_Curie Toward rigorous an
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/558_Moose-chem3_Toward_experiment-guided_hypothesis_ranking_via/review]] — 엄격한 과학 실험 자동화 vs 시뮬레이션 기반 접근의 대조적 방법론
+- 🔄 다른 접근: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — 실시간 실험-이론 폐루프 상호작용을 통한 자동화 연구로, Curie의 엄밀성과 다른 실시간 적응적 접근
+- 🏛 기반 연구: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — 화학 및 재료 과학을 위한 자율 실험실에 대한 종합적 연구로, 엄밀한 과학 실험의 이론적 배경을 제공
+- 🏛 기반 연구: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — 과학 실천의 자동화에 대한 기회와 도전을 논의한 연구로, 자동화된 과학 실험의 철학적 기반을 제공
+- 🧪 응용 사례: [[papers/432_Intelligent_experiments_through_real-time_ai_Fast_data_proce/review]] — 실시간 AI를 통한 지능형 실험에 대한 연구로, Curie 프레임워크의 실시간 과학 실험 적용 사례

@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.4
 essence: "기존의 이산 깊이(discrete depth) 신경망 대신 숨겨진 상태의 도함수를 신경망으로 매개변수화하고, 이를 상미분방정식(ODE) 초기값 문제로 정의하여 블랙박스 ODE 솔버로 계산하는 혁신적 연속깊이(continuous-depth) 신경망 모델을 제안한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Neural_Differential_Equations"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Diffusion_Model_Inference"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2018_Neural Ordinary Differential Equations.pdf"
 ---
@@ -142,13 +144,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2018_Neural Ordinary Differe
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/619_Physics_Informed_Deep_Learning_Part_I_Data-driven_Solutions/review]] — Neural ODE가 물리 정보 기반 신경망의 연속시간 모델링을 가능하게 한다.
-- 🔗 후속 연구: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — Neural ODE 개념을 신경 연산자 프레임워크로 확장한다.
-- 🔄 다른 접근: [[papers/454_Lagrangian_neural_networks/review]] — 물리 시스템 모델링을 Neural ODE vs Lagrangian 신경망으로 접근한다.
-- 🔗 후속 연구: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 신경 ODE를 신경 연산자로 확장하는 방법론적 연결점을 제시한다.
-- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 신경 상미분방정식이 물리 정보 신경망의 기본적인 수치 해법 이론적 토대를 제공합니다.
-- 🏛 기반 연구: [[papers/619_Physics_Informed_Deep_Learning_Part_I_Data-driven_Solutions/review]] — Neural ODE가 Physics-Informed Neural Networks의 연속시간 모델링 기초를 제공한다.
-- 🏛 기반 연구: [[papers/772_State-Free_Inference_of_State-Space_Models_The_Transfer_Func/review]] — 신경 상미분방정식이 상태공간모델의 전달함수 표현에 수학적 기반을 제공한다
-- 🏛 기반 연구: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — Neural ODE의 연속 시간 동역학 모델링이 Neural-POD의 비선형 직교 기저함수 학습 방법론의 기반이 됨
-- 🏛 기반 연구: [[papers/364_From_Theory_to_Application_A_Practical_Introduction_to_Neura/review]] — 신경 상미분방정식이 신경 연산자 아키텍처의 수학적 기반을 제공
-- 🔗 후속 연구: [[papers/576_Nonlinear_stochastic_and_quantum_motion_from_Coulomb_forces/review]] — 신경 상미분방정식의 기본 개념을 비선형 확률적 양자 운동 모델링에 확장 적용할 수 있다.
+- 🔄 다른 접근: [[papers/454_Lagrangian_neural_networks/review]] — Neural ODE의 연속깊이 신경망과 Lagrangian 신경망의 물리보존 접근법은 서로 다른 물리기반 신경망 설계법이다.
+- 🔗 후속 연구: [[papers/772_State-Free_Inference_of_State-Space_Models_The_Transfer_Func/review]] — 상태-자유 추론 방식이 Neural ODE의 연속시간 모델링을 더 효율적인 형태로 발전시킨다.
+- 🏛 기반 연구: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 신경 연산자의 아키텍처와 변형들이 Neural ODE와 같은 연속 신경망 모델의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — Neural ODE 연구가 LLM-ODE의 동역학 시스템 방정식 발견 접근법의 수학적 이론적 기반을 제공함
+- 🔗 후속 연구: [[papers/772_State-Free_Inference_of_State-Space_Models_The_Transfer_Func/review]] — 상태-자유 추론이 Neural ODE의 연속시간 모델링에서 메모리 효율성을 획기적으로 개선한다.
+- 🔄 다른 접근: [[papers/454_Lagrangian_neural_networks/review]] — Lagrangian 신경망의 에너지보존과 Neural ODE의 연속깊이 모델링은 물리기반 신경망의 서로 다른 설계 철학이다.
+- 🏛 기반 연구: [[papers/095_AMDAT_An_Open-Source_Molecular_Dynamics_Analysis_Toolkit_for/review]] — 신경 상미분방정식의 연속 동역학 모델링이 분자동역학 궤적의 장시간 동역학 분석에 이론적 기반 제공
+- 🔗 후속 연구: [[papers/576_Nonlinear_stochastic_and_quantum_motion_from_Coulomb_forces/review]] — 신경 상미분방정식과 쿨롱 힘의 비선형 확률 운동을 결합하여 양자 시스템의 동역학 예측 정확도 향상

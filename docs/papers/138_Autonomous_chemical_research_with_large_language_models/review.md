@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.3
 essence: "GPT-4 기반의 다중 대형 언어 모델(LLM) 에이전트인 Coscientist는 웹 검색, 코드 실행, 실험 자동화를 통합하여 복잡한 화학 실험을 자율적으로 설계·계획·수행할 수 있는 시스템이다. 팔라듐 촉매 교차 결합 반응 최적화를 포함한 6가지 다양한 작업에서 자동화 실험 설계의 실행 가능성을 입증했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Chemistry_Tool_Integration_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Boiko et al._2023_Autonomous chemical research with large language models.pdf"
 ---
@@ -110,10 +112,9 @@ GPT-4 기반의 다중 대형 언어 모델(LLM) 에이전트인 Coscientist는 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/096_An_automatic_end-to-end_chemical_synthesis_development_platf/review]] — LLM 기반 화학 자동화의 서로 다른 구현 범위와 접근법을 보여준다.
-- 🏛 기반 연구: [[papers/684_Robot-assisted_mapping_of_chemical_reaction_hyperspaces_and/review]] — LLM 기반 화학 실험 설계가 로봇 기반 반응 매핑의 인지적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/213_ChemReasoner_Heuristic_Search_over_a_Large_Language_Models_K/review]] — 화학 자동화를 휴리스틱 탐색 기반 추론으로 확장한다.
-- 🔗 후속 연구: [[papers/684_Robot-assisted_mapping_of_chemical_reaction_hyperspaces_and/review]] — LLM 기반 화학 자동화를 로봇 플랫폼으로 확장하여 더 체계적인 반응 매핑을 제공한다.
-- 🔄 다른 접근: [[papers/096_An_automatic_end-to-end_chemical_synthesis_development_platf/review]] — LLM 기반 화학 합성 자동화의 서로 다른 구현 방식과 범위를 제시한다.
-- 🔄 다른 접근: [[papers/239_CRISPR-GPT_for_agentic_automation_of_gene-editing_experiment/review]] — 화학 연구 자동화와 유전자 편집 자동화는 모두 실험실 워크플로우를 LLM으로 자동화하는 접근방식을 공유한다.
-- 🧪 응용 사례: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — 대규모 분자 시뮬레이션 결과를 AI 기반 자율 화학 연구 시스템에 적용하여 약물 개발을 가속화할 수 있다
+- 🔄 다른 접근: [[papers/096_An_automatic_end-to-end_chemical_synthesis_development_platf/review]] — 화학 합성 개발을 위한 자동화된 엔드-투-엔드 플랫폼으로, Coscientist와 다른 통합적 접근의 화학 연구 자동화
+- 🔄 다른 접근: [[papers/806_The_Virtual_Lab_AI_Agents_Design_New_SARS-CoV-2_Nanobodies_w/review]] — SARS-CoV-2 나노바디 설계를 위한 다중 전문가 AI 팀으로, 화학 실험 자동화와 다른 생물의학 연구 협력 방식
+- 🧪 응용 사례: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 과학을 위한 도구 사용 연결 화학 에이전트로, Coscientist의 화학 도구 자동화 개념을 더 넓은 화학 작업으로 확장
+- 🔗 후속 연구: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — 화학 도구로 대규모 언어 모델을 보강하는 연구로, 자율적 화학 연구의 도구 통합 측면을 확장
+- 🔄 다른 접근: [[papers/096_An_automatic_end-to-end_chemical_synthesis_development_platf/review]] — GPT-4 기반 화학 연구 자동화 시스템으로, 화학 합성 개발의 다른 LLM 기반 접근 방식을 제시
+- 🔄 다른 접근: [[papers/806_The_Virtual_Lab_AI_Agents_Design_New_SARS-CoV-2_Nanobodies_w/review]] — 화학 연구 자동화를 위한 LLM 시스템으로, 나노바디 설계와 다른 분야에서 다중 전문가 AI 협력의 접근

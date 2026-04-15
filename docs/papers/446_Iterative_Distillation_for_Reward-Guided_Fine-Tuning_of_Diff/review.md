@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.5
 essence: "생물분자 설계에서 미분불가능한 보상함수(reward function)를 최적화하기 위해 확산모델(diffusion model)을 안정적으로 미세조정하는 새로운 프레임워크 VIDD(Value-guided Iterative Distillation for Diffusion models)를 제안한다. 기존 강화학습 기반 방법들의 불안정성과 모드 붕괴 문제를 오프정책(off-policy) 학습과 정방향 KL 발산(forward KL divergence) 최소화를 통해 해결한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Reward-guided_Diffusion_Models"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Su et al._2025_Iterative Distillation for Reward-Guided Fine-Tuning of Diffusion Models in Biomolecular Design.pdf"
 ---
@@ -113,10 +114,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Su et al._2025_Iterative Distillation fo
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 둘 다 확산모델의 보상 기반 미세조정을 다루지만 서로 다른 기법적 접근을 제시한다.
-- 🔗 후속 연구: [[papers/269_Derivative-Free_Guidance_in_Continuous_and_Discrete_Diffusio/review]] — 미분불가능한 보상함수 최적화를 연속/이산 확산모델로 확장한다.
-- 🔄 다른 접근: [[papers/428_Inference-Time_Alignment_in_Diffusion_Models_with_Reward-Gui/review]] — 생물분자 설계를 위한 확산모델 최적화의 다른 접근법을 제공한다.
-- 🏛 기반 연구: [[papers/428_Inference-Time_Alignment_in_Diffusion_Models_with_Reward-Gui/review]] — 확산 모델의 보상 유도 미세조정을 위한 반복 증류가 추론 시간 정렬의 이론적 기반입니다.
-- 🔄 다른 접근: [[papers/269_Derivative-Free_Guidance_in_Continuous_and_Discrete_Diffusio/review]] — 확산 모델에서 보상 기반 가이던스의 다른 최적화 접근법을 비교할 수 있다
-- 🔗 후속 연구: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 반복적 증류 방법이 보상 유도 확산 모델의 테스트 시간 개선 과정을 더욱 효율화할 수 있음
-- 🧪 응용 사례: [[papers/282_DMFlow_Disordered_Materials_Generation_by_Flow_Matching/review]] — 확산 모델의 보상 가이드 미세조정을 무질서 재료 생성에 적용
+- 🔄 다른 접근: [[papers/269_Derivative-Free_Guidance_in_Continuous_and_Discrete_Diffusio/review]] — VIDD의 반복적 증류 방식과 SVDD의 소프트 값 기반 디코딩은 확산 모델 보상 최적화의 서로 다른 접근법이다.
+- 🔗 후속 연구: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 테스트 타임 반복적 개선 프레임워크가 VIDD의 오프라인 미세조정 방식을 실시간 최적화로 확장한다.
+- 🏛 기반 연구: [[papers/428_Inference-Time_Alignment_in_Diffusion_Models_with_Reward-Gui/review]] — 추론 시간 정렬 기술이 VIDD의 보상 유도 미세조정 방법론의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/269_Derivative-Free_Guidance_in_Continuous_and_Discrete_Diffusio/review]] — SVDD의 소프트 값 디코딩과 VIDD의 반복적 증류는 확산 모델 보상 최적화의 서로 다른 접근 방식이다.
+- 🔗 후속 연구: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 테스트 타임 반복적 개선이 VIDD의 오프라인 미세조정을 실시간 최적화 프레임워크로 확장한다.

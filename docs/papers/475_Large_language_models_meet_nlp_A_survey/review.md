@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 ChatGPT와 같은 대규모 언어모델(LLM)의 자연언어처리(NLP) 분야 응용을 체계적으로 조사한 첫 종합 서베이로, LLM이 기존 NLP 작업을 어떻게 해결하고 있으며 앞으로의 전망은 무엇인지를 다룬다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qin et al._2024_Large language models meet nlp A survey.pdf"
 ---
@@ -137,7 +137,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qin et al._2024_Large language models me
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/088_AI4Research_A_Survey_of_Artificial_Intelligence_for_Scientif/review]] — NLP 분야에서 LLM의 포괄적 적용이 AI4Research의 자연언어처리 기술 기반을 제공한다
-- 🔄 다른 접근: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — 과학에서 LLM의 역할을 NLP 응용과 과학 연구 변환이라는 다른 관점에서 조명한다
-- 🔗 후속 연구: [[papers/467_Large_Language_Models/review]] — 대규모 언어모델의 일반적 분석을 NLP 특화 응용으로 구체화하여 확장할 수 있다
-- 🏛 기반 연구: [[papers/784_Systematic_Framework_of_Application_Methods_for_Large_Langua/review]] — NLP 분야에서 대규모 언어모델의 전반적 만남과 응용에 대한 기반을 제공한다
+- 🔄 다른 접근: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 일반적인 NLP 응용 LLM과 생물화학 분야 특화 LLM이라는 서로 다른 도메인 접근법을 비교할 수 있음
+- 🏛 기반 연구: [[papers/377_Generative_AI_and_the_Foundation_Model_Era_A_Comprehensive_R/review]] — LLM의 NLP 응용 전반을 이해하기 위해 생성형 AI와 파운데이션 모델의 통합적 분석이 필수적임
+- 🔄 다른 접근: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 생물화학 분야 특화 LLM과 일반적인 NLP 응용 LLM이라는 서로 다른 도메인 특화 접근법을 비교할 수 있음

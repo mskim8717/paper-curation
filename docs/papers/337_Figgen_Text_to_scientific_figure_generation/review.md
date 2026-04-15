@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.5
 essence: "텍스트 설명으로부터 과학 논문의 도형(scientific figure)을 생성하는 새로운 문제를 제시하고, 확산 모델(diffusion model) 기반의 FigGen을 제안한 초기 탐색 연구이다. 자연 이미지와 달리 과학 도형은 이산적 컴포넌트(상자, 화살표, 텍스트)와 높은 기술적 복잡성을 포함하므로 새로운 도전과제를 제시한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Figure_Captioning"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Chart_and_Figure_Captioning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rodríguez et al._2023_Figgen Text to scientific figure generation.pdf"
 ---
@@ -116,10 +117,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rodríguez et al._2023_Figgen Text to sc
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/601_PaperBanana_Automating_Academic_Illustration_for_AI_Scientis/review]] — 둘 다 AI를 이용한 과학 일러스트레이션 자동화를 다루지만 하나는 확산 모델 기반 과학 도형 생성에, 다른 하나는 학술 일러스트레이션 자동화에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/296_Dynamic_Search_for_Inference-Time_Alignment_in_Diffusion_Mod/review]] — 확산 모델에서 추론 시점 정렬을 위한 동적 검색 기법이 FigGen의 과학 도형 생성 품질 향상에 적용될 수 있다.
-- 🏛 기반 연구: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 확산 모델에서 보상 기반 반복적 정제 방법이 FigGen의 과학 도형 생성 정확도 개선에 기반을 제공한다.
-- 🔗 후속 연구: [[papers/566_Multimodal_deepresearcher_Generating_text-chart_interleaved/review]] — 과학적 그림 생성 기술은 텍스트와 차트 통합 보고서에서 시각화 요소를 더욱 풍부하게 만드는 확장 기술입니다
-- 🔄 다른 접근: [[papers/601_PaperBanana_Automating_Academic_Illustration_for_AI_Scientis/review]] — FigGen과 유사하게 텍스트에서 과학 그림 생성하지만 에이전트 기반 접근법 사용
-- 🏛 기반 연구: [[papers/129_Automatikz_Text-guided_synthesis_of_scientific_vector_graphi/review]] — 텍스트에서 과학 그림 생성의 기본 아이디어가 TikZ 기반 벡터 그래픽으로 구현됨
-- 🔗 후속 연구: [[papers/811_Tikzero_Zero-shot_text-guided_graphics_program_synthesis/review]] — 텍스트에서 과학 도형 생성의 확산 모델 기반 접근법이 TikZero의 TikZ 프로그램 합성과 상호 보완적인 기술을 제공한다.
+- 🔄 다른 접근: [[papers/783_Synchart_Synthesizing_charts_from_language_models/review]] — 과학적 시각화 생성을 도형 vs 차트로 서로 다른 형태에서 접근한다
+- 🔗 후속 연구: [[papers/338_Figuring_out_figures_Using_textual_references_to_caption_sci/review]] — 과학 도형 처리를 캡션에서 텍스트 기반 생성으로 한 단계 확장한다
+- 🏛 기반 연구: [[papers/605_PatFig_Generating_Short_and_Long_Captions_for_Patent_Figures/review]] — 특허 도형 캡션 생성 기술이 과학 도형 생성의 멀티모달 기반을 제공한다
+- 🔗 후속 연구: [[papers/129_Automatikz_Text-guided_synthesis_of_scientific_vector_graphi/review]] — 텍스트-과학 그림 생성 연구가 벡터 그래픽을 넘어 다양한 과학 그림 형태로 확장한다
+- 🏛 기반 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 텍스트에서 과학 그림 생성 연구는 그림-캡션 매핑의 기본 메커니즘을 이해하는 기초를 제공한다.
+- 🔄 다른 접근: [[papers/783_Synchart_Synthesizing_charts_from_language_models/review]] — 과학 시각화 생성이라는 공통 목표를 차트 vs 도형으로 다른 형태로 접근한다
+- 🔗 후속 연구: [[papers/811_Tikzero_Zero-shot_text-guided_graphics_program_synthesis/review]] — FigGen의 과학 도표 생성 기능이 TikZero의 텍스트-그래픽 변환 능력을 확장할 수 있다.
+- ⚖️ 반론/비판: [[papers/338_Figuring_out_figures_Using_textual_references_to_caption_sci/review]] — 과학 도형을 생성 vs 캡션화라는 정반대 방향의 접근법으로 상호 보완한다
+- ⚖️ 반론/비판: [[papers/605_PatFig_Generating_Short_and_Long_Captions_for_Patent_Figures/review]] — 특허 도형을 캡션화 vs 텍스트에서 생성하는 정반대 방향의 접근법이다

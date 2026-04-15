@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어 모델(LLM) 기반 에이전트 시스템 mephisto를 제안하여, 천문학적 관측 데이터 해석의 복잡한 추론 과정을 자동화하는 것을 시연한다. James Webb Space Telescope(JWST) 데이터의 분광에너지분포(SED) 피팅을 통해 인간 수준의 전문가 추론을 구현한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/CRISPR_and_Drug_Discovery_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sun et al._2024_Interpreting Multi-band Galaxy Observations with Large Language Model-Based Agents.pdf"
 ---
@@ -155,7 +155,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sun et al._2024_Interpreting Multi-band 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/110_AstroAgents_A_Multi-Agent_AI_for_Hypothesis_Generation_from/review]] — AstroAgents와 mephisto 모두 천문학적 데이터 해석을 위한 다중 에이전트 시스템이지만 가설 생성 vs 관측 데이터 해석에 특화된다.
-- 🔗 후속 연구: [[papers/831_Towards_llm_agents_for_earth_observation/review]] — 지구 관측을 위한 LLM 에이전트는 천문학적 관측 데이터 해석 기법을 지구 과학 분야로 확장 적용한다.
-- 🏛 기반 연구: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — 차트 추론을 위한 시각적 instruction-tuning 연구는 분광에너지분포 차트 해석에 필요한 시각적 추론 능력의 기초가 된다.
-- 🔗 후속 연구: [[papers/110_AstroAgents_A_Multi-Agent_AI_for_Hypothesis_Generation_from/review]] — 운석 데이터 해석을 다중 밴드 은하 관측으로 확장한 우주과학 AI 응용
+- 🔄 다른 접근: [[papers/110_AstroAgents_A_Multi-Agent_AI_for_Hypothesis_Generation_from/review]] — 두 시스템 모두 천문학 데이터 분석에 LLM을 활용하지만 각각 관측 데이터 해석과 가설 생성이라는 다른 태스크에 특화됨
+- 🔗 후속 연구: [[papers/831_Towards_llm_agents_for_earth_observation/review]] — 지구 관측용 LLM 에이전트 연구가 천문학적 관측 데이터 해석을 지구과학 영역으로 확장한 형태
+- 🏛 기반 연구: [[papers/785_T-sciq_Teaching_multimodal_chain-of-thought_reasoning_via_mi/review]] — 멀티모달 과학 추론 교육 방법론이 천문학 데이터 해석에서 전문가 수준 추론을 구현하는 기반이 됨
+- 🔗 후속 연구: [[papers/110_AstroAgents_A_Multi-Agent_AI_for_Hypothesis_Generation_from/review]] — 다중 밴드 갤럭시 관측을 운석 질량 분석으로 확장한다

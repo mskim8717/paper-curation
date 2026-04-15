@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "Genesis는 수천 개의 상호작용하는 인과관계 성분을 가진 시스템 생물학 모델을 자동으로 개선하기 위해 설계된 다음 세대 로봇 과학자이며, 하루에 1,000개의 가설 기반 폐쇄 루프 실험 사이클을 병렬로 실행할 수 있다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Laboratory_Biology"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tiukova et al._2024_Genesis Towards the Automation of Systems Biology Research.pdf"
 ---
@@ -107,7 +108,8 @@ Genesis는 수천 개의 상호작용하는 인과관계 성분을 가진 시스
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/805_The_Virtual_Lab_of_AI_agents_designs_new_SARS-CoV-2_nanobodi/review]] — Genesis의 시스템 생물학 대규모 자동화와 Virtual Lab의 특정 단백질 설계 자동화는 서로 다른 규모에서 생물학적 발견을 자동화하는 접근이다.
-- 🔗 후속 연구: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 자율적 단백질 공간 탐색을 위한 실험실 자동화가 Genesis의 대규모 병렬 가설 검증 시스템을 단백질 특화 영역으로 확장한 적용이다.
-- 🏛 기반 연구: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — 양자 컴퓨팅 실험 자동화 방법론이 Genesis의 고속 병렬 실험 사이클 구현을 위한 핵심적인 기술적 토대를 제공한다.
-- 🏛 기반 연구: [[papers/805_The_Virtual_Lab_of_AI_agents_designs_new_SARS-CoV-2_nanobodi/review]] — Genesis의 대규모 병렬 실험 자동화 방법론이 Virtual Lab의 학제간 AI 에이전트 협업을 통한 단백질 설계의 기술적 토대이다.
+- 🏛 기반 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — AutoGen의 다중 에이전트 대화 프레임워크를 기반으로 시스템 생물학이라는 특정 과학 분야에 적용한 전문화된 구현임
+- 🔄 다른 접근: [[papers/596_OWL_Optimized_Workforce_Learning_for_General_Multi-Agent_Ass/review]] — 시스템 생물학이라는 구체적 도메인에 특화된 다중 에이전트 시스템인 반면 OWL은 범용적 워크포스 최적화에 집중한 다른 접근법임
+- 🔗 후속 연구: [[papers/258_Deep_active_learning_based_experimental_design_to_uncover_sy/review]] — 실험 설계를 통한 시스템 발견이라는 공통 목표에서 Genesis의 생물학적 가설 검증을 능동 학습 기반 시스템 발견으로 확장함
+- 🔗 후속 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — AutoGen의 다중 에이전트 협업 프레임워크를 시스템 생물학이라는 특정 과학 도메인에 적용하여 실제 과학 연구 자동화로 확장함
+- 🔄 다른 접근: [[papers/596_OWL_Optimized_Workforce_Learning_for_General_Multi-Agent_Ass/review]] — 다중 에이전트 협업을 활용하지만 OWL은 범용적 워크포스 학습에, Genesis는 시스템 생물학 특화에 집중한 다른 목표를 가진 접근법임

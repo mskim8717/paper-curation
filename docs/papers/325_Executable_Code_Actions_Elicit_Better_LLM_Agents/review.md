@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "LLM 에이전트의 액션 공간을 통합하기 위해 실행 가능한 Python 코드를 직접 사용하는 CodeAct 프레임워크를 제안하며, 기존의 JSON/텍스트 기반 액션 방식 대비 최대 20% 높은 성공률을 달성한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Executable Code Actions Elicit Better LLM Agents.pdf"
 ---
@@ -103,4 +103,6 @@ LLM 에이전트의 액션 공간을 통합하기 위해 실행 가능한 Python
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/655_ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models/review]] — ReAct의 추론-행동 패러다임을 코드 실행 기반으로 구체화하여 실행 가능한 행동으로 확장한다.
+- 🏛 기반 연구: [[papers/362_From_LLMs_to_LLM-based_Agents_for_Software_Engineering_A_Sur/review]] — 소프트웨어 공학 에이전트의 체계적 분석이 실행 가능한 코드 액션 설계의 이론적 기반을 제공한다
+- 🔄 다른 접근: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 도구 사용을 학습하는 Toolformer와 코드 실행 중심 에이전트는 서로 다른 접근법으로 LLM의 행동 공간을 확장한다
+- 🔗 후속 연구: [[papers/842_Tree-planner_Efficient_close-loop_task_planning_with_large_l/review]] — 실행 가능한 코드 액션이 Tree-planner의 그라운디드 의사결정을 더욱 향상시킬 수 있다.

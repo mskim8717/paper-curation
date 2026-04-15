@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)의 추론 능력을 강화학습(RL)과 커리큘럼 학습을 결합하여 개선하는 **E2H Reasoner** 방법을 제시한다. 작업을 난이도별로 분해하고 확률적 스케줄러를 통해 쉬운 작업에서 어려운 작업으로 점진적 학습을 수행함으로써, 단순 RL만으로는 해결 불가능한 추론 문제를 학습 가능하게 한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/AI-Powered_Research_Planning"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Parashar et al._2025_Curriculum Reinforcement Learning from Easy to Hard Tasks Improves LLM Reasoning.pdf"
 ---
@@ -119,9 +121,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Parashar et al._2025_Curriculum Reinforc
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — DeepSeek-R1과 E2H Reasoner 모두 강화학습을 통해 LLM의 추론 능력을 향상시키지만 서로 다른 학습 전략을 사용한다.
-- 🏛 기반 연구: [[papers/484_Learning_to_generate_research_idea_with_dynamic_control/review]] — 동적 제어를 통한 연구 아이디어 생성 학습은 쉬운 작업에서 어려운 작업으로의 점진적 학습 패러다임의 이론적 기반이다.
-- 🔗 후속 연구: [[papers/625_PlanGenLLMs_A_Modern_Survey_of_LLM_Planning_Capabilities/review]] — LLM 계획 능력에 대한 현대적 조사는 E2H Reasoner의 커리큘럼 기반 계획 학습 접근방식을 더 넓은 맥락에서 이해할 수 있게 한다.
-- 🏛 기반 연구: [[papers/395_Guided_by_guardrails_Control_barrier_functions_as_safety_ins/review]] — 쉬운 태스크에서 어려운 태스크로의 커리큘럼 강화학습은 제어 장벽 함수를 통한 안전 학습에 점진적 훈련 방법론을 제공한다.
-- 🧪 응용 사례: [[papers/863_Value_iteration_for_learning_concurrently_executable_robotic/review]] — 커리큘럼 강화학습의 쉬운 태스크에서 어려운 태스크로의 점진적 학습은 동시 실행 태스크를 우선순위에 따라 순차적으로 학습하는 실제 구현 방법을 제시한다.
-- 🔄 다른 접근: [[papers/140_Autonomous_reinforcement_learning_agent_for_chemical_vapor_d/review]] — 강화학습을 통한 과학적 과제 해결에서 단일 vs 다중 과제 학습의 다른 접근법을 비교할 수 있다
+- 🧪 응용 사례: [[papers/222_Clam_Selective_clarification_for_ambiguous_questions_with_ge/review]] — 선택적 명확화 메커니즘이 커리큘럼 강화학습에서 작업 난이도 판단과 학습 경로 조정에 직접 활용될 수 있다.
+- 🔗 후속 연구: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — E2H Reasoner의 커리큘럼 강화학습을 DeepSeek-R1의 추론 강화 메커니즘과 결합하여 더 효과적인 단계적 학습을 구현한다.
+- 🔄 다른 접근: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 커리큘럼 강화학습과 정책 집계를 통한 다중 턴 강화학습이 서로 다른 방식으로 단계적 학습 최적화 문제를 해결한다.
+- 🧪 응용 사례: [[papers/222_Clam_Selective_clarification_for_ambiguous_questions_with_ge/review]] — 선택적 명확화 메커니즘이 커리큘럼 강화학습에서 단계별 작업 난이도 조절과 학습 방향 결정에 직접 적용될 수 있다.

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "임상 의학 연구에 특화된 첫 번째 자율 AI 과학자 시스템으로, 문헌 기반 증거 추론, 실험 실행, 논문 작성을 자동화하며 MICCAI 수준의 품질을 달성한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Clinical_Multi-Agent_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2026_Towards a Medical AI Scientist.pdf"
 ---
@@ -81,6 +83,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2026_Towards a Medical AI Scie
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — 의료 AI 과학자는 DeepReview의 인간 유사 논문 리뷰 기법을 확장하여 임상 연구 전체 과정의 자동화까지 포괄하는 의료 특화 AI 연구자를 구현합니다.
-- 🔄 다른 접근: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 의료 AI 과학자와 The AI Scientist는 모두 자율 과학 연구를 다루지만, 임상 의학 특화와 범용 과학 발견이라는 서로 다른 도메인 접근법을 취합니다.
-- 🔗 후속 연구: [[papers/612_PersonaAI_An_Interactive_Agentic-AI_Framework_for_Autonomous/review]] — 의료 AI 과학자 개발이 노화 연구의 가설 생성과 검증을 더 포괄적인 의료 연구로 확장할 수 있습니다.
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 과학 발견에서 임상 의학 연구에 특화된 AI 과학자로의 도메인별 특화 발전을 보여준다
+- 🧪 응용 사례: [[papers/528_MedAgentGym_A_Scalable_Agentic_Training_Environment_for_Code/review]] — 의료 AI 과학자의 훈련 환경으로 확장 가능한 의료 에이전트 훈련 플랫폼을 제공한다
+- ⚖️ 반론/비판: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — 의료 AI 과학자의 실패 사례 벤치마크를 통해 자동화된 임상 연구의 한계와 검증 필요성을 강조한다
+- 🔗 후속 연구: [[papers/027_A_survey_of_llm-based_agents_in_medicine_How_far_are_we_from/review]] — 일반적인 의료 LLM 에이전트에서 임상 의학 연구에 특화된 자율 AI 과학자로의 구체적인 발전 방향을 제시한다

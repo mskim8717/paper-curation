@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "nanoMINER은 대규모 언어모델(LLM)과 멀티모달 분석을 결합하여 나노물질 관련 과학 논문에서 구조화된 데이터를 자동으로 추출하는 다중 에이전트 시스템이다. 기존의 수동 데이터 수집을 자동화하면서도 높은 정확도(nanozyme의 경우 0.98)를 달성한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Odobesku et al._2025_Agent-based multimodal information extraction for nanomaterials.pdf"
 ---
@@ -109,5 +110,6 @@ nanoMINER은 대규모 언어모델(LLM)과 멀티모달 분석을 결합하여 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/524_MatViX_Multimodal_Information_Extraction_from_Visually_Rich/review]] — nanoMINER와 MatViX는 모두 과학 논문에서 구조화된 정보 추출을 다루지만, 나노물질 특화와 시각적 정보 처리라는 서로 다른 초점을 가집니다.
-- 🔗 후속 연구: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — 나노물질 정보 추출을 위한 nanoMINER는 CellAgent의 세포 데이터 자동화 기법을 재료과학 영역으로 확장하여 멀티모달 과학 데이터 처리의 새로운 응용을 제시합니다.
+- 🔄 다른 접근: [[papers/097_An_autonomous_AI_agent_for_universal_behavior_analysis/review]] — 나노물질과 동물 행동이라는 서로 다른 도메인에서 멀티모달 정보 추출을 위한 에이전트 기반 접근법을 비교할 수 있다
+- 🔗 후속 연구: [[papers/766_SpatialAgent_An_autonomous_AI_agent_for_spatial_biology/review]] — 멀티모달 정보 추출 기술을 나노물질에서 공간 생물학이라는 더 복잡한 생물학적 도메인으로 확장한 응용이다
+- 🏛 기반 연구: [[papers/524_MatViX_Multimodal_Information_Extraction_from_Visually_Rich/review]] — 시각적으로 풍부한 과학 문서에서의 멀티모달 정보 추출 기술을 나노물질 특화 에이전트 시스템의 기반으로 활용한다

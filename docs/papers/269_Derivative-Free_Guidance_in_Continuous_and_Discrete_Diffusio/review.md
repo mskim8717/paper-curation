@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 사전학습된 확산 모델(diffusion model)에서 미분 불가능한 보상 함수를 최적화하면서도 자연스러운 샘플을 생성하는 새로운 추론 시간 기법 SVDD(Soft Value-based Decoding in Diffusion models)를 제안한다. 이 방법은 모델 미세조정 없이 연속 및 이산 확산 모델에 모두 적용 가능하며, 분자 생성 및 DNA/RNA 생성 등 생물정보학적 응용에 특히 유용하다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Reward-guided_Diffusion_Models"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_Derivative-Free Guidance in Continuous and Discrete Diffusion Models with Soft Value-Based Decoding.pdf"
 ---
@@ -112,12 +114,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_Derivative-Free Guidance 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/446_Iterative_Distillation_for_Reward-Guided_Fine-Tuning_of_Diff/review]] — 확산 모델에서 보상 기반 가이던스의 다른 최적화 접근법을 비교할 수 있다
-- 🧪 응용 사례: [[papers/304_Efficient_and_Equivariant_Graph_Networks_for_Predicting_Quan/review]] — 미분 불가능한 보상 함수 최적화를 양자 해밀토니안 예측에 적용할 수 있다
-- 🔗 후속 연구: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 테스트 시간 확산 모델 개선에 미분 자유 보상 최적화 기법을 확장 적용할 수 있다
-- 🔄 다른 접근: [[papers/296_Dynamic_Search_for_Inference-Time_Alignment_in_Diffusion_Mod/review]] — 확산 모델의 추론 시간 정렬에서 다른 동적 탐색 vs 보상 가이던스 접근법을 비교할 수 있다
-- 🔄 다른 접근: [[papers/428_Inference-Time_Alignment_in_Diffusion_Models_with_Reward-Gui/review]] — 확산 모델 정렬에서 보상 유도 생성과 미분 불가능한 가이던스 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/446_Iterative_Distillation_for_Reward-Guided_Fine-Tuning_of_Diff/review]] — 미분불가능한 보상함수 최적화를 연속/이산 확산모델로 확장한다.
-- 🧪 응용 사례: [[papers/304_Efficient_and_Equivariant_Graph_Networks_for_Predicting_Quan/review]] — SE(3) 등변 그래프 네트워크를 확산 모델의 분자 생성에 적용할 수 있다
-- 🏛 기반 연구: [[papers/296_Dynamic_Search_for_Inference-Time_Alignment_in_Diffusion_Mod/review]] — 미분 없는 유도 방법이 비미분 보상 함수에 대한 확산 모델 최적화의 이론적 기반을 제공함
-- 🔗 후속 연구: [[papers/282_DMFlow_Disordered_Materials_Generation_by_Flow_Matching/review]] — 연속 이산 확산의 미분 프리 가이던스에서 무질서 재료로의 확장
+- 🔄 다른 접근: [[papers/446_Iterative_Distillation_for_Reward-Guided_Fine-Tuning_of_Diff/review]] — SVDD의 소프트 값 디코딩과 VIDD의 반복적 증류는 확산 모델 보상 최적화의 서로 다른 접근 방식이다.
+- 🔗 후속 연구: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 테스트 타임 반복적 개선이 SVDD의 단일 추론 방식을 다단계 최적화로 확장한다.
+- 🔄 다른 접근: [[papers/296_Dynamic_Search_for_Inference-Time_Alignment_in_Diffusion_Mod/review]] — 추론 시간 정렬을 위한 동적 탐색과 미분자유 유도는 확산 모델 제어의 서로 다른 방법론이다.
+- 🏛 기반 연구: [[papers/112_Atomically_accurate_de_novo_design_of_antibodies_with_RFdiff/review]] — 연속 및 이산 확산 모델의 유도 없는 가이던스가 RFdiffusion 기반 항체 설계의 방법론적 기반이다
+- 🔄 다른 접근: [[papers/446_Iterative_Distillation_for_Reward-Guided_Fine-Tuning_of_Diff/review]] — VIDD의 반복적 증류 방식과 SVDD의 소프트 값 기반 디코딩은 확산 모델 보상 최적화의 서로 다른 접근법이다.
+- 🔗 후속 연구: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 반복적 개선 프레임워크가 SVDD의 단일 샷 보상 최적화를 다단계 점진적 개선으로 발전시킨다.

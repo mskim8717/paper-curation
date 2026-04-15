@@ -12,7 +12,9 @@ arxiv: ""
 score: 3.5
 essence: "연구 논문에 기술된 머신러닝 방법론을 자동으로 코드로 변환하는 다중 에이전트 LLM 시스템을 제시한다. 상위 레벨의 추상적인 연구 설명과 실제 실행 가능한 구현 간의 격차를 해소하여 연구자의 구현 시간을 단축한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
   - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gandhi et al._2025_ResearchCodeAgent An LLM Multi-Agent System for Automated Codification of Research Methodologies.pdf"
@@ -107,12 +109,11 @@ ResearchCodeAgent의 작동 메커니즘:
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/038_A_vision_for_auto_research_with_llm_agents/review]] — ResearchCodeAgent가 Auto Research 비전에서 제시하는 연구 자동화 파이프라인의 핵심 구현 단계인 코드 변환을 담당한다.
-- 🔗 후속 연구: [[papers/603_PaperRobot_Incremental_Draft_Generation_of_Scientific_Ideas/review]] — PaperRobot의 논문 생성 결과물을 ResearchCodeAgent가 실행 가능한 코드로 변환하여 아이디어에서 구현까지의 완전한 자동화를 달성한다.
-- 🧪 응용 사례: [[papers/729_Scipip_An_llm-based_scientific_paper_idea_proposer/review]] — SciPIP로 생성된 연구 아이디어를 ResearchCodeAgent가 실제 구현 코드로 변환하여 아이디어 실현의 자동화를 완성한다.
-- 🔗 후속 연구: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — ResearchTown의 협업적 연구 환경에서 ResearchCodeAgent가 다중 에이전트 간 코드 리뷰와 개선을 통한 고품질 구현을 가능하게 한다.
-- 🧪 응용 사례: [[papers/603_PaperRobot_Incremental_Draft_Generation_of_Scientific_Ideas/review]] — PaperRobot으로 생성된 아이디어를 ResearchCodeAgent로 실제 구현 가능한 코드로 변환하는 완전한 연구 자동화 파이프라인을 구성할 수 있다.
-- 🏛 기반 연구: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — ResearchTown의 멀티에이전트 협업 메커니즘이 ResearchCodeAgent의 코드 생성 과정에서 에이전트 간 검토 및 개선 시스템의 기반이 될 수 있다.
-- 🧪 응용 사례: [[papers/729_Scipip_An_llm-based_scientific_paper_idea_proposer/review]] — SciPIP로 생성된 연구 아이디어를 ResearchCodeAgent로 실제 구현 가능한 코드로 변환하여 아이디어에서 실행까지의 완전한 자동화를 달성할 수 있다.
-- 🔗 후속 연구: [[papers/038_A_vision_for_auto_research_with_llm_agents/review]] — Auto Research의 전체 연구 생명주기 자동화에서 ResearchCodeAgent의 코드 구현 자동화가 핵심적인 구성 요소로 작동한다.
-- 🧪 응용 사례: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — ResearchCodeAgent의 자동화된 연구 코딩 능력을 ResearchCodeBench로 평가할 수 있음
+- 🔄 다른 접근: [[papers/634_PRIME_A_Multi-Agent_Environment_for_Orchestrating_Dynamic_Co/review]] — 단백질 공학의 특화된 계산 워크플로우 대신 일반적인 머신러닝 논문의 코드 구현 자동화에 초점을 맞춘 대안적 접근
+- 🔗 후속 연구: [[papers/513_M2F_Automated_Formalization_of_Mathematical_Literature_at_Sc/review]] — 수학 문헌의 자동 형식화를 머신러닝 연구 논문의 코드 구현 자동화로 확장한 발전된 형태
+- 🏛 기반 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 머신러닝 에이전트 평가 벤치마크가 ResearchCodeAgent의 코드 생성 품질을 측정하는 기반 제공
+- 🔄 다른 접근: [[papers/212_Chemist-X_Large_Language_Model-empowered_Agent_for_Reaction/review]] — 화학 반응 설계 자동화와 달리 머신러닝 알고리즘 구현 자동화에 특화된 다른 접근 방식
+- 🧪 응용 사례: [[papers/1088_Lag_Llm_agents_for_leaderboard_auto_generation_on_demanding/review]] — 자동화된 연구 코드 에이전트가 리더보드 생성에 필요한 실험 결과 추출과 평가를 실제로 수행한다.
+- 🔄 다른 접근: [[papers/634_PRIME_A_Multi-Agent_Environment_for_Orchestrating_Dynamic_Co/review]] — 일반적인 머신러닝 코드 생성과 달리 단백질 공학에 특화된 65개 도구를 동적으로 조율하는 전문 분야 접근
+- 🏛 기반 연구: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — 자동화된 코드 생성 연구의 기반 위에서 최신 ML 연구 아이디어의 코드 구현이라는 특화된 문제를 다룬다.
+- 🧪 응용 사례: [[papers/520_Massw_A_new_dataset_and_benchmark_tasks_for_ai-assisted_scie/review]] — 연구 코드 에이전트가 과학적 워크플로우의 Method 부분을 자동화하는 실제 구현 사례를 제시한다.

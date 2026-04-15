@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대규모 언어모델(LLM) 기반 에이전트의 다국어 성능을 평가하기 위해 14개 언어, 2,800개의 지시문, 589,946개의 상품을 포함한 X-WebAgentBench 벤치마크를 제시한다. 기존 에이전트 벤치마크들이 영어 중심이었던 반면, 이 연구는 다국어 지시문과 다국어 환경을 동시에 포함한 최초의 종합적인 다국어 에이전트 평가 벤치마크를 구축하였다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Realistic_Discovery_Benchmarks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Multi-Agent_System_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_X-webagentbench A multilingual interactive web benchmark for evaluating global agentic system.pdf"
 ---
@@ -114,8 +116,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_X-webagentbench A multi
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — X-WebAgentBench가 다국어 웹 환경에서 에이전트를 평가하는 반면, SWE-bench는 GitHub 코드 저장소에서 실제 문제 해결 능력을 측정하는 대안적 벤치마킹 접근법을 제시합니다.
-- 🔗 후속 연구: [[papers/429_Infiagent-dabench_Evaluating_agents_on_data_analysis_tasks/review]] — X-WebAgentBench의 다국어 웹 환경 평가를 InfiAgent-DABench의 데이터 분석 작업 평가와 결합하면 더 포괄적인 다중 에이전트 성능 벤치마크를 구축할 수 있습니다.
-- 🔗 후속 연구: [[papers/849_UI-TARS_Pioneering_Automated_GUI_Interaction_with_Native_Age/review]] — GUI 상호작용이 다국어 웹 에이전트 벤치마크로 확장됩니다.
-- 🔗 후속 연구: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — X-WebAgentBench의 다국어 웹 벤치마크는 WebAgent-R1의 종단 간 학습 프레임워크를 다양한 언어 환경에서 평가하고 개선할 수 있다.
-- 🧪 응용 사례: [[papers/872_Webdancer_Towards_autonomous_information_seeking_agency/review]] — X-WebAgentBench의 다국어 웹 벤치마크는 WebDancer의 자율적 정보 탐색 에이전트를 다양한 언어와 문화적 맥락에서 평가하고 개선할 수 있다.
+- 🏛 기반 연구: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 실제 GitHub 이슈 해결 능력을 평가하는 기존 벤치마크를 기반으로 다국어 웹 환경에서 에이전트 성능을 평가하는 것으로 확장한 발전된 평가 체계임
+- 🔄 다른 접근: [[papers/429_Infiagent-dabench_Evaluating_agents_on_data_analysis_tasks/review]] — 에이전트 평가 벤치마크라는 동일한 목표를 가지지만 X-WebAgentBench는 다국어 웹 환경에, InfiAgent-DABench는 데이터 분석 작업에 특화된 다른 평가 영역임
+- 🔗 후속 연구: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — 과학 도구 사용 평가에서 X-WebAgentBench의 다국어 평가 방법론을 과학적 도구 사용이라는 전문 영역으로 확장하여 적용할 수 있는 가능성을 제시함
+- 🧪 응용 사례: [[papers/849_UI-TARS_Pioneering_Automated_GUI_Interaction_with_Native_Age/review]] — 다국어 웹 환경에서 GUI 에이전트의 실제 적용 사례를 보여준다.
+- 🧪 응용 사례: [[papers/872_Webdancer_Towards_autonomous_information_seeking_agency/review]] — 다국어 웹 환경에서 제안된 정보 탐색 파이프라인의 실제 성능을 평가하고 개선할 수 있다.
+- 🔗 후속 연구: [[papers/174_Browsecomp_A_simple_yet_challenging_benchmark_for_browsing_a/review]] — 다국어 웹 에이전트 벤치마크로, 브라우징 에이전트의 능력을 다양한 언어 환경으로 확장하여 평가합니다.

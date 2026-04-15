@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 대규모 언어모델(LLM, Large Language Model) 기반의 다중 에이전트 협업 시스템인 ProtAgents를 제안하여, 물리 기반 시뮬레이션과 머신러닝을 통합함으로써 de novo 단백질 설계 및 분석을 자동화한다. 각 에이전트는 특정 도메인 전문성을 가지고 동적으로 상호작용하면서 복잡한 단백질 설계 문제를 해결한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Protein-Drug_Design_Models"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/AI-Driven_Drug_and_Materials_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ghafarollahi and Buehler_2024_ProtAgents protein discovery via large language model multi-agent collaborations combining physics.pdf"
 ---
@@ -108,15 +110,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ghafarollahi and Buehler_2024_ProtAgents
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/292_Drugpilot_Llm-based_parameterized_reasoning_agent_for_drug_d/review]] — 단백질 vs 약물 발견에서 LLM 기반 다중 에이전트 시스템의 다른 적용 분야를 비교할 수 있다
-- 🏛 기반 연구: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — LLM에 전문 도구를 통합하는 방법론이 단백질 설계 다중 에이전트 시스템의 기반을 제공한다
-- 🔗 후속 연구: [[papers/144_AutoProteinEngine_A_Large_Language_Model_Driven_Agent_Framew/review]] — LLM 기반 단백질 엔진 프레임워크를 다중 에이전트 협업으로 확장한 연구다
-- 🔄 다른 접근: [[papers/065_Agentic_End-to-End_De_Novo_Protein_Design_for_Tailored_Dynam/review]] — 단백질 설계에서 다중 에이전트 vs 엔드투엔드 단일 시스템의 다른 접근법을 비교할 수 있다
-- 🏛 기반 연구: [[papers/256_De_novo_design_of_protein_structure_and_function_with_RFdiff/review]] — LLM 다중 에이전트를 활용한 단백질 발견이 동적 특성 기반 설계의 기반 기술을 제공한다
-- 🔄 다른 접근: [[papers/065_Agentic_End-to-End_De_Novo_Protein_Design_for_Tailored_Dynam/review]] — 동일한 단백질 발견 문제를 다중 에이전트 접근법으로 해결하여 상호 보완적인 방법론을 제시합니다.
-- 🔗 후속 연구: [[papers/686_Robust_deep_learning_based_protein_sequence_design_using_Pro/review]] — 단백질 설계를 LLM 기반 다중 에이전트 시스템으로 확장한다.
-- 🔄 다른 접근: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — 화학 vs 단백질 분야에서 LLM 기반 전문 도구 통합의 다른 적용을 비교할 수 있다
-- 🔄 다른 접근: [[papers/292_Drugpilot_Llm-based_parameterized_reasoning_agent_for_drug_d/review]] — 신약 vs 단백질 발견에서 LLM 기반 다중 에이전트 시스템의 다른 적용 분야를 비교할 수 있다
-- 🔄 다른 접근: [[papers/480_Large-Language-Model-Based_AI_Agent_for_Organic_Semiconducto/review]] — 유기 반도체 vs 단백질 분야에서 LLM 기반 소자 개발의 다른 적용을 비교할 수 있다
-- 🔗 후속 연구: [[papers/160_BioAgents_Democratizing_Bioinformatics_Analysis_with_Multi-A/review]] — BioAgents의 생물정보학 분석 접근법을 단백질 발견 영역으로 확장하여 더 전문화된 다중 에이전트 시스템을 구축할 수 있다.
-- 🔗 후속 연구: [[papers/144_AutoProteinEngine_A_Large_Language_Model_Driven_Agent_Framew/review]] — ProtAgents의 다중 에이전트 기반 단백질 발견이 AutoProteinEngine의 단일 에이전트 AutoML 접근을 협업적 시스템으로 확장한 발전 형태이다.
+- 🔄 다른 접근: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — MedAgents의 제로샷 의료 진단과 ProtAgents의 단백질 발견은 각각 의료와 분자생물학 분야에서 다중 에이전트 LLM 협업을 구현한다
+- 🔗 후속 연구: [[papers/351_FROGENT_An_End-to-End_Full-process_Drug_Design_Multi-Agent_S/review]] — FROGENT의 종단간 신약 설계 다중 에이전트가 ProtAgents의 단백질 설계 방법론을 약물 개발로 확장한다
+- 🏛 기반 연구: [[papers/514_MAC-AMP_A_Closed-Loop_Multi-Agent_Collaboration_System_for_M/review]] — MAC-AMP의 폐루프 다중 에이전트 협업 시스템이 ProtAgents의 단백질 발견을 위한 협업 프레임워크 기반을 제공한다
+- 🧪 응용 사례: [[papers/686_Robust_deep_learning_based_protein_sequence_design_using_Pro/review]] — 대규모 언어모델 기반 멀티에이전트를 통한 단백질 발견이 ProteinMPNN의 설계 능력을 실제 연구에 적용한다.

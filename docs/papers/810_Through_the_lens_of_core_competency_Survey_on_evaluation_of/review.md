@@ -12,8 +12,8 @@ arxiv: ""
 score: 3.5
 essence: "대규모 언어 모델(LLM)의 평가 방법론을 체계화하기 위해 \"핵심 역량(Core Competency)\" 프레임워크를 제안하는 종합 조사 논문이다. 540개 이상의 평가 과제를 분석하여 LLM의 4가지 핵심 역량(지식, 추론, 신뢰성, 안전성)으로 통합함으로써 산재된 평가 벤치마크를 체계적으로 정리한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/AI_for_Science_Taxonomy"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Peer_Review_Assessment"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhuang et al._2023_Through the lens of core competency Survey on evaluation of large language models.pdf"
 ---
@@ -101,5 +101,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhuang et al._2023_Through the lens of c
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/005_A_comprehensive_survey_on_long_context_language_modeling/review]] — 긴 문맥 언어 모델링에 대한 포괄적 조사가 핵심 역량 프레임워크의 평가 방법론을 확장한다.
-- 🔄 다른 접근: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — LLM의 신뢰성 평가가 핵심 역량 중심 평가와는 다른 관점에서 모델 성능을 분석한다.
+- 🧪 응용 사례: [[papers/664_RelevAI-Reviewer_A_Benchmark_on_AI_Reviewers_for_Survey_Pape/review]] — 핵심 역량 프레임워크가 논문 관련성 평가와 같은 구체적 LLM 응용 평가에 적용된다
+- 🔗 후속 연구: [[papers/074_AI_for_research_the_ultimate_guide_to_choosing_the_right_too/review]] — LLM 평가 체계가 연구자들의 도구 선택을 위한 실용적 가이드로 확장된다
+- 🔄 다른 접근: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 핵심 역량과 신뢰성이 각각 LLM 평가의 성능 중심과 안전성 중심 접근법이다
+- 🏛 기반 연구: [[papers/237_Confidence_in_Large_Language_Model_Evaluation_A_Bayesian_App/review]] — 베이지안 접근법을 통한 LLM 평가 신뢰도가 핵심 역량 평가의 방법론적 기반이다
+- 🏛 기반 연구: [[papers/664_RelevAI-Reviewer_A_Benchmark_on_AI_Reviewers_for_Survey_Pape/review]] — LLM 핵심 역량 평가 프레임워크가 논문 관련성 평가 시스템의 방법론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/074_AI_for_research_the_ultimate_guide_to_choosing_the_right_too/review]] — LLM 평가 방법론이 연구자들이 적절한 AI 도구를 선택하는 기준을 제공한다
+- 🔗 후속 연구: [[papers/077_AI_for_social_science_and_social_science_of_AI_A_Survey/review]] — LLM 평가를 사회과학 영역으로 확장하여 AI와 사회과학의 상호작용을 체계적으로 분석한다

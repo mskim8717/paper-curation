@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.0
 essence: "민족지학적 현장 연구와 기계학습(ML)은 각각 현대 사회과학의 핵심 도구이지만 실제로는 분리되어 있었으며, 본 논문은 이 두 방법론을 결합하여 대규모 비교 연구에서 상승효과를 창출할 수 있음을 주장한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Multi-Hop_Reasoning_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Field-Specific_ML_Survey_Methods"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Abramson and Li_2024_Ethnography and machine learning Synergies and new directions.pdf"
 ---
@@ -101,9 +103,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Abramson and Li_2024_Ethnography and mac
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/247_Cultural_evolution_in_populations_of_large_language_models/review]] — 민족지학적 현장 연구 방법론이 LLM 인구의 문화진화 시뮬레이션에서 사회 역학 분석에 직접 적용될 수 있다.
-- 🏛 기반 연구: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — 사회과학 방법론의 통합이 LLM 기반 사회 시뮬레이션의 개인-사회 다층 분석에 이론적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — 사회심리학과 LLM 추론의 결합이 민족지학과 머신러닝 융합의 구체적인 확장 사례이다.
-- 🏛 기반 연구: [[papers/247_Cultural_evolution_in_populations_of_large_language_models/review]] — 민족지학과 머신러닝의 결합이 LLM 인구에서의 문화진화 연구에 방법론적 기초를 제공한다.
-- 🧪 응용 사례: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — 민족지학과 머신러닝의 결합된 방법론이 사회 시뮬레이션에서 현실적인 인간 행동 모델링에 적용된다.
-- 🔗 후속 연구: [[papers/301_Economic_anthropology_in_the_era_of_generative_artificial_in/review]] — 기계학습과 민족지학의 시너지를 경제 인류학적 관점에서 생성형 AI에 적용한다
+- 🧪 응용 사례: [[papers/517_Malinowski_in_the_age_of_ai_Can_large_language_models_create/review]] — LLM 시대의 민족지학적 연구 방법론을 실제 인류학 연구에 적용하는 사례를 제공한다
+- 🔗 후속 연구: [[papers/188_Can_we_automatize_scientific_discovery_in_the_cognitive_scie/review]] — 인지과학 연구 자동화를 민족지학과 ML 결합으로 확장하는 새로운 방향을 제시한다
+- 🔗 후속 연구: [[papers/784_Systematic_Framework_of_Application_Methods_for_Large_Langua/review]] — 기계학습과 민족지학의 시너지 연구가 LLM 적용 방법론을 사회과학으로 확장한다
+- 🏛 기반 연구: [[papers/358_From_Labor_to_Collaboration_A_Methodological_Experiment_Usin/review]] — 인문사회과학에서 기계학습과 민족지학의 시너지를 탐구하여 인문사회과학 연구에 AI 도구를 적용하는 이론적 기반을 제공함
+- 🔗 후속 연구: [[papers/301_Economic_anthropology_in_the_era_of_generative_artificial_in/review]] — 기계학습과 인류학의 시너지 연구로 생성형 AI의 인류학적 접근을 더욱 확장한다

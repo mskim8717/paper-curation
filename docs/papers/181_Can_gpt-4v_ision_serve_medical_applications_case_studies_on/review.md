@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 OpenAI의 GPT-4V(ision) 모델이 의료 영상 진단 작업에서 실제로 임상 적용 가능한지를 체계적으로 평가한 연구이다. 17개 신체 시스템과 8개 영상 모달리티를 포함한 광범위한 사례 연구를 통해 GPT-4V의 의료 진단 능력과 한계를 명확히 규명했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Multimodal_Scientific_Reasoning"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Multimodal_Medical_AI_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xu and Tao_2023_Can gpt-4v (ision) serve medical applications case studies on gpt-4v for multimodal medical diagnos.pdf"
 ---
@@ -103,7 +105,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xu and Tao_2023_Can gpt-4v (ision) serve
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/727_Scimage_How_good_are_multimodal_large_language_models_at_sci/review]] — 과학 이미지에서 다중모달 LLM 성능 평가를 의료 영상 진단에 적용
-- 🔄 다른 접근: [[papers/322_Evaluation_of_openai_o1_Opportunities_and_challenges_of_agi/review]] — OpenAI o1 AGI 평가와 GPT-4V 의료 응용의 다른 AI 역량 평가 접근법
-- 🏛 기반 연구: [[papers/388_GPT-4o_System_Card/review]] — GPT-4o 시스템 카드가 GPT-4V 의료 응용의 기술적 기반 제공
-- 🏛 기반 연구: [[papers/097_An_autonomous_AI_agent_for_universal_behavior_analysis/review]] — BehaveAgent의 멀티모달 행동 분석은 GPT-4V의 의료 응용 연구에서 검증된 비전-언어 모델의 시각적 추론 능력을 동물 행동학 영역으로 확장한 것입니다.
+- 🔄 다른 접근: [[papers/055_Advancing_multimodal_medical_capabilities_of_gemini/review]] — 둘 다 의료 영역 멀티모달 AI를 다루지만 GPT-4V는 한계 분석에, Med-Gemini는 성능 개선에 초점을 맞춤
+- 🏛 기반 연구: [[papers/726_Sciknoweval_Evaluating_multi-level_scientific_knowledge_of_l/review]] — 다차원 과학 지식 평가 방법론이 의료 영상 진단에서 AI 모델의 임상 지식 평가에 적용됨
+- 🔗 후속 연구: [[papers/528_MedAgentGym_A_Scalable_Agentic_Training_Environment_for_Code/review]] — 의료 에이전트 훈련 환경을 통해 GPT-4V의 의료 진단 능력을 체계적으로 개선할 수 있음
+- 🔄 다른 접근: [[papers/055_Advancing_multimodal_medical_capabilities_of_gemini/review]] — 둘 다 의료 영역 멀티모달 모델 평가를 다루지만 Med-Gemini는 종합적 성능 개선에, GPT-4V는 진단 능력 한계 분석에 초점
+- 🏛 기반 연구: [[papers/474_Large_language_models_for_zero-shot_inference_of_causal_stru/review]] — 의료 응용을 위한 GPT-4V 연구가 생물학적 시스템에서 LLM의 시각적 추론 능력의 기초를 제공한다.

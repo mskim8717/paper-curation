@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "이 논문은 LLM 기반의 자율적 수학 연구 에이전트인 Aletheia를 소개하며, AI가 IMO 수준의 문제 해결을 넘어 전문 연구 수준의 새로운 수학적 정리를 독립적으로 발견하고 증명할 수 있음을 시연한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Hypothesis_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Feng et al._2026_Towards Autonomous Mathematics Research.pdf"
 ---
@@ -124,9 +125,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Feng et al._2026_Towards Autonomous Math
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/825_Towards_an_AI_co-scientist/review]] — AI co-scientist의 가설 생성-개선 메커니즘이 Aletheia의 자율적 수학 정리 발견에 구체적으로 적용된 전문 영역 특화 사례이다.
-- 🔗 후속 연구: [[papers/071_AgentRxiv_Towards_Collaborative_Autonomous_Research/review]] — AgentRxiv의 협업적 연구 프레임워크가 Aletheia의 수학 연구 자동화를 위한 다중 에이전트 지식 공유 시스템으로 확장된 형태이다.
-- 🏛 기반 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — DeepSeek-Prover의 대규모 언어 모델 기반 정리 증명이 Aletheia의 자율적 수학 연구 및 증명 능력의 핵심적인 기술적 토대이다.
-- 🔗 후속 연구: [[papers/071_AgentRxiv_Towards_Collaborative_Autonomous_Research/review]] — 수학 연구의 자율적 정리 발견을 위한 Aletheia가 AgentRxiv의 협업적 연구 프레임워크를 전문 수학 도메인으로 확장한 사례이다.
-- 🔗 후속 연구: [[papers/825_Towards_an_AI_co-scientist/review]] — Aletheia의 자율적 수학 연구가 AI co-scientist의 가설 생성 및 검증 프레임워크를 전문 수학 영역으로 특화하여 확장한 적용이다.
-- 🧪 응용 사례: [[papers/864_VASPilot_MCP-Facilitated_Multi-Agent_Intelligence_for_Autono/review]] — 자율적 수학 연구를 위한 자동화 시스템으로 계산 과학의 완전 자동화 비전을 공유한다.
+- 🏛 기반 연구: [[papers/642_Proving_theorems_recursively/review]] — 재귀적 정리 증명 방법론의 기반을 활용하여 자율적 수학 연구에서 더욱 체계적인 증명 구조를 구축할 수 있다.
+- 🔄 다른 접근: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI 과학자의 완전 자동화라는 공통 목표를 가지지만 수학 vs 일반 과학 연구라는 다른 도메인에 특화된 접근법을 사용한다.
+- 🔗 후속 연구: [[papers/817_Toward_a_Team_of_AI-made_Scientists_for_Scientific_Discovery/review]] — AI 제작 과학자 팀을 통해 개별 수학 연구 에이전트를 협업적 과학 발견 시스템으로 확장할 수 있다.
+- 🧪 응용 사례: [[papers/339_Fimo_A_challenge_formal_dataset_for_automated_theorem_provin/review]] — 자율적 수학 연구로 형식적 정리 증명을 실제 연구에 적용하는 사례이다.
+- 🧪 응용 사례: [[papers/257_Decomposing_the_enigma_Subgoal-based_demonstration_learning/review]] — 부분목표 기반 시연 학습이 자율적 수학 연구를 위한 구조화된 접근법으로 활용될 수 있다.
+- 🔗 후속 연구: [[papers/513_M2F_Automated_Formalization_of_Mathematical_Literature_at_Sc/review]] — 자율적 수학 연구를 향한 더 광범위한 비전을 제시하여, 수학 문헌의 자동 형식화를 실제 수학 연구 자동화로 확장
+- 🏛 기반 연구: [[papers/251_Data_for_mathematical_copilots_Better_ways_of_presenting_pro/review]] — 자율적 수학 연구를 위해서는 최종 증명뿐 아니라 수학자의 사고 과정을 담은 데이터가 필수적이라는 공통 인식을 공유한다.
+- 🔗 후속 연구: [[papers/642_Proving_theorems_recursively/review]] — 자율적 수학 연구 에이전트를 통해 재귀적 정리 증명 방법을 더욱 고도화된 수학적 발견으로 확장할 수 있다.
+- 🏛 기반 연구: [[papers/030_A_survey_on_deep_learning_for_theorem_proving/review]] — 자율적 수학 연구 에이전트 개발에 필요한 정리 증명 기법들의 이론적 기반과 최신 연구 동향을 종합적으로 제공한다.

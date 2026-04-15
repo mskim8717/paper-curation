@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어 모델(LLM)이 의료 질문 답변 벤치마크에서 우수한 성능을 보이지만, 실제 의료 현장의 복잡한 의사-환자 상호작용을 반영하지 못한다. 이 논문은 다중 에이전트 의료 상호작용 시뮬레이터인 AI Hospital을 제안하고, 현실적인 임상 진단 시나리오에서 LLM의 성능 격차를 평가한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Clinical_Multi-Agent_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Multi-Agent_Medical_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hassija et al._2024_Ai hospital Benchmarking large language models in a multi-agent medical interaction simulator.pdf"
 ---
@@ -107,5 +109,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hassija et al._2024_Ai hospital Benchmar
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — AI Hospital의 다중 에이전트 의료 시뮬레이션은 PatientSim의 페르소나 기반 환자 시뮬레이션을 확장하여 의사-환자 상호작용을 포함한 완전한 병원 환경을 구현합니다.
-- 🏛 기반 연구: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — AI Hospital의 의료 에이전트 벤치마킹은 의료 AI 안전성과 해석가능성에 대한 mechanistic interpretability 연구 결과를 기반으로 신뢰할 수 있는 의료 시스템을 구축합니다.
+- 🔗 후속 연구: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — 다중 에이전트 의료 상호작용 벤치마크에서 개별화된 의사-환자 시뮬레이터로의 구체적인 발전을 보여준다
+- 🔄 다른 접근: [[papers/058_Agent_hospital_A_simulacrum_of_hospital_with_evolvable_medic/review]] — 의료 AI 벤치마킹에서 고정된 시나리오와 진화 가능한 병원 환경이라는 서로 다른 평가 방법론을 제시한다
+- 🏛 기반 연구: [[papers/644_Psyche_A_multi-faceted_patient_simulation_framework_for_eval/review]] — 다면적 환자 시뮬레이션 기술을 다중 에이전트 의료 벤치마킹의 핵심 구성 요소로 활용한다
+- 🔄 다른 접근: [[papers/027_A_survey_of_llm-based_agents_in_medicine_How_far_are_we_from/review]] — 의료 AI 에이전트의 서베이와 실제 병원 환경에서의 다중 에이전트 벤치마킹을 비교하여 이론과 실제 적용 간 격차를 파악할 수 있다
+- 🔗 후속 연구: [[papers/058_Agent_hospital_A_simulacrum_of_hospital_with_evolvable_medic/review]] — 다중 에이전트 의료 환경 벤치마크가 병원 시뮬레이션을 넘어 AI 에이전트의 체계적 평가로 확장한다

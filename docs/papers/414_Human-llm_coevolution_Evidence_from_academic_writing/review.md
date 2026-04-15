@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 arXiv 논문 초록의 통계적 분석을 통해 인간과 대형언어모델(LLM)의 공진화(coevolution) 현상을 보여준다. 특히 2024년 초 ChatGPT의 과용 단어들이 지적된 직후부터 해당 단어들의 사용 빈도가 급감하는 현상을 발견했으며, 이는 연구자들이 LLM 출력을 의도적으로 수정하고 있음을 시사한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Personalization"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Geng and Trotta_2025_Human-llm coevolution Evidence from academic writing.pdf"
 ---
@@ -116,13 +118,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Geng and Trotta_2025_Human-llm coevoluti
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/444_Is_it_OK_for_AI_to_write_science_papers_Nature_survey_shows/review]] — arXiv 논문 분석을 통한 공진화 현상 발견을 Nature 설문의 AI 사용 윤리 논의로 확장하여 전체적인 변화상을 파악할 수 있습니다.
-- 🔄 다른 접근: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — AI 작문 도구 사용이 콘텐츠 다양성에 미치는 영향을 통계적 분석과 실험적 접근법으로 각각 다르게 탐구합니다.
-- 🏛 기반 연구: [[papers/796_The_AI_writing_on_the_wall/review]] — 학술 작문에서 AI 사용의 기본적인 현상과 패턴이 인간-LLM 공진화 분석의 이론적 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 인간-AI 협력 글쓰기 데이터셋 연구가 학술 글쓰기에서 인간과 LLM의 공진화 현상 분석으로 확장되었다
-- 🏛 기반 연구: [[papers/641_Prototypical_human-ai_collaboration_behaviors_from_llm-assis/review]] — 인간-LLM 공진화에 대한 학술 글쓰기 증거가 프로토타입적 협력 행동 패턴의 장기적 발전과 상호 적응 과정의 이론적 배경을 제공함
-- 🔗 후속 연구: [[papers/227_Closing_the_loop_Learning_to_generate_writing_feedback_via_l/review]] — 인간-LLM 협력 글쓰기의 일반적 패턴을 교육적 맥락으로 확장하여 피드백 생성에 특화된 방법론을 개발함
-- 🏛 기반 연구: [[papers/444_Is_it_OK_for_AI_to_write_science_papers_Nature_survey_shows/review]] — arXiv 분석을 통한 실증적 공진화 증거가 Nature 설문의 AI 사용 윤리 논의에 데이터 기반 근거를 제공합니다.
-- 🔗 후속 연구: [[papers/900_ChatGPT_has_entered_the_classroom_how_LLMs_could_transform_e/review]] — 교육 분야 LLM 적용을 인간-AI 협력적 글쓰기로 확장하여 실제 교육 현장의 변화를 보여준다
-- 🏛 기반 연구: [[papers/607_Patterns_and_purposes_A_cross-journal_analysis_of_ai_tool_us/review]] — 인간-LLM 협력적 글쓰기의 진화 과정에서 AI 도구 사용 패턴의 기초 데이터를 제공한다
-- 🏛 기반 연구: [[papers/565_Multi-novelty_Improve_the_diversity_and_novelty_of_contents/review]] — 인간-LLM 협력에서 콘텐츠 다양성 확보의 기술적 기초를 제공한다
+- 🔗 후속 연구: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — LLM 채택이 학술 저술에 미치는 영향을 더 광범위한 분야에서 분석한다
+- 🔄 다른 접근: [[papers/607_Patterns_and_purposes_A_cross-journal_analysis_of_ai_tool_us/review]] — AI 도구 사용이 학술 저술에 미치는 영향을 다른 관점에서 정량적으로 분석한다
+- 🧪 응용 사례: [[papers/611_People_who_frequently_use_ChatGPT_for_writing_tasks_are_accu/review]] — ChatGPT 사용자의 글쓰기 정확성 변화라는 구체적 응용 사례를 제시한다
+- 🔗 후속 연구: [[papers/116_Augmenting_the_author_Exploring_the_potential_of_ai_collabor/review]] — 인간-LLM 공진화 증거가 저자 증강 AI 협업의 장기적 영향을 확장하여 보여준다.
+- 🔄 다른 접근: [[papers/703_Scholawrite_A_dataset_of_end-to-end_scholarly_writing_proces/review]] — 학술 글쓰기에서 인간과 LLM의 상호작용을 서로 다른 관점에서 체계적으로 분석한다.
+- 🔗 후속 연구: [[papers/607_Patterns_and_purposes_A_cross-journal_analysis_of_ai_tool_us/review]] — 학술 저술에서 AI 도구 사용 패턴을 더 광범위한 저널과 분야로 확장하여 분석한다

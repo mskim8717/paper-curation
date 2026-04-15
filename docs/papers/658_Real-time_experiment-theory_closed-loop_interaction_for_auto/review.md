@@ -8,8 +8,10 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 **Autonomous MAterials Search Engine (AMASE)**를 통해 실시간으로 실험과 이론을 폐루프 형태로 자동 상호작용시켜 재료 탐색을 수행하는 혁신적 방법론을 제시한다. Sn-Bi 박막 이원 상태도를 단 8시간 만에 매핑하며, 필요한 실험 횟수를 6배 감소시켰다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/AI-Driven_Drug_and_Materials_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wilson_2024_Real-time experiment-theory closed-loop interaction for autonomous materials science.pdf"
 ---
@@ -137,13 +139,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wilson_2024_Real-time experiment-theory 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/099_An_autonomous_laboratory_for_the_accelerated_synthesis_of_in/review]] — 재료 탐색의 실시간 폐루프 vs 자율 합성이라는 서로 다른 자동화 접근법을 보여준다.
-- 🔄 다른 접근: [[papers/684_Robot-assisted_mapping_of_chemical_reaction_hyperspaces_and/review]] — 실험-이론 통합을 재료 vs 화학반응 매핑에 각각 적용한다.
-- 🏛 기반 연구: [[papers/799_The_frontier_of_simulation-based_inference/review]] — 시뮬레이션 기반 추론이 실시간 실험-이론 폐루프의 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/211_ChemGymRL_A_Customizable_Interactive_Framework_for_Reinforce/review]] — 시뮬레이션 화학 실험을 실시간 이론-실험 연결 시스템으로 실현한 응용
-- 🏛 기반 연구: [[papers/380_Generative_machine_learning_in_adaptive_control_of_dynamic_m/review]] — 실시간 실험-이론 폐쇄루프 상호작용의 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/684_Robot-assisted_mapping_of_chemical_reaction_hyperspaces_and/review]] — 실시간 실험-이론 폐루프 시스템의 다른 구현 방식을 보여준다.
-- 🔗 후속 연구: [[papers/099_An_autonomous_laboratory_for_the_accelerated_synthesis_of_in/review]] — AMASE의 실시간 폐루프 개념을 재료 합성 최적화에 적용할 수 있다.
-- 🧪 응용 사례: [[papers/799_The_frontier_of_simulation-based_inference/review]] — 시뮬레이션 기반 추론을 실시간 실험-이론 폐루프 시스템에 적용한다.
-- 🔄 다른 접근: [[papers/1125_Accelerating_cell_culture_media_development_using_Bayesian_o/review]] — 자동화된 실시간 실험-이론 폐쇄루프와 베이지안 최적화의 다른 접근법
-- 🔗 후속 연구: [[papers/1126_Autonomous_platform_for_solution_processing_of_electronic_po/review]] — Polybot의 AI 기반 자동화 연구실은 실시간 실험-이론 폐쇄루프 상호작용 연구의 자동화 개념을 고분자 재료 처리에 적용하여 실제 제조 공정 최적화를 실현합니다.
+- 🔄 다른 접근: [[papers/684_Robot-assisted_mapping_of_chemical_reaction_hyperspaces_and/review]] — Sn-Bi 박막 상태도 매핑과 화학반응 초공간 매핑은 각각 재료과학과 화학에서 실시간 자동 실험 최적화를 구현한다
+- 🏛 기반 연구: [[papers/432_Intelligent_experiments_through_real-time_ai_Fast_data_proce/review]] — 실시간 AI를 통한 지능형 실험이 실시간 실험-이론 폐루프 상호작용의 기술적 기반을 제공한다
+- 🔗 후속 연구: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — 화학 및 재료과학을 위한 자율주행 실험실이 실시간 폐루프 상호작용의 확장된 응용 분야를 제시한다
+- 🏛 기반 연구: [[papers/432_Intelligent_experiments_through_real-time_ai_Fast_data_proce/review]] — 실시간 실험-이론 폐쇄 루프 상호작용 연구가 고에너지 핵물리 실험에서 실시간 AI 기반 데이터 처리 시스템 구축의 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/048_Adaptive_ai_decision_interface_for_autonomous_electronic_mat/review]] — 실험-이론 폐루프 상호작용의 기본 개념과 실시간 구현 방법론을 제공한다
+- 🔄 다른 접근: [[papers/684_Robot-assisted_mapping_of_chemical_reaction_hyperspaces_and/review]] — 재료 탐색에서 실시간 실험-이론 폐루프와 화학반응 초공간 매핑은 각각 다른 방식으로 고차원 실험 공간을 효율적으로 탐색한다
+- 🔄 다른 접근: [[papers/248_Curie_Toward_rigorous_and_automated_scientific_experimentati/review]] — 실시간 실험-이론 폐루프 상호작용을 통한 자동화 연구로, Curie의 엄밀성과 다른 실시간 적응적 접근

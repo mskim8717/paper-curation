@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 신경망의 내부 작동 메커니즘을 인간이 이해할 수 있는 알고리즘으로 역공학(reverse engineering)하는 기계론적 해석가능성(mechanistic interpretability)의 종합적 리뷰를 제공한다. AI 안전성 확보를 위해 신경망의 세밀한 인과관계 이해가 필수적임을 강조한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Safety_and_Bias"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bereska and Gavves_2024_Mechanistic interpretability for ai safety–a review.pdf"
 ---
@@ -119,15 +121,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bereska and Gavves_2024_Mechanistic inte
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/182_Can_language_models_falsify_evaluating_algorithmic_reasoning/review]] — 기계론적 해석가능성을 언어모델의 반례 생성 실패 메커니즘 분석에 적용할 수 있다
-- 🏛 기반 연구: [[papers/784_Systematic_Framework_of_Application_Methods_for_Large_Langua/review]] — LLM 응용 방법론의 체계적 프레임워크 구축에 신경망 해석가능성의 이론적 기반을 제공한다
-- 🔗 후속 연구: [[papers/017_A_practical_review_of_mechanistic_interpretability_for_trans/review]] — 트랜스포머 모델의 기계론적 해석가능성 연구를 AI 안전성 맥락으로 확장한다
-- 🔄 다른 접근: [[papers/836_Towards_uncovering_how_large_language_model_works_An_explain/review]] — LLM 작동 메커니즘 이해에서 기계론적 vs 설명가능성 기반의 다른 접근법을 비교할 수 있다
-- 🔄 다른 접근: [[papers/017_A_practical_review_of_mechanistic_interpretability_for_trans/review]] — AI 안전을 위한 기계적 해석가능성 리뷰와 트랜스포머 기반 모델의 기계적 해석가능성은 상호 보완적인 관점에서 AI 이해가능성을 다룹니다
-- 🧪 응용 사례: [[papers/850_Uncertainty_quantification_in_scientific_machine_learning_Me/review]] — AI 안전성을 위한 기계적 해석가능성을 과학 기계학습의 불확실성 정량화에 적용할 수 있다
-- 🏛 기반 연구: [[papers/182_Can_language_models_falsify_evaluating_algorithmic_reasoning/review]] — 신경망의 내부 작동 메커니즘 이해가 언어모델의 반례 생성 실패 원인을 분석하는 기반을 제공한다
-- 🧪 응용 사례: [[papers/784_Systematic_Framework_of_Application_Methods_for_Large_Langua/review]] — LLM 방법론 체계화에 기계론적 해석가능성 원칙을 적용하여 더 신뢰성 있는 프레임워크를 구축할 수 있다
-- 🔄 다른 접근: [[papers/582_On_gradient-like_explanation_under_a_black-box_setting_when/review]] — AI 안전성을 위한 기계적 해석가능성과 블랙박스 설정에서의 설명 가능성이라는 서로 다른 해석가능성 접근법을 제시한다.
-- 🔄 다른 접근: [[papers/836_Towards_uncovering_how_large_language_model_works_An_explain/review]] — AI 안전성을 위한 기계적 해석가능성과 LLM 작동 메커니즘 이해라는 유사하지만 다른 관점의 해석가능성 연구이다.
-- 🏛 기반 연구: [[papers/078_Ai_hospital_Benchmarking_large_language_models_in_a_multi-ag/review]] — AI Hospital의 의료 에이전트 벤치마킹은 의료 AI 안전성과 해석가능성에 대한 mechanistic interpretability 연구 결과를 기반으로 신뢰할 수 있는 의료 시스템을 구축합니다.
-- 🧪 응용 사례: [[papers/1104_A_Physics-Informed_Chemical_Rule_for_Topological_Materials_D/review]] — AI 안전을 위한 기계론적 해석가능성을 위상 재료 발견에 적용
+- 🧪 응용 사례: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — LLM 신뢰성 평가에 기계론적 해석가능성의 내부 메커니즘 분석이 직접 적용된다
+- 🏛 기반 연구: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — AI 안전성을 위한 해석가능성이 에이전트 신뢰성 과학의 이론적 토대를 마련한다
+- 🔗 후속 연구: [[papers/017_A_practical_review_of_mechanistic_interpretability_for_trans/review]] — 변환기 모델의 실용적 해석가능성 리뷰가 AI 안전성 관점을 확장한다
+- 🏛 기반 연구: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — AI 안전성을 위한 기계론적 해석가능성이 에이전트 신뢰성 평가의 이론적 토대를 마련한다
+- 🔗 후속 연구: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 기계론적 해석가능성이 LLM 신뢰성의 6가지 차원을 내부 메커니즘 관점에서 분석한다
+- 🔄 다른 접근: [[papers/017_A_practical_review_of_mechanistic_interpretability_for_trans/review]] — 트랜스포머 기계적 해석가능성에서 실무 중심 리뷰와 AI 안전성 관점의 리뷰는 서로 다른 목적과 접근법으로 해석가능성을 다룬다.
+- 🏛 기반 연구: [[papers/1085_Ecm_A_unified_electronic_circuit_model_for_explaining_the_em/review]] — LLM 내부 메커니즘 해석을 위한 기계적 해석가능성의 기본 원리와 방법론을 제공한다
+- 🔗 후속 연구: [[papers/800_The_hidden_dimensions_of_llm_alignment_A_multi-dimensional_s/review]] — 기계적 해석가능성을 LLM 정렬의 다차원 분석으로 확장한다
+- 🏛 기반 연구: [[papers/582_On_gradient-like_explanation_under_a_black-box_setting_when/review]] — 기계적 해석가능성 리뷰가 블랙박스 환경 그래디언트 설명 기법의 이론적 토대를 제공한다
+- 🏛 기반 연구: [[papers/836_Towards_uncovering_how_large_language_model_works_An_explain/review]] — AI 안전성을 위한 기계적 해석가능성이 LLM 작동 원리 해명의 이론적 기반을 제공한다

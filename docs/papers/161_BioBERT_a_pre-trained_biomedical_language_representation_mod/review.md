@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.6
 essence: "생의학 문헌의 급증에 따라 생의학 텍스트 마이닝의 중요성이 높아지고 있으나, 일반 도메인에서 사전학습된 BERT를 직접 적용하면 어휘 분포의 차이로 인해 성능이 저하되는 문제를 해결하기 위해, 저자들은 PubMed와 PMC 생의학 코퍼스에서 추가 사전학습한 BioBERT를 제안하여 명명된 개체 인식(NER), 관계 추출(RE), 질의응답(QA)에서 기존 최고 성능 모델을 능가하는 성과를 달성했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Biological_Foundation_Models"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Domain-Specific_LLM_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lee et al._2019_BioBERT a pre-trained biomedical language representation model for biomedical text mining.pdf"
 ---
@@ -105,12 +105,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lee et al._2019_BioBERT a pre-trained bi
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 생의학 텍스트 전용 BERT와 단일세포 데이터를 텍스트로 변환하여 처리하는 LLM이 생의학 데이터 처리의 서로 다른 접근법을 보여준다
-- 🏛 기반 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 생의학 도메인 특화 언어모델의 초기 연구로서 이후 과학 분야 대형언어모델 발전의 중요한 기반이 되었다
-- 🔄 다른 접근: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — 도메인 특화 사전학습과 범용 과학 언어모델이 각각 전문성과 범용성 측면에서 다른 접근법을 제시한다
-- 🏛 기반 연구: [[papers/707_SciBERT_A_Pretrained_Language_Model_for_Scientific_Text/review]] — 생의학 도메인 특화 BERT 모델의 선구적 연구로서 과학 텍스트 처리를 위한 언어모델 개발의 중요한 출발점이다
-- 🔄 다른 접근: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 단일세포 데이터 텍스트 변환 방식과 생의학 텍스트 전용 언어모델이 생의학 빅데이터 처리의 상반된 접근법을 보여준다
-- 🏛 기반 연구: [[papers/344_Foundation_models_in_bioinformatics/review]] — BioBERT의 생의학 언어 표현 사전훈련이 생물정보학 기초 모델 발전의 중요한 선행 연구입니다.
-- 🔗 후속 연구: [[papers/734_ScispaCy_Fast_and_Robust_Models_for_Biomedical_Natural_Langu/review]] — 생의학 언어 표현 모델인 BioBERT의 발전을 실용적 NLP 파이프라인으로 확장한 사례이다.
-- 🔗 후속 연구: [[papers/152_BERT_Pre-training_of_Deep_Bidirectional_Transformers_for_Lan/review]] — BERT를 생의학 도메인에 특화시켜 의료 텍스트 이해 성능을 개선함
-- 🏛 기반 연구: [[papers/707_SciBERT_A_Pretrained_Language_Model_for_Scientific_Text/review]] — BioBERT의 생의학 도메인 특화 아이디어를 더 넓은 과학 분야로 확장한 연구
+- 🔗 후속 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — BioBERT의 생의학 언어모델을 화학 분야까지 확장한 과학 전용 대규모 언어모델 발전
+- 🏛 기반 연구: [[papers/167_Biomedlm_A_27_b_parameter_language_model_trained_on_biomedic/review]] — 생의학 텍스트 처리를 위한 언어모델의 기초가 되는 사전학습 방법론
+- 🧪 응용 사례: [[papers/530_Medbiolm_Optimizing_medical_and_biological_qa_with_fine-tune/review]] — 생의학 언어모델을 실제 의료 질의응답과 진단 지원에 적용하는 구체적 활용법
+- 🏛 기반 연구: [[papers/344_Foundation_models_in_bioinformatics/review]] — BioBERT는 생물정보학 분야 언어 모델의 선구적 연구로, 기초 모델의 생물정보학 적용 발전사를 이해하는 데 필수적이다.
+- 🔄 다른 접근: [[papers/734_ScispaCy_Fast_and_Robust_Models_for_Biomedical_Natural_Langu/review]] — 생의학 자연어 처리에서 spaCy 기반과 BERT 기반이라는 서로 다른 아키텍처 접근법을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/160_BioAgents_Democratizing_Bioinformatics_Analysis_with_Multi-A/review]] — BioBERT의 바이오의학 언어 표현이 BioAgents의 소형 언어모델 미세조정 기반을 제공한다.
+- 🔗 후속 연구: [[papers/152_BERT_Pre-training_of_Deep_Bidirectional_Transformers_for_Lan/review]] — BERT 아키텍처를 생의학 도메인에 특화시켜 과학 분야 언어모델 개발의 선례를 제공합니다.
+- 🧪 응용 사례: [[papers/424_Improving_health_question_answering_with_reliable_and_time-a/review]] — 생의학 도메인 특화 언어모델이 건강 질문 답변에서 신뢰할 수 있는 증거 검색의 실제 구현에 활용된다.

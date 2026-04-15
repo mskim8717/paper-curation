@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 과학 분야 대규모 언어 모델(Scientific Large Language Models, Sci-LLMs)의 발전을 데이터 중심으로 종합 분석하는 설문연구로, 270개 이상의 사전/후학습 데이터셋과 190개 이상의 벤치마크를 검토하여 과학 AI의 로드맵을 제시한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Biological_Foundation_Models"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2025_A Survey of Scientific Large Language Models From Data Foundations to Agent Frontiers.pdf"
 ---
@@ -90,5 +90,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2025_A Survey of Scientific La
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 생물학과 화학 분야 과학 LLM에 대한 다른 관점의 종합 조사를 제시한다.
-- 🔗 후속 연구: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — 대규모 언어모델이 과학을 변화시키는 방법에 대한 서베이로 확장한다.
+- 🏛 기반 연구: [[papers/026_A_survey_of_large_language_models/review]] — 과학 특화 LLM의 기반이 되는 일반적 LLM 발전사와 구조에 대한 이해를 제공한다
+- 🔄 다른 접근: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 생물학 및 화학 분야에 특화된 과학 LLM에 대한 다른 관점의 포괄적 분석을 제시한다
+- 🔗 후속 연구: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — 과학 연구 변혁에서 LLM의 역할과 영향에 대한 더 광범위한 사회적 관점을 제공한다
+- 🧪 응용 사례: [[papers/026_A_survey_of_large_language_models/review]] — 범용 LLM을 과학 연구 특화 도메인에 적용한 구체적 발전 방향을 제시한다
+- 🔄 다른 접근: [[papers/792_Text2world_Benchmarking_large_language_models_for_symbolic_w/review]] — 기호적 세계 모델 대신 과학적 발견을 위한 다른 LLM 접근법을 제시한다
+- 🏛 기반 연구: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — 과학 분야 대규모 언어모델의 데이터 구축과 학습 방법론에 대한 이론적 기반을 제공한다.

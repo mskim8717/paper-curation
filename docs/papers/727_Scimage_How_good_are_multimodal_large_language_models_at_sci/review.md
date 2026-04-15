@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 멀티모달 대규모 언어모델(LLM)의 과학적 이미지 생성 능력을 평가하기 위한 ScImage 벤치마크를 제시한다. 5가지 모델(GPT-4o, Llama, AutomaTikZ, DALL-E, StableDiffusion)을 공간(spatial), 수치(numeric), 속성(attribute) 이해 차원에서 평가한 결과, 모든 모델이 특히 복합 프롬프트에서 상당한 어려움을 겪는 것으로 나타났다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jeyaram et al._2024_Scimage How good are multimodal large language models at scientific text-to-image generation arXiv.pdf"
 ---
@@ -133,10 +133,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jeyaram et al._2024_Scimage How good are
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/388_GPT-4o_System_Card/review]] — GPT-4o의 멀티모달 기능이 과학적 이미지 생성 능력 평가의 기술적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 그림-캡션 생성 프레임워크가 과학적 이미지 생성과 이해 평가를 시각-텍스트 변환 관점에서 확장한다.
-- 🔄 다른 접근: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 과학적 그림에 대한 캡션 생성과 달리 텍스트에서 과학적 이미지를 생성하는 역방향 능력을 평가한다.
-- 🔗 후속 연구: [[papers/388_GPT-4o_System_Card/review]] — 멀티모달 과학 이미지 생성 능력 평가가 GPT-4o의 멀티모달 기능에 대한 구체적인 확장 평가이다.
-- 🧪 응용 사례: [[papers/091_Aiscivision_A_framework_for_specializing_large_multimodal_mo/review]] — 과학 이미지에서 다중모달 대규모 언어모델의 성능을 구체적으로 평가한다.
-- 🔗 후속 연구: [[papers/737_Sciverse_Unveiling_the_knowledge_comprehension_and_visual_re/review]] — SCIMAGE의 과학 이미지 이해 평가가 SCIVERSE의 멀티모달 콘텐츠 해석 차원을 더욱 구체화함
-- 🧪 응용 사례: [[papers/181_Can_gpt-4v_ision_serve_medical_applications_case_studies_on/review]] — 과학 이미지에서 다중모달 LLM 성능 평가를 의료 영상 진단에 적용
+- 🔄 다른 접근: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — 과학 이미지 생성과 차트 추론이 서로 다른 시각적 과학 콘텐츠 처리 접근법을 제시한다
+- 🔗 후속 연구: [[papers/599_Paper2poster_Towards_multimodal_poster_automation_from_scien/review]] — 과학 이미지 생성 능력을 논문-포스터 자동 변환의 멀티모달 처리로 확장한다
+- 🔗 후속 연구: [[papers/091_Aiscivision_A_framework_for_specializing_large_multimodal_mo/review]] — 과학 영상 이해를 다중모달 대화형 시스템으로 확장한 더 발전된 접근법을 제시한다
+- 🔗 후속 연구: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — 과학 이미지에 대한 멀티모달 대규모 언어모델 평가가 MMSCI의 과학 시각화 이해를 더 포괄적으로 발전시킨다.
+- 🏛 기반 연구: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 다중모달 대형언어모델의 과학 이미지 이해 능력을 평가하는 연구로, SciFIBench 벤치마크 설계의 이론적 배경을 제공한다

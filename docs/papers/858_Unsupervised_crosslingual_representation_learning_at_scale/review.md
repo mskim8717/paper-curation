@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 100개 언어에서 2TB 이상의 필터링된 CommonCrawl 데이터로 사전학습한 XLM-RoBERTa (XLM-R)를 제시하며, 다언어 마스크 언어 모델링이 대규모로 학습될 때 교차언어 전이학습 성능을 크게 향상시킴을 보여준다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Benchmarking_Taxonomy"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Reimers and Gurevych_2019_Unsupervised crosslingual representation learning at scale.pdf"
 ---
@@ -79,7 +80,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Reimers and Gurevych_2019_Unsupervised c
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/368_Gemini_15_Unlocking_multimodal_understanding_across_millions/review]] — 다언어 표현학습이 멀티모달 이해로 확장되는 자연스러운 발전 경로
-- 🧪 응용 사례: [[papers/245_Crosslingual_capabilities_and_knowledge_barriers_in_multilin/review]] — 다언어 능력의 실제적 한계와 지식 장벽을 실증적으로 분석함
-- 🔗 후속 연구: [[papers/690_Rule-based_neural_and_llm_back-translation_Comparative_insig/review]] — 대규모 무감독 교차언어 표현 학습이 라딘어와 같은 저자원 언어의 역번역 성능 향상에 적용될 수 있다.
-- 🔗 후속 연구: [[papers/755_Simalign_High_quality_word_alignments_without_parallel_train/review]] — 대규모 무감독 크로스링구얼 표현 학습이 SimAlign의 정적/문맥화 임베딩 활용 방식을 더 큰 규모로 확장한 연구임
+- 🔗 후속 연구: [[papers/119_Autocap_Towards_automatic_cross-lingual_alignment_planning_f/review]] — 교차언어 표현학습을 다국어 추론에서의 언어 선택 자동화로 발전시킨다
+- 🧪 응용 사례: [[papers/245_Crosslingual_capabilities_and_knowledge_barriers_in_multilin/review]] — 다언어 모델의 지식 장벽 분석이 XLM-R의 교차언어 전이 성능 이해에 기여한다
+- 🏛 기반 연구: [[papers/152_BERT_Pre-training_of_Deep_Bidirectional_Transformers_for_Lan/review]] — BERT의 양방향 변환기 사전학습이 XLM-R의 다언어 마스크 언어 모델링 기반이 된다
+- 🏛 기반 연구: [[papers/245_Crosslingual_capabilities_and_knowledge_barriers_in_multilin/review]] — 대규모 무감독 교차언어 표현 학습 연구로, 이 논문에서 발견한 교차언어 지식 장벽의 근본적 원인에 대한 기술적 배경을 제공한다
+- 🏛 기반 연구: [[papers/690_Rule-based_neural_and_llm_back-translation_Comparative_insig/review]] — 대규모 비지도 다국어 표현 학습의 기초적인 방법론을 저자원 언어 역번역에 적용한다.
+- 🔗 후속 연구: [[papers/755_Simalign_High_quality_word_alignments_without_parallel_train/review]] — 대규모 무감독 크로스링구얼 표현 학습을 병렬 데이터 없는 단어 정렬이라는 구체적 과제로 특화하여 적용한다.
+- 🏛 기반 연구: [[papers/119_Autocap_Towards_automatic_cross-lingual_alignment_planning_f/review]] — XLM-R의 교차언어 표현학습이 다국어 CoT 추론에서 언어 선택 자동화의 기반이 된다

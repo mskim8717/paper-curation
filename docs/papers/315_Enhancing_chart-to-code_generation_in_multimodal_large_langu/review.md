@@ -10,8 +10,10 @@ arxiv: ""
 score: 4.25
 essence: "차트 이미지를 실행 가능한 플로팅 코드로 변환하는 차트-to-코드 생성 작업에서, 다중모달 대규모 언어 모델(MLLM)의 성능을 향상시키기 위해 이중 모드(code + image) 보상 메커니즘과 반복적 선호도 학습을 결합한 프레임워크를 제시한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zia et al._2025_Enhancing chart-to-code generation in multimodal large language models via iterative dual preference.pdf"
 ---
@@ -117,15 +119,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zia et al._2025_Enhancing chart-to-code 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/199_ChartInstruct_Instruction_Tuning_for_Chart_Comprehension_and/review]] — 차트 이해 능력이 차트-투-코드 생성의 전제 조건이 됨
-- 🔗 후속 연구: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — 차트 기반 모델이 코드 생성까지 확장된 종합적 프레임워크
-- 🔗 후속 연구: [[papers/199_ChartInstruct_Instruction_Tuning_for_Chart_Comprehension_and/review]] — 차트 이해에서 코드 생성으로의 자연스러운 발전 단계
-- 🔄 다른 접근: [[papers/566_Multimodal_deepresearcher_Generating_text-chart_interleaved/review]] — 멀티모달 대형 언어모델의 차트-코드 생성과 텍스트-차트 통합 보고서는 서로 다른 형태의 시각화 자동화 접근법입니다
-- 🏛 기반 연구: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — 차트 이해 성능 향상 방법론이 차트 이미지 추론의 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/200_Chartist_Task-driven_Eye_Movement_Control_for_Chart_Reading/review]] — 차트 이해를 작업별 안구운동 제어로 발전시킨 멀티모달 AI 연구
-- 🔗 후속 연구: [[papers/201_ChartLlama_A_Multimodal_LLM_for_Chart_Understanding_and_Gene/review]] — 차트 해석과 생성 능력이 멀티모달 대형언어모델의 차트-코드 생성 성능 향상으로 직접 확장되었다
-- 🏛 기반 연구: [[papers/203_Chartsketcher_Reasoning_with_multimodal_feedback_and_reflect/review]] — 멀티모달 대형 언어 모델의 차트-코드 생성 능력 향상이 시각적 피드백 기반 추론의 이론적 기반입니다.
-- 🏛 기반 연구: [[papers/737_Sciverse_Unveiling_the_knowledge_comprehension_and_visual_re/review]] — 차트-코드 생성 향상 기법이 SCIVERSE의 시각적 추론 평가 방법론 개발에 필수적인 기반을 제공함
-- 🧪 응용 사례: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — 차트-코드 생성 성능 향상 연구에 활용할 수 있는 평가 기준 제공
-- 🔄 다른 접근: [[papers/783_Synchart_Synthesizing_charts_from_language_models/review]] — 둘 다 차트 생성 및 이해를 다루지만 하나는 LLM 기반 합성 데이터셋 구축에, 다른 하나는 멀티모달 LLM의 차트-투-코드 생성 향상에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/657_Reading_and_Reasoning_over_Chart_Images_for_Evidence-based_A/review]] — 차트에서 코드 생성 능력을 차트 기반 팩트 체킹으로 확장하여 더 정교한 차트 정보 추출과 검증이 가능하다.
+- 🔄 다른 접근: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — ChartCoder는 차트-to-코드 변환에 특화된 전용 모델로, 이 논문의 이중 모드 보상 메커니즘과 다른 접근법을 제시한다
+- 🏛 기반 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — MMC 데이터셋의 대규모 차트 이해 데이터는 차트-to-코드 생성 모델 훈련에 필요한 기초 자원을 제공한다
+- ⚖️ 반론/비판: [[papers/783_Synchart_Synthesizing_charts_from_language_models/review]] — SynChart는 언어모델에서 차트를 생성하는 역방향 작업으로, 차트에서 코드로 변환하는 이 논문과 상반된 관점을 보여준다
+- 🔄 다른 접근: [[papers/841_Tree-of-table_Unleashing_the_power_of_llms_for_enhanced_larg/review]] — 대규모 테이블 처리에서 계층적 트리 구조 접근법과 차트-코드 생성 방식은 구조화된 데이터 이해의 서로 다른 전략이다.
+- 🏛 기반 연구: [[papers/203_Chartsketcher_Reasoning_with_multimodal_feedback_and_reflect/review]] — 멀티모달 차트 이해의 기반이 되는 코드 생성과 LLM 활용 방법론에 대한 기본적 이해를 제공한다
+- 🏛 기반 연구: [[papers/807_Theoremexplainagent_Towards_video-based_multimodal_explanati/review]] — 차트-코드 생성의 멀티모달 대형 언어모델 연구가 비디오 기반 정리 설명의 기술적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 차트에서 코드 생성으로 확장한 연구로, 멀티모달 차트 이해를 실제 프로그래밍 작업에 적용한 발전된 사례입니다.
+- 🔄 다른 접근: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — 차트-to-코드 생성에서 이중 모드 보상 메커니즘을 사용하는 접근법으로, ChartCoder의 전문화된 모델 접근과 대비되는 보상 학습 기반 방법을 제시한다
+- 🔄 다른 접근: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — 차트-to-코드 생성에서 이중 모드 보상 학습을 사용하는 접근법으로, ChartVLM의 기초 모델 중심 접근과 다른 훈련 방법론을 제시한다

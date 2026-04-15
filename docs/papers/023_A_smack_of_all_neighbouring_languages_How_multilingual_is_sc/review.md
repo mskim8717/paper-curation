@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "1990-2023년 OpenAlex와 Dimensions 데이터베이스를 활용하여 과학 논문 8,757만 개와 인용 14억 8천만 개를 분석해 학술 커뮤니케이션의 언어 다양성과 영어 지배 현황을 대규모로 실증 분석한 연구"
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/AI_for_Science_Taxonomy"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Grange_2025_A smack of all neighbouring languages How multilingual is scholarly communication arXiv preprint a.pdf"
 ---
@@ -78,5 +78,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Grange_2025_A smack of all neighbouring 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — 과학 분야에서 LLM 채택의 다양한 수렴 경로를 언어 다양성 관점에서 확장한다.
-- 🧪 응용 사례: [[papers/1093_The_fifth_era_of_science_Artificial_scientific_intelligence/review]] — 과학의 다섯 번째 시대에서 다국어 학술 커뮤니케이션의 역할을 구체적으로 보여준다.
+- 🏛 기반 연구: [[papers/274_Discipline-specific_open_access_publishing_practices_and_bar/review]] — 학술 출판의 언어적 다양성과 접근성 문제를 다각도로 분석하는 기초적 관점을 공유한다
+- 🔗 후속 연구: [[papers/386_Google_Scholar_to_overshadow_them_all_Comparing_the_sizes_of/review]] — 학술 데이터베이스의 규모와 영향력 비교를 통해 언어별 학술 영향력 격차를 심화 분석한다
+- 🔄 다른 접근: [[papers/245_Crosslingual_capabilities_and_knowledge_barriers_in_multilin/review]] — 다국어 학술 커뮤니케이션의 언어 장벽 문제를 다른 각도에서 접근한 연구이다
+- 🔗 후속 연구: [[papers/274_Discipline-specific_open_access_publishing_practices_and_bar/review]] — 학술 출판의 접근성 문제를 언어별 다양성이라는 더 구체적이고 정량적 관점으로 확장한 연구이다

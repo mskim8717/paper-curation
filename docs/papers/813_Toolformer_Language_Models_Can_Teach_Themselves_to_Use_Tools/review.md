@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.4
 essence: "언어 모델이 자기 자신의 피드백만을 이용하여 계산기, 검색 엔진, 질의응답 시스템 등의 외부 도구를 언제 어떻게 사용할지 자동으로 학습할 수 있는 Toolformer 모델을 제안한다. 인간의 주석 없이 자가감독(self-supervised) 방식으로 학습되며, 6.7B 매개변수의 소규모 모델이 GPT-3보다 나은 성능을 달성한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Schick et al._2023_Toolformer Language Models Can Teach Themselves to Use Tools.pdf"
 ---
@@ -124,12 +126,16 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Schick et al._2023_Toolformer Language M
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/174_Browsecomp_A_simple_yet_challenging_benchmark_for_browsing_a/review]] — 언어모델의 도구 사용 학습 연구가 복잡한 웹 브라우징 에이전트 평가 벤치마크의 기술적 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/793_The_Adoption_and_Usage_of_AI_Agents_Early_Evidence_from_Perp/review]] — 도구 사용 학습 모델에서 실제 AI 에이전트 사용 패턴과 채택 현황으로 확장한 실증적 연구입니다.
-- 🔗 후속 연구: [[papers/655_ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models/review]] — 도구 사용 학습에서 추론과 행동을 결합한 더 포괄적인 에이전트 프레임워크로 발전한 연구입니다.
-- 🏛 기반 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — Toolformer의 언어 모델 도구 사용 학습 방법론은 CRITIC의 외부 도구 상호작용 프레임워크 설계에 핵심적인 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/114_Augmented_Language_Models_a_Survey/review]] — 증강 언어모델의 도구 사용 개념이 언어모델이 스스로 도구 사용을 학습하는 자율적 시스템 개발의 중요한 이론적 토대가 되었다
-- 🔗 후속 연구: [[papers/496_LLM_Agents_Making_Agent_Tools/review]] — Toolformer의 언어 모델 자체 도구 사용 학습이 TOOLMAKER의 과학 논문 기반 자동 도구 생성으로 발전한 확장된 형태이다.
-- 🏛 기반 연구: [[papers/499_LLM_With_Tools_A_Survey/review]] — 언어 모델이 스스로 도구 사용법을 학습하는 Toolformer의 기초 연구를 제공한다.
-- 🏛 기반 연구: [[papers/174_Browsecomp_A_simple_yet_challenging_benchmark_for_browsing_a/review]] — 도구 사용을 학습하는 언어모델 연구의 기반 위에서 더 복잡한 웹 브라우징 능력을 평가하는 벤치마크를 구축합니다.
-- 🏛 기반 연구: [[papers/793_The_Adoption_and_Usage_of_AI_Agents_Early_Evidence_from_Perp/review]] — 언어모델의 도구 사용 학습 연구가 AI 에이전트 채택과 활용 사례 분석의 기술적 배경을 제공합니다.
+- 🏛 기반 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 외부 도구 사용의 자가학습이 도구와의 상호작용을 통한 자가수정으로 확장되는 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — 자가감독 도구 학습이 웹 탐색과 정보 수집이라는 특화된 도구 사용으로 발전될 수 있다.
+- 🔄 다른 접근: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 도구 사용 학습을 자가감독 방식과 대화형 환경에서의 능동적 탐색이라는 다른 관점으로 접근한다.
+- 🧪 응용 사례: [[papers/1092_Table-llm-specialist_Language_model_specialists_for_tables_u/review]] — 자가감독 도구 학습 원리가 테이블 작업 특화 모델 훈련에 직접 적용될 수 있다.
+- 🏛 기반 연구: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — 웹 탐색이라는 특화된 도구 사용이 일반적인 자가감독 도구 학습 원리에 기반한다.
+- 🔗 후속 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 자가감독 도구 학습이 외부 도구와의 상호작용을 통한 자가수정으로 발전된 형태이다.
+- 🏛 기반 연구: [[papers/114_Augmented_Language_Models_a_Survey/review]] — 증강 언어모델이 활용하는 외부 도구 사용 학습의 기본 개념과 방법론
+- 🏛 기반 연구: [[papers/655_ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models/review]] — Toolformer의 도구 사용 학습 방법론이 ReAct의 추론과 행동 통합 프레임워크의 기술적 기반을 제공함
+- 🏛 기반 연구: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 언어 모델이 도구 사용을 스스로 학습하는 방법에 대한 연구로, 다단계 과학적 도구 사용의 이론적 기반
+- 🔄 다른 접근: [[papers/674_ReTool_Reinforcement_Learning_for_Strategic_Tool_Use_in_LLMs/review]] — 강화학습 기반 대신 자가 학습을 통한 도구 사용법을 제시한다
+- 🔗 후속 연구: [[papers/499_LLM_With_Tools_A_Survey/review]] — Toolformer의 도구 사용 자기학습이 LLM 도구 통합 조사의 구체적 실현 방법을 보여준다.
+- 🧪 응용 사례: [[papers/1092_Table-llm-specialist_Language_model_specialists_for_tables_u/review]] — 자가감독 도구 학습 원리가 테이블 작업 특화 모델의 생성-검증 이중 작업 훈련에 직접 적용된다.
+- 🔄 다른 접근: [[papers/325_Executable_Code_Actions_Elicit_Better_LLM_Agents/review]] — 도구 사용을 학습하는 Toolformer와 코드 실행 중심 에이전트는 서로 다른 접근법으로 LLM의 행동 공간을 확장한다

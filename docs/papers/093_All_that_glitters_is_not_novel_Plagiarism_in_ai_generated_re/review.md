@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.3
 essence: "최근 자동화된 연구 에이전트가 혁신적인 연구 아이디어를 생성할 수 있다고 주장되고 있으나, 본 논문은 LLM이 생성한 연구 문서의 24%가 기존 논문으로부터 정교하게 표절되었음을 입증한다. 특히 이러한 표절이 내장된 표절 탐지 시스템을 우회하며 출처를 인정하지 않는 문제를 지적한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_Review_Detection"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Patent_Novelty_Prediction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gupta and Pruthi_2025_All that glitters is not novel Plagiarism in ai generated research.pdf"
 ---
@@ -111,10 +113,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gupta and Pruthi_2025_All that glitters 
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — LLM 채택의 긍정적 수렴 효과와 대조적으로 AI 생성 연구에서 나타나는 표절이라는 부정적 부작용을 지적합니다.
-- 🏛 기반 연구: [[papers/611_People_who_frequently_use_ChatGPT_for_writing_tasks_are_accu/review]] — AI 생성 텍스트 탐지 연구가 AI 생성 연구 논문의 정교한 표절 탐지 문제의 기초 기술적 배경을 제공합니다.
-- ⚖️ 반론/비판: [[papers/041_Aaar-10_Assessing_ais_potential_to_assist_research/review]] — AI의 연구 지원 잠재력에 대한 낙관적 평가와 대조적으로 AI 생성 연구의 실제 품질 문제를 실증적으로 제시합니다.
-- ⚖️ 반론/비판: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — LLM 채택의 긍정적 수렴 현상을 다루는 반면, AI 생성 연구의 표절 문제라는 부정적 측면을 제시합니다.
-- 🔗 후속 연구: [[papers/611_People_who_frequently_use_ChatGPT_for_writing_tasks_are_accu/review]] — AI 생성 텍스트 탐지 연구에서 AI 생성 연구 논문의 표절 탐지로 확장하여 더 전문적인 영역의 AI 탐지 문제를 다룹니다.
-- 🔗 후속 연구: [[papers/885_Withdrarxiv_A_large-scale_dataset_for_retraction_study/review]] — arXiv 철회 논문 연구에서 AI 생성 연구의 표절 문제로 확장하여 현대적 학술 윤리 문제를 다룹니다.
-- ⚖️ 반론/비판: [[papers/041_Aaar-10_Assessing_ais_potential_to_assist_research/review]] — AI의 연구 지원 잠재력을 평가하는 긍정적 관점과 AI 생성 연구의 표절 문제라는 부정적 현실을 대조적으로 보여줍니다.
+- 🔗 후속 연구: [[papers/445_Is_Your_Paper_Being_Reviewed_by_an_LLM_Investigating_AI_Text/review]] — AI 생성 연구 문서의 표절 탐지와 LLM 작성 논문 식별이 연구 무결성 보장의 완전한 솔루션을 구성한다.
+- 🔄 다른 접근: [[papers/183_Can_large_language_models_detect_misinformation_in_scientifi/review]] — AI 생성 콘텐츠의 신뢰성 문제를 연구 문서와 과학 뉴스 차원에서 각각 검증한다.
+- 🏛 기반 연구: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 생의학 주장 검증 방법론이 AI 생성 연구의 표절 및 신뢰성 검증에 적용될 수 있다.
+- 🔗 후속 연구: [[papers/885_Withdrarxiv_A_large-scale_dataset_for_retraction_study/review]] — 학술 논문 철회 연구가 AI 생성 연구의 표절 문제 분석으로 확장되어 연구 무결성을 종합적으로 다룬다.

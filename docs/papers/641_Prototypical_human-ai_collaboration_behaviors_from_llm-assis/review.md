@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 실제 환경(in-the-wild)에서 LLM 기반 글쓰기 보조 시스템(Bing Copilot, WildChat)을 사용하는 사용자들의 협력 행동을 대규모로 분석한다. 사용자들이 초기 요청 이후 후속 상호작용을 통해 생성물을 개선하고 탐색하는 프로토타입적 행동 패턴(PATHs)을 식별하며, 이들이 작성 의도(writing intent)와 어떻게 상관되는지를 규명한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Human-AI_Performance_Detection"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_Prototypical human-ai collaboration behaviors from llm-assisted writing in the wild.pdf"
 ---
@@ -104,7 +106,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_Prototypical human-ai c
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/223_Clarify_when_necessary_Resolving_ambiguity_through_interacti/review]] — 명확화 질문을 통한 모호성 해결 프레임워크가 실제 LLM 지원 글쓰기 환경에서 관찰된 사용자-AI 상호작용 패턴의 이론적 설명을 제공함
-- 🔗 후속 연구: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — 언어모델과의 글쓰기가 콘텐츠 다양성에 미치는 영향 연구가 인간-AI 협력 행동 분석을 창작물의 품질 변화 측면으로 확장한 심화 연구임
-- 🏛 기반 연구: [[papers/414_Human-llm_coevolution_Evidence_from_academic_writing/review]] — 인간-LLM 공진화에 대한 학술 글쓰기 증거가 프로토타입적 협력 행동 패턴의 장기적 발전과 상호 적응 과정의 이론적 배경을 제공함
-- 🧪 응용 사례: [[papers/223_Clarify_when_necessary_Resolving_ambiguity_through_interacti/review]] — LLM 지원 글쓰기에서의 인간-AI 협력 행동 분석이 명확화 질문을 통한 상호작용 패턴의 실제 사용 사례를 보여줌
+- 🔗 후속 연구: [[papers/703_Scholawrite_A_dataset_of_end-to-end_scholarly_writing_proces/review]] — LLM 보조 글쓰기의 협력 패턴 분석이 전체 학술 글쓰기 과정 연구로 확장될 수 있다.
+- 🏛 기반 연구: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — 언어모델과의 협력 글쓰기가 콘텐츠 다양성에 미치는 영향의 실증적 근거를 제공한다.
+- 🔄 다른 접근: [[papers/773_Stealing_creators_workflow_A_creator-inspired_agentic_framew/review]] — AI 보조 창작 과정을 글쓰기와 일반적 창작 워크플로우에서 각각 분석한다.
+- 🔗 후속 연구: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 인간-AI 협력 글쓰기 데이터셋을 실제 협력 행동 패턴 분석으로 발전시킨 연구
+- 🏛 기반 연구: [[papers/116_Augmenting_the_author_Exploring_the_potential_of_ai_collabor/review]] — LLM 지원 인간-AI 협업 행동 프로토타입이 저자 증강의 기반 패턴을 제공한다.
+- 🏛 기반 연구: [[papers/905_If_in_a_Crowdsourced_Data_Annotation_Pipeline_a_GPT-4__Proce/review]] — LLM 보조 작업에서 인간-AI 협력 행동 패턴이 크라우드소싱 비교의 이론적 기반이 된다
+- 🔗 후속 연구: [[papers/703_Scholawrite_A_dataset_of_end-to-end_scholarly_writing_proces/review]] — 실제 학술 글쓰기 과정의 세밀한 분석과 LLM 협력 글쓰기 패턴 분석이 상호보완적 통찰을 제공한다.
+- 🔄 다른 접근: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — 언어모델과의 협력 글쓰기 효과를 콘텐츠 다양성과 협력 행동 패턴으로 각각 분석한다.

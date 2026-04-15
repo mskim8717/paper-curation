@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "LLM 기반 다중 에이전트 시스템에서 도메인별 특화된 설계로 인한 이식성 부족 문제를 해결하기 위해, 전략 계획(Planner)과 도메인 특화 실행(Worker)을 분리한 모듈식 WORKFORCE 프레임워크와 이를 최적화하는 OWL 학습 패러다임을 제안한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-agent_Task_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Domain-Specific_Autonomous_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2025_OWL Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation.pdf"
 ---
@@ -107,7 +108,10 @@ LLM 기반 다중 에이전트 시스템에서 도메인별 특화된 설계로 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — OWL의 모듈식 WORKFORCE 프레임워크가 AutoGen의 다중 에이전트 시스템을 도메인 이식성 문제 해결을 위해 발전시킨 확장된 아키텍처이다.
-- 🏛 기반 연구: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — 에이전트 시스템 확장의 과학이 OWL의 일반화된 다중 에이전트 지원 시스템 설계의 이론적 기반과 확장성 원리를 제공한다.
-- 🧪 응용 사례: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 대규모 언어 모델 기반 다중 에이전트의 진행 조사가 OWL의 범용 다중 에이전트 프레임워크 개발에 직접적으로 적용되는 방법론적 통찰이다.
-- 🔗 후속 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — OWL의 모듈식 WORKFORCE 프레임워크가 AutoGen의 대화형 다중 에이전트 시스템을 도메인 범용성을 위해 발전시킨 확장 버전이다.
+- 🔄 다른 접근: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — 다중 에이전트 시스템 구축을 다루지만 OWL은 도메인 이식성과 최적화에, AutoGen은 범용적 에이전트 대화에 집중한 서로 다른 접근법임
+- 🔄 다른 접근: [[papers/381_Genesis_Towards_the_Automation_of_Systems_Biology_Research/review]] — 다중 에이전트 협업을 활용하지만 OWL은 범용적 워크포스 학습에, Genesis는 시스템 생물학 특화에 집중한 다른 목표를 가진 접근법임
+- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 기계학습 에이전트 평가를 통해 OWL의 워크포스 학습 패러다임을 기계학습 태스크 수행 능력 평가로 확장하여 실무 적용성을 검증함
+- 🧪 응용 사례: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — 일반적인 다중 에이전트 시스템을 위한 최적화된 인력 학습 프레임워크로, 확장 원칙의 실제 적용 사례
+- 🔄 다른 접근: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — 다중 에이전트 협업이라는 동일한 목표를 가지지만 AutoGen은 범용적이고 OWL은 도메인별 특화 최적화에 집중한 서로 다른 접근법임
+- 🔄 다른 접근: [[papers/381_Genesis_Towards_the_Automation_of_Systems_Biology_Research/review]] — 시스템 생물학이라는 구체적 도메인에 특화된 다중 에이전트 시스템인 반면 OWL은 범용적 워크포스 최적화에 집중한 다른 접근법임
+- 🔄 다른 접근: [[papers/514_MAC-AMP_A_Closed-Loop_Multi-Agent_Collaboration_System_for_M/review]] — 다중 에이전트 협업을 활용하지만 MAC-AMP는 생물의학적 문제 해결에, OWL은 범용적 워크포스 최적화에 집중한 서로 다른 목표를 가진 접근법임

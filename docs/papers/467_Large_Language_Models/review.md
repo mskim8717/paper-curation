@@ -8,8 +8,9 @@ arxiv: ""
 score: 4.0
 essence: "수학 및 물리학 배경의 독자를 위해 작성된 강의노트로, GPT 시리즈와 같은 대규모 언어모델(LLM)의 발전 역사, 트랜스포머 아키텍처, 그리고 다음 단어 예측 학습이 어떻게 지능적 작업 수행을 가능하게 하는지를 설명한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Douglas_2023_Large Language Models.pdf"
 ---
@@ -86,7 +87,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Douglas_2023_Large Language Models.pdf"
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/026_A_survey_of_large_language_models/review]] — 대규모 언어모델에 대한 포괄적 조사가 수학/물리학 배경 독자를 위한 LLM 강의노트의 기초 자료를 제공합니다.
-- 🔄 다른 접근: [[papers/152_BERT_Pre-training_of_Deep_Bidirectional_Transformers_for_Lan/review]] — 트랜스포머 기반 언어모델과 양방향 사전훈련 모델이 서로 다른 언어 이해 접근법을 제시합니다.
-- 🔗 후속 연구: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — 수학/물리학 중심 LLM 설명을 과학 전반의 대규모 언어모델 활용으로 확장한 포괄적 연구입니다.
-- 🔗 후속 연구: [[papers/475_Large_language_models_meet_nlp_A_survey/review]] — 대규모 언어모델의 일반적 분석을 NLP 특화 응용으로 구체화하여 확장할 수 있다
+- 🔗 후속 연구: [[papers/026_A_survey_of_large_language_models/review]] — 대규모 언어 모델의 포괄적 조사 연구로서 수학/물리학자를 위한 입문서를 보완한다
+- 🧪 응용 사례: [[papers/900_ChatGPT_has_entered_the_classroom_how_LLMs_could_transform_e/review]] — 교육 분야에서 LLM 적용 사례를 통해 실제 활용 방안을 구체적으로 제시한다
+- 🔄 다른 접근: [[papers/369_Gemini_a_family_of_highly_capable_multimodal_models/review]] — Gemini 모델 패밀리를 통해 멀티모달 측면에서 LLM 발전을 다른 관점으로 설명한다
+- 🏛 기반 연구: [[papers/026_A_survey_of_large_language_models/review]] — LLM의 기본 개념과 발전사에 대한 포괄적 이해를 위한 필수 기초 자료이다
+- 🧪 응용 사례: [[papers/875_What_are_the_best_AI_tools_for_research_Natures_guide/review]] — 수학/물리학자를 위한 LLM 강의노트의 실용적 적용 가이드로서 구체적 활용법을 제시한다
+- 🏛 기반 연구: [[papers/900_ChatGPT_has_entered_the_classroom_how_LLMs_could_transform_e/review]] — 수학/물리학자를 위한 LLM 설명이 교육 분야 적용의 기술적 기반을 제공한다

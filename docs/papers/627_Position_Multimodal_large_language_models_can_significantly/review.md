@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 멀티모달 대형 언어 모델(MLLM)이 수학, 물리학, 화학, 생물학 등 다양한 과학 분야에서 과학적 추론(Scientific Reasoning)을 획기적으로 향상시킬 수 있다는 입장을 제시하는 위치 논문(Position Paper)이다. 저자들은 MLLM의 텍스트, 이미지, 기타 모달리티 통합 능력이 현재 과학 추론 모델의 도메인 간 일반화 부족과 멀티모달 인지 한계를 극복할 수 있다고 주장한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Multimodal_Scientific_Reasoning"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yan et al._2025_Position Multimodal large language models can significantly advance scientific reasoning.pdf"
 ---
@@ -105,7 +107,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yan et al._2025_Position Multimodal larg
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/547_Mllm-based_discovery_of_intrinsic_coordinates_and_governing/review]] — 멀티모달 대형 언어 모델의 과학적 추론 향상 가능성을 동영상에서 물리 법칙 발견이라는 구체적 사례로 입증한다.
-- 🔗 후속 연구: [[papers/566_Multimodal_deepresearcher_Generating_text-chart_interleaved/review]] — 멀티모달 과학적 추론 능력을 텍스트-차트 상호작용 연구 생성에 구체적으로 적용할 수 있다.
-- 🧪 응용 사례: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 과학 도표 이해를 위한 대형 멀티모달 모델 벤치마킹이 과학적 추론 향상의 실제적 평가 기준을 제공한다.
-- 🔗 후속 연구: [[papers/547_Mllm-based_discovery_of_intrinsic_coordinates_and_governing/review]] — 멀티모달 과학적 추론의 일반적 가능성을 동영상 데이터에서 물리 법칙 발견이라는 구체적 문제에 적용한다.
+- 🔗 후속 연구: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 과학적 추론에서 멀티모달 LLM의 잠재력을 실제 과학 벤치마크를 통해 구체적으로 평가하고 검증한다.
+- 🔄 다른 접근: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — 차트 추론이라는 특정 영역과 전반적인 과학적 추론이라는 서로 다른 멀티모달 AI 응용 범위를 비교할 수 있다.
+- 🏛 기반 연구: [[papers/834_Towards_Scientific_Discovery_with_Generative_AI_Progress_Opp/review]] — 생성형 AI를 통한 과학적 발견의 이론적 토대와 미래 방향성을 제시한다.

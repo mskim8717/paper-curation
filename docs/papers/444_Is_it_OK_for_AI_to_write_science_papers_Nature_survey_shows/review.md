@@ -8,8 +8,10 @@ arxiv: ""
 score: 4.0
 essence: "Nature 저널이 전 세계 약 5,000명의 연구자를 대상으로 실시한 설문조사 결과, 과학 논문 작성에서 생성형 AI(Generative AI) 사용의 윤리성에 대해 연구자들 간에 상당한 의견 차이가 존재함을 보여준다. 특히 AI 사용의 허용 범위와 공개(disclosure) 필요성에 대한 합의가 부족한 상황이다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Diversity"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Science_Communication"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kwon_2025_Is it OK for AI to write science papers Nature survey shows researchers are split.pdf"
 ---
@@ -111,8 +113,9 @@ Nature 저널이 전 세계 약 5,000명의 연구자를 대상으로 실시한 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/414_Human-llm_coevolution_Evidence_from_academic_writing/review]] — arXiv 분석을 통한 실증적 공진화 증거가 Nature 설문의 AI 사용 윤리 논의에 데이터 기반 근거를 제공합니다.
-- 🔗 후속 연구: [[papers/478_Large_language_models_penetration_in_scholarly_writing_and_p/review]] — 학술 작문에서 LLM 침투에 대한 기초 분석을 연구자 태도와 윤리적 합의 필요성으로 확장한 연구입니다.
-- 🔄 다른 접근: [[papers/517_Malinowski_in_the_age_of_ai_Can_large_language_models_create/review]] — AI 작문 사용의 윤리성과 AI의 창의적 텍스트 생성 능력이라는 서로 다른 AI 활용 측면을 다룹니다.
-- 🔗 후속 연구: [[papers/414_Human-llm_coevolution_Evidence_from_academic_writing/review]] — arXiv 논문 분석을 통한 공진화 현상 발견을 Nature 설문의 AI 사용 윤리 논의로 확장하여 전체적인 변화상을 파악할 수 있습니다.
-- 🔄 다른 접근: [[papers/517_Malinowski_in_the_age_of_ai_Can_large_language_models_create/review]] — AI의 창의적 텍스트 생성 능력과 AI 사용의 윤리적 고려사항이라는 서로 다른 AI 활용 측면을 다룹니다.
+- 🏛 기반 연구: [[papers/796_The_AI_writing_on_the_wall/review]] — 과학 저술에서 AI 사용의 윤리적 문제를 다룬 선행 연구로서 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/080_AI_is_transforming_peer_review__and_many_scientists_are_worr/review]] — AI의 과학 출판 침투가 동료평가까지 확장된 현상을 보여주며 연구 범위를 넓혀준다
+- 🧪 응용 사례: [[papers/478_Large_language_models_penetration_in_scholarly_writing_and_p/review]] — 학술 저술에서 LLM 침투 현상의 실제 데이터와 분석 결과를 제공한다
+- 🔄 다른 접근: [[papers/878_What_ChatGPT_and_generative_AI_mean_for_science/review]] — AI의 과학 논문 작성 허용 여부에 대한 Nature 설문이 생성형 AI의 과학적 의미를 실무적 관점에서 다룬다
+- 🔗 후속 연구: [[papers/796_The_AI_writing_on_the_wall/review]] — 과학 논문 작성에서 AI 사용에 대한 연구자 인식 조사로 AI 저술의 영향을 실증적으로 확장한다
+- 🔗 후속 연구: [[papers/080_AI_is_transforming_peer_review__and_many_scientists_are_worr/review]] — 과학 논문 작성에서의 AI 사용 논란을 동료평가까지 확장하여 학술 출판 전반의 AI 침투를 다룬다

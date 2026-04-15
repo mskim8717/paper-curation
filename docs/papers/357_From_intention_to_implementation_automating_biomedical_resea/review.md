@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)을 활용하여 바이오메디컬 연구의 전체 파이프라인을 자동화하는 첫 번째 end-to-end 시스템인 **BioResearcher**를 제시한다. 모듈형 멀티-에이전트 아키텍처를 통해 문헌 검색, 데이터 처리, 실험 설계, 프로그래밍을 통합하여 자동화된 드라이랩(dry lab) 바이오메디컬 연구를 구현한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Hypothesis_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Multi-Agent_System_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luo et al._2024_From intention to implementation automating biomedical research via LLMs.pdf"
 ---
@@ -103,7 +105,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luo et al._2024_From intention to implem
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/549_Mlr-copilot_Autonomous_machine_learning_research_based_on_la/review]] — BioResearcher와 MLR-COPILOT 모두 LLM 기반 연구 자동화를 추구하지만 바이오메디컬 vs 머신러닝 분야에 특화된다.
-- 🔗 후속 연구: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — CellAgent의 LLM 기반 다중 에이전트 세포 분석 프레임워크는 BioResearcher의 바이오메디컬 자동화를 세포 수준으로 확장한다.
-- 🏛 기반 연구: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — 범용 바이오메디컬 AI 에이전트 Biomni는 BioResearcher의 모듈형 멀티 에이전트 아키텍처 설계에 기초 아이디어를 제공한다.
-- 🔄 다른 접근: [[papers/549_Mlr-copilot_Autonomous_machine_learning_research_based_on_la/review]] — MLR-COPILOT과 BioResearcher 모두 LLM 기반 연구 자동화를 추구하지만 머신러닝 vs 바이오메디컬 분야에 특화된다.
+- 🔄 다른 접근: [[papers/616_PharmAgents_Building_a_Virtual_Pharma_with_Large_Language_Mo/review]] — BioResearcher와 PharmAgents 모두 바이오메디컬 연구 자동화를 목표로 하지만 각각 드라이랩과 신약 발견에 특화된 접근법 사용
+- 🔗 후속 연구: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — CellAgent의 세포 분석 특화 기능은 BioResearcher의 포괄적 바이오메디컬 연구 자동화를 특정 영역으로 확장한 형태
+- 🏛 기반 연구: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — 범용 바이오메디컬 AI 에이전트 연구가 BioResearcher 같은 특화된 연구 자동화 시스템 개발의 기반이 됨
+- 🔄 다른 접근: [[papers/616_PharmAgents_Building_a_Virtual_Pharma_with_Large_Language_Mo/review]] — PharmAgents와 BioResearcher 모두 바이오메디컬 연구 자동화를 다루지만 각각 신약 발견과 포괄적 연구 파이프라인이라는 다른 범위에 집중함

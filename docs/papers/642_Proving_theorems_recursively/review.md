@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "신경망 기반 자동 정리 증명(automated theorem proving)에서 기존의 단계적(step-by-step) 탐색 방식의 한계를 극복하기 위해, 본 논문은 **POETRY(PrOvE Theorems RecursivelY)**를 제안한다. 이는 Isabelle 정리 증명기에서 재귀적이고 계층적 접근을 통해 증명을 단계적으로 구성하는 방법으로, 중간 명제들의 증명을 `sorry` 플레이스홀더로 미루고 더 깊은 레벨에서 해결하는 방식이다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Formal_Theorem_Proving"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Automated_Theorem_Proving"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Boyer and Moore_2024_Proving theorems recursively.pdf"
 ---
@@ -107,13 +109,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Boyer and Moore_2024_Proving theorems re
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1095_Towards_large_language_models_as_copilots_for_theorem_provin/review]] — Lean Copilot의 인간-AI 협업 접근과 달리 완전 자동화된 재귀적 증명 방식 추구
-- 🧪 응용 사례: [[papers/030_A_survey_on_deep_learning_for_theorem_proving/review]] — 정리 증명에 대한 심층학습 기법 서베이에서 제시된 방법론을 재귀적 접근으로 구현
-- 🏛 기반 연구: [[papers/617_Phi-4_technical_report/review]] — 수학적 추론에 강한 Phi-4의 능력을 정리 증명 자동화에 활용할 수 있는 기반
-- 🔗 후속 연구: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — 생성형 언어모델 기반 정리 증명을 재귀적 계층 구조로 발전시킨 확장 연구
-- 🔗 후속 연구: [[papers/807_Theoremexplainagent_Towards_video-based_multimodal_explanati/review]] — TheoremExplainAgent의 비디오 기반 설명 생성을 재귀적 정리 증명으로 확장하여 더 체계적이고 단계적인 수학 학습 환경을 조성할 수 있다.
-- 🔗 후속 연구: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — GPT-f의 정리 증명 기법을 재귀적 증명 방법론으로 확장한 연구
-- 🧪 응용 사례: [[papers/617_Phi-4_technical_report/review]] — 수학적 추론에 특화된 Phi-4의 능력을 정리 증명 작업에 활용하는 응용
-- 🏛 기반 연구: [[papers/030_A_survey_on_deep_learning_for_theorem_proving/review]] — 정리 증명 심층학습 기법들을 재귀적 증명 방법론으로 발전시킨 이론적 기반
-- 🔄 다른 접근: [[papers/1095_Towards_large_language_models_as_copilots_for_theorem_provin/review]] — 완전 자동화된 재귀적 증명과 달리 인간 수학자와 AI의 협업을 통한 증명 보조 접근
-- 🔄 다른 접근: [[papers/489_Lf_a_foundational_higher-order-logic/review]] — 둘 다 정리 증명의 논리적 기반을 다루지만 하나는 과학 형식화를 위한 고차 논리 체계에, 다른 하나는 재귀적 정리 증명에 초점을 맞춘다.
+- 🏛 기반 연구: [[papers/030_A_survey_on_deep_learning_for_theorem_proving/review]] — 정리 증명에 대한 딥러닝 기법의 종합적인 조사를 통해 POETRY의 방법론적 기반과 관련 연구 동향을 파악할 수 있다.
+- 🔗 후속 연구: [[papers/826_Towards_Autonomous_Mathematics_Research/review]] — 자율적 수학 연구 에이전트를 통해 재귀적 정리 증명 방법을 더욱 고도화된 수학적 발견으로 확장할 수 있다.
+- 🔄 다른 접근: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — LLM에서의 정리 증명 발전이라는 같은 목표를 가지지만 재귀적 vs 대규모 언어모델 기반이라는 다른 접근법을 사용한다.
+- 🏛 기반 연구: [[papers/826_Towards_Autonomous_Mathematics_Research/review]] — 재귀적 정리 증명 방법론의 기반을 활용하여 자율적 수학 연구에서 더욱 체계적인 증명 구조를 구축할 수 있다.
+- 🔄 다른 접근: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — 재귀적 정리 증명 접근법으로, miniF2F에서 평가하는 정리 증명 문제를 다른 방법론으로 해결하는 방식을 제시합니다.
+- 🔄 다른 접근: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 재귀적 정리 증명과 다른 접근으로 비형식적 텍스트를 활용한 증명 유도 방법론을 제시한다.
+- 🔗 후속 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — 재귀적 정리 증명 방법론은 DeepSeek-Prover의 대규모 형식 증명 합성 접근법을 보완하는 추론 전략을 제시한다
+- 🔗 후속 연구: [[papers/030_A_survey_on_deep_learning_for_theorem_proving/review]] — 재귀적 정리 증명 방법론을 심층학습 기반 정리 증명의 구체적 구현 사례로 활용하여 서베이의 실제 적용을 보여준다.

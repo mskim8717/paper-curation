@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "파운데이션 모델(Foundation Models)의 추론(Reasoning) 능력을 체계적으로 조사한 종합 서베이로, 다양한 추론 작업, 방법론, 벤치마크를 다루고 멀티모달 학습, 자율 에이전트, 슈퍼 정렬과의 연관성을 논의한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Knowledge_Graph_Reasoning"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Human_Experience_Studies"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sun et al._2023_A survey of reasoning with foundation models.pdf"
 ---
@@ -94,7 +94,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sun et al._2023_A survey of reasoning wi
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/833_Towards_reasoning_era_A_survey_of_long_chain-of-thought_for/review]] — 파운데이션 모델의 추론을 장기 사고 연쇄 추론으로 확장하여 더 깊은 추론 능력을 다룬다.
-- 🧪 응용 사례: [[papers/652_Rbf_Quantifying_and_optimizing_reasoning_boundaries_across_m/review]] — 다양한 작업에서 추론 경계를 정량화하고 최적화하는 구체적인 방법론을 제시한다.
-- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — 대규모 언어모델이 아직 자기 수정 추론을 완전히 수행할 수 없다는 한계를 지적한다.
-- 🏛 기반 연구: [[papers/243_Critique-GRPO_Advancing_LLM_Reasoning_with_Natural_Language/review]] — 파운데이션 모델의 추론 능력 서베이는 Critique-GRPO의 자연언어 비판 통합 접근법에 추론 메커니즘의 이론적 배경을 제공한다.
+- 🏛 기반 연구: [[papers/026_A_survey_of_large_language_models/review]] — 추론 능력 연구의 기반이 되는 LLM의 전반적 발전사와 구조적 이해를 제공한다
+- 🔗 후속 연구: [[papers/833_Towards_reasoning_era_A_survey_of_long_chain-of-thought_for/review]] — 기본 추론을 넘어 복잡한 장기 추론 과정에 특화된 심화 연구로 발전한다
+- 🧪 응용 사례: [[papers/498_LLM_as_a_Mastermind_A_Survey_of_Strategic_Reasoning_with_Lar/review]] — 추론 능력을 전략적 의사결정과 게임 이론 상황에 적용한 구체적 사례를 보여준다
+- 🔗 후속 연구: [[papers/026_A_survey_of_large_language_models/review]] — LLM의 기본 구조를 넘어 추론 능력이라는 고차원적 능력에 특화된 심화 분석을 제공한다
+- 🔄 다른 접근: [[papers/363_From_Reasoning_to_Learning_A_Survey_on_Hypothesis_Discovery/review]] — 파운데이션 모델의 추론 서베이와 Pierce 프레임워크 기반 가설 발견은 서로 다른 철학적 접근으로 AI 추론을 분석한다

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 지식 그래프(Knowledge Graph, KG)를 기반으로 사실 검증(fact verification)을 수행하기 위한 첫 번째 대규모 데이터셋 FACTKG를 제시한다. 이 데이터셋은 5가지 추론 유형(One-hop, Conjunction, Existence, Multi-hop, Negation)을 포함하는 108k개의 자연언어 주장으로 구성되어 있다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kim et al._2023_Factkg Fact verification via reasoning on knowledge graphs.pdf"
 ---
@@ -106,14 +106,16 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kim et al._2023_Factkg Fact verification
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 지식 그래프 기반 사실 검증의 구조적 추론 방법이 멀티모달 증거 기반 팩트체킹 시스템의 추론 모듈 설계 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — 지식 그래프의 구조화된 추론과 반박 증거 부족 문제 지적이라는 서로 다른 팩트체킹 접근법과 비판을 제시합니다.
-- 🔗 후속 연구: [[papers/172_Boolq_Exploring_the_surprising_difficulty_of_natural_yesno_q/review]] — 자연어 예/아니오 질문에서 지식 그래프 기반 구조화된 추론으로 확장한 더 체계적인 사실 검증 접근법입니다.
-- 🔄 다른 접근: [[papers/317_Enhancing_natural_language_inference_performance_with_knowle/review]] — 지식 그래프 추론 기반 팩트 검증이 NLI 성능 향상과 같은 목표의 다른 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/448_Kgvalidator_A_framework_for_automatic_validation_of_knowledg/review]] — 지식 그래프 기반 추론을 통한 사실 검증으로 지식 그래프 완성 검증을 확장한다.
-- 🔄 다른 접근: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — 반박 증거 부족의 한계를 지적하는 반면, 지식 그래프 기반 추론을 통한 체계적 사실확인 접근법을 제시합니다.
-- 🔄 다른 접근: [[papers/172_Boolq_Exploring_the_surprising_difficulty_of_natural_yesno_q/review]] — 자연 발생 질문에 대한 읽기 이해와 지식 그래프 기반 구조화된 추론이라는 서로 다른 질의응답 접근법입니다.
-- 🔗 후속 연구: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 텍스트 기반 지식 그래프 추론에서 텍스트와 이미지를 모두 포함하는 멀티모달 팩트체킹으로 확장한 연구입니다.
-- 🏛 기반 연구: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 지식 그래프를 활용한 팩트체킹의 기초적 접근이 프로그램 가이드 추론 시스템의 이론적 배경을 제공함
-- 🏛 기반 연구: [[papers/235_Comparing_knowledge_sources_for_open-domain_scientific_claim/review]] — 지식 그래프를 통한 사실 검증으로 본 논문의 과학적 주장 검증에서 구조화된 지식의 활용 기반을 제공한다.
-- 🔄 다른 접근: [[papers/567_Multivers_Improving_scientific_claim_verification_with_weak/review]] — 과학 청구 검증에서 약한 감독과 지식 그래프 추론의 서로 다른 사실 검증 접근법을 비교할 수 있습니다.
+- 🔗 후속 연구: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 프로그램 유도 추론 기반 팩트 체킹을 지식 그래프 추론으로 확장하여 구조화된 데이터 활용 방법을 제시한다.
+- 🔄 다른 접근: [[papers/859_Unsupervised_pretraining_for_fact_verification_by_language_m/review]] — 언어모델 증류 기반 팩트 검증과 달리 지식 그래프 구조를 직접 활용한 추론 기반 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/441_Investigating_zero-and_few-shot_generalization_in_fact_verif/review]] — 제로샷/퓨샷 팩트 검증 일반화 연구가 지식 그래프 기반 팩트 검증의 기반 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/500_Llm-based_corroborating_and_refuting_evidence_retrieval_for/review]] — 지식 그래프 기반 팩트 검증을 과학적 주장 검증으로 확장한 접근입니다.
+- 🔗 후속 연구: [[papers/317_Enhancing_natural_language_inference_performance_with_knowle/review]] — 지식 그래프 기반 사실 검증을 자연어 추론으로 확장한 관련 기술 발전이다
+- 🔄 다른 접근: [[papers/474_Large_language_models_for_zero-shot_inference_of_causal_stru/review]] — 지식 그래프 기반 사실 검증과 LLM의 제로샷 인과구조 추론은 모두 구조화된 지식을 통한 추론 검증의 다른 접근법이다.
+- 🏛 기반 연구: [[papers/448_Kgvalidator_A_framework_for_automatic_validation_of_knowledg/review]] — 지식 그래프 기반 팩트 검증이 KGValidator의 지식 그래프 완성 모델 검증의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — 지식 그래프를 활용한 사실 검증으로, 반박 증거 부족 문제를 구조화된 지식을 통해 보완하는 접근법을 제시합니다.
+- 🔄 다른 접근: [[papers/859_Unsupervised_pretraining_for_fact_verification_by_language_m/review]] — 지식 그래프 추론 기반 팩트 검증과 달리 언어모델 지식 증류를 통한 자기지도학습 기반 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/832_Towards_llm-based_fact_verification_on_news_claims_with_a_hi/review]] — 지식 그래프 기반 사실 검증 연구로, HiSS의 검색 기반 증거 수집을 지식 그래프 추론으로 확장한 접근법을 보여준다
+- 🔗 후속 연구: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 지식 그래프를 활용한 사실 검증 연구로, 프로그램 가이드 추론을 지식 그래프 기반 추론으로 확장한 접근법을 보여준다
+- 🔗 후속 연구: [[papers/441_Investigating_zero-and_few-shot_generalization_in_fact_verif/review]] — 지식 그래프를 활용한 팩트 검증 방법을 통해 모델의 추론 능력을 향상시키는 확장된 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/488_Leveraging_LLMs_in_Scholarly_Knowledge_Graph_Question_Answer/review]] — 지식 그래프 추론을 일반적인 팩트 검증에서 학술 도메인 특화로 확장한다

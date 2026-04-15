@@ -8,8 +8,9 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 대규모 언어모델(LLM)이 연구 작업을 얼마나 효과적으로 지원할 수 있는지 평가하기 위한 벤치마크 AAAR-1.0을 제시한다. 방정식 추론, 실험 설계, 논문 약점 식별, 리뷰 비판의 4가지 전문가급 AI 연구 작업을 통해 LLM의 지식 기반과 추론 능력을 종합적으로 평가한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Physics_Reasoning_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Munda_2024_Aaar-1.0 Assessing ai’s potential to assist research.pdf"
 ---
@@ -132,9 +133,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Munda_2024_Aaar-1.0 Assessing ai’s pot
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/093_All_that_glitters_is_not_novel_Plagiarism_in_ai_generated_re/review]] — AI의 연구 지원 잠재력을 평가하는 긍정적 관점과 AI 생성 연구의 표절 문제라는 부정적 현실을 대조적으로 보여줍니다.
-- 🔄 다른 접근: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI의 연구 지원 능력 평가와 완전 자동화된 AI 과학자 개발이라는 서로 다른 AI 과학 연구 접근법을 제시합니다.
-- 🔗 후속 연구: [[papers/151_Benchmarking_ai_scientists_in_omics_data-driven_biological_r/review]] — 일반적인 AI 연구 지원 평가에서 오믹스 데이터 기반 생물학 연구라는 구체적 도메인으로 확장한 전문 분야 벤치마크입니다.
-- 🔄 다른 접근: [[papers/042_Academicbrowse_Benchmarking_academic_browse_ability_of_llms/review]] — AI가 연구 지원에 미치는 영향을 평가하는 다른 접근법으로 학술 검색 능력과 함께 고려해야 한다.
-- 🔗 후속 연구: [[papers/852_Understanding_fine-grained_distortions_in_reports_of_scienti/review]] — 과학 연구의 왜곡 패턴 분석을 AI의 연구 보조 능력 평가로 확장하여 더 신뢰할 수 있는 AI 시스템 구축에 기여한다.
-- ⚖️ 반론/비판: [[papers/093_All_that_glitters_is_not_novel_Plagiarism_in_ai_generated_re/review]] — AI의 연구 지원 잠재력에 대한 낙관적 평가와 대조적으로 AI 생성 연구의 실제 품질 문제를 실증적으로 제시합니다.
+- 🔄 다른 접근: [[papers/507_Llmeval-med_A_real-world_clinical_benchmark_for_medical_llms/review]] — AI의 연구 지원 능력을 일반적 연구 작업과 의료 전문 분야에서 각각 체계적으로 평가한다.
+- 🔗 후속 연구: [[papers/042_Academicbrowse_Benchmarking_academic_browse_ability_of_llms/review]] — AI의 연구 지원 능력 평가를 학술 정보 검색 특화 능력으로 심화 확장한다.
+- 🏛 기반 연구: [[papers/090_AIRS-Bench_a_Suite_of_Tasks_for_Frontier_AI_Research_Science/review]] — AI 연구 과학 벤치마크의 포괄적 평가를 위한 핵심 구성 요소를 제공한다.
+- 🏛 기반 연구: [[papers/353_From_Automation_to_Autonomy_A_Survey_on_Large_Language_Model/review]] — 과학 발견에서 LLM의 자율성 발전 과정을 구체적 평가 방법론으로 뒷받침한다.
+- 🔄 다른 접근: [[papers/507_Llmeval-med_A_real-world_clinical_benchmark_for_medical_llms/review]] — AI의 연구 지원 능력을 의료 전문 분야와 일반 연구 작업에서 각각 전문화된 벤치마크로 평가한다.
+- 🔗 후속 연구: [[papers/042_Academicbrowse_Benchmarking_academic_browse_ability_of_llms/review]] — AI의 일반적 연구 지원 능력을 학술 정보 검색 특화 능력으로 세분화하여 평가한다.
+- 🏛 기반 연구: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — LLM의 자기 수정 한계가 AI의 연구 지원 능력 평가에서 중요한 제약 요소임을 시사한다.
+- 🧪 응용 사례: [[papers/184_Can_large_language_models_provide_useful_feedback_on_researc/review]] — AI의 연구 지원 능력을 평가하는 구체적인 벤치마크와 평가 체계를 제공한다.

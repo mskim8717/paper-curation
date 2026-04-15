@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 지식 그래프(Knowledge Graphs)에 대한 관계형 기계학습(Relational Machine Learning) 기법들을 종합적으로 검토하며, 잠재 특성 모델(Latent Feature Models)과 그래프 패턴 마이닝 기반 모델을 통해 누락된 사실(엣지)을 예측하는 방법을 제시한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Hierarchical_Knowledge_Graphs"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Knowledge_Graph_Encoding"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nickel et al._2015_A Review of Relational Machine Learning for Knowledge Graphs.pdf"
 ---
@@ -91,10 +93,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nickel et al._2015_A Review of Relationa
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — 지식 그래프의 관계형 기계학습에 대한 체계적 검토가 과학 아이디어 생성을 위한 지식 그래프 활용의 이론적 토대를 제공함
-- 🏛 기반 연구: [[papers/393_Graphusion_a_rag_framework_for_knowledge_graph_construction/review]] — 관계형 기계학습의 이론적 기초가 지식 그래프 구축을 위한 RAG 프레임워크 개발의 방법론적 배경을 제공함
-- 🏛 기반 연구: [[papers/066_Agentic_Personas_for_Adaptive_Scientific_Explanations_with_K/review]] — 지식 그래프 관계형 머신러닝 리뷰는 Agentic Personas의 지식그래프 기반 설명 생성 시스템 설계에 핵심적인 이론적 배경을 제공한다.
-- 🏛 기반 연구: [[papers/393_Graphusion_a_rag_framework_for_knowledge_graph_construction/review]] — 지식 그래프를 위한 관계형 기계학습 리뷰가 과학 지식그래프 구축의 이론적 토대를 제공합니다.
-- 🏛 기반 연구: [[papers/882_When_large_language_models_meet_citation_A_survey/review]] — 지식 그래프와 관계형 머신러닝 기반이 LLM-인용 분석 결합의 이론적 토대를 제공한다.
-- 🏛 기반 연구: [[papers/448_Kgvalidator_A_framework_for_automatic_validation_of_knowledg/review]] — 지식 그래프를 위한 관계형 기계학습에 대한 포괄적 리뷰로 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/032_A_Survey_on_Knowledge_Graphs_Representation_Acquisition_and/review]] — 관계형 기계학습과 지식 그래프의 표현 학습에 대한 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/032_A_Survey_on_Knowledge_Graphs_Representation_Acquisition_and/review]] — 지식 그래프의 표현, 획득, 응용에 대한 포괄적 조사를 통해 관계형 기계학습의 이론적 기반과 최신 동향을 파악할 수 있다.
+- 🧪 응용 사례: [[papers/393_Graphusion_a_rag_framework_for_knowledge_graph_construction/review]] — RAG 프레임워크를 통한 지식 그래프 구축을 관계형 기계학습에 적용하여 실제 지식 그래프 생성과 추론에 활용할 수 있다.
+- 🔗 후속 연구: [[papers/448_Kgvalidator_A_framework_for_automatic_validation_of_knowledg/review]] — 자동 지식 그래프 검증 프레임워크를 통해 관계형 기계학습으로 예측된 사실들의 품질을 체계적으로 평가할 수 있다.
+- 🏛 기반 연구: [[papers/540_Mir_Methodology_inspiration_retrieval_for_scientific_researc/review]] — 관계형 기계학습과 지식 그래프의 핵심 이론적 배경을 제공합니다.
+- 🔗 후속 연구: [[papers/032_A_Survey_on_Knowledge_Graphs_Representation_Acquisition_and/review]] — 관계형 기계학습의 구체적 방법론들을 지식 그래프의 포괄적 프레임워크 내에서 체계적으로 정리하고 확장하여 제시한다.
+- 🏛 기반 연구: [[papers/789_Taxonomy_tree_generation_from_citation_graph/review]] — 지식 그래프 표현과 획득에 대한 이론적 기반을 인용 그래프 기반 분류체계 생성에 적용한다

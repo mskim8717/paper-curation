@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)의 가설 생성(Hypothesis Generation) 능력을 체계적으로 평가하기 위해 7개의 실제 과제와 5개의 합성 과제로 구성된 194개 데이터셋을 포함하는 벤치마크 HypoBench를 제시한다. 합성 데이터셋에서 난이도 증가에 따라 성능이 급격히 저하되는 점(최고 38.8% 회복율)을 통해 현존 가설 생성 방법의 상당한 개선 여지를 드러낸다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Hypothesis_Generation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_HypoBench Towards Systematic and Principled Benchmarking for Hypothesis Generation.pdf"
 ---
@@ -123,11 +123,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_HypoBench Towards System
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/442_Iris_Interactive_research_ideation_system_for_accelerating_s/review]] — 가설 생성 벤치마크를 실제 인터랙티브 연구 시스템으로 구현한 응용 사례
-- 🔄 다른 접근: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — 체계적 벤치마킹 vs 신뢰성 평가로 가설 생성 검증의 서로 다른 접근법
-- 🔗 후속 연구: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — 가설 생성 벤치마크를 창의성과 아이디어 품질 평가로 확장한 연구
-- 🏛 기반 연구: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — 과학 발견 벤치마킹이 가설 생성 평가의 포괄적 프레임워크 기초
-- 🏛 기반 연구: [[papers/442_Iris_Interactive_research_ideation_system_for_accelerating_s/review]] — 가설 생성 벤치마킹 기준을 실제 시스템 개발에 적용한 사례
-- 🧪 응용 사례: [[papers/149_Bayes-Entropy_Collaborative_Driven_Agents_for_Research_Hypot/review]] — HypoAgents의 베이지안 기반 가설 생성은 HypoBench의 체계적 가설 벤치마킹 연구에서 제시된 평가 기준을 실제 연구 가설 최적화 시스템에 적용합니다.
-- 🏛 기반 연구: [[papers/330_Exploiting_LLMs_for_Automatic_Hypothesis_Assessment_via_a_Lo/review]] — 체계적이고 원칙적인 가설 벤치마킹 연구로 본 논문의 자동 가설 평가 방법론의 평가 기준을 제공한다.
-- 🏛 기반 연구: [[papers/411_How_do_humans_and_language_models_reason_about_creativity_a/review]] — STEM 창의성 평가의 체계적 벤치마킹이 인간-AI 창의성 추론 비교 연구의 평가 기반을 제공합니다.
+- 🔄 다른 접근: [[papers/186_Can_large_language_models_unlock_novel_scientific_research_i/review]] — LLM의 과학적 아이디어 생성 능력 평가를 위한 다른 벤치마크 접근법을 제시합니다.
+- 🔗 후속 연구: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — 과학 발견의 전반적인 능력 평가를 위한 벤치마크 확장을 제공합니다.
+- 🏛 기반 연구: [[papers/819_Toward_reliable_biomedical_hypothesis_generation_Evaluating/review]] — 신뢰성 있는 가설 생성 평가의 방법론적 기반을 제공합니다.
+- 🧪 응용 사례: [[papers/819_Toward_reliable_biomedical_hypothesis_generation_Evaluating/review]] — 가설 생성 벤치마크에서 신뢰성 평가 메트릭으로 활용됩니다.
+- 🧪 응용 사례: [[papers/558_Moose-chem3_Toward_experiment-guided_hypothesis_ranking_via/review]] — 가설 생성을 위한 체계적 벤치마킹으로 실험 유도 순위 지정을 평가할 수 있다.
+- 🔄 다른 접근: [[papers/186_Can_large_language_models_unlock_novel_scientific_research_i/review]] — LLM의 과학적 아이디어 생성 능력 평가를 위한 다른 벤치마크 접근법입니다.
+- 🔗 후속 연구: [[papers/031_A_Survey_on_Hypothesis_Generation_for_Scientific_Discovery_i/review]] — 가설 생성을 체계적으로 벤치마킹하고 평가하는 방법론으로 발전시킨다

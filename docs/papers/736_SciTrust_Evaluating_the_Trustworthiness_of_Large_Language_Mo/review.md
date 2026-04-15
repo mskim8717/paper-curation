@@ -10,8 +10,10 @@ arxiv: ""
 score: 3.8
 essence: "과학 분야에서 사용되는 대규모 언어모델(LLM)의 신뢰성을 평가하기 위한 포괄적 프레임워크 SciTrust를 제시한다. 다중 평가 방식(객관식 벤치마크, 오픈엔드형 질문, LLM 기반 판정자)을 결합하여 진실성, 환각(hallucination), 아첨(sycophancy) 측면에서 다섯 가지 LLM의 성능을 비교 분석했다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/LLM_Trustworthiness_and_Safety_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Herron et al._2024_SciTrust Evaluating the Trustworthiness of Large Language Models for Science.pdf"
 ---
@@ -101,9 +103,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Herron et al._2024_SciTrust Evaluating t
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/124_Automated_justification_production_for_claim_veracity_in_fac/review]] — 과학 분야 LLM의 환각과 편향 문제가 팩트체킹 시스템의 정당화 생성에서 신뢰할 수 있는 판단 근거 제시의 기반이 된다.
-- 🔄 다른 접근: [[papers/388_GPT-4o_System_Card/review]] — 과학 분야 LLM 신뢰성 평가와 GPT-4o 안전성 평가가 동일한 신뢰성 목표를 가지지만 평가 도메인과 방법이 다르다.
-- 🔗 후속 연구: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 대규모 언어모델의 전반적인 신뢰성 평가를 과학 분야에 특화하여 구체적으로 확장한 사례이다.
-- 🔄 다른 접근: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 과학 분야 LLM 신뢰성 평가의 다른 접근법과 벤치마크 제시
-- 🔗 후속 연구: [[papers/124_Automated_justification_production_for_claim_veracity_in_fac/review]] — 과학 분야 LLM의 신뢰성 평가에서 환각과 편향을 다루는 것이 팩트체킹의 정당화 생성과 직접 연결된다.
-- 🔄 다른 접근: [[papers/388_GPT-4o_System_Card/review]] — GPT-4o의 안전성 평가와 SciTrust의 과학 분야 LLM 신뢰성 평가가 동일한 평가 목표를 가지지만 다른 도메인과 방법론을 사용한다.
+- 🔄 다른 접근: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 과학 분야 LLM 신뢰성과 일반적 LLM 신뢰성이 서로 다른 범위에서 모델 안전성을 평가한다
+- 🏛 기반 연구: [[papers/508_LLMs_as_Research_Tools_A_Large_Scale_Survey_of_Researchers_U/review]] — 연구자의 LLM 활용 현황이 과학 분야 LLM 신뢰성 평가의 실제적 맥락을 제공한다
+- 🔄 다른 접근: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 과학 분야 LLM 신뢰성 평가가 일반 도메인 신뢰성 벤치마크를 전문 영역으로 특화한다
+- 🔄 다른 접근: [[papers/726_Sciknoweval_Evaluating_multi-level_scientific_knowledge_of_l/review]] — 과학 지식 평가 대신 LLM의 신뢰성 평가에 집중한다

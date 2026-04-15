@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 3D 분자 구조를 SE(3)-불변(invariant) 1D 이산 수열로 변환하는 Geo2Seq 토큰화 방법을 제안하여, 언어 모델(LM)이 3D 분자 생성 태스크를 효과적으로 수행할 수 있도록 한다. 기존의 확산 모델 기반 방법론보다 빠르면서도 더 나은 조건부 생성 성능을 달성한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/3D_Molecular_Generation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_Geometry Informed Tokenization of Molecules for Language Model Generation.pdf"
 ---
@@ -110,12 +111,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_Geometry Informed Tokeniz
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/459_Language_Models_for_Controllable_DNA_Sequence_Design/review]] — 제어 가능한 DNA 서열 설계를 3D 분자 토큰화에 언어모델로 적용
-- 🔗 후속 연구: [[papers/439_Invariant_Tokenization_of_Crystalline_Materials_for_Language/review]] — 결정체 재료의 불변 토큰화에서 3D 분자 기하학 토큰화로의 확장
-- 🔄 다른 접근: [[papers/349_Fragment_and_Geometry_Aware_Tokenization_of_Molecules_for_St/review]] — 구조화된 표현을 위한 분자 조각과 기하학 토큰화의 다른 접근법
-- 🏛 기반 연구: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — 코드용 오픈 파운데이션 모델이 분자 언어모델 생성의 기반 제공
-- 🔗 후속 연구: [[papers/439_Invariant_Tokenization_of_Crystalline_Materials_for_Language/review]] — 분자 기하학 토큰화를 결정 구조의 SE(3) 불변성으로 확장한 발전된 연구
-- 🔄 다른 접근: [[papers/349_Fragment_and_Geometry_Aware_Tokenization_of_Molecules_for_St/review]] — 구조 기반 약물 설계에서 SE(3) 좌표계와 기하학적 토큰화 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — 분자의 기하학적 토큰화 방법이 Foundation Molecular Grammar의 계층적 분해 알고리즘을 더욱 정교화함
-- 🔄 다른 접근: [[papers/282_DMFlow_Disordered_Materials_Generation_by_Flow_Matching/review]] — 언어모델 분자 생성과 무질서 재료 생성의 다른 생성 모델 접근법
-- 🔄 다른 접근: [[papers/125_Automated_latex_code_generation_from_handwritten_math_expres/review]] — 둘 다 분자 및 수학적 구조의 언어 모델 토크나이제이션을 다루지만 하나는 필기 수학식의 LaTeX 변환에, 다른 하나는 분자의 기하학적 토크나이제이션에 초점을 맞춘다.
+- 🔄 다른 접근: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — 둘 다 분자 기하정보를 언어 모델에 통합하지만 Geo2Seq는 토큰화 방식, Foundation Grammar는 멀티모달 접근 사용
+- 🔗 후속 연구: [[papers/459_Language_Models_for_Controllable_DNA_Sequence_Design/review]] — 3D 분자 토큰화 기법을 DNA 서열 생성에 적용하여 공간 구조를 고려한 생물학적 서열 설계 가능
+- 🏛 기반 연구: [[papers/439_Invariant_Tokenization_of_Crystalline_Materials_for_Language/review]] — 결정 재료의 불변 토큰화 방법이 분자 기하정보 토큰화의 이론적 배경을 제공함
+- 🔗 후속 연구: [[papers/439_Invariant_Tokenization_of_Crystalline_Materials_for_Language/review]] — 분자의 기하학적 정보를 고려한 토큰화로 결정 구조 표현을 확장한다.
+- 🏛 기반 연구: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — 분자의 기하학 정보 토큰화 연구가 MatterChat의 구조 인식 멀티모달 LLM 개발에 기하학적 정보 처리 방법론을 제공한다
+- 🔄 다른 접근: [[papers/349_Fragment_and_Geometry_Aware_Tokenization_of_Molecules_for_St/review]] — 두 논문 모두 분자의 기하학적 정보를 언어 모델에 통합하는 방법을 다루지만, 토크나이제이션 접근법이 다르다.
+- 🔄 다른 접근: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — 둘 다 분자의 기하학적 정보를 언어 모델에 통합하지만 Foundation Grammar는 멀티모달 접근, Geo2Seq는 토큰화 방식 사용
+- 🔗 후속 연구: [[papers/459_Language_Models_for_Controllable_DNA_Sequence_Design/review]] — 분자 기하정보 토큰화 기법을 DNA 서열에 적용하여 3차원 구조를 고려한 생물학적 서열 설계로 확장

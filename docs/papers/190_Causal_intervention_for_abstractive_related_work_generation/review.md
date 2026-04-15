@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 학술 논문의 관련 업무(Related Work) 섹션을 자동으로 생성하는 과정에서 인과 관계 이론을 도입하여, 문장 순서와 같은 허위 상관관계(spurious correlation)를 제거하고 문서 간 실제 의미 관계에 기반한 고품질 요약을 생성한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/Expert_Review_Automation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Academic_Citation_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2023_Causal intervention for abstractive related work generation.pdf"
 ---
@@ -107,6 +108,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2023_Causal intervention for 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 공동 맥락 기반 관련 업무 요약과 다른 접근으로 인과 개입을 통한 관련 업무 생성을 제시한다.
-- 🔗 후속 연구: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 오픈액세스 관련 업무 섹션 대규모 데이터셋을 활용하여 인과 개입 기법의 효과를 검증할 수 있다.
-- 🏛 기반 연구: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — 사회적 책임감 있는 AI를 위한 인과 학습 연구로 관련 업무 생성에서 편향 제거의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/220_Cited_text_spans_for_citation_text_generation/review]] — 관련 업무 생성과 인용 텍스트 생성에서 서로 다른 학술 글쓰기 자동화 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 인과 관계 기반 관련 업무 생성과 맥락 기반 관련 업무 요약이 학술 글쓰기에서 상호 보완적 방법론을 제공한다.
+- 🏛 기반 연구: [[papers/329_Explaining_relationships_among_research_papers/review]] — 연구 논문 간 관계 설명이 인과 개입 기반 관련 업무 생성의 이론적 배경을 제공한다.
+- 🧪 응용 사례: [[papers/492_Literature_meets_data_A_synergistic_approach_to_hypothesis_g/review]] — 문헌과 데이터의 시너지적 접근법이 인과 관계 이론을 활용한 관련 업무 생성에 실제 적용된다.
+- 🔄 다른 접근: [[papers/220_Cited_text_spans_for_citation_text_generation/review]] — 인용 텍스트 생성과 관련 업무 생성이라는 서로 다른 학술 글쓰기 자동화 영역을 다룬다.

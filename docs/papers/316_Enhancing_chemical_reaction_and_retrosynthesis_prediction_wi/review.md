@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어 모델(LLM)을 화학 반응 및 역합성 예측에 적용할 때 직면하는 데이터 부족과 과제 간 상관관계 무시 문제를 해결하기 위해, BRICS 기반 440만 개 분자 데이터셋과 이중 과제 학습 전략을 갖춘 ChemDual 프레임워크를 제안한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Retrosynthesis_Strategy_Planning"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Reiser et al._2025_Enhancing chemical reaction and retrosynthesis prediction with large language model and dual-task le.pdf"
 ---
@@ -109,8 +111,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Reiser et al._2025_Enhancing chemical re
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/856_Unimatch_Universal_matching_from_atom_to_task_for_few-shot_d/review]] — 화학 반응 예측에서 원자 수준부터 과제 수준까지의 계층적 접근법을 사용하지만 메타러닝과 듀얼 태스크 학습이라는 다른 전략을 채택한다.
-- 🔗 후속 연구: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — 화학 도구를 활용한 LLM 확장이 ChemDual의 화학 반응 예측 프레임워크와 상호 보완적인 접근법이다.
-- 🧪 응용 사례: [[papers/461_LARC_Towards_Human-level_Constrained_Retrosynthesis_Planning/review]] — 인간 수준의 제약 조건을 고려한 역합성 계획이 ChemDual의 역합성 예측 기능의 실제 적용 영역이다.
-- 🔄 다른 접근: [[papers/856_Unimatch_Universal_matching_from_atom_to_task_for_few-shot_d/review]] — few-shot 약물 발견에서 계층적 매칭과 메타러닝을 사용하는 반면 ChemDual은 듀얼 태스크 학습을 채택하는 다른 접근법이다.
-- 🧪 응용 사례: [[papers/1106_The_BOS-Lig_Dataset_Accurate_Ligand_Charges_from_a_Consensus/review]] — 화학 반응 및 역합성 예측 성능 향상에서 본 논문의 정확한 리간드 전하 정보를 활용할 수 있다.
+- 🏛 기반 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료과학 분야 AI 기초 모델 연구가 화학 반응 예측 LLM의 이론적 토대가 된다
+- 🔄 다른 접근: [[papers/856_Unimatch_Universal_matching_from_atom_to_task_for_few-shot_d/review]] — 분자 수준 매칭과 화학 반응 예측이 서로 다른 접근법으로 약물 발견 문제를 해결한다
+- 🔗 후속 연구: [[papers/856_Unimatch_Universal_matching_from_atom_to_task_for_few-shot_d/review]] — 화학 반응 예측을 원자-과제 매칭의 계층적 구조로 확장하여 few-shot 약물 발견을 가능하게 한다

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "LLM(대규모 언어모델) 노출이 급증하는 상황에서, 본 연구는 800명 이상의 참가자를 대상으로 한 대규모 동적 실험을 통해 AI 생성 아이디어가 인간의 창의성과 집단 아이디어 다양성에 어떻게 영향을 미치는지를 실증적으로 규명했다. **높은 AI 노출은 개별 창의성은 증가시키지 않지만 집단 아이디어 다양성과 그 변화 속도를 증가시킨다는 핵심 발견**을 제시한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Diversity"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 ---
 
@@ -144,10 +146,8 @@ LLM(대규모 언어모델) 노출이 급증하는 상황에서, 본 연구는 8
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/376_Generation_and_human-expert_evaluation_of_interesting_resear/review]] — SciMuse의 AI 생성 아이디어 매력도 예측과 달리 이 연구는 AI 노출이 개별 창의성 향상 없이 집단 다양성만 증가시킨다는 우려를 제기함
-- 🔗 후속 연구: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — 언어모델과의 글쓰기가 콘텐츠 다양성을 감소시킨다는 발견이 AI 아이디어 노출의 창의성과 다양성에 대한 영향을 더 광범위한 맥락에서 검증함
-- 🏛 기반 연구: [[papers/509_Llms_can_realize_combinatorial_creativity_generating_creativ/review]] — LLM의 조합적 창의성 실현 가능성에 대한 연구가 AI 아이디어가 인간 창의성에 미치는 복잡한 영향을 이해하는 이론적 배경을 제공함
-- 🏛 기반 연구: [[papers/155_Beyond_Brainstorming_What_Drives_High-Quality_Scientific_Ide/review]] — AI 아이디어가 인간 창의성에 미치는 영향의 대규모 실험적 증거 제공
-- 🧪 응용 사례: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — LLM이 인간 창의성과 아이디어 다양성에 미치는 영향을 실험적으로 검증하여 채택 패턴의 실제 효과를 보여줍니다.
-- ⚖️ 반론/비판: [[papers/376_Generation_and_human-expert_evaluation_of_interesting_resear/review]] — SciMuse가 개인화된 연구 아이디어 생성의 매력도에 초점을 맞춘 반면, AI 아이디어 노출 연구는 창의성보다 다양성 감소 위험을 경고하는 상반된 관점을 제시함
-- 🔄 다른 접근: [[papers/411_How_do_humans_and_language_models_reason_about_creativity_a/review]] — AI가 인간 창의성에 미치는 영향과 인간-AI 창의성 평가 방식의 차이라는 서로 다른 관점을 제시합니다.
+- 🔄 다른 접근: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — AI가 창의성과 다양성에 미치는 영향을 실험적 접근과 대규모 실증 분석으로 상호 검증한다.
+- 🔗 후속 연구: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — AI 아이디어 노출이 개인 창의성에서 집단 과학 아이디어 생성으로 확장 연구될 수 있다.
+- 🏛 기반 연구: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — LLM의 새로운 연구 아이디어 생성 능력이 AI 아이디어가 인간 창의성에 미치는 영향 연구의 기초가 된다.
+- 🔄 다른 접근: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — AI 노출이 창의성과 다양성에 미치는 영향을 개별 vs 집단 차원에서 상호보완적으로 분석한다.
+- 🔄 다른 접근: [[papers/411_How_do_humans_and_language_models_reason_about_creativity_a/review]] — AI와 인간의 창의성 비교를 위한 다른 실험 설계 접근법을 보여준다

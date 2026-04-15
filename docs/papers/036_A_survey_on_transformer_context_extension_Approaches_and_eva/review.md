@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "Transformer 기반 대규모 언어 모델(LLM)은 사전 학습된 컨텍스트 길이를 초과하는 장문(long context)에서 성능 저하를 보이는데, 본 논문은 이를 해결하기 위한 접근 방식(위치 인코딩, 컨텍스트 압축, 검색 증강, 주의 패턴)과 평가 방법을 체계적으로 분류한 종합 서베이이다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Long_Context_Embeddings"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Multi-Hop_Long_Memory_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_A survey on transformer context extension Approaches and evaluation.pdf"
 ---
@@ -145,10 +146,8 @@ Transformer 기반 대규모 언어 모델(LLM)은 사전 학습된 컨텍스트
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/005_A_comprehensive_survey_on_long_context_language_modeling/review]] — 긴 컨텍스트 언어 모델링에 대한 또 다른 포괄적 서베이로 상호 보완적 관점을 제공한다.
-- 🧪 응용 사례: [[papers/318_Estimating_optimal_context_length_for_hybrid_retrievalaugmen/review]] — 하이브리드 검색-증강 생성에서 최적 컨텍스트 길이 추정 방법으로 본 논문의 컨텍스트 확장 기법을 실용적으로 활용한다.
-- 🔗 후속 연구: [[papers/452_L-citeeval_Do_longcontext_models_truly_leverage_context_for/review]] — 긴 컨텍스트 모델이 실제로 컨텍스트를 활용하는지 평가하는 벤치마크로 본 논문의 평가 방법론을 구체화한다.
-- 🏛 기반 연구: [[papers/005_A_comprehensive_survey_on_long_context_language_modeling/review]] — 트랜스포머 맥락 확장 접근법과 평가에 대한 조사는 장문맥 언어모델링의 핵심 기술적 기반을 제공합니다
-- 🔗 후속 연구: [[papers/495_Llm__mapreduce-v2_Entropy-driven_convolutional_test-time_sca/review]] — 트랜스포머 컨텍스트 확장 접근법들이 엔트로피 기반 테스트 타임 스케일링의 구체적인 확장 기술이다.
-- 🏛 기반 연구: [[papers/368_Gemini_15_Unlocking_multimodal_understanding_across_millions/review]] — 트랜스포머 컨텍스트 확장 방법에 대한 조사가 Gemini 1.5의 1천만 토큰 컨텍스트 처리 기술을 이해하는 기반을 제공한다.
-- 🏛 기반 연구: [[papers/318_Estimating_optimal_context_length_for_hybrid_retrievalaugmen/review]] — 트랜스포머 문맥 확장에 대한 전반적 조사를 바탕으로 실용적 최적화를 제시한다
+- 🧪 응용 사례: [[papers/452_L-citeeval_Do_longcontext_models_truly_leverage_context_for/review]] — 장문맥 모델의 실제 성능을 L-CiteEval을 통해 구체적으로 평가하여 컨텍스트 확장 기법의 실용성을 검증할 수 있다.
+- 🏛 기반 연구: [[papers/876_What_are_the_essential_factors_in_crafting_effective_long_co/review]] — 효과적인 장문맥 구성 요소에 대한 연구를 통해 Transformer 컨텍스트 확장의 이론적 기반과 실제 구현 방법을 제공한다.
+- 🔗 후속 연구: [[papers/833_Towards_reasoning_era_A_survey_of_long_chain-of-thought_for/review]] — 긴 사고 연쇄 추론을 통해 확장된 컨텍스트를 더욱 효과적으로 활용하여 복잡한 추론 과정을 수행할 수 있는 방법론을 제시한다.
+- 🔄 다른 접근: [[papers/005_A_comprehensive_survey_on_long_context_language_modeling/review]] — 장문맥 언어모델링과 트랜스포머 문맥 확장은 모두 긴 문서 처리 능력 향상을 위한 상호보완적인 기술적 접근법이다.
+- 🔄 다른 접근: [[papers/495_Llm__mapreduce-v2_Entropy-driven_convolutional_test-time_sca/review]] — 엔트로피 기반 최적화와 트랜스포머 컨텍스트 확장이 서로 다른 방식으로 긴 입력 처리 문제를 해결한다

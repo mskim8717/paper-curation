@@ -12,10 +12,11 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 AI 연구 아이디어의 실험 성공 가능성을 사전에 예측하는 최초의 벤치마크와 언어 모델 기반 시스템을 제시한다. 두 개의 경쟁하는 연구 아이디어 중 어느 것이 벤치마크에서 더 좋은 성능을 보일지 예측하는 과제에서, 미세조정된 GPT-4.1과 검색 에이전트를 결합한 시스템이 인간 전문가를 큰 폭으로 능가함을 보여준다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/ML_Research_Benchmarking"
   - "topic/ai4s"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wen et al._2025_Predicting empirical ai research outcomes with language models.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wen et al._2025_Predicting Empirical AI Research Outcomes with Language Models 1.pdf"
 ---
 
 # Predicting empirical ai research outcomes with language models
@@ -119,9 +120,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wen et al._2025_Predicting empirical ai 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/868_Virtual_lab_powered_by_AI_scientists_super-charges_biomedica/review]] — AI 연구 성과 예측 시스템의 실제 적용 사례로, 생물의학 연구에서의 구체적 성공 사례를 통해 예측 모델의 효용성을 입증한다.
-- ⚖️ 반론/비판: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — 연구 아이디어 성공 예측의 긍정적 결과와 과학 논문 오류 검증의 한계를 대비하여 AI의 과학 연구 지원 능력의 양면성을 보여준다.
-- 🏛 기반 연구: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — 자동화된 과학적 발견 시스템에서 연구 아이디어의 사전 평가가 전체 연구 파이프라인의 핵심 구성 요소로 작용한다.
-- 🔄 다른 접근: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — 언어 모델로 실증 AI 연구 결과를 예측하는 연구로 본 논문과 다른 방식의 연구 아이디어 품질 평가를 제시한다.
-- 🔗 후속 연구: [[papers/868_Virtual_lab_powered_by_AI_scientists_super-charges_biomedica/review]] — AI 과학자들의 실제 연구 성과가 연구 아이디어 성공 예측 시스템의 효용성을 생물의학 분야에서 구체적으로 입증하는 사례를 제공한다.
-- ⚖️ 반론/비판: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — 과학 논문 오류 검증의 한계와 연구 아이디어 성공 예측의 가능성을 대비하여 AI의 과학 연구 지원 능력의 현실적 범위를 파악할 수 있다.
+- ⚖️ 반론/비판: [[papers/473_Large_Language_Models_for_Automated_Open-domain_Scientific_H/review]] — 가설 생성에서 사후 검증이 아닌 사전 성공 예측의 다른 관점을 제시한다
+- 🔄 다른 접근: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — AI의 과학적 검증 능력을 다른 벤치마크와 평가 방법으로 측정한다
+- 🏛 기반 연구: [[papers/724_SciHorizon_Benchmarking_AI-for-Science_Readiness_from_Scient/review]] — AI4Science 능력 평가를 위한 포괄적인 벤치마킹 프레임워크의 기초를 제공한다
+- 🔄 다른 접근: [[papers/473_Large_Language_Models_for_Automated_Open-domain_Scientific_H/review]] — 과학적 가설의 성공 가능성을 사전 예측하는 다른 관점의 연구를 보여준다
+- 🔗 후속 연구: [[papers/724_SciHorizon_Benchmarking_AI-for-Science_Readiness_from_Scient/review]] — AI 연구 성과 예측을 포함한 더 포괄적인 AI4Science 능력 평가 체계를 제시한다
+- 🏛 기반 연구: [[papers/127_Automatic_evaluation_metrics_for_artificially_generated_scie/review]] — 언어모델을 이용한 실험 결과 예측이 AI 생성 과학 논문의 자동 평가 메트릭 개발에 방법론적 토대를 제공한다.
+- ⚖️ 반론/비판: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — AI의 과학적 예측 능력에 대한 반대 관점으로 검증 한계를 보여준다

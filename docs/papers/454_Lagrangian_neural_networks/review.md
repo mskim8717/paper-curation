@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "신경망으로 라그랑주 함수(Lagrangian)를 직접 학습하여 정규 좌표계(canonical coordinates) 없이도 물리계의 에너지 보존 법칙을 자동으로 만족하는 동역학 모델을 구축한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Neural_Differential_Equations"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Neural_Operator_Learning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cranmer et al._2020_Lagrangian neural networks.pdf"
 ---
@@ -98,12 +99,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cranmer et al._2020_Lagrangian neural ne
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — 라그랑주 기반 물리 법칙 보존이 물리정보신경망의 연속 의존성 구현에 기반을 제공한다
-- 🔄 다른 접근: [[papers/304_Efficient_and_Equivariant_Graph_Networks_for_Predicting_Quan/review]] — 고전역학 vs 양자역학 시스템에서 물리 법칙 보존 신경망의 다른 적용을 비교할 수 있다
-- 🧪 응용 사례: [[papers/140_Autonomous_reinforcement_learning_agent_for_chemical_vapor_d/review]] — 라그랑주 신경망의 에너지 보존 법칙을 화학기상증착 공정 모델링에 적용할 수 있다
-- 🔄 다른 접근: [[papers/772_State-Free_Inference_of_State-Space_Models_The_Transfer_Func/review]] — 물리 시스템 모델링에서 라그랑주 vs 상태공간 기반의 다른 수학적 접근법을 비교할 수 있다
-- 🔄 다른 접근: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — 물리 시스템 모델링을 Neural ODE vs Lagrangian 신경망으로 접근한다.
-- 🧪 응용 사례: [[papers/140_Autonomous_reinforcement_learning_agent_for_chemical_vapor_d/review]] — 물리 법칙 보존을 고려한 신경망을 화학기상증착 공정 최적화에 적용할 수 있다
-- 🔄 다른 접근: [[papers/304_Efficient_and_Equivariant_Graph_Networks_for_Predicting_Quan/review]] — 양자 시스템 vs 고전 역학 시스템에서 물리 법칙 보존 신경망의 다른 적용 분야를 비교할 수 있다
-- 🔄 다른 접근: [[papers/772_State-Free_Inference_of_State-Space_Models_The_Transfer_Func/review]] — 상태공간 vs 라그랑주 기반 물리 시스템 모델링의 다른 수학적 접근법을 비교할 수 있다
-- 🔗 후속 연구: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — 라그랑주 신경망의 물리 법칙 보존 개념을 연속 의존성으로 확장한 연구다
+- 🔄 다른 접근: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — Lagrangian 신경망의 에너지보존과 Neural ODE의 연속깊이 모델링은 물리기반 신경망의 서로 다른 설계 철학이다.
+- 🔗 후속 연구: [[papers/576_Nonlinear_stochastic_and_quantum_motion_from_Coulomb_forces/review]] — 쿨롱 힘으로부터의 비선형 확률적 양자 운동이 Lagrangian 신경망의 물리보존 법칙을 양자역학으로 확장한다.
+- 🏛 기반 연구: [[papers/380_Generative_machine_learning_in_adaptive_control_of_dynamic_m/review]] — 동적 시스템의 생성 머신러닝이 Lagrangian 신경망의 물리계 모델링에 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — Neural ODE의 연속깊이 신경망과 Lagrangian 신경망의 물리보존 접근법은 서로 다른 물리기반 신경망 설계법이다.
+- 🏛 기반 연구: [[papers/576_Nonlinear_stochastic_and_quantum_motion_from_Coulomb_forces/review]] — 라그랑지안 신경망의 물리 보존 법칙이 쿨롱 상호작용의 비선형 양자 운동 분석에 이론적 기반 제공
+- 🏛 기반 연구: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 라그랑지안 신경망의 물리 법칙 보존이 휴머노이드 로봇의 동역학 모델링에 이론적 기반을 제공함

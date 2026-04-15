@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)의 특허 신규성(novelty) 평가 능력을 최초로 체계적으로 검증하기 위해, 실제 특허 심사 사례를 기반으로 한 데이터셋을 구축하고 다양한 모델의 성능을 비교 분석한 연구이다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Patent_Citation_Prediction"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Patent_Novelty_Prediction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Leal et al._2025_Can ai examine novelty of patents Novelty evaluation based on the correspondence between patent cl.pdf"
 ---
@@ -104,9 +106,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Leal et al._2025_Can ai examine novelty 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/779_Supporting_assessment_of_novelty_of_design_problems_using_co/review]] — 설계 문제의 참신성 평가를 위한 코사인 유사도 사용으로 본 논문의 특허 신규성 평가 방법론을 설계 도메인에 적용한다.
-- 🔄 다른 접근: [[papers/313_Enabling_ai_scientists_to_recognize_innovation_A_domain-agno/review]] — AI 과학자의 혁신 인식을 위한 도메인 무관 알고리즘으로 특허 신규성과 유사한 평가 문제를 다른 접근법으로 해결한다.
-- 🏛 기반 연구: [[papers/322_Evaluation_of_openai_o1_Opportunities_and_challenges_of_agi/review]] — OpenAI o1의 평가를 통해 AGI의 기회와 도전을 분석하여 본 논문의 LLM 특허 평가 능력 연구의 기술적 배경을 제공한다.
-- 🔄 다른 접근: [[papers/605_PatFig_Generating_Short_and_Long_Captions_for_Patent_Figures/review]] — 둘 다 AI의 특허 분야 활용을 다루지만 하나는 특허 도형 캡션 생성에, 다른 하나는 특허 신규성 검토에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/010_A_hierarchical_framework_for_measuring_scientific_paper_inno/review]] — 특허의 신규성 평가를 과학 논문의 혁신성 측정으로 확장하여 더 포괄적인 지적 창작물 평가 방법을 제시함
-- 🧪 응용 사례: [[papers/313_Enabling_ai_scientists_to_recognize_innovation_A_domain-agno/review]] — AI의 특허 신규성 평가 능력 연구에서 본 논문의 혁신성 인식 알고리즘을 특허 도메인에 적용할 수 있다.
+- 🔄 다른 접근: [[papers/330_Exploiting_LLMs_for_Automatic_Hypothesis_Assessment_via_a_Lo/review]] — 특허 신규성 평가와 가설 평가에서 LLM의 판단 능력이라는 서로 다른 영역의 AI 평가 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/779_Supporting_assessment_of_novelty_of_design_problems_using_co/review]] — 설계 문제의 신규성 평가와 특허 신규성 평가가 혁신성 판단에서 상호 보완적 방법론을 제공한다.
+- 🏛 기반 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 과학 문헌의 검색 증강 합성이 특허 신규성 평가를 위한 선행 기술 분석의 토대를 제공한다.
+- 🧪 응용 사례: [[papers/021_A_Review_on_Scientific_Knowledge_Extraction_using_Large_Lang/review]] — 대규모 언어모델을 활용한 과학 지식 추출이 특허 신규성 평가에 필요한 기술 정보 분석에 실제 적용된다.
+- 🔄 다른 접근: [[papers/779_Supporting_assessment_of_novelty_of_design_problems_using_co/review]] — 특허의 신규성 평가를 위한 AI 기반의 다른 접근법을 제시한다
+- 🔗 후속 연구: [[papers/330_Exploiting_LLMs_for_Automatic_Hypothesis_Assessment_via_a_Lo/review]] — 가설 평가와 특허 신규성 평가가 모두 LLM의 내부 지식을 활용한 판단 능력을 다룬다.

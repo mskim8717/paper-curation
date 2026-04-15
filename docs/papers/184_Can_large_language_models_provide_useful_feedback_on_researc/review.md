@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 GPT-4를 활용한 대규모 실증 분석을 통해 LLM이 학술 논문에 대해 유용한 피드백을 제공할 수 있는지 체계적으로 평가한 첫 번째 연구이다. Nature 저널 3,096편과 ICLR 1,709편의 논문을 분석한 결과, GPT-4의 피드백이 인간 리뷰어들의 의견과 비슷한 수준의 일치도를 보였으며, 308명의 연구자 설문 조사에서 57.4%가 유용하다고 평가했다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Literature_Analysis"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/AI_Scientific_Tool_Integration"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liang et al._2023_Can large language models provide useful feedback on research papers A large-scale empirical analys.pdf"
 ---
@@ -104,8 +105,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liang et al._2023_Can large language mod
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/506_LLM4SR_A_Survey_on_Large_Language_Models_for_Scientific_Rese/review]] — 과학 연구에서 LLM 활용 전반에 대한 체계적 분석의 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/250_CycleResearcher_Improving_Automated_Research_via_Automated_R/review]] — 논문 피드백 능력이 자동화된 동료 검토 시스템으로 발전됩니다.
-- 🔄 다른 접근: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — AI 생성 리뷰 평가를 위한 서로 다른 접근법을 제시합니다.
-- 🧪 응용 사례: [[papers/312_Empowering_language_models_with_active_inquiry_for_deeper_un/review]] — 능동적 질의 방법이 논문 피드백의 명확화에 활용됩니다.
-- 🏛 기반 연구: [[papers/250_CycleResearcher_Improving_Automated_Research_via_Automated_R/review]] — LLM의 논문 피드백 능력이 자동화된 검토 시스템의 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — LLM 기반 논문 리뷰를 인간과 유사한 방식으로 개선하는 후속 연구이다.
+- 🧪 응용 사례: [[papers/041_Aaar-10_Assessing_ais_potential_to_assist_research/review]] — AI의 연구 지원 능력을 평가하는 구체적인 벤치마크와 평가 체계를 제공한다.
+- 🔄 다른 접근: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 다중 턴 대화 형태의 동료 리뷰로 LLM 피드백의 다른 접근법을 보여준다.

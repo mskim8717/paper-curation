@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.4
 essence: "자연 발생적 예/아니오 질문에 대한 읽기 이해 데이터셋 BoolQ를 제시하며, BERT와 같은 최신 사전학습 모델도 도전적인 이 작업에서 인간 성능(90%)과 큰 격차(80.4%)를 보임을 입증한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Question_Answering"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scholarly_Question_Answering"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Clark et al._2019_Boolq Exploring the surprising difficulty of natural yesno questions.pdf"
 ---
@@ -98,8 +98,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Clark et al._2019_Boolq Exploring the su
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/747_Selfcheck_Using_llms_to_zero-shot_check_their_own_step-by-st/review]] — 자연어 예/아니오 질문의 도전성을 보인 연구가 LLM의 자체 추론 검증 능력 연구의 기초적 동기를 제공합니다.
-- 🔄 다른 접근: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 자연 발생 질문에 대한 읽기 이해와 지식 그래프 기반 구조화된 추론이라는 서로 다른 질의응답 접근법입니다.
-- 🔗 후속 연구: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — 일반적인 예/아니오 질문에서 생물의학 도메인의 전문적 질의응답으로 확장한 도메인 특화 연구입니다.
-- 🔗 후속 연구: [[papers/747_Selfcheck_Using_llms_to_zero-shot_check_their_own_step-by-st/review]] — 자연 예/아니오 질문의 어려움을 보인 연구에서 LLM이 자체 추론을 검증할 수 있는지로 확장한 더 고차원적 연구입니다.
-- 🔗 후속 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 자연어 예/아니오 질문에서 지식 그래프 기반 구조화된 추론으로 확장한 더 체계적인 사실 검증 접근법입니다.
+- 🔗 후속 연구: [[papers/441_Investigating_zero-and_few-shot_generalization_in_fact_verif/review]] — 사실 검증에서의 제로샷과 퓨샷 일반화를 연구하여, BoolQ의 예/아니오 질문을 사실 확인 맥락으로 확장합니다.
+- 🔄 다른 접근: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — 생의학 분야의 질문 답변 데이터셋으로, 일반 도메인 예/아니오 질문과 전문 의료 분야 질문의 차이를 비교할 수 있습니다.
+- 🔗 후속 연구: [[papers/715_Scidqa_A_deep_reading_comprehension_dataset_over_scientific/review]] — 과학 논문에 대한 깊이 있는 읽기 이해로, BoolQ의 기본적인 예/아니오 질문을 과학 문헌의 복잡한 추론으로 발전시킵니다.
+- 🏛 기반 연구: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — 자연어 yes/no 질문의 어려움을 체계적으로 분석한 연구로, PubMedQA의 yes/no/maybe 답변 체계 설계의 이론적 근거를 제공한다

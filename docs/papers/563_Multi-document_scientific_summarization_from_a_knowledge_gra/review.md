@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 지식 그래프(Knowledge Graph, KG)를 중심으로 다중 문서 과학 논문 요약(Multi-Document Scientific Summarization, MDSS)을 수행하는 KGSum 모델을 제안한다. 인코딩과 디코딩 전 과정에서 지식 그래프를 활용하여 논문의 주요 내용과 논문 간 관계를 효과적으로 모델링한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Literature_Summarization"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Knowledge_Graph_Encoding"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2022_Multi-document scientific summarization from a knowledge graph-centric view.pdf"
 ---
@@ -107,12 +109,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2022_Multi-document scientif
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/401_Hierarchical_attention_graph_for_scientific_document_summari/review]] — 과학 문서 요약에서 지식 그래프 중심 접근법과 계층적 어텐션 그래프 방식의 서로 다른 구조적 모델링을 비교할 수 있습니다.
-- 🏛 기반 연구: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 관련 연구 요약의 문맥-그래프 결합 주의 메커니즘이 지식 그래프 중심 다중 문서 요약의 기초 방법론을 제공합니다.
-- 🔗 후속 연구: [[papers/032_A_Survey_on_Knowledge_Graphs_Representation_Acquisition_and/review]] — 지식 그래프의 표현과 획득에 대한 포괄적 조사를 과학 문서 요약에 특화된 지식 그래프 활용으로 확장한 응용 연구입니다.
-- 🏛 기반 연구: [[papers/374_Generating_a_structured_summary_of_numerous_academic_papers/review]] — 지식 그래프 기반 의료 연구 다중 문서 요약으로 구조화된 요약 생성의 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/385_Glimpse_Pragmatically_informative_multi-document_summarizati/review]] — 지식 그래프 기반 다중 문서 요약 기법으로 차별적 다중 문서 요약의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/108_Ask_retrieve_summarize_A_modular_pipeline_for_scientific_lit/review]] — 지식 그래프에서 다중 문서 과학 요약을 수행하여 본 논문의 요약 방법론을 구조화된 지식과 결합한다.
-- 🔄 다른 접근: [[papers/401_Hierarchical_attention_graph_for_scientific_document_summari/review]] — 과학 문서 요약에서 계층적 어텐션 그래프와 지식 그래프 중심 접근법의 성능을 비교할 수 있습니다.
-- 🏛 기반 연구: [[papers/402_Hierarchical_catalogue_generation_for_literature_review_a_be/review]] — 다중 문서 요약의 지식 그래프 활용이 계층적 카탈로그 생성의 구조적 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 관련 연구 요약에서 문맥-그래프 결합 주의와 지식 그래프 중심 접근법의 서로 다른 구조적 모델링을 비교할 수 있습니다.
+- 🔄 다른 접근: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 학술 논문 요약에서 지식 그래프와 참고문헌 그래프라는 서로 다른 구조적 정보 활용 방법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 관련 연구 섹션 데이터셋을 활용하여 지식 그래프 기반 다중 문서 요약의 실용적 적용을 확장한다.
+- 🏛 기반 연구: [[papers/613_Personalized_graph-based_retrieval_for_large_language_models/review]] — 개인화된 검색 증강 생성에서 사용되는 지식 그래프 기반 정보 통합의 기초 방법론을 제공한다.
+- 🏛 기반 연구: [[papers/374_Generating_a_structured_summary_of_numerous_academic_papers/review]] — 지식 그래프 기반 다중 문서 요약의 의학 연구 적용을 위한 방법론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/780_Surveyforge_On_the_outline_heuristics_memory-driven_generati/review]] — 지식 그래프를 활용한 다중 문서 과학 요약 방법론을 제시하여 SurveyForge의 메모리 기반 문헌 검색을 더 체계적인 지식 구조화로 확장함
+- 🔄 다른 접근: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 학술 논문 요약에서 참고문헌 그래프와 지식 그래프라는 서로 다른 구조적 접근법을 비교할 수 있다.
+- 🔄 다른 접근: [[papers/613_Personalized_graph-based_retrieval_for_large_language_models/review]] — 지식 그래프를 활용한 검색에서 다중 문서 요약과 개인화된 생성이라는 서로 다른 응용을 비교할 수 있다.
+- 🔄 다른 접근: [[papers/742_Select_read_and_write_A_multi-agent_framework_of_full-text-b/review]] — 관련 연구 생성에서 다중 에이전트 협업과 지식 그래프 중심이라는 서로 다른 구조적 접근법을 비교할 수 있다.

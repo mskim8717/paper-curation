@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(Large Language Models, LLMs)이 텍스트 기반 통찰을 실험적 발견으로 변환함으로써 재료과학에 새로운 패러다임을 창출하고 있음을 체계적으로 제시한다. Oracle(지식 추출), Surrogate(성질 예측), Quant(불확실성 정량화), Arbiter(의사결정)라는 4가지 핵심 역할 프레임워크를 통해 LLM의 역할을 구조화하고, 향후 발전 방향을 제시한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Domain-specific_Language_Agents"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._Large Language Model in Materials Science Roles, Challenges, and Strategic Outlook.pdf"
 ---
@@ -111,8 +111,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._Large Language Model in Mat
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료 과학을 위한 AI/ML 서베이가 재료 과학에서 LLM 역할 분석의 기초적 배경을 제공합니다.
-- 🔗 후속 연구: [[papers/522_MatPilot_an_LLM-enabled_AI_Materials_Scientist_under_the_Fra/review]] — MatPilot LLM 기반 AI 재료 과학자가 재료 과학에서 LLM의 구체적 역할 구현 사례입니다.
-- 🧪 응용 사례: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — 재료 과학을 위한 유연한 LLM 기반 에이전트 시스템이 Oracle, Surrogate 등 4가지 역할의 실제 적용입니다.
-- 🔄 다른 접근: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 재료과학에서 LLM 활용에 대해 생물학/화학과는 다른 도전과제와 기회를 제시한다
-- 🏛 기반 연구: [[papers/002_34_examples_of_llm_applications_in_materials_science_and_che/review]] — 재료과학에서 대규모 언어모델의 역할과 도전과제에 대한 이론적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/344_Foundation_models_in_bioinformatics/review]] — 재료과학과 생물정보학에서 각각 대규모 언어모델의 역할을 분석하여, 과학 분야별 LLM 적용 전략을 비교할 수 있다.
+- 🧪 응용 사례: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — 재료과학에서 LLM의 일반적 역할 분석과 구체적인 재료과학 대화 시스템 구현은 이론과 실제 적용의 관계를 보여준다.
+- 🏛 기반 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료 발견을 위한 AI 설문조사는 재료과학에서 LLM의 역할과 도전과제를 이해하는 포괄적 배경을 제공한다.
+- 🧪 응용 사례: [[papers/052_Advances_and_challenges_in_foundation_agents_From_brain-insp/review]] — Foundation 에이전트의 포괄적 프레임워크를 재료과학이라는 구체적 영역에 적용한 사례
+- 🔄 다른 접근: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 둘 다 재료과학에서 LLM의 역할과 도전을 다루지만, 지식 안내형 논문은 도메인 특화 모델 개발에, 다른 논문은 일반적인 역할과 도전에 집중한다
+- 🏛 기반 연구: [[papers/002_34_examples_of_llm_applications_in_materials_science_and_che/review]] — 재료과학에서 LLM의 역할과 도전에 대한 종합 분석이 34가지 실제 응용 사례 연구의 이론적 배경을 제공한다
+- 🔄 다른 접근: [[papers/344_Foundation_models_in_bioinformatics/review]] — 생물정보학과 재료과학에서 각각 기초 모델의 역할을 체계적으로 분석하여, 과학 분야별 LLM 적용 전략을 비교할 수 있다.
+- 🧪 응용 사례: [[papers/340_Fine-tuning_large_language_models_for_domain_adaptation_expl/review]] — 재료과학 분야 LLM 활용 연구에서 제기된 도메인 적응 과제에 대한 구체적인 파인튜닝 전략을 제시한다.

@@ -12,8 +12,10 @@ arxiv: ""
 score: 0
 essence: "본 논문은 미국 전역 104개 직종, 844개 과제에 걸쳐 1,500명의 현장 워커와 52명의 AI 전문가 데이터를 통합한 WORKBank 데이터베이스를 구축하여, AI 에이전트의 자동화 및 증강 가능성에 대한 체계적인 감시 평가를 제시한다. 특히 단순 자동화-비자동화 이분법을 벗어나 Human Agency Scale (HAS) 이라는 인간 중심의 스케일을 도입함으로써, 워커 선호도와 기술 역량 간의 불일치를 드러내고 향후 인적 역량의 변화를 예측한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-agent_Task_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shao et al._2025_Future of Work with AI Agents Auditing Automation and Augmentation Potential across the U.S. Workfo.pdf"
 ---
@@ -117,8 +119,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shao et al._2025_Future of Work with AI 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/865_Vending-Bench_A_Benchmark_for_Long-Term_Coherence_of_Autonom/review]] — AI 에이전트의 장기간 일관성 평가에서 업무 자동화 감시 평가의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/793_The_Adoption_and_Usage_of_AI_Agents_Early_Evidence_from_Perp/review]] — 개인 사용자 관점에서 AI 에이전트 채택과 사용에 대한 초기 증거를 확장하여 제시한다.
-- 🧪 응용 사례: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — 자율 에이전트에 대한 포괄적 조사로 업무 자동화 에이전트의 구체적 적용 가능성을 보여준다.
-- 🧪 응용 사례: [[papers/102_Architecture_Design_for_Human-Driven_Systems/review]] — 인간 중심 아키텍처 설계 방법론을 AI 에이전트와의 미래 업무 환경 구축에 적용하여 더 효과적인 인간-AI 협업 시스템을 만들 수 있다.
-- 🧪 응용 사례: [[papers/865_Vending-Bench_A_Benchmark_for_Long-Term_Coherence_of_Autonom/review]] — AI 에이전트의 업무 자동화 평가에서 유사한 장기 성능 일관성 문제를 다룬다.
+- 🧪 응용 사례: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — Human Agency Scale을 의료 진단 분야의 인간-AI 협력에 구체적으로 적용하여 자동화와 증강의 균형점을 실증적으로 검증
+- 🏛 기반 연구: [[papers/663_Reinforcing_clinical_decision_support_through_multi-agent_sy/review]] — 임상 의사결정 지원 시스템에서 AI 자동화와 인간 의료진의 역할 분배를 체계적으로 평가할 수 있는 이론적 프레임워크
+- 🏛 기반 연구: [[papers/175_Building_machines_that_learn_and_think_with_people/review]] — 인간과 함께 학습하고 사고하는 기계 설계의 이론적 기반이 AI 에이전트의 자동화-증강 가능성 평가에 필수적 토대
+- 🔗 후속 연구: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — 과학 실무 자동화의 기회와 도전을 844개 직무 과제에 걸친 체계적인 인간 중심 평가로 확장한 포괄적 접근
+- 🏛 기반 연구: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — AI 에이전트의 업무 자동화와 증강 감사 프레임워크가 과학 실천 자동화의 사회경제적 영향 분석 기반을 마련한다
+- 🏛 기반 연구: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — Human Agency Scale을 통해 의료 분야에서 AI 자동화와 인간 증강의 균형점을 체계적으로 평가할 수 있는 이론적 기반 제공
+- 🧪 응용 사례: [[papers/663_Reinforcing_clinical_decision_support_through_multi-agent_sy/review]] — Human Agency Scale의 실제 적용 사례로서 ICU 환경에서 AI 자동화와 인간 의료진의 역할 균형을 구체적으로 시연
+- 🧪 응용 사례: [[papers/681_Revisiting_Gene_Ontology_Knowledge_Discovery_with_Hierarchic/review]] — Human Agency Scale의 생물정보학 분야 적용 사례로서 AI 에이전트들의 협력적 지식 발견 과정에서 인간의 역할 정의
+- 🏛 기반 연구: [[papers/793_The_Adoption_and_Usage_of_AI_Agents_Early_Evidence_from_Perp/review]] — AI 에이전트가 미래 업무에 미칠 영향을 실증 데이터로 뒷받침하는 기초 연구이다.

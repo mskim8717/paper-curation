@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "반인체 포즈 추정을 위한 준지도학습(semi-supervised learning)에서 **위치 불일치 기반 의사 레이블 수정 모듈(SSPCM)**을 제안하여, 노이즈 의사 레이블을 효과적으로 제거하고 SOTA 성능을 달성한 연구이다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Domain-specific_Scientific_Reasoning"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2023_Semi-Supervised 2D Human Pose Estimation Driven by Position Inconsistency Pseudo Label Correction Mo.pdf"
 ---
@@ -128,10 +130,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2023_Semi-Supervised 2D Hum
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — 반지도학습 포즈 추정의 편향 제거 기법이 사회적 책임 AI의 인과학습 도구에서 편향 완화 방법론으로 적용될 수 있다.
-- 🔄 다른 접근: [[papers/286_Domain-specific_ReAct_for_physics-integrated_iterative_model/review]] — 컴퓨터 비전 영역의 도메인 특화 추론과 물리학 통합 모델링이 모두 특정 과학 도메인에서의 LLM 활용이지만 접근 방식이 다르다.
-- 🏛 기반 연구: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — 도메인 특화 과학 추론 사례로서 Scientific Agent 설계에서 특정 영역 전문성 통합 방법론의 실제 구현 예시를 제공한다.
-- ⚖️ 반론/비판: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — 포즈 추정의 정확한 성능 측정과 과학 가설 생성의 진실성 평가 문제를 대조하여 과학적 검증의 도메인별 차이를 보여준다.
-- 🔄 다른 접근: [[papers/286_Domain-specific_ReAct_for_physics-integrated_iterative_model/review]] — 물리학 통합 모델링과 컴퓨터 비전 포즈 추정이 모두 도메인 특화 과학적 추론이지만 서로 다른 과학 영역에 특화되어 있다.
-- 🧪 응용 사례: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — 사회적 책임 AI의 편향 완화 방법론이 반지도학습 포즈 추정의 의사 레이블 노이즈 제거 기법과 연결되어 AI 시스템의 공정성을 향상시킬 수 있다.
-- 🏛 기반 연구: [[papers/125_Automated_latex_code_generation_from_handwritten_math_expres/review]] — 위치 임베딩 기반의 반지도 학습 방법이 필기 수학식의 공간적 구조 인식에 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 대형 언어모델의 편향 제거 프레임워크가 포즈 추정의 노이즈 제거에 기반을 제공한다.
+- 🔄 다른 접근: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 로봇 움직임 정책의 일반화 개선으로 포즈 추정 일반화의 다른 접근법을 보여준다.
+- 🧪 응용 사례: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — 강화학습 기반 심투리얼 전이로 포즈 추정의 실제 적용을 확장할 수 있다.
+- 🏛 기반 연구: [[papers/118_Autobio_A_simulation_and_benchmark_for_robotic_automation_in/review]] — 반지도 학습 기반 자세 추정 기술을 생물 실험실 로봇의 정밀 조작 벤치마킹에 활용할 수 있다

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)을 기반으로 한 AI 과학자 팀(TAIS)이 데이터 선택, 전처리, 혼재 인자 보정, 조건 예측을 자동화하여 질병 관련 유전자 발견 파이프라인을 효율화하는 시스템을 제안한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Scientific_Frameworks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_Toward a Team of AI-made Scientists for Scientific Discovery from Gene Expression Data.pdf"
 ---
@@ -105,8 +105,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_Toward a Team of AI-made
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI 과학자 자동화 시스템의 또 다른 구현으로 완전 자동화된 과학 발견 프레임워크를 제시한다.
-- 🔗 후속 연구: [[papers/681_Revisiting_Gene_Ontology_Knowledge_Discovery_with_Hierarchic/review]] — 유전자 온톨로지를 활용한 생물학적 지식 추출에서 LLM 기반 다중 에이전트 접근법을 공유한다.
-- 🧪 응용 사례: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — 유전자셋 분석을 위한 자기 검증 언어 에이전트로 유전자 관련 연구 자동화의 구체적 적용 사례를 보여준다.
-- 🔗 후속 연구: [[papers/847_Two_heads_are_better_than_one_A_multi-agent_system_has_the_p/review]] — 가상 과학자 시스템을 실제 AI 과학자 팀 구성으로 발전시킨 연구
-- 🔄 다른 접근: [[papers/681_Revisiting_Gene_Ontology_Knowledge_Discovery_with_Hierarchic/review]] — 유전자 발견과 유전자 온톨로지 지식 추출에서 다중 AI 에이전트 접근법을 공유한다.
+- 🔄 다른 접근: [[papers/633_Prim_Principle-inspired_material_discovery_through_multi-age/review]] — 유전자 발견과 물질 발견은 서로 다른 도메인이지만 모두 다중에이전트 기반 과학적 원리 적용을 사용한다.
+- 🔗 후속 연구: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — GeneAgent의 자기검증 기능이 AI 과학자 팀의 유전자 발견 신뢰성을 향상시킬 수 있다.
+- 🏛 기반 연구: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 바이오의학 연구 에이전트 벤치마크가 AI 과학자 팀 평가의 기반 방법론을 제공한다.
+- 🔄 다른 접근: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — AI 과학자 팀을 향한 접근법이 단일 AI 과학자 엔진과는 다른 협력적 패러다임으로 과학 발견 자동화를 추구한다
+- 🔗 후속 연구: [[papers/764_Sparks_Multi-Agent_Artificial_Intelligence_Model_Discovers_P/review]] — 과학적 발견을 위한 AI 과학자 팀 구성에 대한 연구로, 다중모달 다중에이전트 모델을 실제 연구팀으로 확장하는 비전
+- 🔗 후속 연구: [[papers/071_AgentRxiv_Towards_Collaborative_Autonomous_Research/review]] — AI 제작 과학자 팀 구축이 협업적 자율 연구를 실제 과학자 에이전트 시스템으로 확장한다
+- 🔗 후속 연구: [[papers/826_Towards_Autonomous_Mathematics_Research/review]] — AI 제작 과학자 팀을 통해 개별 수학 연구 에이전트를 협업적 과학 발견 시스템으로 확장할 수 있다.
+- 🔗 후속 연구: [[papers/285_Dolphin_Closed-loop_open-ended_auto-research_through_thinkin/review]] — 단일 자동 연구 시스템에서 AI로 구성된 과학자 팀이라는 더 협력적인 과학 발견 형태로 발전한다
+- 🔄 다른 접근: [[papers/774_STELLA_Towards_a_Biomedical_World_Model_with_Self-Evolving_M/review]] — STELLA가 바이오의학 도메인에 특화된 반면 TAIS는 유전자 발견에 집중하여 서로 다른 접근법을 보인다.
+- 🔄 다른 접근: [[papers/633_Prim_Principle-inspired_material_discovery_through_multi-age/review]] — 물질 발견과 유전자 발견은 서로 다른 도메인이지만 모두 다중에이전트 시스템을 통한 과학적 원리 적용을 사용한다.

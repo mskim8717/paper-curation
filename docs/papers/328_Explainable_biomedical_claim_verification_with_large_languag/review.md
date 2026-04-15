@@ -9,8 +9,8 @@ arxiv: ""
 score: 3.5
 essence: "대규모 언어 모델(LLM)과 SHAP 설명가능성을 결합하여 의료 주장 검증의 투명성을 높이는 대화형 시스템을 제시한다. 사용자는 과학 문헌에서 관련 연구를 검색하고, CoENLI 프레임워크를 통해 LLM의 추론 과정을 검토하며, SHAP 값으로 단어 수준의 기여도를 파악할 수 있다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Automated_Fact_Checking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Matar et al._2025_Explainable biomedical claim verification with large language models.pdf"
 ---
@@ -108,11 +108,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Matar et al._2025_Explainable biomedical
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/685_Robust_claim_verification_through_fact_detection/review]] — 일반적인 사실 검증을 의료 분야로 특화하고 설명가능성을 추가한 확장 연구이다
-- 🧪 응용 사례: [[papers/221_Claimver_Explainable_claim-level_verification_and_evidence_a/review]] — 지식 그래프 기반 설명가능한 검증을 의료 주장 검증에 구체적으로 적용한다
-- 🔄 다른 접근: [[papers/057_aedfact_Scientific_fact-checking_made_easier_via_semi-automa/review]] — 웹 기반 반자동 검색 대신 LLM과 SHAP를 결합한 대화형 검증 시스템을 제시한다
-- 🔄 다른 접근: [[papers/159_Bio-sieve_exploring_instruction_tuning_large_language_models/review]] — 생명의학 주장 검증과 초록 스크리닝 자동화의 다른 의료 AI 접근법
-- 🔗 후속 연구: [[papers/235_Comparing_knowledge_sources_for_open-domain_scientific_claim/review]] — 설명 가능한 생물의학 주장 검증 연구로 본 논문의 과학적 주장 검증을 의료 도메인으로 확장한다.
-- 🔗 후속 연구: [[papers/685_Robust_claim_verification_through_fact_detection/review]] — 의료 분야로 특화하여 사실 검증에 설명가능성을 추가한 확장 연구이다
-- 🔗 후속 연구: [[papers/057_aedfact_Scientific_fact-checking_made_easier_via_semi-automa/review]] — 과학적 팩트체킹을 의료 분야로 확장하고 설명가능성을 추가한다
-- 🏛 기반 연구: [[papers/221_Claimver_Explainable_claim-level_verification_and_evidence_a/review]] — 지식 그래프 기반 주장 검증의 기초 방법론을 의료 분야에 특화하여 확장한다
+- 🏛 기반 연구: [[papers/880_What_makes_medical_claims_un_verifiable_analyzing_entity_and/review]] — 의료 주장 검증 연구가 검증가능성 분석의 실용적 기반을 제공한다
+- 🔄 다른 접근: [[papers/685_Robust_claim_verification_through_fact_detection/review]] — 주장 검증을 의료 도메인 특화 vs 일반적 견고성 개선으로 다르게 접근한다
+- 🧪 응용 사례: [[papers/226_ClinicalGPT_Large_Language_Models_Finetuned_with_Diverse_Med/review]] — 임상 특화 LLM을 의료 주장의 설명가능한 검증에 실제 적용한다
+- 🏛 기반 연구: [[papers/226_ClinicalGPT_Large_Language_Models_Finetuned_with_Diverse_Med/review]] — 의료 도메인 LLM이 의료 주장 검증 시스템의 필수적인 기술 기반을 제공한다
+- 🏛 기반 연구: [[papers/093_All_that_glitters_is_not_novel_Plagiarism_in_ai_generated_re/review]] — 생의학 주장 검증 방법론이 AI 생성 연구의 표절 및 신뢰성 검증에 적용될 수 있다.
+- 🔗 후속 연구: [[papers/880_What_makes_medical_claims_un_verifiable_analyzing_entity_and/review]] — 의료 주장 검증에서 검증가능성 분석으로 한 단계 더 깊이 있는 연구로 확장한다
+- 🔄 다른 접근: [[papers/685_Robust_claim_verification_through_fact_detection/review]] — 주장 검증을 일반 도메인 vs 의료 도메인에서 각각 다른 방식으로 접근한다

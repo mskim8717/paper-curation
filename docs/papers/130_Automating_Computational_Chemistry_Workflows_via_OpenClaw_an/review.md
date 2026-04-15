@@ -12,8 +12,8 @@ arxiv: ""
 score: 0
 essence: "본 논문은 **OpenClaw를 기반으로 한 분리된(decoupled) 에이전트-스킬(agent-skill) 설계**를 통해 다단계 계산화학 작업의 자동화를 달성한다. 일반 목적의 대언어모델 기반 에이전트가 추론과 조정을 담당하고, 재사용 가능한 도메인 스킬이 구체적인 화학 계산 절차를 캡슐화하여 확장성과 유지보수성이 높은 시스템을 실현했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Code_Generation"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Multi-Domain_Experimental_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ding et al._2026_Automating Computational Chemistry Workflows via OpenClaw and Domain-Specific Skills.pdf"
 ---
@@ -110,7 +110,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ding et al._2026_Automating Computationa
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/308_El_Agente_An_Autonomous_Agent_for_Quantum_Chemistry/review]] — 양자화학을 위한 자율 에이전트가 계산화학 워크플로우 자동화의 다른 구현 방식을 제시한다.
-- 🔗 후속 연구: [[papers/535_MetaOpenFOAM_an_LLM-based_multi-agent_framework_for_CFD/review]] — CFD를 위한 LLM 기반 다중 에이전트 프레임워크가 계산화학 자동화를 다른 계산 과학 분야로 확장한다.
-- 🔄 다른 접근: [[papers/839_Transforming_Behavioral_Neuroscience_Discovery_with_In-Conte/review]] — 계산화학 분야의 도메인 특화 자동화 파이프라인 접근법이 행동신경과학에도 적용 가능하다.
-- 🧪 응용 사례: [[papers/589_OpenFOAMGPT_A_retrieval-augmented_large_language_model_LLM_a/review]] — 계산 화학 워크플로우 자동화의 구체적 구현으로 OpenClaw와 유사한 자동화 접근법을 보여준다.
+- 🔄 다른 접근: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 화학 에이전트 도구 연결과 계산화학 워크플로우가 각각 다른 화학 자동화 접근법이다
+- 🔗 후속 연구: [[papers/290_DrugAgent_Automating_AI-aided_Drug_Discovery_Programming_thr/review]] — DrugAgent의 의약 발견에서 OpenClaw의 계산화학으로 확장된 전문 영역 자동화이다
+- 🏛 기반 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — 16000+ 도구를 다루는 ToolLLM이 도메인별 스킬 활용의 방법론적 기반을 제공한다
+- 🧪 응용 사례: [[papers/499_LLM_With_Tools_A_Survey/review]] — 도구를 활용한 LLM 조사 연구가 OpenClaw 시스템의 실제 적용 맥락을 보여준다

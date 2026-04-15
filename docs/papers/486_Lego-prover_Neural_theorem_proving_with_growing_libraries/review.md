@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "대규모 언어모델(LLM)을 이용한 신경 정리 증명(Neural Theorem Proving)에서 검증된 보조정리(lemma)를 재사용 가능한 기술(skill)로 활용하는 성장 가능한 라이브러리를 도입함으로써, 모듈식 증명 구성을 통해 증명 능력을 대폭 향상시킨다. 이를 통해 miniF2F 벤치마크에서 최첨단 성능을 달성하고 22,532개의 검증된 기술을 자동 생성한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Code_Generation"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xin et al._2023_Lego-prover Neural theorem proving with growing libraries.pdf"
 ---
@@ -118,9 +118,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xin et al._2023_Lego-prover Neural theor
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/629_Pre_A_peer_review_based_large_language_model_evaluator/review]] — AI 시스템의 성능 검증이라는 동일한 목표를 정리 증명과 동료 평가라는 다른 도메인에서 구현합니다.
-- 🧪 응용 사례: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — LLM의 과학 연구 활용을 수학적 정리 증명이라는 구체적 영역에 적용하는 전문화된 사례입니다.
-- 🔗 후속 연구: [[papers/710_Sciclaimhunt_A_large_dataset_for_evidence-based_scientific_c/review]] — 과학적 주장 검증을 수학적 증명 검증으로 확장하여 더 엄밀한 논리적 추론을 구현합니다.
-- 🔗 후속 연구: [[papers/568_Mustard_Mastering_uniform_synthesis_of_theorem_and_proof_dat/review]] — 증명 라이브러리 확장과 함께 MUSTARD의 데이터 생성 프레임워크를 결합할 수 있다
-- 🔄 다른 접근: [[papers/629_Pre_A_peer_review_based_large_language_model_evaluator/review]] — AI 성능 평가라는 동일한 목표를 동료 평가와 정리 증명이라는 서로 다른 검증 방식으로 구현합니다.
-- 🔄 다른 접근: [[papers/710_Sciclaimhunt_A_large_dataset_for_evidence-based_scientific_c/review]] — 과학적 검증이라는 동일한 목표를 문헌 기반 주장 검증과 논리적 정리 증명이라는 다른 방식으로 달성합니다.
+- 🔄 다른 접근: [[papers/568_Mustard_Mastering_uniform_synthesis_of_theorem_and_proof_dat/review]] — 둘 다 정리 증명을 위한 데이터셋과 방법론을 다루지만, Lego-prover는 성장 가능한 라이브러리에, MUSTARD는 균일한 합성에 집중한다
+- 🔗 후속 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — LLM의 대규모 정리 증명 학습 연구가 Lego-prover의 성장 가능한 기술 라이브러리를 활용한 모듈식 증명 구성으로 발전되었다
+- 🏛 기반 연구: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 스케치 기반 정리 증명 방법론이 Lego-prover의 검증된 보조정리를 재사용 가능한 기술로 활용하는 시스템의 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/257_Decomposing_the_enigma_Subgoal-based_demonstration_learning/review]] — 형식 정리 증명의 구조화된 학습이 일반적인 라이브러리 기반 정리 증명의 기반이 된다.
+- 🔄 다른 접근: [[papers/568_Mustard_Mastering_uniform_synthesis_of_theorem_and_proof_dat/review]] — 형식 정리 증명을 대규모 LLM 대신 성장하는 라이브러리를 활용한 다른 신경망 접근법
+- 🧪 응용 사례: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — 신경망 기반 정리 증명기의 실제 구현으로, 생성 언어모델을 활용한 형식 수학의 발전된 응용 사례입니다.
+- 🏛 기반 연구: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 신경망 정리 증명의 기반 위에서 라이브러리 확장과 비형식적 증명 활용이라는 발전된 방법론을 구축한다.

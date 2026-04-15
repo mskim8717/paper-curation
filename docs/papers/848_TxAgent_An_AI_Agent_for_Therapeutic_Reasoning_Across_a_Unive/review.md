@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.25
 essence: "정밀 치료(precision therapeutics)를 위해 211개의 생의학 도구(biomedical tools)를 활용한 다단계 추론 AI 에이전트 TxAgent를 제시하며, FDA 승인 약물 정보와 Open Targets 임상 정보를 통합하여 약물 상호작용, 금기사항, 환자별 맞춤 치료 전략을 분석한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Domain-specific_Language_Agents"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Multi-Domain_Experimental_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gao et al._2025_TxAgent An AI Agent for Therapeutic Reasoning Across a Universe of Tools.pdf"
 ---
@@ -116,6 +116,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gao et al._2025_TxAgent An AI Agent for 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/212_Chemist-X_Large_Language_Model-empowered_Agent_for_Reaction/review]] — 화학 반응 조건 최적화 기술을 치료 추론과 약물 상호작용 분석으로 확장 적용할 수 있다
-- 🏛 기반 연구: [[papers/499_LLM_With_Tools_A_Survey/review]] — 도구를 활용한 LLM의 포괄적 조사가 211개 생의학 도구를 활용한 치료 추론 에이전트의 기반을 제공한다
-- 🔗 후속 연구: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — 임상 추론을 위한 생성형 AI를 정밀 치료를 위한 다도구 AI 에이전트로 확장할 수 있다
+- 🔄 다른 접근: [[papers/735_SciToolAgent_a_knowledge-graph-driven_scientific_agent_for_m/review]] — 치료 추론을 위해 생의학 도구 특화 접근법과 범용 과학 도구 지식 그래프 접근법이라는 서로 다른 방법론을 제시함
+- 🔗 후속 연구: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 치료 추론 에이전트가 의료 진단용 다중 LLM 협업 시스템으로 확장됨
+- 🔄 다른 접근: [[papers/351_FROGENT_An_End-to-End_Full-process_Drug_Design_Multi-Agent_S/review]] — 범용 치료 추론 에이전트와 전체 신약 설계 시스템은 치료제 개발의 서로 다른 접근법을 제시한다

@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 에너지 효율성을 갖춘 물리정보신경망(Physics-informed Neural Network, PINN) 기반의 연산자 학습 모델을 제안한다. 신경과학에 영감을 받은 스파이킹 뉴런(spiking neuron)을 통해 희소 이벤트 기반 연산을 구현하면서도 물리 제약 조건 시행에 필요한 미분 가능성을 유지하는 아키텍처적 분리(architectural separation)를 핵심으로 한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Physics-informed_Neural_Networks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Physics-Informed_Neural_Operators"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Garg et al._2026_SPINONet Scalable Spiking Physics-informed Neural Operator for Computational Mechanics Applications.pdf"
 ---
@@ -99,7 +99,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Garg et al._2026_SPINONet Scalable Spiki
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 정보 신경망에 대한 종합 리뷰가 스파이킹 물리 정보 신경 연산자의 이론적 배경을 제공합니다.
-- 🔗 후속 연구: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 신경 연산자의 아키텍처와 변형에 대한 연구가 스파이킹 기반 에너지 효율적 설계로 확장됩니다.
-- 🔄 다른 접근: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — 계산 과학에서 에너지 효율적 스파이킹 기반과 플러그 앤 플레이 신경 연산자 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 에너지 효율적인 스파이킹 물리 정보 신경 연산자가 PINN의 계산 효율성을 향상시키는 확장 연구입니다.
+- 🔗 후속 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 기존 PINN의 에너지 효율성을 개선한 스파이킹 기반 접근법으로, 물리 정보 신경망의 실용적 발전을 보여준다.
+- 🧪 응용 사례: [[papers/622_Physics-Informed_Neural_Operator_for_Electromagnetic_Inverse/review]] — 전자기 역문제를 위한 물리 정보 신경 연산자와 에너지 효율적 PINN은 모두 물리 기반 신경망의 구체적 적용 사례이다.
+- 🏛 기반 연구: [[papers/619_Physics_Informed_Deep_Learning_Part_I_Data-driven_Solutions/review]] — 물리 정보 딥러닝의 일반적 원리는 에너지 효율적 스파이킹 물리 정보 신경 연산자 설계의 이론적 기반이다.
+- 🔗 후속 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 전통적 PINN과 에너지 효율적 스파이킹 PINN은 물리 정보 신경망의 서로 다른 발전 방향을 보여준다.
+- 🏛 기반 연구: [[papers/304_Efficient_and_Equivariant_Graph_Networks_for_Predicting_Quan/review]] — 확장 가능한 스파이킹 물리정보 신경 연산자가 양자 해밀토니안 예측의 물리정보 신경망 기반을 제공한다.
+- 🔄 다른 접근: [[papers/082_Ai-assisted_design_of_experiments_at_the_frontiers_of_comput/review]] — 스파이킹 물리 정보 신경 연산자가 미분 가능 프로그래밍과는 다른 신경형태 컴퓨팅 접근으로 물리 실험 설계를 지원한다
+- 🔗 후속 연구: [[papers/620_Physics-Informed_Autonomous_LLM_Agents_for_Explainable_Power/review]] — 확장 가능한 스파이킹 물리 정보 연산자가 전력전자를 넘어 더 복잡한 물리 시스템으로 확장한다

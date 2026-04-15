@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)을 활용한 아이디에이션(ideation) 지원에 관한 61개 연구를 체계적으로 검토하고, 아이디에이션 프로세스의 7단계와 3단계를 포함하는 '모래시계 아이디에이션 프레임워크(Hourglass Ideation Framework)'를 제시한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Research_Ideation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2025_A review of llm-assisted ideation.pdf"
 ---
@@ -90,7 +92,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2025_A review of llm-assisted 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/045_Acceleron_A_tool_to_accelerate_research_ideation/review]] — Acceleron의 동료-멘토 페르소나 구조가 모래시계 아이디에이션 프레임워크의 7단계 프로세스를 실제로 구현하는 도구가 됨
-- 🏛 기반 연구: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — Chain of Ideas의 혁신적 아이디어 개발 방법론이 LLM 기반 아이디에이션 프레임워크 설계의 핵심 이론적 기반임
-- 🔗 후속 연구: [[papers/425_Improving_research_idea_generation_through_data_An_empirical/review]] — 데이터를 통한 연구 아이디어 생성 개선이 LLM 지원 아이디에이션의 체계적 검토 결과를 실증적으로 뒷받침함
-- 🏛 기반 연구: [[papers/045_Acceleron_A_tool_to_accelerate_research_ideation/review]] — 모래시계 아이디에이션 프레임워크의 체계적 검토가 Acceleron의 동료-멘토 페르소나 설계의 이론적 근거를 제공함
+- 🔗 후속 연구: [[papers/425_Improving_research_idea_generation_through_data_An_empirical/review]] — 데이터 기반 연구 아이디어 생성 개선과 LLM 지원 아이디에이션 조사를 결합하면 더 효과적인 창의적 발상 지원 시스템을 구축할 수 있다.
+- 🧪 응용 사례: [[papers/442_Iris_Interactive_research_ideation_system_for_accelerating_s/review]] — 아이디에이션 프레임워크를 대화형 연구 아이디어 시스템에 적용하여 연구자의 창의적 사고 과정을 체계적으로 지원할 수 있다.
+- 🏛 기반 연구: [[papers/577_Nova_An_iterative_planning_and_search_approach_to_enhance_no/review]] — LLM 기반 아이디어 생성의 포괄적 리뷰를 통해 Nova의 반복적 계획 및 검색 접근법의 이론적 배경과 기존 연구와의 관계를 제공함

@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "비정질 재료, 유리 형성 물질, 초냉각 액체의 분자동역학(MD) 시뮬레이션 궤적 분석을 위한 고성능 오픈소스 C++ 도구키트로, 메모리 내 궤적 처리와 지수 시간 샘플링을 통해 장시간 동역학 분석을 효율적으로 수행할 수 있다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Scientific_Memory_Calculators"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Neural_Operator_Learning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kawak et al._2026_AMDAT An Open-Source Molecular Dynamics Analysis Toolkit for Supercooled Liquids, Glass-Forming Mat.pdf"
 ---
@@ -84,7 +85,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kawak et al._2026_AMDAT An Open-Source M
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — 분자동역학 분석을 SARS-CoV-2 시뮬레이션의 엑사스케일 예측에 적용
-- 🔗 후속 연구: [[papers/758_Simulations_in_the_era_of_exascale_computing/review]] — 엑사스케일 컴퓨팅 시대에서 시뮬레이션의 확장된 역할과 가능성
-- 🏛 기반 연구: [[papers/516_Machine-Learned_Interatomic_Potentials_for_Predicting_Physic/review]] — 기계학습 원자간 포텐셜이 MD 시뮬레이션의 물리적 예측 기반을 제공
-- 🔄 다른 접근: [[papers/372_General-Purpose_Machine-Learned_Potential_for_CrCoNi_Alloys/review]] — CrCoNi 합금용 기계학습 포텐셜을 통한 다른 재료 시스템 분석
+- 🔄 다른 접근: [[papers/1099_Generative_Inversion_of_Spectroscopic_Data_for_Amorphous_Str/review]] — 둘 다 비정질 재료 분석을 다루지만 AMDAT은 MD 궤적 분석 도구에, GLASS는 분광 데이터 역변환 생성에 특화됨
+- 🏛 기반 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — 신경 상미분방정식의 연속 동역학 모델링이 분자동역학 궤적의 장시간 동역학 분석에 이론적 기반 제공
+- 🧪 응용 사례: [[papers/774_STELLA_Towards_a_Biomedical_World_Model_with_Self-Evolving_M/review]] — 자기진화 바이오메디컬 모델에서 AMDAT의 분자동역학 분석 기능을 활용하여 생체재료 특성 예측이 가능함
+- 🔄 다른 접근: [[papers/1099_Generative_Inversion_of_Spectroscopic_Data_for_Amorphous_Str/review]] — 둘 다 비정질 재료 연구를 지원하지만 GLASS는 생성형 구조 복원에, AMDAT는 동역학 궤적 분석에 특화됨
+- 🔗 후속 연구: [[papers/007_A_fine-tuned_large_language_model_based_molecular_dynamics_a/review]] — 분자동역학 분석을 위한 오픈소스 툴킷을 제공하여 MDAgent의 LAMMPS 기반 시뮬레이션을 더 포괄적인 분자동역학 분석 워크플로우로 확장함

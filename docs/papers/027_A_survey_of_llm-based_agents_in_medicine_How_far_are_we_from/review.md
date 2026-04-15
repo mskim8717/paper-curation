@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "의료 분야에서 LLM 기반 에이전트(LLM-based agents)의 아키텍처, 응용, 도전과제를 종합적으로 조사한 서베이로, 60개 논문(2022-2024)을 분석하여 의료 AI의 현황과 미래 방향을 제시합니다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Clinical_Multi-Agent_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Multi-Agent_Medical_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_A survey of llm-based agents in medicine How far are we from baymax arXiv preprint arXiv2502.1121.pdf"
 ---
@@ -89,5 +90,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_A survey of llm-based a
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 의료 LLM 에이전트 서베이와 MedAgents는 모두 의료 AI 에이전트를 다루지만, 포괄적 현황 분석과 제로샷 의료 진단이라는 서로 다른 관점을 제시합니다.
-- 🏛 기반 연구: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — 의료 LLM 에이전트 연구는 BiomeMedLM과 같은 의료 특화 언어모델이 제공하는 도메인 지식 기반 위에 구축된 다중 에이전트 시스템을 분석합니다.
+- 🔄 다른 접근: [[papers/078_Ai_hospital_Benchmarking_large_language_models_in_a_multi-ag/review]] — 의료 AI 에이전트의 서베이와 실제 병원 환경에서의 다중 에이전트 벤치마킹을 비교하여 이론과 실제 적용 간 격차를 파악할 수 있다
+- 🔗 후속 연구: [[papers/1094_Towards_a_Medical_AI_Scientist/review]] — 일반적인 의료 LLM 에이전트에서 임상 의학 연구에 특화된 자율 AI 과학자로의 구체적인 발전 방향을 제시한다
+- 🧪 응용 사례: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 의료 LLM 에이전트의 이론적 프레임워크를 실제 제로샷 의료 협업 시나리오에 적용한 사례를 제공한다
+- 🧪 응용 사례: [[papers/612_PersonaAI_An_Interactive_Agentic-AI_Framework_for_Autonomous/review]] — 의학 분야 LLM 기반 에이전트의 일반적 현황과 노화 연구 특화 PersonaAI는 의학 AI 에이전트의 특화 적용 사례를 보여준다.
+- 🧪 응용 사례: [[papers/624_Piors_Personalized_intelligent_outpatient_reception_based_on/review]] — 의학 분야 LLM 에이전트의 일반적 설문과 외래 접수 특화 다중 에이전트 시스템은 의학 AI의 이론과 실제 적용을 연결한다.
+- 🧪 응용 사례: [[papers/068_AgentMD_Empowering_Language_Agents_for_Risk_Prediction_with/review]] — LLM 기반 의료 에이전트 프레임워크가 실제 임상 환경에서 어떻게 활용될 수 있는지 구체적인 적용 사례를 보여준다.
+- 🏛 기반 연구: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 의료 분야 LLM 에이전트 설문이 의료진 협력 에이전트 개발의 포괄적 이론적 배경을 제공한다

@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.0
 essence: "언어 모델이 형식 수학 증명을 수행할 때, 인간의 사고 과정을 나타내는 자연언어 생각(informal thought)을 각 증명 단계 전에 생성하도록 학습시켜 정리 증명 능력을 향상시키는 프레임워크를 제시한다. 이를 통해 형식 증명에 내재된 정보만으로는 부족한 추론 과정을 보완한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Formal_Theorem_Proving"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Automated_Theorem_Proving"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lin et al._2024_Lean-star Learning to interleave thinking and proving.pdf"
 ---
@@ -115,7 +116,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lin et al._2024_Lean-star Learning to in
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — 둘 다 형식 정리 증명에서 LLM의 추론 능력을 향상시키는 방법을 연구하지만, 하나는 자연언어 사고를 통합하고 다른 하나는 강화학습 기반 접근법을 사용한다.
-- 🏛 기반 연구: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — Lean-star의 형식 증명 생성 능력을 평가할 수 있는 표준화된 올림피아드 수준 벤치마크를 제공한다.
-- 🔗 후속 연구: [[papers/887_Wrong-of-thought_An_integrated_reasoning_framework_with_mult/review]] — 형식 증명에서 잘못된 추론 단계를 감지하고 수정하는 통합 프레임워크로 Lean-star의 사고-증명 교차 학습을 보완한다.
-- 🔗 후속 연구: [[papers/513_M2F_Automated_Formalization_of_Mathematical_Literature_at_Sc/review]] — 기본적인 정리 증명을 대규모 교과서 형식화로 확장하여 실용적 응용 가능성을 보여준다.
+- 🔄 다른 접근: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 형식 정리 증명 가이딩과 자연언어 생각을 결합한 증명 학습은 모두 AI의 수학적 추론 능력 향상을 다른 방식으로 접근한다.
+- 🏛 기반 연구: [[papers/686_Robust_deep_learning_based_protein_sequence_design_using_Pro/review]] — 형식 올림피아드 수준 벤치마크가 자연언어 생각과 형식 증명을 결합한 모델의 성능을 평가하는 기준을 제공한다.
+- 🔗 후속 연구: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — 자동 정리 증명을 위한 생성 기계학습을 자연언어 사고 과정과 결합하여 더 인간적인 증명 방식으로 발전시켰다.
+- 🧪 응용 사례: [[papers/790_Teaching_Large_Language_Models_to_Self-Debug/review]] — 대규모 언어모델의 자기 디버깅 학습 방법이 형식 증명에서 사고-증명 결합 학습에 실제 적용된다.
+- 🔄 다른 접근: [[papers/339_Fimo_A_challenge_formal_dataset_for_automated_theorem_provin/review]] — 사고와 증명을 교차하는 학습 방식으로 자동 정리 증명의 다른 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/568_Mustard_Mastering_uniform_synthesis_of_theorem_and_proof_dat/review]] — 형식 정리 증명에서 사고와 증명을 교차하는 학습의 기본 방법론
+- 🔄 다른 접근: [[papers/1095_Towards_large_language_models_as_copilots_for_theorem_provin/review]] — 사고와 증명을 교차하는 학습과 LLM 통합 증명보조 모두 정리 증명 자동화의 서로 다른 접근법을 제시한다.

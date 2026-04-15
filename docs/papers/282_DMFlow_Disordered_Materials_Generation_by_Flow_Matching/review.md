@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 완전히 정렬된 결정체만 생성하던 기존 심화 학습 모델의 한계를 극복하기 위해, **치환 무질서(Substitutional Disorder, SD)와 위치 무질서(Positional Disorder, PD)를 모두 생성 가능한 DMFlow 프레임워크**를 제시한다. 리만 기하학적 흐름 매칭(Riemannian Flow Matching)과 구 재매개변수화를 통해 확률 심플렉스 제약을 만족하는 물리적으로 타당한 무질서 가중치를 생성한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/3D_Molecular_Generation"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2026_DMFlow Disordered Materials Generation by Flow Matching.pdf"
 ---
@@ -161,9 +163,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2026_DMFlow Disordered Materia
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 언어모델 분자 생성과 무질서 재료 생성의 다른 생성 모델 접근법
-- 🏛 기반 연구: [[papers/555_Molgan_An_implicit_generative_model_for_small_molecular_grap/review]] — 소분자용 암시적 생성모델 MolGAN이 무질서 재료 생성의 기반 제공
-- 🔗 후속 연구: [[papers/269_Derivative-Free_Guidance_in_Continuous_and_Discrete_Diffusio/review]] — 연속 이산 확산의 미분 프리 가이던스에서 무질서 재료로의 확장
-- 🧪 응용 사례: [[papers/446_Iterative_Distillation_for_Reward-Guided_Fine-Tuning_of_Diff/review]] — 확산 모델의 보상 가이드 미세조정을 무질서 재료 생성에 적용
-- 🏛 기반 연구: [[papers/555_Molgan_An_implicit_generative_model_for_small_molecular_grap/review]] — DMFlow의 무질서 물질 생성 방법론이 MolGAN의 분자 그래프 생성 알고리즘 개발에 기초가 됨
-- 🔄 다른 접근: [[papers/1099_Generative_Inversion_of_Spectroscopic_Data_for_Amorphous_Str/review]] — 비정질 재료 구조 생성에서 흐름 매칭과 확산 모델의 다른 접근법
+- 🔄 다른 접근: [[papers/867_Verifier-Constrained_Flow_Expansion_for_Discovery_Beyond_the/review]] — 둘 다 Flow 기반 생성 모델이지만 DMFlow는 무질서 재료에, Verifier-Constrained는 데이터 외부 탐색에 특화됨
+- 🔗 후속 연구: [[papers/1099_Generative_Inversion_of_Spectroscopic_Data_for_Amorphous_Str/review]] — 분광 데이터 역변환과 무질서 재료 생성을 결합하여 실험 관측과 일치하는 비정질 구조 생성 가능
+- 🧪 응용 사례: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 환경과학 기초 모델에서 무질서 재료 생성이 환경 정화 재료 설계에 활용됨
+- 🔗 후속 연구: [[papers/555_Molgan_An_implicit_generative_model_for_small_molecular_grap/review]] — 무질서 재료 생성을 위한 플로우 매칭이 MolGAN의 분자 그래프 생성을 더 복잡한 재료 시스템으로 확장한다.
+- 🔄 다른 접근: [[papers/867_Verifier-Constrained_Flow_Expansion_for_Discovery_Beyond_the/review]] — 둘 다 Flow 기반 생성 모델이지만 Verifier는 데이터 외부 탐색에, DMFlow는 무질서 재료 생성에 집중함
+- 🔗 후속 연구: [[papers/1099_Generative_Inversion_of_Spectroscopic_Data_for_Amorphous_Str/review]] — 무질서 재료 생성과 분광 데이터 역변환을 결합하여 더 정확한 비정질 구조 예측이 가능함

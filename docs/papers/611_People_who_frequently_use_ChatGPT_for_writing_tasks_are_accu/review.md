@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.4
 essence: "LLM을 글쓰기 작업에 자주 사용하는 사람들은 특별한 학습 없이도 AI 생성 텍스트를 극도로 정확하게 탐지할 수 있으며, 자동 탐지 시스템보다 훨씬 우수한 성능을 보인다. 본 연구는 300개의 논픽션 기사에 대한 9명의 주석자 분석을 통해 이를 입증한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Personalization"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/GPT-Based_Text_Review_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Russell et al._2025_People who frequently use ChatGPT for writing tasks are accurate and robust detectors of AI-generate.pdf"
 ---
@@ -107,13 +108,10 @@ LLM을 글쓰기 작업에 자주 사용하는 사람들은 특별한 학습 없
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — LLM 사용자의 AI 텍스트 탐지 능력 연구가 학계의 LLM 채택 패턴과 그 영향 분석의 기초 통찰을 제공합니다.
-- 🔗 후속 연구: [[papers/093_All_that_glitters_is_not_novel_Plagiarism_in_ai_generated_re/review]] — AI 생성 텍스트 탐지 연구에서 AI 생성 연구 논문의 표절 탐지로 확장하여 더 전문적인 영역의 AI 탐지 문제를 다룹니다.
-- 🔄 다른 접근: [[papers/270_Detecting_llm-written_peer_reviews/review]] — ChatGPT 사용자의 탐지 능력과 LLM 작성 동료 검토 자동 탐지라는 서로 다른 AI 생성 텍스트 식별 접근법입니다.
-- 🏛 기반 연구: [[papers/478_Large_language_models_penetration_in_scholarly_writing_and_p/review]] — ChatGPT 사용자의 AI 생성 텍스트 탐지 정확도 연구로 LLM 침투도 측정의 기술적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/861_Use_of_large_language_models_as_artificial_intelligence_tool/review]] — ChatGPT 사용자의 정확성 인식 연구가 의학 연구자들의 LLM 신뢰도 분석에 적용된다.
-- ⚖️ 반론/비판: [[papers/511_LLMs_Outperform_Outsourced_Human_Coders_on_Complex_Textual_A/review]] — ChatGPT 사용자가 더 정확한 글쓰기 능력 평가를 받는다는 연구는 LLM이 모든 텍스트 작업에서 우수하지 않을 수 있음을 시사한다.
-- 🏛 기반 연구: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — ChatGPT 사용자들의 AI 텍스트 탐지 능력 연구로서 LLM 채택 패턴 분석의 기초 통찰을 제공합니다.
-- 🏛 기반 연구: [[papers/093_All_that_glitters_is_not_novel_Plagiarism_in_ai_generated_re/review]] — AI 생성 텍스트 탐지 연구가 AI 생성 연구 논문의 정교한 표절 탐지 문제의 기초 기술적 배경을 제공합니다.
-- 🔗 후속 연구: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — 언어모델 사용이 글쓰기에 미치는 영향을 다양성 감소에서 정확성 인식으로 확장하여 더 포괄적인 사용자 행동 분석을 제공함
-- 🏛 기반 연구: [[papers/635_Productivity_assessment_of_neural_code_completion/review]] — ChatGPT 사용자의 글쓰기 정확성 연구가 신경망 코드 완성 도구 사용자의 생산성 평가 방법론에 기초적인 사용자 행동 분석 틀을 제공한다.
+- 🔗 후속 연구: [[papers/206_ChatGPT_outperforms_crowd_workers_for_text-annotation_tasks/review]] — 텍스트 주석 작업에서 ChatGPT의 우수성 연구를 AI 생성 텍스트 탐지라는 역방향 문제로 확장한다.
+- 🧪 응용 사례: [[papers/270_Detecting_llm-written_peer_reviews/review]] — LLM 생성 동료평가 탐지 연구의 방법론을 일반적인 글쓰기 텍스트 탐지 문제에 적용한 사례다.
+- 🔄 다른 접근: [[papers/051_Admissions_in_the_age_of_AI_detecting_AI-generated_applicati/review]] — 입학원서의 AI 생성 탐지와 유사한 문제를 다루지만 일반 글쓰기 사용자의 탐지 능력에 초점을 맞춘다.
+- 🔄 다른 접근: [[papers/511_LLMs_Outperform_Outsourced_Human_Coders_on_Complex_Textual_A/review]] — 두 연구 모두 LLM의 텍스트 처리 능력을 다루지만 각각 전문가 비교와 사용자 정확도 인식이라는 다른 관점에서 접근함
+- ⚖️ 반론/비판: [[papers/206_ChatGPT_outperforms_crowd_workers_for_text-annotation_tasks/review]] — ChatGPT 사용자의 정확도 과신 문제를 지적하여, 텍스트 주석 작업에서의 높은 성능에 대한 균형잡힌 시각을 제공합니다.
+- 🧪 응용 사례: [[papers/051_Admissions_in_the_age_of_AI_detecting_AI-generated_applicati/review]] — 글쓰기에서 ChatGPT 사용과 AI 탐지가 학술 무결성 보장을 위한 실제적 연결점을 제시한다.
+- 🧪 응용 사례: [[papers/414_Human-llm_coevolution_Evidence_from_academic_writing/review]] — ChatGPT 사용자의 글쓰기 정확성 변화라는 구체적 응용 사례를 제시한다

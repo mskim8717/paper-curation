@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "대규모 언어모델(LLM)이 레이블 없는 데이터만으로 자기 생성 고신뢰도 추론(reasoning) 경로를 통해 자가 개선(self-improve)할 수 있음을 입증한 논문이다. Chain-of-Thought 프롬팅과 자기 일관성(self-consistency)을 활용하여 감독 신호 없이 모델의 추론 능력을 향상시킨다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Self-Refining_Text_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Zero-Shot_Claim_Verification"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2022_Large language models can self-improve.pdf"
 ---
@@ -114,8 +115,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2022_Large language models 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자기 일관성과 고신뢰도 추론을 통한 자가 개선 방법론이 Self-Refine의 피드백 기반 반복적 정제 시스템의 이론적 토대를 마련함
-- 🔗 후속 연구: [[papers/447_Iterative_self-incentivization_empowers_large_language_model/review]] — 반복적 자기 인센티브 방법이 레이블 없는 데이터를 통한 자가 개선을 강화학습 기반의 더 정교한 자기 동기 시스템으로 발전시킨 연구임
-- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — LLM이 아직 추론에서 자기 수정을 완전히 수행할 수 없다는 비판적 분석이 자가 개선 가능성에 대한 낙관적 결과에 반박하는 관점을 제시함
-- 🏛 기반 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 둘 다 LLM이 외부 지도 없이 자기 개선하는 메커니즘을 다루지만, Self-Refine은 피드백 기반, 이 논문은 추론 경로 기반 접근법을 사용
-- 🏛 기반 연구: [[papers/314_Enabling_language_models_to_implicitly_learn_self-improvemen/review]] — LLM의 일반적인 자기개선 능력에 대한 기초 연구가 암묵적 자기개선 프레임워크 개발의 이론적 토대를 제공함
+- 🔄 다른 접근: [[papers/314_Enabling_language_models_to_implicitly_learn_self-improvemen/review]] — PIT는 인간 선호도 데이터로부터 암묵적 자기 개선을 학습하는 방법으로, 명시적 자기 일관성 기반 접근법과 대비된다
+- 🔗 후속 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — Self-Refine은 자기 피드백을 통한 반복적 개선 방법으로, 이 논문의 자기 개선 개념을 더 구체적인 프레임워크로 발전시켰다
+- ⚖️ 반론/비판: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — 자기 개선 능력의 한계를 체계적으로 분석하여, 이 논문이 제시한 자기 개선 가능성에 대한 비판적 관점을 제공한다
+- 🔄 다른 접근: [[papers/314_Enabling_language_models_to_implicitly_learn_self-improvemen/review]] — 명시적 추론 경로 생성을 통한 자기 개선과 달리, PIT는 인간 선호도 데이터로부터 암묵적으로 개선 목표를 학습하는 다른 접근법을 제시한다

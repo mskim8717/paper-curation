@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.75
 essence: "본 논문은 인간이 주석을 단 추론 궤적(reasoning trajectory) 없이 순수 강화학습(RL)을 통해 대형언어모델(LLM)의 추론 능력을 유도할 수 있음을 보여준다. RL 훈련 과정에서 모델은 자발적으로 자기 검증, 재검토, 동적 전략 적응 등의 고급 추론 패턴을 개발한다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Reasoning_Enhancement_via_Reinforcement_Learning"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/DeepSeek-AI et al._2025_DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning.pdf"
 ---
@@ -108,15 +110,14 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/DeepSeek-AI et al._2025_DeepSeek-R1 ince
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/449_Kimi_k15_Scaling_reinforcement_learning_with_llms/review]] — 두 논문 모두 강화학습으로 LLM의 추론 능력을 향상시키되 DeepSeek-R1은 순수 RL, Kimi k1.5는 긴 맥락과 정책 최적화를 강조한다.
-- 🔗 후속 연구: [[papers/243_Critique-GRPO_Advancing_LLM_Reasoning_with_Natural_Language/review]] — 자연언어 비판을 통합한 Critique-GRPO는 DeepSeek-R1의 순수 RL 접근법에 추가적인 언어적 피드백 메커니즘을 제공한다.
-- 🧪 응용 사례: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — DeepSeek-R1의 자기 검증 능력은 AI Scientist의 완전 자동화된 과학 발견에서 핵심적인 추론 검증 모듈로 활용될 수 있다.
-- 🔗 후속 연구: [[papers/750_SEVerA_Verified_Synthesis_of_Self-Evolving_Agents/review]] — 강화학습 기반 추론이 형식적 검증과 결합되어 더 안전한 자기 진화 에이전트 구현 가능
-- 🔄 다른 접근: [[papers/449_Kimi_k15_Scaling_reinforcement_learning_with_llms/review]] — 두 논문 모두 강화학습으로 LLM 추론을 향상시키되 Kimi k1.5는 긴 맥락 확장, DeepSeek-R1은 순수 RL에 중점을 둔다.
-- 🏛 기반 연구: [[papers/243_Critique-GRPO_Advancing_LLM_Reasoning_with_Natural_Language/review]] — DeepSeek-R1의 순수 강화학습 기반 추론 능력은 Critique-GRPO의 자연언어 비판과 수치 보상 통합에 기본적인 RL 토대를 제공한다.
-- 🔗 후속 연구: [[papers/833_Towards_reasoning_era_A_survey_of_long_chain-of-thought_for/review]] — 강화학습을 통한 추론 장려가 Long CoT 특성 향상에 어떻게 기여하는지 확장 연구를 제공한다
-- 🔗 후속 연구: [[papers/674_ReTool_Reinforcement_Learning_for_Strategic_Tool_Use_in_LLMs/review]] — DeepSeek-R1의 강화학습을 통한 추론 인센티브화가 ReTool의 전략적 도구 사용 학습을 더 광범위한 추론 능력으로 확장한 발전 형태이다.
-- 🔄 다른 접근: [[papers/249_Curriculum_Reinforcement_Learning_from_Easy_to_Hard_Tasks_Im/review]] — DeepSeek-R1과 E2H Reasoner 모두 강화학습을 통해 LLM의 추론 능력을 향상시키지만 서로 다른 학습 전략을 사용한다.
-- 🔄 다른 접근: [[papers/585_Openai_o1_system_card/review]] — DeepSeek-R1과 OpenAI o1 모두 강화학습을 통한 추론 능력 향상을 추구하지만 서로 다른 훈련 방법론과 안전성 접근을 사용한다.
-- 🧪 응용 사례: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — DeepSeek-R1의 강화학습 기반 추론이 일반화 능력 향상에 미치는 영향 분석에 적용
-- 🔗 후속 연구: [[papers/1100_Representative_Informative_and_De-Amplifying_Requirements_fo/review]] — 강화학습 기반 추론 모델의 신뢰성을 베이지안 최적실험설계로 향상시킨 확장
+- 🔄 다른 접근: [[papers/449_Kimi_k15_Scaling_reinforcement_learning_with_llms/review]] — 순수 RL을 통한 추론 능력 향상이라는 같은 목표를 다른 모델 구조와 최적화 방법으로 접근한다.
+- 🏛 기반 연구: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — SFT 대비 RL의 일반화 성능 우위성을 보여주는 이론적 근거를 제공한다.
+- 🔗 후속 연구: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 자발적으로 개발되는 자기 검증 패턴이 명시적인 다중턴 자기수정 프레임워크로 발전될 수 있다.
+- 🧪 응용 사례: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — RL로 훈련된 추론 능력이 자동화된 과학 연구에서 실제로 활용될 수 있는 가능성을 보여준다.
+- 🏛 기반 연구: [[papers/683_RM-R1_Reward_Modeling_as_Reasoning/review]] — 추론 기반 보상 모델이 LLM의 자발적 추론 패턴 개발을 더 효과적으로 유도할 수 있다.
+- 🏛 기반 연구: [[papers/447_Iterative_self-incentivization_empowers_large_language_model/review]] — 검색 궤적의 반복적 개선이 RL을 통한 추론 패턴 개발의 특수한 사례로 볼 수 있다.
+- 🔄 다른 접근: [[papers/449_Kimi_k15_Scaling_reinforcement_learning_with_llms/review]] — 긴 맥락 확장과 정책 최적화를 통해 추론 성능 향상이라는 같은 목표를 다른 방법으로 접근한다.
+- 🔗 후속 연구: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 자발적으로 개발되는 자기 검증 패턴을 명시적인 다중턴 프레임워크로 체계화한다.
+- 🔄 다른 접근: [[papers/887_Wrong-of-thought_An_integrated_reasoning_framework_with_mult/review]] — 강화학습 기반 추론과 다중 관점 검증 기반 추론은 모두 LLM 추론 성능 향상을 위한 서로 다른 접근법이다.
+- 🔗 후속 연구: [[papers/249_Curriculum_Reinforcement_Learning_from_Easy_to_Hard_Tasks_Im/review]] — E2H Reasoner의 커리큘럼 강화학습을 DeepSeek-R1의 추론 강화 메커니즘과 결합하여 더 효과적인 단계적 학습을 구현한다.
+- 🏛 기반 연구: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — RL이 SFT보다 우수한 일반화를 보인다는 발견이 순수 RL을 통한 추론 능력 향상의 이론적 근거가 된다.

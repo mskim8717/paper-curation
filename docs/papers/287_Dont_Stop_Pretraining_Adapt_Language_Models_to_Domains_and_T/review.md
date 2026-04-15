@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.5
 essence: "광범위한 데이터로 사전학습(pretraining)된 대규모 언어 모델(RoBERTa)을 도메인별·작업별로 추가 적응(adaptation)하면, 다양한 자원 환경에서 지속적인 성능 향상을 달성할 수 있음을 보여준다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Structured_Research_Frameworks"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gururangan et al._2020_Don’t Stop Pretraining Adapt Language Models to Domains and Tasks.pdf"
 ---
@@ -106,8 +107,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gururangan et al._2020_Don’t Stop Pret
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — 도메인 적응 기법이 재료과학 파운데이션 모델의 특화 학습에 필수적이다.
-- 🧪 응용 사례: [[papers/306_Efficient_fine-tuning_of_single-cell_foundation_models_enabl/review]] — 언어모델 도메인 적응 방법을 단일세포 파운데이션 모델 미세조정에 적용한다.
-- 🔗 후속 연구: [[papers/340_Fine-tuning_large_language_models_for_domain_adaptation_expl/review]] — 도메인 적응을 과학 분야로 확장한 구체적 사례와 실험을 제공한다.
-- 🏛 기반 연구: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — 도메인 적응 기법이 재료과학 파운데이션 모델 개발의 핵심 방법론이다.
-- 🏛 기반 연구: [[papers/340_Fine-tuning_large_language_models_for_domain_adaptation_expl/review]] — 도메인 적응의 기본 원리가 과학 분야 LLM 개발의 핵심 방법론이 됨
+- 🏛 기반 연구: [[papers/152_BERT_Pre-training_of_Deep_Bidirectional_Transformers_for_Lan/review]] — BERT를 기반으로 한 도메인 적응 연구로, 사전학습 모델의 원리와 효과를 실증적으로 분석합니다.
+- 🔗 후속 연구: [[papers/340_Fine-tuning_large_language_models_for_domain_adaptation_expl/review]] — 대규모 언어모델의 도메인 적응을 위한 파인튜닝 경험과 통찰을 제공하여, 연구 범위를 확장합니다.
+- 🧪 응용 사례: [[papers/707_SciBERT_A_Pretrained_Language_Model_for_Scientific_Text/review]] — 과학 텍스트 도메인에 특화된 BERT 모델로, 도메인 적응 원리의 구체적인 과학 분야 적용 사례입니다.
+- 🔗 후속 연구: [[papers/152_BERT_Pre-training_of_Deep_Bidirectional_Transformers_for_Lan/review]] — BERT 기반 모델의 도메인 적응 전략을 체계적으로 연구하여 사전학습 모델의 효과적 활용법을 제시합니다.
+- 🧪 응용 사례: [[papers/707_SciBERT_A_Pretrained_Language_Model_for_Scientific_Text/review]] — 도메인 적응 연구의 과학 분야 구현으로, 언어모델의 도메인별 사전학습 효과를 실증적으로 보여줍니다.
+- 🔗 후속 연구: [[papers/340_Fine-tuning_large_language_models_for_domain_adaptation_expl/review]] — 도메인별 언어모델 적응 연구를 재료과학이라는 구체적 도메인에 적용하고 모델 병합의 창발적 효과를 탐구한다.

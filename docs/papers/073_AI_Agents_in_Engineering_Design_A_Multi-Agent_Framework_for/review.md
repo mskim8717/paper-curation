@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 자동차 설계 분야에 AI 설계 에이전트(Design Agents)를 도입하여, 스케칭부터 공기역학 시뮬레이션까지 전 설계 주기를 수 주일에서 수 분으로 단축하는 다중 에이전트 프레임워크를 제시한다. VLM, LLM, 기하 딥러닝 기법을 활용한 전문화된 에이전트들이 엔지니어와 디자이너와 협력하여 설계 창의성과 효율성을 대폭 향상시킨다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Scientific_Tool_Integration"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Elrefaie et al._2025_AI Agents in Engineering Design A Multi-Agent Framework for Aesthetic and Aerodynamic Car Design.pdf"
 ---
@@ -116,8 +118,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Elrefaie et al._2025_AI Agents in Engine
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/084_Ai-driven_robotics_for_free-space_optics/review]] — 자동차 설계와 광학 실험 모두 물리적 시스템의 AI 기반 자동화를 다룹니다.
-- 🏛 기반 연구: [[papers/849_UI-TARS_Pioneering_Automated_GUI_Interaction_with_Native_Age/review]] — 네이티브 에이전트의 상호작용이 엔지니어링 설계 자동화의 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/462_Large_Language_Model_Agent_as_a_Mechanical_Designer/review]] — 자동차 설계가 더 일반적인 기계 설계로 확장됩니다.
-- 🔄 다른 접근: [[papers/084_Ai-driven_robotics_for_free-space_optics/review]] — 자동차 설계와 광학 실험 모두 물리적 시스템의 AI 기반 설계 자동화를 다룹니다.
-- 🔄 다른 접근: [[papers/849_UI-TARS_Pioneering_Automated_GUI_Interaction_with_Native_Age/review]] — GUI 자동화와 엔지니어링 설계 자동화 모두 인간-AI 협업을 다룹니다.
+- 🔄 다른 접근: [[papers/084_Ai-driven_robotics_for_free-space_optics/review]] — 설계 자동화를 다른 공학 영역(광학)에 적용한 유사한 접근법이다.
+- 🔗 후속 연구: [[papers/462_Large_Language_Model_Agent_as_a_Mechanical_Designer/review]] — 기계 설계 에이전트로 AI 설계 자동화를 더욱 일반화한 연구이다.
+- 🧪 응용 사례: [[papers/526_MechAgents_Large_language_model_multi-agent_collaborations_c/review]] — 기계 공학 분야에서 다중 에이전트 협력의 구체적인 적용 사례를 제시한다.
+- 🔗 후속 연구: [[papers/084_Ai-driven_robotics_for_free-space_optics/review]] — 로봇 기반 설계 자동화를 광학 실험 영역으로 확장한 사례로 볼 수 있다.
+- 🧪 응용 사례: [[papers/462_Large_Language_Model_Agent_as_a_Mechanical_Designer/review]] — 엔지니어링 설계를 위한 멀티에이전트 프레임워크와 기계 설계 LLM 에이전트는 모두 설계 자동화라는 공통 목표를 가진다.

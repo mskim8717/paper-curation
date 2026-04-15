@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.5
 essence: "대규모 언어 모델(LLM)들은 외부 피드백 없이 자신의 추론 오류를 자동으로 수정하지 못하며, 오히려 자기 수정(self-correction) 후 성능이 저하된다는 것을 실증적으로 증명한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Automated_Scientific_Review"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2023_Large Language Models Cannot Self-Correct Reasoning Yet.pdf"
 ---
@@ -99,20 +101,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2023_Large Language Models 
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 도구 통합을 통한 자기 수정 방법론이 순수 LLM 자기 수정의 한계를 극복할 수 있음
-- 🔄 다른 접근: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자기 개선과 자기 수정의 다른 접근 방식을 제시함
-- 🏛 기반 연구: [[papers/104_Are_we_there_yet_revealing_the_risks_of_utilizing_large_lang/review]] — LLM의 자기교정 추론 한계를 다루는 연구로, 피어 리뷰에서 LLM이 쉽게 조작당하는 이유를 설명한다.
-- 🔗 후속 연구: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — 자기 수정 불가능성 문제가 에이전트 신뢰성 평가의 중요한 차원임
-- ⚖️ 반론/비판: [[papers/652_Rbf_Quantifying_and_optimizing_reasoning_boundaries_across_m/review]] — 대형 언어모델의 자기 교정 추론 불가능성은 RBF++의 추론 경계 최적화 가능성과 대조되는 관점을 제시합니다
-- ⚖️ 반론/비판: [[papers/845_Trust_But_Verify_A_Self-Verification_Approach_to_Reinforceme/review]] — 대규모 언어모델이 아직 추론을 자기수정할 수 없다는 연구 결과는 RISE의 동시 학습 접근법이 해결하고자 하는 핵심 한계를 명확히 보여준다.
-- ⚖️ 반론/비판: [[papers/833_Towards_reasoning_era_A_survey_of_long_chain-of-thought_for/review]] — LLM의 자기교정 추론 한계에 대한 연구와 Long CoT의 추론 능력 향상 사이의 대조를 보여준다
-- ⚖️ 반론/비판: [[papers/322_Evaluation_of_openai_o1_Opportunities_and_challenges_of_agi/review]] — LLM의 추론 자기교정 한계와 o1의 인간 수준 추론 성능 사이의 대조적 관점을 제시한다
-- ⚖️ 반론/비판: [[papers/028_A_survey_of_reasoning_with_foundation_models/review]] — 대규모 언어모델이 아직 자기 수정 추론을 완전히 수행할 수 없다는 한계를 지적한다.
-- ⚖️ 반론/비판: [[papers/1085_Ecm_A_unified_electronic_circuit_model_for_explaining_the_em/review]] — LLM의 추론 능력 출현을 설명하는 반면, 자기 수정 추론의 한계를 지적하는 대조적 관점을 제시한다.
-- 🔗 후속 연구: [[papers/182_Can_language_models_falsify_evaluating_algorithmic_reasoning/review]] — LLM의 추론 자체 수정 능력 한계와 반례 생성 실패가 연결된 근본적 문제를 다룬다
-- ⚖️ 반론/비판: [[papers/800_The_hidden_dimensions_of_llm_alignment_A_multi-dimensional_s/review]] — LLM 정렬의 다차원적 복잡성을 강조하는 관점이 LLM의 자기교정 추론 한계를 지적하는 입장과 대조됨
-- 🔄 다른 접근: [[papers/397_Hallucinations_can_improve_large_language_models_in_drug_dis/review]] — 자기 수정 능력의 한계를 다룬 연구로, 환각이 성능 향상에 도움이 된다는 발견과 모델의 자기 개선 한계를 대조적으로 보여준다.
-- ⚖️ 반론/비판: [[papers/390_Grammars_of_formal_uncertainty_When_to_trust_llms_in_automat/review]] — LLM의 자기 수정 추론 한계 연구가 확률적 언어 모델의 결정론적 보장 제공 가능성에 대한 반대 관점을 제시한다.
-- ⚖️ 반론/비판: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — LLM의 자기수정 한계를 지적한 연구와 자기개선 가능성을 탐구한 상반된 관점
-- ⚖️ 반론/비판: [[papers/148_Axolotl_fairness_through_assisted_self-debiasing_of_large_la/review]] — AXOLOTL이 LLM의 자체 편향 수정을 가능하다고 주장하는 반면, 이 논문은 LLM이 아직 추론에서 자체 수정을 할 수 없다고 반박한다.
-- ⚖️ 반론/비판: [[papers/470_Large_language_models_can_self-improve/review]] — LLM이 아직 추론에서 자기 수정을 완전히 수행할 수 없다는 비판적 분석이 자가 개선 가능성에 대한 낙관적 결과에 반박하는 관점을 제시함
+- 🏛 기반 연구: [[papers/041_Aaar-10_Assessing_ais_potential_to_assist_research/review]] — LLM의 자기 수정 한계가 AI의 연구 지원 능력 평가에서 중요한 제약 요소임을 시사한다.
+- ⚖️ 반론/비판: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — LLM의 자기 수정 불가능성과 도구 지원을 통한 자기 수정 가능성 사이의 대조를 보여준다.
+- ⚖️ 반론/비판: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — LLM의 자기 개선 능력에 대한 상반된 관점을 제시하여 한계와 가능성을 균형있게 이해할 수 있다.
+- ⚖️ 반론/비판: [[papers/907_Is_AI_ready_to_mass-produce_lay_summaries_of_research_articl/review]] — LLM이 추론 자체를 자가 수정할 수 없다는 한계가 요약 품질 개선의 근본적 제약임을 보여준다
+- 🏛 기반 연구: [[papers/182_Can_language_models_falsify_evaluating_algorithmic_reasoning/review]] — 대규모 언어모델의 추론 자기 교정 불가능성이 언어모델의 반례 생성 능력 한계의 근본적 원인을 제시한다
+- ⚖️ 반론/비판: [[papers/397_Hallucinations_can_improve_large_language_models_in_drug_dis/review]] — LLM이 추론에서 자기 교정할 수 없다는 연구와 환각이 오히려 도움된다는 발견은 LLM 오류에 대한 상반된 관점을 제시한다.
+- ⚖️ 반론/비판: [[papers/396_Hallucination_mitigation_using_agentic_ai_natural_language-b/review]] — 대규모 언어모델의 자기교정 불가능성이 에이전트 기반 환각 완화의 필요성을 더욱 강조한다.
+- ⚖️ 반론/비판: [[papers/148_Axolotl_fairness_through_assisted_self-debiasing_of_large_la/review]] — LLM의 자기교정 능력에 대한 한계를 지적하여 편향 완화 접근법의 근본적 제약을 보여준다.
+- ⚖️ 반론/비판: [[papers/753_Shared_imagination_Llms_hallucinate_alike/review]] — LLM의 자기 수정 능력 한계를 보여주며 공유된 환각의 지속성 문제를 뒷받침한다

@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 자동 팩트체킹 시스템에서 판정 결과를 설명하기 위한 **정당화(justification) 자동 생성**에 초점을 맞춘 종합 서베이로, 최근 트랜스포머와 대형언어모델(LLM) 발전에 따른 설명 가능한 팩트체킹의 진화를 체계적으로 분석하고 정당화 표준화를 위한 다차원 분류체계를 제시한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Field-Specific_ML_Survey_Methods"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Eldifrawi et al._2024_Automated justification production for claim veracity in fact checking A survey on architectures an.pdf"
 ---
@@ -103,9 +104,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Eldifrawi et al._2024_Automated justific
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/117_Augmenting_the_veracity_and_explanations_of_complex_fact_che/review]] — 팩트체킹 시스템의 정확성과 설명력 향상을 위한 기반 연구로서 정당화 생성의 이론적 토대를 제공한다.
-- 🧪 응용 사례: [[papers/883_When_reviewers_lock_horn_Finding_disagreement_in_scientific/review]] — 과학 논문 피어 리뷰에서 발생하는 의견 불일치를 자동으로 탐지하는 것이 팩트체킹의 정당화 생성과 유사한 판단 근거 제시 문제이다.
-- 🔗 후속 연구: [[papers/736_SciTrust_Evaluating_the_Trustworthiness_of_Large_Language_Mo/review]] — 과학 분야 LLM의 신뢰성 평가에서 환각과 편향을 다루는 것이 팩트체킹의 정당화 생성과 직접 연결된다.
-- 🏛 기반 연구: [[papers/883_When_reviewers_lock_horn_Finding_disagreement_in_scientific/review]] — 피어 리뷰에서 리뷰어 간 의견 불일치 탐지가 팩트체킹에서 판정 결과의 정당화 생성과 유사한 판단 근거 분석 문제이다.
-- 🏛 기반 연구: [[papers/736_SciTrust_Evaluating_the_Trustworthiness_of_Large_Language_Mo/review]] — 과학 분야 LLM의 환각과 편향 문제가 팩트체킹 시스템의 정당화 생성에서 신뢰할 수 있는 판단 근거 제시의 기반이 된다.
-- 🔗 후속 연구: [[papers/237_Confidence_in_Large_Language_Model_Evaluation_A_Bayesian_App/review]] — 사실 확인의 자동 정당화를 베이지안 추론으로 확장한 신뢰도 평가 연구
+- 🔄 다른 접근: [[papers/221_Claimver_Explainable_claim-level_verification_and_evidence_a/review]] — 팩트체킹에서 정당화 자동 생성과 설명 가능한 주장 수준 검증은 모두 검증 결과의 투명성을 높이는 상호보완적 접근법이다.
+- 🏛 기반 연구: [[papers/685_Robust_claim_verification_through_fact_detection/review]] — 견고한 주장 검증 연구가 자동 정당화 생성에서 신뢰할 수 있는 증거 기반 추론의 이론적 기반을 제공한다.

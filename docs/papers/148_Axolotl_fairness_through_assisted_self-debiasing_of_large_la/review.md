@@ -12,8 +12,10 @@ arxiv: ""
 score: 3.9
 essence: "AXOLOTL은 대규모언어모델(LLM)의 출력물에서 편향을 식별하고 자체 수정하도록 유도하는 포스트프로세싱 프레임워크로, 모델 내부 파라미터에 접근하지 않고 공개 API만을 이용하여 계산 비용을 최소화하면서 편향 완화를 실현한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Self-improving_Reward_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ebrahimi et al._2024_Axolotl fairness through assisted self-debiasing of large language model outputs.pdf"
 ---
@@ -101,6 +103,10 @@ AXOLOTL은 대규모언어모델(LLM)의 출력물에서 편향을 식별하고 
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — AXOLOTL이 LLM의 자체 편향 수정을 가능하다고 주장하는 반면, 이 논문은 LLM이 아직 추론에서 자체 수정을 할 수 없다고 반박한다.
-- 🔄 다른 접근: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 둘 다 LLM의 편향 완화를 다루지만 하나는 사후처리 자체 편향 제거에, 다른 하나는 추론 시점 편향 필터링에 초점을 맞춘다.
-- 🏛 기반 연구: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 대규모 언어 모델의 신뢰성에 대한 종합적인 평가 프레임워크가 AXOLOTL의 편향 완화 효과를 체계적으로 검증하는 기반을 제공한다.
+- 🏛 기반 연구: [[papers/845_Trust_But_Verify_A_Self-Verification_Approach_to_Reinforceme/review]] — 자기검증 접근법이 편향 완화를 위한 자기수정 메커니즘의 신뢰성을 높이는 기반 기술이 될 수 있다.
+- 🔄 다른 접근: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — API 기반 사후처리 대신 추론 시점에서 편향을 완화하는 다른 접근법을 제시한다.
+- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — LLM의 자기교정 능력에 대한 한계를 지적하여 편향 완화 접근법의 근본적 제약을 보여준다.
+- 🔗 후속 연구: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 편향 완화가 LLM의 전반적인 신뢰성 확보라는 더 큰 프레임워크의 한 구성요소로 확장될 수 있다.
+- 🔗 후속 연구: [[papers/845_Trust_But_Verify_A_Self-Verification_Approach_to_Reinforceme/review]] — 편향 완화를 위한 자기교정 메커니즘을 검증 가능한 보상 시스템으로 확장하여 더 체계적인 신뢰성을 구축할 수 있다.
+- 🔄 다른 접근: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 편향 완화를 추론 시간 필터링과 보조적 자가편향해소라는 서로 다른 접근법으로 달성한다.
+- 🏛 기반 연구: [[papers/010_A_hierarchical_framework_for_measuring_scientific_paper_inno/review]] — 대규모 언어모델의 편향성 제거 방법론을 로봇 제어 시스템에 적용하여 더욱 공정하고 안정적인 보행 제어를 구현할 수 있다.

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 대규모 언어모델(LLM) 기반 자율 에이전트인 PHIA(Physics-Informed Autonomous Agent)를 제안하여, 신재생에너지 시스템의 전력변환기 변조 설계를 자동화하고 최소한의 인간 개입으로 고품질 설계를 생성한다. 물리 정보 신경망과 최적화 알고리즘을 통합함으로써 설명 가능성과 확장성을 동시에 달성한 획기적인 접근법이다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_Physics-Informed Autonomous LLM Agents for Explainable Power Electronics Modulation Design.pdf"
 ---
@@ -121,5 +123,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_Physics-Informed Autonom
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/308_El_Agente_An_Autonomous_Agent_for_Quantum_Chemistry/review]] — 물리 정보 기반 자율 LLM 에이전트의 설명 가능성을 양자화학 워크플로우에 적용할 수 있다
-- 🔗 후속 연구: [[papers/526_MechAgents_Large_language_model_multi-agent_collaborations_c/review]] — 전력 시스템 분석을 위한 물리 정보 기반 자율 LLM 에이전트가 MechAgents의 역학 문제 해결을 다른 공학 영역으로 확장한 적용이다.
+- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 정보 신경망 과학기계학습이 전력전자 자율 에이전트의 물리 기반 설계 원리를 제공한다
+- 🔗 후속 연구: [[papers/767_SPINONet_Scalable_Spiking_Physics-informed_Neural_Operator_f/review]] — 확장 가능한 스파이킹 물리 정보 연산자가 전력전자를 넘어 더 복잡한 물리 시스템으로 확장한다
+- 🔄 다른 접근: [[papers/286_Domain-specific_ReAct_for_physics-integrated_iterative_model/review]] — 전력 시스템에 물리학 정보 기반 LLM 에이전트를 적용하는 다른 도메인 사례이다.
+- 🧪 응용 사례: [[papers/474_Large_language_models_for_zero-shot_inference_of_causal_stru/review]] — 물리학 기반 자율 LLM 에이전트의 설명 가능성 접근법이 생물학적 인과구조 추론의 해석가능성 향상에 적용된다.

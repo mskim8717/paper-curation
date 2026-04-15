@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "본 연구는 GPT-4 언어 모델과 머신러닝 알고리즘을 결합하여 유기 반도체 소자(OFET) 개발을 지원하는 AI 에이전트를 개발했으며, 277개 논문에서 추출한 709개 OFET의 10,000개 이상 파라미터로 구축한 데이터베이스를 통해 소자 성능을 3배 향상시켰다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/OFET_Device_Synthesis"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_Large-Language-Model-Based AI Agent for Organic Semiconductor Device Research.pdf"
 ---
@@ -114,7 +115,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_Large-Language-Model-B
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/638_ProtAgents_protein_discovery_via_large_language_model_multi-/review]] — 유기 반도체 vs 단백질 분야에서 LLM 기반 소자 개발의 다른 적용을 비교할 수 있다
-- 🔗 후속 연구: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — LLM과 머신러닝 알고리즘 결합을 화학 도구 통합에서 반도체 소자 개발로 확장한 연구다
-- 🔄 다른 접근: [[papers/522_MatPilot_an_LLM-enabled_AI_Materials_Scientist_under_the_Fra/review]] — 재료 과학에서 LLM 기반 에이전트의 다른 응용 분야와 접근법을 비교할 수 있다
-- 🏛 기반 연구: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — 재료 과학을 위한 유연한 LLM 기반 에이전트 시스템이 유기 반도체 개발의 기반을 제공한다
+- 🔄 다른 접근: [[papers/557_MOOSE-Chem_Large_Language_Models_for_Rediscovering_Unseen_Ch/review]] — 유기반도체 소자용 AI 에이전트와 MOOSE-Chem의 화학 가설 재발견은 서로 다른 화학 연구 자동화 방식이다.
+- 🔗 후속 연구: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — 재료과학용 유연한 LLM 에이전트 시스템이 유기반도체 전용 AI 에이전트를 더 포괄적인 재료 연구로 확장한다.
+- 🏛 기반 연구: [[papers/472_Large_language_models_design_sequence-defined_macromolecules/review]] — 서열 정의 거대분자 설계용 대규모 언어모델이 유기반도체 소자 AI 에이전트의 분자 설계 방법론에 기반을 제공한다.
+- 🔄 다른 접근: [[papers/557_MOOSE-Chem_Large_Language_Models_for_Rediscovering_Unseen_Ch/review]] — MOOSE-Chem의 화학 가설 재발견과 유기반도체 소자용 AI 에이전트는 서로 다른 화학 연구 자동화 접근법이다.

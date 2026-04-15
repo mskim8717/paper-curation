@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 AutoML(자동 기계학습)과 LLM(대규모 언어 모델)의 상생적(symbiotic) 통합을 제안하며, 양 분야가 서로를 어떻게 강화할 수 있는지를 포괄적으로 탐색한다. AutoML이 LLM 최적화에 가져오는 도전과제, LLM이 AutoML 개선에 제공하는 기회, 그리고 통합 과정에서 발생할 수 있는 위험을 체계적으로 분석한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Code_Generation"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dong et al._2023_Automl in the age of large language models Current challenges, future opportunities and risks.pdf"
 ---
@@ -118,12 +118,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dong et al._2023_Automl in the age of la
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — AutoML과 LLM의 통합이 코드 생성 모델의 자동 최적화와 성능 향상에 필수적인 방법론적 기반을 제공한다
-- 🏛 기반 연구: [[papers/771_Starcoder_may_the_source_be_with_you_arXiv_preprint_arXiv230/review]] — 대형언어모델과 자동 기계학습의 상생적 통합 연구가 오픈소스 코드 생성 모델의 개발과 최적화에 핵심적인 이론적 토대가 된다
-- 🔗 후속 연구: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — AutoML과 LLM의 통합 원리가 데이터 사이언스 자동화를 위한 LLM 에이전트 개발에 직접적으로 적용되고 확장된다
-- 🧪 응용 사례: [[papers/549_Mlr-copilot_Autonomous_machine_learning_research_based_on_la/review]] — AutoML과 LLM의 상생적 통합 개념이 자율적인 기계학습 연구 수행을 위한 LLM 기반 코파일럿 시스템 구현에 핵심적으로 활용된다
-- 🏛 기반 연구: [[papers/016_A_practical_evaluation_of_AutoML_tools_for_binary_multiclass/review]] — 대형 언어모델 시대의 AutoML 현재 도전과 미래 방향은 AutoML 도구 실제 평가의 이론적 맥락과 발전 방향을 제시합니다
-- 🏛 기반 연구: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — LLM 기반 데이터 사이언스 에이전트가 AutoML과 LLM의 상생적 통합 원리를 데이터 분석 자동화에 구체적으로 적용한 결과이다
-- 🧪 응용 사례: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — 대규모 코드 생성 모델의 성능 향상이 AutoML과 LLM의 상생적 통합을 통한 자동 최적화에 핵심적으로 기여한다
-- 🏛 기반 연구: [[papers/771_Starcoder_may_the_source_be_with_you_arXiv_preprint_arXiv230/review]] — 오픈소스 코드 LLM의 투명성과 성능이 AutoML과 LLM의 상생적 통합을 통한 코드 생성 최적화에 필수적인 기반을 제공한다
-- 🏛 기반 연구: [[papers/136_Automl-gpt_Automatic_machine_learning_with_gpt/review]] — LLM 시대 AutoML의 현재 도전과제와 기회에 대한 포괄적 분석을 제공한다.
+- 🧪 응용 사례: [[papers/549_Mlr-copilot_Autonomous_machine_learning_research_based_on_la/review]] — AutoML과 LLM 통합을 기계학습 연구 자동화라는 구체적 영역에 실제 적용한 사례
+- 🔗 후속 연구: [[papers/136_Automl-gpt_Automatic_machine_learning_with_gpt/review]] — AutoML-GPT를 통해 AutoML과 LLM의 실제 통합을 구현한 발전된 연구
+- 🔄 다른 접근: [[papers/543_Mlcopilot_Unleashing_the_power_of_large_language_models_in_s/review]] — 기계학습 파이프라인 자동화를 다른 LLM 기반 접근법으로 해결하는 대안적 방법
+- 🔗 후속 연구: [[papers/016_A_practical_evaluation_of_AutoML_tools_for_binary_multiclass/review]] — AutoML 도구 평가 연구와 LLM 시대의 AutoML 도전과제를 함께 분석하면 차세대 자동화 머신러닝 시스템 개발 방향을 제시할 수 있다.
+- 🏛 기반 연구: [[papers/136_Automl-gpt_Automatic_machine_learning_with_gpt/review]] — 대규모 언어모델 시대의 AutoML 도전과제가 AutoML-GPT 설계의 기반 맥락을 제공한다.

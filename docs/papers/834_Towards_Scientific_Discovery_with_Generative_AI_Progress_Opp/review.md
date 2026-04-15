@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.3
 essence: "생성형 AI가 문헌 분석, 정리 증명(theorem proving), 실험 설계, 데이터 기반 발견 등 과학 연구의 개별 과제들에서 놀라운 진전을 이루었으나, 장기적 자율 과학 연구를 수행할 수 있는 통합된 AI 시스템은 여전히 부재한다. 본 논문은 과학 발견을 위한 포괄적 AI 시스템 개발의 핵심 과제와 연구 방향을 체계적으로 제시한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Scientist_System_Development"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Reddy and Shojaee_2024_Towards Scientific Discovery with Generative AI Progress, Opportunities, and Challenges.pdf"
 ---
@@ -129,10 +130,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Reddy and Shojaee_2024_Towards Scientifi
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화 과학 연구 시스템의 현실적 한계와 필요 구성 요소에 대한 이론적 기반을 제공한다
-- 🔗 후속 연구: [[papers/081_Ai_scientists_fail_without_strong_implementation_capability/review]] — AI 과학자의 구현 능력 부족 문제를 구체적으로 분석하고 해결 방향을 제시한다
-- 🏛 기반 연구: [[papers/088_AI4Research_A_Survey_of_Artificial_Intelligence_for_Scientif/review]] — 과학 연구를 위한 AI 시스템의 전반적 프레임워크와 방법론적 기반을 제공한다
-- 🧪 응용 사례: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — 과학 발견 엔진 개발의 구체적 실현 방안과 도전 과제를 제시한다
-- ⚖️ 반론/비판: [[papers/081_Ai_scientists_fail_without_strong_implementation_capability/review]] — 생성형 AI의 과학 연구 가능성에 대해 비판적 관점을 제시하며 실제 구현 능력의 한계를 지적한다
-- 🧪 응용 사례: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 생성형 AI를 이용한 과학 발견의 이론적 프레임워크를 완전 자동화 시스템으로 구현한다
-- 🔗 후속 연구: [[papers/076_AI_for_Science_An_Emerging_Agenda/review]] — 과학 발견에서 생성형 AI 활용의 진전과 기회를 구체적으로 분석
+- 🔄 다른 접근: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 생성형 AI의 과학 발견 진전과 기회 분석이 AI Scientist의 구체적 구현과 상호보완적 관점을 제공한다
+- 🏛 기반 연구: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — 인공지능 시대의 과학 발견 종합 분석이 생성형 AI를 통한 과학 발견의 이론적 배경을 마련한다
+- 🔗 후속 연구: [[papers/075_AI_for_Science_2025/review]] — AI for Science 2025 전망이 생성형 AI 기반 과학 발견의 미래 발전 방향을 확장 제시한다
+- 🏛 기반 연구: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — 생성형 AI를 통한 과학 발견의 진전과 기회를 체계적으로 분석하는 기반 연구
+- 🏛 기반 연구: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — 생성형 AI를 통한 과학 발견 연구가 LLM을 활용한 과학 변환의 전체 연구 생명주기 검토에 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/627_Position_Multimodal_large_language_models_can_significantly/review]] — 생성형 AI를 통한 과학적 발견의 이론적 토대와 미래 방향성을 제시한다.
+- 🔄 다른 접근: [[papers/352_From_AI_for_Science_to_Agentic_Science_A_Survey_on_Autonomou/review]] — 생성형 AI를 통한 과학 발견의 진전과 기회를 다른 관점에서 조망한다

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 자율 과학 에이전트의 글로벌 네트워크를 가능하게 하는 개방형 표준인 **Science Context Protocol (SCP)**를 제안한다. SCP는 소프트웨어 도구, 데이터셋, 물리 기기를 통합하는 통일된 자원 인터페이스와 실험의 전체 생명주기를 관리하는 오케스트레이션 아키텍처를 제공하여 기관 간 이질적 AI 시스템의 안전한 협업을 가능하게 한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Scientific_Frameworks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_Discovery_Task_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jiang et al._2025_SCP Accelerating Discovery with a Global Web of Autonomous Scientific Agents.pdf"
 ---
@@ -106,3 +106,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jiang et al._2025_SCP Accelerating Disco
 - Overall: 4.3/5
 
 **총평**: SCP는 분산 과학 에이전트의 상호운용성과 협업을 가능하게 하는 중요한 프로토콜 표준을 제시하며, 실무적 가치와 장기적 영향력이 높다. 다만 대규모 연합 환경에서의 성능 검증, 의미론적 표준화, 물리 기기 통합의 실현 가능성 등에 대한 더 깊은 기술적 논의가 필요하다.
+
+## Related Papers
+
+- 🏛 기반 연구: [[papers/352_From_AI_for_Science_to_Agentic_Science_A_Survey_on_Autonomou/review]] — 과학용 AI에서 에이전트 과학으로의 발전 설문이 글로벌 과학 에이전트 네트워크 구축의 이론적 토대를 제공한다
+- ⚖️ 반론/비판: [[papers/562_Multi-agent_risks_from_advanced_ai/review]] — 고급 AI의 다중 에이전트 리스크 분석이 글로벌 자율 과학 네트워크의 잠재적 위험성을 경고한다

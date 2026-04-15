@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.0
 essence: "생의학 주장(biomedical claims)의 검증 가능성을 결정하는 요인을 분석하기 위해, 엔티티(entity)와 관계(relation) 속성에 중점을 두고 447개의 검증 불가능한 사례를 포함한 BEAR-FACT 코퍼스를 구축한 연구이다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Automated_Fact_Checking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Foley_2024_What makes medical claims (un) verifiable analyzing entity and relation properties for fact verific.pdf"
 ---
@@ -94,10 +95,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Foley_2024_What makes medical claims (un
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/711_Sciclaims_An_end-to-end_generative_system_for_biomedical_cla/review]] — 의료 주장의 검증 가능성 분석이 생의학 주장의 자동 분석 시스템에서 처리 가능한 주장을 사전에 필터링하는 핵심 구성 요소로 활용된다.
-- 🔗 후속 연구: [[papers/657_Reading_and_Reasoning_over_Chart_Images_for_Evidence-based_A/review]] — 의료 주장 검증 가능성 분석을 차트 기반 증거 활용으로 확장하여 더 다양한 증거 유형에 대한 검증 가능성 평가가 가능하다.
-- 🏛 기반 연구: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — 팩트 체킹에서 반박 증거 부족 문제가 의료 주장의 검증 가능성을 결정하는 핵심 요인으로 작용한다는 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/183_Can_large_language_models_detect_misinformation_in_scientifi/review]] — 의료 클레임의 검증 가능성 분석이 과학 뉴스 오보 탐지에서 사용된 과학적 타당성 평가 방법론을 의료 영역으로 확장한 연구임
-- 🏛 기반 연구: [[papers/657_Reading_and_Reasoning_over_Chart_Images_for_Evidence-based_A/review]] — 의료 주장의 검증 가능성 분석이 차트 기반 증거를 활용한 의료 팩트 체킹에서 검증 가능한 주장을 식별하는 기준을 제공한다.
-- 🏛 기반 연구: [[papers/711_Sciclaims_An_end-to-end_generative_system_for_biomedical_cla/review]] — 의료 주장의 검증 가능성 분석이 생의학 주장의 자동 추출과 검증에서 처리 가능한 주장 유형을 식별하는 핵심 기준을 제공한다.
-- 🔄 다른 접근: [[papers/1127_MMSD20_Towards_a_Reliable_Multi-modal_Sarcasm_Detection_Syst/review]] — 의료 주장의 검증 가능성 분석과 멀티모달 풍자 탐지는 모두 텍스트-이미지 간 불일치나 허위 정보를 탐지하는 서로 다른 도메인의 접근법입니다
+- 🔗 후속 연구: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 의료 주장 검증에서 검증가능성 분석으로 한 단계 더 깊이 있는 연구로 확장한다
+- 🏛 기반 연구: [[papers/226_ClinicalGPT_Large_Language_Models_Finetuned_with_Diverse_Med/review]] — 의료 도메인 LLM의 기반 기술이 의료 주장 분석에 필수적인 토대를 제공한다
+- 🧪 응용 사례: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — 임상 추론 능력을 의료 주장의 검증가능성 판단이라는 구체적 작업에 적용한다
+- 🧪 응용 사례: [[papers/226_ClinicalGPT_Large_Language_Models_Finetuned_with_Diverse_Med/review]] — 임상 특화 LLM을 의료 주장 검증이라는 구체적 작업에 적용한다
+- 🔄 다른 접근: [[papers/885_Withdrarxiv_A_large-scale_dataset_for_retraction_study/review]] — 과학 연구의 검증 가능성을 철회된 논문 분석과 의료 주장 분석으로 다각도로 접근한다.
+- 🏛 기반 연구: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 의료 주장 검증 연구가 검증가능성 분석의 실용적 기반을 제공한다

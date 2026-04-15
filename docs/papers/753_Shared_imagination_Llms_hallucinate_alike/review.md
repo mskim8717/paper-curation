@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.0
 essence: "최신 대규모 언어모델(LLM)들이 서로 다른 아키텍처와 학습 데이터를 가짐에도 불구하고, 허구적(imaginary) 개념에 대해 놀라울 정도로 일관성 있게 환각(hallucination)을 생성하며 이를 \"공유된 상상 공간(shared imagination space)\"이라고 명명한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_Review_Detection"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Scholarly_Question_Answering"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2024_Shared imagination Llms hallucinate alike.pdf"
 ---
@@ -85,12 +87,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2024_Shared imagination Llms
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/610_Pelican_Correcting_Hallucination_in_Vision-LLMs_via_Claim_De/review]] — LLM들의 공유된 환각 패턴 분석이 시각-언어 모델의 환각 보정에서 일관된 오류 유형을 사전에 식별하고 대응하는 데 활용된다.
-- 🔗 후속 연구: [[papers/752_Shallow_synthesis_of_knowledge_in_gpt-generated_texts_A_case/review]] — 공유된 상상 공간 개념이 GPT의 얕은 문헌 종합 문제를 더 깊이 이해하는 이론적 틀을 제공한다.
-- 🏛 기반 연구: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — LLM의 일관된 환각 패턴이 과학 논문 오류 검증에서 예측 가능한 실패 모드를 이해하는 핵심 개념적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/396_Hallucination_mitigation_using_agentic_ai_natural_language-b/review]] — LLM이 유사한 환각을 생성하는 현상에 대한 기초 연구로 환각 완화 접근법의 이론적 배경을 제공한다.
-- 🏛 기반 연구: [[papers/192_Cchall_A_novel_benchmark_for_joint_cross-lingual_and_cross-m/review]] — LLM들이 유사한 환각을 보인다는 기초 연구가 교차-언어/모달 환각 벤치마크 개발의 이론적 근거를 제공함
-- 🏛 기반 연구: [[papers/610_Pelican_Correcting_Hallucination_in_Vision-LLMs_via_Claim_De/review]] — 두 논문 모두 LLM의 환각 문제를 다루며, 공유된 상상 공간 개념이 시각-언어 모델의 환각 보정 메커니즘 이해에 중요한 기반을 제공한다.
-- 🏛 기반 연구: [[papers/752_Shallow_synthesis_of_knowledge_in_gpt-generated_texts_A_case/review]] — LLM의 공유된 환각 패턴이 관련 연구 섹션 작성에서 나타나는 얕은 지식 종합 문제의 근본적 원인을 이해하는 데 중요한 통찰을 제공한다.
-- 🔗 후속 연구: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — LLM의 공유된 환각 패턴이 과학 논문 오류 검증에서 나타나는 낮은 성능의 근본적 원인을 설명하는 이론적 틀을 제공한다.
-- 🔄 다른 접근: [[papers/565_Multi-novelty_Improve_the_diversity_and_novelty_of_contents/review]] — LLM의 유사한 환각 패턴 문제를 다중 관점 임베딩으로 해결하려는 접근법이다
+- 🧪 응용 사례: [[papers/397_Hallucinations_can_improve_large_language_models_in_drug_dis/review]] — 신약 발견에서 환각 현상이 오히려 도움이 될 수 있다는 긍정적 관점을 제시한다
+- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — LLM의 자기 수정 능력 한계를 보여주며 공유된 환각의 지속성 문제를 뒷받침한다
+- 🔗 후속 연구: [[papers/610_Pelican_Correcting_Hallucination_in_Vision-LLMs_via_Claim_De/review]] — 비전-언어 모델의 환각 교정 방법을 제시하여 공유된 상상 공간 문제의 해결책을 모색한다
+- 🏛 기반 연구: [[papers/460_Language_models_surface_the_unwritten_code_of_science_and_so/review]] — LLM의 공통된 환각 현상이 과학과 사회의 불문율 표면화에 활용되는 편향 진단의 기술적 기반을 제공한다

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "대규모 테이블 이해를 위해 테이블 응축 및 분해를 통해 관련 정보를 추출한 후, 계층적 Table-Tree를 구성하여 트리 구조 추론을 수행하는 새로운 방법론을 제시한다. 이는 기존의 선형 체인 기반 방식의 한계를 극복하고 복잡한 다중 테이블 관계를 효과적으로 처리한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Multi-Hop_Reasoning_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Escalante et al._2024_Tree-of-table Unleashing the power of llms for enhanced large-scale table understanding.pdf"
 ---
@@ -110,10 +110,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Escalante et al._2024_Tree-of-table Unle
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/652_Rbf_Quantifying_and_optimizing_reasoning_boundaries_across_m/review]] — RBF++의 추론 경계 최적화와 Tree-of-table의 계층적 구조 추론은 모두 복잡한 추론 문제를 해결하기 위한 서로 다른 구조적 접근법입니다
-- 🏛 기반 연구: [[papers/035_A_survey_on_table-and-text_hybridqa_Concepts_methods_challen/review]] — 테이블-텍스트 하이브리드 QA에 대한 조사는 대규모 테이블 이해를 위한 계층적 Table-Tree 구성의 이론적 기반을 제공합니다
-- 🔗 후속 연구: [[papers/787_Tablemaster_A_recipe_to_advance_table_understanding_with_lan/review]] — 대형 언어모델을 활용한 테이블 마스터는 Tree-of-table의 계층적 테이블 처리 방식을 더욱 발전시킨 형태입니다
-- 🔗 후속 연구: [[papers/035_A_survey_on_table-and-text_hybridqa_Concepts_methods_challen/review]] — 테이블 기반 QA가 LLM의 대규모 테이블 추론 능력으로 확장됨
-- 🔄 다른 접근: [[papers/652_Rbf_Quantifying_and_optimizing_reasoning_boundaries_across_m/review]] — Tree-of-table의 계층적 테이블 추론과 RBF++의 추론 경계 최적화는 모두 복잡한 추론 능력 향상을 위한 서로 다른 구조적 접근법입니다
-- 🔗 후속 연구: [[papers/1092_Table-llm-specialist_Language_model_specialists_for_tables_u/review]] — 테이블 처리 능력을 Tree-of-Table 방법론으로 더욱 체계화한 확장 연구
-- 🔗 후속 연구: [[papers/787_Tablemaster_A_recipe_to_advance_table_understanding_with_lan/review]] — 기본적인 테이블 이해를 Tree-of-table과 같은 더 체계적인 대규모 테이블 추론 방법으로 확장함
+- 🔄 다른 접근: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 대규모 테이블 처리에서 계층적 트리 구조 접근법과 차트-코드 생성 방식은 구조화된 데이터 이해의 서로 다른 전략이다.
+- 🔗 후속 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 대규모 멀티모달 차트 데이터셋을 Tree-of-Table 방법론과 결합하면 복잡한 테이블-차트 관계 분석 성능을 크게 향상시킬 수 있다.
+- 🧪 응용 사례: [[papers/035_A_survey_on_table-and-text_hybridqa_Concepts_methods_challen/review]] — 테이블 기반 LLM이 하이브리드 QA의 구조화된 데이터 처리에 직접 적용된다

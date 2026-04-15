@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 학술 논문 작성 과정에서 생성형 AI(Generative AI)를 협력 도구로 활용할 때의 가능성과 한계를 탐구하는 워크숍 논문으로, ChatGPT와 Gemini 두 모델의 프롬프트 설계, 출력 분석, 그리고 책임 있는 AI 통합에 초점을 맞추고 있다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Embodied_AI_Research_Interaction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kasneci et al._2024_Augmenting the author Exploring the potential of ai collaboration in academic writing.pdf"
 ---
@@ -89,6 +90,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kasneci et al._2024_Augmenting the autho
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — 학술 논문 작성에서 스토리 작성으로 확장된 인간-AI 협력적 글쓰기 도구의 다른 응용을 보여준다.
-- 🏛 기반 연구: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 인간-AI 협력 글쓰기 데이터셋 설계의 이론적 기반과 방법론을 제공한다.
-- 🧪 응용 사례: [[papers/378_Generative_AI_Uses_and_Risks_for_Knowledge_Workers_in_a_Scie/review]] — 과학 연구 환경에서 생성형 AI 활용의 실제적 위험과 기회를 구체적으로 분석한다.
+- 🧪 응용 사례: [[papers/233_Cognitio_emergens_Agency_dimensions_and_dynamics_in_human-ai/review]] — 학술 논문 작성에서의 AI 협업이 인간-AI 지식 공진화의 구체적 실현 방식을 보여준다.
+- 🔗 후속 연구: [[papers/414_Human-llm_coevolution_Evidence_from_academic_writing/review]] — 인간-LLM 공진화 증거가 저자 증강 AI 협업의 장기적 영향을 확장하여 보여준다.
+- 🏛 기반 연구: [[papers/641_Prototypical_human-ai_collaboration_behaviors_from_llm-assis/review]] — LLM 지원 인간-AI 협업 행동 프로토타입이 저자 증강의 기반 패턴을 제공한다.
+- 🔗 후속 연구: [[papers/233_Cognitio_emergens_Agency_dimensions_and_dynamics_in_human-ai/review]] — 학술 논문 작성에서의 AI 협업이 인간-AI 지식 공진화 프레임워크의 구체적 적용 사례가 된다.
+- 🔄 다른 접근: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — AI와의 창작 협업을 스토리 쓰기 vs 학술 글쓰기로 다른 영역에서 접근한다

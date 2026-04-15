@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 지식 그래프(Knowledge Graph)의 표현 학습, 획득, 시간적 동적성, 응용을 포괄적으로 조사하는 설문 논문으로, 최신 딥러닝 기법을 통한 구조화된 지식 표현 및 추론 방법을 체계적으로 정리한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Hierarchical_Knowledge_Graphs"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Knowledge_Graph_Encoding"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ji et al._2020_A Survey on Knowledge Graphs Representation, Acquisition, and Applications.pdf"
 ---
@@ -90,7 +91,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ji et al._2020_A Survey on Knowledge Gra
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/020_A_Review_of_Relational_Machine_Learning_for_Knowledge_Graphs/review]] — 관계형 기계학습과 지식 그래프의 표현 학습에 대한 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/393_Graphusion_a_rag_framework_for_knowledge_graph_construction/review]] — 지식 그래프 구축을 위한 RAG 프레임워크로 본 서베이의 지식 표현 방법론을 실제 구현에 적용한다.
-- 🔗 후속 연구: [[papers/448_Kgvalidator_A_framework_for_automatic_validation_of_knowledg/review]] — 지식 그래프의 자동 검증 프레임워크로 본 논문의 지식 획득 방법론을 확장한다.
-- 🔗 후속 연구: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 지식 그래프의 표현과 획득에 대한 포괄적 조사를 과학 문서 요약에 특화된 지식 그래프 활용으로 확장한 응용 연구입니다.
+- 🔗 후속 연구: [[papers/020_A_Review_of_Relational_Machine_Learning_for_Knowledge_Graphs/review]] — 관계형 기계학습의 구체적 방법론들을 지식 그래프의 포괄적 프레임워크 내에서 체계적으로 정리하고 확장하여 제시한다.
+- 🧪 응용 사례: [[papers/393_Graphusion_a_rag_framework_for_knowledge_graph_construction/review]] — RAG 기반 지식 그래프 구축 방법론을 실제 지식 그래프 연구에 적용하여 이론과 실제를 연결하는 구체적 사례를 제공한다.
+- 🏛 기반 연구: [[papers/580_Oag-bench_A_human-curated_benchmark_for_academic_graph_minin/review]] — 학술 그래프 마이닝을 위한 벤치마크를 통해 지식 그래프 연구의 평가 기준과 실제 적용 방법론을 제공한다.
+- 🏛 기반 연구: [[papers/391_Graph_of_ai_ideas_Leveraging_knowledge_graphs_and_llms_for_a/review]] — 지식 그래프 표현 및 구축 방법론의 핵심 이론적 기반을 제공합니다.
+- 🏛 기반 연구: [[papers/393_Graphusion_a_rag_framework_for_knowledge_graph_construction/review]] — 지식 그래프 표현, 획득, 추론에 관한 포괄적 설문은 과학 분야 지식그래프 구축 프레임워크의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/020_A_Review_of_Relational_Machine_Learning_for_Knowledge_Graphs/review]] — 지식 그래프의 표현, 획득, 응용에 대한 포괄적 조사를 통해 관계형 기계학습의 이론적 기반과 최신 동향을 파악할 수 있다.

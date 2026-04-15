@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "대규모 언어모델(LLM)을 기반으로 하는 완전 자동화된 과학 연구 수행 시스템으로, 아이디어 생성에서 실험 수행, 논문 작성, 동료 검토까지 전체 과학 연구 프로세스를 자동으로 처리할 수 있다. 한 편의 논문 생성에 15달러 미만의 비용이 소요되며, 자동 리뷰 시스템이 인간 수준에 가까운 성능으로 논문 품질을 평가한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Research_Concept_Extraction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lu et al._2024_The AI Scientist Towards Fully Automated Open-Ended Scientific Discovery.pdf"
 ---
@@ -139,34 +141,44 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lu et al._2024_The AI Scientist Towards 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/834_Towards_Scientific_Discovery_with_Generative_AI_Progress_Opp/review]] — 생성형 AI를 이용한 과학 발견의 이론적 프레임워크를 완전 자동화 시스템으로 구현한다
-- ⚖️ 반론/비판: [[papers/081_Ai_scientists_fail_without_strong_implementation_capability/review]] — AI 과학자의 성공 사례에 대해 구현 능력 부족이라는 비판적 관점을 제시한다
-- 🔗 후속 연구: [[papers/321_Evaluating_Sakanas_AI_Scientist_Bold_Claims_Mixed_Results_an/review]] — AI Scientist의 실제 연구 수행 능력을 다양한 관점에서 평가한 확장 연구다
-- 🧪 응용 사례: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — 과학 발견 엔진의 구체적 구현체로서 노벨 튜링 챌린지에 부응하는 시스템을 제시한다
-- 🔗 후속 연구: [[papers/353_From_Automation_to_Autonomy_A_Survey_on_Large_Language_Model/review]] — 완전 자동화된 AI 과학자 개발 사례로 본 논문이 제시한 자율적 에이전트로의 진화를 실제 구현한다.
-- 🏛 기반 연구: [[papers/268_Democratizing_AI_scientists_using_ToolUniverse/review]] — 자동화된 과학 발견이 AI 과학자 민주화의 기반을 제공합니다.
-- 🧪 응용 사례: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — DeepSeek-R1의 자기 검증 능력은 AI Scientist의 완전 자동화된 과학 발견에서 핵심적인 추론 검증 모듈로 활용될 수 있다.
-- 🔗 후속 연구: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — AI를 통한 과학적 발견의 일반적 조망이 완전 자동화된 AI 과학자 시스템의 구체적 구현으로 발전했다
-- 🔗 후속 연구: [[papers/137_Autonomous_Agents_for_Scientific_Discovery_Orchestrating_Sci/review]] — 완전 자동화된 과학 발견을 자율 과학 에이전트의 구체적 실현으로 확장할 수 있다
-- ⚖️ 반론/비판: [[papers/044_Accelerating_Scientific_Research_with_Gemini_Case_Studies_an/review]] — 인간-AI 협력을 강조하는 반면 완전 자동화된 과학 발견을 추구하여 서로 다른 AI 과학 철학을 보입니다.
-- 🧪 응용 사례: [[papers/056_Advancing_the_scientific_method_with_large_language_models_F/review]] — 완전 자동화된 오픈엔드 과학자 AI가 LLM으로 변화하는 과학 방법론의 구체적 실현 사례이다.
-- 🔗 후속 연구: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — AI Scientist의 초기 구현을 완전 자동화된 개방형 과학 발견으로 발전시킨다.
-- 🔄 다른 접근: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — LLM 기반 과학 연구 자동화 시스템이지만 재료 과학 특화 vs 범용 과학 연구의 차이를 비교할 수 있다
-- 🏛 기반 연구: [[papers/834_Towards_Scientific_Discovery_with_Generative_AI_Progress_Opp/review]] — 완전 자동화 과학 연구 시스템의 현실적 한계와 필요 구성 요소에 대한 이론적 기반을 제공한다
-- ⚖️ 반론/비판: [[papers/081_Ai_scientists_fail_without_strong_implementation_capability/review]] — AI Scientist의 성과에 대해 구현 능력 부족이라는 근본적 한계를 제기한다
-- 🏛 기반 연구: [[papers/784_Systematic_Framework_of_Application_Methods_for_Large_Langua/review]] — 완전 자동화 과학 연구 시스템 구축에 체계적인 LLM 응용 방법론의 기반을 제공한다
-- 🧪 응용 사례: [[papers/076_AI_for_Science_An_Emerging_Agenda/review]] — AI for Science 로드맵을 실제 자동화된 과학 발견 시스템으로 구현한 사례
-- 🔄 다른 접근: [[papers/1083_A_framework_for_discovering_scientific_equations_with_large/review]] — LLM 기반 과학 방정식 발견과 완전 자동화된 과학 발견의 다른 접근법
-- 🔗 후속 연구: [[papers/188_Can_we_automatize_scientific_discovery_in_the_cognitive_scie/review]] — 완전 자동화된 과학 발견에서 인지과학 특화 자동화로의 확장
-- ⚖️ 반론/비판: [[papers/321_Evaluating_Sakanas_AI_Scientist_Bold_Claims_Mixed_Results_an/review]] — AI Scientist의 심각한 결함 발견이 완전 자동화된 과학 발견의 한계를 지적
-- 🔄 다른 접근: [[papers/922_Vibe_physics_The_AI_grad_student/review]] — AI를 활용한 과학 연구 자동화의 두 가지 접근법을 비교하여 인간 감독 vs 완전 자동화의 장단점을 파악할 수 있다.
-- 🔄 다른 접근: [[papers/352_From_AI_for_Science_to_Agentic_Science_A_Survey_on_Autonomou/review]] — 에이전틱 사이언스와 AI 과학자의 서로 다른 자율적 과학 연구 패러다임을 비교하여 각각의 강점과 한계를 명확히 할 수 있다.
-- 🏛 기반 연구: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — AI 과학자의 초기 개념과 구현을 완전한 엔드투엔드 시스템으로 발전시킨 진화 과정을 보여준다.
-- ⚖️ 반론/비판: [[papers/326_Exp-bench_Can_ai_conduct_ai_research_experiments_arXiv_prepr/review]] — AI Scientist의 완전 자동화된 과학 발견 주장에 대해 EXP-Bench가 현재 AI 에이전트의 실제 실험 성공률 한계를 실증적으로 반박한다.
-- 🏛 기반 연구: [[papers/825_Towards_an_AI_co-scientist/review]] — AI Scientist의 완전 자동화된 과학 발견 방법론이 Gemini 2.0 기반 AI co-scientist 시스템 개발의 기본적인 기술적 토대를 제공한다.
-- 🔄 다른 접근: [[papers/1094_Towards_a_Medical_AI_Scientist/review]] — 의료 AI 과학자와 The AI Scientist는 모두 자율 과학 연구를 다루지만, 임상 의학 특화와 범용 과학 발견이라는 서로 다른 도메인 접근법을 취합니다.
-- 🔄 다른 접근: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — AI Scientist-v2와 원래 AI Scientist 모두 완전 자동화된 과학 발견을 추구하지만 에이전트 기반 트리 서치 vs 기본적인 자동화 접근을 사용한다.
-- 🔄 다른 접근: [[papers/817_Toward_a_Team_of_AI-made_Scientists_for_Scientific_Discovery/review]] — AI 과학자 자동화 시스템의 또 다른 구현으로 완전 자동화된 과학 발견 프레임워크를 제시한다.
-- 🔄 다른 접근: [[papers/436_InternAgent_When_Agent_Becomes_the_Scientist_--_Building_Clo/review]] — 완전 자동화된 과학 발견에서 폐쇄 루프 시스템과 오픈엔드 시스템이라는 다른 접근법을 제시한다.
-- 🔄 다른 접근: [[papers/041_Aaar-10_Assessing_ais_potential_to_assist_research/review]] — AI의 연구 지원 능력 평가와 완전 자동화된 AI 과학자 개발이라는 서로 다른 AI 과학 연구 접근법을 제시합니다.
-- 🔗 후속 연구: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — 분산 컴퓨팅을 활용한 단백질 동역학 연구가 완전 자동화된 과학 발견 시스템의 핵심 구성요소가 될 수 있다
+- 🏛 기반 연구: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — 노벨 튜링 챌린지의 거대한 비전이 AI Scientist의 구체적 구현을 위한 목표와 방향성을 제시한다
+- ⚖️ 반론/비판: [[papers/081_Ai_scientists_fail_without_strong_implementation_capability/review]] — AI 과학자의 구현 능력 부족 지적이 완전 자동화 과학 발견 시스템의 현실적 한계를 비판적으로 제시한다
+- 🔗 후속 연구: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — AI Scientist-v2의 워크샵 수준 자동화가 기존 AI Scientist의 확장된 능력을 보여준다
+- 🔗 후속 연구: [[papers/353_From_Automation_to_Autonomy_A_Survey_on_Large_Language_Model/review]] — AI의 과학적 자율성 발전을 이론적 분석에서 실제 구현 단계로 확장시킨다.
+- 🔗 후속 연구: [[papers/857_Unlocking_the_Potential_of_AI_Researchers_in_Scientific_Disc/review]] — 완전 자동화된 과학 발견을 위한 AI 과학자의 구체적인 구현 사례를 제시한다
+- 🧪 응용 사례: [[papers/749_Sequence_modeling_and_design_from_molecular_to_genome_scale/review]] — Evo의 genomic modeling 능력을 실제 과학적 발견에 적용하는 자동화된 연구 시스템의 사례이다.
+- 🔗 후속 연구: [[papers/064_Agentic_AI_for_Scientific_Discovery_A_Survey_of_Progress_Cha/review]] — 자동화된 과학 발견을 완전 자율적이고 개방형 과학 연구로 확장하는 발전된 비전을 제시한다
+- 🧪 응용 사례: [[papers/090_AIRS-Bench_a_Suite_of_Tasks_for_Frontier_AI_Research_Science/review]] — AI Scientist의 완전 자동화된 과학 발견 접근법이 AIRS-Bench 벤치마크 검증에 실제 적용될 수 있다.
+- 🏛 기반 연구: [[papers/086_AI-Researcher_Autonomous_Scientific_Innovation/review]] — 완전 자동화된 과학 발견의 기반이 되는 AI 과학자 시스템을 제시한다
+- 🔗 후속 연구: [[papers/038_A_vision_for_auto_research_with_llm_agents/review]] — 완전 자동화된 과학적 발견으로 자동 연구 비전을 구체적으로 구현한 연구이다.
+- 🧪 응용 사례: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — RL로 훈련된 추론 능력이 자동화된 과학 연구에서 실제로 활용될 수 있는 가능성을 보여준다.
+- 🧪 응용 사례: [[papers/066_Agentic_Personas_for_Adaptive_Scientific_Explanations_with_K/review]] — 에이전틱 페르소나 기반 적응형 설명이 자동화된 과학 발견에서 실제로 활용될 수 있다.
+- 🧪 응용 사례: [[papers/845_Trust_But_Verify_A_Self-Verification_Approach_to_Reinforceme/review]] — 완전 자동화된 과학 연구에서 자기검증 메커니즘이 AI 과학자의 신뢰성 확보에 직접 적용될 수 있다.
+- 🔗 후속 연구: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — AI 시대 과학적 발견의 현재 상황을 완전 자동화된 미래 과학자로 발전시킨 비전
+- 🔗 후속 연구: [[papers/137_Autonomous_Agents_for_Scientific_Discovery_Orchestrating_Sci/review]] — 과학 발견 자율 에이전트의 이론적 프레임워크가 완전 자동화된 과학 연구 시스템으로 구체화됨
+- 🔗 후속 연구: [[papers/044_Accelerating_Scientific_Research_with_Gemini_Case_Studies_an/review]] — Gemini를 활용한 과학 연구 협력 사례가 완전 자동화된 AI 과학자 시스템으로 발전함
+- 🔗 후속 연구: [[papers/089_Aigs_Generating_science_from_ai-powered_automated_falsificat/review]] — AIGS의 반증 기반 자율 연구 방법론을 실제 과학 발견에 완전히 적용한 발전된 형태의 AI 과학자 시스템이다
+- 🔗 후속 연구: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — 완전 자동화된 오픈 엔디드 과학 발견 연구가 LLM을 통한 과학 변환의 구체적인 구현 사례로 발전되었다
+- 🧪 응용 사례: [[papers/1093_The_fifth_era_of_science_Artificial_scientific_intelligence/review]] — 과학의 새로운 패러다임 이론을 완전 자동화된 과학적 발견이라는 구체적 구현 사례로 보여준다
+- 🔗 후속 연구: [[papers/056_Advancing_the_scientific_method_with_large_language_models_F/review]] — 과학 방법론 지원에서 완전 자동화된 과학 발견으로 발전하는 궁극적 목표를 제시한다
+- 🔗 후속 연구: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — AI Scientist의 구체적 구현이 노벨 튜링 챌린지의 실현 가능성을 입증하는 중요한 이정표 역할을 한다
+- 🔄 다른 접근: [[papers/834_Towards_Scientific_Discovery_with_Generative_AI_Progress_Opp/review]] — 생성형 AI의 과학 발견 진전과 기회 분석이 AI Scientist의 구체적 구현과 상호보완적 관점을 제공한다
+- ⚖️ 반론/비판: [[papers/081_Ai_scientists_fail_without_strong_implementation_capability/review]] — AI Scientist의 강한 구현 능력 부족 지적이 완전 자동화 과학 발견 시스템의 한계를 비판적으로 분석한다
+- ⚖️ 반론/비판: [[papers/321_Evaluating_Sakanas_AI_Scientist_Bold_Claims_Mixed_Results_an/review]] — Sakana AI Scientist의 원본 시스템에 대한 체계적 평가로 자율적 연구의 현실적 한계를 드러낸다
+- ⚖️ 반론/비판: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — 완전 자동화된 과학 발견과 대조적으로, 인간 의료진과의 협력이 필수인 의료 AI의 한계를 보여준다.
+- 🏛 기반 연구: [[papers/352_From_AI_for_Science_to_Agentic_Science_A_Survey_on_Autonomou/review]] — 완전 자동화된 과학 연구의 원본 시스템으로서 에이전틱 사이언스의 실제 구현 기반을 제공한다
+- 🔄 다른 접근: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — 완전 자동화된 오픈엔드 과학 발견에 대한 다른 시각과 접근을 제시하여, AI Scientist 시스템과 비교 분석 가능
+- 🔗 후속 연구: [[papers/326_Exp-bench_Can_ai_conduct_ai_research_experiments_arXiv_prepr/review]] — 완전 자동화된 과학 연구 시스템으로, EXP-Bench에서 평가한 실험 수행 능력의 한계를 극복하는 더 발전된 AI 과학자 구현을 보여준다
+- 🔗 후속 연구: [[papers/825_Towards_an_AI_co-scientist/review]] — 완전 자동화된 과학적 발견을 다루는 AI Scientist의 연구 범위를 다중 에이전트 협업과 가설 생성-개선 사이클로 더욱 정교하게 발전시킴
+- 🔄 다른 접근: [[papers/826_Towards_Autonomous_Mathematics_Research/review]] — AI 과학자의 완전 자동화라는 공통 목표를 가지지만 수학 vs 일반 과학 연구라는 다른 도메인에 특화된 접근법을 사용한다.
+- 🏛 기반 연구: [[papers/059_Agent_Laboratory_Using_LLM_Agents_as_Research_Assistants/review]] — 완전 자동화된 과학 발견의 이론적 기반을 바탕으로 인간의 연구 아이디어 실행을 지원하는 실용적 프레임워크를 구현한다
+- 🔗 후속 연구: [[papers/1094_Towards_a_Medical_AI_Scientist/review]] — 완전 자동화된 과학 발견에서 임상 의학 연구에 특화된 AI 과학자로의 도메인별 특화 발전을 보여준다
+- 🔗 후속 연구: [[papers/578_Novelseek_When_agent_becomes_the_scientistbuilding_closed-lo/review]] — AI Scientist의 완전 자동화 과학 발견을 NovelSeek이 다중 에이전트 협력을 통해 실용적으로 구현한 확장
+- 🔄 다른 접근: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — 두 시스템 모두 완전 자동화된 과학 발견을 목표로 하지만 v2는 워크숍 수준, 원래 AI Scientist는 기초 수준을 다룬다.
+- 🔗 후속 연구: [[papers/436_InternAgent_When_Agent_Becomes_the_Scientist_--_Building_Clo/review]] — AI Scientist의 완전 자동화 과학 발견 비전을 InternAgent가 다중 에이전트와 인간 피드백을 통해 실용적으로 구현함
+- 🧪 응용 사례: [[papers/146_Autosdt_Scaling_data-driven_discovery_tasks_toward_open_co-s/review]] — 완전 자동화된 과학 연구 시스템으로, 데이터 주도 발견 능력을 실제 과학 연구에 적용한 사례입니다.
+- 🧪 응용 사례: [[papers/601_PaperBanana_Automating_Academic_Illustration_for_AI_Scientis/review]] — AI 과학자의 시각화 병목 문제를 해결하기 위해 에이전트 기반 자동 일러스트레이션 생성이라는 구체적 솔루션을 제공한다.
+- 🔗 후속 연구: [[papers/672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/review]] — AI Scientist는 완전 자동화된 과학 연구를 목표로 하여, ResearchGym에서 발견한 능력-신뢰성 격차를 해결하는 더 발전된 시스템을 제시한다
+- 🏛 기반 연구: [[papers/550_MLRC-Bench_Can_Language_Agents_Solve_Machine_Learning_Resear/review]] — AI 과학자의 실제 연구 능력 평가를 위한 기초적인 벤치마킹 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/021_A_Review_on_Scientific_Knowledge_Extraction_using_Large_Lang/review]] — 의료 문헌 분석에서 완전 자동화된 과학 발견으로 확장된 미래 비전을 보여준다.
+- 🧪 응용 사례: [[papers/1087_Gpt4_is_slightly_helpful_for_peer-review_assistance_A_pilot/review]] — 완전 자동화된 과학 발견에서 GPT-4의 피어리뷰 보조 기능이 실제로 적용되는 사례를 제공한다.

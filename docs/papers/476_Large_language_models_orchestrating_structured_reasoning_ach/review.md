@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 Kolb의 경험적 학습 이론(Experiential Learning Theory)과 Vygotsky의 근접발달영역(Zone of Proximal Development, ZPD)을 계산적으로 구현한 Agent K를 제시하며, 이를 통해 LLM 기반 자율 에이전트가 실제 데이터 과학 경진대회(Kaggle)에서 최상위 인간 수준의 성능을 달성하였다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-agent_Task_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Large language models orchestrating structured reasoning achieve kaggle grandmaster level.pdf"
 ---
@@ -158,8 +160,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Large language models o
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/594_OSDA_Agent_Leveraging_Large_Language_Models_for_De_Novo_Desi/review]] — Kaggle 경쟁과 자동화된 데이터 과학에서 각각 학습 이론과 케이스 기반 추론이라는 서로 다른 이론적 기반을 사용한다.
-- 🔗 후속 연구: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — 데이터 과학 경쟁에서 검증된 자율 학습 능력을 과학 연구 전체 과정으로 확장하여 완전 자동화를 달성한다.
-- 🏛 기반 연구: [[papers/121_Autokaggle_A_multi-agent_framework_for_autonomous_data_scien/review]] — 자동화된 데이터 과학의 다중 에이전트 접근법에 대한 구체적 구현 사례를 제공한다.
-- 🔗 후속 연구: [[papers/429_Infiagent-dabench_Evaluating_agents_on_data_analysis_tasks/review]] — 기본적인 데이터 분석 평가를 실제 경진대회 수준의 고난도 작업으로 확장하여 더 도전적인 벤치마크를 제공한다.
-- 🔄 다른 접근: [[papers/594_OSDA_Agent_Leveraging_Large_Language_Models_for_De_Novo_Desi/review]] — 케이스 기반 추론과 경험적 학습 이론이라는 서로 다른 이론적 접근으로 자동화된 데이터 과학을 구현한다.
+- ⚖️ 반론/비판: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — Kaggle에서 최상위 성능을 달성한 긍정적 결과로, SWE-bench의 낮은 성능과 대조되어 LLM 에이전트 능력의 다른 측면을 보여줌
+- 🔄 다른 접근: [[papers/121_Autokaggle_A_multi-agent_framework_for_autonomous_data_scien/review]] — 다중 에이전트 프레임워크를 통한 자율적 데이터 과학 접근으로, 단일 에이전트의 구조화된 추론과 다른 방식을 제시
+- 🔗 후속 연구: [[papers/293_Ds-agent_Automated_data_science_by_empowering_large_language/review]] — 대규모 언어 모델을 활용한 자동화된 데이터 과학 연구로, Kaggle 성능을 실제 데이터 과학 업무로 확장
+- 🧪 응용 사례: [[papers/650_RD-Agent_Automating_Data-Driven_AI_Solution_Building_Through/review]] — R&D 솔루션 구축을 자동화하는 데이터 기반 AI 에이전트로, 경험적 학습 이론의 실제 적용 사례
+- 🔄 다른 접근: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 실제 소프트웨어 엔지니어링 문제 해결에서 LLM 에이전트의 한계를 보여주는 연구로, 구조화된 추론을 통한 성능 향상 방법과 대조됨

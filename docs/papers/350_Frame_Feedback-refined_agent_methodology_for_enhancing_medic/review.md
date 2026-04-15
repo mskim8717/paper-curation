@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.1
 essence: "본 논문은 대규모 언어 모델(LLM)을 활용한 의료 연구 논문 자동 생성의 품질 문제를 해결하기 위해 피드백 기반 다중 에이전트 시스템(FRAME)을 제안한다. 구조화된 반복 개선과 메트릭 기반 평가를 통해 자동 생성 논문이 인간 저자 수준의 품질을 달성할 수 있음을 입증했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Structured_Research_Frameworks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/AI_Scientist_Research_Protocols"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2025_Frame Feedback-refined agent methodology for enhancing medical research insights.pdf"
 ---
@@ -138,6 +139,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2025_Frame Feedback-refined ag
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 둘 다 논문 작성 자동화를 다루지만 FRAME은 의료 연구에, OpenReviewer는 일반적 논문 생성에 집중함
-- 🏛 기반 연구: [[papers/126_Automated_review_generation_method_based_on_large_language_m/review]] — LLM 기반 자동 리뷰 생성 방법이 FRAME의 피드백 기반 다중 에이전트 시스템 설계의 기초가 됨
-- 🔗 후속 연구: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 체크리스트 기반 반복적 메타 리뷰 생성이 FRAME의 구조화된 반복 개선 과정을 더욱 체계화함
+- 🔄 다른 접근: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 의료 연구 논문 생성과 제로샷 의료 진단에서 피드백 기반 다중 에이전트 시스템과 협력적 LLM 접근법의 차이를 비교할 수 있다.
+- 🔗 후속 연구: [[papers/616_PharmAgents_Building_a_Virtual_Pharma_with_Large_Language_Mo/review]] — 가상 제약회사 구축 연구와 의료 연구 논문 생성을 결합하면 의약품 개발 전 과정의 자동화된 문서화 시스템을 구축할 수 있다.

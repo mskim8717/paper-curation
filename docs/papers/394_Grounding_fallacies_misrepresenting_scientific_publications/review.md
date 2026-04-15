@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.2
 essence: "건강 관련 허위정보는 신뢰할 수 있는 생의학 논문을 증거로 잘못 인용하며, 논리적 오류(logical fallacy)를 적용하여 거짓 주장을 지원하는 것처럼 보이게 한다. 본 논문은 실제 학술지 구절에 기반하여 이러한 오류를 탐지하고 설명하기 위해 MISSCIPLUS 데이터셋을 제시한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Citation_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Glockner et al._2024_Grounding fallacies misrepresenting scientific publications in evidence.pdf"
 ---
@@ -108,8 +109,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Glockner et al._2024_Grounding fallacies
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/827_Towards_effective_extraction_and_evaluation_of_factual_claim/review]] — 일반적인 팩트체킹에서 과학 출판물 오용을 탐지하는 특화된 도메인으로 확장하여 더 구체적인 문제를 다룸
-- 🔄 다른 접근: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 둘 다 복잡한 사실 검증을 다루지만 하나는 과학 논문 오용, 다른 하나는 일반적 복잡한 주장에 중점을 둠
-- 🏛 기반 연구: [[papers/460_Language_models_surface_the_unwritten_code_of_science_and_so/review]] — 과학과 사회의 암묵적 편향을 드러내는 연구가 과학 출판물을 잘못 인용하는 논리적 오류 탐지의 맥락을 제공함
-- 🔗 후속 연구: [[papers/460_Language_models_surface_the_unwritten_code_of_science_and_so/review]] — 과학과 사회의 암묵적 편향을 드러내는 일반적 접근을 과학 출판물 오용 탐지라는 구체적 응용으로 확장함
-- 🏛 기반 연구: [[papers/827_Towards_effective_extraction_and_evaluation_of_factual_claim/review]] — 과학 출판물 오용에 대한 구체적 연구가 일반적인 주장 추출과 평가 프레임워크 개발의 실제적 동기를 제공함
+- 🔗 후속 연구: [[papers/183_Can_large_language_models_detect_misinformation_in_scientifi/review]] — 과학적 허위정보 탐지에서 논리적 오류 분석과 LLM 기반 탐지 방법이 상호 보완적으로 작용한다.
+- 🏛 기반 연구: [[papers/373_Generalization_Bias_in_Large_Language_Model_Summarization_of/review]] — 과학 논문의 잘못된 인용과 LLM 요약의 과도한 일반화는 모두 과학 지식 왜곡의 근본 원인이다.
+- 🔄 다른 접근: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — 팩트 체킹에서 논리적 오류 탐지와 반증 증거 누락 문제라는 서로 다른 관점을 제시한다.
+- 🧪 응용 사례: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 논리적 오류 탐지 방법을 다중 모달 팩트 체킹 시스템에 적용할 수 있는 실용적 연결점을 제공한다.
+- 🔗 후속 연구: [[papers/373_Generalization_Bias_in_Large_Language_Model_Summarization_of/review]] — 과학 논문의 잘못된 일반화와 허위정보에서의 논리적 오류는 모두 과학 지식의 왜곡이라는 공통 문제를 다룬다.
+- 🔗 후속 연구: [[papers/460_Language_models_surface_the_unwritten_code_of_science_and_so/review]] — 과학 출판물을 잘못 표현하는 논리적 오류 연구가 언어모델이 드러내는 과학계 불문율의 구체적 사례를 제공한다

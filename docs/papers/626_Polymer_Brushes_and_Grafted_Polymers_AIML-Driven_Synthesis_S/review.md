@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 고밀도 그래프트 중합체(polymer brush)의 합성, 시뮬레이션, 특성분석에 AI/ML 워크플로우를 통합하여, 자율 실험실(self-driving laboratory, SDL)을 통한 고속화 및 최적화를 제안하는 리뷰 논문이다. 인터페이스 화학과 콜로이드 과학의 교집합에서 다양한 응용(마이크로플루이딕스, 센서, 생체 의료용)으로의 전환을 가속화하는 데 중점을 둔다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Bioinformatics_Data_Integration"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Multi-Domain_Experimental_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Advincula and Chen_2026_Polymer Brushes and Grafted Polymers AIML-Driven Synthesis, Simulation, and Characterization towar.pdf"
 ---
@@ -130,8 +130,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Advincula and Chen_2026_Polymer Brushes 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/346_Foundation-Model_Surrogates_Enable_Data-Efficient_Active_Lea/review]] — 소재 연구 자동화라는 동일한 목표를 중합체와 일반 소재라는 다른 재료 시스템으로 접근합니다.
-- 🔗 후속 연구: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 재료과학 LLM 방법론을 중합체 브러시라는 특정 재료 시스템에 적용하는 전문화된 사례입니다.
-- 🔄 다른 접근: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — 자율 실험실 개념을 생의학과 재료과학이라는 서로 다른 연구 분야에 적용하는 학제간 접근입니다.
-- 🧪 응용 사례: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — 통합 생의학 플랫폼의 개념을 중합체 연구라는 특정 재료과학 분야에 적용하는 사례입니다.
-- 🔄 다른 접근: [[papers/346_Foundation-Model_Surrogates_Enable_Data-Efficient_Active_Lea/review]] — 소재 발견을 위한 AI/ML 워크플로우라는 동일한 목표를 다른 재료 시스템(일반 vs 중합체)으로 접근합니다.
+- 🔄 다른 접근: [[papers/380_Generative_machine_learning_in_adaptive_control_of_dynamic_m/review]] — 둘 다 제조 프로세스에서 생성형 ML을 다루지만, 중합체 브러시 논문은 고분자 합성에, 다른 논문은 일반적인 동적 제조에 집중한다
+- 🏛 기반 연구: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — 화학 및 재료과학을 위한 자율 실험실 연구가 중합체 브러시의 AI/ML 기반 합성과 최적화 워크플로우 개발에 이론적 기반을 제공한다
+- 🧪 응용 사례: [[papers/140_Autonomous_reinforcement_learning_agent_for_chemical_vapor_d/review]] — 화학 기상 증착을 위한 자율 강화학습 에이전트 연구가 중합체 브러시 합성에서 자율 실험실 구현에 실제 적용되었다
+- 🔄 다른 접근: [[papers/380_Generative_machine_learning_in_adaptive_control_of_dynamic_m/review]] — 둘 다 제조 프로세스에서 생성형 ML을 다루지만, 동적 제조는 일반적인 적응형 제어에, 중합체 브러시는 특정 합성에 집중한다

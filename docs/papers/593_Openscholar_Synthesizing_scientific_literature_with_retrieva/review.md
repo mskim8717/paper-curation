@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 4,500만 개의 오픈 액세스 과학 논문에서 관련 구절을 검색하고 인용 기반 응답을 합성하는 검색 증강 대규모 언어모델(RAG-LM) 기반 시스템 OpenScholar를 제안하며, 함께 과학 논문 합성 평가를 위한 대규모 벤치마크 ScholarQA-Bench를 소개한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Literature_Summarization"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scholarly_Question_Answering"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Asai et al._2024_Openscholar Synthesizing scientific literature with retrieval-augmented lms.pdf"
 ---
@@ -129,17 +129,21 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Asai et al._2024_Openscholar Synthesizin
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/335_Few-shot_Learning_with_Retrieval_Augmented_Language_Models/review]] — 소규모 검색 증강 모델의 기본 개념을 4천500만 개 논문을 다루는 대규모 과학 문헌 시스템으로 발전시킨 연구입니다.
-- 🔄 다른 접근: [[papers/224_Clinical_entity_augmented_retrieval_for_clinical_information/review]] — 일반적인 과학 문헌 검색 합성과 임상 도메인 특화 엔티티 기반 검색이라는 서로 다른 전문 분야 접근법입니다.
-- 🏛 기반 연구: [[papers/812_TLDR_Extreme_Summarization_of_Scientific_Documents/review]] — 과학 논문 극단적 요약 연구가 대규모 문헌 검색 합성 시스템의 요약 생성 모듈 개발에 기초 기술을 제공합니다.
-- 🔄 다른 접근: [[papers/386_Google_Scholar_to_overshadow_them_all_Comparing_the_sizes_of/review]] — 검색 증강 문헌 합성 도구로 기존 학술 데이터베이스와 다른 접근의 과학 문헌 접근 방식을 제시한다.
-- 🔗 후속 연구: [[papers/493_Litllm_A_toolkit_for_scientific_literature_review/review]] — 검색 증강 생성을 통한 과학 문헌 합성이 LitLLM의 관련 연구 섹션 작성을 더 포괄적인 문헌 통합으로 확장한다.
-- 🔗 후속 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 과학 문헌 합성을 위한 검색 증강을 일반적인 RAG 시스템의 과학 특화 확장으로 발전시킬 수 있다
-- 🔗 후속 연구: [[papers/404_Hiperrag_High-performance_retrieval_augmented_generation_for/review]] — 과학 문헌 합성을 위한 검색 증강 방법이 HiPerRAG의 대규모 처리 능력과 결합될 수 있습니다.
-- 🔄 다른 접근: [[papers/224_Clinical_entity_augmented_retrieval_for_clinical_information/review]] — 임상 정보 추출을 위한 엔티티 기반 검색과 과학 문헌 합성을 위한 일반적 검색 증강의 서로 다른 접근법을 제시합니다.
-- 🔗 후속 연구: [[papers/335_Few-shot_Learning_with_Retrieval_Augmented_Language_Models/review]] — 소규모 검색 증강 모델의 기본 아이디어를 대규모 과학 문헌 데이터베이스로 확장한 발전된 형태의 연구입니다.
-- 🏛 기반 연구: [[papers/768_Splade_v2_Sparse_lexical_and_expansion_model_for_information/review]] — 희소-밀집 하이브리드 검색 모델이 대규모 과학문헌 검색 시스템의 첫 단계 검색기로 활용될 수 있는 기술적 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/812_TLDR_Extreme_Summarization_of_Scientific_Documents/review]] — 과학 논문의 극단적 요약에서 전체 과학 문헌의 종합적 검색과 합성으로 확장한 더 포괄적인 연구입니다.
-- 🔄 다른 접근: [[papers/457_Language_agents_achieve_superhuman_synthesis_of_scientific_k/review]] — OpenScholar가 과학 문헌 합성에 초점을 맞춘 반면, PaperQA2는 정확한 정보 검색과 요약에 특화되어 서로 다른 강점을 가진 상호 보완적 시스템임
-- 🔄 다른 접근: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — OpenScholar의 과학 문헌 합성 접근법이 PaperQA의 검색 증강 방식과 다른 각도에서 대규모 과학 지식 처리 문제를 해결하는 대안적 방법론을 제시함
-- 🔄 다른 접근: [[papers/087_Ai2_scholar_qa_Organized_literature_synthesis_with_attributi/review]] — 과학 문헌을 검색하고 합성하는 오픈 시스템으로 동일한 목표를 다른 구조로 달성한다.
+- 🏛 기반 연구: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — REALM의 검색 증강 사전훈련 방법론이 OpenScholar의 과학논문 검색 증강 생성의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/034_A_Survey_on_RAG_Meeting_LLMs_Towards_Retrieval-Augmented_Lar/review]] — RAG 기반 LLM 서베이의 방법론을 과학문헌 특화 도메인으로 확장하여 구체적인 구현체를 제시한다.
+- 🔄 다른 접근: [[papers/087_Ai2_scholar_qa_Organized_literature_synthesis_with_attributi/review]] — AI2 Scholar QA와 유사하게 학술 문헌 종합을 다루지만 더 대규모 오픈 액세스 데이터로 접근한다.
+- 🏛 기반 연구: [[papers/373_Generalization_Bias_in_Large_Language_Model_Summarization_of/review]] — 과학 문헌 합성에서 LLM의 신뢰성 있는 요약 생성을 위한 기반 시스템을 제공한다.
+- 🔄 다른 접근: [[papers/493_Litllm_A_toolkit_for_scientific_literature_review/review]] — 문헌 리뷰 자동화와 과학 문헌 종합이 서로 다른 접근으로 학술 정보 처리 문제를 해결한다
+- 🏛 기반 연구: [[papers/604_Pasa_An_llm_agent_for_comprehensive_academic_paper_search/review]] — 과학 문헌 합성을 위한 검색 증강 기법의 기반을 제공한다
+- 🔗 후속 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — RAG의 일반적 프레임워크가 과학 문헌 합성에 특화된 OpenScholar 시스템으로 구체화됨
+- 🔄 다른 접근: [[papers/404_Hiperrag_High-performance_retrieval_augmented_generation_for/review]] — 과학 문헌 검색과 합성을 위한 서로 다른 접근법을 제시하여, 대규모 과학 지식 처리 시스템 설계 관점을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/862_Using_artificial_intelligence_for_systematic_review_the_exam/review]] — OpenScholar의 과학문헌 합성 기능을 체계적 문헌고찰로 특화한 구체적 적용이다
+- 🔗 후속 연구: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — 과학 문헌 검색 및 합성 기능을 통해 분자 문법 학습에 필요한 화학 지식을 체계적으로 확장할 수 있음
+- 🧪 응용 사례: [[papers/773_Stealing_creators_workflow_A_creator-inspired_agentic_framew/review]] — 과학 문헌 합성 기술을 짧은 형식 동영상 제작이라는 새로운 매체에 적용한다
+- 🔗 후속 연구: [[papers/812_TLDR_Extreme_Summarization_of_Scientific_Documents/review]] — 과학 문헌 합성을 위한 검색 기반 시스템으로, 극단적 요약을 넘어 포괄적인 문헌 종합 기능을 제공합니다.
+- 🔄 다른 접근: [[papers/457_Language_agents_achieve_superhuman_synthesis_of_scientific_k/review]] — OpenScholar는 과학 문헌 합성에 특화된 검색 증강 모델로, PaperQA2와 다른 아키텍처로 유사한 문제를 해결한다
+- 🔄 다른 접근: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — 검색 증강 생성과 과학문헌 합성은 과학 연구에서 서로 다른 정보 활용 접근법을 제시한다
+- 🔗 후속 연구: [[papers/087_Ai2_scholar_qa_Organized_literature_synthesis_with_attributi/review]] — OpenScholar의 과학 문헌 합성 기능을 질의응답 형태로 확장하여 더 직관적인 사용자 인터페이스를 제공한다.
+- 🏛 기반 연구: [[papers/178_Can_ai_examine_novelty_of_patents_Novelty_evaluation_based_o/review]] — 과학 문헌의 검색 증강 합성이 특허 신규성 평가를 위한 선행 기술 분석의 토대를 제공한다.
+- 🧪 응용 사례: [[papers/897_Can_AI_review_the_scientific_literature__and_figure_out_what/review]] — 과학 문헌 종합을 위한 검색 증강 시스템으로 AI 문헌 검토의 구체적 구현 사례를 제시한다
+- 🧪 응용 사례: [[papers/318_Estimating_optimal_context_length_for_hybrid_retrievalaugmen/review]] — 과학 문헌 합성 시스템에 최적화된 검색 컨텍스트 길이 추정을 실제 적용한다

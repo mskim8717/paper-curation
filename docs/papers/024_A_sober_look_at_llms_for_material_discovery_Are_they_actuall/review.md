@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)이 분자 공간에서의 베이지안 최적화(BO)에 실제로 유용한지를 엄밀하게 평가하며, 베이지안 서로게이트 모델을 통해 원칙적인 불확실성 정량화를 제공한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Materials_Discovery_Hypotheses"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kristiadi et al._2024_A sober look at llms for material discovery Are they actually good for bayesian optimization over m.pdf"
 ---
@@ -89,7 +91,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kristiadi et al._2024_A sober look at ll
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/569_Nanostructured_Material_Design_via_a_Retrieval-Augmented_Gen/review]] — 소재 발견에서 LLM의 한계를 지적하는 회의적 관점이 ACCELMAT의 LLM 활용 낙관론과 대조됨
-- 🏛 기반 연구: [[papers/867_Verifier-Constrained_Flow_Expansion_for_Discovery_Beyond_the/review]] — 베이지안 최적화의 원칙적 불확실성 정량화가 Flow 모델의 검증기 제약 프레임워크에서 유효성 보장의 기반이 됨
-- 🔗 후속 연구: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 알고리즘을 통한 표적 소재 발견이 LLM의 분자 공간 베이지안 최적화 유용성을 실제로 검증함
-- ⚖️ 반론/비판: [[papers/569_Nanostructured_Material_Design_via_a_Retrieval-Augmented_Gen/review]] — ACCELMAT는 LLM의 소재 발견 가능성을 낙관하는 반면, 베이지안 최적화 논문은 LLM의 실제 유용성에 회의적 관점을 제시함
+- 🔄 다른 접근: [[papers/153_Best_humans_still_outperform_artificial_intelligence_in_a_cr/review]] — 재료 발견에서 LLM의 실용성과 창의성 영역에서 인간과 AI 비교라는 서로 다른 관점을 제시한다.
+- 🔗 후속 연구: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 최적화를 활용한 재료 발견에서 LLM 평가와 타겟 재료 발견이 상호 보완적 접근법을 보여준다.
+- 🏛 기반 연구: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 재료 발견과 설계에서 LLM을 활용한 가설 생성이 베이지안 최적화 평가의 이론적 토대를 제공한다.
+- 🧪 응용 사례: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료 과학에서 AI 조사와 LLM의 실제 유용성 평가가 재료 발견 분야의 포괄적 이해를 제공한다.
+- 🔄 다른 접근: [[papers/153_Best_humans_still_outperform_artificial_intelligence_in_a_cr/review]] — 창의성 영역에서 인간과 AI 비교와 재료 발견에서 LLM 실용성 평가라는 서로 다른 AI 능력 평가 접근법을 보여준다.

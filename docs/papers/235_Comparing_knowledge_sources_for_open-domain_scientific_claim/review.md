@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 과학적 주장 검증(scientific claim verification) 시스템에서 서로 다른 지식 소스(PubMed, Wikipedia, Google)와 정보 검색 기법(BM25, 의미 검색)이 최종 판정 성능에 미치는 영향을 비교 분석한 실증 연구이다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Zero-Shot_Claim_Verification"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Vladika and Matthes_2024_Comparing knowledge sources for open-domain scientific claim verification.pdf"
 ---
@@ -86,6 +86,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Vladika and Matthes_2024_Comparing knowl
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프를 통한 사실 검증으로 본 논문의 과학적 주장 검증에서 구조화된 지식의 활용 기반을 제공한다.
-- ⚖️ 반론/비판: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — NLP 사실 확인에서 반박 증거 부족 문제를 지적하여 본 논문의 지식 소스 비교 연구의 한계를 제시한다.
-- 🔗 후속 연구: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 설명 가능한 생물의학 주장 검증 연구로 본 논문의 과학적 주장 검증을 의료 도메인으로 확장한다.
+- 🏛 기반 연구: [[papers/087_Ai2_scholar_qa_Organized_literature_synthesis_with_attributi/review]] — 과학적 주장 검증을 위한 지식 소스 비교 연구가 문헌 기반 질의응답 시스템의 신뢰성과 정확성 확보에 중요한 기반을 제공한다.
+- 🧪 응용 사례: [[papers/222_Clam_Selective_clarification_for_ambiguous_questions_with_ge/review]] — 선택적 명확화 기법이 과학적 주장 검증에서 모호한 증거나 상충하는 정보 처리에 직접 적용될 수 있다.
+- 🔗 후속 연구: [[papers/711_Sciclaims_An_end-to-end_generative_system_for_biomedical_cla/review]] — 과학적 주장 검증 연구를 바이오메디컬 클레임의 엔드투엔드 생성 시스템으로 확장하여 더 실용적인 응용을 제공한다.
+- 🏛 기반 연구: [[papers/087_Ai2_scholar_qa_Organized_literature_synthesis_with_attributi/review]] — 과학적 주장 검증을 위한 지식 소스 비교 연구가 문헌 기반 질의응답 시스템의 신뢰성 확보에 중요한 기반을 제공한다.
+- 🏛 기반 연구: [[papers/222_Clam_Selective_clarification_for_ambiguous_questions_with_ge/review]] — 애매한 질문에 대한 선택적 명확화 기법이 과학적 주장 검증에서 불분명한 증거 해석 문제 해결의 기반을 제공한다.

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 실제 전자의무기록(EHR)과 임상 시나리오에서 도출된 2,996개 문제로 구성된 종합적 의료 LLM 평가 벤치마크 LLMEval-Med를 제시한다. 의료 전문가 검증과 동적 평가 프레임워크를 통해 의료 AI 시스템의 안전하고 효과적인 배포를 위한 신뢰성 있는 평가 도구를 제공한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/Expert_Review_Automation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Automated_Scientific_Review"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Llmeval-med A real-world clinical benchmark for medical llms with physician validation.pdf"
 ---
@@ -94,12 +96,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Llmeval-med A real-wor
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/014_A_multimodal_generative_AI_copilot_for_human_pathology/review]] — 병리학 분야의 멀티모달 AI 시스템으로 의료 LLM 평가의 다른 접근 방식을 보여준다.
-- 🔗 후속 연구: [[papers/128_Automatically_evaluating_the_paper_reviewing_capability_of_l/review]] — LLM의 논문 리뷰 능력 평가 방법론을 의료 도메인에 적용하여 전문가 검증의 중요성을 입증한다.
-- 🏛 기반 연구: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — 의료 분야 LLM의 추론 능력 개발 연구로 LLMEval-Med의 평가 기준 설계에 참고가 된다.
-- 🔄 다른 접근: [[papers/014_A_multimodal_generative_AI_copilot_for_human_pathology/review]] — 의료 LLM의 임상 벤치마크 평가와 다른 접근으로 병리학 특화 멀티모달 AI 시스템을 제시한다.
-- 🏛 기반 연구: [[papers/861_Use_of_large_language_models_as_artificial_intelligence_tool/review]] — 의료 분야 LLM 평가 벤치마크가 의학 연구자들의 LLM 활용 연구에 기초를 제공한다.
-- 🔗 후속 연구: [[papers/068_AgentMD_Empowering_Language_Agents_for_Risk_Prediction_with/review]] — LLMEval-Med의 실제 임상 벤치마크가 AgentMD의 80% 정확도 성능을 더욱 체계적으로 평가함
-- 🔗 후속 연구: [[papers/159_Bio-sieve_exploring_instruction_tuning_large_language_models/review]] — 의료 LLM 실제 임상 벤치마크에서 체계적 문헌고찰로의 확장
-- 🧪 응용 사례: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — ClinicalGPT-R1의 진단 추론 능력을 실제 임상 벤치마크에 적용하여 의료 LLM의 실용성을 검증할 수 있다.
-- 🏛 기반 연구: [[papers/663_Reinforcing_clinical_decision_support_through_multi-agent_sy/review]] — 의료 LLM 평가를 위한 실제 임상 벤치마크로 의료 AI 시스템 평가의 기준을 제공한다.
+- 🔄 다른 접근: [[papers/041_Aaar-10_Assessing_ais_potential_to_assist_research/review]] — AI의 연구 지원 능력을 의료 전문 분야와 일반 연구 작업에서 각각 전문화된 벤치마크로 평가한다.
+- 🔗 후속 연구: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — 의료 LLM 평가가 임상 추론 능력으로 확장되어 더 포괄적인 의료 AI 평가를 제공한다.
+- 🔄 다른 접근: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 의료 LLM을 벤치마크 평가와 실제 협력 시나리오에서 각각 다른 방식으로 검증한다.
+- 🏛 기반 연구: [[papers/014_A_multimodal_generative_AI_copilot_for_human_pathology/review]] — 의료 LLM 벤치마크가 병리학 특화 AI 시스템의 성능 평가를 위한 방법론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/041_Aaar-10_Assessing_ais_potential_to_assist_research/review]] — AI의 연구 지원 능력을 일반적 연구 작업과 의료 전문 분야에서 각각 체계적으로 평가한다.
+- 🔗 후속 연구: [[papers/424_Improving_health_question_answering_with_reliable_and_time-a/review]] — 실제 임상 벤치마크를 통해 건강 질의응답 시스템의 증거 검색 최적화 연구를 의료 현장에서 검증하는 확장된 접근법이다.

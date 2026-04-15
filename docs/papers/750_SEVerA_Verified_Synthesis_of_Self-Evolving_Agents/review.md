@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.5
 essence: "자기 진화하는 LLM 에이전트의 합성에 형식적 안전성 보증을 제공하는 프레임워크이다. FGGM(Formally Guarded Generative Models)을 통해 각 모델 호출에 형식적 계약을 지정하고, 검증-학습 단계를 분리하여 제약 조건 위반 없이 성능 개선을 달성한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Multi-Hop_Reasoning_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Banerjee et al._2026_SEVerA Verified Synthesis of Self-Evolving Agents.pdf"
 ---
@@ -116,7 +117,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Banerjee et al._2026_SEVerA Verified Syn
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — 강화학습 기반 추론이 형식적 검증과 결합되어 더 안전한 자기 진화 에이전트 구현 가능
-- 🏛 기반 연구: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 정책 기반 강화학습이 형식적 안전성 보장의 기반 메커니즘으로 작용함
-- 🏛 기반 연구: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — 형식적 안전성 보증은 AI 에이전트 신뢰성의 핵심 요소임
-- 🏛 기반 연구: [[papers/438_Introspective_growth_Automatically_advancing_llm_expertise_i/review]] — 자기 진화 에이전트의 검증된 합성 방법론이 LLM의 내성적 전문성 성장 과정의 안전성과 신뢰성을 보장하는 이론적 기반을 제공함
+- 🔄 다른 접근: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — LLM 에이전트의 신뢰성을 자기검증 메커니즘으로 해결하는 다른 접근과 대조하여, 형식적 검증의 우수성을 보여줌
+- 🏛 기반 연구: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — AI 에이전트 신뢰성에 대한 과학적 접근의 기초를 제공하여, 형식적 안전성 보증 연구의 이론적 배경
+- 🔄 다른 접근: [[papers/845_Trust_But_Verify_A_Self-Verification_Approach_to_Reinforceme/review]] — 강화학습에서 자기검증 접근을 통한 신뢰성 확보 방법으로, 형식적 검증과 다른 신뢰성 보장 기법을 제시
+- 🏛 기반 연구: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 대규모 언어 모델의 신뢰성에 대한 종합적 연구로, 자기 진화 에이전트의 안전성 요구사항을 이해하는 기반
+- 🔄 다른 접근: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — LLM 에이전트의 신뢰성 문제를 형식적 검증을 통해 해결하는 다른 접근 방식을 제시하여 자기검증 메커니즘과 비교됨
+- 🔗 후속 연구: [[papers/390_Grammars_of_formal_uncertainty_When_to_trust_llms_in_automat/review]] — 에이전트 합성의 형식검증을 다루어 PCFG 기반 불확실성 정량화를 자기진화 에이전트의 안전성 보장으로 확장함

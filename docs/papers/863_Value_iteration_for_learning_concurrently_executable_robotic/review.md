@@ -9,8 +9,10 @@ arxiv: ""
 score: 3.75
 essence: "중복도(redundancy)를 가진 로봇 시스템이 여러 제어 태스크를 동시에 실행할 수 있도록 강화학습(RL)으로 학습된 가치 함수들 간의 독립성(independence)을 정의하고, 이를 만족하도록 학습하는 새로운 방법을 제안한다. 제안된 비용 함수(cost functional)를 통해 훈련된 태스크들을 우선순위 기반 스택으로 시간-변동 방식으로 조합 및 실행할 수 있다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Robot_Control_and_Policy_Robustness"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Diffusion_Model_Inference"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tahmid and Notomista_2025_Value iteration for learning concurrently executable robotic control tasks.pdf"
 ---
@@ -155,8 +157,10 @@ $$\text{s.t. } L_f\tilde{J}_i(x) + L_g\tilde{J}_i(x)u \leq -\sigma_i(x) + \delta
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 샤프니스 인식 최소화를 통한 일반화 성능 향상은 동시 실행 로봇 태스크 학습에서 각 태스크의 안정적인 수렴과 성능 개선에 이론적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/688_Robustness_evaluation_of_offline_reinforcement_learning_for/review]] — 오프라인 강화학습의 견고성 평가 방법론은 동시 실행 태스크 학습에서 개별 태스크들의 견고성과 상호 간섭 효과를 분석하는 평가 프레임워크를 제공한다.
-- 🧪 응용 사례: [[papers/249_Curriculum_Reinforcement_Learning_from_Easy_to_Hard_Tasks_Im/review]] — 커리큘럼 강화학습의 쉬운 태스크에서 어려운 태스크로의 점진적 학습은 동시 실행 태스크를 우선순위에 따라 순차적으로 학습하는 실제 구현 방법을 제시한다.
-- 🧪 응용 사례: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 동시 실행 가능한 로봇 제어 태스크 학습에서 샤프니스 인식 최소화는 각 태스크의 일반화 성능을 향상시켜 더 안정적인 멀티태스킹을 가능하게 한다.
-- 🏛 기반 연구: [[papers/688_Robustness_evaluation_of_offline_reinforcement_learning_for/review]] — 동시 실행 가능한 로봇 제어 태스크 학습 연구는 오프라인 강화학습의 견고성 평가에 멀티태스킹 환경에서의 성능 분석 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 로봇 이동 정책의 일반화를 개선하는 연구가 다중 태스크 동시 실행을 위한 독립성 학습으로 확장될 수 있다.
+- 🔄 다른 접근: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — 시뮬레이션에서 실제 환경으로의 전이 문제를 우선순위 기반 태스크 스택으로 해결하는 다른 접근법을 제시한다.
+- 🧪 응용 사례: [[papers/140_Autonomous_reinforcement_learning_agent_for_chemical_vapor_d/review]] — 화학 증착 공정 제어에서 제안된 독립적 가치함수 학습 방법이 다중 태스크 동시 실행에 적용될 수 있다.
+- 🏛 기반 연구: [[papers/010_A_hierarchical_framework_for_measuring_scientific_paper_inno/review]] — 계층적 휴머노이드 로컴션 프레임워크가 중복도를 가진 로봇 시스템의 다중 태스크 제어 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/003_A_comprehensive_survey_of_cross-domain_policy_transfer_for_e/review]] — 동시 실행 가능한 로봇 행동을 위한 가치 반복 학습 연구가 크로스 도메인 정책 전이의 구체적인 학습 방법론으로 발전되었다
+- 🏛 기반 연구: [[papers/141_Autonomous_robotic_system_with_optical_coherence_tomography/review]] — 동시 실행 가능한 로봇 기술을 위한 가치 반복 학습으로, 자율 로봇 시스템의 제어 알고리즘 기반을 제공
+- 🔄 다른 접근: [[papers/010_A_hierarchical_framework_for_measuring_scientific_paper_inno/review]] — 로봇 제어의 동시 실행이라는 공통 관심사를 가지지만 인형형 보행 vs 일반적 로봇 작업이라는 다른 응용 영역을 다룬다.

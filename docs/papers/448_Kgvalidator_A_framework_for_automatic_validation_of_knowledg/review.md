@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 대규모 언어모델(LLM)을 활용하여 지식 그래프(Knowledge Graph, KG) 완성 모델을 자동으로 검증하는 프레임워크인 KGValidator를 제안한다. 기존의 인간 주석에 의존하는 검증 방식을 LLM 기반의 생성 에이전트로 대체할 수 있음을 보여준다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2024_Kgvalidator A framework for automatic validation of knowledge graph construction.pdf"
 ---
@@ -120,9 +121,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2024_Kgvalidator A framework
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 복잡한 주장에 대한 사실 확인에서 프로그램 가이드 추론이라는 다른 검증 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프 기반 추론을 통한 사실 검증으로 지식 그래프 완성 검증을 확장한다.
-- 🏛 기반 연구: [[papers/020_A_Review_of_Relational_Machine_Learning_for_Knowledge_Graphs/review]] — 지식 그래프를 위한 관계형 기계학습에 대한 포괄적 리뷰로 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/580_Oag-bench_A_human-curated_benchmark_for_academic_graph_minin/review]] — 지식 그래프 검증 프레임워크를 OAG-Bench의 학술 그래프 마이닝 작업에 적용할 수 있다
-- 🔗 후속 연구: [[papers/735_SciToolAgent_a_knowledge-graph-driven_scientific_agent_for_m/review]] — 지식 그래프 검증 프레임워크를 과학 도구 지식 그래프의 품질 보장으로 확장할 수 있다
-- 🔗 후속 연구: [[papers/032_A_Survey_on_Knowledge_Graphs_Representation_Acquisition_and/review]] — 지식 그래프의 자동 검증 프레임워크로 본 논문의 지식 획득 방법론을 확장한다.
+- 🔗 후속 연구: [[papers/165_Biokgbench_A_knowledge_graph_checking_benchmark_of_ai_agent/review]] — BioKGBench의 지식 그래프 검증 벤치마크가 KGValidator의 자동 검증 프레임워크를 생물의학 도메인으로 확장한다.
+- 🏛 기반 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프 기반 팩트 검증이 KGValidator의 지식 그래프 완성 모델 검증의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/393_Graphusion_a_rag_framework_for_knowledge_graph_construction/review]] — Graphusion의 지식 그래프 구축과 KGValidator의 검증은 지식 그래프 생명주기의 서로 다른 단계를 다룬다.
+- 🔗 후속 연구: [[papers/020_A_Review_of_Relational_Machine_Learning_for_Knowledge_Graphs/review]] — 자동 지식 그래프 검증 프레임워크를 통해 관계형 기계학습으로 예측된 사실들의 품질을 체계적으로 평가할 수 있다.
+- 🔄 다른 접근: [[papers/165_Biokgbench_A_knowledge_graph_checking_benchmark_of_ai_agent/review]] — 지식그래프 검증의 일반적 프레임워크와 달리 생의학 특화 AI 에이전트 평가에 특화된 벤치마크를 제시한다.

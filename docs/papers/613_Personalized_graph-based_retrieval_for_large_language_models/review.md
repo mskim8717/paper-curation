@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 지식 그래프 기반의 개인화된 검색 증강 생성(PGraphRAG)을 제안하여 사용자 이력이 부족한 콜드스타트 환경에서도 LLM의 개인화된 텍스트 생성 능력을 향상시킨다. 구조화된 사용자 정보를 검색 과정에 통합하여 희소 프로필 상황에서도 유의미한 개인화를 가능하게 한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Long_Context_Embeddings"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Knowledge_Graph_Encoding"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Au et al._2025_Personalized graph-based retrieval for large language models.pdf"
 ---
@@ -110,8 +111,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Au et al._2025_Personalized graph-based 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/775_Step-back_profiling_Distilling_user_history_for_personalized/review]] — 사용자 이력 증류 기법이 개인화된 그래프 기반 검색에서 콜드스타트 문제 해결을 위한 핵심 전처리 방법론으로 활용된다.
-- 🔄 다른 접근: [[papers/335_Few-shot_Learning_with_Retrieval_Augmented_Language_Models/review]] — 검색 증강 생성에서 개인화 접근법과 소수샘플 학습 방법의 차이점을 비교하여 각각의 장단점을 이해할 수 있다.
-- 🔗 후속 연구: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 지식 안내 언어 모델의 개념을 개인화된 지식 그래프로 확장하여 더 정교한 사용자별 정보 검색이 가능하다.
-- 🧪 응용 사례: [[papers/185_Can_large_language_models_understand_you_better_an_mbti_pers/review]] — 대규모 언어 모델을 위한 개인화된 그래프 기반 검색에서 본 논문의 MBTI 성격 정보를 개인화 요소로 활용할 수 있다.
-- 🔗 후속 연구: [[papers/775_Step-back_profiling_Distilling_user_history_for_personalized/review]] — 사용자 이력 증류 기법이 개인화된 그래프 기반 검색에서 효율적인 사용자 프로필 생성을 위한 핵심 전처리 방법론으로 활용된다.
+- 🔄 다른 접근: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 지식 그래프를 활용한 검색에서 다중 문서 요약과 개인화된 생성이라는 서로 다른 응용을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — REALM의 검색 증강 사전 학습을 개인화된 컨텍스트로 확장하여 더 정교한 개인화 서비스를 제공한다.
+- 🏛 기반 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 검색 증강 대형 언어 모델의 기초적인 이론과 방법론을 개인화된 맥락으로 발전시킨다.
+- 🧪 응용 사례: [[papers/450_Knowledge_navigator_Llm-guided_browsing_framework_for_explor/review]] — 개인화된 그래프 기반 검색 기법이 탐색적 과학 검색에서 사용자 맞춤형 문서 조직화에 실제 적용된다.
+- 🏛 기반 연구: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 개인화된 검색 증강 생성에서 사용되는 지식 그래프 기반 정보 통합의 기초 방법론을 제공한다.

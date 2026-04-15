@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)을 활용하여 도시 인과 추론(Urban Causal Inference) 연구의 자동화와 확장성을 달성하는 UrbanCIA 프레임워크를 제시한다. 이를 통해 가설 생성부터 정책 해석까지 전체 도시과학 연구 파이프라인을 지능형 멀티에이전트 시스템으로 재구성하고자 한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xia et al._2025_Reimagining urban science Scaling causal inference with large language models.pdf"
 ---
@@ -112,6 +112,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xia et al._2025_Reimagining urban scienc
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — 도시 과학 연구에서 LLM 기반 인과 추론과 인간 연구 커뮤니티 시뮬레이션 접근법을 비교할 수 있습니다.
-- 🏛 기반 연구: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — 사회적 책임감 있는 AI를 위한 인과 학습이 도시 인과 추론 자동화의 이론적 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — 사회 시뮬레이션 기반 개인-사회 연구가 도시 과학의 인과 추론을 더 복합적인 사회 시스템으로 확장합니다.
+- 🧪 응용 사례: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 멀티에이전트 시스템의 일반적 설계 원리가 도시 인과 추론이라는 구체적인 사회과학 연구 도메인에 적용된다.
+- 🔗 후속 연구: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — 사회 시뮬레이션 설문과 도시 인과 추론 자동화는 모두 사회과학 연구의 AI 기반 확장을 다루는 상호 보완적 연구이다.
+- 🏛 기반 연구: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — 사회심리학과 LLM 추론의 결합 연구는 도시 사회과학 연구 자동화의 인지적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/516_Machine-Learned_Interatomic_Potentials_for_Predicting_Physic/review]] — 대규모 언어모델을 활용한 도시과학의 인과추론이 칼슘 전해 공정 예측의 실제 응용 사례를 보여준다.

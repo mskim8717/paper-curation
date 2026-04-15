@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 대규모 언어모델(LLM) 기반 에이전트가 데이터 사이언스의 장기적이고 상호연결된 작업들을 자동으로 해결할 수 있도록 설계된 **Data Interpreter**를 제안한다. 계층적 그래프 모델링과 프로그래밍 가능한 노드 생성이라는 두 가지 핵심 메커니즘을 통해 복잡한 데이터 사이언스 워크플로우를 동적으로 관리하고 실시간 데이터 변화에 적응한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Data_Interpretation"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Peer_Review_Assessment"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hong et al._2024_Data Interpreter An LLM Agent For Data Science.pdf"
 ---
@@ -109,13 +109,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hong et al._2024_Data Interpreter An LLM
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/170_Blade_Benchmarking_language_model_agents_for_data-driven_sci/review]] — 데이터 사이언스 자동화를 위한 LLM 에이전트 구현과 데이터 기반 과학 발견 에이전트 벤치마킹이 실행과 평가 측면에서 상호 보완한다
-- 🏛 기반 연구: [[papers/135_Automl_in_the_age_of_large_language_models_Current_challenge/review]] — LLM 기반 데이터 사이언스 에이전트가 AutoML과 LLM의 상생적 통합 원리를 데이터 분석 자동화에 구체적으로 적용한 결과이다
-- 🔄 다른 접근: [[papers/594_OSDA_Agent_Leveraging_Large_Language_Models_for_De_Novo_Desi/review]] — 계층적 그래프 모델링 기반 데이터 해석기와 대형언어모델 기반 데이터 사이언스 자동화가 각각 구조적, 언어적 접근법으로 동일한 문제를 해결한다
-- 🔗 후속 연구: [[papers/121_Autokaggle_A_multi-agent_framework_for_autonomous_data_scien/review]] — 데이터 사이언스 워크플로우 자동화 개념이 Kaggle 경진대회와 같은 구체적인 데이터 과학 문제 해결을 위한 멀티 에이전트 시스템으로 확장되었다
-- 🔗 후속 연구: [[papers/135_Automl_in_the_age_of_large_language_models_Current_challenge/review]] — AutoML과 LLM의 통합 원리가 데이터 사이언스 자동화를 위한 LLM 에이전트 개발에 직접적으로 적용되고 확장된다
-- 🔄 다른 접근: [[papers/170_Blade_Benchmarking_language_model_agents_for_data-driven_sci/review]] — 데이터 기반 과학 발견을 위한 언어모델 에이전트 벤치마크와 데이터 사이언스 자동화 에이전트가 각각 평가와 구현 관점에서 접근한다
-- 🔗 후속 연구: [[papers/594_OSDA_Agent_Leveraging_Large_Language_Models_for_De_Novo_Desi/review]] — 기본적인 LLM 데이터 과학 에이전트를 Kaggle 전문 지식과 케이스 기반 추론으로 고도화한다.
-- 🏛 기반 연구: [[papers/293_Ds-agent_Automated_data_science_by_empowering_large_language/review]] — Data Interpreter의 데이터 과학 작업 해석 능력이 DS-Agent의 자동화된 데이터 분석 및 코드 생성 기능의 기본적인 기술적 토대이다.
-- 🔗 후속 연구: [[papers/121_Autokaggle_A_multi-agent_framework_for_autonomous_data_scien/review]] — AutoKaggle의 다중 에이전트 프레임워크는 Data Interpreter의 LLM 기반 데이터 과학 자동화 기법을 확장하여 경진대회 환경에 특화된 솔루션을 제공합니다.
-- 🔄 다른 접근: [[papers/259_DeepAnalyze_Agentic_Large_Language_Models_for_Autonomous_Dat/review]] — Data Interpreter와 유사한 데이터 사이언스 자동화이지만 8B 모델로 더 효율적 달성
+- 🔄 다른 접근: [[papers/170_Blade_Benchmarking_language_model_agents_for_data-driven_sci/review]] — LLM 에이전트의 데이터 과학 능력을 실제 작업 해결 대신 벤치마크로 평가하는 다른 방법
+- 🔗 후속 연구: [[papers/293_Ds-agent_Automated_data_science_by_empowering_large_language/review]] — 데이터 과학 자동화를 더욱 포괄적인 LLM 에이전트 프레임워크로 발전시킨 연구
+- 🏛 기반 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — LLM의 기계학습 작업 수행 능력을 평가하는 기반 벤치마크
+- 🔄 다른 접근: [[papers/170_Blade_Benchmarking_language_model_agents_for_data-driven_sci/review]] — 데이터 과학 에이전트 평가를 벤치마크 대신 실제 작업 해결 능력으로 측정하는 다른 접근법
+- 🧪 응용 사례: [[papers/429_Infiagent-dabench_Evaluating_agents_on_data_analysis_tasks/review]] — 데이터 과학을 위한 LLM 에이전트의 실제 구현체로, InfiAgent-DABench에서 평가할 수 있는 구체적 시스템 사례
+- 🏛 기반 연구: [[papers/121_Autokaggle_A_multi-agent_framework_for_autonomous_data_scien/review]] — LLM 에이전트를 활용한 데이터 과학 작업의 기본 방법론을 제시하여 AutoKaggle의 다중 에이전트 데이터 파이프라인 자동화의 이론적 기반을 제공함
+- 🏛 기반 연구: [[papers/650_RD-Agent_Automating_Data-Driven_AI_Solution_Building_Through/review]] — Data Interpreter의 데이터 사이언스 LLM 에이전트 연구가 R&D-Agent의 데이터 기반 솔루션 구축 접근법의 기초를 제공함
+- 🔗 후속 연구: [[papers/259_DeepAnalyze_Agentic_Large_Language_Models_for_Autonomous_Dat/review]] — 데이터 과학을 위한 LLM 에이전트 연구를 완전 자동화된 분석가급 심층 연구 보고서 생성으로 발전시킨다.
+- 🧪 응용 사례: [[papers/368_Gemini_15_Unlocking_multimodal_understanding_across_millions/review]] — 대용량 컨텍스트 처리 능력을 데이터 사이언스 분석 에이전트에 적용한 구체적 활용 사례를 보여준다.

@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 **SFAVEL(Self-supervised Fact Verification via Language Model Distillation)**을 제안하여, 인간의 주석 없이 사전학습된 언어모델의 지식을 증류(distillation)함으로써 클레임과 근거 간의 의미론적 정렬을 학습하는 자기지도학습 기반 팩트 검증 프레임워크를 소개한다. 이는 FB15k-237에서 +5.3% Hits@1, FEVER에서 +8% 정확도 개선을 달성했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Zero-Shot_Claim_Verification"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bazaga et al._2023_Unsupervised pretraining for fact verification by language model distillation.pdf"
 ---
@@ -106,10 +107,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bazaga et al._2023_Unsupervised pretrain
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/832_Towards_llm-based_fact_verification_on_news_claims_with_a_hi/review]] — SFAVEL은 언어모델 증류를 통한 무감독 접근을, HiSS는 계층적 단계별 프롬프팅을 사용하여 서로 다른 방식으로 팩트 검증 문제를 해결함
-- 🔗 후속 연구: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 프로그램 가이드 추론을 통한 복잡한 클레임 검증이 SFAVEL의 기본적인 클레임-근거 정렬 학습을 더 정교한 추론 체계로 발전시킨 연구임
-- ⚖️ 반론/비판: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — 반박 증거의 부재가 NLP 팩트 체킹을 비현실적으로 만든다는 지적이 SFAVEL의 자기지도학습 접근법의 한계를 보여줌
-- 🏛 기반 연구: [[papers/183_Can_large_language_models_detect_misinformation_in_scientifi/review]] — 과학 뉴스의 오보 탐지를 위한 타당성 차원 정의가 SFAVEL의 클레임-근거 의미론적 정렬 학습의 이론적 기반을 제공함
-- 🔄 다른 접근: [[papers/832_Towards_llm-based_fact_verification_on_news_claims_with_a_hi/review]] — HiSS가 계층적 단계별 프롬프팅을 통해 뉴스 클레임을 세분화하는 반면, SFAVEL은 언어모델 증류를 통한 무감독 학습으로 서로 다른 팩트 검증 접근법을 제시함
-- 🏛 기반 연구: [[papers/441_Investigating_zero-and_few-shot_generalization_in_fact_verif/review]] — 팩트 검증을 위한 비지도 사전학습 방법이 zero-shot 및 few-shot 일반화 연구의 방법론적 기초를 제공함
-- 🔗 후속 연구: [[papers/567_Multivers_Improving_scientific_claim_verification_with_weak/review]] — 비감독 사전훈련을 약한 감독 학습으로 확장하여 더 정교한 과학 사실 검증 시스템을 구축합니다.
+- 🔄 다른 접근: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프 추론 기반 팩트 검증과 달리 언어모델 지식 증류를 통한 자기지도학습 기반 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/827_Towards_effective_extraction_and_evaluation_of_factual_claim/review]] — 팩트 클레임의 효과적 추출 및 평가 연구가 자기지도학습 기반 팩트 검증의 클레임-근거 정렬 학습 기반을 제공한다.
+- 🔗 후속 연구: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — NLP 팩트 체킹의 반박 증거 부족 문제를 언어모델 증류를 통한 무감독 학습으로 해결하는 방법론을 제시한다.
+- 🔄 다른 접근: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 언어모델 증류 기반 팩트 검증과 달리 지식 그래프 구조를 직접 활용한 추론 기반 접근법을 제시한다.

@@ -12,7 +12,9 @@ arxiv: ""
 score: 4.5
 essence: "Code Llama는 Llama 2 기반의 오픈소스 코드 생성 대규모언어모델(Large Language Model, LLM) 계열로, 코드 인필링(infilling), 장문맥 처리, 명령어 추종 능력을 갖춘 차세대 코드 생성 모델이다. 7B부터 70B 파라미터까지 4가지 크기의 모델과 3가지 변형(기본, Python 특화, Instruct)을 제공하며, 공개 모델 중 최고 수준의 성능을 달성한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
   - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rozière et al._2023_Code llama Open foundation models for code.pdf"
@@ -110,12 +112,11 @@ Code Llama는 Llama 2 기반의 오픈소스 코드 생성 대규모언어모델
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/731_Scireplicate-bench_Benchmarking_llms_in_agent-driven_algorit/review]] — Code Llama의 코드 생성 능력이 과학 논문의 알고리즘 복제에 활용됩니다.
-- 🏛 기반 연구: [[papers/546_Mlgym_A_new_framework_and_benchmark_for_advancing_ai_researc/review]] — 코드 생성 모델이 AI 연구 에이전트 개발의 기반이 됩니다.
-- 🔄 다른 접근: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — 오픈소스 코드 생성을 위한 서로 다른 모델 아키텍처를 제시합니다.
-- 🏛 기반 연구: [[papers/047_ActionIE_Action_Extraction_from_Scientific_Literature_with_P/review]] — 코드 생성을 위한 오픈 대형 언어모델은 과학 문헌의 실험 절차를 Python 코드로 변환하는 ActionIE의 기술적 기반입니다
-- 🧪 응용 사례: [[papers/546_Mlgym_A_new_framework_and_benchmark_for_advancing_ai_researc/review]] — 코드 생성 모델이 AI 연구 에이전트 프레임워크에 활용됩니다.
-- 🧪 응용 사례: [[papers/731_Scireplicate-bench_Benchmarking_llms_in_agent-driven_algorit/review]] — Code Llama의 코드 생성 능력이 알고리즘 복제 벤치마크에 활용됩니다.
-- 🏛 기반 연구: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 코드용 오픈 파운데이션 모델이 분자 언어모델 생성의 기반 제공
-- 🔄 다른 접근: [[papers/263_Deepseek-coder_When_the_large_language_model_meets_programmi/review]] — Code Llama와 유사한 코드 특화 LLM이지만 상용 사용 가능한 오픈소스로 차별화
-- 🔄 다른 접근: [[papers/741_Seed-coder_Let_the_code_model_curate_data_for_itself/review]] — Code Llama와 유사한 코드 모델이지만 데이터 전처리에서 완전 자동화 달성
+- 🏛 기반 연구: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — 코드 생성 모델의 기반이 되는 코드 평가 방법론을 제시한다
+- 🧪 응용 사례: [[papers/712_SciCode_A_Research_Coding_Benchmark_Curated_by_Scientists/review]] — 과학자들이 큐레이션한 코드 벤치마크로 Code Llama의 과학적 코딩 능력을 평가할 수 있다
+- 🔗 후속 연구: [[papers/674_ReTool_Reinforcement_Learning_for_Strategic_Tool_Use_in_LLMs/review]] — 코드 생성을 넘어 강화학습을 통한 전략적 도구 사용으로 확장된다
+- 🔄 다른 접근: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — 오픈소스 코드 모델링을 다른 아키텍처와 접근법으로 구현한 대안적 연구
+- 🏛 기반 연구: [[papers/416_Hyperagent_Generalist_software_engineering_agents_to_solve_c/review]] — 코딩 작업을 위한 오픈소스 기반 모델을 제공하여 HyperAgent의 코드 생성 및 편집 기능의 핵심 기술적 토대를 마련함
+- 🏛 기반 연구: [[papers/674_ReTool_Reinforcement_Learning_for_Strategic_Tool_Use_in_LLMs/review]] — 코드 생성 기초 모델이 강화학습 기반 도구 사용의 기반이 된다
+- 🔄 다른 접근: [[papers/263_Deepseek-coder_When_the_large_language_model_meets_programmi/review]] — 메타의 코드 전문 모델로, 오픈소스 코드 LLM 개발에서의 다른 접근 방식과 성능을 비교할 수 있습니다.
+- 🏛 기반 연구: [[papers/477_Large_language_models_pass_the_turing_test/review]] — Code Llama의 오픈 파운데이션 모델이 튜링 테스트 통과 언어모델의 기술적 기반을 제공한다

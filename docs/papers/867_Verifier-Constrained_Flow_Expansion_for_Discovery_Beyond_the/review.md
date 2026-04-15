@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.2
 essence: "사전학습된 Flow 모델이 제한된 데이터 분포에만 집중하는 문제를 해결하기 위해, 검증기(verifier)를 활용하여 유효성을 보장하면서 생성 모델의 밀도를 데이터 고가용 영역 너머로 확장하는 새로운 최적화 프레임워크를 제시한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Materials_Discovery_Hypotheses"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Santi et al._2026_Verifier-Constrained Flow Expansion for Discovery Beyond the Data.pdf"
 ---
@@ -113,7 +114,8 @@ s.t. p¹_π ∈ P(Ω_v)
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/555_Molgan_An_implicit_generative_model_for_small_molecular_grap/review]] — 분자 생성에서 Flow 확장은 명시적 확률 모델을, MolGAN은 GAN 기반 암묵적 방법을 사용하는 대조적 접근법
-- 🔗 후속 연구: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 알고리즘 실행을 통한 표적 소재 발견이 Flow 확장의 검증기 제약 최적화 프레임워크에 직접 적용됨
-- 🔄 다른 접근: [[papers/555_Molgan_An_implicit_generative_model_for_small_molecular_grap/review]] — 분자 생성에서 MolGAN은 GAN 기반 암묵적 방법을, Flow 확장은 명시적 확률 모델을 사용하는 대조적 접근법
-- 🏛 기반 연구: [[papers/024_A_sober_look_at_llms_for_material_discovery_Are_they_actuall/review]] — 베이지안 최적화의 원칙적 불확실성 정량화가 Flow 모델의 검증기 제약 프레임워크에서 유효성 보장의 기반이 됨
+- 🔄 다른 접근: [[papers/282_DMFlow_Disordered_Materials_Generation_by_Flow_Matching/review]] — 둘 다 Flow 기반 생성 모델이지만 Verifier는 데이터 외부 탐색에, DMFlow는 무질서 재료 생성에 집중함
+- 🏛 기반 연구: [[papers/296_Dynamic_Search_for_Inference-Time_Alignment_in_Diffusion_Mod/review]] — 추론 시간 정렬 최적화 기법이 검증기 제약 Flow 확장의 이론적 기반을 제공함
+- 🔗 후속 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — RAG 기법을 통해 검증기의 지식 기반을 확장하여 더 정확한 제약 조건 적용이 가능함
+- 🧪 응용 사례: [[papers/296_Dynamic_Search_for_Inference-Time_Alignment_in_Diffusion_Mod/review]] — 동적 탐색 기법이 Flow 모델의 데이터 외부 확장에서 효율적인 최적화 경로 탐색에 활용됨
+- 🔄 다른 접근: [[papers/282_DMFlow_Disordered_Materials_Generation_by_Flow_Matching/review]] — 둘 다 Flow 기반 생성 모델이지만 DMFlow는 무질서 재료에, Verifier-Constrained는 데이터 외부 탐색에 특화됨

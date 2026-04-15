@@ -10,8 +10,9 @@ arxiv: ""
 score: 3.8
 essence: "본 연구는 인공지능이 사이버보안 학술지 동료 검토(peer review) 과정에서 얼마나 효과적으로 성능을 발휘할 수 있는지를 정량적으로 평가한다. Doc2Vec 기반 두 단계 분류 접근법이 91% 이상의 정확도로 논문의 수용/거절을 예측하며, ChatGPT를 크게 상회한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_Review_Detection"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Citation_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Niu et al._2023_Unveiling the sentinels Assessing ai performance in cybersecurity peer review.pdf"
 ---
@@ -126,7 +127,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Niu et al._2023_Unveiling the sentinels 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/080_AI_is_transforming_peer_review__and_many_scientists_are_worr/review]] — AI의 동료평가 성능을 사이버보안이라는 구체적 도메인에서 정량적으로 평가한다
-- 🔄 다른 접근: [[papers/1087_Gpt4_is_slightly_helpful_for_peer-review_assistance_A_pilot/review]] — GPT-4 대신 Doc2Vec 기반 접근법으로 더 높은 정확도의 동료평가 예측을 달성한다
-- 🏛 기반 연구: [[papers/809_Three_AI-powered_steps_to_faster_smarter_peer_review/review]] — AI 기반 동료평가의 기술적 가능성을 입증하여 효율적 워크플로우의 기초를 제공한다
-- ⚖️ 반론/비판: [[papers/1087_Gpt4_is_slightly_helpful_for_peer-review_assistance_A_pilot/review]] — Doc2Vec 기반 접근법이 GPT-4보다 높은 정확도를 달성하는 대안적 결과를 보여준다
+- 🔄 다른 접근: [[papers/244_Cross_sectional_pilot_study_on_clinical_review_generation_us/review]] — 임상 분야가 아닌 사이버보안 분야에서 AI의 피어 리뷰 성능을 평가하는 다른 접근법을 제시한다
+- 🔗 후속 연구: [[papers/680_Reviewing_scientific_papers_for_critical_problems_with_reaso/review]] — 특정 도메인에서 AI의 과학 논문 평가 능력을 더 정교하게 분석한다
+- 🏛 기반 연구: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — AI 기반 피어 리뷰 시스템의 효과성 평가를 위한 실증적 기반을 제공한다
+- 🔄 다른 접근: [[papers/244_Cross_sectional_pilot_study_on_clinical_review_generation_us/review]] — 사이버보안이 아닌 임상 의학 분야에서 AI의 리뷰 생성 성능을 평가하는 다른 접근법을 보여준다
+- 🔗 후속 연구: [[papers/839_Transforming_Behavioral_Neuroscience_Discovery_with_In-Conte/review]] — 인컨텍스트 학습 기반 행동 패턴 발굴과 AI 성능 평가는 모두 전문 지식 없이 복잡한 데이터를 분석하는 AI 도구 개발을 다룬다.

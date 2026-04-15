@@ -7,113 +7,94 @@ authors:
   - "Nayoung Kim"
   - "Hyunseung Lim"
 date: "2025"
-doi: "N/A"
+doi: ""
 arxiv: ""
-score: 4.2
-essence: "본 논문은 LLM이 생성한 논문 리뷰가 인간 전문가와 동일한 비판적 측면(강점과 약점)에 주목하는지 평가하기 위한 **포커스 레벨 평가 프레임워크**를 제안한다. LLM 리뷰의 기술적 타당성 편향과 참신성 평가 간과라는 맹점을 정량적으로 드러낸다."
+score: 4.0
+essence: "LLM이 생성한 논문 리뷰가 인간 전문가와 동일한 핵심 측면에 주목하는지 평가하기 위해 focus-level 평가 프레임워크를 제안하며, 자동 주석 처리를 통해 LLM의 blind spot을 체계적으로 분석한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shin et al._2025_Mind the blind spots A focus-level evaluation framework for llm reviews.pdf"
 ---
 
 # Mind the blind spots: A focus-level evaluation framework for llm reviews
 
-> **저자**: Hyungyu Shin, Jingyu Tang, Yoonjoo Lee, Nayoung Kim, Hyunseung Lim, Ji Yong Cho, Hwajung Hong, Moontae Lee, Ju-ho Kim | **날짜**: 2025 | **DOI**: N/A
+> **저자**: Hyungyu Shin, Jingyu Tang, Yoonjoo Lee, Nayoung Kim, Hyunseung Lim, Ji Yong Cho, Hwajung Hong, Moontae Lee, Ju-ho Kim | **날짜**: 2025 | **URL**: [https://arxiv.org/abs/2502.17086](https://arxiv.org/abs/2502.17086)
 
 ---
 
 ## Essence
 
 ![Figure 1](figures/fig1.webp)
-*그림 1: LLM 리뷰 평가를 위한 포커스 레벨 평가 프레임워크. 사전정의된 facet을 기반으로 포커스 분포를 계산하고 인간 리뷰와 비교*
 
-본 논문은 LLM이 생성한 논문 리뷰가 인간 전문가와 동일한 비판적 측면(강점과 약점)에 주목하는지 평가하기 위한 **포커스 레벨 평가 프레임워크**를 제안한다. LLM 리뷰의 기술적 타당성 편향과 참신성 평가 간과라는 맹점을 정량적으로 드러낸다.
+*Figure 1: We introduce a focus-level evaluation frame-*
+
+LLM이 생성한 논문 리뷰가 인간 전문가와 동일한 핵심 측면에 주목하는지 평가하기 위해 focus-level 평가 프레임워크를 제안하며, 자동 주석 처리를 통해 LLM의 blind spot을 체계적으로 분석한다.
 
 ## Motivation
 
-- **Known**: 피어 리뷰 시스템은 검토자 부족과 증가하는 업무량으로 인해 심각한 압박을 받고 있으며, LLM은 자동 리뷰 작성으로 이를 보조할 수 있다.
-
-- **Gap**: 기존 LLM 리뷰 평가는 표면 수준(BLEU, ROUGE) 또는 내용 수준(구체성, 사실성)에 머물러 있으며, LLM이 인간 전문가처럼 **accept/reject 결정을 좌우하는 핵심 측면**에 동등하게 주목하는지 체계적으로 검증하지 못했다.
-
-- **Why**: 포커스가 불균형한 리뷰(예: 방법론 과도 강조 + 참신성 무시)는 정확하고 구체적이어도 의미 있는 피드백 제공 실패 및 후배 검토자의 얕은 평가 관행 강화로 이어진다.
-
-- **Approach**: 인간 전문가 리뷰에서 강점/약점을 추출하고, 사전정의된 target(문제, 방법, 실험 등) 및 aspect(타당성, 명확성, 참신성 등) facet으로 자동 주석화하여 포커스 분포를 계산하고 LLM과 비교한다.
+- **Known**: 기존 연구들은 LLM 리뷰의 표면 수준(BLEU, ROUGE), 내용 수준(구체성, 사실 정확성), 결정 수준(수용/거절 분류 정확도) 평가를 수행했으나, LLM이 인간 전문가와 동일한 critical facets에 주목하는지는 미규명이다.
+- **Gap**: 기존 평가 방식은 LLM 리뷰가 논문의 특정 차원(예: novelty vs. validity)에 얼마나 주목하는지 체계적으로 분석하지 못하며, 리뷰의 초점 분포가 인간 전문가와 일치하는지 확인할 방법이 부족하다.
+- **Why**: 편향된 초점의 리뷰는 정확하고 구체적이더라도 의미 있는 피드백을 제공하지 못하며 junior reviewers를 오도할 수 있으므로, LLM 리뷰의 신뢰성을 판단하고 효과적으로 활용하기 위해 초점 수준의 평가가 필수적이다.
+- **Approach**: 676개 OpenReview 논문의 3,657개 strength/weakness를 포함하는 데이터셋을 기반으로, target(problem, method, experiment 등 7개)과 aspect(validity, clarity, novelty 등 5개) facet으로 정의된 focus distribution을 자동으로 계산하고 인간 리뷰와 비교하는 평가 파이프라인을 구축한다.
 
 ## Achievement
 
-![Figure 2](figures/fig2.webp)
-*그림 2: 자동 포커스 레벨 평가 프로세스. 메타리뷰에서 강점/약점 추출 → facet 자동 주석 → 포커스 분포 계산 및 비교*
+![Figure 4](figures/fig4.webp)
 
-1. **포커스 프레임워크 개발**: 676개 ICLR 논문 리뷰(2021-2024)로부터 3,657개 인간 전문가 강점/약점을 수집하고, 자동 주석기(Cohen's kappa: target 0.81, aspect 0.79)를 구축하여 완전 자동화된 평가 파이프라인 실현.
+*Figure 4: A visualization of focus distributions by target/aspect and strength/weakness, in a descending order of*
 
-2. **LLM 맹점 발견**: 8개 LLM(GPT, Llama, DeepSeek) 및 파인튜닝 모델 평가 결과, 모든 오프더셀프 LLM이 **기술적 타당성 검토에 편향**(overemphasis)되고 **약점 지적 시 참신성 평가를 심각하게 간과**(underemphasis)하는 일관된 패턴 발견.
-
-3. **성능 격차 정량화**: 최고 성능 모델도 target-aspect 매칭 F1 스코어 0.373에 불과하며, 파인튜닝 모델만이 인간 포커스 분포와 가장 가까운 결과 달성(텍스트 유사도에서는 Llama-405B가 최고).
+- **Focus-level 평가 프레임워크 제안**: 리뷰의 초점을 predefined facets에 걸친 정규화된 attention 분포로 정의하고, 자동 평가 파이프라인 구현으로 LLM 리뷰의 blind spot 체계적 분석 가능
+- **LLM의 주요 blind spot 발견**: 8개 LLM 평가 결과, 모든 모델이 technical validity 검토에 편향되어 있으며 novelty 평가를 심각하게 간과함을 발견
+- **자동 주석처리의 신뢰성 검증**: target과 aspect 주석에 각각 0.81과 0.79의 Cohen's kappa를 달성하여 자동 평가의 타당성 입증", '**Fine-tuning의 효과성 증명**: fine-tuned gpt-4o가 prompting 기반 모델들보다 human focus distribution에 더 근접한 분포 생성
+- **공개 데이터셋 제공**: 676개 논문, 인간 리뷰, 자동 주석된 43,042개의 LLM 생성 strength/weakness 포함하는 벤치마크 데이터셋 공개
 
 ## How
 
-![Figure 3-4](figures/fig3.webp)
-*그림 3-4: 강점/약점 분포 및 target/aspect별 포커스 분포 시각화*
+![Figure 2](figures/fig2.webp)
 
-- **Facet 정의**: AI 컨퍼런스 9개 투고 가이드라인 + 리뷰 분석 문헌 검토를 통해 target 7개(Problem, Method, Theory, Experiment, Dataset, Prior Research, Conclusion, Paper) 및 aspect 5개(Validity, Clarity, Novelty, Impact, Completeness) 추출.
+*Figure 2: The overall process of automated focus-level evaluation. We first extracted strengths and weaknesses*
 
-- **자동 주석기**: LLM 기반 주석기 개발, 각 강점/약점에 target-aspect 레이블 할당, 인간 주석자와의 일치도(IRR) 검증(kappa > 0.79).
-
-- **메타리뷰 처리**: 개별 리뷰어 의견 수집의 복잡성 해결을 위해 메타리뷰에서 강점/약점 추출 후 비메타 리뷰 코멘트로 보강하는 3단계 프롬프팅 체인 설계.
-
-- **포커스 분포 계산**: 리뷰 포인트의 facet 빈도를 정규화하여 강점(F⁺) 및 약점(F⁻) 분포 벡터 생성, 인간과 LLM 분포 비교 분석.
+- OpenReview의 ICLR 2021-2024 논문에서 meta-review와 reviewer comments를 통해 strengths/weaknesses 추출
+- 9개 AI 학술지 submission guideline과 선행 연구를 기반으로 target(7개) 및 aspect(5개) facet 정의
+- LLM을 프롬프트하여 리뷰 생성 및 strengths/weaknesses 추출
+- 자동 주석처리 모델을 활용하여 각 strength/weakness에 target과 aspect 레이블 할당
+- focus distribution 계산: 각 facet을 언급하는 strength/weakness의 상대 빈도를 정규화된 벡터로 표현
+- 8개 LLM(GPT 4개, Llama 2개, DeepSeek 2개)과 fine-tuned gpt-4o, MARG 기법을 평가하여 인간 분포와 비교
+- Kullback-Leibler divergence 등을 사용하여 focus distribution 간의 거리 측정
 
 ## Originality
 
-- 기존 평가(표면/내용/결정 수준)를 초월한 **새로운 포커스 레벨 평가 차원** 도입으로 LLM 리뷰의 심층적 맹점 발견.
-
-- 실제 컨퍼런스 리뷰 데이터(OpenReview)와 메타리뷰 기반 강점/약점 추출이라는 **실증적 접근법**으로 평가의 현실성 확보.
-
-- Target-aspect 이원 facet 체계로 **"무엇을(target) 어떤 기준으로(aspect) 평가하는가"** 에 대한 세밀한 분석 가능화.
-
-- 완전 자동화된 평가 파이프라인과 43,042개 LLM 생성 강점/약점 데이터셋 공개로 **재현성 및 확장성** 보장.
+- **새로운 평가 수준 제안**: surface/content/decision 수준을 넘어 focus 수준 평가를 도입하여 LLM 리뷰의 구조적 편향 분석
+- **해석 가능한 자동 평가**: focus distribution을 명확하게 시각화하여 LLM의 강점과 맹점을 직관적으로 파악 가능하게 함
+- **학술 리뷰의 facet 체계화**: 다수 학술지 guideline을 종합하여 target과 aspect facet을 체계적으로 정의
+- **실제 학술 리뷰 데이터 활용**: OpenReview의 실제 meta-review와 reviewer comments로부터 신뢰성 높은 gold standard 구성
 
 ## Limitation & Further Study
 
-- **데이터 한계**: ICLR에 제한되어 다른 AI 컨퍼런스(NeurIPS, ICML) 또는 학문 분야 일반화 가능성 미검증.
-
-- **Facet 설계**: 현재 facet 세트가 고정적이며, 새로운 리뷰 관행이나 도메인 특화 평가 기준 반영 기제 부재.
-
-- **인과성 미확인**: 포커스 분포의 편차가 실제 **리뷰 품질 저하 또는 accept/reject 결정 오류**로 직결되는지 실증적 검증 필요.
-
-- **파인튜닝 효율성**: 파인튜닝 데이터 규모, 학습 비용, 최소 요구 샘플 수 등 실무 적용 조건 미분석.
-
-- **후속 연구**: (1) 포커스 편향 교정 프롬프팅 또는 학습 기법 개발, (2) 실제 피어 리뷰 프로세스에서 LLM 리뷰 활용 시 사용자 신뢰 및 효율성 영향 분석, (3) 다양한 학문분야 확대 평가.
+- **자동 주석의 F1 score 제약**: 최상 모델도 F1 0.373으로 완전하지 않은 주석처리 정확도로 인한 평가 신뢰성 한계
+- **단일 학회 데이터셋**: ICLR만 포함되어 다른 분야나 학회(예: NeurIPS, AAAI)의 리뷰 스타일 반영 부족
+- **Facet 정의의 주관성**: 7개 target과 5개 aspect 선정이 특정 도메인(AI/ML)에 편향될 가능성
+- **LLM 평가 모멘트의 한계**: 2024년까지의 모델만 평가되어 그 이후의 진화한 LLM에 미적용
+- **후속연구**: (1) 다양한 학회/분야로 확장, (2) aspect 간 상호작용 분석, (3) focus distribution 편향 교정을 위한 fine-tuning 전략 개발, (4) 인간 리뷰어 연령·경험·전문성 등 메타데이터와의 연관성 분석
 
 ## Evaluation
 
-- **Novelty**: 4.5/5
-  - 포커스 레벨 평가 프레임워크는 LLM 리뷰 평가의 새로운 차원 제시
-  - 다만 기존 NLP 분석 방법론의 점진적 확장에 가까움
+- Novelty: 4/5
+- Technical Soundness: 3/5
+- Significance: 4/5
+- Clarity: 4/5
+- Overall: 4/5
 
-- **Technical Soundness**: 4/5
-  - 자동 주석기 구축 및 IRR 검증이 체계적
-  - 메타리뷰 기반 강점/약점 추출 파이프라인이 타당
-  - 통계 검증(예: 카이제곱 검정) 세부사항 제시 미흡
-
-- **Significance**: 4.5/5
-  - LLM의 구체적 맹점(참신성 간과, 기술성 과도) 발견은 실무 가치 높음
-  - 다만 실제 피어 리뷰 시스템 개선으로의 전환 경로 명확화 필요
-
-- **Clarity**: 4/5
-  - 프레임워크 정의 및 파이프라인 시각화가 명확
-  - facet 선정 과정 및 최종 facet 목록 제시 부분 더 상세화 가능
-
-- **Overall**: 4.2/5
-
-**총평**: 본 논문은 피어 리뷰라는 사회적 중요성 높은 영역에서 LLM 리뷰의 포커스 분포 분석을 통해 체계적이고 해석 가능한 평가 프레임워크를 제공하며, 실제 데이터셋 공개와 함께 재현 가능성을 확보했다. 다만 다른 학문분야 일반화, 포커스 편향과 실제 리뷰 품질 저하 간의 인과성 입증, 그리고 개선된 LLM 학습 기법 제안으로의 발전이 필요하다.
+**총평**: LLM 리뷰 평가에 새로운 차원을 제시한 원창적 연구로, 자동 평가 파이프라인을 통해 LLM의 구조적 맹점을 체계적으로 드러내며 학술 리뷰 과정에서 LLM 활용 방안에 실질적 지침을 제공한다.
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — 인지정렬프레임워크의 앵커링 효과 완화와 포커스 레벨 평가는 모두 LLM 리뷰의 편향 문제를 다루는 상호 보완적 접근법입니다
-- 🔗 후속 연구: [[papers/128_Automatically_evaluating_the_paper_reviewing_capability_of_l/review]] — 논문 리뷰 능력의 자동 평가는 LLM 리뷰의 맹점을 정량화하는 포커스 레벨 평가의 확장된 응용입니다
-- 🏛 기반 연구: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — DeepReview의 인간 유사 논문 리뷰 개선 방법은 포커스 레벨 평가 프레임워크의 이론적 기반을 제공합니다
-- 🔄 다른 접근: [[papers/128_Automatically_evaluating_the_paper_reviewing_capability_of_l/review]] — 동일한 포커스 레벨 평가 프레임워크를 다른 관점에서 접근함
-- 🔄 다른 접근: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — 포커스 레벨 평가와 인지정렬프레임워크는 모두 LLM 리뷰 시스템의 편향 문제를 다루는 상호 보완적인 접근법입니다
+- 🔗 후속 연구: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — LLM 리뷰어의 탐색적 연구를 인간 전문가와의 초점 수준 비교로 발전시켜 더 정교한 평가 프레임워크를 제시했다.
+- 🔄 다른 접근: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — LLM 리뷰의 blind spot 분석과 다중 에이전트 협력 리뷰는 모두 AI 기반 리뷰 품질 향상을 다른 방식으로 접근한다.
+- 🏛 기반 연구: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — 편향 없는 AI 리뷰 시스템 평가 연구가 LLM 리뷰의 blind spot 분석에 체계적 평가 방법론을 제공한다.
+- 🧪 응용 사례: [[papers/128_Automatically_evaluating_the_paper_reviewing_capability_of_l/review]] — LLM의 논문 리뷰 능력 자동 평가 연구에서 focus-level 프레임워크가 실제 성능 측정에 적용된다.
+- 🔄 다른 접근: [[papers/652_Rbf_Quantifying_and_optimizing_reasoning_boundaries_across_m/review]] — LLM 평가에서 추론 경계 분석과 focus-level 평가는 모두 모델의 한계를 체계적으로 파악하는 상호보완적 접근법이다.

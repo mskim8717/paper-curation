@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.8
 essence: "물리 법칙을 신경망에 내재화하여 적은 데이터로도 비선형 편미분방정식(PDE)의 해를 정확히 구하는 Physics-Informed Neural Networks (PINNs)을 제시하는 획기적 논문이다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Neural_Differential_Equations"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Neural_Operator_Learning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Raissi et al._2017_Physics Informed Deep Learning (Part I) Data-driven Solutions of Nonlinear Partial Differential Equ.pdf"
 ---
@@ -96,13 +96,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Raissi et al._2017_Physics Informed Deep
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — Neural ODE가 Physics-Informed Neural Networks의 연속시간 모델링 기초를 제공한다.
-- 🧪 응용 사례: [[papers/372_General-Purpose_Machine-Learned_Potential_for_CrCoNi_Alloys/review]] — 물리법칙 기반 신경망을 재료과학의 머신러닝 포텐셜 개발에 적용할 수 있다.
-- 🔗 후속 연구: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — 연속 의존성 개념을 통해 PINNs의 수치적 안정성을 향상시킨다.
-- 🔗 후속 연구: [[papers/276_Discovery_of_Unstable_Singularities/review]] — 물리 정보 기반 딥러닝 방법론이 오일러 방정식 특이점 연구에 적용될 수 있음
-- 🏛 기반 연구: [[papers/850_Uncertainty_quantification_in_scientific_machine_learning_Me/review]] — 물리 정보 딥러닝의 데이터 기반 솔루션이 과학 기계학습에서 불확실성 정량화의 이론적 토대를 제공한다
-- 🔗 후속 연구: [[papers/372_General-Purpose_Machine-Learned_Potential_for_CrCoNi_Alloys/review]] — 물리법칙 기반 신경망을 머신러닝 포텐셜 개발에 적용한다.
-- 🔗 후속 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — Neural ODE가 물리 정보 기반 신경망의 연속시간 모델링을 가능하게 한다.
-- 🔄 다른 접근: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — 편미분방정식 해결에서 물리정보 vs 데이터 기반 딥러닝의 다른 접근법을 비교할 수 있다
-- 🔗 후속 연구: [[papers/307_Efficient_Prediction_of_SO3-Equivariant_Hamiltonian_Matrices/review]] — 물리 정보 딥러닝 PDE 해법에서 해밀턴 행렬 예측으로의 확장
-- 🧪 응용 사례: [[papers/497_LLM_and_Simulation_as_Bilevel_Optimizers_A_New_Paradigm_to_A/review]] — 물리학 정보 기반 딥러닝의 데이터 중심 솔루션은 LLM과 시뮬레이션 결합의 구체적인 물리 문제 적용 사례다.
+- 🔗 후속 연구: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — PINNs의 연속 의존성 특성을 활용한 cd-PINN이 기본 PINN 방법론을 발전시킨 접근법이다.
+- 🔄 다른 접근: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 칼만 필터를 통합한 PINN과 기본 PINN은 불확실성 처리에서 서로 다른 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리정보신경망의 포괄적 과학 머신러닝 프레임워크가 PINN 발전의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/232_CodePDE_An_Inference_Framework_for_LLM-driven_PDE_Solver_Gen/review]] — 물리 정보 딥러닝의 첫 번째 부분으로, LLM 기반 PDE 솔버를 물리 기반 딥러닝으로 확장하는 연구
+- 🏛 기반 연구: [[papers/767_SPINONet_Scalable_Spiking_Physics-informed_Neural_Operator_f/review]] — 물리 정보 딥러닝의 일반적 원리는 에너지 효율적 스파이킹 물리 정보 신경 연산자 설계의 이론적 기반이다.
+- 🔗 후속 연구: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — cd-PINN의 연속 의존성 활용이 기본 PINN의 물리법칙 내재화를 더 강건한 형태로 발전시킨다.
+- 🔄 다른 접근: [[papers/217_Chiral_spin_symmetry_and_hot_QCD/review]] — 물리 정보 딥러닝의 데이터 기반 접근법이 카이랄 스핀 대칭성의 이론적 접근과는 다른 방식으로 QCD 현상을 탐구한다
+- 🔄 다른 접근: [[papers/618_Physical_formula_enhanced_multi-task_learning_for_pharmacoki/review]] — 물리 정보 기반 딥러닝의 일반적 접근법을 제시하여 약동학 특화 방법과 비교 관점을 제공한다
+- 🏛 기반 연구: [[papers/456_Lang-PINN_From_Language_to_Physics-Informed_Neural_Networks/review]] — Physics Informed Deep Learning의 이론적 배경이 Lang-PINN 설계의 기반을 제공한다.

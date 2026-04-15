@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.6
 essence: "단일세포 RNA 시퀀싱 데이터를 \"세포 문장(cell sentence)\" 형태의 텍스트로 변환하여 대규모언어모델(LLM)로 처리하는 Cell2Sentence 프레임워크를 270억 개의 파라미터로 확장함으로써, 전사체 데이터와 생물학적 텍스트 정보를 통합한 차세대 단일세포 분석 플랫폼을 구현했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Single-cell_RNA_Sequencing"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rizvi et al._2025_Scaling Large Language Models for Next-Generation Single-Cell Analysis.pdf"
 ---
@@ -109,15 +109,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rizvi et al._2025_Scaling Large Language
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/431_Integrated_analysis_of_multimodal_single-cell_data/review]] — 단일세포 데이터를 텍스트로 변환하는 접근법이 멀티모달 단일세포 데이터 통합 분석을 위한 새로운 방법론적 확장을 제공한다
-- 🔄 다른 접근: [[papers/161_BioBERT_a_pre-trained_biomedical_language_representation_mod/review]] — 단일세포 데이터 텍스트 변환 방식과 생의학 텍스트 전용 언어모델이 생의학 빅데이터 처리의 상반된 접근법을 보여준다
-- 🧪 응용 사례: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — 대규모 언어모델을 활용한 단일세포 분석이 세포 생물학 연구 자동화를 위한 멀티 에이전트 시스템에 핵심적으로 활용될 수 있다
-- 🏛 기반 연구: [[papers/700_scBaseCount_an_AI_agent-curated_uniformly_processed_and_auto/review]] — 단일세포 데이터의 LLM 처리 기술이 AI 에이전트 기반 단일세포 데이터베이스 구축과 표준화에 필수적인 기반 기술을 제공한다
-- 🏛 기반 연구: [[papers/483_Learning_to_Discover_Regulatory_Elements_for_Gene_Expression/review]] — 단일 세포 분석을 위한 대규모 언어모델이 유전자 발현 예측의 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/161_BioBERT_a_pre-trained_biomedical_language_representation_mod/review]] — 생의학 텍스트 전용 BERT와 단일세포 데이터를 텍스트로 변환하여 처리하는 LLM이 생의학 데이터 처리의 서로 다른 접근법을 보여준다
-- 🔄 다른 접근: [[papers/302_Effective_gene_expression_prediction_from_sequence_by_integr/review]] — DNA 서열 기반 유전자 발현 예측과 단일세포 데이터의 텍스트 변환 처리가 유전체학 빅데이터 분석의 서로 다른 접근법을 보여준다
-- 🏛 기반 연구: [[papers/431_Integrated_analysis_of_multimodal_single-cell_data/review]] — 멀티모달 단일세포 데이터 통합 분석 방법론이 단일세포 데이터의 대형언어모델 처리를 위한 중요한 생물학적 기반을 제공한다
-- 🏛 기반 연구: [[papers/700_scBaseCount_an_AI_agent-curated_uniformly_processed_and_auto/review]] — 단일세포 데이터의 대규모 언어모델 스케일링을 위한 고품질 훈련 데이터 기반을 제공한다
-- 🔗 후속 연구: [[papers/344_Foundation_models_in_bioinformatics/review]] — 단일 세포 분석을 위한 대형 언어 모델 확장이 생물정보학 기초 모델의 구체적 응용 사례입니다.
-- 🏛 기반 연구: [[papers/699_SCANPY_large-scale_single-cell_gene_expression_data_analysis/review]] — 대규모 단일세포 데이터 처리 기술이 차세대 LLM 기반 분석의 기초가 된다.
-- 🏛 기반 연구: [[papers/306_Efficient_fine-tuning_of_single-cell_foundation_models_enabl/review]] — 대규모 언어모델과 단일세포 분석의 통합적 접근법에 대한 기반을 제공한다
+- 🏛 기반 연구: [[papers/431_Integrated_analysis_of_multimodal_single-cell_data/review]] — 단일세포 멀티모달 데이터 분석 기법을 LLM 기반 접근법으로 확장하는 기반 연구
+- 🔗 후속 연구: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — 단일세포 분석을 LLM 에이전트 프레임워크로 자동화하여 더욱 발전시킨 연구
+- 🔄 다른 접근: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — 단일세포 주석을 텍스트 변환 대신 LLM 에이전트 기반으로 수행하는 다른 접근법
+- 🏛 기반 연구: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — 단일세포 데이터 분석을 위한 대규모 언어모델 확장 기법이 scAgent의 기반 기술이 된다.
+- 🔗 후속 연구: [[papers/431_Integrated_analysis_of_multimodal_single-cell_data/review]] — 멀티모달 단일세포 데이터 분석을 LLM 기반 차세대 플랫폼으로 발전시킨 연구
+- 🔗 후속 연구: [[papers/700_scBaseCount_an_AI_agent-curated_uniformly_processed_and_auto/review]] — AI 에이전트로 구축한 단일세포 데이터가 차세대 단일세포 분석용 대규모 언어모델의 훈련 데이터로 직접 활용됨
+- 🔗 후속 연구: [[papers/699_SCANPY_large-scale_single-cell_gene_expression_data_analysis/review]] — 차세대 단일세포를 위한 대규모 언어모델이 SCANPY의 분석 툴킷을 더 지능적인 형태로 발전시킨다.
+- 🧪 응용 사례: [[papers/459_Language_Models_for_Controllable_DNA_Sequence_Design/review]] — 대규모 단일세포 분석을 위한 언어 모델 확장이 DNA 서열 생성에서 세포 타입별 특성 예측에 활용됨
+- 🏛 기반 연구: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — 대규모 분자 시뮬레이션을 위한 단일세포 분석의 스케일링 방법론이 COVID-19 단백질 구조 시뮬레이션의 기술적 기반을 제공한다
+- 🏛 기반 연구: [[papers/766_SpatialAgent_An_autonomous_AI_agent_for_spatial_biology/review]] — 단일세포 분석용 LLM 확장 연구가 공간생물학 자동화의 기술적 기반을 제공한다

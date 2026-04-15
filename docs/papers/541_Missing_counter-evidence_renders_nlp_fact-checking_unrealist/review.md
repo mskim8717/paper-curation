@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.5
 essence: "현재의 NLP 기반 사실확인(fact-checking) 접근법은 반박 증거(counter-evidence)의 존재를 가정하지만, 실제 미정보(misinformation)는 신뢰할 만한 증거가 부족한 환경에서 발생하기 때문에 현실적이지 않다. 본 논문은 기존 사실확인 데이터셋들이 모두 현실적 요구사항을 만족하지 못함을 보이고, 모델들이 누출된(leaked) 증거에 의존함을 실증한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Automated_Fact_Checking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Glockner et al._2022_Missing counter-evidence renders nlp fact-checking unrealistic for misinformation.pdf"
 ---
@@ -105,12 +106,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Glockner et al._2022_Missing counter-evi
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 단순한 반박 증거 부족 문제를 멀티모달 증거 기반 팩트체킹으로 확장하여 더 현실적인 사실확인 시스템을 구축합니다.
-- 🔄 다른 접근: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 반박 증거 부족의 한계를 지적하는 반면, 지식 그래프 기반 추론을 통한 체계적 사실확인 접근법을 제시합니다.
-- 🏛 기반 연구: [[papers/832_Towards_llm-based_fact_verification_on_news_claims_with_a_hi/review]] — 기존 팩트체킹의 한계를 지적한 연구가 계층적 증거 기반 뉴스 클레임 검증 시스템 개발의 동기를 제공합니다.
-- 🏛 기반 연구: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 기존 팩트체킹의 반박 증거 부족 한계를 해결하기 위해 멀티모달 증거를 동적으로 수집하는 발전된 접근법입니다.
-- 🔄 다른 접근: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프의 구조화된 추론과 반박 증거 부족 문제 지적이라는 서로 다른 팩트체킹 접근법과 비판을 제시합니다.
-- ⚖️ 반론/비판: [[papers/859_Unsupervised_pretraining_for_fact_verification_by_language_m/review]] — 반박 증거의 부재가 NLP 팩트 체킹을 비현실적으로 만든다는 지적이 SFAVEL의 자기지도학습 접근법의 한계를 보여줌
-- ⚖️ 반론/비판: [[papers/235_Comparing_knowledge_sources_for_open-domain_scientific_claim/review]] — NLP 사실 확인에서 반박 증거 부족 문제를 지적하여 본 논문의 지식 소스 비교 연구의 한계를 제시한다.
-- 🏛 기반 연구: [[papers/567_Multivers_Improving_scientific_claim_verification_with_weak/review]] — NLP 사실 확인의 비현실적 측면 분석이 과학 청구 검증에서 약한 감독 학습의 한계 이해에 기초를 제공합니다.
-- 🏛 기반 연구: [[papers/880_What_makes_medical_claims_un_verifiable_analyzing_entity_and/review]] — 팩트 체킹에서 반박 증거 부족 문제가 의료 주장의 검증 가능성을 결정하는 핵심 요인으로 작용한다는 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 멀티모달 팩트체킹 시스템으로, 텍스트만의 사실확인 한계를 이미지까지 포함한 종합적 접근으로 해결합니다.
+- 🔗 후속 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프를 활용한 사실 검증으로, 반박 증거 부족 문제를 구조화된 지식을 통해 보완하는 접근법을 제시합니다.
+- 🧪 응용 사례: [[papers/832_Towards_llm-based_fact_verification_on_news_claims_with_a_hi/review]] — 뉴스 클레임에 특화된 사실 검증 시스템으로, NLP 사실확인의 실제 미정보 대응 분야 적용 사례입니다.
+- ⚖️ 반론/비판: [[papers/710_Sciclaimhunt_A_large_dataset_for_evidence-based_scientific_c/review]] — 반박 증거 누락으로 인한 NLP 사실 확인의 비현실성을 지적한 연구가 SciClaimHunt의 포괄적인 증거 기반 검증 접근법에 대한 반대 관점을 제시한다
+- 🏛 기반 연구: [[papers/852_Understanding_fine-grained_distortions_in_reports_of_scienti/review]] — 팩트체킹의 한계점 분석이 과학 보도 왜곡 연구의 이론적 기반을 제공한다
+- 🔄 다른 접근: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 멀티모달 팩트체킹의 발전된 접근법으로, 텍스트 중심의 NLP 사실확인 한계를 이미지까지 포함하여 해결합니다.
+- 🔗 후속 연구: [[papers/859_Unsupervised_pretraining_for_fact_verification_by_language_m/review]] — NLP 팩트 체킹의 반박 증거 부족 문제를 언어모델 증류를 통한 무감독 학습으로 해결하는 방법론을 제시한다.
+- ⚖️ 반론/비판: [[papers/192_Cchall_A_novel_benchmark_for_joint_cross-lingual_and_cross-m/review]] — NLP 사실 확인에서 반박 증거의 부족 문제를 지적하여, CCHall의 포괄적 환각 평가 접근법의 한계와 개선 방향을 제시한다
+- 🔄 다른 접근: [[papers/394_Grounding_fallacies_misrepresenting_scientific_publications/review]] — 팩트 체킹에서 논리적 오류 탐지와 반증 증거 누락 문제라는 서로 다른 관점을 제시한다.
+- 🏛 기반 연구: [[papers/441_Investigating_zero-and_few-shot_generalization_in_fact_verif/review]] — NLP 기반 팩트체킹의 현실적 한계에 대한 이론적 기반을 제공하여 zero-shot 일반화 연구의 동기를 설명한다.

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 LLM(GPT-3.5, PaLM2, LLaMA2)이 학술 논문의 피어 리뷰 의견들을 종합하여 메타리뷰 초안 작성을 지원할 수 있는지 연구한 사례 연구이다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Peer_Review"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luo et al._2024_Prompting llms to compose meta-review drafts from peer-review narratives of scholarly manuscripts.pdf"
 ---
@@ -89,6 +89,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luo et al._2024_Prompting llms to compos
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/126_Automated_review_generation_method_based_on_large_language_m/review]] — LLM 기반 리뷰 생성에서 메타리뷰 작성과 자동 리뷰 생성의 서로 다른 접근 방식을 제시한다.
-- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 피어 리뷰를 다중 턴 장문맥 대화로 확장하여 메타리뷰 작성을 발전시킨다.
-- 🔄 다른 접근: [[papers/126_Automated_review_generation_method_based_on_large_language_m/review]] — 학술논문 리뷰 자동화에서 완전 자동 생성과 메타리뷰 작성 지원의 서로 다른 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/126_Automated_review_generation_method_based_on_large_language_m/review]] — 자동화된 리뷰 생성의 기본 방법론과 LLM 활용 접근법에 대한 기초적 이해를 제공한다
+- 🔗 후속 연구: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — 피어 리뷰에서 NLP의 역할을 메타리뷰 작성이라는 구체적 작업으로 특화시킨 응용 사례이다
+- 🔄 다른 접근: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 리뷰 생성에서 단일 작업과 체크리스트 기반 반복 생성이라는 다른 접근 전략을 보여준다
+- 🔗 후속 연구: [[papers/126_Automated_review_generation_method_based_on_large_language_m/review]] — 기본적인 리뷰 생성을 피어 리뷰라는 더 복잡하고 전문적인 학술 작업으로 확장한 응용 사례이다

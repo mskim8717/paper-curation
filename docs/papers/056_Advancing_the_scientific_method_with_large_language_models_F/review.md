@@ -12,8 +12,8 @@ arxiv: ""
 score: 3.8
 essence: "대규모 언어모델(LLM)이 과학 연구의 각 단계에서 생산성 향상과 과학적 발견을 지원하는 도구로서 변화하는 과학 방법론을 재정의하고 있으며, 이를 효과적으로 활용하기 위해서는 인간 과학자와의 협력 및 명확한 평가 지표가 필수적이다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liberati et al._2025_Advancing the scientific method with large language models From hypothesis to discovery.pdf"
 ---
@@ -90,5 +90,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liberati et al._2025_Advancing the scien
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — 인공지능 시대 과학적 발견에 대한 일반론이 LLM 기반 과학 방법론 변화의 이론적 토대를 제공한다.
-- 🧪 응용 사례: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 오픈엔드 과학자 AI가 LLM으로 변화하는 과학 방법론의 구체적 실현 사례이다.
+- 🔄 다른 접근: [[papers/479_Large_physics_models_towards_a_collaborative_approach_with_l/review]] — 과학 방법론 전반의 LLM 활용과 물리학 특화 모델이 범용성 대 전문성의 상보적 접근이다
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 과학 방법론 지원에서 완전 자동화된 과학 발견으로 발전하는 궁극적 목표를 제시한다
+- 🏛 기반 연구: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — 과학 전반에서 LLM 변혁에 대한 종합 조사가 과학 방법론 재정의의 이론적 토대를 제공한다
+- ⚖️ 반론/비판: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 다수 협력이 더 나은 아이디어를 생성한다는 발견이 LLM 단독 활용의 한계를 지적한다
+- 🏛 기반 연구: [[papers/506_LLM4SR_A_Survey_on_Large_Language_Models_for_Scientific_Rese/review]] — 과학적 방법론과 LLM을 결합한 기본 프레임워크를 제시한다
+- 🔗 후속 연구: [[papers/479_Large_physics_models_towards_a_collaborative_approach_with_l/review]] — 일반적인 과학 방법론 지원에서 물리학 전용 대규모 모델 개발로 특화된 확장을 제시한다
+- 🏛 기반 연구: [[papers/468_Large_Language_Models_are_Zero_Shot_Hypothesis_Proposers/review]] — 가설 제시 능력이 LLM 기반 과학 방법론 지원의 핵심 구성 요소 중 하나이다

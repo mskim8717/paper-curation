@@ -11,8 +11,10 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 대규모 언어모델(LLM)이 과학 논문으로부터 새로운 미래 연구 아이디어를 생성할 수 있는지를 체계적으로 평가한다. 이를 위해 자동 평가 메트릭(IAScore, Idea Distinctness Index)을 제안하고 인간 평가를 병행하여 LLM의 아이디어 생성 능력과 한계를 분석한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Hypothesis_Generation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 ---
 
@@ -104,13 +106,10 @@ tags:
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/603_PaperRobot_Incremental_Draft_Generation_of_Scientific_Ideas/review]] — LLM 기반 아이디어 생성 평가와 PaperRobot의 지식 그래프 기반 아이디어 생성이 과학적 아이디어 창출의 서로 다른 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/728_SciMON_Scientific_Inspiration_Machines_Optimized_for_Novelty/review]] — LLM의 기본적인 아이디어 생성 능력 평가가 SciMON의 참신성 최적화를 통한 품질 향상 연구의 기반이 된다.
-- 🏛 기반 연구: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — LLM의 아이디어 생성 능력에 대한 기본 평가가 TruthHypo의 진실성 검증 연구의 필요성을 입증하는 기초 연구이다.
-- 🔄 다른 접근: [[papers/730_Sciqag_A_framework_for_auto-generated_science_question_answe/review]] — LLM의 아이디어 생성과 과학 QA 쌍 생성이 모두 과학 문헌으로부터 지식을 자동 추출하지만 다른 형태의 결과물을 산출한다.
-- 🔄 다른 접근: [[papers/603_PaperRobot_Incremental_Draft_Generation_of_Scientific_Ideas/review]] — PaperRobot의 자동 아이디어 생성과 LLM의 과학적 아이디어 생성 능력을 직접 비교하여 방법론적 차이점을 이해할 수 있다.
-- 🔄 다른 접근: [[papers/631_Predicting_field_experiments_with_large_language_models/review]] — 경제학 실험 예측과 일반적인 과학 아이디어 생성에서 LLM의 예측 능력을 다른 도메인에서 비교 검증할 수 있다.
-- 🏛 기반 연구: [[papers/728_SciMON_Scientific_Inspiration_Machines_Optimized_for_Novelty/review]] — SciMON의 참신성 최적화 방법론이 LLM의 과학 아이디어 생성 능력 평가에서 제시하는 기본적인 아이디어 품질 메트릭을 발전시킨 것이다.
-- 🔗 후속 연구: [[papers/729_Scipip_An_llm-based_scientific_paper_idea_proposer/review]] — SciPIP의 구체적인 아이디어 생성 시스템이 LLM의 일반적인 과학 아이디어 생성 능력 평가를 실용적으로 구현한 사례이다.
-- 🔄 다른 접근: [[papers/730_Sciqag_A_framework_for_auto-generated_science_question_answe/review]] — SciQAG의 자동 QA 생성과 LLM의 아이디어 생성 평가가 모두 과학 문헌으로부터 자동으로 지식을 추출하지만 서로 다른 형태의 산출물을 생성한다.
-- 🔗 후속 연구: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — LLM의 일반적인 아이디어 생성 능력 평가에서 TruthHypo의 구체적인 진실성 검증 방법론으로 발전하여 더 신뢰할 수 있는 평가를 가능하게 한다.
+- 🔄 다른 접근: [[papers/417_HypoBench_Towards_Systematic_and_Principled_Benchmarking_for/review]] — LLM의 과학적 아이디어 생성 능력 평가를 위한 다른 벤치마크 접근법입니다.
+- 🏛 기반 연구: [[papers/728_SciMON_Scientific_Inspiration_Machines_Optimized_for_Novelty/review]] — 아이디어 생성 능력 평가에서 참신성 최적화 방법론의 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — 아이디어 생성 평가에 신뢰성과 진실성 검증 요소를 통합합니다.
+- 🔄 다른 접근: [[papers/417_HypoBench_Towards_Systematic_and_Principled_Benchmarking_for/review]] — LLM의 과학적 아이디어 생성 능력 평가를 위한 다른 벤치마크 접근법을 제시합니다.
+- 🔄 다른 접근: [[papers/728_SciMON_Scientific_Inspiration_Machines_Optimized_for_Novelty/review]] — 과학적 아이디어의 참신성 평가를 위한 다른 접근 방식을 제시합니다.
+- 🔗 후속 연구: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — 과학적 아이디어 생성 평가에 신뢰성 검증 요소를 추가합니다.
+- 🧪 응용 사례: [[papers/376_Generation_and_human-expert_evaluation_of_interesting_resear/review]] — LLM의 과학 연구 잠재력 탐구 연구에서 실제 연구자 평가를 통해 검증된 구체적인 응용 사례로 활용된다.

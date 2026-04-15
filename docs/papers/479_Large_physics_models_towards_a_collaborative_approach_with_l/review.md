@@ -12,8 +12,8 @@ arxiv: ""
 score: 3.9
 essence: "본 논문은 물리학 연구에 특화된 대규모 AI 모델인 Large Physics Models (LPMs)의 개발과 평가를 위한 로드맵을 제시하며, 대규모 언어모델(LLM)과 기초모델(Foundation Model)을 물리학 커뮤니티의 협력 구조로 통합하는 방안을 제안한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Physics-informed_Neural_Networks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Barman et al._2025_Large physics models towards a collaborative approach with large language models and foundation mod.pdf"
 ---
@@ -105,5 +105,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Barman et al._2025_Large physics models 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/105_Artificial_Intelligence_for_Direct_Prediction_of_Molecular_D/review]] — 양자, 원자, 연속체 스케일 AI 과학 접근법이 물리학 특화 모델 개발의 다른 관점을 제시한다.
-- 🔗 후속 연구: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 과학적 머신러닝을 위한 파운데이션 모델 개념이 물리학 특화 대규모 모델로 확장된다.
+- 🔗 후속 연구: [[papers/056_Advancing_the_scientific_method_with_large_language_models_F/review]] — 일반적인 과학 방법론 지원에서 물리학 전용 대규모 모델 개발로 특화된 확장을 제시한다
+- 🏛 기반 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 생물학 및 화학 분야 과학 LLM 서베이가 물리학 특화 모델 개발의 참고 기반을 제공한다
+- 🧪 응용 사례: [[papers/105_Artificial_Intelligence_for_Direct_Prediction_of_Molecular_D/review]] — 양자, 원자 단위 과학 연구에서 AI 활용 현황이 Large Physics Models의 실제 적용 분야를 보여준다
+- 🔄 다른 접근: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 환경과학 기초모델과 물리학 기초모델이 각각 도메인 특화 AI 개발의 병렬적 접근법이다
+- 🔄 다른 접근: [[papers/056_Advancing_the_scientific_method_with_large_language_models_F/review]] — 과학 방법론 전반의 LLM 활용과 물리학 특화 모델이 범용성 대 전문성의 상보적 접근이다

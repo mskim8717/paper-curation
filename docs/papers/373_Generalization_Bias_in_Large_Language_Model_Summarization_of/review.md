@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.2
 essence: "대규모 언어모델(LLM)이 과학 연구를 요약할 때 원문보다 과도하게 광범위한 결론을 도출하는 체계적인 편향을 가지고 있으며, 이는 대규모 과학 오독의 위험을 초래한다. 10개의 주요 LLM을 대상으로 4,900개의 요약을 분석한 결과, LLM 요약이 인간 작성 요약보다 약 5배 더 높은 확률로 과도한 일반화를 포함했다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Peer_Review"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Automated_Scientific_Review"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Peters and Chin-Yee_2025_Generalization Bias in Large Language Model Summarization of Scientific Research.pdf"
 ---
@@ -123,10 +123,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Peters and Chin-Yee_2025_Generalization 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/410_How_deep_do_large_language_models_internalize_scientific_lit/review]] — LLM이 과학 문헌을 내재화하는 방식의 편향을 다루어 일반화 편향과 함께 종합적 이해가 필요하다.
-- 🔗 후속 연구: [[papers/478_Large_language_models_penetration_in_scholarly_writing_and_p/review]] — 학술 저술에서 LLM 침투도 측정 연구의 한 부분으로 과도한 일반화 편향의 실증적 증거를 제공한다.
-- 🏛 기반 연구: [[papers/752_Shallow_synthesis_of_knowledge_in_gpt-generated_texts_A_case/review]] — GPT 생성 텍스트의 피상적 지식 합성 분석으로 과학 요약에서 과도한 일반화가 발생하는 메커니즘을 설명한다.
-- 🔄 다른 접근: [[papers/410_How_deep_do_large_language_models_internalize_scientific_lit/review]] — LLM의 과학 요약에서 일반화 편향을 다루어 인용 편향과 함께 LLM의 과학 문헌 처리 한계를 보완적으로 이해할 수 있다.
-- 🔗 후속 연구: [[papers/478_Large_language_models_penetration_in_scholarly_writing_and_p/review]] — LLM의 일반화 편향 연구의 한 부분으로 학술 저술 침투도 측정을 통해 편향의 실제 영향을 분석한다.
-- 🏛 기반 연구: [[papers/905_If_in_a_Crowdsourced_Data_Annotation_Pipeline_a_GPT-4__Proce/review]] — 대규모 언어 모델 요약에서의 일반화 편향 연구가 GPT-4와 크라우드소싱 파이프라인의 데이터 주석 품질 차이를 이해하는 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/127_Automatic_evaluation_metrics_for_artificially_generated_scie/review]] — 대규모 언어 모델 요약의 일반화 편향을 분석하여 AI 생성 논문 평가의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/127_Automatic_evaluation_metrics_for_artificially_generated_scie/review]] — AI 생성 과학 논문 품질 평가에서 자동 메트릭과 편향 탐지라는 상호 보완적 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/394_Grounding_fallacies_misrepresenting_scientific_publications/review]] — 과학 논문의 잘못된 일반화와 허위정보에서의 논리적 오류는 모두 과학 지식의 왜곡이라는 공통 문제를 다룬다.
+- 🏛 기반 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 과학 문헌 합성에서 LLM의 신뢰성 있는 요약 생성을 위한 기반 시스템을 제공한다.
+- ⚖️ 반론/비판: [[papers/668_ResearchAgent_Iterative_Research_Idea_Generation_over_Scient/review]] — 과학적 아이디어 생성에서 LLM의 편향 문제와 반복적 연구 방법론 간의 대조를 보여준다.
+- 🏛 기반 연구: [[papers/394_Grounding_fallacies_misrepresenting_scientific_publications/review]] — 과학 논문의 잘못된 인용과 LLM 요약의 과도한 일반화는 모두 과학 지식 왜곡의 근본 원인이다.
+- 🔄 다른 접근: [[papers/127_Automatic_evaluation_metrics_for_artificially_generated_scie/review]] — AI 생성 과학 논문의 품질 평가에서 자동 메트릭과 편향 분석이라는 상호 보완적 접근법을 제시한다.
+- ⚖️ 반론/비판: [[papers/375_Generating_full_length_wikipedia_biographies_The_impact_of_g/review]] — LLM 요약의 일반화 편향 문제는 성별 편향을 겪는 전기문 생성 시스템의 한계를 더 넓은 관점에서 조명한다.

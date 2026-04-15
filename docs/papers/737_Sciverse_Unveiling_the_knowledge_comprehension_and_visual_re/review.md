@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "SCIVERSE는 대규모 멀티모달 모델(LMM)의 과학 문제 해결 능력을 세밀하게 평가하기 위한 벤치마크로, 1,147개 문제를 5가지 버전으로 변환한 5,735개 테스트 인스턴스를 제공하며, 과학 지식 이해, 멀티모달 콘텐츠 해석, 연쇄적 사고(CoT) 추론이라는 세 가지 핵심 차원을 체계적으로 평가한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Multimodal_Scientific_Reasoning"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Physics_Reasoning_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Guo et al._2025_Sciverse Unveiling the knowledge comprehension and visual reasoning of lmms on multi-modal scientif.pdf"
 ---
@@ -126,8 +127,7 @@ SCIVERSE는 대규모 멀티모달 모델(LMM)의 과학 문제 해결 능력을
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — 둘 다 과학 멀티모달 평가를 위한 벤치마크이지만 SCIVERSE는 세밀한 능력 분석에, MMSCI는 대규모 데이터 수집에 집중함
-- 🔗 후속 연구: [[papers/727_Scimage_How_good_are_multimodal_large_language_models_at_sci/review]] — SCIMAGE의 과학 이미지 이해 평가가 SCIVERSE의 멀티모달 콘텐츠 해석 차원을 더욱 구체화함
-- 🏛 기반 연구: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 차트-코드 생성 향상 기법이 SCIVERSE의 시각적 추론 평가 방법론 개발에 필수적인 기반을 제공함
-- 🏛 기반 연구: [[papers/091_Aiscivision_A_framework_for_specializing_large_multimodal_mo/review]] — 지식 이해와 시각적 추론을 통해 과학 분야에서의 다중모달 모델 활용 기반을 제공한다.
-- 🔄 다른 접근: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — 둘 다 과학 멀티모달 벤치마크를 제공하지만 MMSCI는 대학원 수준 복잡성에, SCIVERSE는 세밀한 능력 평가에 집중함
+- 🔄 다른 접근: [[papers/808_Theoremqa_A_theorem-driven_question_answering_dataset/review]] — 과학적 추론 능력 평가라는 공통 목표를 가지지만 다중모달 vs 정리 중심이라는 다른 평가 방식을 사용한다.
+- 🔗 후속 연구: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 대규모 다중모달 모델의 과학적 인물 전기 벤치마크를 통해 SCIVERSE의 평가 범위를 확장하고 보완할 수 있다.
+- 🏛 기반 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 대규모 차트 이해 데이터셋을 통해 다중모달 과학 문제 해결의 시각적 추론 기반을 제공한다.
+- 🔗 후속 연구: [[papers/808_Theoremqa_A_theorem-driven_question_answering_dataset/review]] — 다중모달 과학 문제 해결 벤치마크를 통해 정리 기반 추론을 시각적 요소가 포함된 더 복합적인 문제로 확장할 수 있다.

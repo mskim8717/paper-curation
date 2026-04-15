@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.1
 essence: "확산 모델(diffusion models)의 추론 시간 정렬(inference-time alignment) 문제를 트리 탐색 문제로 재정의하고, 동적 빔 폭 조정을 통해 비미분 보상 함수(non-differentiable reward functions)에 대한 효율적인 최적화를 달성하는 새로운 방법을 제시한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Reward-guided_Diffusion_Models"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Research_Literature_Analysis_Systems"
   - "topic/ai4s"
 ---
 
@@ -106,9 +107,9 @@ tags:
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 둘 다 확산 모델의 추론 시간 정렬을 다루지만 동적 탐색과 반복적 개선이라는 서로 다른 최적화 전략을 사용함
-- 🔗 후속 연구: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — Search-R1의 검색 기반 추론이 확산 모델의 동적 탐색 과정에서 더 효과적인 빔 폭 조정을 가능하게 함
-- 🏛 기반 연구: [[papers/269_Derivative-Free_Guidance_in_Continuous_and_Discrete_Diffusio/review]] — 미분 없는 유도 방법이 비미분 보상 함수에 대한 확산 모델 최적화의 이론적 기반을 제공함
-- 🔄 다른 접근: [[papers/269_Derivative-Free_Guidance_in_Continuous_and_Discrete_Diffusio/review]] — 확산 모델의 추론 시간 정렬에서 다른 동적 탐색 vs 보상 가이던스 접근법을 비교할 수 있다
-- 🔄 다른 접근: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 둘 다 확산 모델의 추론 시간 보상 최적화를 다루지만 반복적 개선과 동적 탐색이라는 서로 다른 전략을 사용함
-- 🔗 후속 연구: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — 확산 모델에서 추론 시점 정렬을 위한 동적 검색 기법이 FigGen의 과학 도형 생성 품질 향상에 적용될 수 있다.
+- 🧪 응용 사례: [[papers/867_Verifier-Constrained_Flow_Expansion_for_Discovery_Beyond_the/review]] — 동적 탐색 기법이 Flow 모델의 데이터 외부 확장에서 효율적인 최적화 경로 탐색에 활용됨
+- 🔄 다른 접근: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 둘 다 추론 시간 최적화를 다루지만 Dynamic Search는 확산 모델에, PAG는 강화학습 기반 자기수정에 적용됨
+- 🔗 후속 연구: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 반복적 개선 프레임워크를 확산 모델의 동적 탐색과 결합하여 더 정교한 생성 제어가 가능함
+- 🔄 다른 접근: [[papers/428_Inference-Time_Alignment_in_Diffusion_Models_with_Reward-Gui/review]] — 확산 모델의 추론 시간 정렬을 위한 서로 다른 동적 탐색 방법론을 제시하여 비교 연구가 가능하다.
+- 🔄 다른 접근: [[papers/269_Derivative-Free_Guidance_in_Continuous_and_Discrete_Diffusio/review]] — 추론 시간 정렬을 위한 동적 탐색과 미분자유 유도는 확산 모델 제어의 서로 다른 방법론이다.
+- 🏛 기반 연구: [[papers/867_Verifier-Constrained_Flow_Expansion_for_Discovery_Beyond_the/review]] — 추론 시간 정렬 최적화 기법이 검증기 제약 Flow 확장의 이론적 기반을 제공함

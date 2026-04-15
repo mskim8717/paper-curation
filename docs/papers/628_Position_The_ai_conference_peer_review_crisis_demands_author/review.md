@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 AI 학술대회의 급증하는 논문 제출(연 10,000편 초과)로 인한 피어 리뷰 품질 저하 문제를 진단하고, **양방향 피드백 시스템과 체계적 심사자 보상 제도**를 통해 심사자 책임성과 동기 부여를 강화하는 개혁방안을 제시한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Peer_Review"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI-Enhanced_Peer_Review"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chubb et al._2025_Position The ai conference peer review crisis demands author feedback and reviewer rewards.pdf"
 ---
@@ -122,14 +123,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chubb et al._2025_Position The ai confer
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/591_Openreview_should_be_protected_and_leveraged_as_a_community/review]] — OpenReview 플랫폼 보호와 함께 AI 학술대회 피어 리뷰 위기 해결을 위한 상호 보완적 접근이다.
-- 🔗 후속 연구: [[papers/870_Vulnerability_of_text-matching_in_mlai_conference_reviewer_a/review]] — 심사위원 배정 시스템 취약성과 함께 피어 리뷰 품질 저하의 복합적 원인을 다루어 종합적 개혁이 필요하다.
-- 🏛 기반 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 다중턴 대화 기반 피어 리뷰로 양방향 피드백 시스템 구현의 기술적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/870_Vulnerability_of_text-matching_in_mlai_conference_reviewer_a/review]] — AI 학술대회 피어 리뷰 위기의 원인 중 하나로 심사위원 배정 시스템 취약성을 구체적으로 입증한다.
-- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — AI 학술대회 피어 리뷰 위기에 대한 해결책으로 다중턴 대화 기반 리뷰 시스템을 제안한다.
-- 🔄 다른 접근: [[papers/591_Openreview_should_be_protected_and_leveraged_as_a_community/review]] — AI 학술대회 피어 리뷰 위기 해결을 위한 다른 접근으로 커뮤니티 자산 보호와 저자 피드백 시스템을 함께 고려해야 한다.
-- 🔗 후속 연구: [[papers/154_Best_Practices_for_Using_AI_When_Writing_Scientific_Manuscri/review]] — AI 기반 논문 작성 도구의 책임감 있는 사용이 동료 심사 위기 해결을 위한 AI 시스템 도입의 윤리적 기반을 제공한다
-- 🏛 기반 연구: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — 동료 심사 과정의 NLP 지원 체계가 AI 시대 동료 심사 위기 해결을 위한 기술적 솔루션의 중요한 기반을 제공한다
-- 🏛 기반 연구: [[papers/070_Agentreview_Exploring_peer_review_dynamics_with_llm_agents/review]] — AI 기반 피어 리뷰의 위기 상황에서 편향과 사회적 영향을 정량화할 수 있는 분석 도구를 제공한다.
-- ⚖️ 반론/비판: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — AI 학회 동료 심사 위기에 대한 우려는 AI Scientist-v2가 동료 심사를 통과한 논문을 생성했다는 성과와 상반된 시각을 제시한다.
-- 🏛 기반 연구: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — AI 학회 동료평가 위기에 대한 체계적 분석이 자동화된 검토 시스템 개발의 필요성과 방향성을 제시하는 이론적 근거가 됨
+- 🏛 기반 연구: [[papers/591_Openreview_should_be_protected_and_leveraged_as_a_community/review]] — 피어 리뷰 시스템의 구조적 문제 해결을 위한 데이터 기반 접근의 기초를 마련한다
+- 🔗 후속 연구: [[papers/680_Reviewing_scientific_papers_for_critical_problems_with_reaso/review]] — 과학 논문의 비판적 오류 검출을 통한 피어 리뷰 품질 향상 방안을 제시한다
+- 🔄 다른 접근: [[papers/739_Seagraph_Unveiling_the_whole_story_of_paper_review_comments/review]] — 리뷰 과정의 투명성 증대를 위한 다른 기술적 솔루션을 제시한다
+- 🏛 기반 연구: [[papers/104_Are_we_there_yet_revealing_the_risks_of_utilizing_large_lang/review]] — AI 기반 피어 리뷰 시스템의 근본적 취약성이 학술계 위기를 야기할 수 있다는 경고를 뒷받침한다.
+- 🔗 후속 연구: [[papers/870_Vulnerability_of_text-matching_in_mlai_conference_reviewer_a/review]] — 텍스트 매칭 조작 취약점이 AI 학술대회 피어 리뷰 위기의 구체적 사례를 제공한다.
+- 🔗 후속 연구: [[papers/591_Openreview_should_be_protected_and_leveraged_as_a_community/review]] — 피어 리뷰 시스템 개선을 위한 구체적인 개혁 방안과 실행 전략을 제시한다
+- 🏛 기반 연구: [[papers/739_Seagraph_Unveiling_the_whole_story_of_paper_review_comments/review]] — 피어 리뷰 과정의 투명성과 이해도 향상을 위한 기술적 기반을 제공한다
+- 🏛 기반 연구: [[papers/070_Agentreview_Exploring_peer_review_dynamics_with_llm_agents/review]] — AI 컨퍼런스 동료 검토 위기와 저자 익명성 필요성에 대한 연구로, 검토 동역학 시뮬레이션의 현실적 배경을 제공
+- 🏛 기반 연구: [[papers/680_Reviewing_scientific_papers_for_critical_problems_with_reaso/review]] — 피어 리뷰 품질 개선을 위한 자동화된 오류 검출의 기초 방법론을 제공한다
+- 🏛 기반 연구: [[papers/860_Unveiling_the_sentinels_Assessing_ai_performance_in_cybersec/review]] — AI 기반 피어 리뷰 시스템의 효과성 평가를 위한 실증적 기반을 제공한다

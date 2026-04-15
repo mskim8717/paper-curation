@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "LLM의 연구 아이디어 생성 능력을 향상시키기 위해 반복적인 계획 수립과 지식 검색을 결합한 Nova 프레임워크를 제안한다. 이 방법은 기존 접근법 대비 새로운 아이디어 생성을 3.4배, 상위 평가 아이디어를 2.5배 이상 증가시킨다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Multi-Hop_Reasoning_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2024_Nova An iterative planning and search approach to enhance novelty and diversity of llm generated id.pdf"
 ---
@@ -119,10 +120,7 @@ LLM의 연구 아이디어 생성 능력을 향상시키기 위해 반복적인 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/509_Llms_can_realize_combinatorial_creativity_generating_creativ/review]] — 조합적 창의성 이론과 반복적 계획 수립은 모두 연구 아이디어 생성을 위한 서로 다른 체계적 접근법입니다
-- 🔗 후속 연구: [[papers/668_ResearchAgent_Iterative_Research_Idea_Generation_over_Scient/review]] — ResearchAgent의 반복적 연구 아이디어 생성은 Nova 프레임워크의 계획 수립과 검색 결합 방식을 더욱 발전시킨 형태입니다
-- 🧪 응용 사례: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — LiveIdeaBench의 과학적 창의성 평가는 Nova가 생성한 새로운 아이디어의 품질을 측정하는 실제 응용 플랫폼입니다
-- 🔄 다른 접근: [[papers/509_Llms_can_realize_combinatorial_creativity_generating_creativ/review]] — Nova의 반복적 계획 수립과 조합적 창의성 이론은 모두 연구 아이디어 생성을 위한 서로 다른 체계적 접근법입니다
-- 🧪 응용 사례: [[papers/366_Futuregen_Llm-rag_approach_to_generate_the_future_work_of_sc/review]] — Nova의 반복적 계획과 지식 검색으로 생성된 연구 아이디어는 FutureGen의 미래 연구 방향 자동 생성에 직접 활용될 수 있습니다
-- 🔗 후속 연구: [[papers/854_Understanding_the_planning_of_LLM_agents_A_survey/review]] — 반복적 계획과 검색을 통한 추론 향상이 LLM 에이전트 계획 수립의 구체적인 확장 방법이다.
-- 🔄 다른 접근: [[papers/469_Large_Language_Models_as_Evolutionary_Optimizers/review]] — 조합 최적화에서 LLM 기반 진화 알고리즘과 반복적 계획 및 탐색 접근법을 비교할 수 있습니다.
+- 🔄 다른 접근: [[papers/079_Ai_idea_bench_2025_Ai_research_idea_generation_benchmark/review]] — 아이디어 생성 능력을 다루지만 Nova는 실제 생성 성능 향상에, AI Idea Bench는 평가 벤치마크 구축에 집중한 상호 보완적인 다른 접근법임
+- 🔗 후속 연구: [[papers/728_SciMON_Scientific_Inspiration_Machines_Optimized_for_Novelty/review]] — 과학적 영감 기계 최적화를 통해 Nova의 반복적 아이디어 생성 방법론을 참신성뿐만 아니라 과학적 영감까지 포함하는 더 포괄적인 시스템으로 확장함
+- 🏛 기반 연구: [[papers/019_A_review_of_llm-assisted_ideation/review]] — LLM 기반 아이디어 생성의 포괄적 리뷰를 통해 Nova의 반복적 계획 및 검색 접근법의 이론적 배경과 기존 연구와의 관계를 제공함
+- 🔄 다른 접근: [[papers/079_Ai_idea_bench_2025_Ai_research_idea_generation_benchmark/review]] — 아이디어 생성 능력 평가라는 같은 목표를 가지지만, 벤치마크 구축 대신 실제 생성 성능 향상에 집중한 대안적 접근법임

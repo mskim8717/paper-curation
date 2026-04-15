@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 언어 모델(Language Models, LMs)을 추론 능력과 도구 사용 능력으로 확대하는 증강 언어 모델(Augmented Language Models, ALMs)에 대한 포괄적인 조사 논문이다. ALMs는 복잡한 작업을 단순한 부작업으로 분해하거나 외부 모듈(코드 인터프리터, 검색 엔진 등)을 활용하여 기존 LMs의 해석 가능성, 일관성, 확장성 문제를 해결할 수 있다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Domain-Specific_LLM_Agents"
   - "topic/ai4s"
 ---
 
@@ -132,8 +132,6 @@ tags:
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/052_Advances_and_challenges_in_foundation_agents_From_brain-insp/review]] — 추론과 도구 사용으로 확장된 증강 언어모델의 개념이 뇌 기능 기반 파운데이션 에이전트 설계의 핵심적 이론적 기반을 제공한다
-- 🔗 후속 연구: [[papers/499_LLM_With_Tools_A_Survey/review]] — 언어모델의 추론 및 도구 사용 확장에 대한 조사가 도구를 활용하는 LLM에 대한 더 포괄적이고 구체적인 서베이로 발전했다
-- 🏛 기반 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 증강 언어모델의 도구 사용 개념이 언어모델이 스스로 도구 사용을 학습하는 자율적 시스템 개발의 중요한 이론적 토대가 되었다
-- 🧪 응용 사례: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — 언어모델의 도구 사용 능력 확장 연구가 16000개 이상의 다양한 도구를 마스터하는 대형언어모델 개발에 직접 적용되었다
-- 🔗 후속 연구: [[papers/052_Advances_and_challenges_in_foundation_agents_From_brain-insp/review]] — 뇌 기능 기반 모듈식 에이전트 아키텍처가 추론과 도구 사용 능력으로 확장된 증강 언어모델의 구체적 구현 방향을 제시한다
+- 🔗 후속 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 증강 언어모델의 외부 지식 활용을 검색 증강 생성이라는 구체적 기법으로 발전시킨 연구
+- 🔄 다른 접근: [[papers/499_LLM_With_Tools_A_Survey/review]] — 언어모델 증강을 도구 사용 관점에서 접근하는 다른 방법론적 프레임워크
+- 🏛 기반 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 증강 언어모델이 활용하는 외부 도구 사용 학습의 기본 개념과 방법론

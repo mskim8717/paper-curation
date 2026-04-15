@@ -12,8 +12,10 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 인간의 사회적·이동 행동을 IoT 아키텍처 설계에 통합하여 소시오-테크니컬 시스템의 지속가능성을 향상시키는 인간 중심 아키텍처 설계 방법론을 제시한다. 에이전트 기반 사회 시뮬레이션(ABSS)과 모델 주도 공학(MDE) 접근법을 결합하여 QoS(Quality of Service)와 QoE(Quality of Experience)의 균형을 맞추는 최적 아키텍처 구성을 도출한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Structured_Research_Frameworks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Agent-Based_CFD_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Moghaddam et al._2021_Architecture Design for Human-Driven Systems.pdf"
 ---
@@ -95,7 +97,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Moghaddam et al._2021_Architecture Desig
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/254_DataJoint_20_A_Computational_Substrate_for_Agentic_Scientifi/review]] — 인간 중심 시스템 아키텍처 설계가 에이전틱 과학 연구를 위한 계산 기반 구조 구축의 이론적 기초를 제공한다.
-- 🔗 후속 연구: [[papers/175_Building_machines_that_learn_and_think_with_people/review]] — 인간과 함께 학습하고 사고하는 기계 구축 원리를 IoT 환경에서의 소시오-테크니컬 시스템으로 확장할 수 있다.
-- 🧪 응용 사례: [[papers/365_Future_of_Work_with_AI_Agents_Auditing_Automation_and_Augmen/review]] — 인간 중심 아키텍처 설계 방법론을 AI 에이전트와의 미래 업무 환경 구축에 적용하여 더 효과적인 인간-AI 협업 시스템을 만들 수 있다.
-- 🔄 다른 접근: [[papers/462_Large_Language_Model_Agent_as_a_Mechanical_Designer/review]] — 기계 설계 자동화에서 LLM 기반과 인간 중심 시스템 설계 접근법을 비교할 수 있습니다.
+- 🏛 기반 연구: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — 에이전트 시스템 확장성에 대한 과학적 접근으로서 인간 중심 시스템 설계의 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/050_Adasociety_An_adaptive_environment_with_social_structures_fo/review]] — 사회적 구조를 가진 적응형 AI 환경으로 인간 행동 통합 아키텍처를 확장한다
+- 🧪 응용 사례: [[papers/612_PersonaAI_An_Interactive_Agentic-AI_Framework_for_Autonomous/review]] — 자율적 개인화 상호작용 AI 프레임워크로 인간 중심 아키텍처의 구체적 구현을 보여준다
+- 🏛 기반 연구: [[papers/175_Building_machines_that_learn_and_think_with_people/review]] — 인간 중심 시스템 설계의 아키텍처 원리를 제공하여 인간과 함께 사고하는 AI 시스템 구축의 설계 기반을 마련함
+- 🏛 기반 연구: [[papers/229_Cocoa_Co-planning_and_co-execution_with_ai_agents/review]] — 인간 중심 시스템 아키텍처 설계가 협업적 계획-실행 시스템의 설계 원리를 제공한다

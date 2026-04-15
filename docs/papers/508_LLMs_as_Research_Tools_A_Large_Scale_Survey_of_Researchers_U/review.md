@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 검증된 논문 저자 816명을 대상으로 LLM(Large Language Model)의 연구 활용 현황과 인식을 조사한 첫 대규모 실증 연구로, 연구자의 인구통계학적 배경에 따른 사용 양식과 윤리 인식의 차이를 드러냈다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liao et al._2024_LLMs as Research Tools A Large Scale Survey of Researchers' Usage and Perceptions.pdf"
 ---
@@ -110,11 +112,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liao et al._2024_LLMs as Research Tools 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/064_Agentic_AI_for_Scientific_Discovery_A_Survey_of_Progress_Cha/review]] — 과학 연구를 위한 에이전틱 AI의 종합적 조사가 연구자들의 LLM 사용 현황 조사의 이론적 맥락을 제공한다.
-- 🔗 후속 연구: [[papers/410_How_deep_do_large_language_models_internalize_scientific_lit/review]] — LLM이 과학 문헌을 얼마나 깊이 내재화하는지에 대한 연구가 연구자들의 LLM 활용 방식 이해를 확장한다.
-- 🧪 응용 사례: [[papers/607_Patterns_and_purposes_A_cross-journal_analysis_of_ai_tool_us/review]] — AI 도구 사용의 패턴과 목적에 대한 학술지 간 분석이 연구자 LLM 사용 조사의 실제 적용 결과이다.
-- ⚖️ 반론/비판: [[papers/824_Towards_AI_for_science_developing_a_conceptual_basis_for_tra/review]] — 연구자들의 LLM 활용 실태 조사가 도서관 서비스 모델의 한계점을 지적한다.
-- 🧪 응용 사례: [[papers/064_Agentic_AI_for_Scientific_Discovery_A_Survey_of_Progress_Cha/review]] — 연구자들의 LLM 사용 현황 조사가 과학 발견을 위한 에이전틱 AI 시스템의 실제 도입과 활용을 보여주는 구체적인 사례이다.
-- 🏛 기반 연구: [[papers/074_AI_for_research_the_ultimate_guide_to_choosing_the_right_too/review]] — 연구자들의 LLM 사용에 대한 대규모 조사가 올바른 도구 선택 가이드의 실증적 근거를 제공한다.
-- 🏛 기반 연구: [[papers/875_What_are_the_best_AI_tools_for_research_Natures_guide/review]] — 연구자들의 LLM 활용에 대한 대규모 설문 조사가 AI 도구 가이드 작성에 필요한 실제 사용 패턴과 요구사항을 파악하는 기초 데이터를 제공한다.
-- 🔗 후속 연구: [[papers/912_Science_and_the_new_age_of_AI/review]] — 연구자들의 AI 도구 사용 현황을 더 광범위한 설문을 통해 확장 조사한다
+- 🔗 후속 연구: [[papers/793_The_Adoption_and_Usage_of_AI_Agents_Early_Evidence_from_Perp/review]] — 연구자 LLM 사용 현황을 개인 사용자의 AI 에이전트 도입으로 확장하여 분석한다
+- 🏛 기반 연구: [[papers/878_What_ChatGPT_and_generative_AI_mean_for_science/review]] — ChatGPT와 생성 AI의 과학 분야 의미 분석이 연구자 LLM 활용 연구의 배경을 제공한다
+- 🏛 기반 연구: [[papers/736_SciTrust_Evaluating_the_Trustworthiness_of_Large_Language_Mo/review]] — 연구자의 LLM 활용 현황이 과학 분야 LLM 신뢰성 평가의 실제적 맥락을 제공한다
+- 🧪 응용 사례: [[papers/074_AI_for_research_the_ultimate_guide_to_choosing_the_right_too/review]] — 연구 도구로서 LLM 활용에 대한 대규모 조사가 도구 선택 가이드의 실증적 근거이다
+- 🧪 응용 사례: [[papers/784_Systematic_Framework_of_Application_Methods_for_Large_Langua/review]] — 연구 도구로서 LLM 사용 설문이 언어과학 분야 적용 프레임워크의 실증적 기반을 제공한다

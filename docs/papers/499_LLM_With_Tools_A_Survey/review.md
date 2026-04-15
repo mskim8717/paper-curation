@@ -8,8 +8,10 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 대규모 언어 모델(LLM)에 외부 도구 통합을 통해 모델의 성능을 향상시키는 방법론을 체계적으로 조사한 종합 리뷰이다. 사용자 지시 이해부터 도구 선택, 실행, 피드백 처리까지의 표준화된 패러다임을 제시하고, 미세조정(Fine-tuning)과 문맥 내 학습(In-Context Learning) 기법을 통해 LLM의 도구 활용 능력을 강화하는 방법을 탐구한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shen_2024_LLM With Tools A Survey.pdf"
 ---
@@ -107,13 +109,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shen_2024_LLM With Tools A Survey.pdf"
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 언어 모델이 스스로 도구 사용법을 학습하는 Toolformer의 기초 연구를 제공한다.
-- 🔗 후속 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — 16,000개 이상의 도구를 마스터하는 LLM 훈련으로 도구 활용 능력을 대폭 확장한다.
-- ⚖️ 반론/비판: [[papers/814_Tooling_or_Not_Tooling_The_Impact_of_Tools_on_Language_Agent/review]] — 언어 에이전트에서 도구 사용이 미치는 영향에 대한 비판적 분석을 제공한다.
-- 🔗 후속 연구: [[papers/114_Augmented_Language_Models_a_Survey/review]] — 언어모델의 추론 및 도구 사용 확장에 대한 조사가 도구를 활용하는 LLM에 대한 더 포괄적이고 구체적인 서베이로 발전했다
-- 🧪 응용 사례: [[papers/735_SciToolAgent_a_knowledge-graph-driven_scientific_agent_for_m/review]] — 도구를 활용한 LLM 연구의 포괄적 조사를 과학 도구 특화 에이전트 개발에 적용할 수 있다
-- 🏛 기반 연구: [[papers/848_TxAgent_An_AI_Agent_for_Therapeutic_Reasoning_Across_a_Unive/review]] — 도구를 활용한 LLM의 포괄적 조사가 211개 생의학 도구를 활용한 치료 추론 에이전트의 기반을 제공한다
-- 🔗 후속 연구: [[papers/814_Tooling_or_Not_Tooling_The_Impact_of_Tools_on_Language_Agent/review]] — 도구를 활용한 LLM에 대한 종합적 조사를 화학 분야의 구체적 사례 분석으로 확장한다.
-- 🏛 기반 연구: [[papers/496_LLM_Agents_Making_Agent_Tools/review]] — 도구 사용을 위한 LLM 조사 연구가 TOOLMAKER의 과학 도구 자동 생성 및 LLM 호환성 구현의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/842_Tree-planner_Efficient_close-loop_task_planning_with_large_l/review]] — LLM의 도구 활용 능력을 토큰 효율적인 계획 수립으로 확장한 구체적 구현체를 제시한다.
-- 🏛 기반 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — LLM 도구 사용에 대한 포괄적 서베이에서 제시된 방법론을 대규모 벤치마크로 구현
+- 🏛 기반 연구: [[papers/760_Small_Language_Models_are_the_Future_of_Agentic_AI/review]] — LLM과 도구 통합에 대한 종합적 조사가 소규모 언어모델 에이전트의 도구 활용 능력 설계의 기반을 제공한다.
+- 🔗 후속 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — Toolformer의 도구 사용 자기학습이 LLM 도구 통합 조사의 구체적 실현 방법을 보여준다.
+- 🏛 기반 연구: [[papers/769_StableToolBench_Towards_Stable_Large-Scale_Benchmarking_on_T/review]] — 안정적인 대규모 벤치마킹이 LLM 도구 활용 능력 평가의 기반 인프라를 제공한다.
+- 🔗 후속 연구: [[papers/052_Advances_and_challenges_in_foundation_agents_From_brain-insp/review]] — Foundation 에이전트를 도구 사용 능력을 갖춘 더욱 실용적인 LLM 에이전트로 발전
+- 🔄 다른 접근: [[papers/114_Augmented_Language_Models_a_Survey/review]] — 언어모델 증강을 도구 사용 관점에서 접근하는 다른 방법론적 프레임워크
+- 🧪 응용 사례: [[papers/130_Automating_Computational_Chemistry_Workflows_via_OpenClaw_an/review]] — 도구를 활용한 LLM 조사 연구가 OpenClaw 시스템의 실제 적용 맥락을 보여준다
+- 🏛 기반 연구: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 도구를 활용한 LLM에 대한 포괄적 조사로, 과학적 도구 사용 벤치마킹의 기초 이론을 제공
+- 🏛 기반 연구: [[papers/760_Small_Language_Models_are_the_Future_of_Agentic_AI/review]] — LLM과 도구 통합에 대한 종합적 조사가 소규모 언어모델 기반 에이전트 설계의 이론적 기반을 제공한다.

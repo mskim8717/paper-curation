@@ -12,10 +12,11 @@ arxiv: ""
 score: 4.0
 essence: "3-트랙 신경망 아키텍처를 이용하여 1D 서열, 2D 거리 지도, 3D 좌표 정보를 동시에 처리함으로써 AlphaFold2에 근접한 단백질 구조 예측 정확도를 달성하고 단백질-단백질 복합체 모델링을 가능하게 했다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Domain-specific_Scientific_Reasoning"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/LLM_Scientific_Research_Acceleration"
   - "topic/ai4s"
-pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Baek et al._2021_Accurate prediction of protein structures and interactions using a three-track neural network.pdf"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Baek et al._2021_Accurate prediction of protein structures and interactions using a three-track neural network 2.pdf"
 ---
 
 # Accurate prediction of protein structures and interactions using a three-track neural network
@@ -93,8 +94,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Baek et al._2021_Accurate prediction of 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/487_Leveraging_biomolecule_and_natural_language_through_multi-mo/review]] — 단백질 구조 예측을 생물분자 다중모달 학습으로 확장한 포괄적 연구
-- 🔄 다른 접근: [[papers/403_Highly_accurate_protein_structure_prediction_with_AlphaFold/review]] — AlphaFold2와 유사한 정확도를 다른 3-트랙 신경망으로 달성한 대안적 접근
-- 🧪 응용 사례: [[papers/1106_The_BOS-Lig_Dataset_Accurate_Ligand_Charges_from_a_Consensus/review]] — 단백질 구조 예측 기술을 리간드 전하 예측 등 구체적 응용으로 확장
-- 🔗 후속 연구: [[papers/686_Robust_deep_learning_based_protein_sequence_design_using_Pro/review]] — 단백질 구조 예측을 견고한 딥러닝 기반 서열 설계로 발전시킨 연구
-- 🏛 기반 연구: [[papers/487_Leveraging_biomolecule_and_natural_language_through_multi-mo/review]] — 단백질 구조 예측 연구가 생물분자 다중모달 학습의 핵심 기반 기술
+- 🧪 응용 사례: [[papers/094_AlphaGenome_advancing_regulatory_variant_effect_prediction_w/review]] — 단백질 구조 예측 기법이 게놈 규제 변이 예측의 구조적 이해에 활용된다.
+- 🔗 후속 연구: [[papers/171_Boltz-1_Democratizing_Biomolecular_Interaction_Modeling/review]] — 생체분자 상호작용 모델링으로 단백질 구조 예측을 더욱 발전시킨 연구이다.
+- 🏛 기반 연구: [[papers/403_Highly_accurate_protein_structure_prediction_with_AlphaFold/review]] — AlphaFold가 제시한 단백질 구조 예측의 기반 위에서 발전된 연구이다.
+- 🏛 기반 연구: [[papers/094_AlphaGenome_advancing_regulatory_variant_effect_prediction_w/review]] — 단백질 구조 예측 기법이 게놈 규제 변이 예측의 구조적 기초를 제공한다.

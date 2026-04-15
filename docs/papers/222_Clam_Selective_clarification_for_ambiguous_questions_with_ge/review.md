@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)이 애매한 사용자 질문에 대해 명확화를 요청하지 않고 부정확한 답변을 제공하는 문제를 해결하기 위해, CLAM 프레임워크를 제안한다. 이는 애매한 질문을 감지하고 명확화 질문을 생성한 후 사용자의 명확화 정보를 바탕으로 최종 답변을 제공하는 선택적 명확화(selective clarification) 접근법이다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Question_Answering"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Self-Clarifying_Reasoning_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2022_Clam Selective clarification for ambiguous questions with generative language models.pdf"
 ---
@@ -110,8 +111,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2022_Clam Selective clarifica
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/223_Clarify_when_necessary_Resolving_ambiguity_through_interacti/review]] — 상호작용을 통한 모호성 해결 연구로 본 논문의 명확화 프레임워크를 대화형 시스템으로 확장한다.
-- 🏛 기반 연구: [[papers/636_Prompt_to_be_consistent_is_better_than_self-consistent_few-s/review]] — 일관성을 위한 프롬프트가 자기 일관성보다 효과적임을 보여 본 논문의 선택적 명확화 접근법의 이론적 근거를 제공한다.
-- 🔄 다른 접근: [[papers/747_Selfcheck_Using_llms_to_zero-shot_check_their_own_step-by-st/review]] — LLM의 단계별 자기 점검 방법으로 본 논문의 애매한 질문 처리와 다른 접근법의 품질 보장을 제시한다.
-- 🏛 기반 연구: [[papers/312_Empowering_language_models_with_active_inquiry_for_deeper_un/review]] — 모호성 해결을 위한 상호작용이 능동적 질의의 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/223_Clarify_when_necessary_Resolving_ambiguity_through_interacti/review]] — CLAM의 선택적 명확화 방법이 Clarify when necessary의 모호성 해결 프레임워크를 더 정교한 질문 생성과 답변 시스템으로 발전시킨 연구임
+- 🏛 기반 연구: [[papers/235_Comparing_knowledge_sources_for_open-domain_scientific_claim/review]] — 애매한 질문에 대한 선택적 명확화 기법이 과학적 주장 검증에서 불분명한 증거 해석 문제 해결의 기반을 제공한다.
+- 🔗 후속 연구: [[papers/223_Clarify_when_necessary_Resolving_ambiguity_through_interacti/review]] — 애매한 질문 처리를 위한 CLAM 프레임워크를 상호작용적 애매성 해결로 확장하여 더 정교한 대화형 AI 시스템을 구현한다.
+- 🧪 응용 사례: [[papers/249_Curriculum_Reinforcement_Learning_from_Easy_to_Hard_Tasks_Im/review]] — 선택적 명확화 메커니즘이 커리큘럼 강화학습에서 단계별 작업 난이도 조절과 학습 방향 결정에 직접 적용될 수 있다.
+- 🔄 다른 접근: [[papers/312_Empowering_language_models_with_active_inquiry_for_deeper_un/review]] — 모호한 질의 해결을 위한 다른 접근법으로 대화형 명확화 기법을 제시한다.
+- 🧪 응용 사례: [[papers/249_Curriculum_Reinforcement_Learning_from_Easy_to_Hard_Tasks_Im/review]] — 선택적 명확화 메커니즘이 커리큘럼 강화학습에서 작업 난이도 판단과 학습 경로 조정에 직접 활용될 수 있다.
+- 🧪 응용 사례: [[papers/235_Comparing_knowledge_sources_for_open-domain_scientific_claim/review]] — 선택적 명확화 기법이 과학적 주장 검증에서 모호한 증거나 상충하는 정보 처리에 직접 적용될 수 있다.

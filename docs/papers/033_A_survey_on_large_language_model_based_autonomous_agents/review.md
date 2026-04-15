@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)을 기반으로 한 자율 에이전트의 구성, 응용, 평가에 대한 체계적 종합 리뷰를 제시한다. LLM의 광범위한 지식과 인간 수준의 지능을 활용하여 자율적 의사결정이 가능한 에이전트 구축 방법론을 통합 프레임워크로 제안한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Domain-Specific_LLM_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2023_A survey on large language model based autonomous agents.pdf"
 ---
@@ -90,14 +90,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2023_A survey on large langu
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — LLM 기반 다중 에이전트의 진전과 도전과제를 포괄적으로 다루어 자율 에이전트 연구를 확장한다.
-- ⚖️ 반론/비판: [[papers/760_Small_Language_Models_are_the_Future_of_Agentic_AI/review]] — 소형 언어모델이 에이전틱 AI의 미래라는 대안적 관점을 제시한다.
-- 🏛 기반 연구: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — 에이전트 시스템 확장의 과학적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/361_From_LLM_Reasoning_to_Autonomous_AI_Agents_A_Comprehensive_R/review]] — 자율 AI 에이전트 종합 리뷰의 기반이 되는 일반적인 에이전트 연구 조사
-- 🏛 기반 연구: [[papers/625_PlanGenLLMs_A_Modern_Survey_of_LLM_Planning_Capabilities/review]] — 대규모 언어모델 기반 자율 에이전트 조사는 LLM 계획 수립 능력 분석의 이론적 기반을 제공합니다
-- 🏛 기반 연구: [[papers/449_Kimi_k15_Scaling_reinforcement_learning_with_llms/review]] — 대규모 언어모델 기반 자율 에이전트 서베이는 Kimi k1.5의 강화학습 기반 에이전트 설계에 이론적 배경과 방법론적 근거를 제공한다.
-- 🏛 기반 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 대형 언어 모델 기반 자율 에이전트 서베이가 멀티에이전트 시스템 설계의 이론적 토대를 제공합니다.
-- 🔗 후속 연구: [[papers/784_Systematic_Framework_of_Application_Methods_for_Large_Langua/review]] — LLM 기반 자율 에이전트 연구를 언어과학 분야의 체계적 방법론으로 확장한다
-- 🔗 후속 연구: [[papers/792_Text2world_Benchmarking_large_language_models_for_symbolic_w/review]] — 자율 에이전트 연구의 포괄적 조망에서 세계 모델링이라는 핵심 기능의 구체적 평가 방법을 제시한다.
-- 🔗 후속 연구: [[papers/865_Vending-Bench_A_Benchmark_for_Long-Term_Coherence_of_Autonom/review]] — 자율 에이전트 설문조사의 구체적 벤치마크 구현으로 에이전트 평가 방법론을 확장한다.
-- 🧪 응용 사례: [[papers/365_Future_of_Work_with_AI_Agents_Auditing_Automation_and_Augmen/review]] — 자율 에이전트에 대한 포괄적 조사로 업무 자동화 에이전트의 구체적 적용 가능성을 보여준다.
+- 🔗 후속 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 기본적인 LLM 기반 에이전트를 다중 에이전트 시스템으로 확장한 발전된 연구 방향을 제시한다
+- 🧪 응용 사례: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — 자율 에이전트 이론을 실제 다중 에이전트 애플리케이션 개발에 적용한 구체적 사례이다
+- ⚖️ 반론/비판: [[papers/760_Small_Language_Models_are_the_Future_of_Agentic_AI/review]] — 대규모 LLM 에이전트 대신 소형 언어모델의 효율성을 강조하는 대안적 접근법을 제시한다
+- 🏛 기반 연구: [[papers/361_From_LLM_Reasoning_to_Autonomous_AI_Agents_A_Comprehensive_R/review]] — LLM 기반 자율 에이전트의 포괄적 설문이 이 리뷰의 기초 자료를 제공한다
+- 🏛 기반 연구: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — 멀티에이전트 시스템의 기본 구조와 협업 메커니즘에 대한 이론적 기반을 제공합니다.
+- 🏛 기반 연구: [[papers/052_Advances_and_challenges_in_foundation_agents_From_brain-insp/review]] — Foundation 에이전트의 뇌 영감 설계가 기반으로 하는 LLM 기반 자율 에이전트 전반적 이론
+- 🧪 응용 사례: [[papers/415_Hunt_Globally_Wide_Search_AI_Agents_for_Drug_Asset_Scouting/review]] — 자율 에이전트의 일반적 설문 연구에서 제시된 원리들이 제약 산업의 구체적인 투자 의사결정 문제에 적용된다.
+- 🏛 기반 연구: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — LLM 기반 자율 에이전트에 대한 포괄적 조사로, 에이전트 시스템의 확장 법칙을 이해하는 기초적 배경을 제공
+- 🏛 기반 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — LLM 기반 자율 에이전트의 포괄적 조사를 통해 AutoGen과 같은 다중 에이전트 시스템의 이론적 배경과 설계 원리를 제공함

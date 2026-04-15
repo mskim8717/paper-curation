@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 대규모 언어 모델(LLM) 기반 다중 에이전트 시스템인 QCopilot을 제시하여 양자 센서(특히 냉원자 원자 냉각) 개발 과정의 자동화와 진단을 실현했다. 이를 통해 수동 실험 대비 약 100배의 속도 향상을 달성하며, 다중 매개변수 환경에서 자율적으로 이상 매개변수를 탐지할 수 있다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sha et al._2025_LLM-based Multi-Agent Copilot for Quantum Sensor.pdf"
 ---
@@ -103,3 +104,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sha et al._2025_LLM-based Multi-Agent Co
 - Overall: 4.3/5
 
 **총평**: 본 논문은 LLM 기반 멀티에이전트 시스템을 양자 실험의 자동화에 창의적으로 적용하여 100배 속도 향상이라는 강력한 실험적 성과를 달성했다. 지식 장벽 해소와 누적 학습을 통해 양자 센서 개발의 실용화 장벽을 크게 낮춘 점에서 높은 가치가 있으나, 다른 양자 시스템으로의 일반화 가능성 검증과 안전성 분석의 강화가 필요하다.
+
+## Related Papers
+
+- 🧪 응용 사례: [[papers/072_Agents_for_self-driving_laboratories_applied_to_quantum_comp/review]] — 양자 컴퓨팅 실험실 자동화 에이전트가 양자 센서 개발과 유사한 양자 시스템 제어 도메인을 다룬다
+- 🔗 후속 연구: [[papers/816_Toward_a_Fully_Autonomous_AI-Native_Particle_Accelerator/review]] — 입자 가속기 자동화가 양자 센서를 넘어 더 복잡한 물리학 실험 장비의 자율 운영으로 확장한다
+- 🔗 후속 연구: [[papers/072_Agents_for_self-driving_laboratories_applied_to_quantum_comp/review]] — 양자 컴퓨팅 실험 자동화를 다중 에이전트 협력 시스템으로 확장한 발전된 접근법이다
+- 🏛 기반 연구: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — 양자 센서 다중 에이전트 시스템의 기반이 되는 양자 컴퓨팅 실험 자동화 방법론을 제공한다

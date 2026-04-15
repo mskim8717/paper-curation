@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어 모델(LLM)과 다중 에이전트 기술을 활용하여 복잡한 유한요소법(FEM) 기반 Moose 멀티피직스 시뮬레이션의 자동화를 달성한 MooseAgent 시스템을 제안한다. 자연언어 요구사항으로부터 자동으로 Moose 입력 파일을 생성하여 평균 93%의 성공률을 달성했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Scientific_Frameworks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Mooseagent A llm based multi-agent framework for automating moose simulation.pdf"
 ---
@@ -110,6 +111,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Mooseagent A llm based
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/535_MetaOpenFOAM_an_LLM-based_multi-agent_framework_for_CFD/review]] — MetaOpenFOAM과 MooseAgent 모두 CFD 시뮬레이션 자동화를 위한 LLM 기반 다중 에이전트 프레임워크이지만 서로 다른 시뮬레이션 플랫폼을 대상으로 한다.
-- 🔗 후속 연구: [[papers/587_OpenFOAM_The_Open_Source_Computational_Fluid_Dynamics_Toolbo/review]] — OpenFOAMGPT 2.0의 계산유체역학 자동화 시스템은 Moose 멀티피직스 시뮬레이션 자동화와 유사한 접근방식을 유체역학에 적용한다.
-- 🏛 기반 연구: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 신경 연산자의 아키텍처와 변형에 대한 연구는 MooseAgent가 복잡한 유한요소법 시뮬레이션을 자동화하는 이론적 배경을 제공한다.
+- 🔄 다른 접근: [[papers/588_OpenFOAMGPT_20_end-to-end_trustworthy_automation_for_computa/review]] — MooseAgent와 OpenFOAMGPT 모두 엔지니어링 시뮬레이션 자동화를 목표로 하지만 각각 유한요소법과 전산유체역학이라는 다른 도메인에 특화됨
+- 🔗 후속 연구: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — MooseAgent의 멀티피직스 시뮬레이션 자동화가 HoneyComb의 재료과학 특화 접근법을 물리 시뮬레이션 영역으로 확장함
+- 🏛 기반 연구: [[papers/535_MetaOpenFOAM_an_LLM-based_multi-agent_framework_for_CFD/review]] — MetaOpenFOAM의 CFD 다중 에이전트 프레임워크가 MooseAgent의 유한요소법 자동화 접근법의 방법론적 기반을 제공함
+- 🔄 다른 접근: [[papers/588_OpenFOAMGPT_20_end-to-end_trustworthy_automation_for_computa/review]] — OpenFOAMGPT와 MooseAgent 모두 시뮬레이션 소프트웨어 자동화를 목표로 하지만 각각 CFD와 유한요소법이라는 다른 영역에 특화됨
+- 🔄 다른 접근: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — HoneyComb과 MooseAgent 모두 특정 과학 분야(재료과학 vs 유한요소법)에 LLM 에이전트를 특화시키지만 다른 도메인과 접근법 사용

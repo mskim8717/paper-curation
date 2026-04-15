@@ -11,8 +11,9 @@ arxiv: ""
 score: 0
 essence: "본 논문은 AI의 사회적 책임성(Social Responsibility)을 강화하기 위해 인과학습(Causal Learning, CL)의 7가지 도구를 체계적으로 분석하고, 편향 완화, 공정성, 투명성, 일반화 가능성 등 주요 SRAI 과제에 적용하는 방법론을 제시한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Domain-specific_Scientific_Reasoning"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cheng et al._2021_Causal learning for socially responsible ai.pdf"
 ---
@@ -159,16 +160,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cheng et al._2021_Causal learning for so
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — 인과학습의 편향 완화 도구들이 과학 가설 생성에서 환각과 편향을 탐지하는 TruthHypo의 검증 메커니즘에 적용될 수 있다.
-- 🔄 다른 접근: [[papers/286_Domain-specific_ReAct_for_physics-integrated_iterative_model/review]] — 사회적 책임 AI를 위한 인과학습과 물리학 통합 모델링이 모두 복잡한 인과관계를 다루지만 사회적 vs 물리적 시스템으로 구분된다.
-- 🏛 기반 연구: [[papers/730_Sciqag_A_framework_for_auto-generated_science_question_answe/review]] — 인과학습 도구의 체계적 평가를 위해 SciQAG의 자동 질의응답 생성 방법론이 편향성과 공정성 관련 질문 생성에 활용될 수 있다.
-- 🧪 응용 사례: [[papers/748_Semi-Supervised_2D_Human_Pose_Estimation_Driven_by_Position/review]] — 사회적 책임 AI의 편향 완화 방법론이 반지도학습 포즈 추정의 의사 레이블 노이즈 제거 기법과 연결되어 AI 시스템의 공정성을 향상시킬 수 있다.
-- 🏛 기반 연구: [[papers/190_Causal_intervention_for_abstractive_related_work_generation/review]] — 사회적 책임감 있는 AI를 위한 인과 학습 연구로 관련 업무 생성에서 편향 제거의 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/631_Predicting_field_experiments_with_large_language_models/review]] — 경제학 실험 예측 방법론을 사회적 책임 AI의 인과학습 도구 평가에 적용하여 편향성 완화 효과를 실증적으로 검증할 수 있다.
-- 🔄 다른 접근: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — AI 연구 커뮤니티 시뮬레이션과 사회적 책임 AI를 위한 인과학습이 모두 AI 시스템의 사회적 영향을 다루지만 접근 방식이 상이하다.
-- 🏛 기반 연구: [[papers/730_Sciqag_A_framework_for_auto-generated_science_question_answe/review]] — SciQAG의 자동 질의응답 생성 방법론이 사회적 책임 AI를 위한 인과학습 도구들의 효과를 평가하는 체계적인 질문 생성에 적용될 수 있다.
-- 🧪 응용 사례: [[papers/748_Semi-Supervised_2D_Human_Pose_Estimation_Driven_by_Position/review]] — 반지도학습 포즈 추정의 편향 제거 기법이 사회적 책임 AI의 인과학습 도구에서 편향 완화 방법론으로 적용될 수 있다.
-- 🧪 응용 사례: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — TruthHypo의 환각 탐지 프레임워크가 사회적 책임 AI의 인과학습에서 잘못된 인과관계 추론을 검출하는 도구로 활용될 수 있다.
-- 🔄 다른 접근: [[papers/286_Domain-specific_ReAct_for_physics-integrated_iterative_model/review]] — 물리학 통합 모델링과 사회적 책임 AI 인과학습이 모두 복잡한 시스템의 인과관계를 다루지만 물리적 vs 사회적 도메인으로 구분된다.
-- 🔗 후속 연구: [[papers/458_Language_agents_mirror_human_causal_reasoning_biases/review]] — 사회적 책임 AI를 위한 인과 학습을 언어 에이전트의 인지 편향 연구로 확장할 수 있다
-- 🏛 기반 연구: [[papers/660_Reimagining_urban_science_Scaling_causal_inference_with_larg/review]] — 사회적 책임감 있는 AI를 위한 인과 학습이 도시 인과 추론 자동화의 이론적 기반을 제공합니다.
+- 🧪 응용 사례: [[papers/631_Predicting_field_experiments_with_large_language_models/review]] — 사회적 책임성을 고려한 인과학습을 경제학 실험 예측에 적용합니다.
+- 🔗 후속 연구: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — 과학 에이전트 시스템에 사회적 책임성과 윤리적 고려사항을 통합합니다.
+- 🏛 기반 연구: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — 연구 커뮤니티 시뮬레이션에서 편향 완화와 공정성 확보의 이론적 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/631_Predicting_field_experiments_with_large_language_models/review]] — 사회적 책임성을 고려한 인과학습을 경제학 실험 예측에 적용합니다.

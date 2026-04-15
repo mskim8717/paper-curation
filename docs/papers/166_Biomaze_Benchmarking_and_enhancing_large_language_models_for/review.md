@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 생물학적 경로(biological pathway) 추론 능력을 평가하기 위한 BioMaze 벤치마크를 제시하고, LLMs의 경로 추론 한계를 보완하기 위해 PathSeeker라는 에이전트 기반 방법을 제안한다. 이를 통해 복잡한 생물학적 시스템에서의 다단계 인과 추론 문제를 해결한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Domain-specific_Scientific_Reasoning"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2025_Biomaze Benchmarking and enhancing large language models for biological pathway reasoning.pdf"
 ---
@@ -122,8 +122,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2025_Biomaze Benchmarking an
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/094_AlphaGenome_advancing_regulatory_variant_effect_prediction_w/review]] — 생물학적 경로 추론이 유전체 변이 효과 예측에 적용됩니다.
-- 🏛 기반 연구: [[papers/726_Sciknoweval_Evaluating_multi-level_scientific_knowledge_of_l/review]] — 다층적 생물학 지식 평가가 경로 추론 벤치마크의 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/681_Revisiting_Gene_Ontology_Knowledge_Discovery_with_Hierarchic/review]] — 생물학적 경로 추론이 유전자 온톨로지 지식 발견으로 확장됩니다.
-- 🏛 기반 연구: [[papers/094_AlphaGenome_advancing_regulatory_variant_effect_prediction_w/review]] — 생물학적 경로 추론이 유전체 변이 효과 예측의 기반이 됩니다.
-- 🧪 응용 사례: [[papers/726_Sciknoweval_Evaluating_multi-level_scientific_knowledge_of_l/review]] — 과학 지식 평가가 생물학적 경로 추론에 적용됩니다.
+- 🔄 다른 접근: [[papers/483_Learning_to_Discover_Regulatory_Elements_for_Gene_Expression/review]] — 생물학적 경로 추론 대신 유전자 발현 예측을 위한 조절 요소 발견에 집중한다
+- 🏛 기반 연구: [[papers/165_Biokgbench_A_knowledge_graph_checking_benchmark_of_ai_agent/review]] — 생물학 지식 그래프 체킹이 경로 추론 검증의 기반 방법론을 제공한다
+- 🔗 후속 연구: [[papers/159_Bio-sieve_exploring_instruction_tuning_large_language_models/review]] — 생물학 분야에서 LLM의 명령어 튜닝을 통한 추론 능력 확장을 보여준다
+- 🔄 다른 접근: [[papers/483_Learning_to_Discover_Regulatory_Elements_for_Gene_Expression/review]] — 조절 요소 발견 대신 생물학적 경로에서의 다단계 추론에 집중한다
+- 🏛 기반 연구: [[papers/169_Bioprobench_Comprehensive_dataset_and_benchmark_in_biologica/review]] — 생의학 분야 대형언어모델의 기초 능력을 평가하는 벤치마크로, BioProBench의 절차적 추론 평가에 필요한 기본적 생의학 지식 이해 평가 틀을 제공한다

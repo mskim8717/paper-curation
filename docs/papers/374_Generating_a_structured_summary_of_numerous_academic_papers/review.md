@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.2
 essence: "수천 개의 학술논문을 다수 입력 문서로 하여 구조화된 요약(structured summary)을 자동으로 생성하는 첫 번째 대규모 데이터셋 BigSurvey와 카테고리 기반 정렬 및 희소 트랜스포머(CAST) 방법을 제안한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/Citation_Dataset_Analysis"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2023_Generating a structured summary of numerous academic papers Dataset and method.pdf"
 ---
@@ -91,8 +92,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2023_Generating a structured 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/780_Surveyforge_On_the_outline_heuristics_memory-driven_generati/review]] — 메모리 기반 설문 생성 프레임워크로 대규모 학술 논문 요약과 다른 접근 방식의 구조화된 요약을 제공한다.
-- 🔗 후속 연구: [[papers/402_Hierarchical_catalogue_generation_for_literature_review_a_be/review]] — 문헌 리뷰를 위한 계층적 카탈로그 생성 방법으로 BigSurvey 데이터셋의 구조화된 요약과 보완적이다.
-- 🏛 기반 연구: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 지식 그래프 기반 의료 연구 다중 문서 요약으로 구조화된 요약 생성의 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/781_Surveyx_Academic_survey_automation_via_large_language_models/review]] — 학술 서베이 생성에서 LLM 기반 자동화와 구조화된 요약 접근법을 비교할 수 있습니다.
-- 🧪 응용 사례: [[papers/907_Is_AI_ready_to_mass-produce_lay_summaries_of_research_articl/review]] — 대량 학술논문 구조화 요약 생성 방법론이 일반 독자용 요약 자동화의 구체적 실현 방안을 제시한다.
+- 🔗 후속 연구: [[papers/022_A_sentiment_consolidation_framework_for_meta-review_generati/review]] — 메타 리뷰 생성에서 감정 통합 프레임워크와 구조화된 요약 생성 방법론이 상호 보완된다.
+- 🔄 다른 접근: [[papers/385_Glimpse_Pragmatically_informative_multi-document_summarizati/review]] — 다중 문서 요약에서 구조화된 접근법과 차별적 요약 방식이라는 서로 다른 전략을 제시한다.
+- 🏛 기반 연구: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 지식 그래프 기반 다중 문서 요약의 의학 연구 적용을 위한 방법론적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 문헌 리뷰 자동 생성에서 구조화된 요약과 대규모 데이터셋 기반 접근법의 차이를 보여준다.
+- 🔄 다른 접근: [[papers/385_Glimpse_Pragmatically_informative_multi-document_summarizati/review]] — 다중 문서 요약에서 차별적 접근법과 구조화된 요약 생성이라는 서로 다른 전략을 제시한다.
+- 🔗 후속 연구: [[papers/109_Assisting_in_writing_wikipedia-like_articles_from_scratch_wi/review]] — 다수 학술 논문의 구조화된 요약 생성을 위키피디아 수준의 장문 기사 작성으로 확장하여 더 포괄적인 지식 종합을 제시한다.

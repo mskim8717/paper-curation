@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)의 발전 과정을 통계적 언어모델부터 신경망 언어모델, 사전학습 언어모델을 거쳐 현재의 생성형 대규모 모델까지 체계적으로 조사한 종합 서베이 논문이다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/AI_for_Science_Taxonomy"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2023_A survey of large language models.pdf"
 ---
@@ -88,6 +88,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2023_A survey of large langu
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/801_The_llama_3_herd_of_models/review]] — Llama 3 모델군을 통해 대규모 언어모델의 실제 구현과 성능을 구체적으로 보여준다.
-- 🏛 기반 연구: [[papers/1093_The_fifth_era_of_science_Artificial_scientific_intelligence/review]] — 인공 과학 지능의 이론적 토대로서 대규모 언어모델의 발전 과정을 제공한다.
-- 🏛 기반 연구: [[papers/467_Large_Language_Models/review]] — 대규모 언어모델에 대한 포괄적 조사가 수학/물리학 배경 독자를 위한 LLM 강의노트의 기초 자료를 제공합니다.
+- 🔗 후속 연구: [[papers/028_A_survey_of_reasoning_with_foundation_models/review]] — LLM의 기본 구조를 넘어 추론 능력이라는 고차원적 능력에 특화된 심화 분석을 제공한다
+- 🧪 응용 사례: [[papers/029_A_Survey_of_Scientific_Large_Language_Models_From_Data_Found/review]] — 범용 LLM을 과학 연구 특화 도메인에 적용한 구체적 발전 방향을 제시한다
+- 🏛 기반 연구: [[papers/467_Large_Language_Models/review]] — LLM의 기본 개념과 발전사에 대한 포괄적 이해를 위한 필수 기초 자료이다
+- 🏛 기반 연구: [[papers/028_A_survey_of_reasoning_with_foundation_models/review]] — 추론 능력 연구의 기반이 되는 LLM의 전반적 발전사와 구조적 이해를 제공한다
+- 🏛 기반 연구: [[papers/029_A_Survey_of_Scientific_Large_Language_Models_From_Data_Found/review]] — 과학 특화 LLM의 기반이 되는 일반적 LLM 발전사와 구조에 대한 이해를 제공한다
+- 🏛 기반 연구: [[papers/784_Systematic_Framework_of_Application_Methods_for_Large_Langua/review]] — LLM 종합 설문이 언어과학 분야 체계적 적용 프레임워크의 기술적 기초를 제공한다
+- 🔗 후속 연구: [[papers/467_Large_Language_Models/review]] — 대규모 언어 모델의 포괄적 조사 연구로서 수학/물리학자를 위한 입문서를 보완한다

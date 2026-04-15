@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 수학 교과서와 논문을 **프로젝트 규모의 Lean 형식화**로 자동 변환하는 최초의 에이전트 프레임워크 M2F를 제시한다. 검증자 피드백을 루프에 유지하며 세 주 안에 153,853줄의 형식화된 Lean 라이브러리를 생성하여 텍스트북 규모 형식화의 실용성을 입증했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2026_M2F Automated Formalization of Mathematical Literature at Scale.pdf"
 ---
@@ -135,6 +135,9 @@ Edit Propose → VerifyFile → {
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — 수학적 증명과 형식화에서 LLM의 근본적인 추론 능력 향상 방법론을 제공한다.
-- 🔗 후속 연구: [[papers/482_Lean-star_Learning_to_interleave_thinking_and_proving/review]] — 기본적인 정리 증명을 대규모 교과서 형식화로 확장하여 실용적 응용 가능성을 보여준다.
-- 🧪 응용 사례: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — 수학 형식화 자동화가 과학 연구 전체 자동화의 핵심 구성요소로 작용할 수 있음을 입증한다.
+- 🔗 후속 연구: [[papers/826_Towards_Autonomous_Mathematics_Research/review]] — 자율적 수학 연구를 향한 더 광범위한 비전을 제시하여, 수학 문헌의 자동 형식화를 실제 수학 연구 자동화로 확장
+- 🏛 기반 연구: [[papers/568_Mustard_Mastering_uniform_synthesis_of_theorem_and_proof_dat/review]] — 정리와 증명 데이터의 균일한 합성을 위한 기초 연구로, 대규모 형식화 작업의 데이터 기반을 제공
+- 🔄 다른 접근: [[papers/532_MerLean_An_Agentic_Framework_for_Autoformalization_in_Quantu/review]] — 양자 역학에서 자동 형식화를 위한 에이전트 프레임워크로, 수학 교과서 형식화와 다른 도메인에서의 접근
+- 🏛 기반 연구: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — 형식적 올림피아드 수준 수학을 위한 크로스 시스템 벤치마크로, 형식화 작업의 평가 기준을 제공
+- 🔗 후속 연구: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — 수학 문헌의 자동 형식화를 머신러닝 연구 논문의 코드 구현 자동화로 확장한 발전된 형태
+- 🔗 후속 연구: [[papers/532_MerLean_An_Agentic_Framework_for_Autoformalization_in_Quantu/review]] — 수학 문헌의 대규모 자동 형식화 연구를 양자계산 이론이라는 특화 도메인으로 확장하여 완전 자동화를 달성한다.

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 LLM의 복잡한 학술 정보 검색 능력을 평가하기 위한 첫 번째 전문 벤치마크인 **ScholarSearch**를 제시한다. 기존의 학술 벤치마크(MMLU, GPQA)나 일반 웹 검색 벤치마크(BrowseComp)로는 충분하지 않은 깊이 있는 학술 연구 검색 능력을 측정한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Peer_Review"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Citation_Analysis"
   - "topic/ai4s"
 ---
 
@@ -139,8 +140,8 @@ tags:
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/041_Aaar-10_Assessing_ais_potential_to_assist_research/review]] — AI가 연구 지원에 미치는 영향을 평가하는 다른 접근법으로 학술 검색 능력과 함께 고려해야 한다.
-- 🔗 후속 연구: [[papers/450_Knowledge_navigator_Llm-guided_browsing_framework_for_explor/review]] — LLM 기반 탐색적 검색 프레임워크로 ScholarSearch 벤치마크의 실제 활용 사례를 제시한다.
-- 🏛 기반 연구: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — 과학 문헌의 검색 증강 생성 에이전트로 학술 정보 검색 능력 평가의 기술적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/862_Using_artificial_intelligence_for_systematic_review_the_exam/review]] — 학술 검색 능력 벤치마킹이 AI 도구 기반 체계적 문헌고찰의 검색 단계 성능 평가에 활용된다.
-- 🔗 후속 연구: [[papers/520_Massw_A_new_dataset_and_benchmark_tasks_for_ai-assisted_scie/review]] — 학자 검색 능력 벤치마킹을 과학 연구 워크플로우의 5가지 측면으로 확장한 포괄적인 AI 보조 연구 평가 체계입니다.
+- 🔗 후속 연구: [[papers/041_Aaar-10_Assessing_ais_potential_to_assist_research/review]] — AI의 일반적 연구 지원 능력을 학술 정보 검색 특화 능력으로 세분화하여 평가한다.
+- 🏛 기반 연구: [[papers/174_Browsecomp_A_simple_yet_challenging_benchmark_for_browsing_a/review]] — 웹 브라우징 능력 평가가 학술 검색 능력 벤치마크 개발의 방법론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/450_Knowledge_navigator_Llm-guided_browsing_framework_for_explor/review]] — LLM의 정보 탐색 능력을 학술 검색과 일반 지식 탐색에서 각각 전문화된 방식으로 평가한다.
+- 🧪 응용 사례: [[papers/386_Google_Scholar_to_overshadow_them_all_Comparing_the_sizes_of/review]] — LLM의 학술 검색 능력 벤치마크가 학술 검색 엔진 규모 비교의 실제 활용 방안을 보여준다.
+- 🔗 후속 연구: [[papers/041_Aaar-10_Assessing_ais_potential_to_assist_research/review]] — AI의 연구 지원 능력 평가를 학술 정보 검색 특화 능력으로 심화 확장한다.

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 프라이버시 제약, 데이터 주권, 대규모 데이터 생성으로 인해 중앙화할 수 없는 과학 데이터를 다중 슈퍼컴퓨터 환경에서 연합학습(Federated Learning, FL)으로 훈련하는 확장 가능한 프레임워크를 제시하며, DOE 리더십급 슈퍼컴퓨터 4대에서의 실증을 통해 크로스-시설 FL의 실용성을 입증한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Molecular_Discovery_Foundation_Models"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2026_Scalable Cross-Facility Federated Learning for Scientific Foundation Models on Multiple Supercompute.pdf"
 ---
@@ -105,6 +107,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2026_Scalable Cross-Facility F
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 과학 머신러닝을 위한 파운데이션 모델의 분산 학습 구현 사례이다.
-- 🧪 응용 사례: [[papers/254_DataJoint_20_A_Computational_Substrate_for_Agentic_Scientifi/review]] — 연합학습을 과학 데이터 분석을 위한 계산 기반으로 활용한다.
-- 🧪 응용 사례: [[papers/516_Machine-Learned_Interatomic_Potentials_for_Predicting_Physic/review]] — 분산 학습을 원자간 포텐셜 같은 물리 모델 훈련에 적용한다.
+- 🏛 기반 연구: [[papers/258_Deep_active_learning_based_experimental_design_to_uncover_sy/review]] — 능동학습 기반 실험 설계가 연합학습에서 데이터 효율적 학습의 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — SARS-CoV-2 엑사스케일 시뮬레이션이 크로스-시설 연합학습의 대규모 과학 계산 적용 사례를 보여준다.
+- 🔗 후속 연구: [[papers/758_Simulations_in_the_era_of_exascale_computing/review]] — 엑사스케일 컴퓨팅 시대의 시뮬레이션이 다중 슈퍼컴퓨터 연합학습을 더 큰 규모로 확장한다.

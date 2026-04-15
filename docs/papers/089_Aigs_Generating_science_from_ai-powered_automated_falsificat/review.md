@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 자율 AI 에이전트가 전체 과학 연구 프로세스를 독립적으로 완수하여 과학적 발견을 도출할 수 있는 AI 생성 과학(AIGS) 시스템을 제안한다. 특히 포퍼(Popper)의 과학 철학에 기반하여 **반증(falsification)**을 과학 연구의 핵심으로 재정의하고, 이를 명시적으로 구현하는 BABY-AIGS 시스템을 개발했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Research_Taxonomy_Surveys"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_Aigs Generating science from ai-powered automated falsification.pdf"
 ---
@@ -170,9 +170,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_Aigs Generating science 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/151_Benchmarking_ai_scientists_in_omics_data-driven_biological_r/review]] — 자동 반증 기반 과학 시스템을 생물학적 발견이라는 구체적 도메인에 적용하여 실용성을 검증합니다.
-- 🏛 기반 연구: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — LLM 기반 과학 연구 변혁의 이론적 배경을 제공하여 자동 과학 생성의 맥락을 이해할 수 있습니다.
-- 🔗 후속 연구: [[papers/629_Pre_A_peer_review_based_large_language_model_evaluator/review]] — 동료 평가 메커니즘을 자동 반증 과정에 통합하여 과학적 검증의 엄밀성을 높입니다.
-- 🏛 기반 연구: [[papers/366_Futuregen_Llm-rag_approach_to_generate_the_future_work_of_sc/review]] — AI 기반 자동화된 반증 가능성으로 과학 생성은 미래 연구 방향 자동 생성의 과학적 엄밀성을 보장하는 이론적 기반입니다
-- 🏛 기반 연구: [[papers/151_Benchmarking_ai_scientists_in_omics_data-driven_biological_r/review]] — 자동화된 과학 발견의 일반적 프레임워크를 생물학 연구라는 특정 도메인에 적용하는 기초를 제공합니다.
-- 🔗 후속 연구: [[papers/629_Pre_A_peer_review_based_large_language_model_evaluator/review]] — 동료 평가 메커니즘을 자동 과학 생성 시스템에 통합하여 과학적 발견의 품질 검증을 강화합니다.
+- 🔄 다른 접근: [[papers/085_Ai-newton_A_concept-driven_physical_law_discovery_system_wit/review]] — 두 논문 모두 AI가 물리 법칙을 자동으로 발견하는 시스템을 다루지만, AIGS는 반증 기반 접근을, AI-Newton은 개념 기반 접근을 사용한다
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AIGS의 반증 기반 자율 연구 방법론을 실제 과학 발견에 완전히 적용한 발전된 형태의 AI 과학자 시스템이다
+- 🏛 기반 연구: [[papers/123_Automated_Hypothesis_Validation_with_Agentic_Sequential_Fals/review]] — AIGS의 가설 검증과 반증 프로세스가 자동화된 가설 검증을 위한 순차적 반증 방법론의 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/520_Massw_A_new_dataset_and_benchmark_tasks_for_ai-assisted_scie/review]] — AI 기반 자동 반증을 통한 과학 생성 연구를 과학적 워크플로우의 체계적 데이터셋 구축으로 발전시켜 더 포괄적인 AI 과학 지원을 제공한다.

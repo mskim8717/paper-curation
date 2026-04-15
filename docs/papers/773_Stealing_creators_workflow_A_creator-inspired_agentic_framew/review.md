@@ -11,8 +11,10 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 과학 논문을 짧은 형식의 동영상으로 변환하는 완전 자동화된 멀티-LLM 에이전트 프레임워크 SciTalk를 제안한다. 인간 크리에이터의 반복적 워크플로우에서 영감을 받아 피드백 루프를 통해 과학적 정확성과 시각적 품질을 향상시킨다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/LLM_Agent_Benchmarking"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Le et al._2025_Stealing creator’s workflow A creator-inspired agentic framework with iterative feedback loop for i.pdf"
 ---
@@ -108,6 +110,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Le et al._2025_Stealing creator’s work
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/597_P2p_Automated_paper-to-poster_generation_and_fine-grained_be/review]] — 둘 다 학술 논문의 시각적 변환을 다루지만 하나는 동영상 생성에, 다른 하나는 포스터 생성에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/600_Paper2Web_Lets_Make_Your_Paper_Alive/review]] — 논문을 웹으로 변환하는 Paper2Web 시스템이 SciTalk의 과학 논문 콘텐츠 변환 아이디어를 다른 매체로 확장한 사례를 제공한다.
-- 🏛 기반 연구: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — LLM 에이전트의 협업 메커니즘 연구가 SciTalk의 멀티-LLM 에이전트 프레임워크 설계에 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/597_P2p_Automated_paper-to-poster_generation_and_fine-grained_be/review]] — 논문에서 시각 콘텐츠 생성을 포스터 vs 동영상으로 서로 다른 형태로 접근한다
+- 🧪 응용 사례: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 과학 문헌 합성 기술을 짧은 형식 동영상 제작이라는 새로운 매체에 적용한다
+- 🔗 후속 연구: [[papers/600_Paper2Web_Lets_Make_Your_Paper_Alive/review]] — 논문의 웹 변환을 동영상이라는 더 동적인 매체로 확장한다
+- 🔄 다른 접근: [[papers/641_Prototypical_human-ai_collaboration_behaviors_from_llm-assis/review]] — AI 보조 창작 과정을 글쓰기와 일반적 창작 워크플로우에서 각각 분석한다.

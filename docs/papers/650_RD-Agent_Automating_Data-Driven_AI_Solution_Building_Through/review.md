@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 LLM 기반의 이중 에이전트 프레임워크인 R&D-Agent를 제안하여, 데이터 과학 솔루션 개발을 자동화하고 전문가 수준의 성능에 근접하도록 설계했다. 연구자 에이전트는 성능 피드백을 바탕으로 아이디어를 생성하고, 개발자 에이전트는 오류 피드백을 바탕으로 코드를 개선하는 협력적 탐색 과정을 통해 기존 자동화 솔루션의 한계를 극복한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/AI-Powered_Research_Planning"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Embodied_AI_Research_Interaction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_R&D-Agent Automating Data-Driven AI Solution Building Through LLM-Powered Automated Research, Devel.pdf"
 ---
@@ -108,6 +108,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_R&D-Agent Automating Da
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/594_OSDA_Agent_Leveraging_Large_Language_Models_for_De_Novo_Desi/review]] — R&D-Agent와 DS-Agent 모두 LLM 기반 데이터 과학 자동화를 추구하지만 이중 에이전트 vs 단일 에이전트 아키텍처를 사용한다.
-- 🔗 후속 연구: [[papers/121_Autokaggle_A_multi-agent_framework_for_autonomous_data_scien/review]] — AutoKaggle의 자율 데이터 과학을 위한 다중 에이전트 프레임워크는 R&D-Agent의 협력적 탐색 과정을 캐글 경쟁 환경으로 확장한다.
-- 🏛 기반 연구: [[papers/294_Dsbench_How_far_are_data_science_agents_to_becoming_data_sci/review]] — 데이터 과학 에이전트의 발전 수준을 평가하는 DSBench는 R&D-Agent의 전문가 수준 성능 달성 목표를 벤치마킹하는 기준을 제공한다.
+- 🔗 후속 연구: [[papers/293_Ds-agent_Automated_data_science_by_empowering_large_language/review]] — R&D-Agent의 이중 에이전트 협력이 DS-Agent의 CBR 기반 데이터 사이언스 자동화를 더 정교한 피드백 시스템으로 발전시킴
+- 🔄 다른 접근: [[papers/549_Mlr-copilot_Autonomous_machine_learning_research_based_on_la/review]] — R&D-Agent와 MLR-COPILOT 모두 연구 자동화를 목표로 하지만 각각 데이터 사이언스와 머신러닝 연구라는 다른 영역에 특화됨
+- 🏛 기반 연구: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — Data Interpreter의 데이터 사이언스 LLM 에이전트 연구가 R&D-Agent의 데이터 기반 솔루션 구축 접근법의 기초를 제공함
+- 🧪 응용 사례: [[papers/476_Large_language_models_orchestrating_structured_reasoning_ach/review]] — R&D 솔루션 구축을 자동화하는 데이터 기반 AI 에이전트로, 경험적 학습 이론의 실제 적용 사례
+- 🔗 후속 연구: [[papers/293_Ds-agent_Automated_data_science_by_empowering_large_language/review]] — R&D-Agent의 이중 에이전트 협력 구조는 DS-Agent의 CBR 기반 자동화를 더 체계화한 발전된 형태

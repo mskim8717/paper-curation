@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.3
 essence: "정신과 진료 대화형 에이전트(PACA)의 임상 적절성을 체계적으로 평가하기 위해 다면적 정신의학적 구성(Multi-Faceted Construct, MFC)을 기반으로 한 시뮬레이션 환자 프레임워크를 제시한다. 이는 윤리적 안전성을 보장하면서도 비용 효율적이고 정량적인 평가를 가능하게 한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Clinical_Multi-Agent_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Multi-Agent_Medical_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kolenik and Gams_2025_Psyche A multi-faceted patient simulation framework for evaluation of psychiatric assessment conver.pdf"
 ---
@@ -112,5 +114,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kolenik and Gams_2025_Psyche A multi-fac
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/821_Towards_a_client-centered_assessment_of_llm_therapists_by_cl/review]] — 치료사 평가 vs 다면적 환자 시뮬레이션으로 의료 AI 평가의 서로 다른 접근
-- 🔗 후속 연구: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — 다면적 환자 시뮬레이션 프레임워크 Psyche는 PATIENTSIM의 페르소나 기반 환자 시뮬레이션을 심리학적 측면까지 확장한다.
+- 🔄 다른 접근: [[papers/058_Agent_hospital_A_simulacrum_of_hospital_with_evolvable_medic/review]] — 정신과 환자 시뮬레이션과 병원 에이전트 시뮬레이션은 의료 분야에서 서로 다른 시뮬레이션 접근법을 제시한다
+- 🔗 후속 연구: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — 의사-환자 대화 시뮬레이션이 정신과 평가 프레임워크를 실제 임상 상호작용으로 확장한다
+- 🏛 기반 연구: [[papers/078_Ai_hospital_Benchmarking_large_language_models_in_a_multi-ag/review]] — 다면적 환자 시뮬레이션 기술을 다중 에이전트 의료 벤치마킹의 핵심 구성 요소로 활용한다
+- 🏛 기반 연구: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — 다면적 환자 시뮬레이션 프레임워크가 PATIENTSIM의 페르소나 기반 환자 모델링 접근법의 이론적 기반을 제공함
+- 🔄 다른 접근: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — 환자 시뮬레이션 프레임워크를 통해 의사-AI 협력의 효과를 사전 검증하는 대안적 접근

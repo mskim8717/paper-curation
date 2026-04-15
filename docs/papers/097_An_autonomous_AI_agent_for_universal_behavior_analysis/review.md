@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "멀티모달 대규모 언어 모델(LLM)과 비전-언어 모델(VLM)을 통합한 자율 AI 에이전트 BehaveAgent는 재학습이나 수동 개입 없이 비디오에서 동물 행동을 보편적으로 분석할 수 있다. 식물부터 인간까지 다양한 종과 실험 패러다임에서 제로샷(zero-shot) 시각 추론을 통해 행동 분석을 자동화한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Embodied_AI_Research"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Domain-Specific_Autonomous_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Aljović et al._2025_An autonomous AI agent for universal behavior analysis.pdf"
 ---
@@ -115,5 +115,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Aljović et al._2025_An autonomous AI ag
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/839_Transforming_Behavioral_Neuroscience_Discovery_with_In-Conte/review]] — 범용 동물 행동 분석 에이전트 BehaveAgent는 행동신경과학의 맥락적 발견 변화 연구에서 제시된 AI 기반 행동 분석 기법을 실제 연구 환경에 적용합니다.
-- 🏛 기반 연구: [[papers/181_Can_gpt-4v_ision_serve_medical_applications_case_studies_on/review]] — BehaveAgent의 멀티모달 행동 분석은 GPT-4V의 의료 응용 연구에서 검증된 비전-언어 모델의 시각적 추론 능력을 동물 행동학 영역으로 확장한 것입니다.
+- 🧪 응용 사례: [[papers/839_Transforming_Behavioral_Neuroscience_Discovery_with_In-Conte/review]] — 보편적 행동 분석 에이전트의 기술을 행동 신경과학 발견이라는 구체적인 연구 분야에 적용하여 실제 과학적 발견을 가능하게 한다
+- 🏛 기반 연구: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — AI가 인간 피험자를 대체할 수 있는지에 대한 연구를 행동 분석 자동화의 이론적 기반으로 활용한다
+- 🔗 후속 연구: [[papers/557_MOOSE-Chem_Large_Language_Models_for_Rediscovering_Unseen_Ch/review]] — 범용 행동 분석에서 화학적 발견을 위한 귀납적 추론이라는 더 특화된 AI 에이전트 응용으로 확장된다
+- 🔄 다른 접근: [[papers/839_Transforming_Behavioral_Neuroscience_Discovery_with_In-Conte/review]] — 행동신경과학과 범용 행동 분석을 위한 서로 다른 AI 자동화 접근법을 제시하여 행동 연구의 다양한 AI 적용 가능성을 보여준다.
+- 🏛 기반 연구: [[papers/831_Towards_llm_agents_for_earth_observation/review]] — 범용 행동 분석을 위한 자율 AI 에이전트가 지구 관측 에이전트 개발의 기반 기술을 제공한다.
+- 🧪 응용 사례: [[papers/141_Autonomous_robotic_system_with_optical_coherence_tomography/review]] — 범용 행동 분석을 위한 자율 AI 에이전트로, 로봇 수술에서 행동 분석 기술의 확장 적용
+- 🔄 다른 접근: [[papers/062_Agent-based_multimodal_information_extraction_for_nanomateri/review]] — 나노물질과 동물 행동이라는 서로 다른 도메인에서 멀티모달 정보 추출을 위한 에이전트 기반 접근법을 비교할 수 있다

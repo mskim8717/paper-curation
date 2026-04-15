@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "WebWatcher는 비전-언어(Vision-Language, VL) 통합 추론 능력을 갖춘 멀티모달 심층 연구 에이전트로, 합성 멀티모달 궤적(synthetic multimodal trajectories)을 통한 효율적인 학습, 다양한 도구의 활용, 강화학습을 통한 일반화로 웹 검색, 이미지 분석, 웹페이지 탐색 등 복잡한 정보 추구 작업을 수행한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Geng et al._2025_WebWatcher Breaking New Frontier of Vision-Language Deep Research Agent.pdf"
 ---
@@ -118,6 +118,6 @@ WebWatcher는 비전-언어(Vision-Language, VL) 통합 추론 능력을 갖춘 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — 웹 기반 정보 탐색에서 심층 추론 능력을 강조하는 다른 접근 방식을 제시한다.
-- 🔗 후속 연구: [[papers/450_Knowledge_navigator_Llm-guided_browsing_framework_for_explor/review]] — LLM 가이드 웹 브라우징 프레임워크에서 비전-언어 통합으로 확장된 탐색 능력을 보여준다.
-- 🏛 기반 연구: [[papers/174_Browsecomp_A_simple_yet_challenging_benchmark_for_browsing_a/review]] — 웹 브라우징의 기본적인 도전 과제를 다루는 벤치마크로 복잡한 웹 탐색의 기초를 제공한다.
+- 🏛 기반 연구: [[papers/233_Cognitio_emergens_Agency_dimensions_and_dynamics_in_human-ai/review]] — 인간-AI 지식 협업의 이론적 프레임워크가 WebWatcher의 비전-언어 연구 에이전트 설계의 기반이 된다.
+- 🔗 후속 연구: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — PaperQA의 과학 문헌 검색 기능이 WebWatcher의 멀티모달 정보 추구 능력과 결합될 수 있다.
+- 🔄 다른 접근: [[papers/872_Webdancer_Towards_autonomous_information_seeking_agency/review]] — WebDancer와 WebWatcher는 모두 자율적 정보 탐색을 목표로 하지만 서로 다른 추론 방식을 사용한다.

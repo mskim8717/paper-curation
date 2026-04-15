@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 최소한의 맥락(단일 키워드)을 사용하여 대규모 언어모델(LLM)의 과학적 아이디어 생성 능력과 발산적 사고(divergent thinking) 능력을 평가하는 포괄적인 벤치마크 LiveIdeaBench를 제시한다. 40개 이상의 모델을 22개 과학 분야의 1,180개 키워드로 평가한 결과, 과학적 아이디어 생성 능력이 일반 지능 점수로 잘 예측되지 않음을 보여준다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Benchmarking_Taxonomy"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Multi-Hop_Long_Memory_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ruan et al._2024_Liveideabench Evaluating llms’ scientific creativity and idea generation with minimal context.pdf"
 ---
@@ -121,17 +122,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ruan et al._2024_Liveideabench Evaluatin
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/495_Llm__mapreduce-v2_Entropy-driven_convolutional_test-time_sca/review]] — 과학적 아이디어 생성 능력 평가와 장문 기사 생성 능력 평가 모두 LLM의 창의적 생성 능력을 다루지만 평가 방식이 다르다.
-- 🏛 기반 연구: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — LLM이 새로운 연구 아이디어를 생성할 수 있는지에 대한 대규모 인간 평가가 과학적 창의성 벤치마크의 기반 연구이다.
-- 🔗 후속 연구: [[papers/392_Grapheval_A_lightweight_graph-based_llm_framework_for_idea_e/review]] — 그래프 기반 LLM 프레임워크를 통한 아이디어 평가가 과학적 아이디어 생성 벤치마크의 평가 체계를 확장한다.
-- 🔗 후속 연구: [[papers/509_Llms_can_realize_combinatorial_creativity_generating_creativ/review]] — LiveIdeaBench의 과학적 창의성 평가는 조합적 창의성 이론 기반 아이디어 생성의 검증 방법을 제공합니다
-- 🧪 응용 사례: [[papers/577_Nova_An_iterative_planning_and_search_approach_to_enhance_no/review]] — LiveIdeaBench의 과학적 창의성 평가는 Nova가 생성한 새로운 아이디어의 품질을 측정하는 실제 응용 플랫폼입니다
-- 🔗 후속 연구: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — LiveIdeaBench의 과학적 창의성 평가는 ResearchBench의 과학 발견 벤치마크를 더욱 구체적인 아이디어 생성 평가로 확장합니다
-- 🔗 후속 연구: [[papers/366_Futuregen_Llm-rag_approach_to_generate_the_future_work_of_sc/review]] — LiveIdeaBench의 과학적 창의성 평가는 FutureGen이 생성한 미래 연구 방향의 품질과 창의성을 측정하는 확장된 평가 방법입니다
-- 🔄 다른 접근: [[papers/495_Llm__mapreduce-v2_Entropy-driven_convolutional_test-time_sca/review]] — 발산적 사고와 과학적 창의성 평가와 달리 극도로 긴 입력에서 장문 기사 생성이라는 다른 LLM 능력을 측정한다.
-- 🔗 후속 연구: [[papers/417_HypoBench_Towards_Systematic_and_Principled_Benchmarking_for/review]] — 가설 생성 벤치마크를 창의성과 아이디어 품질 평가로 확장한 연구
-- 🧪 응용 사례: [[papers/484_Learning_to_generate_research_idea_with_dynamic_control/review]] — LiveIdeaBench의 LLM 과학적 창의성 평가는 동적 제어 기반 연구 아이디어 생성의 실제 성능을 체계적으로 벤치마킹할 수 있다.
-- 🔄 다른 접근: [[papers/155_Beyond_Brainstorming_What_Drives_High-Quality_Scientific_Ide/review]] — LLM의 과학적 창의성 평가와 고품질 아이디어 생성 동인의 다른 접근법
-- 🏛 기반 연구: [[papers/313_Enabling_ai_scientists_to_recognize_innovation_A_domain-agno/review]] — LLM의 과학적 창의성과 아이디어 생성 평가 벤치마크로 본 논문의 혁신성 평가 방법론의 기반을 제공한다.
-- 🔗 후속 연구: [[papers/411_How_do_humans_and_language_models_reason_about_creativity_a/review]] — 창의성과 아이디어 평가에서 인간과 LLM의 차이를 더 포괄적인 과학적 창의성 벤치마크로 확장한 연구입니다.
-- 🔗 후속 연구: [[papers/762_Spark_A_system_for_scientifically_creative_idea_generation/review]] — LLM의 과학적 창의성과 아이디어 품질을 평가하는 벤치마크를 제공한다
+- 🔄 다른 접근: [[papers/728_SciMON_Scientific_Inspiration_Machines_Optimized_for_Novelty/review]] — 발산적 사고 평가와 신성 최적화가 서로 다른 관점에서 과학적 창의성을 측정한다
+- 🔗 후속 연구: [[papers/725_Sciidea_Context-aware_scientific_ideation_using_token_and_se/review]] — 최소 맥락 아이디어 생성을 문맥 인식 반복 개선으로 확장하는 발전된 접근법을 제시한다
+- 🔄 다른 접근: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — 과학적 발견 평가에서 ResearchBench의 체계적 접근법과 LiveIdeaBench의 창의성 중심 평가는 상호보완적인 벤치마크 설계 방식이다.
+- 🔗 후속 연구: [[papers/090_AIRS-Bench_a_Suite_of_Tasks_for_Frontier_AI_Research_Science/review]] — LiveIdeaBench의 창의적 아이디어 평가 방법론을 AIRS-Bench의 연구 생명주기 전반 평가로 확장할 수 있다.
+- 🏛 기반 연구: [[papers/725_Sciidea_Context-aware_scientific_ideation_using_token_and_se/review]] — 발산적 사고 평가가 문맥 인식 과학 아이디어 생성의 창의성 측정 기반을 제공한다
+- 🔗 후속 연구: [[papers/411_How_do_humans_and_language_models_reason_about_creativity_a/review]] — LLM의 과학적 창의성 평가를 위한 더 포괄적인 벤치마크 체계를 제시한다

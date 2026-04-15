@@ -9,8 +9,9 @@ arxiv: ""
 score: 3.8
 essence: "본 논문은 대규모 언어모델(LLM)을 활용하여 학술 지식 그래프에 대한 자연어 질문을 SPARQL 쿼리로 변환하는 few-shot 기반 접근법을 제시하며, SciQA 벤치마크에서 F1 스코어 0.99를 달성했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scholarly_Document_QA"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Scholarly_Question_Answering"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Taffa and Usbeck_2023_Leveraging LLMs in Scholarly Knowledge Graph Question Answering.pdf"
 ---
@@ -87,9 +88,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Taffa and Usbeck_2023_Leveraging LLMs in
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/530_Medbiolm_Optimizing_medical_and_biological_qa_with_fine-tune/review]] — LLM을 특정 도메인(의료/생물학)에 특화된 QA 시스템으로 발전시킨 사례이다
-- 🔗 후속 연구: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — 과학적 질의응답을 검색 증강 생성 에이전트로 확장한 연구이다
-- 🏛 기반 연구: [[papers/715_Scidqa_A_deep_reading_comprehension_dataset_over_scientific/review]] — 과학 문서에 대한 깊이 있는 읽기 이해의 기초를 제공한다
-- 🔄 다른 접근: [[papers/063_Agent-enhanced_large_language_models_for_researching_politic/review]] — 정치기관 연구용 LLM 에이전트와 Leveraging LLMs in Scholarly Knowledge Graph QA는 모두 학술 연구 지원을 다루지만, 특정 도메인 특화와 지식그래프 기반 질의응답이라는 서로 다른 접근법을 취합니다.
-- 🔄 다른 접근: [[papers/338_Figuring_out_figures_Using_textual_references_to_caption_sci/review]] — 둘 다 과학 논문의 텍스트 정보를 활용한 QA를 다루지만 하나는 도형 캡션 생성에, 다른 하나는 학술 지식 그래프 질의응답에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/530_Medbiolm_Optimizing_medical_and_biological_qa_with_fine-tune/review]] — 일반적인 학술 지식 그래프 QA를 의료/생물학 분야로 특화하여 발전시킨다
+- 🧪 응용 사례: [[papers/789_Taxonomy_tree_generation_from_citation_graph/review]] — 학술 지식 그래프 질의를 인용 그래프에서 생성된 분류체계에 적용할 수 있다
+- 🔗 후속 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프 추론을 일반적인 팩트 검증에서 학술 도메인 특화로 확장한다
+- 🏛 기반 연구: [[papers/913_Semantic_Scholar/review]] — 대규모 학술 코퍼스가 학술 지식 그래프 질의응답의 필수적인 데이터 기반을 제공한다
+- 🏛 기반 연구: [[papers/063_Agent-enhanced_large_language_models_for_researching_politic/review]] — 지식 그래프 기반 질의응답 기술을 정치기관 연구의 에이전틱 검색증강생성에 활용하는 기반을 제공한다
+- 🏛 기반 연구: [[papers/295_Dynamic_multi-agent_orchestration_and_retrieval_for_multi-so/review]] — 지식 그래프 질의응답에서의 LLM 활용이 다중 소스 질의를 위한 동적 오케스트레이션의 기반을 제공한다.

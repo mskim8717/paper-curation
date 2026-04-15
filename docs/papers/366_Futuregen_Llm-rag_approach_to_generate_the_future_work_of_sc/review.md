@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.1
 essence: "과학 논문의 미래 연구 방향(Future Work) 섹션을 자동으로 생성하기 위해 검색 증강 생성(RAG), LLM 피드백 메커니즘, LLM-as-a-judge 평가 프레임워크를 통합한 접근법을 제안한다. 이 연구는 ACL과 NeurIPS 논문 약 5,500편으로부터 미래 연구 방향을 자동 추출·생성하며, GPT-4o mini 기반 RAG 방식이 가장 우수한 성능을 달성함을 보여준다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Benchmarking_Taxonomy"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Azher et al._2025_Futuregen Llm-rag approach to generate the future work of scientific article.pdf"
 ---
@@ -118,6 +119,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Azher et al._2025_Futuregen Llm-rag appr
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/577_Nova_An_iterative_planning_and_search_approach_to_enhance_no/review]] — Nova의 반복적 계획과 지식 검색으로 생성된 연구 아이디어는 FutureGen의 미래 연구 방향 자동 생성에 직접 활용될 수 있습니다
-- 🔗 후속 연구: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — LiveIdeaBench의 과학적 창의성 평가는 FutureGen이 생성한 미래 연구 방향의 품질과 창의성을 측정하는 확장된 평가 방법입니다
-- 🏛 기반 연구: [[papers/089_Aigs_Generating_science_from_ai-powered_automated_falsificat/review]] — AI 기반 자동화된 반증 가능성으로 과학 생성은 미래 연구 방향 자동 생성의 과학적 엄밀성을 보장하는 이론적 기반입니다
+- 🔄 다른 접근: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 과학 논문의 미래 연구 방향 생성에서 RAG 기반 접근법과 아이디어 체인 방법론은 서로 다른 창의적 생성 전략이다.
+- 🔗 후속 연구: [[papers/729_Scipip_An_llm-based_scientific_paper_idea_proposer/review]] — 과학 논문 아이디어 제안 시스템과 미래 연구 방향 생성을 결합하면 연구 기획부터 후속 연구까지 포괄하는 통합 시스템을 구축할 수 있다.

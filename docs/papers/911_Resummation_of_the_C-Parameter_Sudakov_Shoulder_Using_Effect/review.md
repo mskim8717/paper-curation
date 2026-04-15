@@ -8,8 +8,10 @@ arxiv: ""
 score: 4.0
 essence: "소프트-콜리니어 유효장이론(SCET)을 이용하여 e+e- 소멸에서 C-파라미터의 운동학적 어깨(kinematic shoulder) 현상을 재합(resummation)하고, 새로운 제트 및 소프트 함수를 도출하여 NLL+NLO 정확도의 예측을 제시했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Chatbot_Bias_and_Toxicity_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Schwartz_2026_Resummation of the C-Parameter Sudakov Shoulder Using Effective Field Theory.pdf"
 ---
@@ -88,7 +90,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Schwartz_2026_Resummation of the C-Param
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 물리학 기반 신경망을 활용한 전자기 역문제 해결 기법이 유효장이론의 재합 계산에 활용될 수 있는 기초 방법론을 제공한다.
-- 🔄 다른 접근: [[papers/922_Vibe_physics_The_AI_grad_student/review]] — 고에너지 물리학 연구에서 AI 활용 방식을 비교할 수 있는 대조적 사례로서 서로 다른 접근법의 장단점을 분석할 수 있다.
-- 🔗 후속 연구: [[papers/286_Domain-specific_ReAct_for_physics-integrated_iterative_model/review]] — 물리학 통합 반복 모델링 접근법을 입자물리학의 복잡한 재합 계산으로 확장하여 더 정밀한 예측을 가능하게 한다.
-- 🔗 후속 연구: [[papers/217_Chiral_spin_symmetry_and_hot_QCD/review]] — C-매개변수 수다코프 어깨 재합산에서 카이랄 스핀 대칭성으로의 확장
+- 🏛 기반 연구: [[papers/217_Chiral_spin_symmetry_and_hot_QCD/review]] — 키랄 스핀 대칭성과 고온 QCD 연구로서 C-파라미터 재합의 이론물리학적 배경을 제공한다
+- 🔄 다른 접근: [[papers/922_Vibe_physics_The_AI_grad_student/review]] — AI와 물리학자의 협력으로 완성된 논문 사례로서 자율적 연구의 다른 접근을 보여준다
+- 🔗 후속 연구: [[papers/576_Nonlinear_stochastic_and_quantum_motion_from_Coulomb_forces/review]] — 쿨롱 힘에서의 비선형 운동 연구로 고에너지 물리학의 다른 측면을 확장한다
+- 🏛 기반 연구: [[papers/217_Chiral_spin_symmetry_and_hot_QCD/review]] — 효과적 장론을 사용한 C-Parameter Sudakov Shoulder 재합이 카이랄 스핀 대칭성 연구의 QCD 이론적 기반을 제공한다

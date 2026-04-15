@@ -12,8 +12,8 @@ arxiv: ""
 score: 3.0
 essence: "단백질 공학의 복잡한 계산 워크플로우를 자동으로 조율하는 다중 에이전트 시스템(PRIME)을 개발했으며, 65개의 검증된 단백질 공학 도구를 동적으로 통합하여 213개의 다단계 작업에서 기존 AI 에이전트를 능가하는 성능을 달성했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/CRISPR_and_Drug_Discovery_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2025_PRIME A Multi-Agent Environment for Orchestrating Dynamic Computational Workflows in Protein Engine.pdf"
 ---
@@ -124,7 +124,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2025_PRIME A Multi-Agent Env
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/144_AutoProteinEngine_A_Large_Language_Model_Driven_Agent_Framew/review]] — 단백질 공학과 단백질 엔진 분야에서 다중 에이전트 시스템의 서로 다른 자동화 접근법을 비교하여 최적의 단백질 설계 전략을 찾을 수 있다.
-- 🏛 기반 연구: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 다단계 과학 도구 사용을 위한 멀티 에이전트 벤치마킹이 단백질 공학 도구 통합 시스템의 성능 평가 기준을 제공한다.
-- 🔗 후속 연구: [[papers/686_Robust_deep_learning_based_protein_sequence_design_using_Pro/review]] — PRIME의 동적 계산 워크플로우 조율 기법을 견고한 딥러닝 기반 단백질 서열 설계로 확장하여 더 신뢰할 수 있는 단백질 공학 시스템을 구축할 수 있다.
-- 🔄 다른 접근: [[papers/522_MatPilot_an_LLM-enabled_AI_Materials_Scientist_under_the_Fra/review]] — 재료 과학과 단백질 공학에서 LLM 기반 다중 에이전트 시스템의 서로 다른 적용 사례를 비교하여 도메인별 최적화 전략을 학습할 수 있다.
+- 🔄 다른 접근: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — 일반적인 머신러닝 코드 생성과 달리 단백질 공학에 특화된 65개 도구를 동적으로 조율하는 전문 분야 접근
+- 🏛 기반 연구: [[papers/851_Uncovering_bottlenecks_and_optimizing_scientific_lab_workflo/review]] — 단백질 공학 워크플로우 자동화의 성공 사례가 실험실 운영 최적화 시스템 개발에 방법론적 기반 제공
+- 🔗 후속 연구: [[papers/145_Autoreproduce_Automatic_ai_experiment_reproduction_with_pape/review]] — AI 실험 재현 시스템을 단백질 공학의 복잡한 다단계 계산 워크플로우 자동화로 확장 적용
+- 🔄 다른 접근: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — 단백질 공학의 특화된 계산 워크플로우 대신 일반적인 머신러닝 논문의 코드 구현 자동화에 초점을 맞춘 대안적 접근
+- 🧪 응용 사례: [[papers/851_Uncovering_bottlenecks_and_optimizing_scientific_lab_workflo/review]] — 단백질 공학의 복잡한 계산 워크플로우 최적화와 달리 제약·바이오 실험실의 운영 효율성 개선에 특화된 실제 적용

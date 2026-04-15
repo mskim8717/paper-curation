@@ -10,8 +10,8 @@ arxiv: ""
 score: 3.5
 essence: "필기 수학식 이미지를 LaTeX 코드로 변환하는 작업에서 Vision Transformer (ViT) 기반 인코더-디코더 아키텍처가 기존 CNN-LSTM 기준 모델을 능가하는 성능을 달성했다. 이 연구는 컴퓨터 비전과 자연어 처리를 결합한 이미지-투-시퀀스 문제에서 트랜스포머의 우월성을 입증한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Text_Translation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sundararaj et al._2024_Automated latex code generation from handwritten math expressions using vision transformer.pdf"
 ---
@@ -138,7 +138,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sundararaj et al._2024_Automated latex c
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 둘 다 분자 및 수학적 구조의 언어 모델 토크나이제이션을 다루지만 하나는 필기 수학식의 LaTeX 변환에, 다른 하나는 분자의 기하학적 토크나이제이션에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/439_Invariant_Tokenization_of_Crystalline_Materials_for_Language/review]] — 결정 물질의 불변 토크나이제이션 기법이 필기 수학식 이미지의 구조적 표현 학습에 적용될 수 있다.
-- 🏛 기반 연구: [[papers/748_Semi-Supervised_2D_Human_Pose_Estimation_Driven_by_Position/review]] — 위치 임베딩 기반의 반지도 학습 방법이 필기 수학식의 공간적 구조 인식에 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/690_Rule-based_neural_and_llm_back-translation_Comparative_insig/review]] — 둘 다 언어 간 변환을 다루지만 하나는 저자원 언어 역번역이고 다른 하나는 필기 수학식의 LaTeX 변환이다.
+- 🔄 다른 접근: [[papers/605_PatFig_Generating_Short_and_Long_Captions_for_Patent_Figures/review]] — 수학식 이미지를 LaTeX vs 특허 도형을 캡션으로 변환하는 서로 다른 멀티모달 접근법이다
+- 🔗 후속 연구: [[papers/338_Figuring_out_figures_Using_textual_references_to_caption_sci/review]] — 과학 도형 처리를 수식 LaTeX 생성이라는 구체적이고 정형화된 형태로 확장한다
+- 🏛 기반 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 과학 캡션 생성 기술이 수학식 LaTeX 변환의 멀티모달 기반 기술을 제공한다
+- 🏛 기반 연구: [[papers/338_Figuring_out_figures_Using_textual_references_to_caption_sci/review]] — 멀티모달 변환 기술이 과학 도형 캡션 생성의 핵심 기술적 기반을 제공한다
+- 🔗 후속 연구: [[papers/605_PatFig_Generating_Short_and_Long_Captions_for_Patent_Figures/review]] — 멀티모달 처리를 수학식 LaTeX 변환에서 특허 도형 캡션으로 확장한다

@@ -9,8 +9,9 @@ arxiv: ""
 score: 3.5
 essence: "대규모 언어 모델(LLM)의 환각(hallucination) 문제를 완화하기 위해 OVON(Open Voice Network) 프레임워크 기반의 자연어 처리(NLP) 인터페이스를 활용한 다중 에이전트(multi-agent) 오케스트레이션 방식을 제안하고, 구조화된 JSON 메시지를 통한 에이전트 간 통신이 AI 생성 응답의 신뢰성과 설명 가능성을 향상시킬 수 있음을 실증적으로 입증한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gosmar and Dahl_2025_Hallucination mitigation using agentic ai natural language-based frameworks.pdf"
 ---
@@ -113,6 +114,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gosmar and Dahl_2025_Hallucination mitig
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/753_Shared_imagination_Llms_hallucinate_alike/review]] — LLM이 유사한 환각을 생성하는 현상에 대한 기초 연구로 환각 완화 접근법의 이론적 배경을 제공한다.
-- 🔄 다른 접근: [[papers/845_Trust_But_Verify_A_Self-Verification_Approach_to_Reinforceme/review]] — 강화학습 기반 자기 검증을 통한 환각 문제 해결의 다른 접근 방식을 제시한다.
-- 🔗 후속 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 도구 통합 자기 수정 능력으로 환각 완화 방법론을 확장한다.
+- 🧪 응용 사례: [[papers/295_Dynamic_multi-agent_orchestration_and_retrieval_for_multi-so/review]] — 다중 에이전트 오케스트레이션 시스템이 OVON 프레임워크 기반 환각 완화의 실제 적용 환경을 제공한다.
+- 🔗 후속 연구: [[papers/610_Pelican_Correcting_Hallucination_in_Vision-LLMs_via_Claim_De/review]] — Pelican의 비전-LLM 환각 교정이 자연어 기반 에이전트 AI의 환각 완화를 멀티모달로 확장한다.
+- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — 대규모 언어모델의 자기교정 불가능성이 에이전트 기반 환각 완화의 필요성을 더욱 강조한다.
+- 🔗 후속 연구: [[papers/295_Dynamic_multi-agent_orchestration_and_retrieval_for_multi-so/review]] — OVON 프레임워크 기반 환각 완화가 다중 에이전트 질의응답 시스템의 신뢰성을 향상시킬 수 있다.

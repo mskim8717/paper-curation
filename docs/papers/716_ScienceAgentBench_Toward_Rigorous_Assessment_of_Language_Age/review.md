@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 대규모언어모델(LLM) 기반 언어에이전트(Language Agents)의 데이터 기반 과학 발견 수행능력을 엄밀하게 평가하기 위한 벤치마크 ScienceAgentBench를 제시한다. 최근 LLM이 과학 연구 자동화를 완전히 자동화할 수 있다는 주장들에 대해, 개별 과학적 작업 단위에서의 체계적 평가의 중요성을 강조하고 현재 에이전트의 실제 역량의 한계를 명확히 한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Realistic_Discovery_Benchmarks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Scientific_Discovery_Task_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_ScienceAgentBench Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discover.pdf"
 ---
@@ -105,11 +107,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_ScienceAgentBench Towar
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 현실적 문제 해결 능력 평가의 중요성을 보여주며 과학 발견 영역에서의 엄밀한 평가 기준을 제시한다.
-- 🔗 후속 연구: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 도구 활용 평가를 넘어 데이터 기반 과학 발견의 전체적 과정에 대한 포괄적 평가 체계를 제공한다.
-- ⚖️ 반론/비판: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — 완전 자동화 주장에 대해 개별 과학적 작업 단위에서의 체계적 평가가 우선되어야 함을 강조한다.
-- 🧪 응용 사례: [[papers/724_SciHorizon_Benchmarking_AI-for-Science_Readiness_from_Scient/review]] — 언어 에이전트의 엄격한 평가가 SciHorizon의 AI 준비도 측정에 적용된다.
-- 🔗 후속 연구: [[papers/170_Blade_Benchmarking_language_model_agents_for_data-driven_sci/review]] — 데이터 기반 과학 발견 벤치마크가 언어 에이전트의 과학 연구 전반에 대한 엄밀한 평가로 확장되었다
-- 🏛 기반 연구: [[papers/160_BioAgents_Democratizing_Bioinformatics_Analysis_with_Multi-A/review]] — 생물정보학을 위한 다중 에이전트 시스템의 성능 평가에 과학 에이전트 벤치마크 방법론이 기초적인 평가 틀을 제공한다.
-- 🔗 후속 연구: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 소프트웨어 엔지니어링에서 드러난 한계를 과학 발견 영역으로 확장하여 보다 포괄적인 평가 기준을 제시한다.
-- 🔄 다른 접근: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 도구 활용 중심 평가와 데이터 기반 발견 평가라는 서로 다른 관점으로 과학 에이전트의 능력을 측정한다.
+- 🔄 다른 접근: [[papers/429_Infiagent-dabench_Evaluating_agents_on_data_analysis_tasks/review]] — LLM 기반 에이전트의 데이터 분석 능력 평가에 특화된 벤치마크로, 과학 발견 전반과 데이터 분석 특화 평가를 비교
+- 🔗 후속 연구: [[papers/170_Blade_Benchmarking_language_model_agents_for_data-driven_sci/review]] — 데이터 기반 과학을 위한 언어 모델 에이전트 벤치마킹으로, 과학 발견 능력을 실제 데이터 과학 작업으로 확장
+- 🔄 다른 접근: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — LLM의 과학적 발견 벤치마킹을 위한 다른 접근으로, 언어 에이전트 평가와 일반적인 LLM 평가를 비교
+- 🔗 후속 연구: [[papers/090_AIRS-Bench_a_Suite_of_Tasks_for_Frontier_AI_Research_Science/review]] — ScienceAgentBench의 엄격한 언어 에이전트 평가 방법론이 AIRS-Bench의 평가 프레임워크 개선에 적용될 수 있다.
+- 🔗 후속 연구: [[papers/139_Autonomous_microscopy_experiments_through_large_language_mod/review]] — 과학 에이전트의 엄격한 평가를 위한 벤치마크 연구가 AILA의 AFMBench를 통한 현미경 실험 평가 프레임워크로 구체화되었다
+- 🔗 후속 연구: [[papers/261_Deepresearch_bench_A_comprehensive_benchmark_for_deep_resear/review]] — DeepResearch Bench의 포괄적 평가 체계를 ScienceAgentBench의 엄격한 언어 에이전트 평가로 확장하여 더 정밀한 과학 AI 평가를 구현한다.
+- 🔄 다른 접근: [[papers/429_Infiagent-dabench_Evaluating_agents_on_data_analysis_tasks/review]] — 데이터 기반 과학 발견에서 언어 에이전트의 능력을 평가하는 또 다른 종합적 벤치마크로, 데이터 분석에 특화된 평가와 비교됨
+- 🔗 후속 연구: [[papers/888_X-webagentbench_A_multilingual_interactive_web_benchmark_for/review]] — 과학 도구 사용 평가에서 X-WebAgentBench의 다국어 평가 방법론을 과학적 도구 사용이라는 전문 영역으로 확장하여 적용할 수 있는 가능성을 제시함

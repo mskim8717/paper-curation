@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 튜토리얼은 사전학습된 확산 모델을 미세조정하지 않으면서 추론 시간(inference time)에 보상 함수(reward function)를 최대화하는 정렬(alignment) 기법들을 통일된 관점에서 리뷰하고, 단백질 설계 같은 과학 분야에서 실제로 유용한 비미분 가능한 보상 피드백을 다루는 방법론들을 포괄적으로 다룬다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Visual_Scientific_Reasoning"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Uehara et al._2025_Inference-Time Alignment in Diffusion Models with Reward-Guided Generation Tutorial and Review.pdf"
 ---
@@ -135,8 +135,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Uehara et al._2025_Inference-Time Alignm
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/269_Derivative-Free_Guidance_in_Continuous_and_Discrete_Diffusio/review]] — 확산 모델 정렬에서 보상 유도 생성과 미분 불가능한 가이던스 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 테스트 시간 보상 유도 반복 개선이 추론 시간 확산 모델 정렬로 확장될 수 있습니다.
-- 🏛 기반 연구: [[papers/446_Iterative_Distillation_for_Reward-Guided_Fine-Tuning_of_Diff/review]] — 확산 모델의 보상 유도 미세조정을 위한 반복 증류가 추론 시간 정렬의 이론적 기반입니다.
-- 🔄 다른 접근: [[papers/446_Iterative_Distillation_for_Reward-Guided_Fine-Tuning_of_Diff/review]] — 생물분자 설계를 위한 확산모델 최적화의 다른 접근법을 제공한다.
-- 🏛 기반 연구: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 추론 시간 정렬의 보상 유도 방법론이 반복적 개선 프레임워크의 핵심 이론적 기반을 제공함
+- 🧪 응용 사례: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 보상 기반 반복 개선 기법이 확산 모델의 추론 시간 정렬과 테스트 시간 개선에 공통적으로 적용된다.
+- 🔄 다른 접근: [[papers/296_Dynamic_Search_for_Inference-Time_Alignment_in_Diffusion_Mod/review]] — 확산 모델의 추론 시간 정렬을 위한 서로 다른 동적 탐색 방법론을 제시하여 비교 연구가 가능하다.
+- 🧪 응용 사례: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 정보 신경망과 확산 모델의 보상 기반 정렬은 모두 과학적 제약 조건을 AI 모델에 통합하는 방법론이다.
+- 🔗 후속 연구: [[papers/349_Fragment_and_Geometry_Aware_Tokenization_of_Molecules_for_St/review]] — 확산 모델의 추론 시간 정렬 기법은 구조 기반 약물 설계에서 생성된 분자의 품질을 향상시키는 데 적용될 수 있다.
+- 🔄 다른 접근: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 방정식 인코딩과 보상 기반 정렬은 모두 과학적 제약 조건을 AI 모델에 통합하는 서로 다른 방법론이다.
+- 🏛 기반 연구: [[papers/446_Iterative_Distillation_for_Reward-Guided_Fine-Tuning_of_Diff/review]] — 추론 시간 정렬 기술이 VIDD의 보상 유도 미세조정 방법론의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/682_Reward-Guided_Iterative_Refinement_in_Diffusion_Models_at_Te/review]] — 보상 유도 확산 모델의 추론 시간 정렬이 테스트 타임 반복적 개선의 이론적 기반을 제공한다.

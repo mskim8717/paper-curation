@@ -12,8 +12,8 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 윤리적 AI 거버넌스(Ethical AI Governance)를 기반으로 한 다중 에이전트 시스템(Multi-Agent System, MAS)을 임상 의사결정 지원 시스템(CDSS)에 통합하여, ICU 환경에서 환자 사망률 예측 및 입원 기간 예측의 정확도와 투명성을 동시에 향상시키는 방법을 제시한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Clinical_Multi-Agent_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/GIS_Workflow_Automation_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Arrieta et al._2025_Reinforcing clinical decision support through multi-agent systems and ethical ai governance.pdf"
 ---
@@ -122,7 +122,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Arrieta et al._2025_Reinforcing clinical
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — 의료 진단에서 ICU 환경 임상 의사결정 지원으로 의료 AI 협력의 다른 응용을 제시한다.
-- 🏛 기반 연구: [[papers/507_Llmeval-med_A_real-world_clinical_benchmark_for_medical_llms/review]] — 의료 LLM 평가를 위한 실제 임상 벤치마크로 의료 AI 시스템 평가의 기준을 제공한다.
-- 🔗 후속 연구: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 제로샷 의료 분류를 위한 LLM 기반 다중 에이전트로 의료 AI 협력을 확장한다.
-- 🔗 후속 연구: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — 임상 의사결정 지원에서 다중 에이전트 시스템으로 의료 AI 협력을 확장한다.
+- 🏛 기반 연구: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — 윤리적 AI 거버넌스 기반의 다중 에이전트 시스템이 MedSyn의 인간-AI 협력을 더욱 투명하고 신뢰할 수 있게 만드는 토대
+- 🧪 응용 사례: [[papers/365_Future_of_Work_with_AI_Agents_Auditing_Automation_and_Augmen/review]] — Human Agency Scale의 실제 적용 사례로서 ICU 환경에서 AI 자동화와 인간 의료진의 역할 균형을 구체적으로 시연
+- 🔗 후속 연구: [[papers/616_PharmAgents_Building_a_Virtual_Pharma_with_Large_Language_Mo/review]] — 가상 제약회사 시뮬레이션에서 윤리적 AI 거버넌스와 다중 에이전트 협력을 의료 환경으로 확장 적용
+- 🏛 기반 연구: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — 일반적인 생의학 AI 에이전트의 다중 모달 능력을 임상 의사결정 지원 시스템의 특화된 윤리적 프레임워크로 발전
+- 🔗 후속 연구: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — MedSyn의 의사-AI 협력 프레임워크를 다중 에이전트 시스템으로 확장하여 임상 의사결정 지원의 윤리성과 투명성을 강화
+- 🏛 기반 연구: [[papers/365_Future_of_Work_with_AI_Agents_Auditing_Automation_and_Augmen/review]] — 임상 의사결정 지원 시스템에서 AI 자동화와 인간 의료진의 역할 분배를 체계적으로 평가할 수 있는 이론적 프레임워크

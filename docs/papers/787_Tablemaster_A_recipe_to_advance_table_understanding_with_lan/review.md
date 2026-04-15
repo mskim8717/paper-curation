@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.2
 essence: "언어 모델(LM)의 테이블 이해 능력을 향상시키기 위해 구조화된 데이터의 특성으로부터 발생하는 4가지 도전과제를 식별하고, 이를 해결하기 위한 통합 프레임워크 TableMaster를 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Table_Caption_Generation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cao and Hanbing_2025_Tablemaster A recipe to advance table understanding with language models.pdf"
 ---
@@ -114,10 +115,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cao and Hanbing_2025_Tablemaster A recip
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/599_Paper2poster_Towards_multimodal_poster_automation_from_scien/review]] — 둘 다 테이블과 관련된 멀티모달 작업을 다루지만 하나는 테이블 이해, 다른 하나는 포스터 생성에 중점을 둠
-- 🔗 후속 연구: [[papers/841_Tree-of-table_Unleashing_the_power_of_llms_for_enhanced_larg/review]] — 기본적인 테이블 이해를 Tree-of-table과 같은 더 체계적인 대규모 테이블 추론 방법으로 확장함
-- 🏛 기반 연구: [[papers/802_The_mighty_torr_A_benchmark_for_table_reasoning_and_robustne/review]] — 테이블 추론과 견고성에 대한 벤치마크 연구가 언어 모델의 테이블 이해 능력 향상 프레임워크 개발의 기초를 제공함
-- 🏛 기반 연구: [[papers/035_A_survey_on_table-and-text_hybridqa_Concepts_methods_challen/review]] — 테이블 이해 기술이 하이브리드 QA의 핵심 구성 요소가 됨
-- 🔗 후속 연구: [[papers/841_Tree-of-table_Unleashing_the_power_of_llms_for_enhanced_larg/review]] — 대형 언어모델을 활용한 테이블 마스터는 Tree-of-table의 계층적 테이블 처리 방식을 더욱 발전시킨 형태입니다
-- 🔗 후속 연구: [[papers/802_The_mighty_torr_A_benchmark_for_table_reasoning_and_robustne/review]] — TableMaster가 제시하는 표 이해 방법론이 ToRR 벤치마크에서 발견된 LLM의 표 형식 취약성 문제를 해결하는 솔루션으로 활용될 수 있음
-- 🔄 다른 접근: [[papers/599_Paper2poster_Towards_multimodal_poster_automation_from_scien/review]] — 둘 다 테이블과 관련된 멀티모달 작업을 다루지만 하나는 포스터 생성, 다른 하나는 테이블 이해에 중점을 둠
+- 🏛 기반 연구: [[papers/035_A_survey_on_table-and-text_hybridqa_Concepts_methods_challen/review]] — 테이블-텍스트 하이브리드 QA 연구의 기초 개념과 방법론이 TableMaster 프레임워크 설계의 이론적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/802_The_mighty_torr_A_benchmark_for_table_reasoning_and_robustne/review]] — 테이블 이해를 위한 구조화된 접근법과 견고성 중심의 벤치마킹은 서로 다른 관점에서 테이블 처리 능력을 향상시킨다.
+- 🔄 다른 접근: [[papers/035_A_survey_on_table-and-text_hybridqa_Concepts_methods_challen/review]] — 테이블 이해를 위한 다른 접근법으로 하이브리드 QA와 상호 보완적 관점을 제공한다
+- 🔗 후속 연구: [[papers/1092_Table-llm-specialist_Language_model_specialists_for_tables_u/review]] — 테이블 특화 반복적 미세조정이 대규모 언어 모델의 테이블 이해 능력 향상으로 확장될 수 있다.
+- 🏛 기반 연구: [[papers/802_The_mighty_torr_A_benchmark_for_table_reasoning_and_robustne/review]] — 대규모 언어모델의 표 이해 능력 연구가 표 형식 변화에 대한 견고성 평가의 기반 이론을 제공한다.
+- 🧪 응용 사례: [[papers/399_Helm_Highlighted_evidence_augmented_language_model_for_enhan/review]] — 대규모 언어모델을 활용한 테이블 이해 기법이 증거 강조 방법론의 실제 적용 사례를 제시한다.

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 과학 논문의 인용 예측 문제를 단순한 이진 분류에서 벗어나 **핵심 인용(core citations)**을 표면적 인용 및 비인용과 구별하는 다단계 분류 문제로 재정의하고, 임베딩 모델과 생성형 LLM을 결합한 하이브리드 워크플로우(HLM-Cite)를 제안한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/Citation_Dataset_Analysis"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Academic_Citation_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fan et al._2024_Hlm-cite Hybrid language model workflow for text-based scientific citation prediction.pdf"
 ---
@@ -134,7 +136,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fan et al._2024_Hlm-cite Hybrid language
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/150_Benchmark_for_evaluation_and_analysis_of_citation_recommenda/review]] — 인용 추천 시스템의 표준화된 평가 방법론을 제시하여 HLM-Cite의 성능 평가에 활용할 수 있다.
-- 🔗 후속 연구: [[papers/273_Directed_criteria_citation_recommendation_and_ranking_throug/review]] — 기준 지향적 인용 추천 기법을 다루어 핵심 인용과 표면적 인용을 구별하는 HLM-Cite와 보완적이다.
-- 🏛 기반 연구: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — 지역적 인용 맥락에서의 인용문 생성 기법으로 HLM-Cite의 텍스트 기반 인용 예측 방법론의 기초를 제공한다.
-- 🔄 다른 접근: [[papers/150_Benchmark_for_evaluation_and_analysis_of_citation_recommenda/review]] — 하이브리드 언어모델을 활용한 인용 추천 방법으로 기존 평가 기준과 비교 분석이 가능하다.
+- 🔄 다른 접근: [[papers/150_Benchmark_for_evaluation_and_analysis_of_citation_recommenda/review]] — 인용 추천 시스템의 평가 방법론을 서로 다른 접근법으로 개선하려는 공통 목표를 가진다.
+- 🔗 후속 연구: [[papers/220_Cited_text_spans_for_citation_text_generation/review]] — 하이브리드 LLM 워크플로우가 기존 인용 텍스트 생성 방법론을 핵심 인용 식별로 발전시킨다.
+- 🏛 기반 연구: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — 증거 기반 인용 추천의 해석 가능성을 높이는 기초 방법론을 제공한다.
+- 🔄 다른 접근: [[papers/150_Benchmark_for_evaluation_and_analysis_of_citation_recommenda/review]] — 인용 추천 시스템의 평가 개선을 벤치마크 표준화와 하이브리드 워크플로우로 각각 접근한다.
+- 🔄 다른 접근: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — 하이브리드 언어모델 기반 인용 추천과 증거 기반 해석가능 인용 추천은 모두 과학 인용의 정확성 향상을 다른 방식으로 접근한다.
+- 🔗 후속 연구: [[papers/702_Scholarcopilot_Training_large_language_models_for_academic_w/review]] — 하이브리드 언어 모델을 활용하여 ScholarCopilot의 텍스트 기반 과학 인용을 더욱 정교하게 발전시킨다.

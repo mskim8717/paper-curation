@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "엑사스케일(exascale) 슈퍼컴퓨터의 등장으로 계산 재료과학(computational materials science) 분야에서 획기적인 발전이 가능해지고 있으며, 다양한 분야의 연구자들이 이 기술을 활용하여 새로운 시뮬레이션 가능성과 직면한 도전과제를 공유하는 관점 논문이다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Scientific_Simulation_and_Inference"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chang et al._2023_Simulations in the era of exascale computing.pdf"
 ---
@@ -102,7 +102,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chang et al._2023_Simulations in the era
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 엑사스케일 컴퓨팅의 발전이 물리 정보 신경망을 활용한 대규모 다목적 설계 최적화를 가능하게 한다.
-- 🔗 후속 연구: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — SARS-CoV-2 시뮬레이션의 엑사스케일 확장이 계산 재료과학 분야 엑사스케일 활용의 구체적 사례이다.
-- 🏛 기반 연구: [[papers/695_Scaling_Deep_Learning_for_Materials_Discovery/review]] — 재료 발견을 위한 딥러닝 확장 연구가 엑사스케일 컴퓨팅 활용의 기술적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/095_AMDAT_An_Open-Source_Molecular_Dynamics_Analysis_Toolkit_for/review]] — 엑사스케일 컴퓨팅 시대에서 시뮬레이션의 확장된 역할과 가능성
+- 🧪 응용 사례: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — SARS-CoV-2 시뮬레이션의 엑사스케일 적용 사례로 엑사스케일 컴퓨팅의 구체적 활용을 보여준다
+- 🔗 후속 연구: [[papers/695_Scaling_Deep_Learning_for_Materials_Discovery/review]] — 재료 발견을 위한 딥러닝 확장 연구로 엑사스케일 시뮬레이션의 AI 결합 방향을 제시한다
+- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 정보 기반 신경망의 과학적 기계학습 기초를 제공하며 엑사스케일 시뮬레이션과 연계된다
+- 🏛 기반 연구: [[papers/279_Distinguishing_Neutron_Star_vs_Low-Mass_Black_Hole_Binaries/review]] — 엑사스케일 컴퓨팅 시대의 시뮬레이션이 중성자별-블랙홀 구별 연구의 계산 기반을 제공한다
+- 🔗 후속 연구: [[papers/694_Scalable_Cross-Facility_Federated_Learning_for_Scientific_Fo/review]] — 엑사스케일 컴퓨팅 시대의 시뮬레이션이 다중 슈퍼컴퓨터 연합학습을 더 큰 규모로 확장한다.
+- 🔗 후속 연구: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — 엑사스케일 컴퓨팅 시대의 시뮬레이션 발전 방향이 SARS-CoV-2 단백질 시뮬레이션의 차세대 발전 경로를 제시한다

@@ -10,8 +10,9 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 대규모 언어 모델(LLM)과 계산 논증(computational argumentation) 방법을 결합하여 피어 리뷰 과정을 투명하고 해석 가능하게 만드는 PeerArg 시스템을 제안한다. 양극 논증 틀(Bipolar Argumentation Framework, BAF)을 활용하여 여러 리뷰의 의견을 구조화되고 논리적으로 통합함으로써 논문 채택 여부를 예측한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/LLM_Review_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sukpanichnant et al._2024_Peerarg Argumentative peer review with llms.pdf"
 ---
@@ -117,6 +118,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sukpanichnant et al._2024_Peerarg Argume
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/080_AI_is_transforming_peer_review__and_many_scientists_are_worr/review]] — AI 동료평가에 대한 우려를 논증 틀을 통해 투명하고 해석가능하게 해결한다
-- 🔗 후속 연구: [[papers/776_Streamlining_the_review_process_Ai-generated_annotations_in/review]] — AI 주석 달기를 포함한 더 체계적이고 논리적인 동료평가 시스템으로 확장한다
-- 🏛 기반 연구: [[papers/1087_Gpt4_is_slightly_helpful_for_peer-review_assistance_A_pilot/review]] — GPT-4의 동료평가 보조 능력을 바탕으로 더 구조화된 논증 기반 접근법을 제시한다
+- 🔗 후속 연구: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — LLM 기반 리뷰 시스템을 논증 구조와 투명성을 강화한 피어리뷰로 확장한다
+- 🏛 기반 연구: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — LLM 기반 피어리뷰 탐색 연구가 논증적 리뷰 시스템의 기초적 토대를 제공한다
+- 🔄 다른 접근: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — AI 기반 논문 리뷰를 논증 구조 vs 인간 유사성으로 다른 관점에서 접근한다
+- 🧪 응용 사례: [[papers/481_Lazyreview_a_dataset_for_uncovering_lazy_thinking_in_nlp_pee/review]] — LLM을 활용한 논증적 동료 검토 연구로, 게으른 사고 탐지 데이터셋의 실제 검토 개선 적용

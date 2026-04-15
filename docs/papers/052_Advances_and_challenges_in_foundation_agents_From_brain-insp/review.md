@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 대규모 언어모델(LLM) 기반의 지능형 에이전트의 현황을 종합적으로 검토한 대규모 리뷰 논문이다. 뇌 기능에서 영감을 받은 모듈식 아키텍처를 기반으로 에이전트의 설계, 진화, 협력, 안전성 등 다층적 측면을 체계적으로 분석한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Multi-Domain_Experimental_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Arrieta et al._2025_Advances and challenges in foundation agents From brain-inspired intelligence to evolutionary, coll.pdf"
 ---
@@ -100,8 +100,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Arrieta et al._2025_Advances and challen
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/114_Augmented_Language_Models_a_Survey/review]] — 뇌 기능 기반 모듈식 에이전트 아키텍처가 추론과 도구 사용 능력으로 확장된 증강 언어모델의 구체적 구현 방향을 제시한다
-- 🏛 기반 연구: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — 대규모 언어모델 기반 에이전트의 종합적 검토가 에이전트 시스템 확장에 대한 과학적 연구의 중요한 이론적 토대를 제공한다
-- 🏛 기반 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 파운데이션 에이전트의 현황과 도전과제 분석이 LLM 기반 멀티 에이전트 시스템의 발전과 한계에 대한 포괄적 이해를 제공한다
-- 🔗 후속 연구: [[papers/361_From_LLM_Reasoning_to_Autonomous_AI_Agents_A_Comprehensive_R/review]] — 뇌 영감 파운데이션 에이전트 연구가 LLM 추론부터 자율 AI 에이전트까지의 포괄적 발전 과정의 중요한 구성 요소가 된다
-- 🏛 기반 연구: [[papers/114_Augmented_Language_Models_a_Survey/review]] — 추론과 도구 사용으로 확장된 증강 언어모델의 개념이 뇌 기능 기반 파운데이션 에이전트 설계의 핵심적 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — Foundation 에이전트의 뇌 영감 설계가 기반으로 하는 LLM 기반 자율 에이전트 전반적 이론
+- 🧪 응용 사례: [[papers/465_Large_Language_Model_in_Materials_Science_Roles_Challenges_a/review]] — Foundation 에이전트의 포괄적 프레임워크를 재료과학이라는 구체적 영역에 적용한 사례
+- 🔗 후속 연구: [[papers/499_LLM_With_Tools_A_Survey/review]] — Foundation 에이전트를 도구 사용 능력을 갖춘 더욱 실용적인 LLM 에이전트로 발전

@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.0
 essence: "79,000개의 전문가 리뷰로 파인튠된 8B 파라미터 언어모델(Llama-OpenReviewer-8B)을 통해 기계학습 및 AI 학술지 논문에 대한 고품질 동료심사 의견을 생성하는 오픈소스 시스템이다. GPT-4o, Claude-3.5 같은 범용 LLM과 달리 비판적이고 현실적인 리뷰를 생성하여 인간 검토자의 평가 분포와 유사한 결과를 제시한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/LLM_Review_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/GPT-Based_Text_Review_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Idahl and Ahmadi_2024_Openreviewer A specialized large language model for generating critical scientific paper reviews.pdf"
 ---
@@ -108,13 +110,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Idahl and Ahmadi_2024_Openreviewer A spe
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/445_Is_Your_Paper_Being_Reviewed_by_an_LLM_Investigating_AI_Text/review]] — AI 리뷰 생성과 AI 텍스트 탐지가 학술 심사에서 AI 활용의 상반된 두 관점을 제시합니다.
-- 🏛 기반 연구: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — 다중 에이전트 리뷰 생성의 협업적 접근법이 전문화된 리뷰 생성 모델의 기초 아이디어를 제공합니다.
-- 🔗 후속 연구: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — 프롬프트 최적화를 통한 리뷰 생성을 전문 파인튜닝된 모델로 확장하여 더 비판적이고 현실적인 리뷰를 생성합니다.
-- 🧪 응용 사례: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — WebThinker의 동적 웹 탐색 능력은 OpenReviewer의 과학 문헌 생성 작업에서 실시간 정보 수집을 통해 더 정확한 리뷰를 생성할 수 있다.
-- 🔗 후속 연구: [[papers/126_Automated_review_generation_method_based_on_large_language_m/review]] — 과학 논문 리뷰 생성을 전문화된 대규모 언어모델로 확장한다.
-- 🔄 다른 접근: [[papers/350_Frame_Feedback-refined_agent_methodology_for_enhancing_medic/review]] — 둘 다 논문 작성 자동화를 다루지만 FRAME은 의료 연구에, OpenReviewer는 일반적 논문 생성에 집중함
-- 🧪 응용 사례: [[papers/852_Understanding_fine-grained_distortions_in_reports_of_scienti/review]] — 과학적 발견의 보도 왜곡 탐지 기술을 리뷰 생성 시스템에 적용하여 더 정확한 과학 커뮤니케이션을 구현할 수 있다.
-- 🔄 다른 접근: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — 측면 프롬프트 모델링과 과학 리뷰 전용 대규모 언어모델이라는 서로 다른 자동 리뷰 생성 접근법을 제시합니다.
-- 🔄 다른 접근: [[papers/445_Is_Your_Paper_Being_Reviewed_by_an_LLM_Investigating_AI_Text/review]] — AI 생성 리뷰 탐지와 전문 AI 리뷰 생성이라는 상반된 관점에서 학술 심사의 AI 활용을 다룹니다.
-- 🔗 후속 연구: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — 전문 리뷰 생성 모델을 다중 에이전트 협업 시스템으로 확장하여 더 포괄적인 피드백을 제공합니다.
+- 🔄 다른 접근: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — 학술 논문 심사평 생성에서 전문화된 모델과 다목적 강화학습이라는 서로 다른 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/676_Reviewagents_Bridging_the_gap_between_human_and_ai-generated/review]] — 다중 에이전트 프레임워크를 통해 OpenReviewer의 단일 모델 한계를 극복하고 더 정교한 심사평을 생성한다.
+- 🏛 기반 연구: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — 대규모 언어 모델의 논문 심사 활용 가능성에 대한 기초적인 실증 연구를 제공한다.
+- 🏛 기반 연구: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — 전문화된 리뷰 생성 언어모델 개발을 위한 심층 사고 프레임워크를 제공한다.
+- 🔗 후속 연구: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — 전문 분야별 LLM이 리뷰 생성과 평가 프레임워크의 도메인 특화 성능 향상에 기여한다.
+- 🔄 다른 접근: [[papers/250_CycleResearcher_Improving_Automated_Research_via_Automated_R/review]] — 사이클 연구자 대신 문헌 리뷰 생성에 특화된 LLM을 제시한다
+- 🔄 다른 접근: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — 학술 논문 심사평 생성에서 다목적 강화학습과 전문화된 모델이라는 서로 다른 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/676_Reviewagents_Bridging_the_gap_between_human_and_ai-generated/review]] — 단일 전문화 모델을 다중 에이전트 협업으로 확장하여 더 균형잡히고 깊이 있는 논문 심사를 가능하게 한다.
+- 🏛 기반 연구: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — 대규모 언어 모델의 논문 심사 활용에 대한 초기 탐색적 연구로서 전문화된 모델 개발의 기반을 제공한다.

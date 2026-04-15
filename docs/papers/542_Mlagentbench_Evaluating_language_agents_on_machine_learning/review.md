@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 **머신러닝 실험을 자동으로 수행할 수 있는 언어 모델 기반 에이전트를 평가하기 위한 벤치마크(MLAgentBench)**를 제안한다. 13개의 다양한 ML 작업을 통해 최신 언어 모델들의 ML 실험 수행 능력을 체계적으로 평가한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/LLM_Agent_Benchmarking"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2023_Mlagentbench Evaluating language agents on machine learning experimentation.pdf"
 ---
@@ -124,17 +125,29 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2023_Mlagentbench Evaluatin
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/review]] — ML 실험 특화 에이전트 평가 방법론이 전체 AI 연구 프로세스 평가로 확장된 기반
-- 🔗 후속 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — API 도구 사용 능력 평가를 머신러닝 실험이라는 구체적 도메인으로 특화한 확장
-- 🔄 다른 접근: [[papers/548_Mlr-bench_Evaluating_ai_agents_on_open-ended_machine_learnin/review]] — 오픈엔드 ML 연구에 중점을 둔 MLR-Bench와 달리 정형화된 ML 실험 수행 능력에 집중
-- 🧪 응용 사례: [[papers/293_Ds-agent_Automated_data_science_by_empowering_large_language/review]] — 데이터 사이언스 자동화 에이전트 DS-Agent의 성능을 ML 실험 관점에서 평가
-- 🏛 기반 연구: [[papers/544_Mldebugging_Towards_benchmarking_code_debugging_across_multi/review]] — 머신러닝 에이전트 평가를 위한 언어 모델 벤치마크가 다중 라이브러리 환경에서의 코드 디버깅 평가의 기반을 제공한다.
-- 🔗 후속 연구: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 머신러닝 에이전트 평가를 다학제적 과학 도구 활용으로 확장하여 더 포괄적인 과학적 추론 평가를 제공한다.
-- 🏛 기반 연구: [[papers/147_Aviary_training_language_agents_on_challenging_scientific_ta/review]] — 언어 에이전트의 머신러닝 능력 평가를 과학적 작업이라는 더 도전적인 환경으로 확장한다.
-- 🏛 기반 연구: [[papers/543_Mlcopilot_Unleashing_the_power_of_large_language_models_in_s/review]] — 머신러닝에서 언어 에이전트 평가를 위한 MLAgentBench는 MLCopilot의 ML 문제 해결 능력 평가의 벤치마크 기반을 제공한다.
-- 🔄 다른 접근: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — 둘 다 ML 에이전트를 평가하지만 MLAgentBench는 더 일반적인 ML 작업에 초점
-- 🧪 응용 사례: [[papers/259_DeepAnalyze_Agentic_Large_Language_Models_for_Autonomous_Dat/review]] — DeepAnalyze의 자율적 데이터 과학 능력을 MLAgentBench로 체계적 평가 가능
-- 🔄 다른 접근: [[papers/672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/review]] — ML 실험 자동화에 특화된 MLAgentBench와 달리 전체 AI 연구 프로세스를 평가하는 포괄적 접근
-- 🏛 기반 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — 대규모 도구 사용 평가 프레임워크가 ML 실험 자동화 벤치마크의 기반
-- 🔗 후속 연구: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — ML 실험 에이전트가 능동적 탐색을 통해 효율적으로 실험을 설계하는 능력 평가로 확장
-- 🔄 다른 접근: [[papers/550_MLRC-Bench_Can_Language_Agents_Solve_Machine_Learning_Resear/review]] — 둘 다 머신러닝 벤치마크이지만 하나는 연구 경쟁 문제에, 다른 하나는 일반적인 머신러닝 작업에 초점을 맞춘다.
+- 🔄 다른 접근: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — 머신러닝 실험 자동화라는 같은 목표를 가지지만 언어모델 기반 vs 기존 ML 방법론이라는 다른 접근법을 사용한다.
+- 🔗 후속 연구: [[papers/121_Autokaggle_A_multi-agent_framework_for_autonomous_data_scien/review]] — 데이터 사이언스 작업의 완전 자동화를 통해 MLAgentBench의 평가 범위를 실제 업무 환경으로 확장한다.
+- 🧪 응용 사례: [[papers/549_Mlr-copilot_Autonomous_machine_learning_research_based_on_la/review]] — LLM 기반 MLR 연구 자동화의 실제 적용 사례를 통해 벤치마크 결과의 실용성을 검증할 수 있다.
+- 🧪 응용 사례: [[papers/016_A_practical_evaluation_of_AutoML_tools_for_binary_multiclass/review]] — AutoML 도구 벤치마킹 방법론을 머신러닝 에이전트 평가 프레임워크에 적용하여 에이전트 성능 측정 기준을 개선할 수 있다.
+- 🔗 후속 연구: [[papers/546_Mlgym_A_new_framework_and_benchmark_for_advancing_ai_researc/review]] — 머신러닝 에이전트 벤치마킹을 포괄적인 AI 연구 환경으로 확장한다
+- 🔗 후속 연구: [[papers/731_Scireplicate-bench_Benchmarking_llms_in_agent-driven_algorit/review]] — 머신러닝 작업에서 언어 에이전트를 평가하는 벤치마크로, SciReplicate-Bench의 NLP 알고리즘 복제를 더 넓은 ML 도메인으로 확장한다
+- 🏛 기반 연구: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — 머신러닝 에이전트 평가 벤치마크가 ResearchCodeAgent의 코드 생성 품질을 측정하는 기반 제공
+- 🏛 기반 연구: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — LLM의 기계학습 작업 수행 능력을 평가하는 기반 벤치마크
+- 🔗 후속 연구: [[papers/769_StableToolBench_Towards_Stable_Large-Scale_Benchmarking_on_T/review]] — 일반적인 기계학습 에이전트 벤치마크가 과학 도구 사용에 특화된 안정적 평가로 확장됨
+- 🔗 후속 연구: [[papers/069_Agentomics-ML_Autonomous_Machine_Learning_Experimentation_Ag/review]] — 머신러닝 벤치마킹을 생물학적 데이터 분석이라는 특화된 도메인으로 확장한 응용 사례이다
+- 🔗 후속 연구: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — SWE-bench를 기반으로 머신러닝 에이전트의 코드 작업 능력을 더 광범위하게 평가하는 벤치마크로 확장됨
+- 🔗 후속 연구: [[papers/429_Infiagent-dabench_Evaluating_agents_on_data_analysis_tasks/review]] — 머신러닝 에이전트 평가를 위한 벤치마크로, 데이터 분석 작업 평가를 머신러닝 실험 전반으로 확장
+- 🔗 후속 연구: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 머신러닝 에이전트 벤치마크로, 과학적 도구 사용을 머신러닝 실험 전반으로 확장하는 평가 프레임워크
+- 🔄 다른 접근: [[papers/147_Aviary_training_language_agents_on_challenging_scientific_ta/review]] — MLAgentBench의 기계학습 에이전트 평가와 Aviary의 과학 언어 에이전트 훈련은 서로 다른 관점에서 AI 에이전트의 과학적 능력을 다룬다
+- 🏛 기반 연구: [[papers/293_Ds-agent_Automated_data_science_by_empowering_large_language/review]] — MLAgentBench가 제공하는 머신러닝 에이전트 평가 프레임워크는 DS-Agent 같은 데이터 사이언스 자동화 시스템의 성능 측정 기반이 됨
+- 🔗 후속 연구: [[papers/463_Large_language_model_agent_for_hyper-parameter_optimization/review]] — MLAgentBench의 머신러닝 에이전트 평가가 AgentHPO 같은 특화된 최적화 에이전트의 성능 검증으로 확장됨
+- 🔗 후속 연구: [[papers/596_OWL_Optimized_Workforce_Learning_for_General_Multi-Agent_Ass/review]] — 기계학습 에이전트 평가를 통해 OWL의 워크포스 학습 패러다임을 기계학습 태스크 수행 능력 평가로 확장하여 실무 적용성을 검증함
+- 🔄 다른 접근: [[papers/121_Autokaggle_A_multi-agent_framework_for_autonomous_data_scien/review]] — 데이터 과학 자동화라는 동일한 목표를 가지지만 AutoKaggle은 경진대회에, MLAgentBench는 일반적인 기계학습 벤치마킹에 특화된 다른 접근법임
+- 🧪 응용 사례: [[papers/059_Agent_Laboratory_Using_LLM_Agents_as_Research_Assistants/review]] — 일반적인 연구 지원 프레임워크를 기계학습 실험 평가라는 구체적인 도메인에 적용한 사례를 보여준다
+- 🏛 기반 연구: [[papers/543_Mlcopilot_Unleashing_the_power_of_large_language_models_in_s/review]] — 기계학습 에이전트 평가 벤치마크가 과거 경험 기반 ML 솔루션 제시 시스템의 성능을 객관적으로 측정할 수 있는 기준을 제공한다.
+- 🔄 다른 접근: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — 머신러닝 에이전트 평가를 위한 다른 벤치마크로, 실제 연구 환경에서의 에이전트 능력 측정 방법론을 비교할 수 있습니다.
+- 🔗 후속 연구: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — MLAgentBench의 기계학습 실험 평가 프레임워크를 최신 연구논문 구현이라는 더 도전적 과제로 확장한다.
+- 🏛 기반 연구: [[papers/1092_Table-llm-specialist_Language_model_specialists_for_tables_u/review]] — 테이블 전문가 모델이 머신러닝 에이전트 벤치마킹을 위한 구조화된 데이터 처리 기반을 제공한다.
+- 🔗 후속 연구: [[papers/548_Mlr-bench_Evaluating_ai_agents_on_open-ended_machine_learnin/review]] — 언어 모델 기반 에이전트의 머신러닝 실험 자동화 능력을 더 포괄적으로 평가하는 발전된 형태다.
+- 🔗 후속 연구: [[papers/421_Improving_demonstration_diversity_by_human-free_fusing_for_t/review]] — 기계학습 에이전트 벤치마크에서 Text-to-SQL 시연 다양성 개선 방법론이 더 넓은 ML 작업으로 확장된 응용을 보여준다.
+- 🔗 후속 연구: [[papers/635_Productivity_assessment_of_neural_code_completion/review]] — 머신러닝 에이전트 평가를 위한 더 포괄적인 벤치마킹 체계를 제시한다

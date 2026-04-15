@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.2
 essence: "단백질 공학 분야에 특화된 대규모 언어 모델(LLM) 기반 자동화 머신러닝(AutoML) 프레임워크를 제시하여, 딥러닝 전문 지식이 없는 생물학자들도 자연언어로 단백질 엔지니어링 작업을 수행할 수 있도록 한 혁신적 시스템이다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Multimodal_Protein_Reasoning_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_AutoProteinEngine A Large Language Model Driven Agent Framework for Multimodal AutoML in Protein En.pdf"
 ---
@@ -100,9 +101,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_AutoProteinEngine A Larg
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/805_The_Virtual_Lab_of_AI_agents_designs_new_SARS-CoV-2_nanobodi/review]] — AutoProteinEngine의 일반적 단백질 공학 자동화와 Virtual Lab의 특정 나노바디 설계는 서로 다른 범위에서 단백질 설계를 자동화하는 접근이다.
-- 🔗 후속 연구: [[papers/638_ProtAgents_protein_discovery_via_large_language_model_multi-/review]] — ProtAgents의 다중 에이전트 기반 단백질 발견이 AutoProteinEngine의 단일 에이전트 AutoML 접근을 협업적 시스템으로 확장한 발전 형태이다.
-- 🏛 기반 연구: [[papers/159_Bio-sieve_exploring_instruction_tuning_large_language_models/review]] — 생물정보학 분야를 위한 대규모 언어 모델 조정 방법론이 AutoProteinEngine의 생물학자 친화적 자연언어 인터페이스 구현의 기반이다.
-- 🔗 후속 연구: [[papers/638_ProtAgents_protein_discovery_via_large_language_model_multi-/review]] — LLM 기반 단백질 엔진 프레임워크를 다중 에이전트 협업으로 확장한 연구다
-- 🔄 다른 접근: [[papers/634_PRIME_A_Multi-Agent_Environment_for_Orchestrating_Dynamic_Co/review]] — 단백질 공학과 단백질 엔진 분야에서 다중 에이전트 시스템의 서로 다른 자동화 접근법을 비교하여 최적의 단백질 설계 전략을 찾을 수 있다.
-- 🔄 다른 접근: [[papers/805_The_Virtual_Lab_of_AI_agents_designs_new_SARS-CoV-2_nanobodi/review]] — Virtual Lab의 특정 나노바디 설계와 AutoProteinEngine의 일반적 단백질 공학 자동화는 서로 다른 범위에서 단백질 설계를 다루는 접근이다.
+- 🏛 기반 연구: [[papers/543_Mlcopilot_Unleashing_the_power_of_large_language_models_in_s/review]] — LLM의 기계학습 자동화 능력을 보여주어 단백질 공학에서 AutoML 프레임워크 구축의 기술적 기반을 제공함
+- 🔗 후속 연구: [[papers/112_Atomically_accurate_de_novo_design_of_antibodies_with_RFdiff/review]] — 원자 수준의 정확한 항체 설계 방법을 제시하여 AutoProteinEngine의 단백질 엔지니어링 범위를 더 정밀한 분자 수준으로 확장함
+- 🏛 기반 연구: [[papers/240_Crispr-gpt_An_llm_agent_for_automated_design_of_geneediting/review]] — 단백질 엔지니어링을 위한 LLM 기반 에이전트 프레임워크를 CRISPR 실험 설계의 기반 기술로 활용한다

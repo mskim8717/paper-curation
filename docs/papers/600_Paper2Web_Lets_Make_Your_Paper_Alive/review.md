@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "학술 논문을 정적인 PDF 형식에서 벗어나 대화형(interactive) 멀티미디어 웹사이트로 변환하는 작업을 새롭게 정의하고, 이를 위한 벤치마크 데이터셋과 평가 프레임워크를 제시한다. 제안된 PWAgent는 반복적 개선을 통해 기존 방법들을 큰 폭으로 능가한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Literature_Analysis"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/GPT-Based_Text_Review_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_Paper2Web Let's Make Your Paper Alive!.pdf"
 ---
@@ -148,9 +150,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_Paper2Web Let's Make Yo
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/579_Nsf-scify_Mining_the_nsf_awards_database_for_scientific_clai/review]] — 대규모 과학적 주장 데이터셋이 논문 웹사이트 변환의 콘텐츠 기반 제공
-- 🔗 후속 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 과학 도표 캡션 생성을 논문 전체의 멀티미디어 변환으로 확장한 연구
-- 🔄 다른 접근: [[papers/597_P2p_Automated_paper-to-poster_generation_and_fine-grained_be/review]] — PDF를 웹사이트로 vs 논문을 포스터로 변환하는 유사하지만 다른 접근법
-- 🔗 후속 연구: [[papers/601_PaperBanana_Automating_Academic_Illustration_for_AI_Scientis/review]] — 논문 일러스트레이션 자동화를 전체 웹사이트 변환으로 확장한 발전된 형태
-- 🔗 후속 연구: [[papers/579_Nsf-scify_Mining_the_nsf_awards_database_for_scientific_clai/review]] — 과학적 주장 데이터셋을 활용한 논문의 멀티미디어 변환 및 상호작용화
-- 🔗 후속 연구: [[papers/773_Stealing_creators_workflow_A_creator-inspired_agentic_framew/review]] — 논문을 웹으로 변환하는 Paper2Web 시스템이 SciTalk의 과학 논문 콘텐츠 변환 아이디어를 다른 매체로 확장한 사례를 제공한다.
+- 🔄 다른 접근: [[papers/597_P2p_Automated_paper-to-poster_generation_and_fine-grained_be/review]] — 논문을 웹사이트로 변환 대신 자동화된 포스터 생성에 집중한다
+- 🏛 기반 연구: [[papers/599_Paper2poster_Towards_multimodal_poster_automation_from_scien/review]] — 과학 논문 기반 포스터 자동화가 웹사이트 변환의 기반 기법을 제공한다
+- 🔗 후속 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 과학 그림 캡션 생성을 대화형 웹사이트 생성으로 확장한다
+- 🔗 후속 연구: [[papers/773_Stealing_creators_workflow_A_creator-inspired_agentic_framew/review]] — 논문의 웹 변환을 동영상이라는 더 동적인 매체로 확장한다

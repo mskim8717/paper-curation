@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.25
 essence: "신경망(Neural Networks, NN) 기반의 과학 기계학습(Scientific Machine Learning, SciML)에서 예측 불확실성을 체계적으로 정량화하는 포괄적 프레임워크를 제시하고, 다양한 UQ 방법들을 함수 근사, 편미분방정식 풀이, 연산자 학습 문제에서 비교 평가한다. 특히 물리정보신경망(Physics-Informed Neural Network, PINN)과 심층연산자망(DeepONet)을 중심으로 불확실성 모델링, 정량화 방법, 평가 지표를 통합적으로 다룬다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Physics-informed_Neural_Networks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Physics-Informed_Neural_Operators"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Psaros et al._2023_Uncertainty quantification in scientific machine learning Methods, metrics, and comparisons.pdf"
 ---
@@ -133,7 +133,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Psaros et al._2023_Uncertainty quantific
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/619_Physics_Informed_Deep_Learning_Part_I_Data-driven_Solutions/review]] — 물리 정보 딥러닝의 데이터 기반 솔루션이 과학 기계학습에서 불확실성 정량화의 이론적 토대를 제공한다
-- 🔗 후속 연구: [[papers/037_A_Survey_on_Uncertainty_Quantification_Methods_for_Deep_Lear/review]] — 딥러닝에서 불확실성 정량화 조사를 과학 기계학습 특화 방법론으로 확장할 수 있다
-- 🧪 응용 사례: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — AI 안전성을 위한 기계적 해석가능성을 과학 기계학습의 불확실성 정량화에 적용할 수 있다
-- 🏛 기반 연구: [[papers/037_A_Survey_on_Uncertainty_Quantification_Methods_for_Deep_Lear/review]] — 과학적 머신러닝에서 불확실성 정량화의 광범위한 맥락과 이론적 토대를 제공합니다.
+- 🔄 다른 접근: [[papers/037_A_Survey_on_Uncertainty_Quantification_Methods_for_Deep_Lear/review]] — 과학 기계학습의 불확실성 정량화를 위해 신경망 특화 접근법과 딥러닝 일반화 방법론이라는 서로 다른 관점을 제시함
+- 🧪 응용 사례: [[papers/360_From_lived_experience_to_insight_Unpacking_the_psychological/review]] — 과학 기계학습의 불확실성 정량화가 AI 시스템의 심리적 위험 평가에 신뢰도 측정 도구로 활용됨
+- 🔄 다른 접근: [[papers/037_A_Survey_on_Uncertainty_Quantification_Methods_for_Deep_Lear/review]] — 딥러닝 불확실성 정량화의 일반적 방법론과 과학 기계학습 특화 불확실성 분석이라는 서로 다른 접근법을 제시함
+- 🔄 다른 접근: [[papers/799_The_frontier_of_simulation-based_inference/review]] — 과학적 기계학습에서의 불확실성 정량화 방법론이 시뮬레이션 기반 추론과는 다른 관점에서 과학 계산의 신뢰성을 다룬다

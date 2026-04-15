@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "화학 도메인을 위해 특화된 추론 모델(reasoning model)을 강화학습으로 훈련하면, 추가 도메인 사전학습 없이도 일반 목적 모델과 전문가를 능가하는 성능을 달성할 수 있음을 입증하는 연구이다. ether0라는 24B 파라미터 모델은 자연언어 추론과 화학 구조(SMILES) 출력을 통합하여 약물 발견의 핵심 단계를 지원한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Domain-adapted_Instruction_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Narayanan et al._2025_Training a Scientific Reasoning Model for Chemistry.pdf"
 ---
@@ -135,7 +136,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Narayanan et al._2025_Training a Scienti
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 둘 다 화학 도메인에서 AI 에이전트를 다루지만 하나는 추론 모델 훈련에, 다른 하나는 도구 사용 연결에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — 대규모 언어 모델에 화학 도구를 증강하는 방법이 ether0의 화학 구조 출력 능력 향상에 활용될 수 있다.
-- 🏛 기반 연구: [[papers/651_RAG-Enhanced_Collaborative_LLM_Agents_for_Drug_Discovery/review]] — 약물 발견을 위한 RAG 강화 협업 LLM 에이전트 기술이 ether0의 약물 발견 지원 능력에 기반을 제공한다.
-- 🔄 다른 접근: [[papers/723_Sciglm_Training_scientific_language_models_with_self-reflect/review]] — 둘 다 도메인 특화 과학 추론 모델을 구축하지만 하나는 자기 성찰적 지시 데이터를 사용하고 다른 하나는 화학 도메인에 특화된 강화학습을 사용한다.
+- 🔄 다른 접근: [[papers/226_ClinicalGPT_Large_Language_Models_Finetuned_with_Diverse_Med/review]] — 도메인 특화 과학 추론을 화학 vs 의료 분야에서 각각 다르게 구현한다
+- 🔗 후속 연구: [[papers/701_Scholarchemqa_Unveiling_the_power_of_language_models_in_chem/review]] — 화학 질의응답에서 한 단계 나아가 복합적 화학 추론과 구조 생성까지 통합한다
+- 🧪 응용 사례: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 화학 도구 연결과 과학적 추론을 실제 약물 발견 파이프라인에 적용한다
+- 🔄 다른 접근: [[papers/226_ClinicalGPT_Large_Language_Models_Finetuned_with_Diverse_Med/review]] — 도메인 특화 과학 LLM을 의료 vs 화학 분야에서 각각 다른 방식으로 구현한다

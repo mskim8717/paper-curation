@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "LLM 기반 자율 에이전트를 게노믹 및 트랜스크립토믹 데이터 분류 작업에 특화시킨 시스템으로, 기존 대규모 언어 모델 에이전트 방법론을 초과하는 재현성과 일반화 성능을 달성한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Martinek et al._2025_Agentomics-ML Autonomous Machine Learning Experimentation Agent for Genomic and Transcriptomic Data.pdf"
 ---
@@ -103,6 +103,7 @@ LLM 기반 자율 에이전트를 게노믹 및 트랜스크립토믹 데이터 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — 단일 세포 주석을 위한 LLM 에이전트의 다른 접근 방식을 제시한다.
-- 🔗 후속 연구: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — 세포 생물학 자동화를 위한 LLM 기반 다중 에이전트 프레임워크로 확장한다.
-- 🏛 기반 연구: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 다단계 과학 도구 사용 벤치마킹의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/121_Autokaggle_A_multi-agent_framework_for_autonomous_data_scien/review]] — 데이터 과학 자동화에서 게노믹스 특화와 범용 접근법의 서로 다른 전문화 전략을 보여준다
+- 🏛 기반 연구: [[papers/293_Ds-agent_Automated_data_science_by_empowering_large_language/review]] — 데이터 과학 에이전트의 기본 구조와 LLM 활용 방법론에 대한 기초적 이해를 제공한다
+- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 머신러닝 벤치마킹을 생물학적 데이터 분석이라는 특화된 도메인으로 확장한 응용 사례이다
+- 🧪 응용 사례: [[papers/543_Mlcopilot_Unleashing_the_power_of_large_language_models_in_s/review]] — 자율 기계학습 실험 자동화 에이전트가 MLCopilot의 해석 가능한 솔루션 제시 방식을 실제 연구 환경에서 구현한 사례이다.

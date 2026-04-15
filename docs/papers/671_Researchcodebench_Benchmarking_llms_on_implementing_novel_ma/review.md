@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.4
 essence: "최신 기계학습 연구 논문에서 제시된 새로운 아이디어를 실행 가능한 코드로 변환하는 LLM의 능력을 평가하는 벤치마크로, 2024-2025년 상위 학회(NeurIPS, ICLR, CVPR) 논문 20개로부터 구성된 212개의 코딩 챌린지를 통해 현재 최고 성능 LLM도 40% 미만의 성공률을 보임을 입증한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/LLM_Agent_Benchmarking"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Baskin et al._2025_Researchcodebench Benchmarking llms on implementing novel machine learning research code.pdf"
 ---
@@ -114,12 +114,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Baskin et al._2025_Researchcodebench Ben
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — MLE-bench가 Kaggle 문제인 반면 ResearchCodeBench는 최신 연구 논문의 새로운 아이디어 구현에 집중
-- 🔗 후속 연구: [[papers/731_Scireplicate-bench_Benchmarking_llms_in_agent-driven_algorit/review]] — 연구 논문 아이디어 구현을 알고리즘 복제로 확장한 에이전트 기반 벤치마크
-- 🧪 응용 사례: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — ResearchCodeAgent의 자동화된 연구 코딩 능력을 ResearchCodeBench로 평가할 수 있음
-- 🔄 다른 접근: [[papers/550_MLRC-Bench_Can_Language_Agents_Solve_Machine_Learning_Resear/review]] — 둘 다 연구 관련 코딩을 다루지만 MLRC-Bench는 재현보다는 리뷰에 초점
-- 🔗 후속 연구: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — 함수 생성 중심의 코드 평가가 새로운 기계학습 방법 구현을 위한 연구 코드 벤치마킹으로 확장되었다
-- 🔄 다른 접근: [[papers/712_SciCode_A_Research_Coding_Benchmark_Curated_by_Scientists/review]] — 과학자 큐레이션 코딩 벤치마크와 기계학습 연구 코드 벤치마킹이 각각 과학 연구와 ML 연구 맥락에서 코드 생성 능력을 평가한다
-- 🧪 응용 사례: [[papers/549_Mlr-copilot_Autonomous_machine_learning_research_based_on_la/review]] — 새로운 ML 방법론 구현을 벤치마킹하는 ResearchCodeBench는 MLR-COPILOT의 자동 코드 구현 능력을 평가하는 실용적 도구다.
-- 🔄 다른 접근: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — MLE-bench가 Kaggle 기반인 반면 ResearchCodeBench는 최신 ML 연구 논문 구현에 특화됨
-- 🔗 후속 연구: [[papers/548_Mlr-bench_Evaluating_ai_agents_on_open-ended_machine_learnin/review]] — 새로운 머신러닝 방법 구현에 특화된 벤치마크로서 MLR-Bench의 실제 연구 과제 평가를 보완한다.
+- 🔄 다른 접근: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — 기계학습 에이전트 평가 벤치마크라는 공통점이 있지만 최신 연구 아이디어 구현에 특화된 차별화된 접근을 제시한다.
+- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — MLAgentBench의 기계학습 실험 평가 프레임워크를 최신 연구논문 구현이라는 더 도전적 과제로 확장한다.
+- 🏛 기반 연구: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — 자동화된 코드 생성 연구의 기반 위에서 최신 ML 연구 아이디어의 코드 구현이라는 특화된 문제를 다룬다.
+- 🔄 다른 접근: [[papers/731_Scireplicate-bench_Benchmarking_llms_in_agent-driven_algorit/review]] — ResearchCodeBench는 새로운 ML 연구 구현을 평가하는 벤치마크로, SciReplicate-Bench의 알고리즘 복제에 초점을 맞춘 접근과 대비되는 창의적 구현 평가를 제공한다
+- 🔄 다른 접근: [[papers/712_SciCode_A_Research_Coding_Benchmark_Curated_by_Scientists/review]] — 과학자 큐레이션 벤치마크 대신 새로운 ML 방법 구현에 초점을 맞춘 다른 평가법
+- 🔗 후속 연구: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — 연구 코드 구현에 특화된 벤치마크로, MLE 능력을 보다 구체적인 프로그래밍 관점에서 평가합니다.
+- 🔗 후속 연구: [[papers/550_MLRC-Bench_Can_Language_Agents_Solve_Machine_Learning_Resear/review]] — 복잡한 알고리즘 구현을 요구하는 연구 코딩 벤치마크로서 MLRC-Bench를 확장한 형태다.

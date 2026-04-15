@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "구현 로봇(embodied agents)을 위한 크로스 도메인 정책 전이(cross-domain policy transfer) 방법들을 체계적으로 검토한 종합 서베이. 시뮬레이션, 실험실 등 저비용 소스 도메인의 데이터를 실제 환경(타겟 도메인)에 효과적으로 전이하는 기술들을 분류 및 분석."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Domain-Specific_LLM_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Niu et al._2024_A comprehensive survey of cross-domain policy transfer for embodied agents.pdf"
 ---
@@ -88,5 +88,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Niu et al._2024_A comprehensive survey o
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 로봇 보행 정책의 일반화 개선을 통해 크로스 도메인 정책 전이의 실제 적용 사례를 제시한다.
-- 🔗 후속 연구: [[papers/662_Reinforcement_Learning_for_Dynamic_Microfluidic_Control/review]] — 오프라인 강화학습의 로봇 제어 견고성을 크로스 도메인 정책 전이로 확장한다.
+- 🔄 다른 접근: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 둘 다 로봇 정책의 일반화를 다루지만, 크로스 도메인 전이는 도메인 간 전이에, 다른 연구는 공유 표현 학습에 집중한다
+- 🔗 후속 연구: [[papers/863_Value_iteration_for_learning_concurrently_executable_robotic/review]] — 동시 실행 가능한 로봇 행동을 위한 가치 반복 학습 연구가 크로스 도메인 정책 전이의 구체적인 학습 방법론으로 발전되었다
+- 🧪 응용 사례: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — 강화학습 기반 제로샷 심투리얼 전이 연구가 크로스 도메인 정책 전이의 실제 적용 사례 중 하나다

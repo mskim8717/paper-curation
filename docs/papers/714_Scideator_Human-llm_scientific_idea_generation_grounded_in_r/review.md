@@ -12,8 +12,8 @@ arxiv: ""
 score: 0
 essence: "과학 논문 작성에서 기존 연구의 핵심 측면들을 새로운 방식으로 결합하여 창의적 아이디어를 생성하는 것을 지원하는 사람-LLM 협력 시스템이다. 사용자가 선택한 논문들로부터 추출된 구조화된 요소(목적·메커니즘·평가)를 대화형으로 재조합하여 새로운 연구 아이디어를 탐색하도록 설계되었다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Biomedical_Research_Agents"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jackson et al._2024_Scideator Human-llm scientific idea generation grounded in research-paper facet recombination.pdf"
 ---
@@ -170,5 +170,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jackson et al._2024_Scideator Human-llm 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 혁신적 연구 아이디어 개발을 위한 아이디어 연쇄 접근법이 논문 기반 아이디어 생성과 다른 방법론을 제시한다.
-- 🔗 후속 연구: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 다중 관점을 활용한 과학 아이디어 생성 개선이 인간-LLM 협력 시스템의 발전된 형태를 보여준다.
+- 🔗 후속 연구: [[papers/468_Large_Language_Models_are_Zero_Shot_Hypothesis_Proposers/review]] — 제로샷 가설 생성을 인간-LLM 협력을 통한 구조화된 아이디어 생성으로 발전시킨다
+- 🏛 기반 연구: [[papers/216_Chimera_A_knowledge_base_of_idea_recombination_in_scientific/review]] — 과학에서 아이디어 재조합에 대한 지식 베이스가 Scideator의 요소 재조합 설계 기반이다
+- 🔄 다른 접근: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 다수 협력과 인간-LLM 협력이 각각 다른 창의적 아이디어 생성 방식이다
+- 🧪 응용 사례: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 아이디어 개발을 위한 체인 방식이 구조화된 요소 재조합의 구체적 실행 방법이다

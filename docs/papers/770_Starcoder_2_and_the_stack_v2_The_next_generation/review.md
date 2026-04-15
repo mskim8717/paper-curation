@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "BigCode 프로젝트에서 개발한 StarCoder2와 The Stack v2는 619개 프로그래밍 언어를 지원하는 대규모 오픈소스 코드 데이터셋과 이를 기반으로 훈련된 3B, 7B, 15B 규모의 코드 생성 모델로, 동일 규모의 기존 모델들을 능가하고 2배 이상 큰 모델과 비교 가능한 성능을 달성했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Code_Generation"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Bioinformatics_Integration"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/DeepSeek-AI et al._2024_Starcoder 2 and the stack v2 The next generation.pdf"
 ---
@@ -101,13 +101,10 @@ BigCode 프로젝트에서 개발한 StarCoder2와 The Stack v2는 619개 프로
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/771_Starcoder_may_the_source_be_with_you_arXiv_preprint_arXiv230/review]] — StarCoder의 오픈소스 코드 생성 모델이 더 큰 규모와 다양한 언어 지원으로 발전한 차세대 버전이다
-- 🏛 기반 연구: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — GitHub 코드 기반 모델 훈련과 함수형 정확성 평가 방법론이 대규모 오픈소스 코드 생성 모델 개발의 중요한 기반이 되었다
-- 🧪 응용 사례: [[papers/135_Automl_in_the_age_of_large_language_models_Current_challenge/review]] — 대규모 코드 생성 모델의 성능 향상이 AutoML과 LLM의 상생적 통합을 통한 자동 최적화에 핵심적으로 기여한다
-- 🧪 응용 사례: [[papers/712_SciCode_A_Research_Coding_Benchmark_Curated_by_Scientists/review]] — 다양한 프로그래밍 언어를 지원하는 코드 생성 모델이 과학자들의 실제 연구 문제 해결 능력 평가에 핵심적인 도구로 활용된다
-- 🔄 다른 접근: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — 오픈소스 코드 생성을 위한 서로 다른 모델 아키텍처를 제시합니다.
-- 🏛 기반 연구: [[papers/135_Automl_in_the_age_of_large_language_models_Current_challenge/review]] — AutoML과 LLM의 통합이 코드 생성 모델의 자동 최적화와 성능 향상에 필수적인 방법론적 기반을 제공한다
-- 🏛 기반 연구: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — 함수형 정확성 기반 코드 평가 체계가 차세대 대규모 코드 생성 모델의 성능 측정과 개선에 필수적인 평가 기준을 제공했다
-- 🏛 기반 연구: [[papers/771_Starcoder_may_the_source_be_with_you_arXiv_preprint_arXiv230/review]] — 오픈소스 코드 생성 모델의 책임감 있는 개발 원칙이 차세대 대규모 코드 모델 개발의 중요한 윤리적, 기술적 기반이 되었다
-- 🔗 후속 연구: [[papers/263_Deepseek-coder_When_the_large_language_model_meets_programmi/review]] — StarCoder의 코드 생성 기술을 더 큰 규모와 상용 라이센스로 발전시킴
-- 🔗 후속 연구: [[papers/741_Seed-coder_Let_the_code_model_curate_data_for_itself/review]] — StarCoder의 코드 생성 능력을 자가 큐레이션 데이터로 더욱 향상시킨 연구
+- 🏛 기반 연구: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — StarCoder 2가 발전시킨 기본적인 코드 생성과 평가 방법론의 근간이 되는 연구
+- 🔗 후속 연구: [[papers/771_Starcoder_may_the_source_be_with_you_arXiv_preprint_arXiv230/review]] — StarCoder의 기본 버전을 더 큰 규모와 향상된 성능으로 발전시킨 차세대 모델
+- 🔄 다른 접근: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — 오픈소스 코드 모델링을 다른 아키텍처와 접근법으로 구현한 대안적 연구
+- 🔗 후속 연구: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — Codex의 코드 생성 능력을 다음 세대 StarCoder로 발전시켜 더 큰 규모와 성능을 달성
+- 🏛 기반 연구: [[papers/771_Starcoder_may_the_source_be_with_you_arXiv_preprint_arXiv230/review]] — StarCoder 2로 발전하기 전 오픈소스 코드 LLM의 기초가 된 첫 번째 모델
+- 🔄 다른 접근: [[papers/263_Deepseek-coder_When_the_large_language_model_meets_programmi/review]] — 오픈소스 코드 생성 모델의 다른 접근법으로, 코드 전문 LLM 개발의 다양한 전략을 비교할 수 있습니다.
+- 🔗 후속 연구: [[papers/741_Seed-coder_Let_the_code_model_curate_data_for_itself/review]] — Stack v2 데이터셋의 대규모 코드 데이터를 Seed-Coder의 자동 큐레이션 파이프라인으로 더욱 정교하게 필터링할 수 있다.

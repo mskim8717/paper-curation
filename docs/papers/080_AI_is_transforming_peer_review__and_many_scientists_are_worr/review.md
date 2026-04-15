@@ -8,8 +8,10 @@ arxiv: ""
 score: 3.8
 essence: "인공지능 소프트웨어가 학술지 동료평가(peer review) 과정에 점진적으로 침투하고 있으며, 이는 효율성 향상과 동시에 동료평가 제도의 근본적 가치를 훼손할 수 있다는 우려를 동시에 야기하고 있다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/LLM_Review_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/AI_Science_Communication"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Naddaf_2025_AI is transforming peer review — and many scientists are worried.pdf"
 ---
@@ -86,12 +88,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Naddaf_2025_AI is transforming peer revi
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/897_Can_AI_review_the_scientific_literature__and_figure_out_what/review]] — AI 문헌 검토의 기초적 문제점들이 동료평가 시스템 전반의 우려로 확장된다
-- 🔄 다른 접근: [[papers/809_Three_AI-powered_steps_to_faster_smarter_peer_review/review]] — AI를 활용한 더 효율적이고 스마트한 동료평가 솔루션을 제시한다
-- 🔗 후속 연구: [[papers/1087_Gpt4_is_slightly_helpful_for_peer-review_assistance_A_pilot/review]] — GPT-4의 동료평가 보조 역할에 대한 구체적 실험을 통해 우려를 검증한다
-- 🔗 후속 연구: [[papers/897_Can_AI_review_the_scientific_literature__and_figure_out_what/review]] — AI 기반 문헌 검토의 한계를 동료평가 변화라는 더 구체적 맥락에서 확장한다
-- 🧪 응용 사례: [[papers/860_Unveiling_the_sentinels_Assessing_ai_performance_in_cybersec/review]] — AI의 동료평가 성능을 사이버보안이라는 구체적 도메인에서 정량적으로 평가한다
-- 🔄 다른 접근: [[papers/809_Three_AI-powered_steps_to_faster_smarter_peer_review/review]] — AI 동료평가에 대한 우려를 해결하는 구체적이고 실용적인 솔루션을 제시한다
-- 🔄 다른 접근: [[papers/609_Peerarg_Argumentative_peer_review_with_llms/review]] — AI 동료평가에 대한 우려를 논증 틀을 통해 투명하고 해석가능하게 해결한다
-- 🔄 다른 접근: [[papers/776_Streamlining_the_review_process_Ai-generated_annotations_in/review]] — AI가 전체 심사를 대체하는 것에 대한 우려를 주석 달기라는 협력적 접근으로 완화한다
-- 🏛 기반 연구: [[papers/1087_Gpt4_is_slightly_helpful_for_peer-review_assistance_A_pilot/review]] — GPT-4의 실제 동료평가 성능 검증이 AI 동료평가에 대한 우려의 근거를 제공한다
+- 🔗 후속 연구: [[papers/444_Is_it_OK_for_AI_to_write_science_papers_Nature_survey_shows/review]] — 과학 논문 작성에서의 AI 사용 논란을 동료평가까지 확장하여 학술 출판 전반의 AI 침투를 다룬다
+- 🔄 다른 접근: [[papers/809_Three_AI-powered_steps_to_faster_smarter_peer_review/review]] — AI 동료평가의 우려와 달리 효율성 향상을 위한 AI 활용 워크플로우를 제시한다
+- 🏛 기반 연구: [[papers/796_The_AI_writing_on_the_wall/review]] — 과학 저술에서 AI 영향의 초기 논의로서 동료평가 변화의 이론적 배경을 제공한다
+- 🔗 후속 연구: [[papers/899_ChatGPT_and_science_the_AI_system_was_a_force_in_2023__for_g/review]] — ChatGPT의 2023년 과학계 영향과 피어리뷰 변화에 대한 과학자들의 우려는 AI의 학술 생태계 영향을 다각도로 분석한다.
+- 🔗 후속 연구: [[papers/444_Is_it_OK_for_AI_to_write_science_papers_Nature_survey_shows/review]] — AI의 과학 출판 침투가 동료평가까지 확장된 현상을 보여주며 연구 범위를 넓혀준다
+- 🔄 다른 접근: [[papers/796_The_AI_writing_on_the_wall/review]] — 동료평가에서 AI 침투 현상을 다루며 과학 저술 이외 영역에서의 AI 영향을 보여준다
+- ⚖️ 반론/비판: [[papers/809_Three_AI-powered_steps_to_faster_smarter_peer_review/review]] — AI 동료평가의 우려와 달리 효율성과 품질을 모두 확보하는 AI 활용 방안을 제시한다

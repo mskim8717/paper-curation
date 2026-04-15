@@ -1,3 +1,24 @@
+---
+title: "655_ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models"
+authors:
+  - "Shunyu Yao"
+  - "Jeffrey Zhao"
+  - "Dian Yu"
+  - "Nan Du"
+  - "Izhak Shafran"
+date: "2022.10"
+doi: ""
+arxiv: ""
+score: 4.0
+essence: "ReAct는 대형 언어 모델이 reasoning trace와 task-specific action을 interleaved manner로 생성하도록 함으로써, 추론과 행동의 시너지를 통해 다양한 언어 이해 및 의사결정 태스크의 성능을 향상시키는 프레임워크이다."
+tags:
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
+  - "topic/ai4s"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yao et al._2022_ReAct Synergizing Reasoning and Acting in Language Models.pdf"
+---
+
 # ReAct: Synergizing Reasoning and Acting in Language Models
 
 > **저자**: Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao | **날짜**: 2022-10-06 | **URL**: [https://arxiv.org/abs/2210.03629](https://arxiv.org/abs/2210.03629)
@@ -67,3 +88,10 @@ ReAct는 대형 언어 모델이 reasoning trace와 task-specific action을 inte
 - Overall: 4/5
 
 **총평**: ReAct는 LLM의 추론과 행동을 획기적으로 결합하여 hallucination을 줄이고 해석 가능성을 높이는 중요한 프레임워크이다. Few-shot prompting만으로 대규모 학습 기반 방법을 뛰어넘는 성능을 보여주며, 광범위한 벤치마크에서의 검증과 명확한 제시로 높은 영향력을 가질 것으로 예상된다.
+
+## Related Papers
+
+- 🏛 기반 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — Toolformer의 도구 사용 학습 방법론이 ReAct의 추론과 행동 통합 프레임워크의 기술적 기반을 제공함
+- 🔗 후속 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — CRITIC의 도구 통합 자기 교정이 ReAct의 추론-행동 시너지를 오류 수정 능력으로 확장한 발전된 형태
+- 🧪 응용 사례: [[papers/496_LLM_Agents_Making_Agent_Tools/review]] — LLM Agents가 도구를 만드는 연구가 ReAct의 행동 능력을 도구 생성 영역으로 확장한 구체적 적용 사례
+- 🔗 후속 연구: [[papers/674_ReTool_Reinforcement_Learning_for_Strategic_Tool_Use_in_LLMs/review]] — 추론과 행동의 시너지를 강화학습 기반 전략적 도구 사용으로 확장한다

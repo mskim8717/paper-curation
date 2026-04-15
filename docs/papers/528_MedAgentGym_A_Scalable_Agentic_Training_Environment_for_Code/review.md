@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 생의학 데이터 과학(biomedical data science)에서 코드 기반 추론 능력을 강화하기 위한 확장 가능한 LLM 에이전트 훈련 환경인 MedAgentGym을 제시한다. 72,413개의 과제 인스턴스와 실행 가능한 샌드박스 환경을 통해 오픈소스 LLM들의 생의학 코딩 역량을 대폭 향상시킬 수 있음을 입증한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xu et al._2025_MedAgentGym A Scalable Agentic Training Environment for Code-Centric Reasoning in Biomedical Data S.pdf"
 ---
@@ -122,9 +124,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xu et al._2025_MedAgentGym A Scalable Ag
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/546_Mlgym_A_new_framework_and_benchmark_for_advancing_ai_researc/review]] — 생의학 vs 머신러닝 도메인에서의 AI 에이전트 훈련 환경을 제시합니다.
-- 🏛 기반 연구: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 생의학 데이터 과학 벤치마크가 에이전트 훈련 환경의 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/429_Infiagent-dabench_Evaluating_agents_on_data_analysis_tasks/review]] — 생의학 코딩 역량이 데이터 분석 작업 평가로 확장됩니다.
-- 🔄 다른 접근: [[papers/546_Mlgym_A_new_framework_and_benchmark_for_advancing_ai_researc/review]] — 머신러닝 vs 생의학 도메인에서의 AI 에이전트 개발 환경을 제시합니다.
-- 🧪 응용 사례: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — 코딩 능력을 위한 확장 가능한 에이전트 훈련 환경 MedAgentGym은 환자 시뮬레이터의 의료 교육 활용을 구체화한다.
-- 🧪 응용 사례: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — MedAgentGym의 확장 가능한 에이전트 훈련 환경이 PubMedQA 데이터셋을 활용하여 의료 코딩 작업에서의 실제적 성능 향상을 달성할 수 있는 구체적 방법을 제시함
+- 🔄 다른 접근: [[papers/209_ChemAgent_Self-updating_Library_in_Large_Language_Models_Imp/review]] — 생의학 코딩 환경 대신 화학에서 자체 업데이트 라이브러리 시스템을 제시한다
+- 🏛 기반 연구: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 생의학 데이터 과학 에이전트 벤치마킹의 기반 방법론을 제공한다
+- 🔗 후속 연구: [[papers/293_Ds-agent_Automated_data_science_by_empowering_large_language/review]] — 데이터 과학 자동화를 생의학 특화 환경으로 확장한다
+- 🔄 다른 접근: [[papers/209_ChemAgent_Self-updating_Library_in_Large_Language_Models_Imp/review]] — 화학 도메인 대신 생의학 데이터 과학에서 메모리 기반 학습을 구현한다
+- 🧪 응용 사례: [[papers/151_Benchmarking_ai_scientists_in_omics_data-driven_biological_r/review]] — 의료 AI 에이전트를 위한 확장 가능한 훈련 환경 구축 방법론이 BAISBench의 생물학적 발견 능력 평가 프레임워크에 실제 적용되었다
+- 🔗 후속 연구: [[papers/169_Bioprobench_Comprehensive_dataset_and_benchmark_in_biologica/review]] — 의료 분야 에이전트 훈련을 위한 확장 가능한 환경으로, BioProBench의 생물학적 프로토콜 평가를 의료 도메인의 실제 적용으로 확장한다
+- 🔗 후속 연구: [[papers/181_Can_gpt-4v_ision_serve_medical_applications_case_studies_on/review]] — 의료 에이전트 훈련 환경을 통해 GPT-4V의 의료 진단 능력을 체계적으로 개선할 수 있음
+- 🧪 응용 사례: [[papers/1094_Towards_a_Medical_AI_Scientist/review]] — 의료 AI 과학자의 훈련 환경으로 확장 가능한 의료 에이전트 훈련 플랫폼을 제공한다

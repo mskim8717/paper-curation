@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "BloClaw는 LLM 기반 AI 과학자를 위한 멀티모달 운영체제로, XML-Regex 라우팅, 실행 샌드박스 모니터링, 동적 UI를 통해 JSON 기반 도구 호출의 취약성을 해결한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Scientific_Frameworks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Domain-Specific_Autonomous_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qin et al._2026_BloClaw An Omniscient, Multi-Modal Agentic Workspace for Next-Generation Scientific Discovery.pdf"
 ---
@@ -89,5 +89,6 @@ BloClaw는 LLM 기반 AI 과학자를 위한 멀티모달 운영체제로, XML-R
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/769_StableToolBench_Towards_Stable_Large-Scale_Benchmarking_on_T/review]] — BloClaw의 멀티모달 에이전트 작업공간은 StableToolBench의 대규모 도구 벤치마킹 연구에서 확인된 도구 사용 안정성 요구사항을 기반으로 XML-Regex 라우팅 시스템을 설계했습니다.
-- 🔗 후속 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — BloClaw는 ToolLLM의 16000+ 도구 마스터링 프레임워크를 확장하여 JSON 기반 도구 호출의 취약성을 해결하는 더 견고한 도구 통합 환경을 제공합니다.
+- 🏛 기반 연구: [[papers/1095_Towards_large_language_models_as_copilots_for_theorem_provin/review]] — 정리 증명을 위한 대형 언어 모델 코파일럿 기술을 AI 과학자를 위한 멀티모달 운영체제의 핵심 구성 요소로 활용한다
+- 🔄 다른 접근: [[papers/586_Opendevin_An_open_platform_for_ai_software_developers_as_gen/review]] — AI 소프트웨어 개발자를 위한 오픈 플랫폼과 AI 과학자를 위한 멀티모달 워크스페이스라는 서로 다른 AI 개발 환경을 제시한다
+- 🏛 기반 연구: [[papers/1093_The_fifth_era_of_science_Artificial_scientific_intelligence/review]] — 인공 과학 지능의 다섯 번째 시대 개념을 멀티모달 AI 과학자 워크스페이스의 이론적 배경으로 제공한다

@@ -10,7 +10,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 오픈 액세스 논문의 전체 텍스트를 포함하는 대규모 관련 업무 생성 데이터셋 OARelatedWork를 제시하며, 초록(abstract)만 사용하는 기존 방식에서 벗어나 전체 콘텐츠를 활용한 다중 문서 요약 연구를 추진한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Academic_Publishing_Quality_Assurance"
   - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Son et al._2024_Oarelatedwork A large-scale dataset of related work sections with full-texts from open access sourc.pdf"
@@ -101,11 +103,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Son et al._2024_Oarelatedwork A large-sc
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/561_Ms2_Multi-document_summarization_of_medical_studies/review]] — 의료 분야 다중문서 요약의 기초적 접근이 관련 업무 생성을 위한 전체 텍스트 활용 방법의 토대를 제공함
-- 🔄 다른 접근: [[papers/778_Summarizing_multiple_documents_with_conversational_structure/review]] — 둘 다 학술 논문의 다중문서 요약을 다루지만 하나는 관련 업무, 다른 하나는 메타리뷰 생성에 중점을 둠
-- 🔗 후속 연구: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 관련 업무 섹션 생성을 자동화된 문헌 리뷰 생성의 더 포괄적인 프로세스로 확장함
-- 🔗 후속 연구: [[papers/190_Causal_intervention_for_abstractive_related_work_generation/review]] — 오픈액세스 관련 업무 섹션 대규모 데이터셋을 활용하여 인과 개입 기법의 효과를 검증할 수 있다.
-- 🏛 기반 연구: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 관련 연구 섹션의 대규모 데이터셋이 SciReviewGen의 자동 문헌 리뷰 생성 시스템을 훈련하고 평가할 수 있는 핵심적인 데이터 자원을 제공함
-- 🔗 후속 연구: [[papers/561_Ms2_Multi-document_summarization_of_medical_studies/review]] — 의료 연구의 다중문서 요약을 전체 논문 텍스트를 활용하는 관련 업무 생성으로 확장하여 더 포괄적인 문헌 요약을 제공함
-- 🔄 다른 접근: [[papers/778_Summarizing_multiple_documents_with_conversational_structure/review]] — 둘 다 학술 논문의 다중문서 요약을 다루지만 하나는 메타리뷰, 다른 하나는 관련 업무 생성에 중점을 둠
-- 🔗 후속 연구: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 관련 연구 섹션 데이터셋을 신경망 기반 관련 연구 요약 시스템으로 확장한 실제 적용 연구입니다.
+- 🔄 다른 접근: [[papers/561_Ms2_Multi-document_summarization_of_medical_studies/review]] — 다중문서 요약이라는 공통 목표를 가지지만 일반 학술 논문 vs 의료 전문 문헌이라는 다른 도메인을 다룬다.
+- 🧪 응용 사례: [[papers/022_A_sentiment_consolidation_framework_for_meta-review_generati/review]] — 감정 통합 프레임워크를 관련 업무 섹션 생성에 적용하여 논문 간 관계를 더 정확히 파악할 수 있는 방법을 제시한다.
+- 🔗 후속 연구: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 체크리스트 기반 반복적 메타리뷰 생성 방법을 통해 관련 업무 섹션의 품질을 체계적으로 향상시킬 수 있다.
+- 🔗 후속 연구: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 관련 연구 섹션의 대규모 데이터셋으로, SciReviewGen의 문헌 리뷰 생성을 논문의 특정 섹션으로 확장한 연구 방향을 보여준다
+- 🔗 후속 연구: [[papers/561_Ms2_Multi-document_summarization_of_medical_studies/review]] — 관련 업무 섹션 생성을 통해 의료 문헌 요약의 범위를 일반 학술 논문으로 확장하는 방법론을 제시한다.
+- 🏛 기반 연구: [[papers/022_A_sentiment_consolidation_framework_for_meta-review_generati/review]] — 관련 업무 섹션 생성에서 논문 간 감정적 관계를 파악하는 이론적 기반을 제공하여 더 정확한 문헌 요약을 가능하게 한다.
+- 🧪 응용 사례: [[papers/402_Hierarchical_catalogue_generation_for_literature_review_a_be/review]] — 관련 연구 섹션 대규모 데이터셋이 계층적 카탈로그 생성 시스템의 훈련과 평가에 직접 활용될 수 있다.
+- 🔗 후속 연구: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 관련 연구 섹션 데이터셋을 활용하여 지식 그래프 기반 다중 문서 요약의 실용적 적용을 확장한다.

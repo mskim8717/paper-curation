@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 Retrieval-Augmented Generation (RAG)과 Large Language Models (LLMs)의 통합인 RA-LLMs에 대한 종합적인 설문조사로, 아키텍처, 훈련 전략, 응용 분야의 세 가지 기술적 관점에서 기존 연구를 체계적으로 리뷰한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Retrieval-augmented_Generation_Systems"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fan et al._2024_A Survey on RAG Meeting LLMs Towards Retrieval-Augmented Large Language Models.pdf"
 ---
@@ -91,6 +91,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fan et al._2024_A Survey on RAG Meeting 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 대규모 언어모델을 위한 검색 증강 생성에 대한 다른 관점의 서베이를 제시한다.
-- 🏛 기반 연구: [[papers/295_Dynamic_multi-agent_orchestration_and_retrieval_for_multi-so/review]] — RAG와 LLM 결합에 대한 포괄적 조사로 검색 증강 생성의 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/318_Estimating_optimal_context_length_for_hybrid_retrievalaugmen/review]] — RAG와 LLM 결합의 구체적 구현 사례로 검색 문맥 길이 최적화를 다룬다
+- 🧪 응용 사례: [[papers/018_A_retrieval-augmented_knowledge_mining_method_with_deep_thin/review]] — 일반적 RAG-LLM 통합 이론을 생의학 지식 채굴이라는 구체적 도메인에 적용한 사례이다
+- 🏛 기반 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — RAG 시스템의 기본 원리와 구현 방법에 대한 포괄적 이해를 제공하는 기초 자료이다
+- 🔗 후속 연구: [[papers/404_Hiperrag_High-performance_retrieval_augmented_generation_for/review]] — 기본 RAG를 고성능 RAG 시스템으로 발전시킨 성능 최적화 방법론을 제시한다
+- 🏛 기반 연구: [[papers/500_Llm-based_corroborating_and_refuting_evidence_retrieval_for/review]] — 검색 증강 생성의 기본 원리와 구현 방법론을 제공합니다.
+- 🏛 기반 연구: [[papers/018_A_retrieval-augmented_knowledge_mining_method_with_deep_thin/review]] — 두 논문 모두 RAG 기반 시스템을 다루며 지식 검색과 생성의 통합 방법론을 제시한다
+- 🔗 후속 연구: [[papers/067_Agentic_retrieval-augmented_generation_A_survey_on_agentic_r/review]] — 기본적인 RAG 시스템을 자율적 에이전트 기반의 동적 검색 시스템으로 고도화한 발전된 접근법이다
+- 🏛 기반 연구: [[papers/768_Splade_v2_Sparse_lexical_and_expansion_model_for_information/review]] — 검색 증강 언어모델에 대한 포괄적 조사로, SPLADE와 같은 희소 검색 모델의 이론적 배경과 발전 맥락을 제공합니다.
+- 🔗 후속 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — RAG 기반 LLM 서베이의 방법론을 과학문헌 특화 도메인으로 확장하여 구체적인 구현체를 제시한다.
+- 🔗 후속 연구: [[papers/318_Estimating_optimal_context_length_for_hybrid_retrievalaugmen/review]] — RAG와 LLM 결합 연구를 다중문서 요약에 최적화된 구체적 응용으로 확장한다

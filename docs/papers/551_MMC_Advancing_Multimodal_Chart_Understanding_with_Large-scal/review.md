@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.5
 essence: "대규모 멀티모달 차트 명령어 튜닝(600k 인스턴스)을 통해 차트 이해에 특화된 LMM(대규모 멀티모달 모델)을 개발하고, 9가지 하위 작업으로 구성된 포괄적 벤치마크를 제시하는 연구이다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Chart_Analysis"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_MMC Advancing Multimodal Chart Understanding with Large-scale Instruction Tuning.pdf"
 ---
@@ -100,17 +102,19 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_MMC Advancing Multimodal
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/369_Gemini_a_family_of_highly_capable_multimodal_models/review]] — Gemini 같은 멀티모달 모델의 차트 이해 능력을 전문적으로 평가하고 개선하는 연구
-- 🔄 다른 접근: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — 둘 다 차트 이해에 특화되었지만 ChartCoder는 코딩 접근법을, MMC는 명령어 튜닝을 사용
-- 🔗 후속 연구: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — ChartX & ChartVLM의 기초 모델을 대규모 명령어 튜닝으로 발전시킨 연구
-- 🧪 응용 사례: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — MMC의 차트 이해 기술을 과학 분야 특화 멀티모달 벤치마크로 확장
-- 🏛 기반 연구: [[papers/199_ChartInstruct_Instruction_Tuning_for_Chart_Comprehension_and/review]] — 대규모 차트 데이터셋이 차트 이해 모델 훈련의 기반이 됨
-- 🏛 기반 연구: [[papers/200_Chartist_Task-driven_Eye_Movement_Control_for_Chart_Reading/review]] — 대규모 차트 데이터셋이 차트 읽기 시선 패턴 예측의 데이터 기반 제공
-- 🔗 후속 연구: [[papers/201_ChartLlama_A_Multimodal_LLM_for_Chart_Understanding_and_Gene/review]] — 차트 이해와 생성에 특화된 멀티모달 LLM이 대규모 차트 데이터셋을 활용한 범용 차트 이해 모델로 발전했다
-- 🔗 후속 연구: [[papers/203_Chartsketcher_Reasoning_with_multimodal_feedback_and_reflect/review]] — 대규모 멀티모달 차트 이해 데이터셋이 반복적 스케칭 방법론의 성능 평가에 확장 적용될 수 있습니다.
-- 🔄 다른 접근: [[papers/691_S1-MMAlign_A_Large-Scale_Multi-Disciplinary_Dataset_for_Scie/review]] — 과학 vs 일반 차트 이해에서 멀티모달 대규모 데이터셋의 다른 접근법을 비교할 수 있다
-- 🏛 기반 연구: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — MMC의 차트 이해 기술이 MMSCI의 과학 시각화 데이터 처리 방법론의 핵심 구성요소임
-- 🧪 응용 사례: [[papers/369_Gemini_a_family_of_highly_capable_multimodal_models/review]] — Gemini의 멀티모달 능력이 MMC의 차트 이해 작업에 직접 적용될 수 있음
-- 🏛 기반 연구: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 대규모 차트 이해 데이터셋 MMC의 방법론을 과학 논문 그림으로 확장한 기반
-- 🏛 기반 연구: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 대규모 멀티모달 차트 이해 연구의 방법론을 범용 모델 개발에 적용
-- 🏛 기반 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 대규모 멀티모달 차트 이해 데이터셋이 과학 도형 캡션 생성의 기술적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — 차트 이해를 위한 다른 접근법으로, 대규모 명령어 튜닝과 시각적 명령어 튜닝의 방법론적 차이를 비교할 수 있습니다.
+- 🧪 응용 사례: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 차트에서 코드 생성으로 확장한 연구로, 멀티모달 차트 이해를 실제 프로그래밍 작업에 적용한 발전된 사례입니다.
+- 🔗 후속 연구: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 과학 분야 멀티모달 벤치마크로, 차트 이해 능력을 과학적 그림과 데이터 해석까지 확장하여 평가합니다.
+- 🏛 기반 연구: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — MMC 데이터셋의 대규모 차트 이해 데이터는 차트-to-코드 생성 모델 훈련에 필요한 기초 자원을 제공한다
+- 🔗 후속 연구: [[papers/566_Multimodal_deepresearcher_Generating_text-chart_interleaved/review]] — 멀티모달 차트 이해 데이터셋과 함께 활용하면 텍스트-차트 통합 보고서 생성의 성능을 더욱 향상시킬 수 있다.
+- 🔗 후속 연구: [[papers/841_Tree-of-table_Unleashing_the_power_of_llms_for_enhanced_larg/review]] — 대규모 멀티모달 차트 데이터셋을 Tree-of-Table 방법론과 결합하면 복잡한 테이블-차트 관계 분석 성능을 크게 향상시킬 수 있다.
+- 🔄 다른 접근: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — 차트 이해를 위한 다른 접근법으로, 대규모 명령어 튜닝 데이터셋 구축 방식의 차이점을 비교할 수 있습니다.
+- 🏛 기반 연구: [[papers/201_ChartLlama_A_Multimodal_LLM_for_Chart_Understanding_and_Gene/review]] — 차트 이해 모델 개발을 위한 대규모 멀티모달 데이터셋과 벤치마크 기반
+- 🏛 기반 연구: [[papers/737_Sciverse_Unveiling_the_knowledge_comprehension_and_visual_re/review]] — 대규모 차트 이해 데이터셋을 통해 다중모달 과학 문제 해결의 시각적 추론 기반을 제공한다.
+- 🏛 기반 연구: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — 대규모 멀티모달 차트 이해 데이터셋으로, ChartX 벤치마크와 ChartVLM 모델 개발에 필요한 훈련 데이터의 기초를 제공한다
+- 🔄 다른 접근: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — ChartAssistant의 범용 차트 이해와 MMC의 대규모 차트 데이터셋 기반 접근법이 차트 AI의 서로 다른 발전 방향을 제시한다.
+- 🏛 기반 연구: [[papers/709_SciCap_A_Knowledge_Augmented_Dataset_to_Study_the_Challenges/review]] — 대규모 멀티모달 차트 이해의 기초적인 방법론을 과학 도형 캡션 생성에 적용한다.
+- 🔄 다른 접근: [[papers/783_Synchart_Synthesizing_charts_from_language_models/review]] — 차트 생성과 이해라는 동일한 문제를 LLM 기반 합성 vs 대규모 멀티모달 데이터셋으로 다르게 접근한다
+- 🔗 후속 연구: [[papers/802_The_mighty_torr_A_benchmark_for_table_reasoning_and_robustne/review]] — MMC의 차트 이해 벤치마크를 표 데이터 추론과 견고성 평가로 확장하여 구조화된 데이터 이해의 다른 측면을 탐구한다.
+- 🔄 다른 접근: [[papers/399_Helm_Highlighted_evidence_augmented_language_model_for_enhan/review]] — 대규모 차트 이해 데이터셋과 테이블 증거 강조 방법은 모두 구조화된 데이터의 핵심 정보 추출을 다른 방식으로 접근한다.
+- 🔗 후속 연구: [[papers/657_Reading_and_Reasoning_over_Chart_Images_for_Evidence-based_A/review]] — 대규모 차트 이해 데이터셋을 활용하여 차트 기반 자동 팩트 체킹의 성능을 크게 향상시킬 수 있다.

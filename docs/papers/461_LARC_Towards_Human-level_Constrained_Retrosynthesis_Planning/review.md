@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대규모 언어 모델(LLM) 기반의 에이전트 프레임워크 LARC를 제안하여, 화학에서 발암물질 회피, 자연발화물질 제거 등 실질적인 제약조건 하에서 망원(retrosynthesis) 계획을 수행한다. LARC는 72.9%의 성공률을 달성하여 기존 LLM 기반 방법을 크게 상회하고 인간 전문가 수준에 접근한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Retrosynthesis_Strategy_Planning"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Baker et al._2025_LARC Towards Human-level Constrained Retrosynthesis Planning through an Agentic Framework.pdf"
 ---
@@ -103,10 +103,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Baker et al._2025_LARC Towards Human-lev
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 알고리즘 실행을 통한 재료 발견과 LLM 기반 역합성 계획은 서로 다른 AI 접근법으로 화학 문제를 해결합니다
-- 🔗 후속 연구: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — ChemCrow의 화학 도구 증강 언어모델은 LARC의 제약조건 기반 역합성 계획을 더욱 발전시킨 형태입니다
-- 🧪 응용 사례: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — 자율 실험실 기술은 LARC의 역합성 계획을 실제 화학 실험으로 구현하는 응용 분야입니다
-- 🧪 응용 사례: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — LARC의 제약조건 기반 역합성 계획은 자율 실험실에서 실제 화학 합성을 자동화하는 핵심 응용 기술입니다
-- 🔄 다른 접근: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 알고리즘 실행과 LLM 기반 역합성 계획은 모두 복잡한 재료/화학 설계 목표 달성을 위한 서로 다른 AI 기반 접근법입니다
-- 🧪 응용 사례: [[papers/316_Enhancing_chemical_reaction_and_retrosynthesis_prediction_wi/review]] — 인간 수준의 제약 조건을 고려한 역합성 계획이 ChemDual의 역합성 예측 기능의 실제 적용 영역이다.
-- 🏛 기반 연구: [[papers/459_Language_Models_for_Controllable_DNA_Sequence_Design/review]] — 제약 조건 하에서의 역합성 계획 연구가 조건부 DNA 서열 생성의 방법론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — ChemCrow의 기본 화학 도구 통합이 제약 조건 하 역합성 계획의 기술적 기반을 제공한다
+- 🔗 후속 연구: [[papers/213_ChemReasoner_Heuristic_Search_over_a_Large_Language_Models_K/review]] — LLM의 휴리스틱 검색을 제약 조건이 있는 복잡한 화학 계획 문제로 확장한다
+- 🧪 응용 사례: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — 화학 도구 증강 LLM의 원리를 인간 전문가 수준의 실용적 합성 계획에 적용한다
+- 🔗 후속 연구: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — 화학 도구 증강 LLM이 제약 조건 하 역합성 계획에서 더 정교한 인간 수준 성능을 달성한다

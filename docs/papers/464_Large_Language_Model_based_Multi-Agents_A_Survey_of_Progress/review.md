@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)의 계획 및 추론 능력을 활용하여 여러 자율 에이전트가 협력하는 멀티에이전트 시스템(LLM-MA)이 복잡한 문제 해결과 세계 시뮬레이션에서 상당한 진전을 이루고 있다. 본 논문은 LLM 기반 멀티에이전트 시스템의 필수 측면(에이전트-환경 인터페이스, 프로파일링, 통신, 능력 획득)과 도메인 적용을 체계적으로 정리한 종합 서베이이다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Domain-Specific_LLM_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Guo et al._2024_Large Language Model based Multi-Agents A Survey of Progress and Challenges.pdf"
 ---
@@ -103,14 +103,16 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Guo et al._2024_Large Language Model bas
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — 대형 언어 모델 기반 자율 에이전트 서베이가 멀티에이전트 시스템 설계의 이론적 토대를 제공합니다.
-- 🔗 후속 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — 차세대 LLM 애플리케이션을 위한 멀티에이전트 프레임워크가 복잡한 문제 해결의 구체적 구현 사례입니다.
-- 🧪 응용 사례: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — LLM 에이전트 간 협력 메커니즘 탐색이 멀티에이전트 시스템의 실제 적용 방안을 제시합니다.
-- 🔄 다른 접근: [[papers/361_From_LLM_Reasoning_to_Autonomous_AI_Agents_A_Comprehensive_R/review]] — 멀티 에이전트 LLM 시스템에 대한 다른 관점의 포괄적 조사
-- 🔗 후속 연구: [[papers/625_PlanGenLLMs_A_Modern_Survey_of_LLM_Planning_Capabilities/review]] — 멀티 에이전트 기반 대형 언어모델의 진전 조사는 개별 LLM의 계획 능력을 다중 에이전트 환경으로 확장한 연구입니다
-- 🏛 기반 연구: [[papers/052_Advances_and_challenges_in_foundation_agents_From_brain-insp/review]] — 파운데이션 에이전트의 현황과 도전과제 분석이 LLM 기반 멀티 에이전트 시스템의 발전과 한계에 대한 포괄적 이해를 제공한다
-- 🔗 후속 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — LLM 기반 다중 에이전트의 진전과 도전과제를 포괄적으로 다루어 자율 에이전트 연구를 확장한다.
-- 🏛 기반 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 멀티 에이전트 LLM 발전 조사가 AI 소재 과학에서 LLM 에이전트 활용 방안의 이론적 기반을 제공함
-- 🏛 기반 연구: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — 다중 에이전트 시스템 확장의 이론적 원칙을 머신러닝 하이퍼파라미터 최적화 등 구체적 응용에 적용할 수 있는 기반을 제공한다.
-- 🧪 응용 사례: [[papers/596_OWL_Optimized_Workforce_Learning_for_General_Multi-Agent_Ass/review]] — 대규모 언어 모델 기반 다중 에이전트의 진행 조사가 OWL의 범용 다중 에이전트 프레임워크 개발에 직접적으로 적용되는 방법론적 통찰이다.
-- 🔗 후속 연구: [[papers/760_Small_Language_Models_are_the_Future_of_Agentic_AI/review]] — LLM 기반 다중 에이전트의 진전 조사는 소규모 언어모델의 에이전트 적합성을 기존 대규모 모델 기반 에이전트 연구와 비교 분석한다.
+- 🏛 기반 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — AutoGen의 멀티에이전트 애플리케이션 구현 프레임워크는 LLM 기반 멀티에이전트 시스템 설계의 실용적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/415_Hunt_Globally_Wide_Search_AI_Agents_for_Drug_Asset_Scouting/review]] — 멀티에이전트 시스템의 일반적 설계 원리가 약물 자산 탐색이라는 구체적인 도메인 문제에 적용되는 사례를 보여준다.
+- 🔗 후속 연구: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — 에이전트 시스템의 확장성 과학과 LLM 기반 멀티에이전트 진전은 상호 보완적인 에이전트 시스템 연구 관점을 제공한다.
+- 🔗 후속 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — 기본적인 LLM 기반 에이전트를 다중 에이전트 시스템으로 확장한 발전된 연구 방향을 제시한다
+- 🏛 기반 연구: [[papers/415_Hunt_Globally_Wide_Search_AI_Agents_for_Drug_Asset_Scouting/review]] — 멀티에이전트 시스템의 일반적 설계 원리와 협력 메커니즘이 다국어 약물 자산 탐색 에이전트 구현의 이론적 기반이 된다.
+- 🏛 기반 연구: [[papers/624_Piors_Personalized_intelligent_outpatient_reception_based_on/review]] — LLM 기반 멀티에이전트 시스템의 일반적 설계 원리가 의료 접수 서비스라는 구체적 도메인에 적용된다.
+- 🧪 응용 사례: [[papers/660_Reimagining_urban_science_Scaling_causal_inference_with_larg/review]] — 멀티에이전트 시스템의 일반적 설계 원리가 도시 인과 추론이라는 구체적인 사회과학 연구 도메인에 적용된다.
+- 🧪 응용 사례: [[papers/781_Surveyx_Academic_survey_automation_via_large_language_models/review]] — LLM 기반 멀티에이전트 시스템의 일반적 원리가 학술 서베이 자동 생성이라는 구체적인 학술 작업에 적용된다.
+- 🏛 기반 연구: [[papers/839_Transforming_Behavioral_Neuroscience_Discovery_with_In-Conte/review]] — 멀티에이전트 시스템의 설계 원리가 행동신경과학 연구 파이프라인의 자동화에 적용될 수 있다.
+- 🏛 기반 연구: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — LLM 기반 다중 에이전트의 진전에 대한 종합적 조사로, 확장성 연구의 이론적 토대를 제공
+- 🔗 후속 연구: [[papers/649_Qwen25_technical_report/review]] — 단일 모델에서 다중 에이전트 협력 시스템으로 확장된 LLM 활용 방식의 발전 과정을 보여준다.
+- 🏛 기반 연구: [[papers/776_Streamlining_the_review_process_Ai-generated_annotations_in/review]] — 멀티 에이전트 시스템의 이론적 기반을 제공하여 협업 어노테이션 시스템 설계에 필수적이다.
+- 🔗 후속 연구: [[papers/362_From_LLMs_to_LLM-based_Agents_for_Software_Engineering_A_Sur/review]] — 다중 에이전트 시스템 설문이 개별 LLM 에이전트를 넘어선 협업적 소프트웨어 개발의 확장된 관점을 제시한다

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 글로벌 의학 및 보건의료 관련 연구자 226명(59개국)을 대상으로 대규모 언어 모델(LLM)의 학술 출판 활용 현황, 인식도, 그리고 향후 영향에 대한 종합적 실태조사를 제시한다. LLM 인식도가 높은 연구자일수록 논문 발표 건수가 유의미하게 많았으나, 실제 사용 시에는 대다수가 이를 공개하지 않는 학술 윤리 문제를 드러낸다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Publishing_Trends"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Automated_Scientific_Review"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mishra et al._2024_Use of large language models as artificial intelligence tools in academic research and publishing am.pdf"
 ---
@@ -89,7 +90,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mishra et al._2024_Use of large language
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/507_Llmeval-med_A_real-world_clinical_benchmark_for_medical_llms/review]] — 의료 분야 LLM 평가 벤치마크가 의학 연구자들의 LLM 활용 연구에 기초를 제공한다.
-- 🔗 후속 연구: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — 개인별 LLM 채택 경로 연구가 의학 연구자들의 다양한 사용 패턴을 확장 분석한다.
-- 🧪 응용 사례: [[papers/611_People_who_frequently_use_ChatGPT_for_writing_tasks_are_accu/review]] — ChatGPT 사용자의 정확성 인식 연구가 의학 연구자들의 LLM 신뢰도 분석에 적용된다.
-- ⚖️ 반론/비판: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — AI 공동 과학자의 실패 벤치마크가 의학 연구에서 LLM 한계를 지적한다.
+- 🏛 기반 연구: [[papers/445_Is_Your_Paper_Being_Reviewed_by_an_LLM_Investigating_AI_Text/review]] — 의학 분야에서 LLM 사용 탐지와 윤리적 고려사항의 실증적 기반을 제공한다
+- 🔄 다른 접근: [[papers/478_Large_language_models_penetration_in_scholarly_writing_and_p/review]] — 학술 저술에서 LLM 침투 현황을 의학 분야 특화 관점에서 분석한다
+- 🔗 후속 연구: [[papers/607_Patterns_and_purposes_A_cross-journal_analysis_of_ai_tool_us/review]] — AI 도구 사용 패턴을 의학 연구 분야로 확장하여 분석한다
+- 🧪 응용 사례: [[papers/478_Large_language_models_penetration_in_scholarly_writing_and_p/review]] — 의학 분야에서 LLM 사용 현황과 윤리적 고려사항의 구체적 사례를 제시한다
+- 🧪 응용 사례: [[papers/445_Is_Your_Paper_Being_Reviewed_by_an_LLM_Investigating_AI_Text/review]] — 의학 분야에서 LLM 사용 탐지와 윤리적 문제에 대한 실제 적용 사례를 보여준다
+- 🔄 다른 접근: [[papers/607_Patterns_and_purposes_A_cross-journal_analysis_of_ai_tool_us/review]] — 의학 분야 특화가 아닌 다학제적 관점에서 AI 도구 사용 현황을 분석한다

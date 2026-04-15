@@ -8,8 +8,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 인문사회과학 연구에 특화된 AI 에이전트 기반의 협업 연구 워크플로우(Agentic Workflow)를 제안하고, 대만의 Claude.ai 사용 데이터(N=7,729)를 통해 그 실행 가능성을 검증하는 방법론적 실험이다. 인문사회과학 연구의 특수성(해석성, 이론 구축 지향성, 맥락 민감성)을 고려한 인간-AI 역할 분담 프레임워크를 제시한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-agent_Task_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang_2026_From Labor to Collaboration A Methodological Experiment Using AI Agents to Augment Research Perspec.pdf"
 ---
@@ -103,8 +105,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang_2026_From Labor to Collaboration A
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — AutoGen의 다중 에이전트 대화 프레임워크가 인문사회과학 연구의 특수성을 고려한 협업 워크플로우에 구체적으로 적용된 사례이다.
-- 🏛 기반 연구: [[papers/175_Building_machines_that_learn_and_think_with_people/review]] — 협력적 인지 원리와 인간-AI 파트너십 개념이 인문사회과학 연구의 해석적 특성을 고려한 역할 분담 설계의 이론적 기반이다.
-- 🔗 후속 연구: [[papers/077_AI_for_social_science_and_social_science_of_AI_A_Survey/review]] — 사회과학을 위한 AI와 AI의 사회과학 연구가 인문사회과학에 특화된 AI 에이전트 협업 방법론으로 구체적으로 확장된 연구이다.
-- 🧪 응용 사례: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — 인문사회과학 연구를 위한 Agentic Workflow가 AutoGen의 다중 에이전트 협업 메커니즘을 특정 학문 영역에 적용한 실용 사례이다.
-- 🧪 응용 사례: [[papers/175_Building_machines_that_learn_and_think_with_people/review]] — Building machines의 협력적 인지 원리가 인문사회과학 연구의 인간-AI 역할 분담 프레임워크에서 구체적으로 구현된 적용 사례이다.
+- 🏛 기반 연구: [[papers/319_Ethnography_and_machine_learning_Synergies_and_new_direction/review]] — 인문사회과학에서 기계학습과 민족지학의 시너지를 탐구하여 인문사회과학 연구에 AI 도구를 적용하는 이론적 기반을 제공함
+- 🔄 다른 접근: [[papers/175_Building_machines_that_learn_and_think_with_people/review]] — 인간-AI 협업을 다루지만 인문사회과학이라는 특정 도메인에 집중한 반면 Building machines는 범용적 협력 원리에 초점을 맞춘 다른 접근법임
+- 🔗 후속 연구: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — 사회 시뮬레이션 연구의 포괄적 조사를 통해 인문사회과학에서 AI 에이전트 활용을 개별 연구에서 사회 전체 현상 연구로 확장함
+- 🔄 다른 접근: [[papers/413_Human-ai_teaming_using_large_language_models_Boosting_brain-/review]] — 노동에서 협력으로의 방법론적 실험이 ChatBCI의 인간-AI 협력과는 다른 관점에서 인간-AI 상호작용을 탐구한다

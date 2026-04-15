@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "복잡한 주장(claim)의 사실 확인을 위해 대규모 언어 모델(LLM)의 인-컨텍스트 학습(in-context learning) 능력을 활용하여 추론 프로그램(reasoning program)을 생성하고, 이를 특화된 하위 태스크 함수들로 순차적으로 실행하는 프로그램 가이드 팩트 체킹(PROGRAMFC) 프레임워크를 제안한다. 이는 설명 가능성과 데이터 효율성을 동시에 만족하면서 복잡한 다단계 추론이 필요한 주장 검증에서 우수한 성능을 달성한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Automated_Theorem_Proving"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pan et al._2023_Fact-checking complex claims with program-guided reasoning.pdf"
 ---
@@ -120,15 +121,15 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pan et al._2023_Fact-checking complex cl
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/441_Investigating_zero-and_few-shot_generalization_in_fact_verif/review]] — 기본적인 팩트 체킹을 복잡한 주장의 프로그램 가이드 추론으로 확장하여 더 정교한 사실 검증 방법을 제시함
-- 🔄 다른 접근: [[papers/827_Towards_effective_extraction_and_evaluation_of_factual_claim/review]] — 둘 다 팩트체킹을 다루지만 하나는 프로그램 기반 추론, 다른 하나는 주장 추출에 중점을 둠
-- 🏛 기반 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프를 활용한 팩트체킹의 기초적 접근이 프로그램 가이드 추론 시스템의 이론적 배경을 제공함
-- 🔗 후속 연구: [[papers/117_Augmenting_the_veracity_and_explanations_of_complex_fact_che/review]] — 프로그램 안내 추론을 통한 복잡한 주장 사실 검증은 TrendFact의 중국어 사실 검증을 더욱 정교한 추론 방식으로 확장한 방법론입니다
-- 🔄 다른 접근: [[papers/500_Llm-based_corroborating_and_refuting_evidence_retrieval_for/review]] — 증거 검색 vs 프로그램 가이드 추론으로 사실 확인의 서로 다른 접근법
-- 🧪 응용 사례: [[papers/317_Enhancing_natural_language_inference_performance_with_knowle/review]] — 프로그램 가이드 추론을 통한 복잡한 클레임 팩트체킹이 지식그래프 기반 NLI의 고도화된 응용이다.
-- 🔄 다른 접근: [[papers/448_Kgvalidator_A_framework_for_automatic_validation_of_knowledg/review]] — 복잡한 주장에 대한 사실 확인에서 프로그램 가이드 추론이라는 다른 검증 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/859_Unsupervised_pretraining_for_fact_verification_by_language_m/review]] — 프로그램 가이드 추론을 통한 복잡한 클레임 검증이 SFAVEL의 기본적인 클레임-근거 정렬 학습을 더 정교한 추론 체계로 발전시킨 연구임
-- 🔗 후속 연구: [[papers/832_Towards_llm-based_fact_verification_on_news_claims_with_a_hi/review]] — 프로그램 가이드 추론을 통한 복잡한 클레임 팩트 체킹이 HiSS의 계층적 분해 방법을 더 정교한 논리적 추론 체계로 발전시킨 연구임
-- 🔄 다른 접근: [[papers/394_Grounding_fallacies_misrepresenting_scientific_publications/review]] — 둘 다 복잡한 사실 검증을 다루지만 하나는 과학 논문 오용, 다른 하나는 일반적 복잡한 주장에 중점을 둠
-- 🏛 기반 연구: [[papers/441_Investigating_zero-and_few-shot_generalization_in_fact_verif/review]] — 팩트 검증 모델의 일반화 능력 분석이 복잡한 주장의 프로그램 가이드 팩트체킹 시스템 개발의 기초를 제공함
-- 🔄 다른 접근: [[papers/827_Towards_effective_extraction_and_evaluation_of_factual_claim/review]] — 둘 다 팩트체킹을 다루지만 하나는 주장 추출에, 다른 하나는 프로그램 기반 추론에 중점을 둠
+- 🔄 다른 접근: [[papers/832_Towards_llm-based_fact_verification_on_news_claims_with_a_hi/review]] — 계층적 단계별 프롬프팅을 통한 사실 확인 접근법으로, 프로그램 가이드 추론의 구조화된 접근과 대비되는 계층적 분해 방법을 제시한다
+- 🔗 후속 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프를 활용한 사실 검증 연구로, 프로그램 가이드 추론을 지식 그래프 기반 추론으로 확장한 접근법을 보여준다
+- 🧪 응용 사례: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 동적 증거 기반 다중모달 사실 확인 시스템으로, 프로그램 가이드 추론 방법론을 실제 다중모달 환경에 적용한 구체적 사례다
+- 🔗 후속 연구: [[papers/117_Augmenting_the_veracity_and_explanations_of_complex_fact_che/review]] — 프로그램 기반 추론을 활용한 복합 주장 사실 검증과 중국어 기반 사실 검증을 결합하면 다국어 복합 추론 시스템을 구축할 수 있다.
+- 🔄 다른 접근: [[papers/710_Sciclaimhunt_A_large_dataset_for_evidence-based_scientific_c/review]] — 둘 다 과학적 주장 검증을 다루지만, SciClaimHunt는 대규모 데이터셋 구축에, 다른 논문은 프로그램 안내 추론에 집중한다
+- 🔗 후속 연구: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 프로그램 기반 추론을 활용한 복합 클레임 팩트체킹으로, DEFAME의 동적 파이프라인과 유사한 구조적 검증 접근법을 제시합니다.
+- 🔗 후속 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 프로그램 유도 추론 기반 팩트 체킹을 지식 그래프 추론으로 확장하여 구조화된 데이터 활용 방법을 제시한다.
+- 🔄 다른 접근: [[papers/183_Can_large_language_models_detect_misinformation_in_scientifi/review]] — 과학적 주장의 검증을 명시적 주장과 복잡한 주장에서 각각 다른 방법론으로 접근한다.
+- 🔄 다른 접근: [[papers/832_Towards_llm-based_fact_verification_on_news_claims_with_a_hi/review]] — 복잡한 클레임의 사실 확인을 위한 프로그램 가이드 추론 접근법으로, HiSS의 계층적 단계별 접근과 다른 구조화된 추론 방법을 제시한다
+- 🔗 후속 연구: [[papers/827_Towards_effective_extraction_and_evaluation_of_factual_claim/review]] — 프로그램 가이드 추론을 통한 복잡한 주장 팩트체킹을 통해 Claimify의 모호성 처리 능력을 더욱 정교하게 발전시킬 수 있다.
+- 🏛 기반 연구: [[papers/567_Multivers_Improving_scientific_claim_verification_with_weak/review]] — 복잡한 청구 검증을 위한 프로그램 유도 추론의 기초적인 방법론을 제공한다.
+- 🔄 다른 접근: [[papers/221_Claimver_Explainable_claim-level_verification_and_evidence_a/review]] — 복잡한 주장 검증을 위한 프로그램 기반의 다른 추론 방법론을 보여준다

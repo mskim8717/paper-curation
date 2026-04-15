@@ -12,8 +12,10 @@ arxiv: ""
 score: 3.5
 essence: "SCI-IDEA는 대규모 언어모델(LLM)의 다양한 프롬프팅 전략과 \"Aha Moment\" 탐지를 결합하여 문맥-인식적이고 고품질의 창의적 과학 아이디어를 반복적으로 생성하고 개선하는 프레임워크이다. 토큰 및 문장 임베딩을 활용하여 신성(novelty)과 놀라움(surprise)을 측정함으로써 혁신적인 연구 아이디어를 식별한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Hypothesis_Generation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Research_Ideation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Popa et al._2025_Sciidea Context-aware scientific ideation using token and sentence embeddings.pdf"
 ---
@@ -116,8 +118,7 @@ SCI-IDEA는 대규모 언어모델(LLM)의 다양한 프롬프팅 전략과 "Aha
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 과학적 아이디어 생성에서 문맥 인식적 접근법과 다중 관점 접근법의 서로 다른 창의성 향상 전략을 비교할 수 있다.
-- 🔗 후속 연구: [[papers/729_Scipip_An_llm-based_scientific_paper_idea_proposer/review]] — SCI-IDEA의 토큰 기반 아이디어 생성을 과학 논문 아이디어 제안으로 확장하여 더 구체적이고 실현 가능한 연구 제안을 생성할 수 있다.
-- 🏛 기반 연구: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 아이디어 체인 방법론이 문맥 인식적 과학 아이디어 생성의 기본적인 사고 구조와 혁신 과정을 제공한다.
-- 🧪 응용 사례: [[papers/442_Iris_Interactive_research_ideation_system_for_accelerating_s/review]] — 토큰 기반 아이디어 생성 방법론을 인터랙티브 환경으로 확장한 응용
-- 🔗 후속 연구: [[papers/376_Generation_and_human-expert_evaluation_of_interesting_resear/review]] — SCI-IDEA의 맥락 인식 과학 아이디어 생성이 SciMuse의 개인화 접근법을 토큰 기반 세분화와 맥락 이해로 더욱 정교하게 발전시킨 연구임
+- 🔗 후속 연구: [[papers/425_Improving_research_idea_generation_through_data_An_empirical/review]] — 데이터 기반 아이디어 생성을 문맥 인식과 창의성 측정을 통해 더욱 정교하게 발전시킨다
+- 🏛 기반 연구: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — 발산적 사고 평가가 문맥 인식 과학 아이디어 생성의 창의성 측정 기반을 제공한다
+- 🔗 후속 연구: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — 최소 맥락 아이디어 생성을 문맥 인식 반복 개선으로 확장하는 발전된 접근법을 제시한다
+- 🔄 다른 접근: [[papers/425_Improving_research_idea_generation_through_data_An_empirical/review]] — 데이터 메타데이터 활용과 문맥 인식 접근이 서로 다른 방식으로 연구 아이디어 생성을 개선한다

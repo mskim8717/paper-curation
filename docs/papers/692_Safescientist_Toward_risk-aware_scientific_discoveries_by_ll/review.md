@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 LLM 기반 AI 과학자 에이전트의 자동화된 과학 발견 과정에서 발생하는 윤리적, 안전 문제를 체계적으로 해결하기 위해 SafeScientist 프레임워크를 제안한다. 이는 다층 방어 메커니즘(prompt monitoring, agent collaboration monitoring, tool-use monitoring, ethical reviewer)을 통합하여 과학 연구 파이프라인 전반에 걸쳐 안전성을 보장한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Hypothesis_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhu et al._2025_Safescientist Toward risk-aware scientific discoveries by llm agents.pdf"
 ---
@@ -120,4 +121,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhu et al._2025_Safescientist Toward ris
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/680_Reviewing_scientific_papers_for_critical_problems_with_reaso/review]] — 안전한 과학적 발견을 위한 위험 인식 시스템으로 확장하여 오류 검출을 넘어 예방적 안전 조치까지 포함한다.
+- 🧪 응용 사례: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — 자동화된 검증 벤치마크가 위험 인식 과학 발견의 실제 평가 도구를 제공한다
+- 🏛 기반 연구: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — AI 에이전트 신뢰성 과학이 안전한 과학 발견 에이전트의 이론적 기반을 제공한다

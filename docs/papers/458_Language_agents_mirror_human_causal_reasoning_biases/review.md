@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.25
 essence: "언어 모델(LM) 에이전트는 인과관계 추론에서 선언적(disjunctive, OR) 규칙에는 능하지만 결합적(conjunctive, AND) 규칙에서 체계적으로 편향되어 있으며, 이러한 편향이 인간 성인의 인지 편향과 유사함을 보여주는 연구이다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Human_Experience_Studies"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/GX-Chen et al._2025_Language agents mirror human causal reasoning biases.pdf"
 ---
@@ -90,7 +90,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/GX-Chen et al._2025_Language agents mirr
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/360_From_lived_experience_to_insight_Unpacking_the_psychological/review]] — 인과관계 추론에서 언어 에이전트의 인간 유사 편향을 AI 시스템의 심리적 위험 분석에 적용할 수 있다
-- 🔗 후속 연구: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — 사회적 책임 AI를 위한 인과 학습을 언어 에이전트의 인지 편향 연구로 확장할 수 있다
-- 🏛 기반 연구: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — 사회 심리학과 LLM 추론의 연결이 언어 에이전트 편향 연구의 이론적 기반을 제공한다
-- 🏛 기반 연구: [[papers/360_From_lived_experience_to_insight_Unpacking_the_psychological/review]] — 언어 에이전트의 인간과 유사한 인지 편향 연구가 AI의 심리적 위험 분석에 이론적 기반을 제공한다
+- 🧪 응용 사례: [[papers/833_Towards_reasoning_era_A_survey_of_long_chain-of-thought_for/review]] — 언어 에이전트의 인과관계 추론 편향 분석이 Long CoT에서 나타나는 추론 패턴과 편향을 이해하는 핵심 도구로 활용됨
+- 🔗 후속 연구: [[papers/890_Your_Brain_on_ChatGPT_Accumulation_of_Cognitive_Debt_when_Us/review]] — 언어 모델의 인과 추론 편향이 LLM 사용으로 인한 인지적 부채의 신경인지학적 메커니즘 해명에 연결됨
+- 🏛 기반 연구: [[papers/833_Towards_reasoning_era_A_survey_of_long_chain-of-thought_for/review]] — Long CoT 추론 과정에서 나타나는 편향 패턴을 이해하기 위해 언어 에이전트의 인과관계 추론 편향 연구가 필수적임
+- 🏛 기반 연구: [[papers/890_Your_Brain_on_ChatGPT_Accumulation_of_Cognitive_Debt_when_Us/review]] — LLM 사용의 신경인지적 영향을 이해하기 위해 언어 에이전트의 인과 추론 편향 메커니즘 분석이 필요함

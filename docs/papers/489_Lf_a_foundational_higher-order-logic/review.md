@@ -9,8 +9,10 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 과학의 형식화를 위한 기초 논리 체계 LF(Lf)를 제시하며, Church(1940)와 Henkin(1950)의 고차 논리를 개선하여 내연성(intensionality)을 유지하면서 외연성(extensionality)을 배제한 새로운 시스템을 제안한다. LF는 확률론, 수학, 의미론 등 다양한 과학 분야의 형식화에 적합하도록 설계되었다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Formal_Theorem_Proving"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Automated_Theorem_Proving"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Goodsell and Yli‐Vakkuri_2024_Lf a foundational higher-order-logic.pdf"
 ---
@@ -108,6 +110,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Goodsell and Yli‐Vakkuri_2024_Lf a fou
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/642_Proving_theorems_recursively/review]] — 둘 다 정리 증명의 논리적 기반을 다루지만 하나는 과학 형식화를 위한 고차 논리 체계에, 다른 하나는 재귀적 정리 증명에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — 자동화된 정리 증명을 위한 생성 언어 모델링이 LF 논리 체계에서의 형식적 추론에 적용될 수 있다.
-- 🏛 기반 연구: [[papers/030_A_survey_on_deep_learning_for_theorem_proving/review]] — 정리 증명을 위한 딥러닝에 대한 포괄적인 조사가 LF 논리 체계의 자동화 가능성을 이해하는 기반을 제공한다.
+- 🧪 응용 사례: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — 고차 논리 체계를 자동 정리 증명이라는 구체적인 수학적 응용에 적용한다
+- 🔗 후속 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — 형식 논리 기반을 LLM 기반 정리 증명으로 확장하여 실용성을 높인다
+- 🏛 기반 연구: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — 기초 논리 체계가 형식 수학 문제 해결의 이론적 토대를 제공한다

@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.3
 essence: "대규모 언어 모델(LLM)의 백과사전적 지식과 추론 능력을 활용하여 과학 문헌으로부터 자동으로 새로운 연구 아이디어를 생성하고 인간 선호도 기반의 피어 리뷰 에이전트를 통해 반복적으로 개선하는 시스템을 제안한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Hypothesis_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Baek et al._2025_ResearchAgent Iterative Research Idea Generation over Scientific Literature with Large Language Mod.pdf"
 ---
@@ -114,10 +116,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Baek et al._2025_ResearchAgent Iterative
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/577_Nova_An_iterative_planning_and_search_approach_to_enhance_no/review]] — ResearchAgent의 반복적 연구 아이디어 생성은 Nova 프레임워크의 계획 수립과 검색 결합 방식을 더욱 발전시킨 형태입니다
-- 🔄 다른 접근: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 과학 지식 그래프 기반 가설 생성과 LLM 기반 재료 가설 생성의 다른 접근법을 비교할 수 있다
-- 🔗 후속 연구: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 과학 지식 그래프 기반 가설 생성을 문헌 체인 구조로 확장한 연구다
-- 🧪 응용 사례: [[papers/757_Simulating_tabular_datasets_through_llms_to_rapidly_explore/review]] — 표 형식 데이터셋 시뮬레이션 기법을 과학 지식 그래프 기반 연구 아이디어 생성에 적용하여 더 체계적인 가설 검증 과정을 구축할 수 있다.
-- 🏛 기반 연구: [[papers/071_AgentRxiv_Towards_Collaborative_Autonomous_Research/review]] — ResearchAgent의 반복적 아이디어 생성 메커니즘이 AgentRxiv의 누적적 지식 개선 시스템의 기반이 되는 기술적 토대이다.
-- 🔗 후속 연구: [[papers/059_Agent_Laboratory_Using_LLM_Agents_as_Research_Assistants/review]] — Agent Laboratory의 연구 자동화 프레임워크는 ResearchAgent의 반복적 연구 아이디어 생성을 확장하여 실험 수행과 보고서 작성까지 포괄하는 완전한 연구 파이프라인을 구축합니다.
-- 🏛 기반 연구: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — 과학 지식 그래프를 활용한 연구 아이디어 생성의 기초적 접근이 개인화된 아이디어 생성 시스템의 이론적 토대를 제공함
+- 🔄 다른 접근: [[papers/086_AI-Researcher_Autonomous_Scientific_Innovation/review]] — 자동화된 과학 혁신 시스템과 문헌 기반 연구 아이디어 생성은 서로 다른 과학 발견 접근법을 제시한다
+- 🔗 후속 연구: [[papers/071_AgentRxiv_Towards_Collaborative_Autonomous_Research/review]] — 협업적 자율 연구 시스템이 개별 연구 에이전트를 다중 에이전트 협력으로 확장한다
+- ⚖️ 반론/비판: [[papers/373_Generalization_Bias_in_Large_Language_Model_Summarization_of/review]] — 과학적 아이디어 생성에서 LLM의 편향 문제와 반복적 연구 방법론 간의 대조를 보여준다.
+- 🏛 기반 연구: [[papers/426_Improving_Scientific_Hypothesis_Generation_with_Knowledge_Gr/review]] — 반복적 연구 아이디어 생성에서 지식 그래프의 구조화된 정보 활용이라는 방법론적 토대를 공유한다.
+- 🧪 응용 사례: [[papers/038_A_vision_for_auto_research_with_llm_agents/review]] — 과학 문헌 기반 반복적 연구 아이디어 생성으로 자동 연구를 구체적으로 적용한다.
+- 🔄 다른 접근: [[papers/059_Agent_Laboratory_Using_LLM_Agents_as_Research_Assistants/review]] — LLM 에이전트를 활용한 연구 지원에서 반복적 아이디어 생성과 완전한 연구 성과물 생성이라는 다른 접근 방식을 제시한다

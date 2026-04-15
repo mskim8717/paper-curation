@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 과학적 가설 생성(Scientific Hypothesis Generation, SHG)을 조건부 언어 모델링(conditional language modeling) 문제로 프레임화하기 위해 약 5,500개의 구조화된 문제-가설 쌍으로 구성된 HypoGen 데이터셋을 소개한다. Bit(기존 가정)-Spark(핵심 통찰)-Flip(혁신적 제안) 스키마에 명시적 추론 체인을 결합하여 생성된 가설의 신성(novelty)과 타당성(feasibility)을 향상시킨다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Hypothesis_Generation"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/AI_Scientist_System_Development"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/O'Neill et al._2025_Sparks of science Hypothesis generation using structured paper data.pdf"
 ---
@@ -107,8 +109,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/O'Neill et al._2025_Sparks of science Hy
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/425_Improving_research_idea_generation_through_data_An_empirical/review]] — 구조화된 데이터를 활용한 가설 생성이라는 공통 접근법이지만 과학적 가설과 연구 아이디어라는 다른 결과물을 다룬다.
-- 🏛 기반 연구: [[papers/777_Structuring_scientific_innovation_A_framework_for_modeling_a/review]] — 문제-방법 조합의 구조적 재결합 모델링이 Bit-Spark-Flip 스키마 기반 가설 생성의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/666_Research_hypothesis_generation_over_scientific_knowledge_gra/review]] — 과학 지식 그래프 기반의 연구 가설 생성을 구조화된 논문 데이터로 확장한 발전된 형태이다.
-- 🔄 다른 접근: [[papers/425_Improving_research_idea_generation_through_data_An_empirical/review]] — 구조화된 논문 데이터를 이용한 가설 생성 연구로, 메타데이터 활용 방식에서 유사하지만 접근법이 다르다.
-- 🔗 후속 연구: [[papers/777_Structuring_scientific_innovation_A_framework_for_modeling_a/review]] — 문제-방법 재결합의 구조적 모델링을 과학적 가설 생성의 구체적 스키마로 발전시킬 수 있다.
+- 🔄 다른 접근: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 다중 에이전트를 통한 아이디어 생성과 달리 구조화된 데이터 기반 가설 생성 방법을 제시한다
+- 🏛 기반 연구: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — LLM을 활용한 가설 생성의 기본 방법론을 제공하며 구조화된 접근법의 이론적 기반이 된다
+- 🔗 후속 연구: [[papers/031_A_Survey_on_Hypothesis_Generation_for_Scientific_Discovery_i/review]] — 과학 발견을 위한 가설 생성 조사 연구로서 구조화된 데이터 활용의 포괄적 맥락을 제공한다
+- 🔗 후속 연구: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 구조화된 데이터를 활용한 가설 생성으로 아이디어 생성 방법론을 더욱 발전시킨다
+- 🔄 다른 접근: [[papers/468_Large_Language_Models_are_Zero_Shot_Hypothesis_Proposers/review]] — 구조화된 패턴 활용 가설 생성과 제로샷 가설 생성이 각각 다른 창의적 접근법이다
+- 🔄 다른 접근: [[papers/492_Literature_meets_data_A_synergistic_approach_to_hypothesis_g/review]] — 구조화된 패러다임을 사용한 가설 생성 접근법으로, 이 논문의 문헌-데이터 시너지 방법과 다른 체계적 접근을 보여준다

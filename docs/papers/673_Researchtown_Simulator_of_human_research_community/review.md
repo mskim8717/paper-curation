@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어 모델(LLM) 기반 멀티에이전트 프레임워크를 통해 인간 연구 커뮤니티를 시뮬레이션하는 RESEARCHTOWN을 제안한다. 연구 커뮤니티를 에이전트-데이터 그래프로 모델링하고 TextGNN이라는 텍스트 기반 메시지 전달 메커니즘을 통해 논문 작성, 리뷰 작성 등 협업 연구 활동을 동적으로 시뮬레이션한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Research_Literature_Analysis_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2024_Researchtown Simulator of human research community.pdf"
 ---
@@ -109,13 +110,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2024_Researchtown Simulator of
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — ResearchTown의 멀티에이전트 시뮬레이션이 Scientific Agent 서베이에서 제시하는 이론적 프레임워크의 실제 구현 사례로 활용될 수 있다.
-- 🧪 응용 사례: [[papers/038_A_vision_for_auto_research_with_llm_agents/review]] — ResearchTown의 연구 커뮤니티 시뮬레이션이 Auto Research 비전의 협업적 연구 자동화를 위한 테스트베드 역할을 할 수 있다.
-- 🏛 기반 연구: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — ResearchTown의 멀티에이전트 협업 메커니즘이 ResearchCodeAgent의 코드 생성 과정에서 에이전트 간 검토 및 개선 시스템의 기반이 될 수 있다.
-- 🔄 다른 접근: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — AI 연구 커뮤니티 시뮬레이션과 사회적 책임 AI를 위한 인과학습이 모두 AI 시스템의 사회적 영향을 다루지만 접근 방식이 상이하다.
-- 🧪 응용 사례: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — Scientific Agent의 이론적 프레임워크가 ResearchTown의 멀티에이전트 시뮬레이션에서 실제 구현되어 연구 자동화의 실현 가능성을 검증할 수 있다.
-- 🧪 응용 사례: [[papers/038_A_vision_for_auto_research_with_llm_agents/review]] — Auto Research의 협업적 연구 자동화 비전이 ResearchTown의 멀티에이전트 연구 커뮤니티 시뮬레이션에서 실제 테스트될 수 있다.
-- 🔗 후속 연구: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — ResearchTown의 협업적 연구 환경에서 ResearchCodeAgent가 다중 에이전트 간 코드 리뷰와 개선을 통한 고품질 구현을 가능하게 한다.
-- 🔄 다른 접근: [[papers/660_Reimagining_urban_science_Scaling_causal_inference_with_larg/review]] — 도시 과학 연구에서 LLM 기반 인과 추론과 인간 연구 커뮤니티 시뮬레이션 접근법을 비교할 수 있습니다.
-- 🧪 응용 사례: [[papers/188_Can_we_automatize_scientific_discovery_in_the_cognitive_scie/review]] — 인간 연구 커뮤니티 시뮬레이터를 인지과학 자동화에 적용한 사례
-- 🔗 후속 연구: [[papers/922_Vibe_physics_The_AI_grad_student/review]] — AI 대학원생 개념을 인간 연구 커뮤니티 시뮬레이션으로 확장하여 더 현실적인 연구 환경에서의 AI 활용 가능성을 탐색한다.
+- 🏛 기반 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — 멀티에이전트 시스템의 기본 구조와 협업 메커니즘에 대한 이론적 기반을 제공합니다.
+- 🧪 응용 사례: [[papers/355_From_Human_Memory_to_AI_Memory_A_Survey_on_Memory_Mechanisms/review]] — 연구 커뮤니티 시뮬레이션에서 에이전트 메모리 메커니즘이 실제 적용됩니다.
+- 🔗 후속 연구: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — 과학 에이전트 프레임워크를 연구 커뮤니티 전체로 확장한 접근입니다.
+- 🔗 후속 연구: [[papers/355_From_Human_Memory_to_AI_Memory_A_Survey_on_Memory_Mechanisms/review]] — 연구 커뮤니티 시뮬레이션에서 에이전트 간 메모리 공유 메커니즘 설계에 응용됩니다.
+- 🧪 응용 사례: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — 과학 에이전트 프레임워크를 연구 커뮤니티 시뮬레이션에 적용합니다.
+- 🏛 기반 연구: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — 연구 커뮤니티 시뮬레이션에서 편향 완화와 공정성 확보의 이론적 기반을 제공합니다.
+- 🏛 기반 연구: [[papers/188_Can_we_automatize_scientific_discovery_in_the_cognitive_scie/review]] — ResearchTown의 인간 연구 커뮤니티 시뮬레이터가 인지과학 자동화를 위한 인간 행동 시뮬레이션 기반을 제공한다
+- 🔗 후속 연구: [[papers/354_From_GPU_Engineering_to_Scientific_Discovery_Parallelism_Tec/review]] — 연구 커뮤니티 시뮬레이션의 대규모 병렬 처리를 위한 기술적 기반을 제공합니다.
+- 🔄 다른 접근: [[papers/071_AgentRxiv_Towards_Collaborative_Autonomous_Research/review]] — 인간 연구 커뮤니티 시뮬레이터와 에이전트 협업 연구는 과학 커뮤니티 모델링의 서로 다른 접근법을 제시한다

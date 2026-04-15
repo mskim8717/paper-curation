@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.3
 essence: "AI-Newton은 감독 없이 원본 다중 실험 데이터로부터 뉴턴의 제2법칙, 에너지 보존, 중력의 보편 법칙 등 일반적인 물리 법칙을 자동으로 발견하는 개념 기반 과학 발견 시스템이다. 이는 기존 AI 방식의 한계인 '개별 실험의 경험적 모델 도출'을 넘어 '다양한 현상에 공통으로 적용되는 기본 물리 법칙의 발견'을 달성한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Hypothesis_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Autonomous_Biological_Discovery_AI"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_Ai-newton A concept-driven physical law discovery system without prior physical knowledge.pdf"
 ---
@@ -126,7 +128,10 @@ AI-Newton은 감독 없이 원본 다중 실험 데이터로부터 뉴턴의 제
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 기호적 미분방정식 발견의 기본적 접근법을 다중 실험 데이터에서 일반 물리 법칙을 발견하는 고도화된 시스템으로 발전시킨다.
-- 🔗 후속 연구: [[papers/012_A_Multi-agent_Framework_for_Physical_Laws_Discovery/review]] — 물리 법칙 발견을 위한 다중 에이전트 프레임워크의 개념적 기반을 실제 작동하는 시스템으로 구현한다.
-- 🔄 다른 접근: [[papers/764_Sparks_Multi-Agent_Artificial_Intelligence_Model_Discovers_P/review]] — 물리 법칙과 생명과학이라는 서로 다른 과학 영역에서 개념 기반 자동 발견 접근법을 비교한다.
-- 🔗 후속 연구: [[papers/764_Sparks_Multi-Agent_Artificial_Intelligence_Model_Discovers_P/review]] — 단백질 분야의 구체적 발견을 물리 법칙 발견으로 확장하여 자동화된 과학 발견의 일반화 가능성을 보여준다.
+- 🔄 다른 접근: [[papers/123_Automated_Hypothesis_Validation_with_Agentic_Sequential_Fals/review]] — 통계적 가설 검증을 통한 과학 발견과 대조하여, 개념 기반 물리 법칙 발견의 다른 접근 방식을 제시
+- 🧪 응용 사례: [[papers/289_Drsr_Llm_based_scientific_equation_discovery_with_dual_reaso/review]] — LLM 기반 과학 방정식 발견에 대한 연구로, AI-Newton의 물리 법칙 발견을 방정식 발견으로 확장 적용
+- 🔄 다른 접근: [[papers/012_A_Multi-agent_Framework_for_Physical_Laws_Discovery/review]] — 물리 법칙 발견을 위한 다중 에이전트 프레임워크로, 단일 시스템 기반 발견과 다중 에이전트 협력을 비교
+- 🧪 응용 사례: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 대칭성을 가진 기호적 미분방정식 발견으로, 물리 법칙 발견의 수학적 방법론 확장 사례
+- 🔄 다른 접근: [[papers/089_Aigs_Generating_science_from_ai-powered_automated_falsificat/review]] — 두 논문 모두 AI가 물리 법칙을 자동으로 발견하는 시스템을 다루지만, AIGS는 반증 기반 접근을, AI-Newton은 개념 기반 접근을 사용한다
+- 🔄 다른 접근: [[papers/764_Sparks_Multi-Agent_Artificial_Intelligence_Model_Discovers_P/review]] — 감독 없이 물리 법칙을 자동 발견하는 개념 기반 시스템으로, 단백질 과학에서의 발견과 다른 물리학 영역에서의 접근
+- 🔄 다른 접근: [[papers/123_Automated_Hypothesis_Validation_with_Agentic_Sequential_Fals/review]] — 개념 기반 물리 법칙 발견 시스템으로, 통계적 가설 검증과 다른 과학적 발견 접근 방식을 제시

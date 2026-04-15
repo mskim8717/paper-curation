@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 과학 발견(scientific discovery)에서 AI 연구자의 잠재력이 여전히 미충분하게 활용되고 있다는 실증적 분석을 제시하며, AI4Science의 미래 확대를 위한 구조화된 전략과 실행 방안을 제안한다. Nature Index 저널 분석을 통해 AI 관련 연구가 지난 10년간 9배 증가했으나 실험 과학자(experimental scientists)가 주도하는 구조 속에서 AI 연구자의 직접적 역할이 제한적임을 보여준다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Publishing_Trends"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Academic_Citation_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu and Jin_2025_Unlocking the Potential of AI Researchers in Scientific Discovery What Is Missing.pdf"
 ---
@@ -104,8 +105,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu and Jin_2025_Unlocking the Potential 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/352_From_AI_for_Science_to_Agentic_Science_A_Survey_on_Autonomou/review]] — AI for Science에서 Agentic Science로의 전환이 AI 연구자 잠재력 활용의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — AI Scientist 자동화 시스템이 과학 발견에서 AI 연구자 역할 확대를 구체화한다.
-- 🧪 응용 사례: [[papers/321_Evaluating_Sakanas_AI_Scientist_Bold_Claims_Mixed_Results_an/review]] — 사카나 AI Scientist 평가 연구가 AI 연구자의 실제 과학 연구 능력을 검증한다.
-- 🔄 다른 접근: [[papers/076_AI_for_Science_An_Emerging_Agenda/review]] — AI for Science의 새로운 아젠다가 AI 연구자 활용에 대한 다른 관점을 제시한다.
-- 🔄 다른 접근: [[papers/321_Evaluating_Sakanas_AI_Scientist_Bold_Claims_Mixed_Results_an/review]] — 과학 발견에서 AI 연구자 잠재력과 AI Scientist 결함의 다른 평가 접근법
+- 🏛 기반 연구: [[papers/824_Towards_AI_for_science_developing_a_conceptual_basis_for_tra/review]] — AI4Science 발전을 위한 대학 도서관 역할과 개념적 기반을 제공한다
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 과학 발견을 위한 AI 과학자의 구체적인 구현 사례를 제시한다
+- 🔄 다른 접근: [[papers/352_From_AI_for_Science_to_Agentic_Science_A_Survey_on_Autonomou/review]] — 자율적 과학 발견을 위한 다른 관점의 에이전트 기반 접근법을 보여준다
+- 🔗 후속 연구: [[papers/824_Towards_AI_for_science_developing_a_conceptual_basis_for_tra/review]] — AI 연구자의 과학 발견 참여 확대를 위한 구체적인 전략과 실행 방안을 제시한다
+- 🧪 응용 사례: [[papers/724_SciHorizon_Benchmarking_AI-for-Science_Readiness_from_Scient/review]] — AI 연구자의 과학 발견 잠재력 평가를 위한 구체적인 벤치마킹 도구를 제공한다

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "대규모 언어 모델(LLM)과 대규모 시각-언어 모델(LVLM) 기반 데이터 과학 에이전트의 실제 성능을 평가하기 위해, ModelOff와 Kaggle 대회에서 수집한 466개의 데이터 분석 작업과 74개의 데이터 모델링 작업으로 구성된 포괄적 벤치마크 **DSBench**를 제시한다. 현존하는 최고 성능의 에이전트도 데이터 분석 작업의 34.12%만 해결하며 데이터 모델링에서 34.74% 상대 성능 격차(RPG)를 보임으로써, 현실 수준의 데이터 과학 에이전트 개발에 상당한 개선이 필요함을 입증한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Realistic_Discovery_Benchmarks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_Discovery_Task_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Schmidgall et al._2024_Dsbench How far are data science agents to becoming data science experts arXiv preprint arXiv2409.pdf"
 ---
@@ -102,5 +104,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Schmidgall et al._2024_Dsbench How far a
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/650_RD-Agent_Automating_Data-Driven_AI_Solution_Building_Through/review]] — 데이터 과학 에이전트의 발전 수준을 평가하는 DSBench는 R&D-Agent의 전문가 수준 성능 달성 목표를 벤치마킹하는 기준을 제공한다.
-- 🔗 후속 연구: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — MLE-bench의 평가 방식을 데이터 사이언스 전반으로 확장한 벤치마크
+- 🔄 다른 접근: [[papers/429_Infiagent-dabench_Evaluating_agents_on_data_analysis_tasks/review]] — 데이터 분석 작업 평가와 AutoML 도구 평가는 데이터 과학 자동화의 서로 다른 측면을 벤치마킹한다
+- 🔗 후속 연구: [[papers/293_Ds-agent_Automated_data_science_by_empowering_large_language/review]] — LLM 기반 데이터 과학 자동화가 벤치마킹을 넘어 실제 데이터 과학 에이전트 구현으로 확장한다
+- 🔗 후속 연구: [[papers/170_Blade_Benchmarking_language_model_agents_for_data-driven_sci/review]] — BLADE 벤치마크를 더욱 포괄적인 데이터 과학 에이전트 평가로 확장한 연구
+- 🔄 다른 접근: [[papers/429_Infiagent-dabench_Evaluating_agents_on_data_analysis_tasks/review]] — 데이터 과학 에이전트가 실제 데이터 과학자가 되기까지의 거리를 측정하는 다른 관점의 벤치마크
+- 🏛 기반 연구: [[papers/259_DeepAnalyze_Agentic_Large_Language_Models_for_Autonomous_Dat/review]] — 데이터 과학 에이전트의 능력 평가 벤치마크가 자율적 데이터 과학 시스템의 성능 기준을 제공한다.

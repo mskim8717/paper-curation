@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 의료 분야에서 생성형 AI의 진화를 체계적으로 검토한 스코핑 리뷰로, 텍스트 기반 대규모 언어모델(LLM)에서 의료 영상, 임상 데이터를 통합하는 멀티모달 AI 시스템으로의 전환을 추적하며, PRISMA-ScR 가이드라인을 따라 2020-2024년 발표된 144개 논문을 분석했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Biological_Foundation_Models"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zawacki‐Richter et al._2025_From large language models to multimodal ai A scoping review on the potential of generative ai in m.pdf"
 ---
@@ -116,6 +116,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zawacki‐Richter et al._2025_From large
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 생의학 분야 멀티모달 AI와 생물학/화학 특화 언어모델이라는 다른 접근으로 의료 AI를 발전시킨다
-- 🧪 응용 사례: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — 생성형 AI의 임상 추론 능력을 의료 분야 멀티모달 시스템 발전의 실제 사례로 보여준다
-- 🏛 기반 연구: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — 범용 생의학 AI 에이전트가 의료 멀티모달 AI 발전의 기술적 기반을 제공한다
+- 🔗 후속 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 의료 분야 멀티모달 AI가 생물화학 분야 과학 LLM의 멀티모달 확장 방향을 제시함
+- 🏛 기반 연구: [[papers/377_Generative_AI_and_the_Foundation_Model_Era_A_Comprehensive_R/review]] — 의료 분야 생성형 AI 발전사를 이해하기 위해 파운데이션 모델 시대의 포괄적 분석이 필수적임
+- 🧪 응용 사례: [[papers/377_Generative_AI_and_the_Foundation_Model_Era_A_Comprehensive_R/review]] — 파운데이션 모델 시대의 포괄적 분석이 의료 분야 생성형 AI 발전 과정을 이해하는 이론적 기반을 제공함

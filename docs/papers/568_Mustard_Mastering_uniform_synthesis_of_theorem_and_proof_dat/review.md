@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 대규모언어모델(LLM)과 형식 정리 증명기(formal theorem prover)의 상호작용을 통해 고품질의 수학 정리와 증명 데이터를 대규모로 생성하는 MUSTARD 프레임워크를 제안한다. 생성된 5,866개의 검증된 데이터로 구성된 MUSTARDSAUCE 벤치마크를 통해 미세조정된 언어모델의 수학적 추론 능력을 평균 15.41% 상대성능 향상으로 입증한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Code_Generation"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2024_Mustard Mastering uniform synthesis of theorem and proof data.pdf"
 ---
@@ -110,6 +110,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2024_Mustard Mastering unif
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — 형식 수학에서의 정리 증명 능력을 위한 언어모델 기반 기술의 핵심 기반을 제공한다
-- 🧪 응용 사례: [[papers/339_Fimo_A_challenge_formal_dataset_for_automated_theorem_provin/review]] — 자동 정리 증명 분야의 실제 도전 과제들에 MUSTARD의 고품질 데이터를 적용할 수 있다
-- 🔗 후속 연구: [[papers/486_Lego-prover_Neural_theorem_proving_with_growing_libraries/review]] — 증명 라이브러리 확장과 함께 MUSTARD의 데이터 생성 프레임워크를 결합할 수 있다
+- 🔄 다른 접근: [[papers/486_Lego-prover_Neural_theorem_proving_with_growing_libraries/review]] — 형식 정리 증명을 대규모 LLM 대신 성장하는 라이브러리를 활용한 다른 신경망 접근법
+- 🔗 후속 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — 정리와 증명 데이터 생성을 LLM 기반 정리 증명으로 발전시킨 통합적 연구
+- 🏛 기반 연구: [[papers/482_Lean-star_Learning_to_interleave_thinking_and_proving/review]] — 형식 정리 증명에서 사고와 증명을 교차하는 학습의 기본 방법론
+- 🔄 다른 접근: [[papers/403_Highly_accurate_protein_structure_prediction_with_AlphaFold/review]] — 단백질 구조 예측 대신 수학 정리 증명이라는 다른 복잡한 과학 문제를 LLM으로 해결하는 접근법
+- 🔄 다른 접근: [[papers/486_Lego-prover_Neural_theorem_proving_with_growing_libraries/review]] — 둘 다 정리 증명을 위한 데이터셋과 방법론을 다루지만, Lego-prover는 성장 가능한 라이브러리에, MUSTARD는 균일한 합성에 집중한다
+- 🏛 기반 연구: [[papers/513_M2F_Automated_Formalization_of_Mathematical_Literature_at_Sc/review]] — 정리와 증명 데이터의 균일한 합성을 위한 기초 연구로, 대규모 형식화 작업의 데이터 기반을 제공

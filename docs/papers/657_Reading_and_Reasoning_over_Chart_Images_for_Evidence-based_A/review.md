@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 차트 이미지를 증거로 하여 텍스트 청구의 진위를 판정하는 새로운 자동 팩트-체킹(AFC) 과제를 제안하고, 이를 위한 첫 번째 모델인 ChartBERT를 소개한다. 텍스트, 구조, 시각 정보를 결합하여 차트 기반 주장 검증의 복잡한 추론 문제를 해결한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Zero-Shot_Claim_Verification"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Akhtar et al._2023_Reading and Reasoning over Chart Images for Evidence-based Automated Fact-Checking.pdf"
 ---
@@ -121,9 +122,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Akhtar et al._2023_Reading and Reasoning
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/711_Sciclaims_An_end-to-end_generative_system_for_biomedical_cla/review]] — 차트 기반 팩트 체킹과 생의학 주장 검증은 서로 다른 증거 유형을 활용하지만 동일한 증거 기반 검증 프레임워크를 공유한다.
-- 🏛 기반 연구: [[papers/880_What_makes_medical_claims_un_verifiable_analyzing_entity_and/review]] — 의료 주장의 검증 가능성 분석이 차트 기반 증거를 활용한 의료 팩트 체킹에서 검증 가능한 주장을 식별하는 기준을 제공한다.
-- 🔗 후속 연구: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 차트에서 코드 생성 능력을 차트 기반 팩트 체킹으로 확장하여 더 정교한 차트 정보 추출과 검증이 가능하다.
-- 🏛 기반 연구: [[papers/783_Synchart_Synthesizing_charts_from_language_models/review]] — 차트 이미지 읽기 및 추론을 위한 증거 기반 답변 생성 기법이 SynChart의 QA 주석 생성에 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/711_Sciclaims_An_end-to-end_generative_system_for_biomedical_cla/review]] — 생의학 주장 분석과 차트 기반 팩트 체킹은 모두 증거 기반 검증을 수행하지만 텍스트와 시각적 증거라는 다른 정보원을 활용한다.
-- 🔗 후속 연구: [[papers/880_What_makes_medical_claims_un_verifiable_analyzing_entity_and/review]] — 의료 주장 검증 가능성 분석을 차트 기반 증거 활용으로 확장하여 더 다양한 증거 유형에 대한 검증 가능성 평가가 가능하다.
+- 🔄 다른 접근: [[papers/610_Pelican_Correcting_Hallucination_in_Vision-LLMs_via_Claim_De/review]] — 차트 이미지 기반 팩트 체킹과 시각 언어 모델 환각 보정이라는 서로 다른 멀티모달 검증 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 대규모 차트 이해 데이터셋을 활용하여 차트 기반 자동 팩트 체킹의 성능을 크게 향상시킬 수 있다.
+- 🏛 기반 연구: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 멀티모달 증거를 활용한 동적 팩트 체킹의 기초적인 방법론을 차트 영역에 적용한다.
+- 🔗 후속 연구: [[papers/610_Pelican_Correcting_Hallucination_in_Vision-LLMs_via_Claim_De/review]] — 차트 이미지 기반 팩트 체킹을 시각 언어 모델의 환각 보정으로 확장한 발전된 형태다.

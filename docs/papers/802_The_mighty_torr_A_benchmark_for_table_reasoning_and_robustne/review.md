@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 **ToRR(Table Reasoning and Robustness) 벤치마크**를 제시하여, 대규모 언어모델(LLM)의 표 데이터 이해 능력과 다양한 표 형식에 대한 견고성(robustness)을 체계적으로 평가한다. 10개의 데이터셋을 통해 14개 주요 LLM을 평가한 결과, 최신 모델들도 표 형식 변화에 취약한 '깨지기 쉬운(brittle)' 행동을 보인다는 것을 발견했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Table_Caption_Generation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Physics_Reasoning_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ashury-Tahan et al._2025_The mighty torr A benchmark for table reasoning and robustness.pdf"
 ---
@@ -121,7 +121,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ashury-Tahan et al._2025_The mighty torr
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/715_Scidqa_A_deep_reading_comprehension_dataset_over_scientific/review]] — ToRR이 표 추론 견고성에 초점을 맞춘 반면, SciDQA는 과학 논문의 깊이 있는 이해를 평가하여 서로 다른 각도에서 LLM 평가를 다룸
-- 🔗 후속 연구: [[papers/787_Tablemaster_A_recipe_to_advance_table_understanding_with_lan/review]] — TableMaster가 제시하는 표 이해 방법론이 ToRR 벤치마크에서 발견된 LLM의 표 형식 취약성 문제를 해결하는 솔루션으로 활용될 수 있음
-- 🔄 다른 접근: [[papers/715_Scidqa_A_deep_reading_comprehension_dataset_over_scientific/review]] — SciDQA가 과학 논문의 깊이 있는 이해에 초점을 맞춘 반면, ToRR는 표 형식 견고성 평가에 특화되어 서로 다른 각도에서 LLM의 과학 텍스트 처리 능력을 평가함
-- 🏛 기반 연구: [[papers/787_Tablemaster_A_recipe_to_advance_table_understanding_with_lan/review]] — 테이블 추론과 견고성에 대한 벤치마크 연구가 언어 모델의 테이블 이해 능력 향상 프레임워크 개발의 기초를 제공함
+- 🔗 후속 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — MMC의 차트 이해 벤치마크를 표 데이터 추론과 견고성 평가로 확장하여 구조화된 데이터 이해의 다른 측면을 탐구한다.
+- 🔄 다른 접근: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — ChartGemma의 차트 추론과 유사한 구조화 데이터 이해이지만 표 형식의 견고성에 특화된 평가 방법론을 제시한다.
+- 🏛 기반 연구: [[papers/787_Tablemaster_A_recipe_to_advance_table_understanding_with_lan/review]] — 대규모 언어모델의 표 이해 능력 연구가 표 형식 변화에 대한 견고성 평가의 기반 이론을 제공한다.
+- 🔄 다른 접근: [[papers/787_Tablemaster_A_recipe_to_advance_table_understanding_with_lan/review]] — 테이블 이해를 위한 구조화된 접근법과 견고성 중심의 벤치마킹은 서로 다른 관점에서 테이블 처리 능력을 향상시킨다.
+- 🏛 기반 연구: [[papers/399_Helm_Highlighted_evidence_augmented_language_model_for_enhan/review]] — 테이블 추론 벤치마크는 테이블에서 핵심 정보를 식별하고 활용하는 방법론의 기초를 제공한다.

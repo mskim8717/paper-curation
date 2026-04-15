@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.5
 essence: "스크린샷만을 입력으로 받아 마우스, 키보드 조작 등 인간 같은 상호작용을 수행하는 네이티브 GUI 에이전트 모델로, 상용 모델(GPT-4o)에 기반한 프레임워크들을 뛰어넘는 엔드-투-엔드(end-to-end) 성능을 달성했다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Automated_Crystal_Structure_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qin et al._2025_UI-TARS Pioneering Automated GUI Interaction with Native Agents.pdf"
 ---
@@ -117,8 +118,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qin et al._2025_UI-TARS Pioneering Autom
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/073_AI_Agents_in_Engineering_Design_A_Multi-Agent_Framework_for/review]] — GUI 자동화와 엔지니어링 설계 자동화 모두 인간-AI 협업을 다룹니다.
-- 🏛 기반 연구: [[papers/590_Openhands_An_open_platform_for_ai_software_developers_as_gen/review]] — 일반적인 AI 소프트웨어 개발 플랫폼이 네이티브 GUI 에이전트의 기반이 됩니다.
-- 🔗 후속 연구: [[papers/888_X-webagentbench_A_multilingual_interactive_web_benchmark_for/review]] — GUI 상호작용이 다국어 웹 에이전트 벤치마크로 확장됩니다.
-- 🏛 기반 연구: [[papers/073_AI_Agents_in_Engineering_Design_A_Multi-Agent_Framework_for/review]] — 네이티브 에이전트의 상호작용이 엔지니어링 설계 자동화의 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/061_Agent_S_An_Open_Agentic_Framework_that_Uses_Computers_Like_a/review]] — Agent S와 UI-TARS는 모두 GUI 자동화를 다루지만, 인간과 유사한 컴퓨터 사용과 네이티브 에이전트 기반 자동화라는 서로 다른 접근 방식을 채택합니다.
+- 🔄 다른 접근: [[papers/061_Agent_S_An_Open_Agentic_Framework_that_Uses_Computers_Like_a/review]] — 컴퓨터 사용에 특화된 에이전트의 다른 구현 방식과 아키텍처를 제시한다.
+- 🔗 후속 연구: [[papers/590_Openhands_An_open_platform_for_ai_software_developers_as_gen/review]] — 오픈소스 플랫폼으로 GUI 에이전트 개발을 확장하고 민주화한다.
+- 🧪 응용 사례: [[papers/888_X-webagentbench_A_multilingual_interactive_web_benchmark_for/review]] — 다국어 웹 환경에서 GUI 에이전트의 실제 적용 사례를 보여준다.
+- 🔄 다른 접근: [[papers/061_Agent_S_An_Open_Agentic_Framework_that_Uses_Computers_Like_a/review]] — GUI 자동화에서 계층적 계획 수립과 네이티브 에이전트 접근법이라는 서로 다른 방법론을 비교할 수 있다

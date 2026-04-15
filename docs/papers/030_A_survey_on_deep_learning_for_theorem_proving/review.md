@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 정리 증명(Theorem Proving)에 대한 심층학습 기법들을 포괄적으로 조사한 서베이 논문으로, 자동형식화, 전제 선택, 증명 단계 생성, 증명 탐색 등 주요 작업들과 방법론, 데이터셋, 평가 지표를 체계적으로 정리한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Formal_Theorem_Proving"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Automated_Theorem_Proving"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_A survey on deep learning for theorem proving.pdf"
 ---
@@ -85,10 +85,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_A survey on deep learning
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/642_Proving_theorems_recursively/review]] — 정리 증명 심층학습 기법들을 재귀적 증명 방법론으로 발전시킨 이론적 기반
-- 🏛 기반 연구: [[papers/1095_Towards_large_language_models_as_copilots_for_theorem_provin/review]] — 정리 증명 자동화 연구 동향이 Lean Copilot과 같은 실용적 도구 개발의 기반
-- 🧪 응용 사례: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — 생성형 정리 증명 연구에서 제시된 심층학습 기법들의 구체적 응용 사례
-- 🔗 후속 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — 정리 증명 심층학습 기법을 LLM 기반 접근으로 발전시킨 최신 연구 동향
-- 🧪 응용 사례: [[papers/642_Proving_theorems_recursively/review]] — 정리 증명에 대한 심층학습 기법 서베이에서 제시된 방법론을 재귀적 접근으로 구현
-- 🧪 응용 사례: [[papers/1095_Towards_large_language_models_as_copilots_for_theorem_provin/review]] — 정리 증명 심층학습 서베이에서 제시된 방법론들을 실제 Lean 환경에서 구현한 응용
-- 🏛 기반 연구: [[papers/489_Lf_a_foundational_higher-order-logic/review]] — 정리 증명을 위한 딥러닝에 대한 포괄적인 조사가 LF 논리 체계의 자동화 가능성을 이해하는 기반을 제공한다.
+- 🔗 후속 연구: [[papers/642_Proving_theorems_recursively/review]] — 재귀적 정리 증명 방법론을 심층학습 기반 정리 증명의 구체적 구현 사례로 활용하여 서베이의 실제 적용을 보여준다.
+- 🏛 기반 연구: [[papers/826_Towards_Autonomous_Mathematics_Research/review]] — 자율적 수학 연구 에이전트 개발에 필요한 정리 증명 기법들의 이론적 기반과 최신 연구 동향을 종합적으로 제공한다.
+- 🔄 다른 접근: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — 정리 증명 자동화라는 공통 목표를 가지지만 심층학습 서베이 vs 생성적 언어모델이라는 다른 관점에서 접근한다.
+- 🏛 기반 연구: [[papers/642_Proving_theorems_recursively/review]] — 정리 증명에 대한 딥러닝 기법의 종합적인 조사를 통해 POETRY의 방법론적 기반과 관련 연구 동향을 파악할 수 있다.

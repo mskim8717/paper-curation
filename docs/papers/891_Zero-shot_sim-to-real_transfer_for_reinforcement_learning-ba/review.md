@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "소프트 연속 팔(Soft Continuum Arms, SCAs)의 비선형 동역학을 다루기 위해 운동학과 기계적 특성을 분리한 강화학습(RL) 기반 시각 서보잉 프레임워크를 제시하며, 시뮬레이션에서만 학습한 정책을 실제 하드웨어에 직접 배포하여 67% 성공률의 제로샷 심-투-리얼 전이(zero-shot sim-to-real transfer)를 달성했다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Robot_Control_and_Policy_Robustness"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Robust_Robotic_Control"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_Zero-shot sim-to-real transfer for reinforcement learning-based visual servoing of soft continuum ar.pdf"
 ---
@@ -131,8 +133,16 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_Zero-shot sim-to-real t
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/395_Guided_by_guardrails_Control_barrier_functions_as_safety_ins/review]] — 두 논문 모두 로봇 제어의 안전성을 다루되 소프트 연속 팔은 시뮬레이션 전이, 제어 장벽 함수는 안전 제약에 중점을 둔다.
-- 🔗 후속 연구: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 일반화 성능 향상을 위한 샤프니스 인식 최소화 기법은 소프트 연속 팔의 심-투-리얼 전이 성능을 더욱 개선할 수 있다.
-- 🏛 기반 연구: [[papers/354_From_GPU_Engineering_to_Scientific_Discovery_Parallelism_Tec/review]] — GPU 엔지니어링에서 과학적 발견까지의 병렬화 기법 연구는 소프트 연속 팔의 강화학습 훈련 효율성 향상에 계산 최적화 방법론을 제공한다.
-- 🔄 다른 접근: [[papers/395_Guided_by_guardrails_Control_barrier_functions_as_safety_ins/review]] — 두 논문 모두 로봇 제어 안전성을 다루되 제어 장벽 함수는 안전 제약, 소프트 연속 팔은 시뮬레이션 전이에 중점을 둔다.
-- 🏛 기반 연구: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 샤프니스 인식 최소화를 통한 일반화 성능 향상은 소프트 연속 팔의 심-투-리얼 전이 성공률을 더욱 개선할 수 있는 이론적 근거를 제공한다.
+- 🔄 다른 접근: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 로봇 제어의 일반화를 운동학 분리와 샤프니스 인식 최적화라는 서로 다른 접근법으로 달성한다.
+- ⚖️ 반론/비판: [[papers/449_Kimi_k15_Scaling_reinforcement_learning_with_llms/review]] — LLM에서는 복잡한 기법 없이 성능을 달성했지만 로봇 제어에서는 여전히 정교한 설계가 필요함을 보여준다.
+- 🧪 응용 사례: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — RL의 일반화 능력이 소프트 연속 팔의 심-투-리얼 전이에서 구체적으로 검증된다.
+- 🏛 기반 연구: [[papers/688_Robustness_evaluation_of_offline_reinforcement_learning_for/review]] — 제로샷 심-투-리얼 전이가 오프라인 RL의 견고성 평가에서 중요한 벤치마크가 될 수 있다.
+- 🧪 응용 사례: [[papers/748_Semi-Supervised_2D_Human_Pose_Estimation_Driven_by_Position/review]] — 강화학습 기반 심투리얼 전이로 포즈 추정의 실제 적용을 확장할 수 있다.
+- ⚖️ 반론/비판: [[papers/449_Kimi_k15_Scaling_reinforcement_learning_with_llms/review]] — LLM에서는 복잡한 기법 없이 성능을 달성했지만 로봇 제어에서는 여전히 정교한 설계가 필요함을 보여준다.
+- 🏛 기반 연구: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — 웹이라는 복잡한 환경에서의 RL 훈련이 로봇 제어의 RL 접근법과 유사한 원리를 공유한다.
+- 🔗 후속 연구: [[papers/395_Guided_by_guardrails_Control_barrier_functions_as_safety_ins/review]] — RL 안전성 제약이 소프트 로봇의 복잡한 동역학에서도 안전한 심-투-리얼 전이를 보장할 수 있다.
+- 🔄 다른 접근: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 로봇 정책의 일반화를 샤프니스 인식 최적화와 운동학 분리라는 서로 다른 방법으로 달성한다.
+- 🏛 기반 연구: [[papers/688_Robustness_evaluation_of_offline_reinforcement_learning_for/review]] — 오프라인 RL의 견고성 평가가 심-투-리얼 전이에서 중요한 벤치마크 역할을 할 수 있다.
+- 🔄 다른 접근: [[papers/863_Value_iteration_for_learning_concurrently_executable_robotic/review]] — 시뮬레이션에서 실제 환경으로의 전이 문제를 우선순위 기반 태스크 스택으로 해결하는 다른 접근법을 제시한다.
+- 🧪 응용 사례: [[papers/003_A_comprehensive_survey_of_cross-domain_policy_transfer_for_e/review]] — 강화학습 기반 제로샷 심투리얼 전이 연구가 크로스 도메인 정책 전이의 실제 적용 사례 중 하나다
+- 🧪 응용 사례: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — RL의 일반화 능력이 로봇 제어에서도 시뮬레이션에서 실제 환경으로의 전이에서 나타난다.

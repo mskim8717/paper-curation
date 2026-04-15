@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 프로그램 합성(program synthesis) 작업에 최적화된 16.1B 파라미터 규모의 대규모 언어 모델 CodeGen 계열을 제시하고, 사용자가 자연어로 단계적 명령을 제공하는 **다중 턴 프로그램 합성(multi-turn program synthesis)** 패러다임을 도입하여 단일 턴 방식 대비 명확한 성능 향상을 입증한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Domain-adapted_Instruction_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nijkamp et al._2022_Codegen An open large language model for code with multi-turn program synthesis.pdf"
 ---
@@ -108,11 +109,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nijkamp et al._2022_Codegen An open larg
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — 다중 턴 프로그램 합성 방법론이 차트-코드 변환에서 단계적 생성 접근의 기반
-- 🔗 후속 연구: [[papers/1092_Table-llm-specialist_Language_model_specialists_for_tables_u/review]] — 프로그램 합성 기법을 테이블 작업 특화 모델의 반복적 미세조정에 적용한 확장
-- 🏛 기반 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — 코드 생성 능력이 API 도구 사용 벤치마크에서 프로그래밍 작업의 기반
-- 🔄 다른 접근: [[papers/263_Deepseek-coder_When_the_large_language_model_meets_programmi/review]] — 코드 생성에 특화된 DeepSeek-Coder와 달리 대화형 프로그램 합성에 중점
-- 🏛 기반 연구: [[papers/263_Deepseek-coder_When_the_large_language_model_meets_programmi/review]] — CodeGen의 다중 턴 프로그램 생성 방법론이 DeepSeek-Coder 개발의 기초가 됨
-- 🔗 후속 연구: [[papers/741_Seed-coder_Let_the_code_model_curate_data_for_itself/review]] — CodeGen의 프로그램 생성 기법을 자동화된 데이터 큐레이션으로 발전시킨 연구
-- 🏛 기반 연구: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — CodeGen의 다중 턴 프로그램 합성 방법론을 차트-코드 변환에 적용한 기반
-- 🏛 기반 연구: [[papers/1092_Table-llm-specialist_Language_model_specialists_for_tables_u/review]] — 다중 턴 프로그램 합성 방법론을 테이블 작업 특화 모델 훈련에 적용한 기반
+- 🔄 다른 접근: [[papers/1095_Towards_large_language_models_as_copilots_for_theorem_provin/review]] — 다중 턴 프로그램 합성과 정리 증명 보조 모두 자연어 지시를 통한 단계적 문제 해결의 서로 다른 적용 분야를 보여준다.
+- 🔗 후속 연구: [[papers/263_Deepseek-coder_When_the_large_language_model_meets_programmi/review]] — CodeGen의 다중 턴 프로그램 합성을 DeepSeek-Coder의 대규모 코드 생성 능력과 결합하여 더 강력한 프로그래밍 어시스턴트를 구현한다.
+- 🏛 기반 연구: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 형식적 정리 증명을 위한 초안-스케치-증명 방법이 다중 턴 프로그램 합성에서 단계적 코드 생성의 이론적 기반을 제공한다.

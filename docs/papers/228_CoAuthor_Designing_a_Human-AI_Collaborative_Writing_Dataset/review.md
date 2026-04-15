@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 GPT-3의 창작 및 논증적 글쓰기 지원 능력을 탐구하기 위해 설계된 대규모 인간-AI 협력 글쓰기 데이터셋 CoAuthor를 제시하며, 상호작용 데이터셋 분석을 통해 언어 모델의 역량을 HCI 관점에서 체계적으로 이해할 수 있음을 보여준다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Peer_Review"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lee et al._2022_CoAuthor Designing a Human-AI Collaborative Writing Dataset for Exploring Language Model Capabiliti.pdf"
 ---
@@ -111,11 +111,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lee et al._2022_CoAuthor Designing a Hum
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/154_Best_Practices_for_Using_AI_When_Writing_Scientific_Manuscri/review]] — 인간-AI 협력 글쓰기 데이터셋 연구가 과학 논문 작성에서 AI 활용의 구체적 모범 사례 개발에 중요한 실증적 기반을 제공한다
-- 🔗 후속 연구: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — GPT-3 기반 창작 글쓰기 협력 연구가 스토리 작성을 위한 인간-AI 협력 에디터 개발로 확장되었다
-- 🧪 응용 사례: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 인간-AI 협력 글쓰기 패턴 분석이 학술 논문 작성을 위한 제어 가능한 AI 협력 시스템 개발에 직접 활용된다
-- 🔗 후속 연구: [[papers/414_Human-llm_coevolution_Evidence_from_academic_writing/review]] — 인간-AI 협력 글쓰기 데이터셋 연구가 학술 글쓰기에서 인간과 LLM의 공진화 현상 분석으로 확장되었다
-- 🔗 후속 연구: [[papers/595_Overleafcopilot_Empowering_academic_writing_in_overleaf_with/review]] — 인간-AI 협업 글쓰기 데이터셋 연구로 Overleaf 환경에서의 협업 패턴 분석에 활용할 수 있다.
-- 🏛 기반 연구: [[papers/116_Augmenting_the_author_Exploring_the_potential_of_ai_collabor/review]] — 인간-AI 협력 글쓰기 데이터셋 설계의 이론적 기반과 방법론을 제공한다.
-- 🧪 응용 사례: [[papers/109_Assisting_in_writing_wikipedia-like_articles_from_scratch_wi/review]] — CoAuthor 데이터셋이 STORM 시스템을 활용한 인간-AI 협업 글쓰기의 실제 사례와 패턴을 분석할 수 있는 구체적 자료를 제공함
-- 🔗 후속 연구: [[papers/702_Scholarcopilot_Training_large_language_models_for_academic_w/review]] — 인간-AI 협업 글쓰기 데이터셋을 학술 논문 작성이라는 전문 영역으로 확장하여 더 정교한 협업 모델을 구축한다.
+- 🔗 후속 연구: [[papers/641_Prototypical_human-ai_collaboration_behaviors_from_llm-assis/review]] — 인간-AI 협력 글쓰기 데이터셋을 실제 협력 행동 패턴 분석으로 발전시킨 연구
+- 🧪 응용 사례: [[papers/656_Read_revise_repeat_A_system_demonstration_for_human-in-the-l/review]] — 협력적 글쓰기 데이터셋을 실제 논문 작성 지원 시스템에 적용한 실용적 사례
+- 🔄 다른 접근: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — 학술 글쓰기가 아닌 창작 분야에서 인간-AI 협력을 탐구하는 다른 접근법
+- 🏛 기반 연구: [[papers/595_Overleafcopilot_Empowering_academic_writing_in_overleaf_with/review]] — 인간-AI 협업 글쓰기를 위한 데이터셋 구축과 평가 방법론의 기초를 제공한다
+- 🔗 후속 연구: [[papers/413_Human-ai_teaming_using_large_language_models_Boosting_brain-/review]] — 인간-AI 협력 작성 데이터셋 설계가 ChatBCI의 인간-AI 협력 프레임워크의 확장된 응용 방향을 제시한다
+- 🏛 기반 연구: [[papers/703_Scholawrite_A_dataset_of_end-to-end_scholarly_writing_proces/review]] — 인간-AI 협력 글쓰기 데이터셋 구축의 방법론적 기초를 제공한다.
+- 🏛 기반 연구: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — 인간-AI 협력 글쓰기의 이론적 기반이 창작 도구 개발에 필수적이다
+- 🔗 후속 연구: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 인간-AI 협업 글쓰기를 위한 더 정교한 제어 가능한 시스템으로 확장한다
+- 🏛 기반 연구: [[papers/597_P2p_Automated_paper-to-poster_generation_and_fine-grained_be/review]] — 인간-AI 협업 글쓰기 데이터셋이 논문-포스터 생성 시스템의 협업적 설계 기반을 제공한다

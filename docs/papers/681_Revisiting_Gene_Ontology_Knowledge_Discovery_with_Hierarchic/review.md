@@ -9,8 +9,8 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 계층적 특징 선택(hierarchical feature selection)으로 선별된 유전자 온톨로지(Gene Ontology, GO) 항목으로부터 노화 관련 생물학적 지식을 추출하기 위해 다중 AI 에이전트로 구성된 '가상 스터디 그룹' 프레임워크를 제안한다. 이는 대규모 언어모델(LLM)의 환각(hallucination) 문제를 완화하고 신뢰할 수 있는 과학적 지식 발견을 실현하는 에이전트 AI(agentic AI) 기반의 새로운 접근법이다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Autonomous_Biological_Discovery_AI"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wan and Freitas_2026_Revisiting Gene Ontology Knowledge Discovery with Hierarchical Feature Selection and Virtual Study G.pdf"
 ---
@@ -131,9 +131,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wan and Freitas_2026_Revisiting Gene Ont
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/817_Toward_a_Team_of_AI-made_Scientists_for_Scientific_Discovery/review]] — 유전자 발견과 유전자 온톨로지 지식 추출에서 다중 AI 에이전트 접근법을 공유한다.
-- 🔗 후속 연구: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — 유전자셋 분석을 위한 자기 검증 언어 에이전트로 유전자 온톨로지 연구를 확장한다.
-- 🧪 응용 사례: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — LLM 에이전트를 통한 단일 세포 주석의 구체적 적용으로 생물학적 지식 추출을 보여준다.
-- 🔗 후속 연구: [[papers/166_Biomaze_Benchmarking_and_enhancing_large_language_models_for/review]] — 생물학적 경로 추론이 유전자 온톨로지 지식 발견으로 확장됩니다.
-- 🔗 후속 연구: [[papers/355_From_Human_Memory_to_AI_Memory_A_Survey_on_Memory_Mechanisms/review]] — AI 메모리 메커니즘을 Gene Ontology 지식 발견으로 확장한 생물정보학 응용
-- 🔗 후속 연구: [[papers/817_Toward_a_Team_of_AI-made_Scientists_for_Scientific_Discovery/review]] — 유전자 온톨로지를 활용한 생물학적 지식 추출에서 LLM 기반 다중 에이전트 접근법을 공유한다.
+- 🏛 기반 연구: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — 단일 에이전트 유전자 세트 분석을 다중 AI 에이전트로 구성된 가상 스터디 그룹으로 확장하여 LLM 환각 문제 완화
+- 🧪 응용 사례: [[papers/365_Future_of_Work_with_AI_Agents_Auditing_Automation_and_Augmen/review]] — Human Agency Scale의 생물정보학 분야 적용 사례로서 AI 에이전트들의 협력적 지식 발견 과정에서 인간의 역할 정의
+- 🔄 다른 접근: [[papers/766_SpatialAgent_An_autonomous_AI_agent_for_spatial_biology/review]] — 공간 생물학의 자율 AI 에이전트와 달리 유전자 온톨로지 기반의 다중 에이전트 협력 접근
+- 🏛 기반 연구: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — 다중 모달 분자 문법 기반 모델이 유전자 온톨로지 정보를 더 효과적으로 처리할 수 있는 기술적 토대
+- 🧪 응용 사례: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — 유전자 온톨로지 지식 발견에 계층적 분류를 활용하는 연구로, 유전자 집합 분석의 또 다른 응용 방향을 제시
+- 🏛 기반 연구: [[papers/239_CRISPR-GPT_for_agentic_automation_of_gene-editing_experiment/review]] — 계층적 강화학습을 통한 유전자 온톨로지 지식 발견을 CRISPR 실험 설계의 지식 기반으로 활용한다

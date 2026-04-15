@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.25
 essence: "1-2 M☉ 범위의 저질량 컴팩트 천체 쌍성계 합병 신호가 중성자별(BNS) 인지 저질량 블랙홀(LMBH) 인지 구별하기 위해, 본 논문은 **후기 접근 및 합병 후 중력파 파형의 차이**를 이용한 구분 방법을 제시하고, 이를 통해 **비소멸 암흑물질(non-annihilating dark matter)의 제약 조건**을 도출한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Benchmarking_Taxonomy"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bhattacharya et al._2025_Distinguishing Neutron Star vs. Low-Mass Black Hole Binaries with Postmerger Gravitational Waves $-$.pdf"
 ---
@@ -142,6 +142,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bhattacharya et al._2025_Distinguishing 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/646_QH9_A_Quantum_Hamiltonian_Prediction_Benchmark_for_QM9_Molec/review]] — 양자 해밀토니안 예측이 천체물리학 컴팩트 천체 구분에 응용됨
-- 🏛 기반 연구: [[papers/697_Scaling_physical_reasoning_with_the_physics_dataset/review]] — 물리 추론 스케일링이 중력파 신호 분석의 기반이 됨
-- 🧪 응용 사례: [[papers/217_Chiral_spin_symmetry_and_hot_QCD/review]] — 중성자별과 블랙홀 구별에 카이랄 스핀 대칭성의 QCD 상 이론 적용
+- 🧪 응용 사례: [[papers/276_Discovery_of_Unstable_Singularities/review]] — 중력파 신호 분석에서 요구되는 고정밀 수치해석이 불안정 특이점 발견과 유사한 도전을 제시한다
+- 🔗 후속 연구: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — SARS-CoV-2 시뮬레이션의 엑사스케일 예측이 중성자별 합병 시뮬레이션 규모를 확장한다
+- 🏛 기반 연구: [[papers/758_Simulations_in_the_era_of_exascale_computing/review]] — 엑사스케일 컴퓨팅 시대의 시뮬레이션이 중성자별-블랙홀 구별 연구의 계산 기반을 제공한다

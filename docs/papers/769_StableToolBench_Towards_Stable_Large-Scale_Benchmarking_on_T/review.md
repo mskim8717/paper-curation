@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "대규모 언어 모델(LLM)이 도구를 활용하는 능력을 평가하기 위해 안정적인 벤치마크가 필수적인데, 기존 ToolBench는 실시간 API의 불안정성으로 인해 결과 재현성이 떨어진다. 본 논문은 가상 API 서버와 안정적인 평가 시스템을 통해 이 문제를 해결한 StableToolBench를 제안한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Guo et al._2025_StableToolBench Towards Stable Large-Scale Benchmarking on Tool Learning of Large Language Models.pdf"
 ---
@@ -101,11 +101,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Guo et al._2025_StableToolBench Towards 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/717_Scienceboard_Evaluating_multimodal_autonomous_agents_in_real/review]] — 안정적인 도구 벤치마킹을 현실적 과학 워크플로우의 멀티모달 에이전트 평가에 적용할 수 있다
-- 🔗 후속 연구: [[papers/735_SciToolAgent_a_knowledge-graph-driven_scientific_agent_for_m/review]] — 대규모 도구 벤치마킹을 과학 도구 지식 그래프 기반의 특화된 평가로 확장할 수 있다
-- 🔄 다른 접근: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 실제 문제 해결 능력 평가를 위해 도구 사용과 GitHub 이슈 해결이라는 다른 벤치마킹 접근법을 사용한다
-- 🏛 기반 연구: [[papers/1088_Lag_Llm_agents_for_leaderboard_auto_generation_on_demanding/review]] — 안정적인 대규모 벤치마킹 도구로 자동 리더보드 생성의 신뢰성 있는 평가 기준을 제공한다.
-- 🏛 기반 연구: [[papers/717_Scienceboard_Evaluating_multimodal_autonomous_agents_in_real/review]] — 안정적인 도구 사용 벤치마킹이 현실적 과학 워크플로우에서 멀티모달 에이전트 평가의 기반 기술을 제공한다
-- 🏛 기반 연구: [[papers/735_SciToolAgent_a_knowledge-graph-driven_scientific_agent_for_m/review]] — 안정적인 대규모 도구 벤치마킹이 과학 도구 지식 그래프 기반 에이전트의 평가 기반을 제공한다
-- 🔄 다른 접근: [[papers/354_From_GPU_Engineering_to_Scientific_Discovery_Parallelism_Tec/review]] — 과학 발견 가속화를 위한 GPU 엔지니어링과 안정적인 대규모 벤치마킹의 서로 다른 기술적 접근법을 비교할 수 있다.
-- 🏛 기반 연구: [[papers/1098_BloClaw_An_Omniscient_Multi-Modal_Agentic_Workspace_for_Next/review]] — BloClaw의 멀티모달 에이전트 작업공간은 StableToolBench의 대규모 도구 벤치마킹 연구에서 확인된 도구 사용 안정성 요구사항을 기반으로 XML-Regex 라우팅 시스템을 설계했습니다.
+- 🧪 응용 사례: [[papers/717_Scienceboard_Evaluating_multimodal_autonomous_agents_in_real/review]] — 안정적인 도구 학습 벤치마크가 과학 에이전트의 멀티모달 워크플로우 평가 신뢰성 확보에 직접 활용됨
+- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 일반적인 기계학습 에이전트 벤치마크가 과학 도구 사용에 특화된 안정적 평가로 확장됨
+- 🏛 기반 연구: [[papers/268_Democratizing_AI_scientists_using_ToolUniverse/review]] — 안정적인 대규모 벤치마킹이 AI 과학자 시스템 구축의 기반을 제공한다.
+- 🏛 기반 연구: [[papers/717_Scienceboard_Evaluating_multimodal_autonomous_agents_in_real/review]] — 과학 에이전트 평가의 신뢰성을 위해 안정적인 대규모 벤치마킹 방법론이 필수적임
+- 🏛 기반 연구: [[papers/496_LLM_Agents_Making_Agent_Tools/review]] — 대규모 도구 사용 벤치마킹을 통해 과학 논문에서 도구를 자동 생성하는 ToolMaker의 성능 평가 기준과 안정성 검증 방법을 제공함
+- 🏛 기반 연구: [[papers/499_LLM_With_Tools_A_Survey/review]] — 안정적인 대규모 벤치마킹이 LLM 도구 활용 능력 평가의 기반 인프라를 제공한다.
+- 🔗 후속 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — 대규모 도구 사용 벤치마크의 안정성을 다루어 ToolLLM의 대규모 도구 마스터링 능력을 더 신뢰할 수 있고 일관된 성능으로 발전시킴
+- 🔄 다른 접근: [[papers/101_AnyTool_Self-Reflective_Hierarchical_Agents_for_Large-Scale/review]] — 안정적인 대규모 벤치마킹과 계층적 API 검색은 도구 사용 에이전트의 서로 다른 평가 접근법을 제시한다

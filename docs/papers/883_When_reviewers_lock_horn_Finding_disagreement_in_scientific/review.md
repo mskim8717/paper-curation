@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 과학 논문의 피어 리뷰 과정에서 리뷰어 간의 모순(disagreement)을 자동으로 탐지하는 새로운 과제를 제시하고, 이를 위한 대규모 데이터셋 ContraSciView와 기준 모델을 제안한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kumar et al._2023_When reviewers lock horn Finding disagreement in scientific peer reviews.pdf"
 ---
@@ -126,9 +126,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kumar et al._2023_When reviewers lock ho
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/124_Automated_justification_production_for_claim_veracity_in_fac/review]] — 피어 리뷰에서 리뷰어 간 의견 불일치 탐지가 팩트체킹에서 판정 결과의 정당화 생성과 유사한 판단 근거 분석 문제이다.
-- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 다회차 긴 컨텍스트 대화로서의 피어 리뷰가 리뷰어 간 모순 탐지를 대화적 관점에서 확장한다.
-- 🧪 응용 사례: [[papers/739_Seagraph_Unveiling_the_whole_story_of_paper_review_comments/review]] — 피어 리뷰 코멘트의 전체 스토리 공개가 리뷰어 간 의견 불일치 분석의 실제 적용 영역이다.
-- 🏛 기반 연구: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — 과학적 리뷰에서 의견 불일치 발견은 메타-리뷰에서 갈등 인식 및 완화의 이론적 기반이 되는 현상을 분석합니다
-- 🧪 응용 사례: [[papers/124_Automated_justification_production_for_claim_veracity_in_fac/review]] — 과학 논문 피어 리뷰에서 발생하는 의견 불일치를 자동으로 탐지하는 것이 팩트체킹의 정당화 생성과 유사한 판단 근거 제시 문제이다.
-- 🏛 기반 연구: [[papers/481_Lazyreview_a_dataset_for_uncovering_lazy_thinking_in_nlp_pee/review]] — 과학적 검토에서의 의견 불일치 연구가 게으른 사고 탐지 연구의 이론적 배경을 제공합니다.
+- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 리뷰어 간 모순 탐지를 다중 턴 대화 형태의 피어 리뷰 시스템으로 발전시킨다
+- 🔄 다른 접근: [[papers/676_Reviewagents_Bridging_the_gap_between_human_and_ai-generated/review]] — 자동 모순 탐지와 AI 생성 리뷰 품질 평가가 서로 다른 방식으로 피어 리뷰 개선을 추구한다

@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 **Myers-Briggs Type Indicator (MBTI) 성격 탐지의 과도한 낙관성을 개선**하기 위해, 심리학 전문가의 지도 하에 심리 전문가가 직접 주석을 단 **첫 번째 소프트 라벨 MBTI 데이터셋 MBTIBENCH**를 구축했다. 이는 자기보고식 라벨의 부정확성(29.58% 오류)과 극단적 성격만 표현하는 하드 라벨의 한계를 해결한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Personalization"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Patent_Novelty_Prediction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fong et al._2024_Can large language models understand you better an mbti personality detection dataset aligned with.pdf"
 ---
@@ -132,6 +134,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fong et al._2024_Can large language mode
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — 시뮬레이션된 인간 사회에서 사회적으로 정렬된 언어 모델 훈련 연구로 본 논문의 성격 탐지 데이터셋 구축의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/879_What_factors_affect_multimodal_in-context_learning_an_in-dep/review]] — 다중모달 맥락 내 학습에 영향을 미치는 요인들을 심층 분석하여 본 논문의 성격 탐지 연구를 확장한다.
-- 🧪 응용 사례: [[papers/613_Personalized_graph-based_retrieval_for_large_language_models/review]] — 대규모 언어 모델을 위한 개인화된 그래프 기반 검색에서 본 논문의 MBTI 성격 정보를 개인화 요소로 활용할 수 있다.
+- 🔄 다른 접근: [[papers/246_Csed_A_chinese_semantic_error_diagnosis_corpus/review]] — MBTI 성격 탐지와 중국어 의미 오류 진단이라는 서로 다른 언어 이해 능력 평가 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/821_Towards_a_client-centered_assessment_of_llm_therapists_by_cl/review]] — 심리학적 성격 진단과 클라이언트 중심 LLM 치료사 평가가 인간 이해에서 상호 보완적 관점을 제공한다.
+- 🏛 기반 연구: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — 시뮬레이션된 인간 사회에서 언어모델 훈련이 성격 탐지 모델 개발의 방법론적 토대를 제공한다.
+- 🧪 응용 사례: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — 사회심리학과 LLM 추론의 연결이 성격 탐지에서 심리학적 이론 적용의 실제 사례를 보여준다.
+- 🔄 다른 접근: [[papers/246_Csed_A_chinese_semantic_error_diagnosis_corpus/review]] — 중국어 의미 오류 진단과 MBTI 성격 탐지라는 서로 다른 언어 이해 능력 평가 접근법을 제시한다.

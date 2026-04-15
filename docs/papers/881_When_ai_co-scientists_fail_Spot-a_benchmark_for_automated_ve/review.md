@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)이 과학 논문의 오류를 자동으로 검증할 수 있는가를 묻는 본 논문은 83개 출판 논문과 91개의 검증된 오류로 구성된 SPOT 벤치마크를 제시하며, 최신 LLM들도 21.1% 이하의 재현율(recall)에 머물러 신뢰성 있는 학술 검증 자동화는 아직 불가능함을 보여준다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/LLM_Review_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scientific_Error_Detection"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Son et al._2025_When ai co-scientists fail Spot-a benchmark for automated verification of scientific research.pdf"
 ---
@@ -117,14 +118,14 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Son et al._2025_When ai co-scientists fa
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/630_Predicting_empirical_ai_research_outcomes_with_language_mode/review]] — 과학 논문 오류 검증의 한계와 연구 아이디어 성공 예측의 가능성을 대비하여 AI의 과학 연구 지원 능력의 현실적 범위를 파악할 수 있다.
-- 🔄 다른 접근: [[papers/680_Reviewing_scientific_papers_for_critical_problems_with_reaso/review]] — 과학 논문 오류 자동 검증에서 서로 다른 데이터셋과 평가 방법을 사용하여 LLM의 학술 검증 능력을 다각도로 평가한다.
-- 🔗 후속 연구: [[papers/753_Shared_imagination_Llms_hallucinate_alike/review]] — LLM의 공유된 환각 패턴이 과학 논문 오류 검증에서 나타나는 낮은 성능의 근본적 원인을 설명하는 이론적 틀을 제공한다.
-- ⚖️ 반론/비판: [[papers/861_Use_of_large_language_models_as_artificial_intelligence_tool/review]] — AI 공동 과학자의 실패 벤치마크가 의학 연구에서 LLM 한계를 지적한다.
-- 🧪 응용 사례: [[papers/252_Data_integrity_in_materials_science_in_the_era_of_AI_balanci/review]] — 재료 과학에서 AI 데이터 무결성 문제가 AI 과학자들의 실패 사례 분석과 자동화된 검증 시스템 개발에 핵심적인 동기를 제공한다
-- 🏛 기반 연구: [[papers/321_Evaluating_Sakanas_AI_Scientist_Bold_Claims_Mixed_Results_an/review]] — AI 공동과학자 실패 시 자동 검증 벤치마크가 평가의 기반 제공
-- 🔄 다른 접근: [[papers/145_Autoreproduce_Automatic_ai_experiment_reproduction_with_pape/review]] — AUTOREPRODUCE와 SPOT는 모두 과학 실험 재현성을 다루지만, 논문 계보 기반 자동 재현과 AI 과학자 검증이라는 서로 다른 접근 방식을 제시합니다.
-- ⚖️ 반론/비판: [[papers/630_Predicting_empirical_ai_research_outcomes_with_language_mode/review]] — 연구 아이디어 성공 예측의 긍정적 결과와 과학 논문 오류 검증의 한계를 대비하여 AI의 과학 연구 지원 능력의 양면성을 보여준다.
-- ⚖️ 반론/비판: [[papers/676_Reviewagents_Bridging_the_gap_between_human_and_ai-generated/review]] — AI 생성 심사평의 품질 향상 연구와 과학 논문 오류 검증의 한계 연구를 대비하여 AI 심사 시스템의 현실적 적용 가능성을 평가할 수 있다.
-- 🔄 다른 접근: [[papers/680_Reviewing_scientific_papers_for_critical_problems_with_reaso/review]] — 철회된 논문 데이터와 검증된 오류 데이터를 활용한 두 연구 모두 과학적 오류 검출 능력을 평가하지만 서로 다른 데이터셋과 접근법을 사용한다.
-- 🏛 기반 연구: [[papers/753_Shared_imagination_Llms_hallucinate_alike/review]] — LLM의 일관된 환각 패턴이 과학 논문 오류 검증에서 예측 가능한 실패 모드를 이해하는 핵심 개념적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/680_Reviewing_scientific_papers_for_critical_problems_with_reaso/review]] — 과학 논문 오류 검증을 위한 다른 벤치마크와 평가 방법론을 제시한다
+- ⚖️ 반론/비판: [[papers/630_Predicting_empirical_ai_research_outcomes_with_language_mode/review]] — AI의 과학적 예측 능력에 대한 반대 관점으로 검증 한계를 보여준다
+- 🏛 기반 연구: [[papers/724_SciHorizon_Benchmarking_AI-for-Science_Readiness_from_Scient/review]] — AI4Science 능력 평가를 위한 종합적인 벤치마킹 체계의 기초를 제공한다
+- 🏛 기반 연구: [[papers/724_SciHorizon_Benchmarking_AI-for-Science_Readiness_from_Scient/review]] — 과학적 검증 자동화를 위한 AI 준비도 평가의 기본 프레임워크를 제공한다
+- 🔗 후속 연구: [[papers/252_Data_integrity_in_materials_science_in_the_era_of_AI_balanci/review]] — AI 시대 연구 무결성 문제를 자동화된 검증 시스템으로 확장하여 해결하려는 발전된 접근
+- ⚖️ 반론/비판: [[papers/378_Generative_AI_Uses_and_Risks_for_Knowledge_Workers_in_a_Scie/review]] — AI 공동 과학자의 실패 사례를 분석한 연구가 Argonne 연구의 생성형 AI 활용 긍정적 측면에 대한 반대 관점을 제시한다
+- 🔄 다른 접근: [[papers/081_Ai_scientists_fail_without_strong_implementation_capability/review]] — AI 공동과학자 실패 시 자동 검증을 위한 SPOT 벤치마크가 AI 과학자의 구현 능력 문제에 대한 해결 방향을 제시한다
+- ⚖️ 반론/비판: [[papers/1094_Towards_a_Medical_AI_Scientist/review]] — 의료 AI 과학자의 실패 사례 벤치마크를 통해 자동화된 임상 연구의 한계와 검증 필요성을 강조한다
+- 🔄 다른 접근: [[papers/630_Predicting_empirical_ai_research_outcomes_with_language_mode/review]] — AI의 과학적 검증 능력을 다른 벤치마크와 평가 방법으로 측정한다
+- 🔄 다른 접근: [[papers/680_Reviewing_scientific_papers_for_critical_problems_with_reaso/review]] — 과학 논문의 오류 검출을 위한 다른 LLM 기반 접근법과 벤치마크를 제시한다
+- 🧪 응용 사례: [[papers/692_Safescientist_Toward_risk-aware_scientific_discoveries_by_ll/review]] — 자동화된 검증 벤치마크가 위험 인식 과학 발견의 실제 평가 도구를 제공한다

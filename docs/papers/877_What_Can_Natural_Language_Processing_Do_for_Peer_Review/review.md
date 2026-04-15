@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 과학 출판의 핵심 질관리 메커니즘인 동료 심사 과정에서 자연언어처리(NLP)가 구체적으로 어떤 역할을 할 수 있는지를 체계적으로 매핑하고, 실현 가능한 NLP 지원 방안을 제시하는 포괄적인 기초 연구이다. 저자들은 원고 제출부터 최종 출판까지 전체 심사 과정의 각 단계에서의 도전과제와 NLP 적용 기회를 상세히 분석하며, 완전 자동화보다는 리뷰어와 편집자의 효율성을 높이는 지원 도구 개발에 초점을 맞춘다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Peer_Review"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Peer_Review_Assessment"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kuznetsov et al._2024_What Can Natural Language Processing Do for Peer Review.pdf"
 ---
@@ -133,9 +133,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kuznetsov et al._2024_What Can Natural L
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/154_Best_Practices_for_Using_AI_When_Writing_Scientific_Manuscri/review]] — 과학 논문 작성에서의 AI 활용 가이드라인이 동료 심사 과정 전반에서 NLP 기술의 체계적 적용으로 확장된 연구이다
-- 🧪 응용 사례: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 동료 심사에서 NLP 활용 방안이 멀티턴 대화와 장문맥을 고려한 AI 기반 동료 심사 시스템의 구체적 구현에 적용된다
-- 🏛 기반 연구: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — 동료 심사 과정의 NLP 지원 체계가 AI 시대 동료 심사 위기 해결을 위한 기술적 솔루션의 중요한 기반을 제공한다
-- 🧪 응용 사례: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — 동료 심사에서 자연언어처리의 역할 매핑이 AI 생성 리뷰의 효과적 평가 프레임워크 개발에 핵심적인 가이드라인을 제공한다
-- 🔗 후속 연구: [[papers/154_Best_Practices_for_Using_AI_When_Writing_Scientific_Manuscri/review]] — 과학 논문 작성에서의 AI 활용 가이드라인이 동료 심사 과정 전반의 NLP 적용으로 확장된 연구 영역이다
-- 🏛 기반 연구: [[papers/126_Automated_review_generation_method_based_on_large_language_m/review]] — 피어 리뷰에서 자연어 처리의 역할에 대한 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 동료 심사에서 NLP 활용을 다중 턴 대화와 장문맥 처리라는 구체적 방법으로 적용
+- 🔗 후속 연구: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — NLP의 동료 심사 역할을 실제 LLM 기반 리뷰어 시스템 구현으로 발전시킨 연구
+- 🔄 다른 접근: [[papers/629_Pre_A_peer_review_based_large_language_model_evaluator/review]] — NLP 동료 심사 지원 대신 LLM 기반 평가자를 개발하는 다른 접근법
+- 🔗 후속 연구: [[papers/892_A_year_in_review_open_access_at_OUP/review]] — 피어리뷰를 위한 자연어처리 기술이 오픈액세스 출판 과정의 효율성을 더욱 향상시킬 수 있다.
+- 🏛 기반 연구: [[papers/510_Llms_for_literature_review_Are_we_there_yet_arXiv_preprint_a/review]] — 동료 심사를 위한 NLP 기법이 문헌 리뷰 자동화의 기반이 된다
+- 🔗 후속 연구: [[papers/1089_Prompting_llms_to_compose_meta-review_drafts_from_peer-revie/review]] — 피어 리뷰에서 NLP의 역할을 메타리뷰 작성이라는 구체적 작업으로 특화시킨 응용 사례이다
+- 🏛 기반 연구: [[papers/126_Automated_review_generation_method_based_on_large_language_m/review]] — 학술 리뷰 자동화의 기반이 되는 자연어처리 기술과 피어 리뷰 시스템에 대한 포괄적 이해를 제공한다
+- 🧪 응용 사례: [[papers/654_Re_2_A_consistency-ensured_dataset_for_full-stage_peer_revie/review]] — 피어리뷰를 위한 자연어처리 일반론과 구체적인 피어리뷰 데이터셋 구축은 이론과 실제 데이터의 관계를 보여준다.
+- 🏛 기반 연구: [[papers/070_Agentreview_Exploring_peer_review_dynamics_with_llm_agents/review]] — 동료 검토를 위한 자연어 처리 기술에 대한 포괄적 조사로, LLM 에이전트 기반 검토 시뮬레이션의 기술적 기반
+- 🔄 다른 접근: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — 피어 리뷰에서 자연어 처리의 역할에 대한 포괄적 관점과 LLM 특화 접근법을 비교할 수 있다.

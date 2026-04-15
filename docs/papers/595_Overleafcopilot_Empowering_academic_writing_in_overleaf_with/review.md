@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어 모델(LLM)을 학술 논문 작성 플랫폼인 Overleaf에 통합하는 Chrome 브라우저 확장 프로그램 OverleafCopilot을 제시한다. 연구자들이 LLM의 강력한 기능을 활용하면서도 원활한 사용자 경험과 개인정보 보호를 보장하는 시스템을 구현했다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/Expert_Review_Automation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wen et al._2024_Overleafcopilot Empowering academic writing in overleaf with large language models.pdf"
 ---
@@ -154,6 +155,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wen et al._2024_Overleafcopilot Empoweri
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/595_Overleafcopilot_Empowering_academic_writing_in_overleaf_with/review]] — 학술 논문 작성 플랫폼 통합 AI 시스템의 다른 구현 사례로 사용자 경험과 개인정보 보호 접근법을 비교할 수 있다.
-- 🔗 후속 연구: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 인간-AI 협업 글쓰기 데이터셋 연구로 Overleaf 환경에서의 협업 패턴 분석에 활용할 수 있다.
-- 🏛 기반 연구: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 제어 가능한 학술 글쓰기를 위한 LLM 활용 연구로 OverleafCopilot의 기능 설계 기반을 제공한다.
+- 🔄 다른 접근: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 학술 논문 작성을 위한 LLM 통합에서 다른 기술적 접근법과 사용자 경험을 제시한다
+- 🔗 후속 연구: [[papers/775_Step-back_profiling_Distilling_user_history_for_personalized/review]] — 개인화된 학술 글쓰기 지원을 위한 더 정교한 사용자 프로필링 방법을 활용한다
+- 🏛 기반 연구: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 인간-AI 협업 글쓰기를 위한 데이터셋 구축과 평가 방법론의 기초를 제공한다
+- 🏛 기반 연구: [[papers/775_Step-back_profiling_Distilling_user_history_for_personalized/review]] — 개인화된 학술 글쓰기 지원을 위한 사용자 이력 활용의 기초 방법론을 제공한다
+- 🔄 다른 접근: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 학술 논문 작성을 위한 LLM 활용에서 다른 기술적 구현과 사용자 인터페이스를 제시한다

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.5
 essence: "과학적 실천(scientific practice)의 자동화(automation)가 발전함에 따라, 본 논문은 과학 자동화의 기회, 도전과제, 그리고 사회적 함의를 종합적으로 평가하고, 과학 자동화가 과학자의 업무 방식과 과학 패러다임을 어떻게 변화시킬지 탐색한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Structured_Research_Frameworks"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/AI-Driven_Drug_and_Materials_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Musslick et al._2025_Automating the practice of science Opportunities, challenges, and implications.pdf"
 ---
@@ -103,12 +105,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Musslick et al._2025_Automating the prac
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — 과학 자동화 프레임워크가 AI Scientist 구현의 실용적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/106_Artificial_Intelligence_in_Research_and_Development/review]] — 과학 자동화가 R&D 생산성에 미치는 경제적 영향을 구체적으로 분석한다.
-- 🏛 기반 연구: [[papers/363_From_Reasoning_to_Learning_A_Survey_on_Hypothesis_Discovery/review]] — 가설 발견과 규칙 학습이 과학 자동화의 핵심 구성요소가 된다.
-- 🏛 기반 연구: [[papers/099_An_autonomous_laboratory_for_the_accelerated_synthesis_of_in/review]] — 과학 자동화의 일반적 프레임워크가 자율 실험실 구현의 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/363_From_Reasoning_to_Learning_A_Survey_on_Hypothesis_Discovery/review]] — 가설 발견과 규칙 학습이 과학 자동화의 핵심 인지적 구성요소가 된다.
-- 🧪 응용 사례: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — 과학 자동화의 구체적 구현체로서 AI Scientist를 통해 노벨-튜링 챌린지를 실현한다.
-- 🏛 기반 연구: [[papers/878_What_ChatGPT_and_generative_AI_mean_for_science/review]] — 생성형 AI의 과학적 영향에 대한 종합적 분석이 과학 자동화 논의의 기반이 된다.
-- 🔗 후속 연구: [[papers/106_Artificial_Intelligence_in_Research_and_Development/review]] — 과학 자동화가 R&D 생산성에 미치는 경제적 영향을 이론적으로 분석한다.
-- 🏛 기반 연구: [[papers/705_SciAgents_Automating_Scientific_Discovery_Through_Bioinspire/review]] — 과학 실무 자동화의 기회와 도전에 대한 종합적 검토가 SciAgents 프레임워크 개발의 이론적 배경을 제공한다.
+- 🔗 후속 연구: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — 과학 자동화의 실무적 고려사항과 사회적 함의가 노벨 튜링 챌린지의 구체적 실현 방안과 윤리적 기준을 제공한다
+- 🏛 기반 연구: [[papers/365_Future_of_Work_with_AI_Agents_Auditing_Automation_and_Augmen/review]] — AI 에이전트의 업무 자동화와 증강 감사 프레임워크가 과학 실천 자동화의 사회경제적 영향 분석 기반을 마련한다
+- 🔄 다른 접근: [[papers/824_Towards_AI_for_science_developing_a_conceptual_basis_for_tra/review]] — AI for Science의 개념적 기반 개발과 과학 자동화 실무는 서로 다른 관점에서 AI-과학 융합의 방향성을 제시한다
+- 🏛 기반 연구: [[papers/614_Perspective_on_utilizing_foundation_models_for_laboratory_au/review]] — 과학 실무 자동화의 기회와 도전에 관한 포괄적 논의는 기초 모델 기반 실험실 자동화 연구의 맥락을 제공한다.
+- 🏛 기반 연구: [[papers/310_Embodied_Science_Closing_the_Discovery_Loop_with_Agentic_Emb/review]] — 과학 실험 자동화에 관한 기초 이론과 도전 과제들이 Embodied Science 패러다임의 이론적 토대를 제공함
+- 🧪 응용 사례: [[papers/233_Cognitio_emergens_Agency_dimensions_and_dynamics_in_human-ai/review]] — 과학 실천 자동화의 기회와 도전이 인간-AI 지식 협업의 실제적 맥락을 보여준다.
+- 🔗 후속 연구: [[papers/365_Future_of_Work_with_AI_Agents_Auditing_Automation_and_Augmen/review]] — 과학 실무 자동화의 기회와 도전을 844개 직무 과제에 걸친 체계적인 인간 중심 평가로 확장한 포괄적 접근
+- 🏛 기반 연구: [[papers/248_Curie_Toward_rigorous_and_automated_scientific_experimentati/review]] — 과학 실천의 자동화에 대한 기회와 도전을 논의한 연구로, 자동화된 과학 실험의 철학적 기반을 제공

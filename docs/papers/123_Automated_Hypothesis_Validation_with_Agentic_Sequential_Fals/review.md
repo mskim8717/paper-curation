@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.4
 essence: "대규모 언어모델(LLM)이 생성하는 자유형식 가설을 자동으로 검증하기 위해 칼 포퍼의 반박 원칙(falsification principle)을 활용한 **POPPER** 프레임워크를 제안한다. 엄격한 제1종 오류 제어(Type-I error control)와 순차적 e-값 집계를 통해 통계적으로 타당한 가설 검증을 대규모로 수행 가능하게 한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Hypothesis_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2025_Automated Hypothesis Validation with Agentic Sequential Falsifications.pdf"
 ---
@@ -148,6 +149,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2025_Automated Hypothesis V
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — LLM 기반 가설 생성 연구의 기본적 접근법을 통계적으로 엄밀한 검증 방법론으로 보완한다.
-- 🔗 후속 연구: [[papers/666_Research_hypothesis_generation_over_scientific_knowledge_gra/review]] — 지식 그래프 기반 가설 생성을 자동화된 통계적 검증으로 확장하여 완전한 가설 발견 파이프라인을 구축한다.
-- 🧪 응용 사례: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — 자동화된 가설 검증이 완전한 과학 연구 자동화의 핵심 구성요소로 작용함을 보여준다.
+- 🔄 다른 접근: [[papers/085_Ai-newton_A_concept-driven_physical_law_discovery_system_wit/review]] — 개념 기반 물리 법칙 발견 시스템으로, 통계적 가설 검증과 다른 과학적 발견 접근 방식을 제시
+- 🧪 응용 사례: [[papers/819_Toward_reliable_biomedical_hypothesis_generation_Evaluating/review]] — 신뢰할 수 있는 생물의학 가설 생성 평가에 대한 연구로, POPPER 프레임워크의 생물의학 분야 적용 가능성을 보여줌
+- 🔗 후속 연구: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — 신뢰할 수 있는 과학적 가설 생성 평가로 확장하여, 가설 검증을 넘어 가설 생성까지 포괄하는 연구
+- 🧪 응용 사례: [[papers/132_Automating_psychological_hypothesis_generation_with_AI_when/review]] — AI를 통한 심리학 가설 생성 자동화 연구로, 순차적 반박을 통한 가설 검증의 심리학 분야 적용
+- 🧪 응용 사례: [[papers/426_Improving_Scientific_Hypothesis_Generation_with_Knowledge_Gr/review]] — 지식 그라운딩된 가설 생성이 자동화된 가설 검증 시스템에 실제 적용될 수 있는 연결점을 제공한다.
+- 🔗 후속 연구: [[papers/558_Moose-chem3_Toward_experiment-guided_hypothesis_ranking_via/review]] — 순차적 반증을 통한 가설 검증으로 실험 피드백 기반 접근법을 확장한다.
+- 🏛 기반 연구: [[papers/089_Aigs_Generating_science_from_ai-powered_automated_falsificat/review]] — AIGS의 가설 검증과 반증 프로세스가 자동화된 가설 검증을 위한 순차적 반증 방법론의 이론적 기반을 제공한다
+- 🔄 다른 접근: [[papers/615_PerTurboAgent_A_Self-Planning_Agent_for_Boosting_Sequential/review]] — 둘 다 순차적 실험 설계를 다루지만 PerTurboAgent는 유전자 섭동에, 123은 가설 검증 자동화에 특화됨
+- 🔄 다른 접근: [[papers/085_Ai-newton_A_concept-driven_physical_law_discovery_system_wit/review]] — 통계적 가설 검증을 통한 과학 발견과 대조하여, 개념 기반 물리 법칙 발견의 다른 접근 방식을 제시

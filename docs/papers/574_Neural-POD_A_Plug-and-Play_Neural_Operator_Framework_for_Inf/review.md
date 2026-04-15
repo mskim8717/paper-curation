@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 신경망을 활용하여 고전 특이값 분해(SVD) 기반 POD(Proper Orthogonal Decomposition)의 한계를 극복하는 Neural-POD를 제안한다. 무한차원 함수공간에서 비선형 직교 기저함수를 학습함으로써 해상도 독립성, 매개변수 일반화, 그리고 다양한 규범(norm) 최적화를 동시에 달성한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Neural_Differential_Equations"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mou et al._2026_Neural-POD A Plug-and-Play Neural Operator Framework for Infinite-Dimensional Functional Nonlinear.pdf"
 ---
@@ -117,14 +118,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mou et al._2026_Neural-POD A Plug-and-Pl
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/516_Machine-Learned_Interatomic_Potentials_for_Predicting_Physic/review]] — Neural-POD의 무한차원 함수 학습 능력이 칼슘 전해 공정의 물리화학적 성질 예측 문제에 직접 적용됨
-- 🏛 기반 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — Neural ODE의 연속 시간 동역학 모델링이 Neural-POD의 비선형 직교 기저함수 학습 방법론의 기반이 됨
-- 🔗 후속 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리정보 신경망의 과학적 기계학습 접근법이 Neural-POD의 해상도 독립성과 매개변수 일반화를 강화함
-- 🔗 후속 연구: [[papers/759_SLE-FNO_Single-Layer_Extensions_for_Task-Agnostic_Continual/review]] — 플러그앤플레이 신경 연산자 프레임워크가 FNO의 단일 레이어 확장을 더 범용적인 인컨텍스트 추론으로 확장한다.
-- 🔄 다른 접근: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 과학 기계학습에서 물리 정보 신경망과 플러그 앤 플레이 신경 연산자 접근법을 비교할 수 있습니다.
-- 🔄 다른 접근: [[papers/767_SPINONet_Scalable_Spiking_Physics-informed_Neural_Operator_f/review]] — 계산 과학에서 에너지 효율적 스파이킹 기반과 플러그 앤 플레이 신경 연산자 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — Neural ODE 개념을 신경 연산자 프레임워크로 확장한다.
-- 🔄 다른 접근: [[papers/772_State-Free_Inference_of_State-Space_Models_The_Transfer_Func/review]] — 신경 연산자와 상태공간모델의 물리 기반 추론에서 다른 접근법을 비교할 수 있다
-- 🏛 기반 연구: [[papers/516_Machine-Learned_Interatomic_Potentials_for_Predicting_Physic/review]] — Neural-POD의 무한차원 함수공간 학습 방법이 MTP-분자동역학의 물리화학적 성질 예측 정확도 향상에 활용됨
-- 🔗 후속 연구: [[papers/364_From_Theory_to_Application_A_Practical_Introduction_to_Neura/review]] — 인라인 추론을 위한 플러그 앤 플레이 신경 연산자에서 실용적 입문서로의 확장
-- 🏛 기반 연구: [[papers/622_Physics-Informed_Neural_Operator_for_Electromagnetic_Inverse/review]] — 즉석 학습을 위한 신경 연산자 플러그인 프레임워크가 전자기 역산란 문제 해결의 기술적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/772_State-Free_Inference_of_State-Space_Models_The_Transfer_Func/review]] — Neural-POD의 무한차원 직교 기저와 상태-자유 추론의 전달함수 접근법은 서로 다른 차원축소 효율화 방법이다.
+- 🔄 다른 접근: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — Neural-POD의 비선형 직교 기저 학습과 cd-PINN의 연속 의존성 활용은 서로 다른 무한차원 연산자 학습법이다.
+- 🏛 기반 연구: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 과학 머신러닝용 기초 모델의 도전과제가 Neural-POD의 무한차원 프레임워크 설계에 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/232_CodePDE_An_Inference_Framework_for_LLM-driven_PDE_Solver_Gen/review]] — 신경 연산자 프레임워크를 위한 플러그 앤 플레이 접근으로, LLM 기반 PDE 솔버와 다른 기술적 접근
+- 🔄 다른 접근: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 둘 다 신경 연산자를 다루지만, 첫 번째는 포괄적 비교 분석에, Neural-POD는 플러그 앤 플레이 프레임워크에 집중한다
+- 🔄 다른 접근: [[papers/772_State-Free_Inference_of_State-Space_Models_The_Transfer_Func/review]] — 전달함수 기반 상태-자유 추론과 Neural-POD의 무한차원 함수공간 접근법은 서로 다른 효율성 향상 방법이다.
+- 🔄 다른 접근: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — cd-PINN의 연속 의존성 기반 연산자 학습과 Neural-POD의 비선형 직교 기저 학습은 서로 다른 무한차원 학습 접근법이다.
+- 🔗 후속 연구: [[papers/142_AutoNumerics_An_Autonomous_PDE-Agnostic_Multi-Agent_Pipeline/review]] — 일반적인 PDE 솔버에서 플러그앤플레이 신경 연산자라는 더 유연한 수치해석 프레임워크로 발전한다

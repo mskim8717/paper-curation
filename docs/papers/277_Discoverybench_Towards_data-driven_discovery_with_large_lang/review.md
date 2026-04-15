@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)이 데이터셋만으로 가설을 자동으로 탐색하고 검증할 수 있는지 평가하기 위한 최초의 포괄적 벤치마크 **DiscoveryBench**를 제시한다. 264개의 실제 과제와 903개의 합성 과제로 구성되어 있으며, 현재 최고 성능 LLM도 25%의 정확도만 달성하여 자동화된 데이터 기반 발견의 난제를 드러낸다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Realistic_Discovery_Benchmarks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scientific_Discovery_Task_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Majumder et al._2024_Discoverybench Towards data-driven discovery with large language models.pdf"
 ---
@@ -136,6 +137,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Majumder et al._2024_Discoverybench Towa
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — SciAgentGym과 DiscoveryBench 모두 과학적 도구 사용을 평가하지만 다단계 vs 데이터 중심 발견에 초점을 둔다.
-- ⚖️ 반론/비판: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — 인간 평가자들이 LLM이 생성한 새로운 연구 아이디어를 선호한다는 발견은 DiscoveryBench의 25% 성공률과 대조적이다.
-- 🔗 후속 연구: [[papers/146_Autosdt_Scaling_data-driven_discovery_tasks_toward_open_co-s/review]] — AutoSDT의 데이터 주도형 발견 방법론이 DiscoveryBench의 과학적 발견 평가에 적용될 수 있음
+- 🔄 다른 접근: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — 데이터 기반 발견과 과학적 발견 벤치마킹이라는 서로 다른 관점에서 LLM의 연구 능력을 평가한다
+- 🏛 기반 연구: [[papers/710_Sciclaimhunt_A_large_dataset_for_evidence-based_scientific_c/review]] — 증거 기반 과학적 주장 데이터셋을 데이터 기반 발견 벤치마크의 검증 자료로 활용한다
+- 🧪 응용 사례: [[papers/757_Simulating_tabular_datasets_through_llms_to_rapidly_explore/review]] — 데이터 기반 발견 기법을 LLM을 통한 테이블 형태 데이터셋 시뮬레이션이라는 구체적인 응용에 적용한다
+- 🏛 기반 연구: [[papers/149_Bayes-Entropy_Collaborative_Driven_Agents_for_Research_Hypot/review]] — 데이터 기반 발견 벤치마크를 베이지안-엔트로피 기반 가설 생성 시스템의 성능 평가 기준으로 활용한다

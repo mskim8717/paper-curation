@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 언어과학 분야에서 대규모 언어모델(LLM)의 무분별한 적용으로 인한 방법론적 혼란을 해결하기 위해, 연구 목표와 LLM 기법을 체계적으로 연계하는 두 가지 포괄적 프레임워크를 제안한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Systematic_Framework_of_Application_Methods_for_Large_Language_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Research_Ideation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sun and Wang_2025_Systematic Framework of Application Methods for Large Language Models in Language Sciences.pdf"
 ---
@@ -98,8 +100,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sun and Wang_2025_Systematic Framework o
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — LLM 방법론 체계화에 기계론적 해석가능성 원칙을 적용하여 더 신뢰성 있는 프레임워크를 구축할 수 있다
-- 🏛 기반 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화 과학 연구 시스템 구축에 체계적인 LLM 응용 방법론의 기반을 제공한다
-- 🔗 후속 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — LLM 기반 자율 에이전트 연구를 언어과학 분야의 체계적 방법론으로 확장한다
-- 🏛 기반 연구: [[papers/475_Large_language_models_meet_nlp_A_survey/review]] — NLP 분야에서 대규모 언어모델의 전반적 만남과 응용에 대한 기반을 제공한다
-- 🏛 기반 연구: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — LLM 응용 방법론의 체계적 프레임워크 구축에 신경망 해석가능성의 이론적 기반을 제공한다
+- 🧪 응용 사례: [[papers/508_LLMs_as_Research_Tools_A_Large_Scale_Survey_of_Researchers_U/review]] — 연구 도구로서 LLM 사용 설문이 언어과학 분야 적용 프레임워크의 실증적 기반을 제공한다
+- 🔗 후속 연구: [[papers/319_Ethnography_and_machine_learning_Synergies_and_new_direction/review]] — 기계학습과 민족지학의 시너지 연구가 LLM 적용 방법론을 사회과학으로 확장한다
+- 🏛 기반 연구: [[papers/026_A_survey_of_large_language_models/review]] — LLM 종합 설문이 언어과학 분야 체계적 적용 프레임워크의 기술적 기초를 제공한다

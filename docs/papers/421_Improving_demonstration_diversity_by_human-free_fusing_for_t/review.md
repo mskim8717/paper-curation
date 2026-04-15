@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)의 문맥 내 학습(in-context learning)을 활용한 Text-to-SQL 작업에서 시연(demonstration) 풀의 다양성을 측정하고 향상시키는 방법을 제안한다. 기존의 인간 라벨링 기반 시연 선택 방식의 낮은 다양성과 높은 비용 문제를 해결하기 위해 FUSED(FUSing itEratively for Demonstrations) 방법을 도입한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Diversity"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/ML_Research_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Improving demonstration diversity by human-free fusing for text-to-sql.pdf"
 ---
@@ -129,7 +129,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Improving demonstration
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/405_Hit-scir_at_mmnlu22_Consistency_regularization_for_multiling/review]] — 다양성 향상에서 무인 융합 방법과 일관성 정규화 방법이 서로 다른 접근 방식을 제시합니다.
-- 🏛 기반 연구: [[papers/335_Few-shot_Learning_with_Retrieval_Augmented_Language_Models/review]] — 검색 증강 언어모델의 소수샷 학습이 시연 다양성 개선의 기초적인 방법론을 제공합니다.
-- 🔄 다른 접근: [[papers/636_Prompt_to_be_consistent_is_better_than_self-consistent_few-s/review]] — 소수샷 학습에서 시연 다양성과 일관성 프롬프팅의 서로 다른 성능 향상 전략을 비교할 수 있습니다.
-- 🔄 다른 접근: [[papers/405_Hit-scir_at_mmnlu22_Consistency_regularization_for_multiling/review]] — Text-to-SQL에서의 무인 융합 다양성 향상과 SLU에서의 일관성 정규화가 서로 다른 다양성 증진 방법을 제시합니다.
+- 🔄 다른 접근: [[papers/636_Prompt_to_be_consistent_is_better_than_self-consistent_few-s/review]] — Text-to-SQL의 시연 다양성 향상과 일관성 기반 소수샷 학습은 모두 인컨텍스트 학습의 품질 개선을 다른 관점에서 접근한다.
+- 🏛 기반 연구: [[papers/423_Improving_grammatical_error_correction_via_contextual_data_a/review]] — 문법 오류 수정의 문맥 기반 데이터 증강 방법론이 Text-to-SQL 시연 다양성 향상의 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/251_Data_for_mathematical_copilots_Better_ways_of_presenting_pro/review]] — 수학 코파일럿을 위한 데이터 표현 개선 연구에서 다양한 시연 융합 기법이 실제 적용된 사례를 제공한다.
+- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 기계학습 에이전트 벤치마크에서 Text-to-SQL 시연 다양성 개선 방법론이 더 넓은 ML 작업으로 확장된 응용을 보여준다.
+- 🔗 후속 연구: [[papers/423_Improving_grammatical_error_correction_via_contextual_data_a/review]] — 문맥 기반 데이터 증강의 핵심 개념이 Text-to-SQL 시연 다양성 향상으로 응용되어 더 넓은 자연어 처리 영역으로 확장되었다.

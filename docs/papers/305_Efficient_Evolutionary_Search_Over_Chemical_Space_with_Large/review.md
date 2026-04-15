@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.4
 essence: "대규모 언어모델(LLM)을 진화 알고리즘(EA)의 유전 연산자로 통합하여 화학 공간 탐색의 효율성을 획기적으로 향상시키는 MOLLEO 프레임워크를 제안한다. 이는 검은 상자 분자 최적화 문제에서 필요한 목적 함수 평가 횟수를 대폭 감소시킨다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Domain-specific_Language_Agents"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Efficient Evolutionary Search Over Chemical Space with Large Language Models.pdf"
 ---
@@ -99,12 +99,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Efficient Evolutionary 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/046_Accurate_structure_prediction_of_biomolecular_interactions_w/review]] — LLM을 활용한 분자 진화 탐색과 확산 모델 기반 생체분자 구조 예측이 각각 서열과 구조 관점에서 분자 설계 문제에 접근한다
-- 🔗 후속 연구: [[papers/557_MOOSE-Chem_Large_Language_Models_for_Rediscovering_Unseen_Ch/review]] — LLM 기반 화학 공간 진화 탐색이 미발견 화학 지식 재발견을 위한 더 포괄적인 대형언어모델 시스템으로 확장되었다
-- 🔄 다른 접근: [[papers/440_Inverse_designing_metamaterials_with_programmable_nonlinear/review]] — 화학 공간에서 LLM 기반 진화 탐색과 메타물질에서 GNN 기반 역설계가 각각 다른 도메인에서 유사한 최적화 문제를 해결한다
-- 🏛 기반 연구: [[papers/214_ChemToolAgent_The_Impact_of_Tools_on_Language_Agents_for_Che/review]] — LLM 기반 분자 최적화 연구가 화학 도구를 활용하는 언어 에이전트의 분자 설계 능력에 중요한 방법론적 기반을 제공한다
-- 🧪 응용 사례: [[papers/749_Sequence_modeling_and_design_from_molecular_to_genome_scale/review]] — 진화적 탐색 방법론이 게놈 설계와 생성에 실제 적용됨
-- 🔄 다른 접근: [[papers/046_Accurate_structure_prediction_of_biomolecular_interactions_w/review]] — 확산 기반 생체분자 구조 예측과 LLM 기반 화학 공간 탐색이 각각 구조와 서열 관점에서 분자 설계 문제에 접근한다
-- 🔄 다른 접근: [[papers/440_Inverse_designing_metamaterials_with_programmable_nonlinear/review]] — 메타물질 역설계를 위한 GNN-RL 접근법과 화학 공간 탐색을 위한 LLM 기반 진화 알고리즘이 각각 다른 도메인에서 유사한 역설계 문제를 해결한다
-- 🧪 응용 사례: [[papers/469_Large_Language_Models_as_Evolutionary_Optimizers/review]] — 대형 언어 모델을 활용한 화학 공간 진화 탐색이 LLM 기반 진화 최적화의 실제 적용 사례입니다.
-- 🔗 후속 연구: [[papers/472_Large_language_models_design_sequence-defined_macromolecules/review]] — 화학 공간에서의 효율적인 진화 탐색 기법을 거대분자 설계에 확장 적용할 수 있다.
+- 🔄 다른 접근: [[papers/469_Large_Language_Models_as_Evolutionary_Optimizers/review]] — 화학 공간 탐색을 진화 알고리즘 대신 LLM을 진화 최적화기로 사용하는 다른 접근법
+- 🧪 응용 사례: [[papers/557_MOOSE-Chem_Large_Language_Models_for_Rediscovering_Unseen_Ch/review]] — LLM 기반 화학 공간 탐색을 실제 화학 반응과 분자 생성에 적용한 구체적 사례
+- 🏛 기반 연구: [[papers/555_Molgan_An_implicit_generative_model_for_small_molecular_grap/review]] — 화학 공간 탐색의 기반이 되는 분자 그래프 생성과 최적화 방법론
+- 🏛 기반 연구: [[papers/466_Large_Language_Model-Based_Evolutionary_Optimizer_Reasoning/review]] — 화학 공간에서의 효율적인 진화적 탐색이 대규모 언어모델 기반 최적화의 기반 방법론을 제공한다.
+- 🧪 응용 사례: [[papers/469_Large_Language_Models_as_Evolutionary_Optimizers/review]] — 화학 공간 탐색을 위한 진화적 검색과 LLM 기반 진화 알고리즘은 모두 복잡한 탐색 공간에서의 최적화 문제를 다룬다.

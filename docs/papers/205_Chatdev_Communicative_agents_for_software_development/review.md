@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM) 기반의 전문화된 에이전트들이 자연언어 및 프로그래밍 언어를 통해 상호 통신하며 소프트웨어 개발의 설계, 코딩, 테스트 단계를 협력적으로 수행하는 ChatDev 프레임워크를 제시한다. 이는 기존의 개별 단계별 고립된 딥러닝 접근법을 통일된 언어기반 통신으로 연결하여 전체적인 소프트웨어 개발 프로세스의 일관성과 효율성을 향상시킨다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-agent_Task_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2023_Chatdev Communicative agents for software development.pdf"
 ---
@@ -123,7 +123,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2023_Chatdev Communicative a
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/586_Opendevin_An_open_platform_for_ai_software_developers_as_gen/review]] — ChatDev와 OpenHands는 모두 LLM 기반 소프트웨어 개발을 다루지만, 에이전트 간 통신 중심과 오픈 플랫폼 기반이라는 서로 다른 구현 철학을 가집니다.
-- 🔗 후속 연구: [[papers/327_Experiential_co-learning_of_software-developing_agents/review]] — ChatDev의 협력적 소프트웨어 개발은 경험적 공동학습 연구의 소프트웨어 에이전트 학습 기법을 확장하여 실제 개발 프로세스에서 에이전트 간 지식 공유와 역할 전문화를 실현합니다.
-- 🔄 다른 접근: [[papers/327_Experiential_co-learning_of_software-developing_agents/review]] — 다중 에이전트 소프트웨어 개발에서 커뮤니케이션 기반 협력 방식의 다른 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/416_Hyperagent_Generalist_software_engineering_agents_to_solve_c/review]] — ChatDev의 소프트웨어 개발을 위한 의사소통 에이전트가 HYPERAGENT의 전문화된 에이전트 시스템으로 발전한 확장 형태이다.
+- 🧪 응용 사례: [[papers/327_Experiential_co-learning_of_software-developing_agents/review]] — 소프트웨어 개발 에이전트 협력 기술을 체험적 공동 학습이라는 실제 개발 환경에 적용한 사례를 제시한다
+- 🔗 후속 연구: [[papers/416_Hyperagent_Generalist_software_engineering_agents_to_solve_c/review]] — 소프트웨어 개발 에이전트에서 일반적인 소프트웨어 엔지니어링 문제 해결이라는 더 포괄적인 에이전트로 발전한다
+- 🏛 기반 연구: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 실제 GitHub 이슈 해결 벤치마크를 소프트웨어 개발 에이전트의 성능 평가 기준으로 활용한다
+- 🏛 기반 연구: [[papers/143_AutoP2C_An_LLM-Based_Agent_Framework_for_Code_Repository_Gen/review]] — 소프트웨어 개발을 위한 다중 에이전트 협력이 논문-코드 변환의 기술적 기반을 제공한다
+- 🔄 다른 접근: [[papers/603_PaperRobot_Incremental_Draft_Generation_of_Scientific_Ideas/review]] — 멀티에이전트 소프트웨어 개발의 다른 접근 방식을 제시합니다.
+- 🔄 다른 접근: [[papers/327_Experiential_co-learning_of_software-developing_agents/review]] — 둘 다 LLM 기반 다중 에이전트 소프트웨어 개발을 다루지만, 경험적 협력학습은 과거 경험 활용에, ChatDev는 의사소통에 집중한다
+- 🏛 기반 연구: [[papers/586_Opendevin_An_open_platform_for_ai_software_developers_as_gen/review]] — ChatDev의 다중 에이전트 소프트웨어 개발 연구가 OpenDevin 플랫폼의 에이전트 협력 방식의 기초를 제공함
+- 🔗 후속 연구: [[papers/416_Hyperagent_Generalist_software_engineering_agents_to_solve_c/review]] — 소프트웨어 개발을 위한 다중 에이전트 커뮤니케이션 방법론을 제시하여 HyperAgent의 에이전트 간 협업 메커니즘의 이론적 확장을 제공함
+- 🏛 기반 연구: [[papers/590_Openhands_An_open_platform_for_ai_software_developers_as_gen/review]] — ChatDev의 커뮤니케이션 기반 다중 에이전트 개발이 OpenHands의 에이전트 상호작용 설계의 방법론적 토대

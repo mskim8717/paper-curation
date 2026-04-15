@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 자연언어처리(NLP)와 컴퓨터비전(CV) 분야에서 성공적으로 활용된 파운데이션 모델 패러다임(사전학습-미세조정)을 과학 머신러닝(Scientific Machine Learning, SciML) 분야에 적용 가능한지 체계적으로 검증한다. 편미분방정식(PDE) 학습 작업에서 신경 연산자(Neural Operator)를 다양한 물리 시스템으로 사전학습한 후 미세조정하면, 처음부터 학습한 모델보다 수 자릿수 적은 데이터로 목표 정확도에 도달할 수 있음을 보인다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Structured_Research_Frameworks"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Subramanian et al._2023_Towards Foundation Models for Scientific Machine Learning Characterizing Scaling and Transfer Behav.pdf"
 ---
@@ -112,14 +113,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Subramanian et al._2023_Towards Foundati
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/772_State-Free_Inference_of_State-Space_Models_The_Transfer_Func/review]] — 과학 머신러닝 파운데이션 모델 패러다임을 상태공간모델의 물리 시스템 학습에 적용할 수 있다
-- 🧪 응용 사례: [[papers/140_Autonomous_reinforcement_learning_agent_for_chemical_vapor_d/review]] — 편미분방정식 학습의 사전학습-미세조정 패러다임을 화학 공정 최적화에 적용할 수 있다
-- 🔗 후속 연구: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — 재료 발견을 위한 파운데이션 모델의 현재 상태를 과학 머신러닝 전반으로 확장한다
-- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리정보신경망이 과학 머신러닝 파운데이션 모델의 물리적 제약 조건 구현에 기반을 제공한다
-- 🏛 기반 연구: [[papers/105_Artificial_Intelligence_for_Direct_Prediction_of_Molecular_D/review]] — 과학 기계학습의 핵심 원리를 제시하여 과학 분야 파운데이션 모델 개발의 중요한 이론적 토대를 마련한다
-- 🏛 기반 연구: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 과학 기계학습을 위한 파운데이션 모델의 일반적 도전과제와 기회를 환경과학에 적용할 수 있다
-- 🔗 후속 연구: [[papers/479_Large_physics_models_towards_a_collaborative_approach_with_l/review]] — 과학적 머신러닝을 위한 파운데이션 모델 개념이 물리학 특화 대규모 모델로 확장된다.
-- 🏛 기반 연구: [[papers/694_Scalable_Cross-Facility_Federated_Learning_for_Scientific_Fo/review]] — 과학 머신러닝을 위한 파운데이션 모델의 분산 학습 구현 사례이다.
-- 🏛 기반 연구: [[papers/140_Autonomous_reinforcement_learning_agent_for_chemical_vapor_d/review]] — 과학 머신러닝의 파운데이션 모델 패러다임이 화학 공정 최적화에 적용될 수 있는 이론적 기반을 제공한다
-- 🏛 기반 연구: [[papers/772_State-Free_Inference_of_State-Space_Models_The_Transfer_Func/review]] — 과학 머신러닝의 파운데이션 모델 패러다임이 상태공간모델의 전달함수 접근법에 기반을 제공한다
-- 🧪 응용 사례: [[papers/354_From_GPU_Engineering_to_Scientific_Discovery_Parallelism_Tec/review]] — GPU 병렬화 기법을 과학 기계학습을 위한 기초 모델에 적용하여 대규모 모델의 효율적인 학습과 배포를 실현할 수 있다.
+- 🔗 후속 연구: [[papers/364_From_Theory_to_Application_A_Practical_Introduction_to_Neura/review]] — 신경 연산자에 대한 실용적 소개서로, 이 논문에서 제시한 과학 머신러닝 파운데이션 모델의 핵심 기술인 신경 연산자의 구체적 적용 방법을 제공한다
+- 🏛 기반 연구: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 신경 연산자의 다양한 아키텍처와 변형을 체계적으로 정리한 조사 연구로, 과학 머신러닝 파운데이션 모델의 기술적 기반을 제공한다
+- 🔄 다른 접근: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 정보 신경망 기반의 과학 머신러닝 접근법으로, 이 논문의 신경 연산자 중심 파운데이션 모델과 다른 물리 기반 접근을 보여준다
+- 🏛 기반 연구: [[papers/759_SLE-FNO_Single-Layer_Extensions_for_Task-Agnostic_Continual/review]] — 과학 기계학습을 위한 기초 모델 연구가 SLE-FNO의 지속학습 접근법에 이론적 토대를 제공한다
+- 🏛 기반 연구: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 과학 머신러닝을 위한 기초 모델 연구가 전통 수치해석 방법을 대체하는 신경 연산자 개발의 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — 과학 머신러닝용 기초 모델의 도전과제가 Neural-POD의 무한차원 프레임워크 설계에 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/142_AutoNumerics_An_Autonomous_PDE-Agnostic_Multi-Agent_Pipeline/review]] — 과학 기계학습을 위한 기초 모델 개념을 PDE 솔버 자동 설계의 이론적 기반으로 활용한다

@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 추론(reasoning) 기능을 갖춘 대형언어모델(LLM)과 다목적 강화학습(MORL)을 결합하여 인간 수준 이상의 깊이 있고 균형잡힌 학술 논문 심사평을 자동 생성하는 REMOR 시스템을 제안한다. 기존 AI 심사평의 얕은 분석과 과도한 칭찬 문제를 다목적 보상함수와 추론 능력으로 극복한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/LLM_Review_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Human-LLM_Review_Semantics"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Taechoyotin and Acuna_2025_Remor Automated peer review generation with llm reasoning and multi-objective reinforcement learnin.pdf"
 ---
@@ -108,9 +109,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Taechoyotin and Acuna_2025_Remor Automat
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/676_Reviewagents_Bridging_the_gap_between_human_and_ai-generated/review]] — 다목적 강화학습과 다중 에이전트 접근법은 모두 심사평 품질 향상을 목표로 하지만 서로 다른 최적화 전략을 사용한다.
-- 🏛 기반 연구: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — LLM의 논문 심사 가능성에 대한 탐색적 연구가 고급 추론 기능을 갖춘 자동 심사 시스템 개발의 기초적인 실증 근거를 제공한다.
-- 🔗 후속 연구: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — 인간과 유사한 논문 리뷰를 추론 능력과 다목적 최적화로 확장하여 더 균형잡힌 심사평 생성이 가능하다.
-- 🏛 기반 연구: [[papers/022_A_sentiment_consolidation_framework_for_meta-review_generati/review]] — LLM을 활용한 동료평가 생성의 기초적 접근이 감정 통합 프레임워크를 통한 메타리뷰 생성의 이론적 토대를 제공함
-- 🔄 다른 접근: [[papers/676_Reviewagents_Bridging_the_gap_between_human_and_ai-generated/review]] — 다중 에이전트 프레임워크와 강화학습 기반 접근법은 모두 AI 심사평의 품질 향상을 목표로 하지만 다른 구조적 해결책을 제시한다.
-- 🏛 기반 연구: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — LLM 논문 심사의 기초적 실증 연구가 추론 기능을 갖춘 고급 자동 심사 시스템 개발의 가능성과 한계를 보여주는 출발점이 된다.
+- 🔄 다른 접근: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 학술 논문 심사평 생성에서 다목적 강화학습과 전문화된 모델이라는 서로 다른 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/676_Reviewagents_Bridging_the_gap_between_human_and_ai-generated/review]] — 다중 에이전트 협업을 통해 REMOR의 추론 기반 심사평 생성을 더욱 정교하게 발전시킨다.
+- 🏛 기반 연구: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 정책 집계를 통한 다중 턴 강화학습의 기초적인 방법론을 학술 심사평 생성에 적용한다.
+- 🧪 응용 사례: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — LLM 기반 추론을 활용한 자동 피어리뷰 생성이 평가 프레임워크의 실제 적용 사례를 보여준다.
+- 🏛 기반 연구: [[papers/843_Treereview_A_dynamic_tree_of_questions_framework_for_deep_an/review]] — LLM 추론을 통한 자동 동료평가 생성 연구가 질문 기반 동적 리뷰 프레임워크의 기반 방법론을 제공한다.
+- 🔄 다른 접근: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 학술 논문 심사평 생성에서 전문화된 모델과 다목적 강화학습이라는 서로 다른 접근법을 비교할 수 있다.
+- 🔄 다른 접근: [[papers/676_Reviewagents_Bridging_the_gap_between_human_and_ai-generated/review]] — 학술 심사에서 다중 에이전트 협업과 강화학습 기반 추론이라는 서로 다른 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — 초기 탐색적 연구를 바탕으로 추론 능력과 다목적 최적화를 통해 더 정교한 심사 시스템을 구축한다.
+- 🔗 후속 연구: [[papers/809_Three_AI-powered_steps_to_faster_smarter_peer_review/review]] — LLM 추론 기반 동료평가 생성으로 3단계 워크플로우의 자동화 수준을 더욱 발전시킨다

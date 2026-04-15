@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "과학 논문 152,000편 이상으로부터 LLM을 이용하여 과학적 연구 워크플로우의 5가지 핵심 측면(Context, Key Idea, Method, Outcome, Projected Impact)을 자동 추출하여 구조화한 대규모 데이터셋을 제시하고, 다양한 벤치마크 과제를 통해 AI가 과학 연구를 보조할 수 있는 기반을 마련했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Diversity"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Knowledge_Graph_Encoding"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_Massw A new dataset and benchmark tasks for ai-assisted scientific workflows.pdf"
 ---
@@ -98,7 +100,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_Massw A new dataset an
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/703_Scholawrite_A_dataset_of_end-to-end_scholarly_writing_proces/review]] — 종단간 학술 작성 과정 데이터셋이 AI 보조 과학 작문의 대규모 구조화 데이터셋 구축에 기초 방법론을 제공합니다.
-- 🔗 후속 연구: [[papers/042_Academicbrowse_Benchmarking_academic_browse_ability_of_llms/review]] — 학자 검색 능력 벤치마킹을 과학 연구 워크플로우의 5가지 측면으로 확장한 포괄적인 AI 보조 연구 평가 체계입니다.
-- 🔄 다른 접근: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — AI 보조 과학 연구에서 구조화된 워크플로우 추출과 제어 가능한 학술 작문의 서로 다른 접근 방식을 비교할 수 있습니다.
-- 🏛 기반 연구: [[papers/781_Surveyx_Academic_survey_automation_via_large_language_models/review]] — AI 보조 과학 작문을 위한 새로운 데이터셋과 벤치마크가 학술 서베이 자동화의 기초 자료를 제공합니다.
+- 🔗 후속 연구: [[papers/089_Aigs_Generating_science_from_ai-powered_automated_falsificat/review]] — AI 기반 자동 반증을 통한 과학 생성 연구를 과학적 워크플로우의 체계적 데이터셋 구축으로 발전시켜 더 포괄적인 AI 과학 지원을 제공한다.
+- 🔄 다른 접근: [[papers/713_Scicueval_A_comprehensive_dataset_for_evaluating_scientific/review]] — 과학적 큐레이션 평가와 AI 지원 과학 워크플로우 데이터셋은 모두 과학 연구 과정의 AI 활용을 다른 관점에서 접근한다.
+- 🏛 기반 연구: [[papers/520_Massw_A_new_dataset_and_benchmark_tasks_for_ai-assisted_scie/review]] — 과학 연구의 5가지 핵심 측면을 체계화한 프레임워크가 AI 지원 과학 연구의 표준화된 구조를 제공한다.
+- 🧪 응용 사례: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — 연구 코드 에이전트가 과학적 워크플로우의 Method 부분을 자동화하는 실제 구현 사례를 제시한다.

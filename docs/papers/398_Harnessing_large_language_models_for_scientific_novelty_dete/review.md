@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.5
 essence: "대규모 언어모델(LLM)을 활용하여 과학 문헌에서 40,000개 이상의 금속-유기 골격(MOF) 관련 논문을 분석하고, 32개의 핵심 특성과 21개 합성 조건 카테고리를 자동으로 추출한 포괄적인 데이터셋을 구축했다. 이 데이터셋을 통해 합성 조건과 실험 데이터 간의 차이를 규명하고 합성 조건 추천 시스템을 개발했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Scientific_Frameworks"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kang et al._2025_Harnessing Large Language Models to Collect and Analyze Metal–Organic Framework Property Data Set.pdf"
 ---
@@ -118,7 +120,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kang et al._2025_Harnessing Large Langua
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/208_ChatMOF_an_artificial_intelligence_system_for_predicting_and/review]] — MOF와 화학 소재라는 유사한 영역에서 LLM 기반 지식 추출과 AI 시스템 구축의 서로 다른 접근법을 비교한다.
-- 🏛 기반 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료과학에서 AI와 LLM 활용의 포괄적 조망을 제공하여 MOF 연구의 이론적 맥락을 제시한다.
-- 🔗 후속 연구: [[papers/764_Sparks_Multi-Agent_Artificial_Intelligence_Model_Discovers_P/review]] — 문헌 기반 데이터 수집을 넘어 완전 자동화된 과학 발견으로 나아가는 발전 경로를 보여준다.
-- 🔄 다른 접근: [[papers/208_ChatMOF_an_artificial_intelligence_system_for_predicting_and/review]] — MOF 예측과 생성에서 AI 시스템과 LLM 기반 데이터 수집이라는 서로 다른 접근법으로 화학 소재 연구를 자동화한다.
+- 🔄 다른 접근: [[papers/208_ChatMOF_an_artificial_intelligence_system_for_predicting_and/review]] — MOF 연구에서 LLM을 활용하여 성질 예측과 구조 생성을 수행하는 다른 접근 방식을 제시하여 데이터 분석과 대조됨
+- 🏛 기반 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료 과학에서 AI/LLM 활용에 대한 포괄적 조사로, MOF 데이터 분석 연구의 이론적 기반을 제공
+- 🔗 후속 연구: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — 재료 과학 전반에 걸친 유연한 LLM 기반 에이전트 시스템으로, MOF 연구를 더 광범위한 재료 발견으로 확장
+- 🔄 다른 접근: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — 재료 과학을 위한 다중모달 LLM으로, MOF 데이터 분석에 대한 다른 기술적 접근을 제시
+- 🔄 다른 접근: [[papers/208_ChatMOF_an_artificial_intelligence_system_for_predicting_and/review]] — LLM을 활용한 MOF 문헌 분석 및 데이터셋 구축과 대조하여, 성질 예측과 구조 생성에 초점한 다른 접근

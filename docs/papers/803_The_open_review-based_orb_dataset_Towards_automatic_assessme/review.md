@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 OpenReview.net과 SciPost.org에서 수집한 36,000개 이상의 과학논문과 89,000개 이상의 피어리뷰로 구성된 공개 피어리뷰 데이터셋(ORB: Open Review-Based dataset)을 소개한다. NLP 기반 자동 논문 평가 및 고에너지물리 실험 제안의 자동 심사를 지원하기 위한 포괄적인 데이터 인프라를 제공한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/Citation_Dataset_Analysis"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Citation_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Szumega et al._2023_The open review-based (orb) dataset Towards automatic assessment of scientific papers and experimen.pdf"
 ---
@@ -121,8 +122,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Szumega et al._2023_The open review-base
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — 다중 에이전트 리뷰 생성이 ORB 데이터셋 기반 평가와 다른 접근 방식을 제시한다.
-- 🔗 후속 연구: [[papers/654_Re_2_A_consistency-ensured_dataset_for_full-stage_peer_revie/review]] — 피어 리뷰 전 과정에 대한 일관성 보장 데이터셋이 ORB의 적용 범위를 확장한다.
-- 🧪 응용 사례: [[papers/150_Benchmark_for_evaluation_and_analysis_of_citation_recommenda/review]] — 인용 추천 평가 벤치마크가 ORB 데이터셋의 NLP 기반 논문 평가에 적용된다.
-- 🏛 기반 연구: [[papers/522_MatPilot_an_LLM-enabled_AI_Materials_Scientist_under_the_Fra/review]] — 대규모 과학 문헌 데이터셋이 ORB의 피어 리뷰 자동화 연구에 기초가 된다.
-- 🏛 기반 연구: [[papers/591_Openreview_should_be_protected_and_leveraged_as_a_community/review]] — 오픈 리뷰 기반 데이터셋으로 자동 평가 연구의 기반이 되어 OpenReview 플랫폼의 가치를 실증적으로 보여준다.
+- 🔗 후속 연구: [[papers/885_Withdrarxiv_A_large-scale_dataset_for_retraction_study/review]] — 논문 철회 연구 데이터셋과 결합하여 피어리뷰 품질과 논문 신뢰성 간의 관계를 분석할 수 있다.
+- 🧪 응용 사례: [[papers/724_SciHorizon_Benchmarking_AI-for-Science_Readiness_from_Scient/review]] — 과학 준비도 벤치마킹에서 ORB 데이터셋을 활용하여 AI의 과학적 평가 능력을 측정할 수 있다.
+- 🔄 다른 접근: [[papers/580_Oag-bench_A_human-curated_benchmark_for_academic_graph_minin/review]] — 학술 그래프 마이닝이라는 동일한 목표를 그래프 구조 관점에서 다르게 접근한다.
+- 🏛 기반 연구: [[papers/712_SciCode_A_Research_Coding_Benchmark_Curated_by_Scientists/review]] — 과학자가 큐레이션한 코딩 벤치마크 방법론을 피어리뷰 데이터셋 구축에 적용할 수 있다.

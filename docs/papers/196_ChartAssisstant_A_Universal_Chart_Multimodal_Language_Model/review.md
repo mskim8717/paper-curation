@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "차트-테이블 사전학습(pre-training)과 다중작업 명령어 튜닝(instruction tuning)을 통해 다양한 차트 이해 작업을 단일 모델로 수행할 수 있는 보편적 차트 멀티모달 언어모델을 제안한다. 기존 모델의 차트-텍스트 정렬 부족과 제한된 데이터를 극복하기 위해 39M 규모의 대규모 ChartSFT 데이터셋과 2단계 학습 전략을 도입했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Chart_Analysis"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Code_Generation_Multimodal_Models"
   - "topic/ai4s"
 ---
 
@@ -110,13 +110,12 @@ tags:
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — 범용 차트 이해 모델이 차트-코드 변환이라는 특화 작업의 기반 기술
-- 🔄 다른 접근: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — 차트 이해 벤치마크와 달리 다양한 차트 작업을 단일 모델로 처리하는 통합 접근
-- 🔗 후속 연구: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 과학 논문 그림 해석을 차트라는 특정 시각 자료 유형으로 세분화한 확장
-- 🏛 기반 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 대규모 멀티모달 차트 이해 연구의 방법론을 범용 모델 개발에 적용
-- 🧪 응용 사례: [[papers/879_What_factors_affect_multimodal_in-context_learning_an_in-dep/review]] — 차트 어시스턴트가 멀티모달 인-컨텍스트 학습의 실제 응용 사례가 됨
-- 🔄 다른 접근: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — 차트 이해를 위한 서로 다른 멀티모달 접근법을 제시합니다.
-- 🏛 기반 연구: [[papers/807_Theoremexplainagent_Towards_video-based_multimodal_explanati/review]] — 차트 이해를 위한 다중모드 언어 모델의 시각적 추론 능력이 정리 설명 비디오 생성에 필요한 기본적인 시각-언어 통합 기술을 제공한다.
-- 🔗 후속 연구: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — 범용 차트 이해 모델 ChartAssistant의 기능을 코드 생성이라는 특정 작업으로 세분화한 발전
-- 🔗 후속 연구: [[papers/204_Chartx__chartvlm_A_versatile_benchmark_and_foundation_model/review]] — 범용 차트 언어모델 ChartAssistant의 성능을 더 체계적으로 평가하는 벤치마크
-- 🏛 기반 연구: [[papers/605_PatFig_Generating_Short_and_Long_Captions_for_Patent_Figures/review]] — 범용 차트 멀티모달 언어 모델이 특허 도형의 다양한 시각적 요소를 이해하고 캡션을 생성하는 기반을 제공한다.
+- 🔗 후속 연구: [[papers/200_Chartist_Task-driven_Eye_Movement_Control_for_Chart_Reading/review]] — 범용 차트 멀티모달 언어모델을 작업 기반 안구 움직임 제어로 확장하여 더 인간다운 차트 이해 시스템을 구현한다.
+- 🏛 기반 연구: [[papers/1127_MMSD20_Towards_a_Reliable_Multi-modal_Sarcasm_Detection_Syst/review]] — 차트 멀티모달 언어모델의 텍스트-시각 정렬 기법이 멀티모달 풍자 탐지에서 모달리티 간 정렬 문제 해결의 기반을 제공한다.
+- 🔄 다른 접근: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — ChartAssistant의 범용 차트 이해와 MMC의 대규모 차트 데이터셋 기반 접근법이 차트 AI의 서로 다른 발전 방향을 제시한다.
+- 🔄 다른 접근: [[papers/199_ChartInstruct_Instruction_Tuning_for_Chart_Comprehension_and/review]] — 범용 차트 언어 모델과 특화된 차트 이해 시스템이 상호 보완적 접근법을 제공한다
+- 🔗 후속 연구: [[papers/200_Chartist_Task-driven_Eye_Movement_Control_for_Chart_Reading/review]] — 범용 차트 언어모델의 기능을 인간의 인지 과정을 모방하는 안구 움직임 제어로 확장하여 더 자연스러운 차트 분석을 구현한다.
+- 🔄 다른 접근: [[papers/201_ChartLlama_A_Multimodal_LLM_for_Chart_Understanding_and_Gene/review]] — 차트 이해를 위한 멀티모달 LLM을 다른 아키텍처와 접근법으로 구현한 대안적 연구
+- 🔄 다른 접근: [[papers/203_Chartsketcher_Reasoning_with_multimodal_feedback_and_reflect/review]] — 차트 이해에서 반복적 스케칭과 범용 어시스턴트라는 서로 다른 접근 전략을 보여준다
+- 🧪 응용 사례: [[papers/092_Align_then_Fusion_Generalized_Large-scale_Multi-view_Cluster/review]] — 멀티뷰 클러스터링 기술이 차트의 다양한 시각적 정보를 통합하는 멀티모달 언어모델 개발에 직접 적용될 수 있다.
+- 🏛 기반 연구: [[papers/1127_MMSD20_Towards_a_Reliable_Multi-modal_Sarcasm_Detection_Syst/review]] — 멀티모달 언어모델의 차트-텍스트 정렬 기법이 풍자 탐지에서 텍스트-이미지 정렬 문제 해결의 기반을 제공한다.

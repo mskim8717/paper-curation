@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 LLM 기반 자동화된 논문 리뷰 생성의 문제를 **측면 프롬프트(aspect prompt)를 명시적으로 모델링하는 두 단계 프레임워크**로 해결하여, 더 구체적이고 다양한 리뷰를 생성한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/LLM_Review_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/GPT-Based_Text_Review_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gao et al._2024_Reviewer2 Optimizing Review Generation Through Prompt Generation.pdf"
 ---
@@ -92,11 +93,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gao et al._2024_Reviewer2 Optimizing Rev
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/481_Lazyreview_a_dataset_for_uncovering_lazy_thinking_in_nlp_pee/review]] — 동료 검토의 게으른 사고 문제를 해결하기 위한 측면 프롬프트 기반 리뷰 생성 최적화 접근법을 제시합니다.
-- 🔗 후속 연구: [[papers/206_ChatGPT_outperforms_crowd_workers_for_text-annotation_tasks/review]] — ChatGPT의 텍스트 주석 우수성을 논문 리뷰라는 더 복잡하고 전문적인 작업으로 확장한 응용 연구입니다.
-- 🔄 다른 접근: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 측면 프롬프트 모델링과 과학 리뷰 전용 대규모 언어모델이라는 서로 다른 자동 리뷰 생성 접근법을 제시합니다.
-- 🏛 기반 연구: [[papers/206_ChatGPT_outperforms_crowd_workers_for_text-annotation_tasks/review]] — LLM이 인간 주석자를 능가할 수 있다는 기초 연구로서 자동화된 리뷰 생성 연구의 이론적 근거를 제공합니다.
-- 🔗 후속 연구: [[papers/481_Lazyreview_a_dataset_for_uncovering_lazy_thinking_in_nlp_pee/review]] — 동료 검토의 게으른 사고 탐지 연구가 LLM 기반 리뷰 생성 최적화 연구의 품질 평가 기준을 제공합니다.
-- 🔗 후속 연구: [[papers/843_Treereview_A_dynamic_tree_of_questions_framework_for_deep_an/review]] — Reviewer2의 프롬프트 최적화 접근법이 TreeReview의 계층적 질문 생성 메커니즘과 결합되어 더 효과적인 검토 시스템을 구축할 수 있음
-- 🏛 기반 연구: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — 프롬프트 생성을 통한 리뷰 최적화가 다중 에이전트 리뷰 생성의 개별 에이전트 성능 향상에 기초를 제공합니다.
-- 🔗 후속 연구: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 프롬프트 최적화를 통한 리뷰 생성을 전문 파인튜닝된 모델로 확장하여 더 비판적이고 현실적인 리뷰를 생성합니다.
+- 🔄 다른 접근: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — LLM 기반 논문 리뷰 생성의 품질 향상을 프롬프트 생성과 심층 사고 과정으로 각각 접근한다.
+- 🔗 후속 연구: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — 논문 리뷰 시스템의 확장성과 편향 인식을 프롬프트 최적화로 더욱 개선할 수 있다.
+- 🏛 기반 연구: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — AI 생성 리뷰의 평가 프레임워크 구축을 위한 핵심 생성 방법론을 제공한다.
+- 🔄 다른 접근: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — LLM 기반 논문 리뷰 생성을 심층 사고 과정과 프롬프트 최적화로 각각 개선한다.
+- 🔄 다른 접근: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 역할 기반 다중턴 대화와 프롬프트 최적화라는 서로 다른 AI 리뷰 생성 전략을 보여준다.
+- 🔗 후속 연구: [[papers/629_Pre_A_peer_review_based_large_language_model_evaluator/review]] — 프롬프트 생성을 통한 리뷰 최적화 연구가 PRE의 동료 평가 기반 LLM 평가 프레임워크로 발전되었다
+- 🔄 다른 접근: [[papers/481_Lazyreview_a_dataset_for_uncovering_lazy_thinking_in_nlp_pee/review]] — 프롬프트 생성을 통한 검토 생성 최적화 연구로, 게으른 사고와 반대로 고품질 검토 생성에 초점
+- 🧪 응용 사례: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — 프롬프트 생성을 통한 리뷰 최적화 연구에서 다중 에이전트 협력 메커니즘이 실제 구현된 사례를 보여준다.
+- 🔄 다른 접근: [[papers/809_Three_AI-powered_steps_to_faster_smarter_peer_review/review]] — 프롬프트 생성 최적화를 통한 리뷰 개선으로 음성 받아쓰기와 다른 효율화 접근을 보여준다
+- 🔄 다른 접근: [[papers/776_Streamlining_the_review_process_Ai-generated_annotations_in/review]] — AI 생성 리뷰에서 프롬프트 최적화를 통한 품질 향상이라는 동일한 문제를 다른 관점에서 접근한다.

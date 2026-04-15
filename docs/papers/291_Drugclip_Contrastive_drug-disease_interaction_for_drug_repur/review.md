@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "기존 임상시험 데이터를 기반으로 약물-질병 상호작용(drug-disease interaction)을 학습하는 대조학습(contrastive learning) 방법 DrugCLIP을 제안하여, 음성 샘플(negative samples) 부족 문제를 해결하고 약물 재창출(drug repurposing) 효율을 16.5% 향상시켰다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Drug_Discovery"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lu et al._2024_Drugclip Contrastive drug-disease interaction for drug repurposing.pdf"
 ---
@@ -135,8 +136,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lu et al._2024_Drugclip Contrastive drug
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/397_Hallucinations_can_improve_large_language_models_in_drug_dis/review]] — 약물 발견에서 LLM 환각 개선에서 대조학습 약물 재창출로의 확장
-- 🔄 다른 접근: [[papers/490_LIDDIA_Language-based_Intelligent_Drug_Discovery_Agent/review]] — 언어 기반 지능형 약물 발견과 대조학습 재창출의 다른 접근법
-- 🏛 기반 연구: [[papers/292_Drugpilot_Llm-based_parameterized_reasoning_agent_for_drug_d/review]] — 매개변수화된 추론 약물 파일럿이 약물-질병 상호작용의 기반 제공
-- 🏛 기반 연구: [[papers/415_Hunt_Globally_Wide_Search_AI_Agents_for_Drug_Asset_Scouting/review]] — 대조 학습 기반 약물-질병 상호작용 모델이 투자 관점에서 약물 자산 평가의 방법론적 기반을 제공합니다.
-- 🏛 기반 연구: [[papers/1106_The_BOS-Lig_Dataset_Accurate_Ligand_Charges_from_a_Consensus/review]] — 약물 재창출을 위한 대조학습이 리간드 전하 결정의 기반 방법론 제공
+- 🧪 응용 사례: [[papers/068_AgentMD_Empowering_Language_Agents_for_Risk_Prediction_with/review]] — 약물-질병 상호작용 학습을 통한 약물 재창출이 임상 계산기 기반 위험 예측과 함께 포괄적인 의료 AI 시스템 구축에 활용될 수 있다.
+- 🔗 후속 연구: [[papers/651_RAG-Enhanced_Collaborative_LLM_Agents_for_Drug_Discovery/review]] — DrugCLIP의 대조학습 기반 약물 재창출을 RAG 강화 협업 LLM 에이전트로 확장하여 더 강력한 약물 발견 시스템을 구현한다.
+- 🏛 기반 연구: [[papers/616_PharmAgents_Building_a_Virtual_Pharma_with_Large_Language_Mo/review]] — 가상 제약회사 구축을 위한 대규모 언어모델 에이전트가 약물 재창출 연구의 실제 응용과 상용화를 위한 기반을 제공한다.
+- 🔄 다른 접근: [[papers/006_A_deep_subgrouping_framework_for_precision_drug_repurposing/review]] — 정밀 약물 재창출에서 환자 하위군 분석과 대조적 약물-질병 상호작용 모델링은 서로 다른 관점에서 개인화된 치료법을 탐구한다.
+- 🔄 다른 접근: [[papers/260_DeepCRE_Transforming_Drug_RD_via_AI-Driven_Cross-drug_Respon/review]] — 둘 다 약물 발견을 위한 AI 모델이지만, DeepCRE는 교차 약물 반응 평가에, DrugCLIP은 대조 학습 기반 약물-질병 상호작용에 집중한다

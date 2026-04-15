@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 동료평가(peer review) 과정에 대규모언어모델(LLM)이 부정적으로 사용되는 것을 탐지하기 위해 **간접 프롬프트 주입(indirect prompt injection)** 기법을 통해 워터마크를 삽입하고, **통계적으로 엄밀한 검증 방법**으로 LLM 생성 리뷰를 검출하는 시스템을 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_Review_Detection"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_Error_Detection"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liang et al._2025_Detecting llm-written peer reviews.pdf"
 ---
@@ -152,14 +152,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liang et al._2025_Detecting llm-written 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/445_Is_Your_Paper_Being_Reviewed_by_an_LLM_Investigating_AI_Text/review]] — 둘 다 학술 논문에서 AI 생성 텍스트를 탐지하는 문제를 다루지만 서로 다른 기술적 접근법을 사용함
-- 🔗 후속 연구: [[papers/283_Do_Users_Write_More_Insecure_Code_with_AI_Assistants/review]] — AI 도구 사용의 부정적 영향을 코딩에서 동료평가로 확장하여 학술 무결성에 대한 광범위한 우려를 다룸
-- 🏛 기반 연구: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — 동료평가에서 LLM 사용 가능성에 대한 탐색적 연구가 LLM 작성 리뷰 탐지 시스템 개발의 배경을 제공함
-- 🔄 다른 접근: [[papers/104_Are_we_there_yet_revealing_the_risks_of_utilizing_large_lang/review]] — LLM이 작성한 피어 리뷰를 탐지하는 기술로 LLM 기반 리뷰 시스템의 보안 취약점을 보완할 수 있다.
-- 🔗 후속 연구: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — LLM이 작성한 피어 리뷰 탐지 기술을 활용하여 ReviewAgent의 자체 개선 루프에 검증 단계를 추가할 수 있다.
-- 🔄 다른 접근: [[papers/852_Understanding_fine-grained_distortions_in_reports_of_scienti/review]] — 과학 논문의 왜곡 문제를 LLM이 생성한 리뷰 탐지 관점에서 접근하여 상호 보완적인 연구 방향을 제시한다.
-- 🔄 다른 접근: [[papers/611_People_who_frequently_use_ChatGPT_for_writing_tasks_are_accu/review]] — ChatGPT 사용자의 탐지 능력과 LLM 작성 동료 검토 자동 탐지라는 서로 다른 AI 생성 텍스트 식별 접근법입니다.
-- 🔗 후속 연구: [[papers/283_Do_Users_Write_More_Insecure_Code_with_AI_Assistants/review]] — AI 도구가 코딩 보안에 미치는 부정적 영향이 학술 동료평가 무결성으로 확장되는 유사한 우려사항임
-- 🔗 후속 연구: [[papers/022_A_sentiment_consolidation_framework_for_meta-review_generati/review]] — 동료평가의 감정 통합을 AI 생성 리뷰 탐지와 결합하여 더 포괄적인 동료평가 품질 관리 방법을 제시함
-- 🔗 후속 연구: [[papers/051_Admissions_in_the_age_of_AI_detecting_AI-generated_applicati/review]] — 동료 심사 리뷰에서 LLM으로 작성된 텍스트를 탐지하는 연구로 본 논문의 탐지 방법론을 학술 분야로 확장한다.
-- 🏛 기반 연구: [[papers/445_Is_Your_Paper_Being_Reviewed_by_an_LLM_Investigating_AI_Text/review]] — LLM 작성 피어 리뷰 탐지의 기본 연구가 AI 텍스트 탐지 가능성 조사의 이론적 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/104_Are_we_there_yet_revealing_the_risks_of_utilizing_large_lang/review]] — LLM 기반 피어 리뷰의 보안 위험을 탐지하고 방어하는 완전한 솔루션을 구성한다.
+- 🔄 다른 접근: [[papers/445_Is_Your_Paper_Being_Reviewed_by_an_LLM_Investigating_AI_Text/review]] — LLM 생성 콘텐츠를 피어 리뷰와 일반 논문에서 각각 다른 방법론으로 탐지한다.
+- 🔗 후속 연구: [[papers/051_Admissions_in_the_age_of_AI_detecting_AI-generated_applicati/review]] — 간접 프롬프트 주입 탐지 기법이 대학 입학 에세이의 AI 탐지로 확장 적용될 수 있다.
+- 🔗 후속 연구: [[papers/104_Are_we_there_yet_revealing_the_risks_of_utilizing_large_lang/review]] — LLM 기반 피어 리뷰의 보안 취약점을 탐지하고 방어하는 완전한 공격-방어 프레임워크를 구성한다.
+- 🧪 응용 사례: [[papers/611_People_who_frequently_use_ChatGPT_for_writing_tasks_are_accu/review]] — LLM 생성 동료평가 탐지 연구의 방법론을 일반적인 글쓰기 텍스트 탐지 문제에 적용한 사례다.
+- 🏛 기반 연구: [[papers/885_Withdrarxiv_A_large-scale_dataset_for_retraction_study/review]] — 논문 철회 패턴 분석이 LLM 생성 리뷰 탐지 시스템 개발의 실증적 근거를 제공한다.
+- 🔗 후속 연구: [[papers/051_Admissions_in_the_age_of_AI_detecting_AI-generated_applicati/review]] — 대학 입시와 피어리뷰에서 AI 생성 콘텐츠 탐지라는 학술 분야의 포괄적인 AI 탐지 문제를 다룬다.
+- 🔄 다른 접근: [[papers/445_Is_Your_Paper_Being_Reviewed_by_an_LLM_Investigating_AI_Text/review]] — LLM이 작성한 피어 리뷰 탐지를 위한 다른 기술적 접근법을 제시한다

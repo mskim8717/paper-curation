@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 기초 모델의 사후훈련(post-training) 단계에서 지도학습 미세조정(SFT)과 강화학습(RL)의 일반화(generalization) 능력을 비교하는 체계적 연구로, **RL은 규칙 기반 추론과 시각 작업에서 우수한 일반화 성능을 보이는 반면, SFT는 훈련 데이터의 암기(memorization)에 치중한다**는 핵심 발견을 제시한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Domain-adapted_Instruction_Models"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chu et al._2025_SFT Memorizes, RL Generalizes A Comparative Study of Foundation Model Post-training.pdf"
 ---
@@ -116,11 +118,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chu et al._2025_SFT Memorizes, RL Genera
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — 자기개선 메커니즘에서 SFT의 암기와 RL의 일반화 능력 차이를 체계적으로 분석한 확장
-- 🏛 기반 연구: [[papers/1100_Representative_Informative_and_De-Amplifying_Requirements_fo/review]] — RL 기반 실험설계 최적화에서 일반화 능력의 중요성을 입증하는 이론적 기반
-- 🧪 응용 사례: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — DeepSeek-R1의 강화학습 기반 추론이 일반화 능력 향상에 미치는 영향 분석에 적용
-- 🔄 다른 접근: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 정책 기반 강화학습과 달리 사후훈련 단계에서 SFT와 RL의 근본적 차이 분석
-- 🏛 기반 연구: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — SFT와 RL의 일반화 능력 비교 연구에서 자기개선 메커니즘의 이론적 기반 제공
-- 🧪 응용 사례: [[papers/1092_Table-llm-specialist_Language_model_specialists_for_tables_u/review]] — 테이블 전문가 모델에서 생성-검증 이중 작업이 SFT 대비 일반화 성능 향상에 기여
-- 🧪 응용 사례: [[papers/1100_Representative_Informative_and_De-Amplifying_Requirements_fo/review]] — 강화학습의 일반화 능력 향상을 위해 R-IDeA 획득함수를 통한 견고한 실험설계 적용
-- 🔗 후속 연구: [[papers/649_Qwen25_technical_report/review]] — SFT와 RL의 비교 연구가 Qwen2.5에서 사용된 DPO와 GRPO 같은 후학습 기법의 효과를 이론적으로 뒷받침한다.
+- 🏛 기반 연구: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — RL이 SFT보다 우수한 일반화를 보인다는 발견이 순수 RL을 통한 추론 능력 향상의 이론적 근거가 된다.
+- 🔗 후속 연구: [[papers/449_Kimi_k15_Scaling_reinforcement_learning_with_llms/review]] — RL의 일반화 우위성이 복잡한 기법 없이도 o1 수준 성능 달성을 가능하게 하는 원리를 설명한다.
+- 🧪 응용 사례: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — RL의 일반화 능력이 로봇 제어에서도 시뮬레이션에서 실제 환경으로의 전이에서 나타난다.
+- 🧪 응용 사례: [[papers/257_Decomposing_the_enigma_Subgoal-based_demonstration_learning/review]] — RL의 규칙 기반 추론 우위성이 형식 정리 증명에서 구체적으로 검증된다.
+- 🏛 기반 연구: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — SFT 대비 RL의 일반화 성능 우위성을 보여주는 이론적 근거를 제공한다.
+- 🔗 후속 연구: [[papers/449_Kimi_k15_Scaling_reinforcement_learning_with_llms/review]] — 복잡한 기법 없이도 RL이 SFT보다 우수한 일반화를 보인다는 발견을 실증적으로 뒷받침한다.
+- 🧪 응용 사례: [[papers/257_Decomposing_the_enigma_Subgoal-based_demonstration_learning/review]] — 형식 정리 증명에서 RL이 SFT보다 우수한 일반화 성능을 보인다는 발견의 구체적 사례이다.
+- 🧪 응용 사례: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — RL의 일반화 능력이 소프트 연속 팔의 심-투-리얼 전이에서 구체적으로 검증된다.

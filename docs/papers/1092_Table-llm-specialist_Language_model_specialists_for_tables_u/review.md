@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "테이블 작업(데이터 정제, NL-to-SQL 등)에 특화된 언어모델을 만들기 위해 생성-검증 이중 작업의 반복적 미세조정 패러다임인 Table-Specialist를 제안한다. 수동 레이블 없이 자동 생성된 훈련 데이터로 강력한 성능과 일반화를 동시에 달성한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Domain-adapted_Instruction_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ji et al._2024_Table-llm-specialist Language model specialists for tables using iterative generator-validator fine.pdf"
 ---
@@ -88,9 +89,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ji et al._2024_Table-llm-specialist Lang
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/348_FRAG_A_Flexible_Modular_Framework_for_Retrieval-Augmented_Ge/review]] — RAG 프레임워크의 유연성 추구와 달리 테이블 작업에 특화된 전문 모델 개발 접근
-- 🏛 기반 연구: [[papers/231_Codegen_An_open_large_language_model_for_code_with_multi-tur/review]] — 다중 턴 프로그램 합성 방법론을 테이블 작업 특화 모델 훈련에 적용한 기반
-- 🧪 응용 사례: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — 테이블 전문가 모델에서 생성-검증 이중 작업이 SFT 대비 일반화 성능 향상에 기여
-- 🔗 후속 연구: [[papers/841_Tree-of-table_Unleashing_the_power_of_llms_for_enhanced_larg/review]] — 테이블 처리 능력을 Tree-of-Table 방법론으로 더욱 체계화한 확장 연구
-- 🔗 후속 연구: [[papers/231_Codegen_An_open_large_language_model_for_code_with_multi-tur/review]] — 프로그램 합성 기법을 테이블 작업 특화 모델의 반복적 미세조정에 적용한 확장
-- 🔄 다른 접근: [[papers/348_FRAG_A_Flexible_Modular_Framework_for_Retrieval-Augmented_Ge/review]] — 테이블 작업 전문가 모델과 달리 지식그래프 기반 RAG의 유연성을 통한 범용적 접근
+- 🧪 응용 사례: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 자가감독 도구 학습 원리가 테이블 작업 특화 모델의 생성-검증 이중 작업 훈련에 직접 적용된다.
+- 🔗 후속 연구: [[papers/787_Tablemaster_A_recipe_to_advance_table_understanding_with_lan/review]] — 테이블 특화 반복적 미세조정이 대규모 언어 모델의 테이블 이해 능력 향상으로 확장될 수 있다.
+- 🔄 다른 접근: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 테이블 작업에서의 자동 훈련 데이터 생성과 대화형 환경에서의 능동적 탐색을 서로 다른 관점에서 접근한다.
+- 🏛 기반 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 테이블 전문가 모델이 머신러닝 에이전트 벤치마킹을 위한 구조화된 데이터 처리 기반을 제공한다.
+- 🧪 응용 사례: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 자가감독 도구 학습 원리가 테이블 작업 특화 모델 훈련에 직접 적용될 수 있다.

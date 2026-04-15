@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 다중모달 대형언어모델(MLLM)의 차트 이해 능력을 종합적으로 평가하기 위해 ChartX 벤치마크와 ChartVLM 기초모델을 제시한다. 특히 차트 데이터 추출과 복잡한 추론을 포함하는 다단계 작업에서 모델의 해석가능성을 강화하는 새로운 접근방식을 제안한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Multimodal_Scientific_Benchmarks"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Physics_Reasoning_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xia et al._2024_Chartx & chartvlm A versatile benchmark and foundation model for complicated chart reasoning.pdf"
 ---
@@ -117,14 +118,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xia et al._2024_Chartx & chartvlm A vers
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — 코드 생성에 특화된 ChartCoder와 달리 차트 이해 전반을 다루는 종합적 접근
-- 🏛 기반 연구: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 과학 그림 해석 벤치마크 SciFIBench의 방법론을 차트 특화 영역에 적용한 기반
-- 🔗 후속 연구: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 범용 차트 언어모델 ChartAssistant의 성능을 더 체계적으로 평가하는 벤치마크
-- 🧪 응용 사례: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 차트-코드 생성 성능 향상 연구에 활용할 수 있는 평가 기준 제공
-- 🔗 후속 연구: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 차트 기반 모델이 코드 생성까지 확장된 종합적 프레임워크
-- 🔗 후속 연구: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — ChartGemma의 차트 추론 능력이 더 포괄적인 차트 벤치마크로 확장됩니다.
-- 🔗 후속 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — ChartX & ChartVLM의 기초 모델을 대규모 명령어 튜닝으로 발전시킨 연구
-- 🔄 다른 접근: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 차트 이해에 특화된 ChartX와 달리 전반적인 과학 논문 그림 해석 능력을 평가하는 포괄적 벤치마크
-- 🔄 다른 접근: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — 차트 이해와 추론에 중점을 둔 ChartX와 달리 차트-코드 변환이라는 구체적 작업에 특화
-- 🔄 다른 접근: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 차트 이해 벤치마크와 달리 다양한 차트 작업을 단일 모델로 처리하는 통합 접근
-- 🏛 기반 연구: [[papers/709_SciCap_A_Knowledge_Augmented_Dataset_to_Study_the_Challenges/review]] — 다목적 차트 및 시각화 모델이 SciCap+의 과학 도형 이해에 필요한 기반 기술을 제공한다.
+- 🔗 후속 연구: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — ChartCoder는 ChartX의 차트 이해 평가를 차트-to-코드 생성이라는 구체적 응용 작업으로 발전시킨 연구 방향이다
+- 🔄 다른 접근: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 차트-to-코드 생성에서 이중 모드 보상 학습을 사용하는 접근법으로, ChartVLM의 기초 모델 중심 접근과 다른 훈련 방법론을 제시한다
+- 🏛 기반 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 대규모 멀티모달 차트 이해 데이터셋으로, ChartX 벤치마크와 ChartVLM 모델 개발에 필요한 훈련 데이터의 기초를 제공한다
+- 🏛 기반 연구: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — 차트 이해를 위한 포괄적 벤치마크와 기초 모델로, ChartCoder의 차트-to-코드 전문화에 필요한 기본적 차트 이해 능력 평가 기준을 제공한다

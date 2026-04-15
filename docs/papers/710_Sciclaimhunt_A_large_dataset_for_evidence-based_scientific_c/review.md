@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 과학 논문에서 추출한 대규모 научных 주장 검증 데이터셋 SciClaimHunt와 SciClaimHunt Num을 소개한다. 정치적 주장과 달리 과학적 주장의 검증은 도메인 전문성과 복잡한 기술 용어를 요구하는 고도의 과제이며, 이를 해결하기 위해 87,109개의 주장과 이를 지원하거나 반박하는 과학 논문 증거로 구성된 대규모 데이터셋을 제시한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Data_Interpretation"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kumar et al._2025_Sciclaimhunt A large dataset for evidence-based scientific claim verification.pdf"
 ---
@@ -108,10 +108,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kumar et al._2025_Sciclaimhunt A large d
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/629_Pre_A_peer_review_based_large_language_model_evaluator/review]] — 과학적 주장 검증의 엄밀성을 LLM 기반 동료 평가 시스템의 신뢰성 향상에 적용합니다.
-- 🏛 기반 연구: [[papers/151_Benchmarking_ai_scientists_in_omics_data-driven_biological_r/review]] — 과학적 주장의 증거 기반 검증이 AI 과학자의 생물학적 발견 능력 평가의 기준을 제공합니다.
-- 🔄 다른 접근: [[papers/486_Lego-prover_Neural_theorem_proving_with_growing_libraries/review]] — 과학적 검증이라는 동일한 목표를 문헌 기반 주장 검증과 논리적 정리 증명이라는 다른 방식으로 달성합니다.
-- 🔗 후속 연구: [[papers/579_Nsf-scify_Mining_the_nsf_awards_database_for_scientific_clai/review]] — NSF 데이터를 확장하여 증거 기반 과학적 주장 탐지 시스템으로 발전
-- 🔗 후속 연구: [[papers/151_Benchmarking_ai_scientists_in_omics_data-driven_biological_r/review]] — 과학적 주장 검증을 생물학적 발견 평가로 확장하여 AI 과학자의 신뢰성을 높입니다.
-- 🔗 후속 연구: [[papers/486_Lego-prover_Neural_theorem_proving_with_growing_libraries/review]] — 과학적 주장 검증을 수학적 증명 검증으로 확장하여 더 엄밀한 논리적 추론을 구현합니다.
-- 🏛 기반 연구: [[papers/629_Pre_A_peer_review_based_large_language_model_evaluator/review]] — 과학적 주장의 증거 기반 검증이 LLM 동료 평가 시스템의 신뢰성 확보에 핵심적 역할을 합니다.
+- 🔄 다른 접근: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 둘 다 과학적 주장 검증을 다루지만, SciClaimHunt는 대규모 데이터셋 구축에, 다른 논문은 프로그램 안내 추론에 집중한다
+- 🔗 후속 연구: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 다중모달 증거 기반 사실 확인 연구가 SciClaimHunt의 과학 논문 기반 주장 검증 데이터셋으로 구체화되었다
+- ⚖️ 반론/비판: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — 반박 증거 누락으로 인한 NLP 사실 확인의 비현실성을 지적한 연구가 SciClaimHunt의 포괄적인 증거 기반 검증 접근법에 대한 반대 관점을 제시한다
+- 🔗 후속 연구: [[papers/579_Nsf-scify_Mining_the_nsf_awards_database_for_scientific_clai/review]] — 증거 기반 과학적 주장을 NSF 데이터베이스 마이닝으로 확장한다
+- 🏛 기반 연구: [[papers/277_Discoverybench_Towards_data-driven_discovery_with_large_lang/review]] — 증거 기반 과학적 주장 데이터셋을 데이터 기반 발견 벤치마크의 검증 자료로 활용한다

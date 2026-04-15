@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.7
 essence: "기계학습과 고정밀 수치해석을 결합하여 **3D 오일러 방정식, 비압축성 다공질 매질 방정식, Boussinesq 방정식에서 처음으로 불안정 특이점(unstable singularities)의 체계적인 발견**을 보여주는 연구이다. 불안정 특이점은 무한 정밀도의 초기조건이 필요하며, 미량의 교란으로도 폭발 궤적에서 벗어나는 특수한 현상으로, 이전에는 안정 특이점만 수치적으로 발견되었다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Evolutionary_Chemistry_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_Discovery of Unstable Singularities.pdf"
 ---
@@ -126,7 +127,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_Discovery of Unstable S
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 신경 연산자 아키텍처는 불안정 특이점 발견에 필요한 고정밀 수치해석의 기반이 됨
-- 🔗 후속 연구: [[papers/619_Physics_Informed_Deep_Learning_Part_I_Data-driven_Solutions/review]] — 물리 정보 기반 딥러닝 방법론이 오일러 방정식 특이점 연구에 적용될 수 있음
-- 🏛 기반 연구: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 수학적 대칭성과 불안정 특이점 발견은 물리 불변량 보존 원리를 공유합니다
-- 🔄 다른 접근: [[papers/217_Chiral_spin_symmetry_and_hot_QCD/review]] — 불안정 특이점 발견과 QCD 상 통일 설명의 다른 물리학적 접근법
+- 🔗 후속 연구: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 대칭성 제약을 통한 미분방정식 발견이 불안정 특이점 연구에 물리적 타당성을 부여할 수 있다
+- 🧪 응용 사례: [[papers/007_A_fine-tuned_large_language_model_based_molecular_dynamics_a/review]] — LLM 기반 분자동역학이 특이점 발견에서 나타나는 무한 정밀도 요구사항과 유사한 수치적 도전을 다룬다
+- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리학 기반 신경망이 특이점의 수치적 불안정성을 해결하는 이론적 기반을 제공한다
+- 🧪 응용 사례: [[papers/279_Distinguishing_Neutron_Star_vs_Low-Mass_Black_Hole_Binaries/review]] — 중력파 신호 분석에서 요구되는 고정밀 수치해석이 불안정 특이점 발견과 유사한 도전을 제시한다
+- 🏛 기반 연구: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 대칭 불변량 기반 방정식 발견이 불안정 특이점 연구에서 물리 법칙 준수를 보장한다
+- 🏛 기반 연구: [[papers/779_Supporting_assessment_of_novelty_of_design_problems_using_co/review]] — 과학적 발견과 신규성 평가를 위한 기본적인 이론적 배경을 제공한다

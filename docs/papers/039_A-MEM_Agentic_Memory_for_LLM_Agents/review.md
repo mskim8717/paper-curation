@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 LLM 에이전트를 위한 동적 에이전트 메모리 시스템 A-MEM을 제안하며, 젯엘카스텐(Zettelkasten) 방법론의 원리를 기반으로 새로운 메모리가 추가될 때 자동으로 문맥적 연결을 생성하고 기존 메모리를 진화시키는 메커니즘을 구현했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/CRISPR_and_Drug_Discovery_Agents"
   - "topic/ai4s"
 ---
 
@@ -114,7 +114,8 @@ tags:
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/355_From_Human_Memory_to_AI_Memory_A_Survey_on_Memory_Mechanisms/review]] — A-MEM의 동적 에이전트 메모리와 From Human Memory to AI Memory는 모두 AI 메모리 시스템을 다루지만, 젯엘카스텐 방법론과 인간-AI 메모리 비교라는 서로 다른 접근법을 취합니다.
-- 🔗 후속 연구: [[papers/400_Hiagent_Hierarchical_working_memory_management_for_solving_l/review]] — A-MEM의 문맥적 메모리 연결 시스템은 HiAgent의 계층적 작업 메모리 관리를 확장하여 더 동적이고 진화하는 메모리 구조를 제공합니다.
-- 🔗 후속 연구: [[papers/400_Hiagent_Hierarchical_working_memory_management_for_solving_l/review]] — 에이전트 메모리 관리가 계층적 작업 메모리로 구체화되고 발전됨
-- 🔗 후속 연구: [[papers/355_From_Human_Memory_to_AI_Memory_A_Survey_on_Memory_Mechanisms/review]] — 인간 기억 체계를 LLM 에이전트 메모리로 확장한 연구를 에이전틱 메모리로 발전
+- 🏛 기반 연구: [[papers/355_From_Human_Memory_to_AI_Memory_A_Survey_on_Memory_Mechanisms/review]] — 인간 기억에서 AI 기억으로의 발전 조사가 젯텔카스텐 기반 에이전트 메모리 시스템 설계의 이론적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/400_Hiagent_Hierarchical_working_memory_management_for_solving_l/review]] — LLM 에이전트 메모리 관리에서 동적 연결 생성 방식과 계층적 작업 메모리 관리는 서로 다른 메모리 구조화 전략이다.
+- 🔄 다른 접근: [[papers/400_Hiagent_Hierarchical_working_memory_management_for_solving_l/review]] — 계층적 작업 메모리와 에이전틱 메모리가 서로 다른 방식으로 LLM 메모리 관리 문제를 해결한다
+- 🏛 기반 연구: [[papers/209_ChemAgent_Self-updating_Library_in_Large_Language_Models_Imp/review]] — LLM 에이전트의 메모리 메커니즘에 대한 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/355_From_Human_Memory_to_AI_Memory_A_Survey_on_Memory_Mechanisms/review]] — LLM 에이전트의 메모리 메커니즘 구현에 필요한 이론적 기반을 제공합니다.

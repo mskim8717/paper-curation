@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.25
 essence: "16,000개 이상의 API를 활용하여 사용자 쿼리를 해결하는 GPT-4 기반 에이전트로, 계층적 API 검색기, 문제 해결기, 자기 반성 메커니즘을 통합하여 기존 방식 대비 35.4% 향상된 성능을 달성했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Du et al._2024_AnyTool Self-Reflective, Hierarchical Agents for Large-Scale API Calls.pdf"
 ---
@@ -108,3 +109,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Du et al._2024_AnyTool Self-Reflective, 
 - Overall: 4.25/5
 
 **총평**: AnyTool은 대규모 API 활용 문제에 대해 학습 불필요한 실용적 솔루션을 제공하며, 특히 자기 반성 메커니즘과 평가 프로토콜 개선으로 실제 응용 가치가 높은 논문이다. 다만 GPT-4 특화 설계와 더 광범위한 일반화 검증이 한계로 남는다.
+
+## Related Papers
+
+- 🏛 기반 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — 16,000+ 도구 마스터링 연구가 대규모 API 활용 에이전트의 기초 방법론을 제공한다
+- 🔄 다른 접근: [[papers/769_StableToolBench_Towards_Stable_Large-Scale_Benchmarking_on_T/review]] — 안정적인 대규모 벤치마킹과 계층적 API 검색은 도구 사용 에이전트의 서로 다른 평가 접근법을 제시한다

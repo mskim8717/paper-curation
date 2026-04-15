@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "Large Language Models의 추론 능력을 전자회로 원리(Electronic Circuit Principles, ECP)로 모델링하여, 맥락 내 학습(in-context learning)과 사고의 연쇄(chain-of-thought)의 출현을 설명하고 성능을 예측하는 통합 프레임워크를 제시한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Physics-informed_Neural_Networks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Guerrero-Ulloa et al._2025_Ecm A unified electronic circuit model for explaining the emergence of in-context learning and chai.pdf"
 ---
@@ -88,5 +88,5 @@ Large Language Models의 추론 능력을 전자회로 원리(Electronic Circuit
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 물리정보 신경망과 신경 연산자의 이론적 기반 위에서 전자회로 모델링 접근법을 제시한다.
-- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — LLM의 추론 능력 출현을 설명하는 반면, 자기 수정 추론의 한계를 지적하는 대조적 관점을 제시한다.
+- 🔄 다른 접근: [[papers/571_Neural_automated_writing_evaluation_with_corrective_feedback/review]] — LLM의 추론 메커니즘을 각각 전자회로와 신경망 관점에서 서로 다르게 모델링한 접근법이다
+- 🏛 기반 연구: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — LLM 내부 메커니즘 해석을 위한 기계적 해석가능성의 기본 원리와 방법론을 제공한다

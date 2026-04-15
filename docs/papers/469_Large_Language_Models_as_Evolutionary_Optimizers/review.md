@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(Large Language Models, LLM)을 진화 알고리즘(Evolutionary Algorithms, EA)의 연산자로 활용하여 조합 최적화 문제를 해결하는 최초의 시도를 제시한다. LLM 기반 진화 알고리즘(LMEA)은 도메인 전문 지식 없이도 자연어 명령만으로 부모 선택, 교차(crossover), 돌연변이(mutation) 연산을 수행할 수 있다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Domain-Specific_LLM_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2023_Large Language Models as Evolutionary Optimizers.pdf"
 ---
@@ -106,10 +106,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2023_Large Language Models as
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/466_Large_Language_Model-Based_Evolutionary_Optimizer_Reasoning/review]] — 대형 언어 모델 기반 진화 최적화가 제약 조건이 있는 역합성 계획으로 확장될 수 있습니다.
-- 🔄 다른 접근: [[papers/577_Nova_An_iterative_planning_and_search_approach_to_enhance_no/review]] — 조합 최적화에서 LLM 기반 진화 알고리즘과 반복적 계획 및 탐색 접근법을 비교할 수 있습니다.
-- 🧪 응용 사례: [[papers/305_Efficient_Evolutionary_Search_Over_Chemical_Space_with_Large/review]] — 대형 언어 모델을 활용한 화학 공간 진화 탐색이 LLM 기반 진화 최적화의 실제 적용 사례입니다.
-- 🏛 기반 연구: [[papers/466_Large_Language_Model-Based_Evolutionary_Optimizer_Reasoning/review]] — 대규모 언어모델을 진화 최적화기로 활용하는 일반적인 접근법이 LEO의 구체적인 구현의 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/462_Large_Language_Model_Agent_as_a_Mechanical_Designer/review]] — 진화 최적화를 위한 대형 언어 모델이 구조 설계 최적화의 방법론적 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/754_ShinkaEvolve_Towards_Open-Ended_And_Sample-Efficient_Program/review]] — LLM을 진화 최적화에 활용하는 기본 아이디어를 ShinkaEvolve가 프로그램 진화에 특화하여 발전시킴
-- 🏛 기반 연구: [[papers/472_Large_language_models_design_sequence-defined_macromolecules/review]] — 진화 최적화 알고리즘으로서의 LLM 활용 방법론이 거대분자 설계에 적용된 사례이다.
+- 🔄 다른 접근: [[papers/462_Large_Language_Model_Agent_as_a_Mechanical_Designer/review]] — 유한요소법 기반 구조 설계와 진화 알고리즘 기반 최적화는 모두 LLM을 활용한 설계 최적화의 서로 다른 접근법이다.
+- 🔗 후속 연구: [[papers/466_Large_Language_Model-Based_Evolutionary_Optimizer_Reasoning/review]] — LLM 기반 진화 최적화기의 일반적 원리와 매개변수화된 추론 에이전트는 모두 LLM의 최적화 능력을 활용하는 발전된 형태이다.
+- 🧪 응용 사례: [[papers/305_Efficient_Evolutionary_Search_Over_Chemical_Space_with_Large/review]] — 화학 공간 탐색을 위한 진화적 검색과 LLM 기반 진화 알고리즘은 모두 복잡한 탐색 공간에서의 최적화 문제를 다룬다.
+- 🔄 다른 접근: [[papers/466_Large_Language_Model-Based_Evolutionary_Optimizer_Reasoning/review]] — LEO와 기존 진화적 최적화는 모두 LLM을 최적화에 활용하지만 서로 다른 추론 기반 접근법을 사용한다.
+- 🔄 다른 접근: [[papers/305_Efficient_Evolutionary_Search_Over_Chemical_Space_with_Large/review]] — 화학 공간 탐색을 진화 알고리즘 대신 LLM을 진화 최적화기로 사용하는 다른 접근법
+- 🔄 다른 접근: [[papers/462_Large_Language_Model_Agent_as_a_Mechanical_Designer/review]] — 진화 알고리즘과 유한요소법이라는 서로 다른 최적화 접근법을 LLM과 결합하여 설계 문제를 해결하는 대안적 방법론이다.
+- 🏛 기반 연구: [[papers/463_Large_language_model_agent_for_hyper-parameter_optimization/review]] — LLM을 진화 최적화에 활용하는 연구가 AgentHPO의 협력적 하이퍼파라미터 최적화 접근법의 이론적 기반을 제공함

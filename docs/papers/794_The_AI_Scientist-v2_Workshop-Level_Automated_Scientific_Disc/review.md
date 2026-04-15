@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "AI Scientist-v2는 에이전트 기반 트리 서치(agentic tree search)를 활용하여 가설 수립, 실험 설계·실행, 데이터 분석 및 시각화, 논문 자동 작성까지 완전히 자율적으로 수행하는 과학 발견 시스템으로, 최초로 동료 심사(peer review)를 통과한 AI 생성 학술 논문을 배출했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Hypothesis_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yamada et al._2025_The AI Scientist-v2 Workshop-Level Automated Scientific Discovery via Agentic Tree Search.pdf"
 ---
@@ -98,16 +100,14 @@ AI Scientist-v2는 에이전트 기반 트리 서치(agentic tree search)를 활
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/285_Dolphin_Closed-loop_open-ended_auto-research_through_thinkin/review]] — AI Scientist-v2는 DOLPHIN의 폐쇄 루프 연구 프레임워크를 에이전트 기반 트리 서치로 발전시켜 동료 심사까지 포함한다.
-- 🔄 다른 접근: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI Scientist-v2와 원래 AI Scientist 모두 완전 자동화된 과학 발견을 추구하지만 에이전트 기반 트리 서치 vs 기본적인 자동화 접근을 사용한다.
-- ⚖️ 반론/비판: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — AI 학회 동료 심사 위기에 대한 우려는 AI Scientist-v2가 동료 심사를 통과한 논문을 생성했다는 성과와 상반된 시각을 제시한다.
-- 🔗 후속 연구: [[papers/857_Unlocking_the_Potential_of_AI_Researchers_in_Scientific_Disc/review]] — AI Scientist 자동화 시스템이 과학 발견에서 AI 연구자 역할 확대를 구체화한다.
-- 🔗 후속 연구: [[papers/086_AI-Researcher_Autonomous_Scientific_Innovation/review]] — 자율적 과학 혁신이 워크샵 수준의 과학 발견으로 확장됩니다.
-- 🔗 후속 연구: [[papers/705_SciAgents_Automating_Scientific_Discovery_Through_Bioinspire/review]] — AI 과학자의 워크샵 수준 자동화된 과학적 발견을 생물 영감 재료 분야로 확장 적용한 사례이다.
-- 🔗 후속 연구: [[papers/285_Dolphin_Closed-loop_open-ended_auto-research_through_thinkin/review]] — AI Scientist-v2는 DOLPHIN의 폐쇄 루프 연구 프레임워크를 에이전트 기반 트리 서치로 발전시켜 동료 심사까지 포함한다.
-- 🔗 후속 연구: [[papers/549_Mlr-copilot_Autonomous_machine_learning_research_based_on_la/review]] — AI Scientist-v2는 MLR-COPILOT의 자동화된 ML 연구를 에이전트 기반 트리 서치와 동료 심사까지 포함한 완전한 과학 발견으로 발전시킨다.
-- 🔗 후속 연구: [[papers/578_Novelseek_When_agent_becomes_the_scientistbuilding_closed-lo/review]] — AI Scientist-v2는 InternAgent의 통합 폐루프 다중 에이전트 프레임워크를 에이전트 기반 트리 서치로 발전시켜 동료 심사까지 포함한다.
-- 🔗 후속 연구: [[papers/672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/review]] — AI Scientist의 자동화된 과학 발견을 실제 연구 환경에서 체계적으로 벤치마킹하는 확장 연구
-- 🏛 기반 연구: [[papers/548_Mlr-bench_Evaluating_ai_agents_on_open-ended_machine_learnin/review]] — 워크샵 수준의 자동화된 과학 발견 시스템으로서 MLR-Bench가 평가하는 AI 에이전트의 이상적인 목표 모델을 제시한다.
-- 🏛 기반 연구: [[papers/630_Predicting_empirical_ai_research_outcomes_with_language_mode/review]] — 자동화된 과학적 발견 시스템에서 연구 아이디어의 사전 평가가 전체 연구 파이프라인의 핵심 구성 요소로 작용한다.
-- 🏛 기반 연구: [[papers/868_Virtual_lab_powered_by_AI_scientists_super-charges_biomedica/review]] — 가상 실험실에서의 AI 과학자 협업 사례가 완전 자동화된 과학적 발견 시스템의 실현 가능성을 보여주는 중요한 실증적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/842_Tree-planner_Efficient_close-loop_task_planning_with_large_l/review]] — Tree-planner의 효율적인 계획 수립 방법론이 AI Scientist-v2의 복잡한 연구 프로세스 최적화에 활용될 수 있다.
+- 🔄 다른 접근: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 두 시스템 모두 완전 자동화된 과학 발견을 목표로 하지만 v2는 워크숍 수준, 원래 AI Scientist는 기초 수준을 다룬다.
+- 🏛 기반 연구: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — AI 연구 자동화에 대한 종단간 접근법이 AI Scientist-v2 개발의 이론적 기반이 된다.
+- 🧪 응용 사례: [[papers/088_AI4Research_A_Survey_of_Artificial_Intelligence_for_Scientif/review]] — 과학 연구 자동화 이론을 완전 자동화된 과학적 발견이라는 구체적 구현으로 발전시켰다
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI Scientist-v2의 워크샵 수준 자동화가 기존 AI Scientist의 확장된 능력을 보여준다
+- 🔗 후속 연구: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — 워크숍 수준의 자동화된 과학 발견으로 확장된 AI Scientist v2로, 원본 시스템의 개선된 버전
+- 🧪 응용 사례: [[papers/842_Tree-planner_Efficient_close-loop_task_planning_with_large_l/review]] — Tree-planner의 효율적인 태스크 계획 방법론이 AI Scientist-v2의 복잡한 연구 워크플로우에 적용될 수 있다.
+- 🧪 응용 사례: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — 완전 자동화된 과학 발견 시스템으로, MLE-bench에서 측정하는 능력들의 실제 응용 사례를 제시합니다.
+- 🏛 기반 연구: [[papers/548_Mlr-bench_Evaluating_ai_agents_on_open-ended_machine_learnin/review]] — 완전 자동화된 과학 발견을 위한 AI 과학자 개발의 기초 연구로서 MLR-Bench의 이론적 토대를 제공한다.
+- 🧪 응용 사례: [[papers/649_Qwen25_technical_report/review]] — 고도화된 언어 모델이 완전 자동화된 과학 발견 시스템에서 어떻게 활용될 수 있는지 보여준다.
+- 🏛 기반 연구: [[papers/107_Artificial_intelligence_tools_expand_scientists_impact_but_c/review]] — AI 과학자 시스템의 자동화된 과학 발견이 과학자들의 AI 도구 채택 패턴에 미치는 영향을 이해하는 기반을 제공한다.

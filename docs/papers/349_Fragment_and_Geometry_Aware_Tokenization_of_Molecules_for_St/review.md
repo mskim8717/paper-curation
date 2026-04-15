@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 구조 기반 약물 설계(Structure-Based Drug Design, SBDD)를 위해 언어 모델(Language Models, LMs)을 활용하는 새로운 방법인 Frag2Seq를 제시한다. SE(3)-동변(equivariant) 좌표계를 통해 3D 분자 기하학 정보를 보존하면서 프래그먼트 기반 시퀀스로 변환하고, 단백질 포켓 임베딩을 교차 주의(cross-attention)로 통합하여 표적 단백질에 높은 결합 친화도를 가진 약물 유사 리간드를 효율적으로 생성한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Geometric_Prior_Learning"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fu et al._2024_Fragment and Geometry Aware Tokenization of Molecules for Structure-Based Drug Design Using Language.pdf"
 ---
@@ -94,9 +94,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Fu et al._2024_Fragment and Geometry Awa
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 구조 기반 약물 설계에서 SE(3) 좌표계와 기하학적 토큰화 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — 멀티모달 분자 문법 기초 모델이 프래그먼트 기반 분자 토큰화 방법을 더 포괄적으로 확장할 수 있습니다.
-- 🏛 기반 연구: [[papers/555_Molgan_An_implicit_generative_model_for_small_molecular_grap/review]] — 소분자 그래프 생성을 위한 암시적 생성 모델이 구조 기반 분자 토큰화의 방법론적 기반을 제공합니다.
-- 🏛 기반 연구: [[papers/439_Invariant_Tokenization_of_Crystalline_Materials_for_Language/review]] — 분자의 기하학적 토큰화 연구가 결정 구조 불변 토큰화의 방법론적 기초
-- 🔄 다른 접근: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 구조화된 표현을 위한 분자 조각과 기하학 토큰화의 다른 접근법
-- 🏛 기반 연구: [[papers/811_Tikzero_Zero-shot_text-guided_graphics_program_synthesis/review]] — 분자의 기하학적 토크나이제이션 기법이 TikZ 그래픽 프로그램의 구조적 표현 학습에 응용될 수 있는 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 두 논문 모두 분자의 기하학적 정보를 언어 모델에 통합하는 방법을 다루지만, 토크나이제이션 접근법이 다르다.
+- 🏛 기반 연구: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — 분자 문법 기초 모델은 구조 기반 약물 설계를 위한 분자 토크나이제이션 연구의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/428_Inference-Time_Alignment_in_Diffusion_Models_with_Reward-Gui/review]] — 확산 모델의 추론 시간 정렬 기법은 구조 기반 약물 설계에서 생성된 분자의 품질을 향상시키는 데 적용될 수 있다.
+- 🔗 후속 연구: [[papers/483_Learning_to_Discover_Regulatory_Elements_for_Gene_Expression/review]] — 분자 토큰화 방법을 유전자 조절 요소 발견으로 확장한다
+- 🔄 다른 접근: [[papers/439_Invariant_Tokenization_of_Crystalline_Materials_for_Language/review]] — 분자 토큰화의 다른 접근법으로 구조-언어 모델 통합을 보여준다.
+- 🏛 기반 연구: [[papers/555_Molgan_An_implicit_generative_model_for_small_molecular_grap/review]] — 분자의 프래그먼트와 기하학 인식 토큰화가 MolGAN의 분자 그래프 생성에 구조적 기반을 제공한다.

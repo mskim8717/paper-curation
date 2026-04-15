@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 Perplexity의 AI 브라우저 Comet과 그 내장 에이전트인 Comet Assistant를 통해 수억 건의 사용자 상호작용을 분석한 첫 번째 대규모 현장 연구로서, AI 에이전트의 채택, 사용 강도, 그리고 구체적인 활용 사례를 체계적으로 규명한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_The Adoption and Usage of AI Agents Early Evidence from Perplexity.pdf"
 ---
@@ -109,11 +111,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_The Adoption and Usage 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — ChatGPT 이후 학술 글쓰기 변화 연구를 AI 에이전트 실제 사용 패턴으로 확장하여 더 구체적인 사용자 행동 분석을 제공합니다.
-- 🧪 응용 사례: [[papers/174_Browsecomp_A_simple_yet_challenging_benchmark_for_browsing_a/review]] — AI 에이전트 사용 패턴 연구의 실제 평가를 위한 도전적인 웹 브라우징 벤치마크를 제공합니다.
-- 🏛 기반 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 언어모델의 도구 사용 학습 연구가 AI 에이전트 채택과 활용 사례 분석의 기술적 배경을 제공합니다.
-- 🔗 후속 연구: [[papers/365_Future_of_Work_with_AI_Agents_Auditing_Automation_and_Augmen/review]] — 개인 사용자 관점에서 AI 에이전트 채택과 사용에 대한 초기 증거를 확장하여 제시한다.
-- 🔗 후속 연구: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — ChatGPT 이후 학술글쓰기 변화를 대규모 분석한 연구로서 AI 에이전트 사용 패턴 연구의 확장된 관점을 제공합니다.
-- 🏛 기반 연구: [[papers/107_Artificial_intelligence_tools_expand_scientists_impact_but_c/review]] — AI 에이전트의 개인 차원에서의 채택과 사용에 대한 초기 증거로 본 연구의 개별 과학자 영향 분석 기반을 제공한다.
-- 🔄 다른 접근: [[papers/174_Browsecomp_A_simple_yet_challenging_benchmark_for_browsing_a/review]] — 웹 에이전트 평가를 위한 벤치마크로서 AI 에이전트 사용 패턴 연구와 상호 보완적인 평가 관점을 제시합니다.
-- 🔗 후속 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 도구 사용 학습 모델에서 실제 AI 에이전트 사용 패턴과 채택 현황으로 확장한 실증적 연구입니다.
+- 🔗 후속 연구: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — AI 에이전트 사용 패턴 분석이 LLM 채택 패턴 연구의 방법론적 확장을 제공한다.
+- 🏛 기반 연구: [[papers/365_Future_of_Work_with_AI_Agents_Auditing_Automation_and_Augmen/review]] — AI 에이전트가 미래 업무에 미칠 영향을 실증 데이터로 뒷받침하는 기초 연구이다.
+- ⚖️ 반론/비판: [[papers/760_Small_Language_Models_are_the_Future_of_Agentic_AI/review]] — 대규모 에이전트와 소형 언어모델 기반 에이전트의 실제 활용 가능성을 비교 검토할 수 있다.
+- 🔗 후속 연구: [[papers/508_LLMs_as_Research_Tools_A_Large_Scale_Survey_of_Researchers_U/review]] — 연구자 LLM 사용 현황을 개인 사용자의 AI 에이전트 도입으로 확장하여 분석한다
+- 🔗 후속 연구: [[papers/378_Generative_AI_Uses_and_Risks_for_Knowledge_Workers_in_a_Scie/review]] — AI 에이전트 채택과 사용에 대한 초기 증거 연구가 과학 조직에서 생성형 AI 사용과 위험에 대한 구체적인 사례 연구로 발전되었다
+- 🔗 후속 연구: [[papers/106_Artificial_Intelligence_in_Research_and_Development/review]] — 개인 연구에서의 AI 에이전트 채택 및 사용 초기 증거가 AI의 연구개발 영향에 대한 실증적 확장을 제공한다

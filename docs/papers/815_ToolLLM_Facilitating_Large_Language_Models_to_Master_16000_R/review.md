@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "오픈소스 LLM들의 API 활용 능력을 대폭 향상시키기 위해 16,464개의 실제 REST API를 포함한 대규모 도구 사용 지시튜닝 데이터셋(ToolBench)과 깊이 우선 탐색 기반 의사결정 트리(DFSDT) 알고리즘을 제시하며, ChatGPT와 비슷한 성능의 ToolLLaMA를 개발했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/LLM_Agent_Benchmarking"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qin et al._2023_ToolLLM Facilitating Large Language Models to Master 16000+ Real-world APIs.pdf"
 ---
@@ -120,15 +122,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qin et al._2023_ToolLLM Facilitating Lar
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/review]] — API 도구 사용 능력 평가 방법론을 AI 연구 자동화 평가로 확장한 발전
-- 🏛 기반 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 대규모 도구 사용 평가 프레임워크가 ML 실험 자동화 벤치마크의 기반
-- 🔄 다른 접근: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 능동적 정보 수집에 중점을 둔 접근과 달리 구체적 API 도구 활용 능력에 집중
-- 🏛 기반 연구: [[papers/499_LLM_With_Tools_A_Survey/review]] — LLM 도구 사용에 대한 포괄적 서베이에서 제시된 방법론을 대규모 벤치마크로 구현
-- 🔗 후속 연구: [[papers/268_Democratizing_AI_scientists_using_ToolUniverse/review]] — 도구 생태계가 더 포괄적인 도구 마스터링으로 확장됩니다.
-- 🧪 응용 사례: [[papers/114_Augmented_Language_Models_a_Survey/review]] — 언어모델의 도구 사용 능력 확장 연구가 16000개 이상의 다양한 도구를 마스터하는 대형언어모델 개발에 직접 적용되었다
-- 🔗 후속 연구: [[papers/1098_BloClaw_An_Omniscient_Multi-Modal_Agentic_Workspace_for_Next/review]] — BloClaw는 ToolLLM의 16000+ 도구 마스터링 프레임워크를 확장하여 JSON 기반 도구 호출의 취약성을 해결하는 더 견고한 도구 통합 환경을 제공합니다.
-- 🔗 후속 연구: [[papers/499_LLM_With_Tools_A_Survey/review]] — 16,000개 이상의 도구를 마스터하는 LLM 훈련으로 도구 활용 능력을 대폭 확장한다.
-- 🏛 기반 연구: [[papers/672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/review]] — 도구 사용 능력을 평가하는 ToolLLM의 방법론을 연구 에이전트 평가로 확장한 기반
-- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — API 도구 사용 능력 평가를 머신러닝 실험이라는 구체적 도메인으로 특화한 확장
-- 🔄 다른 접근: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — API 도구 사용과 달리 환경과의 능동적 상호작용을 통한 정보 수집 능력에 집중
-- 🏛 기반 연구: [[papers/231_Codegen_An_open_large_language_model_for_code_with_multi-tur/review]] — 코드 생성 능력이 API 도구 사용 벤치마크에서 프로그래밍 작업의 기반
+- 🏛 기반 연구: [[papers/496_LLM_Agents_Making_Agent_Tools/review]] — LLM이 도구를 마스터하는 기본 능력을 입증하여 과학 논문에서 도구를 자동 생성하는 ToolMaker의 기술적 기반을 제공함
+- 🏛 기반 연구: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — 16,000개 이상의 실제 도구 사용 능력을 통해 ChemCrow가 18개 화학 도구를 통합하는 것의 확장성과 일반화 가능성을 보여주는 기반 연구임
+- 🔗 후속 연구: [[papers/769_StableToolBench_Towards_Stable_Large-Scale_Benchmarking_on_T/review]] — 대규모 도구 사용 벤치마크의 안정성을 다루어 ToolLLM의 대규모 도구 마스터링 능력을 더 신뢰할 수 있고 일관된 성능으로 발전시킴
+- 🔗 후속 연구: [[papers/268_Democratizing_AI_scientists_using_ToolUniverse/review]] — 16000개 이상의 도구를 마스터하는 LLM으로 도구 생태계를 확장한다.
+- 🏛 기반 연구: [[papers/130_Automating_Computational_Chemistry_Workflows_via_OpenClaw_an/review]] — 16000+ 도구를 다루는 ToolLLM이 도메인별 스킬 활용의 방법론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — LLM이 도구를 효과적으로 사용할 수 있는 기본 능력을 입증하여 화학 전문 도구 통합의 이론적 기반을 제공함
+- 🔗 후속 연구: [[papers/496_LLM_Agents_Making_Agent_Tools/review]] — LLM이 기존 도구를 사용하는 것을 넘어 과학 논문에서 새로운 도구를 자동 생성하는 것으로 도구 사용 능력을 한 단계 발전시킴
+- 🏛 기반 연구: [[papers/101_AnyTool_Self-Reflective_Hierarchical_Agents_for_Large-Scale/review]] — 16,000+ 도구 마스터링 연구가 대규모 API 활용 에이전트의 기초 방법론을 제공한다

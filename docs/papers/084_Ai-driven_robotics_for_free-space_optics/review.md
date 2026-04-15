@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.75
 essence: "본 논문은 생성형 AI, 컴퓨터 비전, 정밀 로봇공학을 통합하여 자유 공간 광학 실험(free-space optical experiments)의 설계, 조립, 정렬, 측정을 완전 자동화하는 최초의 플랫폼을 제시한다. LLM 기반 설계 에이전트가 사용자 요구사항을 광학 배치로 변환하고, 7자유도 로봇 팔이 마이크로미터 수준의 정밀도로 조립 및 정렬을 수행하며, 자동화된 측정 시스템이 인간 작업자를 능가하는 일관성으로 빔 특성화, 편광 맵핑, 분광 분석을 실행한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Domain-specific_Scientific_Reasoning"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/AI_Scientific_Tool_Integration"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sarker_2025_Ai-driven robotics for free-space optics.pdf"
 ---
@@ -153,8 +154,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sarker_2025_Ai-driven robotics for free-
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/268_Democratizing_AI_scientists_using_ToolUniverse/review]] — ToolUniverse의 도구 통합 생태계가 광학 실험 자동화의 도구 조율 메커니즘을 제공합니다.
-- 🔄 다른 접근: [[papers/073_AI_Agents_in_Engineering_Design_A_Multi-Agent_Framework_for/review]] — 자동차 설계와 광학 실험 모두 물리적 시스템의 AI 기반 설계 자동화를 다룹니다.
-- 🔗 후속 연구: [[papers/141_Autonomous_robotic_system_with_optical_coherence_tomography/review]] — 광학 실험의 로봇 자동화가 OCT를 통한 자율 로봇 시스템으로 확장 가능합니다.
-- 🔄 다른 접근: [[papers/073_AI_Agents_in_Engineering_Design_A_Multi-Agent_Framework_for/review]] — 자동차 설계와 광학 실험 모두 물리적 시스템의 AI 기반 자동화를 다룹니다.
-- 🧪 응용 사례: [[papers/268_Democratizing_AI_scientists_using_ToolUniverse/review]] — 도구 통합 생태계가 광학 실험 자동화에 활용됩니다.
+- 🔄 다른 접근: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — 광학 실험 자동화와 유사하게 실험실 전체를 자동화하는 다른 접근법을 제시한다.
+- 🧪 응용 사례: [[papers/297_EAA_Automating_materials_characterization_with_vision_langua/review]] — 재료 특성화 자동화에 컴퓨터 비전 기반 로봇 시스템을 적용하는 실제 사례를 보여준다.
+- 🔗 후속 연구: [[papers/073_AI_Agents_in_Engineering_Design_A_Multi-Agent_Framework_for/review]] — 로봇 기반 설계 자동화를 광학 실험 영역으로 확장한 사례로 볼 수 있다.
+- 🔄 다른 접근: [[papers/073_AI_Agents_in_Engineering_Design_A_Multi-Agent_Framework_for/review]] — 설계 자동화를 다른 공학 영역(광학)에 적용한 유사한 접근법이다.

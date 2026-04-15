@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "학술지의 동료 평가(peer review) 메커니즘에서 영감을 받아, 여러 대규모 언어모델(LLM)을 평가자로 활용하여 다른 LLM들의 성능을 자동으로 평가하는 프레임워크를 제안한다. 자격 시험으로 신뢰할 수 있는 평가자를 선별한 후 이들의 평가 결과를 집계하여 편향 없는 LLM 평가를 실현한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Peer_Review"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chu et al._2024_Pre A peer review based large language model evaluator.pdf"
 ---
@@ -120,9 +120,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chu et al._2024_Pre A peer review based 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/089_Aigs_Generating_science_from_ai-powered_automated_falsificat/review]] — 동료 평가 메커니즘을 자동 과학 생성 시스템에 통합하여 과학적 발견의 품질 검증을 강화합니다.
-- 🔄 다른 접근: [[papers/486_Lego-prover_Neural_theorem_proving_with_growing_libraries/review]] — AI 성능 평가라는 동일한 목표를 동료 평가와 정리 증명이라는 서로 다른 검증 방식으로 구현합니다.
-- 🏛 기반 연구: [[papers/710_Sciclaimhunt_A_large_dataset_for_evidence-based_scientific_c/review]] — 과학적 주장의 증거 기반 검증이 LLM 동료 평가 시스템의 신뢰성 확보에 핵심적 역할을 합니다.
-- 🔗 후속 연구: [[papers/089_Aigs_Generating_science_from_ai-powered_automated_falsificat/review]] — 동료 평가 메커니즘을 자동 반증 과정에 통합하여 과학적 검증의 엄밀성을 높입니다.
-- 🔄 다른 접근: [[papers/486_Lego-prover_Neural_theorem_proving_with_growing_libraries/review]] — AI 시스템의 성능 검증이라는 동일한 목표를 정리 증명과 동료 평가라는 다른 도메인에서 구현합니다.
-- 🔗 후속 연구: [[papers/710_Sciclaimhunt_A_large_dataset_for_evidence-based_scientific_c/review]] — 과학적 주장 검증의 엄밀성을 LLM 기반 동료 평가 시스템의 신뢰성 향상에 적용합니다.
+- 🔄 다른 접근: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 둘 다 LLM을 활용한 동료 평가 시스템이지만, PRE는 다중 LLM 평가자 활용에, 다른 논문은 다중 턴 대화 구조에 집중한다
+- 🔗 후속 연구: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — 프롬프트 생성을 통한 리뷰 최적화 연구가 PRE의 동료 평가 기반 LLM 평가 프레임워크로 발전되었다
+- 🏛 기반 연구: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — AI 생성 리뷰에 대한 평가 프레임워크 연구가 PRE의 동료 평가 메커니즘을 활용한 LLM 평가 시스템의 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/1088_Lag_Llm_agents_for_leaderboard_auto_generation_on_demanding/review]] — 피어리뷰 기반 LLM 평가가 리더보드 생성을 위한 성과 측정의 방법론적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/237_Confidence_in_Large_Language_Model_Evaluation_A_Bayesian_App/review]] — 베이지안 접근법 대신 동료 심사 기반 LLM 평가를 제시한다
+- 🔄 다른 접근: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — NLP 동료 심사 지원 대신 LLM 기반 평가자를 개발하는 다른 접근법

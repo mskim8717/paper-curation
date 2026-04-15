@@ -9,8 +9,10 @@ arxiv: ""
 score: 3.5
 essence: "생성형 AI(GenAI)의 경제 데이터 해석 방식에 내재된 편향을 드러내고, 경제 인류학적 지식으로 LLM을 미세조정하여 비시장 경제 체계를 인식할 수 있는 모델로 전환할 수 있음을 시연한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Science_Communication"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sheldon and Kumar_2024_Economic anthropology in the era of generative artificial intelligence.pdf"
 ---
@@ -99,7 +101,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sheldon and Kumar_2024_Economic anthropo
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/319_Ethnography_and_machine_learning_Synergies_and_new_direction/review]] — 기계학습과 민족지학의 시너지를 경제 인류학적 관점에서 생성형 AI에 적용한다
-- 🏛 기반 연구: [[papers/247_Cultural_evolution_in_populations_of_large_language_models/review]] — 대규모 언어모델에서 문화적 진화의 기초적 이해를 제공한다
-- 🧪 응용 사례: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — 사회 시뮬레이션을 통한 개인에서 사회로의 확장을 경제 인류학적 맥락에서 구현한다
-- 🏛 기반 연구: [[papers/517_Malinowski_in_the_age_of_ai_Can_large_language_models_create/review]] — 생성형 인공지능 시대의 경제 인류학이 AI 기반 인류학 텍스트 게임 생성의 이론적 배경을 제공합니다.
+- 🧪 응용 사례: [[papers/517_Malinowski_in_the_age_of_ai_Can_large_language_models_create/review]] — 인류학 텍스트 게임 생성에서 경제 인류학적 편향 문제의 구체적 적용 사례를 보여준다
+- 🔗 후속 연구: [[papers/319_Ethnography_and_machine_learning_Synergies_and_new_direction/review]] — 기계학습과 인류학의 시너지 연구로 생성형 AI의 인류학적 접근을 더욱 확장한다
+- 🔄 다른 접근: [[papers/340_Fine-tuning_large_language_models_for_domain_adaptation_expl/review]] — 도메인 적응을 위한 LLM 미세조정 실험으로 편향 해결의 다른 기술적 접근을 제시한다
+- 🧪 응용 사례: [[papers/460_Language_models_surface_the_unwritten_code_of_science_and_so/review]] — 생성형 AI 시대의 경제 인류학이 언어모델을 통한 사회 불문율 표면화의 인문사회과학적 응용 사례를 보여준다
+- 🏛 기반 연구: [[papers/517_Malinowski_in_the_age_of_ai_Can_large_language_models_create/review]] — 생성형 AI의 경제 인류학적 편향 문제를 다루며 인류학 게임 생성의 이론적 기반을 제공한다

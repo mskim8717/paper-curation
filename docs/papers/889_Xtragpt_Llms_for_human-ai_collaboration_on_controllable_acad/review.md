@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 맥락 인식(context-aware)과 제어 가능한(controllable) 학술 논문 수정을 위한 인간-AI 협업 프레임워크를 제안하며, 이를 구현한 XtraGPT 모델군(1.5B~14B)을 소개한다. 140,000개의 지도 학습 쌍으로 구성된 ReviseQA 데이터셋을 구축하여 섹션 단위의 정교한 학술 논문 수정을 지원한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Personalization"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/CHANGKUI_2025_Xtragpt Llms for human-ai collaboration on controllable academic paper revision.pdf"
 ---
@@ -166,15 +168,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/CHANGKUI_2025_Xtragpt Llms for human-ai 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/702_Scholarcopilot_Training_large_language_models_for_academic_w/review]] — 제어 가능한 학술 논문 수정과 인용 검색 통합 글쓰기는 모두 학술 글쓰기 지원을 목표로 하지만 수정과 생성이라는 다른 작업에 특화된다.
-- 🔄 다른 접근: [[papers/775_Step-back_profiling_Distilling_user_history_for_personalized/review]] — 맥락 인식 제어 가능한 수정과 사용자 이력 기반 개인화는 모두 개인화된 학술 글쓰기를 지원하지만 서로 다른 개인화 메커니즘을 사용한다.
-- 🔗 후속 연구: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — 인간-AI 협업 글쓰기의 기본 개념을 제어 가능하고 맥락을 인식하는 학술 논문 수정이라는 특화된 기능으로 확장한다.
-- 🏛 기반 연구: [[papers/595_Overleafcopilot_Empowering_academic_writing_in_overleaf_with/review]] — 제어 가능한 학술 글쓰기를 위한 LLM 활용 연구로 OverleafCopilot의 기능 설계 기반을 제공한다.
-- 🧪 응용 사례: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 인간-AI 협력 글쓰기 패턴 분석이 학술 논문 작성을 위한 제어 가능한 AI 협력 시스템 개발에 직접 활용된다
-- 🔗 후속 연구: [[papers/703_Scholawrite_A_dataset_of_end-to-end_scholarly_writing_proces/review]] — 인간의 학술 글쓰기 과정 연구가 LLM 기반 협력적 학술 글쓰기 시스템 개발의 기초 자료를 제공합니다.
-- 🔄 다른 접근: [[papers/520_Massw_A_new_dataset_and_benchmark_tasks_for_ai-assisted_scie/review]] — AI 보조 과학 연구에서 구조화된 워크플로우 추출과 제어 가능한 학술 작문의 서로 다른 접근 방식을 비교할 수 있습니다.
-- 🔄 다른 접근: [[papers/702_Scholarcopilot_Training_large_language_models_for_academic_w/review]] — 학술 글쓰기에서 인용 검색 통합과 제어 가능한 수정 기능은 모두 글쓰기 지원을 목표로 하지만 서로 다른 작업 단계에 초점을 맞춘다.
-- 🔄 다른 접근: [[papers/775_Step-back_profiling_Distilling_user_history_for_personalized/review]] — 사용자 이력 기반 개인화와 제어 가능한 맥락 인식 수정은 모두 개인화된 학술 글쓰기 지원을 목표로 하지만 서로 다른 개인화 전략을 사용한다.
-- 🏛 기반 연구: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — 인간-AI 협업 편집의 기본 프레임워크가 제어 가능한 학술 논문 수정을 위한 협업 모델의 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/900_ChatGPT_has_entered_the_classroom_how_LLMs_could_transform_e/review]] — 학술적 글쓰기에서 인간-AI 협력의 구체적 구현 방안을 제시한다
-- 🧪 응용 사례: [[papers/607_Patterns_and_purposes_A_cross-journal_analysis_of_ai_tool_us/review]] — 학술적 글쓰기에서 AI 도구의 실제 활용 방식과 목적을 구체적으로 분석한다
+- 🔄 다른 접근: [[papers/595_Overleafcopilot_Empowering_academic_writing_in_overleaf_with/review]] — 학술 논문 작성을 위한 LLM 활용에서 다른 기술적 구현과 사용자 인터페이스를 제시한다
+- 🏛 기반 연구: [[papers/775_Step-back_profiling_Distilling_user_history_for_personalized/review]] — 개인화된 학술 글쓰기를 위한 사용자 맥락 활용의 기본 방법론을 제공한다
+- 🔗 후속 연구: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 인간-AI 협업 글쓰기를 위한 더 정교한 제어 가능한 시스템으로 확장한다
+- 🔄 다른 접근: [[papers/595_Overleafcopilot_Empowering_academic_writing_in_overleaf_with/review]] — 학술 논문 작성을 위한 LLM 통합에서 다른 기술적 접근법과 사용자 경험을 제시한다
+- 🧪 응용 사례: [[papers/281_Dlpo_Towards_a_robust_efficient_and_generalizable_prompt_opt/review]] — 견고한 프롬프트 최적화가 인간-AI 협업에서 제어 가능한 학술 콘텐츠 생성에 활용될 수 있다.
+- 🧪 응용 사례: [[papers/227_Closing_the_loop_Learning_to_generate_writing_feedback_via_l/review]] — 제어 가능한 학술 글쓰기를 위한 인간-AI 협업 시스템으로, 이 논문의 작문 피드백 생성을 실제 글쓰기 도구로 응용한 사례다
+- 🔗 후속 연구: [[papers/775_Step-back_profiling_Distilling_user_history_for_personalized/review]] — 제어 가능한 학술 논문 수정을 위한 더 정교한 맥락 인식 기법을 활용한다

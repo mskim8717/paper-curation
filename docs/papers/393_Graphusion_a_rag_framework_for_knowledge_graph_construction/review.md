@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모언어모델(LLM)을 활용하여 자유로운 텍스트에서 **전역적 관점(global perspective)**을 고려한 과학 분야의 지식그래프(Knowledge Graph, KG)를 구축하는 새로운 프레임워크 Graphusion을 제안한다. 기존 로컬 중심의 방법을 넘어 엔티티 병합, 충돌 해결, 신규 관계 발견을 통해 통합된 지식그래프를 생성한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Retrieval-augmented_Generation_Systems"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Peer_Review_Assessment"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2024_Graphusion a rag framework for knowledge graph construction with a global perspective.pdf"
 ---
@@ -113,10 +113,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2024_Graphusion a rag framew
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/020_A_Review_of_Relational_Machine_Learning_for_Knowledge_Graphs/review]] — 지식 그래프를 위한 관계형 기계학습 리뷰가 과학 지식그래프 구축의 이론적 토대를 제공합니다.
-- 🔗 후속 연구: [[papers/404_Hiperrag_High-performance_retrieval_augmented_generation_for/review]] — 고성능 RAG 시스템의 과학 문헌 처리 기법이 지식그래프 기반 검색 증강에 확장 적용될 수 있습니다.
-- 🧪 응용 사례: [[papers/666_Research_hypothesis_generation_over_scientific_knowledge_gra/review]] — 과학 지식 그래프를 활용한 연구 가설 생성이 Graphusion 프레임워크의 실제 응용 사례입니다.
-- 🏛 기반 연구: [[papers/666_Research_hypothesis_generation_over_scientific_knowledge_gra/review]] — 과학 분야 지식그래프 구축을 위한 RAG 프레임워크가 가설 생성의 기반 지식 구조를 제공합니다.
-- 🔄 다른 접근: [[papers/348_FRAG_A_Flexible_Modular_Framework_for_Retrieval-Augmented_Ge/review]] — 지식그래프 구축에 중점을 둔 Graphusion과 달리 기존 KG 활용 최적화에 집중
-- 🏛 기반 연구: [[papers/020_A_Review_of_Relational_Machine_Learning_for_Knowledge_Graphs/review]] — 관계형 기계학습의 이론적 기초가 지식 그래프 구축을 위한 RAG 프레임워크 개발의 방법론적 배경을 제공함
-- 🧪 응용 사례: [[papers/032_A_Survey_on_Knowledge_Graphs_Representation_Acquisition_and/review]] — 지식 그래프 구축을 위한 RAG 프레임워크로 본 서베이의 지식 표현 방법론을 실제 구현에 적용한다.
+- 🏛 기반 연구: [[papers/032_A_Survey_on_Knowledge_Graphs_Representation_Acquisition_and/review]] — 지식 그래프 표현, 획득, 추론에 관한 포괄적 설문은 과학 분야 지식그래프 구축 프레임워크의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/404_Hiperrag_High-performance_retrieval_augmented_generation_for/review]] — 대규모 과학 문헌에서 지식그래프를 구축하는 Graphusion과 이를 검색에 활용하는 HiPerRAG는 상호 보완적인 지식 처리 파이프라인을 형성한다.
+- 🔄 다른 접근: [[papers/882_When_large_language_models_meet_citation_A_survey/review]] — LLM과 인용 분석의 결합이라는 공통 주제를 다루지만, 지식그래프 구축과 인용 분석이라는 서로 다른 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/404_Hiperrag_High-performance_retrieval_augmented_generation_for/review]] — 과학 문헌에서 구축된 지식그래프는 고성능 검색 증강 생성 시스템의 지식 기반으로 활용될 수 있다.
+- 🔄 다른 접근: [[papers/882_When_large_language_models_meet_citation_A_survey/review]] — 학술 인용 분석과 지식그래프 구축은 모두 학술 문헌에서 지식을 추출하고 연결하지만 서로 다른 접근법을 사용한다.
+- 🔄 다른 접근: [[papers/448_Kgvalidator_A_framework_for_automatic_validation_of_knowledg/review]] — Graphusion의 지식 그래프 구축과 KGValidator의 검증은 지식 그래프 생명주기의 서로 다른 단계를 다룬다.
+- 🧪 응용 사례: [[papers/020_A_Review_of_Relational_Machine_Learning_for_Knowledge_Graphs/review]] — RAG 프레임워크를 통한 지식 그래프 구축을 관계형 기계학습에 적용하여 실제 지식 그래프 생성과 추론에 활용할 수 있다.
+- 🧪 응용 사례: [[papers/032_A_Survey_on_Knowledge_Graphs_Representation_Acquisition_and/review]] — RAG 기반 지식 그래프 구축 방법론을 실제 지식 그래프 연구에 적용하여 이론과 실제를 연결하는 구체적 사례를 제공한다.

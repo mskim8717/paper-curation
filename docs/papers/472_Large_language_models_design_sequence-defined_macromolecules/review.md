@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.0
 essence: "사전학습된 대규모언어모델(LLM)인 Claude 3.5 Sonnet을 진화 최적화(evolutionary optimization) 알고리즘으로 활용하여 거대 분자의 자기조립 구조를 설계할 수 있음을 입증한 연구로, 전통적인 능동학습(active learning)과 진화 알고리즘보다 우수한 성능을 보였다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Protein-Drug_Design_Models"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Reinhart and Statt_2024_Large language models design sequence-defined macromolecules via evolutionary optimization.pdf"
 ---
@@ -119,7 +120,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Reinhart and Statt_2024_Large language m
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/459_Language_Models_for_Controllable_DNA_Sequence_Design/review]] — 언어 모델을 활용한 생체분자 설계라는 공통 주제이지만 거대분자 자기조립과 DNA 서열 설계로 응용 영역이 다르다.
-- 🏛 기반 연구: [[papers/469_Large_Language_Models_as_Evolutionary_Optimizers/review]] — 진화 최적화 알고리즘으로서의 LLM 활용 방법론이 거대분자 설계에 적용된 사례이다.
-- 🔗 후속 연구: [[papers/305_Efficient_Evolutionary_Search_Over_Chemical_Space_with_Large/review]] — 화학 공간에서의 효율적인 진화 탐색 기법을 거대분자 설계에 확장 적용할 수 있다.
-- 🔄 다른 접근: [[papers/459_Language_Models_for_Controllable_DNA_Sequence_Design/review]] — 거대분자 설계를 위한 LLM 활용이라는 공통점이 있지만, DNA 서열 생성과 자기조립 구조 설계라는 다른 타겟을 다룬다.
+- 🔄 다른 접근: [[papers/754_ShinkaEvolve_Towards_Open-Ended_And_Sample-Efficient_Program/review]] — 둘 다 LLM 기반 진화 최적화를 사용하지만 472는 거대분자 설계에, ShinkaEvolve는 프로그램 진화에 적용
+- 🔄 다른 접근: [[papers/459_Language_Models_for_Controllable_DNA_Sequence_Design/review]] — 둘 다 생물학적 서열 설계를 다루지만 472는 거대분자 자기조립에, ATGC-Gen은 DNA 조건부 생성에 특화
+- 🏛 기반 연구: [[papers/466_Large_Language_Model-Based_Evolutionary_Optimizer_Reasoning/review]] — LLM 기반 진화 최적화의 이론적 기반이 거대분자 설계에서 자기조립 구조 탐색에 적용됨
+- 🔗 후속 연구: [[papers/749_Sequence_modeling_and_design_from_molecular_to_genome_scale/review]] — Evo의 DNA 서열 생성 능력을 macromolecule 설계로 확장한 연구로, 분자 설계 응용 범위를 넓혔다.
+- 🏛 기반 연구: [[papers/480_Large-Language-Model-Based_AI_Agent_for_Organic_Semiconducto/review]] — 서열 정의 거대분자 설계용 대규모 언어모델이 유기반도체 소자 AI 에이전트의 분자 설계 방법론에 기반을 제공한다.
+- 🔄 다른 접근: [[papers/754_ShinkaEvolve_Towards_Open-Ended_And_Sample-Efficient_Program/review]] — 둘 다 LLM을 진화 최적화에 활용하지만 ShinkaEvolve는 프로그램 진화에, 472는 거대분자 설계에 특화됨
+- 🔄 다른 접근: [[papers/459_Language_Models_for_Controllable_DNA_Sequence_Design/review]] — 둘 다 생물학적 서열 설계를 다루지만 ATGC-Gen은 DNA에, 472는 거대분자 자기조립에 특화됨

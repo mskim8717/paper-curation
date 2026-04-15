@@ -12,9 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "베이지안 최적화(Bayesian Optimization) 기반의 반복적 실험 설계 프레임워크를 적용하여 세포 배양 배지 개발을 가속화했으며, PBMC 배양과 K. phaffii의 재조합 단백질 생산 최적화에서 기존 방법 대비 3-30배 적은 실험으로 우수한 결과를 달성했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Bayesian_Materials_Inference"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Autonomous_Biological_Discovery_AI"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Narayanan et al._2025_Accelerating cell culture media development using Bayesian optimization-based iterative experimental.pdf"
 ---
@@ -94,10 +95,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Narayanan et al._2025_Accelerating cell 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1126_Autonomous_platform_for_solution_processing_of_electronic_po/review]] — 두 논문 모두 베이지안 최적화를 자동화 실험에 적용하되 세포 배양 배지는 생물학, 전자 고분자는 재료과학 분야에 특화되어 있다.
-- 🔗 후속 연구: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 알고리즘 실행을 통한 표적 재료 발견은 세포 배양 배지 개발의 베이지안 최적화 프레임워크를 재료 발견으로 확장한다.
-- 🧪 응용 사례: [[papers/072_Agents_for_self-driving_laboratories_applied_to_quantum_comp/review]] — 자율주행 실험실의 AI 에이전트는 세포 배양 배지 개발의 베이지안 최적화 과정을 완전 자동화된 실험 시스템으로 구현할 수 있다.
-- 🔗 후속 연구: [[papers/140_Autonomous_reinforcement_learning_agent_for_chemical_vapor_d/review]] — 화학 기상 증착의 자율 강화학습에서 베이지안 최적화로의 확장
-- 🔄 다른 접근: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — 자동화된 실시간 실험-이론 폐쇄루프와 베이지안 최적화의 다른 접근법
-- 🏛 기반 연구: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — 화학과 재료과학의 자율주행 실험실이 베이지안 최적화의 이론적 기반
-- 🔄 다른 접근: [[papers/1126_Autonomous_platform_for_solution_processing_of_electronic_po/review]] — 두 논문 모두 베이지안 최적화 기반 자동화를 다루되 Polybot은 재료과학, 세포 배양은 생물학 응용에 초점을 맞춘다.
+- 🔄 다른 접근: [[papers/1126_Autonomous_platform_for_solution_processing_of_electronic_po/review]] — 둘 다 베이지안 최적화를 자동화 시스템에 활용하지만 1125는 생물학적 배지 최적화에, 1126은 전자 고분자 처리에 적용
+- 🏛 기반 연구: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 알고리즘 실행의 타겟 재료 발견 접근법이 세포배양 최적화의 이론적 기반을 제공함
+- 🔗 후속 연구: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — 자율 실험실 개념을 세포배양 최적화에 확장하여 완전 자동화된 생물학 연구 플랫폼 구축 가능
+- 🔗 후속 연구: [[papers/258_Deep_active_learning_based_experimental_design_to_uncover_sy/review]] — 능동학습을 세포 배양 매체 개발이라는 다른 생물학적 시스템으로 확장한 응용 사례이다
+- 🔄 다른 접근: [[papers/1126_Autonomous_platform_for_solution_processing_of_electronic_po/review]] — 둘 다 베이지안 최적화 기반 자동화 시스템이지만 Polybot은 전자 고분자에, 1125는 세포배양에 특화됨

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "LLM의 과학적 가설 생성 능력을 지식 그래프(Knowledge Graph)의 구조화된 정보와 통합하여 향상시키고, 생성 과정의 환각(hallucination)을 감지 및 완화하는 KG-CoI 시스템을 제안한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Hypothesis_Generation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xiong et al._2024_Improving Scientific Hypothesis Generation with Knowledge Grounded Large Language Models.pdf"
 ---
@@ -112,11 +114,10 @@ KG-CoI는 세 가지 주요 모듈로 구성된다:
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/500_Llm-based_corroborating_and_refuting_evidence_retrieval_for/review]] — 지식 그래프 기반 가설 생성을 과학적 주장 검증으로 확장한 방법론
-- 🔄 다른 접근: [[papers/391_Graph_of_ai_ideas_Leveraging_knowledge_graphs_and_llms_for_a/review]] — 같은 지식 그래프 활용 접근이지만 AI 연구 아이디어 생성에 특화된 시스템
-- 🏛 기반 연구: [[papers/009_A_GENTIC_H_YPOTHESIS__A_SURVEY_ON_HYPOTHESIS_GENERATION_USIN/review]] — 가설 생성 연구의 포괄적 서베이로서 이론적 기초 제공
-- 🔗 후속 연구: [[papers/666_Research_hypothesis_generation_over_scientific_knowledge_gra/review]] — 지식 그래프 기반 가설 생성의 실제 연구 적용 사례
-- 🏛 기반 연구: [[papers/819_Toward_reliable_biomedical_hypothesis_generation_Evaluating/review]] — 지식 기반 가설 생성이 생의학 가설의 진실성 평가 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/391_Graph_of_ai_ideas_Leveraging_knowledge_graphs_and_llms_for_a/review]] — AI 연구 vs 일반 과학 가설 생성으로 지식 그래프 활용의 서로 다른 도메인 적용
-- 🏛 기반 연구: [[papers/500_Llm-based_corroborating_and_refuting_evidence_retrieval_for/review]] — 지식 그래프 기반 가설 생성이 과학적 주장 검증의 방법론적 기반
-- 🏛 기반 연구: [[papers/289_Drsr_Llm_based_scientific_equation_discovery_with_dual_reaso/review]] — 지식 그래프를 활용한 과학 가설 생성 연구가 방정식 발견에서 경험적 지식을 활용하는 접근법의 이론적 기반을 제공합니다.
+- 🔄 다른 접근: [[papers/330_Exploiting_LLMs_for_Automatic_Hypothesis_Assessment_via_a_Lo/review]] — 과학적 가설 생성에서 지식 그래프 기반 접근법과 로짓 기반 평가 방법이라는 상호 보완적 전략을 제시한다.
+- 🔗 후속 연구: [[papers/155_Beyond_Brainstorming_What_Drives_High-Quality_Scientific_Ide/review]] — 구조화된 지식과 다중 에이전트 토론이 모두 고품질 과학 아이디어 생성에 기여하는 방법론을 보여준다.
+- 🧪 응용 사례: [[papers/123_Automated_Hypothesis_Validation_with_Agentic_Sequential_Fals/review]] — 지식 그라운딩된 가설 생성이 자동화된 가설 검증 시스템에 실제 적용될 수 있는 연결점을 제공한다.
+- 🏛 기반 연구: [[papers/668_ResearchAgent_Iterative_Research_Idea_Generation_over_Scient/review]] — 반복적 연구 아이디어 생성에서 지식 그래프의 구조화된 정보 활용이라는 방법론적 토대를 공유한다.
+- 🔗 후속 연구: [[papers/473_Large_Language_Models_for_Automated_Open-domain_Scientific_H/review]] — 지식 그래프를 활용한 과학 가설 생성의 개선된 접근법을 제시한다
+- 🔄 다른 접근: [[papers/155_Beyond_Brainstorming_What_Drives_High-Quality_Scientific_Ide/review]] — 고품질 과학 아이디어 생성에서 다중 에이전트 토론과 지식 그래프 기반 접근법이라는 서로 다른 전략을 제시한다.
+- 🔄 다른 접근: [[papers/330_Exploiting_LLMs_for_Automatic_Hypothesis_Assessment_via_a_Lo/review]] — 과학적 가설 평가에서 로짓 기반 접근법과 지식 그래프 기반 방법이라는 서로 다른 전략을 제시한다.

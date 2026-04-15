@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 딥러닝의 불확실성 정량화(Uncertainty Quantification, UQ) 방법을 불확실성의 원천(데이터 불확실성 vs 모델 불확실성)에 따라 체계적으로 분류하는 최초의 종합 설문이다. 기존 설문과 달리 신경망 아키텍처나 베이지안 형식이 아닌 불확실성 원천 관점에서 UQ 방법들을 분석함으로써 실무 응용에 적합한 방법 선택을 용이하게 한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Data_Interpretation"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Physics-Informed_Neural_Operators"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/He et al._2023_A Survey on Uncertainty Quantification Methods for Deep Learning.pdf"
 ---
@@ -132,10 +132,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/He et al._2023_A Survey on Uncertainty Q
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/850_Uncertainty_quantification_in_scientific_machine_learning_Me/review]] — 과학적 머신러닝에서 불확실성 정량화의 광범위한 맥락과 이론적 토대를 제공합니다.
-- 🔗 후속 연구: [[papers/652_Rbf_Quantifying_and_optimizing_reasoning_boundaries_across_m/review]] — 추론 경계를 정량화하고 최적화하는 방법으로 딥러닝 불확실성 정량화 기법을 확장합니다.
-- 🧪 응용 사례: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 대규모 언어 모델의 신뢰성 평가에 불확실성 정량화 방법을 실제 적용하는 사례를 제공합니다.
-- 🔗 후속 연구: [[papers/850_Uncertainty_quantification_in_scientific_machine_learning_Me/review]] — 딥러닝에서 불확실성 정량화 조사를 과학 기계학습 특화 방법론으로 확장할 수 있다
-- 🔗 후속 연구: [[papers/346_Foundation-Model_Surrogates_Enable_Data-Efficient_Active_Lea/review]] — 불확실성 정량화를 기초 모델 기반 능동 학습으로 확장하여 데이터 효율성을 크게 개선합니다.
-- 🏛 기반 연구: [[papers/785_T-sciq_Teaching_multimodal_chain-of-thought_reasoning_via_mi/review]] — 딥러닝 불확실성 정량화가 과학 문제 해결 AI의 신뢰성 확보에 필수적인 이론적 기초를 제공합니다.
-- 🧪 응용 사례: [[papers/869_Visual_thoughts_A_unified_perspective_of_understanding_multi/review]] — 시각적 추론에서의 불확실성을 정량화하여 멀티모달 AI 시스템의 신뢰성을 향상시키는 방법을 제시합니다.
+- 🔄 다른 접근: [[papers/850_Uncertainty_quantification_in_scientific_machine_learning_Me/review]] — 딥러닝 불확실성 정량화의 일반적 방법론과 과학 기계학습 특화 불확실성 분석이라는 서로 다른 접근법을 제시함
+- 🏛 기반 연구: [[papers/360_From_lived_experience_to_insight_Unpacking_the_psychological/review]] — AI 시스템의 심리적 위험 평가에 딥러닝 불확실성 정량화 방법이 위험도 측정의 이론적 기반을 제공함
+- 🧪 응용 사례: [[papers/360_From_lived_experience_to_insight_Unpacking_the_psychological/review]] — AI 에이전트의 심리적 위험 평가에 딥러닝 불확실성 정량화 방법이 위험도 측정 도구로 활용될 수 있음
+- 🔄 다른 접근: [[papers/850_Uncertainty_quantification_in_scientific_machine_learning_Me/review]] — 과학 기계학습의 불확실성 정량화를 위해 신경망 특화 접근법과 딥러닝 일반화 방법론이라는 서로 다른 관점을 제시함
+- 🔄 다른 접근: [[papers/390_Grammars_of_formal_uncertainty_When_to_trust_llms_in_automat/review]] — 딥러닝에서 불확실성 정량화를 포괄적으로 다루지만 LLM 특화 대신 일반적인 딥러닝 모델에 집중한 다른 접근법임

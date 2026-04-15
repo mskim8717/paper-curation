@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어 모델(LLM)을 이용하여 데이터 기반 과학적 가설(hypothesis)을 자동으로 생성하고 개선하는 HypoGeniC 알고리즘을 제안한다. 다중 슬롯 머신(multi-armed bandit) 이론에 영감을 받아 탐색-활용(exploration-exploitation) 균형을 조절하며 반복적으로 가설 풀을 업데이트하여, 소수 샘플 프롬프팅을 크게 능가하는 해석 가능한 가설 기반 분류기를 구현한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Question_Answering"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2024_Hypothesis Generation with Large Language Models.pdf"
 ---
@@ -113,14 +115,16 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2024_Hypothesis Generation w
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/031_A_Survey_on_Hypothesis_Generation_for_Scientific_Discovery_i/review]] — 과학적 발견에서 가설 생성에 대한 포괄적 조사가 LLM 기반 가설 생성 알고리즘 개발의 이론적 토대를 마련합니다.
-- 🔄 다른 접근: [[papers/492_Literature_meets_data_A_synergistic_approach_to_hypothesis_g/review]] — 가설 생성에서 순수 LLM 접근법과 문헌-데이터 시너지 접근법의 서로 다른 방법론을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/132_Automating_psychological_hypothesis_generation_with_AI_when/review]] — AI를 통한 심리학 가설 생성을 더 일반적인 과학 분야로 확장하고 탐색-활용 균형을 도입한 진보된 방법입니다.
-- 🔄 다른 접근: [[papers/473_Large_Language_Models_for_Automated_Open-domain_Scientific_H/review]] — LLM을 활용한 가설 생성의 다른 접근법으로 개방 도메인과 일반적 방법론을 비교할 수 있다.
-- 🔗 후속 연구: [[papers/666_Research_hypothesis_generation_over_scientific_knowledge_gra/review]] — 대형 언어 모델을 활용한 가설 생성이 과학 지식 그래프 기반 방법론으로 확장될 수 있습니다.
-- 🏛 기반 연구: [[papers/123_Automated_Hypothesis_Validation_with_Agentic_Sequential_Fals/review]] — LLM 기반 가설 생성 연구의 기본적 접근법을 통계적으로 엄밀한 검증 방법론으로 보완한다.
-- 🔗 후속 연구: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — 대규모 언어 모델을 사용한 가설 생성 연구로 본 논문의 연구 아이디어 생성을 가설 차원으로 확장한다.
-- 🏛 기반 연구: [[papers/376_Generation_and_human-expert_evaluation_of_interesting_resear/review]] — LLM을 활용한 가설 생성에 대한 체계적 연구가 SciMuse의 연구 아이디어 생성 메커니즘의 이론적 기반과 방법론적 근거를 제공함
-- 🔗 후속 연구: [[papers/132_Automating_psychological_hypothesis_generation_with_AI_when/review]] — 일반적인 LLM 가설 생성을 심리학이라는 특정 도메인으로 확장하여 인과 지식 그래프를 통합한 더 정교한 접근법을 제시함
-- 🔄 다른 접근: [[papers/330_Exploiting_LLMs_for_Automatic_Hypothesis_Assessment_via_a_Lo/review]] — 대규모 언어 모델을 사용한 가설 생성 연구로 본 논문의 가설 평가와 상호 보완적인 가설 연구 접근법을 제시한다.
-- 🔄 다른 접근: [[papers/762_Spark_A_system_for_scientifically_creative_idea_generation/review]] — LLM을 사용한 가설 생성이라는 유사한 목표를 다른 방법론으로 접근한다
+- 🏛 기반 연구: [[papers/376_Generation_and_human-expert_evaluation_of_interesting_resear/review]] — 대규모 지식 그래프 기반 연구 아이디어 생성의 실제 검증 사례로서 가설 생성 알고리즘의 효용성을 입증한다.
+- 🔗 후속 연구: [[papers/492_Literature_meets_data_A_synergistic_approach_to_hypothesis_g/review]] — 문헌과 데이터의 시너지 접근법을 다중 슬롯 머신 이론으로 체계화하여 더 정교한 가설 생성 메커니즘을 제시한다.
+- 🔄 다른 접근: [[papers/468_Large_Language_Models_are_Zero_Shot_Hypothesis_Proposers/review]] — LLM의 제로샷 가설 제안과 반복적 가설 개선 알고리즘은 모두 AI 기반 가설 생성의 서로 다른 접근법이다.
+- 🧪 응용 사례: [[papers/149_Bayes-Entropy_Collaborative_Driven_Agents_for_Research_Hypot/review]] — 베이즈-엔트로피 협업 에이전트가 연구 가설 생성에서 탐색-활용 균형을 실제 구현한 사례를 제공한다.
+- 🏛 기반 연구: [[papers/473_Large_Language_Models_for_Automated_Open-domain_Scientific_H/review]] — LLM을 이용한 가설 생성의 기본 방법론과 이론적 배경을 제공한다
+- 🏛 기반 연구: [[papers/845_Trust_But_Verify_A_Self-Verification_Approach_to_Reinforceme/review]] — LLM의 가설 생성 능력에 대한 기초 연구가 자기검증 시스템의 이론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/468_Large_Language_Models_are_Zero_Shot_Hypothesis_Proposers/review]] — 제로샷 가설 생성에서 LLM 기반 일반적 가설 생성으로 확장된 연구 방향이다
+- 🏛 기반 연구: [[papers/031_A_Survey_on_Hypothesis_Generation_for_Scientific_Discovery_i/review]] — 과학적 가설 생성의 기본 원리와 LLM 활용 방법론에 대한 기초적 이해를 제공한다
+- 🏛 기반 연구: [[papers/363_From_Reasoning_to_Learning_A_Survey_on_Hypothesis_Discovery/review]] — 대규모 언어모델을 활용한 가설 생성 연구가 LLM 기반 가설 발견과 규칙 학습의 기본 방법론을 제공한다
+- 🏛 기반 연구: [[papers/763_Sparks_of_science_Hypothesis_generation_using_structured_pap/review]] — LLM을 활용한 가설 생성의 기본 방법론을 제공하며 구조화된 접근법의 이론적 기반이 된다
+- 🏛 기반 연구: [[papers/757_Simulating_tabular_datasets_through_llms_to_rapidly_explore/review]] — LLM을 활용한 가설 생성 연구가 표 데이터 시뮬레이션을 통한 가설 검증의 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/376_Generation_and_human-expert_evaluation_of_interesting_resear/review]] — 데이터 기반 가설 생성 알고리즘을 대규모 지식 그래프와 결합하여 더 체계적이고 검증된 연구 아이디어 생성으로 발전시켰다.
+- 🏛 기반 연구: [[papers/492_Literature_meets_data_A_synergistic_approach_to_hypothesis_g/review]] — LLM 기반 가설 생성에 대한 체계적 조사로, 문헌과 데이터를 통합한 가설 생성 방법론의 이론적 배경을 제공한다

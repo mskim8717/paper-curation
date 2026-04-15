@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 AI 코드 어시스턴트 사용자가 보안 관련 프로그래밍 작업을 수행할 때 더 안전하지 못한 코드를 작성하는지 대규모 사용자 실험을 통해 조사했다. 연구 결과 AI 어시스턴트(OpenAI's Codex-davinci-002)에 접근한 참가자들이 접근하지 못한 참가자들보다 유의미하게 보안 취약점이 많은 코드를 작성했으며, 역설적으로 자신의 코드가 안전하다고 더 높은 확률로 믿었다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Perry et al._2023_Do Users Write More Insecure Code with AI Assistants.pdf"
 ---
@@ -124,9 +126,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Perry et al._2023_Do Users Write More In
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/270_Detecting_llm-written_peer_reviews/review]] — AI 도구가 코딩 보안에 미치는 부정적 영향이 학술 동료평가 무결성으로 확장되는 유사한 우려사항임
-- 🔄 다른 접근: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — AI 어시스턴트 사용의 부정적 측면을 각각 보안과 다양성 관점에서 다른 각도로 조사함
-- ⚖️ 반론/비판: [[papers/635_Productivity_assessment_of_neural_code_completion/review]] — AI 코드 어시스턴트의 생산성 향상 효과와 보안 취약점 증가라는 상반된 관점을 제시함
-- 🔗 후속 연구: [[papers/270_Detecting_llm-written_peer_reviews/review]] — AI 도구 사용의 부정적 영향을 코딩에서 동료평가로 확장하여 학술 무결성에 대한 광범위한 우려를 다룸
-- 🔄 다른 접근: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — AI 어시스턴트 사용의 부정적 측면을 각각 다양성과 보안 관점에서 다른 각도로 조사함
-- 🔄 다른 접근: [[papers/635_Productivity_assessment_of_neural_code_completion/review]] — AI 코딩 도구의 생산성 평가에서 보안성 관점과 생산성 관점이라는 서로 다른 측정 기준을 제시하여 종합적 평가가 필요함을 보여준다.
+- 🏛 기반 연구: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — AI 어시스턴트의 보안 취약점이 언어모델 협력 글쓰기의 잠재적 위험성을 시사한다.
+- 🔄 다른 접근: [[papers/438_Introspective_growth_Automatically_advancing_llm_expertise_i/review]] — AI 도구 사용이 전문성에 미치는 부정적 영향을 코딩 보안과 기술 판단에서 각각 검증한다.
+- 🔗 후속 연구: [[papers/635_Productivity_assessment_of_neural_code_completion/review]] — AI 코드 어시스턴트의 보안 문제가 신경 코드 완성의 생산성 평가로 확장 연구될 수 있다.
+- 🔄 다른 접근: [[papers/438_Introspective_growth_Automatically_advancing_llm_expertise_i/review]] — LLM의 전문 지식 활용과 코딩 보안성에서 각각 지식-성능 격차 문제를 다룬다.
+- 🔄 다른 접근: [[papers/635_Productivity_assessment_of_neural_code_completion/review]] — AI 어시스턴트가 코드 보안성에 미치는 영향을 다른 관점에서 평가한다

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 AI 에이전트의 오픈엔디드 머신러닝 연구 수행 능력을 평가하기 위한 포괄적 벤치마크인 MLR-Bench를 제시한다. 201개의 실제 연구 과제, 자동화된 평가 프레임워크(MLR-Judge), 그리고 모듈식 에이전트 구조(MLR-Agent)를 통해 아이디어 생성부터 논문 작성까지의 전 과정을 평가한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/LLM_Agent_Benchmarking"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/ML_Research_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_Mlr-bench Evaluating ai agents on open-ended machine learning research.pdf"
 ---
@@ -119,9 +120,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_Mlr-bench Evaluating ai
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — 둘 다 머신러닝 연구 수행 능력을 평가하는 벤치마크이지만 하나는 오픈엔디드 연구에, 다른 하나는 특정 머신러닝 에이전트에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — 새로운 머신러닝 방법 구현에 특화된 벤치마크로서 MLR-Bench의 실제 연구 과제 평가를 보완한다.
-- 🏛 기반 연구: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — 워크샵 수준의 자동화된 과학 발견 시스템으로서 MLR-Bench가 평가하는 AI 에이전트의 이상적인 목표 모델을 제시한다.
-- 🔗 후속 연구: [[papers/544_Mldebugging_Towards_benchmarking_code_debugging_across_multi/review]] — 오픈엔드 머신러닝 연구 평가가 실제 소프트웨어 개발에서의 디버깅 능력 평가를 연구 차원으로 확장한다.
-- 🔗 후속 연구: [[papers/712_SciCode_A_Research_Coding_Benchmark_Curated_by_Scientists/review]] — 과학 연구 중심 코딩 벤치마크가 개방형 기계학습 연구 평가로 확장되어 더 포괄적인 AI 연구 능력을 측정한다
-- 🔄 다른 접근: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 오픈엔드 ML 연구에 중점을 둔 MLR-Bench와 달리 정형화된 ML 실험 수행 능력에 집중
+- 🔄 다른 접근: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — AI 에이전트의 머신러닝 연구 능력을 평가하는 두 가지 다른 벤치마크 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 언어 모델 기반 에이전트의 머신러닝 실험 자동화 능력을 더 포괄적으로 평가하는 발전된 형태다.
+- 🏛 기반 연구: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — 완전 자동화된 과학 발견을 위한 AI 과학자 개발의 기초 연구로서 MLR-Bench의 이론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/543_Mlcopilot_Unleashing_the_power_of_large_language_models_in_s/review]] — 오픈엔드 기계학습 연구 벤치마크가 과거 ML 작업 경험을 활용하는 MLCopilot의 성능을 평가하는 확장된 플랫폼을 제공한다.
+- 🏛 기반 연구: [[papers/549_Mlr-copilot_Autonomous_machine_learning_research_based_on_la/review]] — MLR-Bench의 머신러닝 연구 평가가 MLR-COPILOT 같은 자동화 시스템의 성능 검증 기준을 제공함
+- 🔄 다른 접근: [[papers/550_MLRC-Bench_Can_Language_Agents_Solve_Machine_Learning_Resear/review]] — 머신러닝 연구 과제 해결 능력을 평가하되 객관적 메트릭을 사용한 다른 접근법을 제시한다.

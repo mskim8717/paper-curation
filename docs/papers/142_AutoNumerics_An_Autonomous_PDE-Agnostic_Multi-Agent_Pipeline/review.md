@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 LLM 기반 다중에이전트 프레임워크를 통해 자연어 기술만으로 일반적인 편미분방정식(PDE)에 대한 투명하고 해석 가능한 수치해석 솔버를 자동으로 설계·구현·검증하는 시스템을 제시한다. 기존 신경망 기반 접근법의 블랙박스성을 극복하고 고전 수치해석의 안정성 보장을 유지하면서 자동화를 달성한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Computational_Fluid_Dynamics"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Du et al._2026_AutoNumerics An Autonomous, PDE-Agnostic Multi-Agent Pipeline for Scientific Computing.pdf"
 ---
@@ -128,6 +128,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Du et al._2026_AutoNumerics An Autonomou
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — AutoNumerics의 PDE 해석 자동화는 SciFIBench의 과학적 그림 이해 벤치마크에서 검증된 멀티모달 과학적 추론 능력을 수치해석 영역에 적용합니다.
-- 🧪 응용 사례: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — AutoNumerics는 Physics-Informed Neural Networks의 과학적 기계학습 원리를 실제 PDE 솔버 자동 생성 시스템에 적용하여 이론과 실무를 연결합니다.
-- 🧪 응용 사례: [[papers/169_Bioprobench_Comprehensive_dataset_and_benchmark_in_biologica/review]] — 자율적 다중 에이전트 시스템을 생물학적 실험 프로토콜 수행에 적용할 수 있다
+- 🔄 다른 접근: [[papers/232_CodePDE_An_Inference_Framework_for_LLM-driven_PDE_Solver_Gen/review]] — PDE 솔버 생성에서 LLM 기반 다중에이전트와 단일 모델 추론이라는 서로 다른 자동화 접근 방식을 제시한다
+- 🏛 기반 연구: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 과학 기계학습을 위한 기초 모델 개념을 PDE 솔버 자동 설계의 이론적 기반으로 활용한다
+- 🔗 후속 연구: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — 일반적인 PDE 솔버에서 플러그앤플레이 신경 연산자라는 더 유연한 수치해석 프레임워크로 발전한다

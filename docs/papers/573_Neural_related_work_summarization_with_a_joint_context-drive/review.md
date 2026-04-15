@@ -10,7 +10,7 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 seq2seq 패러다임을 활용하여 학술 논문의 관련 연구(related work) 섹션을 자동으로 생성하는 신경망 기반 추출식 요약 시스템을 제안한다. 텍스트 맥락과 이질적 참고문헌 그래프 맥락을 결합한 주의 메커니즘(joint context-driven attention mechanism)으로 주제 일관성을 유지하면서 관련 논문을 선별한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
+  - "cat/Scientific_Knowledge_Processing_Systems"
   - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dallas et al._2019_Neural related work summarization with a joint context-driven attention mechanism.pdf"
@@ -119,9 +119,14 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dallas et al._2019_Neural related work s
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 관련 연구 요약에서 문맥-그래프 결합 주의와 지식 그래프 중심 접근법의 서로 다른 구조적 모델링을 비교할 수 있습니다.
-- 🏛 기반 연구: [[papers/401_Hierarchical_attention_graph_for_scientific_document_summari/review]] — 문맥 기반 주의 메커니즘이 계층적 어텐션 그래프의 지역-전역 관계 모델링에 기초적인 방법론을 제공합니다.
-- 🔗 후속 연구: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 관련 연구 섹션 데이터셋을 신경망 기반 관련 연구 요약 시스템으로 확장한 실제 적용 연구입니다.
-- 🔄 다른 접근: [[papers/190_Causal_intervention_for_abstractive_related_work_generation/review]] — 공동 맥락 기반 관련 업무 요약과 다른 접근으로 인과 개입을 통한 관련 업무 생성을 제시한다.
-- 🔗 후속 연구: [[papers/401_Hierarchical_attention_graph_for_scientific_document_summari/review]] — 관련 연구 요약에서 단순 문맥 주의 메커니즘을 계층적 그래프 구조로 발전시킨 진보된 방법입니다.
-- 🏛 기반 연구: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 관련 연구 요약의 문맥-그래프 결합 주의 메커니즘이 지식 그래프 중심 다중 문서 요약의 기초 방법론을 제공합니다.
+- 🔄 다른 접근: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 학술 논문 요약에서 참고문헌 그래프와 지식 그래프라는 서로 다른 구조적 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/742_Select_read_and_write_A_multi-agent_framework_of_full-text-b/review]] — 전체 텍스트 기반 다중 에이전트 접근법으로 관련 연구 생성의 성능을 크게 향상시킨 발전된 형태다.
+- ⚖️ 반론/비판: [[papers/752_Shallow_synthesis_of_knowledge_in_gpt-generated_texts_A_case/review]] — GPT 기반 관련 연구 작성의 한계점을 실증적으로 분석하여 신경망 기반 접근법의 필요성을 강조한다.
+- 🔗 후속 연구: [[papers/190_Causal_intervention_for_abstractive_related_work_generation/review]] — 인과 관계 기반 관련 업무 생성과 맥락 기반 관련 업무 요약이 학술 글쓰기에서 상호 보완적 방법론을 제공한다.
+- 🏛 기반 연구: [[papers/780_Surveyforge_On_the_outline_heuristics_memory-driven_generati/review]] — 관련 연구 요약의 신경망 기반 접근법을 제시하여 SurveyForge의 자동화된 설문지 생성에서 기존 연구 통합 방법론의 기술적 기반을 제공함
+- 🔄 다른 접근: [[papers/329_Explaining_relationships_among_research_papers/review]] — 특성 기반 LLM 프롬프팅과 신경 기반 맥락 중심 접근법이 서로 다른 방식으로 관련 연구 요약 문제를 해결한다.
+- 🔗 후속 연구: [[papers/401_Hierarchical_attention_graph_for_scientific_document_summari/review]] — 관련 연구 요약의 맥락 기반 신경망 접근법을 그래프 기반 계층적 모델링으로 발전시켜 더 복잡한 문서 구조를 처리한다.
+- 🔗 후속 연구: [[papers/402_Hierarchical_catalogue_generation_for_literature_review_a_be/review]] — 관련 연구 요약 생성을 넘어서 전체 리뷰 논문의 구조적 목차까지 생성하는 더 포괄적인 접근법으로 발전시켰다.
+- 🔄 다른 접근: [[papers/563_Multi-document_scientific_summarization_from_a_knowledge_gra/review]] — 학술 논문 요약에서 지식 그래프와 참고문헌 그래프라는 서로 다른 구조적 정보 활용 방법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/742_Select_read_and_write_A_multi-agent_framework_of_full-text-b/review]] — 신경망 기반 관련 연구 요약을 전체 텍스트 기반 다중 에이전트로 확장하여 성능을 크게 향상시킨다.
+- ⚖️ 반론/비판: [[papers/752_Shallow_synthesis_of_knowledge_in_gpt-generated_texts_A_case/review]] — 신경망 기반 관련 연구 생성의 필요성을 GPT의 얕은 지식 종합 한계를 통해 실증적으로 뒷받침한다.

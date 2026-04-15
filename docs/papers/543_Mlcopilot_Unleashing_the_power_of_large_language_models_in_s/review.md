@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어 모델(LLM)을 활용하여 과거 ML 작업의 경험으로부터 지식을 추출하고, 새로운 ML 작업에 대한 솔루션을 즉시 제시하는 프레임워크를 제안한다. 이는 시간이 많이 소요되는 AutoML 방식과 달리 인간의 문제 해결 방식을 모방한 해석 가능한 솔루션을 제공한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Knowledge_Graph_Encoding"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2023_Mlcopilot Unleashing the power of large language models in solving machine learning tasks.pdf"
 ---
@@ -119,7 +120,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2023_Mlcopilot Unleashing t
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/136_Automl-gpt_Automatic_machine_learning_with_gpt/review]] — AutoML-GPT와 MLCopilot 모두 LLM을 활용한 자동 머신러닝을 추구하지만 전자는 자동화, 후자는 경험 기반 솔루션 제시에 중점을 둔다.
-- 🔗 후속 연구: [[papers/594_OSDA_Agent_Leveraging_Large_Language_Models_for_De_Novo_Desi/review]] — DS-Agent의 대규모 언어 모델 기반 자동 데이터 사이언스는 MLCopilot의 ML 작업 자동화를 데이터 과학 전반으로 확장한다.
-- 🏛 기반 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 머신러닝에서 언어 에이전트 평가를 위한 MLAgentBench는 MLCopilot의 ML 문제 해결 능력 평가의 벤치마크 기반을 제공한다.
-- 🔗 후속 연구: [[papers/463_Large_language_model_agent_for_hyper-parameter_optimization/review]] — MLCopilot의 기계학습 파이프라인 자동화가 하이퍼파라미터 최적화 전용 에이전트를 더 광범위한 ML 작업으로 확장한 발전된 시스템이다.
+- 🔄 다른 접근: [[papers/136_Automl-gpt_Automatic_machine_learning_with_gpt/review]] — GPT 기반 자동 기계학습과 과거 경험 기반 ML 솔루션 제시는 모두 AI를 활용한 기계학습 자동화의 서로 다른 접근법이다.
+- 🔗 후속 연구: [[papers/548_Mlr-bench_Evaluating_ai_agents_on_open-ended_machine_learnin/review]] — 오픈엔드 기계학습 연구 벤치마크가 과거 ML 작업 경험을 활용하는 MLCopilot의 성능을 평가하는 확장된 플랫폼을 제공한다.
+- 🏛 기반 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 기계학습 에이전트 평가 벤치마크가 과거 경험 기반 ML 솔루션 제시 시스템의 성능을 객관적으로 측정할 수 있는 기준을 제공한다.
+- 🧪 응용 사례: [[papers/069_Agentomics-ML_Autonomous_Machine_Learning_Experimentation_Ag/review]] — 자율 기계학습 실험 자동화 에이전트가 MLCopilot의 해석 가능한 솔루션 제시 방식을 실제 연구 환경에서 구현한 사례이다.
+- 🔄 다른 접근: [[papers/135_Automl_in_the_age_of_large_language_models_Current_challenge/review]] — 기계학습 파이프라인 자동화를 다른 LLM 기반 접근법으로 해결하는 대안적 방법
+- 🏛 기반 연구: [[papers/144_AutoProteinEngine_A_Large_Language_Model_Driven_Agent_Framew/review]] — LLM의 기계학습 자동화 능력을 보여주어 단백질 공학에서 AutoML 프레임워크 구축의 기술적 기반을 제공함
+- 🔗 후속 연구: [[papers/136_Automl-gpt_Automatic_machine_learning_with_gpt/review]] — MLCopilot의 대규모 언어모델 활용이 AutoML-GPT의 자동화 접근법을 확장한다.

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 대규모 언어모델(LLM)과 파운데이션 모델(Foundation Models)이 재료 발견(materials discovery) 분야에 어떻게 적용되고 있으며, 향후 어떤 방향으로 발전할 것인지를 종합적으로 리뷰한 관점 논문이다. 데이터 추출, 물성 예측, 분자 생성, 합성 계획 등 현재의 최첨단 적용 사례와 함께 새로운 데이터 수집 방법과 다중 모달리티의 영향을 검토한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Materials_Discovery_Hypotheses"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pyzer-Knapp et al._2025_Foundation models for materials discovery – current state and future directions 1.pdf"
 ---
@@ -105,17 +107,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pyzer-Knapp et al._2025_Foundation model
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/695_Scaling_Deep_Learning_for_Materials_Discovery/review]] — 파운데이션 모델 이론을 GNoME 같은 대규모 재료 발견에 실제 적용한 사례이다.
-- 🏛 기반 연구: [[papers/287_Dont_Stop_Pretraining_Adapt_Language_Models_to_Domains_and_T/review]] — 도메인 적응 기법이 재료과학 파운데이션 모델 개발의 핵심 방법론이다.
-- 🔗 후속 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료과학 AI의 포괄적 현황을 파운데이션 모델 관점에서 체계화한다.
-- 🧪 응용 사례: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 재료 발견을 위한 파운데이션 모델은 베이지안 알고리즘 실행이 타겟으로 하는 재료 설계 분야의 실제 응용 사례입니다
-- 🔗 후속 연구: [[papers/487_Leveraging_biomolecule_and_natural_language_through_multi-mo/review]] — 재료과학 파운데이션 모델을 생물분자 영역으로 확장한 연구
-- 🏛 기반 연구: [[papers/1086_Foundational_models_for_scientific_discovery/review]] — 재료 발견을 위한 파운데이션 모델의 현재 상태와 미래 전망의 이론적 토대를 제공한다.
-- 🏛 기반 연구: [[papers/695_Scaling_Deep_Learning_for_Materials_Discovery/review]] — GNoME의 성공이 재료발견 분야 파운데이션 모델 발전의 중요한 사례가 된다.
-- 🏛 기반 연구: [[papers/287_Dont_Stop_Pretraining_Adapt_Language_Models_to_Domains_and_T/review]] — 도메인 적응 기법이 재료과학 파운데이션 모델의 특화 학습에 필수적이다.
-- 🔗 후속 연구: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 재료 발견을 위한 파운데이션 모델의 현재 상태를 과학 머신러닝 전반으로 확장한다
-- 🏛 기반 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 소재 발견을 위한 기초 모델의 현재 상태 분석이 AI 소재 과학 서베이의 기초 모델 섹션에 핵심 정보를 제공함
-- 🏛 기반 연구: [[papers/1099_Generative_Inversion_of_Spectroscopic_Data_for_Amorphous_Str/review]] — 재료 발견을 위한 파운데이션 모델의 현재 상태와 이론적 기반
-- 🏛 기반 연구: [[papers/633_Prim_Principle-inspired_material_discovery_through_multi-age/review]] — 재료 발견을 위한 기초 모델의 현재 상태와 도전 과제에 대한 이론적 배경을 제공한다.
-- 🔗 후속 연구: [[papers/1104_A_Physics-Informed_Chemical_Rule_for_Topological_Materials_D/review]] — 재료과학 파운데이션 모델을 물리 기반 위상 물질 발견 규칙으로 구체화한 응용
-- 🧪 응용 사례: [[papers/1106_The_BOS-Lig_Dataset_Accurate_Ligand_Charges_from_a_Consensus/review]] — 재료 발견 파운데이션 모델을 리간드 기능 분류에 적용한 사례
+- 🏛 기반 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — AI와 재료과학을 위한 파운데이션 모델 서베이가 재료 발견에 특화된 파운데이션 모델의 이론적 배경을 제공한다
+- 🔗 후속 연구: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 지식 가이드 대규모 언어모델이 재료과학 파운데이션 모델의 구체적 구현 방법론을 제시한다
+- 🧪 응용 사례: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — MatterChat과 같은 멀티모달 재료과학 LLM이 파운데이션 모델의 실제 재료 발견 응용 사례를 보여준다
+- 🔗 후속 연구: [[papers/111_AtomAgents_Alloy_design_and_discovery_through_physics-aware/review]] — 재료 발견을 위한 기초 모델의 현재 상태와 한계를 분석한 연구를 바탕으로 AtomAgents가 실제 구현된 해결책을 제시한다
+- 🏛 기반 연구: [[papers/705_SciAgents_Automating_Scientific_Discovery_Through_Bioinspire/review]] — 재료 발견을 위한 기초 모델 연구가 SciAgents의 온톨로지 지식 그래프 활용에 기반을 제공한다
+- 🏛 기반 연구: [[papers/522_MatPilot_an_LLM-enabled_AI_Materials_Scientist_under_the_Fra/review]] — 재료 발견을 위한 파운데이션 모델의 현황 조사로서 MatPilot의 이론적 기반을 제공한다

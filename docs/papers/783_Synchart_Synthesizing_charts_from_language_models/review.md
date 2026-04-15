@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "LLM(Large Language Model)만을 활용하여 약 400만 개의 다양한 차트 이미지와 7,500만 개 이상의 밀집 주석(데이터 테이블, 코드, 설명, QA)으로 구성된 대규모 합성 차트 데이터셋 SynChart를 구축하고, 이를 통해 4.2B 매개변수의 차트 전문가 모델을 학습하여 ChartQA 벤치마크에서 GPT-4O에 근접하면서도 GPT-4V를 능가하는 성능을 달성했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Graphics_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_Synchart Synthesizing charts from language models.pdf"
 ---
@@ -132,9 +132,11 @@ LLM(Large Language Model)만을 활용하여 약 400만 개의 다양한 차트 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 둘 다 차트 생성 및 이해를 다루지만 하나는 LLM 기반 합성 데이터셋 구축에, 다른 하나는 멀티모달 LLM의 차트-투-코드 생성 향상에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/199_ChartInstruct_Instruction_Tuning_for_Chart_Comprehension_and/review]] — 차트 이해 및 추론을 위한 지시 튜닝 방법론이 SynChart 데이터셋으로 학습된 모델의 성능 향상에 활용될 수 있다.
-- 🏛 기반 연구: [[papers/657_Reading_and_Reasoning_over_Chart_Images_for_Evidence-based_A/review]] — 차트 이미지 읽기 및 추론을 위한 증거 기반 답변 생성 기법이 SynChart의 QA 주석 생성에 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/201_ChartLlama_A_Multimodal_LLM_for_Chart_Understanding_and_Gene/review]] — 전문 차트 이해 모델과 언어모델을 통한 차트 합성이 차트 처리의 해석과 생성 측면에서 상호 보완적 접근법을 제시한다
-- 🔄 다른 접근: [[papers/129_Automatikz_Text-guided_synthesis_of_scientific_vector_graphi/review]] — Synchart가 차트 합성에 특화된 반면 AutomaTikZ는 과학 벡터 그래픽 전반을 다룸
-- 🔗 후속 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — LLM을 활용한 합성 차트 데이터셋이 SciCap의 실제 과학 도형 캡션 생성 연구를 보완하고 확장한다.
+- 🔄 다른 접근: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 차트 생성과 이해라는 동일한 문제를 LLM 기반 합성 vs 대규모 멀티모달 데이터셋으로 다르게 접근한다
+- 🔗 후속 연구: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — 차트 추론을 위한 시각적 지시 튜닝 방법론을 LLM 기반 차트 합성으로 확장한다
+- 🔄 다른 접근: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — 과학 시각화 생성이라는 공통 목표를 차트 vs 도형으로 다른 형태로 접근한다
+- ⚖️ 반론/비판: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — SynChart는 언어모델에서 차트를 생성하는 역방향 작업으로, 차트에서 코드로 변환하는 이 논문과 상반된 관점을 보여준다
+- ⚖️ 반론/비판: [[papers/201_ChartLlama_A_Multimodal_LLM_for_Chart_Understanding_and_Gene/review]] — 차트 이해 대신 언어모델로 차트를 직접 생성하는 반대 방향의 접근법
+- 🔗 후속 연구: [[papers/203_Chartsketcher_Reasoning_with_multimodal_feedback_and_reflect/review]] — 차트 이해를 넘어 차트 합성이라는 역방향 작업으로 확장한 발전된 응용 분야이다
+- ⚖️ 반론/비판: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — 언어모델에서 차트를 합성하는 역방향 작업으로, ChartCoder의 차트에서 코드로의 변환과 정반대 방향의 연구 접근을 보여준다
+- 🔄 다른 접근: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — 과학적 시각화 생성을 도형 vs 차트로 서로 다른 형태에서 접근한다

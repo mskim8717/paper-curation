@@ -8,8 +8,9 @@ arxiv: ""
 score: 3.3
 essence: "대규모 언어 모델(LLM)의 효율적인 학습 및 배포를 위해 GPU 기반 병렬화 기법들을 종합적으로 검토한 논문으로, 과학 발견 가속화를 위한 실제 적용 가이드를 제시한다. 데이터 병렬화, 텐서 병렬화, 시퀀스 병렬화, 컨텍스트 병렬화, 파이프라인 병렬화, 전문가 병렬화 등 6가지 주요 기법의 장단점과 최적 활용 조건을 실증적으로 분석한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Neural_Differential_Equations"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Olanrewaju_2026_From GPU Engineering to Scientific Discovery Parallelism Techniques for Large Language Models.pdf"
 ---
@@ -114,7 +115,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Olanrewaju_2026_From GPU Engineering to 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/695_Scaling_Deep_Learning_for_Materials_Discovery/review]] — 재료 발견을 위한 딥러닝 확장 연구가 GPU 병렬화 기법의 실제 적용 사례와 최적화 필요성을 제시한다.
-- 🔄 다른 접근: [[papers/769_StableToolBench_Towards_Stable_Large-Scale_Benchmarking_on_T/review]] — 과학 발견 가속화를 위한 GPU 엔지니어링과 안정적인 대규모 벤치마킹의 서로 다른 기술적 접근법을 비교할 수 있다.
-- 🧪 응용 사례: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — GPU 병렬화 기법을 과학 기계학습을 위한 기초 모델에 적용하여 대규모 모델의 효율적인 학습과 배포를 실현할 수 있다.
-- 🏛 기반 연구: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — GPU 엔지니어링에서 과학적 발견까지의 병렬화 기법 연구는 소프트 연속 팔의 강화학습 훈련 효율성 향상에 계산 최적화 방법론을 제공한다.
+- 🏛 기반 연구: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 신경망 연산자의 다양한 아키텍처와 성능 분석의 이론적 기반을 제공합니다.
+- 🧪 응용 사례: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — 과학 에이전트 시스템의 효율적인 구현을 위한 병렬화 기법을 제공합니다.
+- 🔗 후속 연구: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — 연구 커뮤니티 시뮬레이션의 대규모 병렬 처리를 위한 기술적 기반을 제공합니다.

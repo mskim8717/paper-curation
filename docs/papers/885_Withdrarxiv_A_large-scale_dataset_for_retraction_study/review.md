@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 arXiv 플랫폼에서 철회된 14,000개 이상의 논문을 수집한 첫 대규모 철회 연구 데이터셋(WithdrawArXiv)을 제시하며, 철회 이유를 10가지 범주로 분류하는 자동 분류 체계를 개발했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Literature_Summarization"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rao et al._2024_Withdrarxiv A large-scale dataset for retraction study.pdf"
 ---
@@ -87,8 +88,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rao et al._2024_Withdrarxiv A large-scal
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/812_TLDR_Extreme_Summarization_of_Scientific_Documents/review]] — 과학 논문의 생산적 요약 생성과 문제가 있는 논문의 철회 분석이라는 서로 다른 과학 문헌 처리 관점을 제시합니다.
-- 🔗 후속 연구: [[papers/093_All_that_glitters_is_not_novel_Plagiarism_in_ai_generated_re/review]] — arXiv 철회 논문 연구에서 AI 생성 연구의 표절 문제로 확장하여 현대적 학술 윤리 문제를 다룹니다.
-- 🏛 기반 연구: [[papers/591_Openreview_should_be_protected_and_leveraged_as_a_community/review]] — 철회 논문 데이터셋 연구가 OpenReview와 같은 학술 커뮤니티 플랫폼 보호의 중요성을 뒷받침하는 실증적 근거를 제공합니다.
-- 🧪 응용 사례: [[papers/698_Scaling_Reproducibility_An_AI-Assisted_Workflow_for_Large-Sc/review]] — 철회된 논문에 대한 대규모 데이터셋 연구는 AI 지원 재현성 워크플로우가 해결해야 할 연구 신뢰성 문제의 실제 사례를 보여준다.
-- 🔄 다른 접근: [[papers/812_TLDR_Extreme_Summarization_of_Scientific_Documents/review]] — 과학 논문의 요약 생성과 철회 논문의 분류라는 서로 다른 과학 문헌 처리 접근법을 제시합니다.
+- 🔗 후속 연구: [[papers/093_All_that_glitters_is_not_novel_Plagiarism_in_ai_generated_re/review]] — 학술 논문 철회 연구가 AI 생성 연구의 표절 문제 분석으로 확장되어 연구 무결성을 종합적으로 다룬다.
+- 🏛 기반 연구: [[papers/270_Detecting_llm-written_peer_reviews/review]] — 논문 철회 패턴 분석이 LLM 생성 리뷰 탐지 시스템 개발의 실증적 근거를 제공한다.
+- 🔄 다른 접근: [[papers/880_What_makes_medical_claims_un_verifiable_analyzing_entity_and/review]] — 과학 연구의 검증 가능성을 철회된 논문 분석과 의료 주장 분석으로 다각도로 접근한다.
+- 🔗 후속 연구: [[papers/803_The_open_review-based_orb_dataset_Towards_automatic_assessme/review]] — 논문 철회 연구 데이터셋과 결합하여 피어리뷰 품질과 논문 신뢰성 간의 관계를 분석할 수 있다.
+- 🏛 기반 연구: [[papers/252_Data_integrity_in_materials_science_in_the_era_of_AI_balanci/review]] — 과학 연구의 무결성과 철회 문제를 체계적으로 분석하는 기반 데이터셋

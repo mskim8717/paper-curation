@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.5
 essence: "대규모 언어모델(LLM)이 생성한 임상 리뷰와 인간 저자의 리뷰를 체계적으로 비교한 결과, LLM이 빠르게 리뷰를 생성할 수 있지만 참고문헌 수가 적고, 논리적 일관성이 낮으며, 인용 정확도와 신뢰성이 부족함을 발견했다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/Expert_Review_Automation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Automated_Scientific_Review"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luo et al._2025_Cross sectional pilot study on clinical review generation using large language models.pdf"
 ---
@@ -101,8 +102,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luo et al._2025_Cross sectional pilot st
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/126_Automated_review_generation_method_based_on_large_language_m/review]] — 대규모 언어 모델 기반 자동 리뷰 생성 방법이 임상 리뷰 생성의 기초 방법론을 제공한다.
-- 🔄 다른 접근: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — 임상 분야 특화 GPT 모델이 일반 LLM과 다른 임상 리뷰 생성 접근법을 보여준다.
-- 🔗 후속 연구: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 제로샷 협업을 위한 의료 에이전트들이 임상 리뷰 생성을 다중 에이전트 협업으로 확장한다.
-- 🧪 응용 사례: [[papers/055_Advancing_multimodal_medical_capabilities_of_gemini/review]] — Gemini의 다중모달 의료 능력 향상이 임상 리뷰 생성에 적용될 수 있다.
-- 🧪 응용 사례: [[papers/159_Bio-sieve_exploring_instruction_tuning_large_language_models/review]] — 임상 리뷰 생성을 위한 파일럿 연구에서 의료 문헌고찰 자동화로의 적용
+- 🧪 응용 사례: [[papers/680_Reviewing_scientific_papers_for_critical_problems_with_reaso/review]] — 과학 논문 비판적 검토에서 임상 리뷰 생성이라는 구체적인 의학 분야 적용 사례를 제시한다
+- 🔄 다른 접근: [[papers/860_Unveiling_the_sentinels_Assessing_ai_performance_in_cybersec/review]] — 사이버보안이 아닌 임상 의학 분야에서 AI의 리뷰 생성 성능을 평가하는 다른 접근법을 보여준다
+- 🏛 기반 연구: [[papers/591_Openreview_should_be_protected_and_leveraged_as_a_community/review]] — 임상 리뷰 품질 개선을 위한 피어 리뷰 시스템 활용의 기초적 접근을 제공한다
+- 🧪 응용 사례: [[papers/591_Openreview_should_be_protected_and_leveraged_as_a_community/review]] — 임상 리뷰 생성에서 피어 리뷰 품질 개선의 실제 적용 사례를 보여준다
+- 🧪 응용 사례: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 임상 리뷰 생성 파일럿 연구에서 체크리스트 기반 반복 자기성찰 방법론이 의료 분야에서 실제 적용된 사례를 보여준다.
+- 🧪 응용 사례: [[papers/680_Reviewing_scientific_papers_for_critical_problems_with_reaso/review]] — 임상 리뷰에서 LLM의 한계와 오류 검출의 실제 적용 사례를 보여준다
+- 🔄 다른 접근: [[papers/860_Unveiling_the_sentinels_Assessing_ai_performance_in_cybersec/review]] — 임상 분야가 아닌 사이버보안 분야에서 AI의 피어 리뷰 성능을 평가하는 다른 접근법을 제시한다

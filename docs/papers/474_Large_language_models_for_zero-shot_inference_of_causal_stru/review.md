@@ -12,7 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)이 생물학적 인과관계를 문헌 지식만으로 추론할 수 있는지를 실제 유전자 섭동 실험 데이터로 검증하는 혁신적 평가 프레임워크를 제시한다. 적절한 프롬프팅과 정보 증강 전략을 통해 작은 LLM도 생물학적 시스템의 의미 있는 인과구조를 포착할 수 있음을 보여준다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
   - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Newsham et al._2025_Large language models for zero-shot inference of causal structures in biology.pdf"
@@ -115,9 +116,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Newsham et al._2025_Large language model
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/505_Llm4grn_Discovering_causal_gene_regulatory_networks_with_llm/review]] — 유전자 조절 네트워크 발견을 위한 LLM 활용 연구로, 생물학적 인과관계 추론의 구체적 적용 사례이다.
-- 🧪 응용 사례: [[papers/615_PerTurboAgent_A_Self-Planning_Agent_for_Boosting_Sequential/review]] — 유전자 섭동 실험 설계에 인과관계 추론 능력을 활용하여 더 효과적인 실험 계획을 수립할 수 있다.
-- 🏛 기반 연구: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — 프로그램 가이드 추론을 통한 복잡한 주장 검증 방법론이 생물학적 인과관계 추론의 기술적 기반이 된다.
-- 🔗 후속 연구: [[papers/459_Language_Models_for_Controllable_DNA_Sequence_Design/review]] — 생물학적 인과관계 추론 능력을 DNA 서열의 기능적 특성 예측과 설계에 활용할 수 있다.
-- 🏛 기반 연구: [[papers/505_Llm4grn_Discovering_causal_gene_regulatory_networks_with_llm/review]] — 생물학적 인과관계 추론의 일반적 프레임워크를 유전자 조절 네트워크 발견이라는 구체적 문제에 적용한다.
-- 🧪 응용 사례: [[papers/615_PerTurboAgent_A_Self-Planning_Agent_for_Boosting_Sequential/review]] — 생물학적 인과관계 추론 능력을 유전자 섭동 실험의 순차적 선택 최적화에 활용할 수 있다.
+- 🔗 후속 연구: [[papers/505_Llm4grn_Discovering_causal_gene_regulatory_networks_with_llm/review]] — 유전자 조절 네트워크 발견을 실제 유전자 섭동 실험 데이터로 검증하여 LLM의 생물학적 인과관계 추론을 더 엄밀하게 평가한다.
+- 🔄 다른 접근: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프 기반 사실 검증과 LLM의 제로샷 인과구조 추론은 모두 구조화된 지식을 통한 추론 검증의 다른 접근법이다.
+- 🏛 기반 연구: [[papers/181_Can_gpt-4v_ision_serve_medical_applications_case_studies_on/review]] — 의료 응용을 위한 GPT-4V 연구가 생물학적 시스템에서 LLM의 시각적 추론 능력의 기초를 제공한다.
+- 🧪 응용 사례: [[papers/620_Physics-Informed_Autonomous_LLM_Agents_for_Explainable_Power/review]] — 물리학 기반 자율 LLM 에이전트의 설명 가능성 접근법이 생물학적 인과구조 추론의 해석가능성 향상에 적용된다.
+- 🏛 기반 연구: [[papers/631_Predicting_field_experiments_with_large_language_models/review]] — 인과 구조 추론을 위한 LLM의 기본 능력과 방법론을 제공합니다.
+- 🏛 기반 연구: [[papers/505_Llm4grn_Discovering_causal_gene_regulatory_networks_with_llm/review]] — 실제 유전자 섭동 실험을 통한 LLM의 인과구조 추론 검증 연구가 유전자 조절 네트워크 발견의 신뢰성 평가 기반을 제공한다.

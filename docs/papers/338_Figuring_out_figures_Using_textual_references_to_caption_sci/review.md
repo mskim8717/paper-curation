@@ -9,8 +9,8 @@ arxiv: ""
 score: 3.5
 essence: "과학 논문의 그래프 및 도형에 대한 자동 캡션 생성을 위해 CLIP+GPT-2 모델에 논문의 메타데이터(제목, 초록, 참고문헌 인용 텍스트)를 SciBERT를 통해 통합한 멀티모달 접근법을 제시한다. 특히 텍스트 정보만 사용한 SciBERT+GPT-2 모델이 BLEU 6.71을 달성하며 기존 CNN+LSTM 기반선(BLEU 2.59)을 크게 상회했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Figure_Captioning"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cao and Liu_2024_Figuring out figures Using textual references to caption scientific figures.pdf"
 ---
@@ -102,7 +102,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cao and Liu_2024_Figuring out figures Us
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/488_Leveraging_LLMs_in_Scholarly_Knowledge_Graph_Question_Answer/review]] — 둘 다 과학 논문의 텍스트 정보를 활용한 QA를 다루지만 하나는 도형 캡션 생성에, 다른 하나는 학술 지식 그래프 질의응답에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — 검색 증강 생성 에이전트를 이용한 과학 QA 시스템이 과학 도형 캡션 생성에서 참조 텍스트 활용을 더욱 정교화할 수 있다.
-- 🏛 기반 연구: [[papers/329_Explaining_relationships_among_research_papers/review]] — 연구 논문 간의 관계 설명 기법이 과학 도형과 텍스트 참조 간의 연결 관계를 이해하는 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/709_SciCap_A_Knowledge_Augmented_Dataset_to_Study_the_Challenges/review]] — 텍스트 참조를 활용한 과학 도형 캡션 생성이 SciCap+의 지식 증강 접근법과 상호 보완적인 멀티모달 컨텍스트를 제공한다.
+- ⚖️ 반론/비판: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — 과학 도형을 생성 vs 캡션화라는 정반대 방향의 접근법으로 상호 보완한다
+- 🔄 다른 접근: [[papers/605_PatFig_Generating_Short_and_Long_Captions_for_Patent_Figures/review]] — 도형 캡션 생성을 과학 논문 vs 특허 문서에서 각각 다른 맥락으로 접근한다
+- 🏛 기반 연구: [[papers/125_Automated_latex_code_generation_from_handwritten_math_expres/review]] — 멀티모달 변환 기술이 과학 도형 캡션 생성의 핵심 기술적 기반을 제공한다
+- 🔗 후속 연구: [[papers/125_Automated_latex_code_generation_from_handwritten_math_expres/review]] — 과학 도형 처리를 수식 LaTeX 생성이라는 구체적이고 정형화된 형태로 확장한다
+- 🔗 후속 연구: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — 과학 도형 처리를 캡션에서 텍스트 기반 생성으로 한 단계 확장한다
+- 🔄 다른 접근: [[papers/605_PatFig_Generating_Short_and_Long_Captions_for_Patent_Figures/review]] — 도형 캡션 생성을 특허 vs 과학 논문 도메인에서 각각 다른 접근법으로 구현한다

@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.5
 essence: "대규모 언어모델(LLM)의 추론 능력을 활용하여 블랙박스 최적화 문제를 해결하는 LEO(Language-model-based Evolutionary Optimizer)라는 새로운 인구 기반 최적화 방법을 제안한다. 엘리티즘 기반의 탐색(exploration)과 개발(exploitation) 전략을 통해 LLM의 환각 현상을 완화하면서도 우수한 최적화 성능을 달성한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Evolutionary_Chemistry_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Symbolic_PDE_Optimization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Brahmachary et al._2024_Large Language Model-Based Evolutionary Optimizer Reasoning with elitism.pdf"
 ---
@@ -121,9 +122,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Brahmachary et al._2024_Large Language M
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — LLM을 진화 알고리즘에 통합하여 블랙박스 최적화를 수행하는 반면 LLM-ODE는 동역학 시스템 발견에 초점을 맞춘 다른 접근법이다.
-- 🏛 기반 연구: [[papers/469_Large_Language_Models_as_Evolutionary_Optimizers/review]] — 대규모 언어모델을 진화 최적화기로 활용하는 일반적인 접근법이 LEO의 구체적인 구현의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/484_Learning_to_generate_research_idea_with_dynamic_control/review]] — 동적 제어를 통한 연구 아이디어 생성 학습이 LLM 기반 진화 최적화를 창의적 생성 분야로 확장한다.
-- 🔄 다른 접근: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — 동역학 시스템 발견과 블랙박스 최적화 모두 LLM을 진화 알고리즘에 통합하지만 적용 영역과 목표가 다르다.
-- 🔗 후속 연구: [[papers/469_Large_Language_Models_as_Evolutionary_Optimizers/review]] — 대형 언어 모델 기반 진화 최적화가 제약 조건이 있는 역합성 계획으로 확장될 수 있습니다.
-- 🔄 다른 접근: [[papers/754_ShinkaEvolve_Towards_Open-Ended_And_Sample-Efficient_Program/review]] — 둘 다 LLM 기반 진화 최적화를 다루지만 ShinkaEvolve는 프로그램에, LLM-EO는 일반적 최적화에 집중함
+- 🔄 다른 접근: [[papers/469_Large_Language_Models_as_Evolutionary_Optimizers/review]] — LEO와 기존 진화적 최적화는 모두 LLM을 최적화에 활용하지만 서로 다른 추론 기반 접근법을 사용한다.
+- 🔗 후속 연구: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 알고리즘 실행을 통한 타겟 물질 발견이 LEO의 언어모델 기반 진화적 최적화와 결합될 수 있다.
+- 🏛 기반 연구: [[papers/305_Efficient_Evolutionary_Search_Over_Chemical_Space_with_Large/review]] — 화학 공간에서의 효율적인 진화적 탐색이 대규모 언어모델 기반 최적화의 기반 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/469_Large_Language_Models_as_Evolutionary_Optimizers/review]] — LLM 기반 진화 최적화기의 일반적 원리와 매개변수화된 추론 에이전트는 모두 LLM의 최적화 능력을 활용하는 발전된 형태이다.
+- 🏛 기반 연구: [[papers/472_Large_language_models_design_sequence-defined_macromolecules/review]] — LLM 기반 진화 최적화의 이론적 기반이 거대분자 설계에서 자기조립 구조 탐색에 적용됨

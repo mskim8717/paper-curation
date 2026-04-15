@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "대규모 언어모델(LLM)의 환각(hallucination), 지식 노후화, 추론 과정의 불투명성을 해결하기 위해 외부 데이터베이스에서 관련 정보를 검색하여 생성 과정을 보강하는 **Retrieval-Augmented Generation (RAG)** 기술을 종합적으로 분석한 논문이다. 본 논문은 RAG의 발전 단계를 Naive RAG, Advanced RAG, Modular RAG로 체계화하고 각 단계의 핵심 기술과 평가 방법론을 상세히 제시한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Retrieval-augmented_Generation_Systems"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gao et al._2023_Retrieval-Augmented Generation for Large Language Models A Survey.pdf"
 ---
@@ -136,14 +136,15 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gao et al._2023_Retrieval-Augmented Gene
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/212_Chemist-X_Large_Language_Model-empowered_Agent_for_Reaction/review]] — RAG 기술을 화학 실험 자동화 시스템의 지식 검색 및 의사결정 지원에 적용할 수 있다
-- 🔗 후속 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 과학 문헌 합성을 위한 검색 증강을 일반적인 RAG 시스템의 과학 특화 확장으로 발전시킬 수 있다
-- 🔄 다른 접근: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — 과학 논문 정보 처리를 위해 일반 RAG와 과학 특화 검색 증강 생성이라는 다른 접근법을 사용한다
-- 🏛 기반 연구: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — 검색 증강 생성 서베이는 Search-R1의 강화학습 기반 검색 통합 방법론에 RAG 시스템의 이론적 배경과 설계 원칙을 제공한다.
-- 🏛 기반 연구: [[papers/212_Chemist-X_Large_Language_Model-empowered_Agent_for_Reaction/review]] — 검색 증강 생성 기술을 화학 합성 반응 최적화에 적용하기 위한 핵심 기반 기술을 제공한다
-- 🔄 다른 접근: [[papers/034_A_Survey_on_RAG_Meeting_LLMs_Towards_Retrieval-Augmented_Lar/review]] — 대규모 언어모델을 위한 검색 증강 생성에 대한 다른 관점의 서베이를 제시한다.
-- 🏛 기반 연구: [[papers/404_Hiperrag_High-performance_retrieval_augmented_generation_for/review]] — 대형 언어 모델을 위한 검색 증강 생성 서베이가 과학 문헌 특화 RAG 시스템 설계의 이론적 기반입니다.
-- 🏛 기반 연구: [[papers/904_How_AI-powered_science_search_engines_can_speed_up_your_rese/review]] — LLM을 위한 검색증강 생성 조사가 AI 기반 과학 검색 엔진의 기술적 토대를 제공한다.
-- 🏛 기반 연구: [[papers/651_RAG-Enhanced_Collaborative_LLM_Agents_for_Drug_Discovery/review]] — 검색 증강 생성의 일반적 방법론이 신약 발견을 위한 협력적 LLM 에이전트 시스템의 기술적 기반이다.
-- 🔄 다른 접근: [[papers/295_Dynamic_multi-agent_orchestration_and_retrieval_for_multi-so/review]] — 대규모 언어모델을 위한 검색 증강 생성의 다른 체계적 접근 방법을 제시한다.
-- 🏛 기반 연구: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — REALM이 제시한 검색 증강 생성의 초기 방법론이 RAG 연구의 기초가 됨
+- 🧪 응용 사례: [[papers/212_Chemist-X_Large_Language_Model-empowered_Agent_for_Reaction/review]] — RAG 기술의 체계적 분석이 화학 합성 에이전트의 검색 증강 생성 기능 구현에 직접 적용됨
+- 🔗 후속 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — RAG의 일반적 프레임워크가 과학 문헌 합성에 특화된 OpenScholar 시스템으로 구체화됨
+- 🔗 후속 연구: [[papers/114_Augmented_Language_Models_a_Survey/review]] — 증강 언어모델의 외부 지식 활용을 검색 증강 생성이라는 구체적 기법으로 발전시킨 연구
+- 🏛 기반 연구: [[papers/212_Chemist-X_Large_Language_Model-empowered_Agent_for_Reaction/review]] — 화학 합성 에이전트의 검색 증강 생성 기능 구현을 위해 RAG 기술의 체계적 이해가 필수적임
+- 🏛 기반 연구: [[papers/034_A_Survey_on_RAG_Meeting_LLMs_Towards_Retrieval-Augmented_Lar/review]] — RAG 시스템의 기본 원리와 구현 방법에 대한 포괄적 이해를 제공하는 기초 자료이다
+- 🏛 기반 연구: [[papers/404_Hiperrag_High-performance_retrieval_augmented_generation_for/review]] — 검색 증강 생성의 일반적 이론과 방법론은 과학 문헌 특화 HiPerRAG 시스템 설계의 핵심 기반이다.
+- 🔄 다른 접근: [[papers/317_Enhancing_natural_language_inference_performance_with_knowle/review]] — 지식 그래프와 RAG가 각각 외부 지식 활용을 통한 언어모델 성능 향상의 상보적 접근법이다
+- 🏛 기반 연구: [[papers/904_How_AI-powered_science_search_engines_can_speed_up_your_rese/review]] — RAG 기술이 AI 기반 과학 검색 엔진의 핵심 기술적 기반이다
+- 🔗 후속 연구: [[papers/867_Verifier-Constrained_Flow_Expansion_for_Discovery_Beyond_the/review]] — RAG 기법을 통해 검증기의 지식 기반을 확장하여 더 정확한 제약 조건 적용이 가능함
+- 🏛 기반 연구: [[papers/348_FRAG_A_Flexible_Modular_Framework_for_Retrieval-Augmented_Ge/review]] — 검색증강생성의 일반적 프레임워크가 지식그래프 기반 FRAG의 이론적 토대를 제공한다
+- 🏛 기반 연구: [[papers/335_Few-shot_Learning_with_Retrieval_Augmented_Language_Models/review]] — 검색 증강 생성의 전반적인 기술 동향을 제시하여, Atlas 모델의 위치와 발전 방향을 이해할 수 있습니다.
+- 🏛 기반 연구: [[papers/613_Personalized_graph-based_retrieval_for_large_language_models/review]] — 검색 증강 대형 언어 모델의 기초적인 이론과 방법론을 개인화된 맥락으로 발전시킨다.

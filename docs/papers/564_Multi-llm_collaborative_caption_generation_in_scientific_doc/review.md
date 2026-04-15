@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "과학 논문의 도형(figure) 캡션 생성은 시각 정보와 텍스트 문맥을 모두 활용해야 하는 복합 작업인데, 본 논문은 여러 LLM의 협업을 통해 고품질 캡션을 자동 생성하는 통합 프레임워크 MLBCAP를 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Table_Caption_Generation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kim et al._2025_Multi-llm collaborative caption generation in scientific documents.pdf"
 ---
@@ -97,11 +97,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kim et al._2025_Multi-llm collaborative 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/399_Helm_Highlighted_evidence_augmented_language_model_for_enhan/review]] — 단일 LLM의 증거 강조를 다중 LLM 협업으로 발전시켜 더 고품질의 과학 도형 캡션을 생성합니다.
-- 🏛 기반 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 과학적 도형 캡션 생성의 기본 방법론이 다중 LLM 협업 캡션 생성의 이론적 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 과학 도형 캡션 생성에서 다중 LLM 협업과 단일 생성 프레임워크의 서로 다른 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/605_PatFig_Generating_Short_and_Long_Captions_for_Patent_Figures/review]] — 과학 문서에서 다중 LLM 협업 캡션 생성 기법이 특허 도형의 복잡한 기술적 내용을 더욱 정확하게 캡션화하는데 활용될 수 있다.
-- 🔗 후속 연구: [[papers/524_MatViX_Multimodal_Information_Extraction_from_Visually_Rich/review]] — 다중 LLM 협업 캡션 생성이 MatViX의 멀티모달 정보 추출을 과학 문서의 시각적 요소 설명 생성으로 확장한 구체적 응용 연구임
-- 🔗 후속 연구: [[papers/092_Align_then_Fusion_Generalized_Large-scale_Multi-view_Cluster/review]] — 다중 LLM 협업 캡션 생성에서 본 논문의 앵커 대응 관계 수립 방법론을 활용할 수 있다.
-- 🔗 후속 연구: [[papers/329_Explaining_relationships_among_research_papers/review]] — 과학 문서에서 다중 LLM 협업 캡션 생성으로 본 논문의 여러 논문 처리를 다중 모델 협업으로 확장한다.
-- 🔗 후속 연구: [[papers/399_Helm_Highlighted_evidence_augmented_language_model_for_enhan/review]] — 단일 LLM의 증거 강조 방식을 다중 LLM 협업으로 확장한 고도화된 접근법을 제시합니다.
+- 🔄 다른 접근: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 과학 도형 캡션 생성에서 단일 모델과 다중 LLM 협업이라는 서로 다른 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/709_SciCap_A_Knowledge_Augmented_Dataset_to_Study_the_Challenges/review]] — 지식 증강 데이터셋을 활용하여 다중 LLM 협업 캡션 생성의 성능을 더욱 향상시킬 수 있다.
+- 🏛 기반 연구: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 다중 모델 협업을 통한 과학적 아이디어 생성의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/323_Every_part_matters_Integrity_verification_of_scientific_figu/review]] — 과학 문서의 멀티모달 캡션 생성으로 그림 검증의 다른 접근법을 보여준다.
+- 🔄 다른 접근: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 과학 도형 캡션 생성에서 대규모 데이터셋 구축과 다중 LLM 협업이라는 서로 다른 접근법을 비교할 수 있다.
+- 🔄 다른 접근: [[papers/709_SciCap_A_Knowledge_Augmented_Dataset_to_Study_the_Challenges/review]] — 지식 증강 데이터셋과 다중 LLM 협업이라는 서로 다른 과학 캡션 생성 개선 방법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/399_Helm_Highlighted_evidence_augmented_language_model_for_enhan/review]] — 다중 LLM 협업 캡션 생성이 테이블-텍스트 생성의 증거 강조 방법론을 과학 문서 전체로 확장한 접근법이다.

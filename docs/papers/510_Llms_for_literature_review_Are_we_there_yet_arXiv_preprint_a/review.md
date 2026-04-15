@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 LLM(Large Language Model)을 활용하여 학술 논문의 문헌 리뷰 작성을 자동화하는 방법을 제시한다. 논문 초록을 입력으로 관련 연구를 검색하고 이를 바탕으로 문헌 리뷰 섹션을 생성하는 두 단계 프로세스를 제안하며, 계획 기반 접근으로 환각(hallucination) 감소를 달성한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Literature_Analysis"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Agarwal et al._2024_Llms for literature review Are we there yet arXiv preprint arXiv2412.15249, 2024..pdf"
 ---
@@ -116,9 +118,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Agarwal et al._2024_Llms for literature 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/604_Pasa_An_llm_agent_for_comprehensive_academic_paper_search/review]] — 문헌 리뷰 자동화를 위한 서로 다른 LLM 기반 접근법을 제시합니다.
-- 🧪 응용 사례: [[papers/506_LLM4SR_A_Survey_on_Large_Language_Models_for_Scientific_Rese/review]] — 과학 연구에서의 LLM 활용이 문헌 리뷰 작성에 적용됩니다.
-- 🔗 후속 연구: [[papers/493_Litllm_A_toolkit_for_scientific_literature_review/review]] — 문헌 리뷰가 더 포괄적인 과학 문헌 검토 도구로 확장됩니다.
-- 🔄 다른 접근: [[papers/604_Pasa_An_llm_agent_for_comprehensive_academic_paper_search/review]] — 학술 논문 검색을 위한 서로 다른 자동화 접근법을 제시합니다.
-- 🏛 기반 연구: [[papers/862_Using_artificial_intelligence_for_systematic_review_the_exam/review]] — 문헌고찰을 위한 LLM 연구 현황이 AI 기반 체계적 리뷰 도구 활용의 이론적 배경을 제공한다.
-- 🏛 기반 연구: [[papers/897_Can_AI_review_the_scientific_literature__and_figure_out_what/review]] — LLM의 문헌 검토 능력에 대한 기초적 평가를 제공한다
+- 🔄 다른 접근: [[papers/604_Pasa_An_llm_agent_for_comprehensive_academic_paper_search/review]] — 문헌 리뷰 작성 대신 포괄적 논문 검색에 특화된 에이전트를 제시한다
+- 🏛 기반 연구: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — 동료 심사를 위한 NLP 기법이 문헌 리뷰 자동화의 기반이 된다
+- 🧪 응용 사례: [[papers/579_Nsf-scify_Mining_the_nsf_awards_database_for_scientific_clai/review]] — NSF 데이터베이스의 과학적 주장을 문헌 리뷰에 활용할 수 있다
+- 🔄 다른 접근: [[papers/604_Pasa_An_llm_agent_for_comprehensive_academic_paper_search/review]] — 포괄적 논문 검색 대신 문헌 리뷰 작성 자동화에 집중한다
+- 🏛 기반 연구: [[papers/579_Nsf-scify_Mining_the_nsf_awards_database_for_scientific_clai/review]] — 과학적 주장 데이터베이스가 문헌 리뷰 자동화의 기반 자료가 된다
+- ⚖️ 반론/비판: [[papers/781_Surveyx_Academic_survey_automation_via_large_language_models/review]] — 문헌 리뷰에서 LLM의 한계를 지적하는 연구와 자동 서베이 생성 시스템은 학술 AI 도구의 현실성을 균형있게 평가할 수 있다.
+- 🏛 기반 연구: [[papers/862_Using_artificial_intelligence_for_systematic_review_the_exam/review]] — LLM 기반 문헌고찰 현황 조사가 Elicit과 같은 도구 평가의 기준점을 제공한다
+- 🔗 후속 연구: [[papers/897_Can_AI_review_the_scientific_literature__and_figure_out_what/review]] — 문헌 검토에서 LLM 활용의 현재 수준을 평가하며 AI 기반 문헌 분석의 발전 상황을 보여준다

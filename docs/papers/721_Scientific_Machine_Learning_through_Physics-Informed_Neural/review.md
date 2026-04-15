@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "물리 방정식을 신경망의 손실함수에 직접 인코딩하는 PINN(Physics-Informed Neural Networks)에 관한 종합적 문헌 리뷰로, 이 기법의 발전, 변형, 적용 사례 및 미해결 이론적 문제들을 다룬다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Physics-informed_Neural_Networks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Physics-Informed_Neural_Operators"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cuomo et al._2022_Scientific Machine Learning through Physics-Informed Neural Networks Where we are and What's next.pdf"
 ---
@@ -94,19 +94,22 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cuomo et al._2022_Scientific Machine Lea
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — 신경 상미분방정식이 물리 정보 신경망의 기본적인 수치 해법 이론적 토대를 제공합니다.
-- 🔗 후속 연구: [[papers/767_SPINONet_Scalable_Spiking_Physics-informed_Neural_Operator_f/review]] — 에너지 효율적인 스파이킹 물리 정보 신경 연산자가 PINN의 계산 효율성을 향상시키는 확장 연구입니다.
-- 🔄 다른 접근: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — 과학 기계학습에서 물리 정보 신경망과 플러그 앤 플레이 신경 연산자 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/105_Artificial_Intelligence_for_Direct_Prediction_of_Molecular_D/review]] — 물리 법칙을 신경망에 통합하는 일반적 원리가 Physics-informed Neural Networks의 구체적인 구현으로 발전했다
-- 🏛 기반 연구: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 물리정보 신경망의 이론적 기반을 제공하여 신경 연산자의 물리 법칙 통합 방법론을 이해할 수 있다.
-- 🏛 기반 연구: [[papers/767_SPINONet_Scalable_Spiking_Physics-informed_Neural_Operator_f/review]] — 물리 정보 신경망에 대한 종합 리뷰가 스파이킹 물리 정보 신경 연산자의 이론적 배경을 제공합니다.
-- 🏛 기반 연구: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 물리정보신경망이 과학 머신러닝 파운데이션 모델의 물리적 제약 조건 구현에 기반을 제공한다
-- 🏛 기반 연구: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — 물리정보신경망의 기본 이론이 연속 의존성을 통합한 cd-PINN의 기반을 제공한다
-- 🔗 후속 연구: [[papers/516_Machine-Learned_Interatomic_Potentials_for_Predicting_Physic/review]] — 물리정보 신경망의 과학적 기계학습 방법론이 MTP의 DFT 기반 원자간 포텐셜 학습을 개선할 수 있음
-- 🔗 후속 연구: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — 물리정보 신경망의 과학적 기계학습 접근법이 Neural-POD의 해상도 독립성과 매개변수 일반화를 강화함
-- 🔄 다른 접근: [[papers/307_Efficient_Prediction_of_SO3-Equivariant_Hamiltonian_Matrices/review]] — 물리 정보 신경망을 통한 과학 기계학습과 해밀턴 예측의 다른 접근법
-- 🔗 후속 연구: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 과학적 기계학습을 위한 물리 정보 신경망의 일반적 프레임워크를 열관리 설계에 구체적으로 적용한다.
-- 🏛 기반 연구: [[papers/526_MechAgents_Large_language_model_multi-agent_collaborations_c/review]] — 물리 정보 기반 신경망을 통한 과학적 기계학습이 MechAgents의 물리 기반 모델링과 LLM 지능 결합의 이론적 토대이다.
-- 🧪 응용 사례: [[papers/142_AutoNumerics_An_Autonomous_PDE-Agnostic_Multi-Agent_Pipeline/review]] — AutoNumerics는 Physics-Informed Neural Networks의 과학적 기계학습 원리를 실제 PDE 솔버 자동 생성 시스템에 적용하여 이론과 실무를 연결합니다.
-- 🏛 기반 연구: [[papers/497_LLM_and_Simulation_as_Bilevel_Optimizers_A_New_Paradigm_to_A/review]] — 물리학 정보 기반 신경망을 통한 과학적 머신러닝은 LLM과 물리 시뮬레이션을 결합한 이단계 최적화의 이론적 기반이다.
-- 🏛 기반 연구: [[papers/456_Lang-PINN_From_Language_to_Physics-Informed_Neural_Networks/review]] — 물리 정보 신경망의 과학적 기계학습 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/103_Architectures_variants_and_performance_of_neural_operators_A/review]] — 신경 연산자의 아키텍처와 변형에 관한 연구는 물리 정보 신경망 발전의 핵심 기술적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/767_SPINONet_Scalable_Spiking_Physics-informed_Neural_Operator_f/review]] — 전통적 PINN과 에너지 효율적 스파이킹 PINN은 물리 정보 신경망의 서로 다른 발전 방향을 보여준다.
+- 🔄 다른 접근: [[papers/428_Inference-Time_Alignment_in_Diffusion_Models_with_Reward-Gui/review]] — 물리 방정식 인코딩과 보상 기반 정렬은 모두 과학적 제약 조건을 AI 모델에 통합하는 서로 다른 방법론이다.
+- 🏛 기반 연구: [[papers/276_Discovery_of_Unstable_Singularities/review]] — 물리학 기반 신경망이 특이점의 수치적 불안정성을 해결하는 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/232_CodePDE_An_Inference_Framework_for_LLM-driven_PDE_Solver_Gen/review]] — 물리 정보 신경망을 통한 과학적 기계학습에 대한 포괄적 조사로, PDE 솔버 생성의 이론적 기반을 제공
+- 🧪 응용 사례: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 물리학 기반 신경망이 대칭성 제약 하 미분방정식 발견에 직접 적용된다
+- 🏛 기반 연구: [[papers/286_Domain-specific_ReAct_for_physics-integrated_iterative_model/review]] — 물리학 정보 신경망이 도메인 특화 AI 적용의 기반을 제공한다.
+- 🧪 응용 사례: [[papers/428_Inference-Time_Alignment_in_Diffusion_Models_with_Reward-Gui/review]] — 물리 정보 신경망과 확산 모델의 보상 기반 정렬은 모두 과학적 제약 조건을 AI 모델에 통합하는 방법론이다.
+- 🔗 후속 연구: [[papers/767_SPINONet_Scalable_Spiking_Physics-informed_Neural_Operator_f/review]] — 기존 PINN의 에너지 효율성을 개선한 스파이킹 기반 접근법으로, 물리 정보 신경망의 실용적 발전을 보여준다.
+- 🏛 기반 연구: [[papers/619_Physics_Informed_Deep_Learning_Part_I_Data-driven_Solutions/review]] — 물리정보신경망의 포괄적 과학 머신러닝 프레임워크가 PINN 발전의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/799_The_frontier_of_simulation-based_inference/review]] — 물리 정보 신경망을 통한 과학적 기계학습이 시뮬레이션 기반 추론의 물리학적 제약 조건 통합 방법론을 제공한다
+- 🔄 다른 접근: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 물리 정보 신경망 기반의 과학 머신러닝 접근법으로, 이 논문의 신경 연산자 중심 파운데이션 모델과 다른 물리 기반 접근을 보여준다
+- 🏛 기반 연구: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — 물리정보신경망의 과학 머신러닝이 cd-PINN의 연속 의존성 활용 방법론에 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/082_Ai-assisted_design_of_experiments_at_the_frontiers_of_comput/review]] — 물리 정보 신경망을 통한 과학적 기계학습이 계산 전계의 AI 보조 실험 설계를 위한 물리학적 제약 조건 통합 방법론을 제공한다
+- 🔗 후속 연구: [[papers/307_Efficient_Prediction_of_SO3-Equivariant_Hamiltonian_Matrices/review]] — 물리 정보 신경망과 SO(3) 등변성을 결합하여 더 정확한 전자구조 예측 프레임워크 구축
+- 🧪 응용 사례: [[papers/576_Nonlinear_stochastic_and_quantum_motion_from_Coulomb_forces/review]] — 물리 정보 신경망을 통해 쿨롱 상호작용의 3차 비선형 항이 실제 양자 센서 설계에 적용됨
+- 🏛 기반 연구: [[papers/758_Simulations_in_the_era_of_exascale_computing/review]] — 물리 정보 기반 신경망의 과학적 기계학습 기초를 제공하며 엑사스케일 시뮬레이션과 연계된다
+- 🏛 기반 연구: [[papers/497_LLM_and_Simulation_as_Bilevel_Optimizers_A_New_Paradigm_to_A/review]] — 물리 정보 신경망 연구가 LLM과 물리 시뮬레이션 결합 접근법의 과학적 기반을 제공함
+- 🏛 기반 연구: [[papers/620_Physics-Informed_Autonomous_LLM_Agents_for_Explainable_Power/review]] — 물리 정보 신경망 과학기계학습이 전력전자 자율 에이전트의 물리 기반 설계 원리를 제공한다

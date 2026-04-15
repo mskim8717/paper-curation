@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "LLM(Large Language Model)의 환각(hallucination) 문제를 극복한 에이전트 시스템 PaperQA2를 개발하여, 과학 문헌 검색, 요약, 모순 탐지 작업에서 박사 수준의 과학자를 능가하는 성능을 달성했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Skarlinski et al._2024_Language agents achieve superhuman synthesis of scientific knowledge.pdf"
 ---
@@ -122,6 +123,9 @@ LLM(Large Language Model)의 환각(hallucination) 문제를 극복한 에이전
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — PaperQA2가 PaperQA의 기본 검색 증강 접근법을 환각 문제 해결과 모순 탐지 기능으로 대폭 개선하여 박사급 성능을 달성한 직접적 후속 연구임
-- 🔄 다른 접근: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — OpenScholar가 과학 문헌 합성에 초점을 맞춘 반면, PaperQA2는 정확한 정보 검색과 요약에 특화되어 서로 다른 강점을 가진 상호 보완적 시스템임
-- 🏛 기반 연구: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — PaperQA의 기본적인 검색 증강 생성 에이전트 구조가 PaperQA2의 환각 해결과 초인적 과학 지식 합성 능력의 기초 프레임워크를 제공함
+- 🔄 다른 접근: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — OpenScholar는 과학 문헌 합성에 특화된 검색 증강 모델로, PaperQA2와 다른 아키텍처로 유사한 문제를 해결한다
+- 🏛 기반 연구: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — PaperQA의 초기 버전으로, PaperQA2의 환각 문제 해결과 성능 향상의 기술적 기반을 제공한다
+- 🔗 후속 연구: [[papers/087_Ai2_scholar_qa_Organized_literature_synthesis_with_attributi/review]] — AI2 Scholar QA는 문헌 기반 질의응답에서 속성 부여 기능을 추가하여, PaperQA2의 신뢰성 있는 과학 지식 합성 능력을 확장한다
+- ⚖️ 반론/비판: [[papers/410_How_deep_do_large_language_models_internalize_scientific_lit/review]] — LLM의 과학 지식 합성 능력과 인용 편향 문제 간의 상반된 관점을 보여준다.
+- 🧪 응용 사례: [[papers/018_A_retrieval-augmented_knowledge_mining_method_with_deep_thin/review]] — 지식 채굴 방법론을 실제 과학 지식 합성 작업에 적용한 구체적 사례를 제공한다
+- 🔄 다른 접근: [[papers/146_Autosdt_Scaling_data-driven_discovery_tasks_toward_open_co-s/review]] — 과학 지식 합성에서 LLM의 역할을 다른 관점에서 접근하여, 데이터 주도 발견과 지식 합성의 차이점을 보여줍니다.

@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 사전학습된 대규모 언어모델(Large Language Model, LLM)을 유한요소법(Finite Element Method, FEM)과 결합하여 도메인 특화 미세조정 없이 구조 설계를 자율적으로 생성하고 반복 개선하는 프레임워크를 제안한다. 특히 2D 트러스 구조 최적화에서 NSGA-II와 같은 전통 최적화 방법보다 빠른 수렴과 적은 FEM 평가 횟수를 달성했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Domain-Specific_LLM_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jadhav and Farimani_2024_Large Language Model Agent as a Mechanical Designer.pdf"
 ---
@@ -140,7 +140,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jadhav and Farimani_2024_Large Language 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/102_Architecture_Design_for_Human-Driven_Systems/review]] — 기계 설계 자동화에서 LLM 기반과 인간 중심 시스템 설계 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — 재료 과학을 위한 유연한 LLM 기반 에이전트 시스템이 기계 설계 자동화로 확장될 수 있습니다.
-- 🏛 기반 연구: [[papers/469_Large_Language_Models_as_Evolutionary_Optimizers/review]] — 진화 최적화를 위한 대형 언어 모델이 구조 설계 최적화의 방법론적 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/073_AI_Agents_in_Engineering_Design_A_Multi-Agent_Framework_for/review]] — 자동차 설계가 더 일반적인 기계 설계로 확장됩니다.
+- 🔄 다른 접근: [[papers/469_Large_Language_Models_as_Evolutionary_Optimizers/review]] — 진화 알고리즘과 유한요소법이라는 서로 다른 최적화 접근법을 LLM과 결합하여 설계 문제를 해결하는 대안적 방법론이다.
+- 🔗 후속 연구: [[papers/526_MechAgents_Large_language_model_multi-agent_collaborations_c/review]] — 기계 설계 에이전트와 멀티에이전트 협력 시스템은 모두 복잡한 엔지니어링 문제 해결을 위한 AI 에이전트 활용을 다룬다.
+- 🧪 응용 사례: [[papers/073_AI_Agents_in_Engineering_Design_A_Multi-Agent_Framework_for/review]] — 엔지니어링 설계를 위한 멀티에이전트 프레임워크와 기계 설계 LLM 에이전트는 모두 설계 자동화라는 공통 목표를 가진다.
+- 🔗 후속 연구: [[papers/073_AI_Agents_in_Engineering_Design_A_Multi-Agent_Framework_for/review]] — 기계 설계 에이전트로 AI 설계 자동화를 더욱 일반화한 연구이다.
+- 🧪 응용 사례: [[papers/440_Inverse_designing_metamaterials_with_programmable_nonlinear/review]] — 메타물질 역설계를 기계 설계라는 다른 공학 영역에 LLM 에이전트를 적용한 사례
+- 🔄 다른 접근: [[papers/469_Large_Language_Models_as_Evolutionary_Optimizers/review]] — 유한요소법 기반 구조 설계와 진화 알고리즘 기반 최적화는 모두 LLM을 활용한 설계 최적화의 서로 다른 접근법이다.

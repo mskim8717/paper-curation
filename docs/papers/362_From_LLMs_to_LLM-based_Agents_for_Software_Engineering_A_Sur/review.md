@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 소프트웨어 공학(SE) 분야에서 대규모 언어 모델(LLM)과 LLM 기반 에이전트의 현황을 구분하여 체계적으로 분석하는 첫 번째 포괄적 조사이다. 요구사항 공학, 코드 생성, 자율적 의사결정, 소프트웨어 설계, 테스트 생성, 소프트웨어 보안 및 유지보수의 6가지 핵심 영역에서 139개 논문을 수집하여 LLM과 LLM 기반 에이전트의 차이점을 명확히 한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Multi-Agent_System_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jin et al._2024_From LLMs to LLM-based Agents for Software Engineering A Survey of Current, Challenges and Future.pdf"
 ---
@@ -113,4 +114,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jin et al._2024_From LLMs to LLM-based A
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/586_Opendevin_An_open_platform_for_ai_software_developers_as_gen/review]] — LLM 기반 소프트웨어 엔지니어링 에이전트 연구의 포괄적 이론적 배경을 제공한다.
+- 🧪 응용 사례: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 실제 GitHub 이슈 해결 벤치마크가 소프트웨어 공학 에이전트의 실질적 성능 검증을 제공한다
+- 🔗 후속 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 다중 에이전트 시스템 설문이 개별 LLM 에이전트를 넘어선 협업적 소프트웨어 개발의 확장된 관점을 제시한다
+- 🏛 기반 연구: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — LLM 기반 소프트웨어 엔지니어링 에이전트의 현재 능력과 한계에 대한 종합적인 이해를 제공하는 기초 연구
+- 🏛 기반 연구: [[papers/325_Executable_Code_Actions_Elicit_Better_LLM_Agents/review]] — 소프트웨어 공학 에이전트의 체계적 분석이 실행 가능한 코드 액션 설계의 이론적 기반을 제공한다

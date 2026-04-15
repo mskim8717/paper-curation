@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.0
 essence: "본 논문은 AI가 전문화된 계산 도구에서 자율적 과학 연구 파트너로 진화하는 과정을 체계화하며, **에이전틱 사이언스(Agentic Science)**를 AI for Science의 핵심 패러다임으로 위치지었다. 대규모 언어 모델(LLM)과 멀티모달 시스템을 통해 가설 생성, 실험 설계, 데이터 분석, 반복적 개선 등 과학적 발견의 전체 사이클을 자동화하는 AI 에이전트의 등장을 다룬다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wei et al._2025_From AI for Science to Agentic Science A Survey on Autonomous Scientific Discovery.pdf"
 ---
@@ -137,8 +138,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wei et al._2025_From AI for Science to A
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 에이전틱 사이언스와 AI 과학자의 서로 다른 자율적 과학 연구 패러다임을 비교하여 각각의 강점과 한계를 명확히 할 수 있다.
-- 🧪 응용 사례: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — 에이전틱 사이언스 프레임워크를 과학 발견 엔진 구축에 적용하여 노벨-튜링 챌린지와 같은 야심찬 목표를 달성할 수 있다.
-- 🏛 기반 연구: [[papers/857_Unlocking_the_Potential_of_AI_Researchers_in_Scientific_Disc/review]] — AI for Science에서 Agentic Science로의 전환이 AI 연구자 잠재력 활용의 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/137_Autonomous_Agents_for_Scientific_Discovery_Orchestrating_Sci/review]] — 과학을 위한 AI에서 에이전트 과학으로의 전환에 대한 포괄적 조사가 자율 과학 발견의 이론적 토대를 제공한다
-- 🏛 기반 연구: [[papers/922_Vibe_physics_The_AI_grad_student/review]] — 에이전틱 사이언스의 이론적 틀이 AI 대학원생 구현의 기초 개념과 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/321_Evaluating_Sakanas_AI_Scientist_Bold_Claims_Mixed_Results_an/review]] — AI Scientist 평가의 구체적 사례를 포함하여 자율적 과학 발견의 포괄적 프레임워크를 제시한다
+- 🏛 기반 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 과학 연구의 원본 시스템으로서 에이전틱 사이언스의 실제 구현 기반을 제공한다
+- 🔄 다른 접근: [[papers/834_Towards_Scientific_Discovery_with_Generative_AI_Progress_Opp/review]] — 생성형 AI를 통한 과학 발견의 진전과 기회를 다른 관점에서 조망한다
+- 🔄 다른 접근: [[papers/353_From_Automation_to_Autonomy_A_Survey_on_Large_Language_Model/review]] — 과학에서 AI 자율성 발전을 서로 다른 관점에서 체계적으로 조망한다.
+- 🔄 다른 접근: [[papers/824_Towards_AI_for_science_developing_a_conceptual_basis_for_tra/review]] — AI4Science에서 자율적 과학으로의 전환을 위한 다른 관점의 접근법을 보여준다
+- 🔄 다른 접근: [[papers/857_Unlocking_the_Potential_of_AI_Researchers_in_Scientific_Disc/review]] — 자율적 과학 발견을 위한 다른 관점의 에이전트 기반 접근법을 보여준다
+- 🔗 후속 연구: [[papers/088_AI4Research_A_Survey_of_Artificial_Intelligence_for_Scientif/review]] — 연구 자동화를 넘어 자율적 과학이라는 더 포괄적이고 미래지향적 비전으로 확장한다
+- 🏛 기반 연구: [[papers/321_Evaluating_Sakanas_AI_Scientist_Bold_Claims_Mixed_Results_an/review]] — 자율적 과학 발견의 전반적 프레임워크를 제시하며 AI Scientist 평가의 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/738_SCP_Accelerating_Discovery_with_a_Global_Web_of_Autonomous_S/review]] — 과학용 AI에서 에이전트 과학으로의 발전 설문이 글로벌 과학 에이전트 네트워크 구축의 이론적 토대를 제공한다

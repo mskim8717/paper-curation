@@ -12,9 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "캠브리지 구조 데이터베이스의 126,985개 단핵 전이금속 착물에서 반복적 전하 균형 워크플로우를 통해 66,810개 리간드의 정확한 순 전하를 결정하고, 주제 모델링으로 25,146개 리간드의 기능적 응용 영역을 분류한 BOS-Lig 데이터세트를 구축했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Protein-Drug_Design_Models"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Michel et al._2026_The BOS-Lig Dataset Accurate Ligand Charges from a Consensus Approach for 66,810 Experimentally Syn.pdf"
 ---
@@ -93,11 +94,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Michel et al._2026_The BOS-Lig Dataset A
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/291_Drugclip_Contrastive_drug-disease_interaction_for_drug_repur/review]] — 약물 재창출을 위한 대조학습이 리간드 전하 결정의 기반 방법론 제공
-- 🔗 후속 연구: [[papers/506_LLM4SR_A_Survey_on_Large_Language_Models_for_Scientific_Rese/review]] — 과학 연구용 LLM 조사에서 단핵 전이금속 착물 데이터세트로의 확장
-- 🧪 응용 사례: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — 재료 발견 파운데이션 모델을 리간드 기능 분류에 적용한 사례
-- 🔄 다른 접근: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — 화학 대응 LLM 확장과 정확한 리간드 전하 결정의 다른 접근법
-- 🧪 응용 사례: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — 화학 도구로 대규모 언어 모델을 증강하여 본 논문의 리간드 전하 데이터를 화학 언어 모델링에 활용할 수 있다.
-- 🔗 후속 연구: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — 대학원 수준 다학제 다중모달 과학 데이터셋으로 본 논문의 화학 데이터를 더 광범위한 과학 도메인으로 확장한다.
-- 🧪 응용 사례: [[papers/316_Enhancing_chemical_reaction_and_retrosynthesis_prediction_wi/review]] — 화학 반응 및 역합성 예측 성능 향상에서 본 논문의 정확한 리간드 전하 정보를 활용할 수 있다.
-- 🧪 응용 사례: [[papers/1060_Accurate_prediction_of_protein_structures_and_interactions_u/review]] — 단백질 구조 예측 기술을 리간드 전하 예측 등 구체적 응용으로 확장
+- 🧪 응용 사례: [[papers/1104_A_Physics-Informed_Chemical_Rule_for_Topological_Materials_D/review]] — BOS-Lig 데이터셋의 정확한 전하 정보가 위상 물질의 전자 채움 특성 예측에 직접 활용됨
+- 🔗 후속 연구: [[papers/165_Biokgbench_A_knowledge_graph_checking_benchmark_of_ai_agent/review]] — 바이오메디컬 지식 그래프 검증 프레임워크를 리간드 전하 검증 워크플로우에 적용하여 정확도 향상 가능
+- 🧪 응용 사례: [[papers/646_QH9_A_Quantum_Hamiltonian_Prediction_Benchmark_for_QM9_Molec/review]] — 양자 해밀톤 예측에서 정확한 리간드 전하 데이터가 전이금속 착물의 전자구조 계산 정확도를 높임
+- 🧪 응용 사례: [[papers/1104_A_Physics-Informed_Chemical_Rule_for_Topological_Materials_D/review]] — 정확한 리간드 전하 데이터가 위상 물질 발견의 화학 규칙에서 전자 채움 예측 정확도를 향상시킴

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대규모 언어모델(LLM)의 **전략적 추론(Strategic Reasoning)** 능력을 종합적으로 조사한 서베이이다. 전략적 추론은 다중 에이전트 환경에서 상대방의 행동을 예측하고 이에 따라 전략을 적응적으로 조정하는 고차원적 추론 능력으로, LLM이 보유한 새로운 인지 능력으로 주목받고 있다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_LLM as a Mastermind A Survey of Strategic Reasoning with Large Language Models.pdf"
 ---
@@ -111,7 +112,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_LLM as a Mastermind A 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/674_ReTool_Reinforcement_Learning_for_Strategic_Tool_Use_in_LLMs/review]] — ReTool의 강화학습 기반 전략적 도구 사용이 LLM의 전략적 추론 능력을 실제 문제 해결에 적용한 구체적 확장 사례이다.
-- 🏛 기반 연구: [[papers/361_From_LLM_Reasoning_to_Autonomous_AI_Agents_A_Comprehensive_R/review]] — LLM 추론에서 자율 AI 에이전트로의 포괄적 조사가 전략적 추론 능력 연구의 광범위한 이론적 토대를 제공한다.
-- 🧪 응용 사례: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — 사회심리학과 LLM 추론의 갈등 인식 연구가 다중 에이전트 환경에서의 전략적 추론 메커니즘에 직접 적용되는 심리학적 통찰이다.
-- 🏛 기반 연구: [[papers/674_ReTool_Reinforcement_Learning_for_Strategic_Tool_Use_in_LLMs/review]] — LLM의 전략적 추론 능력에 대한 종합적 조사가 ReTool의 강화학습 기반 도구 사용 전략 개발의 이론적 토대를 제공한다.
+- 🧪 응용 사례: [[papers/792_Text2world_Benchmarking_large_language_models_for_symbolic_w/review]] — 전략적 추론 능력을 기호적 세계 모델 생성에 적용한다
+- 🏛 기반 연구: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — LLM 에이전트 간 협력 메커니즘이 전략적 추론의 기반이 된다
+- 🔗 후속 연구: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — AI 에이전트 신뢰성 과학을 전략적 추론 분석으로 확장한다
+- 🧪 응용 사례: [[papers/028_A_survey_of_reasoning_with_foundation_models/review]] — 추론 능력을 전략적 의사결정과 게임 이론 상황에 적용한 구체적 사례를 보여준다
+- 🏛 기반 연구: [[papers/792_Text2world_Benchmarking_large_language_models_for_symbolic_w/review]] — 세계 모델 생성을 위한 전략적 추론 능력의 이론적 기반을 제공한다

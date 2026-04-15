@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 검색 증강 생성(RAG, Retrieval-Augmented Generation)과 다중 에이전트 협력을 활용하여 신약 발견 작업을 수행하는 CLADD 프레임워크를 제시한다. 도메인 특화 미세조정 없이 일반용도 LLM을 활용하면서도 이질적인 생화학 데이터의 동적 통합과 개방형 질문에 대한 추론을 가능하게 한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Drug_Discovery"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/AI-Driven_Drug_and_Materials_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lee et al._2025_RAG-Enhanced Collaborative LLM Agents for Drug Discovery.pdf"
 ---
@@ -106,9 +108,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lee et al._2025_RAG-Enhanced Collaborati
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/814_Tooling_or_Not_Tooling_The_Impact_of_Tools_on_Language_Agent/review]] — 신약 발견에서 LLM 활용이라는 공통점이 있지만 RAG 기반 협력적 접근법과 도구 증강의 한계라는 다른 관점을 제시한다.
-- 🔗 후속 연구: [[papers/290_DrugAgent_Automating_AI-aided_Drug_Discovery_Programming_thr/review]] — AI 기반 약물 발견 프로그래밍 자동화 연구를 RAG 증강 협력 프레임워크로 확장할 수 있다.
-- 🏛 기반 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 검색 증강 생성의 일반적 방법론이 신약 발견을 위한 협력적 LLM 에이전트 시스템의 기술적 기반이다.
-- 🔗 후속 연구: [[papers/415_Hunt_Globally_Wide_Search_AI_Agents_for_Drug_Asset_Scouting/review]] — RAG 강화 협력 LLM 에이전트가 글로벌 약물 자산 스카우팅의 다국어 처리 능력을 향상시킬 수 있습니다.
-- ⚖️ 반론/비판: [[papers/814_Tooling_or_Not_Tooling_The_Impact_of_Tools_on_Language_Agent/review]] — 화학 작업에서 도구 증강이 항상 성능을 향상시키지 않는다는 발견이 RAG 기반 협력적 접근법의 필요성을 뒷받침한다.
-- 🏛 기반 연구: [[papers/837_Training_a_Scientific_Reasoning_Model_for_Chemistry/review]] — 약물 발견을 위한 RAG 강화 협업 LLM 에이전트 기술이 ether0의 약물 발견 지원 능력에 기반을 제공한다.
+- 🔄 다른 접근: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 과학 아이디어 생성에서 다중 에이전트 협력을 보여주며 신약 발견과 다른 응용 분야를 제시한다
+- 🔗 후속 연구: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 화학 도구 연결 에이전트로서 신약 발견에서 RAG 기반 협력의 구체적 구현을 확장한다
+- 🧪 응용 사례: [[papers/351_FROGENT_An_End-to-End_Full-process_Drug_Design_Multi-Agent_S/review]] — 완전한 신약 설계 다중 에이전트 시스템으로 RAG 협력 프레임워크의 실제 적용을 보여준다
+- 🔄 다른 접근: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 신약 발견에서 다중 에이전트 협력을 통해 과학 아이디어 생성의 다른 응용 분야를 제시한다
+- 🏛 기반 연구: [[papers/490_LIDDIA_Language-based_Intelligent_Drug_Discovery_Agent/review]] — RAG 강화 협력 LLM 에이전트가 LIDDIA의 신약 발견을 위한 지식 검색 및 추론 기반을 제공한다
+- 🔗 후속 연구: [[papers/291_Drugclip_Contrastive_drug-disease_interaction_for_drug_repur/review]] — DrugCLIP의 대조학습 기반 약물 재창출을 RAG 강화 협업 LLM 에이전트로 확장하여 더 강력한 약물 발견 시스템을 구현한다.
+- 🧪 응용 사례: [[papers/806_The_Virtual_Lab_AI_Agents_Design_New_SARS-CoV-2_Nanobodies_w/review]] — 약물 발견을 위한 RAG 강화 협력 LLM 에이전트로, Virtual Lab 프레임워크의 약물 발견 분야 확장 적용
+- 🔗 후속 연구: [[papers/514_MAC-AMP_A_Closed-Loop_Multi-Agent_Collaboration_System_for_M/review]] — 약물 발견에서 LLM 기반 다중 에이전트 협업을 다루어 MAC-AMP의 항균펩타이드 설계 방법론을 더 광범위한 약물 발견 영역으로 확장함
+- 🏛 기반 연구: [[papers/616_PharmAgents_Building_a_Virtual_Pharma_with_Large_Language_Mo/review]] — RAG 강화 협력 LLM 에이전트 연구가 PharmAgents의 다중 에이전트 신약 발견 시스템의 에이전트 협력 방식의 기반

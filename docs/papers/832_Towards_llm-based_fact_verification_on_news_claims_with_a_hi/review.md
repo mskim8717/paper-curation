@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.25
 essence: "대규모 언어모델(LLM)의 인컨텍스트 학습(ICL) 능력을 뉴스 클레임 검증에 활용하되, 계층적 단계별 프롬프팅(HiSS) 방법을 통해 클레임을 세부 클레임으로 분해하고 검색 엔진 기반의 증거 수집을 통해 사실 확인의 정확도와 설명 가능성을 높인 연구이다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Zero-Shot_Claim_Verification"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singhal et al._2023_Towards llm-based fact verification on news claims with a hierarchical step-by-step prompting method.pdf"
 ---
@@ -116,9 +116,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singhal et al._2023_Towards llm-based fa
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/859_Unsupervised_pretraining_for_fact_verification_by_language_m/review]] — HiSS가 계층적 단계별 프롬프팅을 통해 뉴스 클레임을 세분화하는 반면, SFAVEL은 언어모델 증류를 통한 무감독 학습으로 서로 다른 팩트 검증 접근법을 제시함
-- 🔗 후속 연구: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 프로그램 가이드 추론을 통한 복잡한 클레임 팩트 체킹이 HiSS의 계층적 분해 방법을 더 정교한 논리적 추론 체계로 발전시킨 연구임
-- 🧪 응용 사례: [[papers/827_Towards_effective_extraction_and_evaluation_of_factual_claim/review]] — 효과적인 사실 클레임 추출과 평가 방법론이 HiSS의 계층적 클레임 분해와 증거 수집 과정을 실제 뉴스 검증 시스템에 적용할 수 있는 구체적 기술을 제공함
-- 🏛 기반 연구: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — 기존 팩트체킹의 한계를 지적한 연구가 계층적 증거 기반 뉴스 클레임 검증 시스템 개발의 동기를 제공합니다.
-- 🔄 다른 접근: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 동적 증거 수집 기반 접근법과 계층적 증거 구조화 접근법이라는 서로 다른 팩트체킹 시스템 설계 철학을 제시합니다.
-- 🔄 다른 접근: [[papers/859_Unsupervised_pretraining_for_fact_verification_by_language_m/review]] — SFAVEL은 언어모델 증류를 통한 무감독 접근을, HiSS는 계층적 단계별 프롬프팅을 사용하여 서로 다른 방식으로 팩트 검증 문제를 해결함
+- 🔄 다른 접근: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 복잡한 클레임의 사실 확인을 위한 프로그램 가이드 추론 접근법으로, HiSS의 계층적 단계별 접근과 다른 구조화된 추론 방법을 제시한다
+- 🔗 후속 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프 기반 사실 검증 연구로, HiSS의 검색 기반 증거 수집을 지식 그래프 추론으로 확장한 접근법을 보여준다
+- 🏛 기반 연구: [[papers/441_Investigating_zero-and_few-shot_generalization_in_fact_verif/review]] — 사실 검증에서의 zero-shot과 few-shot 일반화를 조사한 연구로, HiSS의 인컨텍스트 학습 기반 접근법의 이론적 배경을 제공한다
+- 🧪 응용 사례: [[papers/317_Enhancing_natural_language_inference_performance_with_knowle/review]] — 계층적 지식 그래프를 활용한 사실 검증이 NLI 기반 팩트체킹의 실제 적용 사례이다
+- 🧪 응용 사례: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — 뉴스 클레임에 특화된 사실 검증 시스템으로, NLP 사실확인의 실제 미정보 대응 분야 적용 사례입니다.
+- 🔄 다른 접근: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 계층적 단계별 프롬프팅을 통한 사실 확인 접근법으로, 프로그램 가이드 추론의 구조화된 접근과 대비되는 계층적 분해 방법을 제시한다
+- 🏛 기반 연구: [[papers/711_Sciclaims_An_end-to-end_generative_system_for_biomedical_cla/review]] — 뉴스 청구에 대한 계층적 팩트 검증의 기초 방법론을 생의학 주장 분석에 적용한다.

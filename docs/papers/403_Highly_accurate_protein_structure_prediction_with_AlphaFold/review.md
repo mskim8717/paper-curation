@@ -12,8 +12,8 @@ arxiv: ""
 score: 5.0
 essence: "AlphaFold는 아미노산 서열만으로 단백질의 3차원 구조를 원자 수준의 정확도로 예측하는 딥러닝 모델로, 50년 이상의 단백질 폴딩 문제를 근본적으로 해결한 획기적인 성과이다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Protein_Structure_Prediction"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jumper et al._2021_Highly accurate protein structure prediction with AlphaFold.pdf"
 ---
@@ -118,12 +118,13 @@ AlphaFold는 아미노산 서열만으로 단백질의 3차원 구조를 원자 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/046_Accurate_structure_prediction_of_biomolecular_interactions_w/review]] — AlphaFold의 단일 단백질 구조 예측을 생체분자 복합체 상호작용 예측으로 확장한 직접적인 발전이다
-- 🧪 응용 사례: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — 정확한 단백질 구조 예측이 바이러스 스파이크 단백질의 동역학 시뮬레이션과 약물 타겟 발견에 필수적인 출발점을 제공한다
-- 🏛 기반 연구: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — 단백질 폴딩 문제 해결이 AI를 통한 과학적 발견의 대표적 성공사례로서 AI4Science 발전의 이정표가 되었다
-- 🔗 후속 연구: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 단백질 구조 예측의 성공이 환경 과학 분야 파운데이션 모델 개발에 중요한 방법론적 영감을 제공한다
-- 🔄 다른 접근: [[papers/1060_Accurate_prediction_of_protein_structures_and_interactions_u/review]] — AlphaFold2와 유사한 정확도를 다른 3-트랙 신경망으로 달성한 대안적 접근
-- 🏛 기반 연구: [[papers/046_Accurate_structure_prediction_of_biomolecular_interactions_w/review]] — AlphaFold 2의 단일 단백질 구조 예측 기술을 기반으로 생체분자 복합체 예측으로 확장한 직접적인 후속 연구이다
-- 🏛 기반 연구: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — AlphaFold와 같은 획기적 성과들이 AI를 통한 과학적 발견 변모에 대한 종합적 조망의 대표적 사례로 제시된다
-- 🔗 후속 연구: [[papers/065_Agentic_End-to-End_De_Novo_Protein_Design_for_Tailored_Dynam/review]] — AlphaFold의 구조 예측을 넘어 동역학적 특성까지 제어 가능한 단백질 설계로 확장합니다.
-- 🏛 기반 연구: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — 단백질 구조 예측 기술이 바이러스 스파이크 단백질의 동역학 시뮬레이션에 필수적인 구조적 기반을 제공한다
+- 🔗 후속 연구: [[papers/046_Accurate_structure_prediction_of_biomolecular_interactions_w/review]] — AlphaFold의 단백질 구조 예측을 단백질-핵산-소분자 복합체로 확장한 차세대 모델
+- 🔄 다른 접근: [[papers/568_Mustard_Mastering_uniform_synthesis_of_theorem_and_proof_dat/review]] — 단백질 구조 예측 대신 수학 정리 증명이라는 다른 복잡한 과학 문제를 LLM으로 해결하는 접근법
+- 🧪 응용 사례: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — AlphaFold가 예측한 단백질 구조를 임상 의학 분야에 적용하는 실용적 사례
+- 🏛 기반 연구: [[papers/1060_Accurate_prediction_of_protein_structures_and_interactions_u/review]] — AlphaFold가 제시한 단백질 구조 예측의 기반 위에서 발전된 연구이다.
+- 🏛 기반 연구: [[papers/046_Accurate_structure_prediction_of_biomolecular_interactions_w/review]] — AlphaFold의 기본 단백질 구조 예측 기술을 바탕으로 생체분자 복합체로 확장
+- 🔄 다른 접근: [[papers/065_Agentic_End-to-End_De_Novo_Protein_Design_for_Tailored_Dynam/review]] — 단백질 구조 예측에서 구조 기반 설계로 패러다임을 전환한 다른 접근법을 보여준다
+- 🔗 후속 연구: [[papers/112_Atomically_accurate_de_novo_design_of_antibodies_with_RFdiff/review]] — AlphaFold의 구조 예측을 넘어 기능적 항체 설계로 확장한 실용적 발전이다
+- 🔗 후속 연구: [[papers/171_Boltz-1_Democratizing_Biomolecular_Interaction_Modeling/review]] — AlphaFold의 단백질 구조 예측 성공을 생체분자 복합체 전반으로 확장한 발전된 형태이다.
+- 🧪 응용 사례: [[papers/122_Automated_Extraction_of_Mechanical_Constitutive_Models_from/review]] — AlphaFold의 단백질 구조 예측 성공 사례처럼 문화유산 보존을 위한 구성 모델 추출이 AI를 활용한 과학적 발견의 구체적 응용 분야임
+- 🔄 다른 접근: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — AlphaFold의 정적 단백질 구조 예측과 달리 동적 구조 앙상블 시뮬레이션을 통해 단백질 구조를 이해하는 상호보완적 접근법이다

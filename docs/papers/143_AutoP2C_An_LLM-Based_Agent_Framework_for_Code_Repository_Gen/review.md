@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "학술 논문의 텍스트, 다이어그램, 표 등 다중모달 콘텐츠를 자동으로 처리하여 완전히 실행 가능한 코드 저장소를 생성하는 혁신적인 다중에이전트 LLM 프레임워크를 제시한다. 이는 기존의 단순 코드 스니펫 생성을 넘어 연구 논문 구현의 전체 자동화를 목표로 한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Benchmarking_Taxonomy"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lin et al._2025_AutoP2C An LLM-Based Agent Framework for Code Repository Generation from Multimodal Content in Acad.pdf"
 ---
@@ -115,6 +115,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lin et al._2025_AutoP2C An LLM-Based Age
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/232_CodePDE_An_Inference_Framework_for_LLM-driven_PDE_Solver_Gen/review]] — 논문에서 코드 생성이라는 동일 목표를 PDE와 일반 저장소 관점에서 접근
-- 🔗 후속 연구: [[papers/145_Autoreproduce_Automatic_ai_experiment_reproduction_with_pape/review]] — 논문 기반 실험 재현이 코드 저장소 생성으로 확장됨
-- 🔄 다른 접근: [[papers/232_CodePDE_An_Inference_Framework_for_LLM-driven_PDE_Solver_Gen/review]] — 논문에서 코드로의 자동 변환이라는 동일한 목표를 PDE와 일반 코드 관점에서 접근
+- 🧪 응용 사례: [[papers/361_From_LLM_Reasoning_to_Autonomous_AI_Agents_A_Comprehensive_R/review]] — 논문 구현 자동화에 자율 AI 에이전트 프레임워크의 다중 에이전트 협력 원칙을 적용한다
+- 🔗 후속 연구: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 연구 아이디어 생성을 실행 가능한 코드로 구현하는 전체 파이프라인을 완성한다
+- 🏛 기반 연구: [[papers/205_Chatdev_Communicative_agents_for_software_development/review]] — 소프트웨어 개발을 위한 다중 에이전트 협력이 논문-코드 변환의 기술적 기반을 제공한다
+- 🧪 응용 사례: [[papers/189_CASSIA_a_multi-agent_large_language_model_for_reference_free/review]] — 다중 에이전트 LLM 시스템이 생물정보학 분석 자동화에서 코드 생성까지 확장 적용된다
+- 🧪 응용 사례: [[papers/254_DataJoint_20_A_Computational_Substrate_for_Agentic_Scientifi/review]] — 관계형 워크플로우 모델이 논문-코드 생성 에이전트의 데이터 무결성 보장에 적용된다
+- 🏛 기반 연구: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 연구 아이디어 생성이 논문 구현 자동화의 선행 단계로서 전체 연구 자동화를 완성한다

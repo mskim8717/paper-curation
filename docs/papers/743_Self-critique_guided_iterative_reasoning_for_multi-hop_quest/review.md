@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "대규모 언어모델(LLM)의 지식 제한 문제를 해결하기 위해, 자기비판 피드백을 통해 반복적 추론 과정을 유도하는 새로운 다중 홉 질의응답 방법을 제안한다. 모델이 질문 분해, 검색, 추론, 자기평가를 학습하여 중간 단계의 오류를 줄이고 최적 추론 경로를 선택할 수 있도록 한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Question_Answering"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Self-Clarifying_Reasoning_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chu et al._2025_Self-critique guided iterative reasoning for multi-hop question answering.pdf"
 ---
@@ -100,7 +102,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chu et al._2025_Self-critique guided ite
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/701_Scholarchemqa_Unveiling_the_power_of_language_models_in_chem/review]] — 도메인 특화 QA의 기초적 접근이 자기비판 기반 반복적 추론이라는 더 고도화된 질의응답 방법의 토대를 제공함
-- 🔄 다른 접근: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 둘 다 LLM의 자기교정 능력을 다루지만 하나는 질의응답, 다른 하나는 도구 통합 추론에 중점을 둠
-- 🔗 후속 연구: [[papers/667_ReSearch_Learning_to_Reason_with_Search_for_LLMs_via_Reinfor/review]] — 기본적인 추론 학습을 검색과 강화학습을 통한 더 체계적인 추론 능력 향상 방법으로 확장함
-- 🔗 후속 연구: [[papers/701_Scholarchemqa_Unveiling_the_power_of_language_models_in_chem/review]] — 화학 도메인의 특화된 QA를 다중 홉 질의응답의 일반적 추론 방법으로 확장하여 더 복잡한 추론 과정을 다룸
+- 🔄 다른 접근: [[papers/743_Self-critique_guided_iterative_reasoning_for_multi-hop_quest/review]] — 자기비판 기반 추론 개선이라는 공통 접근법을 가지지만 다중 홉 질의응답 vs 단계별 검증이라는 다른 적용 영역을 다룬다.
+- 🏛 기반 연구: [[papers/667_ReSearch_Learning_to_Reason_with_Search_for_LLMs_via_Reinfor/review]] — 검색을 통한 LLM 추론 학습의 이론적 기반을 제공하여 자기비판 유도 반복적 추론의 방법론적 근거를 설명한다.
+- 🔗 후속 연구: [[papers/500_Llm-based_corroborating_and_refuting_evidence_retrieval_for/review]] — LLM 기반 반박 증거 검색을 통해 다중 홉 질의응답에서 자기비판의 정확성을 향상시킬 수 있는 확장된 방법론을 제시한다.

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 지식그래프(KG) 기반 검색증강생성(RAG) 시스템에서 유연성과 검색 품질 사이의 트레이드오프를 해결하기 위해 FRAG 프레임워크를 제안한다. 쿼리의 복잡도를 자동으로 판단하여 단순/복잡 추론 작업에 맞춤형 검색 전략을 적용함으로써 LLM 미세조정 없이 모듈식 설계의 유연성을 유지하면서도 검색 품질을 향상시킨다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Domain-adapted_Instruction_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Multi-Hop_Long_Memory_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gao et al._2025_FRAG A Flexible Modular Framework for Retrieval-Augmented Generation based on Knowledge Graphs.pdf"
 ---
@@ -117,9 +119,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gao et al._2025_FRAG A Flexible Modular 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1092_Table-llm-specialist_Language_model_specialists_for_tables_u/review]] — 테이블 작업 전문가 모델과 달리 지식그래프 기반 RAG의 유연성을 통한 범용적 접근
-- 🏛 기반 연구: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — 검색증강 언어모델 사전훈련 방법론을 지식그래프 특화 RAG 시스템으로 발전시킨 기반
-- 🔄 다른 접근: [[papers/393_Graphusion_a_rag_framework_for_knowledge_graph_construction/review]] — 지식그래프 구축에 중점을 둔 Graphusion과 달리 기존 KG 활용 최적화에 집중
-- 🏛 기반 연구: [[papers/535_MetaOpenFOAM_an_LLM-based_multi-agent_framework_for_CFD/review]] — 검색 증강 생성의 유연한 모듈 프레임워크가 MetaOpenFOAM의 RAG 기술 기반 CFD 지식 검색 및 처리 시스템의 핵심 기술적 토대이다.
-- 🔗 후속 연구: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — REALM의 검색 증강 기법을 더 유연한 모듈형 프레임워크로 발전시킨 연구
-- 🔄 다른 접근: [[papers/1092_Table-llm-specialist_Language_model_specialists_for_tables_u/review]] — RAG 프레임워크의 유연성 추구와 달리 테이블 작업에 특화된 전문 모델 개발 접근
+- 🏛 기반 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 검색증강생성의 일반적 프레임워크가 지식그래프 기반 FRAG의 이론적 토대를 제공한다
+- 🔄 다른 접근: [[papers/404_Hiperrag_High-performance_retrieval_augmented_generation_for/review]] — 고성능 RAG와 모듈식 FRAG가 서로 다른 접근으로 검색 품질 향상을 추구한다

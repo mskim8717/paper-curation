@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "중국어 문법 오류 수정(CGEC) 시스템의 과도한 수정(over-correction) 문제를 해결하기 위해, 기존 GEC 시스템의 출력을 입력받아 직접 재작성하는 경량의 언어모델 기반 필터링 모델을 제안한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Text_Translation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Lm-combiner A contextual rewriting model for chinese grammatical error correction.pdf"
 ---
@@ -104,8 +105,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Lm-combiner A contextua
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/423_Improving_grammatical_error_correction_via_contextual_data_a/review]] — 문법 오류 수정의 맥락 데이터 증강 기법을 제공하여 LM-Combiner의 재작성 모델 성능 개선에 활용할 수 있다.
-- 🔄 다른 접근: [[papers/246_Csed_A_chinese_semantic_error_diagnosis_corpus/review]] — 둘 다 중국어 언어 오류 처리를 다루지만 하나는 문법 오류 수정이고 다른 하나는 의미 오류 진단에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/636_Prompt_to_be_consistent_is_better_than_self-consistent_few-s/review]] — Few-shot 일관성 개선 기법이 중국어 문법 오류 수정에서 과도한 수정 문제 해결에 적용될 수 있다.
-- 🔗 후속 연구: [[papers/571_Neural_automated_writing_evaluation_with_corrective_feedback/review]] — 중국어 문법을 위한 맥락적 재작성 모델은 제2언어 학습자 대상 쓰기 평가 시스템을 다국어 환경으로 확장한다.
-- 🔄 다른 접근: [[papers/246_Csed_A_chinese_semantic_error_diagnosis_corpus/review]] — 중국어 문법을 위한 맥락적 재작성 모델로 본 논문의 중국어 의미 오류와 다른 유형의 언어 오류 처리를 제시한다.
+- 🔄 다른 접근: [[papers/423_Improving_grammatical_error_correction_via_contextual_data_a/review]] — 중국어와 영어 문법 오류 수정은 모두 언어별 특성을 고려한 문법 교정 시스템이지만 서로 다른 언어적 도전을 다룬다.
+- 🏛 기반 연구: [[papers/246_Csed_A_chinese_semantic_error_diagnosis_corpus/review]] — 중국어 의미 오류 진단 말뭉치가 중국어 문법 오류 수정 시스템의 오류 패턴 분석과 필터링 모델 훈련에 기초 데이터를 제공한다.
+- 🔗 후속 연구: [[papers/791_Text_editing_by_command/review]] — 명령어 기반 텍스트 편집 연구를 중국어 문법 오류의 맥락적 재작성으로 특화하여 발전시킨 접근법이다.
+- 🧪 응용 사례: [[papers/405_Hit-scir_at_mmnlu22_Consistency_regularization_for_multiling/review]] — 다국어 음성언어이해의 일관성 정규화 기법이 중국어 문법 오류 수정의 과도교정 방지에 실제 적용될 수 있다.
+- 🏛 기반 연구: [[papers/246_Csed_A_chinese_semantic_error_diagnosis_corpus/review]] — 중국어 문법 수정을 위한 맥락적 재작성 모델이 의미 오류 진단의 방법론적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/405_Hit-scir_at_mmnlu22_Consistency_regularization_for_multiling/review]] — 중국어 문법 오류 수정과 다국어 음성언어이해는 모두 다국어 환경에서의 언어 품질 개선을 다른 방식으로 접근한다.
+- 🔄 다른 접근: [[papers/423_Improving_grammatical_error_correction_via_contextual_data_a/review]] — 중국어 문법 오류 수정과 영어 문법 오류 수정은 모두 언어별 문법 교정을 다루지만 서로 다른 언어적 특성을 고려한다.

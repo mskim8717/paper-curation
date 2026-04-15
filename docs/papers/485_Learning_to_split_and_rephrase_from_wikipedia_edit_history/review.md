@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 위키피디아 편집 이력을 마이닝하여 문장 분할-재표현(split-and-rephrase) 작업을 위한 100만 개 규모의 대규모 자연 데이터셋 WikiSplit을 구축하고, 이를 활용하여 기존 방법 대비 32 BLEU 포인트 향상을 달성했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Personalization"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Botha et al._2018_Learning to split and rephrase from wikipedia edit history.pdf"
 ---
@@ -110,8 +110,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Botha et al._2018_Learning to split and 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/703_Scholawrite_A_dataset_of_end-to-end_scholarly_writing_proces/review]] — 위키피디아 편집 이력을 활용한 문장 분할-재표현 연구가 학술 글쓰기 과정의 텍스트 변경 패턴 분석의 기초가 됩니다.
-- 🔗 후속 연구: [[papers/884_Wikiatomicedits_A_multilingual_corpus_of_wikipedia_edits_for/review]] — 영어 위키피디아 편집에서 다국어 위키피디아 편집 데이터셋으로 확장하여 더 포괄적인 텍스트 편집 연구를 가능하게 합니다.
-- 🔄 다른 접근: [[papers/791_Text_editing_by_command/review]] — 데이터 마이닝 기반 문장 분할과 명령어 기반 텍스트 편집이라는 서로 다른 텍스트 변형 접근법을 제시합니다.
-- 🔗 후속 연구: [[papers/884_Wikiatomicedits_A_multilingual_corpus_of_wikipedia_edits_for/review]] — 위키피디아 편집 이력을 활용한 분할 및 재작성 학습이 WikiAtomicEdits 코퍼스에서 발견된 편집 패턴을 실제 텍스트 처리 작업에 적용한 후속 연구임
-- 🏛 기반 연구: [[papers/791_Text_editing_by_command/review]] — 위키피디아 편집 이력을 활용한 텍스트 분할과 재구성 연구가 자연어 명령 기반 텍스트 편집의 방법론적 기초를 제공함
+- 🔗 후속 연구: [[papers/884_Wikiatomicedits_A_multilingual_corpus_of_wikipedia_edits_for/review]] — 위키피디아 편집을 다국어로 확장한 연구로, 영어 중심의 분할-재표현 연구를 더 넓은 언어적 맥락으로 발전시킵니다.
+- 🧪 응용 사례: [[papers/791_Text_editing_by_command/review]] — 명령어 기반 텍스트 편집 시스템으로, 분할-재표현 기술을 실제 텍스트 편집 도구에 적용한 사례입니다.
+- 🔄 다른 접근: [[papers/515_Machine-in-the-loop_rewriting_for_creative_image_captioning/review]] — 기계-인간 협력 방식의 텍스트 재작성으로, 완전 자동화된 분할-재표현과 다른 접근법을 제시합니다.
+- 🏛 기반 연구: [[papers/755_Simalign_High_quality_word_alignments_without_parallel_train/review]] — 위키피디아 편집 이력 학습이 다국어 단어 정렬을 위한 언어 간 대응 관계 학습의 기반 방법론을 제공한다.
+- 🏛 기반 연구: [[papers/884_Wikiatomicedits_A_multilingual_corpus_of_wikipedia_edits_for/review]] — 위키피디아 편집 이력을 언어 모델링에 활용하는 기반 연구가 원자적 편집의 다국어 코퍼스 구축의 이론적 토대를 제공한다.
+- 🏛 기반 연구: [[papers/791_Text_editing_by_command/review]] — 위키피디아 편집 이력을 활용한 언어 모델 학습의 이론적 기반을 제공하여 명령 기반 텍스트 편집의 방법론적 근거를 설명한다.
+- 🔄 다른 접근: [[papers/375_Generating_full_length_wikipedia_biographies_The_impact_of_g/review]] — 위키피디아 편집 히스토리 기반 텍스트 분할/재구성과 검색 증강 생성은 모두 위키피디아 콘텐츠 개선을 위한 다른 접근법이다.

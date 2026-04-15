@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.2
 essence: "미국 국립연구소(Argonne National Laboratory)의 실제 배포 사례를 통해 과학 조직의 과학자와 운영 담당자들이 생성형 AI를 어떻게 사용하고 있으며, 어떤 우려사항을 가지고 있는지를 실증적으로 규명한 연구이다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/AI_for_Science_Taxonomy"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Research_Taxonomy_Surveys"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wagman et al._2025_Generative AI Uses and Risks for Knowledge Workers in a Science Organization.pdf"
 ---
@@ -110,12 +110,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wagman et al._2025_Generative AI Uses an
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/890_Your_Brain_on_ChatGPT_Accumulation_of_Cognitive_Debt_when_Us/review]] — 과학 조직의 실제 AI 사용 패턴 분석을 개인 수준의 신경인지적 영향까지 확장하여 더 깊은 이해를 제공합니다.
-- 🏛 기반 연구: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — 과학 연구에서 LLM 활용의 이론적 가능성에 대한 실제 현장 적용 사례와 한계를 제공합니다.
-- 🧪 응용 사례: [[papers/562_Multi-agent_risks_from_advanced_ai/review]] — 다중 에이전트 AI 시스템의 위험 요소들이 실제 과학 조직에서 어떻게 나타나는지 구체적 사례를 보입니다.
-- 🏛 기반 연구: [[papers/890_Your_Brain_on_ChatGPT_Accumulation_of_Cognitive_Debt_when_Us/review]] — 실제 과학 조직에서 생성형 AI 사용 패턴과 우려사항을 실증 분석하여 인지적 부채 현상의 맥락을 제공합니다.
-- 🧪 응용 사례: [[papers/562_Multi-agent_risks_from_advanced_ai/review]] — 다중 에이전트 위험의 이론적 분석을 실제 과학 조직의 AI 도입 사례에서 검증할 수 있습니다.
-- 🧪 응용 사례: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — LLM 기반 과학 연구 변혁의 이론적 전망을 실제 과학 조직의 구체적 적용 사례로 검증합니다.
-- 🧪 응용 사례: [[papers/116_Augmenting_the_author_Exploring_the_potential_of_ai_collabor/review]] — 과학 연구 환경에서 생성형 AI 활용의 실제적 위험과 기회를 구체적으로 분석한다.
-- 🔗 후속 연구: [[papers/517_Malinowski_in_the_age_of_ai_Can_large_language_models_create/review]] — 지식 근로자를 위한 생성형 AI 활용을 교육적 인류학 게임 창작으로 확장한 특화된 응용 연구입니다.
-- 🧪 응용 사례: [[papers/912_Science_and_the_new_age_of_AI/review]] — 지식 근로자로서 과학자들의 AI 활용과 위험성을 구체적으로 분석한다
+- 🔗 후속 연구: [[papers/793_The_Adoption_and_Usage_of_AI_Agents_Early_Evidence_from_Perp/review]] — AI 에이전트 채택과 사용에 대한 초기 증거 연구가 과학 조직에서 생성형 AI 사용과 위험에 대한 구체적인 사례 연구로 발전되었다
+- 🔄 다른 접근: [[papers/607_Patterns_and_purposes_A_cross-journal_analysis_of_ai_tool_us/review]] — 둘 다 AI 도구 사용 패턴을 분석하지만, Argonne 연구는 과학 조직에, 교차 저널 분석은 학술 출판에 집중한다
+- ⚖️ 반론/비판: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — AI 공동 과학자의 실패 사례를 분석한 연구가 Argonne 연구의 생성형 AI 활용 긍정적 측면에 대한 반대 관점을 제시한다

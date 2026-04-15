@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "인지과학에서 대규모언어모델(LLM)과 기초모델(Foundation Models)을 활용하여 과학적 발견의 전체 사이클을 자동화하는 프레임워크를 제안한다. 실험 설계, 행동 데이터 생성, 모델 합성, 반복 최적화의 모든 단계를 in silico로 구현하는 고속의 자동화된 인지과학 엔진이다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Scientist_System_Development"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jagadish et al._2026_Can we automatize scientific discovery in the cognitive sciences.pdf"
 ---
@@ -90,8 +92,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jagadish et al._2026_Can we automatize s
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 과학 발견에서 인지과학 특화 자동화로의 확장
-- 🧪 응용 사례: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — 인간 연구 커뮤니티 시뮬레이터를 인지과학 자동화에 적용한 사례
-- 🏛 기반 연구: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — 사회 시뮬레이션 조사가 인지과학 자동화의 이론적 기반을 제공
-- 🔄 다른 접근: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — 인간 피험자 대체 AI와 인지과학 자동화의 다른 접근법
-- 🏛 기반 연구: [[papers/425_Improving_research_idea_generation_through_data_An_empirical/review]] — 인지과학 분야의 자동화된 과학적 발견 방법론이 연구 아이디어 생성 자동화의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — ResearchTown의 인간 연구 커뮤니티 시뮬레이터가 인지과학 자동화를 위한 인간 행동 시뮬레이션 기반을 제공한다
+- 🔗 후속 연구: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — 사회 시뮬레이션 기반 개인에서 사회로의 서베이가 인지과학 자동화의 사회적 확장 방향을 제시한다
+- 🔄 다른 접근: [[papers/132_Automating_psychological_hypothesis_generation_with_AI_when/review]] — AI를 통한 심리학 가설 생성 자동화가 인지과학 발견 자동화와는 다른 접근으로 행동과학 연구를 자동화한다
+- 🔗 후속 연구: [[papers/319_Ethnography_and_machine_learning_Synergies_and_new_direction/review]] — 인지과학 연구 자동화를 민족지학과 ML 결합으로 확장하는 새로운 방향을 제시한다

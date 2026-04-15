@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 자동 쓰기 평가(AWE: Automated Writing Evaluation)와 문법 오류 수정(GEC: Grammatical Error Correction) 시스템을 통합하여, 제2언어 학습자에게 즉각적인 에세이 평점과 문법 수정 피드백을 동시에 제공하는 통합 시스템을 제시한다. 이를 통해 시험 시뮬레이션 환경을 구현하여 보다 실질적인 언어 학습 경험을 제공한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Neural automated writing evaluation with corrective feedback.pdf"
 ---
@@ -117,6 +118,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Neural automated writin
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/423_Improving_grammatical_error_correction_via_contextual_data_a/review]] — 문법 오류 수정을 위한 맥락적 데이터 증강 연구는 자동 쓰기 평가와 문법 오류 수정 통합 시스템의 기술적 기반이다.
-- 🔗 후속 연구: [[papers/512_Lm-combiner_A_contextual_rewriting_model_for_chinese_grammat/review]] — 중국어 문법을 위한 맥락적 재작성 모델은 제2언어 학습자 대상 쓰기 평가 시스템을 다국어 환경으로 확장한다.
-- ⚖️ 반론/비판: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — 언어 모델과 함께 글쓰기할 때 내용 다양성이 감소한다는 연구는 자동 쓰기 평가 시스템이 창의성에 미칠 부정적 영향을 시사한다.
+- 🔗 후속 연구: [[papers/433_Interactive_agents_Simulating_counselor-client_psychological/review]] — Neural AWE의 언어 학습 피드백 시스템이 심리 상담 대화 생성을 교육적 피드백 제공으로 확장한 응용 사례
+- 🔄 다른 접근: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — 두 시스템 모두 인간과의 상호작용 시뮬레이션을 다루지만 각각 언어 교육과 의료 상담이라는 다른 도메인에 특화됨
+- 🏛 기반 연구: [[papers/227_Closing_the_loop_Learning_to_generate_writing_feedback_via_l/review]] — 피드백 생성을 통한 글쓰기 학습 연구가 자동 쓰기 평가의 교육적 피드백 시스템 개발의 이론적 기반
+- 🔄 다른 접근: [[papers/1085_Ecm_A_unified_electronic_circuit_model_for_explaining_the_em/review]] — LLM의 추론 메커니즘을 각각 전자회로와 신경망 관점에서 서로 다르게 모델링한 접근법이다
+- 🔄 다른 접근: [[papers/433_Interactive_agents_Simulating_counselor-client_psychological/review]] — 두 시스템 모두 교육적 피드백 제공을 목표로 하지만 각각 심리 상담과 언어 학습이라는 다른 도메인에 특화됨
+- 🔄 다른 접근: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — 두 시스템 모두 전문가-클라이언트 상호작용을 시뮬레이션하지만 각각 의료 상담과 언어 교육이라는 다른 맥락에서 접근함
+- 🔗 후속 연구: [[papers/272_Diamonds_in_the_rough_Generating_fluent_sentences_from_early/review]] — 교정 피드백을 통한 자동화된 글쓰기 평가와 초안 문장 수정이 글쓰기 지원에서 상호 보완적 기능을 제공한다.

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 RGB 이미지를 넘어 다중스펙트럼 데이터와 지구 관측 제품(Earth Products)을 통합적으로 처리하는 에이전트 기반 프레임워크 Earth-Agent를 제시하며, 이를 평가하기 위한 248개의 전문가 검증 과제로 구성된 Earth-Bench 벤치마크를 소개한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/GIS_Research_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Domain-Specific_Autonomous_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Feng et al._2025_Earth-Agent Unlocking the Full Landscape of Earth Observation with Agents.pdf"
 ---
@@ -123,9 +124,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Feng et al._2025_Earth-Agent Unlocking t
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/208_ChatMOF_an_artificial_intelligence_system_for_predicting_and/review]] — 지구 관측 데이터와 화학 소재라는 서로 다른 과학 영역에서 멀티모달 AI 에이전트 접근법을 비교할 수 있다.
-- 🔗 후속 연구: [[papers/384_GIS_Copilot_towards_an_autonomous_GIS_agent_for_spatial_anal/review]] — GIS 분야에서 Earth-Agent의 접근법을 더 넓은 지리공간 분석으로 확장하여 자율적 데이터 검색 기능을 강화한다.
-- 🏛 기반 연구: [[papers/764_Sparks_Multi-Agent_Artificial_Intelligence_Model_Discovers_P/review]] — 전문 도메인에서의 다중모달 데이터 처리가 자동화된 과학 발견의 핵심 구성요소임을 입증한다.
-- 🧪 응용 사례: [[papers/299_Earthse_A_benchmark_evaluating_earth_scientific_exploration/review]] — 지구 관측 전체 환경 탐색을 지구과학 탐사 벤치마크에 적용
-- 🔗 후속 연구: [[papers/831_Towards_llm_agents_for_earth_observation/review]] — 지구 관측을 위한 다중 에이전트 시스템의 전체적 관점을 LLM 에이전트 준비도 평가라는 구체적 벤치마킹으로 발전시킨다.
-- 🔗 후속 연구: [[papers/098_An_autonomous_GIS_agent_framework_for_geospatial_data_retrie/review]] — 자율 GIS 에이전트 프레임워크는 Earth-Agent의 지구 관측 데이터 분석 기능을 확장하여 지리공간 데이터의 자동 발견과 다운로드까지 포괄하는 완전한 지리정보 처리 파이프라인을 제공합니다.
+- 🔗 후속 연구: [[papers/831_Towards_llm_agents_for_earth_observation/review]] — 지구 관측 분야에서 LLM 에이전트 활용에 대한 더 광범위한 연구 방향을 제시하며 Earth-Agent의 확장 가능성을 논의
+- 🔄 다른 접근: [[papers/384_GIS_Copilot_towards_an_autonomous_GIS_agent_for_spatial_anal/review]] — 지리공간 데이터 분석을 위한 자율적 GIS 에이전트로, 지구 관측 데이터 처리에 대한 다른 접근 방식을 제시
+- 🏛 기반 연구: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 환경 과학 분야의 파운데이션 모델에 대한 포괄적 조사로, Earth-Agent의 기술적 기반을 제공
+- 🔄 다른 접근: [[papers/098_An_autonomous_GIS_agent_framework_for_geospatial_data_retrie/review]] — 지리공간 데이터 검색 및 분석을 위한 자율 GIS 에이전트 프레임워크로, 유사한 도메인에서 다른 구현 방식을 보여줌
+- 🔗 후속 연구: [[papers/299_Earthse_A_benchmark_evaluating_earth_scientific_exploration/review]] — 지구과학 탐색 능력 평가를 Earth-Agent의 지구 관측 데이터 활용 능력으로 확장하여 더 실용적인 지구과학 AI 시스템을 구현한다.
+- 🔗 후속 연구: [[papers/831_Towards_llm_agents_for_earth_observation/review]] — Earth-Agent의 지구 관측 자동화 기능이 UnivEARTH 벤치마크에서 발견된 한계점들을 해결할 수 있다.
+- 🏛 기반 연구: [[papers/098_An_autonomous_GIS_agent_framework_for_geospatial_data_retrie/review]] — 지구 관측 데이터의 전체적인 활용 방법론을 자동 지리공간 데이터 검색 시스템의 기반으로 제공한다
+- 🔗 후속 연구: [[papers/384_GIS_Copilot_towards_an_autonomous_GIS_agent_for_spatial_anal/review]] — 지구관측 전체 환경 해제가 공간분석을 넘어 더 포괄적인 지구과학 AI 에이전트로 확장한다

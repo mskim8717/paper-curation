@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "데이터로부터 미분방정식을 발견할 때 물리법칙을 위반하는 복잡한 해를 얻는 문제를 해결하기 위해, 대칭 불변량(differential invariants)을 기본 단위로 사용하여 방정식 발견 알고리즘을 제약하는 일반적 프레임워크를 제안한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Evolutionary_Chemistry_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_Discovering symbolic differential equations with symmetry invariants.pdf"
 ---
@@ -119,12 +120,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_Discovering symbolic di
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/276_Discovery_of_Unstable_Singularities/review]] — 수학적 대칭성과 불안정 특이점 발견은 물리 불변량 보존 원리를 공유합니다
-- 🔄 다른 접근: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — LLM 기반 동적 시스템 발견과 대칭 불변량 기반 방정식 발견은 서로 다른 접근법으로 같은 문제를 해결합니다
-- 🔗 후속 연구: [[papers/289_Drsr_Llm_based_scientific_equation_discovery_with_dual_reaso/review]] — 데이터와 경험의 이중 추론을 통한 방정식 발견은 대칭 불변량 제약을 더욱 발전시킨 방법론입니다
-- 🔗 후속 연구: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — 대칭성을 가진 기호 미분방정식 발견이 LLM-ODE의 동역학 시스템 발견을 더 구체적으로 확장한 사례이다.
-- 🏛 기반 연구: [[papers/1083_A_framework_for_discovering_scientific_equations_with_large/review]] — 대칭성을 가진 상미분방정식 발견의 수학적 기반을 제공
-- 🏛 기반 연구: [[papers/085_Ai-newton_A_concept-driven_physical_law_discovery_system_wit/review]] — 기호적 미분방정식 발견의 기본적 접근법을 다중 실험 데이터에서 일반 물리 법칙을 발견하는 고도화된 시스템으로 발전시킨다.
-- 🧪 응용 사례: [[papers/012_A_Multi-agent_Framework_for_Physical_Laws_Discovery/review]] — 다중 에이전트 물리 법칙 발견 프레임워크는 Discovering symbolic differential equations with symmetry 연구가 제시한 대칭성 기반 방정식 발견 기법을 실제 재료과학 문제에 적용합니다.
-- 🔄 다른 접근: [[papers/502_Llm-feynman_Leveraging_large_language_models_for_universal_s/review]] — 둘 다 AI를 이용한 과학 공식 발견을 다루지만, 하나는 LLM 기반이고 다른 하나는 대칭성을 활용한 기호적 미분방정식 발견에 초점을 맞춘다.
-- 🏛 기반 연구: [[papers/1104_A_Physics-Informed_Chemical_Rule_for_Topological_Materials_D/review]] — 대칭성을 활용한 미분방정식 발견이 위상 물질의 대칭성 기반 규칙 개발의 기초
+- 🏛 기반 연구: [[papers/276_Discovery_of_Unstable_Singularities/review]] — 대칭 불변량 기반 방정식 발견이 불안정 특이점 연구에서 물리 법칙 준수를 보장한다
+- 🔄 다른 접근: [[papers/504_Llm-srbench_A_new_benchmark_for_scientific_equation_discover/review]] — 물리 제약 기반 방정식 발견과 LLM 기반 접근법이 서로 다른 관점에서 과학 법칙을 탐구한다
+- 🧪 응용 사례: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리학 기반 신경망이 대칭성 제약 하 미분방정식 발견에 직접 적용된다
+- 🔗 후속 연구: [[papers/276_Discovery_of_Unstable_Singularities/review]] — 대칭성 제약을 통한 미분방정식 발견이 불안정 특이점 연구에 물리적 타당성을 부여할 수 있다
+- 🔗 후속 연구: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — 대칭성을 고려한 미분방정식 발견 연구가 LLM-ODE의 유전 프로그래밍 접근법을 더 정교한 수학적 구조로 확장함
+- 🔗 후속 연구: [[papers/241_Criteria-first_semantics-later_reproducible_structure_discov/review]] — 기준-우선 패러다임이 대칭성을 가진 미분방정식 발견으로 확장 적용될 수 있다.
+- 🧪 응용 사례: [[papers/085_Ai-newton_A_concept-driven_physical_law_discovery_system_wit/review]] — 대칭성을 가진 기호적 미분방정식 발견으로, 물리 법칙 발견의 수학적 방법론 확장 사례
+- 🔄 다른 접근: [[papers/012_A_Multi-agent_Framework_for_Physical_Laws_Discovery/review]] — 물리 법칙 발견을 다루지만 Multi-agent Framework는 에이전트 기반 접근에, 대칭성을 가진 미분방정식 발견은 수학적 접근에 집중한 다른 방법론임
+- 🏛 기반 연구: [[papers/289_Drsr_Llm_based_scientific_equation_discovery_with_dual_reaso/review]] — 대칭성을 고려한 기호 미분방정식 발견 연구가 LLM 기반 과학 방정식 발견의 이론적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/623_Piflow_Principle-aware_scientific_discovery_with_multi-agent/review]] — 대칭성을 고려한 기호적 미분방정식 발견과 원리 인식 발견은 서로 다른 물리 법칙 탐사 접근법을 제시한다

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 대규모언어모델(LLM) 기반 에이전트를 활용하여 학술지 피어 리뷰 과정을 시뮬레이션하고, 검토자 편향(reviewer bias), 사회적 영향(social influence), 권위 편향(authority bias) 등 다양한 사회학적 요인이 리뷰 결정에 미치는 영향을 정량화하는 첫 번째 프레임워크를 제시한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Scientific_Frameworks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Multi-Agent_System_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jin et al._2024_Agentreview Exploring peer review dynamics with llm agents.pdf"
 ---
@@ -117,7 +118,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jin et al._2024_Agentreview Exploring pe
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 피어 리뷰 과정에서 사회학적 편향 분석과 다중 턴 대화 분석이라는 서로 다른 접근법으로 리뷰 역학을 탐구한다.
-- 🔗 후속 연구: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — 기본적인 LLM 리뷰 생성을 사회적 요인과 편향을 고려한 복잡한 시뮬레이션으로 발전시킨다.
-- 🏛 기반 연구: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — AI 기반 피어 리뷰의 위기 상황에서 편향과 사회적 영향을 정량화할 수 있는 분석 도구를 제공한다.
-- 🏛 기반 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — LLM 에이전트를 이용한 피어 리뷰 동역학 탐구로 다중턴 대화 기반 리뷰 프로세스의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/481_Lazyreview_a_dataset_for_uncovering_lazy_thinking_in_nlp_pee/review]] — 동료 검토에서 게으른 사고 탐지 데이터셋으로, 에이전트 기반 검토 동역학 시뮬레이션의 실제 문제 사례를 제공
+- 🔄 다른 접근: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 보상 기반 다중 턴 대화로서 동료 검토를 모델링하는 다른 접근으로, 에이전트 시뮬레이션과 실제 검토 과정을 비교
+- 🏛 기반 연구: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — AI 컨퍼런스 동료 검토 위기와 저자 익명성 필요성에 대한 연구로, 검토 동역학 시뮬레이션의 현실적 배경을 제공
+- 🏛 기반 연구: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — 동료 검토를 위한 자연어 처리 기술에 대한 포괄적 조사로, LLM 에이전트 기반 검토 시뮬레이션의 기술적 기반
+- 🔗 후속 연구: [[papers/250_CycleResearcher_Improving_Automated_Research_via_Automated_R/review]] — 동료 심사 동역학 탐구를 자동화된 검토 시스템으로 확장한다
+- 🧪 응용 사례: [[papers/063_Agent-enhanced_large_language_models_for_researching_politic/review]] — 정치기관 연구를 위한 에이전틱 RAG 기술을 학술 논문 리뷰 과정의 자동화라는 다른 연구 영역에 적용할 수 있다
+- 🔗 후속 연구: [[papers/481_Lazyreview_a_dataset_for_uncovering_lazy_thinking_in_nlp_pee/review]] — LLM 에이전트를 활용한 동료 검토 동역학 탐구로, 게으른 사고 탐지를 동료 검토 과정 전반의 시뮬레이션으로 확장

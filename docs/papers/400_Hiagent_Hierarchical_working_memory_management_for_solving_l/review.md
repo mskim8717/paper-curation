@@ -7,103 +7,89 @@ authors:
   - "Yi Mu"
   - "Wenqi Shao"
 date: "2024"
-doi: "미공개"
+doi: ""
 arxiv: ""
-score: 4.3
-essence: "장기 수평 과제(long-horizon task)를 수행하는 대규모 언어 모델(LLM) 기반 에이전트의 작업 메모리(working memory)를 부분목표 기반의 계층적 구조로 관리하여, 컨텍스트 길이를 줄이면서 성공률을 획기적으로 향상시키는 방법론을 제시한다."
+score: 4.0
+essence: "HIAGENT는 LLM 기반 에이전트의 작업 메모리를 subgoal을 중심으로 계층적으로 관리하여 장기 작업에서 맥락 중복성을 줄이고 성능을 향상시키는 프레임워크이다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Working_Memory_Benchmarks"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Multi-Hop_Long_Memory_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2024_Hiagent Hierarchical working memory management for solving long-horizon agent tasks with large lang.pdf"
 ---
 
 # Hiagent: Hierarchical working memory management for solving long-horizon agent tasks with large language model
 
-> **저자**: Mengkang Hu, Tianxing Chen, Qiguang Chen, Yi Mu, Wenqi Shao, Ping Luo | **날짜**: 2024 | **DOI**: [미공개](https://arxiv.org/abs/2408.09559)
+> **저자**: Mengkang Hu, Tianxing Chen, Qiguang Chen, Yi Mu, Wenqi Shao, Ping Luo | **날짜**: 2024 | **URL**: [https://arxiv.org/abs/2408.09559](https://arxiv.org/abs/2408.09559)
 
 ---
 
 ## Essence
 
-![Figure 1](figures/fig1.webp)
-*표준 방식(STANDARD)과 HIAGENT의 비교: HIAGENT는 부분목표(subgoal)를 메모리 청크로 사용하여 작업 메모리를 계층적으로 관리하며, 다섯 개의 장기 수평 과제에서 성공률을 2배 증가시킴*
+![Figure 2](figures/fig2.webp)
 
-장기 수평 과제(long-horizon task)를 수행하는 대규모 언어 모델(LLM) 기반 에이전트의 작업 메모리(working memory)를 부분목표 기반의 계층적 구조로 관리하여, 컨텍스트 길이를 줄이면서 성공률을 획기적으로 향상시키는 방법론을 제시한다.
+*Figure 2: An overview of the process of HIAGENT.*
+
+HIAGENT는 LLM 기반 에이전트의 작업 메모리를 subgoal을 중심으로 계층적으로 관리하여 장기 작업에서 맥락 중복성을 줄이고 성능을 향상시키는 프레임워크이다.
 
 ## Motivation
 
-- **Known**: 기존 LLM 기반 에이전트는 작업 메모리를 모든 과거 행동-관찰 쌍(action-observation pairs)의 직접 입력으로 관리하며, 크로스 시행(cross-trial) 메모리 최적화에 관한 연구는 활발함
-- **Gap**: 작업 메모리(in-trial memory) 자체의 효율적 활용에 대한 연구는 미흡하며, 장기 과제에서 누적된 입력은 중복성으로 인해 LLM의 성능을 저하시킴
-- **Why**: 장기 과제는 많은 수의 행동이 필요하므로 작업 메모리가 급증하고, 긴 컨텍스트는 LLM이 일관된 전략을 유지하고 정확한 예측을 하기 어렵게 함
-- **Approach**: 인지과학의 청킹(chunking) 개념과 인간의 문제해결 전략에서 영감을 얻어, 부분목표를 메모리 청크 단위로 활용한 계층적 작업 메모리 관리 프레임워크 HIAGENT 제안
+- **Known**: LLM 기반 에이전트는 cross-trial 메모리와 in-trial 메모리(작업 메모리)로 구분되며, 기존 STANDARD 방식은 모든 action-observation 쌍을 맥락에 포함시킨다.
+- **Gap**: 기존 연구는 cross-trial 메모리 최적화에 집중했으나, 작업 메모리의 효율적 활용 방법은 미흡하며, 장기 작업에서 긴 맥락이 LLM의 일관성 있는 전략 수립을 방해한다.
+- **Why**: 장기 작업에서 발생하는 과도한 맥락 길이는 LLM의 성능 저하와 비효율성을 초래하므로, 인지 과학의 청킹(chunking) 원리를 활용한 효과적인 메모리 관리가 필수적이다.
+- **Approach**: HIAGENT는 subgoal 생성을 유도하고, 각 subgoal 완료 시 action-observation 쌍을 요약하여 현재 subgoal만 상세 정보를 유지하도록 작업 메모리를 구조화하며, trajectory retrieval 모듈로 필요시 과거 정보를 검색 가능하게 한다.
 
 ## Achievement
 
-![Figure 2](figures/fig2.webp)
-*HIAGENT의 처리 과정 개요: 부분목표 생성 → 행동 생성 → 관찰 요약 → 메모리에 부분목표-요약관찰 쌍 저장*
+![Figure 1](figures/fig1.webp)
 
-1. **성능 향상**: 다섯 개 장기 과제에서 성공률이 표준 방식 대비 2배 증가(42% vs 21%), 진행률 기준으로 23.94% 초과 달성
-2. **효율성 개선**: 평균 스텝 수 3.8배 감소, 컨텍스트 길이 35.02% 감소, 실행 시간 19.42% 단축
-3. **견고성**: 다양한 스텝 수에서 일관된 성능 향상을 보여 강건성과 일반화 가능성 입증
+*Figure 1: Top right: A commonly adopted paradigm STAN-*
+
+- **성공률 2배 향상**: STANDARD 대비 성공률이 21%에서 42%로 증가
+- **효율성 개선**: 평균 단계 수 3.8배 감소, 맥락 길이 35.02% 감소, 실행 시간 19.42% 감소
+- **진행도 율 향상**: STANDARD 대비 23.94% 높은 progress rate 달성
+- **강건성 입증**: 다양한 단계에서 일관된 성능 개선 및 생성 가능한 action의 비율 증가
 
 ## How
 
-![Figure 3](figures/fig3.webp)
-*다양한 스텝에서의 진행률 비교: HIAGENT가 모든 단계에서 표준 방식을 지속적으로 초과 달성*
+![Figure 2](figures/fig2.webp)
 
-### 부분목표 기반 계층적 작업 메모리 (3.2절)
-- LLM이 구체적 행동 생성 전에 먼저 부분목표 생성
-- 현재 부분목표에 대해서는 모든 행동-관찰 쌍 보유 (즉각적 의사결정용)
-- 완료된 부분목표는 요약된 관찰만 작업 메모리에 유지
-- 작업 메모리: m_t = (g_0, s_0, ..., g_{n-1}, s_{n-1}, g_n, a^n_0, o^n_1, ...)
+*Figure 2: An overview of the process of HIAGENT.*
 
-### 관찰 요약 (3.3절)
-- 관찰 요약 함수: s_i = S(g_i, o_0, a_0, ..., o_t)
-- LLM 또는 텍스트 요약 모델로 구현 가능
-- 부분목표 달성 여부 판정 포함 (중요 의사결정 지표)
-- 구조화된 프롬프트로 간결하고 정보 풍부한 요약 생성
-
-### 궤적 검색 모듈 (3.4절)
-- LLM이 필요시 과거 부분목표의 상세 행동-관찰 쌍 검색 가능
-- 과거 시행 실패 원인 분석 또는 성공 경험 재활용에 활용
-- 행동 생성과 유사하게 검색 함수 호출 메커니즘 구현
+- LLM에 현재 작업 완수를 위한 subgoal 생성 유도
+- Subgoal 달성을 위한 action 생성 및 action-observation 쌍 저장
+- Subgoal 완료 판정 시 해당 memory chunk의 action-observation 쌍을 요약된 observation으로 변환
+- 현재 subgoal의 action-observation 쌍만 상세 유지, 과거 subgoal은 요약본만 작업 메모리에 포함
+- 필요시 trajectory retrieval 모듈을 통해 특정 과거 subgoal의 상세 궤적 정보 검색 및 복원
 
 ## Originality
 
-- **계층적 작업 메모리 관리**: 인지과학의 청킹 이론을 LLM 에이전트에 처음 체계적으로 적용하여 장기 과제 성능 개선
-- **선제적 메모리 압축**: 부분목표 완료 시점에 능동적으로 요약 수행하는 메커니즘은 기존의 수동적 메모리 관리와 차별화
-- **적응적 메모리 검색**: 필요시에만 상세 정보 복구하는 선택적 검색 모듈로 유연성과 효율성 동시 달성
-- **이론적 근거**: 인지과학의 원칙(working memory 한계 극복, chunking 효과)에 기반한 설계로 방법론의 타당성 강화
+- 인지 과학의 chunking 원리를 LLM 기반 에이전트의 작업 메모리 관리에 처음 적용
+- Subgoal 기반 계층적 메모리 구조로 맥락 중복성 문제를 체계적으로 해결
+- 동적 메모리 조정을 통해 현재 작업과 과거 경험의 균형을 자동으로 조절하는 메커니즘 제안
 
 ## Limitation & Further Study
 
-- **부분목표 자동 생성 한계**: 현재 방식은 LLM이 부분목표를 명시적으로 생성하도록 유도하나, 모든 과제 도메인에서 효과적인지 미검증
-- **요약 정보 손실**: 부분목표별 요약 시 상세 정보가 손실될 수 있으며, 이후 의사결정에 영향을 미칠 가능성
-- **검색 모듈 트리거 기준 모호**: LLM이 언제 검색을 호출할지 결정하는 메커니즘이 명확하지 않아 휴리스틱에 의존
-- **평가 데이터셋 제한**: AgentBoard의 5개 과제만 평가하여 다양한 도메인(로봇, 소프트웨어 개발 등)에서의 일반화 검증 필요
-- **후속 연구 방향**:
-  - 부분목표 생성 품질 자동 평가 메커니즘 개발
-  - 도메인별 최적의 요약 전략 연구
-  - 동적 검색 트리거 학습 방식 탐구
-  - 더 다양한 장기 과제 벤치마크에서 평가
-
+- Subgoal 생성의 정확성이 전체 성능에 미치는 영향에 대한 분석 부재
+- 요약(summarization) 프로세스의 정보 손실과 품질에 관한 상세한 평가 필요
+- 5개의 장기 작업 데이터셋만 사용으로 일반화 가능성 검증 제한
+- 다양한 LLM 모델(GPT-4, Claude 등)에 대한 일반적 효과성 검증 필요
+- 후속 연구: 자동 subgoal 생성 최적화, 다중 모달리티 환경 확장, 더 복잡한 실제 작업 적용
 
 ## Evaluation
 
 - Novelty: 4/5
-- Technical Soundness: 4/5
-- Significance: 5/5
+- Technical Soundness: 3/5
+- Significance: 4/5
 - Clarity: 4/5
-- Overall: 4.3/5
+- Overall: 4/5
 
-**총평**: HIAGENT는 인지과학의 청킹 원리를 LLM 에이전트에 효과적으로 적용하여 장기 과제에서 획기적인 성능 개선을 달성한 실용적이고 창의적인 연구이며, 특히 컨텍스트 길이 감소와 실행 시간 단축 측면에서 실무적 가치가 높다.
+**총평**: HIAGENT는 인지 과학 원리를 기반으로 LLM 에이전트의 작업 메모리 문제를 창의적으로 해결하며, 실험 결과가 뛰어나고 실용적 가치가 높다. 다만 subgoal 생성 메커니즘의 강건성과 다양한 환경에서의 일반화 가능성에 대한 추가 검증이 필요하다.
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/039_A-MEM_Agentic_Memory_for_LLM_Agents/review]] — 에이전트 메모리 관리가 계층적 작업 메모리로 구체화되고 발전됨
-- 🏛 기반 연구: [[papers/355_From_Human_Memory_to_AI_Memory_A_Survey_on_Memory_Mechanisms/review]] — 인간 메모리에서 AI 메모리로의 전환 연구가 작업 메모리 설계의 기초가 됨
-- 🔄 다른 접근: [[papers/412_HuggingGPT_Solving_AI_Tasks_with_ChatGPT_and_its_Friends_in/review]] — 장기 작업 수행을 위한 계층적 작업 메모리 관리에서 청킹 원리와 부분목표 활용이라는 동일한 접근법을 사용한다.
-- 🧪 응용 사례: [[papers/355_From_Human_Memory_to_AI_Memory_A_Survey_on_Memory_Mechanisms/review]] — 인간-AI 메모리 비교 연구를 계층적 작업 메모리 관리로 구현한 응용
-- 🔗 후속 연구: [[papers/039_A-MEM_Agentic_Memory_for_LLM_Agents/review]] — A-MEM의 문맥적 메모리 연결 시스템은 HiAgent의 계층적 작업 메모리 관리를 확장하여 더 동적이고 진화하는 메모리 구조를 제공합니다.
-- 🔄 다른 접근: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 계층적 메모리 관리와 달리 능동적 환경 탐색을 통한 문제 해결 접근
+- 🔄 다른 접근: [[papers/039_A-MEM_Agentic_Memory_for_LLM_Agents/review]] — 계층적 작업 메모리와 에이전틱 메모리가 서로 다른 방식으로 LLM 메모리 관리 문제를 해결한다
+- 🔗 후속 연구: [[papers/854_Understanding_the_planning_of_LLM_agents_A_survey/review]] — LLM 에이전트 계획 수립에 계층적 메모리 관리를 통합하여 성능을 향상시킨다
+- 🏛 기반 연구: [[papers/854_Understanding_the_planning_of_LLM_agents_A_survey/review]] — 계층적 메모리 관리가 LLM 에이전트 계획 수립의 핵심 구성요소가 된다
+- 🔄 다른 접근: [[papers/039_A-MEM_Agentic_Memory_for_LLM_Agents/review]] — LLM 에이전트 메모리 관리에서 동적 연결 생성 방식과 계층적 작업 메모리 관리는 서로 다른 메모리 구조화 전략이다.

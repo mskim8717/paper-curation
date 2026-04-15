@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.25
 essence: "이 논문은 비형식적 수학 문제에서 자동으로 대규모 형식 증명 데이터(Lean 4)를 합성하는 방법을 제시하고, 이를 통해 미세조정된 LLM이 GPT-4를 능가하는 정리 증명 성능을 달성했다. 특히 800만 개의 정형화된 명제-증명 쌍을 생성하여 훈련 데이터 부족 문제를 해결했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Formal_Theorem_Proving"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Automated_Theorem_Proving"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xin et al._2024_Deepseek-prover Advancing theorem proving in llms through large-scale synthetic data.pdf"
 ---
@@ -117,20 +117,17 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xin et al._2024_Deepseek-prover Advancin
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — GPT-f의 초기 형식 증명 연구를 대규모 합성 데이터와 Lean 4로 크게 발전시킴
-- 🧪 응용 사례: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — DeepSeek-Prover의 형식 증명 능력을 miniF2F 벤치마크로 체계적으로 평가할 수 있음
-- ⚖️ 반론/비판: [[papers/251_Data_for_mathematical_copilots_Better_ways_of_presenting_pro/review]] — 대규모 데이터 합성 접근법과 달리 증명의 동기와 사고 과정의 중요성을 간과할 수 있음
-- 🔄 다른 접근: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 비형식 증명 활용과 달리 순수 형식적 데이터 합성으로 성능 향상을 달성
-- 🔗 후속 연구: [[papers/339_Fimo_A_challenge_formal_dataset_for_automated_theorem_provin/review]] — IMO 수준 정리증명을 LLM 기반 증명으로 확장한 자동정리증명 발전
-- 🔗 후속 연구: [[papers/257_Decomposing_the_enigma_Subgoal-based_demonstration_learning/review]] — DeepSeek-Prover의 대규모 언어모델 정리 증명은 부분목표 기반 시연 학습을 LLM 기반 자동 증명 시스템으로 확장한다.
-- 🏛 기반 연구: [[papers/568_Mustard_Mastering_uniform_synthesis_of_theorem_and_proof_dat/review]] — 형식 수학에서의 정리 증명 능력을 위한 언어모델 기반 기술의 핵심 기반을 제공한다
-- 🧪 응용 사례: [[papers/182_Can_language_models_falsify_evaluating_algorithmic_reasoning/review]] — 정리 증명에서 LLM의 논리적 추론 능력을 반례 생성 맥락에서 평가할 수 있다
-- 🏛 기반 연구: [[papers/513_M2F_Automated_Formalization_of_Mathematical_Literature_at_Sc/review]] — 수학적 증명과 형식화에서 LLM의 근본적인 추론 능력 향상 방법론을 제공한다.
-- 🏛 기반 연구: [[papers/826_Towards_Autonomous_Mathematics_Research/review]] — DeepSeek-Prover의 대규모 언어 모델 기반 정리 증명이 Aletheia의 자율적 수학 연구 및 증명 능력의 핵심적인 기술적 토대이다.
-- 🔗 후속 연구: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — GPT-f의 초기 형식 증명 연구를 대규모 합성 데이터로 발전시켜 성능을 크게 개선함
-- 🧪 응용 사례: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — DeepSeek-Prover의 대규모 형식 증명 데이터 합성 기법을 miniF2F 벤치마크로 평가할 수 있음
-- ⚖️ 반론/비판: [[papers/251_Data_for_mathematical_copilots_Better_ways_of_presenting_pro/review]] — DeepSeek-Prover의 대규모 데이터 접근법과 달리 증명의 질적 측면과 사고 과정을 중시
-- 🔄 다른 접근: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — DeepSeek-Prover의 대규모 합성 데이터와 달리 기존 비형식 증명 활용하는 접근법
-- 🔗 후속 연구: [[papers/030_A_survey_on_deep_learning_for_theorem_proving/review]] — 정리 증명 심층학습 기법을 LLM 기반 접근으로 발전시킨 최신 연구 동향
-- 🔗 후속 연구: [[papers/1095_Towards_large_language_models_as_copilots_for_theorem_provin/review]] — DeepSeek-Prover의 LLM 기반 증명 방법을 인간-AI 협업 환경으로 확장
-- 🔄 다른 접근: [[papers/482_Lean-star_Learning_to_interleave_thinking_and_proving/review]] — 둘 다 형식 정리 증명에서 LLM의 추론 능력을 향상시키는 방법을 연구하지만, 하나는 자연언어 사고를 통합하고 다른 하나는 강화학습 기반 접근법을 사용한다.
+- 🏛 기반 연구: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — 두 논문 모두 자동 정리 증명에 생성형 언어모델을 활용하여 형식 수학의 자동화를 추구한다
+- 🔄 다른 접근: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — MinIF2F는 올림피아드급 정리 증명 벤치마크로, DeepSeek-Prover의 성능을 평가할 수 있는 대안적 평가 기준을 제공한다
+- 🔗 후속 연구: [[papers/642_Proving_theorems_recursively/review]] — 재귀적 정리 증명 방법론은 DeepSeek-Prover의 대규모 형식 증명 합성 접근법을 보완하는 추론 전략을 제시한다
+- 🔗 후속 연구: [[papers/339_Fimo_A_challenge_formal_dataset_for_automated_theorem_provin/review]] — 대형 언어모델의 정리 증명 능력을 학습을 통해 발전시킨 후속 연구이다.
+- 🔗 후속 연구: [[papers/568_Mustard_Mastering_uniform_synthesis_of_theorem_and_proof_dat/review]] — 정리와 증명 데이터 생성을 LLM 기반 정리 증명으로 발전시킨 통합적 연구
+- 🔗 후속 연구: [[papers/486_Lego-prover_Neural_theorem_proving_with_growing_libraries/review]] — LLM의 대규모 정리 증명 학습 연구가 Lego-prover의 성장 가능한 기술 라이브러리를 활용한 모듈식 증명 구성으로 발전되었다
+- 🧪 응용 사례: [[papers/182_Can_language_models_falsify_evaluating_algorithmic_reasoning/review]] — DeepSeek-Prover의 LLM 기반 정리 증명이 언어모델의 수학적 추론과 반례 생성 능력의 실제 응용 사례를 보여준다
+- 🏛 기반 연구: [[papers/390_Grammars_of_formal_uncertainty_When_to_trust_llms_in_automat/review]] — LLM을 활용한 정리 증명의 기본 방법론을 제시하여 형식검증에서 LLM 사용 시 불확실성 정량화의 이론적 기반을 제공함
+- 🔗 후속 연구: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — LLM 기반 정리 증명을 더 발전시킨 후속 연구로, 생성 언어모델의 수학적 추론 능력 향상을 보여줍니다.
+- 🧪 응용 사례: [[papers/251_Data_for_mathematical_copilots_Better_ways_of_presenting_pro/review]] — Lean 기반 정리 증명 발전 연구에서 제기한 데이터 한계 문제에 대한 구체적인 해결 방안을 제시한다.
+- 🔄 다른 접근: [[papers/532_MerLean_An_Agentic_Framework_for_Autoformalization_in_Quantu/review]] — Lean 기반 정리 증명과 유사한 형식화 도구를 사용하지만 양자계산 논문의 완전 자동화에 특화된 에이전트 접근법을 제시한다.
+- 🔄 다른 접근: [[papers/642_Proving_theorems_recursively/review]] — LLM에서의 정리 증명 발전이라는 같은 목표를 가지지만 재귀적 vs 대규모 언어모델 기반이라는 다른 접근법을 사용한다.
+- 🔗 후속 연구: [[papers/1095_Towards_large_language_models_as_copilots_for_theorem_provin/review]] — Lean 증명보조기에서 LLM 통합을 DeepSeek-Prover의 고급 추론 기법으로 확장하여 더 강력한 정리 증명 능력을 제공한다.
+- 🔗 후속 연구: [[papers/489_Lf_a_foundational_higher-order-logic/review]] — 형식 논리 기반을 LLM 기반 정리 증명으로 확장하여 실용성을 높인다

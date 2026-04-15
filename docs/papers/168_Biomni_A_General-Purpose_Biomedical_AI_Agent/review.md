@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 생의학 연구의 단편화된 워크플로우 문제를 해결하기 위해 일반목적 생의학 AI 에이전트 Biomni를 제시한다. 이는 150개의 전문 도구, 105개의 소프트웨어 패키지, 59개의 데이터베이스를 통합한 최초의 통합 생의학 행동 공간(Biomni-E1)과 이를 활용하는 지능형 에이전트 아키텍처(Biomni-A1)로 구성되어 있다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Biomedical_Research_Agents"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Bioinformatics_Integration"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2025_Biomni A General-Purpose Biomedical AI Agent.pdf"
 ---
@@ -112,18 +112,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2025_Biomni A General-Purpo
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/151_Benchmarking_ai_scientists_in_omics_data-driven_biological_r/review]] — 생의학 연구 지원이라는 동일한 목표를 통합 에이전트와 벤치마크 평가라는 상호 보완적 접근으로 달성합니다.
-- 🔗 후속 연구: [[papers/260_DeepCRE_Transforming_Drug_RD_via_AI-Driven_Cross-drug_Respon/review]] — 약물 반응 예측을 포함한 포괄적 생의학 워크플로우로 약물 개발 AI를 확장합니다.
-- 🧪 응용 사례: [[papers/626_Polymer_Brushes_and_Grafted_Polymers_AIML-Driven_Synthesis_S/review]] — 통합 생의학 플랫폼의 개념을 중합체 연구라는 특정 재료과학 분야에 적용하는 사례입니다.
-- 🏛 기반 연구: [[papers/014_A_multimodal_generative_AI_copilot_for_human_pathology/review]] — 범용 생물의학 AI 에이전트로 병리학 특화 AI 어시스턴트 개발의 기술적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/359_From_large_language_models_to_multimodal_ai_A_scoping_review/review]] — 범용 생의학 AI 에이전트가 의료 멀티모달 AI 발전의 기술적 기반을 제공한다
-- 🔄 다른 접근: [[papers/151_Benchmarking_ai_scientists_in_omics_data-driven_biological_r/review]] — 생물의학 AI의 성능 평가라는 동일한 목표를 다른 접근법(벤치마크 vs 통합 에이전트)으로 달성합니다.
-- 🏛 기반 연구: [[papers/260_DeepCRE_Transforming_Drug_RD_via_AI-Driven_Cross-drug_Respon/review]] — 통합된 생의학 AI 에이전트 환경에서 약물 반응 예측이 핵심 구성요소로 활용될 수 있습니다.
-- 🔄 다른 접근: [[papers/626_Polymer_Brushes_and_Grafted_Polymers_AIML-Driven_Synthesis_S/review]] — 자율 실험실 개념을 생의학과 재료과학이라는 서로 다른 연구 분야에 적용하는 학제간 접근입니다.
-- 🏛 기반 연구: [[papers/612_PersonaAI_An_Interactive_Agentic-AI_Framework_for_Autonomous/review]] — 범용 생의학 AI 에이전트가 노화 연구의 복잡성을 다루는 PersonaAI 프레임워크의 기술적 기반을 제공합니다.
-- 🏛 기반 연구: [[papers/839_Transforming_Behavioral_Neuroscience_Discovery_with_In-Conte/review]] — 생명의학 분야의 일반적인 AI 에이전트 프레임워크를 신경과학 특화 도구로 응용할 수 있다.
-- 🔗 후속 연구: [[papers/055_Advancing_multimodal_medical_capabilities_of_gemini/review]] — BiOMNI의 일반 목적 생의학 AI 에이전트가 Med-Gemini의 특화된 의료 멀티모달 능력을 더 광범위한 생의학 영역으로 확장함
-- 🔄 다른 접근: [[papers/226_ClinicalGPT_Large_Language_Models_Finetuned_with_Diverse_Med/review]] — 의료 특화 대규모 언어모델의 두 가지 다른 설계 철학을 비교하여 의료 AI의 범용성과 특화성 간의 균형점을 찾을 수 있다.
-- 🏛 기반 연구: [[papers/027_A_survey_of_llm-based_agents_in_medicine_How_far_are_we_from/review]] — 의료 LLM 에이전트 연구는 BiomeMedLM과 같은 의료 특화 언어모델이 제공하는 도메인 지식 기반 위에 구축된 다중 에이전트 시스템을 분석합니다.
-- 🏛 기반 연구: [[papers/357_From_intention_to_implementation_automating_biomedical_resea/review]] — 범용 바이오메디컬 AI 에이전트 Biomni는 BioResearcher의 모듈형 멀티 에이전트 아키텍처 설계에 기초 아이디어를 제공한다.
-- 🔄 다른 접근: [[papers/774_STELLA_Towards_a_Biomedical_World_Model_with_Self-Evolving_M/review]] — STELLA와 Biomni 모두 범용 바이오의학 AI 에이전트를 추구하지만 자기진화형 vs 사전 훈련된 접근방식을 사용한다.
+- 🔄 다른 접근: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 둘 다 의료/생의학 분야의 다중 작업을 위한 AI 에이전트이지만, Biomni는 통합된 도구 환경에, MedAgents는 협력 기반 제로샷 학습에 중점을 둔다
+- 🔗 후속 연구: [[papers/774_STELLA_Towards_a_Biomedical_World_Model_with_Self-Evolving_M/review]] — 자가 진화하는 생의학 월드 모델 연구가 Biomni의 통합 생의학 AI 에이전트 시스템으로 실제 구현되어 발전했다
+- 🧪 응용 사례: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — 인간-AI 협력을 통한 진단 향상 연구가 Biomni의 일반목적 생의학 AI 에이전트 개발에 실제 협력 모델로 적용되었다
+- 🏛 기반 연구: [[papers/357_From_intention_to_implementation_automating_biomedical_resea/review]] — 범용 바이오메디컬 AI 에이전트 연구가 BioResearcher 같은 특화된 연구 자동화 시스템 개발의 기반이 됨
+- 🔗 후속 연구: [[papers/774_STELLA_Towards_a_Biomedical_World_Model_with_Self-Evolving_M/review]] — Biomni의 범용 바이오의학 AI 에이전트가 STELLA의 자기진화 기능과 결합되어 더 강력한 시스템을 만들 수 있다.
+- 🏛 기반 연구: [[papers/663_Reinforcing_clinical_decision_support_through_multi-agent_sy/review]] — 일반적인 생의학 AI 에이전트의 다중 모달 능력을 임상 의사결정 지원 시스템의 특화된 윤리적 프레임워크로 발전

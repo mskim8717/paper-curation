@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "텍스트 설명으로부터 TikZ 그래픽 프로그램을 생성하는 문제를 해결하기 위해, 캡션-프로그램 정렬 데이터의 부족이라는 핵심 병목을 극복하는 TikZero를 제시한다. 이 방법은 이미지 표현을 매개자로 활용하여 그래픽 프로그램 생성과 텍스트 이해를 분리함으로써, 정렬되지 않은 대규모 데이터를 독립적으로 활용할 수 있다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Graphics_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Agent-Based_CFD_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Young et al._2025_Tikzero Zero-shot text-guided graphics program synthesis.pdf"
 ---
@@ -130,8 +131,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Young et al._2025_Tikzero Zero-shot text
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/129_Automatikz_Text-guided_synthesis_of_scientific_vector_graphi/review]] — 둘 다 텍스트 기반 과학 벡터 그래픽 합성을 다루지만 하나는 TikZ 프로그램 생성에, 다른 하나는 AutomaTikZ를 통한 자동화에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — 텍스트에서 과학 도형 생성의 확산 모델 기반 접근법이 TikZero의 TikZ 프로그램 합성과 상호 보완적인 기술을 제공한다.
-- 🏛 기반 연구: [[papers/349_Fragment_and_Geometry_Aware_Tokenization_of_Molecules_for_St/review]] — 분자의 기하학적 토크나이제이션 기법이 TikZ 그래픽 프로그램의 구조적 표현 학습에 응용될 수 있는 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/129_Automatikz_Text-guided_synthesis_of_scientific_vector_graphi/review]] — TikZero의 제로샷 그래픽 생성을 대규모 TikZ 데이터셋으로 학습한 발전된 버전
-- 🔄 다른 접근: [[papers/197_Chartcoder_Advancing_multimodal_large_language_model_for_cha/review]] — 텍스트에서 그래픽 프로그램을 합성하는 TikZero와 유사하게 차트 이미지에서 코드를 생성하는 접근
+- 🔄 다른 접근: [[papers/129_Automatikz_Text-guided_synthesis_of_scientific_vector_graphi/review]] — AutomaTikZ가 과학 벡터 그래픽 합성에 집중하는 반면 TikZero는 텍스트 가이드 방식을 사용하여 다른 접근법을 보인다.
+- 🔗 후속 연구: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — FigGen의 과학 도표 생성 기능이 TikZero의 텍스트-그래픽 변환 능력을 확장할 수 있다.
+- 🏛 기반 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 도표-캡션 생성 프레임워크가 텍스트-그래픽 정렬의 기반 방법론을 제공한다.
+- 🔄 다른 접근: [[papers/129_Automatikz_Text-guided_synthesis_of_scientific_vector_graphi/review]] — 제로샷 그래픽 프로그램 합성과 TikZ 기반 생성은 과학 그래픽 자동화의 서로 다른 접근법을 제시한다
+- 🏛 기반 연구: [[papers/599_Paper2poster_Towards_multimodal_poster_automation_from_scien/review]] — 텍스트 기반 그래픽 프로그램 합성의 이론적 기반을 통해 포스터의 시각적 요소 생성 방법론을 제공한다.

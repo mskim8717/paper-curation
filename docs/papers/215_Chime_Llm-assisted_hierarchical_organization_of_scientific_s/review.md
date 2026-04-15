@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 문헌 검토(Literature Review)를 지원하기 위해 LLM을 활용하여 과학 논문들을 계층적 트리 구조로 자동 조직화하는 시스템을 제시하고, 전문가 수정을 통해 구축한 CHIME 데이터셋을 공개한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Hierarchical_Knowledge_Graphs"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hsu et al._2024_Chime Llm-assisted hierarchical organization of scientific studies for literature review support.pdf"
 ---
@@ -127,7 +128,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hsu et al._2024_Chime Llm-assisted hiera
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/329_Explaining_relationships_among_research_papers/review]] — 연구 논문들 간의 관계 설명을 통해 본 논문의 계층적 조직화를 논문 간 연결성 분석으로 확장한다.
-- 🔄 다른 접근: [[papers/402_Hierarchical_catalogue_generation_for_literature_review_a_be/review]] — 문헌 검토를 위한 계층적 카탈로그 생성의 다른 접근법으로 본 논문과 유사한 목표를 다른 방식으로 달성한다.
-- 🏛 기반 연구: [[papers/789_Taxonomy_tree_generation_from_citation_graph/review]] — 인용 그래프에서 분류 체계 트리 생성 방법으로 본 논문의 계층적 트리 구조 조직화 기반을 제공한다.
-- 🏛 기반 연구: [[papers/329_Explaining_relationships_among_research_papers/review]] — 과학 연구의 계층적 조직화 시스템으로 본 논문의 논문 간 관계 설명을 위한 구조적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/108_Ask_retrieve_summarize_A_modular_pipeline_for_scientific_lit/review]] — LLM 기반 계층적 논문 조직화가 과학 문헌의 체계적 요약과 검색을 위한 구조적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/087_Ai2_scholar_qa_Organized_literature_synthesis_with_attributi/review]] — 계층적 문헌 조직화를 질의응답 시스템에 통합하여 더 체계적이고 맥락화된 문헌 검색 및 답변 생성을 가능하게 한다.
+- 🔄 다른 접근: [[papers/402_Hierarchical_catalogue_generation_for_literature_review_a_be/review]] — 계층적 카탈로그 생성의 LLM 기반 접근법과 문헌 검토를 위한 자동화된 접근법이 서로 다른 방식으로 문헌 조직화 문제를 해결한다.
+- 🔗 후속 연구: [[papers/108_Ask_retrieve_summarize_A_modular_pipeline_for_scientific_lit/review]] — 계층적 문헌 조직화를 다중문서 요약 파이프라인에 통합하여 더 체계적인 문헌 검토를 가능하게 한다.

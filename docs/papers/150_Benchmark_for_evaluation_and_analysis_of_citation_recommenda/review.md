@@ -8,8 +8,9 @@ arxiv: ""
 score: 4.2
 essence: "인용문헌 추천 시스템(citation recommendation systems)의 평가를 위한 표준화된 벤치마크를 제안하는 논문으로, 다양한 모델, 데이터셋, 평가 지표의 불일치 문제를 해결하고자 진단 데이터셋(diagnostic datasets)과 일관된 평가 메트릭을 제시한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/Citation_Dataset_Analysis"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Citation_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liberati et al._2024_Benchmark for evaluation and analysis of citation recommendation models.pdf"
 ---
@@ -89,9 +90,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liberati et al._2024_Benchmark for evalu
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/406_Hlm-cite_Hybrid_language_model_workflow_for_text-based_scien/review]] — 하이브리드 언어모델을 활용한 인용 추천 방법으로 기존 평가 기준과 비교 분석이 가능하다.
-- 🔗 후속 연구: [[papers/273_Directed_criteria_citation_recommendation_and_ranking_throug/review]] — 기준 지향적 인용 추천과 순위 매기기 기법으로 표준화된 평가 메트릭의 실제 적용을 보여준다.
-- 🏛 기반 연구: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — 지식 그래프를 활용한 과학적 아이디어 생성으로 인용 추천 시스템의 이론적 배경을 제공한다.
-- 🔄 다른 접근: [[papers/406_Hlm-cite_Hybrid_language_model_workflow_for_text-based_scien/review]] — 인용 추천 시스템의 표준화된 평가 방법론을 제시하여 HLM-Cite의 성능 평가에 활용할 수 있다.
-- 🧪 응용 사례: [[papers/803_The_open_review-based_orb_dataset_Towards_automatic_assessme/review]] — 인용 추천 평가 벤치마크가 ORB 데이터셋의 NLP 기반 논문 평가에 적용된다.
-- 🔄 다른 접근: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — 인용 추천 평가에서 해석가능성 중심 접근법과 전통적인 벤치마킹 방식의 서로 다른 관점을 제시합니다.
+- 🔄 다른 접근: [[papers/406_Hlm-cite_Hybrid_language_model_workflow_for_text-based_scien/review]] — 인용 추천 시스템의 평가 개선을 벤치마크 표준화와 하이브리드 워크플로우로 각각 접근한다.
+- 🔗 후속 연구: [[papers/273_Directed_criteria_citation_recommendation_and_ranking_throug/review]] — 인용 추천 평가 벤치마크가 기준 기반 인용 추천 및 순위화로 확장 적용될 수 있다.
+- 🏛 기반 연구: [[papers/1091_Scirgc_Multi-granularity_citation_recommendation_and_citatio/review]] — 다중 세분화 인용 추천 시스템 개발을 위한 평가 방법론적 기초를 제공한다.
+- 🔄 다른 접근: [[papers/406_Hlm-cite_Hybrid_language_model_workflow_for_text-based_scien/review]] — 인용 추천 시스템의 평가 방법론을 서로 다른 접근법으로 개선하려는 공통 목표를 가진다.
+- 🏛 기반 연구: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — 인용 추천 평가 벤치마크는 해석가능한 인용 추천 시스템의 성능을 객관적으로 측정할 수 있는 기준을 제공한다.

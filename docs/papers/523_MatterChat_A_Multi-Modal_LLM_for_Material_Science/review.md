@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "원자 구조 정보를 완전히 보존하면서 대규모 언어 모델(LLM)과 통합하는 구조-인식 멀티모달 LLM으로, 물질의 성질 예측과 과학적 추론에서 GPT-4를 능가하는 성능을 달성했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Domain-specific_Language_Agents"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2025_MatterChat A Multi-Modal LLM for Material Science.pdf"
 ---
@@ -132,14 +132,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2025_MatterChat A Multi-Moda
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 재료과학 특화 LLM이라는 동일한 목표를 구조 인식과 지식 안내라는 상호 보완적 방법으로 달성합니다.
-- 🏛 기반 연구: [[papers/111_AtomAgents_Alloy_design_and_discovery_through_physics-aware/review]] — 원자 구조 정보를 완전히 보존하는 기술이 물리 기반 합금 설계의 정확성을 높이는 기초를 제공합니다.
-- 🔗 후속 연구: [[papers/646_QH9_A_Quantum_Hamiltonian_Prediction_Benchmark_for_QM9_Molec/review]] — 분자 구조 정보 처리를 양자 해밀턴 예측으로 확장하여 더 정밀한 물성 예측을 가능하게 합니다.
-- 🏛 기반 연구: [[papers/015_A_Perspective_on_Foundation_Models_in_Chemistry/review]] — 재료과학을 위한 멀티모달 LLM은 화학 분야 파운데이션 모델이 다중 모달리티로 확장된 형태의 기반 기술입니다
-- 🔗 후속 연구: [[papers/111_AtomAgents_Alloy_design_and_discovery_through_physics-aware/review]] — 재료과학에서 원자 구조 정보를 활용하는 AI 시스템으로 합금 설계 방법을 확장합니다.
-- 🔄 다른 접근: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 재료과학 LLM이라는 동일한 목표를 지식 안내와 구조 인식이라는 서로 다른 접근법으로 구현합니다.
-- 🔗 후속 연구: [[papers/646_QH9_A_Quantum_Hamiltonian_Prediction_Benchmark_for_QM9_Molec/review]] — 분자 수준 양자 계산을 재료과학 LLM과 결합하여 더 정확한 물성 예측 시스템을 구축합니다.
-- 🧪 응용 사례: [[papers/002_34_examples_of_llm_applications_in_materials_science_and_che/review]] — 재료과학 특화 다중모달 LLM의 구체적인 구현 사례를 보여준다.
-- 🔗 후속 연구: [[papers/208_ChatMOF_an_artificial_intelligence_system_for_predicting_and/review]] — 특정 화학 소재(MOF)에 특화된 시스템을 더 넓은 재료과학 영역으로 확장하여 포괄적인 멀티모달 LLM을 구축한다.
-- 🔗 후속 연구: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — MatterChat의 다중모달 LLM은 HoneyComb의 재료과학 특화 에이전트 시스템을 시각적 정보 처리까지 확장한다.
-- 🧪 응용 사례: [[papers/340_Fine-tuning_large_language_models_for_domain_adaptation_expl/review]] — 재료과학 도메인 파인튜닝 전략이 MatterChat 같은 멀티모달 재료과학 LLM에 활용
+- 🔄 다른 접근: [[papers/345_Foundation_Molecular_Grammar_Multi-Modal_Foundation_Models_I/review]] — 둘 다 분자 구조 정보를 언어 모델과 통합하지만, MatterChat은 완전한 구조 보존에, Foundation Molecular Grammar는 다중 모달 문법에 집중한다
+- 🏛 기반 연구: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 분자의 기하학 정보 토큰화 연구가 MatterChat의 구조 인식 멀티모달 LLM 개발에 기하학적 정보 처리 방법론을 제공한다
+- 🔗 후속 연구: [[papers/524_MatViX_Multimodal_Information_Extraction_from_Visually_Rich/review]] — 시각적으로 풍부한 정보에서 멀티모달 정보 추출 연구가 MatterChat의 물질 성질 예측과 과학적 추론 능력으로 구체화되었다
+- 🧪 응용 사례: [[papers/465_Large_Language_Model_in_Materials_Science_Roles_Challenges_a/review]] — 재료과학에서 LLM의 일반적 역할 분석과 구체적인 재료과학 대화 시스템 구현은 이론과 실제 적용의 관계를 보여준다.
+- 🧪 응용 사례: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — MatterChat과 같은 멀티모달 재료과학 LLM이 파운데이션 모델의 실제 재료 발견 응용 사례를 보여준다
+- 🔄 다른 접근: [[papers/398_Harnessing_large_language_models_for_scientific_novelty_dete/review]] — 재료 과학을 위한 다중모달 LLM으로, MOF 데이터 분석에 대한 다른 기술적 접근을 제시
+- 🔗 후속 연구: [[papers/208_ChatMOF_an_artificial_intelligence_system_for_predicting_and/review]] — 재료 과학을 위한 다중모달 LLM으로, MOF 특화 시스템을 더 광범위한 재료 과학 응용으로 확장
+- 🔗 후속 연구: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — MatterChat의 멀티모달 재료과학 LLM은 HoneyComb의 지식베이스 기반 접근법을 시각적 정보 처리로 확장함

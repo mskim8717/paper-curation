@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 학술 논문 리뷰들을 메타리뷰로 종합하는 **과학적 의견 요약(Scientific Opinion Summarization)** 작업을 정의하고, 체크리스트 기반 반복 자기성찰(CGI2) 방법론을 제안하여 대규모 실제 데이터셋(ORSUM)과 함께 이를 해결한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/LLM_Review_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zeng et al._2023_Meta-review generation with checklist-guided iterative introspection.pdf"
 ---
@@ -83,10 +83,15 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zeng et al._2023_Meta-review generation 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — 메타리뷰 생성에서 체크리스트 기반 자기성찰과 다중 에이전트 협업의 서로 다른 자동화 방법을 비교할 수 있습니다.
-- 🏛 기반 연구: [[papers/385_Glimpse_Pragmatically_informative_multi-document_summarizati/review]] — 다중 문서 요약의 실용적 정보 제공이 체크리스트 기반 메타리뷰 생성의 구조화된 요약 기법에 기초를 제공합니다.
-- 🔗 후속 연구: [[papers/022_A_sentiment_consolidation_framework_for_meta-review_generati/review]] — 감정 통합 프레임워크를 체크리스트 기반 반복 자기성찰로 확장하여 더 체계적인 메타리뷰 생성을 가능하게 합니다.
-- 🔗 후속 연구: [[papers/385_Glimpse_Pragmatically_informative_multi-document_summarizati/review]] — 체크리스트 기반 반복적 메타 리뷰 생성과 함께 영역 의장의 리뷰 처리 효율성을 종합적으로 개선한다.
-- 🔗 후속 연구: [[papers/350_Frame_Feedback-refined_agent_methodology_for_enhancing_medic/review]] — 체크리스트 기반 반복적 메타 리뷰 생성이 FRAME의 구조화된 반복 개선 과정을 더욱 체계화함
-- 🔗 후속 연구: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 체크리스트 가이드 반복적 내성을 통한 메타 리뷰 생성이 SciReviewGen의 기본적인 문헌 리뷰 생성을 더 정교한 검토와 평가 과정을 포함하는 메타 수준으로 발전시킨 연구임
-- 🔄 다른 접근: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — 과학 논문 리뷰에서 다중 에이전트 협업과 체크리스트 기반 메타리뷰 생성의 서로 다른 자동화 접근법을 제시합니다.
+- 🏛 기반 연구: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — 다중 에이전트 리뷰 생성의 협력적 접근법이 체크리스트 기반 메타리뷰 생성의 체계적 검증 방법론으로 발전되었다.
+- 🔄 다른 접근: [[papers/022_A_sentiment_consolidation_framework_for_meta-review_generati/review]] — 감정 통합을 통한 메타리뷰 생성과 체크리스트 기반 반복 자기성찰은 모두 리뷰 종합의 서로 다른 접근법이다.
+- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 다중턴 장문맥 대화로서의 피어 리뷰를 체크리스트 기반 메타리뷰로 체계화하여 더 구조적인 리뷰 종합을 제시한다.
+- 🧪 응용 사례: [[papers/244_Cross_sectional_pilot_study_on_clinical_review_generation_us/review]] — 임상 리뷰 생성 파일럿 연구에서 체크리스트 기반 반복 자기성찰 방법론이 의료 분야에서 실제 적용된 사례를 보여준다.
+- 🔗 후속 연구: [[papers/385_Glimpse_Pragmatically_informative_multi-document_summarizati/review]] — 체크리스트 기반 메타리뷰 생성과 차별적 요약이 리뷰 품질 향상을 위한 상호 보완적 방법을 제공한다.
+- 🔄 다른 접근: [[papers/739_Seagraph_Unveiling_the_whole_story_of_paper_review_comments/review]] — 리뷰 과정의 체계적 분석과 개선을 위한 다른 프레임워크를 제시한다
+- 🔗 후속 연구: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — 체크리스트 기반 메타리뷰 생성과 갈등 인식 프레임워크를 결합하면 더 공정하고 체계적인 종합의견을 생성할 수 있다.
+- 🔄 다른 접근: [[papers/1089_Prompting_llms_to_compose_meta-review_drafts_from_peer-revie/review]] — 리뷰 생성에서 단일 작업과 체크리스트 기반 반복 생성이라는 다른 접근 전략을 보여준다
+- 🧪 응용 사례: [[papers/157_Beyond_outlining_Heterogeneous_recursive_planning_for_adapti/review]] — 이질적 재귀적 계획 기법을 체크리스트 기반 반복적 메타 리뷰 생성이라는 구체적인 학술 작업에 적용한다
+- 🔗 후속 연구: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 체크리스트 기반 반복적 메타리뷰 생성 방법을 통해 관련 업무 섹션의 품질을 체계적으로 향상시킬 수 있다.
+- 🔗 후속 연구: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — 체크리스트 기반 메타리뷰 생성을 다중 에이전트 협력으로 발전시켜 더 포괄적이고 상호보완적인 피어 리뷰 시스템을 구현했다.
+- 🔄 다른 접근: [[papers/897_Can_AI_review_the_scientific_literature__and_figure_out_what/review]] — 체크리스트 기반 메타 리뷰 생성으로 문헌 검토와 다른 방식의 AI 기반 학술 종합을 보여준다

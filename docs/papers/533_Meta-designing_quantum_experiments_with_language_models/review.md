@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.3
 essence: "언어 모델을 활용하여 단일 양자 상태 하나가 아닌 **양자 상태의 전체 클래스를 해결하는 메타-솔루션(Python 코드)**을 자동 발견함으로써, 인간이 이해 가능한 설계 원칙을 추출하고 임의의 크기로 실험을 확대할 수 있는 새로운 AI 기반 과학 발견 방법론을 제시한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Domain-adapted_Instruction_Models"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Arlt et al._2024_Meta-designing quantum experiments with language models.pdf"
 ---
@@ -118,7 +120,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Arlt et al._2024_Meta-designing quantum 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/532_MerLean_An_Agentic_Framework_for_Autoformalization_in_Quantu/review]] — MerLean의 이론적 자동형식화를 실제 양자 실험 설계로 확장한 응용 연구
-- 🧪 응용 사례: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — 언어 모델 기반 양자 실험 설계가 실제 양자컴퓨팅 연구소 자동화에 적용
-- 🔗 후속 연구: [[papers/456_Lang-PINN_From_Language_to_Physics-Informed_Neural_Networks/review]] — 물리학 정보 신경망과 언어 모델을 결합한 양자 실험 설계 방법론
-- 🏛 기반 연구: [[papers/532_MerLean_An_Agentic_Framework_for_Autoformalization_in_Quantu/review]] — 양자계산 도메인에서 MerLean의 자동형식화가 메타 실험 설계의 기초가 됨
+- 🧪 응용 사례: [[papers/072_Agents_for_self-driving_laboratories_applied_to_quantum_comp/review]] — 양자 컴퓨팅 실험실 자동화 연구에서 제시된 방법론을 메타 솔루션 발견이라는 더 추상적 수준으로 적용한다.
+- 🔗 후속 연구: [[papers/532_MerLean_An_Agentic_Framework_for_Autoformalization_in_Quantu/review]] — 양자계산 도메인의 자동화를 이론 형식화에서 실험 설계로 확장하여 상호 보완적 접근을 제시한다.
+- 🔄 다른 접근: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 재료 발견을 위한 가설 생성과 유사하지만 양자 상태 클래스 전체를 해결하는 메타 접근법으로 차별화한다.
+- 🔄 다른 접근: [[papers/072_Agents_for_self-driving_laboratories_applied_to_quantum_comp/review]] — 양자 시스템에서 실험 설계와 메타 설계라는 서로 다른 차원의 접근법을 보여준다
+- 🏛 기반 연구: [[papers/532_MerLean_An_Agentic_Framework_for_Autoformalization_in_Quantu/review]] — 양자 실험 설계의 언어모델 기반 방법론이 양자계산 이론의 자동 형식화를 위한 도메인 지식 기반을 제공한다.

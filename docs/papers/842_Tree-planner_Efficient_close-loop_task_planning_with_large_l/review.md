@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)을 활용한 폐루프 태스크 플래닝에서 토큰 효율성과 오류 수정 효율성을 동시에 개선하는 TREE-PLANNER를 제안한다. 기존의 반복적 플래닝(iterative planning) 대신 계획 샘플링-액션 트리 구성-그라운디드 의사결정의 3단계로 재구조화하여 토큰 소비 92.2% 감소와 오류 수정 40.5% 감소를 달성한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/AI-Powered_Research_Planning"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2023_Tree-planner Efficient close-loop task planning with large language models.pdf"
 ---
@@ -119,6 +121,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2023_Tree-planner Efficient cl
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/625_PlanGenLLMs_A_Modern_Survey_of_LLM_Planning_Capabilities/review]] — LLM의 계획 생성 능력에 대한 포괄적 조사로 Tree-planner의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/499_LLM_With_Tools_A_Survey/review]] — LLM의 도구 활용 능력을 토큰 효율적인 계획 수립으로 확장한 구체적 구현체를 제시한다.
-- 🔄 다른 접근: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — 강화학습 기반 검색 및 추론 훈련으로 계획 수립의 다른 접근 방식을 보여준다.
+- 🧪 응용 사례: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — Tree-planner의 효율적인 태스크 계획 방법론이 AI Scientist-v2의 복잡한 연구 워크플로우에 적용될 수 있다.
+- 🔗 후속 연구: [[papers/325_Executable_Code_Actions_Elicit_Better_LLM_Agents/review]] — 실행 가능한 코드 액션이 Tree-planner의 그라운디드 의사결정을 더욱 향상시킬 수 있다.
+- 🏛 기반 연구: [[papers/625_PlanGenLLMs_A_Modern_Survey_of_LLM_Planning_Capabilities/review]] — LLM 계획 능력에 대한 현대적 조사가 Tree-planner 설계의 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/625_PlanGenLLMs_A_Modern_Survey_of_LLM_Planning_Capabilities/review]] — LLM 계획 능력 평가 프레임워크를 트리 기반 계획 시스템의 성능 측정에 실제로 적용할 수 있다.
+- 🔄 다른 접근: [[papers/157_Beyond_outlining_Heterogeneous_recursive_planning_for_adapti/review]] — 장기 형태 적응형 계획과 효율적인 폐쇄 루프 작업 계획이라는 서로 다른 계획 수립 접근법을 비교할 수 있다
+- 🔗 후속 연구: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — Tree-planner의 효율적인 계획 수립 방법론이 AI Scientist-v2의 복잡한 연구 프로세스 최적화에 활용될 수 있다.

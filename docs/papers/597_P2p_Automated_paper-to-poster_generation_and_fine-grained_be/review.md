@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "학술 논문을 자동으로 고품질 학술 포스터(HTML 형식)로 변환하는 LLM 기반 다중 에이전트 프레임워크를 제안하며, 30,000개 이상의 대규모 지시 데이터셋과 세부 평가 벤치마크를 함께 제공한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/CRISPR_and_Drug_Discovery_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Suárez‐Tangil et al._2025_P2p Automated paper-to-poster generation and fine-grained benchmark.pdf"
 ---
@@ -121,7 +122,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Suárez‐Tangil et al._2025_P2p Automat
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/600_Paper2Web_Lets_Make_Your_Paper_Alive/review]] — PDF를 웹사이트로 vs 논문을 포스터로 변환하는 유사하지만 다른 접근법
-- 🔗 후속 연구: [[papers/601_PaperBanana_Automating_Academic_Illustration_for_AI_Scientis/review]] — P2P의 포스터 생성 기술을 학술 논문의 전체 일러스트레이션으로 확장
-- 🔄 다른 접근: [[papers/773_Stealing_creators_workflow_A_creator-inspired_agentic_framew/review]] — 둘 다 학술 논문의 시각적 변환을 다루지만 하나는 동영상 생성에, 다른 하나는 포스터 생성에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/599_Paper2poster_Towards_multimodal_poster_automation_from_scien/review]] — 논문을 포스터로 변환하는 작업을 자동화된 Paper-to-Poster 생성과 세밀한 벤치마킹으로 확장함
+- 🔄 다른 접근: [[papers/599_Paper2poster_Towards_multimodal_poster_automation_from_scien/review]] — 과학논문 포스터 자동화와 멀티모달 포스터 자동화는 학술 시각화의 서로 다른 접근법을 제시한다
+- 🏛 기반 연구: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 인간-AI 협업 글쓰기 데이터셋이 논문-포스터 생성 시스템의 협업적 설계 기반을 제공한다
+- 🔄 다른 접근: [[papers/600_Paper2Web_Lets_Make_Your_Paper_Alive/review]] — 논문을 웹사이트로 변환 대신 자동화된 포스터 생성에 집중한다
+- 🔗 후속 연구: [[papers/601_PaperBanana_Automating_Academic_Illustration_for_AI_Scientis/review]] — Paper2Poster의 논문-포스터 생성을 학술 일러스트레이션 자동화로 확장하여 더 포괄적인 시각화 솔루션을 제시한다.
+- 🔄 다른 접근: [[papers/773_Stealing_creators_workflow_A_creator-inspired_agentic_framew/review]] — 논문에서 시각 콘텐츠 생성을 포스터 vs 동영상으로 서로 다른 형태로 접근한다
+- 🔄 다른 접근: [[papers/599_Paper2poster_Towards_multimodal_poster_automation_from_scien/review]] — 과학 논문을 시각적 형태로 변환한다는 같은 목표를 가지지만 포스터 vs 웹페이지라는 다른 출력 형태를 다룬다.

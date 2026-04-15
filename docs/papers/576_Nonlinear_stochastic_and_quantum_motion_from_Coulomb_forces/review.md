@@ -10,8 +10,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 쿨롱 상호작용의 3차 비선형 항을 이용하여 한 입자의 위치 소음(양자 영역에서는 불확실성)으로부터 다른 입자의 운동량 변위를 유도하는 현상을 보인다. 조화 부분을 보상 선형력으로 제거한 후 남은 상호 비선형 항이 신호-잡음비(SNR) 향상이라는 직접 관찰 가능한 비상호적 비선형 효과를 야기함을 입증한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Neural_Differential_Equations"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Neural_Operator_Learning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ornigotti et al._2025_Nonlinear stochastic and quantum motion from Coulomb forces.pdf"
 ---
@@ -107,8 +109,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ornigotti et al._2025_Nonlinear stochast
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 물리 정보를 신경망에 통합한다는 공통점이 있지만 쿨롱 상호작용의 비선형 효과와 열관리 설계라는 다른 물리 현상을 다룬다.
-- 🏛 기반 연구: [[papers/622_Physics-Informed_Neural_Operator_for_Electromagnetic_Inverse/review]] — 물리 정보 신경 연산자의 전자기 역산란 적용 연구에서 쿨롱 상호작용의 물리적 이해가 도움이 될 수 있다.
-- 🔗 후속 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — 신경 상미분방정식의 기본 개념을 비선형 확률적 양자 운동 모델링에 확장 적용할 수 있다.
-- 🏛 기반 연구: [[papers/217_Chiral_spin_symmetry_and_hot_QCD/review]] — 쿨롱 힘의 비선형 확률적 양자 운동이 QCD 열역학의 물리적 기반 제공
-- 🏛 기반 연구: [[papers/618_Physical_formula_enhanced_multi-task_learning_for_pharmacoki/review]] — 물리 법칙 기반의 비선형 상호작용 이해가 약동학 파라미터 간의 물리적 제약 관계 모델링에 도움이 된다.
+- 🏛 기반 연구: [[papers/454_Lagrangian_neural_networks/review]] — 라그랑지안 신경망의 물리 보존 법칙이 쿨롱 상호작용의 비선형 양자 운동 분석에 이론적 기반 제공
+- 🔗 후속 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — 신경 상미분방정식과 쿨롱 힘의 비선형 확률 운동을 결합하여 양자 시스템의 동역학 예측 정확도 향상
+- 🧪 응용 사례: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 정보 신경망을 통해 쿨롱 상호작용의 3차 비선형 항이 실제 양자 센서 설계에 적용됨
+- 🔗 후속 연구: [[papers/454_Lagrangian_neural_networks/review]] — 쿨롱 힘으로부터의 비선형 확률적 양자 운동이 Lagrangian 신경망의 물리보존 법칙을 양자역학으로 확장한다.
+- 🔗 후속 연구: [[papers/911_Resummation_of_the_C-Parameter_Sudakov_Shoulder_Using_Effect/review]] — 쿨롱 힘에서의 비선형 운동 연구로 고에너지 물리학의 다른 측면을 확장한다

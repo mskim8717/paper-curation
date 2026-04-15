@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "본 리뷰 논문은 자기지도학습(self-supervised learning), 기하 심층학습(geometric deep learning), 생성형 AI 등 최근 10년간의 주요 AI 기술을 통해 과학적 발견이 어떻게 변모하고 있는지 종합적으로 조망한다. AI는 대규모 데이터셋 통합, 가설 탐색, 실험 설계 자동화 등을 통해 전통적 과학방법론만으로는 불가능한 새로운 과학적 통찰을 제공할 수 있다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Physics-Informed_Neural_Operators"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2023_Scientific discovery in the age of artificial intelligence.pdf"
 ---
@@ -108,17 +108,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2023_Scientific discovery in
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/403_Highly_accurate_protein_structure_prediction_with_AlphaFold/review]] — AlphaFold와 같은 획기적 성과들이 AI를 통한 과학적 발견 변모에 대한 종합적 조망의 대표적 사례로 제시된다
-- 🏛 기반 연구: [[papers/105_Artificial_Intelligence_for_Direct_Prediction_of_Molecular_D/review]] — AI4Science의 핵심 기술인 자기지도학습과 기하 심층학습이 과학적 발견 방법론 변화의 구체적인 기술적 토대를 제공한다
-- ⚖️ 반론/비판: [[papers/252_Data_integrity_in_materials_science_in_the_era_of_AI_balanci/review]] — AI를 통한 과학적 발견의 긍정적 전망에 대해 데이터 무결성 위협이라는 중요한 위험 요소와 한계를 제시한다
-- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI를 통한 과학적 발견의 일반적 조망이 완전 자동화된 AI 과학자 시스템의 구체적 구현으로 발전했다
-- 🔗 후속 연구: [[papers/506_LLM4SR_A_Survey_on_Large_Language_Models_for_Scientific_Rese/review]] — 과학 연구의 LLM 활용이 AI 시대의 과학적 발견으로 확장됩니다.
-- 🏛 기반 연구: [[papers/403_Highly_accurate_protein_structure_prediction_with_AlphaFold/review]] — 단백질 폴딩 문제 해결이 AI를 통한 과학적 발견의 대표적 성공사례로서 AI4Science 발전의 이정표가 되었다
-- 🏛 기반 연구: [[papers/105_Artificial_Intelligence_for_Direct_Prediction_of_Molecular_D/review]] — 양자역학부터 연속체까지 물리 시스템의 AI 적용에 대한 종합적 기술 리뷰가 AI를 통한 과학적 발견의 이론적 기반을 제공한다
-- ⚖️ 반론/비판: [[papers/252_Data_integrity_in_materials_science_in_the_era_of_AI_balanci/review]] — AI 생성 데이터의 무결성 위협에 대한 경고가 AI를 통한 과학적 발견의 낙관적 전망에 대한 중요한 반성적 관점을 제공한다
-- 🏛 기반 연구: [[papers/088_AI4Research_A_Survey_of_Artificial_Intelligence_for_Scientif/review]] — AI 시대 과학 발견의 전반적 맥락을 제공하여 AI4Research의 이론적 토대를 구성한다
-- 🏛 기반 연구: [[papers/075_AI_for_Science_2025/review]] — 인공지능 시대 과학적 발견의 이론적 토대를 제공한다.
-- 🏛 기반 연구: [[papers/056_Advancing_the_scientific_method_with_large_language_models_F/review]] — 인공지능 시대 과학적 발견에 대한 일반론이 LLM 기반 과학 방법론 변화의 이론적 토대를 제공한다.
-- 🏛 기반 연구: [[papers/764_Sparks_Multi-Agent_Artificial_Intelligence_Model_Discovers_P/review]] — AI 시대 과학 발견의 이론적 전망과 실제 구현 사례 간의 연결고리를 제공한다.
-- 🔗 후속 연구: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — AI 시대 과학 발견의 이론적 가능성을 실제 작동하는 자동화 시스템으로 구현하여 실증적 증거를 제공한다.
-- 🔄 다른 접근: [[papers/895_AI_will_transform_science__now_researchers_must_tame_it/review]] — 과학 발견에서 AI 역할을 다른 관점에서 조명하여 보완적 시각을 제공한다
+- 🔄 다른 접근: [[papers/105_Artificial_Intelligence_for_Direct_Prediction_of_Molecular_D/review]] — AI 과학 발견을 기술적 세부사항 대신 거시적 변화와 방법론 관점에서 조망
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI 시대 과학적 발견의 현재 상황을 완전 자동화된 미래 과학자로 발전시킨 비전
+- 🏛 기반 연구: [[papers/834_Towards_Scientific_Discovery_with_Generative_AI_Progress_Opp/review]] — 생성형 AI를 통한 과학 발견의 진전과 기회를 체계적으로 분석하는 기반 연구
+- 🔄 다른 접근: [[papers/105_Artificial_Intelligence_for_Direct_Prediction_of_Molecular_D/review]] — 과학적 발견에서 AI의 역할을 다른 관점에서 조망하는 보완적 리뷰
+- 🏛 기반 연구: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — 인공지능 시대의 과학 발견에 대한 종합적 관점이 노벨 튜링 챌린지의 이론적 토대를 마련한다
+- 🏛 기반 연구: [[papers/834_Towards_Scientific_Discovery_with_Generative_AI_Progress_Opp/review]] — 인공지능 시대의 과학 발견 종합 분석이 생성형 AI를 통한 과학 발견의 이론적 배경을 마련한다
+- 🏛 기반 연구: [[papers/895_AI_will_transform_science__now_researchers_must_tame_it/review]] — AI 시대의 과학적 발견에 대한 근본적 관점을 제시하며 AI 통합 필요성의 이론적 기반이 된다

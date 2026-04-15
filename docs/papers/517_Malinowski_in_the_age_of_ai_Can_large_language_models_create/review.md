@@ -10,8 +10,10 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 대규모 언어모델(Large Language Models, LLM)이 인류학 고전 문헌을 기반으로 자율적으로 텍스트 게임을 생성할 수 있는지를 탐색하며, 인공지능이 교육적 가치를 가진 인류학 게임을 창작할 수 있는 가능성과 한계를 체계적으로 평가한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Diversity"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Field-Specific_ML_Survey_Methods"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hoffmann et al._2024_Malinowski in the age of ai Can large language models create a text game based on an anthropologica.pdf"
 ---
@@ -94,7 +96,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hoffmann et al._2024_Malinowski in the a
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/444_Is_it_OK_for_AI_to_write_science_papers_Nature_survey_shows/review]] — AI의 창의적 텍스트 생성 능력과 AI 사용의 윤리적 고려사항이라는 서로 다른 AI 활용 측면을 다룹니다.
-- 🏛 기반 연구: [[papers/301_Economic_anthropology_in_the_era_of_generative_artificial_in/review]] — 생성형 인공지능 시대의 경제 인류학이 AI 기반 인류학 텍스트 게임 생성의 이론적 배경을 제공합니다.
-- 🔗 후속 연구: [[papers/378_Generative_AI_Uses_and_Risks_for_Knowledge_Workers_in_a_Scie/review]] — 지식 근로자를 위한 생성형 AI 활용을 교육적 인류학 게임 창작으로 확장한 특화된 응용 연구입니다.
-- 🔄 다른 접근: [[papers/444_Is_it_OK_for_AI_to_write_science_papers_Nature_survey_shows/review]] — AI 작문 사용의 윤리성과 AI의 창의적 텍스트 생성 능력이라는 서로 다른 AI 활용 측면을 다룹니다.
+- 🏛 기반 연구: [[papers/301_Economic_anthropology_in_the_era_of_generative_artificial_in/review]] — 생성형 AI의 경제 인류학적 편향 문제를 다루며 인류학 게임 생성의 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/147_Aviary_training_language_agents_on_challenging_scientific_ta/review]] — 과학적 작업을 위한 언어 에이전트 훈련 프레임워크로 인류학 게임 창작을 확장한다
+- 🧪 응용 사례: [[papers/900_ChatGPT_has_entered_the_classroom_how_LLMs_could_transform_e/review]] — 교육용 LLM 도구 개발과 구현 사례를 통해 인류학 교육 게임의 실용적 접근을 보여준다
+- 🧪 응용 사례: [[papers/319_Ethnography_and_machine_learning_Synergies_and_new_direction/review]] — LLM 시대의 민족지학적 연구 방법론을 실제 인류학 연구에 적용하는 사례를 제공한다
+- 🔄 다른 접근: [[papers/900_ChatGPT_has_entered_the_classroom_how_LLMs_could_transform_e/review]] — 인류학 교육 게임 생성으로 LLM 교육 도구의 다른 인문학 응용 사례를 제시한다
+- 🧪 응용 사례: [[papers/301_Economic_anthropology_in_the_era_of_generative_artificial_in/review]] — 인류학 텍스트 게임 생성에서 경제 인류학적 편향 문제의 구체적 적용 사례를 보여준다

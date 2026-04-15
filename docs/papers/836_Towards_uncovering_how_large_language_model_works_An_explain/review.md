@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "이 논문은 설명가능성(explainability) 관점에서 대규모 언어모델(LLM)의 내부 작동 메커니즘을 체계적으로 검토한 종합 리뷰 논문이다. 기계적 해석가능성(mechanistic interpretability), 표현 공학(representation engineering), 훈련 역학 분석을 통해 LLM의 지식 구성, 부호화, 학습 과정을 밝히고, 이러한 인사이트가 모델 편집, 프루닝, 인간 정렬에 어떻게 활용될 수 있는지 보여준다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Mechanistic_AI_Interpretability"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Mechanistic_Memory_and_Knowledge"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2024_Towards uncovering how large language model works An explainability perspective.pdf"
 ---
@@ -110,10 +112,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2024_Towards uncovering how 
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/582_On_gradient-like_explanation_under_a_black-box_setting_when/review]] — LLM의 내부 작동 메커니즘 이해를 위한 체계적 검토가 블랙박스 설정에서의 설명가능성 연구의 이론적 확장이다.
-- 🏛 기반 연구: [[papers/397_Hallucinations_can_improve_large_language_models_in_drug_dis/review]] — LLM의 해석가능성 연구가 환각 현상이 성능에 미치는 영향을 이해하는 데 필요한 기계적 이해를 제공한다.
-- 🔄 다른 접근: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — AI 안전성을 위한 기계적 해석가능성과 LLM 작동 메커니즘 이해라는 유사하지만 다른 관점의 해석가능성 연구이다.
-- 🔗 후속 연구: [[papers/017_A_practical_review_of_mechanistic_interpretability_for_trans/review]] — 대형 언어모델 작동 방식의 설명가능한 연구는 기계적 해석가능성의 실무 가이드를 더욱 심화된 연구 방향으로 확장합니다
-- 🔄 다른 접근: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — LLM 작동 메커니즘 이해에서 기계론적 vs 설명가능성 기반의 다른 접근법을 비교할 수 있다
-- 🏛 기반 연구: [[papers/397_Hallucinations_can_improve_large_language_models_in_drug_dis/review]] — LLM의 환각 현상을 이해하기 위해서는 언어 모델의 내부 메커니즘에 대한 근본적 이해가 필요하다.
-- 🏛 기반 연구: [[papers/582_On_gradient-like_explanation_under_a_black-box_setting_when/review]] — LLM의 해석가능성 연구가 블랙박스 설정에서의 그래디언트 기반 설명 방법 개발의 이론적 배경을 제공한다.
+- 🔗 후속 연구: [[papers/582_On_gradient-like_explanation_under_a_black-box_setting_when/review]] — 블랙박스 그래디언트 설명 기법을 LLM 내부 메커니즘의 포괄적 해석가능성으로 확장한다
+- 🏛 기반 연구: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — AI 안전성을 위한 기계적 해석가능성이 LLM 작동 원리 해명의 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/017_A_practical_review_of_mechanistic_interpretability_for_trans/review]] — LLM 작동 원리 해명 연구와 기계적 해석가능성 실무 가이드를 결합하면 더 체계적인 모델 이해 방법론을 개발할 수 있다.
+- 🔄 다른 접근: [[papers/582_On_gradient-like_explanation_under_a_black-box_setting_when/review]] — 블랙박스 그래디언트 설명과 화이트박스 해석가능성이 서로 다른 접근으로 LLM 설명 문제를 해결한다
+- 🏛 기반 연구: [[papers/438_Introspective_growth_Automatically_advancing_llm_expertise_i/review]] — LLM 작동 원리에 대한 설명 가능성 연구가 기술 판단에서의 지식 격차 진단을 뒷받침한다.

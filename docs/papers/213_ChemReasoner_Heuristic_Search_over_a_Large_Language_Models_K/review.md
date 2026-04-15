@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 **대규모 언어모델(LLM)의 자동화된 휴리스틱 탐색(heuristic search)과 양자화학 피드백을 결합하여 촉매 발견을 가속화하는 AI 기반 프레임워크를 제시**한다. 언어 기반 추론의 유연성과 계산화학의 정확성을 통합하여 새로운 촉매의 발견 과정을 혁신한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/LLM_Drug_Discovery"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sprueill et al._2024_ChemReasoner Heuristic Search over a Large Language Model's Knowledge Space using Quantum-Chemical.pdf"
 ---
@@ -129,6 +130,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sprueill et al._2024_ChemReasoner Heuris
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 화학 도구 연결 vs 휴리스틱 탐색으로 화학 LLM의 서로 다른 접근법
-- 🔗 후속 연구: [[papers/138_Autonomous_chemical_research_with_large_language_models/review]] — 화학 자동화를 휴리스틱 탐색 기반 추론으로 확장한다.
-- 🔗 후속 연구: [[papers/490_LIDDIA_Language-based_Intelligent_Drug_Discovery_Agent/review]] — LIDDIA의 분자 생성 기능이 ChemReasoner의 화학 추론 능력과 결합하면 더 정교한 신약 후보 발견이 가능함
+- 🔄 다른 접근: [[papers/209_ChemAgent_Self-updating_Library_in_Large_Language_Models_Imp/review]] — 자체 업데이트 화학 라이브러리와 LLM 지식 탐색은 화학 발견에서 서로 다른 지식 활용 방식을 제시한다
+- 🔗 후속 연구: [[papers/557_MOOSE-Chem_Large_Language_Models_for_Rediscovering_Unseen_Ch/review]] — 미발견 화학물질 재발견 연구가 촉매 발견을 넘어 더 넓은 화학 공간 탐사로 확장한다
+- 🏛 기반 연구: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — LLM의 휴리스틱 검색이 ChemCrow의 화학 문제 해결 추론 과정을 뒷받침한다
+- 🔗 후속 연구: [[papers/461_LARC_Towards_Human-level_Constrained_Retrosynthesis_Planning/review]] — LLM의 휴리스틱 검색을 제약 조건이 있는 복잡한 화학 계획 문제로 확장한다

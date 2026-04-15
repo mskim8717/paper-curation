@@ -10,8 +10,10 @@ arxiv: ""
 score: 4.5
 essence: "SCANPY는 백만 개 이상의 세포를 포함한 대규모 단일세포 유전자 발현 데이터를 효율적으로 분석할 수 있는 Python 기반 확장 가능한 툴킷으로, 기존 R 기반 프레임워크들(Seurat, Monocle 등)보다 5-90배 빠른 성능을 제공한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Scientific_Memory_Calculators"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Molecular_Discovery_Foundation_Models"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wolf et al._2018_SCANPY large-scale single-cell gene expression data analysis.pdf"
 ---
@@ -97,6 +99,10 @@ SCANPY는 백만 개 이상의 세포를 포함한 대규모 단일세포 유전
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/306_Efficient_fine-tuning_of_single-cell_foundation_models_enabl/review]] — 단일세포 분석을 Python 기반 스케일링 vs LLM 기반 파운데이션 모델로 접근한다.
-- 🏛 기반 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 대규모 단일세포 데이터 처리 기술이 차세대 LLM 기반 분석의 기초가 된다.
-- 🔗 후속 연구: [[papers/700_scBaseCount_an_AI_agent-curated_uniformly_processed_and_auto/review]] — SCANPY의 데이터 처리 능력을 AI 에이전트 기반 자동화로 확장한다.
+- 🔄 다른 접근: [[papers/306_Efficient_fine-tuning_of_single-cell_foundation_models_enabl/review]] — SCANPY의 대규모 단일세포 분석과 단일세포 기초 모델의 약물 반응 예측은 서로 다른 단일세포 분석 접근법이다.
+- 🔗 후속 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 차세대 단일세포를 위한 대규모 언어모델이 SCANPY의 분석 툴킷을 더 지능적인 형태로 발전시킨다.
+- 🏛 기반 연구: [[papers/431_Integrated_analysis_of_multimodal_single-cell_data/review]] — 멀티모달 단일세포 데이터의 통합 분석이 SCANPY와 같은 단일세포 분석 도구의 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/189_CASSIA_a_multi-agent_large_language_model_for_reference_free/review]] — SCANPY 대규모 단일세포 분석 프레임워크에 해석 가능한 자동 주석 시스템을 통합한다
+- 🏛 기반 연구: [[papers/431_Integrated_analysis_of_multimodal_single-cell_data/review]] — 단일세포 유전자 발현 데이터 분석을 위한 기본 도구와 방법론 기반
+- 🔄 다른 접근: [[papers/306_Efficient_fine-tuning_of_single-cell_foundation_models_enabl/review]] — 단일세포 기초 모델의 약물 반응 예측과 SCANPY의 대규모 분석은 단일세포 연구의 서로 다른 접근법이다.
+- 🏛 기반 연구: [[papers/505_Llm4grn_Discovering_causal_gene_regulatory_networks_with_llm/review]] — 대규모 단일세포 유전자 발현 데이터 분석 도구가 유전자 조절 네트워크 발견을 위한 scRNA-seq 데이터 처리의 기초를 제공한다.

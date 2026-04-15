@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 대규모 언어모델(LLM)을 활용하여 Wikipedia 수준의 장문 기사를 처음부터 작성하는 문제를 다루며, 특히 사전 작성 단계에서의 주제 연구와 아웃라인 생성에 초점을 맞춘다. STORM(Synthesis of Topic Outlines through Retrieval and Multi-perspective Question Asking) 시스템을 제안하여 다양한 관점에서의 질문 생성과 정보 수집을 통해 체계적인 아웃라인을 자동으로 구성할 수 있음을 보인다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Personalization"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/GPT-Based_Text_Review_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Park and Kim_2024_Assisting in writing wikipedia-like articles from scratch with large language models.pdf"
 ---
@@ -106,8 +108,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Park and Kim_2024_Assisting in writing w
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — STORM이 다관점 질문을 통한 아웃라인 생성에 초점을 맞춘 반면, SciReviewGen은 쿼리 기반 다중 문서 요약으로 접근하여 서로 다른 장문 작성 전략을 제시함
-- 🔗 후속 연구: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — Wordcraft의 인간-AI 협업 편집 프레임워크가 STORM의 자동 기사 생성을 인터랙티브한 공동 창작 과정으로 발전시킨 연구임
-- 🧪 응용 사례: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — CoAuthor 데이터셋이 STORM 시스템을 활용한 인간-AI 협업 글쓰기의 실제 사례와 패턴을 분석할 수 있는 구체적 자료를 제공함
-- 🧪 응용 사례: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — 처음부터 위키피디아 스타일 글 작성 지원에서 로컬 인용 추천이라는 구체적 기능을 제공하는 응용 기술입니다.
-- 🔄 다른 접근: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — SciReviewGen이 쿼리 기반 다중 문서 요약으로 문헌 리뷰를 자동 생성하는 반면, STORM은 다관점 질문을 통한 아웃라인 중심 접근법을 사용하여 상호 보완적 전략을 제시함
+- 🔗 후속 연구: [[papers/374_Generating_a_structured_summary_of_numerous_academic_papers/review]] — 다수 학술 논문의 구조화된 요약 생성을 위키피디아 수준의 장문 기사 작성으로 확장하여 더 포괄적인 지식 종합을 제시한다.
+- 🔄 다른 접근: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — PaperQA의 검색 증강 생성과 유사하지만 단일 질의가 아닌 포괄적 기사 작성을 위한 다관점 연구 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/780_Surveyforge_On_the_outline_heuristics_memory-driven_generati/review]] — 메모리 기반 설문조사 생성 연구가 위키피디아 기사 작성을 위한 주제 연구와 아웃라인 생성의 방법론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/375_Generating_full_length_wikipedia_biographies_The_impact_of_g/review]] — 위키피디아 문서 처음부터 작성하는 연구의 특수 케이스로서 전기문 생성에 특화된 접근법을 제시한다.

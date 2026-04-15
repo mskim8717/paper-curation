@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.4
 essence: "본 연구는 대규모 언어모델(LLM) 기반의 다중 전문가 AI 에이전트 팀이 인간 연구자와 협력하여 학제간 과학 연구를 수행하는 \"Virtual Lab\" 프레임워크를 제시한다. 이를 SARS-CoV-2 나노바디 설계에 적용하여 92개의 신규 나노바디를 설계하고 실험적 검증을 통해 유망한 결합 특성을 가진 후보를 발굴했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/LLM_Drug_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/AI_Scientist_Research_Protocols"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Swanson et al._2024_The Virtual Lab AI Agents Design New SARS-CoV-2 Nanobodies with Experimental Validation.pdf"
 ---
@@ -105,6 +106,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Swanson et al._2024_The Virtual Lab AI A
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/616_PharmAgents_Building_a_Virtual_Pharma_with_Large_Language_Mo/review]] — SARS-CoV-2 나노바디와 가상 제약회사라는 서로 다른 스케일에서 AI 기반 약물 발견의 다중 전문가 접근법을 비교한다.
-- 🏛 기반 연구: [[papers/805_The_Virtual_Lab_of_AI_agents_designs_new_SARS-CoV-2_nanobodi/review]] — 동일한 연구의 초기 버전으로서 가상 실험실 프레임워크의 개념적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/764_Sparks_Multi-Agent_Artificial_Intelligence_Model_Discovers_P/review]] — 특정 약물 표적 설계에서 검증된 다중 에이전트 접근법을 일반적인 과학 발견으로 확장한다.
+- 🔄 다른 접근: [[papers/138_Autonomous_chemical_research_with_large_language_models/review]] — 화학 연구 자동화를 위한 LLM 시스템으로, 나노바디 설계와 다른 분야에서 다중 전문가 AI 협력의 접근
+- 🧪 응용 사례: [[papers/651_RAG-Enhanced_Collaborative_LLM_Agents_for_Drug_Discovery/review]] — 약물 발견을 위한 RAG 강화 협력 LLM 에이전트로, Virtual Lab 프레임워크의 약물 발견 분야 확장 적용
+- 🏛 기반 연구: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 다중 관점이 과학적 아이디어 생성을 개선한다는 연구로, 다중 전문가 AI 팀 협력의 이론적 근거를 제공
+- 🧪 응용 사례: [[papers/616_PharmAgents_Building_a_Virtual_Pharma_with_Large_Language_Mo/review]] — 가상 제약회사 구축을 위한 LLM 에이전트로, Virtual Lab 개념의 제약 산업 전반 확장 사례
+- 🔄 다른 접근: [[papers/138_Autonomous_chemical_research_with_large_language_models/review]] — SARS-CoV-2 나노바디 설계를 위한 다중 전문가 AI 팀으로, 화학 실험 자동화와 다른 생물의학 연구 협력 방식
+- 🧪 응용 사례: [[papers/043_Accelerating_Drug_Discovery_Through_Agentic_AI_A_Multi-Agent/review]] — AI 기반 실험실 자동화 플랫폼의 구체적인 응용 사례로 SARS-CoV-2 나노바디 설계를 통한 검증을 제시한다

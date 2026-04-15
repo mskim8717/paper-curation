@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "ChatGPT와 같은 AI 기반 언어 모델(language model)의 급속한 확산에 따라, 과학 논문 작성 시 이러한 도구의 활용에 대한 명확한 지침과 모범 사례를 제시하는 논설(editorial) 논문이다. 저자들은 AI 언어 봇의 강점과 제한점을 균형 있게 분석하여 책임감 있는 사용을 촉구한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Peer_Review"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Buriak et al._2023_Best Practices for Using AI When Writing Scientific Manuscripts Caution, Care, and Consideration C.pdf"
 ---
@@ -115,11 +115,6 @@ ChatGPT와 같은 AI 기반 언어 모델(language model)의 급속한 확산에
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — 과학 논문 작성에서의 AI 활용 가이드라인이 동료 심사 과정 전반의 NLP 적용으로 확장된 연구 영역이다
-- 🧪 응용 사례: [[papers/252_Data_integrity_in_materials_science_in_the_era_of_AI_balanci/review]] — AI 도구 사용의 윤리적 지침이 AI 시대 재료 과학 연구에서 데이터 무결성 확보를 위한 실질적 프레임워크 구현에 필수적이다
-- 🔗 후속 연구: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — AI 기반 논문 작성 도구의 책임감 있는 사용이 동료 심사 위기 해결을 위한 AI 시스템 도입의 윤리적 기반을 제공한다
-- 🧪 응용 사례: [[papers/862_Using_artificial_intelligence_for_systematic_review_the_exam/review]] — 과학 논문 작성에서의 AI 활용 모범 사례가 체계적 문헌 고찰에서 AI 도구의 효과적이고 윤리적 활용에 직접 적용된다
-- 🏛 기반 연구: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 인간-AI 협력 글쓰기 데이터셋 연구가 과학 논문 작성에서 AI 활용의 구체적 모범 사례 개발에 중요한 실증적 기반을 제공한다
-- 🧪 응용 사례: [[papers/252_Data_integrity_in_materials_science_in_the_era_of_AI_balanci/review]] — AI 시대 과학 연구 무결성 확보를 위한 다층적 프레임워크가 과학 논문 작성에서 AI 도구의 책임감 있는 사용 가이드라인의 실질적 구현 방안이다
-- 🧪 응용 사례: [[papers/771_Starcoder_may_the_source_be_with_you_arXiv_preprint_arXiv230/review]] — 오픈소스 코드 생성 모델의 책임감 있는 개발 사례가 과학 연구에서 AI 도구의 윤리적 사용 가이드라인에 중요한 실천적 모범을 제시한다
-- 🔗 후속 연구: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — 과학 논문 작성에서의 AI 활용 가이드라인이 동료 심사 과정 전반에서 NLP 기술의 체계적 적용으로 확장된 연구이다
+- 🔗 후속 연구: [[papers/607_Patterns_and_purposes_A_cross-journal_analysis_of_ai_tool_us/review]] — 과학 논문 작성에서 AI 사용 가이드라인을 실제 학술지에서의 AI 도구 사용 패턴으로 확장
+- 🧪 응용 사례: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — AI 논문 작성 도구의 영향을 실제 학술 환경에서의 수용과 수렴 패턴으로 분석
+- ⚖️ 반론/비판: [[papers/853_Understanding_how_paper_writers_use_ai-generated_captions_in/review]] — AI 활용 가이드라인과 달리 실제 연구자들이 AI 생성 콘텐츠를 어떻게 사용하는지 비판적 분석

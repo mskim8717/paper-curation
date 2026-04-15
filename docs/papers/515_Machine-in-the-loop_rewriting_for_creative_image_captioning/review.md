@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 사용자가 주도권을 유지하면서 창의적 작문을 돕는 기계-인-루프 재작성 모델(Creative Rewriting Assistant, CRA)을 제안하며, 이미지 캡션 작성 과제에서 사용자와의 협력을 통해 더욱 서술적이고 비유적인 텍스트 생성을 지원한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Table_Caption_Generation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/GPT-Based_Text_Review_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Padmakumar and He_2021_Machine-in-the-loop rewriting for creative image captioning.pdf"
 ---
@@ -100,7 +101,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Padmakumar and He_2021_Machine-in-the-lo
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/399_Helm_Highlighted_evidence_augmented_language_model_for_enhan/review]] — 창의적 캡션 작성에서 기계-인-루프 방식과 증거 강조 방식의 서로 다른 인간-AI 협업 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 과학적 도형 캡션 생성을 창의적이고 비유적인 표현으로 확장하여 더 풍부한 서술이 가능한 방법을 제시합니다.
-- 🏛 기반 연구: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — 인간-AI 협업 편집기의 기본 개념이 창의적 이미지 캡션 작성의 기계-인-루프 시스템에 이론적 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/399_Helm_Highlighted_evidence_augmented_language_model_for_enhan/review]] — 표 캡션 생성에서 기계-인-루프 접근법과 증거 강조 접근법의 비교 분석이 가능합니다.
+- 🔄 다른 접근: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 사용자 주도 창의적 캡션 작성과 강화학습 기반 과학 캡션 생성은 모두 이미지 캡션 품질 향상을 추구하지만 상호작용 방식이 다르다.
+- 🔗 후속 연구: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — 인간-AI 협업 스토리 작성 에디터의 개념을 창의적 이미지 캡션 작성으로 특화하여 발전시킨 응용 사례이다.
+- 🏛 기반 연구: [[papers/656_Read_revise_repeat_A_system_demonstration_for_human-in-the-l/review]] — 인간 중심 반복 개선 시스템이 기계-인-루프 창의적 재작성의 이론적 기반과 사용자 상호작용 설계 원칙을 제공한다.
+- 🧪 응용 사례: [[papers/227_Closing_the_loop_Learning_to_generate_writing_feedback_via_l/review]] — 학습을 통한 작문 피드백 생성 연구에서 창의적 재작성 지원의 실제 교육적 활용 사례를 제시한다.
+- 🔄 다른 접근: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 인간-기계 협업 기반 창의적 캡션 생성과 강화학습 기반 과학 캡션 생성은 모두 이미지 캡션 품질 향상을 추구하는 상호 보완적 접근법이다.
+- 🔄 다른 접근: [[papers/485_Learning_to_split_and_rephrase_from_wikipedia_edit_history/review]] — 기계-인간 협력 방식의 텍스트 재작성으로, 완전 자동화된 분할-재표현과 다른 접근법을 제시합니다.
+- 🏛 기반 연구: [[papers/272_Diamonds_in_the_rough_Generating_fluent_sentences_from_early/review]] — 창의적 이미지 캡션을 위한 기계-인-루프 재작성이 문장 수준 수정의 방법론적 토대를 제공한다.

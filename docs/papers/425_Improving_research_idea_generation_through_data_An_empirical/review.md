@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어 모델(LLM)을 활용한 연구 아이디어 생성 시 관련 데이터의 메타데이터와 자동 검증을 통합하면 아이디어의 실현가능성과 경험적 타당성이 20% 이상 향상된다. 더 나아가 LLM이 생성한 아이디어가 실제 연구자들의 자체 아이디어 개발을 영감 있게 지원함을 실증적으로 입증했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Research_Ideation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liberati et al._2025_Improving research idea generation through data An empirical investigation in social science.pdf"
 ---
@@ -135,8 +137,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liberati et al._2025_Improving research 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/763_Sparks_of_science_Hypothesis_generation_using_structured_pap/review]] — 구조화된 논문 데이터를 이용한 가설 생성 연구로, 메타데이터 활용 방식에서 유사하지만 접근법이 다르다.
-- 🔗 후속 연구: [[papers/777_Structuring_scientific_innovation_A_framework_for_modeling_a/review]] — 문제-방법 재결합을 통한 과학적 발견 모델링 프레임워크를 아이디어 생성 개선에 적용할 수 있다.
-- 🏛 기반 연구: [[papers/188_Can_we_automatize_scientific_discovery_in_the_cognitive_scie/review]] — 인지과학 분야의 자동화된 과학적 발견 방법론이 연구 아이디어 생성 자동화의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/019_A_review_of_llm-assisted_ideation/review]] — 데이터를 통한 연구 아이디어 생성 개선이 LLM 지원 아이디에이션의 체계적 검토 결과를 실증적으로 뒷받침함
-- 🔄 다른 접근: [[papers/763_Sparks_of_science_Hypothesis_generation_using_structured_pap/review]] — 구조화된 데이터를 활용한 가설 생성이라는 공통 접근법이지만 과학적 가설과 연구 아이디어라는 다른 결과물을 다룬다.
+- 🔗 후속 연구: [[papers/777_Structuring_scientific_innovation_A_framework_for_modeling_a/review]] — 구조적 과학 혁신 프레임워크에 데이터 기반 검증을 통합하여 아이디어 품질을 향상시킨다
+- 🔄 다른 접근: [[papers/725_Sciidea_Context-aware_scientific_ideation_using_token_and_se/review]] — 데이터 메타데이터 활용과 문맥 인식 접근이 서로 다른 방식으로 연구 아이디어 생성을 개선한다
+- 🔗 후속 연구: [[papers/019_A_review_of_llm-assisted_ideation/review]] — 데이터 기반 연구 아이디어 생성 개선과 LLM 지원 아이디에이션 조사를 결합하면 더 효과적인 창의적 발상 지원 시스템을 구축할 수 있다.
+- 🏛 기반 연구: [[papers/777_Structuring_scientific_innovation_A_framework_for_modeling_a/review]] — 데이터 기반 아이디어 생성 연구가 구조적 과학 혁신 모델링의 실증적 검증 기반을 제공한다
+- 🔗 후속 연구: [[papers/725_Sciidea_Context-aware_scientific_ideation_using_token_and_se/review]] — 데이터 기반 아이디어 생성을 문맥 인식과 창의성 측정을 통해 더욱 정교하게 발전시킨다

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "양자 해밀토니안(Hamiltonian) 행렬 예측을 위한 SE(3)-등변(equivariant) 그래프 신경망 QHNet을 제안하며, 텐서곱(tensor product) 연산을 92% 감소시켜 기존 방법 대비 3배 이상의 속도 향상과 50% 메모리 절감을 달성한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Protein-Drug_Design_Models"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Diffusion_Model_Inference"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2023_Efficient and Equivariant Graph Networks for Predicting Quantum Hamiltonian.pdf"
 ---
@@ -97,11 +98,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2023_Efficient and Equivariant
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — 물리정보신경망의 연속 의존성 개념이 양자 해밀토니안 예측의 물리적 제약 조건 구현에 기반을 제공한다
-- 🔄 다른 접근: [[papers/454_Lagrangian_neural_networks/review]] — 양자 시스템 vs 고전 역학 시스템에서 물리 법칙 보존 신경망의 다른 적용 분야를 비교할 수 있다
-- 🧪 응용 사례: [[papers/269_Derivative-Free_Guidance_in_Continuous_and_Discrete_Diffusio/review]] — SE(3) 등변 그래프 네트워크를 확산 모델의 분자 생성에 적용할 수 있다
-- 🔗 후속 연구: [[papers/646_QH9_A_Quantum_Hamiltonian_Prediction_Benchmark_for_QM9_Molec/review]] — QM9 분자의 양자 해밀토니안 예측 벤치마크에서 그래프 네트워크 성능을 확장 평가할 수 있다
-- 🧪 응용 사례: [[papers/269_Derivative-Free_Guidance_in_Continuous_and_Discrete_Diffusio/review]] — 미분 불가능한 보상 함수 최적화를 양자 해밀토니안 예측에 적용할 수 있다
-- 🧪 응용 사례: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — 물리정보신경망의 연속 의존성을 양자 해밀토니안 예측의 물리적 제약 조건에 적용할 수 있다
-- 🔄 다른 접근: [[papers/454_Lagrangian_neural_networks/review]] — 고전역학 vs 양자역학 시스템에서 물리 법칙 보존 신경망의 다른 적용을 비교할 수 있다
-- 🏛 기반 연구: [[papers/307_Efficient_Prediction_of_SO3-Equivariant_Hamiltonian_Matrices/review]] — 양자 특성 예측을 위한 효율적 등변 그래프 네트워크가 해밀턴 예측의 기반
+- 🧪 응용 사례: [[papers/646_QH9_A_Quantum_Hamiltonian_Prediction_Benchmark_for_QM9_Molec/review]] — QM9 분자의 양자 해밀토니안 예측 벤치마크가 QHNet의 양자 해밀토니안 예측 능력을 평가하는 실제 적용 사례이다.
+- 🔄 다른 접근: [[papers/307_Efficient_Prediction_of_SO3-Equivariant_Hamiltonian_Matrices/review]] — QHNet의 텐서곱 최적화와 SO(3)-등변 해밀토니안 예측은 서로 다른 효율성 관점의 양자 예측 방법이다.
+- 🏛 기반 연구: [[papers/767_SPINONet_Scalable_Spiking_Physics-informed_Neural_Operator_f/review]] — 확장 가능한 스파이킹 물리정보 신경 연산자가 양자 해밀토니안 예측의 물리정보 신경망 기반을 제공한다.

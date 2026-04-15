@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)을 활용하여 학술 논문 심사를 자동화하되, 인간 심사자의 다단계 추론 과정을 모방한 다중 에이전트 프레임워크를 제안한다. 구조화된 사고(Chain-of-Thought) 방식과 관련 논문 인식(relevant-paper-aware) 학습을 통해 AI 생성 심사의 품질을 인간 심사에 가깝게 향상시킨다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/LLM_Review_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/GPT-Based_Text_Review_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gao et al._2025_Reviewagents Bridging the gap between human and ai-generated paper reviews.pdf"
 ---
@@ -116,8 +118,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gao et al._2025_Reviewagents Bridging th
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — 다중 에이전트 프레임워크와 강화학습 기반 접근법은 모두 AI 심사평의 품질 향상을 목표로 하지만 다른 구조적 해결책을 제시한다.
-- ⚖️ 반론/비판: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — AI 생성 심사평의 품질 향상 연구와 과학 논문 오류 검증의 한계 연구를 대비하여 AI 심사 시스템의 현실적 적용 가능성을 평가할 수 있다.
-- 🏛 기반 연구: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — 다중 에이전트 리뷰 생성의 기본 프레임워크가 인간-AI 격차 해소를 위한 구조화된 추론 과정 설계에 핵심적인 기반을 제공한다.
-- 🏛 기반 연구: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — 인간과 AI 생성 리뷰 간 격차를 분석한 연구로 ReviewEval 평가 프레임워크 설계의 기준점을 제공한다.
-- 🔄 다른 접근: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — 다목적 강화학습과 다중 에이전트 접근법은 모두 심사평 품질 향상을 목표로 하지만 서로 다른 최적화 전략을 사용한다.
+- 🔗 후속 연구: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 단일 전문화 모델을 다중 에이전트 협업으로 확장하여 더 균형잡히고 깊이 있는 논문 심사를 가능하게 한다.
+- 🔄 다른 접근: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — 학술 심사에서 다중 에이전트 협업과 강화학습 기반 추론이라는 서로 다른 접근법을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — 다중 에이전트 시스템의 기초적인 협업 방법론을 학술 논문 심사 영역에 적용한다.
+- 🔗 후속 연구: [[papers/739_Seagraph_Unveiling_the_whole_story_of_paper_review_comments/review]] — 인간과 AI 생성 리뷰 간의 격차 해소를 위한 확장된 접근법을 보여준다
+- 🔄 다른 접근: [[papers/883_When_reviewers_lock_horn_Finding_disagreement_in_scientific/review]] — 자동 모순 탐지와 AI 생성 리뷰 품질 평가가 서로 다른 방식으로 피어 리뷰 개선을 추구한다
+- 🔗 후속 연구: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 다중 에이전트 프레임워크를 통해 OpenReviewer의 단일 모델 한계를 극복하고 더 정교한 심사평을 생성한다.
+- 🔗 후속 연구: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — 다중 에이전트 협업을 통해 REMOR의 추론 기반 심사평 생성을 더욱 정교하게 발전시킨다.

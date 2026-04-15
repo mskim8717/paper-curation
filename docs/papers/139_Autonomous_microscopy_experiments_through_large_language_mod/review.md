@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "대규모 언어모델(LLM) 기반 자동화 현미경 실험 시스템(AILA)을 구축하고, 원자력 현미경(AFM) 실험의 완전한 과학적 워크플로우를 평가하는 종합 벤치마크(AFMBench)를 개발했다. 최첨단 AI 모델들도 기본 작업에서 어려움을 겪으며, 도메인 특화 질의응답 성능이 실제 에이전트 능력으로 전환되지 않음을 밝혔다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mandal et al._2024_Autonomous microscopy experiments through large language model agents.pdf"
 ---
@@ -107,9 +107,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mandal et al._2024_Autonomous microscopy
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/072_Agents_for_self-driving_laboratories_applied_to_quantum_comp/review]] — 기본적인 현미경 실험 자동화를 양자 컴퓨팅이라는 더 복잡한 실험 환경으로 발전시킵니다.
-- 🔄 다른 접근: [[papers/432_Intelligent_experiments_through_real-time_ai_Fast_data_proce/review]] — 실시간 AI 기반 실험 제어라는 동일한 목표를 다른 실험 장비(현미경 vs 고에너지 검출기)로 구현합니다.
-- 🧪 응용 사례: [[papers/151_Benchmarking_ai_scientists_in_omics_data-driven_biological_r/review]] — 자동화된 실험 벤치마크 개발 방법론을 생물학적 데이터 분석에 적용하는 사례를 제공합니다.
-- 🏛 기반 연구: [[papers/072_Agents_for_self-driving_laboratories_applied_to_quantum_comp/review]] — 현미경 실험 자동화의 기초적 연구로서 양자 컴퓨팅 실험 자동화의 방법론적 토대를 제공합니다.
-- 🔗 후속 연구: [[papers/432_Intelligent_experiments_through_real-time_ai_Fast_data_proce/review]] — 기본적인 실험 자동화를 실시간 고속 데이터 처리가 필요한 고에너지 물리학으로 확장합니다.
-- 🔄 다른 접근: [[papers/297_EAA_Automating_materials_characterization_with_vision_langua/review]] — 재료 특성화 자동화에서 비전 언어 모델과 대형 언어 모델 기반 접근법을 비교할 수 있습니다.
+- 🔄 다른 접근: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — 둘 다 실험실 자동화를 위한 AI 에이전트를 다루지만, AILA는 현미경 실험에, 양자 컴퓨팅 논문은 양자 실험에 특화되어 있다
+- 🔗 후속 연구: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — 과학 에이전트의 엄격한 평가를 위한 벤치마크 연구가 AILA의 AFMBench를 통한 현미경 실험 평가 프레임워크로 구체화되었다
+- 🧪 응용 사례: [[papers/851_Uncovering_bottlenecks_and_optimizing_scientific_lab_workflo/review]] — 과학 실험실 워크플로우의 병목점 발견과 최적화 방법론이 AILA의 자동화된 현미경 실험 시스템 구축에 실제 적용되었다
+- 🔗 후속 연구: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — LLM을 활용한 자율 현미경 실험 시스템은 SDL 프레임워크를 특정 실험 영역에 확장 적용한 구체적 사례이다.
+- 🏛 기반 연구: [[papers/297_EAA_Automating_materials_characterization_with_vision_langua/review]] — 두 논문 모두 대규모 언어모델을 활용한 자율 실험실 자동화 시스템을 다루며, 실험 워크플로우 자동화의 핵심 원리를 공유한다.

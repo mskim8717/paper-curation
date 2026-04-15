@@ -9,8 +9,9 @@ arxiv: ""
 score: 3.75
 essence: "물리화학적 원리에 기반한 다중에이전트 시스템(MAS)을 통해 신소재 발견 과정을 자동화하면서 해석가능성을 유지하는 새로운 접근법을 제시한다. 기존의 검은 상자(black-box) 최적화 방식과 달리 과학적 원리를 명시적으로 통합하여 탐색 효율성과 투명성을 동시에 달성한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Hypothesis_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Autonomous_Biological_Discovery_AI"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lai and Pu_2025_Prim Principle-inspired material discovery through multi-agent collaboration.pdf"
 ---
@@ -130,6 +131,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lai and Pu_2025_Prim Principle-inspired 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 재료 발견을 위한 가설 생성에서 물리화학적 원리 기반과 LLM 기반이라는 다른 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/623_Piflow_Principle-aware_scientific_discovery_with_multi-agent/review]] — 원리 인식 과학 발견의 다중 에이전트 협력 프레임워크로 유사한 방법론을 확장한다.
-- 🏛 기반 연구: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — 재료 발견을 위한 기초 모델의 현재 상태와 도전 과제에 대한 이론적 배경을 제공한다.
+- 🔄 다른 접근: [[papers/817_Toward_a_Team_of_AI-made_Scientists_for_Scientific_Discovery/review]] — 물질 발견과 유전자 발견은 서로 다른 도메인이지만 모두 다중에이전트 시스템을 통한 과학적 원리 적용을 사용한다.
+- 🔗 후속 연구: [[papers/623_Piflow_Principle-aware_scientific_discovery_with_multi-agent/review]] — Piflow의 원리 인식 과학 발견이 Prim의 물질 발견 접근법을 더욱 체계화할 수 있다.
+- 🏛 기반 연구: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 대규모 언어모델을 활용한 물질 발견 가설 생성이 Prim의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/817_Toward_a_Team_of_AI-made_Scientists_for_Scientific_Discovery/review]] — 유전자 발견과 물질 발견은 서로 다른 도메인이지만 모두 다중에이전트 기반 과학적 원리 적용을 사용한다.

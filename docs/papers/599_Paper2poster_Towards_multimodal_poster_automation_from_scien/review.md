@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 과학 논문을 단일 페이지 학술 포스터로 자동 변환하는 첫 번째 벤치마크와 평가 지표 집합을 제시하며, 시각적-언어적 피드백 루프를 갖춘 다중 에이전트 파이프라인(PosterAgent)을 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Table_Caption_Generation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Patent_Novelty_Prediction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pang et al._2025_Paper2poster Towards multimodal poster automation from scientific papers.pdf"
 ---
@@ -135,7 +136,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pang et al._2025_Paper2poster Towards mu
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/787_Tablemaster_A_recipe_to_advance_table_understanding_with_lan/review]] — 둘 다 테이블과 관련된 멀티모달 작업을 다루지만 하나는 포스터 생성, 다른 하나는 테이블 이해에 중점을 둠
-- 🏛 기반 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 과학적 그림에 대한 캡션 생성 연구가 논문을 포스터로 변환하는 멀티모달 자동화의 기초적 접근을 제공함
-- 🔗 후속 연구: [[papers/597_P2p_Automated_paper-to-poster_generation_and_fine-grained_be/review]] — 논문을 포스터로 변환하는 작업을 자동화된 Paper-to-Poster 생성과 세밀한 벤치마킹으로 확장함
-- 🔄 다른 접근: [[papers/787_Tablemaster_A_recipe_to_advance_table_understanding_with_lan/review]] — 둘 다 테이블과 관련된 멀티모달 작업을 다루지만 하나는 테이블 이해, 다른 하나는 포스터 생성에 중점을 둠
+- 🔄 다른 접근: [[papers/597_P2p_Automated_paper-to-poster_generation_and_fine-grained_be/review]] — 과학 논문을 시각적 형태로 변환한다는 같은 목표를 가지지만 포스터 vs 웹페이지라는 다른 출력 형태를 다룬다.
+- 🔗 후속 연구: [[papers/601_PaperBanana_Automating_Academic_Illustration_for_AI_Scientis/review]] — AI 과학자를 위한 학술 일러스트레이션 자동화를 통해 포스터 생성의 시각적 요소를 더욱 풍부하게 만들 수 있다.
+- 🏛 기반 연구: [[papers/811_Tikzero_Zero-shot_text-guided_graphics_program_synthesis/review]] — 텍스트 기반 그래픽 프로그램 합성의 이론적 기반을 통해 포스터의 시각적 요소 생성 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/727_Scimage_How_good_are_multimodal_large_language_models_at_sci/review]] — 과학 이미지 생성 능력을 논문-포스터 자동 변환의 멀티모달 처리로 확장한다
+- 🏛 기반 연구: [[papers/600_Paper2Web_Lets_Make_Your_Paper_Alive/review]] — 과학 논문 기반 포스터 자동화가 웹사이트 변환의 기반 기법을 제공한다
+- 🔄 다른 접근: [[papers/597_P2p_Automated_paper-to-poster_generation_and_fine-grained_be/review]] — 과학논문 포스터 자동화와 멀티모달 포스터 자동화는 학술 시각화의 서로 다른 접근법을 제시한다

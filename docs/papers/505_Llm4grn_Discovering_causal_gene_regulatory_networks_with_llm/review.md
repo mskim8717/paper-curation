@@ -12,7 +12,7 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 단일세포 RNA 시퀀싱(scRNA-seq) 데이터에서 유전자 조절 네트워크(Gene Regulatory Network, GRN)를 발견하기 위해 대규모 언어모델(LLM)을 활용하는 새로운 접근 방식을 제시합니다. 신뢰할 수 있는 정답 그래프가 없는 상황에서 인과관계 합성 데이터 생성을 평가 방법으로 사용하여 LLM의 효과성을 입증합니다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
+  - "cat/Scientific_Knowledge_Processing_Systems"
   - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bo et al._2024_Llm4grn Discovering causal gene regulatory networks with llms–evaluation through synthetic data gen.pdf"
@@ -128,8 +128,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bo et al._2024_Llm4grn Discovering causa
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/474_Large_language_models_for_zero-shot_inference_of_causal_stru/review]] — 생물학적 인과관계 추론의 일반적 프레임워크를 유전자 조절 네트워크 발견이라는 구체적 문제에 적용한다.
-- 🔄 다른 접근: [[papers/615_PerTurboAgent_A_Self-Planning_Agent_for_Boosting_Sequential/review]] — 유전자 섭동 실험에서 LLM을 활용한다는 공통점이 있지만 네트워크 발견과 실험 설계라는 다른 목적을 가진다.
-- 🔗 후속 연구: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — 유전자 집합 분석을 위한 자기 검증 언어 에이전트 기술을 유전자 조절 네트워크 분석에 확장할 수 있다.
-- 🔗 후속 연구: [[papers/474_Large_language_models_for_zero-shot_inference_of_causal_stru/review]] — 유전자 조절 네트워크 발견을 위한 LLM 활용 연구로, 생물학적 인과관계 추론의 구체적 적용 사례이다.
-- 🔄 다른 접근: [[papers/615_PerTurboAgent_A_Self-Planning_Agent_for_Boosting_Sequential/review]] — 유전자 관련 실험에서 LLM을 활용한다는 공통점이 있지만 순차적 섭동 실험 설계와 조절 네트워크 발견이라는 다른 목적을 가진다.
+- 🏛 기반 연구: [[papers/474_Large_language_models_for_zero-shot_inference_of_causal_stru/review]] — 실제 유전자 섭동 실험을 통한 LLM의 인과구조 추론 검증 연구가 유전자 조절 네트워크 발견의 신뢰성 평가 기반을 제공한다.
+- 🔗 후속 연구: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 재료 발견을 위한 가설 생성 연구를 생물학적 유전자 조절 네트워크로 확장하여 LLM의 과학적 발견 범위를 넓혔다.
+- 🔄 다른 접근: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — LLM 기반 다중 에이전트 세포 분석 프레임워크와 단일세포 데이터 기반 유전자 네트워크 발견은 모두 세포 생물학 연구의 다른 접근법이다.
+- 🏛 기반 연구: [[papers/699_SCANPY_large-scale_single-cell_gene_expression_data_analysis/review]] — 대규모 단일세포 유전자 발현 데이터 분석 도구가 유전자 조절 네트워크 발견을 위한 scRNA-seq 데이터 처리의 기초를 제공한다.
+- 🔗 후속 연구: [[papers/474_Large_language_models_for_zero-shot_inference_of_causal_stru/review]] — 유전자 조절 네트워크 발견을 실제 유전자 섭동 실험 데이터로 검증하여 LLM의 생물학적 인과관계 추론을 더 엄밀하게 평가한다.

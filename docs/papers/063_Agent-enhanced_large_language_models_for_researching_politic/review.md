@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어 모델(LLM)에 사전 정의된 함수와 특화된 도구를 장착하여 에이전틱 검색증강생성(Agentic RAG)을 구현한 LLM 에이전트가 정치기관 연구에서 데이터 수집, 전처리, 분석을 효율화할 수 있음을 보여준다. CongressRA라는 미 의회 연구 지원용 LLM 에이전트를 사례로 제시하며 이러한 접근법의 잠재력을 입증한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Loffredo and Yun_2025_Agent-enhanced large language models for researching political institutions.pdf"
 ---
@@ -124,5 +125,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Loffredo and Yun_2025_Agent-enhanced lar
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/488_Leveraging_LLMs_in_Scholarly_Knowledge_Graph_Question_Answer/review]] — 정치기관 연구용 LLM 에이전트와 Leveraging LLMs in Scholarly Knowledge Graph QA는 모두 학술 연구 지원을 다루지만, 특정 도메인 특화와 지식그래프 기반 질의응답이라는 서로 다른 접근법을 취합니다.
-- 🔗 후속 연구: [[papers/450_Knowledge_navigator_Llm-guided_browsing_framework_for_explor/review]] — CongressRA의 정치기관 연구 지원은 Knowledge Navigator의 탐색적 지식 발견 프레임워크를 정치학 도메인에 특화시켜 체계적인 연구 도구로 발전시킵니다.
+- 🧪 응용 사례: [[papers/070_Agentreview_Exploring_peer_review_dynamics_with_llm_agents/review]] — 정치기관 연구를 위한 에이전틱 RAG 기술을 학술 논문 리뷰 과정의 자동화라는 다른 연구 영역에 적용할 수 있다
+- 🔗 후속 연구: [[papers/604_Pasa_An_llm_agent_for_comprehensive_academic_paper_search/review]] — 특화된 정치기관 연구 에이전트에서 포괄적인 학술 논문 검색 에이전트로의 기능 확장을 보여준다
+- 🏛 기반 연구: [[papers/488_Leveraging_LLMs_in_Scholarly_Knowledge_Graph_Question_Answer/review]] — 지식 그래프 기반 질의응답 기술을 정치기관 연구의 에이전틱 검색증강생성에 활용하는 기반을 제공한다

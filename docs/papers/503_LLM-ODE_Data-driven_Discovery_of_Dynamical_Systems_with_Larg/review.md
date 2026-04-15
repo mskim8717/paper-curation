@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)을 유전 프로그래밍(GP)에 통합하여 동역학 시스템의 지배 방정식 발견을 가속화하는 LLM-ODE 프레임워크를 제안한다. 기호 표현의 광대한 탐색 공간을 효율적으로 탐색하기 위해 LLM의 생성 능력을 진화 연산자로 활용한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Evolutionary_Chemistry_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bideh and Gryak_2026_LLM-ODE Data-driven Discovery of Dynamical Systems with Large Language Models.pdf"
 ---
@@ -114,15 +114,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bideh and Gryak_2026_LLM-ODE Data-driven
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/466_Large_Language_Model-Based_Evolutionary_Optimizer_Reasoning/review]] — 동역학 시스템 발견과 블랙박스 최적화 모두 LLM을 진화 알고리즘에 통합하지만 적용 영역과 목표가 다르다.
-- 🏛 기반 연구: [[papers/759_SLE-FNO_Single-Layer_Extensions_for_Task-Agnostic_Continual/review]] — 과학 머신러닝에서의 지속학습 문제가 LLM 기반 동역학 시스템 발견의 지식 보존과 적응에 기반을 제공한다.
-- 🔗 후속 연구: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 대칭성을 가진 기호 미분방정식 발견이 LLM-ODE의 동역학 시스템 발견을 더 구체적으로 확장한 사례이다.
-- 🏛 기반 연구: [[papers/232_CodePDE_An_Inference_Framework_for_LLM-driven_PDE_Solver_Gen/review]] — LLM 기반 동적 시스템 발견이 PDE 솔버 생성의 이론적 기초가 됨
-- 🔄 다른 접근: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — LLM 기반 동적 시스템 발견과 대칭 불변량 기반 방정식 발견은 서로 다른 접근법으로 같은 문제를 해결합니다
-- 🧪 응용 사례: [[papers/759_SLE-FNO_Single-Layer_Extensions_for_Task-Agnostic_Continual/review]] — 과학 머신러닝 모델의 지속학습이 LLM 기반 동역학 시스템 발견에서 새로운 데이터 적응에 적용된다.
-- 🔄 다른 접근: [[papers/466_Large_Language_Model-Based_Evolutionary_Optimizer_Reasoning/review]] — LLM을 진화 알고리즘에 통합하여 블랙박스 최적화를 수행하는 반면 LLM-ODE는 동역학 시스템 발견에 초점을 맞춘 다른 접근법이다.
-- 🔗 후속 연구: [[papers/799_The_frontier_of_simulation-based_inference/review]] — 동역학 시스템 발견을 위한 LLM 기반 ODE 접근법으로 확장한다.
-- 🧪 응용 사례: [[papers/364_From_Theory_to_Application_A_Practical_Introduction_to_Neura/review]] — LLM을 이용한 동역학계 데이터 기반 발견에 신경 연산자 적용
-- 🏛 기반 연구: [[papers/547_Mllm-based_discovery_of_intrinsic_coordinates_and_governing/review]] — 동적 시스템 발견을 위한 LLM 활용 방법론이 동영상에서 지배 방정식 발견의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/502_Llm-feynman_Leveraging_large_language_models_for_universal_s/review]] — LLM을 이용한 동역학 시스템 발견의 체계적인 벤치마크를 제공하여 LLM-Feynman의 성능을 평가할 수 있다.
-- 🔄 다른 접근: [[papers/289_Drsr_Llm_based_scientific_equation_discovery_with_dual_reaso/review]] — 데이터와 경험의 이중 추론 접근법과 대규모 언어모델을 활용한 동역학 시스템 발견이라는 서로 다른 방정식 발견 방법론입니다.
+- 🔄 다른 접근: [[papers/502_Llm-feynman_Leveraging_large_language_models_for_universal_s/review]] — LLM-ODE와 LLM-Feynman 모두 LLM 기반 방정식 발견을 다루지만 각각 동역학 시스템과 일반 물리 공식이라는 다른 범위에 집중함
+- 🏛 기반 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — Neural ODE 연구가 LLM-ODE의 동역학 시스템 방정식 발견 접근법의 수학적 이론적 기반을 제공함
+- 🔗 후속 연구: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 대칭성을 고려한 미분방정식 발견 연구가 LLM-ODE의 유전 프로그래밍 접근법을 더 정교한 수학적 구조로 확장함
+- 🔄 다른 접근: [[papers/497_LLM_and_Simulation_as_Bilevel_Optimizers_A_New_Paradigm_to_A/review]] — 두 연구 모두 LLM과 물리 시뮬레이션을 결합하지만 각각 이단계 최적화와 동역학 방정식 발견이라는 다른 문제에 접근함
+- 🔄 다른 접근: [[papers/502_Llm-feynman_Leveraging_large_language_models_for_universal_s/review]] — LLM-Feynman과 LLM-ODE 모두 LLM을 이용한 과학 방정식 발견을 목표로 하지만 각각 공식 재발견과 동역학 시스템 발견에 특화됨

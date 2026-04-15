@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.3
 essence: "현재 수학 AI 모델(특히 대형 언어 모델)을 훈련하고 평가하는 데 사용되는 데이터셋과 벤치마크는 수학 정리의 최종 증명만을 다루며, 증명의 동기, 발견 과정, 수학자의 사고 과정 등 더 풍부한 측면을 담지 못하고 있다. 본 논문은 수학적 코파일럿(mathematical copilots)의 능력 향상을 위해 데이터셋 설계와 평가 기준의 근본적인 개선이 필요함을 주장한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Formal_Theorem_Proving"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Borji_2024_Data for mathematical copilots Better ways of presenting proofs for machine learning.pdf"
 ---
@@ -125,9 +126,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Borji_2024_Data for mathematical copilot
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — miniF2F의 정적 증명 평가를 동기와 발견 과정을 포함한 풍부한 수학적 사고로 확장
-- ⚖️ 반론/비판: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — DeepSeek-Prover의 대규모 데이터 접근법과 달리 증명의 질적 측면과 사고 과정을 중시
-- 🏛 기반 연구: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 비형식적 증명의 풍부한 정보가 형식적 증명 스케치 생성에 필수적임을 보여줌
-- 🧪 응용 사례: [[papers/1095_Towards_large_language_models_as_copilots_for_theorem_provin/review]] — 수학 코파일럿의 데이터 요구사항을 LLM 기반 정리 증명 도구 개발에 적용
-- 🏛 기반 연구: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 비형식적 증명의 중요성을 강조하며 형식 시스템과의 연결점을 제시
-- ⚖️ 반론/비판: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — 대규모 데이터 합성 접근법과 달리 증명의 동기와 사고 과정의 중요성을 간과할 수 있음
+- 🔗 후속 연구: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — 형식적 올림피아드 수학 벤치마크의 한계를 지적하며 수학 증명의 발견 과정을 포함한 더 풍부한 데이터셋 필요성을 제시한다.
+- 🧪 응용 사례: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — Lean 기반 정리 증명 발전 연구에서 제기한 데이터 한계 문제에 대한 구체적인 해결 방안을 제시한다.
+- 🏛 기반 연구: [[papers/826_Towards_Autonomous_Mathematics_Research/review]] — 자율적 수학 연구를 위해서는 최종 증명뿐 아니라 수학자의 사고 과정을 담은 데이터가 필수적이라는 공통 인식을 공유한다.
+- 🧪 응용 사례: [[papers/421_Improving_demonstration_diversity_by_human-free_fusing_for_t/review]] — 수학 코파일럿을 위한 데이터 표현 개선 연구에서 다양한 시연 융합 기법이 실제 적용된 사례를 제공한다.

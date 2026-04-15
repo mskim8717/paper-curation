@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 대규모 온톨로지 지식 그래프(ontological knowledge graphs), 대형 언어 모델(LLMs), 그리고 다중 에이전트 시스템을 결합하여 과학 발견 프로세스를 자동화하는 SciAgents 프레임워크를 제시한다. 생물 영감 재료(biologically inspired materials) 분야에 적용하여 인간의 연구 방법을 초월하는 규모, 정밀도, 탐색 능력으로 숨겨진 학제간 관계를 발견했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ghafarollahi and Buehler_SciAgents Automating Scientific Discovery Through Bioinspired Multi-Agent Intelligent Graph Reasoni.pdf"
 ---
@@ -97,7 +98,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ghafarollahi and Buehler_SciAgents Autom
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/777_Structuring_scientific_innovation_A_framework_for_modeling_a/review]] — 과학적 발견 자동화라는 공통 목표를 가지지만 다중 에이전트 시스템과 구조적 혁신 모델링이라는 다른 접근법을 사용한다.
-- 🔗 후속 연구: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — AI 과학자의 워크샵 수준 자동화된 과학적 발견을 생물 영감 재료 분야로 확장 적용한 사례이다.
-- 🏛 기반 연구: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — 과학 실무 자동화의 기회와 도전에 대한 종합적 검토가 SciAgents 프레임워크 개발의 이론적 배경을 제공한다.
-- 🔄 다른 접근: [[papers/777_Structuring_scientific_innovation_A_framework_for_modeling_a/review]] — 과학적 혁신을 모델링한다는 공통 목표이지만 구조적 재결합 프레임워크와 다중 에이전트 시스템이라는 다른 방법론을 사용한다.
+- 🔗 후속 연구: [[papers/064_Agentic_AI_for_Scientific_Discovery_A_Survey_of_Progress_Cha/review]] — 생물 영감 재료 분야의 구체적 적용을 과학 발견 전반의 에이전틱 AI 시스템으로 일반화한다
+- 🏛 기반 연구: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — 재료 발견을 위한 기초 모델 연구가 SciAgents의 온톨로지 지식 그래프 활용에 기반을 제공한다
+- 🏛 기반 연구: [[papers/064_Agentic_AI_for_Scientific_Discovery_A_Survey_of_Progress_Cha/review]] — 생물 영감 재료의 구체적 SciAgents 적용이 에이전틱 AI 과학 발견의 실증 사례를 제공한다
+- 🔗 후속 연구: [[papers/151_Benchmarking_ai_scientists_in_omics_data-driven_biological_r/review]] — 생체영감 접근법을 통한 과학 발견 자동화 연구가 단일세포 전사체 데이터를 활용한 AI 과학자 시스템의 생물학적 발견 능력 평가로 구체화되었다

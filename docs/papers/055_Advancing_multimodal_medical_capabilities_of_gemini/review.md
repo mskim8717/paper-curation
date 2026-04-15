@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "Gemini의 멀티모달 역량을 의료 영역에 특화시킨 Med-Gemini 모델 패밀리를 개발하여, 흉부 X선(CXR) 보고서 생성, 3D CT 해석, 의료 영상 분류, 유전체 위험도 예측 등 다양한 임상 작업에서 기존 최고 성능을 초과하거나 경쟁력 있는 결과를 달성했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Multimodal_Scientific_Reasoning"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Multimodal_Medical_AI_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2024_Advancing multimodal medical capabilities of gemini.pdf"
 ---
@@ -127,6 +128,8 @@ Gemini의 멀티모달 역량을 의료 영역에 특화시킨 Med-Gemini 모델
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — Med-Gemini의 의료 멀티모달 역량이 MMSCI 데이터셋의 생명과학 분야 벤치마크 평가에 직접 적용됨
-- 🔗 후속 연구: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — BiOMNI의 일반 목적 생의학 AI 에이전트가 Med-Gemini의 특화된 의료 멀티모달 능력을 더 광범위한 생의학 영역으로 확장함
-- 🧪 응용 사례: [[papers/244_Cross_sectional_pilot_study_on_clinical_review_generation_us/review]] — Gemini의 다중모달 의료 능력 향상이 임상 리뷰 생성에 적용될 수 있다.
+- 🔄 다른 접근: [[papers/181_Can_gpt-4v_ision_serve_medical_applications_case_studies_on/review]] — 둘 다 의료 영역 멀티모달 모델 평가를 다루지만 Med-Gemini는 종합적 성능 개선에, GPT-4V는 진단 능력 한계 분석에 초점
+- 🔗 후속 연구: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — 임상 추론 능력 강화를 통해 Med-Gemini의 의료 진단 성능을 더욱 향상시킬 수 있음
+- 🧪 응용 사례: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — 인간-AI 협력 진단 프레임워크에서 Med-Gemini의 멀티모달 역량을 실제 임상 환경에 적용
+- 🔄 다른 접근: [[papers/181_Can_gpt-4v_ision_serve_medical_applications_case_studies_on/review]] — 둘 다 의료 영역 멀티모달 AI를 다루지만 GPT-4V는 한계 분석에, Med-Gemini는 성능 개선에 초점을 맞춤
+- 🔄 다른 접근: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — 의료 분야에서 multimodal AI 능력을 다른 접근법으로 구현한 연구로, ClinicalGPT-R1과 상호 보완적이다.

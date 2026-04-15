@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 대규모 언어모델(LLM)의 진정한 유동 지능(fluid intelligence)을 평가하기 위해 계층적 인지 프레임워크를 바탕으로 한 동적 추론 평가 벤치마크 **DRE-Bench**를 제안한다. 4가지 인지 수준(속성, 공간, 순차, 개념)의 36개 추상 추론 과제와 복잡도 변화를 포함한 약 4,000개의 사례를 통해 LLM의 규칙 일반화 능력을 체계적으로 측정한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Working_Memory_Benchmarks"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_Truly assessing fluid intelligence of large language models through dynamic reasoning evaluation.pdf"
 ---
@@ -127,7 +127,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2025_Truly assessing fluid i
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/879_What_factors_affect_multimodal_in-context_learning_an_in-dep/review]] — 멀티모달 맥락에서 유동 지능 평가의 기반 연구가 됨
-- 🔗 후속 연구: [[papers/652_Rbf_Quantifying_and_optimizing_reasoning_boundaries_across_m/review]] — 추론 경계 최적화가 유동 지능의 동적 추론 평가를 확장함
-- 🔗 후속 연구: [[papers/879_What_factors_affect_multimodal_in-context_learning_an_in-dep/review]] — 유동 지능 연구의 멀티모달 확장으로 인-컨텍스트 학습 요소 분석
-- 🏛 기반 연구: [[papers/652_Rbf_Quantifying_and_optimizing_reasoning_boundaries_across_m/review]] — 대형 언어모델의 유동 지능 평가는 추론 경계 정량화를 위한 근본적인 인지 능력 측정 기준을 제공합니다
+- 🔄 다른 접근: [[papers/504_Llm-srbench_A_new_benchmark_for_scientific_equation_discover/review]] — 과학 방정식 발견 벤치마크와 유동 지능 평가가 모두 LLM의 일반화 능력을 측정한다
+- 🔗 후속 연구: [[papers/652_Rbf_Quantifying_and_optimizing_reasoning_boundaries_across_m/review]] — 추론 경계 최적화가 유동 지능의 규칙 일반화 능력 향상에 직접 적용된다
+- 🏛 기반 연구: [[papers/237_Confidence_in_Large_Language_Model_Evaluation_A_Bayesian_App/review]] — LLM 평가에서의 베이지안 신뢰도 접근법이 유동 지능 측정의 통계적 기반을 제공한다
+- 🔄 다른 접근: [[papers/504_Llm-srbench_A_new_benchmark_for_scientific_equation_discover/review]] — 과학 방정식 발견과 유동 지능 평가 모두 LLM의 진정한 추론 능력을 벤치마킹한다

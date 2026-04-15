@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 대규모 언어모델(Large Language Models, LLMs)의 신뢰성을 종합적으로 평가하기 위한 원칙 기반의 벤치마크 **TrustLLM**을 제시한다. 진실성, 안전성, 공정성, 견고성, 프라이버시, 기계윤리 등 6가지 핵심 차원에서 16개 주요 LLM을 평가하여 신뢰성의 다층적 특성을 규명한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/LLM_Trustworthiness_and_Safety_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sun et al._2024_TrustLLM Trustworthiness in Large Language Models.pdf"
 ---
@@ -113,16 +115,14 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sun et al._2024_TrustLLM Trustworthiness
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/736_SciTrust_Evaluating_the_Trustworthiness_of_Large_Language_Mo/review]] — 과학 분야 LLM 신뢰성 평가의 다른 접근법과 벤치마크 제시
-- 🧪 응용 사례: [[papers/322_Evaluation_of_openai_o1_Opportunities_and_challenges_of_agi/review]] — OpenAI O1 모델 평가가 신뢰성 차원에서 구체적 사례 연구가 됨
-- 🏛 기반 연구: [[papers/017_A_practical_review_of_mechanistic_interpretability_for_trans/review]] — 대형 언어모델의 신뢰성 평가는 기계적 해석가능성을 통한 모델 내부 이해의 궁극적인 목표와 평가 기준을 제공합니다
-- 🏛 기반 연구: [[papers/388_GPT-4o_System_Card/review]] — 대규모 언어모델의 전반적인 신뢰성 평가 체계가 GPT-4o의 멀티모달 안전성 평가의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/736_SciTrust_Evaluating_the_Trustworthiness_of_Large_Language_Mo/review]] — 대규모 언어모델의 전반적인 신뢰성 평가를 과학 분야에 특화하여 구체적으로 확장한 사례이다.
-- 🏛 기반 연구: [[papers/237_Confidence_in_Large_Language_Model_Evaluation_A_Bayesian_App/review]] — 대규모 언어모델 신뢰성 연구가 베이지안 평가 방법론의 이론적 기초
-- 🧪 응용 사례: [[papers/037_A_Survey_on_Uncertainty_Quantification_Methods_for_Deep_Lear/review]] — 대규모 언어 모델의 신뢰성 평가에 불확실성 정량화 방법을 실제 적용하는 사례를 제공합니다.
-- 🔄 다른 접근: [[papers/810_Through_the_lens_of_core_competency_Survey_on_evaluation_of/review]] — LLM의 신뢰성 평가가 핵심 역량 중심 평가와는 다른 관점에서 모델 성능을 분석한다.
-- 🏛 기반 연구: [[papers/800_The_hidden_dimensions_of_llm_alignment_A_multi-dimensional_s/review]] — TrustLLM의 신뢰성 평가 프레임워크가 LLM 안전 정렬 행동의 다차원 분석 방법론의 기초가 됨
-- 🔗 후속 연구: [[papers/390_Grammars_of_formal_uncertainty_When_to_trust_llms_in_automat/review]] — 대규모 언어 모델의 신뢰성 종합 평가가 형식 검증에서의 불확실성 정량화를 더 광범위한 신뢰성 차원으로 확장한 연구이다.
-- ⚖️ 반론/비판: [[papers/477_Large_language_models_pass_the_turing_test/review]] — LLM의 신뢰성 문제를 지적하며 튜링 테스트 통과만으로는 진정한 지능을 증명할 수 없음을 논의
-- 🧪 응용 사례: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — LLM 신뢰성 향상을 위해 추론 시간 편향 완화 기법을 체계적으로 적용
-- 🏛 기반 연구: [[papers/148_Axolotl_fairness_through_assisted_self-debiasing_of_large_la/review]] — 대규모 언어 모델의 신뢰성에 대한 종합적인 평가 프레임워크가 AXOLOTL의 편향 완화 효과를 체계적으로 검증하는 기반을 제공한다.
+- 🏛 기반 연구: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — AI 에이전트 신뢰성 과학이 LLM 신뢰성을 실제 배포 환경으로 확장한다
+- 🔗 후속 연구: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — 기계론적 해석가능성이 LLM 신뢰성의 6가지 차원을 내부 메커니즘 관점에서 분석한다
+- 🔄 다른 접근: [[papers/736_SciTrust_Evaluating_the_Trustworthiness_of_Large_Language_Mo/review]] — 과학 분야 LLM 신뢰성 평가가 일반 도메인 신뢰성 벤치마크를 전문 영역으로 특화한다
+- 🔗 후속 연구: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — LLM 신뢰성 평가를 AI 에이전트 신뢰성의 안전-임계 관점으로 확장한다
+- 🏛 기반 연구: [[papers/750_SEVerA_Verified_Synthesis_of_Self-Evolving_Agents/review]] — 대규모 언어 모델의 신뢰성에 대한 종합적 연구로, 자기 진화 에이전트의 안전성 요구사항을 이해하는 기반
+- 🔄 다른 접근: [[papers/736_SciTrust_Evaluating_the_Trustworthiness_of_Large_Language_Mo/review]] — 과학 분야 LLM 신뢰성과 일반적 LLM 신뢰성이 서로 다른 범위에서 모델 안전성을 평가한다
+- 🔄 다른 접근: [[papers/810_Through_the_lens_of_core_competency_Survey_on_evaluation_of/review]] — 핵심 역량과 신뢰성이 각각 LLM 평가의 성능 중심과 안전성 중심 접근법이다
+- 🧪 응용 사례: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — LLM 신뢰성 평가에 기계론적 해석가능성의 내부 메커니즘 분석이 직접 적용된다
+- 🔄 다른 접근: [[papers/800_The_hidden_dimensions_of_llm_alignment_A_multi-dimensional_s/review]] — 다차원 안전 분석 대신 LLM의 전반적 신뢰성을 평가한다
+- 🏛 기반 연구: [[papers/865_Vending-Bench_A_Benchmark_for_Long-Term_Coherence_of_Autonom/review]] — 대규모 언어모델의 신뢰성 평가 방법론이 자율 에이전트 장기 일관성 벤치마크의 기반이 된다.
+- 🔗 후속 연구: [[papers/148_Axolotl_fairness_through_assisted_self-debiasing_of_large_la/review]] — 편향 완화가 LLM의 전반적인 신뢰성 확보라는 더 큰 프레임워크의 한 구성요소로 확장될 수 있다.

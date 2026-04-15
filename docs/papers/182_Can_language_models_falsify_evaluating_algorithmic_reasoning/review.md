@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "언어 모델(LM)이 프로그래밍 문제의 **부정확한 해결책에 대한 반례(counterexample)를 생성할 수 있는가**라는 질문에 답하는 논문으로, REFUTE 벤치마크를 통해 최신 LM들이 반례 생성 능력에서 심각한 한계를 보임을 실증적으로 입증한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Mechanistic_AI_Interpretability"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sinha et al._2025_Can language models falsify evaluating algorithmic reasoning with counterexample creation.pdf"
 ---
@@ -150,8 +152,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sinha et al._2025_Can language models fa
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — 신경망의 내부 작동 메커니즘 이해가 언어모델의 반례 생성 실패 원인을 분석하는 기반을 제공한다
-- 🔗 후속 연구: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — LLM의 추론 자체 수정 능력 한계와 반례 생성 실패가 연결된 근본적 문제를 다룬다
-- 🧪 응용 사례: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — 정리 증명에서 LLM의 논리적 추론 능력을 반례 생성 맥락에서 평가할 수 있다
-- 🔄 다른 접근: [[papers/339_Fimo_A_challenge_formal_dataset_for_automated_theorem_provin/review]] — 형식 추론에서 LLM vs 전통적 자동 정리 증명의 다른 접근법을 비교할 수 있다
-- 🧪 응용 사례: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — 기계론적 해석가능성을 언어모델의 반례 생성 실패 메커니즘 분석에 적용할 수 있다
+- 🏛 기반 연구: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — 대규모 언어모델의 추론 자기 교정 불가능성이 언어모델의 반례 생성 능력 한계의 근본적 원인을 제시한다
+- 🔗 후속 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자기 피드백을 통한 반복적 개선 방법론이 언어모델의 반례 생성 능력 향상 방향을 제시한다
+- 🧪 응용 사례: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — DeepSeek-Prover의 LLM 기반 정리 증명이 언어모델의 수학적 추론과 반례 생성 능력의 실제 응용 사례를 보여준다

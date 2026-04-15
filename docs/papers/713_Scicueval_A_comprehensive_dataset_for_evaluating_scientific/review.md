@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대규모 언어모델(LLM)의 과학적 맥락 이해 능력을 평가하기 위한 포괄적 벤치마크 데이터셋 SciCUEval을 제안한다. 생물학, 화학, 물리학, 생의학, 재료과학 등 5개 도메인에 걸친 10개의 부분 데이터셋으로 구성되며, 비정형 텍스트, 구조화된 표, 지식 그래프 등 다양한 데이터 모달리티를 통합하여 LLM의 과학적 맥락 이해 능력을 체계적으로 평가한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2025_Scicueval A comprehensive dataset for evaluating scientific context understanding in large language.pdf"
 ---
@@ -123,10 +124,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2025_Scicueval A comprehensive
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/016_A_practical_evaluation_of_AutoML_tools_for_binary_multiclass/review]] — AutoML 도구의 체계적 벤치마킹과 과학적 맥락 이해 평가는 모두 AI 시스템의 실제 성능을 종합적으로 측정하는 서로 다른 접근법입니다
-- 🔗 후속 연구: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — 대학원 수준의 다학제 멀티모달 과학 데이터셋은 SciCUEval의 과학적 맥락 이해를 더욱 고도화한 벤치마크입니다
-- 🏛 기반 연구: [[papers/706_SciBench_Evaluating_College-Level_Scientific_Problem-Solving/review]] — 대학 수준의 과학 문제 해결 평가는 과학적 맥락 이해 능력 측정의 기반이 되는 문제 해결 능력 평가 방법론입니다
-- 🔗 후속 연구: [[papers/724_SciHorizon_Benchmarking_AI-for-Science_Readiness_from_Scient/review]] — 과학적 이해 평가를 위한 포괄적 데이터셋이 SciHorizon의 평가 범위를 확장한다.
-- 🔄 다른 접근: [[papers/006_A_deep_subgrouping_framework_for_precision_drug_repurposing/review]] — 환자 하위군 기반 정밀 약물 재창출과 과학적 맥락 이해 평가는 모두 의료/과학 분야에서 AI의 실제 성능을 체계적으로 평가하는 서로 다른 접근법입니다
-- 🔄 다른 접근: [[papers/016_A_practical_evaluation_of_AutoML_tools_for_binary_multiclass/review]] — AutoML 도구 벤치마킹과 과학적 맥락 이해 평가는 모두 AI 시스템의 실제 성능을 종합적으로 측정하는 서로 다른 접근법입니다
-- 🔄 다른 접근: [[papers/726_Sciknoweval_Evaluating_multi-level_scientific_knowledge_of_l/review]] — 과학 지식 평가를 위한 서로 다른 포괄적 접근법을 제시합니다.
+- 🔗 후속 연구: [[papers/706_SciBench_Evaluating_College-Level_Scientific_Problem-Solving/review]] — 대학 수준 과학 문제 해결 벤치마크와 과학적 맥락 이해 평가를 결합하면 LLM의 과학적 추론 능력을 더 종합적으로 측정할 수 있다.
+- 🔄 다른 접근: [[papers/726_Sciknoweval_Evaluating_multi-level_scientific_knowledge_of_l/review]] — 과학 지식 평가에서 맥락 이해 중심 접근법과 다층적 지식 평가 방식은 서로 다른 관점에서 LLM의 과학적 역량을 측정한다.
+- 🔄 다른 접근: [[papers/520_Massw_A_new_dataset_and_benchmark_tasks_for_ai-assisted_scie/review]] — 과학적 큐레이션 평가와 AI 지원 과학 워크플로우 데이터셋은 모두 과학 연구 과정의 AI 활용을 다른 관점에서 접근한다.

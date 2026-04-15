@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.5
 essence: "학술 논문 작성의 전체 과정을 키스트로크(keystroke) 로깅과 인지적 주석을 통해 추적한 첫 대규모 데이터셋으로, 초안부터 최종 원고까지 4개월에 걸친 61K개 텍스트 변경을 포함한다. 이를 통해 인간의 비선형적 저술 과정과 현재 대규모언어모델(LLM)의 능력 간 격차를 실증적으로 규명한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Diversity"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_Scholawrite A dataset of end-to-end scholarly writing process.pdf"
 ---
@@ -107,9 +108,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_Scholawrite A dataset o
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — 개별 연구자의 미시적 글쓰기 과정 분석과 학계 전체의 거시적 LLM 채택 패턴이라는 서로 다른 스케일의 연구 접근법입니다.
-- 🔗 후속 연구: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 인간의 학술 글쓰기 과정 연구가 LLM 기반 협력적 학술 글쓰기 시스템 개발의 기초 자료를 제공합니다.
-- 🏛 기반 연구: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — 인간의 비선형적 글쓰기 과정에 대한 이해가 AI 협력 스토리 편집기 개발의 인간-AI 상호작용 설계 기초가 됩니다.
-- 🏛 기반 연구: [[papers/485_Learning_to_split_and_rephrase_from_wikipedia_edit_history/review]] — 위키피디아 편집 이력을 활용한 문장 분할-재표현 연구가 학술 글쓰기 과정의 텍스트 변경 패턴 분석의 기초가 됩니다.
-- 🧪 응용 사례: [[papers/884_Wikiatomicedits_A_multilingual_corpus_of_wikipedia_edits_for/review]] — 학술 글쓰기 과정을 단계별로 분석한 ScholaWrite 데이터셋이 WikiAtomicEdits의 편집 과정 모델링을 학술 영역에 특화하여 적용한 사례임
-- 🏛 기반 연구: [[papers/520_Massw_A_new_dataset_and_benchmark_tasks_for_ai-assisted_scie/review]] — 종단간 학술 작성 과정 데이터셋이 AI 보조 과학 작문의 대규모 구조화 데이터셋 구축에 기초 방법론을 제공합니다.
+- 🔗 후속 연구: [[papers/641_Prototypical_human-ai_collaboration_behaviors_from_llm-assis/review]] — 실제 학술 글쓰기 과정의 세밀한 분석과 LLM 협력 글쓰기 패턴 분석이 상호보완적 통찰을 제공한다.
+- 🏛 기반 연구: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 인간-AI 협력 글쓰기 데이터셋 구축의 방법론적 기초를 제공한다.
+- 🔄 다른 접근: [[papers/414_Human-llm_coevolution_Evidence_from_academic_writing/review]] — 학술 글쓰기에서 인간과 LLM의 상호작용을 서로 다른 관점에서 체계적으로 분석한다.
+- 🔗 후속 연구: [[papers/641_Prototypical_human-ai_collaboration_behaviors_from_llm-assis/review]] — LLM 보조 글쓰기의 협력 패턴 분석이 전체 학술 글쓰기 과정 연구로 확장될 수 있다.

@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.8
 essence: "대규모 언어 모델(LLM)을 기반으로 한 MatPilot은 자연어 인터페이스를 통해 연구자와 AI 에이전트 간의 협업을 가능하게 하며, 신소재 발견을 위한 인지 모듈과 실행 모듈의 통합을 통해 효율적인 검증, 지속적 학습, 반복적 최적화를 실현하는 AI 재료 과학자이다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Scientist_System_Development"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ni et al._2024_MatPilot an LLM-enabled AI Materials Scientist under the Framework of Human-Machine Collaboration.pdf"
 ---
@@ -95,11 +96,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ni et al._2024_MatPilot an LLM-enabled A
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/634_PRIME_A_Multi-Agent_Environment_for_Orchestrating_Dynamic_Co/review]] — 재료 과학과 단백질 공학에서 LLM 기반 다중 에이전트 시스템의 서로 다른 적용 사례를 비교하여 도메인별 최적화 전략을 학습할 수 있다.
-- 🔗 후속 연구: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — 재료 과학을 위한 AI 에이전트 시스템의 설계 원리를 더 유연하고 확장 가능한 프레임워크로 발전시킬 수 있는 방향을 제시한다.
-- 🧪 응용 사례: [[papers/111_AtomAgents_Alloy_design_and_discovery_through_physics-aware/review]] — MatPilot의 재료 발견 방법론을 합금 설계 분야에 적용하여 물리학 기반 AI 접근법과의 시너지를 창출할 수 있다.
-- 🏛 기반 연구: [[papers/803_The_open_review-based_orb_dataset_Towards_automatic_assessme/review]] — 대규모 과학 문헌 데이터셋이 ORB의 피어 리뷰 자동화 연구에 기초가 된다.
-- 🔗 후속 연구: [[papers/465_Large_Language_Model_in_Materials_Science_Roles_Challenges_a/review]] — MatPilot LLM 기반 AI 재료 과학자가 재료 과학에서 LLM의 구체적 역할 구현 사례입니다.
-- 🔄 다른 접근: [[papers/480_Large-Language-Model-Based_AI_Agent_for_Organic_Semiconducto/review]] — 재료 과학에서 LLM 기반 에이전트의 다른 응용 분야와 접근법을 비교할 수 있다
-- 🔄 다른 접근: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — MatPilot과 HoneyComb 모두 재료과학 특화 LLM 시스템이지만 전자는 Fréchet 거리 기반, 후자는 지식베이스 기반 접근을 사용한다.
-- 🧪 응용 사례: [[papers/340_Fine-tuning_large_language_models_for_domain_adaptation_expl/review]] — 재료과학 도메인 적응 연구가 MatPilot 같은 재료과학 특화 LLM 개발에 직접 적용
+- 🏛 기반 연구: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — 재료 발견을 위한 파운데이션 모델의 현황 조사로서 MatPilot의 이론적 기반을 제공한다
+- 🔄 다른 접근: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — 재료 과학에서 유연한 LLM 기반 에이전트 시스템으로 다른 접근 방식을 제시한다
+- 🔗 후속 연구: [[papers/111_AtomAgents_Alloy_design_and_discovery_through_physics-aware/review]] — 물리학 인식 합금 설계 에이전트로서 AI 재료 과학자의 구체적 응용 사례를 확장한다
+- 🧪 응용 사례: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — MatPilot LLM 기반 AI 재료 과학자 연구가 지식 안내형 재료과학 LLM 방법론을 실제 재료 과학자 시스템으로 적용한 사례다
+- 🧪 응용 사례: [[papers/002_34_examples_of_llm_applications_in_materials_science_and_che/review]] — MatPilot AI 재료 과학자 연구가 재료과학과 화학 분야 LLM 응용 사례 중 하나의 구체적인 구현 예시다
+- 🔄 다른 접근: [[papers/340_Fine-tuning_large_language_models_for_domain_adaptation_expl/review]] — 재료과학 LLM 파일럿과 유사한 도메인이지만 모델 병합을 통한 창발적 능력 생성에 중점을 둔 차별화된 접근이다.

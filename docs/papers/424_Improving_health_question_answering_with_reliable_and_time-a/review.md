@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "건강 관련 질문에 대한 개방형 질의응답(Open-Domain QA) 시스템에서 증거 검색 전략을 최적화하여 성능을 개선하는 연구이다. PubMed의 2,000만 개 생의학 논문을 활용하여 검색 문서 수, 출판 연도, 인용 횟수 등의 요소가 최종 답변 정확도에 미치는 영향을 실증적으로 검증했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Question_Answering"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scholarly_Question_Answering"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Program et al._2024_Improving health question answering with reliable and time-aware evidence retrieval.pdf"
 ---
@@ -104,6 +104,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Program et al._2024_Improving health que
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — PubMed 기반 생의학 질의응답 데이터셋이 건강 질문 답변의 신뢰성 있는 증거 검색 연구에 기초 데이터를 제공합니다.
-- 🔄 다른 접근: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — 과학 논문 검색에서 시간 인식 증거 최적화와 검색 증강 생성 에이전트의 서로 다른 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/224_Clinical_entity_augmented_retrieval_for_clinical_information/review]] — 임상 정보 검색의 개체 증강을 건강 질문 답변의 시간 인식 증거 검색으로 확장한 고도화된 방법입니다.
+- 🏛 기반 연구: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — 생의학 연구 질의응답 데이터셋이 건강 관련 질문 답변 시스템의 기초 훈련 및 평가 자료를 제공한다.
+- 🔗 후속 연구: [[papers/507_Llmeval-med_A_real-world_clinical_benchmark_for_medical_llms/review]] — 실제 임상 벤치마크를 통해 건강 질의응답 시스템의 증거 검색 최적화 연구를 의료 현장에서 검증하는 확장된 접근법이다.
+- 🔄 다른 접근: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — 검색 증강 언어모델 사전훈련과 건강 QA를 위한 증거 검색 전략 최적화는 모두 검색 기반 질의응답 개선의 다른 접근법이다.
+- 🧪 응용 사례: [[papers/161_BioBERT_a_pre-trained_biomedical_language_representation_mod/review]] — 생의학 도메인 특화 언어모델이 건강 질문 답변에서 신뢰할 수 있는 증거 검색의 실제 구현에 활용된다.

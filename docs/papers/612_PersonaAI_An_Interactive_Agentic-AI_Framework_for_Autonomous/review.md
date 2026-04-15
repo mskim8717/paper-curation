@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "노화 연구의 복잡성(확률적 특성, 세포 이질성, 560,000개 이상의 논문)을 극복하기 위해 인공지능이 인간 과학자의 디지털 동료로서 문헌 기반 추론과 자동화된 실리코 검증(single-cell RNA-seq)을 통합하여 가설을 생성하고 검증하는 프레임워크를 제시한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Biomedical_Research_Agents"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Single-Cell_RNA_Sequencing_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cho et al._2026_PersonaAI An Interactive Agentic-AI Framework for Autonomous Hypothesis Generation and Validation i.pdf"
 ---
@@ -113,6 +113,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cho et al._2026_PersonaAI An Interactive
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/774_STELLA_Towards_a_Biomedical_World_Model_with_Self-Evolving_M/review]] — 노화 연구 자동화에서 인터랙티브 에이전틱 AI와 자기진화 생의학 월드 모델 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/1094_Towards_a_Medical_AI_Scientist/review]] — 의료 AI 과학자 개발이 노화 연구의 가설 생성과 검증을 더 포괄적인 의료 연구로 확장할 수 있습니다.
-- 🏛 기반 연구: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — 범용 생의학 AI 에이전트가 노화 연구의 복잡성을 다루는 PersonaAI 프레임워크의 기술적 기반을 제공합니다.
+- 🧪 응용 사례: [[papers/027_A_survey_of_llm-based_agents_in_medicine_How_far_are_we_from/review]] — 의학 분야 LLM 기반 에이전트의 일반적 현황과 노화 연구 특화 PersonaAI는 의학 AI 에이전트의 특화 적용 사례를 보여준다.
+- 🔗 후속 연구: [[papers/719_Scientific_Hypothesis_Generation_and_Validation_Methods_Data/review]] — 과학적 가설 생성의 일반적 방법론과 노화 연구 특화 가설 생성 시스템은 상호 보완적인 가설 생성 연구를 형성한다.
+- 🔄 다른 접근: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 의학 분야에서 서로 다른 접근법(노화 연구 vs 제로샷 협력)을 통해 LLM 에이전트의 의학적 활용 가능성을 보여준다.
+- 🔄 다른 접근: [[papers/719_Scientific_Hypothesis_Generation_and_Validation_Methods_Data/review]] — 유방암 치료 가설 생성과 노화 연구 가설 생성은 모두 의학 분야에서 LLM 기반 가설 생성을 다루지만 서로 다른 질병 영역을 대상으로 한다.
+- 🧪 응용 사례: [[papers/102_Architecture_Design_for_Human-Driven_Systems/review]] — 자율적 개인화 상호작용 AI 프레임워크로 인간 중심 아키텍처의 구체적 구현을 보여준다
+- 🧪 응용 사례: [[papers/775_Step-back_profiling_Distilling_user_history_for_personalized/review]] — 개인화된 AI 프레임워크의 실제 구현과 응용 사례를 제시한다

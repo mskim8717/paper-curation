@@ -10,8 +10,10 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 재료과학 등 전문 도메인에 대응하는 대형언어모델(LLM)의 파인튜닝 전략을 체계적으로 탐구하며, 특히 여러 미세조정 모델의 병합(model merging)이 개별 모델의 능력을 초월하는 창발적 기능(emergent capabilities)을 생성할 수 있음을 실증한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Domain-adapted_Instruction_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lu et al._2025_Fine-tuning large language models for domain adaptation exploration of training strategies, scaling.pdf"
 ---
@@ -102,9 +104,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lu et al._2025_Fine-tuning large languag
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/707_SciBERT_A_Pretrained_Language_Model_for_Scientific_Text/review]] — SciBERT의 단일 도메인 특화를 여러 모델 병합으로 확장하여 창발적 기능 생성
-- 🧪 응용 사례: [[papers/522_MatPilot_an_LLM-enabled_AI_Materials_Scientist_under_the_Fra/review]] — 재료과학 도메인 적응 연구가 MatPilot 같은 재료과학 특화 LLM 개발에 직접 적용
-- 🏛 기반 연구: [[papers/287_Dont_Stop_Pretraining_Adapt_Language_Models_to_Domains_and_T/review]] — 도메인 적응의 기본 원리가 과학 분야 LLM 개발의 핵심 방법론이 됨
-- 🧪 응용 사례: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — 재료과학 도메인 파인튜닝 전략이 MatterChat 같은 멀티모달 재료과학 LLM에 활용
-- 🔗 후속 연구: [[papers/287_Dont_Stop_Pretraining_Adapt_Language_Models_to_Domains_and_T/review]] — 도메인 적응을 과학 분야로 확장한 구체적 사례와 실험을 제공한다.
-- 🏛 기반 연구: [[papers/690_Rule-based_neural_and_llm_back-translation_Comparative_insig/review]] — 도메인 적응을 위한 대규모 언어 모델 파인튜닝 경험이 저자원 언어 번역 모델 선택에 유용한 통찰을 제공한다.
+- 🔗 후속 연구: [[papers/287_Dont_Stop_Pretraining_Adapt_Language_Models_to_Domains_and_T/review]] — 도메인별 언어모델 적응 연구를 재료과학이라는 구체적 도메인에 적용하고 모델 병합의 창발적 효과를 탐구한다.
+- 🧪 응용 사례: [[papers/465_Large_Language_Model_in_Materials_Science_Roles_Challenges_a/review]] — 재료과학 분야 LLM 활용 연구에서 제기된 도메인 적응 과제에 대한 구체적인 파인튜닝 전략을 제시한다.
+- 🔄 다른 접근: [[papers/522_MatPilot_an_LLM-enabled_AI_Materials_Scientist_under_the_Fra/review]] — 재료과학 LLM 파일럿과 유사한 도메인이지만 모델 병합을 통한 창발적 능력 생성에 중점을 둔 차별화된 접근이다.
+- 🔗 후속 연구: [[papers/287_Dont_Stop_Pretraining_Adapt_Language_Models_to_Domains_and_T/review]] — 대규모 언어모델의 도메인 적응을 위한 파인튜닝 경험과 통찰을 제공하여, 연구 범위를 확장합니다.
+- 🔄 다른 접근: [[papers/301_Economic_anthropology_in_the_era_of_generative_artificial_in/review]] — 도메인 적응을 위한 LLM 미세조정 실험으로 편향 해결의 다른 기술적 접근을 제시한다

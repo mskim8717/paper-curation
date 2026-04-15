@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 생체분자 복합체(biomolecular complexes)의 3D 구조 예측에서 AlphaFold3 수준의 성능을 달성하면서도 완전히 공개된 오픈소스 모델인 Boltz-1을 소개한다. MIT 라이선스 하에 모든 코드, 가중치, 데이터셋을 공개함으로써 구조생물학 연구의 민주화를 추구한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Protein-Drug_Design_Models"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Molecular_Discovery_Foundation_Models"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wohlwend et al._2024_Boltz-1 Democratizing Biomolecular Interaction Modeling.pdf"
 ---
@@ -121,9 +122,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wohlwend et al._2024_Boltz-1 Democratizi
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — 같은 생체분자 구조 예측 문제를 상용 vs 오픈소스 접근법으로 해결한다.
-- 🔗 후속 연구: [[papers/686_Robust_deep_learning_based_protein_sequence_design_using_Pro/review]] — 단백질 구조 예측을 서열 설계와 결합하여 통합적 단백질 엔지니어링을 가능하게 한다.
-- 🔄 다른 접근: [[papers/046_Accurate_structure_prediction_of_biomolecular_interactions_w/review]] — AlphaFold3와 같은 성능을 오픈소스로 구현하여 접근성을 높인다.
-- 🔗 후속 연구: [[papers/112_Atomically_accurate_de_novo_design_of_antibodies_with_RFdiff/review]] — 생체분자 상호작용 모델링의 민주화가 원자 수준 정확한 항체 설계의 발전된 형태를 보여준다.
-- 🔗 후속 연구: [[papers/686_Robust_deep_learning_based_protein_sequence_design_using_Pro/review]] — 구조 예측과 서열 설계를 결합하여 통합적 단백질 엔지니어링 파이프라인을 구성한다.
-- 🔄 다른 접근: [[papers/1129_SARS-CoV-2_simulations_go_exascale_to_predict_dramatic_spike/review]] — 둘 다 단백질 구조 예측에 초점을 두지만 Boltz-1은 오픈소스 접근법을 제시한다.
+- 🔄 다른 접근: [[papers/686_Robust_deep_learning_based_protein_sequence_design_using_Pro/review]] — Boltz-1의 생체분자 복합체 구조 예측과 ProteinMPNN의 단백질 서열 설계는 구조생물학의 서로 다른 측면을 다룬다.
+- 🏛 기반 연구: [[papers/046_Accurate_structure_prediction_of_biomolecular_interactions_w/review]] — AlphaFold3의 생체분자 상호작용 예측 기술이 Boltz-1 개발의 기반이 되는 구조 예측 방법론을 제시한다.
+- 🔗 후속 연구: [[papers/403_Highly_accurate_protein_structure_prediction_with_AlphaFold/review]] — AlphaFold의 단백질 구조 예측 성공을 생체분자 복합체 전반으로 확장한 발전된 형태이다.
+- 🔗 후속 연구: [[papers/1060_Accurate_prediction_of_protein_structures_and_interactions_u/review]] — 생체분자 상호작용 모델링으로 단백질 구조 예측을 더욱 발전시킨 연구이다.
+- 🔄 다른 접근: [[papers/046_Accurate_structure_prediction_of_biomolecular_interactions_w/review]] — 생체분자 상호작용 모델링을 확산 기반이 아닌 다른 AI 접근법으로 수행하는 대안적 방법
+- 🔄 다른 접근: [[papers/686_Robust_deep_learning_based_protein_sequence_design_using_Pro/review]] — ProteinMPNN의 서열 설계와 Boltz-1의 구조 예측은 단백질 연구의 상호 보완적인 두 접근법이다.

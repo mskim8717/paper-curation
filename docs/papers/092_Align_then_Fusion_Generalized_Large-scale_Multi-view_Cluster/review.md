@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 멀티뷰 클러스터링에서 **앵커 정렬 문제(Anchor-Unaligned Problem, AUP)**를 최초로 정의하고, 피처 및 구조 정보를 모두 활용하여 앵커 대응 관계를 정확하게 수립하는 FMVACC(Fast Multi-View Anchor-Correspondence Clustering) 프레임워크를 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Hierarchical_Knowledge_Graphs"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2022_Align then Fusion Generalized Large-scale Multi-view Clustering with Anchor Matching Correspondence.pdf"
 ---
@@ -109,7 +111,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2022_Align then Fusion Gener
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/092_Align_then_Fusion_Generalized_Large-scale_Multi-view_Cluster/review]] — 대규모 멀티뷰 클러스터링에서 앵커 정렬 문제를 다루는 핵심 방법론을 제시한다.
-- 🧪 응용 사례: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — LLM 에이전트 간 협업 메커니즘 연구로 본 논문의 멀티뷰 정렬 기법을 에이전트 시스템에 응용할 수 있다.
-- 🔗 후속 연구: [[papers/564_Multi-llm_collaborative_caption_generation_in_scientific_doc/review]] — 다중 LLM 협업 캡션 생성에서 본 논문의 앵커 대응 관계 수립 방법론을 활용할 수 있다.
-- 🔄 다른 접근: [[papers/127_Automatic_evaluation_metrics_for_artificially_generated_scie/review]] — AI 생성 연구의 참신성과 표절 문제를 다루어 본 논문의 품질 평가와 다른 관점의 자동 평가를 제시한다.
+- 🏛 기반 연구: [[papers/1100_Representative_Informative_and_De-Amplifying_Requirements_fo/review]] — 베이지안 최적실험설계의 일반화 오차 분석이 멀티뷰 클러스터링에서 앵커 정렬 문제 해결의 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 멀티뷰 클러스터링 기술이 차트의 다양한 시각적 정보를 통합하는 멀티모달 언어모델 개발에 직접 적용될 수 있다.
+- 🔄 다른 접근: [[papers/1127_MMSD20_Towards_a_Reliable_Multi-modal_Sarcasm_Detection_Syst/review]] — 멀티뷰 데이터 처리에서 앵커 정렬과 멀티모달 풍자 탐지 모두 서로 다른 관점의 정보를 정확히 연결하는 문제를 다룬다.
+- 🧪 응용 사례: [[papers/1100_Representative_Informative_and_De-Amplifying_Requirements_fo/review]] — 베이지안 최적실험설계의 R-IDeA 획득함수가 멀티뷰 클러스터링의 앵커 정렬 문제 해결에 직접 적용될 수 있다.
+- 🏛 기반 연구: [[papers/401_Hierarchical_attention_graph_for_scientific_document_summari/review]] — 대규모 다중 시점 클러스터링의 정렬-융합 프레임워크는 문서 내 다층 관계 모델링의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/1127_MMSD20_Towards_a_Reliable_Multi-modal_Sarcasm_Detection_Syst/review]] — 멀티모달 풍자 탐지의 허위 신호 제거와 멀티뷰 클러스터링의 앵커 정렬 모두 데이터의 잘못된 연결 문제를 해결한다.

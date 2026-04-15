@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "이 논문은 데이터 기반 과학 발견(data-driven scientific discovery)을 위해 언어 모델(LM) 에이전트의 분석 능력을 평가하는 첫 번째 벤치마크 BLADE를 제시한다. 12개의 실제 데이터셋과 연구 질문에 대해 전문가 데이터 과학자들의 다중 분석을 수집하고, 에이전트의 생성 분석을 자동으로 평가할 수 있는 프레임워크를 개발했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gu et al._2024_Blade Benchmarking language model agents for data-driven science.pdf"
 ---
@@ -115,9 +115,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gu et al._2024_Blade Benchmarking langua
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — 데이터 기반 과학 발견을 위한 언어모델 에이전트 벤치마크와 데이터 사이언스 자동화 에이전트가 각각 평가와 구현 관점에서 접근한다
-- 🏛 기반 연구: [[papers/712_SciCode_A_Research_Coding_Benchmark_Curated_by_Scientists/review]] — 과학 연구 문제 중심의 코딩 능력 평가가 데이터 기반 과학 발견을 위한 언어모델 에이전트 성능 측정의 중요한 기반이 된다
-- 🔗 후속 연구: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — 데이터 기반 과학 발견 벤치마크가 언어 에이전트의 과학 연구 전반에 대한 엄밀한 평가로 확장되었다
-- 🧪 응용 사례: [[papers/594_OSDA_Agent_Leveraging_Large_Language_Models_for_De_Novo_Desi/review]] — 언어모델 에이전트의 데이터 기반 발견 능력 평가가 실제 데이터 사이언스 업무 자동화 시스템 개발에 핵심적인 벤치마킹 도구로 활용된다
-- 🔄 다른 접근: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — 데이터 사이언스 자동화를 위한 LLM 에이전트 구현과 데이터 기반 과학 발견 에이전트 벤치마킹이 실행과 평가 측면에서 상호 보완한다
-- 🏛 기반 연구: [[papers/712_SciCode_A_Research_Coding_Benchmark_Curated_by_Scientists/review]] — 과학 연구 문제 중심의 코딩 벤치마크가 언어모델 에이전트의 데이터 기반 과학 발견 능력 평가에 중요한 기준을 제시한다
+- 🔄 다른 접근: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — 데이터 과학 에이전트 평가를 벤치마크 대신 실제 작업 해결 능력으로 측정하는 다른 접근법
+- 🏛 기반 연구: [[papers/712_SciCode_A_Research_Coding_Benchmark_Curated_by_Scientists/review]] — 과학 연구 문제의 코딩 능력을 평가하는 기반이 되는 벤치마크 방법론
+- 🔗 후속 연구: [[papers/294_Dsbench_How_far_are_data_science_agents_to_becoming_data_sci/review]] — BLADE 벤치마크를 더욱 포괄적인 데이터 과학 에이전트 평가로 확장한 연구
+- 🔄 다른 접근: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — LLM 에이전트의 데이터 과학 능력을 실제 작업 해결 대신 벤치마크로 평가하는 다른 방법
+- 🔗 후속 연구: [[papers/712_SciCode_A_Research_Coding_Benchmark_Curated_by_Scientists/review]] — 과학 문제 해결을 위한 코딩 능력을 데이터 기반 과학 발견으로 확장한 평가
+- 🔗 후속 연구: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — 데이터 기반 과학을 위한 언어 모델 에이전트 벤치마킹으로, 과학 발견 능력을 실제 데이터 과학 작업으로 확장

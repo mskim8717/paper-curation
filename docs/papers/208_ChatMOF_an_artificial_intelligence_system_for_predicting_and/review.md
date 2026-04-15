@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.3
 essence: "대규모 언어 모델(Large Language Model, LLM)을 활용하여 금속-유기 골격(Metal-Organic Framework, MOF)의 성질을 예측하고 신규 구조를 생성할 수 있는 인공지능 시스템 ChatMOF를 개발했다. 자연스러운 텍스트 입력만으로 복잡한 재료 과학 작업을 자동화할 수 있음을 보여주었다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Scientific_Frameworks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kang and Kim_2024_ChatMOF an artificial intelligence system for predicting and generating metal-organic frameworks us.pdf"
 ---
@@ -124,8 +125,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kang and Kim_2024_ChatMOF an artificial 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/398_Harnessing_large_language_models_for_scientific_novelty_dete/review]] — MOF 예측과 생성에서 AI 시스템과 LLM 기반 데이터 수집이라는 서로 다른 접근법으로 화학 소재 연구를 자동화한다.
-- 🔗 후속 연구: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — 특정 화학 소재(MOF)에 특화된 시스템을 더 넓은 재료과학 영역으로 확장하여 포괄적인 멀티모달 LLM을 구축한다.
-- 🏛 기반 연구: [[papers/764_Sparks_Multi-Agent_Artificial_Intelligence_Model_Discovers_P/review]] — 특정 과학 영역에서의 AI 시스템 성공 사례가 일반적인 자동화된 과학 발견의 가능성을 뒷받침한다.
-- 🔄 다른 접근: [[papers/298_Earth-Agent_Unlocking_the_Full_Landscape_of_Earth_Observatio/review]] — 지구 관측 데이터와 화학 소재라는 서로 다른 과학 영역에서 멀티모달 AI 에이전트 접근법을 비교할 수 있다.
-- 🔄 다른 접근: [[papers/398_Harnessing_large_language_models_for_scientific_novelty_dete/review]] — MOF와 화학 소재라는 유사한 영역에서 LLM 기반 지식 추출과 AI 시스템 구축의 서로 다른 접근법을 비교한다.
+- 🔄 다른 접근: [[papers/398_Harnessing_large_language_models_for_scientific_novelty_dete/review]] — LLM을 활용한 MOF 문헌 분석 및 데이터셋 구축과 대조하여, 성질 예측과 구조 생성에 초점한 다른 접근
+- 🔗 후속 연구: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — 재료 과학을 위한 다중모달 LLM으로, MOF 특화 시스템을 더 광범위한 재료 과학 응용으로 확장
+- 🧪 응용 사례: [[papers/407_HoneyComb_A_Flexible_LLM-Based_Agent_System_for_Materials_Sc/review]] — 재료 과학을 위한 유연한 LLM 기반 에이전트 시스템으로, ChatMOF의 접근을 다양한 재료로 확장한 응용
+- 🏛 기반 연구: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 재료 과학을 위한 지식 안내 대규모 언어 모델에 대한 연구로, MOF 응용의 이론적 기반을 제공
+- 🔄 다른 접근: [[papers/398_Harnessing_large_language_models_for_scientific_novelty_dete/review]] — MOF 연구에서 LLM을 활용하여 성질 예측과 구조 생성을 수행하는 다른 접근 방식을 제시하여 데이터 분석과 대조됨

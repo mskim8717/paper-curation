@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "과학 논문의 2.5백만 편에서 수집한 1,550만 개의 이미지-텍스트 쌍으로 구성된 대규모 멀티모달 데이터셋을 제시한다. Qwen-VL 기반 의미 강화 파이프라인을 통해 희소한 원본 캡션을 논문의 추상, 인용 맥락과 결합하여 자급식의 과학적으로 근거 있는 설명으로 변환하며, CLIP 점수 기준 18.21% 정렬 개선을 달성한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Multimodal_Scientific_Reasoning"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2026_S1-MMAlign A Large-Scale, Multi-Disciplinary Dataset for Scientific Figure-Text Understanding.pdf"
 ---
@@ -116,7 +118,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2026_S1-MMAlign A Large-Scal
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 과학 vs 일반 차트 이해에서 멀티모달 대규모 데이터셋의 다른 접근법을 비교할 수 있다
-- 🔗 후속 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 과학적 그림 캡션 생성을 대규모 이미지-텍스트 정렬로 확장한 연구다
-- 🏛 기반 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 그림-캡션 생성 프레임워크가 과학 논문 멀티모달 정렬의 기반을 제공한다
-- 🧪 응용 사례: [[papers/566_Multimodal_deepresearcher_Generating_text-chart_interleaved/review]] — 멀티모달 과학 연구 생성에 대규모 과학 이미지-텍스트 데이터셋을 적용할 수 있다
+- 🔄 다른 접근: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — S1-MMAlign의 과학 논문 이미지-텍스트 정렬과 MMSCI의 대학원 수준 과학 시각화는 서로 다른 과학 멀티모달 데이터셋이다.
+- 🏛 기반 연구: [[papers/869_Visual_thoughts_A_unified_perspective_of_understanding_multi/review]] — 멀티모달 이해에 대한 통합 관점이 S1-MMAlign의 과학 이미지-텍스트 정렬 방법론의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/785_T-sciq_Teaching_multimodal_chain-of-thought_reasoning_via_mi/review]] — 멀티모달 사고연쇄 추론 교육이 S1-MMAlign의 과학 멀티모달 학습을 더 고도화된 추론으로 발전시킨다.
+- 🔄 다른 접근: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — MMSCI의 대학원 수준 과학 시각화와 S1-MMAlign의 논문 이미지-텍스트 정렬은 서로 다른 과학 멀티모달 데이터셋이다.

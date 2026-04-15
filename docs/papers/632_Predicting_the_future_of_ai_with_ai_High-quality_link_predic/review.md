@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 AI 연구의 지수적 성장에 대응하기 위해 의미적 네트워크(semantic network)에서의 링크 예측(link prediction) 문제를 통해 미래의 AI 연구 방향을 예측한다. 143,000개의 arXiv 논문으로부터 구축된 64,000개 개념 노드의 네트워크에서 향후 함께 연구될 개념 쌍을 예측하는 것을 목표로 한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Knowledge_Graph_Reasoning"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/You et al._2022_Predicting the future of ai with ai High-quality link prediction in an exponentially growing knowle.pdf"
 ---
@@ -113,8 +113,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/You et al._2022_Predicting the future of
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/580_Oag-bench_A_human-curated_benchmark_for_academic_graph_minin/review]] — AI 연구 동향 예측을 위해 의미 네트워크 링크 예측과 학술 그래프 마이닝이라는 다른 방법론을 사용한다
-- 🔗 후속 연구: [[papers/391_Graph_of_ai_ideas_Leveraging_knowledge_graphs_and_llms_for_a/review]] — AI 아이디어 지식 그래프를 활용한 연구 방향 예측으로 링크 예측 접근법을 확장할 수 있다
-- 🧪 응용 사례: [[papers/079_Ai_idea_bench_2025_Ai_research_idea_generation_benchmark/review]] — AI 연구 아이디어 생성 벤치마크를 미래 AI 연구 방향 예측의 실제 평가 도구로 활용할 수 있다
-- 🔄 다른 접근: [[papers/1088_Lag_Llm_agents_for_leaderboard_auto_generation_on_demanding/review]] — AI를 활용한 링크 예측으로 리더보드 자동 생성과 다른 방식의 연구 동향 추적 방법을 제시한다.
-- 🔄 다른 접근: [[papers/580_Oag-bench_A_human-curated_benchmark_for_academic_graph_minin/review]] — AI 연구의 미래 예측을 위해 학술 그래프와 의미 네트워크라는 다른 접근 방식을 사용한다
+- 🏛 기반 연구: [[papers/580_Oag-bench_A_human-curated_benchmark_for_academic_graph_minin/review]] — AI 연구 방향 예측을 위한 링크 예측이 학술 그래프 마이닝 벤치마크의 핵심 평가 과제 중 하나임
+- 🔄 다른 접근: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — AI 연구 예측을 위해 의미적 네트워크 기반 링크 예측과 LLM 기반 아이디어 생성이라는 서로 다른 접근법을 제시함
+- 🔗 후속 연구: [[papers/580_Oag-bench_A_human-curated_benchmark_for_academic_graph_minin/review]] — 학술 그래프 마이닝 벤치마크가 AI 연구 방향 예측 모델의 성능 평가 기준으로 활용될 수 있음

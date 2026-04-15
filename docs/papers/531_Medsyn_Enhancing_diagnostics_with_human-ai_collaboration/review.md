@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 의사와 대규모언어모델(Large Language Models, LLM)이 다중 턴 대화를 통해 협력하는 하이브리드 의료진단 프레임워크 MedSyn을 제안한다. 의사의 인지적 편향과 정보 불완전성을 보완하기 위해 동적 대화 기반의 의료 의사결정 지원 시스템을 개발하였다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Clinical_Multi-Agent_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/CRISPR_and_Drug_Discovery_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sayin et al._2025_Medsyn Enhancing diagnostics with human-ai collaboration.pdf"
 ---
@@ -106,10 +107,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sayin et al._2025_Medsyn Enhancing diagn
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/233_Cognitio_emergens_Agency_dimensions_and_dynamics_in_human-ai/review]] — 인간-AI 지식 협력의 이론적 프레임워크를 의료 진단 분야에 구체적으로 적용한다.
-- 🔗 후속 연구: [[papers/663_Reinforcing_clinical_decision_support_through_multi-agent_sy/review]] — 임상 의사결정 지원에서 다중 에이전트 시스템으로 의료 AI 협력을 확장한다.
-- 🧪 응용 사례: [[papers/821_Towards_a_client-centered_assessment_of_llm_therapists_by_cl/review]] — 클라이언트 중심 LLM 치료사 평가로 의료 분야 인간-AI 협력의 다른 적용을 보여준다.
-- 🧪 응용 사례: [[papers/821_Towards_a_client-centered_assessment_of_llm_therapists_by_cl/review]] — 클라이언트 시뮬레이션을 실제 진단 향상에 적용한 Human-AI 협력 사례
-- 🏛 기반 연구: [[papers/624_Piors_Personalized_intelligent_outpatient_reception_based_on/review]] — 진단을 위한 인간-AI 협력 향상이 개인화된 의료 접수 서비스 설계의 방법론적 기반을 제공합니다.
-- 🧪 응용 사례: [[papers/233_Cognitio_emergens_Agency_dimensions_and_dynamics_in_human-ai/review]] — 인간-AI 협력의 이론적 프레임워크를 의료 진단 분야에 구체적으로 적용한 사례를 보여준다.
-- 🔄 다른 접근: [[papers/663_Reinforcing_clinical_decision_support_through_multi-agent_sy/review]] — 의료 진단에서 ICU 환경 임상 의사결정 지원으로 의료 AI 협력의 다른 응용을 제시한다.
+- 🔗 후속 연구: [[papers/663_Reinforcing_clinical_decision_support_through_multi-agent_sy/review]] — MedSyn의 의사-AI 협력 프레임워크를 다중 에이전트 시스템으로 확장하여 임상 의사결정 지원의 윤리성과 투명성을 강화
+- 🏛 기반 연구: [[papers/365_Future_of_Work_with_AI_Agents_Auditing_Automation_and_Augmen/review]] — Human Agency Scale을 통해 의료 분야에서 AI 자동화와 인간 증강의 균형점을 체계적으로 평가할 수 있는 이론적 기반 제공
+- 🔄 다른 접근: [[papers/644_Psyche_A_multi-faceted_patient_simulation_framework_for_eval/review]] — 환자 시뮬레이션 프레임워크를 통해 의사-AI 협력의 효과를 사전 검증하는 대안적 접근
+- 🔗 후속 연구: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 제로샷 의료 진단에서 다중 에이전트 협력을 대화형 인간-AI 협력으로 발전시킨 접근
+- 🧪 응용 사례: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — 인간-AI 협력을 통한 진단 향상 연구가 Biomni의 일반목적 생의학 AI 에이전트 개발에 실제 협력 모델로 적용되었다
+- 🧪 응용 사례: [[papers/055_Advancing_multimodal_medical_capabilities_of_gemini/review]] — 인간-AI 협력 진단 프레임워크에서 Med-Gemini의 멀티모달 역량을 실제 임상 환경에 적용
+- 🧪 응용 사례: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — ClinicalGPT-R1의 진단 추론 기술을 실제 인간-AI 협력 진단 시스템에 적용한 구체적 사례이다.
+- 🏛 기반 연구: [[papers/663_Reinforcing_clinical_decision_support_through_multi-agent_sy/review]] — 윤리적 AI 거버넌스 기반의 다중 에이전트 시스템이 MedSyn의 인간-AI 협력을 더욱 투명하고 신뢰할 수 있게 만드는 토대
+- 🧪 응용 사례: [[papers/365_Future_of_Work_with_AI_Agents_Auditing_Automation_and_Augmen/review]] — Human Agency Scale을 의료 진단 분야의 인간-AI 협력에 구체적으로 적용하여 자동화와 증강의 균형점을 실증적으로 검증

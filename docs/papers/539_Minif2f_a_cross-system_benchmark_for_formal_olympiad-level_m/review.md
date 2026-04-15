@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 신경 정리 증명(neural theorem proving) 분야를 위한 최초의 통합 크로스 시스템 벤치마크인 miniF2F를 제시한다. 이는 488개의 올림피아드 수준 수학 문제(IMO, AIME, AMC)를 Metamath, Lean, Isabelle, HOL Light 등 다양한 형식 시스템에서 표준화된 형식으로 제공함으로써, 신경 정리 증명 시스템의 수학적 추론 능력을 공정하게 비교할 수 있는 공통 자원을 제공한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Formal_Theorem_Proving"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/ML_Research_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zheng_2021_Minif2f a cross-system benchmark for formal olympiad-level mathematics.pdf"
 ---
@@ -103,13 +103,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zheng_2021_Minif2f a cross-system benchm
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — GPT-f가 보여준 신경 정리 증명 가능성을 올림피아드 수준의 표준화된 벤치마크로 발전시킴
-- 🧪 응용 사례: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — DeepSeek-Prover의 대규모 형식 증명 데이터 합성 기법을 miniF2F 벤치마크로 평가할 수 있음
-- 🏛 기반 연구: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 비형식적 증명에서 형식적 증명으로의 변환 방법론이 miniF2F 문제 해결의 기초가 됨
-- 🧪 응용 사례: [[papers/1095_Towards_large_language_models_as_copilots_for_theorem_provin/review]] — miniF2F 벤치마크를 활용하여 LLM 기반 정리 증명 코파일럿의 성능을 체계적으로 평가
-- 🔄 다른 접근: [[papers/339_Fimo_A_challenge_formal_dataset_for_automated_theorem_provin/review]] — IMO vs Olympiad 수준으로 유사하지만 다른 형식의 수학 정리증명 벤치마크
-- 🔗 후속 연구: [[papers/808_Theoremqa_A_theorem-driven_question_answering_dataset/review]] — MinIF2F의 형식적 올림피아드 수학 벤치마크가 TheoremQA의 정리 적용 능력 평가를 더욱 엄밀하게 확장함
-- 🧪 응용 사례: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — GPT-f가 증명한 자동 정리 증명 가능성을 올림피아드 수준 문제로 확장한 벤치마크
-- 🔗 후속 연구: [[papers/251_Data_for_mathematical_copilots_Better_ways_of_presenting_pro/review]] — miniF2F의 정적 증명 평가를 동기와 발견 과정을 포함한 풍부한 수학적 사고로 확장
-- 🧪 응용 사례: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — DeepSeek-Prover의 형식 증명 능력을 miniF2F 벤치마크로 체계적으로 평가할 수 있음
-- 🏛 기반 연구: [[papers/482_Lean-star_Learning_to_interleave_thinking_and_proving/review]] — Lean-star의 형식 증명 생성 능력을 평가할 수 있는 표준화된 올림피아드 수준 벤치마크를 제공한다.
+- 🏛 기반 연구: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — 생성 언어모델을 정리 증명에 적용한 초기 연구로, miniF2F 벤치마크가 평가하고자 하는 능력의 이론적 기반을 제공합니다.
+- 🔗 후속 연구: [[papers/808_Theoremqa_A_theorem-driven_question_answering_dataset/review]] — 정리 기반 질문 답변 데이터셋으로, 형식 수학 능력을 정리 증명을 넘어 수학 문제 해결로 확장하여 평가합니다.
+- 🔄 다른 접근: [[papers/642_Proving_theorems_recursively/review]] — 재귀적 정리 증명 접근법으로, miniF2F에서 평가하는 정리 증명 문제를 다른 방법론으로 해결하는 방식을 제시합니다.
+- 🏛 기반 연구: [[papers/513_M2F_Automated_Formalization_of_Mathematical_Literature_at_Sc/review]] — 형식적 올림피아드 수준 수학을 위한 크로스 시스템 벤치마크로, 형식화 작업의 평가 기준을 제공
+- 🔗 후속 연구: [[papers/379_Generative_language_modeling_for_automated_theorem_proving/review]] — 형식 수학을 위한 표준화된 벤치마크로, 생성 언어모델의 정리 증명 능력을 체계적으로 평가할 수 있는 도구를 제공합니다.
+- 🔗 후속 연구: [[papers/251_Data_for_mathematical_copilots_Better_ways_of_presenting_pro/review]] — 형식적 올림피아드 수학 벤치마크의 한계를 지적하며 수학 증명의 발견 과정을 포함한 더 풍부한 데이터셋 필요성을 제시한다.
+- 🔄 다른 접근: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — MinIF2F는 올림피아드급 정리 증명 벤치마크로, DeepSeek-Prover의 성능을 평가할 수 있는 대안적 평가 기준을 제공한다
+- 🏛 기반 연구: [[papers/489_Lf_a_foundational_higher-order-logic/review]] — 기초 논리 체계가 형식 수학 문제 해결의 이론적 토대를 제공한다

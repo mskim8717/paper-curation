@@ -6,11 +6,12 @@ date: "2025"
 doi: "10.1371/journal.pbio.3003230"
 arxiv: ""
 score: 4.0
-essence: "대규모 언어모델(LLM)의 발전에 힘입어 AI4Research(과학 연구를 위한 AI) 분야의 전체 생태계를 체계적으로 정리한 종합 서베이논문. 과학적 이해, 학술 조사, 과학 발견, 논문 작성, 동료 검토의 5개 주요 작업을 분류하고 다학제적 응용과 자원을 제시한다."
+essence: "AlphaFold의 Nobel Prize 수상을 계기로, AI가 과학 발견의 주요 동인이 되는 '제5의 과학 시대'를 논의하며, 이 시대에 인간 과학자의 역할이 AI 지도 및 데이터 큐레이션에 있음을 주장한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/AI_for_Science_Taxonomy"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Research_Taxonomy_Surveys"
   - "topic/ai4s"
+pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Miolane_2025_The fifth era of science Artificial scientific intelligence.pdf"
 ---
 
 # The fifth era of science: Artificial scientific intelligence
@@ -21,56 +22,50 @@ tags:
 
 ## Essence
 
-![Figure 2](figures/fig2.webp)
+![Figure 1](figures/fig1.webp)
 
-*Figure 2: The taxonomy of AI in research (AI4Research) is categorized into five key areas. Each area is*
+*Fig 1.  The fifth era of science: Artificial scientific intelligence. Throughout history, science has*
 
-대규모 언어모델(LLM)의 발전에 힘입어 AI4Research(과학 연구를 위한 AI) 분야의 전체 생태계를 체계적으로 정리한 종합 서베이논문. 과학적 이해, 학술 조사, 과학 발견, 논문 작성, 동료 검토의 5개 주요 작업을 분류하고 다학제적 응용과 자원을 제시한다.
+AlphaFold의 Nobel Prize 수상을 계기로, AI가 과학 발견의 주요 동인이 되는 '제5의 과학 시대'를 논의하며, 이 시대에 인간 과학자의 역할이 AI 지도 및 데이터 큐레이션에 있음을 주장한다.
 
 ## Motivation
 
-- **Known**: AI와 LLM이 수학적 추론, 프로그래밍, 학제간 지식 영역에서 성능 향상을 보였으며, AI Scientist 등의 자동화된 연구 시스템이 아이디어 채굴, 실험 수행, 논문 작성 단계를 자동화하고 있다.
-- **Gap**: AI4Research의 범위와 태스크를 체계적으로 분류하고 통일된 관점을 제시하는 종합적인 서베이가 부재하여, 이 분야의 이해와 발전이 저해되고 있다.
-- **Why**: AI 기술이 과학 연구 전 과정의 자동화를 가능하게 하고 있으며, 이를 체계화함으로써 과학적 발견의 속도를 높이고 연구 프로세스를 혁신할 수 있기 때문이다.
-- **Approach**: 5개 핵심 작업(과학 이해, 학술 조사, 발견, 쓰기, 동료 검토)에 대한 계층적 분류 체계를 수립하고, 자연과학, 응용과학, 사회과학 분야별 응용 사례와 자원을 체계적으로 수집·정리하였다.
+- **Known**: 과학은 경험적 시대, 이론적 시대, 계산 시대, 데이터 주도 시대를 거쳐 왔으며, AlphaFold가 단백질 폴딩 문제를 해결함으로써 AI의 능력을 입증했다.
+- **Gap**: AI가 제한되고 잡음이 많으며 전문화된 과학 데이터를 처리할 수 있는지, 그리고 이러한 도메인에서 인간 과학자의 역할이 무엇인지에 대한 명확한 이해가 부족하다.
+- **Why**: AI 과학의 시대에 과학적 발견이 어떻게 이루어질 것인지, 인간 전문성이 여전히 필수적인지를 이해하는 것은 미래 과학 연구의 방향성을 결정한다.
+- **Approach**: 화학, 재료 과학, 생의학 이미징, cryo-EM 등 다양한 분야의 구체적 사례를 통해 AI 단독으로는 불충분한 이유를 설명하고, 인간-AI 협력 모델을 제시한다.
 
 ## Achievement
 
-![Figure 2](figures/fig2.webp)
+![Figure 1](figures/fig1.webp)
 
-*Figure 2: The taxonomy of AI in research (AI4Research) is categorized into five key areas. Each area is*
+*Fig 1.  The fifth era of science: Artificial scientific intelligence. Throughout history, science has*
 
-- **체계적 분류 체계**: AI4Research의 5개 주요 작업(Scientific Comprehension, Academic Survey, Scientific Discovery, Academic Writing, Academic Peer Review)에 대한 계층적 분류 및 컴포넌트별 정의 제공
-- **광범위한 응용 영역 매핑**: 물리학, 생물의학, 화학/재료과학, 로봇/제어, 소프트웨어공학, 사회과학 등 다양한 학문분야에 대한 AI 응용 사례 체계화
-- **자원 집약**: 데이터셋, 벤치마크, 모델, 도구 등 2000개 이상의 관련 자원을 분류별로 정리하여 공개
-- **미래 방향 제시**: 학제간 모델, 윤리·안전성, 협력 연구, 해석가능성, 동적 실험 최적화, 멀티모달/다국어 통합 등 7개 주요 미래 과제 식별
+- **AI 과학의 5단계 역사 체계화**: 경험적-이론적-계산-데이터 주도-AI 과학 시대를 통시적으로 정리
+- **도메인별 AI 적용 가능성 분석**: 화학의 organic synthesis와 재료 과학은 자율 AI 탐색에 적합하나, 생의학 이미징은 그렇지 않음을 구체적으로 입증
+- **인간-AI 협력의 필연성 제시**: 제한된 데이터, 높은 잡음, 전문화된 데이터의 특성상 인간 전문성이 AI 설계 및 데이터 큐레이션에서 필수적임을 논증
+- **구체적 사례 제시**: cryo-EM의 denoising-reconstruction autoencoder, 529개 cryo-EM 데이터셋 통합 등 인간 전문성과 AI의 시너지 사례 제공
 
 ## How
 
-![Figure 1](figures/fig1.webp)
 
-*Figure 1: The mainstream processes and categories of AI4Research, which can be divided into five key areas:*
-
-- 5개 핵심 작업별로 기존 연구들을 semi-automatic과 full-automatic 방식으로 구분하여 체계화
-- 각 작업 내 세부 서브태스크를 계층적으로 분류(예: Scientific Discovery → Idea Mining, Theory Analysis, Experiment Conduction, Full-Automatic Discovery)
-- 학제간 응용 사례를 Natural Science, Applied Science/Engineering, Social Science 3개 범주로 분류
-- 1,000개 이상의 논문과 리소스를 수집하여 공개 깃허브 저장소(Awesome-AI4Research)와 전용 웹사이트 구축
-- 각 섹션에서 현재 상태(state-of-the-art), 주요 과제, 향후 발전 방향을 병렬적으로 논의
+- 화학과 재료 과학에서 AI의 자율성이 높은 이유(풍부한 구조화된 데이터, 성숙한 시뮬레이션)를 분석
+- 생의학 이미징의 데이터 부족 문제 정량화(MedPix 59,000장, Allen Cell 32,000장 vs 필요량 수십억 장)
+- 신경망 아키텍처의 수학적 재설계로 소규모 데이터 학습 가능성 제시
+- cryo-EM의 극도로 잡음이 많은 이미지(신호대잡음비 1/100) 처리 방식 설명
+- 데이터 큐레이션, 정제, 주석 작업에서의 인간 전문성 역할 강조
 
 ## Originality
 
-- 첫 종합적 AI4Research 서베이: 기존의 AI4Science나 Scientific Discovery 중심 연구와 달리 연구 전 과정(이해→조사→발견→쓰기→검토)을 통합적으로 다룸
-- AI Scientist 등 자동화 시스템의 개념을 체계화하고 실제 구현 수준을 구체적으로 평가
-- 5개 핵심 작업의 명확한 정의와 차별화: AI4Science와 AI4Research의 개념적 경계 명확화
-- 멀티모달·다국어·협력 연구 등 신흥 연구 방향 제시로 향후 10년 연구 로드맵 제공
+- 과학사의 5단계 진화 프레임워크를 최초로 체계화하고 'artificial scientific intelligence'라는 신조어 도입", 'AlphaFold 같은 성공 사례에 대한 자동 낙관주의에 대항하여, 도메인별 조건 분석을 통한 비판적 관점 제시
+- 기존 'AI가 과학을 대체할 것인가'라는 이분법적 질문에서 벗어나 '어떻게 협력할 것인가'로 재정의", 'biomedical imaging과 cryo-EM의 구체적 데이터 제약을 정량화하여 추상적 논의를 구체화
 
 ## Limitation & Further Study
 
-- 동료 검토 자동화의 신뢰성 문제: AI 기반 desk-review와 peer-review의 신뢰도 평가 기준 부재
-- 실험 자동화의 현실성 한계: 물리/화학 실험의 완전 자동화는 기술적·비용적 제약이 있으나 이에 대한 심층 분석 부족
-- 윤리·안전성 논의의 추상성: AI로 생성된 논문의 위조, 저자권 문제, 학술 부정 방지 메커니즘 구체화 필요
-- 학제간 모델의 일반화 가능성 미검증: 자연과학과 사회과학 간 AI 응용 방식의 본질적 차이에 대한 심화 분석 필요
-- **후속 연구 방향**: (1) 각 작업 단계의 rigorous evaluation framework 개발, (2) 자동화된 실험의 재현성 검증, (3) 다학제 AI 모델 벤치마크 구축, (4) AI4Research의 사회적 영향(학술 생태계 변화, 연구자 역할 재정의) 실증적 분석
+- 논문이 관점(perspective) 형식으로, 데이터-기반의 정량적 증거보다는 사례 기반 논의에 의존
+- 인간-AI 협력의 최적 구조(역할 분담, 의사결정 프로세스)에 대한 구체적 메커니즘 제시 부재
+- 사회경제적 영향(과학자 고용, 자금 배분)에 대한 논의 미흡
+- 후속 연구로는 도메인별 인간-AI 협력 효율성 비교 연구, 데이터 큐레이션 비용-효과 분석, 교육 커리큘럼 개발 등이 필요
 
 ## Evaluation
 
@@ -80,11 +75,13 @@ tags:
 - Clarity: 4/5
 - Overall: 4/5
 
-**총평**: AI 기술이 과학 연구의 전 주기에 걸쳐 응용되는 새로운 시대에 대한 가장 포괄적이고 체계적인 현황 진단 및 향후 방향 제시. 2,000개 이상의 자원과 구체적 분류 체계를 제공함으로써 이 분야의 연구자들에게 실질적 가치를 제공하지만, 윤리·안전·신뢰성 문제의 심화 분석이 필요하다.
+**총평**: AlphaFold의 Nobel Prize 수상이라는 시의적절한 계기로 과학의 새로운 시대를 선언하면서도, 균형잡힌 비판적 관점으로 AI의 한계를 도메인별로 분석한 설득력 있는 관점 논문이다. 특히 데이터 부족과 잡음 문제를 구체적으로 제시함으로써 무조건적 AI 낙관주의에 대한 필요한 경고를 제공한다.
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — 대규모 언어모델이 과학을 변혁시키는 방법을 인공 과학 지능의 관점에서 확장한다.
-- 🧪 응용 사례: [[papers/023_A_smack_of_all_neighbouring_languages_How_multilingual_is_sc/review]] — 과학의 다섯 번째 시대에서 다국어 학술 커뮤니케이션의 역할을 구체적으로 보여준다.
-- 🏛 기반 연구: [[papers/026_A_survey_of_large_language_models/review]] — 인공 과학 지능의 이론적 토대로서 대규모 언어모델의 발전 과정을 제공한다.
-- 🔄 다른 접근: [[papers/075_AI_for_Science_2025/review]] — 과학의 다섯 번째 시대로서 인공 과학 지능에 대한 다른 관점을 제공한다.
+- 🔗 후속 연구: [[papers/075_AI_for_Science_2025/review]] — AI for Science를 넘어 AI가 과학 발견을 주도하는 새로운 패러다임으로 확장한 미래 비전이다
+- 🏛 기반 연구: [[papers/040_AAAI_Presidential_Panel_Report_on_the_Future_of_AI_Research/review]] — 제5의 과학 시대를 뒷받침하는 AI 연구 커뮤니티의 현재 상황과 미래 방향에 대한 실증적 분석을 제공한다
+- 🧪 응용 사례: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 과학의 새로운 패러다임 이론을 완전 자동화된 과학적 발견이라는 구체적 구현 사례로 보여준다
+- 🔗 후속 연구: [[papers/040_AAAI_Presidential_Panel_Report_on_the_Future_of_AI_Research/review]] — AI 연구의 미래 전망을 과학의 새로운 패러다임 변화라는 더 근본적 관점에서 확장한다
+- 🏛 기반 연구: [[papers/075_AI_for_Science_2025/review]] — AI가 주도하는 과학의 새로운 패러다임에 대한 철학적이고 근본적인 관점을 제공한다
+- 🏛 기반 연구: [[papers/1098_BloClaw_An_Omniscient_Multi-Modal_Agentic_Workspace_for_Next/review]] — 인공 과학 지능의 다섯 번째 시대 개념을 멀티모달 AI 과학자 워크스페이스의 이론적 배경으로 제공한다

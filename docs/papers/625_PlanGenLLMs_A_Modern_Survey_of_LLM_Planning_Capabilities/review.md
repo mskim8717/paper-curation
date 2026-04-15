@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대규모 언어 모델(LLM)의 계획 수립(Planning) 능력에 대한 포괄적 조사 연구로, 초기 AI 계획 시스템의 평가 기준을 현대화하여 6가지 핵심 성능 지표를 통해 LLM 기반 계획 수립 시스템을 체계적으로 분석한다. 이를 통해 다양한 도메인에서 LLM 계획 시스템의 비교 평가 틀을 제공하고 향후 연구 방향을 제시한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Chemistry_Planning"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wei et al._2025_PlanGenLLMs A Modern Survey of LLM Planning Capabilities.pdf"
 ---
@@ -129,9 +130,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wei et al._2025_PlanGenLLMs A Modern Sur
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — 대규모 언어모델 기반 자율 에이전트 조사는 LLM 계획 수립 능력 분석의 이론적 기반을 제공합니다
-- 🔄 다른 접근: [[papers/854_Understanding_the_planning_of_LLM_agents_A_survey/review]] — LLM 에이전트 계획 이해에 대한 조사와 LLM 계획 능력의 현대적 조사는 상호 보완적인 관점을 제공합니다
-- 🔗 후속 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 멀티 에이전트 기반 대형 언어모델의 진전 조사는 개별 LLM의 계획 능력을 다중 에이전트 환경으로 확장한 연구입니다
-- 🔄 다른 접근: [[papers/854_Understanding_the_planning_of_LLM_agents_A_survey/review]] — LLM 계획 능력에 대한 현대적 조사와 LLM 에이전트 계획의 이해 모두 동일한 주제를 다루지만 접근 관점이 다르다.
-- 🔗 후속 연구: [[papers/249_Curriculum_Reinforcement_Learning_from_Easy_to_Hard_Tasks_Im/review]] — LLM 계획 능력에 대한 현대적 조사는 E2H Reasoner의 커리큘럼 기반 계획 학습 접근방식을 더 넓은 맥락에서 이해할 수 있게 한다.
-- 🏛 기반 연구: [[papers/842_Tree-planner_Efficient_close-loop_task_planning_with_large_l/review]] — LLM의 계획 생성 능력에 대한 포괄적 조사로 Tree-planner의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/854_Understanding_the_planning_of_LLM_agents_A_survey/review]] — LLM 에이전트의 계획 수립 능력 조사를 바탕으로 실제 에이전트 시스템에서의 계획 메커니즘 구현 방안을 구체화할 수 있다.
+- 🧪 응용 사례: [[papers/842_Tree-planner_Efficient_close-loop_task_planning_with_large_l/review]] — LLM 계획 능력 평가 프레임워크를 트리 기반 계획 시스템의 성능 측정에 실제로 적용할 수 있다.
+- 🏛 기반 연구: [[papers/157_Beyond_outlining_Heterogeneous_recursive_planning_for_adapti/review]] — LLM 계획 능력에 대한 현대적 조사를 이질적 재귀적 계획 프레임워크의 이론적 기반으로 제공한다
+- 🏛 기반 연구: [[papers/842_Tree-planner_Efficient_close-loop_task_planning_with_large_l/review]] — LLM 계획 능력에 대한 현대적 조사가 Tree-planner 설계의 이론적 기반을 제공한다.

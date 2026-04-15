@@ -10,9 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "전자 채움, 공간군 대칭, 궤도 특성을 명시적으로 인코딩하여 위상 물질을 신속하게 식별하는 물리 기반 화학 규칙(physics-informed chemical rule)을 제시한다. 조성만 고려하는 기존 휴리스틱의 한계를 극복하여 동일한 화학식을 가진 다형체(polymorph)도 구별할 수 있다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Mechanistic_AI_Interpretability"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xu et al._2026_A Physics-Informed Chemical Rule for Topological Materials Discovery.pdf"
 ---
@@ -88,11 +88,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xu et al._2026_A Physics-Informed Chemic
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/439_Invariant_Tokenization_of_Crystalline_Materials_for_Language/review]] — 결정 구조의 불변 토큰화가 위상 물질 발견 규칙의 구조적 인코딩 기반
-- 🔗 후속 연구: [[papers/343_Foundation_models_for_materials_discovery__current_state_and/review]] — 재료과학 파운데이션 모델을 물리 기반 위상 물질 발견 규칙으로 구체화한 응용
-- 🔄 다른 접근: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 알고리즘 vs 물리 기반 화학 규칙으로 재료 발견의 서로 다른 접근법
-- 🏛 기반 연구: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 대칭성을 활용한 미분방정식 발견이 위상 물질의 대칭성 기반 규칙 개발의 기초
-- 🔗 후속 연구: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 가설 생성을 통한 재료 발견 설계에서 물리 기반 화학 규칙으로의 확장
-- 🔄 다른 접근: [[papers/569_Nanostructured_Material_Design_via_a_Retrieval-Augmented_Gen/review]] — 위상 재료 발견에서 가설 생성과 화학 규칙의 서로 다른 접근법
-- 🧪 응용 사례: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — AI 안전을 위한 기계론적 해석가능성을 위상 재료 발견에 적용
-- 🧪 응용 사례: [[papers/439_Invariant_Tokenization_of_Crystalline_Materials_for_Language/review]] — 결정 구조 토큰화를 위상 물질 발견에 적용한 구체적인 응용 사례
+- 🧪 응용 사례: [[papers/1106_The_BOS-Lig_Dataset_Accurate_Ligand_Charges_from_a_Consensus/review]] — 정확한 리간드 전하 데이터가 위상 물질 발견의 화학 규칙에서 전자 채움 예측 정확도를 향상시킴
+- 🏛 기반 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료과학 기초 모델과 데이터셋 구축 방향이 위상 물질 발견을 위한 물리 기반 규칙 개발에 필수적 배경 제공
+- 🔗 후속 연구: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 알고리즘 실행을 통한 타겟 재료 발견과 위상 물질 화학 규칙을 결합하여 더 효율적인 탐색이 가능함
+- 🧪 응용 사례: [[papers/1106_The_BOS-Lig_Dataset_Accurate_Ligand_Charges_from_a_Consensus/review]] — BOS-Lig 데이터셋의 정확한 전하 정보가 위상 물질의 전자 채움 특성 예측에 직접 활용됨

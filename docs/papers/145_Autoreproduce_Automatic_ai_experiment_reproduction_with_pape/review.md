@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 AI 실험의 자동 재현을 위해 논문 계보(Paper Lineage) 알고리즘과 다중 에이전트 프레임워크인 AUTOREPRODUCE를 제안한다. 이는 인용 관계 분석을 통해 암묵적 도메인 지식을 추출하고 실행 가능한 코드 생성까지 포괄하는 end-to-end 자동화를 실현한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Realistic_Discovery_Benchmarks"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2025_Autoreproduce Automatic ai experiment reproduction with paper lineage.pdf"
 ---
@@ -101,7 +102,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhao et al._2025_Autoreproduce Automatic
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — AUTOREPRODUCE와 SPOT는 모두 과학 실험 재현성을 다루지만, 논문 계보 기반 자동 재현과 AI 과학자 검증이라는 서로 다른 접근 방식을 제시합니다.
-- 🔗 후속 연구: [[papers/654_Re_2_A_consistency-ensured_dataset_for_full-stage_peer_revie/review]] — AUTOREPRODUCE의 실험 자동 재현은 Re²의 전체 과정 피어 리뷰 데이터셋을 활용하여 논문의 일관성을 보장하는 재현 가능한 연구 환경을 구축합니다.
-- 🔗 후속 연구: [[papers/143_AutoP2C_An_LLM-Based_Agent_Framework_for_Code_Repository_Gen/review]] — 논문 기반 실험 재현이 코드 저장소 생성으로 확장됨
-- 🔗 후속 연구: [[papers/731_Scireplicate-bench_Benchmarking_llms_in_agent-driven_algorit/review]] — 알고리즘 복제가 자동 AI 실험 재현으로 확장됩니다.
+- 🔄 다른 접근: [[papers/731_Scireplicate-bench_Benchmarking_llms_in_agent-driven_algorit/review]] — AI 실험 자동 재현과 알고리즘 복제 벤치마킹이라는 서로 다른 재현성 접근법을 통해 과학 연구의 신뢰성을 높인다
+- 🏛 기반 연구: [[papers/654_Re_2_A_consistency-ensured_dataset_for_full-stage_peer_revie/review]] — 일관성을 보장하는 동료평가 데이터셋을 AI 실험 재현 시스템의 검증 기반으로 활용한다
+- 🔗 후속 연구: [[papers/698_Scaling_Reproducibility_An_AI-Assisted_Workflow_for_Large-Sc/review]] — AI 지원 워크플로우를 통한 대규모 재현성 확장 연구로 자동 실험 재현 기술이 발전한다
+- 🔗 후속 연구: [[papers/634_PRIME_A_Multi-Agent_Environment_for_Orchestrating_Dynamic_Co/review]] — AI 실험 재현 시스템을 단백질 공학의 복잡한 다단계 계산 워크플로우 자동화로 확장 적용

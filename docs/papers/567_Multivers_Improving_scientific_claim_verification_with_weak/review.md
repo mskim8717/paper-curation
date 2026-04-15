@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "과학 청구 검증 시스템이 선택된 근거 문장만 사용하지 않고 전체 문서 맥락을 활용하며, 약한 감독(weak supervision)을 통해 문장 수준의 주석 없이도 학습할 수 있는 멀티태스크 모델을 제시한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Zero-Shot_Claim_Verification"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Röttger et al._2021_Multivers Improving scientific claim verification with weak supervision and full-document context.pdf"
 ---
@@ -96,7 +97,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Röttger et al._2021_Multivers Improving
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — NLP 사실 확인의 비현실적 측면 분석이 과학 청구 검증에서 약한 감독 학습의 한계 이해에 기초를 제공합니다.
-- 🔄 다른 접근: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 과학 청구 검증에서 약한 감독과 지식 그래프 추론의 서로 다른 사실 검증 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/859_Unsupervised_pretraining_for_fact_verification_by_language_m/review]] — 비감독 사전훈련을 약한 감독 학습으로 확장하여 더 정교한 과학 사실 검증 시스템을 구축합니다.
-- 🔗 후속 연구: [[papers/500_Llm-based_corroborating_and_refuting_evidence_retrieval_for/review]] — 과학적 주장 검증을 약한 지도학습으로 개선한 멀티모달 접근
+- 🔄 다른 접근: [[papers/636_Prompt_to_be_consistent_is_better_than_self-consistent_few-s/review]] — 과학 청구 검증에서 약한 감독과 일관성 강화라는 서로 다른 학습 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/711_Sciclaims_An_end-to-end_generative_system_for_biomedical_cla/review]] — 생의학 분야에서 약한 감독 학습을 통한 과학적 주장 검증 시스템의 실용적 확장이다.
+- 🏛 기반 연구: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 복잡한 청구 검증을 위한 프로그램 유도 추론의 기초적인 방법론을 제공한다.
+- 🔄 다른 접근: [[papers/636_Prompt_to_be_consistent_is_better_than_self-consistent_few-s/review]] — 사실 검증에서 일관성 강화와 약한 감독이라는 서로 다른 학습 패러다임을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/711_Sciclaims_An_end-to-end_generative_system_for_biomedical_cla/review]] — 약한 감독 학습을 통한 과학 청구 검증을 생의학 영역의 종합적 주장 분석 시스템으로 확장한다.

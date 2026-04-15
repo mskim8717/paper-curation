@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 대규모 언어모델(LLM)이 단순한 정보 실행자에서 새로운 지식을 발견하는 혁신 엔진으로 진화할 수 있는지를 Peirce의 철학적 프레임워크(귀납법, 연역법, 귀추법)를 통해 체계적으로 분석한 종합 설문(survey)이다. LLM을 활용한 가설 발견과 규칙 학습의 전체 사이클을 이론적으로 정립하고 실증적으로 검토한 첫 시도이다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Hypothesis_Generation"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Scientist_System_Development"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/He and Chen_2025_From Reasoning to Learning A Survey on Hypothesis Discovery and Rule Learning with Large Language M.pdf"
 ---
@@ -117,8 +119,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/He and Chen_2025_From Reasoning to Learn
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — 가설 발견과 규칙 학습이 과학 자동화의 핵심 인지적 구성요소가 된다.
-- 🏛 기반 연구: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — LLM의 추론 능력이 AI Scientist의 가설 생성 엔진 구현에 필요하다.
-- 🔗 후속 연구: [[papers/031_A_Survey_on_Hypothesis_Generation_for_Scientific_Discovery_i/review]] — 과학적 발견에서 가설 생성에 대한 종합적 설문을 LLM 관점에서 확장한다.
-- 🏛 기반 연구: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — 가설 발견과 규칙 학습이 과학 자동화의 핵심 구성요소가 된다.
-- 🏛 기반 연구: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — 가설 발견과 규칙 학습이 자율적 과학 발견 엔진의 핵심 기능이다.
+- 🏛 기반 연구: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — 대규모 언어모델을 활용한 가설 생성 연구가 LLM 기반 가설 발견과 규칙 학습의 기본 방법론을 제공한다
+- 🔗 후속 연구: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — LLM 기반 과학적 지능 서베이가 가설 발견과 규칙 학습을 포함한 더 넓은 과학적 추론 능력의 발전 방향을 제시한다
+- 🔄 다른 접근: [[papers/028_A_survey_of_reasoning_with_foundation_models/review]] — 파운데이션 모델의 추론 서베이와 Pierce 프레임워크 기반 가설 발견은 서로 다른 철학적 접근으로 AI 추론을 분석한다
+- 🏛 기반 연구: [[papers/547_Mllm-based_discovery_of_intrinsic_coordinates_and_governing/review]] — 추론에서 학습으로의 가설 발견 서베이가 멀티모달 LLM의 물리 좌표계 발견에 이론적 배경을 제공함

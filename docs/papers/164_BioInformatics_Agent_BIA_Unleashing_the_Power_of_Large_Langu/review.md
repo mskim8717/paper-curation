@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM) 기반 생물정보학 에이전트(BIA)를 개발하여 자연어 대화를 통해 단일세포 RNA 시퀀싱(scRNA-seq) 데이터의 자동 분석 파이프라인을 실현했다. 사용자는 복잡한 프로그래밍 없이 생물정보학 분석의 전체 과정을 수행할 수 있다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Domain-Specific_Autonomous_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xin et al._2024_BioInformatics Agent (BIA) Unleashing the Power of Large Language Models to Reshape Bioinformatics.pdf"
 ---
@@ -105,7 +106,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xin et al._2024_BioInformatics Agent (BI
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/734_ScispaCy_Fast_and_Robust_Models_for_Biomedical_Natural_Langu/review]] — BIA의 생물정보학 자동화는 ScispaCy의 생물의학 자연어 처리 모델이 제공하는 도메인 특화 언어 이해 기반 위에 대화형 분석 인터페이스를 구축합니다.
-- 🔗 후속 연구: [[papers/165_Biokgbench_A_knowledge_graph_checking_benchmark_of_ai_agent/review]] — BIA의 단일세포 RNA 시퀀싱 자동화는 BioKGBench의 생물학 지식그래프 검증 기능을 확장하여 실시간 데이터 분석과 결과 해석을 통합한 완전한 생물정보학 워크플로우를 제공합니다.
-- 🏛 기반 연구: [[papers/110_AstroAgents_A_Multi-Agent_AI_for_Hypothesis_Generation_from/review]] — 생물정보학 에이전트가 우주생물학 가설 생성의 생명과학 방법론 기반
-- 🔗 후속 연구: [[papers/131_Automating_exploratory_proteomics_research_via_language_mode/review]] — 생물정보학 에이전트를 단백질체학 특화 자동 발견으로 구체화한 응용
+- 🔄 다른 접근: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — 생물정보학에서 scRNA-seq 데이터 분석과 단일세포 주석이라는 서로 다른 자동화 접근법을 제시한다
+- 🔗 후속 연구: [[papers/160_BioAgents_Democratizing_Bioinformatics_Analysis_with_Multi-A/review]] — 단일 분야 생물정보학 에이전트에서 다중 에이전트 생물정보학 분석 민주화로 확장된 형태이다
+- 🏛 기반 연구: [[papers/163_Biodsa-1k_Benchmarking_data_science_agents_for_biomedical_re/review]] — 생물의학 연구를 위한 데이터 과학 에이전트 벤치마크를 생물정보학 에이전트의 성능 평가 기준으로 활용한다
+- 🧪 응용 사례: [[papers/131_Automating_exploratory_proteomics_research_via_language_mode/review]] — 생물정보학 에이전트로 단백질체학 자동화를 구체적으로 구현한 사례이다.

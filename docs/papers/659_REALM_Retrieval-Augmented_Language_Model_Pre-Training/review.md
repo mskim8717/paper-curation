@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.5
 essence: "REALM은 지식을 신경망 파라미터에 암묵적으로 저장하는 대신, 학습 가능한 텍스트 검색 모듈을 통해 명시적으로 외부 코퍼스(예: Wikipedia)에서 관련 문서를 동적으로 검색하고 활용하는 검색증강 언어 모델 사전학습 프레임워크다. 비지도 마스크된 언어 모델(MLM) 목표 신호를 통해 검색기를 end-to-end로 학습할 수 있다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Language_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Guu et al._2020_REALM Retrieval-Augmented Language Model Pre-Training.pdf"
 ---
@@ -116,11 +117,14 @@ REALM은 지식을 신경망 파라미터에 암묵적으로 저장하는 대신
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/152_BERT_Pre-training_of_Deep_Bidirectional_Transformers_for_Lan/review]] — BERT의 암묵적 지식 저장과 달리 외부 코퍼스에서 명시적 검색을 통한 지식 활용 방식
-- 🔗 후속 연구: [[papers/348_FRAG_A_Flexible_Modular_Framework_for_Retrieval-Augmented_Ge/review]] — REALM의 검색 증강 기법을 더 유연한 모듈형 프레임워크로 발전시킨 연구
-- 🏛 기반 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — REALM이 제시한 검색 증강 생성의 초기 방법론이 RAG 연구의 기초가 됨
-- 🔗 후속 연구: [[papers/404_Hiperrag_High-performance_retrieval_augmented_generation_for/review]] — REALM의 검색 증강 개념을 고성능으로 최적화한 HiPerRAG로 발전
-- 🔄 다른 접근: [[papers/404_Hiperrag_High-performance_retrieval_augmented_generation_for/review]] — 과학 문헌 처리에서 멀티모달 사전훈련과 고성능 컴퓨팅 기반 접근법을 비교할 수 있습니다.
-- 🔄 다른 접근: [[papers/152_BERT_Pre-training_of_Deep_Bidirectional_Transformers_for_Lan/review]] — BERT의 암묵적 지식 저장 방식과 달리 명시적 검색을 통해 지식을 활용하는 다른 접근법
-- 🏛 기반 연구: [[papers/348_FRAG_A_Flexible_Modular_Framework_for_Retrieval-Augmented_Ge/review]] — 검색증강 언어모델 사전훈련 방법론을 지식그래프 특화 RAG 시스템으로 발전시킨 기반
-- 🔗 후속 연구: [[papers/768_Splade_v2_Sparse_lexical_and_expansion_model_for_information/review]] — REALM의 밀집 표현 기반 검색을 희소 표현과 결합한 발전된 형태의 검색 증강 사전학습 모델입니다.
+- 🔄 다른 접근: [[papers/335_Few-shot_Learning_with_Retrieval_Augmented_Language_Models/review]] — 검색 증강의 다른 접근법으로, 사전학습 단계에서의 검색 통합과 파인튜닝 후 검색 활용의 차이를 보여줍니다.
+- 🧪 응용 사례: [[papers/224_Clinical_entity_augmented_retrieval_for_clinical_information/review]] — 임상 정보 추출에서의 검색 증강 활용으로, REALM의 일반적 접근법을 의료 도메인에 특화 적용한 사례입니다.
+- 🔄 다른 접근: [[papers/295_Dynamic_multi-agent_orchestration_and_retrieval_for_multi-so/review]] — REALM의 검색 증강 사전훈련과 동적 다중에이전트 검색은 서로 다른 검색 통합 방식을 제공한다.
+- 🏛 기반 연구: [[papers/224_Clinical_entity_augmented_retrieval_for_clinical_information/review]] — 검색 증강 언어모델의 기본 개념을 제공하여, 임상 정보 추출에서의 효율적 검색 방법론의 이론적 기반이 됩니다.
+- 🔄 다른 접근: [[papers/335_Few-shot_Learning_with_Retrieval_Augmented_Language_Models/review]] — 검색 증강 언어모델의 다른 접근법으로, 사전학습 단계와 파인튜닝 단계에서의 검색 활용 방식을 비교할 수 있습니다.
+- 🔄 다른 접근: [[papers/768_Splade_v2_Sparse_lexical_and_expansion_model_for_information/review]] — 밀집 표현 기반 검색과 희소 렉시컬 표현의 다른 접근법으로, 정보검색에서의 상호 보완적 방법론을 보여줍니다.
+- 🏛 기반 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — REALM의 검색 증강 사전훈련 방법론이 OpenScholar의 과학논문 검색 증강 생성의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — 검색 증강 언어모델 사전훈련이 과학 연구용 RAG 에이전트의 기초 방법론을 제공한다
+- 🔄 다른 접근: [[papers/424_Improving_health_question_answering_with_reliable_and_time-a/review]] — 검색 증강 언어모델 사전훈련과 건강 QA를 위한 증거 검색 전략 최적화는 모두 검색 기반 질의응답 개선의 다른 접근법이다.
+- 🔗 후속 연구: [[papers/613_Personalized_graph-based_retrieval_for_large_language_models/review]] — REALM의 검색 증강 사전 학습을 개인화된 컨텍스트로 확장하여 더 정교한 개인화 서비스를 제공한다.
+- 🏛 기반 연구: [[papers/318_Estimating_optimal_context_length_for_hybrid_retrievalaugmen/review]] — 검색 증강 언어모델의 기본 원리가 하이브리드 RAG 최적화의 이론적 기반을 제공한다

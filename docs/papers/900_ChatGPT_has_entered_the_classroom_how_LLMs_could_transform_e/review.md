@@ -8,8 +8,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)의 교육 분야 적용 가능성과 위험성을 탐구하며, ChatGPT 기반 교육 도구들의 실제 구현 사례와 개선 방안을 제시한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Science_Communication"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Extance_2023_ChatGPT has entered the classroom how LLMs could transform education.pdf"
 ---
@@ -79,7 +81,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Extance_2023_ChatGPT has entered the cla
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/414_Human-llm_coevolution_Evidence_from_academic_writing/review]] — 교육 분야 LLM 적용을 인간-AI 협력적 글쓰기로 확장하여 실제 교육 현장의 변화를 보여준다
-- ⚖️ 반론/비판: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — AI 도구 사용이 교육 콘텐츠 다양성에 미치는 부정적 영향을 제시한다
-- 🧪 응용 사례: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 학술적 글쓰기에서 인간-AI 협력의 구체적 구현 방안을 제시한다
-- 🔗 후속 연구: [[papers/796_The_AI_writing_on_the_wall/review]] — 과학 저술에서의 AI 활용을 교육 영역으로 확장하여 더 광범위한 학술 환경에서의 생성형 AI 영향을 포괄적으로 분석한다.
+- 🏛 기반 연구: [[papers/467_Large_Language_Models/review]] — 수학/물리학자를 위한 LLM 설명이 교육 분야 적용의 기술적 기반을 제공한다
+- 🔄 다른 접근: [[papers/517_Malinowski_in_the_age_of_ai_Can_large_language_models_create/review]] — 인류학 교육 게임 생성으로 LLM 교육 도구의 다른 인문학 응용 사례를 제시한다
+- 🔗 후속 연구: [[papers/785_T-sciq_Teaching_multimodal_chain-of-thought_reasoning_via_mi/review]] — 멀티모달 추론 교육을 통해 LLM 교육 활용을 시각적 요소까지 확장한다
+- 🧪 응용 사례: [[papers/467_Large_Language_Models/review]] — 교육 분야에서 LLM 적용 사례를 통해 실제 활용 방안을 구체적으로 제시한다
+- 🧪 응용 사례: [[papers/517_Malinowski_in_the_age_of_ai_Can_large_language_models_create/review]] — 교육용 LLM 도구 개발과 구현 사례를 통해 인류학 교육 게임의 실용적 접근을 보여준다

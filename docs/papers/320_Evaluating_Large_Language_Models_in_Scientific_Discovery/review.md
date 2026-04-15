@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "GitHub 코드로 미세조정된 GPT 기반의 Codex 모델을 제시하고, 새로운 벤치마크인 HumanEval을 통해 함수형 정확성(functional correctness) 기반의 평가 체계를 제안한 논문이다. Codex는 도큐스트링(docstring)으로부터 Python 함수를 생성하는 능력에서 기존 모델들을 크게 능가한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Code_Generation"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2021_Evaluating large language models trained on code.pdf"
 ---
@@ -108,12 +108,13 @@ GitHub 코드로 미세조정된 GPT 기반의 Codex 모델을 제시하고, 새
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — 함수형 정확성 기반 코드 평가 체계가 차세대 대규모 코드 생성 모델의 성능 측정과 개선에 필수적인 평가 기준을 제공했다
-- 🏛 기반 연구: [[papers/771_Starcoder_may_the_source_be_with_you_arXiv_preprint_arXiv230/review]] — Codex의 코드 생성 능력 평가 방법론이 오픈소스 코드 생성 대형언어모델의 성능 측정과 벤치마킹에 중요한 기반이 되었다
-- 🔗 후속 연구: [[papers/712_SciCode_A_Research_Coding_Benchmark_Curated_by_Scientists/review]] — 일반적인 코드 생성 평가가 과학자들이 직접 큐레이션한 과학 연구 문제 중심의 코딩 벤치마크로 구체화되었다
-- 🔗 후속 연구: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — 함수 생성 중심의 코드 평가가 새로운 기계학습 방법 구현을 위한 연구 코드 벤치마킹으로 확장되었다
-- 🔗 후속 연구: [[papers/712_SciCode_A_Research_Coding_Benchmark_Curated_by_Scientists/review]] — 일반적인 프로그래밍 함수 생성 평가를 과학자들이 직접 설계한 실제 과학 연구 문제 해결 능력 평가로 발전시켰다
-- 🏛 기반 연구: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — GitHub 코드 기반 모델 훈련과 함수형 정확성 평가 방법론이 대규모 오픈소스 코드 생성 모델 개발의 중요한 기반이 되었다
-- 🏛 기반 연구: [[papers/771_Starcoder_may_the_source_be_with_you_arXiv_preprint_arXiv230/review]] — Codex의 코드 생성 평가 체계가 오픈소스 대형언어모델 기반 코드 생성의 성능 측정과 개선에 핵심적인 방법론을 제공했다
-- 🏛 기반 연구: [[papers/1084_An_Autonomous_Large_Language_Model_Agent_for_Chemical_Litera/review]] — 자율 기계학습 연구 프레임워크는 코드 훈련된 대규모 언어모델의 평가 연구 결과를 기반으로 연구 코드 생성과 실험 자동화 기능을 구현합니다.
-- 🏛 기반 연구: [[papers/010_A_hierarchical_framework_for_measuring_scientific_paper_inno/review]] — 코드 평가를 위한 LLM 활용 연구가 과학 논문의 혁신성을 측정하는 계층적 프레임워크 개발의 방법론적 기초를 제공함
+- 🔗 후속 연구: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — Codex의 코드 생성 능력을 다음 세대 StarCoder로 발전시켜 더 큰 규모와 성능을 달성
+- 🧪 응용 사례: [[papers/712_SciCode_A_Research_Coding_Benchmark_Curated_by_Scientists/review]] — 코드 생성 모델의 능력을 과학 연구 문제 해결이라는 구체적 영역에 적용한 평가
+- 🔄 다른 접근: [[papers/263_Deepseek-coder_When_the_large_language_model_meets_programmi/review]] — 함수 생성 중심의 Codex와 달리 일반적인 코드 이해와 생성에 특화된 다른 접근법
+- 🏛 기반 연구: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — 코드 생성 모델의 기반이 되는 코드 평가 방법론을 제시한다
+- 🏛 기반 연구: [[papers/712_SciCode_A_Research_Coding_Benchmark_Curated_by_Scientists/review]] — 과학 코딩 벤치마크가 평가하는 LLM의 기본적인 코딩 능력과 함수 생성 기반
+- 🏛 기반 연구: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — StarCoder 2가 발전시킨 기본적인 코드 생성과 평가 방법론의 근간이 되는 연구
+- 🔄 다른 접근: [[papers/771_Starcoder_may_the_source_be_with_you_arXiv_preprint_arXiv230/review]] — GitHub 코드 학습과 함수 생성에서 다른 접근 방식을 취한 대안적 코드 모델
+- ⚖️ 반론/비판: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 코드 작성에 특화된 LLM의 성능을 긍정적으로 평가한 연구로, SWE-bench의 낮은 성능 결과와 대조적 관점을 제시
+- 🏛 기반 연구: [[papers/741_Seed-coder_Let_the_code_model_curate_data_for_itself/review]] — 코드로 훈련된 대형 언어 모델 평가의 기초적인 방법론을 자동 데이터 큐레이션에 적용한다.
+- 🏛 기반 연구: [[papers/635_Productivity_assessment_of_neural_code_completion/review]] — 코드 생성 언어모델 평가를 위한 기본적인 방법론과 지표를 제공한다

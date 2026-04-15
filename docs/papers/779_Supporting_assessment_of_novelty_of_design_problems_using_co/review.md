@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 SAPPhIRE 인과관계 모델을 활용하여 설계 문제(design problem)의 신규성(novelty)을 정량적으로 평가하는 프레임워크를 제안한다. 현재 문제와 과거 문제 데이터베이스 간의 텍스트 유사성을 SAPPhIRE의 다양한 추상화 수준에서 비교하여 신규성을 측정한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Materials_Discovery_Hypotheses"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Research_Ideation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singh and Chakrabarti_2024_Supporting assessment of novelty of design problems using concept of problem sapphire.pdf"
 ---
@@ -147,7 +149,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singh and Chakrabarti_2024_Supporting as
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/777_Structuring_scientific_innovation_A_framework_for_modeling_a/review]] — 파괴적 혁신 지수를 통한 혁신적 지식 조합 평가 방법이 설계 문제 신규성 평가의 개념적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/010_A_hierarchical_framework_for_measuring_scientific_paper_inno/review]] — 과학 논문의 혁신성 측정이라는 유사한 목표이지만 SAPPhIRE 모델과 계층적 프레임워크라는 다른 접근법을 사용한다.
-- 🔗 후속 연구: [[papers/313_Enabling_ai_scientists_to_recognize_innovation_A_domain-agno/review]] — 혁신 인식을 위한 도메인 무관 방법론을 설계 문제의 신규성 평가라는 구체적 영역에 적용한다.
-- 🧪 응용 사례: [[papers/178_Can_ai_examine_novelty_of_patents_Novelty_evaluation_based_o/review]] — 설계 문제의 참신성 평가를 위한 코사인 유사도 사용으로 본 논문의 특허 신규성 평가 방법론을 설계 도메인에 적용한다.
+- 🏛 기반 연구: [[papers/276_Discovery_of_Unstable_Singularities/review]] — 과학적 발견과 신규성 평가를 위한 기본적인 이론적 배경을 제공한다
+- 🔄 다른 접근: [[papers/178_Can_ai_examine_novelty_of_patents_Novelty_evaluation_based_o/review]] — 특허의 신규성 평가를 위한 AI 기반의 다른 접근법을 제시한다
+- 🔗 후속 연구: [[papers/313_Enabling_ai_scientists_to_recognize_innovation_A_domain-agno/review]] — 혁신 인식을 위한 도메인 독립적인 확장된 평가 프레임워크를 보여준다
+- 🔗 후속 연구: [[papers/178_Can_ai_examine_novelty_of_patents_Novelty_evaluation_based_o/review]] — 설계 문제의 신규성 평가와 특허 신규성 평가가 혁신성 판단에서 상호 보완적 방법론을 제공한다.

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 기계학습 기반 원자간 포텐셜(Machine-Learned Interatomic Potentials, MLIPs)인 Moment Tensor Potentials (MTP)를 활용하여 칼슘 전해 공정에 필요한 용융 Ca-Cu 합금과 CaCl₂-KCl 전해질의 물리화학적 성질을 고정확도로 예측한다. DFT 훈련 데이터 기반의 MTP-분자동역학(MD) 시뮬레이션으로 실험값 대비 20% 이내의 편차로 밀도, 열용량, 열전도도, 이온 전도도, 점도, 확산 계수 등을 계산하여 고온 실험의 비용과 시간을 대폭 절감할 수 있음을 입증했다"
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Bayesian_Materials_Inference"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Neural_Operator_Learning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Polovinkin et al._2026_Machine-Learned Interatomic Potentials for Predicting Physicochemical Properties of Molten Metal-Sal.pdf"
 ---
@@ -121,11 +122,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Polovinkin et al._2026_Machine-Learned I
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — Neural-POD의 무한차원 함수공간 학습 방법이 MTP-분자동역학의 물리화학적 성질 예측 정확도 향상에 활용됨
-- 🔗 후속 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리정보 신경망의 과학적 기계학습 방법론이 MTP의 DFT 기반 원자간 포텐셜 학습을 개선할 수 있음
-- 🏛 기반 연구: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — 연속 의존성 정성화 방법이 MTP의 물리화학적 성질 예측에서 불확실성 정량화에 필수적임
-- 🧪 응용 사례: [[papers/694_Scalable_Cross-Facility_Federated_Learning_for_Scientific_Fo/review]] — 분산 학습을 원자간 포텐셜 같은 물리 모델 훈련에 적용한다.
-- 🔄 다른 접근: [[papers/372_General-Purpose_Machine-Learned_Potential_for_CrCoNi_Alloys/review]] — 원자간 포텐셜 예측을 NEP vs 다른 머신러닝 기법으로 접근한다.
-- 🧪 응용 사례: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — Neural-POD의 무한차원 함수 학습 능력이 칼슘 전해 공정의 물리화학적 성질 예측 문제에 직접 적용됨
-- 🏛 기반 연구: [[papers/095_AMDAT_An_Open-Source_Molecular_Dynamics_Analysis_Toolkit_for/review]] — 기계학습 원자간 포텐셜이 MD 시뮬레이션의 물리적 예측 기반을 제공
-- 🧪 응용 사례: [[papers/007_A_fine-tuned_large_language_model_based_molecular_dynamics_a/review]] — 분자동역학 자동화를 위한 MDAgent는 Machine-Learned Interatomic Potentials 연구에서 개발된 물리적 특성 예측 기법을 실제 재료 설계에 적용합니다.
+- 🔄 다른 접근: [[papers/372_General-Purpose_Machine-Learned_Potential_for_CrCoNi_Alloys/review]] — 칼슘 전해질용 MTP와 CrCoNi 합금용 NEP는 서로 다른 재료계의 머신러닝 포텐셜 개발 사례이다.
+- 🧪 응용 사례: [[papers/660_Reimagining_urban_science_Scaling_causal_inference_with_larg/review]] — 대규모 언어모델을 활용한 도시과학의 인과추론이 칼슘 전해 공정 예측의 실제 응용 사례를 보여준다.
+- 🏛 기반 연구: [[papers/252_Data_integrity_in_materials_science_in_the_era_of_AI_balanci/review]] — AI 시대 재료과학의 데이터 무결성이 머신러닝 포텐셜 개발의 데이터 품질 기반을 제공한다.
+- 🔗 후속 연구: [[papers/380_Generative_machine_learning_in_adaptive_control_of_dynamic_m/review]] — 물리적 특성 예측을 위한 머신러닝 원자간 포텐셜 연구가 동적 제조 프로세스의 생성형 머신러닝 통합으로 발전되었다
+- 🔄 다른 접근: [[papers/372_General-Purpose_Machine-Learned_Potential_for_CrCoNi_Alloys/review]] — CrCoNi 합금용 NEP와 칼슘 전해질용 MTP는 서로 다른 재료계를 위한 머신러닝 포텐셜 개발 사례이다.
+- 🧪 응용 사례: [[papers/618_Physical_formula_enhanced_multi-task_learning_for_pharmacoki/review]] — 기계학습 원자간 포텐셜을 통해 물리 제약 기반 예측의 다른 응용 사례를 보여준다
+- 🧪 응용 사례: [[papers/007_A_fine-tuned_large_language_model_based_molecular_dynamics_a/review]] — 기계학습 기반 원자간 포텐셜 예측 방법론을 통해 MDAgent가 계산하는 열역학 파라미터의 정확성과 효율성을 향상시킬 수 있는 응용 방안을 제시함

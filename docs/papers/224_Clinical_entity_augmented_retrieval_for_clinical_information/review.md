@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "임상 노트에서 정보를 추출할 때 임상 엔티티(clinical entities)를 기반으로 관련 정보만 효율적으로 검색하여 대규모 언어모델(LLM)에 제공하는 CLEAR 파이프라인을 제안하며, 기존 embedding 기반 검색 대비 70% 이상의 토큰 사용량 감소와 추론 시간 단축을 달성하면서도 성능을 개선했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Publication_Concept_Extraction"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/López et al._2025_Clinical entity augmented retrieval for clinical information extraction.pdf"
 ---
@@ -115,9 +115,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/López et al._2025_Clinical entity augme
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 임상 정보 추출을 위한 엔티티 기반 검색과 과학 문헌 합성을 위한 일반적 검색 증강의 서로 다른 접근법을 제시합니다.
-- 🏛 기반 연구: [[papers/335_Few-shot_Learning_with_Retrieval_Augmented_Language_Models/review]] — 검색 증강 언어모델의 기본 원리를 임상 도메인에 특화하여 적용한 실제 구현 사례입니다.
-- 🔗 후속 연구: [[papers/768_Splade_v2_Sparse_lexical_and_expansion_model_for_information/review]] — 희소 렉시컬 검색 모델을 임상 엔티티 기반 검색으로 발전시킨 도메인 특화 응용 연구입니다.
-- 🧪 응용 사례: [[papers/335_Few-shot_Learning_with_Retrieval_Augmented_Language_Models/review]] — 검색 증강 언어모델의 일반적 원리를 임상 정보 추출이라는 구체적 도메인에 적용한 사례입니다.
-- 🔄 다른 접근: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 일반적인 과학 문헌 검색 합성과 임상 도메인 특화 엔티티 기반 검색이라는 서로 다른 전문 분야 접근법입니다.
-- 🔗 후속 연구: [[papers/424_Improving_health_question_answering_with_reliable_and_time-a/review]] — 임상 정보 검색의 개체 증강을 건강 질문 답변의 시간 인식 증거 검색으로 확장한 고도화된 방법입니다.
+- 🔄 다른 접근: [[papers/335_Few-shot_Learning_with_Retrieval_Augmented_Language_Models/review]] — 외부 지식 활용 방식에서 검색 증강과 임상 엔티티 기반 검색의 다른 접근법을 비교할 수 있습니다.
+- 🏛 기반 연구: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — 검색 증강 언어모델의 기본 개념을 제공하여, 임상 정보 추출에서의 효율적 검색 방법론의 이론적 기반이 됩니다.
+- 🧪 응용 사례: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — 임상 GPT 모델로, 임상 엔티티 증강 검색의 실제 의료 분야 적용 사례를 보여줍니다.
+- 🧪 응용 사례: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — 임상 정보 추출에서의 검색 증강 활용으로, REALM의 일반적 접근법을 의료 도메인에 특화 적용한 사례입니다.
+- 🔄 다른 접근: [[papers/335_Few-shot_Learning_with_Retrieval_Augmented_Language_Models/review]] — 임상 도메인에서의 특화된 검색 증강 방법으로, 일반적 접근법과 도메인 특화 접근법의 차이를 보여줍니다.

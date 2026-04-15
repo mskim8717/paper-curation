@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "대규모언어모델(LLM)을 기반으로 학술논문 검색, 분석, 리뷰 생성을 전자동화하는 엔드-투-엔드 방법론을 제시하며, 통계적으로 검증된 평가 프레임워크를 통해 생성된 리뷰가 인간 전문가 수준과 동등 이상의 품질을 달성함을 입증한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Peer_Review"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Domain-Specific_LLM_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2024_Automated review generation method based on large language models.pdf"
 ---
@@ -155,10 +155,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2024_Automated review generati
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1089_Prompting_llms_to_compose_meta-review_drafts_from_peer-revie/review]] — 학술논문 리뷰 자동화에서 완전 자동 생성과 메타리뷰 작성 지원의 서로 다른 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 과학 논문 리뷰 생성을 전문화된 대규모 언어모델로 확장한다.
-- 🏛 기반 연구: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — 피어 리뷰에서 자연어 처리의 역할에 대한 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/244_Cross_sectional_pilot_study_on_clinical_review_generation_us/review]] — 대규모 언어 모델 기반 자동 리뷰 생성 방법이 임상 리뷰 생성의 기초 방법론을 제공한다.
-- 🔗 후속 연구: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — 자율 실험실의 자동화된 실험 워크플로우는 대형 언어모델 기반 자동 리뷰 생성을 실험 설계 영역으로 확장한 응용입니다
-- 🔄 다른 접근: [[papers/1089_Prompting_llms_to_compose_meta-review_drafts_from_peer-revie/review]] — LLM 기반 리뷰 생성에서 메타리뷰 작성과 자동 리뷰 생성의 서로 다른 접근 방식을 제시한다.
-- 🏛 기반 연구: [[papers/350_Frame_Feedback-refined_agent_methodology_for_enhancing_medic/review]] — LLM 기반 자동 리뷰 생성 방법이 FRAME의 피드백 기반 다중 에이전트 시스템 설계의 기초가 됨
+- 🔗 후속 연구: [[papers/1089_Prompting_llms_to_compose_meta-review_drafts_from_peer-revie/review]] — 기본적인 리뷰 생성을 피어 리뷰라는 더 복잡하고 전문적인 학술 작업으로 확장한 응용 사례이다
+- 🏛 기반 연구: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — 학술 리뷰 자동화의 기반이 되는 자연어처리 기술과 피어 리뷰 시스템에 대한 포괄적 이해를 제공한다
+- 🔄 다른 접근: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — 리뷰 생성에서 완전 자동화와 탐색적 연구라는 서로 다른 접근 수준을 보여준다
+- 🏛 기반 연구: [[papers/1089_Prompting_llms_to_compose_meta-review_drafts_from_peer-revie/review]] — 자동화된 리뷰 생성의 기본 방법론과 LLM 활용 접근법에 대한 기초적 이해를 제공한다

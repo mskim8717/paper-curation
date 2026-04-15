@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "오프라인 강화학습(Offline Reinforcement Learning)을 활용하여 화학기상증착(CVD)을 통한 MoS₂ 양자소재 합성의 최적 합성 스케줄을 자동으로 예측하는 에이전트를 개발했으며, 10,000개의 반응 분자동역학 시뮬레이션 데이터로 학습하여 높은 품질의 결정성 MoS₂를 생성하는 미지의 합성 조건을 발견했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Materials_Discovery_Hypotheses"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Molecular_Synthesis_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rajak et al._2021_Autonomous reinforcement learning agent for chemical vapor deposition synthesis of quantum materials.pdf"
 ---
@@ -107,11 +109,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rajak et al._2021_Autonomous reinforceme
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/454_Lagrangian_neural_networks/review]] — 물리 법칙 보존을 고려한 신경망을 화학기상증착 공정 최적화에 적용할 수 있다
-- 🏛 기반 연구: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 과학 머신러닝의 파운데이션 모델 패러다임이 화학 공정 최적화에 적용될 수 있는 이론적 기반을 제공한다
-- 🔄 다른 접근: [[papers/249_Curriculum_Reinforcement_Learning_from_Easy_to_Hard_Tasks_Im/review]] — 강화학습을 통한 과학적 과제 해결에서 단일 vs 다중 과제 학습의 다른 접근법을 비교할 수 있다
-- 🔗 후속 연구: [[papers/662_Reinforcement_Learning_for_Dynamic_Microfluidic_Control/review]] — 오프라인 강화학습의 견고성 평가 방법론을 화학 공정 제어에 적용한 확장 연구다
-- 🔗 후속 연구: [[papers/380_Generative_machine_learning_in_adaptive_control_of_dynamic_m/review]] — 화학 기상 증착 프로세스에서 자율 강화학습 에이전트로 생성형 머신러닝 제어를 확장한다.
-- 🧪 응용 사례: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 편미분방정식 학습의 사전학습-미세조정 패러다임을 화학 공정 최적화에 적용할 수 있다
-- 🧪 응용 사례: [[papers/454_Lagrangian_neural_networks/review]] — 라그랑주 신경망의 에너지 보존 법칙을 화학기상증착 공정 모델링에 적용할 수 있다
-- 🔗 후속 연구: [[papers/1125_Accelerating_cell_culture_media_development_using_Bayesian_o/review]] — 화학 기상 증착의 자율 강화학습에서 베이지안 최적화로의 확장
+- 🔄 다른 접근: [[papers/099_An_autonomous_laboratory_for_the_accelerated_synthesis_of_in/review]] — CVD 공정의 강화학습 최적화와 A-Lab의 통합 자동화 시스템은 재료 합성 자동화의 서로 다른 접근법이다.
+- 🏛 기반 연구: [[papers/688_Robustness_evaluation_of_offline_reinforcement_learning_for/review]] — 오프라인 강화학습의 견고성 평가가 CVD 에이전트의 오프라인 RL 방법론 적용에 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/211_ChemGymRL_A_Customizable_Interactive_Framework_for_Reinforce/review]] — 화학 실험실 강화학습 환경을 화학기상증착 공정의 자율 강화학습이라는 구체적인 산업 응용에 적용한다
+- 🧪 응용 사례: [[papers/863_Value_iteration_for_learning_concurrently_executable_robotic/review]] — 화학 증착 공정 제어에서 제안된 독립적 가치함수 학습 방법이 다중 태스크 동시 실행에 적용될 수 있다.
+- 🧪 응용 사례: [[papers/626_Polymer_Brushes_and_Grafted_Polymers_AIML-Driven_Synthesis_S/review]] — 화학 기상 증착을 위한 자율 강화학습 에이전트 연구가 중합체 브러시 합성에서 자율 실험실 구현에 실제 적용되었다
+- 🏛 기반 연구: [[papers/380_Generative_machine_learning_in_adaptive_control_of_dynamic_m/review]] — 화학 기상 증착을 위한 자율 강화학습 연구가 동적 제조 프로세스의 적응형 제어 방법론에 이론적 기반을 제공한다
+- 🔄 다른 접근: [[papers/099_An_autonomous_laboratory_for_the_accelerated_synthesis_of_in/review]] — CVD 공정의 강화학습 자동화와 A-Lab의 무기재료 합성 자동화는 서로 다른 영역의 자율 실험실 구현 방법을 제시한다.
+- 🧪 응용 사례: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 화학 기상 증착을 위한 자율 강화학습 에이전트로, 자율 실험실 개념을 화학 합성 분야에 적용한 사례
+- 🏛 기반 연구: [[papers/1126_Autonomous_platform_for_solution_processing_of_electronic_po/review]] — 화학기상증착의 자율 강화학습 에이전트가 고분자 처리 최적화의 자동화 접근법에 기본 아이디어를 제공함

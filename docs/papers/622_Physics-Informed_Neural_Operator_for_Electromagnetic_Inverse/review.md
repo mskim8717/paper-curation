@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 신경 연산자(Neural Operator)와 물리 정보를 결합한 PINO 프레임워크를 제안하여 전자기 역산란 문제를 신속하고 정확하게 해결한다. 학습 가능한 텐서로 유전율을 표현하고 하이브리드 손실 함수(state loss, data loss, TV 정규화)로 신경 연산자와 물질 특성을 동시에 최적화한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Neural_Differential_Equations"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Neural_Operator_Learning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dong et al._2026_Physics-Informed Neural Operator for Electromagnetic Inverse Scattering Problems.pdf"
 ---
@@ -110,9 +111,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dong et al._2026_Physics-Informed Neural
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 물리 정보 신경 연산자를 전자기 역산란과 열관리 설계라는 서로 다른 물리 문제에 적용한 사례들이다.
-- 🏛 기반 연구: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — 즉석 학습을 위한 신경 연산자 플러그인 프레임워크가 전자기 역산란 문제 해결의 기술적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/427_Incorporating_Continuous_Dependence_Qualifies_Physics-Inform/review]] — 연속 의존성을 고려한 PINN 개선 방법을 전자기 역산란의 신경 연산자 학습에 적용할 수 있다.
-- 🔗 후속 연구: [[papers/440_Inverse_designing_metamaterials_with_programmable_nonlinear/review]] — 메타물질 역설계를 위한 GNN 접근법이 전자기 역문제 해결을 위한 물리 정보 기반 신경 연산자로 확장되었다
-- 🏛 기반 연구: [[papers/576_Nonlinear_stochastic_and_quantum_motion_from_Coulomb_forces/review]] — 물리 정보 신경 연산자의 전자기 역산란 적용 연구에서 쿨롱 상호작용의 물리적 이해가 도움이 될 수 있다.
-- 🔄 다른 접근: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 물리 정보 신경망의 다목적 설계 최적화와 전자기 역산란 문제라는 서로 다른 공학적 응용을 보여준다.
+- 🔄 다른 접근: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 둘 다 물리 정보 신경 연산자를 사용하지만 622는 전자기 역산란에, 621은 로봇 토크 제어에 적용
+- 🏛 기반 연구: [[papers/1099_Generative_Inversion_of_Spectroscopic_Data_for_Amorphous_Str/review]] — 역문제 해결을 위한 신경 연산자 접근법이 분광 데이터 역변환에서 구조 복원 방법론의 기반을 제공
+- 🧪 응용 사례: [[papers/364_From_Theory_to_Application_A_Practical_Introduction_to_Neura/review]] — 신경 연산자 이론을 전자기 역산란 문제에 적용하여 물질 특성 재구성의 실용적 사례를 제시
+- 🧪 응용 사례: [[papers/767_SPINONet_Scalable_Spiking_Physics-informed_Neural_Operator_f/review]] — 전자기 역문제를 위한 물리 정보 신경 연산자와 에너지 효율적 PINN은 모두 물리 기반 신경망의 구체적 적용 사례이다.
+- 🏛 기반 연구: [[papers/1099_Generative_Inversion_of_Spectroscopic_Data_for_Amorphous_Str/review]] — 물리 정보 신경 연산자의 역문제 해결 접근법이 분광 데이터 역변환 프레임워크의 이론적 기반을 제공함
+- 🔗 후속 연구: [[papers/364_From_Theory_to_Application_A_Practical_Introduction_to_Neura/review]] — 신경 연산자 기본 개념이 전자기 역산란 문제의 물리 정보 신경 연산자 구현에 직접 적용됨
+- 🔄 다른 접근: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 둘 다 물리 정보 신경 연산자를 사용하지만 621은 로봇 토크 제어에, 622는 전자기 역산란 문제에 적용

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 극도로 긴 입력 자원으로부터 장문 기사를 생성하는 LLM의 능력을 향상시키기 위해, 정보 병목 이론에 기반한 합성곱 신경망 영감의 테스트 타임 스케일링 방법을 제안한다. 추출적 방법의 한계를 극복하기 위해 자원을 통합적으로 활용하는 엔트로피 기반 최적화 프레임워크를 소개한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Benchmarking_Taxonomy"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_Llm × mapreduce-v2 Entropy-driven convolutional test-time scaling for generating long-form articles.pdf"
 ---
@@ -113,7 +114,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_Llm × mapreduce-v2 Ent
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — 발산적 사고와 과학적 창의성 평가와 달리 극도로 긴 입력에서 장문 기사 생성이라는 다른 LLM 능력을 측정한다.
-- 🏛 기반 연구: [[papers/005_A_comprehensive_survey_on_long_context_language_modeling/review]] — 긴 컨텍스트 언어 모델링에 대한 종합적 조사가 극도로 긴 입력 처리 방법론의 이론적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/036_A_survey_on_transformer_context_extension_Approaches_and_eva/review]] — 트랜스포머 컨텍스트 확장 접근법들이 엔트로피 기반 테스트 타임 스케일링의 구체적인 확장 기술이다.
-- 🔄 다른 접근: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — 과학적 아이디어 생성 능력 평가와 장문 기사 생성 능력 평가 모두 LLM의 창의적 생성 능력을 다루지만 평가 방식이 다르다.
+- 🏛 기반 연구: [[papers/759_SLE-FNO_Single-Layer_Extensions_for_Task-Agnostic_Continual/review]] — 과학 기계학습의 지속학습 원리가 장문 생성의 테스트 타임 스케일링 기법에 이론적 기반을 제공한다
+- 🔄 다른 접근: [[papers/036_A_survey_on_transformer_context_extension_Approaches_and_eva/review]] — 엔트로피 기반 최적화와 트랜스포머 컨텍스트 확장이 서로 다른 방식으로 긴 입력 처리 문제를 해결한다
+- 🔄 다른 접근: [[papers/759_SLE-FNO_Single-Layer_Extensions_for_Task-Agnostic_Continual/review]] — 과학 모델의 지속학습과 장문 생성 스케일링이 서로 다른 적응 메커니즘을 제시한다
+- 🔄 다른 접근: [[papers/755_Simalign_High_quality_word_alignments_without_parallel_train/review]] — MapReduce 기반 다국어 처리와 달리 정적/문맥화 임베딩을 활용한 직접적인 단어 정렬 방법론을 제시한다.

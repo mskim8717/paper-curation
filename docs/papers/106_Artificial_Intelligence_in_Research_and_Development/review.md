@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 인공지능(AI)이 연구개발(R&D)의 아이디어 생산함수(ideas production function)에 미치는 영향을 평가하기 위한 이론적 프레임워크를 제시한다. 기계(AI 포함)와 인간을 R&D의 이질적 입력요소로 모델링하여, AI의 발전이 연구 진행 속도를 어느 정도 가속화할 수 있는지를 분석한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/AI-Human_Hypothesis_Generation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jones, Benjamin_2025_Artificial Intelligence in Research and Development.pdf"
 ---
@@ -116,7 +116,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jones, Benjamin_2025_Artificial Intellig
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — 과학 자동화가 R&D 생산성에 미치는 경제적 영향을 이론적으로 분석한다.
-- 🏛 기반 연구: [[papers/575_Nobel_Turing_Challenge_creating_the_engine_for_scientific_di/review]] — AI의 연구개발 영향 분석이 AI Scientist 개발의 경제적 정당성을 제공한다.
-- 🔗 후속 연구: [[papers/562_Multi-agent_risks_from_advanced_ai/review]] — AI의 R&D 영향을 다중 에이전트 위험성 관점에서 확장한다.
-- 🔗 후속 연구: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — 과학 자동화가 R&D 생산성에 미치는 경제적 영향을 구체적으로 분석한다.
+- 🏛 기반 연구: [[papers/562_Multi-agent_risks_from_advanced_ai/review]] — 고급 AI로부터의 다중 에이전트 위험 분석이 AI의 R&D 생산함수 영향 평가의 위험 관리 기반을 제공한다
+- 🔗 후속 연구: [[papers/793_The_Adoption_and_Usage_of_AI_Agents_Early_Evidence_from_Perp/review]] — 개인 연구에서의 AI 에이전트 채택 및 사용 초기 증거가 AI의 연구개발 영향에 대한 실증적 확장을 제공한다
+- 🧪 응용 사례: [[papers/631_Predicting_field_experiments_with_large_language_models/review]] — 언어모델을 통한 현장 실험 예측이 AI의 연구 아이디어 생산함수 영향에 대한 구체적 응용 사례를 보여준다

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "생의학 분야의 연구 논문 초록을 이용하여 yes/no/maybe로 답변하는 질문응답 데이터셋을 제안한다. 1,000개의 전문가 주석 데이터, 61,200개의 미표지 데이터, 211,300개의 자동생성 데이터로 구성되며, 정량적 추론이 필요한 최초의 생의학 QA 데이터셋이다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Question_Answering"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Scholarly_Question_Answering"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jin et al._2019_Pubmedqa A dataset for biomedical research question answering.pdf"
 ---
@@ -101,12 +102,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jin et al._2019_Pubmedqa A dataset for b
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/715_Scidqa_A_deep_reading_comprehension_dataset_over_scientific/review]] — PubMedQA가 생의학 초록 기반 yes/no 답변에 특화된 반면, SciDQA는 전체 과학 논문의 깊이 있는 이해를 요구하여 서로 다른 복잡도의 과학 QA를 다룸
-- 🔗 후속 연구: [[papers/701_Scholarchemqa_Unveiling_the_power_of_language_models_in_chem/review]] — ScholarChemQA가 PubMedQA의 생의학 질의응답 접근법을 화학 영역으로 확장하여 언어모델의 과학 분야별 전문 지식 활용 능력을 체계적으로 평가함
-- 🧪 응용 사례: [[papers/528_MedAgentGym_A_Scalable_Agentic_Training_Environment_for_Code/review]] — MedAgentGym의 확장 가능한 에이전트 훈련 환경이 PubMedQA 데이터셋을 활용하여 의료 코딩 작업에서의 실제적 성능 향상을 달성할 수 있는 구체적 방법을 제시함
-- 🏛 기반 연구: [[papers/068_AgentMD_Empowering_Language_Agents_for_Risk_Prediction_with/review]] — PubMedQA의 생의학 연구 질문 답변 데이터셋이 AgentMD의 PubMed 문헌 기반 큐레이션 방법론의 기초가 됨
-- 🔗 후속 연구: [[papers/172_Boolq_Exploring_the_surprising_difficulty_of_natural_yesno_q/review]] — 일반적인 예/아니오 질문에서 생물의학 도메인의 전문적 질의응답으로 확장한 도메인 특화 연구입니다.
-- 🔗 후속 연구: [[papers/715_Scidqa_A_deep_reading_comprehension_dataset_over_scientific/review]] — PubMedQA의 생의학 질의응답을 전체 과학 논문으로 확장하여 표, 그림, 다중 문서 추론을 포함한 더 복잡한 과학 텍스트 이해 평가로 발전시킨 연구임
-- 🔄 다른 접근: [[papers/701_Scholarchemqa_Unveiling_the_power_of_language_models_in_chem/review]] — 둘 다 도메인 특화된 QA 데이터셋을 다루지만 하나는 화학, 다른 하나는 의학 분야에 중점을 둠
-- 🏛 기반 연구: [[papers/424_Improving_health_question_answering_with_reliable_and_time-a/review]] — PubMed 기반 생의학 질의응답 데이터셋이 건강 질문 답변의 신뢰성 있는 증거 검색 연구에 기초 데이터를 제공합니다.
-- 🔄 다른 접근: [[papers/530_Medbiolm_Optimizing_medical_and_biological_qa_with_fine-tune/review]] — 생물의학 질의응답을 위한 다른 데이터셋과 접근법을 제시한다
+- 🔄 다른 접근: [[papers/715_Scidqa_A_deep_reading_comprehension_dataset_over_scientific/review]] — SciDQA는 과학 논문의 깊이 있는 독해 이해를 평가하는 데이터셋으로, PubMedQA의 생의학 특화 접근과 대비되는 범용 과학 QA 평가를 제공한다
+- 🏛 기반 연구: [[papers/172_Boolq_Exploring_the_surprising_difficulty_of_natural_yesno_q/review]] — 자연어 yes/no 질문의 어려움을 체계적으로 분석한 연구로, PubMedQA의 yes/no/maybe 답변 체계 설계의 이론적 근거를 제공한다
+- 🔗 후속 연구: [[papers/701_Scholarchemqa_Unveiling_the_power_of_language_models_in_chem/review]] — 화학 분야에 특화된 질의응답 데이터셋으로, PubMedQA의 생의학 분야 접근을 화학 도메인으로 확장한 연구 방향을 보여준다
+- 🔗 후속 연구: [[papers/730_Sciqag_A_framework_for_auto-generated_science_question_answe/review]] — 생의학 질의응답 데이터셋으로 과학 QA 자동 생성을 의학 분야로 확장한다.
+- 🔄 다른 접근: [[papers/172_Boolq_Exploring_the_surprising_difficulty_of_natural_yesno_q/review]] — 생의학 분야의 질문 답변 데이터셋으로, 일반 도메인 예/아니오 질문과 전문 의료 분야 질문의 차이를 비교할 수 있습니다.
+- 🔄 다른 접근: [[papers/715_Scidqa_A_deep_reading_comprehension_dataset_over_scientific/review]] — PubMedQA는 생의학 분야에 특화된 질의응답 데이터셋으로, SciDQA의 범용 과학 논문 이해와 다른 도메인별 접근법을 보여준다
+- 🏛 기반 연구: [[papers/424_Improving_health_question_answering_with_reliable_and_time-a/review]] — 생의학 연구 질의응답 데이터셋이 건강 관련 질문 답변 시스템의 기초 훈련 및 평가 자료를 제공한다.
+- 🔄 다른 접근: [[papers/711_Sciclaims_An_end-to-end_generative_system_for_biomedical_cla/review]] — 생의학 연구에서 질문 답변과 주장 검증이라는 서로 다른 지식 처리 접근법을 비교할 수 있다.

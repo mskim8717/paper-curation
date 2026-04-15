@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "AutoGen은 LLM 기반 에이전트들이 서로 대화하면서 협력하여 복잡한 작업을 해결할 수 있는 오픈소스 프레임워크로, 개발자가 다양한 도메인의 LLM 애플리케이션을 빠르게 구축할 수 있도록 돕는다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-agent_Task_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2023_AutoGen Enabling Next-Gen LLM Applications via Multi-Agent Conversation.pdf"
 ---
@@ -107,14 +109,18 @@ AutoGen은 LLM 기반 에이전트들이 서로 대화하면서 협력하여 복
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/596_OWL_Optimized_Workforce_Learning_for_General_Multi-Agent_Ass/review]] — OWL의 모듈식 WORKFORCE 프레임워크가 AutoGen의 대화형 다중 에이전트 시스템을 도메인 범용성을 위해 발전시킨 확장 버전이다.
-- 🧪 응용 사례: [[papers/358_From_Labor_to_Collaboration_A_Methodological_Experiment_Usin/review]] — 인문사회과학 연구를 위한 Agentic Workflow가 AutoGen의 다중 에이전트 협업 메커니즘을 특정 학문 영역에 적용한 실용 사례이다.
-- 🏛 기반 연구: [[papers/655_ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models/review]] — ReAct의 추론-행동 결합 패러다임이 AutoGen의 에이전트 간 대화형 문제 해결 메커니즘의 기본적인 설계 원리를 제공한다.
-- 🔗 후속 연구: [[papers/447_Iterative_self-incentivization_empowers_large_language_model/review]] — AutoGen의 멀티 에이전트 프레임워크는 EXSEARCH의 단일 에이전트 자기 개선을 여러 에이전트 간 협력적 학습으로 확장한다.
-- 🏛 기반 연구: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — 다중 에이전트 시스템의 일반적 프레임워크가 단일세포 분석 특화 에이전트의 기술적 기반을 제공한다
-- 🏛 기반 연구: [[papers/327_Experiential_co-learning_of_software-developing_agents/review]] — 차세대 LLM 애플리케이션을 위한 다중 에이전트 프레임워크의 이론적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 차세대 LLM 애플리케이션을 위한 멀티에이전트 프레임워크가 복잡한 문제 해결의 구체적 구현 사례입니다.
-- 🔗 후속 연구: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — AutoGen의 다중 에이전트 프레임워크에 정량적 확장 법칙을 적용하여 성능 예측 가능성을 높인다.
-- 🏛 기반 연구: [[papers/050_Adasociety_An_adaptive_environment_with_social_structures_fo/review]] — AutoGen의 다중 에이전트 대화 메커니즘이 AdaSociety의 사회적 구조 기반 협력 환경 구축에 핵심적인 기술적 토대를 제공한다.
-- 🧪 응용 사례: [[papers/358_From_Labor_to_Collaboration_A_Methodological_Experiment_Usin/review]] — AutoGen의 다중 에이전트 대화 프레임워크가 인문사회과학 연구의 특수성을 고려한 협업 워크플로우에 구체적으로 적용된 사례이다.
-- 🔗 후속 연구: [[papers/596_OWL_Optimized_Workforce_Learning_for_General_Multi-Agent_Ass/review]] — OWL의 모듈식 WORKFORCE 프레임워크가 AutoGen의 다중 에이전트 시스템을 도메인 이식성 문제 해결을 위해 발전시킨 확장된 아키텍처이다.
+- 🔗 후속 연구: [[papers/381_Genesis_Towards_the_Automation_of_Systems_Biology_Research/review]] — AutoGen의 다중 에이전트 협업 프레임워크를 시스템 생물학이라는 특정 과학 도메인에 적용하여 실제 과학 연구 자동화로 확장함
+- 🔄 다른 접근: [[papers/596_OWL_Optimized_Workforce_Learning_for_General_Multi-Agent_Ass/review]] — 다중 에이전트 협업이라는 동일한 목표를 가지지만 AutoGen은 범용적이고 OWL은 도메인별 특화 최적화에 집중한 서로 다른 접근법임
+- 🏛 기반 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — LLM 기반 자율 에이전트의 포괄적 조사를 통해 AutoGen과 같은 다중 에이전트 시스템의 이론적 배경과 설계 원리를 제공함
+- 🏛 기반 연구: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 다중 에이전트 LLM 시스템의 기본 프레임워크를 제공하며 과학 아이디어 생성에 적용된다
+- 🏛 기반 연구: [[papers/847_Two_heads_are_better_than_one_A_multi-agent_system_has_the_p/review]] — 다중 에이전트 애플리케이션의 기반 프레임워크를 제공한다.
+- 🧪 응용 사례: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — 자율 에이전트 이론을 실제 다중 에이전트 애플리케이션 개발에 적용한 구체적 사례이다
+- 🏛 기반 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — AutoGen의 멀티에이전트 애플리케이션 구현 프레임워크는 LLM 기반 멀티에이전트 시스템 설계의 실용적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/754_ShinkaEvolve_Towards_Open-Ended_And_Sample-Efficient_Program/review]] — 다중 에이전트 프레임워크를 통해 ShinkaEvolve의 협력적 진화 개념을 확장할 수 있음
+- 🧪 응용 사례: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — 차세대 LLM 애플리케이션을 위한 다중 에이전트 대화 프레임워크로, 확장 법칙의 구체적 구현 사례
+- 🏛 기반 연구: [[papers/381_Genesis_Towards_the_Automation_of_Systems_Biology_Research/review]] — AutoGen의 다중 에이전트 대화 프레임워크를 기반으로 시스템 생물학이라는 특정 과학 분야에 적용한 전문화된 구현임
+- 🏛 기반 연구: [[papers/526_MechAgents_Large_language_model_multi-agent_collaborations_c/review]] — AutoGen의 다중 에이전트 대화 및 협업 프레임워크를 기반으로 역학 문제 해결이라는 특정 과학 분야에 적용한 전문화된 구현임
+- 🏛 기반 연구: [[papers/535_MetaOpenFOAM_an_LLM-based_multi-agent_framework_for_CFD/review]] — AutoGen의 다중 에이전트 협업 프레임워크와 MetaGPT의 조립라인 패러다임을 기반으로 CFD 시뮬레이션 자동화에 특화된 시스템을 구축함
+- 🔄 다른 접근: [[papers/596_OWL_Optimized_Workforce_Learning_for_General_Multi-Agent_Ass/review]] — 다중 에이전트 시스템 구축을 다루지만 OWL은 도메인 이식성과 최적화에, AutoGen은 범용적 에이전트 대화에 집중한 서로 다른 접근법임
+- 🏛 기반 연구: [[papers/676_Reviewagents_Bridging_the_gap_between_human_and_ai-generated/review]] — 다중 에이전트 시스템의 기초적인 협업 방법론을 학술 논문 심사 영역에 적용한다.
+- 🏛 기반 연구: [[papers/742_Select_read_and_write_A_multi-agent_framework_of_full-text-b/review]] — 다중 에이전트 시스템의 기초적인 협업 방법론을 학술 논문의 관련 연구 생성에 적용한다.

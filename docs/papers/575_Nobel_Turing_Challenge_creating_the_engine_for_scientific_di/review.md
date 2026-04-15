@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.5
 essence: "과학 발견의 과정을 자동화하고 가속화하기 위한 AI 시스템(AI Scientist)을 개발하는 것을 목표로 하는 거대한 도전(Grand Challenge)을 제시한다. 이는 노벨상 수준의 발견을 자율적으로 수행할 수 있는 AI를 2050년까지 구현하려는 야심찬 비전이다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/AI_Scientist_System_Development"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kitano_2021_Nobel Turing Challenge creating the engine for scientific discovery.pdf"
 ---
@@ -114,14 +114,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kitano_2021_Nobel Turing Challenge creat
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — 과학 자동화의 구체적 구현체로서 AI Scientist를 통해 노벨-튜링 챌린지를 실현한다.
-- 🏛 기반 연구: [[papers/363_From_Reasoning_to_Learning_A_Survey_on_Hypothesis_Discovery/review]] — 가설 발견과 규칙 학습이 자율적 과학 발견 엔진의 핵심 기능이다.
-- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI Scientist의 초기 구현을 완전 자동화된 개방형 과학 발견으로 발전시킨다.
-- 🏛 기반 연구: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — 과학 자동화 프레임워크가 AI Scientist 구현의 실용적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/363_From_Reasoning_to_Learning_A_Survey_on_Hypothesis_Discovery/review]] — LLM의 추론 능력이 AI Scientist의 가설 생성 엔진 구현에 필요하다.
-- 🏛 기반 연구: [[papers/878_What_ChatGPT_and_generative_AI_mean_for_science/review]] — 생성형 AI의 과학적 잠재력이 AI Scientist 개발의 동기와 방향을 제시한다.
-- 🏛 기반 연구: [[papers/106_Artificial_Intelligence_in_Research_and_Development/review]] — AI의 연구개발 영향 분석이 AI Scientist 개발의 경제적 정당성을 제공한다.
-- 🧪 응용 사례: [[papers/834_Towards_Scientific_Discovery_with_Generative_AI_Progress_Opp/review]] — 과학 발견 엔진 개발의 구체적 실현 방안과 도전 과제를 제시한다
-- 🧪 응용 사례: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 과학 발견 엔진의 구체적 구현체로서 노벨 튜링 챌린지에 부응하는 시스템을 제시한다
-- 🏛 기반 연구: [[papers/076_AI_for_Science_An_Emerging_Agenda/review]] — 과학적 발견 엔진 구축의 이론적 토대를 제공하는 노벨 튜링 챌린지
-- 🧪 응용 사례: [[papers/352_From_AI_for_Science_to_Agentic_Science_A_Survey_on_Autonomou/review]] — 에이전틱 사이언스 프레임워크를 과학 발견 엔진 구축에 적용하여 노벨-튜링 챌린지와 같은 야심찬 목표를 달성할 수 있다.
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI Scientist의 구체적 구현이 노벨 튜링 챌린지의 실현 가능성을 입증하는 중요한 이정표 역할을 한다
+- 🏛 기반 연구: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — 인공지능 시대의 과학 발견에 대한 종합적 관점이 노벨 튜링 챌린지의 이론적 토대를 마련한다
+- 🔄 다른 접근: [[papers/817_Toward_a_Team_of_AI-made_Scientists_for_Scientific_Discovery/review]] — AI 과학자 팀을 향한 접근법이 단일 AI 과학자 엔진과는 다른 협력적 패러다임으로 과학 발견 자동화를 추구한다
+- 🔗 후속 연구: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — 과학 자동화의 실무적 고려사항과 사회적 함의가 노벨 튜링 챌린지의 구체적 실현 방안과 윤리적 기준을 제공한다
+- 🏛 기반 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 노벨 튜링 챌린지의 거대한 비전이 AI Scientist의 구체적 구현을 위한 목표와 방향성을 제시한다

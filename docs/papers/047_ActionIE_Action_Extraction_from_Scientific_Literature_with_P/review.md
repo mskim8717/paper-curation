@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "과학 문헌의 비정형 자연언어로 표현된 실험 절차를 Python 코드 생성 문제로 재정의하여 대규모 언어모델(LLM)을 활용해 화학 합성 행동을 추출하는 방법론을 제시한다. 프로그래밍 언어의 구조적 특성(클래스, 상속, 타입)을 활용하여 엔티티 간 관계를 명확히 포착한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Multi-Hop_Reasoning_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhong et al._2024_ActionIE Action Extraction from Scientific Literature with Programming Languages.pdf"
 ---
@@ -104,6 +104,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhong et al._2024_ActionIE Action Extrac
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — Python 코드 생성을 통한 화학 행동 추출과 화학 도구로 증강된 대형 언어모델은 모두 과학 문헌의 실험 절차를 자동화하는 서로 다른 접근법입니다
-- 🏛 기반 연구: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — 코드 생성을 위한 오픈 대형 언어모델은 과학 문헌의 실험 절차를 Python 코드로 변환하는 ActionIE의 기술적 기반입니다
-- 🔗 후속 연구: [[papers/212_Chemist-X_Large_Language_Model-empowered_Agent_for_Reaction/review]] — 반응 예측을 위한 대형 언어모델 기반 에이전트는 ActionIE의 화학 합성 행동 추출을 실제 반응 설계로 확장한 응용입니다
+- 🔗 후속 연구: [[papers/210_ChemCrow_Augmenting_large-language_models_with_chemistry_too/review]] — 화학 합성 행동 추출 방법론과 화학 도구 증강 LLM을 결합하면 실험 절차 이해부터 실제 화학 반응 수행까지 통합된 시스템을 구축할 수 있다.
+- 🧪 응용 사례: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 프로그래밍 기반 행동 추출 방법론을 화학 에이전트의 도구 사용 과학 연구에 적용하여 실험 자동화 성능을 향상시킬 수 있다.

@@ -8,8 +8,8 @@ arxiv: ""
 score: 3.5
 essence: "연구자와 학생들을 위한 AI 도구 선택 가이드로, 문헌 검토부터 데이터 분석, 논문 작성까지 연구 과정의 각 단계별로 활용할 수 있는 최신 AI 플랫폼들을 실제 사용자 경험 사례와 함께 소개한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/AI_for_Science_Taxonomy"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Research_Taxonomy_Surveys"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Heidt_2025_AI for research the ultimate guide to choosing the right tool.pdf"
 ---
@@ -95,7 +95,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Heidt_2025_AI for research the ultimate 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/508_LLMs_as_Research_Tools_A_Large_Scale_Survey_of_Researchers_U/review]] — 연구자들의 LLM 사용에 대한 대규모 조사가 올바른 도구 선택 가이드의 실증적 근거를 제공한다.
-- 🔄 다른 접근: [[papers/875_What_are_the_best_AI_tools_for_research_Natures_guide/review]] — Nature의 연구용 AI 도구 가이드가 궁극적 도구 선택 가이드의 다른 관점과 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/899_ChatGPT_and_science_the_AI_system_was_a_force_in_2023__for_g/review]] — ChatGPT의 과학 분야 영향 분석을 바탕으로 연구자를 위한 구체적인 AI 도구 선택 가이드로 발전시켰다.
-- 🔄 다른 접근: [[papers/875_What_are_the_best_AI_tools_for_research_Natures_guide/review]] — 연구용 AI 도구 선택 가이드와 연구용 AI 도구 선택 가이드는 서로 다른 관점에서 연구자들의 AI 도구 활용을 지원한다.
+- 🔗 후속 연구: [[papers/904_How_AI-powered_science_search_engines_can_speed_up_your_rese/review]] — AI 검색 엔진 소개에서 전체 연구 과정의 AI 도구 가이드로 확장된 포괄적 접근이다
+- 🏛 기반 연구: [[papers/810_Through_the_lens_of_core_competency_Survey_on_evaluation_of/review]] — LLM 평가 방법론이 연구자들이 적절한 AI 도구를 선택하는 기준을 제공한다
+- 🧪 응용 사례: [[papers/508_LLMs_as_Research_Tools_A_Large_Scale_Survey_of_Researchers_U/review]] — 연구 도구로서 LLM 활용에 대한 대규모 조사가 도구 선택 가이드의 실증적 근거이다
+- 🔄 다른 접근: [[papers/875_What_are_the_best_AI_tools_for_research_Natures_guide/review]] — Nature 가이드와 함께 연구용 AI 도구 선택을 위한 상호 보완적인 실용 지침서이다
+- 🔗 후속 연구: [[papers/810_Through_the_lens_of_core_competency_Survey_on_evaluation_of/review]] — LLM 평가 체계가 연구자들의 도구 선택을 위한 실용적 가이드로 확장된다
+- 🔗 후속 연구: [[papers/875_What_are_the_best_AI_tools_for_research_Natures_guide/review]] — 연구를 위한 AI 도구 선택 가이드를 더욱 포괄적으로 확장하여 실용적 조언을 제공한다

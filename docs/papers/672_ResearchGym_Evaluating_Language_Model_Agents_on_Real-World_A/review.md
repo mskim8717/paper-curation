@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 실제 AI 연구 논문의 저장소를 기반으로 엔드-투-엔드 연구 루프를 평가하는 벤치마크 ResearchGym을 제시한다. GPT-5 기반 에이전트가 인상적인 성능을 보이기도 하지만 신뢰성이 매우 낮다는 \"능력-신뢰성 격차(capability-reliability gap)\"를 실증적으로 입증한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/LLM_Agent_Benchmarking"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/ML_Research_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Garikaparthi et al._2026_ResearchGym Evaluating Language Model Agents on Real-World AI Research.pdf"
 ---
@@ -172,11 +173,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Garikaparthi et al._2026_ResearchGym Eva
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — ML 실험 자동화에 특화된 MLAgentBench와 달리 전체 AI 연구 프로세스를 평가하는 포괄적 접근
-- 🏛 기반 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — 도구 사용 능력을 평가하는 ToolLLM의 방법론을 연구 에이전트 평가로 확장한 기반
-- 🔗 후속 연구: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — AI Scientist의 자동화된 과학 발견을 실제 연구 환경에서 체계적으로 벤치마킹하는 확장 연구
-- 🏛 기반 연구: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 대화형 환경에서의 능동적 탐색 능력 평가 방법론을 연구 에이전트 평가에 적용한 기반
-- 🏛 기반 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — ML 실험 특화 에이전트 평가 방법론이 전체 AI 연구 프로세스 평가로 확장된 기반
-- 🔗 후속 연구: [[papers/780_Surveyforge_On_the_outline_heuristics_memory-driven_generati/review]] — AI 연구 평가에서 자동화된 문헌 검토와 설문 생성 능력을 체계적으로 평가
-- 🔗 후속 연구: [[papers/815_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_R/review]] — API 도구 사용 능력 평가 방법론을 AI 연구 자동화 평가로 확장한 발전
-- 🏛 기반 연구: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 대화형 환경에서의 능동적 탐색 능력 평가가 AI 연구 에이전트 평가의 방법론적 기반
+- 🔄 다른 접근: [[papers/326_Exp-bench_Can_ai_conduct_ai_research_experiments_arXiv_prepr/review]] — EXP-Bench는 AI의 완전한 실험 수행 능력을 평가하는 벤치마크로, ResearchGym의 연구 평가 접근법과 상호 보완적인 평가 기준을 제공한다
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI Scientist는 완전 자동화된 과학 연구를 목표로 하여, ResearchGym에서 발견한 능력-신뢰성 격차를 해결하는 더 발전된 시스템을 제시한다
+- 🏛 기반 연구: [[papers/545_Mle-bench_Evaluating_machine_learning_agents_on_machine_lear/review]] — 머신러닝 에이전트의 ML 작업 수행 능력을 평가하는 벤치마크로, ResearchGym의 AI 연구 평가 개념의 기초적 틀을 제공한다
+- 🔗 후속 연구: [[papers/556_MolQuest_A_Benchmark_for_Agentic_Evaluation_of_Abductive_Rea/review]] — 실세계 연구 환경에서 LLM 에이전트 평가를 확장한다
+- 🏛 기반 연구: [[papers/546_Mlgym_A_new_framework_and_benchmark_for_advancing_ai_researc/review]] — 실세계 연구 환경 평가가 AI 연구 에이전트 벤치마킹의 기반이 된다
+- 🔄 다른 접근: [[papers/326_Exp-bench_Can_ai_conduct_ai_research_experiments_arXiv_prepr/review]] — ResearchGym이 실제 AI 연구 평가에 초점을 맞춘 반면, EXP-Bench는 완전한 종료-대-종료 실험 수행 능력을 평가하는 상호 보완적 접근을 제시한다
+- 🏛 기반 연구: [[papers/578_Novelseek_When_agent_becomes_the_scientistbuilding_closed-lo/review]] — ResearchGym의 실제 연구 환경 시뮬레이션이 NovelSeek 같은 자동화 연구 시스템의 평가 기준을 제공함

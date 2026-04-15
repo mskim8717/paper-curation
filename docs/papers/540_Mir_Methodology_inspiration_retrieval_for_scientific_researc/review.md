@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 과학 연구 문제 해결을 위해 **방법론적 영감(Methodology Inspiration)을 줄 수 있는 선행 연구를 검색하는 새로운 과제(MIR)**를 정의하고, 인용 네트워크의 방법론적 계보를 포착하는 **방법론 인접 그래프(MAG)**를 활용하여 밀집 검색기(dense retriever)를 학습하는 기법을 제시한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Literature_Analysis"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Research_Literature_Analysis_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Garikaparthi et al._2025_Mir Methodology inspiration retrieval for scientific research problems.pdf"
 ---
@@ -109,9 +110,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Garikaparthi et al._2025_Mir Methodology
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/579_Nsf-scify_Mining_the_nsf_awards_database_for_scientific_clai/review]] — NSF 데이터베이스가 방법론적 영감 검색의 과학 연구 데이터 기반
-- 🏛 기반 연구: [[papers/391_Graph_of_ai_ideas_Leveraging_knowledge_graphs_and_llms_for_a/review]] — AI 아이디어 지식 그래프가 방법론적 영감 검색의 구조적 표현 기반
-- 🔗 후속 연구: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — 방법론적 영감 검색을 지식 그래프 기반 과학 아이디어 생성으로 확장
-- 🔄 다른 접근: [[papers/492_Literature_meets_data_A_synergistic_approach_to_hypothesis_g/review]] — 방법론적 영감 vs 문헌-데이터 결합으로 가설 생성의 서로 다른 접근법
-- 🧪 응용 사례: [[papers/579_Nsf-scify_Mining_the_nsf_awards_database_for_scientific_clai/review]] — NSF 데이터베이스의 방법론적 계보를 연구 문제 해결에 활용한 응용 사례
-- 🔗 후속 연구: [[papers/391_Graph_of_ai_ideas_Leveraging_knowledge_graphs_and_llms_for_a/review]] — AI 아이디어 지식 그래프를 방법론적 영감 검색으로 확장한 연구 지원 시스템
+- 🏛 기반 연구: [[papers/020_A_Review_of_Relational_Machine_Learning_for_Knowledge_Graphs/review]] — 관계형 기계학습과 지식 그래프의 핵심 이론적 배경을 제공합니다.
+- 🔄 다른 접근: [[papers/500_Llm-based_corroborating_and_refuting_evidence_retrieval_for/review]] — 과학 연구를 위한 증거 검색의 다른 접근 방식을 제시합니다.
+- 🔗 후속 연구: [[papers/603_PaperRobot_Incremental_Draft_Generation_of_Scientific_Ideas/review]] — 방법론적 영감 검색을 자동화된 논문 생성 시스템에 통합할 수 있습니다.
+- 🔗 후속 연구: [[papers/604_Pasa_An_llm_agent_for_comprehensive_academic_paper_search/review]] — 방법론 영감 검색을 포괄적인 학술 논문 검색으로 확장한다
+- 🔄 다른 접근: [[papers/500_Llm-based_corroborating_and_refuting_evidence_retrieval_for/review]] — 과학 연구를 위한 다른 형태의 지식 검색 및 활용 방법을 제시합니다.
+- 🏛 기반 연구: [[papers/603_PaperRobot_Incremental_Draft_Generation_of_Scientific_Ideas/review]] — 방법론적 영감 검색을 통한 지식 그래프 구축에 활용됩니다.
+- 🔗 후속 연구: [[papers/729_Scipip_An_llm-based_scientific_paper_idea_proposer/review]] — 방법론적 영감 검색을 논문 아이디어 생성 과정에 통합합니다.

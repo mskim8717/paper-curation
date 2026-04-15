@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 소형 언어모델(Phi-3)을 기반으로 생물정보학 데이터로 미세조정하고 검색 증강 생성(RAG)을 통합한 다중 에이전트 시스템을 제안한다. BioAgents는 지역(local) 운영과 독점 데이터 기반 개인화를 가능하게 하며, 개념적 유전체학 작업에서 인간 전문가 수준의 성능을 달성한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mehandru et al._2025_BioAgents Democratizing Bioinformatics Analysis with Multi-Agent Systems.pdf"
 ---
@@ -116,6 +117,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Mehandru et al._2025_BioAgents Democrati
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 생물정보학 분야에서 소형 언어모델 기반과 대형 언어모델 기반의 다중 에이전트 시스템 접근법을 비교하여 각각의 장단점을 분석할 수 있다.
-- 🏛 기반 연구: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — 생물정보학을 위한 다중 에이전트 시스템의 성능 평가에 과학 에이전트 벤치마크 방법론이 기초적인 평가 틀을 제공한다.
-- 🔗 후속 연구: [[papers/638_ProtAgents_protein_discovery_via_large_language_model_multi-/review]] — BioAgents의 생물정보학 분석 접근법을 단백질 발견 영역으로 확장하여 더 전문화된 다중 에이전트 시스템을 구축할 수 있다.
+- 🔄 다른 접근: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — BioAgents가 범용 생물정보학을 다루는 반면 scAgent는 단일세포 주석에 특화되어 서로 다른 접근법을 보인다.
+- 🔗 후속 연구: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — MedAgents의 제로샷 의료 협업이 BioAgents의 생물정보학 민주화를 의료 도메인으로 확장한다.
+- 🏛 기반 연구: [[papers/161_BioBERT_a_pre-trained_biomedical_language_representation_mod/review]] — BioBERT의 바이오의학 언어 표현이 BioAgents의 소형 언어모델 미세조정 기반을 제공한다.
+- 🔄 다른 접근: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — scAgent가 단일세포 주석에 특화된 반면 BioAgents는 더 넓은 생물정보학 작업을 다루므로 접근법 비교가 가능하다.
+- 🔗 후속 연구: [[papers/164_BioInformatics_Agent_BIA_Unleashing_the_Power_of_Large_Langu/review]] — 단일 분야 생물정보학 에이전트에서 다중 에이전트 생물정보학 분석 민주화로 확장된 형태이다

@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "지난 30년간 학술출판은 폐쇄형에서 개방형(OA, Open Access)으로 전환되었으나, 이러한 변화는 학문 분야별로 매우 불균등하게 나타나고 있다. 본 연구는 학문 분야별 OA 출판 관행의 차이와 변화의 장애 요인을 체계적으로 분석한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Peer_Review"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Severin et al._2020_Discipline-specific open access publishing practices and barriers to change an evidence-based revie.pdf"
 ---
@@ -82,8 +82,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Severin et al._2020_Discipline-specific 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/386_Google_Scholar_to_overshadow_them_all_Comparing_the_sizes_of/review]] — 학술 출판 접근성 분석에서 분야별 차이와 검색 플랫폼 규모 비교를 통한 상호 보완적 관점을 제공합니다.
-- 🔗 후속 연구: [[papers/591_Openreview_should_be_protected_and_leveraged_as_a_community/review]] — OpenReview 커뮤니티 자산 보호 논의가 분야별 개방형 출판 관행의 구체적 사례로 확장됩니다.
-- 🏛 기반 연구: [[papers/892_A_year_in_review_open_access_at_OUP/review]] — 옥스퍼드 대학 출판부의 오픈 액세스 연간 검토가 분야별 OA 출판 관행 분석의 실증적 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/113_Attracting_new_users_or_business_as_usual_A_case_study_of_co/review]] — 오픈액세스 출판 관행과 장벽에 대한 학문 분야별 분석으로 인문사회과학의 사례와 비교할 수 있다.
-- 🏛 기반 연구: [[papers/892_A_year_in_review_open_access_at_OUP/review]] — 분야별 오픈 액세스 출판 관행 연구가 OUP의 OA 정책 발전에 기초를 제공한다.
+- 🔗 후속 연구: [[papers/023_A_smack_of_all_neighbouring_languages_How_multilingual_is_sc/review]] — 학술 출판의 접근성 문제를 언어별 다양성이라는 더 구체적이고 정량적 관점으로 확장한 연구이다
+- 🏛 기반 연구: [[papers/386_Google_Scholar_to_overshadow_them_all_Comparing_the_sizes_of/review]] — 개방형 출판 관행의 기반이 되는 학술 데이터베이스의 규모와 영향력 비교 분석을 제공한다
+- 🧪 응용 사례: [[papers/892_A_year_in_review_open_access_at_OUP/review]] — 개방형 출판 이론을 옥스퍼드 대학 출판부라는 구체적 출판사의 실제 사례로 적용한 분석이다
+- 🔗 후속 연구: [[papers/113_Attracting_new_users_or_business_as_usual_A_case_study_of_co/review]] — 오픈액세스 출판 관행과 장벽에 대한 분야별 연구가 구독에서 오픈액세스 전환 효과 분석을 보완한다.
+- 🏛 기반 연구: [[papers/892_A_year_in_review_open_access_at_OUP/review]] — 분야별 오픈액세스 출판 관행과 장벽에 대한 이론적 기반을 제공하여 OUP의 성과를 맥락화할 수 있다.
+- 🏛 기반 연구: [[papers/023_A_smack_of_all_neighbouring_languages_How_multilingual_is_sc/review]] — 학술 출판의 언어적 다양성과 접근성 문제를 다각도로 분석하는 기초적 관점을 공유한다

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 학술 저술 및 피어 리뷰 과정에서 대규모 언어모델(LLM)의 침투 정도를 측정하기 위한 포괄적 평가 프레임워크를 제시한다. ScholarLens 데이터셋과 LLMetrica 도구를 통해 규칙 기반 지표와 모델 기반 탐지기를 결합하여 학술 워크플로우에서의 LLM 사용 추세를 다각도로 분석한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Publishing_Trends"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Academic_Citation_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2025_Large language models penetration in scholarly writing and peer review.pdf"
 ---
@@ -118,10 +118,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2025_Large language models p
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/373_Generalization_Bias_in_Large_Language_Model_Summarization_of/review]] — LLM의 일반화 편향 연구의 한 부분으로 학술 저술 침투도 측정을 통해 편향의 실제 영향을 분석한다.
-- 🔄 다른 접근: [[papers/410_How_deep_do_large_language_models_internalize_scientific_lit/review]] — LLM이 과학 문헌을 내재화하는 방식과 함께 학술 워크플로우 전반의 LLM 영향을 종합적으로 이해할 수 있다.
-- 🏛 기반 연구: [[papers/611_People_who_frequently_use_ChatGPT_for_writing_tasks_are_accu/review]] — ChatGPT 사용자의 AI 생성 텍스트 탐지 정확도 연구로 LLM 침투도 측정의 기술적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/373_Generalization_Bias_in_Large_Language_Model_Summarization_of/review]] — 학술 저술에서 LLM 침투도 측정 연구의 한 부분으로 과도한 일반화 편향의 실증적 증거를 제공한다.
-- 🔗 후속 연구: [[papers/410_How_deep_do_large_language_models_internalize_scientific_lit/review]] — 학술 저술에서 LLM 사용 추세 분석의 한 부분으로 참고문헌 생성 시 편향 패턴을 실증적으로 입증한다.
-- 🔗 후속 연구: [[papers/444_Is_it_OK_for_AI_to_write_science_papers_Nature_survey_shows/review]] — 학술 작문에서 LLM 침투에 대한 기초 분석을 연구자 태도와 윤리적 합의 필요성으로 확장한 연구입니다.
-- 🔄 다른 접근: [[papers/796_The_AI_writing_on_the_wall/review]] — 과학 저술 분야의 생성형 AI 영향과 학술 글쓰기 침투 현상은 서로 다른 관점에서 AI의 학술 환경 변화를 분석한다.
+- 🔗 후속 연구: [[papers/445_Is_Your_Paper_Being_Reviewed_by_an_LLM_Investigating_AI_Text/review]] — 피어 리뷰 탐지에서 더 포괄적인 LLM 침투 측정 프레임워크로 확장한다
+- 🧪 응용 사례: [[papers/861_Use_of_large_language_models_as_artificial_intelligence_tool/review]] — 의학 분야에서 LLM 사용 현황과 윤리적 고려사항의 구체적 사례를 제시한다
+- 🔄 다른 접근: [[papers/607_Patterns_and_purposes_A_cross-journal_analysis_of_ai_tool_us/review]] — 학술 저술에서 AI 도구 사용 패턴을 다른 방법론으로 분석한다
+- 🔄 다른 접근: [[papers/861_Use_of_large_language_models_as_artificial_intelligence_tool/review]] — 학술 저술에서 LLM 침투 현황을 의학 분야 특화 관점에서 분석한다
+- 🏛 기반 연구: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — LLM이 학술 논문 작성에 미치는 광범위한 영향을 이해하기 위한 기초 분석을 제공한다.
+- 🧪 응용 사례: [[papers/444_Is_it_OK_for_AI_to_write_science_papers_Nature_survey_shows/review]] — 학술 저술에서 LLM 침투 현상의 실제 데이터와 분석 결과를 제공한다
+- 🏛 기반 연구: [[papers/445_Is_Your_Paper_Being_Reviewed_by_an_LLM_Investigating_AI_Text/review]] — 학술 워크플로우에서 LLM 침투 측정을 위한 기본적인 방법론 기반을 제공한다
+- 🏛 기반 연구: [[papers/607_Patterns_and_purposes_A_cross-journal_analysis_of_ai_tool_us/review]] — 학술 워크플로우에서 LLM 사용 측정을 위한 기본적인 분석 방법론을 제공한다

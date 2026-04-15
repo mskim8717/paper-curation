@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "ReSearch는 강화학습(RL)을 통해 대규모 언어모델(LLM)이 추론 과정 중 언제 어떻게 검색을 수행할지를 자동으로 학습하는 프레임워크이다. 감독 데이터 없이 검색 쿼리, 텍스트 기반 사고(thinking), 검색 결과를 통합한 추론 체인을 만들어 다중 홉(multi-hop) 질문 답변에서 8.9~22.4%의 성능 향상을 달성했다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Search-Augmented_Language_Models"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_ReSearch Learning to Reason with Search for LLMs via Reinforcement Learning.pdf"
 ---
@@ -109,9 +111,10 @@ ReSearch는 강화학습(RL)을 통해 대규모 언어모델(LLM)이 추론 과
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — 두 논문 모두 강화학습 기반 검색을 다루되 ReSearch는 다중홉 질문 답변, Search-R1은 검색 엔진과의 통합에 특화되어 있다.
-- 🏛 기반 연구: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — WebThinker의 웹 탐색과 정보 수집 통합은 ReSearch의 검색 쿼리와 추론 체인 생성에 더 동적인 정보 수집 방법론을 제공한다.
-- 🧪 응용 사례: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — PaperQA의 과학 문헌 검색 증강 생성은 ReSearch의 강화학습 기반 검색 학습을 학술 문헌 도메인에 직접 적용한 실제 사례를 보여준다.
-- 🔗 후속 연구: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — ReSearch의 강화학습 기반 검색 학습은 WebThinker의 웹 탐색 능력을 더욱 체계적이고 자동화된 방식으로 발전시킨다.
-- 🔄 다른 접근: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — 두 논문 모두 검색 기반 추론을 다루되 Search-R1은 검색 엔진 활용, ReSearch는 다중홉 질문 답변에 특화되어 있다.
-- 🔗 후속 연구: [[papers/743_Self-critique_guided_iterative_reasoning_for_multi-hop_quest/review]] — 기본적인 추론 학습을 검색과 강화학습을 통한 더 체계적인 추론 능력 향상 방법으로 확장함
+- 🔄 다른 접근: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — 추론 중 검색 활용을 자동 학습과 RL 기반이라는 서로 다른 방법으로 접근한다.
+- 🔗 후속 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 도구 상호작용을 통한 자가수정이 추론 중 자동 검색 활용이라는 특화된 형태로 발전될 수 있다.
+- 🏛 기반 연구: [[papers/447_Iterative_self-incentivization_empowers_large_language_model/review]] — 추론 중 자동 검색 학습이 검색 에이전트의 자기개선을 위한 구체적인 메커니즘을 제공한다.
+- 🔗 후속 연구: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — 추론 중 검색이 웹 탐색과 정보 수집을 통합하는 더 포괄적인 접근법으로 발전될 수 있다.
+- 🔗 후속 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 검색을 포함한 도구 사용을 통한 자가수정이 추론 중 자동 검색 활용으로 구체화될 수 있다.
+- 🔄 다른 접근: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — 추론 중 검색 활용을 RL 기반과 자동 학습이라는 서로 다른 방법으로 접근한다.
+- 🏛 기반 연구: [[papers/743_Self-critique_guided_iterative_reasoning_for_multi-hop_quest/review]] — 검색을 통한 LLM 추론 학습의 이론적 기반을 제공하여 자기비판 유도 반복적 추론의 방법론적 근거를 설명한다.

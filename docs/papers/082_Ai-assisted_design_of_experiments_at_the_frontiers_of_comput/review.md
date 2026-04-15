@@ -8,8 +8,10 @@ arxiv: ""
 score: 4.0
 essence: "다음 세대 입자 물리 실험의 설계 최적화는 고차원 공간에서 해를 찾는 문제이며, 이를 미분 가능 프로그래밍(differentiable programming)과 신경형태 컴퓨팅, 양자 컴퓨팅 등 새로운 계산 패러다임을 통해 해결할 수 있음을 제시한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Structured_Research_Frameworks"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Chatbot_Bias_and_Toxicity_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jan et al._2025_Ai-assisted design of experiments at the frontiers of computation methods and new perspectives.pdf"
 ---
@@ -92,6 +94,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jan et al._2025_Ai-assisted design of ex
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — 양자 컴퓨팅 실험 자동화에 미분 가능 프로그래밍을 적용한 실제 사례
-- 🔗 후속 연구: [[papers/816_Toward_a_Fully_Autonomous_AI-Native_Particle_Accelerator/review]] — 입자 가속기에서 AI 네이티브 자동화 시스템으로 확장된 개념
-- 🏛 기반 연구: [[papers/364_From_Theory_to_Application_A_Practical_Introduction_to_Neura/review]] — 신경 연산자가 고차원 실험 설계 최적화의 수학적 기반을 제공
+- 🔗 후속 연구: [[papers/816_Toward_a_Fully_Autonomous_AI-Native_Particle_Accelerator/review]] — 완전 자율적 AI 네이티브 입자 가속기가 입자 물리 실험 설계의 AI 보조를 더욱 발전시킨 미래형 응용 사례를 보여준다
+- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 정보 신경망을 통한 과학적 기계학습이 계산 전계의 AI 보조 실험 설계를 위한 물리학적 제약 조건 통합 방법론을 제공한다
+- 🔄 다른 접근: [[papers/767_SPINONet_Scalable_Spiking_Physics-informed_Neural_Operator_f/review]] — 스파이킹 물리 정보 신경 연산자가 미분 가능 프로그래밍과는 다른 신경형태 컴퓨팅 접근으로 물리 실험 설계를 지원한다

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "LLM 기반 다중 에이전트 프레임워크 DrugAgent는 신약 발견 분야의 전문적 지식을 통합하여 일반 목적 AI 에이전트의 한계를 극복하고, DTI(약물-표적 상호작용) 예측에서 ReAct 대비 4.92% 향상된 성능을 달성했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/LLM_Drug_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_DrugAgent Automating AI-aided Drug Discovery Programming through LLM Multi-Agent Collaboration.pdf"
 ---
@@ -103,7 +104,9 @@ LLM 기반 다중 에이전트 프레임워크 DrugAgent는 신약 발견 분야
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/212_Chemist-X_Large_Language_Model-empowered_Agent_for_Reaction/review]] — AI 기반 약물 발견 프로그래밍을 화학 합성 자동화로 확장하는 연구 방향을 제시한다
-- 🏛 기반 연구: [[papers/490_LIDDIA_Language-based_Intelligent_Drug_Discovery_Agent/review]] — DrugAgent의 AI 기반 프로그래밍 자동화 접근법이 LIDDIA의 계산 도구 통합 방법론의 기반이 됨
-- 🔗 후속 연구: [[papers/651_RAG-Enhanced_Collaborative_LLM_Agents_for_Drug_Discovery/review]] — AI 기반 약물 발견 프로그래밍 자동화 연구를 RAG 증강 협력 프레임워크로 확장할 수 있다.
-- 🔗 후속 연구: [[papers/616_PharmAgents_Building_a_Virtual_Pharma_with_Large_Language_Mo/review]] — AI 기반 약물 발견 프로그래밍 자동화로 약물 개발 자동화를 확장한다.
+- 🔗 후속 연구: [[papers/351_FROGENT_An_End-to-End_Full-process_Drug_Design_Multi-Agent_S/review]] — 전체 신약 설계 파이프라인이 DTI 예측 중심 에이전트를 완전한 약물 발견 워크플로우로 확장한다
+- 🔄 다른 접근: [[papers/490_LIDDIA_Language-based_Intelligent_Drug_Discovery_Agent/review]] — 언어 기반 지능형 약물 발견과 LLM 기반 프로그래밍 에이전트는 약물 발견의 서로 다른 자동화 접근법을 제시한다
+- 🔗 후속 연구: [[papers/130_Automating_Computational_Chemistry_Workflows_via_OpenClaw_an/review]] — DrugAgent의 의약 발견에서 OpenClaw의 계산화학으로 확장된 전문 영역 자동화이다
+- 🧪 응용 사례: [[papers/096_An_automatic_end-to-end_chemical_synthesis_development_platf/review]] — AI 지원 약물 발견 프로그래밍을 자동화하는 에이전트로, 화학 합성 플랫폼의 약물 개발 분야 적용
+- 🏛 기반 연구: [[papers/177_Can_ai_agents_design_and_implement_drug_discovery_pipelines/review]] — DrugAgent의 AI 기반 신약 발견 프로그래밍 자동화가 신약 발견 파이프라인 설계를 위한 기술적 기반을 제공한다
+- 🔗 후속 연구: [[papers/240_Crispr-gpt_An_llm_agent_for_automated_design_of_geneediting/review]] — CRISPR 유전자 편집 자동화에서 AI 기반 약물 발견 프로그래밍이라는 더 광범위한 생물의학 자동화로 발전한다

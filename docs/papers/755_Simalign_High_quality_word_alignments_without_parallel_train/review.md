@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 병렬 학습 데이터 없이 다국어 단어 임베딩(정적 및 문맥화된)을 활용하여 고품질의 단어 정렬을 수행하는 SimAlign 방법을 제안한다. 전통적인 통계적 정렬기(efloral 등)와 비교해서도 우수한 성능을 보인다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Long_Context_Embeddings"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yeginbergenova and Agerri_2020_Simalign High quality word alignments without parallel training data using static and contextualize.pdf"
 ---
@@ -111,7 +111,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yeginbergenova and Agerri_2020_Simalign 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/119_Autocap_Towards_automatic_cross-lingual_alignment_planning_f/review]] — SimAlign은 병렬 데이터 없는 단어 정렬을, AutoCAP은 다국어 추론에서의 언어 정렬을 다루어 서로 다른 차원의 정렬 문제를 해결함
-- 🏛 기반 연구: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 다국어 임베딩의 편향 문제를 다루는 BiasFilter와 SimAlign의 크로스링구얼 정렬 방법론이 상호 보완적 관계에 있음
-- 🔗 후속 연구: [[papers/858_Unsupervised_crosslingual_representation_learning_at_scale/review]] — 대규모 무감독 크로스링구얼 표현 학습이 SimAlign의 정적/문맥화 임베딩 활용 방식을 더 큰 규모로 확장한 연구임
-- 🔄 다른 접근: [[papers/119_Autocap_Towards_automatic_cross-lingual_alignment_planning_f/review]] — AutoCAP이 다국어 추론에서의 자동 언어 선택과 가중치 할당에 초점을 맞춘 반면, SimAlign은 병렬 데이터 없는 단어 수준 정렬에 특화되어 상호 보완적 접근법을 제시함
+- 🔗 후속 연구: [[papers/858_Unsupervised_crosslingual_representation_learning_at_scale/review]] — 대규모 무감독 크로스링구얼 표현 학습을 병렬 데이터 없는 단어 정렬이라는 구체적 과제로 특화하여 적용한다.
+- 🔄 다른 접근: [[papers/495_Llm__mapreduce-v2_Entropy-driven_convolutional_test-time_sca/review]] — MapReduce 기반 다국어 처리와 달리 정적/문맥화 임베딩을 활용한 직접적인 단어 정렬 방법론을 제시한다.
+- 🏛 기반 연구: [[papers/485_Learning_to_split_and_rephrase_from_wikipedia_edit_history/review]] — 위키피디아 편집 이력 학습이 다국어 단어 정렬을 위한 언어 간 대응 관계 학습의 기반 방법론을 제공한다.
+- 🧪 응용 사례: [[papers/405_Hit-scir_at_mmnlu22_Consistency_regularization_for_multiling/review]] — 병렬 데이터 없는 고품질 단어 정렬 기법이 다국어 음성언어이해의 의도-슬롯 매핑 성능 향상에 적용될 수 있다.

@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 여러 LLM 인스턴스 간의 협력적 대화를 통해 과학 논문에 대한 피어 리뷰 피드백을 생성하는 MARG(Multi-Agent Review Generation) 방법을 제안한다. 이를 통해 기본 모델의 입력 길이 제한을 초과하는 긴 논문도 처리할 수 있으며, 제네릭한 피드백 문제를 크게 개선한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/LLM_Review_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/GPT-Based_Text_Review_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/D'Arcy et al._2024_MARG Multi-Agent Review Generation for Scientific Papers.pdf"
 ---
@@ -100,11 +102,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/D'Arcy et al._2024_MARG Multi-Agent Revi
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 과학 논문 리뷰에서 다중 에이전트 협업과 체크리스트 기반 메타리뷰 생성의 서로 다른 자동화 접근법을 제시합니다.
-- 🔗 후속 연구: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 전문 리뷰 생성 모델을 다중 에이전트 협업 시스템으로 확장하여 더 포괄적인 피드백을 제공합니다.
-- 🏛 기반 연구: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — 프롬프트 생성을 통한 리뷰 최적화가 다중 에이전트 리뷰 생성의 개별 에이전트 성능 향상에 기초를 제공합니다.
-- 🔄 다른 접근: [[papers/803_The_open_review-based_orb_dataset_Towards_automatic_assessme/review]] — 다중 에이전트 리뷰 생성이 ORB 데이터셋 기반 평가와 다른 접근 방식을 제시한다.
-- 🔄 다른 접근: [[papers/780_Surveyforge_On_the_outline_heuristics_memory-driven_generati/review]] — 다중 에이전트 리뷰 생성과 달리 단일 프레임워크로 포괄적 설문지를 생성하는 접근
-- 🔄 다른 접근: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 메타리뷰 생성에서 체크리스트 기반 자기성찰과 다중 에이전트 협업의 서로 다른 자동화 방법을 비교할 수 있습니다.
-- 🏛 기반 연구: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 다중 에이전트 리뷰 생성의 협업적 접근법이 전문화된 리뷰 생성 모델의 기초 아이디어를 제공합니다.
-- 🏛 기반 연구: [[papers/676_Reviewagents_Bridging_the_gap_between_human_and_ai-generated/review]] — 다중 에이전트 리뷰 생성의 기본 프레임워크가 인간-AI 격차 해소를 위한 구조화된 추론 과정 설계에 핵심적인 기반을 제공한다.
+- 🔗 후속 연구: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 체크리스트 기반 메타리뷰 생성을 다중 에이전트 협력으로 발전시켜 더 포괄적이고 상호보완적인 피어 리뷰 시스템을 구현했다.
+- 🔄 다른 접근: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — LLM을 활용한 논문 리뷰 생성의 탐색적 연구와 다중 에이전트 기반 리뷰 생성은 모두 AI 지원 피어 리뷰의 서로 다른 접근법이다.
+- 🏛 기반 연구: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — 확장 가능한 편향 없는 AI 기반 리뷰 시스템 연구가 다중 에이전트 리뷰 생성의 공정성과 신뢰성 확보 기반을 제공한다.
+- 🧪 응용 사례: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — 프롬프트 생성을 통한 리뷰 최적화 연구에서 다중 에이전트 협력 메커니즘이 실제 구현된 사례를 보여준다.
+- 🏛 기반 연구: [[papers/385_Glimpse_Pragmatically_informative_multi-document_summarizati/review]] — 다중 에이전트 리뷰 생성에서 합의와 차이점 추출이라는 핵심 방법론을 공유한다.
+- 🔄 다른 접근: [[papers/537_Mind_the_blind_spots_A_focus-level_evaluation_framework_for/review]] — LLM 리뷰의 blind spot 분석과 다중 에이전트 협력 리뷰는 모두 AI 기반 리뷰 품질 향상을 다른 방식으로 접근한다.
+- 🔄 다른 접근: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — 다중 에이전트 리뷰 생성과 달리 단일 생성 모델로 인용 추천 문제를 해결하는 상이한 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 다중 에이전트 리뷰 생성의 협력적 접근법이 체크리스트 기반 메타리뷰 생성의 체계적 검증 방법론으로 발전되었다.

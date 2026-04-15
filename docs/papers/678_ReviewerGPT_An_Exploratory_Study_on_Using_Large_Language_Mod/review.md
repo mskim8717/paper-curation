@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.0
 essence: "급속도로 발전하는 대규모 언어 모델(LLM)이 과학 논문 심사 과정에서 검토자를 보조할 수 있는지 실증적으로 평가한 연구로, GPT-4가 특정 작업에서는 유망하지만 완전한 논문 평가는 아직 불가능함을 보여준다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/LLM_Review_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu and Shah_2023_ReviewerGPT An Exploratory Study on Using Large Language Models for Paper Reviewing.pdf"
 ---
@@ -79,14 +81,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu and Shah_2023_ReviewerGPT An Explora
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/680_Reviewing_scientific_papers_for_critical_problems_with_reaso/review]] — LLM의 논문 심사 가능성 탐색을 비판적 문제 검출이라는 특화된 영역으로 확장하여 더 구체적인 적용 방안을 제시한다.
-- 🏛 기반 연구: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — LLM 논문 심사의 기초적 실증 연구가 추론 기능을 갖춘 고급 자동 심사 시스템 개발의 가능성과 한계를 보여주는 출발점이 된다.
-- ⚖️ 반론/비판: [[papers/104_Are_we_there_yet_revealing_the_risks_of_utilizing_large_lang/review]] — LLM 논문 심사의 가능성 탐구와 대규모 언어 모델 활용의 위험성 분석을 통해 AI 심사 도입의 신중한 접근 필요성을 확인할 수 있다.
-- 🔗 후속 연구: [[papers/104_Are_we_there_yet_revealing_the_risks_of_utilizing_large_lang/review]] — LLM을 피어 리뷰에 활용하는 탐색적 연구로, 본 논문이 밝힌 보안 위험에 대한 실증적 배경을 제공한다.
-- 🧪 응용 사례: [[papers/128_Automatically_evaluating_the_paper_reviewing_capability_of_l/review]] — LLM 기반 피어 리뷰 탐색의 구체적 실증 연구 사례
-- 🧪 응용 사례: [[papers/664_RelevAI-Reviewer_A_Benchmark_on_AI_Reviewers_for_Survey_Pape/review]] — LLM을 활용한 탐색적 논문 검토 연구가 AI 리뷰어의 실제 구현과 평가 방안을 제시한다.
-- 🏛 기반 연구: [[papers/270_Detecting_llm-written_peer_reviews/review]] — 동료평가에서 LLM 사용 가능성에 대한 탐색적 연구가 LLM 작성 리뷰 탐지 시스템 개발의 배경을 제공함
-- 🔗 후속 연구: [[papers/127_Automatic_evaluation_metrics_for_artificially_generated_scie/review]] — 논문 심사에서 대규모 언어 모델 사용에 대한 탐색적 연구로 본 논문의 평가 지표를 실제 심사 환경에 적용한다.
-- 🔗 후속 연구: [[papers/445_Is_Your_Paper_Being_Reviewed_by_an_LLM_Investigating_AI_Text/review]] — 학술 리뷰에서 LLM 사용 탐색을 AI 텍스트 탐지 방법론 개발로 확장하여 더 정확한 식별 기술을 제시합니다.
-- 🏛 기반 연구: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — LLM의 논문 심사 가능성에 대한 탐색적 연구가 고급 추론 기능을 갖춘 자동 심사 시스템 개발의 기초적인 실증 근거를 제공한다.
-- 🏛 기반 연구: [[papers/680_Reviewing_scientific_papers_for_critical_problems_with_reaso/review]] — LLM의 일반적 논문 심사 능력 탐색이 비판적 문제 검출이라는 특화된 심사 업무 수행 가능성 평가의 기초가 된다.
+- 🏛 기반 연구: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 대규모 언어 모델의 논문 심사 활용에 대한 초기 탐색적 연구로서 전문화된 모델 개발의 기반을 제공한다.
+- 🔗 후속 연구: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — 초기 탐색적 연구를 바탕으로 추론 능력과 다목적 최적화를 통해 더 정교한 심사 시스템을 구축한다.
+- 🔄 다른 접근: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — 피어 리뷰에서 자연어 처리의 역할에 대한 포괄적 관점과 LLM 특화 접근법을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/128_Automatically_evaluating_the_paper_reviewing_capability_of_l/review]] — 대형 언어모델을 활용한 논문 심사 탐색 연구가 LLM 논문 심사 능력의 체계적 평가 방법론 개발의 선행 연구 기반을 제공한다.
+- 🔗 후속 연구: [[papers/537_Mind_the_blind_spots_A_focus-level_evaluation_framework_for/review]] — LLM 리뷰어의 탐색적 연구를 인간 전문가와의 초점 수준 비교로 발전시켜 더 정교한 평가 프레임워크를 제시했다.
+- 🔗 후속 연구: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — NLP의 동료 심사 역할을 실제 LLM 기반 리뷰어 시스템 구현으로 발전시킨 연구
+- 🔄 다른 접근: [[papers/126_Automated_review_generation_method_based_on_large_language_m/review]] — 리뷰 생성에서 완전 자동화와 탐색적 연구라는 서로 다른 접근 수준을 보여준다
+- 🔄 다른 접근: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — LLM을 활용한 논문 리뷰 생성의 탐색적 연구와 다중 에이전트 기반 리뷰 생성은 모두 AI 지원 피어 리뷰의 서로 다른 접근법이다.
+- 🏛 기반 연구: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 대규모 언어 모델의 논문 심사 활용 가능성에 대한 기초적인 실증 연구를 제공한다.
+- 🏛 기반 연구: [[papers/609_Peerarg_Argumentative_peer_review_with_llms/review]] — LLM 기반 피어리뷰 탐색 연구가 논증적 리뷰 시스템의 기초적 토대를 제공한다

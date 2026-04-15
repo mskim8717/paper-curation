@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "웹 에이전트(Web Agent) 학습을 위한 종단 간(End-to-End) 다중턴 강화학습 프레임워크를 제안하며, 동적 컨텍스트 압축과 병렬 궤적 생성을 통해 실제 웹 환경에서의 장기 의사결정을 효과적으로 수행하도록 훈련한다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Autonomous_Agent_Learning_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wei et al._2025_WebAgent-R1 Training Web Agents via End-to-End Multi-Turn Reinforcement Learning.pdf"
 ---
@@ -112,9 +113,12 @@ Agent: exit(message='Task Completed')
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/447_Iterative_self-incentivization_empowers_large_language_model/review]] — 두 논문 모두 에이전트 강화학습을 다루되 WebAgent-R1은 웹 환경, EXSEARCH는 정보 검색에 특화되어 있다.
-- 🔗 후속 연구: [[papers/888_X-webagentbench_A_multilingual_interactive_web_benchmark_for/review]] — X-WebAgentBench의 다국어 웹 벤치마크는 WebAgent-R1의 종단 간 학습 프레임워크를 다양한 언어 환경에서 평가하고 개선할 수 있다.
-- 🏛 기반 연구: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — SWE-bench의 실제 GitHub 이슈 해결 벤치마크는 WebAgent-R1의 웹 에이전트 훈련에 실제 소프트웨어 개발 작업의 복잡성을 반영한 학습 환경을 제공한다.
-- 🏛 기반 연구: [[papers/447_Iterative_self-incentivization_empowers_large_language_model/review]] — WebAgent-R1의 종단 간 다중턴 강화학습 프레임워크는 EXSEARCH의 반복적 자기 개선 메커니즘에 이론적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/872_Webdancer_Towards_autonomous_information_seeking_agency/review]] — WebAgent-R1의 종단 간 다중턴 강화학습은 WebDancer의 감독학습-강화학습 순차 파이프라인을 더 통합적인 학습 프레임워크로 발전시킨다.
-- 🔗 후속 연구: [[papers/061_Agent_S_An_Open_Agentic_Framework_that_Uses_Computers_Like_a/review]] — Agent S의 GUI 자동화 프레임워크는 WebAgent-R1의 웹 에이전트 훈련 기법을 확장하여 더 넓은 범위의 데스크톱 응용프로그램까지 포괄하는 범용 자동화를 실현합니다.
+- 🔄 다른 접근: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — 웹 환경에서의 에이전트 훈련과 추론 모델의 웹 탐색 통합을 서로 다른 관점에서 접근한다.
+- 🏛 기반 연구: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — 웹이라는 복잡한 환경에서의 RL 훈련이 로봇 제어의 RL 접근법과 유사한 원리를 공유한다.
+- 🔗 후속 연구: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 웹 환경에서의 장기 의사결정이 일반적인 대화형 환경에서의 능동적 탐색으로 확장될 수 있다.
+- 🧪 응용 사례: [[papers/050_Adasociety_An_adaptive_environment_with_social_structures_fo/review]] — 웹 에이전트 훈련 방법론이 적응형 다중 에이전트 환경에서 실제로 적용될 수 있다.
+- 🔄 다른 접근: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — 웹 탐색을 추론에 통합하는 것과 웹 에이전트 자체를 RL로 훈련하는 서로 다른 접근법이다.
+- 🔄 다른 접근: [[papers/872_Webdancer_Towards_autonomous_information_seeking_agency/review]] — 단일 턴 강화학습 대신 멀티턴 종단간 학습으로 웹 에이전트를 훈련하는 다른 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/050_Adasociety_An_adaptive_environment_with_social_structures_fo/review]] — 적응형 환경에서의 다중 에이전트 학습이 웹 에이전트의 복잡한 환경 적응 능력의 기반이 된다.
+- 🔗 후속 연구: [[papers/061_Agent_S_An_Open_Agentic_Framework_that_Uses_Computers_Like_a/review]] — 범용 GUI 자동화 프레임워크를 웹 에이전트의 엔드투엔드 학습이라는 특화된 영역으로 확장한 발전된 형태이다
+- 🔗 후속 연구: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 일반적인 대화형 환경에서의 탐색 능력이 웹 환경에서의 특화된 장기 의사결정으로 발전될 수 있다.

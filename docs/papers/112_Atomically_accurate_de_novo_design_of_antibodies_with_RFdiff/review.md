@@ -12,8 +12,8 @@ arxiv: ""
 score: 0
 essence: "본 연구는 RFdiffusion 신경망의 항체 특화 미세조정을 통해 원자 수준의 정확도로 사용자가 지정한 에피토프(epitope)에 결합하는 항체 가변 영역(VHH, scFv)을 완전히 컴퓨터 기반으로 설계할 수 있음을 처음으로 입증했다. 초기 계산 설계부터 효율성 성숙(affinity maturation)까지 체계화된 파이프라인을 제시하고 크라이오-EM 구조 검증으로 설계 정확도를 확인했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Protein_Structure_Prediction"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Single-Cell_RNA_Sequencing_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bennett et al._2025_Atomically accurate de novo design of antibodies with RFdiffusion.pdf"
 ---
@@ -119,6 +119,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bennett et al._2025_Atomically accurate 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/256_De_novo_design_of_protein_structure_and_function_with_RFdiff/review]] — 맞춤형 단백질 설계를 위한 자율적 종단간 접근법이 RFdiffusion 기반 항체 설계와 다른 방법론을 제시한다.
-- 🔗 후속 연구: [[papers/171_Boltz-1_Democratizing_Biomolecular_Interaction_Modeling/review]] — 생체분자 상호작용 모델링의 민주화가 원자 수준 정확한 항체 설계의 발전된 형태를 보여준다.
-- 🔗 후속 연구: [[papers/805_The_Virtual_Lab_of_AI_agents_designs_new_SARS-CoV-2_nanobodi/review]] — RFdiffusion을 사용한 원자적으로 정확한 항체 설계가 Virtual Lab의 나노바디 설계 방법론을 더 정밀한 구조적 정확도로 확장한 발전된 접근이다.
+- 🔗 후속 연구: [[papers/403_Highly_accurate_protein_structure_prediction_with_AlphaFold/review]] — AlphaFold의 구조 예측을 넘어 기능적 항체 설계로 확장한 실용적 발전이다
+- 🏛 기반 연구: [[papers/269_Derivative-Free_Guidance_in_Continuous_and_Discrete_Diffusio/review]] — 연속 및 이산 확산 모델의 유도 없는 가이던스가 RFdiffusion 기반 항체 설계의 방법론적 기반이다
+- 🔄 다른 접근: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 재료 발견용 가설 생성과 항체 설계가 각각 다른 분야의 AI 기반 분자 설계 접근법이다
+- 🧪 응용 사례: [[papers/686_Robust_deep_learning_based_protein_sequence_design_using_Pro/review]] — 단백질 서열 설계의 견고한 딥러닝이 항체 설계 파이프라인의 실제 적용 기반이다
+- 🔗 후속 연구: [[papers/065_Agentic_End-to-End_De_Novo_Protein_Design_for_Tailored_Dynam/review]] — 기존 단백질 설계 방법을 동역학 기반의 더 정교한 설계 프레임워크로 발전시켰다
+- 🔗 후속 연구: [[papers/144_AutoProteinEngine_A_Large_Language_Model_Driven_Agent_Framew/review]] — 원자 수준의 정확한 항체 설계 방법을 제시하여 AutoProteinEngine의 단백질 엔지니어링 범위를 더 정밀한 분자 수준으로 확장함
+- 🏛 기반 연구: [[papers/805_The_Virtual_Lab_of_AI_agents_designs_new_SARS-CoV-2_nanobodi/review]] — 원자 수준에서 정확한 항체 설계 방법론을 제시하여 Virtual Lab의 나노바디 설계에서 분자 구조 예측 및 최적화의 이론적 기반을 제공함

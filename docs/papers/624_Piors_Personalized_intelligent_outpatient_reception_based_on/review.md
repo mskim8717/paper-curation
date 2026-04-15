@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "중국의 과포화 외래 접수 업무를 해결하기 위해 대규모언어모델(LLM) 기반 다중 에이전트 시스템을 제안하고, 실제 임상 시나리오에 맞춘 의료 대화 데이터 생성 프레임워크를 통해 개인화된 고품질 접수 서비스를 제공한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Domain-Specific_LLM_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_Piors Personalized intelligent outpatient reception based on large language model with multi-agents.pdf"
 ---
@@ -109,6 +109,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2024_Piors Personalized intel
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 의료 접수 업무에서 다중 에이전트 시스템과 다중 턴 대화 기반 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — 환자 시뮬레이션을 위한 페르소나 기반 시스템이 개인화된 외래 접수 서비스로 확장될 수 있습니다.
-- 🏛 기반 연구: [[papers/531_Medsyn_Enhancing_diagnostics_with_human-ai_collaboration/review]] — 진단을 위한 인간-AI 협력 향상이 개인화된 의료 접수 서비스 설계의 방법론적 기반을 제공합니다.
+- 🧪 응용 사례: [[papers/027_A_survey_of_llm-based_agents_in_medicine_How_far_are_we_from/review]] — 의학 분야 LLM 에이전트의 일반적 설문과 외래 접수 특화 다중 에이전트 시스템은 의학 AI의 이론과 실제 적용을 연결한다.
+- 🔄 다른 접근: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — 환자 시뮬레이션과 외래 접수 자동화는 모두 의료 서비스 개선을 위한 AI 에이전트 활용이지만 서로 다른 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — LLM 기반 멀티에이전트 시스템의 일반적 설계 원리가 의료 접수 서비스라는 구체적 도메인에 적용된다.

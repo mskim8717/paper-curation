@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 LLM 기반 에이전트의 데이터 분석 능력을 평가하기 위한 최초의 종합 벤치마크 **InfiAgent-DABench**를 제안한다. 257개의 폐쇄형(closed-form) 데이터 분석 질문과 52개의 CSV 파일로 구성된 DAEval 데이터셋과, 이를 평가하기 위한 에이전트 프레임워크를 제공한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Realistic_Discovery_Benchmarks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2024_Infiagent-dabench Evaluating agents on data analysis tasks.pdf"
 ---
@@ -136,10 +138,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2024_Infiagent-dabench Evaluat
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/594_OSDA_Agent_Leveraging_Large_Language_Models_for_De_Novo_Desi/review]] — 데이터 분석에서 평가 중심 접근법과 케이스 기반 추론 접근법이라는 서로 다른 방법론을 제시한다.
-- 🔗 후속 연구: [[papers/476_Large_language_models_orchestrating_structured_reasoning_ach/review]] — 기본적인 데이터 분석 평가를 실제 경진대회 수준의 고난도 작업으로 확장하여 더 도전적인 벤치마크를 제공한다.
-- 🏛 기반 연구: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 실제 문제 해결 능력 평가의 중요성을 보여주며 현실적 벤치마크 설계의 필요성을 뒷받침한다.
-- 🔗 후속 연구: [[papers/528_MedAgentGym_A_Scalable_Agentic_Training_Environment_for_Code/review]] — 생의학 코딩 역량이 데이터 분석 작업 평가로 확장됩니다.
-- 🧪 응용 사례: [[papers/655_ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models/review]] — ReAct 패러다임을 데이터 분석 작업에 적용하여 구체적인 성능 평가 방법을 제시한다.
-- 🔄 다른 접근: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 실제 소프트웨어 문제 해결과 데이터 분석이라는 서로 다른 영역에서 LLM 에이전트의 실용적 성능을 평가한다.
-- 🔗 후속 연구: [[papers/888_X-webagentbench_A_multilingual_interactive_web_benchmark_for/review]] — X-WebAgentBench의 다국어 웹 환경 평가를 InfiAgent-DABench의 데이터 분석 작업 평가와 결합하면 더 포괄적인 다중 에이전트 성능 벤치마크를 구축할 수 있습니다.
+- 🔄 다른 접근: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — 데이터 기반 과학 발견에서 언어 에이전트의 능력을 평가하는 또 다른 종합적 벤치마크로, 데이터 분석에 특화된 평가와 비교됨
+- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 머신러닝 에이전트 평가를 위한 벤치마크로, 데이터 분석 작업 평가를 머신러닝 실험 전반으로 확장
+- 🧪 응용 사례: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — 데이터 과학을 위한 LLM 에이전트의 실제 구현체로, InfiAgent-DABench에서 평가할 수 있는 구체적 시스템 사례
+- 🔄 다른 접근: [[papers/294_Dsbench_How_far_are_data_science_agents_to_becoming_data_sci/review]] — 데이터 과학 에이전트가 실제 데이터 과학자가 되기까지의 거리를 측정하는 다른 관점의 벤치마크
+- 🔄 다른 접근: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 데이터 분석 작업에서 에이전트 평가를 위한 다른 벤치마크로, 단일 작업 평가와 다중 단계 도구 사용 평가를 비교
+- 🔄 다른 접근: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — LLM 기반 에이전트의 데이터 분석 능력 평가에 특화된 벤치마크로, 과학 발견 전반과 데이터 분석 특화 평가를 비교
+- 🔄 다른 접근: [[papers/888_X-webagentbench_A_multilingual_interactive_web_benchmark_for/review]] — 에이전트 평가 벤치마크라는 동일한 목표를 가지지만 X-WebAgentBench는 다국어 웹 환경에, InfiAgent-DABench는 데이터 분석 작업에 특화된 다른 평가 영역임
+- 🔄 다른 접근: [[papers/294_Dsbench_How_far_are_data_science_agents_to_becoming_data_sci/review]] — 데이터 분석 작업 평가와 AutoML 도구 평가는 데이터 과학 자동화의 서로 다른 측면을 벤치마킹한다

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 구조화된 다중 에이전트 토론이 단독 아이디어 창출을 능가할 수 있는지 체계적으로 조사하며, 그룹 규모, 리더십 구조, 팀 구성이 고품질 과학 제안 생성에 미치는 영향을 분석한다. 인지 다양성이 아이디어 품질의 주요 동인이지만, 기본적인 전문성이 필수 전제조건임을 발견하였다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/AI_Scientist_Research_Protocols"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_Beyond Brainstorming What Drives High-Quality Scientific Ideas Lessons from Multi-Agent Collaborat.pdf"
 ---
@@ -119,7 +120,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2025_Beyond Brainstorming Wh
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 아이디어 체인 혁신 연구에서 구조화된 다중 에이전트 토론으로의 확장
-- 🧪 응용 사례: [[papers/392_Grapheval_A_lightweight_graph-based_llm_framework_for_idea_e/review]] — 그래프 기반 LLM 프레임워크를 과학 아이디어 평가에 적용한 사례
-- 🏛 기반 연구: [[papers/409_How_ai_ideas_affect_the_creativity_diversity_and_evolution_o/review]] — AI 아이디어가 인간 창의성에 미치는 영향의 대규모 실험적 증거 제공
-- 🔄 다른 접근: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — LLM의 과학적 창의성 평가와 고품질 아이디어 생성 동인의 다른 접근법
+- 🔄 다른 접근: [[papers/426_Improving_Scientific_Hypothesis_Generation_with_Knowledge_Gr/review]] — 고품질 과학 아이디어 생성에서 다중 에이전트 토론과 지식 그래프 기반 접근법이라는 서로 다른 전략을 제시한다.
+- 🧪 응용 사례: [[papers/153_Best_humans_still_outperform_artificial_intelligence_in_a_cr/review]] — 인간과 AI의 창의성 비교가 구조화된 다중 에이전트 토론의 효과성 분석에 실제 적용된다.
+- 🔗 후속 연구: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 다중 에이전트 협업과 개선된 과학 아이디어 생성이 집단 지성의 효과를 상호 보완적으로 보여준다.
+- 🏛 기반 연구: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — LLM 에이전트의 사회적 협업 메커니즘 탐구가 다중 에이전트 토론 시스템의 이론적 토대를 제공한다.
+- 🔗 후속 연구: [[papers/426_Improving_Scientific_Hypothesis_Generation_with_Knowledge_Gr/review]] — 구조화된 지식과 다중 에이전트 토론이 모두 고품질 과학 아이디어 생성에 기여하는 방법론을 보여준다.
+- 🏛 기반 연구: [[papers/153_Best_humans_still_outperform_artificial_intelligence_in_a_cr/review]] — 창의적 아이디어 생성에서 인간과 AI 비교가 고품질 과학 아이디어 생성 요인 분석의 배경을 제공한다.

@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 2019년부터 2025년까지 개발된 약 60개의 LLM 및 자율 AI 에이전트(Autonomous AI Agents) 벤치마크를 체계적으로 통합하고, 2023-2025년 주요 에이전트 프레임워크와 실제 응용 사례를 종합적으로 리뷰한다. 특히 다중 에이전트 협력 프로토콜(Agent Communication Protocol, Model Context Protocol, Agent-to-Agent Protocol)을 조사하며 미래 연구 방향을 제시한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Multi-Hop_Reasoning_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/LLM_Trustworthiness_and_Safety_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ferrag et al._2025_From LLM Reasoning to Autonomous AI Agents A Comprehensive Review.pdf"
 ---
@@ -104,8 +105,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ferrag et al._2025_From LLM Reasoning to
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — 자율 AI 에이전트 종합 리뷰의 기반이 되는 일반적인 에이전트 연구 조사
-- 🔄 다른 접근: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 멀티 에이전트 LLM 시스템에 대한 다른 관점의 포괄적 조사
-- 🔗 후속 연구: [[papers/052_Advances_and_challenges_in_foundation_agents_From_brain-insp/review]] — 뇌 영감 파운데이션 에이전트 연구가 LLM 추론부터 자율 AI 에이전트까지의 포괄적 발전 과정의 중요한 구성 요소가 된다
-- 🔗 후속 연구: [[papers/175_Building_machines_that_learn_and_think_with_people/review]] — LLM 추론에서 자율 AI 에이전트로의 발전 조사가 인간과 함께 사고하는 AI 시스템으로의 진화 과정을 포괄적으로 확장한 연구이다.
-- 🏛 기반 연구: [[papers/498_LLM_as_a_Mastermind_A_Survey_of_Strategic_Reasoning_with_Lar/review]] — LLM 추론에서 자율 AI 에이전트로의 포괄적 조사가 전략적 추론 능력 연구의 광범위한 이론적 토대를 제공한다.
+- 🏛 기반 연구: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — AI 에이전트 신뢰성 연구가 자율 에이전트 개발에서 필수적인 안전성 기반을 제공한다
+- 🧪 응용 사례: [[papers/254_DataJoint_20_A_Computational_Substrate_for_Agentic_Scientifi/review]] — 과학 워크플로우에서 에이전트 간 협업을 위한 운영 엄격성 프레임워크를 적용할 수 있다
+- 🏛 기반 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — LLM 기반 자율 에이전트의 포괄적 설문이 이 리뷰의 기초 자료를 제공한다
+- 🧪 응용 사례: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — 자율 AI 에이전트의 신뢰성 문제를 체계적으로 정량화하는 메트릭을 제공한다
+- 🧪 응용 사례: [[papers/143_AutoP2C_An_LLM-Based_Agent_Framework_for_Code_Repository_Gen/review]] — 논문 구현 자동화에 자율 AI 에이전트 프레임워크의 다중 에이전트 협력 원칙을 적용한다
+- 🏛 기반 연구: [[papers/189_CASSIA_a_multi-agent_large_language_model_for_reference_free/review]] — 자율 AI 에이전트 리뷰가 단일세포 분석 다중 에이전트 시스템의 설계 원칙을 제공한다
+- 🏛 기반 연구: [[papers/254_DataJoint_20_A_Computational_Substrate_for_Agentic_Scientifi/review]] — 과학 워크플로우의 운영 엄격성이 자율 AI 에이전트 협업의 신뢰성 있는 기반을 제공한다

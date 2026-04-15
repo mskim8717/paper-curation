@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "학술 논문 작성을 위해 생성 과정과 인용 검색을 통합한 대규모 언어모델 프레임워크를 제시한다. 동적 검색 토큰 생성을 통해 필요한 시점에 정확한 학술 참고문헌을 검색하고 인용 정확도를 대폭 향상시킨다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Personalization"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yeh et al._2025_Scholarcopilot Training large language models for academic writing with accurate citations.pdf"
 ---
@@ -108,8 +109,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yeh et al._2025_Scholarcopilot Training 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 학술 글쓰기에서 인용 검색 통합과 제어 가능한 수정 기능은 모두 글쓰기 지원을 목표로 하지만 서로 다른 작업 단계에 초점을 맞춘다.
-- 🏛 기반 연구: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — 인간-AI 협업 글쓰기의 기본 개념이 학술 논문 작성이라는 전문적 영역에서 인용 검색과 생성을 통합한 특화된 시스템으로 발전한다.
-- 🔗 후속 연구: [[papers/228_CoAuthor_Designing_a_Human-AI_Collaborative_Writing_Dataset/review]] — 인간-AI 협업 글쓰기 데이터셋을 학술 논문 작성이라는 전문 영역으로 확장하여 더 정교한 협업 모델을 구축한다.
-- 🔗 후속 연구: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — 인간-AI 협업 글쓰기의 기본 개념이 학술 논문 작성이라는 전문적 영역에서 인용 검색과 동적 생성을 통합한 특화된 시스템으로 발전한다.
-- 🔄 다른 접근: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 제어 가능한 학술 논문 수정과 인용 검색 통합 글쓰기는 모두 학술 글쓰기 지원을 목표로 하지만 수정과 생성이라는 다른 작업에 특화된다.
+- 🔄 다른 접근: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — 학술 글쓰기에서 동적 인용 검색과 지역 인용 생성이라는 서로 다른 인용 통합 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/406_Hlm-cite_Hybrid_language_model_workflow_for_text-based_scien/review]] — 하이브리드 언어 모델을 활용하여 ScholarCopilot의 텍스트 기반 과학 인용을 더욱 정교하게 발전시킨다.
+- 🏛 기반 연구: [[papers/882_When_large_language_models_meet_citation_A_survey/review]] — 대형 언어 모델과 인용의 만남에 대한 포괄적 조사 연구를 학술 글쓰기에 실용적으로 적용한다.

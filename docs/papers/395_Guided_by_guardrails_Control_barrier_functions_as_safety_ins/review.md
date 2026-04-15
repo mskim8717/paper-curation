@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.0
 essence: "강화학습(RL)의 안전성 문제를 제어 장벽 함수(Control Barrier Functions, CBFs)를 활용하여 해결하는 혁신적 접근법을 제시한다. 세 가지 CBF 통합 방식을 통해 로봇이 안전한 행동을 학습하면서도 목표 달성 성능을 유지하도록 한다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Robot_Control_and_Policy_Robustness"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Robust_Robotic_Control"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Taylor and Ames_2025_Guided by guardrails Control barrier functions as safety instructors for robotic learning.pdf"
 ---
@@ -101,9 +103,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Taylor and Ames_2025_Guided by guardrail
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — 두 논문 모두 로봇 제어 안전성을 다루되 제어 장벽 함수는 안전 제약, 소프트 연속 팔은 시뮬레이션 전이에 중점을 둔다.
-- 🔗 후속 연구: [[papers/662_Reinforcement_Learning_for_Dynamic_Microfluidic_Control/review]] — 오프라인 강화학습의 견고성 평가는 제어 장벽 함수 기반 안전 학습에서 행동 공간 섭동에 대한 추가적인 견고성 분석을 제공한다.
-- 🏛 기반 연구: [[papers/249_Curriculum_Reinforcement_Learning_from_Easy_to_Hard_Tasks_Im/review]] — 쉬운 태스크에서 어려운 태스크로의 커리큘럼 강화학습은 제어 장벽 함수를 통한 안전 학습에 점진적 훈련 방법론을 제공한다.
-- 🔄 다른 접근: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — 두 논문 모두 로봇 제어의 안전성을 다루되 소프트 연속 팔은 시뮬레이션 전이, 제어 장벽 함수는 안전 제약에 중점을 둔다.
-- 🏛 기반 연구: [[papers/662_Reinforcement_Learning_for_Dynamic_Microfluidic_Control/review]] — 제어 장벽 함수 기반 안전 학습은 오프라인 강화학습의 행동 공간 섭동 문제를 해결하는 안전성 보장 메커니즘을 제공한다.
-- 🔗 후속 연구: [[papers/688_Robustness_evaluation_of_offline_reinforcement_learning_for/review]] — 제어 장벽 함수를 통한 안전 학습은 오프라인 강화학습의 행동 공간 섭동 취약성을 해결하는 추가적인 안전성 보장 메커니즘을 제공한다.
+- 🏛 기반 연구: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 제어 장벽 함수를 통한 안전한 학습이 로봇 정책의 일반화 성능 향상에 필요한 안전성 기반을 제공한다.
+- 🔗 후속 연구: [[papers/891_Zero-shot_sim-to-real_transfer_for_reinforcement_learning-ba/review]] — RL 안전성 제약이 소프트 로봇의 복잡한 동역학에서도 안전한 심-투-리얼 전이를 보장할 수 있다.
+- 🏛 기반 연구: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 제어 장벽 함수의 안전성 제약 원리가 추론 시간 편향 완화에서 안전성 지침으로 확장될 수 있다.
+- 🧪 응용 사례: [[papers/688_Robustness_evaluation_of_offline_reinforcement_learning_for/review]] — CBF 기반 안전성 제약이 오프라인 RL의 행동 섭동에 대한 견고성 평가에 활용될 수 있다.
+- 🔗 후속 연구: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 샤프니스 인식 최적화가 안전한 학습을 위한 제어 장벽 함수와 결합되어 더 견고한 정책을 생성할 수 있다.
+- 🏛 기반 연구: [[papers/688_Robustness_evaluation_of_offline_reinforcement_learning_for/review]] — 오프라인 RL의 행동 섭동 취약성이 제어 장벽 함수 기반 안전성 제약의 필요성을 보여준다.
+- 🔗 후속 연구: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 추론 시간 편향 완화가 안전성 지침을 통한 제약 기반 학습으로 확장될 수 있다.
+- 🔗 후속 연구: [[papers/010_A_hierarchical_framework_for_measuring_scientific_paper_inno/review]] — 제어 장벽 함수를 초과 사지 로봇의 계층적 제어에 통합하여 안전성을 보장하면서도 동적 평형을 유지할 수 있는 확장된 방법론을 제시한다.

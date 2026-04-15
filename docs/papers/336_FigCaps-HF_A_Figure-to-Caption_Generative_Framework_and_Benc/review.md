@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "과학 논문의 그림을 설명하는 캡션 생성 모델을 인간 피드백과 강화학습(RLHF)으로 최적화하는 프레임워크와 대규모 벤치마크 데이터셋을 제시한다. 기존의 낮은 품질 캡션 데이터를 학습한 모델 대신, 도메인 전문가 피드백으로 학습된 보상 모델을 통해 독자 선호도에 정렬된 고품질 캡션 생성을 달성한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Figure_Captioning"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Chart_and_Figure_Captioning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singh et al._2023_FigCaps-HF A Figure-to-Caption Generative Framework and Benchmark with Human Feedback.pdf"
 ---
@@ -106,18 +107,14 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singh et al._2023_FigCaps-HF A Figure-to
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 과학 그림 해석 벤치마크에서 캡션 생성 모델의 성능을 체계적으로 평가
-- 🔗 후속 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 기본적인 과학 캡션 생성을 인간 피드백 기반 최적화로 발전시킨 확장
-- 🏛 기반 연구: [[papers/709_SciCap_A_Knowledge_Augmented_Dataset_to_Study_the_Challenges/review]] — 과학 캡션 생성의 도전과제 분석이 RLHF 기반 개선 방법론의 기반
-- 🔄 다른 접근: [[papers/435_Interfeedback_Unveiling_interactive_intelligence_of_large_mu/review]] — 멀티모달 상호작용과 달리 과학 그림 캡션 생성에 특화된 인간 피드백 활용
-- 🔗 후속 연구: [[papers/727_Scimage_How_good_are_multimodal_large_language_models_at_sci/review]] — 그림-캡션 생성 프레임워크가 과학적 이미지 생성과 이해 평가를 시각-텍스트 변환 관점에서 확장한다.
-- 🏛 기반 연구: [[papers/323_Every_part_matters_Integrity_verification_of_scientific_figu/review]] — 그림 캡션 생성이 과학 그림 검증의 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/600_Paper2Web_Lets_Make_Your_Paper_Alive/review]] — 과학 도표 캡션 생성을 논문 전체의 멀티미디어 변환으로 확장한 연구
-- 🏛 기반 연구: [[papers/853_Understanding_how_paper_writers_use_ai-generated_captions_in/review]] — 과학 도표 캡션 생성의 기본 기법이 AI 생성 캡션의 인간 활용 방식 연구에 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/691_S1-MMAlign_A_Large-Scale_Multi-Disciplinary_Dataset_for_Scie/review]] — 그림-캡션 생성 프레임워크가 과학 논문 멀티모달 정렬의 기반을 제공한다
-- 🔗 후속 연구: [[papers/601_PaperBanana_Automating_Academic_Illustration_for_AI_Scientis/review]] — FigCaps-HF의 캡션 생성을 넘어 전체 다이어그램과 플롯을 자동 생성하는 발전된 시스템
-- 🧪 응용 사례: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 과학 그림 캡션 생성 모델의 성능을 체계적으로 평가할 수 있는 벤치마크 제공
-- 🔄 다른 접근: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 둘 다 과학 도형 캡션 생성을 다루지만 하나는 arXiv 데이터셋 구축에, 다른 하나는 벤치마크 프레임워크 개발에 초점을 맞춘다.
-- 🔄 다른 접근: [[papers/524_MatViX_Multimodal_Information_Extraction_from_Visually_Rich/review]] — FigCaps-HF의 그림-캡션 생성 프레임워크가 MatViX의 멀티모달 추출과 다른 접근법으로 과학 문서의 시각적 정보를 처리하는 상호 보완적 방법론임
-- 🏛 기반 연구: [[papers/599_Paper2poster_Towards_multimodal_poster_automation_from_scien/review]] — 과학적 그림에 대한 캡션 생성 연구가 논문을 포스터로 변환하는 멀티모달 자동화의 기초적 접근을 제공함
-- 🔄 다른 접근: [[papers/564_Multi-llm_collaborative_caption_generation_in_scientific_doc/review]] — 과학 도형 캡션 생성에서 다중 LLM 협업과 단일 생성 프레임워크의 서로 다른 접근법을 비교할 수 있습니다.
+- 🔄 다른 접근: [[papers/515_Machine-in-the-loop_rewriting_for_creative_image_captioning/review]] — 인간-기계 협업 기반 창의적 캡션 생성과 강화학습 기반 과학 캡션 생성은 모두 이미지 캡션 품질 향상을 추구하는 상호 보완적 접근법이다.
+- 🔗 후속 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 과학 그림 캡션 생성의 기초 연구를 강화학습과 인간 피드백으로 발전시켜 실용적 품질 향상을 달성했다.
+- 🏛 기반 연구: [[papers/337_Figgen_Text_to_scientific_figure_generation/review]] — 텍스트에서 과학 그림 생성 연구는 그림-캡션 매핑의 기본 메커니즘을 이해하는 기초를 제공한다.
+- 🧪 응용 사례: [[papers/014_A_multimodal_generative_AI_copilot_for_human_pathology/review]] — 병리학 분야 멀티모달 AI 코파일럿에서 정확한 의료 이미지 캡션 생성 기능으로 직접 활용 가능하다.
+- 🔗 후속 연구: [[papers/323_Every_part_matters_Integrity_verification_of_scientific_figu/review]] — 과학 그림 캡션 생성으로 그림 무결성 검증을 보완하는 연구이다.
+- 🔗 후속 연구: [[papers/600_Paper2Web_Lets_Make_Your_Paper_Alive/review]] — 과학 그림 캡션 생성을 대화형 웹사이트 생성으로 확장한다
+- 🏛 기반 연구: [[papers/853_Understanding_how_paper_writers_use_ai-generated_captions_in/review]] — 그림-캡션 생성 프레임워크와 벤치마크는 논문 저자들이 AI 생성 캡션을 활용하는 연구의 기술적 기반이다.
+- 🔄 다른 접근: [[papers/601_PaperBanana_Automating_Academic_Illustration_for_AI_Scientis/review]] — Figure-to-Caption 생성과 반대 방향으로 텍스트에서 학술 일러스트레이션을 생성하는 역방향 문제를 다룬다.
+- 🏛 기반 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 도형-캡션 생성의 기초적인 프레임워크와 벤치마크를 과학 영역에 특화하여 적용한다.
+- 🏛 기반 연구: [[papers/811_Tikzero_Zero-shot_text-guided_graphics_program_synthesis/review]] — 도표-캡션 생성 프레임워크가 텍스트-그래픽 정렬의 기반 방법론을 제공한다.
+- 🔄 다른 접근: [[papers/515_Machine-in-the-loop_rewriting_for_creative_image_captioning/review]] — 사용자 주도 창의적 캡션 작성과 강화학습 기반 과학 캡션 생성은 모두 이미지 캡션 품질 향상을 추구하지만 상호작용 방식이 다르다.

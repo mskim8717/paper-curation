@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "인공지능이 단순한 생각의 도구를 넘어 인간과 함께 사고하는 파트너(사고 파트너, thought partner)로 발전해야 한다는 관점에서, 협력적 인지(collaborative cognition)의 원리를 기반으로 설계된 AI 시스템의 필요성과 구현 방안을 제시한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Embodied_AI_Research"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Collins et al._2024_Building machines that learn and think with people.pdf"
 ---
@@ -117,10 +118,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Collins et al._2024_Building machines th
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/358_From_Labor_to_Collaboration_A_Methodological_Experiment_Usin/review]] — Building machines의 협력적 인지 원리가 인문사회과학 연구의 인간-AI 역할 분담 프레임워크에서 구체적으로 구현된 적용 사례이다.
-- 🔗 후속 연구: [[papers/361_From_LLM_Reasoning_to_Autonomous_AI_Agents_A_Comprehensive_R/review]] — LLM 추론에서 자율 AI 에이전트로의 발전 조사가 인간과 함께 사고하는 AI 시스템으로의 진화 과정을 포괄적으로 확장한 연구이다.
-- 🏛 기반 연구: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — 사회적으로 정렬된 언어 모델 훈련 방법이 인간과 협력적으로 사고하는 AI 파트너 개발의 핵심 기술적 토대이다.
-- 🔗 후속 연구: [[papers/102_Architecture_Design_for_Human-Driven_Systems/review]] — 인간과 함께 학습하고 사고하는 기계 구축 원리를 IoT 환경에서의 소시오-테크니컬 시스템으로 확장할 수 있다.
-- 🔗 후속 연구: [[papers/050_Adasociety_An_adaptive_environment_with_social_structures_fo/review]] — AdaSociety의 적응형 사회 구조가 Building machines의 협력적 인지 프레임워크를 다중 에이전트 환경에서 구현한 확장 사례이다.
-- 🏛 기반 연구: [[papers/358_From_Labor_to_Collaboration_A_Methodological_Experiment_Usin/review]] — 협력적 인지 원리와 인간-AI 파트너십 개념이 인문사회과학 연구의 해석적 특성을 고려한 역할 분담 설계의 이론적 기반이다.
-- 🏛 기반 연구: [[papers/233_Cognitio_emergens_Agency_dimensions_and_dynamics_in_human-ai/review]] — 인간과 함께 학습하고 사고하는 기계 구축의 근본적 철학과 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/825_Towards_an_AI_co-scientist/review]] — 인간-AI 협력의 이론적 원리를 실제 과학 연구에서 구현한 구체적 사례로서 협력적 인지 개념의 실용적 확장임
+- 🧪 응용 사례: [[papers/413_Human-ai_teaming_using_large_language_models_Boosting_brain-/review]] — 뇌-컴퓨터 인터페이스 분야에서 인간-AI 팀워크를 활용한 구체적 응용 사례로서 사고 파트너 개념의 실제 구현 방안을 제시함
+- 🏛 기반 연구: [[papers/102_Architecture_Design_for_Human-Driven_Systems/review]] — 인간 중심 시스템 설계의 아키텍처 원리를 제공하여 인간과 함께 사고하는 AI 시스템 구축의 설계 기반을 마련함
+- 🔄 다른 접근: [[papers/358_From_Labor_to_Collaboration_A_Methodological_Experiment_Usin/review]] — 인간-AI 협업을 다루지만 인문사회과학이라는 특정 도메인에 집중한 반면 Building machines는 범용적 협력 원리에 초점을 맞춘 다른 접근법임
+- 🏛 기반 연구: [[papers/825_Towards_an_AI_co-scientist/review]] — 인간-AI 협력적 인지의 이론적 원리를 실제 과학 연구 자동화에 구현한 구체적 사례로서 사고 파트너 개념의 실용적 구현임
+- 🏛 기반 연구: [[papers/365_Future_of_Work_with_AI_Agents_Auditing_Automation_and_Augmen/review]] — 인간과 함께 학습하고 사고하는 기계 설계의 이론적 기반이 AI 에이전트의 자동화-증강 가능성 평가에 필수적 토대

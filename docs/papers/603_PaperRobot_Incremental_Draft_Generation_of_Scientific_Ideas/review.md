@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "PaperRobot은 기존 생의학 논문에서 지식 그래프를 자동으로 구축하고, 링크 예측을 통해 새로운 과학적 아이디어를 생성한 후, 메모리-어텐션 네트워크로 제목, 초록, 결론을 순차적으로 작성하는 자동 연구 보조 시스템이다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Hypothesis_Generation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "sub/Research_Literature_Analysis_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2019_PaperRobot Incremental Draft Generation of Scientific Ideas.pdf"
 ---
@@ -133,11 +135,8 @@ PaperRobot은 기존 생의학 논문에서 지식 그래프를 자동으로 구
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/186_Can_large_language_models_unlock_novel_scientific_research_i/review]] — PaperRobot의 자동 아이디어 생성과 LLM의 과학적 아이디어 생성 능력을 직접 비교하여 방법론적 차이점을 이해할 수 있다.
-- 🔗 후속 연구: [[papers/728_SciMON_Scientific_Inspiration_Machines_Optimized_for_Novelty/review]] — PaperRobot의 기본 아이디어 생성에서 SciMON의 참신성 최적화로 발전하는 과정을 확인할 수 있다.
-- 🧪 응용 사례: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — PaperRobot으로 생성된 아이디어를 ResearchCodeAgent로 실제 구현 가능한 코드로 변환하는 완전한 연구 자동화 파이프라인을 구성할 수 있다.
-- 🏛 기반 연구: [[papers/038_A_vision_for_auto_research_with_llm_agents/review]] — PaperRobot의 개별 기능들이 Auto Research 비전의 전체 연구 생명주기 자동화에서 어떤 위치를 차지하는지 이해할 수 있다.
-- 🔗 후속 연구: [[papers/728_SciMON_Scientific_Inspiration_Machines_Optimized_for_Novelty/review]] — PaperRobot의 기본적인 아이디어 생성에서 SciMON의 참신성 최적화로 진화하여 더 혁신적인 과학 아이디어를 생성할 수 있다.
-- 🔗 후속 연구: [[papers/038_A_vision_for_auto_research_with_llm_agents/review]] — Auto Research 비전이 PaperRobot의 개별적인 논문 생성 자동화를 전체 연구 과정의 포괄적 자동화로 확장한 개념이다.
-- 🔄 다른 접근: [[papers/186_Can_large_language_models_unlock_novel_scientific_research_i/review]] — LLM 기반 아이디어 생성 평가와 PaperRobot의 지식 그래프 기반 아이디어 생성이 과학적 아이디어 창출의 서로 다른 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — PaperRobot의 논문 생성 결과물을 ResearchCodeAgent가 실행 가능한 코드로 변환하여 아이디어에서 구현까지의 완전한 자동화를 달성한다.
+- 🔄 다른 접근: [[papers/205_Chatdev_Communicative_agents_for_software_development/review]] — 멀티에이전트 소프트웨어 개발의 다른 접근 방식을 제시합니다.
+- 🔗 후속 연구: [[papers/729_Scipip_An_llm-based_scientific_paper_idea_proposer/review]] — 과학 논문 아이디어 생성을 실제 논문 작성까지 확장한 시스템입니다.
+- 🏛 기반 연구: [[papers/540_Mir_Methodology_inspiration_retrieval_for_scientific_researc/review]] — 방법론적 영감 검색을 통한 지식 그래프 구축에 활용됩니다.
+- 🔗 후속 연구: [[papers/540_Mir_Methodology_inspiration_retrieval_for_scientific_researc/review]] — 방법론적 영감 검색을 자동화된 논문 생성 시스템에 통합할 수 있습니다.
+- 🔄 다른 접근: [[papers/729_Scipip_An_llm-based_scientific_paper_idea_proposer/review]] — 과학 논문 아이디어 생성을 위한 다른 자동화 접근법을 제시합니다.

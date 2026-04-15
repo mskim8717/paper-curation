@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대규모 언어모델(LLM)이 Boden의 조합적 창의성(combinatorial creativity) 이론에 기반하여 과학 아이디어를 생성할 수 있음을 보여준다. 일반화 수준의 검색 시스템과 구조화된 조합 프로세스를 통해 LLM이 이론적으로 근거 있는 창의적 아이디어 생성을 실현할 수 있음을 실증한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen and Zhang_2024_Llms can realize combinatorial creativity generating creative ideas via llms for scientific researc.pdf"
 ---
@@ -109,10 +110,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen and Zhang_2024_Llms can realize com
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/577_Nova_An_iterative_planning_and_search_approach_to_enhance_no/review]] — Nova의 반복적 계획 수립과 조합적 창의성 이론은 모두 연구 아이디어 생성을 위한 서로 다른 체계적 접근법입니다
-- 🔗 후속 연구: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — LiveIdeaBench의 과학적 창의성 평가는 조합적 창의성 이론 기반 아이디어 생성의 검증 방법을 제공합니다
-- 🧪 응용 사례: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — ResearchBench의 과학 발견 벤치마크는 조합적 창의성으로 생성된 아이디어의 실제 평가 플랫폼입니다
-- 🔄 다른 접근: [[papers/577_Nova_An_iterative_planning_and_search_approach_to_enhance_no/review]] — 조합적 창의성 이론과 반복적 계획 수립은 모두 연구 아이디어 생성을 위한 서로 다른 체계적 접근법입니다
-- 🧪 응용 사례: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — 조합적 창의성으로 생성된 과학 아이디어는 ResearchBench의 영감 검색과 가설 구성 작업에서 실제로 평가될 수 있습니다
-- 🏛 기반 연구: [[papers/409_How_ai_ideas_affect_the_creativity_diversity_and_evolution_o/review]] — LLM의 조합적 창의성 실현 가능성에 대한 연구가 AI 아이디어가 인간 창의성에 미치는 복잡한 영향을 이해하는 이론적 배경을 제공함
-- 🔗 후속 연구: [[papers/153_Best_humans_still_outperform_artificial_intelligence_in_a_cr/review]] — LLM의 조합적 창의성 실현 가능성을 보여주어 본 논문의 창의성 평가를 다른 창의성 유형으로 확장한다.
+- 🔄 다른 접근: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 조합적 창의성 이론과 체인 구조 아이디어 개발이 모두 LLM의 창의적 아이디어 생성을 다룬다
+- 🏛 기반 연구: [[papers/392_Grapheval_A_lightweight_graph-based_llm_framework_for_idea_e/review]] — 조합적 창의성으로 생성된 아이디어를 그래프 기반으로 분해하고 평가하는 후속 과정을 제공한다
+- 🔗 후속 연구: [[papers/411_How_do_humans_and_language_models_reason_about_creativity_a/review]] — 창의성에 대한 인간-언어모델 추론 비교가 조합적 창의성 이론의 실증적 검증을 확장한다
+- 🔄 다른 접근: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 체인 구조 아이디어 개발과 조합적 창의성이 모두 LLM의 참신한 아이디어 생성을 다룬다
+- 🧪 응용 사례: [[papers/392_Grapheval_A_lightweight_graph-based_llm_framework_for_idea_e/review]] — 조합적 창의성으로 생성된 아이디어를 그래프 구조로 분해하여 객관적 평가를 수행한다
+- 🔗 후속 연구: [[papers/153_Best_humans_still_outperform_artificial_intelligence_in_a_cr/review]] — 조합적 창의성 실현과 창의적 다양성 과제가 LLM의 창의적 능력에 대한 포괄적 이해를 제공한다.

@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 저자가 인용 의도(citation intent)와 핵심 키워드를 명시적으로 지정하여 인용 문장 생성을 제어할 수 있는 언어 모델 기반 접근법을 제안한다. 지도 학습 미세조정과 강화학습(PPO)을 결합하여 생성 품질과 제어 가능성을 동시에 향상시킨다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Citation_Context_Generation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Citation-Based_Evidence_Generation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gu and Hahnloser_2022_Controllable citation sentence generation with language models.pdf"
 ---
@@ -114,7 +115,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gu and Hahnloser_2022_Controllable citat
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/220_Cited_text_spans_for_citation_text_generation/review]] — 인용 텍스트 생성을 위한 인용된 텍스트 구간 활용 연구로 본 논문의 제어 가능한 생성을 위한 입력 정보 기반을 제공한다.
-- 🔗 후속 연구: [[papers/1091_Scirgc_Multi-granularity_citation_recommendation_and_citatio/review]] — 인용 의도를 포함한 다단계 인용 시스템으로 본 논문의 인용 의도 제어를 더 포괄적 프레임워크로 확장한다.
-- 🏛 기반 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자기 피드백을 통한 반복적 개선 방법으로 본 논문의 강화학습 기반 생성 품질 향상의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/220_Cited_text_spans_for_citation_text_generation/review]] — 제어 가능한 인용 문장 생성 연구로 본 논문의 인용 텍스트 구간 활용을 언어 모델 제어로 발전시킨다.
+- 🏛 기반 연구: [[papers/1091_Scirgc_Multi-granularity_citation_recommendation_and_citatio/review]] — 제어 가능한 인용 문장 생성 기법이 다단계 인용 추천 및 문장 생성 시스템의 핵심 기술적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/329_Explaining_relationships_among_research_papers/review]] — 제어 가능한 인용 문장 생성을 여러 논문 간의 관계 설명으로 확장하여 더 포괄적인 학술 글쓰기 지원을 제공한다.
+- 🔄 다른 접근: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — 제어 가능한 인용 문장 생성과 지역 인용 맥락을 위한 인용 생성이 서로 다른 관점에서 인용 자동화 문제를 해결한다.
+- 🏛 기반 연구: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — 언어모델 기반 인용 문장 생성 연구가 CiteBART의 생성형 인용 추천 방법론의 기반 기술을 제공한다.
+- 🔗 후속 연구: [[papers/1091_Scirgc_Multi-granularity_citation_recommendation_and_citatio/review]] — 제어 가능한 인용 문장 생성을 다단계 인용 추천 및 문장 생성 시스템으로 확장하여 더 포괄적인 학술 글쓰기 지원을 제공한다.
+- 🏛 기반 연구: [[papers/220_Cited_text_spans_for_citation_text_generation/review]] — 제어 가능한 인용 문장 생성이 특정 텍스트 구간 기반 인용 생성의 방법론적 토대를 제공한다.
+- 🏛 기반 연구: [[papers/329_Explaining_relationships_among_research_papers/review]] — 제어 가능한 인용 문장 생성 기법이 여러 논문 간의 복잡한 관계를 설명하는 전환 문장 생성의 핵심 기술적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — 제어 가능한 인용 문장 생성 기법이 증거 기반 인용 추천의 실제 구현에서 설명 가능한 인용문 생성에 활용된다.

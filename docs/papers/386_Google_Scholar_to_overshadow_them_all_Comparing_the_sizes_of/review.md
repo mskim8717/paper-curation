@@ -8,8 +8,9 @@ arxiv: ""
 score: 4.0
 essence: "본 연구는 12개의 주요 학술 검색 엔진 및 서지 데이터베이스(Academic Search Engines and Bibliographic Databases, ASEBDs)의 규모를 비교 분석한 최초의 포괄적 연구이다. 반복적 질의 최적화를 통해 Google Scholar의 규모가 약 3억 8,900만 건으로 이전 추정치보다 50% 이상 크다는 것을 발견했다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/Citation_Dataset_Analysis"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Academic_Citation_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gusenbauer_2019_Google Scholar to overshadow them all Comparing the sizes of 12 academic search engines and bibliog.pdf"
 ---
@@ -108,8 +109,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gusenbauer_2019_Google Scholar to oversh
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/113_Attracting_new_users_or_business_as_usual_A_case_study_of_co/review]] — 오픈액세스 전환 효과 분석에서 학술 검색 엔진 규모 비교 데이터를 활용하여 접근성 개선을 정량화할 수 있다.
-- 🔄 다른 접근: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 검색 증강 문헌 합성 도구로 기존 학술 데이터베이스와 다른 접근의 과학 문헌 접근 방식을 제시한다.
-- 🏛 기반 연구: [[papers/913_Semantic_Scholar/review]] — Semantic Scholar를 포함한 학술 검색 시스템의 기반 연구로 규모 비교 분석의 기준점을 제공한다.
-- 🏛 기반 연구: [[papers/113_Attracting_new_users_or_business_as_usual_A_case_study_of_co/review]] — 학술 검색 엔진의 규모 비교 연구로 오픈액세스 전환 효과 측정의 기준점을 제공한다.
-- 🔄 다른 접근: [[papers/274_Discipline-specific_open_access_publishing_practices_and_bar/review]] — 학술 출판 접근성 분석에서 분야별 차이와 검색 플랫폼 규모 비교를 통한 상호 보완적 관점을 제공합니다.
+- 🏛 기반 연구: [[papers/113_Attracting_new_users_or_business_as_usual_A_case_study_of_co/review]] — 학술 검색 엔진과 데이터베이스 규모 분석이 오픈액세스 전환 효과 측정을 위한 기준점을 제공한다.
+- 🔗 후속 연구: [[papers/913_Semantic_Scholar/review]] — Semantic Scholar와 12개 학술 검색 엔진 비교가 학술 검색 생태계의 포괄적 이해를 제공한다.
+- 🧪 응용 사례: [[papers/042_Academicbrowse_Benchmarking_academic_browse_ability_of_llms/review]] — LLM의 학술 검색 능력 벤치마크가 학술 검색 엔진 규모 비교의 실제 활용 방안을 보여준다.
+- 🔄 다른 접근: [[papers/904_How_AI-powered_science_search_engines_can_speed_up_your_rese/review]] — AI 기반 과학 검색 엔진과 전통적 학술 데이터베이스 규모 비교라는 서로 다른 검색 시스템 분석 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/113_Attracting_new_users_or_business_as_usual_A_case_study_of_co/review]] — 학술 검색 엔진 규모 비교가 오픈액세스 전환 후 접근성 변화를 측정하는 기준점을 제공한다.
+- 🔗 후속 연구: [[papers/023_A_smack_of_all_neighbouring_languages_How_multilingual_is_sc/review]] — 학술 데이터베이스의 규모와 영향력 비교를 통해 언어별 학술 영향력 격차를 심화 분석한다
+- 🏛 기반 연구: [[papers/274_Discipline-specific_open_access_publishing_practices_and_bar/review]] — 개방형 출판 관행의 기반이 되는 학술 데이터베이스의 규모와 영향력 비교 분석을 제공한다

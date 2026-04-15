@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 HIV 감염에서 숙주 유전자 쌍의 시너지 상호작용을 효율적으로 발견하기 위해 생물학적 지식 그래프(SPOKE)와 딥러닝 기반 능동학습(Deep Active Learning, DeepAL)을 통합한 프레임워크를 제시한다. 356개 유전자의 상호작용 공간(356×356 행렬)에서 실험 비용을 최소화하면서 효과적인 이중 녹다운(double knockdown) 쌍을 발견한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Single-Cell_RNA_Sequencing_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhu et al._2025_Deep active learning based experimental design to uncover synergistic genetic interactions for host.pdf"
 ---
@@ -142,6 +142,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhu et al._2025_Deep active learning bas
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/118_Autobio_A_simulation_and_benchmark_for_robotic_automation_in/review]] — 생물학적 상호작용 발견에서 능동학습 기반과 로봇 자동화 기반 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/346_Foundation-Model_Surrogates_Enable_Data-Efficient_Active_Lea/review]] — 기초 모델 기반 대리 모델이 HIV 감염 유전자 상호작용 발견에서 능동학습을 더욱 효율화할 수 있습니다.
-- 🏛 기반 연구: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 알고리즘 실행을 통한 타겟 재료 발견이 생물학적 상호작용 탐색의 방법론적 기반을 제공합니다.
+- 🏛 기반 연구: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 타겟 재료 발견의 기반이 되는 베이지안 알고리즘과 능동학습 방법론에 대한 기초적 이해를 제공한다
+- 🔄 다른 접근: [[papers/346_Foundation-Model_Surrogates_Enable_Data-Efficient_Active_Lea/review]] — 재료 발견에서 생물학적 상호작용과 범용 능동학습이라는 서로 다른 응용 도메인을 보여준다
+- 🔗 후속 연구: [[papers/1125_Accelerating_cell_culture_media_development_using_Bayesian_o/review]] — 능동학습을 세포 배양 매체 개발이라는 다른 생물학적 시스템으로 확장한 응용 사례이다
+- 🔗 후속 연구: [[papers/684_Robot-assisted_mapping_of_chemical_reaction_hyperspaces_and/review]] — 딥러닝 기반 능동학습을 통한 시스템 발견이 로봇 기반 화학반응 매핑의 지능화된 확장 방향을 제시한다
+- 🏛 기반 연구: [[papers/694_Scalable_Cross-Facility_Federated_Learning_for_Scientific_Fo/review]] — 능동학습 기반 실험 설계가 연합학습에서 데이터 효율적 학습의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/381_Genesis_Towards_the_Automation_of_Systems_Biology_Research/review]] — 실험 설계를 통한 시스템 발견이라는 공통 목표에서 Genesis의 생물학적 가설 검증을 능동 학습 기반 시스템 발견으로 확장함
+- 🏛 기반 연구: [[papers/1100_Representative_Informative_and_De-Amplifying_Requirements_fo/review]] — 심층 능동학습 기반 실험설계가 베이지안 최적실험설계에서 불확실성 정량화의 이론적 기반을 제공한다.

@@ -63,122 +63,63 @@ a { color: #A62018; }
 </head>
 <body>
 <h1>Agents for self-driving laboratories applied to quantum computing</h1>
-<blockquote><p><strong>저자</strong>: Shuxiang Cao, Zijian Zhang, Mohammed Alghadeer, Simone D Fasciati, Michèle Piscitelli, Mustafa Bakr, Peter Leek, Alán Aspuru‐Guzik | <strong>날짜</strong>: 2024 | <strong>DOI</strong>: N/A</p></blockquote>
+<blockquote><p><strong>저자</strong>: Shuxiang Cao, Zijian Zhang, Mohammed Alghadeer, Simone D Fasciati, Michèle Piscitelli, Mustafa Bakr, Peter Leek, Alán Aspuru‐Guzik | <strong>날짜</strong>: 2024 | <strong>URL</strong>: <a href="https://arxiv.org/abs/2412.07978" target="_blank">https://arxiv.org/abs/2412.07978</a></p></blockquote>
 <hr>
 <div class="essence-box"><h2>Essence</h2>
 <div class="review-fig"><img src="figures/fig1.webp" alt="Figure 1">
-<p class="fig-caption"><em>k-agents 프레임워크 개요: 자연언어로 된 절차를 실행 에이전트(execution agent)가 에이전트 기반 상태 머신으로 분해하여 실행</em></p></div>
-<p>본 연구는 대규모 멀티모달 실험실 지식과 복잡한 워크플로우를 자동화하기 위해 LLM 기반 에이전트 시스템인 k-agents를 개발했다. 초전도 양자 프로세서의 캘리브레이션과 얽힌 양자상태 생성을 통해 인간 수준의 자동화 성능을 입증했다.</p></div>
+<p class="fig-caption"><em>Figure 1: (a) Overview of the k-agents framework. Given a procedure in natural language, the execution agent first</em></p></div>
+<p>k-agents 프레임워크는 대규모 언어 모델 기반 에이전트를 활용하여 실험실 지식을 체계적으로 관리하고 자동화된 실험 수행을 가능하게 하며, 초전도 양자 프로세서 캘리브레이션에 성공적으로 적용되었다.</p></div>
 <div class="section-box"><h2>Motivation</h2>
 <ul>
-<li><strong>Known</strong>: 실험실 자동화는 반복적 작업을 줄여 과학 발견을 가속화할 수 있으며, LLM과 멀티에이전트 시스템의 발전으로 실험 자동화 가능성이 높아지고 있음</li>
-<li><strong>Gap</strong>: 기존 LLM 기반 자동화 시스템은 다음과 같은 문제점 존재:
-<ul>
-<li>독점 실험실 지식(proprietary code/documents)이 LLM 훈련 데이터에 포함되지 않음</li>
-<li>동적으로 변화하는 실험실 지식을 fine-tuning으로 반영하기 어려움</li>
-<li>표준 RAG(Retrieval-Augmented Generation) 방법은 이질적 멀티모달 지식 처리에 부적합</li>
-<li>기존 시스템은 스칼러빌리티 부족 및 긴 문맥 처리에서 성능 저하</li>
-</ul>
-</li>
-<li><strong>Why</strong>: 초전도 양자 컴퓨팅은 수백 개의 큐빗 캘리브레이션 필요로 자동화가 시급하며, 복잡한 멀티스텝 실험 절차 자동화 필요</li>
-<li><strong>Approach</strong>:
-<ul>
-<li>지식 에이전트(knowledge agents)로 실험실 지식 관리</li>
-<li>실행 에이전트(execution agent)로 멀티스텝 절차를 에이전트 기반 상태 머신으로 분해</li>
-<li>검사 에이전트(inspection agents)로 실험 결과 분석</li>
-<li>폐쇄루프 피드백 제어(closed-loop feedback control) 구현</li>
-</ul>
+<li><strong>Known</strong>: LLM 기반 에이전트는 텍스트와 이미지 처리 능력이 우수하며, 다중 에이전트 시스템을 통해 복잡한 작업 수행이 가능하다. 기존 자동화 방식은 전문가가 실험실 지식을 수동으로 코드로 번역해야 하는 한계가 있다.</li>
+<li><strong>Gap</strong>: 전유 실험실 지식의 접근 불가성, 표준 RAG 방법의 이질적이고 다중모드 실험실 지식 적용의 어려움, 장시간 다단계 작업 자동화를 위한 확장 가능한 메모리 시스템 부재가 핵심 문제이다.</li>
+<li><strong>Why</strong>: 자동화된 자체 구동 실험실은 반복 작업을 감소시켜 과학적 발견을 가속화할 수 있으며, 특히 양자 컴퓨팅 같은 복잡한 실험에서 인간 수준의 성능 달성이 중요하다.</li>
+<li><strong>Approach</strong>: 실험실 지식을 캡슐화하는 knowledge agents를 설계하고, execution agent가 다단계 실험 절차를 agent 기반 state machine으로 분해하여 inspection agents의 결과 분석을 통해 상태 전이를 제어하는 폐루프 피드백 구조를 도입했다.</li>
 </ul></div>
 <div class="section-box"><h2>Achievement</h2>
 <div class="review-fig"><img src="figures/fig2.webp" alt="Figure 2">
-<p class="fig-caption"><em>번역 에이전트 그룹: 특성 벡터(characterizing vectors) 유사성을 통해 활성화되는 에이전트들이 명령어를 실행 가능한 코드로 번역</em></p></div>
-<ol>
-<li><strong>k-agents 프레임워크 개발</strong>: 표준 RAG 방법 대비 명령어 번역 정확도 향상 (80개 테스트 명령어, 17개 코드 번역 에이전트로 평가), 이질적 번역 에이전트 협력 지원</li>
-<li><strong>양자 프로세서 자동화 성공</strong>:
+<p class="fig-caption"><em>Figure 2: (a) Translation agents. Translation agents are responsible for translating an incoming instruction into</em></p></div>
 <ul>
-<li>단일 큐빗 파라미터 캘리브레이션 자동 실행</li>
-<li>2-큐빗 게이트 파라미터 탐색 수행</li>
-<li>GHZ 상태(3-큐빗 얽힘 상태) 자동 생성 및 특성화</li>
-<li>인간 과학자 수준의 성능으로 수 시간 자율 실험 계획 및 실행</li>
-</ul>
-</li>
-<li><strong>확장 가능한 시스템 아키텍처</strong>: 장시간 실험 수행 가능 (제한된 문맥 길이 극복), 시각적 검사 에이전트 추가 가능</li>
-</ol></div>
+<li><strong>k-agents 프레임워크 개발</strong>: 실험실 지식의 다중모드 특성을 처리하고 fine-tuning 없이 지식을 통합하는 확장 가능한 시스템 구축</li>
+<li><strong>Execution agent 설계</strong>: 자연어 실험 절차를 agent 기반 state machine으로 자동 분해하고 단계별 실행 및 결과 분석을 통한 폐루프 제어 실현</li>
+<li><strong>양자 프로세서 자동 캘리브레이션</strong>: 초전도 양자 프로세서의 단일 및 이중 큐비트 게이트 파라미터 자동 발견 및 entangled quantum state 생성 성공</li>
+<li><strong>번역 에이전트 성능</strong>: 17개의 code translation agents로 표준 RAG 방법 대비 우수한 정확도 달성 (80개 지시문 테스트셋)</li>
+</ul></div>
 <div class="section-box"><h2>How</h2>
 <div class="review-fig"><img src="figures/fig1.webp" alt="Figure 1">
-<p class="fig-caption"><em>(a) k-agents 프레임워크 구조: 자연언어 절차 → 실행 에이전트 → 상태 머신 분해 → 번역/검사 에이전트 협력</em></p></div>
-<p><strong>시스템 구조</strong>:</p>
-<ol>
-<li><strong>실행 에이전트 (Execution Agent)</strong>
+<p class="fig-caption"><em>Figure 1: (a) Overview of the k-agents framework. Given a procedure in natural language, the execution agent first</em></p></div>
 <ul>
-<li>자연언어 절차를 에이전트 기반 상태 머신으로 분해</li>
-<li>각 실험 단계마다 독립적인 명령어 생성</li>
-<li>검사 에이전트 결과 기반으로 상태 전이 결정</li>
-<li>폐쇄루프 피드백을 통한 조건부 재시도 로직 구현</li>
-</ul>
-</li>
-<li><strong>번역 에이전트 (Translation Agents)</strong>
-<ul>
-<li>명령어를 실행 가능한 코드 또는 하위 절차로 변환</li>
-<li>특성 벡터(characterizing vector)를 통한 선택적 활성화</li>
-<li>벡터 유사성으로 관련 에이전트만 호출 (스칼러빌리티 개선)</li>
-<li>실행 에이전트가 다중 번역안 중 최적 선택</li>
-</ul>
-</li>
-<li><strong>검사 에이전트 (Inspection Agents)</strong>
-<ul>
-<li>실험 결과를 텍스트 리포트로 변환</li>
-<li>파이썬 데코레이터(decorator) 방식으로 실험 함수에 부착</li>
-<li>그래프/시각적 데이터 분석 수행</li>
-</ul>
-</li>
-<li><strong>에이전트 기반 상태 머신</strong>
-<ul>
-<li>전통적 상태 머신과 달리 에이전트가 상태 전이 결정</li>
-<li>실험 이력 최소화로 문맥 길이 제약 극복</li>
-<li>각 단계 독립 처리로 장시간 실험 가능</li>
-</ul>
-</ol>
-<p><strong>프롬팅 전략</strong>:</p>
-<ul>
-<li>에이전트별 독립된 문맥(distinct context)으로 프롬팅</li>
-<li>구체적 prompt 구성 세부사항은 Appendix B 참조</li>
+<li>Knowledge agents: 실험실 작업의 개별 실험부터 복잡한 절차까지 망라하는 지식 보유 및 결과 검사 능력 제공</li>
+<li>Translation agents: 벡터 유사도 기반 선택적 활성화를 통해 들어오는 지시문을 executable code로 변환</li>
+<li>Execution agent: 절차 분해, 단계별 코드 생성, 결과 분석, state 전이 결정을 조율</li>
+<li>Visual inspection agents: 실험 결과 이미지를 텍스트 리포트로 변환하여 multimodal 정보 처리</li>
+<li>Agent-based state machine: 각 단계의 독립적 지시문 보유 및 transition rule 기반 상태 관리</li>
 </ul></div>
 <div class="section-box"><h2>Originality</h2>
 <ul>
-<li><strong>멀티모달 이질적 지식 관리</strong>: 표준 RAG 방법 대신 선택적 에이전트 활성화로 이질적 실험실 지식 통합 (특성 벡터 기반 매칭)</li>
-<li><strong>에이전트 기반 상태 머신</strong>: rigid deterministic rules 대신 에이전트가 동적으로 상태 전이 결정 → 장시간 실험 자동화 가능</li>
-<li><strong>스칼러블 지식 에이전트 시스템</strong>: Fine-tuning 없이 새로운 지식 에이전트 추가 가능, 에이전트 수 증가 시에도 효율적 확장</li>
-<li><strong>양자 컴퓨팅 응용</strong>: 자동화의 높은 요구도가 있는 초전도 양자 프로세서 캘리브레이션에 실제 적용하여 검증</li>
-<li><strong>Knowledge transfer 강조</strong>: 에이전트의 지식 수용 및 전달 능력을 직접 측정하여 시스템 신뢰성 개선</li>
+<li>다중모드 실험실 지식의 체계적 통합을 위해 knowledge agents의 선택적 활성화 메커니즘 도입</li>
+<li>자연어 절차를 명시적 state machine 구조로 자동 변환하여 장시간 다단계 작업의 context window 제약 극복</li>
+<li>Vector-based agent selection 방식으로 표준 RAG 대비 이질적 에이전트 간 협업 능력 향상</li>
+<li>양자 컴퓨팅 영역에 LLM 기반 자동화 에이전트를 처음 성공적으로 적용</li>
 </ul></div>
 <div class="section-box"><h2>Limitation &amp; Further Study</h2>
-<p><strong>한계</strong>:</p>
 <ul>
-<li>공개 LLM의 문맥 길이 제약으로 인한 단계별 절차 분해 필요성 (문맥 길이 증가에 따른 성능 저하)</li>
-<li>80개 명령어 테스트셋은 상대적으로 소규모로, 대규모 실험실 자동화 검증 필요</li>
-<li>실험 실패 시 자동 재설계 로직의 제한 (현재는 파라미터 조정 후 재시도)</li>
-<li>프로프라이터리 실험실 지식 접근의 어려움 (데이터 보안 이슈)</li>
-</ul>
-<p><strong>후속 연구</strong>:</p>
-<ul>
-<li>더 큰 규모의 양자 프로세서 (수백 큐빗) 자동화 확대 적용</li>
-<li>다른 과학 분야(화학, 재료과학)로의 프레임워크 일반화</li>
-<li>에이전트 간 협력 메커니즘 고도화 (현재는 계층적 조정)</li>
-<li>비정상 상황 탐지 및 자동 대응 능력 강화</li>
-<li>시각적/수치적 데이터 해석 능력 개선</li>
+<li>LLM의 hallucination 위험성 및 파라미터 설정 오류 가능성에 대한 견고성 검증 부재</li>
+<li>지금까지 단일 실험실 환경과 특정 양자 프로세서 플랫폼에서만 검증됨</li>
+<li>실험 절차 분해 및 state machine 설계의 수동 개입 필요도 존재</li>
+<li>여러 실험실 환경과 학문 분야에 대한 일반화 가능성 검토 필요</li>
+<li>에이전트 간 조율 오류 발생 시 자가 복구 메커니즘의 한계</li>
 </ul></div>
 <div class="section-box"><h2>Evaluation</h2>
-
-<p><strong>총평</strong>: 본 논문은 LLM 기반 에이전트를 실제 양자 실험실 자동화에 성공적으로 적용한 의미 있는 연구로, 에이전트 기반 상태 머신과 선택적 활성화 에이전트 시스템은 기술적 기여도가 높다. 다만 평가 규모 확대 및 타 분야 일반화 검증이 필요하다.</p></div>
-<div class="connections-box"><h2>같이 보면 좋은 논문</h2><div class="conn-item foundation"><div class="conn-type">기반 연구</div><div class="conn-title"><a href="../139_Autonomous_microscopy_experiments_through_large_language_mod/index.html">Autonomous microscopy experiments through large language model agents</a></div><div class="conn-reason">현미경 실험 자동화의 기초적 연구로서 양자 컴퓨팅 실험 자동화의 방법론적 토대를 제공합니다.</div></div>
-<div class="conn-item foundation"><div class="conn-type">기반 연구</div><div class="conn-title"><a href="../816_Toward_a_Fully_Autonomous_AI-Native_Particle_Accelerator/index.html">Toward a Fully Autonomous, AI-Native Particle Accelerator</a></div><div class="conn-reason">양자 컴퓨팅에 적용된 자율 실험실용 에이전트 연구는 AI 기반 입자 가속기 자율 운영의 기술적 선례를 제공한다.</div></div>
-<div class="conn-item alternative"><div class="conn-type">다른 접근</div><div class="conn-title"><a href="../111_AtomAgents_Alloy_design_and_discovery_through_physics-aware/index.html">AtomAgents: Alloy design and discovery through physics-aware multi-modal multi-agent artificial intelligence</a></div><div class="conn-reason">동일한 다중 에이전트 자동화 접근법을 다른 물리 시스템(양자 vs 합금)에 적용하여 방법론의 일반성을 보입니다.</div></div>
-<div class="conn-item alternative"><div class="conn-type">다른 접근</div><div class="conn-title"><a href="../133_Automating_quantum_computing_laboratory_experiments_with_an/index.html">Automating quantum computing laboratory experiments with an agent-based AI framework</a></div><div class="conn-reason">양자 컴퓨팅 실험실 자동화에서 에이전트 기반 접근법과 LLM 기반 접근법을 비교할 수 있습니다.</div></div>
-<div class="conn-item alternative"><div class="conn-type">다른 접근</div><div class="conn-title"><a href="../432_Intelligent_experiments_through_real-time_ai_Fast_data_proce/index.html">Intelligent experiments through real-time ai: Fast data processing and autonomous detector control for sphenix and future eic detectors</a></div><div class="conn-reason">실시간 AI 기반 실험 제어라는 동일한 개념을 다른 물리 시스템(핵물리 vs 양자)에 적용합니다.</div></div>
-<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../139_Autonomous_microscopy_experiments_through_large_language_mod/index.html">Autonomous microscopy experiments through large language model agents</a></div><div class="conn-reason">기본적인 현미경 실험 자동화를 양자 컴퓨팅이라는 더 복잡한 실험 환경으로 발전시킵니다.</div></div>
-<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../432_Intelligent_experiments_through_real-time_ai_Fast_data_proce/index.html">Intelligent experiments through real-time ai: Fast data processing and autonomous detector control for sphenix and future eic detectors</a></div><div class="conn-reason">실시간 AI 기반 실험 제어를 양자 시스템으로 확장하여 더 복잡한 자동화를 구현합니다.</div></div>
-<div class="conn-item application"><div class="conn-type">응용 사례</div><div class="conn-title"><a href="../1125_Accelerating_cell_culture_media_development_using_Bayesian_o/index.html">Accelerating cell culture media development using Bayesian optimization-based iterative experimental design</a></div><div class="conn-reason">자율주행 실험실의 AI 에이전트는 세포 배양 배지 개발의 베이지안 최적화 과정을 완전 자동화된 실험 시스템으로 구현할 수 있다.</div></div></div>
+<div class="eval-badges"><span class="eval-badge">Novelty: 4/5</span> <span class="eval-badge">Technical Soundness: 4/5</span> <span class="eval-badge">Significance: 4/5</span> <span class="eval-badge">Clarity: 4/5</span> <span class="eval-badge">Overall: 4/5</span></div>
+<p><strong>총평</strong>: k-agents는 multimodal 실험실 지식의 체계적 통합과 장시간 자동화 실험 수행을 위한 혁신적 프레임워크를 제시하며, 양자 컴퓨팅 분야에서 인간 수준의 성능 달성으로 자동 과학 발견의 실질적 가능성을 입증했다.</p></div>
+<div class="connections-box"><h2>같이 보면 좋은 논문</h2><div class="conn-item foundation"><div class="conn-type">기반 연구</div><div class="conn-title"><a href="../133_Automating_quantum_computing_laboratory_experiments_with_an/index.html">Automating quantum computing laboratory experiments with an agent-based AI framework</a></div><div class="conn-reason">동일한 k-agents 프레임워크를 기반으로 하여 양자 컴퓨팅 실험 자동화의 기본 원리를 제공한다</div></div>
+<div class="conn-item alternative"><div class="conn-type">다른 접근</div><div class="conn-title"><a href="../533_Meta-designing_quantum_experiments_with_language_models/index.html">Meta-designing quantum experiments with language models</a></div><div class="conn-reason">양자 시스템에서 실험 설계와 메타 설계라는 서로 다른 차원의 접근법을 보여준다</div></div>
+<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../133_Automating_quantum_computing_laboratory_experiments_with_an/index.html">Automating quantum computing laboratory experiments with an agent-based AI framework</a></div><div class="conn-reason">동일한 k-agents 프레임워크를 실험실 자동화에서 양자 컴퓨팅 실험이라는 특화 도메인으로 확장했다</div></div>
+<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../501_LLM-based_Multi-Agent_Copilot_for_Quantum_Sensor/index.html">LLM-based Multi-Agent Copilot for Quantum Sensor</a></div><div class="conn-reason">양자 컴퓨팅 실험 자동화를 다중 에이전트 협력 시스템으로 확장한 발전된 접근법이다</div></div>
+<div class="conn-item application"><div class="conn-type">응용 사례</div><div class="conn-title"><a href="../533_Meta-designing_quantum_experiments_with_language_models/index.html">Meta-designing quantum experiments with language models</a></div><div class="conn-reason">양자 컴퓨팅 실험실 자동화 연구에서 제시된 방법론을 메타 솔루션 발견이라는 더 추상적 수준으로 적용한다.</div></div>
+<div class="conn-item application"><div class="conn-type">응용 사례</div><div class="conn-title"><a href="../744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/index.html">Self-Driving Laboratories for Chemistry and Materials Science</a></div><div class="conn-reason">양자 컴퓨팅 분야의 자율 실험실 구현 사례를 통해 SDL의 실제 적용 가능성과 한계를 구체적으로 확인할 수 있다.</div></div>
+<div class="conn-item application"><div class="conn-type">응용 사례</div><div class="conn-title"><a href="../501_LLM-based_Multi-Agent_Copilot_for_Quantum_Sensor/index.html">LLM-based Multi-Agent Copilot for Quantum Sensor</a></div><div class="conn-reason">양자 컴퓨팅 실험실 자동화 에이전트가 양자 센서 개발과 유사한 양자 시스템 제어 도메인을 다룬다</div></div></div>
 <div class="back"><a href="../../ai4s/index.html">&larr; 목록으로 돌아가기</a></div>
 <div id="lightbox" class="lightbox"><img id="lightbox-img" alt=""></div>
 <script>

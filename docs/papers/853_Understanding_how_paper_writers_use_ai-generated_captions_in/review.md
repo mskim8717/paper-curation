@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 18명의 논문 저자가 최신 AI 모델이 생성한 캡션을 자신의 논문 작성 과정에 어떻게 통합하는지 실제 사용자 연구를 통해 조사했으며, 저자들이 AI 생성 캡션을 복사-수정하는 방식으로 활용하되 긴 형식의 상세한 캡션을 선호함을 발견했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Peer_Review"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Human_Experience_Studies"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bender and Friedman_2025_Understanding how paper writers use ai-generated captions in figure caption writing.pdf"
 ---
@@ -109,5 +109,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bender and Friedman_2025_Understanding h
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 과학 도표 캡션 생성의 기본 기법이 AI 생성 캡션의 인간 활용 방식 연구에 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 과학 도표 캡션 자동 생성 기술이 실제 논문 작성자들에게 어떻게 활용되는지 보여주는 후속 연구이다.
+- ⚖️ 반론/비판: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — 언어 모델을 사용한 글쓰기의 다양성 감소 우려와 AI 생성 캡션의 실제 사용 패턴은 AI 글쓰기 도구의 서로 다른 측면을 보여준다.
+- 🏛 기반 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 그림-캡션 생성 프레임워크와 벤치마크는 논문 저자들이 AI 생성 캡션을 활용하는 연구의 기술적 기반이다.
+- 🧪 응용 사례: [[papers/899_ChatGPT_and_science_the_AI_system_was_a_force_in_2023__for_g/review]] — ChatGPT의 과학 분야 일반적 영향과 논문 작성에서 AI 캡션 사용은 과학 글쓰기에서 생성형 AI 활용의 구체적 사례를 보여준다.
+- ⚖️ 반론/비판: [[papers/154_Best_Practices_for_Using_AI_When_Writing_Scientific_Manuscri/review]] — AI 활용 가이드라인과 달리 실제 연구자들이 AI 생성 콘텐츠를 어떻게 사용하는지 비판적 분석
+- 🏛 기반 연구: [[papers/899_ChatGPT_and_science_the_AI_system_was_a_force_in_2023__for_g/review]] — ChatGPT의 과학 분야 전반적 영향과 논문 작성에서 AI 도구 사용은 생성형 AI의 과학적 활용에 대한 포괄적-구체적 관점을 제공한다.

@@ -12,7 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 의료 분야의 문헌 검토 자동화를 목표로 470K개 의약 논문과 20K개 체계적 문헌 검토(systematic reviews)를 포함한 대규모 다중문서 요약 데이터셋 MS²을 제시하며, 이는 생의학 도메인의 첫 공개 다중문서 요약 데이터셋이다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
   - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/DeYoung et al._2021_Ms2 Multi-document summarization of medical studies.pdf"
@@ -113,8 +114,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/DeYoung et al._2021_Ms2 Multi-document s
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 의료 연구의 다중문서 요약을 전체 논문 텍스트를 활용하는 관련 업무 생성으로 확장하여 더 포괄적인 문헌 요약을 제공함
-- 🔄 다른 접근: [[papers/778_Summarizing_multiple_documents_with_conversational_structure/review]] — 둘 다 의료/학술 분야 다중문서 요약을 다루지만 하나는 체계적 문헌 검토, 다른 하나는 동료평가에 중점을 둠
-- 🔗 후속 연구: [[papers/812_TLDR_Extreme_Summarization_of_Scientific_Documents/review]] — 의료 연구의 다중문서 요약을 과학 문서의 극단적 요약으로 확장하여 더 간결한 정보 압축 방법을 탐구함
-- 🏛 기반 연구: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 의료 분야 다중문서 요약의 기초적 접근이 관련 업무 생성을 위한 전체 텍스트 활용 방법의 토대를 제공함
-- 🔄 다른 접근: [[papers/778_Summarizing_multiple_documents_with_conversational_structure/review]] — 둘 다 의료/학술 분야 다중문서 요약을 다루지만 하나는 동료평가, 다른 하나는 체계적 문헌 검토에 중점을 둠
+- 🔄 다른 접근: [[papers/778_Summarizing_multiple_documents_with_conversational_structure/review]] — 의료 문헌 요약이라는 같은 도메인에서 체계적 문헌검토 vs 메타리뷰 생성이라는 다른 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 관련 업무 섹션 생성을 통해 의료 문헌 요약의 범위를 일반 학술 논문으로 확장하는 방법론을 제시한다.
+- 🏛 기반 연구: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 자동 문헌 검토 생성에 대한 데이터셋 구축 방법론의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/812_TLDR_Extreme_Summarization_of_Scientific_Documents/review]] — 의료 연구의 멀티문서 요약으로, 과학 논문의 극단적 요약과 다른 도메인에서의 문서 요약 접근법을 비교할 수 있습니다.
+- 🔄 다른 접근: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 의료 연구의 다중 문서 요약에 특화된 데이터셋으로, SciReviewGen의 범용 과학 문헌 리뷰와 대비되는 도메인별 요약 접근법을 제시한다
+- 🔄 다른 접근: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 다중문서 요약이라는 공통 목표를 가지지만 일반 학술 논문 vs 의료 전문 문헌이라는 다른 도메인을 다룬다.
+- 🔄 다른 접근: [[papers/778_Summarizing_multiple_documents_with_conversational_structure/review]] — 학술 문헌의 다중문서 요약이라는 공통 목표를 가지지만 메타리뷰 vs 체계적 문헌검토라는 다른 출력 형태를 다룬다.
+- 🏛 기반 연구: [[papers/108_Ask_retrieve_summarize_A_modular_pipeline_for_scientific_lit/review]] — 의료 연구의 다중문서 요약 기법이 일반적인 과학 문헌 요약 시스템 개발의 이론적 기반을 제공한다.

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 자동화 화학 실험실(automated chemistry lab)을 위한 강화학습(reinforcement learning, RL) 에이전트 훈련을 위한 오픈소스 시뮬레이션 환경 ChemGymRL을 제시한다. 이 프레임워크는 반응, 추출, 증류의 세 가지 상호연결된 화학 벤치를 구현하여 RL 알고리즘의 개발과 평가를 용이하게 한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Human-AI_Experimental_Design"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Beeler et al._2024_ChemGymRL A Customizable Interactive Framework for Reinforcement Learning for Digital Chemistry.pdf"
 ---
@@ -118,8 +120,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Beeler et al._2024_ChemGymRL A Customiza
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/558_Moose-chem3_Toward_experiment-guided_hypothesis_ranking_via/review]] — 화학 실험 시뮬레이션 환경이 실험 피드백 기반 가설 평가의 기술적 확장
-- 🏛 기반 연구: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 화학정보학 도구 통합이 화학 실험 자동화의 소프트웨어 기반
-- 🧪 응용 사례: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — 시뮬레이션 화학 실험을 실시간 이론-실험 연결 시스템으로 실현한 응용
-- 🔗 후속 연구: [[papers/239_CRISPR-GPT_for_agentic_automation_of_gene-editing_experiment/review]] — 강화학습 화학 환경을 유전자 편집 자동화로 확장한 생명과학 응용
-- 🏛 기반 연구: [[papers/558_Moose-chem3_Toward_experiment-guided_hypothesis_ranking_via/review]] — 화학 실험 시뮬레이션 환경이 실험 피드백 기반 가설 평가의 기술적 기초
+- 🧪 응용 사례: [[papers/140_Autonomous_reinforcement_learning_agent_for_chemical_vapor_d/review]] — 화학 실험실 강화학습 환경을 화학기상증착 공정의 자율 강화학습이라는 구체적인 산업 응용에 적용한다
+- 🏛 기반 연구: [[papers/422_Improving_generalization_of_robot_locomotion_policies_via_sh/review]] — 로봇 이동 정책의 일반화 개선 기법을 화학 실험 자동화의 강화학습 에이전트 훈련에 활용한다
+- 🔗 후속 연구: [[papers/688_Robustness_evaluation_of_offline_reinforcement_learning_for/review]] — 화학 실험 강화학습에서 오프라인 강화학습의 견고성 평가라는 더 실용적인 적용으로 발전한다
+- 🔄 다른 접근: [[papers/118_Autobio_A_simulation_and_benchmark_for_robotic_automation_in/review]] — 생물 실험실 로봇 자동화와 화학 실험실 강화학습 환경이라는 서로 다른 실험실 자동화 접근법을 비교할 수 있다

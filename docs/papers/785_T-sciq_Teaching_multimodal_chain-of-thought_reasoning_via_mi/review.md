@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대형 언어 모델(LLM)이 생성한 연쇄적 사고(Chain-of-Thought, CoT) 신호를 혼합하여 과학 문제 해결 능력을 갖춘 소규모 학생 모델을 학습하는 T-SciQ 프레임워크를 제안한다. 인간 주석의 비용 문제와 정보 손실을 극복하기 위해 두 가지 유형의 자동 생성 교수 신호를 결합하는 혁신적인 데이터 혼합 전략을 도입한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Visual_Scientific_Reasoning"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2023_T-sciq Teaching multimodal chain-of-thought reasoning via mixed large language model signals for sc.pdf"
 ---
@@ -115,8 +115,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2023_T-sciq Teaching multimo
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/869_Visual_thoughts_A_unified_perspective_of_understanding_multi/review]] — 멀티모달 과학 문제 해결을 시각적 사고라는 통합된 추론 메커니즘으로 확장하여 더 깊은 이해를 제공합니다.
-- 🧪 응용 사례: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — LLM의 과학 연구 활용을 멀티모달 과학 교육이라는 구체적 응용 분야에 적용하는 실용적 사례입니다.
-- 🏛 기반 연구: [[papers/037_A_Survey_on_Uncertainty_Quantification_Methods_for_Deep_Lear/review]] — 딥러닝 불확실성 정량화가 과학 문제 해결 AI의 신뢰성 확보에 필수적인 이론적 기초를 제공합니다.
-- 🏛 기반 연구: [[papers/869_Visual_thoughts_A_unified_perspective_of_understanding_multi/review]] — 멀티모달 체인-오브-쏘트 추론의 기본 메커니즘이 과학 문제 해결 교육의 이론적 토대를 제공합니다.
-- 🏛 기반 연구: [[papers/697_Scaling_physical_reasoning_with_the_physics_dataset/review]] — T-SciQ의 멀티모달 과학 추론 방법이 PHYSICS 데이터셋의 물리 문제 해결 평가 프레임워크 구축에 기여함
+- 🔗 후속 연구: [[papers/869_Visual_thoughts_A_unified_perspective_of_understanding_multi/review]] — 멀티모달 체인 오브 쏘트 이해에 대한 통합된 관점 연구가 T-SciQ의 혼합 LLM 교수 신호를 통한 멀티모달 추론으로 구체화되었다
+- 🏛 기반 연구: [[papers/243_Critique-GRPO_Advancing_LLM_Reasoning_with_Natural_Language/review]] — 자연어 비평을 통한 LLM 추론 향상 연구가 T-SciQ의 연쇄적 사고 신호 생성과 활용 방법론에 이론적 기반을 제공한다
+- 🧪 응용 사례: [[papers/237_Confidence_in_Large_Language_Model_Evaluation_A_Bayesian_App/review]] — LLM 평가에서 신뢰도에 대한 베이지안 접근법 연구가 T-SciQ의 학생 모델 학습 평가에 실제 적용되었다
+- 🏛 기반 연구: [[papers/869_Visual_thoughts_A_unified_perspective_of_understanding_multi/review]] — 혼합 LLM을 통한 멀티모달 추론 교육 연구가 비전-언어 모델의 시각적 사고 메커니즘 발견에 교육 방법론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/691_S1-MMAlign_A_Large-Scale_Multi-Disciplinary_Dataset_for_Scie/review]] — 멀티모달 사고연쇄 추론 교육이 S1-MMAlign의 과학 멀티모달 학습을 더 고도화된 추론으로 발전시킨다.
+- 🏛 기반 연구: [[papers/437_Interpreting_Multi-band_Galaxy_Observations_with_Large_Langu/review]] — 멀티모달 과학 추론 교육 방법론이 천문학 데이터 해석에서 전문가 수준 추론을 구현하는 기반이 됨
+- 🔗 후속 연구: [[papers/900_ChatGPT_has_entered_the_classroom_how_LLMs_could_transform_e/review]] — 멀티모달 추론 교육을 통해 LLM 교육 활용을 시각적 요소까지 확장한다

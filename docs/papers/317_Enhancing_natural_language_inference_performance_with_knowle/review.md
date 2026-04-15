@@ -9,8 +9,8 @@ arxiv: ""
 score: 3.75
 essence: "인도네시아어 COVID-19 자동 팩트체킹 성능 향상을 위해 지식 그래프(Knowledge Graph)를 외부 지식으로 활용하여 자연어 추론(Natural Language Inference, NLI)을 개선하는 연구이다. 세 개 모듈(NLI 모듈, 팩트 모듈, 분류기 모듈)로 구성된 아키텍처를 통해 최대 0.8616의 정확도를 달성했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Knowledge_Graph_Reasoning"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Muharram and Purwarianti_2024_Enhancing natural language inference performance with knowledge graph for covid-19 automated fact-ch.pdf"
 ---
@@ -97,5 +97,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Muharram and Purwarianti_2024_Enhancing 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 프로그램 가이드 추론을 통한 복잡한 클레임 팩트체킹이 지식그래프 기반 NLI의 고도화된 응용이다.
-- 🔄 다른 접근: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프 추론 기반 팩트 검증이 NLI 성능 향상과 같은 목표의 다른 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/904_How_AI-powered_science_search_engines_can_speed_up_your_rese/review]] — 지식 그래프를 활용한 자연어 추론이 AI 검색 엔진의 정확성 개선을 위한 방법론적 기반이다
+- 🔄 다른 접근: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 지식 그래프와 RAG가 각각 외부 지식 활용을 통한 언어모델 성능 향상의 상보적 접근법이다
+- 🔗 후속 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프 기반 사실 검증을 자연어 추론으로 확장한 관련 기술 발전이다
+- 🧪 응용 사례: [[papers/832_Towards_llm-based_fact_verification_on_news_claims_with_a_hi/review]] — 계층적 지식 그래프를 활용한 사실 검증이 NLI 기반 팩트체킹의 실제 적용 사례이다
+- 🔄 다른 접근: [[papers/904_How_AI-powered_science_search_engines_can_speed_up_your_rese/review]] — 지식 그래프와 AI 검색 엔진이 각각 정확성 문제 해결의 상보적 접근법이다

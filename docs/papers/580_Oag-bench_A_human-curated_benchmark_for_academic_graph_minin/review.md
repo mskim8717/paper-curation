@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 학술 그래프 마이닝(academic graph mining)을 위한 포괄적인 인간-주석(human-curated) 벤치마크인 OAG-Bench를 제시한다. 개방학술그래프(Open Academic Graph, OAG)를 기반으로 저자 이름 중복 제거, 논문 추천, 학자 프로파일링 등 10개의 다양한 과제를 포함하며, 세밀한 다중 관점 주석과 표준화된 평가 프로토콜을 제공한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Knowledge_Graph_Reasoning"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_Oag-bench A human-curated benchmark for academic graph mining.pdf"
 ---
@@ -134,8 +134,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_Oag-bench A human-cura
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/632_Predicting_the_future_of_ai_with_ai_High-quality_link_predic/review]] — AI 연구의 미래 예측을 위해 학술 그래프와 의미 네트워크라는 다른 접근 방식을 사용한다
-- 🧪 응용 사례: [[papers/448_Kgvalidator_A_framework_for_automatic_validation_of_knowledg/review]] — 지식 그래프 검증 프레임워크를 OAG-Bench의 학술 그래프 마이닝 작업에 적용할 수 있다
-- 🔗 후속 연구: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — 지식 그래프 기반의 흥미로운 과학적 아이디어 생성을 학술 그래프 마이닝으로 확장할 수 있다
-- 🔄 다른 접근: [[papers/632_Predicting_the_future_of_ai_with_ai_High-quality_link_predic/review]] — AI 연구 동향 예측을 위해 의미 네트워크 링크 예측과 학술 그래프 마이닝이라는 다른 방법론을 사용한다
-- 🔄 다른 접근: [[papers/913_Semantic_Scholar/review]] — 학술 그래프 마이닝을 위한 다른 접근법과 벤치마크를 제공한다
+- 🔗 후속 연구: [[papers/632_Predicting_the_future_of_ai_with_ai_High-quality_link_predic/review]] — 학술 그래프 마이닝 벤치마크가 AI 연구 방향 예측 모델의 성능 평가 기준으로 활용될 수 있음
+- 🧪 응용 사례: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — OAG-Bench의 학술 그래프 데이터가 LLM의 새로운 연구 아이디어 생성 능력 평가에 활용될 수 있음
+- 🔄 다른 접근: [[papers/1088_Lag_Llm_agents_for_leaderboard_auto_generation_on_demanding/review]] — 리더보드 자동 생성과 학술 그래프 마이닝이라는 서로 다른 학술 데이터 자동화 접근법을 제시한다.
+- 🔄 다른 접근: [[papers/803_The_open_review-based_orb_dataset_Towards_automatic_assessme/review]] — 학술 그래프 마이닝이라는 동일한 목표를 그래프 구조 관점에서 다르게 접근한다.
+- 🔄 다른 접근: [[papers/579_Nsf-scify_Mining_the_nsf_awards_database_for_scientific_clai/review]] — NSF 데이터베이스 대신 학술 그래프 마이닝을 위한 큐레이션된 벤치마크를 제시한다
+- 🏛 기반 연구: [[papers/632_Predicting_the_future_of_ai_with_ai_High-quality_link_predic/review]] — AI 연구 방향 예측을 위한 링크 예측이 학술 그래프 마이닝 벤치마크의 핵심 평가 과제 중 하나임
+- 🏛 기반 연구: [[papers/032_A_Survey_on_Knowledge_Graphs_Representation_Acquisition_and/review]] — 학술 그래프 마이닝을 위한 벤치마크를 통해 지식 그래프 연구의 평가 기준과 실제 적용 방법론을 제공한다.
+- 🔄 다른 접근: [[papers/913_Semantic_Scholar/review]] — 학술 그래프 마이닝을 대규모 코퍼스 vs 큐레이션된 벤치마크로 다르게 접근한다

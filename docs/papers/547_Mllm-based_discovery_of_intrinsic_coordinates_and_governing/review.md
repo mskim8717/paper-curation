@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 멀티모달 대규모 언어 모델(MLLM)을 활용하여 고차원 동영상 데이터로부터 저차원 물리 좌표계와 지배 방정식을 자동으로 발견하는 Video Equation Reasoning (VER) 프레임워크를 제안한다. 향상된 시각적 프롬프트와 가설-평가-반복 추론 체인을 통해 종래 방법 대비 외삽 정확도를 약 26.96% 향상시킨다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Multimodal_Scientific_Reasoning"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Agent-Based_CFD_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2025_Mllm-based discovery of intrinsic coordinates and governing equations from high-dimensional data.pdf"
 ---
@@ -131,8 +133,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2025_Mllm-based discovery of i
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/627_Position_Multimodal_large_language_models_can_significantly/review]] — 멀티모달 과학적 추론의 일반적 가능성을 동영상 데이터에서 물리 법칙 발견이라는 구체적 문제에 적용한다.
-- 🔄 다른 접근: [[papers/289_Drsr_Llm_based_scientific_equation_discovery_with_dual_reaso/review]] — 과학 방정식 발견이라는 공통 목표를 가지지만 멀티모달 접근법과 데이터-경험 이중 추론이라는 다른 방법을 사용한다.
-- 🏛 기반 연구: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — 동적 시스템 발견을 위한 LLM 활용 방법론이 동영상에서 지배 방정식 발견의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/241_Criteria-first_semantics-later_reproducible_structure_discov/review]] — 기준 우선 구조 발견을 멀티모달 LLM 기반 내재 좌표 발견으로 확장한다.
-- 🏛 기반 연구: [[papers/627_Position_Multimodal_large_language_models_can_significantly/review]] — 멀티모달 대형 언어 모델의 과학적 추론 향상 가능성을 동영상에서 물리 법칙 발견이라는 구체적 사례로 입증한다.
+- 🔄 다른 접근: [[papers/289_Drsr_Llm_based_scientific_equation_discovery_with_dual_reaso/review]] — 둘 다 LLM을 이용한 과학 방정식 발견을 다루지만 MLLM은 동영상 데이터에, DrSR은 데이터와 경험 이중 추론에 특화
+- 🏛 기반 연구: [[papers/363_From_Reasoning_to_Learning_A_Survey_on_Hypothesis_Discovery/review]] — 추론에서 학습으로의 가설 발견 서베이가 멀티모달 LLM의 물리 좌표계 발견에 이론적 배경을 제공함
+- 🔗 후속 연구: [[papers/110_AstroAgents_A_Multi-Agent_AI_for_Hypothesis_Generation_from/review]] — 천문학 가설 생성 에이전트와 물리 좌표계 발견을 결합하여 우주 현상의 지배 방정식 자동 발견 가능

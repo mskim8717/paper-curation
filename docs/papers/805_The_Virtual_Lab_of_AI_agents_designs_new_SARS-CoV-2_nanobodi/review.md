@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "LLM 기반의 다중 AI 에이전트 시스템(Virtual Lab)이 학제 간 협업을 통해 SARS-CoV-2 신규 나노바디(nanobody) 92개를 설계하고 실험적으로 검증하여, 최근 변이주(JN.1, KP.3)에 대한 개선된 결합 특성을 가진 유망 후보들을 발견했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/LLM_Drug_Discovery"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI_Scientist_System_Development"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Swanson et al._2025_The Virtual Lab of AI agents designs new SARS-CoV-2 nanobodies 1.pdf"
 ---
@@ -111,12 +112,9 @@ LLM 기반의 다중 AI 에이전트 시스템(Virtual Lab)이 학제 간 협업
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/144_AutoProteinEngine_A_Large_Language_Model_Driven_Agent_Framew/review]] — Virtual Lab의 특정 나노바디 설계와 AutoProteinEngine의 일반적 단백질 공학 자동화는 서로 다른 범위에서 단백질 설계를 다루는 접근이다.
-- 🏛 기반 연구: [[papers/381_Genesis_Towards_the_Automation_of_Systems_Biology_Research/review]] — Genesis의 대규모 병렬 실험 자동화 방법론이 Virtual Lab의 학제간 AI 에이전트 협업을 통한 단백질 설계의 기술적 토대이다.
-- 🔗 후속 연구: [[papers/112_Atomically_accurate_de_novo_design_of_antibodies_with_RFdiff/review]] — RFdiffusion을 사용한 원자적으로 정확한 항체 설계가 Virtual Lab의 나노바디 설계 방법론을 더 정밀한 구조적 정확도로 확장한 발전된 접근이다.
-- 🏛 기반 연구: [[papers/806_The_Virtual_Lab_AI_Agents_Design_New_SARS-CoV-2_Nanobodies_w/review]] — 동일한 연구의 초기 버전으로서 가상 실험실 프레임워크의 개념적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/144_AutoProteinEngine_A_Large_Language_Model_Driven_Agent_Framew/review]] — AutoProteinEngine의 일반적 단백질 공학 자동화와 Virtual Lab의 특정 나노바디 설계는 서로 다른 범위에서 단백질 설계를 자동화하는 접근이다.
-- 🔄 다른 접근: [[papers/381_Genesis_Towards_the_Automation_of_Systems_Biology_Research/review]] — Genesis의 시스템 생물학 대규모 자동화와 Virtual Lab의 특정 단백질 설계 자동화는 서로 다른 규모에서 생물학적 발견을 자동화하는 접근이다.
-- 🔗 후속 연구: [[papers/514_MAC-AMP_A_Closed-Loop_Multi-Agent_Collaboration_System_for_M/review]] — Virtual Lab의 나노바디 설계 성공이 MAC-AMP의 항균펩타이드 설계를 위한 다중 에이전트 협업 방법론의 효과를 다른 단백질 영역에서 확장 검증한다.
-- 🔗 후속 연구: [[papers/554_Modular_large_language_model_agents_for_multi-task_computati/review]] — Virtual Lab의 실제 나노바디 설계 성공이 PharmAgents의 가상 제약회사 개념을 특정 단백질 영역에서 실증한 구체적 확장 사례이다.
-- 🔄 다른 접근: [[papers/868_Virtual_lab_powered_by_AI_scientists_super-charges_biomedica/review]] — SARS-CoV-2 나노바디 설계라는 동일한 연구 성과를 서로 다른 관점에서 보도하여 AI 과학자 시스템의 성능을 종합적으로 평가할 수 있다.
+- 🔄 다른 접근: [[papers/825_Towards_an_AI_co-scientist/review]] — AI 기반 생물의학 연구를 다루지만 Virtual Lab은 나노바디 설계에, AI co-scientist는 범용적 연구 가설 생성에 집중한 서로 다른 특화 접근법임
+- 🔗 후속 연구: [[papers/514_MAC-AMP_A_Closed-Loop_Multi-Agent_Collaboration_System_for_M/review]] — 생물의학적 치료제 개발에서 다중 AI 에이전트 협업을 활용하여 MAC-AMP의 항균펩타이드 설계 방법론을 나노바디 설계로 확장 적용함
+- 🏛 기반 연구: [[papers/112_Atomically_accurate_de_novo_design_of_antibodies_with_RFdiff/review]] — 원자 수준에서 정확한 항체 설계 방법론을 제시하여 Virtual Lab의 나노바디 설계에서 분자 구조 예측 및 최적화의 이론적 기반을 제공함
+- 🔄 다른 접근: [[papers/825_Towards_an_AI_co-scientist/review]] — AI 기반 생물의학 연구를 다루지만 AI co-scientist는 범용적 연구 가설 생성에, Virtual Lab은 나노바디 설계에 특화된 서로 다른 접근법임
+- 🧪 응용 사례: [[papers/310_Embodied_Science_Closing_the_Discovery_Loop_with_Agentic_Emb/review]] — Virtual Lab의 나노바디 설계는 Embodied Science의 물리적 발견 루프를 생물학적 실험에 구체적으로 적용한 사례
+- 🔗 후속 연구: [[papers/868_Virtual_lab_powered_by_AI_scientists_super-charges_biomedica/review]] — SARS-CoV-2 나노바디 설계의 구체적 성과를 보여주며 가상 실험실의 실제 응용 결과를 확장한다

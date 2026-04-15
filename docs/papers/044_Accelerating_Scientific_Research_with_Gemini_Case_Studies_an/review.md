@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 Google의 Gemini Deep Think 및 그 고도화 모형들을 활용하여 이론 컴퓨터 과학, 경제학, 최적화, 물리학 등 다양한 분야에서 미해결 문제를 해결하고 새로운 정리를 생성한 실제 사례들을 제시한다. 저자들은 인간-AI 협력의 일반화된 기법들을 추출하여 과학 연구 가속화를 위한 체계적 방법론을 제안한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/AI_for_Science_Taxonomy"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Multi-Domain_Experimental_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Woodruff et al._2026_Accelerating Scientific Research with Gemini Case Studies and Common Techniques.pdf"
 ---
@@ -140,8 +140,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Woodruff et al._2026_Accelerating Scient
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — 과학 연구 가속화를 위한 AI 활용이라는 동일한 목표를 다른 AI 모델(Gemini vs 일반 LLM)로 접근합니다.
-- ⚖️ 반론/비판: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 인간-AI 협력을 강조하는 반면 완전 자동화된 과학 발견을 추구하여 서로 다른 AI 과학 철학을 보입니다.
-- 🏛 기반 연구: [[papers/562_Multi-agent_risks_from_advanced_ai/review]] — 다중 에이전트 시스템의 위험 요소들을 이해해야 안전한 인간-AI 과학 협력이 가능합니다.
-- 🏛 기반 연구: [[papers/562_Multi-agent_risks_from_advanced_ai/review]] — 안전한 인간-AI 협력을 구현하기 위해 다중 에이전트 시스템의 잠재적 위험 요소들을 미리 이해해야 합니다.
-- 🔄 다른 접근: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — AI를 활용한 과학 연구 가속화라는 동일한 목표를 일반적 서베이와 특정 모델 사례로 상호 보완합니다.
+- 🔄 다른 접근: [[papers/322_Evaluation_of_openai_o1_Opportunities_and_challenges_of_agi/review]] — 과학 연구 가속화를 위해 Gemini 기반 인간-AI 협력과 OpenAI o1 기반 자율적 추론이라는 서로 다른 접근법을 제시함
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — Gemini를 활용한 과학 연구 협력 사례가 완전 자동화된 AI 과학자 시스템으로 발전함

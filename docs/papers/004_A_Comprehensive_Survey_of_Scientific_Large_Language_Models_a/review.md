@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "260개 이상의 과학 분야 대규모 언어 모델(LLM)을 포괄적으로 조사하여 다양한 분야와 모달리티에서의 아키텍처, 사전학습 기법, 데이터셋, 평가 과제를 통합적으로 분석하고 과학 발견에의 응용을 제시한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Publishing_Trends"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Academic_Citation_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_A Comprehensive Survey of Scientific Large Language Models and Their Applications in Scientific Disc.pdf"
 ---
@@ -90,8 +91,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2024_A Comprehensive Survey
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/353_From_Automation_to_Autonomy_A_Survey_on_Large_Language_Model/review]] — LLM의 자율성 진화보다는 분야별 응용에 초점을 맞춘 상호 보완적 조사 연구이다.
-- 🔗 후속 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 생물학과 화학 분야 과학 LLM에 특화된 조사로 포괄적 조사를 세분화하여 심화한다.
-- 🏛 기반 연구: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — LLM이 과학을 변화시키는 방식에 대한 조사로 과학 분야 LLM 응용의 이론적 배경을 제공한다.
-- 🔄 다른 접근: [[papers/353_From_Automation_to_Autonomy_A_Survey_on_Large_Language_Model/review]] — 과학 분야 LLM의 포괄적 조사로 자율성보다는 응용 분야에 초점을 맞춘 상호 보완적 관점을 제공한다.
-- 🔄 다른 접근: [[papers/664_RelevAI-Reviewer_A_Benchmark_on_AI_Reviewers_for_Survey_Pape/review]] — 과학 대규모 언어모델에 대한 포괄적 조사가 논문 관련성 평가라는 특정 응용에 대한 다른 접근을 보여준다.
+- 🧪 응용 사례: [[papers/410_How_deep_do_large_language_models_internalize_scientific_lit/review]] — 과학 분야 LLM의 종합적 분석이 인용 편향 같은 구체적인 문제 연구를 위한 배경 지식을 제공한다.
+- 🔗 후속 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 생물학과 화학 분야 과학 LLM에 대한 특화된 조사와 전반적인 과학 LLM 조사가 상호 보완된다.
+- 🔄 다른 접근: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — 과학에서 대규모 언어모델의 활용에 대한 포괄적 조사와 변혁적 관점이라는 서로 다른 접근을 보여준다.
+- 🏛 기반 연구: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — LLM 기반 과학적 지능에 대한 조사가 과학 분야 LLM의 구체적 응용 연구를 위한 토대를 제공한다.
+- 🏛 기반 연구: [[papers/410_How_deep_do_large_language_models_internalize_scientific_lit/review]] — 과학 분야 LLM의 종합적 분석이 인용 편향 문제 이해를 위한 이론적 배경을 제공한다.

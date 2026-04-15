@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "대규모언어모델(LLM)의 안전 정렬 행동은 단일 선형 방향이 아닌 활성화 공간의 다차원 직교 방향들의 상호작용으로 제어된다. 본 연구는 안전 미세조정 과정에서 발생하는 표현 변화를 분석하여 거부 행동을 지배하는 주도적 방향과 가설적 내러티브, 역할극 같은 서로 다른 특징을 나타내는 부차적 방향들을 발견한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Safety_and_Bias"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Patent_Novelty_Prediction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pan et al._2025_The hidden dimensions of llm alignment A multi-dimensional safety analysis.pdf"
 ---
@@ -111,6 +112,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pan et al._2025_The hidden dimensions of
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — LLM 정렬의 다차원적 복잡성을 강조하는 관점이 LLM의 자기교정 추론 한계를 지적하는 입장과 대조됨
-- 🏛 기반 연구: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — TrustLLM의 신뢰성 평가 프레임워크가 LLM 안전 정렬 행동의 다차원 분석 방법론의 기초가 됨
-- 🔗 후속 연구: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — PAG의 다중 턴 강화학습 자기교정이 안전 정렬의 다차원 방향 상호작용을 더욱 정교하게 제어할 수 있음
+- 🏛 기반 연구: [[papers/821_Towards_a_client-centered_assessment_of_llm_therapists_by_cl/review]] — 다차원 안전 분석이 클라이언트 중심 평가의 기반 방법론을 제공한다
+- 🔄 다른 접근: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 다차원 안전 분석 대신 LLM의 전반적 신뢰성을 평가한다
+- 🔗 후속 연구: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — 기계적 해석가능성을 LLM 정렬의 다차원 분석으로 확장한다
+- 🔗 후속 연구: [[papers/652_Rbf_Quantifying_and_optimizing_reasoning_boundaries_across_m/review]] — LLM 정렬의 다차원적 분석과 추론 경계 최적화를 결합하면 더 포괄적인 모델 능력 향상 전략을 수립할 수 있다.
+- 🏛 기반 연구: [[papers/821_Towards_a_client-centered_assessment_of_llm_therapists_by_cl/review]] — LLM 정렬의 다차원 분석이 치료사 평가의 안전성 기반을 제공한다

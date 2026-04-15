@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 대규모 언어 모델(LLM)의 추론 능력을 활용하여 문헌 검토, 가설 생성, 알고리즘 구현, 논문 작성까지 전체 연구 파이프라인을 자동화하는 AI-Researcher 시스템을 제안하고, 이를 평가하기 위한 Scientist-Bench 벤치마크를 개발했다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Research_Literature_Analysis_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2025_AI-Researcher Autonomous Scientific Innovation.pdf"
 ---
@@ -110,11 +110,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2025_AI-Researcher Autonomou
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/506_LLM4SR_A_Survey_on_Large_Language_Models_for_Scientific_Rese/review]] — 과학 연구의 LLM 활용 서베이가 자율적 연구 시스템 개발에 적용됩니다.
-- 🔄 다른 접근: [[papers/250_CycleResearcher_Improving_Automated_Research_via_Automated_R/review]] — 과학 연구 자동화를 위한 서로 다른 통합 접근법을 제시합니다.
-- 🔗 후속 연구: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — 자율적 과학 혁신이 워크샵 수준의 과학 발견으로 확장됩니다.
-- 🏛 기반 연구: [[papers/506_LLM4SR_A_Survey_on_Large_Language_Models_for_Scientific_Rese/review]] — 과학 연구 자동화에 대한 포괄적 서베이가 AI-Researcher 시스템의 이론적 기반을 제공합니다.
-- 🏛 기반 연구: [[papers/731_Scireplicate-bench_Benchmarking_llms_in_agent-driven_algorit/review]] — 자율적 과학 혁신이 알고리즘 복제 평가의 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/250_CycleResearcher_Improving_Automated_Research_via_Automated_R/review]] — 연구 자동화를 위한 서로 다른 사이클 기반 접근법을 제시합니다.
-- 🧪 응용 사례: [[papers/088_AI4Research_A_Survey_of_Artificial_Intelligence_for_Scientif/review]] — 자율적 과학 혁신 연구의 구체적 사례로서 AI4Research 프레임워크의 실제 적용을 보여준다
-- 🔄 다른 접근: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — 완전 자동화된 과학 연구와 자율적 과학 혁신이라는 유사하지만 서로 다른 접근법으로 AI 과학자 구현을 시도한다.
+- 🔄 다른 접근: [[papers/546_Mlgym_A_new_framework_and_benchmark_for_advancing_ai_researc/review]] — 자율적 과학 혁신 대신 AI 연구 에이전트 개발 환경을 제시한다
+- 🏛 기반 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 과학 발견의 기반이 되는 AI 과학자 시스템을 제시한다
+- 🔗 후속 연구: [[papers/250_CycleResearcher_Improving_Automated_Research_via_Automated_R/review]] — 자동화된 검토를 통한 연구 개선으로 과학 혁신 과정을 확장한다
+- 🔄 다른 접근: [[papers/546_Mlgym_A_new_framework_and_benchmark_for_advancing_ai_researc/review]] — AI 연구 에이전트 개발 대신 자율적 과학 혁신에 집중한다
+- 🏛 기반 연구: [[papers/250_CycleResearcher_Improving_Automated_Research_via_Automated_R/review]] — 자율적 과학 혁신이 자동화된 검토 시스템의 기반이 된다
+- 🔄 다른 접근: [[papers/668_ResearchAgent_Iterative_Research_Idea_Generation_over_Scient/review]] — 자동화된 과학 혁신 시스템과 문헌 기반 연구 아이디어 생성은 서로 다른 과학 발견 접근법을 제시한다

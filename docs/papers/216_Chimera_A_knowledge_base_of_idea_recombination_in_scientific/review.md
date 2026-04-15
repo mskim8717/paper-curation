@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.25
 essence: "과학 논문 28,000개 이상에서 자동으로 추출한 아이디어 재조합 사례들의 대규모 지식베이스를 구축하였으며, 이를 통해 과학자들의 창의적 사고 과정을 분석하고 새로운 연구 방향을 제안하는 모델을 학습할 수 있도록 하였다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Hierarchical_Knowledge_Graphs"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ginhoux et al._2025_Chimera A knowledge base of idea recombination in scientific literature.pdf"
 ---
@@ -114,8 +115,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ginhoux et al._2025_Chimera A knowledge 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/492_Literature_meets_data_A_synergistic_approach_to_hypothesis_g/review]] — Chimera가 기존 아이디어 재조합 패턴을 분석하는 반면, Literature meets data는 문헌과 데이터를 통합하여 새로운 가설을 생성하는 상반된 접근법을 사용함
-- 🔗 후속 연구: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — 지식 그래프를 활용한 과학적 아이디어 생성이 Chimera의 아이디어 재조합 지식베이스를 실제 창의적 연구 제안으로 활용하는 구체적 방법론을 제시함
-- 🧪 응용 사례: [[papers/392_Grapheval_A_lightweight_graph-based_llm_framework_for_idea_e/review]] — GraphEval의 LLM 기반 아이디어 평가 프레임워크가 Chimera에서 추출된 재조합 패턴의 품질과 창의성을 체계적으로 평가할 수 있는 도구를 제공함
-- 🔄 다른 접근: [[papers/492_Literature_meets_data_A_synergistic_approach_to_hypothesis_g/review]] — 문헌과 데이터의 시너지 접근법이 기존 아이디어 재조합 패턴 분석과 달리 이론적 통찰과 실증적 패턴을 통합하여 새로운 가설을 생성하는 차별화된 방법론을 제시함
-- 🏛 기반 연구: [[papers/762_Spark_A_system_for_scientifically_creative_idea_generation/review]] — 과학적 아이디어 재조합에 대한 지식 기반을 제공하여 창의적 아이디어 생성의 토대를 마련한다
+- 🏛 기반 연구: [[papers/391_Graph_of_ai_ideas_Leveraging_knowledge_graphs_and_llms_for_a/review]] — AI 아이디어의 지식그래프 활용 연구가 과학 문헌의 아이디어 재조합 지식베이스 구축을 위한 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — 지식그래프를 이용한 과학적 아이디어 생성 연구를 대규모 문헌의 아이디어 재조합 사례 분석으로 확장한다.
+- 🧪 응용 사례: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 다중 관점을 통한 과학적 아이디어 생성 연구에서 아이디어 재조합 지식베이스를 창의적 사고 과정 분석에 활용할 수 있다.
+- 🏛 기반 연구: [[papers/714_Scideator_Human-llm_scientific_idea_generation_grounded_in_r/review]] — 과학에서 아이디어 재조합에 대한 지식 베이스가 Scideator의 요소 재조합 설계 기반이다
+- 🏛 기반 연구: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — 과학에서 아이디어 재결합 지식베이스가 새로운 연구 아이디어 생성의 이론적 기반과 창의적 조합 메커니즘을 제공한다.

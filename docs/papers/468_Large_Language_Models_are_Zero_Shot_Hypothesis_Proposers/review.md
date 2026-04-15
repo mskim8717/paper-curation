@@ -12,8 +12,8 @@ arxiv: ""
 score: 3.75
 essence: "대규모언어모델(LLM)이 학습되지 않은 과학 가설을 제시할 수 있으며, 생성된 가설이 실제 출판된 문헌과 일치하는 검증 가능한 내용임을 입증하는 연구이다. 특히 불확실성 증가가 영점 학습(zero-shot) 가설 생성 능력을 향상시킨다는 발견을 제시한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Retrieval-Augmented_Generation_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qi et al._2023_Large Language Models are Zero Shot Hypothesis Proposers.pdf"
 ---
@@ -148,6 +148,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qi et al._2023_Large Language Models are
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/819_Toward_reliable_biomedical_hypothesis_generation_Evaluating/review]] — 신뢰할 수 있는 생명의학 가설 생성 평가가 제로샷 가설 제안 능력의 실용적 검증과 개선 방향을 제시한다.
-- 🔄 다른 접근: [[papers/149_Bayes-Entropy_Collaborative_Driven_Agents_for_Research_Hypot/review]] — 베이즈-엔트로피 협력 기반 가설 생성이 제로샷 방식과는 다른 체계적 접근법을 보여준다.
-- 🏛 기반 연구: [[papers/132_Automating_psychological_hypothesis_generation_with_AI_when/review]] — LLM의 가설 생성 능력에 대한 기초적 탐구가 심리학 분야 자동화된 가설 생성 연구의 이론적 토대를 제공함
+- 🏛 기반 연구: [[papers/056_Advancing_the_scientific_method_with_large_language_models_F/review]] — 가설 제시 능력이 LLM 기반 과학 방법론 지원의 핵심 구성 요소 중 하나이다
+- 🔗 후속 연구: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — 제로샷 가설 생성에서 LLM 기반 일반적 가설 생성으로 확장된 연구 방향이다
+- 🔄 다른 접근: [[papers/763_Sparks_of_science_Hypothesis_generation_using_structured_pap/review]] — 구조화된 패턴 활용 가설 생성과 제로샷 가설 생성이 각각 다른 창의적 접근법이다
+- 🧪 응용 사례: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — 생의학 가설 생성의 신뢰성 평가가 제로샷 가설 생성의 실제 적용 검증 사례이다
+- 🏛 기반 연구: [[papers/719_Scientific_Hypothesis_Generation_and_Validation_Methods_Data/review]] — LLM의 제로샷 가설 제안 능력에 관한 일반적 연구는 구체적인 약물 조합 가설 생성 연구의 이론적 기반이다.
+- 🔗 후속 연구: [[papers/714_Scideator_Human-llm_scientific_idea_generation_grounded_in_r/review]] — 제로샷 가설 생성을 인간-LLM 협력을 통한 구조화된 아이디어 생성으로 발전시킨다
+- 🏛 기반 연구: [[papers/754_ShinkaEvolve_Towards_Open-Ended_And_Sample-Efficient_Program/review]] — LLM을 진화 최적화에 활용하는 기초 이론적 배경을 제공함
+- 🔄 다른 접근: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — LLM의 제로샷 가설 제안과 반복적 가설 개선 알고리즘은 모두 AI 기반 가설 생성의 서로 다른 접근법이다.

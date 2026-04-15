@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 과학 발견을 고립된 예측 작업이 아닌 물리 세계와의 지속적 상호작용을 통한 폐쇄 루프 프로세스로 재정의하는 **Embodied Science** 패러다임을 제시한다. 이를 구현하기 위해 지각(Perception)–언어(Language)–행동(Action)–발견(Discovery)을 통합하는 PLAD 프레임워크 기반의 에이전틱 구현화 AI 시스템을 제안한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Embodied_AI_Research"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhuang et al._2026_Embodied Science Closing the Discovery Loop with Agentic Embodied AI.pdf"
 ---
@@ -100,7 +102,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhuang et al._2026_Embodied Science Clos
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/655_ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models/review]] — ReAct의 추론과 행동 통합 패러다임은 Embodied Science의 PLAD 프레임워크에서 언어-행동 통합의 기초가 된다.
-- 🧪 응용 사례: [[papers/141_Autonomous_robotic_system_with_optical_coherence_tomography/review]] — 광학 코히런스 단층촬영을 사용한 자율 로봇 시스템은 Embodied Science 패러다임의 구체적인 실현 사례다.
-- 🔗 후속 연구: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 단백질 공간 탐색을 위한 자율 연구소는 Embodied Science의 물리적 세계 상호작용 개념을 생물학적 발견으로 확장한다.
-- 🏛 기반 연구: [[papers/141_Autonomous_robotic_system_with_optical_coherence_tomography/review]] — 체현된 과학 발견의 구체적 구현 사례로서 물리적 실험과 AI의 결합 가능성을 실증한다.
+- 🔗 후속 연구: [[papers/436_InternAgent_When_Agent_Becomes_the_Scientist_--_Building_Clo/review]] — InternAgent의 폐루프 과학 연구 자동화는 Embodied Science의 물리적 상호작용 패러다임을 실제 구현한 확장형
+- 🧪 응용 사례: [[papers/805_The_Virtual_Lab_of_AI_agents_designs_new_SARS-CoV-2_nanobodi/review]] — Virtual Lab의 나노바디 설계는 Embodied Science의 물리적 발견 루프를 생물학적 실험에 구체적으로 적용한 사례
+- 🏛 기반 연구: [[papers/134_Automating_the_practice_of_science_Opportunities_challenges/review]] — 과학 실험 자동화에 관한 기초 이론과 도전 과제들이 Embodied Science 패러다임의 이론적 토대를 제공함
+- 🔄 다른 접근: [[papers/851_Uncovering_bottlenecks_and_optimizing_scientific_lab_workflo/review]] — 체화된 과학적 발견보다 기존 실험실 데이터 분석을 통한 효율성 개선에 집중하는 다른 접근
+- 🧪 응용 사례: [[papers/436_InternAgent_When_Agent_Becomes_the_Scientist_--_Building_Clo/review]] — InternAgent는 Embodied Science의 이론적 폐루프 발견 패러다임을 실제 다중 에이전트 시스템으로 구현한 적용 사례

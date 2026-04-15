@@ -10,8 +10,9 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 대규모 언어모델(LLM)을 학술 논문 심사 과정에 통합하되, AI가 전체 심사를 대체하는 것이 아니라 **manuscript annotation(원고 주석 달기)**이라는 특정 작업을 지원하는 방식을 제안한다. AnnotateGPT 플랫폼을 통해 AI와 인간 심사자의 협력을 위한 중간지점으로서 annotation의 역할을 검증한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Expert_Review_Annotation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Díaz et al._2024_Streamlining the review process Ai-generated annotations in research manuscripts.pdf"
 ---
@@ -127,8 +128,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Díaz et al._2024_Streamlining the revie
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/080_AI_is_transforming_peer_review__and_many_scientists_are_worr/review]] — AI가 전체 심사를 대체하는 것에 대한 우려를 주석 달기라는 협력적 접근으로 완화한다
-- 🏛 기반 연구: [[papers/809_Three_AI-powered_steps_to_faster_smarter_peer_review/review]] — AI 보조 동료평가의 구체적 구현 방법으로 효율적 워크플로우의 기초를 제공한다
-- 🔗 후속 연구: [[papers/1087_Gpt4_is_slightly_helpful_for_peer-review_assistance_A_pilot/review]] — GPT-4의 동료평가 보조 역할을 원고 주석이라는 구체적 작업으로 특화한다
-- 🔗 후속 연구: [[papers/809_Three_AI-powered_steps_to_faster_smarter_peer_review/review]] — AI 주석 달기를 포함한 더 포괄적인 동료평가 워크플로우로 확장한다
-- 🔗 후속 연구: [[papers/609_Peerarg_Argumentative_peer_review_with_llms/review]] — AI 주석 달기를 포함한 더 체계적이고 논리적인 동료평가 시스템으로 확장한다
+- 🔄 다른 접근: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — AI 생성 리뷰에서 프롬프트 최적화를 통한 품질 향상이라는 동일한 문제를 다른 관점에서 접근한다.
+- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 멀티턴 대화 기반 피어리뷰를 통해 AI 어노테이션의 상호작용성을 더욱 발전시킬 수 있다.
+- 🧪 응용 사례: [[papers/059_Agent_Laboratory_Using_LLM_Agents_as_Research_Assistants/review]] — 연구 보조 에이전트 프레임워크에서 AI 어노테이션 기능을 실제 연구 환경에 적용할 수 있다.
+- 🏛 기반 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 멀티 에이전트 시스템의 이론적 기반을 제공하여 협업 어노테이션 시스템 설계에 필수적이다.
+- 🔄 다른 접근: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — AI 기반 리뷰 생성과 리뷰 주석 생성으로 학술 평가 과정의 서로 다른 단계를 자동화한다.

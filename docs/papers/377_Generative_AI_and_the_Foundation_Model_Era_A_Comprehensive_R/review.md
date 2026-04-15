@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.25
 essence: "생성형 AI와 파운데이션 모델(Foundation Models)의 급속한 발전으로 자연어처리, 컴퓨터 비전, 멀티모달 학습이 혁신되고 있으며, 본 논문은 이들 기술의 아키텍처, 학습 전략, 그리고 10개 주요 응용 분야에 걸친 통합적 분석을 제공한다. 기존의 단일 도메인 중심 리뷰와 달리, 이 논문은 크로스 도메인 비교 프레임워크를 통해 GenAI 연구의 구조적 이해를 가능하게 한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/AI_for_Science_Taxonomy"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Bioinformatics_Integration"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Elhanashi et al._2026_Generative AI and the Foundation Model Era A Comprehensive Review.pdf"
 ---
@@ -134,7 +134,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Elhanashi et al._2026_Generative AI and 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/088_AI4Research_A_Survey_of_Artificial_Intelligence_for_Scientif/review]] — AI 기술의 과학 연구 적용을 생성형 AI 관점과 연구 과정 자동화 관점에서 다르게 체계화한다
-- 🧪 응용 사례: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 파운데이션 모델의 포괄적 분석을 환경과학 등 특정 과학 분야 적용 사례로 구체화할 수 있다
-- 🏛 기반 연구: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — 과학에서 대규모 언어모델 변환에 대한 조사가 생성형 AI 시대의 이론적 맥락을 제공한다
-- 🔗 후속 연구: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 생성형 AI와 파운데이션 모델의 포괄적 분석을 환경과학 특화 응용으로 확장할 수 있다
+- 🧪 응용 사례: [[papers/359_From_large_language_models_to_multimodal_ai_A_scoping_review/review]] — 파운데이션 모델 시대의 포괄적 분석이 의료 분야 생성형 AI 발전 과정을 이해하는 이론적 기반을 제공함
+- 🏛 기반 연구: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 생성형 AI와 파운데이션 모델의 통합적 분석이 환경과학 특화 모델 개발의 이론적 토대를 제공함
+- 🏛 기반 연구: [[papers/359_From_large_language_models_to_multimodal_ai_A_scoping_review/review]] — 의료 분야 생성형 AI 발전사를 이해하기 위해 파운데이션 모델 시대의 포괄적 분석이 필수적임
+- 🧪 응용 사례: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 환경과학 특화 모델이 파운데이션 모델 시대의 도메인별 응용 사례로 활용됨
+- 🏛 기반 연구: [[papers/475_Large_language_models_meet_nlp_A_survey/review]] — LLM의 NLP 응용 전반을 이해하기 위해 생성형 AI와 파운데이션 모델의 통합적 분석이 필수적임

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "대학 수준의 수학, 물리, 금융, 전산 분야에서 350개 이상의 정리(theorem)를 포함하는 800개의 고품질 질문-답변 쌍으로 구성된 정리 중심 질문 답변 데이터셋을 제시한다. 이는 LLM의 도메인 지식 적용 능력을 평가하는 첫 번째 벤치마크이다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Physics_Reasoning_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2023_Theoremqa A theorem-driven question answering dataset.pdf"
 ---
@@ -121,10 +121,13 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2023_Theoremqa A theorem-dri
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/697_Scaling_physical_reasoning_with_the_physics_dataset/review]] — PHYSICS 데이터셋의 물리 문제 평가 방식이 TheoremQA의 정리 기반 질문 답변 벤치마크 설계에 참고가 됨
-- 🔗 후속 연구: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — MinIF2F의 형식적 올림피아드 수학 벤치마크가 TheoremQA의 정리 적용 능력 평가를 더욱 엄밀하게 확장함
-- 🔄 다른 접근: [[papers/706_SciBench_Evaluating_College-Level_Scientific_Problem-Solving/review]] — 둘 다 과학 문제 해결 벤치마크이지만 TheoremQA는 정리 중심, SciBench는 대학 수준 전반을 다루는 차이가 있음
-- 🏛 기반 연구: [[papers/339_Fimo_A_challenge_formal_dataset_for_automated_theorem_provin/review]] — 정리 기반 질의응답이 형식적 수학 문제 해결의 방법론적 기초
-- 🔄 다른 접근: [[papers/706_SciBench_Evaluating_College-Level_Scientific_Problem-Solving/review]] — 과학 문제 해결 능력을 대학 수준 vs 정리 증명 수준에서 각각 평가한다.
-- 🔗 후속 연구: [[papers/697_Scaling_physical_reasoning_with_the_physics_dataset/review]] — TheoremQA의 정리 기반 평가 방식이 PHYSICS 데이터셋의 물리 문제 해결 능력 평가를 더욱 체계화함
-- 🔄 다른 접근: [[papers/807_Theoremexplainagent_Towards_video-based_multimodal_explanati/review]] — 정리 설명을 위한 비디오 기반 접근법과 텍스트 기반 질문 답변의 서로 다른 다중모드 수학 교육 방식을 비교할 수 있다.
+- 🔄 다른 접근: [[papers/697_Scaling_physical_reasoning_with_the_physics_dataset/review]] — STEM 분야의 추론 능력 평가라는 공통 목표를 가지지만 수학 정리 vs 물리학 추론이라는 다른 도메인에 특화된 접근법을 사용한다.
+- 🧪 응용 사례: [[papers/617_Phi-4_technical_report/review]] — 정리 중심 질문답변 벤치마크를 통해 Phi-4의 수학적 추론 능력을 구체적으로 평가하고 검증할 수 있다.
+- 🔗 후속 연구: [[papers/737_Sciverse_Unveiling_the_knowledge_comprehension_and_visual_re/review]] — 다중모달 과학 문제 해결 벤치마크를 통해 정리 기반 추론을 시각적 요소가 포함된 더 복합적인 문제로 확장할 수 있다.
+- 🔄 다른 접근: [[papers/706_SciBench_Evaluating_College-Level_Scientific_Problem-Solving/review]] — 정리 중심의 수학 문제 데이터셋으로, 대학 수준 과학 문제와 다른 각도에서 고급 수학적 추론을 평가합니다.
+- 🔄 다른 접근: [[papers/697_Scaling_physical_reasoning_with_the_physics_dataset/review]] — STEM 분야의 추론 능력 평가라는 공통 목표를 가지지만 물리학 vs 수학이라는 다른 도메인에 특화된 접근법을 사용한다.
+- 🔄 다른 접근: [[papers/737_Sciverse_Unveiling_the_knowledge_comprehension_and_visual_re/review]] — 과학적 추론 능력 평가라는 공통 목표를 가지지만 다중모달 vs 정리 중심이라는 다른 평가 방식을 사용한다.
+- 🔗 후속 연구: [[papers/807_Theoremexplainagent_Towards_video-based_multimodal_explanati/review]] — TheoremQA의 정리 기반 질문 답변을 비디오 설명 형태의 교육적 콘텐츠로 확장한 연구이다.
+- 🔗 후속 연구: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — 정리 기반 질문 답변 데이터셋으로, 형식 수학 능력을 정리 증명을 넘어 수학 문제 해결로 확장하여 평가합니다.
+- 🔗 후속 연구: [[papers/617_Phi-4_technical_report/review]] — 정리 중심 질문답변을 통해 Phi-4의 수학적 추론 능력을 더욱 체계적으로 평가하고 확장할 수 있다.
+- 🔗 후속 연구: [[papers/715_Scidqa_A_deep_reading_comprehension_dataset_over_scientific/review]] — 정리 중심의 질의응답 데이터셋으로, SciDQA의 과학 논문 독해 이해를 수학적 추론 영역으로 확장한 연구 방향이다

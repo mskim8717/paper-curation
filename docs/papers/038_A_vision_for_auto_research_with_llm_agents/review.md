@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 대규모 언어 모델(LLM)과 다중 에이전트 협력을 활용하여 과학 연구의 전체 생명주기(문헌 검토부터 논문 확산까지)를 자동화하는 구조화된 프레임워크인 '자동 연구(Auto Research)'를 제시한다. 이는 연구 과정의 파편화, 방법론적 전문성의 불균형, 인지 부하 증가 등의 문제를 해결하기 위한 체계적이고 확장 가능한 접근 방식을 제안한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "sub/Research_Literature_Analysis_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_A vision for auto research with llm agents.pdf"
 ---
@@ -139,11 +140,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_A vision for auto resear
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — Auto Research 비전이 Scientific Agent 서베이에서 체계화되어 구체적인 아키텍처와 구현 방법론으로 발전한다.
-- 🧪 응용 사례: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — Auto Research의 협업적 연구 자동화 비전이 ResearchTown의 멀티에이전트 연구 커뮤니티 시뮬레이션에서 실제 테스트될 수 있다.
-- 🔗 후속 연구: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — Auto Research의 전체 연구 생명주기 자동화에서 ResearchCodeAgent의 코드 구현 자동화가 핵심적인 구성 요소로 작동한다.
-- 🔗 후속 연구: [[papers/603_PaperRobot_Incremental_Draft_Generation_of_Scientific_Ideas/review]] — Auto Research 비전이 PaperRobot의 개별적인 논문 생성 자동화를 전체 연구 과정의 포괄적 자동화로 확장한 개념이다.
-- 🏛 기반 연구: [[papers/603_PaperRobot_Incremental_Draft_Generation_of_Scientific_Ideas/review]] — PaperRobot의 개별 기능들이 Auto Research 비전의 전체 연구 생명주기 자동화에서 어떤 위치를 차지하는지 이해할 수 있다.
-- 🧪 응용 사례: [[papers/673_Researchtown_Simulator_of_human_research_community/review]] — ResearchTown의 연구 커뮤니티 시뮬레이션이 Auto Research 비전의 협업적 연구 자동화를 위한 테스트베드 역할을 할 수 있다.
-- 🔗 후속 연구: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — Scientific Agent 서베이가 Auto Research 비전을 구체적인 에이전트 아키텍처와 설계 원칙으로 발전시켜 실현 가능한 로드맵을 제시한다.
-- 🧪 응용 사례: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — ResearchCodeAgent가 Auto Research 비전에서 제시하는 연구 자동화 파이프라인의 핵심 구현 단계인 코드 변환을 담당한다.
+- 🔄 다른 접근: [[papers/847_Two_heads_are_better_than_one_A_multi-agent_system_has_the_p/review]] — 자동 연구의 다른 접근법으로 다중 에이전트 협력을 통한 과학 아이디어 생성을 제시한다.
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 과학적 발견으로 자동 연구 비전을 구체적으로 구현한 연구이다.
+- 🧪 응용 사례: [[papers/668_ResearchAgent_Iterative_Research_Idea_Generation_over_Scient/review]] — 과학 문헌 기반 반복적 연구 아이디어 생성으로 자동 연구를 구체적으로 적용한다.
+- 🔄 다른 접근: [[papers/847_Two_heads_are_better_than_one_A_multi-agent_system_has_the_p/review]] — LLM 에이전트 기반 자동 연구의 다른 접근법으로 다중 에이전트 협력을 제시한다.

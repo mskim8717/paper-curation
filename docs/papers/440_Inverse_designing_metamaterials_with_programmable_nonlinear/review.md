@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 그래프 신경망(Graph Neural Networks, GNN), 강화학습(Reinforcement Learning, RL), 그리고 몬테카를로 트리 탐색(Monte Carlo Tree Search, MCTS)을 결합한 GraphMetaMat 프레임워크를 제시하여, 사용자 정의 비선형 기능 반응(응력-변형률 곡선, 파동 전송 응답)을 가진 3D 메타머터리얼을 역설계할 수 있는 방법론을 개발했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Physics-informed_Neural_Networks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Physics-Informed_Neural_Operators"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Maurizi et al._2024_Inverse designing metamaterials with programmable nonlinear functional responses in graph space.pdf"
 ---
@@ -121,10 +121,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Maurizi et al._2024_Inverse designing me
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/105_Artificial_Intelligence_for_Direct_Prediction_of_Molecular_D/review]] — 물리 시스템에서 대칭성과 등변성을 활용한 심층학습 원리가 메타물질 역설계에서 그래프 신경망과 강화학습에 핵심적으로 적용된다
-- 🔄 다른 접근: [[papers/305_Efficient_Evolutionary_Search_Over_Chemical_Space_with_Large/review]] — 메타물질 역설계를 위한 GNN-RL 접근법과 화학 공간 탐색을 위한 LLM 기반 진화 알고리즘이 각각 다른 도메인에서 유사한 역설계 문제를 해결한다
-- 🔄 다른 접근: [[papers/046_Accurate_structure_prediction_of_biomolecular_interactions_w/review]] — 그래프 신경망 기반 메타물질 설계와 확산 모델 기반 생체분자 구조 예측이 각각 공학과 생물학 분야에서 유사한 역설계 접근법을 보여준다
-- 🔗 후속 연구: [[papers/622_Physics-Informed_Neural_Operator_for_Electromagnetic_Inverse/review]] — 메타물질 역설계를 위한 GNN 접근법이 전자기 역문제 해결을 위한 물리 정보 기반 신경 연산자로 확장되었다
-- 🔄 다른 접근: [[papers/046_Accurate_structure_prediction_of_biomolecular_interactions_w/review]] — 확산 모델 기반 생체분자 구조 예측과 그래프 신경망 기반 메타물질 설계가 서로 다른 도메인에서 유사한 역설계 문제를 해결한다
-- 🧪 응용 사례: [[papers/105_Artificial_Intelligence_for_Direct_Prediction_of_Molecular_D/review]] — 대칭성과 등변성을 활용한 심층학습 방법론이 메타물질의 역설계 문제에서 그래프 신경망과 함께 핵심적으로 활용된다
-- 🔄 다른 접근: [[papers/305_Efficient_Evolutionary_Search_Over_Chemical_Space_with_Large/review]] — 화학 공간에서 LLM 기반 진화 탐색과 메타물질에서 GNN 기반 역설계가 각각 다른 도메인에서 유사한 최적화 문제를 해결한다
+- 🧪 응용 사례: [[papers/462_Large_Language_Model_Agent_as_a_Mechanical_Designer/review]] — 메타물질 역설계를 기계 설계라는 다른 공학 영역에 LLM 에이전트를 적용한 사례
+- 🏛 기반 연구: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 메타물질 설계에 활용되는 재료 발견과 설계를 위한 기본적인 가설 생성 방법

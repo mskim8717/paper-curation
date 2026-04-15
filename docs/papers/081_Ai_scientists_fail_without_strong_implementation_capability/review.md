@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "대규모 언어모델(LLM) 기반 AI Scientist는 우수한 아이디어 생성 능력을 보유했으나, **실제 과학적 검증과 실험 구현 능력이 심각하게 부족**하여 진정한 자동화 과학 연구 달성에 실패하고 있다는 입장 논문이다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/AI_Scientist_System_Development"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhu et al._2025_Ai scientists fail without strong implementation capability.pdf"
 ---
@@ -140,9 +142,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhu et al._2025_Ai scientists fail witho
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/834_Towards_Scientific_Discovery_with_Generative_AI_Progress_Opp/review]] — 생성형 AI의 과학 연구 가능성에 대해 비판적 관점을 제시하며 실제 구현 능력의 한계를 지적한다
-- ⚖️ 반론/비판: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI Scientist의 성과에 대해 구현 능력 부족이라는 근본적 한계를 제기한다
-- 🔗 후속 연구: [[papers/321_Evaluating_Sakanas_AI_Scientist_Bold_Claims_Mixed_Results_an/review]] — AI Scientist 평가를 통해 자율 연구의 실제 한계를 구체적으로 분석한다
-- 🧪 응용 사례: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 과학 도구 사용 벤치마크를 통해 AI의 실제 과학 수행 능력을 검증할 수 있다
-- 🔗 후속 연구: [[papers/834_Towards_Scientific_Discovery_with_Generative_AI_Progress_Opp/review]] — AI 과학자의 구현 능력 부족 문제를 구체적으로 분석하고 해결 방향을 제시한다
-- ⚖️ 반론/비판: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI 과학자의 성공 사례에 대해 구현 능력 부족이라는 비판적 관점을 제시한다
+- ⚖️ 반론/비판: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI Scientist의 강한 구현 능력 부족 지적이 완전 자동화 과학 발견 시스템의 한계를 비판적으로 분석한다
+- 🔗 후속 연구: [[papers/321_Evaluating_Sakanas_AI_Scientist_Bold_Claims_Mixed_Results_an/review]] — Sakana AI Scientist의 자율 연구 평가가 AI 과학자의 구현 능력 실패에 대한 구체적 사례 분석을 제공한다
+- 🔄 다른 접근: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — AI 공동과학자 실패 시 자동 검증을 위한 SPOT 벤치마크가 AI 과학자의 구현 능력 문제에 대한 해결 방향을 제시한다
+- ⚖️ 반론/비판: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI 과학자의 구현 능력 부족 지적이 완전 자동화 과학 발견 시스템의 현실적 한계를 비판적으로 제시한다
+- 🔗 후속 연구: [[papers/321_Evaluating_Sakanas_AI_Scientist_Bold_Claims_Mixed_Results_an/review]] — AI 과학자들이 강력한 구현 역량 없이는 실패한다는 보완적 관점을 제시한다

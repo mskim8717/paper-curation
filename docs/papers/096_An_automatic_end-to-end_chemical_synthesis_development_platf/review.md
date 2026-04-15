@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 GPT-4 기반의 대규모 언어모델(LLM)을 활용한 통합 화학합성 개발 프레임워크(LLM-RDF)를 제시하여, 문헌 검색부터 반응 최적화, 규모 확대, 정제까지 전 과정을 자동화하는 엔드-투-엔드 플랫폼을 구현했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Chemistry_Tool_Integration_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ruan et al._2024_An automatic end-to-end chemical synthesis development platform powered by large language models.pdf"
 ---
@@ -109,7 +109,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ruan et al._2024_An automatic end-to-end
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/138_Autonomous_chemical_research_with_large_language_models/review]] — LLM 기반 화학 합성 자동화의 서로 다른 구현 방식과 범위를 제시한다.
-- 🔗 후속 연구: [[papers/684_Robot-assisted_mapping_of_chemical_reaction_hyperspaces_and/review]] — 종단간 합성 개발을 로봇 기반 반응 매핑으로 확장한다.
-- 🏛 기반 연구: [[papers/212_Chemist-X_Large_Language_Model-empowered_Agent_for_Reaction/review]] — LLM 기반 화학 에이전트가 자동 합성 개발의 핵심 구성요소가 된다.
-- 🔄 다른 접근: [[papers/138_Autonomous_chemical_research_with_large_language_models/review]] — LLM 기반 화학 자동화의 서로 다른 구현 범위와 접근법을 보여준다.
+- 🔄 다른 접근: [[papers/138_Autonomous_chemical_research_with_large_language_models/review]] — GPT-4 기반 화학 연구 자동화 시스템으로, 화학 합성 개발의 다른 LLM 기반 접근 방식을 제시
+- 🧪 응용 사례: [[papers/290_DrugAgent_Automating_AI-aided_Drug_Discovery_Programming_thr/review]] — AI 지원 약물 발견 프로그래밍을 자동화하는 에이전트로, 화학 합성 플랫폼의 약물 개발 분야 적용
+- 🔄 다른 접근: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 과학을 위한 도구 사용을 연결하는 화학 에이전트로, 화학 합성 자동화에 대한 다른 에이전트 기반 접근
+- 🧪 응용 사례: [[papers/351_FROGENT_An_End-to-End_Full-process_Drug_Design_Multi-Agent_S/review]] — 전체 과정 약물 설계를 위한 다중 에이전트 시스템으로, 화학 합성 플랫폼의 약물 발견 확장 사례
+- 🔄 다른 접근: [[papers/138_Autonomous_chemical_research_with_large_language_models/review]] — 화학 합성 개발을 위한 자동화된 엔드-투-엔드 플랫폼으로, Coscientist와 다른 통합적 접근의 화학 연구 자동화
+- 🔗 후속 연구: [[papers/851_Uncovering_bottlenecks_and_optimizing_scientific_lab_workflo/review]] — 화학 합성 개발 플랫폼의 자동화를 실험실 전체 운영 워크플로우 최적화로 확장한 발전된 접근

@@ -10,8 +10,10 @@ arxiv: ""
 score: 4.0
 essence: "과학 논문의 그래프, 차트 등 과학적 도형(scientific figures)에 대한 자동 캡션 생성을 위해 arXiv 논문 29만여 편에서 추출한 200만 개 이상의 실제 도형-캡션 쌍으로 구성된 대규모 데이터셋 SciCap을 구축하고, 기준 모델들을 통해 과학 도형 캡션 생성의 가능성과 과제를 제시한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Figure_Captioning"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Chart_and_Figure_Captioning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hsu et al._2021_SciCap Generating Captions for Scientific Figures.pdf"
 ---
@@ -101,15 +103,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hsu et al._2021_SciCap Generating Captio
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 둘 다 과학 도형 캡션 생성을 다루지만 하나는 arXiv 데이터셋 구축에, 다른 하나는 벤치마크 프레임워크 개발에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/783_Synchart_Synthesizing_charts_from_language_models/review]] — LLM을 활용한 합성 차트 데이터셋이 SciCap의 실제 과학 도형 캡션 생성 연구를 보완하고 확장한다.
-- 🏛 기반 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 대규모 멀티모달 차트 이해 데이터셋이 과학 도형 캡션 생성의 기술적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/727_Scimage_How_good_are_multimodal_large_language_models_at_sci/review]] — 과학적 그림에 대한 캡션 생성과 달리 텍스트에서 과학적 이미지를 생성하는 역방향 능력을 평가한다.
-- 🔗 후속 연구: [[papers/323_Every_part_matters_Integrity_verification_of_scientific_figu/review]] — 과학 그림 검증이 더 포괄적인 과학 캡션 생성으로 확장됩니다.
-- 🔗 후속 연구: [[papers/853_Understanding_how_paper_writers_use_ai-generated_captions_in/review]] — 과학 도표 캡션 자동 생성 기술이 실제 논문 작성자들에게 어떻게 활용되는지 보여주는 후속 연구이다.
-- 🔗 후속 연구: [[papers/691_S1-MMAlign_A_Large-Scale_Multi-Disciplinary_Dataset_for_Scie/review]] — 과학적 그림 캡션 생성을 대규모 이미지-텍스트 정렬로 확장한 연구다
-- 🔗 후속 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 기본적인 과학 캡션 생성을 인간 피드백 기반 최적화로 발전시킨 확장
-- 🏛 기반 연구: [[papers/524_MatViX_Multimodal_Information_Extraction_from_Visually_Rich/review]] — 과학 그림을 위한 캡션 생성 기술이 재료과학 논문의 복잡한 시각적 정보를 구조화된 텍스트로 변환하는 MatViX 시스템의 핵심 구성 요소를 제공함
-- 🏛 기반 연구: [[papers/399_Helm_Highlighted_evidence_augmented_language_model_for_enhan/review]] — 과학적 도형 캡션 생성의 기본 방법론을 표 캡션 생성에 적용한 기초 연구입니다.
-- 🔗 후속 연구: [[papers/515_Machine-in-the-loop_rewriting_for_creative_image_captioning/review]] — 과학적 도형 캡션 생성을 창의적이고 비유적인 표현으로 확장하여 더 풍부한 서술이 가능한 방법을 제시합니다.
-- 🏛 기반 연구: [[papers/564_Multi-llm_collaborative_caption_generation_in_scientific_doc/review]] — 과학적 도형 캡션 생성의 기본 방법론이 다중 LLM 협업 캡션 생성의 이론적 기반을 제공합니다.
+- 🔄 다른 접근: [[papers/564_Multi-llm_collaborative_caption_generation_in_scientific_doc/review]] — 과학 도형 캡션 생성에서 대규모 데이터셋 구축과 다중 LLM 협업이라는 서로 다른 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/709_SciCap_A_Knowledge_Augmented_Dataset_to_Study_the_Challenges/review]] — 기본 데이터셋을 지식 증강으로 확장하여 과학 도형 캡션 생성의 도전과제를 더 깊이 분석한다.
+- 🏛 기반 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 도형-캡션 생성의 기초적인 프레임워크와 벤치마크를 과학 영역에 특화하여 적용한다.
+- 🧪 응용 사례: [[papers/323_Every_part_matters_Integrity_verification_of_scientific_figu/review]] — 과학 그림 캡션 생성에 그림 무결성 검증 기법을 적용할 수 있다.
+- 🔗 후속 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 과학 그림 캡션 생성의 기초 연구를 강화학습과 인간 피드백으로 발전시켜 실용적 품질 향상을 달성했다.
+- 🔗 후속 연구: [[papers/709_SciCap_A_Knowledge_Augmented_Dataset_to_Study_the_Challenges/review]] — SciCap 데이터셋에 지식 증강 요소를 추가하여 과학 도형 캡션 생성의 복잡성을 더욱 체계적으로 분석한다.
+- 🏛 기반 연구: [[papers/125_Automated_latex_code_generation_from_handwritten_math_expres/review]] — 과학 캡션 생성 기술이 수학식 LaTeX 변환의 멀티모달 기반 기술을 제공한다
+- 🔄 다른 접근: [[papers/564_Multi-llm_collaborative_caption_generation_in_scientific_doc/review]] — 과학 도형 캡션 생성에서 단일 모델과 다중 LLM 협업이라는 서로 다른 접근법을 비교할 수 있다.

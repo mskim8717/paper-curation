@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 인용 토큰(citation token)을 마스킹하는 사용자 정의 사전학습을 통해 로컬 인용 추천(Local Citation Recommendation, LCR) 작업을 수행하는 생성형 모델 CiteBART를 제안한다. 기존의 사전-검색 및 재순위(pre-fetch and re-rank) 파이프라인과 달리 엔드-투-엔드 학습 시스템으로 우수한 성능을 달성한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Citation_Context_Generation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Citation-Based_Evidence_Generation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Çelik and Tekır_2024_Citebart Learning to generate citations for local citation recommendation.pdf"
 ---
@@ -111,11 +113,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Çelik and Tekır_2024_Citebart Learning
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — 생성형 인용 모델에서 증거 기반 해석 가능한 로컬 인용 추천으로 발전한 더 정교한 인용 추천 시스템입니다.
-- 🏛 기반 연구: [[papers/220_Cited_text_spans_for_citation_text_generation/review]] — 인용 텍스트 생성 연구가 로컬 인용 추천을 위한 인용 토큰 마스킹 학습의 기초 아이디어를 제공합니다.
-- 🧪 응용 사례: [[papers/109_Assisting_in_writing_wikipedia-like_articles_from_scratch_wi/review]] — 처음부터 위키피디아 스타일 글 작성 지원에서 로컬 인용 추천이라는 구체적 기능을 제공하는 응용 기술입니다.
-- 🏛 기반 연구: [[papers/406_Hlm-cite_Hybrid_language_model_workflow_for_text-based_scien/review]] — 지역적 인용 맥락에서의 인용문 생성 기법으로 HLM-Cite의 텍스트 기반 인용 예측 방법론의 기초를 제공한다.
-- 🧪 응용 사례: [[papers/882_When_large_language_models_meet_citation_A_survey/review]] — 인용 텍스트 생성의 구체적 방법론이 LLM과 인용 분석의 실제 응용 사례를 보여준다.
-- 🔄 다른 접근: [[papers/1091_Scirgc_Multi-granularity_citation_recommendation_and_citatio/review]] — 로컬 인용 생성을 위한 BART 기반 접근법으로 본 논문의 인용 추천과 다른 방식의 인용 생성을 제시한다.
-- 🏛 기반 연구: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — 지역 인용 생성의 기본 방법론이 증거 기반 해석가능한 인용 추천의 이론적 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/273_Directed_criteria_citation_recommendation_and_ranking_throug/review]] — 지역 인용 생성을 그래프 링크 예측이라는 더 구조적 접근법으로 확장한다
+- 🔗 후속 연구: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — ILCiteR의 지역 인용 추천 방법론을 생성형 모델 기반으로 발전시켜 엔드투엔드 학습을 가능하게 한다.
+- 🔄 다른 접근: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — 다중 에이전트 리뷰 생성과 달리 단일 생성 모델로 인용 추천 문제를 해결하는 상이한 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/238_Controllable_citation_sentence_generation_with_language_mode/review]] — 언어모델 기반 인용 문장 생성 연구가 CiteBART의 생성형 인용 추천 방법론의 기반 기술을 제공한다.
+- 🔗 후속 연구: [[papers/220_Cited_text_spans_for_citation_text_generation/review]] — 로컬 인용 생성과 인용 텍스트 생성이 학술 논문의 인용 시스템에서 상호 보완적 기능을 제공한다.
+- 🔄 다른 접근: [[papers/238_Controllable_citation_sentence_generation_with_language_mode/review]] — 제어 가능한 인용 문장 생성과 지역 인용 맥락을 위한 인용 생성이 서로 다른 관점에서 인용 자동화 문제를 해결한다.
+- 🔗 후속 연구: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — 지역 인용 추천을 위한 기본 생성 모델을 증거 기반 해석가능성으로 발전시켜 더 신뢰할 수 있는 추천 시스템을 제시한다.
+- 🔄 다른 접근: [[papers/702_Scholarcopilot_Training_large_language_models_for_academic_w/review]] — 학술 글쓰기에서 동적 인용 검색과 지역 인용 생성이라는 서로 다른 인용 통합 접근법을 비교할 수 있다.

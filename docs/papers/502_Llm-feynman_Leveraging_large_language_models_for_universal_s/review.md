@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어 모델(LLM)과 체계적 최적화를 결합하여 데이터와 도메인 지식으로부터 간결하고 해석 가능한 과학 공식을 자동으로 발견하는 통합 프레임워크를 제시한다. Feynman 강의의 90% 이상 물리 공식 재발견 및 재료과학 응용 분야에서 뛰어난 성능을 입증한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Language_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Automated_Theorem_Proving"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_Llm-feynman Leveraging large language models for universal scientific formula and theory discovery.pdf"
 ---
@@ -129,6 +131,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_Llm-feynman Leveraging l
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 둘 다 AI를 이용한 과학 공식 발견을 다루지만, 하나는 LLM 기반이고 다른 하나는 대칭성을 활용한 기호적 미분방정식 발견에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — LLM을 이용한 동역학 시스템 발견의 체계적인 벤치마크를 제공하여 LLM-Feynman의 성능을 평가할 수 있다.
-- 🔄 다른 접근: [[papers/289_Drsr_Llm_based_scientific_equation_discovery_with_dual_reaso/review]] — 둘 다 과학 공식 발견을 목표로 하지만 하나는 LLM 기반이고 다른 하나는 데이터와 경험의 이중 추론을 사용한다.
+- 🔄 다른 접근: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — LLM-Feynman과 LLM-ODE 모두 LLM을 이용한 과학 방정식 발견을 목표로 하지만 각각 공식 재발견과 동역학 시스템 발견에 특화됨
+- 🔗 후속 연구: [[papers/289_Drsr_Llm_based_scientific_equation_discovery_with_dual_reaso/review]] — DrSR의 데이터와 경험 이중 추론 방식이 LLM-Feynman의 도메인 지식 통합 접근법을 더 체계화한 확장
+- 🏛 기반 연구: [[papers/504_Llm-srbench_A_new_benchmark_for_scientific_equation_discover/review]] — 과학 방정식 발견 벤치마크가 LLM-Feynman 같은 자동 공식 발견 시스템의 성능 평가 기준을 제공함
+- 🔄 다른 접근: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — LLM-ODE와 LLM-Feynman 모두 LLM 기반 방정식 발견을 다루지만 각각 동역학 시스템과 일반 물리 공식이라는 다른 범위에 집중함
+- 🔗 후속 연구: [[papers/497_LLM_and_Simulation_as_Bilevel_Optimizers_A_New_Paradigm_to_A/review]] — LLM-Feynman의 과학 공식 발견이 이단계 최적화의 물리 법칙 발견을 수학적 표현 생성으로 확장한 형태

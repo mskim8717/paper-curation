@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 차트 읽기 시 사용자의 작업별 안구 움직임 패턴(스캔패스)을 예측하는 첫 번째 계산 모델인 Chartist를 제시한다. 계층적 제어 아키텍처(LLM 기반 인지 제어기와 강화학습 기반 안구운동 제어기)를 통해 값 검색, 필터링, 극값 찾기와 같은 분석 작업을 수행할 때 인간과 유사한 시선 순서를 생성한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Literature_Analysis"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Chart_and_Figure_Captioning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shi et al._2025_Chartist Task-driven Eye Movement Control for Chart Reading.pdf"
 ---
@@ -151,9 +153,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shi et al._2025_Chartist Task-driven Eye
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/339_Fimo_A_challenge_formal_dataset_for_automated_theorem_provin/review]] — 수학 문제 해결에서의 시각적 주의 제어를 차트 읽기 작업으로 확장한 응용
-- 🔗 후속 연구: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 차트 이해를 작업별 안구운동 제어로 발전시킨 멀티모달 AI 연구
-- 🏛 기반 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 대규모 차트 데이터셋이 차트 읽기 시선 패턴 예측의 데이터 기반 제공
-- 🔄 다른 접근: [[papers/199_ChartInstruct_Instruction_Tuning_for_Chart_Comprehension_and/review]] — 차트 읽기 시선 제어 vs 차트 이해 지시 튜닝의 서로 다른 차트 AI 접근법
-- 🏛 기반 연구: [[papers/339_Fimo_A_challenge_formal_dataset_for_automated_theorem_provin/review]] — 수학 올림피아드 형식 문제가 차트 읽기 작업의 고차원 인지 능력 평가 기준
-- 🔄 다른 접근: [[papers/203_Chartsketcher_Reasoning_with_multimodal_feedback_and_reflect/review]] — 차트 추론에서 스케칭 기반 접근법과 시각적 지시 튜닝 기반 접근법을 비교할 수 있습니다.
+- 🔗 후속 연구: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 범용 차트 언어모델의 기능을 인간의 인지 과정을 모방하는 안구 움직임 제어로 확장하여 더 자연스러운 차트 분석을 구현한다.
+- 🧪 응용 사례: [[papers/1127_MMSD20_Towards_a_Reliable_Multi-modal_Sarcasm_Detection_Syst/review]] — 작업 기반 시각적 주의 제어 메커니즘이 멀티모달 풍자 탐지에서 중요한 시각적 단서 식별에 직접 응용될 수 있다.
+- 🏛 기반 연구: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — 차트 추론을 위한 시각적 명령어 튜닝이 작업 기반 안구 움직임 제어 시스템의 시각적 이해 능력 향상에 기반을 제공한다.
+- 🔗 후속 연구: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 범용 차트 멀티모달 언어모델을 작업 기반 안구 움직임 제어로 확장하여 더 인간다운 차트 이해 시스템을 구현한다.
+- 🔗 후속 연구: [[papers/1127_MMSD20_Towards_a_Reliable_Multi-modal_Sarcasm_Detection_Syst/review]] — 차트 읽기에서의 다중 관점 분석을 멀티모달 풍자 탐지의 다양한 관점 통합으로 확장하여 적용할 수 있다.

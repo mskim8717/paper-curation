@@ -10,8 +10,10 @@ arxiv: ""
 score: 4.0
 essence: "베이지안 최적실험설계(BOED) 하에서 모델 오명시(model misspecification)로 인한 일반화 오차를 분석하고, 대표성(representativeness), 정보성(informativeness), 오차 완화(de-amplification)를 모두 고려하는 R-IDeA 획득함수를 제안한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Self-improving_Reward_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2026_Representative, Informative, and De-Amplifying Requirements for Robust Bayesian Active Learning und.pdf"
 ---
@@ -80,9 +82,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2026_Representative, Informa
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — 생성-검증 갭 분석과 달리 실험설계 단계에서 모델 오명시 문제를 해결하는 접근
-- 🧪 응용 사례: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — 강화학습의 일반화 능력 향상을 위해 R-IDeA 획득함수를 통한 견고한 실험설계 적용
-- 🏛 기반 연구: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 실험설계 방법론을 모델 신뢰성 향상에 적용한 이론적 기반
-- 🔗 후속 연구: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — 강화학습 기반 추론 모델의 신뢰성을 베이지안 최적실험설계로 향상시킨 확장
-- 🔄 다른 접근: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — 생성-검증 갭에 집중한 접근과 달리 실험설계 최적화를 통한 모델 신뢰성 향상
-- 🏛 기반 연구: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — RL 기반 실험설계 최적화에서 일반화 능력의 중요성을 입증하는 이론적 기반
+- 🧪 응용 사례: [[papers/092_Align_then_Fusion_Generalized_Large-scale_Multi-view_Cluster/review]] — 베이지안 최적실험설계의 R-IDeA 획득함수가 멀티뷰 클러스터링의 앵커 정렬 문제 해결에 직접 적용될 수 있다.
+- 🔗 후속 연구: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 모델 오명시를 고려한 실험설계를 베이지안 알고리즘 실행을 통한 타겟 재료 발견으로 확장하여 실제 재료과학 문제에 적용한다.
+- 🏛 기반 연구: [[papers/258_Deep_active_learning_based_experimental_design_to_uncover_sy/review]] — 심층 능동학습 기반 실험설계가 베이지안 최적실험설계에서 불확실성 정량화의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/092_Align_then_Fusion_Generalized_Large-scale_Multi-view_Cluster/review]] — 베이지안 최적실험설계의 일반화 오차 분석이 멀티뷰 클러스터링에서 앵커 정렬 문제 해결의 이론적 기반을 제공한다.

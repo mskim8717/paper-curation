@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 과학 논문을 위한 극단적 요약(extreme summarization) 작업인 TLDR 생성을 소개하고, 이를 위한 5.4K 규모의 멀티-타겟 데이터셋 SciTLDR과 제목을 보조 신호로 활용하는 CATTS 학습 전략을 제시한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Literature_Summarization"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/GPT-Based_Text_Review_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cachola et al._2020_TLDR Extreme Summarization of Scientific Documents.pdf"
 ---
@@ -101,13 +102,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cachola et al._2020_TLDR Extreme Summari
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 과학 논문의 극단적 요약에서 전체 과학 문헌의 종합적 검색과 합성으로 확장한 더 포괄적인 연구입니다.
-- 🔄 다른 접근: [[papers/885_Withdrarxiv_A_large-scale_dataset_for_retraction_study/review]] — 과학 논문의 요약 생성과 철회 논문의 분류라는 서로 다른 과학 문헌 처리 접근법을 제시합니다.
-- 🔗 후속 연구: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 단일 논문 요약에서 다중 논문을 활용한 자동 문헌 리뷰 생성으로 확장한 발전된 형태의 연구입니다.
-- 🏛 기반 연구: [[papers/907_Is_AI_ready_to_mass-produce_lay_summaries_of_research_articl/review]] — 과학 문서의 극단적 요약 기법이 일반 독자용 간략 요약 생성의 기술적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 과학 논문 극단적 요약 연구가 대규모 문헌 검색 합성 시스템의 요약 생성 모듈 개발에 기초 기술을 제공합니다.
-- 🔄 다른 접근: [[papers/885_Withdrarxiv_A_large-scale_dataset_for_retraction_study/review]] — 과학 논문의 생산적 요약 생성과 문제가 있는 논문의 철회 분석이라는 서로 다른 과학 문헌 처리 관점을 제시합니다.
-- 🔗 후속 연구: [[papers/561_Ms2_Multi-document_summarization_of_medical_studies/review]] — 의료 연구의 다중문서 요약을 과학 문서의 극단적 요약으로 확장하여 더 간결한 정보 압축 방법을 탐구함
-- 🔄 다른 접근: [[papers/108_Ask_retrieve_summarize_A_modular_pipeline_for_scientific_lit/review]] — 과학 문서의 극단적 요약 방법으로 본 논문의 다중문서 요약과 다른 접근법을 제시한다.
-- 🧪 응용 사례: [[papers/401_Hierarchical_attention_graph_for_scientific_document_summari/review]] — 과학 문서의 극한 요약에 계층적 관계 모델링을 적용하여 더 정확한 요약을 생성할 수 있습니다.
-- 🧪 응용 사례: [[papers/913_Semantic_Scholar/review]] — 대규모 과학 문서 요약을 위한 구체적 적용 사례를 제시한다
+- 🔗 후속 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 과학 문헌 합성을 위한 검색 기반 시스템으로, 극단적 요약을 넘어 포괄적인 문헌 종합 기능을 제공합니다.
+- 🔄 다른 접근: [[papers/561_Ms2_Multi-document_summarization_of_medical_studies/review]] — 의료 연구의 멀티문서 요약으로, 과학 논문의 극단적 요약과 다른 도메인에서의 문서 요약 접근법을 비교할 수 있습니다.
+- 🔗 후속 연구: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 과학 문헌 리뷰 생성을 위한 대규모 데이터셋으로, TLDR의 요약 기술을 종합적인 문헌 검토로 확장한 연구입니다.
+- 🏛 기반 연구: [[papers/732_Scireviewgen_a_large-scale_dataset_for_automatic_literature/review]] — 과학 문서의 극단적 요약 연구로, SciReviewGen의 다중 문서 요약 기반 문헌 리뷰 생성에 필요한 요약 기술의 기초를 제공한다
+- 🔄 다른 접근: [[papers/401_Hierarchical_attention_graph_for_scientific_document_summari/review]] — 과학 문서의 극한 요약과 계층적 어텐션 그래프 요약은 모두 긴 과학 문서의 핵심 정보 추출을 다른 방식으로 접근한다.

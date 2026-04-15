@@ -9,8 +9,9 @@ arxiv: ""
 score: 4.0
 essence: "저자원(low-resource) 언어인 라딘어(Ladin)의 Val Badia 방언에 대해 규칙 기반(RBMT), 신경망(NMT), 대규모 언어모델(LLM) 기반의 세 가지 역번역(back-translation) 기법을 비교 분석하여, 저자원 시나리오에서는 역번역 모델 선택이 최종 성능에 유의미한 영향을 미치지 않음을 실증했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Text_Translation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Frontull and Moser_2024_Rule-based, neural and llm back-translation Comparative insights from a variant of ladin.pdf"
 ---
@@ -120,6 +121,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Frontull and Moser_2024_Rule-based, neur
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/125_Automated_latex_code_generation_from_handwritten_math_expres/review]] — 둘 다 언어 간 변환을 다루지만 하나는 저자원 언어 역번역이고 다른 하나는 필기 수학식의 LaTeX 변환이다.
-- 🏛 기반 연구: [[papers/340_Fine-tuning_large_language_models_for_domain_adaptation_expl/review]] — 도메인 적응을 위한 대규모 언어 모델 파인튜닝 경험이 저자원 언어 번역 모델 선택에 유용한 통찰을 제공한다.
-- 🔗 후속 연구: [[papers/858_Unsupervised_crosslingual_representation_learning_at_scale/review]] — 대규모 무감독 교차언어 표현 학습이 라딘어와 같은 저자원 언어의 역번역 성능 향상에 적용될 수 있다.
+- 🔄 다른 접근: [[papers/741_Seed-coder_Let_the_code_model_curate_data_for_itself/review]] — 저자원 언어 처리에서 역번역과 자동 데이터 큐레이션이라는 서로 다른 데이터 증강 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/884_Wikiatomicedits_A_multilingual_corpus_of_wikipedia_edits_for/review]] — 다국어 위키피디아 편집 데이터를 활용하여 저자원 언어 역번역의 성능을 향상시킬 수 있다.
+- 🏛 기반 연구: [[papers/858_Unsupervised_crosslingual_representation_learning_at_scale/review]] — 대규모 비지도 다국어 표현 학습의 기초적인 방법론을 저자원 언어 역번역에 적용한다.
+- 🔄 다른 접근: [[papers/741_Seed-coder_Let_the_code_model_curate_data_for_itself/review]] — 데이터 큐레이션에서 LLM 기반 자동화와 역번역 기법이라는 서로 다른 데이터 품질 향상 접근법을 비교할 수 있다.
+- 🔄 다른 접근: [[papers/119_Autocap_Towards_automatic_cross-lingual_alignment_planning_f/review]] — 신경망과 LLM 기반 역번역이 교차언어 정렬에서 다른 접근법을 제시한다

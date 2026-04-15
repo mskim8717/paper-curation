@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 전문 인간 주석자와 대규모 언어모델(LLM)의 협력을 통해 멀티모달 AI 데이터 주석 프로세스를 가속화하는 Model-in-the-Loop (MILO) 프레임워크를 제시한다. LLM을 사전 주석, 실시간 보조, 검증자로 활용하여 주석 시간 단축 및 품질 향상을 달성했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-agent_Task_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Model-in-the-loop (milo) Accelerating multimodal ai data annotation with llms.pdf"
 ---
@@ -119,4 +121,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2024_Model-in-the-loop (milo
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/297_EAA_Automating_materials_characterization_with_vision_langua/review]] — 멀티모달 AI 데이터 분석 가속화 접근법이 복잡한 미시경 실험 워크플로우 자동화로 확장될 수 있습니다.
+- 🔄 다른 접근: [[papers/780_Surveyforge_On_the_outline_heuristics_memory-driven_generati/review]] — 설문 작성 자동화와 멀티모달 데이터 주석은 인간-AI 협력의 서로 다른 측면을 다루며 상호 보완적이다
+- 🏛 기반 연구: [[papers/229_Cocoa_Co-planning_and_co-execution_with_ai_agents/review]] — 계획과 실행을 유연하게 조정하는 협업 설계가 인간-모델 협력 주석 시스템의 이론적 기반을 제공한다
+- 🧪 응용 사례: [[papers/432_Intelligent_experiments_through_real-time_ai_Fast_data_proce/review]] — 멀티모달 AI 데이터 분석 가속화를 위한 루프 내 모델 연구가 sPHENIX 실험의 고속 데이터 처리에 실제 적용되었다

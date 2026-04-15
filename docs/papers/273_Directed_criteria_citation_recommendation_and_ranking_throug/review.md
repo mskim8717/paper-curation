@@ -9,8 +9,9 @@ arxiv: ""
 score: 3.5
 essence: "신용평가기관의 평가 기준 문서들 사이의 인용 관계를 그래프 링크 예측(link prediction) 문제로 모델링하여, 트랜스포머 기반 그래프 신경망으로 누락된 인용을 자동 추천하고 순위를 매기는 방법론을 제시한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Citation_Context_Generation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Watson and Yong_2024_Directed criteria citation recommendation and ranking through link prediction.pdf"
 ---
@@ -90,8 +91,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Watson and Yong_2024_Directed criteria c
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — 신용평가 문서의 인용 추천을 일반적인 해석가능한 지역 인용 추천과 다른 접근법으로 처리한다
-- 🔗 후속 연구: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — 지역 인용 생성을 그래프 링크 예측이라는 더 구조적 접근법으로 확장한다
-- 🔗 후속 연구: [[papers/406_Hlm-cite_Hybrid_language_model_workflow_for_text-based_scien/review]] — 기준 지향적 인용 추천 기법을 다루어 핵심 인용과 표면적 인용을 구별하는 HLM-Cite와 보완적이다.
-- 🔗 후속 연구: [[papers/150_Benchmark_for_evaluation_and_analysis_of_citation_recommenda/review]] — 기준 지향적 인용 추천과 순위 매기기 기법으로 표준화된 평가 메트릭의 실제 적용을 보여준다.
-- 🏛 기반 연구: [[papers/1091_Scirgc_Multi-granularity_citation_recommendation_and_citatio/review]] — 방향성 기준 인용 추천 및 순위화를 통해 본 논문의 인용 네트워크 활용 방법론의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/789_Taxonomy_tree_generation_from_citation_graph/review]] — 링크 예측 기술이 인용 그래프에서 분류체계 생성의 핵심 방법론적 기반이 된다
+- 🔗 후속 연구: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — 인용 추천을 트랜스포머 기반 그래프 신경망으로 확장하여 성능을 개선한다
+- 🧪 응용 사례: [[papers/913_Semantic_Scholar/review]] — 대규모 학술 코퍼스를 인용 추천 시스템의 실제 데이터소스로 활용한다
+- 🔗 후속 연구: [[papers/150_Benchmark_for_evaluation_and_analysis_of_citation_recommenda/review]] — 인용 추천 평가 벤치마크가 기준 기반 인용 추천 및 순위화로 확장 적용될 수 있다.
+- 🧪 응용 사례: [[papers/220_Cited_text_spans_for_citation_text_generation/review]] — 기준 기반 인용 추천과 순위가 인용 텍스트 생성에서 실제 인용 선택과 활용의 실용적 연결점을 제공한다.
+- 🔗 후속 연구: [[papers/789_Taxonomy_tree_generation_from_citation_graph/review]] — 인용 그래프를 활용한 추천에서 한 단계 나아가 계층적 분류체계를 자동 생성한다

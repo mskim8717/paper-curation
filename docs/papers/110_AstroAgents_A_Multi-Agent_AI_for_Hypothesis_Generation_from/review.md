@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어 모델(LLM) 기반의 다중 에이전트 AI 시스템인 AstroAgents를 제시하여, 운석과 토양 샘플의 질량 분석 데이터로부터 생명의 기원에 관한 과학적 가설을 자동 생성한다. 8개의 전문화된 에이전트의 협력을 통해 데이터 해석, 가설 생성, 문헌 검토, 비판적 평가의 전체 파이프라인을 구현했다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Hypothesis_Generation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Saeedi et al._2025_AstroAgents A Multi-Agent AI for Hypothesis Generation from Mass Spectrometry Data.pdf"
 ---
@@ -105,10 +107,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Saeedi et al._2025_AstroAgents A Multi-A
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/847_Two_heads_are_better_than_one_A_multi-agent_system_has_the_p/review]] — 다중 에이전트 과학 연구 시스템을 우주생물학 특화 가설 생성으로 구체화한 응용
-- 🔄 다른 접근: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 우주생물학 vs 화학정보학으로 도메인은 다르지만 유사한 다중 에이전트 도구 활용
-- 🔗 후속 연구: [[papers/437_Interpreting_Multi-band_Galaxy_Observations_with_Large_Langu/review]] — 운석 데이터 해석을 다중 밴드 은하 관측으로 확장한 우주과학 AI 응용
-- 🏛 기반 연구: [[papers/164_BioInformatics_Agent_BIA_Unleashing_the_Power_of_Large_Langu/review]] — 생물정보학 에이전트가 우주생물학 가설 생성의 생명과학 방법론 기반
-- 🔗 후속 연구: [[papers/847_Two_heads_are_better_than_one_A_multi-agent_system_has_the_p/review]] — 일반적 다중 에이전트 과학 연구를 우주생물학 특화 가설 생성으로 구체화한 응용
-- 🔄 다른 접근: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 화학정보학 vs 우주생물학으로 도메인은 다르지만 유사한 다중 에이전트 도구 활용
-- 🔄 다른 접근: [[papers/437_Interpreting_Multi-band_Galaxy_Observations_with_Large_Langu/review]] — AstroAgents와 mephisto 모두 천문학적 데이터 해석을 위한 다중 에이전트 시스템이지만 가설 생성 vs 관측 데이터 해석에 특화된다.
+- 🔄 다른 접근: [[papers/442_Iris_Interactive_research_ideation_system_for_accelerating_s/review]] — 질량 분석 데이터 기반 가설 생성 대신 인터랙티브 아이디어 시스템을 제시한다
+- 🔗 후속 연구: [[papers/437_Interpreting_Multi-band_Galaxy_Observations_with_Large_Langu/review]] — 다중 밴드 갤럭시 관측을 운석 질량 분석으로 확장한다
+- 🏛 기반 연구: [[papers/819_Toward_reliable_biomedical_hypothesis_generation_Evaluating/review]] — 신뢰할 수 있는 생의학 가설 생성이 천체생물학 가설의 기반이 된다
+- 🔄 다른 접근: [[papers/442_Iris_Interactive_research_ideation_system_for_accelerating_s/review]] — 인터랙티브 아이디어 생성 대신 질량 분석 데이터로부터 가설을 자동 생성한다
+- 🔗 후속 연구: [[papers/547_Mllm-based_discovery_of_intrinsic_coordinates_and_governing/review]] — 천문학 가설 생성 에이전트와 물리 좌표계 발견을 결합하여 우주 현상의 지배 방정식 자동 발견 가능
+- 🔄 다른 접근: [[papers/437_Interpreting_Multi-band_Galaxy_Observations_with_Large_Langu/review]] — 두 시스템 모두 천문학 데이터 분석에 LLM을 활용하지만 각각 관측 데이터 해석과 가설 생성이라는 다른 태스크에 특화됨
+- 🧪 응용 사례: [[papers/623_Piflow_Principle-aware_scientific_discovery_with_multi-agent/review]] — 천체물리 다중 에이전트 시스템이 원리 기반 과학 발견의 실제 천문학 적용 사례를 제공한다

@@ -12,7 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)을 활용하여 PubMed 문헌으로부터 2,164개의 임상 계산기(RiskCalcs)를 자동으로 큐레이션하고, 이를 환자 기록에 적용하는 의료 언어 에이전트 AgentMD를 제시한다. 기존 수동 큐레이션의 확장성 문제를 극복하면서 80% 이상의 정확도를 달성하고, 기존 GPT-4 체인-오브-소트(Chain-of-Thought) 방식(40.9%)을 크게 능가한다(87.7%)."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
   - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jin et al._2024_AgentMD Empowering Language Agents for Risk Prediction with Large-Scale Clinical Tool Learning.pdf"
@@ -115,6 +116,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jin et al._2024_AgentMD Empowering Langu
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — MedAgents의 제로샷 의료 협력 방법론이 AgentMD의 임상 계산기 자동 큐레이션과 환자 기록 적용에 기반을 제공함
-- 🔗 후속 연구: [[papers/507_Llmeval-med_A_real-world_clinical_benchmark_for_medical_llms/review]] — LLMEval-Med의 실제 임상 벤치마크가 AgentMD의 80% 정확도 성능을 더욱 체계적으로 평가함
-- 🏛 기반 연구: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — PubMedQA의 생의학 연구 질문 답변 데이터셋이 AgentMD의 PubMed 문헌 기반 큐레이션 방법론의 기초가 됨
+- 🔄 다른 접근: [[papers/159_Bio-sieve_exploring_instruction_tuning_large_language_models/review]] — 의료 문헌 스크리닝 자동화와 임상 계산기 큐레이션 모두 의료 지식 처리의 서로 다른 접근법을 제시한다.
+- 🧪 응용 사례: [[papers/027_A_survey_of_llm-based_agents_in_medicine_How_far_are_we_from/review]] — LLM 기반 의료 에이전트 프레임워크가 실제 임상 환경에서 어떻게 활용될 수 있는지 구체적인 적용 사례를 보여준다.
+- 🏛 기반 연구: [[papers/167_Biomedlm_A_27_b_parameter_language_model_trained_on_biomedic/review]] — 바이오메디컬 도메인 특화 언어모델이 의료 에이전트의 성능 향상에 필수적인 기반을 제공한다.
+- 🔄 다른 접근: [[papers/159_Bio-sieve_exploring_instruction_tuning_large_language_models/review]] — 의료 체계적 문헌고찰 자동화와 임상 계산기 큐레이션 모두 의료 지식 처리의 서로 다른 자동화 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/167_Biomedlm_A_27_b_parameter_language_model_trained_on_biomedic/review]] — 바이오메디컬 도메인 특화 언어모델이 의료 에이전트 시스템의 정확성과 신뢰성 향상에 핵심적인 기반을 제공한다.
+- 🧪 응용 사례: [[papers/291_Drugclip_Contrastive_drug-disease_interaction_for_drug_repur/review]] — 약물-질병 상호작용 학습을 통한 약물 재창출이 임상 계산기 기반 위험 예측과 함께 포괄적인 의료 AI 시스템 구축에 활용될 수 있다.

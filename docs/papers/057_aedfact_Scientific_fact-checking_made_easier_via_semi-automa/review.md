@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 웹 브라우저 확장 프로그램인 aedFaCT를 제시하여, 뉴스 기사의 주요 키워드를 자동으로 추출하고 이를 바탕으로 신뢰할 수 있는 뉴스 매체의 전문가 의견과 동료 심사 학술논문을 반자동으로 검색함으로써 과학적 팩트체킹을 용이하게 한다. 사용자는 수집된 다양한 전문가 의견을 통해 의심스러운 과학적 주장의 진위를 판단할 수 있다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Scientific_Error_Detection"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2023_aedfact Scientific fact-checking made easier via semi-automatic discovery of relevant expert opinio.pdf"
 ---
@@ -110,9 +111,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2023_aedfact Scientific fact
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/685_Robust_claim_verification_through_fact_detection/review]] — 일반적인 사실 검증 방법론을 과학적 맥락에 특화된 형태로 구현한다
-- 🔗 후속 연구: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 과학적 팩트체킹을 의료 분야로 확장하고 설명가능성을 추가한다
-- 🔄 다른 접근: [[papers/221_Claimver_Explainable_claim-level_verification_and_evidence_a/review]] — 웹 기반 반자동 검색 대신 지식 그래프를 활용한 체계적 주장 검증 방법을 제시한다
-- 🧪 응용 사례: [[papers/685_Robust_claim_verification_through_fact_detection/review]] — 사실 검증의 일반적 방법론을 과학적 팩트체킹이라는 구체적 영역에 적용한다
-- 🔗 후속 연구: [[papers/221_Claimver_Explainable_claim-level_verification_and_evidence_a/review]] — 반자동 팩트체킹을 더 체계적이고 설명가능한 프레임워크로 발전시킨다
-- 🔄 다른 접근: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 웹 기반 반자동 검색 대신 LLM과 SHAP를 결합한 대화형 검증 시스템을 제시한다
+- 🏛 기반 연구: [[papers/221_Claimver_Explainable_claim-level_verification_and_evidence_a/review]] — 과학적 주장 검증을 위한 자동화된 증거 수집과 분석의 기본 방법론을 제공한다
+- 🔗 후속 연구: [[papers/183_Can_large_language_models_detect_misinformation_in_scientifi/review]] — 과학적 잘못된 정보 탐지를 위한 더 정교한 LLM 기반 접근법을 제시한다
+- 🧪 응용 사례: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 멀티모달 팩트체킹을 위한 구체적인 시스템 구현 사례를 보여준다
+- 🔗 후속 연구: [[papers/221_Claimver_Explainable_claim-level_verification_and_evidence_a/review]] — 반자동 팩트체킹에서 완전 자동화된 주장 검증으로 발전시킨 접근법을 제시한다

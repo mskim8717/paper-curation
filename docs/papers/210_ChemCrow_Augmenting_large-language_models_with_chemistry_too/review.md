@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "대규모 언어 모델(LLM)에 18개의 화학 전문 도구를 통합하여 유기합성, 신약 개발, 재료 설계 등 다양한 화학 작업을 자율적으로 수행할 수 있는 ChemCrow 에이전트를 개발했다. GPT-4를 기반으로 하는 이 시스템은 Thought-Action-Observation 루프를 통해 화학 문제 해결에서 LLM의 고질적 한계를 극복한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Chemistry_Planning"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bran et al._2023_ChemCrow Augmenting large-language models with chemistry tools.pdf"
 ---
@@ -127,13 +127,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bran et al._2023_ChemCrow Augmenting lar
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/271_Developing_ChemDFM_as_a_large_language_foundation_model_for/review]] — 화학 AI 에이전트의 다른 구현 방식으로 도구 통합 vs 파운데이션 모델
-- 🏛 기반 연구: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — LLM에 화학 도구 통합의 기본 연구가 ChemCrow의 직접적 기반
-- 🔄 다른 접근: [[papers/271_Developing_ChemDFM_as_a_large_language_foundation_model_for/review]] — 화학 분야 LLM의 다른 구현 방식으로 도구 통합 vs 파운데이션 모델 접근
-- 🔗 후속 연구: [[papers/461_LARC_Towards_Human-level_Constrained_Retrosynthesis_Planning/review]] — ChemCrow의 화학 도구 증강 언어모델은 LARC의 제약조건 기반 역합성 계획을 더욱 발전시킨 형태입니다
-- 🔄 다른 접근: [[papers/047_ActionIE_Action_Extraction_from_Scientific_Literature_with_P/review]] — Python 코드 생성을 통한 화학 행동 추출과 화학 도구로 증강된 대형 언어모델은 모두 과학 문헌의 실험 절차를 자동화하는 서로 다른 접근법입니다
-- 🔗 후속 연구: [[papers/316_Enhancing_chemical_reaction_and_retrosynthesis_prediction_wi/review]] — 화학 도구를 활용한 LLM 확장이 ChemDual의 화학 반응 예측 프레임워크와 상호 보완적인 접근법이다.
-- 🔗 후속 연구: [[papers/209_ChemAgent_Self-updating_Library_in_Large_Language_Models_Imp/review]] — 화학 추론 능력이 더 포괄적인 화학 도구 활용으로 확장됩니다.
-- 🔗 후속 연구: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 화학정보학 도구 통합을 화학 증강 대화형 시스템으로 발전시킨 연구
-- 🔄 다른 접근: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — 화학 분야에서 LLM 도구 증강의 다른 접근법과 구현 방식을 비교할 수 있다
-- 🔄 다른 접근: [[papers/1106_The_BOS-Lig_Dataset_Accurate_Ligand_Charges_from_a_Consensus/review]] — 화학 대응 LLM 확장과 정확한 리간드 전하 결정의 다른 접근법
+- 🔗 후속 연구: [[papers/461_LARC_Towards_Human-level_Constrained_Retrosynthesis_Planning/review]] — 화학 도구 증강 LLM이 제약 조건 하 역합성 계획에서 더 정교한 인간 수준 성능을 달성한다
+- 🔄 다른 접근: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — 화학 도구로 증강된 LLM의 다른 구현 방식으로 상호 보완적 접근법을 제시한다
+- 🏛 기반 연구: [[papers/213_ChemReasoner_Heuristic_Search_over_a_Large_Language_Models_K/review]] — LLM의 휴리스틱 검색이 ChemCrow의 화학 문제 해결 추론 과정을 뒷받침한다
+- 🏛 기반 연구: [[papers/461_LARC_Towards_Human-level_Constrained_Retrosynthesis_Planning/review]] — ChemCrow의 기본 화학 도구 통합이 제약 조건 하 역합성 계획의 기술적 기반을 제공한다
+- 🔗 후속 연구: [[papers/047_ActionIE_Action_Extraction_from_Scientific_Literature_with_P/review]] — 화학 합성 행동 추출 방법론과 화학 도구 증강 LLM을 결합하면 실험 절차 이해부터 실제 화학 반응 수행까지 통합된 시스템을 구축할 수 있다.
+- 🔗 후속 연구: [[papers/138_Autonomous_chemical_research_with_large_language_models/review]] — 화학 도구로 대규모 언어 모델을 보강하는 연구로, 자율적 화학 연구의 도구 통합 측면을 확장
+- 🔄 다른 접근: [[papers/214_ChemToolAgent_The_Impact_of_Tools_on_Language_Agents_for_Che/review]] — 화학 문제 해결에서 도구 영향 분석과 화학 도구 증강이라는 서로 다른 접근 방식을 통해 LLM의 화학 능력을 평가한다

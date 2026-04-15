@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "AI가 생성한 과학 논문의 품질 평가를 위해 인용 횟수 예측(Citation Count Prediction)과 리뷰 점수 예측(Review Score Prediction)을 자동 평가 지표로 제안하며, 단순 모델이 LLM 기반 검토자보다 인간 평가와 더 일치함을 입증한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Human-AI_Performance_Detection"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jain et al._2025_Automatic evaluation metrics for artificially generated scientific research.pdf"
 ---
@@ -106,6 +107,10 @@ AI가 생성한 과학 논문의 품질 평가를 위해 인용 횟수 예측(Ci
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/373_Generalization_Bias_in_Large_Language_Model_Summarization_of/review]] — 대규모 언어 모델 요약의 일반화 편향을 분석하여 AI 생성 논문 평가의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — 논문 심사에서 대규모 언어 모델 사용에 대한 탐색적 연구로 본 논문의 평가 지표를 실제 심사 환경에 적용한다.
-- 🔄 다른 접근: [[papers/092_Align_then_Fusion_Generalized_Large-scale_Multi-view_Cluster/review]] — AI 생성 연구의 참신성과 표절 문제를 다루어 본 논문의 품질 평가와 다른 관점의 자동 평가를 제시한다.
+- 🔄 다른 접근: [[papers/373_Generalization_Bias_in_Large_Language_Model_Summarization_of/review]] — AI 생성 과학 논문의 품질 평가에서 자동 메트릭과 편향 분석이라는 상호 보완적 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — 자동 평가 메트릭과 AI 리뷰 평가 프레임워크가 AI 생성 과학 콘텐츠의 종합적 품질 관리를 제공한다.
+- 🏛 기반 연구: [[papers/630_Predicting_empirical_ai_research_outcomes_with_language_mode/review]] — 언어모델을 이용한 실험 결과 예측이 AI 생성 과학 논문의 자동 평가 메트릭 개발에 방법론적 토대를 제공한다.
+- 🧪 응용 사례: [[papers/664_RelevAI-Reviewer_A_Benchmark_on_AI_Reviewers_for_Survey_Pape/review]] — AI 리뷰어 벤치마크가 AI 생성 과학 연구의 자동 평가 메트릭 검증을 위한 실제 적용 사례를 제공한다.
+- 🔄 다른 접근: [[papers/373_Generalization_Bias_in_Large_Language_Model_Summarization_of/review]] — AI 생성 과학 논문 품질 평가에서 자동 메트릭과 편향 탐지라는 상호 보완적 접근법을 제시한다.
+- 🔄 다른 접근: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — AI 생성 과학 콘텐츠 평가에서 리뷰 시스템과 자동 메트릭이라는 서로 다른 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/907_Is_AI_ready_to_mass-produce_lay_summaries_of_research_articl/review]] — AI 생성 과학 텍스트의 자동 평가 지표 연구가 lay summary 품질 평가의 방법론적 기반을 제공한다

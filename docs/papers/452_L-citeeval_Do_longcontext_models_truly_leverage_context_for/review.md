@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "장문맥 언어모델(Long-Context Models, LCMs)이 실제로 주어진 맥락을 활용하여 응답하는지 평가하는 종합 벤치마크 L-CiteEval을 제시하며, 자동화된 평가를 통해 모델의 생성 품질뿐 아니라 인용 정확도(citation accuracy)를 동시에 측정한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Working_Memory_Benchmarks"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Multi-Hop_Long_Memory_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2024_L-citeeval Do longcontext models truly leverage context for responding arXiv preprint arXiv2410.0.pdf"
 ---
@@ -123,11 +124,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2024_L-citeeval Do longconte
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/005_A_comprehensive_survey_on_long_context_language_modeling/review]] — 장문맥 모델의 포괄적 조사는 인용 정확도 평가 벤치마크의 이론적 기반을 제공합니다
-- 🔄 다른 접근: [[papers/876_What_are_the_essential_factors_in_crafting_effective_long_co/review]] — 효과적인 장문맥 제작 요소 연구와 실제 맥락 활용도 평가는 상호 보완적인 관점을 제공합니다
-- 🧪 응용 사례: [[papers/318_Estimating_optimal_context_length_for_hybrid_retrievalaugmen/review]] — 하이브리드 검색 증강 생성의 최적 맥락 길이 추정은 장문맥 모델 평가의 실제 응용 사례입니다
-- 🧪 응용 사례: [[papers/876_What_are_the_essential_factors_in_crafting_effective_long_co/review]] — 장문맥 모델의 실제 맥락 활용 능력을 다중 홉 데이터셋으로 평가함
-- 🧪 응용 사례: [[papers/005_A_comprehensive_survey_on_long_context_language_modeling/review]] — 장문맥 언어모델의 포괄적 조사에서 제시된 이론과 방법론은 L-CiteEval의 장문맥 모델 인용 정확도 평가에 직접 적용됩니다
-- ⚖️ 반론/비판: [[papers/368_Gemini_15_Unlocking_multimodal_understanding_across_millions/review]] — 긴 컨텍스트 모델이 실제로 컨텍스트를 제대로 활용하는지에 대한 비판적 평가가 Gemini 1.5의 1천만 토큰 처리 주장을 검증한다.
-- 🔗 후속 연구: [[papers/036_A_survey_on_transformer_context_extension_Approaches_and_eva/review]] — 긴 컨텍스트 모델이 실제로 컨텍스트를 활용하는지 평가하는 벤치마크로 본 논문의 평가 방법론을 구체화한다.
-- 🔗 후속 연구: [[papers/318_Estimating_optimal_context_length_for_hybrid_retrievalaugmen/review]] — 장문맥 모델의 실제 활용도를 다중문서 요약에서 구체적으로 검증하고 최적화한다
+- 🏛 기반 연구: [[papers/876_What_are_the_essential_factors_in_crafting_effective_long_co/review]] — 장문맥 모델의 실제 맥락 활용 측정이 효과적인 장문맥 데이터 생성 검증에 필요하다
+- 🧪 응용 사례: [[papers/005_A_comprehensive_survey_on_long_context_language_modeling/review]] — 장문맥 언어 모델링 설문의 기술들이 인용 정확도 평가 벤치마크에 직접 적용된다
+- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 다중 턴 장문맥 대화로서의 동료 심사가 L-CiteEval의 평가 범위를 확장한다
+- 🧪 응용 사례: [[papers/876_What_are_the_essential_factors_in_crafting_effective_long_co/review]] — 장문맥 모델의 실제 맥락 활용 평가가 다중 홉 데이터 품질 검증에 활용된다
+- 🧪 응용 사례: [[papers/036_A_survey_on_transformer_context_extension_Approaches_and_eva/review]] — 장문맥 모델의 실제 성능을 L-CiteEval을 통해 구체적으로 평가하여 컨텍스트 확장 기법의 실용성을 검증할 수 있다.

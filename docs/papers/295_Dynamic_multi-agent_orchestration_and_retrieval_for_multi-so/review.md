@@ -12,8 +12,8 @@ arxiv: ""
 score: 3.5
 essence: "다양한 데이터 소스(비정형 문서, 구조화된 데이터베이스)를 통합하는 다중 에이전트 기반 질의응답 시스템을 제안한다. 동적 프롬프트 엔지니어링과 함께 SQL 에이전트, RAG(Retrieval-Augmented Generation) 에이전트, 라우터 에이전트를 조합하여 질의 특성에 따라 최적의 검색 전략을 자동으로 선택한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-agent_Task_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Seabra et al._2024_Dynamic multi-agent orchestration and retrieval for multi-source question-answer systems using large.pdf"
 ---
@@ -104,6 +104,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Seabra et al._2024_Dynamic multi-agent o
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — 과학 논문 검색 증강 생성 에이전트로 다중 소스 질의응답의 과학 분야 특화 확장을 보여준다.
-- 🏛 기반 연구: [[papers/034_A_Survey_on_RAG_Meeting_LLMs_Towards_Retrieval-Augmented_Lar/review]] — RAG와 LLM 결합에 대한 포괄적 조사로 검색 증강 생성의 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 대규모 언어모델을 위한 검색 증강 생성의 다른 체계적 접근 방법을 제시한다.
+- 🔗 후속 연구: [[papers/396_Hallucination_mitigation_using_agentic_ai_natural_language-b/review]] — OVON 프레임워크 기반 환각 완화가 다중 에이전트 질의응답 시스템의 신뢰성을 향상시킬 수 있다.
+- 🏛 기반 연구: [[papers/488_Leveraging_LLMs_in_Scholarly_Knowledge_Graph_Question_Answer/review]] — 지식 그래프 질의응답에서의 LLM 활용이 다중 소스 질의를 위한 동적 오케스트레이션의 기반을 제공한다.
+- 🔄 다른 접근: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — REALM의 검색 증강 사전훈련과 동적 다중에이전트 검색은 서로 다른 검색 통합 방식을 제공한다.
+- 🧪 응용 사례: [[papers/396_Hallucination_mitigation_using_agentic_ai_natural_language-b/review]] — 다중 에이전트 오케스트레이션 시스템이 OVON 프레임워크 기반 환각 완화의 실제 적용 환경을 제공한다.

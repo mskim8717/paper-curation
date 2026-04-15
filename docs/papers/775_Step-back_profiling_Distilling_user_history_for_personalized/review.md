@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 사용자 이력(user history)을 간결한 프로필로 증류(distill)하여 LLM을 개인화하는 **STEP-BACK PROFILING** 기법을 제안한다. 특히 다중 저자 과학 논문 작성이라는 현실적 시나리오에서 협업 글쓰기를 지원하기 위해 개발되었다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Personalization"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2024_Step-back profiling Distilling user history for personalized scientific writing.pdf"
 ---
@@ -135,9 +136,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tang et al._2024_Step-back profiling Dis
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/613_Personalized_graph-based_retrieval_for_large_language_models/review]] — 사용자 이력 증류 기법이 개인화된 그래프 기반 검색에서 효율적인 사용자 프로필 생성을 위한 핵심 전처리 방법론으로 활용된다.
-- 🏛 기반 연구: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — 인간-AI 협업 글쓰기의 기본 개념이 다중 저자 과학 논문 작성이라는 복잡한 협업 시나리오로 확장되어 개인화 기법을 통해 구현된다.
-- 🔄 다른 접근: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 사용자 이력 기반 개인화와 제어 가능한 맥락 인식 수정은 모두 개인화된 학술 글쓰기 지원을 목표로 하지만 서로 다른 개인화 전략을 사용한다.
-- 🏛 기반 연구: [[papers/613_Personalized_graph-based_retrieval_for_large_language_models/review]] — 사용자 이력 증류 기법이 개인화된 그래프 기반 검색에서 콜드스타트 문제 해결을 위한 핵심 전처리 방법론으로 활용된다.
-- 🔗 후속 연구: [[papers/886_Wordcraft_A_human-ai_collaborative_editor_for_story_writing/review]] — 인간-AI 협업 글쓰기를 다중 저자 과학 논문 작성으로 확장하여 개인화된 사용자 프로필 기반의 협업 지원이 가능하다.
-- 🔄 다른 접근: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 맥락 인식 제어 가능한 수정과 사용자 이력 기반 개인화는 모두 개인화된 학술 글쓰기를 지원하지만 서로 다른 개인화 메커니즘을 사용한다.
+- 🏛 기반 연구: [[papers/595_Overleafcopilot_Empowering_academic_writing_in_overleaf_with/review]] — 개인화된 학술 글쓰기 지원을 위한 사용자 이력 활용의 기초 방법론을 제공한다
+- 🔗 후속 연구: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 제어 가능한 학술 논문 수정을 위한 더 정교한 맥락 인식 기법을 활용한다
+- 🧪 응용 사례: [[papers/612_PersonaAI_An_Interactive_Agentic-AI_Framework_for_Autonomous/review]] — 개인화된 AI 프레임워크의 실제 구현과 응용 사례를 제시한다
+- 🔗 후속 연구: [[papers/595_Overleafcopilot_Empowering_academic_writing_in_overleaf_with/review]] — 개인화된 학술 글쓰기 지원을 위한 더 정교한 사용자 프로필링 방법을 활용한다
+- 🏛 기반 연구: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 개인화된 학술 글쓰기를 위한 사용자 맥락 활용의 기본 방법론을 제공한다

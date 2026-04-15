@@ -8,8 +8,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어 모델(LLM)을 기반으로 한 AI 과학자들이 협력하는 가상 실험실이 개발되었으며, 이를 통해 SARS-CoV-2를 표적으로 하는 나노바디(nanobody) 92개를 인간 연구팀보다 훨씬 짧은 시간에 설계할 수 있었다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "sub/AI_Science_Communication"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kudiabor_2024_Virtual lab powered by ‘AI scientists’ super-charges biomedical research.pdf"
 ---
@@ -78,7 +80,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kudiabor_2024_Virtual lab powered by ‘
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/630_Predicting_empirical_ai_research_outcomes_with_language_mode/review]] — AI 과학자들의 실제 연구 성과가 연구 아이디어 성공 예측 시스템의 효용성을 생물의학 분야에서 구체적으로 입증하는 사례를 제공한다.
-- 🔄 다른 접근: [[papers/805_The_Virtual_Lab_of_AI_agents_designs_new_SARS-CoV-2_nanobodi/review]] — SARS-CoV-2 나노바디 설계라는 동일한 연구 성과를 서로 다른 관점에서 보도하여 AI 과학자 시스템의 성능을 종합적으로 평가할 수 있다.
-- 🏛 기반 연구: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — 가상 실험실에서의 AI 과학자 협업 사례가 완전 자동화된 과학적 발견 시스템의 실현 가능성을 보여주는 중요한 실증적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/630_Predicting_empirical_ai_research_outcomes_with_language_mode/review]] — AI 연구 성과 예측 시스템의 실제 적용 사례로, 생물의학 연구에서의 구체적 성공 사례를 통해 예측 모델의 효용성을 입증한다.
+- 🔗 후속 연구: [[papers/805_The_Virtual_Lab_of_AI_agents_designs_new_SARS-CoV-2_nanobodi/review]] — SARS-CoV-2 나노바디 설계의 구체적 성과를 보여주며 가상 실험실의 실제 응용 결과를 확장한다
+- 🔄 다른 접근: [[papers/922_Vibe_physics_The_AI_grad_student/review]] — 단일 AI와 인간 전문가의 협력 사례로 다중 AI 협력과 다른 접근 방식을 제시한다
+- 🧪 응용 사례: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 단백질 접힘 탐색을 위한 자율 실험실로서 AI 과학자 협력의 다른 생물의학 응용을 보여준다
+- 🔄 다른 접근: [[papers/922_Vibe_physics_The_AI_grad_student/review]] — 다중 AI 협력과 달리 단일 AI와 전문가의 1:1 협력 모델을 제시한다

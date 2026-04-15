@@ -12,8 +12,10 @@ arxiv: ""
 score: 0
 essence: "정리(Theorem) 이해를 위해 LLM이 5분 이상의 긴 형식 설명 비디오를 에이전트 기반으로 생성하는 새로운 접근법을 제시하며, 다중 모드 설명이 텍스트 기반 평가보다 더 깊은 추론 오류를 드러낼 수 있음을 입증한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Multimodal_Scientific_Reasoning"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/AI_Science_Communication"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ku et al._2025_Theoremexplainagent Towards video-based multimodal explanations for llm theorem understanding.pdf"
 ---
@@ -133,6 +135,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ku et al._2025_Theoremexplainagent Towar
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/808_Theoremqa_A_theorem-driven_question_answering_dataset/review]] — 정리 설명을 위한 비디오 기반 접근법과 텍스트 기반 질문 답변의 서로 다른 다중모드 수학 교육 방식을 비교할 수 있다.
-- 🔗 후속 연구: [[papers/642_Proving_theorems_recursively/review]] — TheoremExplainAgent의 비디오 기반 설명 생성을 재귀적 정리 증명으로 확장하여 더 체계적이고 단계적인 수학 학습 환경을 조성할 수 있다.
-- 🏛 기반 연구: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 차트 이해를 위한 다중모드 언어 모델의 시각적 추론 능력이 정리 설명 비디오 생성에 필요한 기본적인 시각-언어 통합 기술을 제공한다.
+- 🔗 후속 연구: [[papers/566_Multimodal_deepresearcher_Generating_text-chart_interleaved/review]] — 텍스트-차트 통합 생성 연구를 정리 증명의 긴 형식 비디오 설명으로 확장한 멀티모달 접근법이다.
+- 🏛 기반 연구: [[papers/315_Enhancing_chart-to-code_generation_in_multimodal_large_langu/review]] — 차트-코드 생성의 멀티모달 대형 언어모델 연구가 비디오 기반 정리 설명의 기술적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/369_Gemini_a_family_of_highly_capable_multimodal_models/review]] — Gemini의 멀티모달 이해 능력이 TheoremExplainAgent의 비디오 기반 설명 생성 기술 기반이 된다.
+- 🔗 후속 연구: [[papers/808_Theoremqa_A_theorem-driven_question_answering_dataset/review]] — TheoremQA의 정리 기반 질문 답변을 비디오 설명 형태의 교육적 콘텐츠로 확장한 연구이다.
+- 🔄 다른 접근: [[papers/532_MerLean_An_Agentic_Framework_for_Autoformalization_in_Quantu/review]] — 정리의 형식화에 초점을 맞춘 MerLean과 달리 TheoremExplainAgent는 시각적 설명에 중점을 둔다.
+- 🏛 기반 연구: [[papers/288_Draft_sketch_and_prove_Guiding_formal_theorem_provers_with_i/review]] — 형식적 정리 증명 가이드 연구가 TheoremExplainAgent의 정리 이해 및 설명 생성의 이론적 토대를 제공한다.

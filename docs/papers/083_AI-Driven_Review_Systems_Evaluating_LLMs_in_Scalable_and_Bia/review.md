@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 대규모 학술논문 검토의 병목 현상을 해결하기 위해 LLM(Large Language Model) 기반의 자동 논문 검토 시스템을 개발하고, 인간 검토자의 선호도와의 정렬도(alignment)를 평가하는 연구이다. 특히 시각-텍스트 통합 분석, 동적 질문 적응, 편향 감소 메커니즘을 통해 고품질의 일관된 검토를 제공한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/LLM_Review_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/AI-Generated_Peer_Review_Detection"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tyser et al._2024_AI-Driven Review Systems Evaluating LLMs in Scalable and Bias-Aware Academic Reviews.pdf"
 ---
@@ -153,7 +154,15 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tyser et al._2024_AI-Driven Review Syste
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/843_Treereview_A_dynamic_tree_of_questions_framework_for_deep_an/review]] — AI-Driven Review가 편향 감소와 일관성에 초점을 맞춘 반면, TreeReview는 계층적 질문을 통한 깊이와 효율성을 추구하여 상호 보완적 접근법을 제시함
-- 🔗 후속 연구: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — DeepReview의 인간형 검토 개선 방법이 AI-Driven Review Systems의 편향 인식 메커니즘과 결합되어 더 정교한 자동 검토 시스템을 구성할 수 있음
-- 🏛 기반 연구: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — AI 학회 동료평가 위기에 대한 체계적 분석이 자동화된 검토 시스템 개발의 필요성과 방향성을 제시하는 이론적 근거가 됨
-- 🔄 다른 접근: [[papers/843_Treereview_A_dynamic_tree_of_questions_framework_for_deep_an/review]] — TreeReview가 질문 트리 구조로 논문 검토를, AI-Driven Review Systems가 편향 인식 자동화로 접근하여 상호 보완적인 검토 방법론을 제시함
+- 🔄 다른 접근: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — LLM 기반 논문 리뷰 시스템의 확장성과 품질을 각각 다른 접근법으로 개선한다.
+- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 편향 인식 리뷰 시스템이 다중 턴 대화 기반 피어 리뷰로 발전될 수 있다.
+- 🔄 다른 접근: [[papers/776_Streamlining_the_review_process_Ai-generated_annotations_in/review]] — AI 기반 리뷰 생성과 리뷰 주석 생성으로 학술 평가 과정의 서로 다른 단계를 자동화한다.
+- 🔄 다른 접근: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — LLM 리뷰 시스템의 품질과 확장성을 서로 다른 접근법으로 향상시킨다.
+- 🏛 기반 연구: [[papers/537_Mind_the_blind_spots_A_focus-level_evaluation_framework_for/review]] — 편향 없는 AI 리뷰 시스템 평가 연구가 LLM 리뷰의 blind spot 분석에 체계적 평가 방법론을 제공한다.
+- 🔗 후속 연구: [[papers/664_RelevAI-Reviewer_A_Benchmark_on_AI_Reviewers_for_Survey_Pape/review]] — AI 리뷰 시스템 평가 연구를 논문 관련성 평가로 확장한 구체적 적용 사례이다
+- 🧪 응용 사례: [[papers/435_Interfeedback_Unveiling_interactive_intelligence_of_large_mu/review]] — 대화형 AI 시스템의 편향성 있는 평가 문제를 해결하기 위한 실제 벤치마크 적용 사례를 제공한다.
+- 🧪 응용 사례: [[papers/905_If_in_a_Crowdsourced_Data_Annotation_Pipeline_a_GPT-4__Proce/review]] — LLM 기반 리뷰 시스템 평가 방법론을 데이터 라벨링 품질 평가에 적용한다
+- 🔗 후속 연구: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — 논문 리뷰 시스템의 확장성과 편향 인식을 프롬프트 최적화로 더욱 개선할 수 있다.
+- 🏛 기반 연구: [[papers/519_MARG_Multi-Agent_Review_Generation_for_Scientific_Papers/review]] — 확장 가능한 편향 없는 AI 기반 리뷰 시스템 연구가 다중 에이전트 리뷰 생성의 공정성과 신뢰성 확보 기반을 제공한다.
+- 🔗 후속 연구: [[papers/609_Peerarg_Argumentative_peer_review_with_llms/review]] — LLM 기반 리뷰 시스템을 논증 구조와 투명성을 강화한 피어리뷰로 확장한다
+- 🔄 다른 접근: [[papers/1087_Gpt4_is_slightly_helpful_for_peer-review_assistance_A_pilot/review]] — LLM 기반 리뷰 시스템 평가에서 확장성과 편향성을 체계적으로 분석하는 다른 접근법을 제시한다.

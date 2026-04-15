@@ -10,8 +10,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 생물 실험실 환경에서 로봇의 자동화를 평가하기 위한 시뮬레이션 프레임워크 및 벤치마크 AutoBio를 제시한다. 비전-언어-액션(VLA) 모델의 정밀 조작, 명령 수행, 시각 추론 능력을 과학 워크플로우에서 평가하는 최초의 전문 과학 영역 벤치마크이다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Laboratory_Biology"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_Discovery_Task_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Samolej et al._2025_Autobio A simulation and benchmark for robotic automation in digital biology laboratory.pdf"
 ---
@@ -124,7 +124,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Samolej et al._2025_Autobio A simulation
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — AutoBio의 생물 실험실 로봇 자동화 벤치마크는 단백질 공학을 위한 자율 실험실 연구의 로봇 자동화 개념을 VLA 모델 평가로 확장하여 더 포괄적인 과학 자동화 평가를 제공합니다.
-- 🏛 기반 연구: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — AutoBio의 로봇 자동화 평가는 양자컴퓨팅 실험실 자동화 연구에서 검증된 과학 워크플로우 자동화 원리를 생물학 실험 환경에 적용한 것입니다.
-- 🔄 다른 접근: [[papers/258_Deep_active_learning_based_experimental_design_to_uncover_sy/review]] — 생물학적 상호작용 발견에서 능동학습 기반과 로봇 자동화 기반 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/169_Bioprobench_Comprehensive_dataset_and_benchmark_in_biologica/review]] — 생물학적 실험 자동화 벤치마크를 로봇 자동화 시뮬레이션으로 확장한 연구다
+- 🔄 다른 접근: [[papers/211_ChemGymRL_A_Customizable_Interactive_Framework_for_Reinforce/review]] — 생물 실험실 로봇 자동화와 화학 실험실 강화학습 환경이라는 서로 다른 실험실 자동화 접근법을 비교할 수 있다
+- 🏛 기반 연구: [[papers/748_Semi-Supervised_2D_Human_Pose_Estimation_Driven_by_Position/review]] — 반지도 학습 기반 자세 추정 기술을 생물 실험실 로봇의 정밀 조작 벤치마킹에 활용할 수 있다
+- 🧪 응용 사례: [[papers/851_Uncovering_bottlenecks_and_optimizing_scientific_lab_workflo/review]] — 생물 실험실 자동화 벤치마크의 실제 적용을 통해 과학 실험실 워크플로우의 병목 지점을 발견하고 최적화할 수 있다
+- 🧪 응용 사례: [[papers/297_EAA_Automating_materials_characterization_with_vision_langua/review]] — 생물학 실험실 자동화 벤치마크와 재료 특성화 자동화는 모두 과학 실험 자동화라는 공통 목표를 가진다.
+- 🔄 다른 접근: [[papers/043_Accelerating_Drug_Discovery_Through_Agentic_AI_A_Multi-Agent/review]] — 실제 신약 개발을 위한 통합 플랫폼과 생물 실험실 로봇 자동화 벤치마크라는 상호 보완적인 관점에서 실험실 자동화를 다룬다

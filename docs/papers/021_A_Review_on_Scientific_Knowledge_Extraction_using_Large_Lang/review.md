@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.0
 essence: "본 논문은 의료 과학 분야에서 대규모 언어모델(LLM)을 활용한 과학적 지식 추출 및 증거 합성(evidence synthesis)의 현황을 체계적으로 검토한다. LLM의 의료 문헌 자동화 처리 잠재력과 함께 hallucination, 맥락 이해, 일반화 능력 등의 주요 과제를 분석한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_in_Scientific_Research"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Garcia et al._2024_A Review on Scientific Knowledge Extraction using Large Language Models in Biomedical Sciences.pdf"
 ---
@@ -89,7 +90,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Garcia et al._2024_A Review on Scientifi
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/530_Medbiolm_Optimizing_medical_and_biological_qa_with_fine-tune/review]] — 의료 과학 분야 LLM 활용의 체계적 검토가 특화된 의료 QA 모델 개발의 배경을 제공한다
-- 🧪 응용 사례: [[papers/897_Can_AI_review_the_scientific_literature__and_figure_out_what/review]] — 의료 분야에서 LLM 기반 문헌 검토의 구체적 적용 가능성과 한계를 다룬다
-- 🔗 후속 연구: [[papers/087_Ai2_scholar_qa_Organized_literature_synthesis_with_attributi/review]] — 의료 과학 지식 추출을 조직화된 문헌 합성으로 확장한 연구이다
-- 🧪 응용 사례: [[papers/530_Medbiolm_Optimizing_medical_and_biological_qa_with_fine-tune/review]] — 의료 과학 분야 LLM 지식 추출의 체계적 검토를 구체적 QA 시스템으로 구현한다
+- 🔗 후속 연구: [[papers/530_Medbiolm_Optimizing_medical_and_biological_qa_with_fine-tune/review]] — 의료 분야 LLM 활용의 일반적 리뷰에서 구체적인 QA 시스템 구현으로 발전된 사례를 보여준다.
+- 🏛 기반 연구: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — 과학 문헌 처리를 위한 대규모 언어 모델의 기초 연구로서 본 논문의 이론적 토대를 제공한다.
+- 🧪 응용 사례: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — 과학적 지식 추출 이론을 실제 논문 검색 및 요약 에이전트로 구현한 실용적 사례를 제시한다.
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 의료 문헌 분석에서 완전 자동화된 과학 발견으로 확장된 미래 비전을 보여준다.
+- 🏛 기반 연구: [[papers/122_Automated_Extraction_of_Mechanical_Constitutive_Models_from/review]] — 과학 문헌에서 지식을 추출하는 LLM 기반 방법론의 기본 원리를 제시하여 구성 모델 자동 추출의 이론적 토대를 마련함
+- 🧪 응용 사례: [[papers/178_Can_ai_examine_novelty_of_patents_Novelty_evaluation_based_o/review]] — 대규모 언어모델을 활용한 과학 지식 추출이 특허 신규성 평가에 필요한 기술 정보 분석에 실제 적용된다.
+- 🏛 기반 연구: [[papers/530_Medbiolm_Optimizing_medical_and_biological_qa_with_fine-tune/review]] — 의료 분야 LLM 지식 추출에 대한 체계적 리뷰를 바탕으로 구체적인 QA 모델을 개발했다.

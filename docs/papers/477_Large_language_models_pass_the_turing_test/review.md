@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 현대 대규모 언어모델(LLM)이 튜링 테스트(Turing test)의 세 명 참가자 버전을 최초로 통과했음을 보여주는 실증적 증거를 제시한다. GPT-4.5가 적절한 페르소나(persona) 프롬프트 하에서 73%의 확률로 인간으로 판단되었으며, 이는 실제 인간 참가자보다 유의미하게 높은 비율이다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Language_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/ML_Research_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Carlson_2025_Large language models pass the turing test.pdf"
 ---
@@ -105,8 +107,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Carlson_2025_Large language models pass 
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/387_Gpt-4_technical_report/review]] — GPT-4 같은 고성능 LLM이 인간과 구별되지 않을 정도로 발전했음을 실증적으로 증명
-- 🔗 후속 연구: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — LLM이 인간을 대체할 수 있는 가능성을 사회과학 실험 맥락에서 체계적으로 검증
-- 🏛 기반 연구: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — 사회적으로 정렬된 언어 모델 학습이 튜링 테스트 통과의 기반 기술이 됨
-- ⚖️ 반론/비판: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — LLM의 신뢰성 문제를 지적하며 튜링 테스트 통과만으로는 진정한 지능을 증명할 수 없음을 논의
-- 🧪 응용 사례: [[papers/387_Gpt-4_technical_report/review]] — GPT-4의 발전된 언어 능력이 튜링 테스트 통과라는 구체적 성과로 입증됨
+- 🏛 기반 연구: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — Code Llama의 오픈 파운데이션 모델이 튜링 테스트 통과 언어모델의 기술적 기반을 제공한다
+- 🔗 후속 연구: [[papers/411_How_do_humans_and_language_models_reason_about_creativity_a/review]] — 인간과 언어모델의 창의성 추론 비교 연구가 튜링 테스트 통과의 인지적 함의를 심화 분석한다
+- 🧪 응용 사례: [[papers/821_Towards_a_client-centered_assessment_of_llm_therapists_by_cl/review]] — 클라이언트 중심 LLM 치료사 평가가 튜링 테스트 통과 모델의 실제 인간-AI 상호작용 응용 사례를 제시한다

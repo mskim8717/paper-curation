@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "Sakana.ai의 AI Scientist는 연구 전체 생명주기(아이디어 생성, 실험 설계 및 실행, 논문 작성, 피어 리뷰)를 자동화하겠다고 주장하는 시스템이지만, 본 논문의 체계적 평가 결과 문헌 검토, 실험 실행, 원고 작성 등 여러 영역에서 심각한 결함을 발견했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/AI-Human_Hypothesis_Generation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Genderen_2025_Evaluating sakana’s ai scientist for autonomous research Wishful thinking or an emerging reality to.pdf"
 ---
@@ -98,10 +99,10 @@ Sakana.ai의 AI Scientist는 연구 전체 생명주기(아이디어 생성, 실
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI Scientist의 심각한 결함 발견이 완전 자동화된 과학 발견의 한계를 지적
-- 🔗 후속 연구: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — AI 연구의 종단간 자동화에서 Sakana AI Scientist 평가로의 확장
-- 🔄 다른 접근: [[papers/857_Unlocking_the_Potential_of_AI_Researchers_in_Scientific_Disc/review]] — 과학 발견에서 AI 연구자 잠재력과 AI Scientist 결함의 다른 평가 접근법
-- 🏛 기반 연구: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — AI 공동과학자 실패 시 자동 검증 벤치마크가 평가의 기반 제공
-- 🧪 응용 사례: [[papers/857_Unlocking_the_Potential_of_AI_Researchers_in_Scientific_Disc/review]] — 사카나 AI Scientist 평가 연구가 AI 연구자의 실제 과학 연구 능력을 검증한다.
-- 🔗 후속 연구: [[papers/081_Ai_scientists_fail_without_strong_implementation_capability/review]] — AI Scientist 평가를 통해 자율 연구의 실제 한계를 구체적으로 분석한다
-- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI Scientist의 실제 연구 수행 능력을 다양한 관점에서 평가한 확장 연구다
+- ⚖️ 반론/비판: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — Sakana AI Scientist의 원본 시스템에 대한 체계적 평가로 자율적 연구의 현실적 한계를 드러낸다
+- 🏛 기반 연구: [[papers/352_From_AI_for_Science_to_Agentic_Science_A_Survey_on_Autonomou/review]] — 자율적 과학 발견의 전반적 프레임워크를 제시하며 AI Scientist 평가의 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/081_Ai_scientists_fail_without_strong_implementation_capability/review]] — AI 과학자들이 강력한 구현 역량 없이는 실패한다는 보완적 관점을 제시한다
+- 🔗 후속 연구: [[papers/081_Ai_scientists_fail_without_strong_implementation_capability/review]] — Sakana AI Scientist의 자율 연구 평가가 AI 과학자의 구현 능력 실패에 대한 구체적 사례 분석을 제공한다
+- ⚖️ 반론/비판: [[papers/922_Vibe_physics_The_AI_grad_student/review]] — AI 과학자의 한계 평가와 달리 실제 성공적인 AI-인간 협력 사례를 보여준다
+- 🔗 후속 연구: [[papers/352_From_AI_for_Science_to_Agentic_Science_A_Survey_on_Autonomou/review]] — AI Scientist 평가의 구체적 사례를 포함하여 자율적 과학 발견의 포괄적 프레임워크를 제시한다
+- ⚖️ 반론/비판: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — Sakana의 AI Scientist를 자율 연구 관점에서 평가한 연구로, 엔드-투-엔드 자동화의 한계와 과제를 지적

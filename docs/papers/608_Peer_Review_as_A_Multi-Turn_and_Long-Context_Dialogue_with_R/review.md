@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "대규모언어모델(LLM)의 학술 논문 피어리뷰 과정을 단순한 정적 검토 생성에서 저자-검토자-의사결정자 간의 동적 다중턴 대화로 재정의하고, 92,017개의 검토문을 포함한 대규모 데이터셋(ReviewMT)을 구축했다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Peer_Review"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/AI-Enhanced_Peer_Review"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tan et al._2024_Peer Review as A Multi-Turn and Long-Context Dialogue with Role-Based Interactions.pdf"
 ---
@@ -100,17 +101,26 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tan et al._2024_Peer Review as A Multi-T
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — 인간과 같은 심층 사고를 통한 LLM 리뷰 개선과 함께 피어 리뷰의 다양한 개선 방향을 제시한다.
-- 🔗 후속 연구: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — AI 학술대회 피어 리뷰 위기에 대한 해결책으로 다중턴 대화 기반 리뷰 시스템을 제안한다.
-- 🏛 기반 연구: [[papers/070_Agentreview_Exploring_peer_review_dynamics_with_llm_agents/review]] — LLM 에이전트를 이용한 피어 리뷰 동역학 탐구로 다중턴 대화 기반 리뷰 프로세스의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — 다중턴 대화 기반 피어 리뷰를 인간과 같은 심층 사고로 개선하여 더 정교한 리뷰 생성이 가능하다.
-- 🏛 기반 연구: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — 다중턴 대화 기반 피어 리뷰로 양방향 피드백 시스템 구현의 기술적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/739_Seagraph_Unveiling_the_whole_story_of_paper_review_comments/review]] — 피어 리뷰를 다중 턴 대화로 모델링하는 다른 접근 방식을 제시한다.
-- 🔗 후속 연구: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — 다중 턴 장문맥 대화로서의 동료심사는 메타-리뷰의 갈등 인식 프레임워크를 실제 리뷰 프로세스로 확장한 응용입니다
-- 🔗 후속 연구: [[papers/883_When_reviewers_lock_horn_Finding_disagreement_in_scientific/review]] — 다회차 긴 컨텍스트 대화로서의 피어 리뷰가 리뷰어 간 모순 탐지를 대화적 관점에서 확장한다.
-- 🔗 후속 연구: [[papers/250_CycleResearcher_Improving_Automated_Research_via_Automated_R/review]] — 자동화된 검토가 다중턴 대화 기반 동료 검토로 확장됩니다.
-- 🧪 응용 사례: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — 동료 심사에서 NLP 활용 방안이 멀티턴 대화와 장문맥을 고려한 AI 기반 동료 심사 시스템의 구체적 구현에 적용된다
-- 🔗 후속 연구: [[papers/1089_Prompting_llms_to_compose_meta-review_drafts_from_peer-revie/review]] — 피어 리뷰를 다중 턴 장문맥 대화로 확장하여 메타리뷰 작성을 발전시킨다.
-- 🔄 다른 접근: [[papers/624_Piors_Personalized_intelligent_outpatient_reception_based_on/review]] — 의료 접수 업무에서 다중 에이전트 시스템과 다중 턴 대화 기반 접근법을 비교할 수 있습니다.
-- 🔄 다른 접근: [[papers/654_Re_2_A_consistency-ensured_dataset_for_full-stage_peer_revie/review]] — 피어리뷰 과정에서 일관성 보장 데이터셋과 다중 턴 대화 기반 접근법을 비교할 수 있습니다.
-- 🔄 다른 접근: [[papers/070_Agentreview_Exploring_peer_review_dynamics_with_llm_agents/review]] — 피어 리뷰 과정에서 사회학적 편향 분석과 다중 턴 대화 분석이라는 서로 다른 접근법으로 리뷰 역학을 탐구한다.
+- 🔗 후속 연구: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — 다중턴 대화 기반 피어리뷰와 AI 생성 리뷰 평가 프레임워크가 상호 보완적인 리뷰 시스템을 구성한다.
+- 🏛 기반 연구: [[papers/385_Glimpse_Pragmatically_informative_multi-document_summarizati/review]] — 다중 문서 요약 기법이 피어리뷰 프로세스에서 여러 검토자 의견의 통합적 분석을 위한 토대를 제공한다.
+- 🔄 다른 접근: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — 역할 기반 다중턴 대화와 프롬프트 최적화라는 서로 다른 AI 리뷰 생성 전략을 보여준다.
+- 🧪 응용 사례: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — 인간과 유사한 리뷰 생성에서 다중턴 대화 접근법의 실제 적용 사례를 제시한다.
+- 🏛 기반 연구: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — 다중턴 대화 기반 피어리뷰 시스템이 AI 생성 리뷰의 신뢰성 평가를 위한 데이터와 방법론을 제공한다.
+- 🧪 응용 사례: [[papers/385_Glimpse_Pragmatically_informative_multi-document_summarizati/review]] — 차별적 다중 문서 요약 기법이 피어리뷰 프로세스에서 검토자 의견 분석에 실제 적용된다.
+- 🔗 후속 연구: [[papers/452_L-citeeval_Do_longcontext_models_truly_leverage_context_for/review]] — 다중 턴 장문맥 대화로서의 동료 심사가 L-CiteEval의 평가 범위를 확장한다
+- 🔄 다른 접근: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — 학술 심사에서 인지편향 완화 접근법과 다중턴 대화 기반 접근법은 서로 다른 관점에서 심사 품질 향상을 추구한다.
+- 🔗 후속 연구: [[papers/883_When_reviewers_lock_horn_Finding_disagreement_in_scientific/review]] — 리뷰어 간 모순 탐지를 다중 턴 대화 형태의 피어 리뷰 시스템으로 발전시킨다
+- 🔄 다른 접근: [[papers/184_Can_large_language_models_provide_useful_feedback_on_researc/review]] — 다중 턴 대화 형태의 동료 리뷰로 LLM 피드백의 다른 접근법을 보여준다.
+- 🧪 응용 사례: [[papers/877_What_Can_Natural_Language_Processing_Do_for_Peer_Review/review]] — 동료 심사에서 NLP 활용을 다중 턴 대화와 장문맥 처리라는 구체적 방법으로 적용
+- 🔄 다른 접근: [[papers/629_Pre_A_peer_review_based_large_language_model_evaluator/review]] — 둘 다 LLM을 활용한 동료 평가 시스템이지만, PRE는 다중 LLM 평가자 활용에, 다른 논문은 다중 턴 대화 구조에 집중한다
+- 🏛 기반 연구: [[papers/654_Re_2_A_consistency-ensured_dataset_for_full-stage_peer_revie/review]] — 피어리뷰를 다중 턴 장기 맥락 대화로 보는 관점과 일관성 보장 피어리뷰 데이터셋은 상호 보완적인 리뷰 시스템 연구이다.
+- 🔄 다른 접근: [[papers/664_RelevAI-Reviewer_A_Benchmark_on_AI_Reviewers_for_Survey_Pape/review]] — 다중 턴 대화 기반 피어 리뷰와 관련성 기반 분류가 각각 다른 리뷰 자동화 접근법이다
+- 🔄 다른 접근: [[papers/070_Agentreview_Exploring_peer_review_dynamics_with_llm_agents/review]] — 보상 기반 다중 턴 대화로서 동료 검토를 모델링하는 다른 접근으로, 에이전트 시뮬레이션과 실제 검토 과정을 비교
+- 🔗 후속 연구: [[papers/698_Scaling_Reproducibility_An_AI-Assisted_Workflow_for_Large-Sc/review]] — 멀티턴 동료심사 시스템이 대규모 재현성 분석의 품질 평가 메커니즘으로 활용될 수 있다.
+- 🔄 다른 접근: [[papers/481_Lazyreview_a_dataset_for_uncovering_lazy_thinking_in_nlp_pee/review]] — 다중 턴 장문 맥락 대화로서의 동료 검토 연구로, 게으른 사고 탐지와 다른 관점에서 검토 과정을 분석
+- 🔗 후속 연구: [[papers/843_Treereview_A_dynamic_tree_of_questions_framework_for_deep_an/review]] — 다중턴 대화 형태의 동료평가를 계층적 질문 트리 구조로 발전시켜 더 체계적이고 효율적인 평가 방법론을 제시한다.
+- 🔗 후속 연구: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — 편향 인식 리뷰 시스템이 다중 턴 대화 기반 피어 리뷰로 발전될 수 있다.
+- 🔗 후속 연구: [[papers/778_Summarizing_multiple_documents_with_conversational_structure/review]] — 다중 턴 장문맥 대화로서의 동료 평가를 통해 메타리뷰 생성 과정을 더욱 정교하게 모델링할 수 있다.
+- 🔄 다른 접근: [[papers/022_A_sentiment_consolidation_framework_for_meta-review_generati/review]] — 동료 평가에서의 감정 분석이라는 공통 관심사를 가지지만 메타리뷰 생성 vs 다중 턴 대화라는 다른 접근법을 사용한다.
+- 🔗 후속 연구: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 다중턴 장문맥 대화로서의 피어 리뷰를 체크리스트 기반 메타리뷰로 체계화하여 더 구조적인 리뷰 종합을 제시한다.
+- 🔗 후속 연구: [[papers/776_Streamlining_the_review_process_Ai-generated_annotations_in/review]] — 멀티턴 대화 기반 피어리뷰를 통해 AI 어노테이션의 상호작용성을 더욱 발전시킬 수 있다.

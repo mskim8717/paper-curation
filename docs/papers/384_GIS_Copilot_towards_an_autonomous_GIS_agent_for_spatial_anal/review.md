@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 대규모 언어모델(LLM)을 QGIS 플랫폼에 직접 통합하여 사용자가 자연어로 공간 분석 작업을 수행할 수 있는 \"GIS Copilot\"을 개발했다. 이는 GIS 비전문가도 최소한의 사전 지식으로 지리공간 분석에 접근할 수 있는 자율 GIS 시스템으로의 진전을 의미한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/GIS_Research_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/GIS_Workflow_Automation_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Akinboyewa et al._2024_GIS Copilot towards an autonomous GIS agent for spatial analysis.pdf"
 ---
@@ -116,6 +116,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Akinboyewa et al._2024_GIS Copilot towar
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/831_Towards_llm_agents_for_earth_observation/review]] — 지구 관측 분야의 자동화라는 공통 목표이지만 LLM 에이전트와 GIS 분석 에이전트라는 다른 접근법을 사용한다.
-- 🔗 후속 연구: [[papers/298_Earth-Agent_Unlocking_the_Full_Landscape_of_Earth_Observatio/review]] — GIS 분야에서 Earth-Agent의 접근법을 더 넓은 지리공간 분석으로 확장하여 자율적 데이터 검색 기능을 강화한다.
-- 🔄 다른 접근: [[papers/098_An_autonomous_GIS_agent_framework_for_geospatial_data_retrie/review]] — 자율 GIS 에이전트와 GIS Copilot은 모두 지리정보시스템 자동화를 다루지만, 데이터 수집 특화와 공간 분석 지원이라는 서로 다른 기능에 중점을 둡니다.
+- 🔗 후속 연구: [[papers/298_Earth-Agent_Unlocking_the_Full_Landscape_of_Earth_Observatio/review]] — 지구관측 전체 환경 해제가 공간분석을 넘어 더 포괄적인 지구과학 AI 에이전트로 확장한다
+- 🏛 기반 연구: [[papers/831_Towards_llm_agents_for_earth_observation/review]] — 지구관측용 LLM 에이전트 설문이 GIS 자동화 에이전트 개발의 이론적 기반을 제공한다
+- 🔄 다른 접근: [[papers/831_Towards_llm_agents_for_earth_observation/review]] — GIS Copilot의 지리공간 분석과 지구 관측 LLM 에이전트는 유사한 도메인에서 다른 접근법을 사용한다.
+- 🔄 다른 접근: [[papers/298_Earth-Agent_Unlocking_the_Full_Landscape_of_Earth_Observatio/review]] — 지리공간 데이터 분석을 위한 자율적 GIS 에이전트로, 지구 관측 데이터 처리에 대한 다른 접근 방식을 제시
+- 🔗 후속 연구: [[papers/098_An_autonomous_GIS_agent_framework_for_geospatial_data_retrie/review]] — 자동 지리공간 데이터 검색에서 자율적 GIS 분석이라는 더 포괄적인 공간 분석 자동화로 발전한다

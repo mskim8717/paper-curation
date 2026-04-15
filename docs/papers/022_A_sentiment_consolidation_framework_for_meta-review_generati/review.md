@@ -10,7 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "과학 논문 동료 평가(peer review)에서 메타리뷰 생성을 위해 감정 통합의 3계층 프레임워크를 제안하고, LLM 프롬프팅과 평가 메트릭을 개발하여 검증한 연구."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
   - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_A sentiment consolidation framework for meta-review generation.pdf"
@@ -87,9 +89,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_A sentiment consolidation
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/778_Summarizing_multiple_documents_with_conversational_structure/review]] — 둘 다 동료평가에서 감정 통합을 다루지만 서로 다른 프레임워크와 접근 방식을 사용함
-- 🔗 후속 연구: [[papers/270_Detecting_llm-written_peer_reviews/review]] — 동료평가의 감정 통합을 AI 생성 리뷰 탐지와 결합하여 더 포괄적인 동료평가 품질 관리 방법을 제시함
-- 🏛 기반 연구: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — LLM을 활용한 동료평가 생성의 기초적 접근이 감정 통합 프레임워크를 통한 메타리뷰 생성의 이론적 토대를 제공함
-- 🔄 다른 접근: [[papers/385_Glimpse_Pragmatically_informative_multi-document_summarizati/review]] — 메타 리뷰 생성을 위한 감정 통합 프레임워크로 다중 문서 요약과 다른 접근 방식의 리뷰 종합을 제공한다.
-- 🧪 응용 사례: [[papers/739_Seagraph_Unveiling_the_whole_story_of_paper_review_comments/review]] — 메타 리뷰 생성에 SEAGraph의 감정 통합 프레임워크를 적용할 수 있다.
-- 🔗 후속 연구: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 감정 통합 프레임워크를 체크리스트 기반 반복 자기성찰로 확장하여 더 체계적인 메타리뷰 생성을 가능하게 합니다.
+- 🔗 후속 연구: [[papers/778_Summarizing_multiple_documents_with_conversational_structure/review]] — 대화 구조를 가진 다중문서 요약에 감정 통합 프레임워크를 적용하여 상충된 의견을 더욱 체계적으로 처리할 수 있다.
+- 🏛 기반 연구: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 관련 업무 섹션 생성에서 논문 간 감정적 관계를 파악하는 이론적 기반을 제공하여 더 정확한 문헌 요약을 가능하게 한다.
+- 🔄 다른 접근: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 동료 평가에서의 감정 분석이라는 공통 관심사를 가지지만 메타리뷰 생성 vs 다중 턴 대화라는 다른 접근법을 사용한다.
+- 🔗 후속 연구: [[papers/374_Generating_a_structured_summary_of_numerous_academic_papers/review]] — 메타 리뷰 생성에서 감정 통합 프레임워크와 구조화된 요약 생성 방법론이 상호 보완된다.
+- 🧪 응용 사례: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 감정 통합 프레임워크를 관련 업무 섹션 생성에 적용하여 논문 간 관계를 더 정확히 파악할 수 있는 방법을 제시한다.
+- 🏛 기반 연구: [[papers/778_Summarizing_multiple_documents_with_conversational_structure/review]] — 메타리뷰 생성을 위한 감정 통합 프레임워크의 이론적 기반을 제공하여 상충된 의견 처리 방법론을 설명한다.
+- 🔄 다른 접근: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 감정 통합을 통한 메타리뷰 생성과 체크리스트 기반 반복 자기성찰은 모두 리뷰 종합의 서로 다른 접근법이다.

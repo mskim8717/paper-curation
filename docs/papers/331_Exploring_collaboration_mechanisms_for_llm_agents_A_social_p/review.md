@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 사회심리학 이론을 기반으로 LLM 에이전트 간의 협력 메커니즘을 체계적으로 탐색하며, 에이전트 특성(성격), 사고 패턴(토론/반성), 협력 전략의 조합을 통해 인간과 유사한 사회적 행동이 나타남을 보여준다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-agent_Task_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2023_Exploring collaboration mechanisms for llm agents A social psychology view.pdf"
 ---
@@ -130,11 +131,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2023_Exploring collaboratio
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — 사회심리학과 LLM 추론의 갈등 인식 연구는 LLM 에이전트 간 협력 메커니즘 탐색의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — 시뮬레이션된 인간 사회에서 사회적으로 정렬된 언어 모델 훈련은 에이전트 협력 메커니즘을 실제 사회적 맥락으로 확장한다.
-- 🧪 응용 사례: [[papers/356_From_individual_to_society_A_survey_on_social_simulation_dri/review]] — 개인에서 사회로의 사회 시뮬레이션 조사는 LLM 에이전트 협력 메커니즘을 대규모 사회적 현상 연구에 적용한다.
-- 🔄 다른 접근: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — LLM 에이전트의 협업 메커니즘 탐구와 시뮬레이션된 사회적 상호작용은 모두 AI의 사회적 학습을 위한 서로 다른 접근법입니다
-- 🧪 응용 사례: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — LLM 에이전트 간 협력 메커니즘 탐색이 멀티에이전트 시스템의 실제 적용 방안을 제시합니다.
-- 🏛 기반 연구: [[papers/474_Large_language_models_for_zero-shot_inference_of_causal_stru/review]] — 프로그램 가이드 추론을 통한 복잡한 주장 검증 방법론이 생물학적 인과관계 추론의 기술적 기반이 된다.
-- 🏛 기반 연구: [[papers/773_Stealing_creators_workflow_A_creator-inspired_agentic_framew/review]] — LLM 에이전트의 협업 메커니즘 연구가 SciTalk의 멀티-LLM 에이전트 프레임워크 설계에 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/092_Align_then_Fusion_Generalized_Large-scale_Multi-view_Cluster/review]] — LLM 에이전트 간 협업 메커니즘 연구로 본 논문의 멀티뷰 정렬 기법을 에이전트 시스템에 응용할 수 있다.
+- 🏛 기반 연구: [[papers/173_Bridging_social_psychology_and_llm_reasoning_Conflict-aware/review]] — 사회심리학과 LLM 추론의 갈등 인식 연구가 협력 메커니즘의 이론적 기반이 된다
+- 🔄 다른 접근: [[papers/854_Understanding_the_planning_of_LLM_agents_A_survey/review]] — 에이전트 협력과 계획 수립이 서로 다른 관점에서 LLM 에이전트 시스템을 분석한다
+- 🔗 후속 연구: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — LLM 에이전트 간 협력 메커니즘 연구와 시뮬레이션 기반 사회적 정렬을 결합하면 더 현실적인 다중 에이전트 시스템을 구축할 수 있다.
+- 🔗 후속 연구: [[papers/854_Understanding_the_planning_of_LLM_agents_A_survey/review]] — 사회심리학 기반 협력 메커니즘을 LLM 에이전트 계획 수립의 체계적 분석으로 확장한다
+- 🏛 기반 연구: [[papers/077_AI_for_social_science_and_social_science_of_AI_A_Survey/review]] — LLM 에이전트 협력 메커니즘 연구가 AI와 사회과학 융합의 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/155_Beyond_Brainstorming_What_Drives_High-Quality_Scientific_Ide/review]] — LLM 에이전트의 사회적 협업 메커니즘 탐구가 다중 에이전트 토론 시스템의 이론적 토대를 제공한다.
+- 🏛 기반 연구: [[papers/498_LLM_as_a_Mastermind_A_Survey_of_Strategic_Reasoning_with_Lar/review]] — LLM 에이전트 간 협력 메커니즘이 전략적 추론의 기반이 된다

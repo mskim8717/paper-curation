@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "글로벌 제약 산업에서 미국 외 지역(특히 중국)의 신약 자산이 지역 언어, 비영어 채널을 통해 공개됨에 따라, 다국어 멀티에이전트 파이프라인과 완전성(Completeness) 중심의 벤치마크를 구축하고, 이를 기반으로 한 Bioptic Agent를 제안하여 기존 Deep Research AI를 크게 초과하는 성능을 달성했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Biomedical_Research_Agents"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI-Driven_Scientific_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Vinogradova et al._2026_Hunt Globally Wide Search AI Agents for Drug Asset Scouting in Investing, Business Development, and.pdf"
 ---
@@ -129,6 +129,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Vinogradova et al._2026_Hunt Globally Wi
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/177_Can_ai_agents_design_and_implement_drug_discovery_pipelines/review]] — 약물 자산 탐색에서 다국어 멀티에이전트와 AI 에이전트 기반 파이프라인 설계 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/651_RAG-Enhanced_Collaborative_LLM_Agents_for_Drug_Discovery/review]] — RAG 강화 협력 LLM 에이전트가 글로벌 약물 자산 스카우팅의 다국어 처리 능력을 향상시킬 수 있습니다.
-- 🏛 기반 연구: [[papers/291_Drugclip_Contrastive_drug-disease_interaction_for_drug_repur/review]] — 대조 학습 기반 약물-질병 상호작용 모델이 투자 관점에서 약물 자산 평가의 방법론적 기반을 제공합니다.
+- 🏛 기반 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 멀티에이전트 시스템의 일반적 설계 원리와 협력 메커니즘이 다국어 약물 자산 탐색 에이전트 구현의 이론적 기반이 된다.
+- 🧪 응용 사례: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — 자율 에이전트의 일반적 설문 연구에서 제시된 원리들이 제약 산업의 구체적인 투자 의사결정 문제에 적용된다.
+- 🔗 후속 연구: [[papers/616_PharmAgents_Building_a_Virtual_Pharma_with_Large_Language_Mo/review]] — 가상 제약회사 구축과 글로벌 약물 자산 탐색은 모두 제약 산업의 AI 에이전트 활용이라는 공통 목표를 가진다.
+- 🧪 응용 사례: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 멀티에이전트 시스템의 일반적 설계 원리가 약물 자산 탐색이라는 구체적인 도메인 문제에 적용되는 사례를 보여준다.

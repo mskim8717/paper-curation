@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "국제수학올림피아드(IMO) 수준의 149개 형식적 수학 문제와 자연언어 증명을 포함한 FIMO 데이터셋을 제시하며, 대규모언어모델(LLM)의 자동정리증명(Automated Theorem Proving, ATP) 능력이 IMO 수준에서 여전히 부족함을 보여준다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Domain-specific_Scientific_Reasoning"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Automated_Crystal_Structure_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2023_Fimo A challenge formal dataset for automated theorem proving.pdf"
 ---
@@ -116,10 +117,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2023_Fimo A challenge formal 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/200_Chartist_Task-driven_Eye_Movement_Control_for_Chart_Reading/review]] — 수학 올림피아드 형식 문제가 차트 읽기 작업의 고차원 인지 능력 평가 기준
-- 🔗 후속 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — IMO 수준 정리증명을 LLM 기반 증명으로 확장한 자동정리증명 발전
-- 🔄 다른 접근: [[papers/539_Minif2f_a_cross-system_benchmark_for_formal_olympiad-level_m/review]] — IMO vs Olympiad 수준으로 유사하지만 다른 형식의 수학 정리증명 벤치마크
-- 🏛 기반 연구: [[papers/808_Theoremqa_A_theorem-driven_question_answering_dataset/review]] — 정리 기반 질의응답이 형식적 수학 문제 해결의 방법론적 기초
-- 🧪 응용 사례: [[papers/200_Chartist_Task-driven_Eye_Movement_Control_for_Chart_Reading/review]] — 수학 문제 해결에서의 시각적 주의 제어를 차트 읽기 작업으로 확장한 응용
-- 🧪 응용 사례: [[papers/568_Mustard_Mastering_uniform_synthesis_of_theorem_and_proof_dat/review]] — 자동 정리 증명 분야의 실제 도전 과제들에 MUSTARD의 고품질 데이터를 적용할 수 있다
-- 🔄 다른 접근: [[papers/182_Can_language_models_falsify_evaluating_algorithmic_reasoning/review]] — 형식 추론에서 LLM vs 전통적 자동 정리 증명의 다른 접근법을 비교할 수 있다
+- 🔗 후속 연구: [[papers/264_Deepseek-prover_Advancing_theorem_proving_in_llms_through_la/review]] — 대형 언어모델의 정리 증명 능력을 학습을 통해 발전시킨 후속 연구이다.
+- 🔄 다른 접근: [[papers/482_Lean-star_Learning_to_interleave_thinking_and_proving/review]] — 사고와 증명을 교차하는 학습 방식으로 자동 정리 증명의 다른 접근법을 제시한다.
+- 🧪 응용 사례: [[papers/826_Towards_Autonomous_Mathematics_Research/review]] — 자율적 수학 연구로 형식적 정리 증명을 실제 연구에 적용하는 사례이다.

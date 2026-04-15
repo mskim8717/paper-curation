@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 지구 관측(Earth Observation, EO) 작업을 자동화하기 위한 LLM 에이전트의 준비도를 평가하기 위해 **UnivEARTH** 벤치마크를 제시하고, 현재 최첨단 모델들이 코드 실행 실패(58%)로 인해 33% 수준의 낮은 정확도만 달성함을 보여준다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Scientific_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kao et al._2025_Towards llm agents for earth observation.pdf"
 ---
@@ -93,8 +94,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kao et al._2025_Towards llm agents for e
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/298_Earth-Agent_Unlocking_the_Full_Landscape_of_Earth_Observatio/review]] — 지구 관측을 위한 다중 에이전트 시스템의 전체적 관점을 LLM 에이전트 준비도 평가라는 구체적 벤치마킹으로 발전시킨다.
-- 🔄 다른 접근: [[papers/384_GIS_Copilot_towards_an_autonomous_GIS_agent_for_spatial_anal/review]] — 지구 관측 분야의 자동화라는 공통 목표이지만 LLM 에이전트와 GIS 분석 에이전트라는 다른 접근법을 사용한다.
-- 🏛 기반 연구: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 환경과학을 위한 파운데이션 모델 조사가 지구 관측 LLM 에이전트 개발의 이론적 배경을 제공한다.
-- 🔗 후속 연구: [[papers/299_Earthse_A_benchmark_evaluating_earth_scientific_exploration/review]] — 지구 관측용 LLM 에이전트에서 지구과학 탐사 능력 벤치마크로의 확장
-- 🔗 후속 연구: [[papers/437_Interpreting_Multi-band_Galaxy_Observations_with_Large_Langu/review]] — 지구 관측을 위한 LLM 에이전트는 천문학적 관측 데이터 해석 기법을 지구 과학 분야로 확장 적용한다.
+- 🔗 후속 연구: [[papers/298_Earth-Agent_Unlocking_the_Full_Landscape_of_Earth_Observatio/review]] — Earth-Agent의 지구 관측 자동화 기능이 UnivEARTH 벤치마크에서 발견된 한계점들을 해결할 수 있다.
+- 🔄 다른 접근: [[papers/384_GIS_Copilot_towards_an_autonomous_GIS_agent_for_spatial_anal/review]] — GIS Copilot의 지리공간 분석과 지구 관측 LLM 에이전트는 유사한 도메인에서 다른 접근법을 사용한다.
+- 🏛 기반 연구: [[papers/097_An_autonomous_AI_agent_for_universal_behavior_analysis/review]] — 범용 행동 분석을 위한 자율 AI 에이전트가 지구 관측 에이전트 개발의 기반 기술을 제공한다.
+- 🧪 응용 사례: [[papers/562_Multi-agent_risks_from_advanced_ai/review]] — 지구 관측을 위한 LLM 에이전트 연구가 다중 에이전트 시스템의 위험 요소 중 하나인 네트워크 효과와 선택 압력을 실제 사례로 보여준다
+- 🏛 기반 연구: [[papers/299_Earthse_A_benchmark_evaluating_earth_scientific_exploration/review]] — 지구 관측을 위한 LLM 에이전트 연구가 지구과학 분야 AI의 탐색 및 발견 능력 평가의 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/298_Earth-Agent_Unlocking_the_Full_Landscape_of_Earth_Observatio/review]] — 지구 관측 분야에서 LLM 에이전트 활용에 대한 더 광범위한 연구 방향을 제시하며 Earth-Agent의 확장 가능성을 논의
+- 🧪 응용 사례: [[papers/098_An_autonomous_GIS_agent_framework_for_geospatial_data_retrie/review]] — 지리공간 데이터 자동 검색 기술을 지구 관측이라는 더 광범위한 과학 연구 영역에 적용한 사례를 제시한다
+- 🔗 후속 연구: [[papers/437_Interpreting_Multi-band_Galaxy_Observations_with_Large_Langu/review]] — 지구 관측용 LLM 에이전트 연구가 천문학적 관측 데이터 해석을 지구과학 영역으로 확장한 형태
+- 🏛 기반 연구: [[papers/384_GIS_Copilot_towards_an_autonomous_GIS_agent_for_spatial_anal/review]] — 지구관측용 LLM 에이전트 설문이 GIS 자동화 에이전트 개발의 이론적 기반을 제공한다

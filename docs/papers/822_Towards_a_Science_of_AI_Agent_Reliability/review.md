@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.6
 essence: "AI 에이전트(agents)의 실제 배포 환경에서 높은 정확도에도 불구하고 신뢰성 부족이 심각한 문제임을 보여주며, 안전-임계 엔지니어링(safety-critical engineering)의 원칙을 기반으로 일관성, 견고성, 예측가능성, 안전성의 4가지 차원으로 분해한 신뢰성 평가 메트릭 12개를 제시한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/LLM_Trustworthiness_and_Safety_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rabanser et al._2026_Towards a Science of AI Agent Reliability.pdf"
 ---
@@ -117,7 +118,14 @@ AI 에이전트(agents)의 실제 배포 환경에서 높은 정확도에도 불
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/750_SEVerA_Verified_Synthesis_of_Self-Evolving_Agents/review]] — 형식적 안전성 보증은 AI 에이전트 신뢰성의 핵심 요소임
-- 🔗 후속 연구: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — 자기 수정 불가능성 문제가 에이전트 신뢰성 평가의 중요한 차원임
-- 🧪 응용 사례: [[papers/040_AAAI_Presidential_Panel_Report_on_the_Future_of_AI_Research/review]] — AI 에이전트 신뢰성의 과학적 접근을 통해 AI 연구의 미래 방향을 구체화한다.
-- 🏛 기반 연구: [[papers/865_Vending-Bench_A_Benchmark_for_Long-Term_Coherence_of_Autonom/review]] — AI 에이전트 신뢰성 과학에 대한 기초 연구로 장기간 일관성 평가의 이론적 근거를 제공한다.
+- 🔗 후속 연구: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — LLM 신뢰성 평가를 AI 에이전트 신뢰성의 안전-임계 관점으로 확장한다
+- 🧪 응용 사례: [[papers/361_From_LLM_Reasoning_to_Autonomous_AI_Agents_A_Comprehensive_R/review]] — 자율 AI 에이전트의 신뢰성 문제를 체계적으로 정량화하는 메트릭을 제공한다
+- 🏛 기반 연구: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — AI 안전성을 위한 기계론적 해석가능성이 에이전트 신뢰성 평가의 이론적 토대를 마련한다
+- 🏛 기반 연구: [[papers/361_From_LLM_Reasoning_to_Autonomous_AI_Agents_A_Comprehensive_R/review]] — AI 에이전트 신뢰성 연구가 자율 에이전트 개발에서 필수적인 안전성 기반을 제공한다
+- 🏛 기반 연구: [[papers/750_SEVerA_Verified_Synthesis_of_Self-Evolving_Agents/review]] — AI 에이전트 신뢰성에 대한 과학적 접근의 기초를 제공하여, 형식적 안전성 보증 연구의 이론적 배경
+- 🏛 기반 연구: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — AI 에이전트 신뢰성 과학이 LLM 신뢰성을 실제 배포 환경으로 확장한다
+- 🏛 기반 연구: [[papers/562_Multi-agent_risks_from_advanced_ai/review]] — AI 에이전트 신뢰성에 대한 과학 연구가 다중 에이전트 시스템의 위험 분류와 실패 모드 분석의 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — AI 안전성을 위한 해석가능성이 에이전트 신뢰성 과학의 이론적 토대를 마련한다
+- 🔗 후속 연구: [[papers/498_LLM_as_a_Mastermind_A_Survey_of_Strategic_Reasoning_with_Lar/review]] — AI 에이전트 신뢰성 과학을 전략적 추론 분석으로 확장한다
+- 🔗 후속 연구: [[papers/865_Vending-Bench_A_Benchmark_for_Long-Term_Coherence_of_Autonom/review]] — AI 에이전트 신뢰성 과학이 Vending-Bench의 장기 일관성 평가를 더욱 체계화할 수 있다.
+- 🏛 기반 연구: [[papers/692_Safescientist_Toward_risk-aware_scientific_discoveries_by_ll/review]] — AI 에이전트 신뢰성 과학이 안전한 과학 발견 에이전트의 이론적 기반을 제공한다

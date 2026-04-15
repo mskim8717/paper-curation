@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.75
 essence: "본 논문은 LLM(대규모 언어 모델)을 에너지·발전 공학 영역의 실제 문제 해결에 활용하기 위해 ReAct 프롬프팅과 도구 호출 메커니즘을 결합한 도메인 특화 프레임워크를 제시한다. 가스터빈의 가스 경로 분석(gas path analysis)을 사례로 하여 다양한 규모의 LLM들의 능력과 한계를 체계적으로 평가한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Domain-specific_Scientific_Reasoning"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Automated_Crystal_Structure_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Song et al._2024_Domain-specific ReAct for physics-integrated iterative modeling A case study of LLM agents for gas.pdf"
 ---
@@ -117,12 +118,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Song et al._2024_Domain-specific ReAct f
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — 에너지 공학의 도메인 특화 ReAct 프레임워크가 Scientific Agent 서베이에서 제시하는 도메인 전문성 통합 방법론의 실제 구현 사례이다.
-- 🔄 다른 접근: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — 물리학 통합 모델링과 사회적 책임 AI 인과학습이 모두 복잡한 시스템의 인과관계를 다루지만 물리적 vs 사회적 도메인으로 구분된다.
-- 🔄 다른 접근: [[papers/748_Semi-Supervised_2D_Human_Pose_Estimation_Driven_by_Position/review]] — 물리학 통합 모델링과 컴퓨터 비전 포즈 추정이 모두 도메인 특화 과학적 추론이지만 서로 다른 과학 영역에 특화되어 있다.
-- 🏛 기반 연구: [[papers/820_Toward_Reliable_Scientific_Hypothesis_Generation_Evaluating/review]] — 물리학 도메인의 정확한 모델링 요구사항이 과학 가설 생성에서 진실성과 검증 가능성의 중요성을 보여주는 기반 사례이다.
-- 🔗 후속 연구: [[papers/631_Predicting_field_experiments_with_large_language_models/review]] — 경제학에서의 실험 예측 방법론을 물리학 통합 모델링에 적용하여 도메인 간 방법론 전이 가능성을 탐구할 수 있다.
-- 🔄 다른 접근: [[papers/748_Semi-Supervised_2D_Human_Pose_Estimation_Driven_by_Position/review]] — 컴퓨터 비전 영역의 도메인 특화 추론과 물리학 통합 모델링이 모두 특정 과학 도메인에서의 LLM 활용이지만 접근 방식이 다르다.
-- 🧪 응용 사례: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — Scientific Agent의 도메인 특화 지식 통합 방법론이 물리학 통합 모델링의 ReAct 프레임워크에서 실제 적용 사례로 구현된다.
-- 🔄 다른 접근: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — 사회적 책임 AI를 위한 인과학습과 물리학 통합 모델링이 모두 복잡한 인과관계를 다루지만 사회적 vs 물리적 시스템으로 구분된다.
-- 🔗 후속 연구: [[papers/911_Resummation_of_the_C-Parameter_Sudakov_Shoulder_Using_Effect/review]] — 물리학 통합 반복 모델링 접근법을 입자물리학의 복잡한 재합 계산으로 확장하여 더 정밀한 예측을 가능하게 한다.
+- 🔄 다른 접근: [[papers/620_Physics-Informed_Autonomous_LLM_Agents_for_Explainable_Power/review]] — 전력 시스템에 물리학 정보 기반 LLM 에이전트를 적용하는 다른 도메인 사례이다.
+- 🔗 후속 연구: [[papers/456_Lang-PINN_From_Language_to_Physics-Informed_Neural_Networks/review]] — 언어에서 물리학 정보 신경망으로의 전환을 통해 도메인 특화를 확장한다.
+- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리학 정보 신경망이 도메인 특화 AI 적용의 기반을 제공한다.

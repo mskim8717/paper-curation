@@ -7,139 +7,91 @@ authors:
   - "Xiangchao Yan"
   - "Jiakang Yuan"
 date: "2025.05"
-doi: "제공되지"
+doi: ""
 arxiv: ""
-score: 3.0
-essence: "본 논문은 다양한 과학 연구 분야에서 가설 생성부터 검증까지 완전 폐쇄 루프를 구성하는 통합 다중 에이전트 프레임워크 InternAgent를 제시한다. 반응 수율 예측에서 27.6%에서 35.4%로 12시간 내에 성능을 향상시키는 등 인간 연구자 대비 획기적인 효율성을 달성했다."
+score: 4.0
+essence: "InternAgent는 가설 생성부터 검증까지 폐루프 구조를 가진 다중 에이전트 프레임워크로, 12가지 과학 연구 작업에서 자동화된 과학 연구(ASR)를 수행한다. 인간 전문가의 피드백 인터페이스를 통해 상호작용성을 제공하면서 수개월 소요되는 연구를 수십 시간 내에 완료한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Autonomous_Hypothesis_Discovery"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Team et al._2025_InternAgent When Agent Becomes the Scientist -- Building Closed-Loop System from Hypothesis to Veri.pdf"
 ---
 
 # InternAgent: When Agent Becomes the Scientist -- Building Closed-Loop System from Hypothesis to Verification
 
-> **저자**: InternAgent Team, Bo Zhang, Shiyang Feng, Xiangchao Yan, Jiakang Yuan, Runmin Ma, Yusong Hu, Zhiyin Yu, Xiaohan He, Songtao Huang, Shaowei Hou, Zheng Nie, Zhilong Wang, Jinyao Liu, Tianshuo Peng, Peng Ye, Dongzhan Zhou, Shufei Zhang, Xiaosong Wang, Yilan Zhang | **날짜**: 2025-05-22 | **DOI**: [제공되지 않음](https://arxiv.org/abs/2505.16938)
+> **저자**: InternAgent Team, Bo Zhang, Shiyang Feng, Xiangchao Yan, Jiakang Yuan, Runmin Ma, Yusong Hu, Zhiyin Yu, Xiaohan He, Songtao Huang, Shaowei Hou, Zheng Nie, Zhilong Wang, Jinyao Liu, Tianshuo Peng, Peng Ye, Dongzhan Zhou, Shufei Zhang, Xiaosong Wang, Yilan Zhang | **날짜**: 2025-05-22 | **URL**: [https://arxiv.org/abs/2505.16938](https://arxiv.org/abs/2505.16938)
 
 ---
 
 ## Essence
 
-![Figure 1](https://example.com/fig1.png)
-*InternAgent가 지원하는 12개 유형의 과학 연구 과제: 반응 수율 예측부터 자율주행까지 화학, 생물학, CV&NLP 분야 포괄*
+![Figure 2](figures/fig2.webp)
 
-본 논문은 다양한 과학 연구 분야에서 가설 생성부터 검증까지 완전 폐쇄 루프를 구성하는 통합 다중 에이전트 프레임워크 InternAgent를 제시한다. 반응 수율 예측에서 27.6%에서 35.4%로 12시간 내에 성능을 향상시키는 등 인간 연구자 대비 획기적인 효율성을 달성했다.
+*Figure 2: InternAgent covers three main capabilities: 1) Self-evolving Idea Generation with*
+
+InternAgent는 가설 생성부터 검증까지 폐루프 구조를 가진 다중 에이전트 프레임워크로, 12가지 과학 연구 작업에서 자동화된 과학 연구(ASR)를 수행한다. 인간 전문가의 피드백 인터페이스를 통해 상호작용성을 제공하면서 수개월 소요되는 연구를 수십 시간 내에 완료한다.
 
 ## Motivation
 
-- **Known**: 대규모 언어 모델(LLM)과 로봇공학을 이용한 자동 과학 발견(ASD)은 데이터 분석, 가설 생성, 실험 설계 자동화를 통해 과학 연구의 속도를 가속화할 수 있는 잠재력을 보유하고 있다.
-
-- **Gap**: 기존 자동 과학 연구(ASR) 시스템의 두 가지 핵심 문제: (1) 효과적이고 혁신적인 제안 생성의 어려움 - AI 모델은 기존 데이터와 패턴에 의존하면서 과학적 타당성과 창의성의 균형 유지가 곤란, (2) 완전한 폐쇄 루프 피드백 구현의 난제 - 실험 설계, 실행, 분석, 반복 개선의 통합이 필요하며 실험 변수와 노이즈 대응이 어려움.
-
-- **Why**: 현존하는 자동화 시스템은 서로 다른 분야(로봇공학, 분석)의 통합, 불확실성 처리, 적응성 확보에 기술적·개념적 장벽을 가지고 있으며, 이를 해결하는 통합 프레임워크의 필요성이 대두됨.
-
-- **Approach**: 자동 진화하는 아이디어 생성(Self-Evolving Idea Generation), 인간-상호작용 피드백(Human-interactive Feedback), 아이디어-방법론 변환(Idea-to-Methodology Construction), 다중 라운드 실험 계획 및 실행(Multi-round Experiment Planning and Execution)의 4개 핵심 모듈로 구성된 종단간(end-to-end) 자동 연구 파이프라인을 제안.
+- **Known**: LLM과 로봇을 활용한 자동 과학 발견(ASD)이 연구 효율성을 향상시킬 수 있다는 것이 알려져 있다. 기존 접근법들은 데이터 분석, 가설 생성, 실험 설계 등의 작업을 자동화하는 개별 모듈에 초점을 맞추어왔다.
+- **Gap**: 자동 시스템은 효과적이면서도 새로운 제안을 생성하기 어렵고, 실험 검증을 위한 진정한 폐루프 피드백을 구현하는 데 어려움을 겪는다. 또한 다양한 과학 분야에 적용 가능한 통합 프레임워크의 부재가 문제이다.
+- **Why**: 자동화된 과학 연구는 방대한 정보를 효율적으로 처리하고 인간 연구자가 놓치기 쉬운 패턴을 발견할 수 있으며, 다양한 과학 분야에서 발견 속도를 획기적으로 가속화할 수 있다.
+- **Approach**: InternAgent는 자체 진화 아이디어 생성, 인간-상호작용 피드백, 아이디어-방법론 구성, 다중 라운드 실험 계획 및 실행의 4가지 주요 모듈로 구성된 폐루프 프레임워크를 제안한다. 특화된 에이전트들(Survey Agent, Idea Innovation Agent, Method Development Agent, Coding Agent 등)이 협업하여 과학 연구 사이클 전체를 자동화한다.
 
 ## Achievement
 
-![Figure 2](https://example.com/fig2.png)
-*InternAgent의 3대 주요 기능: (1) 인간-상호작용이 포함된 자동 진화 아이디어 생성, (2) 아이디어-방법론 변환, (3) 진화적 실험 계획 및 실행*
+![Figure 1](figures/fig1.webp)
 
-1. **확장성(Scalability)**: 반응 수율 예측, 분자 동역학, 전력 흐름 추정, 시계열 예측, 전사 예측, 인핸서 활성 예측, 감정 분류, 2D/3D 이미지 분류, 의미론적 분할, 자율주행 등 12개 과학 연구 과제에 검증됨. 기본 코드의 성능을 향상시키는 혁신적 아이디어 자동 생성 가능.
+*Figure 1: InternAgent can support 12 types of scientific research tasks ranging from the AI*
 
-2. **효율성(Efficiency)**: 인간 연구자 대비 현저히 단축된 시간으로 우수한 성능 달성:
-   - 반응 수율 예측: 24.2% ± 4.2 → 34.8% ± 1.1 (12시간)
-   - 인핸서 활성 예측: 0.65 → 0.79 (4시간, Pearson 상관계수)
-   - 2D 의미론적 분할: 78.8% → 81.0% (30시간)
-   - 대조: 인간 연구자는 유사한 성능 향상에 수 개월 소요
-
-3. **상호작용성(Interactivity)**: 자동화 종단간 프로세스 내에서 인간 전문가 피드백과 다중 에이전트 상호작용 인터페이스 제공. 도메인 전문가 지식의 원활한 통합 가능. 복수 코드 파일로 구성된 프로젝트 수준 수정 및 디버깅 지원.
+- **12개 과학 연구 작업에 대한 확장성**: Reaction Yield Prediction, Molecular Dynamics, Power Flow Estimation, Time Series Forecasting, Transcription Prediction, Enhancer Activity Prediction, Sentiment Classification, 2D/3D Image Classification, 2D/3D Semantic Segmentation, Autonomous Driving, MLLM Finetuning 등 다양한 분야에 적용 가능
+- **성능 향상 달성**: Reaction Yield Prediction에서 27.6%에서 35.4%로 증가(12시간), Enhancer Activity Prediction에서 Pearson correlation coefficient 0.65에서 0.79로 증가(4시간), 2D Semantic Segmentation에서 78.8%에서 81.0%로 증가(30시간)
+- **인간-기계 협업 인터페이스**: 도메인 전문가 피드백을 위한 상호작용 인터페이스 제공으로 전문 지식의 seamless 통합 가능
+- **효율성**: 인간 연구자가 수개월 소요되는 작업을 수십 시간 내에 완료하여 연구 효율성 극적 개선
 
 ## How
 
-![Figure 2](https://example.com/fig2.png)
-*InternAgent 시스템 아키텍처 및 워크플로우*
+![Figure 2](figures/fig2.webp)
 
-### 자동 진화하는 아이디어 생성 (Self-Evolving Idea Generation)
+*Figure 2: InternAgent covers three main capabilities: 1) Self-evolving Idea Generation with*
 
-- **Survey Agent (조사 에이전트)**: 
-  - 문헌 검토 모드(Literature Review Mode): 연구 과제를 다중 키워드 조합으로 분해 → 광범위한 학술 데이터베이스 검색 → 초록 분석을 통한 관련성 평가 (함수: R : L_abs × T → [0,1])
-  - 깊은 연구 모드(Deep Research Mode): 관련 논문의 전문 다운로드 및 정밀 분석 → 신규 키워드 조합 생성 (함수: P : L → K')
-  - 연구 단계별 맥락에 따른 동적 검색 전략 조정
-
-- **Idea Innovation Agent (아이디어 혁신 에이전트)**: 생성된 문헌과 도메인 지식을 기반으로 혁신적 연구 아이디어 자동 제안
-
-- **Assessment Agent (평가 에이전트)**: 생성된 아이디어의 참신성, 과학적 타당성, 실행 가능성을 평가 및 점수화
-
-- **자동 진화 메커니즘**: 에이전트들의 반복적 상호작용을 통해 초기 아이디어를 점진적으로 정제 및 개선
-
-### 아이디어-방법론 변환 (Idea-to-Methodology Construction)
-
-- **Method Development Agent (방법론 개발 에이전트)**: 추상적 아이디어를 구체적이고 구현 가능한 방법론으로 변환
-  - 알고리즘 명세 생성 (수식 및 의사코드)
-  - 구현 요구사항 명시
-  - 코드 구조 설계
-  
-- **문맥-인지 정제(Context-aware Refinement)**: 기존 코드베이스의 파일 구조, 함수, 설정을 분석하여 일관된 방법론 생성
-
-### 진화적 실험 계획 및 실행 (Evolutionary Experimental Planning and Execution)
-
-- **Orchestration Agent (조율 에이전트)**: 전체 워크플로우 관리 및 메모리 관리
-  - 실험 계획 분해: 대규모 실험을 실행 가능한 단계로 분해
-  - 메모리 관리: 이전 실험 결과, 생성된 아이디어, 피드백 기록 관리
-
-- **Coding Agent (코딩 에이전트)**: OpenHands, Aider 등의 도구 활용하여 자동 코드 생성 및 구현
-  - 파일 수준(File-Level), 저장소 수준(Repo-Level) 코드 수정 가능
-
-- **AutoDebug 서버**: 실행 오류 추적(Error Traceback) 수집 및 자동 디버깅
-  - 런타임 오류 자동 분석
-  - 반복적 디버깅을 통한 코드 수렴
-
-- **Code Review Agent (코드 검토 에이전트)**: 생성된 코드의 품질, 효율성, 과학적 타당성 검증
-
-- **다중 라운드 검증**: 각 생성 모듈의 효과성을 실험을 통해 개별 검증
+- **Self-Evolving Idea Generation**: Survey Agent가 문헌 검색으로 도메인 지식 수집, Idea Innovation Agent가 창의적 아이디어 생성, Assessment Agent가 아이디어 평가 및 개선
+- **Human-Interactive Feedback**: 전문가 평가 모드와 AI 평가 모드 선택 가능하며, 아이디어의 신성도(novelty) 점수 부여 및 반영
+- **Idea-to-Methodology Construction**: Method Development Agent가 아이디어를 상세한 구현 가능한 방법론으로 변환하여 코드 구현 성공률 증대
+- **Multi-Round Experimental Planning and Execution**: Coding Agent가 코드 자동 생성, AutoDebug Server(Openhands, Aider 등)가 에러 추적 및 디버깅, 실험 결과 분석을 통해 다중 라운드 반복
+- **Orchestration Agent와 Memory Management**: 전체 워크플로우 계획 및 조정, 콘텍스트와 도메인 지식의 메모리 관리로 일관성 유지
 
 ## Originality
 
-- **통합 폐쇄 루프 프레임워크**: 가설 생성부터 검증까지 완전하게 통합된 자동 과학 연구 파이프라인은 기존 연구에서 부분적으로만 다루어진 과제임. 특히 여러 에이전트 간 협업 메커니즘과 인간-기계 상호작용을 정교하게 설계함.
-
-- **횡단 분야 적용성**: 화학, 생물학, 컴퓨터 비전, 자연어처리 등 12개 이질적 과학 연구 분야에 동일한 프레임워크를 적용 가능하도록 설계한 점은 주목할 만함. 단순한 도메인 적응이 아닌 근본적 범용성 추구.
-
-- **자동 진화 메커니즘**: Survey Agent의 문헌 검토 모드와 깊은 연구 모드의 이원화, 아이디어 생성 후 다중 라운드 평가 및 정제를 통한 자동 진화는 창의성과 과학적 엄밀성의 균형을 추구한 독창적 접근.
-
-- **인간-기계 협업 인터페이스**: 완전 자동화 대신 인간 전문가의 피드백을 수용하는 상호작용 인터페이스는 현실적 과학 연구 환경을 반영한 설계.
-
-- **광범위한 인간 평가**: 도메인 전문가를 초대하여 생성 아이디어의 참신성을 평가하고, 인간 연구자와의 효율성 비교 연구를 수행한 점은 정량적 및 정성적 검증의 균형을 맞춤.
+- **진정한 폐루프 구조의 실현**: 가설 생성에서 검증까지 완전한 자동화된 사이클을 구현하고, 실험 결과를 피드백으로 아이디어 진화에 반영하는 자체 진화 메커니즘
+- **다중 전문 에이전트 협업**: Survey, Innovation, Development, Coding, Assessment, Debugging 등 각 단계별 특화된 에이전트를 조합하여 각 과정의 품질 향상
+- **인간-기계 협업의 유연한 설계**: 완전 자동화와 전문가 피드백을 선택적으로 적용할 수 있는 상호작용 인터페이스 제공
+- **광범위한 학제 간 적용성**: 화학, 생물학, CV&NLP, AI 등 다양한 분야의 12개 작업에서 통일된 프레임워크로 성과를 입증한 점
+- **사람-AI 효율성 비교**: 도메인 전문가들을 통한 정성적 평가와 정량적 성능 비교로 신뢰성 확보
 
 ## Limitation & Further Study
 
-- **제한사항**:
-  1. 12개 과제 중 일부는 완전 자동화보다는 특정 도메인 최적화된 설정이 필요할 수 있으며, 극도로 새로운 연구 영역에 대한 적용 가능성은 미지수.
-  2. 자동 생성 아이디어의 '혁신성' 정의와 측정이 주관적일 수 있음. 논문에서는 도메인 전문가 평가에 의존하는데, 평가자 간 합의도(inter-rater agreement) 등의 정량적 메트릭 부재.
-  3. 실험 시간 단축의 대부분이 컴퓨팅 리소스(병렬 처리, GPU 활용)에 의존할 가능성 있음. 인간과의 순수 알고리즘 효율성 비교가 명확하지 않을 수 있음.
-  4. 폐쇄 루프 피드백에서 실패 사례(negative results) 처리 및 학습 메커니즘에 대한 상세 분석 부족.
-  5. 생성된 아이디어의 재현성(reproducibility) 및 장기적 과학적 영향에 대한 후속 추적 연구 필요.
-
-- **후속 연구 방향**:
-  1. 더 극단적인 새로운 연구 분야(예: 이론 물리학, 수학적 정리 증명)에 InternAgent 적용 및 성능 평가.
-  2. 실패 데이터와 부정적 결과(negative results)의 체계적 학습 및 적응 메커니즘 강화.
-  3. 다중 모달 입력(이미지, 동영상, 실험 센서 데이터)을 수용하는 확장.
-  4. 인간 전문가와의 협업에서 최적의 개입 시점(intervention points) 도출을 위한 의사결정 이론 연구.
-  5. 생성 아이디어의 참신성을 정량적으로 측정하는 메트릭 개발 및 표준화.
-  6. 장기적 과학 영향: 1년 이상 추적 연구를 통해 생성된 아이디어가 실제 후속 출판, 인용, 실제 적용으로 이어지는지 검증.
-
+- **제한된 도메인 깊이**: 12개 작업에서 성과를 보였으나, 각 과학 분야의 고도의 복잡성과 특수성을 완전히 다루는지 명확하지 않음
+- **인간 피드백의 필요성**: 완전 자동화가 아니며, 성능 최적화를 위해서는 도메인 전문가의 개입이 필요한 경우가 있을 수 있음
+- **생성 아이디어의 과학적 타당성**: LLM 기반 아이디어 생성이 기존 데이터 패턴에 의존하므로, 근본적으로 새로운 패러다임의 발견 가능성에 대한 검증 부족
+- **실험 환경의 제약**: 코드 기반 실험 자동화에 초점을 맞추어, 물리적 실험실 환경의 복잡한 변수와 노이즈 처리에 대한 평가 부재
+- **후속 연구 방향**: 더 복잡한 프로젝트 규모의 검증, 로봇 기반 물리적 실험과의 통합, 신성도 평가의 정량화 개선, 다양한 LLM 백엔드에 대한 성능 비교 필요
 
 ## Evaluation
 
-- Novelty: 4.2/5
-- Technical Soundness: 4/5
-- Significance: 4.5/5
-- Clarity: 3/5
-- Overall: 3/5
+- Novelty: 4/5
+- Technical Soundness: 3/5
+- Significance: 4/5
+- Clarity: 4/5
+- Overall: 4/5
+
+**총평**: InternAgent는 자동 과학 연구의 폐루프 구현과 다중 도메인 적용성을 입증한 의미 있는 시스템으로, 인간-AI 협업 인터페이스와 광범위한 실험 검증을 통해 설득력 있는 성과를 보여준다. 다만 생성 아이디어의 과학적 근본성과 물리적 실험 환경으로의 확장 가능성에 대한 추가 검증이 필요하다.
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 과학 발견에서 폐쇄 루프 시스템과 오픈엔드 시스템이라는 다른 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — AI 연구의 종단간 자동화로 과학 연구 자동화의 범위를 확장한다.
-- 🏛 기반 연구: [[papers/825_Towards_an_AI_co-scientist/review]] — AI 공동 과학자의 개념적 기반과 비전을 제공한다.
+- 🔄 다른 접근: [[papers/578_Novelseek_When_agent_becomes_the_scientistbuilding_closed-lo/review]] — InternAgent와 NovelSeek은 동일한 폐루프 과학 연구 자동화를 목표로 하지만 서로 다른 구현 세부사항과 평가 방식 사용
+- 🧪 응용 사례: [[papers/310_Embodied_Science_Closing_the_Discovery_Loop_with_Agentic_Emb/review]] — InternAgent는 Embodied Science의 이론적 폐루프 발견 패러다임을 실제 다중 에이전트 시스템으로 구현한 적용 사례
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI Scientist의 완전 자동화 과학 발견 비전을 InternAgent가 다중 에이전트와 인간 피드백을 통해 실용적으로 구현함
+- 🔗 후속 연구: [[papers/310_Embodied_Science_Closing_the_Discovery_Loop_with_Agentic_Emb/review]] — InternAgent의 폐루프 과학 연구 자동화는 Embodied Science의 물리적 상호작용 패러다임을 실제 구현한 확장형
+- 🔄 다른 접근: [[papers/578_Novelseek_When_agent_becomes_the_scientistbuilding_closed-lo/review]] — NovelSeek과 InternAgent는 동일한 폐루프 과학 연구 자동화를 구현하지만 서로 다른 세부 아키텍처와 평가 방식을 채택함

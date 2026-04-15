@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "본 보고서는 2025년 AAAI 회장 패널이 AI 연구의 현재 상황과 미래 방향을 17개 주제에 걸쳐 종합적으로 분석한 결과물이다. 급속히 진화하는 AI 역량에 따른 연구 주제, 방법론, 연구 커뮤니티, 작업 환경의 다각적 변화를 체계적으로 정리하고, 475명의 AAAI 커뮤니티 응답자 의견을 수렴한 현실적 평가 보고서이다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/AI_for_Science_Taxonomy"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Research_Taxonomy_Surveys"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Russell et al._2025_AAAI Presidential Panel Report on the Future of AI Research.pdf"
 ---
@@ -97,4 +97,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Russell et al._2025_AAAI Presidential Pa
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/822_Towards_a_Science_of_AI_Agent_Reliability/review]] — AI 에이전트 신뢰성의 과학적 접근을 통해 AI 연구의 미래 방향을 구체화한다.
+- 🔄 다른 접근: [[papers/075_AI_for_Science_2025/review]] — AI 연구의 미래를 각각 연구 커뮤니티와 과학 발견 관점에서 다르게 조망한 보완적 분석이다
+- 🔗 후속 연구: [[papers/1093_The_fifth_era_of_science_Artificial_scientific_intelligence/review]] — AI 연구의 미래 전망을 과학의 새로운 패러다임 변화라는 더 근본적 관점에서 확장한다
+- 🧪 응용 사례: [[papers/322_Evaluation_of_openai_o1_Opportunities_and_challenges_of_agi/review]] — AI 연구의 미래 방향성을 구체적인 AGI 평가와 기회 분석을 통해 실증적으로 검토한다
+- 🔄 다른 접근: [[papers/075_AI_for_Science_2025/review]] — 과학에서 AI의 역할을 각각 과학 발견과 연구 커뮤니티 관점에서 다르게 접근한 보완적 분석이다
+- 🏛 기반 연구: [[papers/1093_The_fifth_era_of_science_Artificial_scientific_intelligence/review]] — 제5의 과학 시대를 뒷받침하는 AI 연구 커뮤니티의 현재 상황과 미래 방향에 대한 실증적 분석을 제공한다

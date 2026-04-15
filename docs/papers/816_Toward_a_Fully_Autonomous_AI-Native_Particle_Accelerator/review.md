@@ -8,8 +8,9 @@ arxiv: ""
 score: 4.0
 essence: "입자 가속기의 자동화를 넘어 AI 기반으로 처음부터 설계된 완전 자율 가속기(AI-native particle accelerator) 구현을 제시하는 비전 논문이다. 초기 단계의 AI 보조(AI-assisted)에서 최종적으로 AI 자율 운영 단계로 진행되는 3단계 통합 로드맵을 제안한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tennant_2026_Toward a Fully Autonomous, AI-Native Particle Accelerator.pdf"
 ---
@@ -102,7 +103,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tennant_2026_Toward a Fully Autonomous, 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/072_Agents_for_self-driving_laboratories_applied_to_quantum_comp/review]] — 양자 컴퓨팅에 적용된 자율 실험실용 에이전트 연구는 AI 기반 입자 가속기 자율 운영의 기술적 선례를 제공한다.
-- 🔄 다른 접근: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — 양자 컴퓨팅 실험실 자동화와 입자 가속기 AI 통합은 모두 복잡한 물리학 실험 장비의 자동화를 추구하지만 서로 다른 물리학 영역에 적용된다.
-- 🔗 후속 연구: [[papers/105_Artificial_Intelligence_for_Direct_Prediction_of_Molecular_D/review]] — 양자, 원자, 연속체 규모의 과학을 위한 AI는 입자 가속기의 AI 기반 설계를 더 광범위한 물리학 분야로 확장한다.
-- 🔗 후속 연구: [[papers/082_Ai-assisted_design_of_experiments_at_the_frontiers_of_comput/review]] — 입자 가속기에서 AI 네이티브 자동화 시스템으로 확장된 개념
+- 🔄 다른 접근: [[papers/864_VASPilot_MCP-Facilitated_Multi-Agent_Intelligence_for_Autono/review]] — 입자 가속기와 VASP 계산 자동화는 서로 다른 물리학 도메인이지만 유사한 AI 기반 자동화 접근법을 사용한다.
+- 🏛 기반 연구: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — 양자컴퓨팅 실험 자동화 경험이 입자 가속기 AI 시스템 구축의 기반 지식을 제공한다.
+- 🔗 후속 연구: [[papers/380_Generative_machine_learning_in_adaptive_control_of_dynamic_m/review]] — 동적 시스템의 생성형 머신러닝 제어 기법이 AI 기반 입자 가속기 운영에 적용될 수 있다.
+- 🔗 후속 연구: [[papers/432_Intelligent_experiments_through_real-time_ai_Fast_data_proce/review]] — 완전 자율적이고 AI 네이티브한 입자 가속기 연구가 sPHENIX/EIC 실험의 실시간 AI를 통한 지능형 실험으로 구체화되었다
+- 🧪 응용 사례: [[papers/133_Automating_quantum_computing_laboratory_experiments_with_an/review]] — 실험실 자동화를 입자가속기라는 대규모 물리 시설의 완전 자율 운영으로 확장한 응용 사례이다
+- 🔗 후속 연구: [[papers/082_Ai-assisted_design_of_experiments_at_the_frontiers_of_comput/review]] — 완전 자율적 AI 네이티브 입자 가속기가 입자 물리 실험 설계의 AI 보조를 더욱 발전시킨 미래형 응용 사례를 보여준다
+- 🔗 후속 연구: [[papers/501_LLM-based_Multi-Agent_Copilot_for_Quantum_Sensor/review]] — 입자 가속기 자동화가 양자 센서를 넘어 더 복잡한 물리학 실험 장비의 자율 운영으로 확장한다

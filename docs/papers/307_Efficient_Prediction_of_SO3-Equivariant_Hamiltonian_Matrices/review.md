@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 전자 구조 계산 가속화를 위해 해밀턴 행렬(Hamiltonian matrix)을 효율적으로 예측하는 QHNetV2 모델을 제안한다. SO(2) 국소 좌표계(local frames) 내에서 SO(2)-등변(equivariant) 연산을 수행함으로써, 계산량이 많은 SO(3) Clebsch-Gordan 텐서 곱(tensor product) 없이도 전역 SO(3) 등변성을 달성한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Protein-Drug_Design_Models"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2025_Efficient Prediction of SO(3)-Equivariant Hamiltonian Matrices via SO(2) Local Frames.pdf"
 ---
@@ -111,7 +113,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2025_Efficient Prediction of S
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/304_Efficient_and_Equivariant_Graph_Networks_for_Predicting_Quan/review]] — 양자 특성 예측을 위한 효율적 등변 그래프 네트워크가 해밀턴 예측의 기반
-- 🧪 응용 사례: [[papers/646_QH9_A_Quantum_Hamiltonian_Prediction_Benchmark_for_QM9_Molec/review]] — QM9 분자용 양자 해밀턴 예측 벤치마크에 SO(3) 등변 예측 적용
-- 🔗 후속 연구: [[papers/619_Physics_Informed_Deep_Learning_Part_I_Data-driven_Solutions/review]] — 물리 정보 딥러닝 PDE 해법에서 해밀턴 행렬 예측으로의 확장
-- 🔄 다른 접근: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 정보 신경망을 통한 과학 기계학습과 해밀턴 예측의 다른 접근법
+- 🧪 응용 사례: [[papers/646_QH9_A_Quantum_Hamiltonian_Prediction_Benchmark_for_QM9_Molec/review]] — SO(3) 등변 해밀톤 예측이 양자 분자 해밀톤 벤치마크에서 전자구조 계산 가속화에 직접 적용됨
+- 🏛 기반 연구: [[papers/364_From_Theory_to_Application_A_Practical_Introduction_to_Neura/review]] — 신경 연산자 이론과 응용이 해밀톤 행렬 예측에서 물리 정보 통합의 기본 개념을 제공함
+- 🔗 후속 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 정보 신경망과 SO(3) 등변성을 결합하여 더 정확한 전자구조 예측 프레임워크 구축
+- 🔗 후속 연구: [[papers/646_QH9_A_Quantum_Hamiltonian_Prediction_Benchmark_for_QM9_Molec/review]] — SO(3) 등변 해밀턴 행렬의 효율적 예측 연구가 QH9의 정밀한 해밀턴 행렬 제공 데이터셋으로 구체화되었다
+- 🔄 다른 접근: [[papers/304_Efficient_and_Equivariant_Graph_Networks_for_Predicting_Quan/review]] — QHNet의 텐서곱 최적화와 SO(3)-등변 해밀토니안 예측은 서로 다른 효율성 관점의 양자 예측 방법이다.
+- 🧪 응용 사례: [[papers/364_From_Theory_to_Application_A_Practical_Introduction_to_Neura/review]] — 신경 연산자 이론이 SO(3) 등변 해밀톤 예측에서 효율적인 매개변수 PDE 해결에 활용됨

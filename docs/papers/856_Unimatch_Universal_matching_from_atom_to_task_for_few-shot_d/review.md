@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 원자(atom)에서 과제(task) 수준까지 계층적 매칭을 수행하는 UniMatch 모델을 제안하여, 분자의 다층적 구조 정보를 명시적으로 포착하고 메타러닝을 통해 과제 간 일반화를 달성함으로써 few-shot 약물 발견 문제를 해결한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Retrosynthesis_Strategy_Planning"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2025_Unimatch Universal matching from atom to task for few-shot drug discovery.pdf"
 ---
@@ -106,7 +107,6 @@ $$\hat{y}_{\tau,q} = \text{Linear}_{W_o}(\text{Concat}(\hat{y}^{(1)}_{\tau,q}, \
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/316_Enhancing_chemical_reaction_and_retrosynthesis_prediction_wi/review]] — few-shot 약물 발견에서 계층적 매칭과 메타러닝을 사용하는 반면 ChemDual은 듀얼 태스크 학습을 채택하는 다른 접근법이다.
-- 🏛 기반 연구: [[papers/006_A_deep_subgrouping_framework_for_precision_drug_repurposing/review]] — 정밀 약물 재활용을 위한 깊은 서브그룹핑 프레임워크가 원자에서 과제까지의 계층적 매칭의 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/490_LIDDIA_Language-based_Intelligent_Drug_Discovery_Agent/review]] — 언어 기반 지능형 약물 발견 에이전트가 계층적 매칭을 실제 약물 발견 워크플로우로 확장한다.
-- 🔄 다른 접근: [[papers/316_Enhancing_chemical_reaction_and_retrosynthesis_prediction_wi/review]] — 화학 반응 예측에서 원자 수준부터 과제 수준까지의 계층적 접근법을 사용하지만 메타러닝과 듀얼 태스크 학습이라는 다른 전략을 채택한다.
+- 🔗 후속 연구: [[papers/316_Enhancing_chemical_reaction_and_retrosynthesis_prediction_wi/review]] — 화학 반응 예측을 원자-과제 매칭의 계층적 구조로 확장하여 few-shot 약물 발견을 가능하게 한다
+- 🧪 응용 사례: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료과학 AI 기초 모델의 원리를 few-shot 약물 발견의 구체적 문제에 적용한다
+- 🔄 다른 접근: [[papers/316_Enhancing_chemical_reaction_and_retrosynthesis_prediction_wi/review]] — 분자 수준 매칭과 화학 반응 예측이 서로 다른 접근법으로 약물 발견 문제를 해결한다

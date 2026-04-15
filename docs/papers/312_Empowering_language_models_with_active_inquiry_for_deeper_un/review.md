@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 대형 언어모델(LLM)이 사용자의 모호한 질의를 명확히 하기 위해 능동적으로 질문을 제기하는 LaMAI(Language Model with Active Inquiry) 방법을 제안한다. 능동학습(active learning) 기법을 활용하여 가장 정보량이 많은 질문을 선택함으로써 LLM의 응답 정확도를 크게 향상시킨다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "sub/Scientific_Knowledge_Evaluation_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pang et al._2024_Empowering language models with active inquiry for deeper understanding.pdf"
 ---
@@ -105,6 +106,7 @@ LaMAI는 다음 세 가지 핵심 구성요소로 구성된다:
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/184_Can_large_language_models_provide_useful_feedback_on_researc/review]] — 능동적 질의 방법이 논문 피드백의 명확화에 활용됩니다.
-- 🏛 기반 연구: [[papers/222_Clam_Selective_clarification_for_ambiguous_questions_with_ge/review]] — 모호성 해결을 위한 상호작용이 능동적 질의의 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/450_Knowledge_navigator_Llm-guided_browsing_framework_for_explor/review]] — 능동적 질의가 LLM 기반 탐색적 브라우징으로 확장됩니다.
+- 🔄 다른 접근: [[papers/222_Clam_Selective_clarification_for_ambiguous_questions_with_ge/review]] — 모호한 질의 해결을 위한 다른 접근법으로 대화형 명확화 기법을 제시한다.
+- 🔗 후속 연구: [[papers/223_Clarify_when_necessary_Resolving_ambiguity_through_interacti/review]] — 모호성 해결을 위한 상호작용 기반 접근법을 더욱 발전시킨 연구이다.
+- 🧪 응용 사례: [[papers/435_Interfeedback_Unveiling_interactive_intelligence_of_large_mu/review]] — 대형 언어모델의 상호작용 지능을 평가하는 구체적인 프레임워크를 제공한다.
+- 🔗 후속 연구: [[papers/223_Clarify_when_necessary_Resolving_ambiguity_through_interacti/review]] — 능동적 질의를 통한 언어모델의 깊은 이해 연구를 모호성 해결을 위한 상호작용 프레임워크로 구체화한다.

@@ -10,8 +10,10 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 복잡한 시뮬레이션으로부터 직접 추론(inference)을 수행하는 **시뮬레이션 기반 추론(simulation-based inference, SBI)**의 급속한 발전을 종합적으로 검토한다. 기계학습, 능동학습, 시뮬레이터 내부 구조 활용이라는 세 가지 주요 동력이 이 분야에 새로운 모멘텀을 부여하고 있다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Bayesian_Materials_Inference"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/AI-Human_Hypothesis_Generation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cranmer et al._2020_The frontier of simulation-based inference.pdf"
 ---
@@ -108,8 +110,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Cranmer et al._2020_The frontier of simu
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — 시뮬레이션 기반 추론을 실시간 실험-이론 폐루프 시스템에 적용한다.
-- 🔗 후속 연구: [[papers/503_LLM-ODE_Data-driven_Discovery_of_Dynamical_Systems_with_Larg/review]] — 동역학 시스템 발견을 위한 LLM 기반 ODE 접근법으로 확장한다.
-- 🧪 응용 사례: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 베이지안 추론을 재료 발견의 타겟 최적화에 적용한다.
-- 🏛 기반 연구: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — 시뮬레이션 기반 추론이 실시간 실험-이론 폐루프의 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/1099_Generative_Inversion_of_Spectroscopic_Data_for_Amorphous_Str/review]] — 시뮬레이션 기반 추론의 최전선 기술을 분광 구조 복원에 적용
+- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 정보 신경망을 통한 과학적 기계학습이 시뮬레이션 기반 추론의 물리학적 제약 조건 통합 방법론을 제공한다
+- 🔗 후속 연구: [[papers/035_A_survey_on_table-and-text_hybridqa_Concepts_methods_challen/review]] — 딥러닝을 위한 불확실성 정량화 서베이가 시뮬레이션 기반 추론의 불확실성 처리 방법론을 확장한다
+- 🔄 다른 접근: [[papers/850_Uncertainty_quantification_in_scientific_machine_learning_Me/review]] — 과학적 기계학습에서의 불확실성 정량화 방법론이 시뮬레이션 기반 추론과는 다른 관점에서 과학 계산의 신뢰성을 다룬다

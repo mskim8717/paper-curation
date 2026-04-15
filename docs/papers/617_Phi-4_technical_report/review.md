@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "Phi-4는 140억 개 파라미터의 언어 모델로, 고품질 합성 데이터 중심의 학습 레시피를 통해 개발되었으며, 교사 모델인 GPT-4o를 STEM 기반 질의응답 벤치마크에서 능가하는 성능을 달성했다. 특히 추론 관련 작업에서 훨씬 큰 모델들과 비슷하거나 우수한 성능을 보인다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Language_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Abdin et al._2024_Phi-4 technical report.pdf"
 ---
@@ -112,14 +113,12 @@ Phi-4는 140억 개 파라미터의 언어 모델로, 고품질 합성 데이터
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — 과학 문헌 기반 Galactica와 달리 합성 데이터 중심 학습으로 STEM 성능을 달성한 접근
-- ⚖️ 반론/비판: [[papers/245_Crosslingual_capabilities_and_knowledge_barriers_in_multilin/review]] — STEM 성능에 최적화되었지만 다국어 환경에서 교차언어 지식 장벽 문제 발생 가능성
-- 🧪 응용 사례: [[papers/642_Proving_theorems_recursively/review]] — 수학적 추론에 특화된 Phi-4의 능력을 정리 증명 작업에 활용하는 응용
-- 🏛 기반 연구: [[papers/801_The_llama_3_herd_of_models/review]] — Llama 3 모델군의 개선된 추론 능력을 더욱 특화시켜 STEM 성능을 향상시킨 발전
-- 🔗 후속 연구: [[papers/266_Deepseek-v3_technical_report/review]] — Phi-4의 효율적 소형 모델 철학을 대규모 MoE로 확장한 접근법
-- 🔄 다른 접근: [[papers/370_Gemma_2_Improving_open_language_models_at_a_practical_size/review]] — Phi-4와 함께 경량 고성능 모델의 대표적 사례로 서로 다른 최적화 전략 제시
-- ⚖️ 반론/비판: [[papers/245_Crosslingual_capabilities_and_knowledge_barriers_in_multilin/review]] — STEM 성능에 최적화된 Phi-4가 다국어 환경에서는 교차언어 지식 장벽으로 성능 저하 가능성
-- 🔄 다른 접근: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — 과학 전문 대규모 모델 Galactica와 달리 Phi-4는 합성 데이터 중심으로 STEM 성능을 달성한 접근
-- 🏛 기반 연구: [[papers/642_Proving_theorems_recursively/review]] — 수학적 추론에 강한 Phi-4의 능력을 정리 증명 자동화에 활용할 수 있는 기반
-- 🏛 기반 연구: [[papers/1095_Towards_large_language_models_as_copilots_for_theorem_provin/review]] — 수학적 추론에 강한 Phi-4와 같은 모델을 정리 증명 보조 도구로 활용할 기반
-- 🔗 후속 연구: [[papers/801_The_llama_3_herd_of_models/review]] — Microsoft의 Phi-4가 Llama 3보다 작은 규모에서 효율적인 성능을 달성하는 방법을 보여주어 모델 크기 최적화 관점을 제공한다.
+- 🔄 다른 접근: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — STEM 분야 특화 언어모델로서 과학 지식 처리에 특화된 Galactica와 추론 능력에 특화된 Phi-4의 접근법을 비교할 수 있다.
+- 🧪 응용 사례: [[papers/697_Scaling_physical_reasoning_with_the_physics_dataset/review]] — 물리학 추론 데이터셋을 통해 Phi-4의 STEM 추론 능력을 구체적으로 평가하고 개선할 수 있는 방법을 제시한다.
+- 🔗 후속 연구: [[papers/808_Theoremqa_A_theorem-driven_question_answering_dataset/review]] — 정리 중심 질문답변을 통해 Phi-4의 수학적 추론 능력을 더욱 체계적으로 평가하고 확장할 수 있다.
+- 🧪 응용 사례: [[papers/697_Scaling_physical_reasoning_with_the_physics_dataset/review]] — STEM 추론에 특화된 Phi-4 모델의 물리학 문제 해결 능력을 구체적으로 평가할 수 있는 벤치마크를 제공한다.
+- 🧪 응용 사례: [[papers/808_Theoremqa_A_theorem-driven_question_answering_dataset/review]] — 정리 중심 질문답변 벤치마크를 통해 Phi-4의 수학적 추론 능력을 구체적으로 평가하고 검증할 수 있다.
+- ⚖️ 반론/비판: [[papers/760_Small_Language_Models_are_the_Future_of_Agentic_AI/review]] — Phi-4 기술 보고서가 소규모 모델의 성능 한계를 보여주어 SLM 에이전트 주장과 대조적 관점을 제공한다.
+- 🔄 다른 접근: [[papers/266_Deepseek-v3_technical_report/review]] — 마이크로소프트의 소형 고성능 모델로, 대규모 MoE 모델과 효율적 소형 모델의 서로 다른 접근법을 보여줍니다.
+- 🔄 다른 접근: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — 과학 분야에 특화된 대규모 언어모델로서 Phi-4의 STEM 성능과 비교하여 과학 지식 처리 방식의 차이를 분석할 수 있다.
+- 🔄 다른 접근: [[papers/801_The_llama_3_herd_of_models/review]] — 대규모 언어모델 개발에서 Meta와 Microsoft의 서로 다른 기술적 접근법을 보여준다

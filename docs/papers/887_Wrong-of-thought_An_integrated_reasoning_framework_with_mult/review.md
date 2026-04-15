@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어 모델(LLM)의 추론 성능을 향상시키기 위해 다중 관점에서 검증하고 이전 오류 정보를 활용하는 WoT(Wrong-of-Thought) 프레임워크를 제안한다. 기존 XoT의 단일 검증 방식과 오류 정보 무시 문제를 해결하여 8개 데이터셋과 5개 LLM에서 우수한 성능을 달성했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Human_Experience_Studies"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Holmstrm and Tirole_2024_Wrong-of-thought An integrated reasoning framework with multi-perspective verification and wrong in.pdf"
 ---
@@ -114,6 +114,6 @@ $$\hat{R} = \arg\max_{R \in M_i} P(R|Q, I, WI)$$
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/243_Critique-GRPO_Advancing_LLM_Reasoning_with_Natural_Language/review]] — 자연어 비판을 통한 LLM 추론 개선 방법이 오류 정보 활용 접근법과 상호 보완적이다.
-- 🏛 기반 연구: [[papers/833_Towards_reasoning_era_A_survey_of_long_chain-of-thought_for/review]] — 긴 사고 연쇄 추론에 대한 종합적 조사가 다중 관점 검증 프레임워크의 이론적 배경을 제공한다.
-- 🔗 후속 연구: [[papers/482_Lean-star_Learning_to_interleave_thinking_and_proving/review]] — 형식 증명에서 잘못된 추론 단계를 감지하고 수정하는 통합 프레임워크로 Lean-star의 사고-증명 교차 학습을 보완한다.
+- 🔄 다른 접근: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — 강화학습 기반 추론과 다중 관점 검증 기반 추론은 모두 LLM 추론 성능 향상을 위한 서로 다른 접근법이다.
+- 🔗 후속 연구: [[papers/243_Critique-GRPO_Advancing_LLM_Reasoning_with_Natural_Language/review]] — 자연어 비판을 통한 LLM 추론 개선과 오류 정보 활용 추론 프레임워크는 상호 보완적인 추론 성능 향상 방법이다.
+- 🏛 기반 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자기 피드백을 통한 반복 개선의 일반적 원리는 다중 관점 검증과 오류 정보 활용 추론 프레임워크의 기반이다.

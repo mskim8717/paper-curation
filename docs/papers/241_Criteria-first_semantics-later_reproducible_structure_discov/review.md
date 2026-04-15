@@ -8,8 +8,10 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 이미지 기반 과학에서 지배적인 \"의미론-우선\" 분석 패러다임을 \"기준-우선, 의미론-후순위\" 패러다임으로 전환할 것을 제안한다. 구조 추출을 도메인 온톨로지로부터 독립적인 명시적 최적화 기준에 기반하여 먼저 수행하고, 의미론적 해석은 다운스트림에서 별도로 적용함으로써 장기 모니터링, 크로스-센서 비교, 개방형 발견을 가능하게 한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Materials_Discovery_Hypotheses"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Automated_Scientific_Review"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bumberger_2026_Criteria-first, semantics-later reproducible structure discovery in image-based sciences.pdf"
 ---
@@ -120,7 +122,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Bumberger_2026_Criteria-first, semantics
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/695_Scaling_Deep_Learning_for_Materials_Discovery/review]] — 구조 발견 방법론이 대규모 재료 발견 결과의 해석과 검증에 필요하다.
-- 🧪 응용 사례: [[papers/313_Enabling_ai_scientists_to_recognize_innovation_A_domain-agno/review]] — 도메인 독립적 구조 추출을 과학적 혁신 인식에 적용할 수 있다.
-- 🔗 후속 연구: [[papers/547_Mllm-based_discovery_of_intrinsic_coordinates_and_governing/review]] — 기준 우선 구조 발견을 멀티모달 LLM 기반 내재 좌표 발견으로 확장한다.
-- 🔗 후속 연구: [[papers/695_Scaling_Deep_Learning_for_Materials_Discovery/review]] — 재료 구조 발견을 이미지 기반 구조 추출 방법론으로 확장할 수 있다.
+- 🔄 다른 접근: [[papers/289_Drsr_Llm_based_scientific_equation_discovery_with_dual_reaso/review]] — 과학적 구조 발견을 이미지 기반과 방정식 기반에서 각각 기준-우선 접근법으로 시도한다.
+- 🔗 후속 연구: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 기준-우선 패러다임이 대칭성을 가진 미분방정식 발견으로 확장 적용될 수 있다.
+- 🏛 기반 연구: [[papers/313_Enabling_ai_scientists_to_recognize_innovation_A_domain-agno/review]] — 도메인 독립적 혁신 인식 방법론이 의미론에서 분리된 구조 발견의 이론적 기반을 제공한다.

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 기계학습(ML) 연구 경쟁 문제를 해결하는 언어 에이전트(language agent)의 능력을 평가하기 위한 동적 벤치마크 MLRC-BENCH를 제안한다. 기존 연구와 달리 LLM 판사(LLM-as-a-judge)에 의존하지 않고 객관적 메트릭을 통해 새로운 방법론의 제안과 구현을 엄밀하게 평가한다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/LLM_Agent_Benchmarking"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/ML_Research_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_MLRC-Bench Can Language Agents Solve Machine Learning Research Challenges.pdf"
 ---
@@ -116,7 +118,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_MLRC-Bench Can Languag
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 둘 다 머신러닝 벤치마크이지만 하나는 연구 경쟁 문제에, 다른 하나는 일반적인 머신러닝 작업에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/544_Mldebugging_Towards_benchmarking_code_debugging_across_multi/review]] — 코드 디버깅 벤치마크로서 MLRC-Bench에서 요구되는 코드 구현 및 수정 능력 평가를 보완한다.
-- 🏛 기반 연구: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — 과학적 발견에서 LLM의 종합적인 벤치마킹 프레임워크로서 MLRC-Bench의 평가 체계에 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — 둘 다 연구 관련 코딩을 다루지만 MLRC-Bench는 재현보다는 리뷰에 초점
+- 🔄 다른 접근: [[papers/548_Mlr-bench_Evaluating_ai_agents_on_open-ended_machine_learnin/review]] — 머신러닝 연구 과제 해결 능력을 평가하되 객관적 메트릭을 사용한 다른 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — 복잡한 알고리즘 구현을 요구하는 연구 코딩 벤치마크로서 MLRC-Bench를 확장한 형태다.
+- 🏛 기반 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI 과학자의 실제 연구 능력 평가를 위한 기초적인 벤치마킹 방법론을 제공한다.

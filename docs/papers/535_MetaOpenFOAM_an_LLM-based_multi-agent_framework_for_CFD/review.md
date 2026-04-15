@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.2
 essence: "자연언어 입력만으로 CFD(전산유체역학) 시뮬레이션을 자동화하는 다중 에이전트 LLM 프레임워크로, MetaGPT의 조립라인 패러다임과 Langchain의 검색증강생성(RAG) 기술을 결합하여 메시 전처리부터 후처리까지 전체 CFD 작업흐름을 자동 처리한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Computational_Fluid_Dynamics"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Agent-Based_CFD_Simulation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2024_MetaOpenFOAM an LLM-based multi-agent framework for CFD.pdf"
 ---
@@ -119,11 +119,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2024_MetaOpenFOAM an LLM-bas
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/526_MechAgents_Large_language_model_multi-agent_collaborations_c/review]] — MetaOpenFOAM의 CFD 자동화와 MechAgents의 역학 문제 해결은 서로 다른 물리학 분야에서 LLM 기반 시뮬레이션을 구현하는 대안적 접근이다.
-- 🔗 후속 연구: [[papers/587_OpenFOAM_The_Open_Source_Computational_Fluid_Dynamics_Toolbo/review]] — OpenFOAMGPT 2.0의 신뢰할 수 있는 자동화 시스템이 MetaOpenFOAM의 기본적인 CFD 자동화를 더 강화된 신뢰성과 정확도로 발전시킨 버전이다.
-- 🏛 기반 연구: [[papers/348_FRAG_A_Flexible_Modular_Framework_for_Retrieval-Augmented_Ge/review]] — 검색 증강 생성의 유연한 모듈 프레임워크가 MetaOpenFOAM의 RAG 기술 기반 CFD 지식 검색 및 처리 시스템의 핵심 기술적 토대이다.
-- 🔗 후속 연구: [[papers/130_Automating_Computational_Chemistry_Workflows_via_OpenClaw_an/review]] — CFD를 위한 LLM 기반 다중 에이전트 프레임워크가 계산화학 자동화를 다른 계산 과학 분야로 확장한다.
-- 🔄 다른 접근: [[papers/587_OpenFOAM_The_Open_Source_Computational_Fluid_Dynamics_Toolbo/review]] — CFD 분야에서 신뢰성 중심 접근법과 다중 에이전트 협력 접근법이라는 서로 다른 자동화 전략을 제시한다.
-- 🔄 다른 접근: [[papers/526_MechAgents_Large_language_model_multi-agent_collaborations_c/review]] — MechAgents의 역학 문제 해결과 MetaOpenFOAM의 CFD 자동화는 서로 다른 물리학 영역에서 LLM 기반 다중 에이전트 시뮬레이션을 구현하는 접근이다.
-- 🔄 다른 접근: [[papers/588_OpenFOAMGPT_20_end-to-end_trustworthy_automation_for_computa/review]] — OpenFOAMGPT 2.0과 MetaOpenFOAM은 모두 CFD 시뮬레이션 자동화를 다루지만, end-to-end 자동화와 다중 에이전트 협업이라는 서로 다른 접근 방식을 채택합니다.
-- 🔄 다른 접근: [[papers/559_Mooseagent_A_llm_based_multi-agent_framework_for_automating/review]] — MetaOpenFOAM과 MooseAgent 모두 CFD 시뮬레이션 자동화를 위한 LLM 기반 다중 에이전트 프레임워크이지만 서로 다른 시뮬레이션 플랫폼을 대상으로 한다.
+- 🔄 다른 접근: [[papers/588_OpenFOAMGPT_20_end-to-end_trustworthy_automation_for_computa/review]] — CFD 자동화라는 동일한 목표를 가지지만 MetaOpenFOAM은 다중 에이전트 접근에, OpenFOAMGPT 2.0은 신뢰성 있는 종단간 자동화에 집중한 다른 방법론임
+- 🏛 기반 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — AutoGen의 다중 에이전트 협업 프레임워크와 MetaGPT의 조립라인 패러다임을 기반으로 CFD 시뮬레이션 자동화에 특화된 시스템을 구축함
+- 🔗 후속 연구: [[papers/232_CodePDE_An_Inference_Framework_for_LLM-driven_PDE_Solver_Gen/review]] — LLM 기반 PDE 솔버 생성을 다루어 MetaOpenFOAM의 CFD 자동화를 더 광범위한 편미분방정식 해결 영역으로 확장함
+- 🔗 후속 연구: [[papers/588_OpenFOAMGPT_20_end-to-end_trustworthy_automation_for_computa/review]] — MetaOpenFOAM의 다중 에이전트 CFD 프레임워크가 OpenFOAMGPT 2.0의 자동화 접근법을 더 체계적인 에이전트 시스템으로 발전시킴
+- 🏛 기반 연구: [[papers/559_Mooseagent_A_llm_based_multi-agent_framework_for_automating/review]] — MetaOpenFOAM의 CFD 다중 에이전트 프레임워크가 MooseAgent의 유한요소법 자동화 접근법의 방법론적 기반을 제공함
+- 🏛 기반 연구: [[papers/864_VASPilot_MCP-Facilitated_Multi-Agent_Intelligence_for_Autono/review]] — CFD를 위한 다중에이전트 프레임워크가 VASP 계산 자동화의 방법론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/589_OpenFOAMGPT_A_retrieval-augmented_large_language_model_LLM_a/review]] — CFD를 위한 다중에이전트 프레임워크가 OpenFOAMGPT 개발의 방법론적 기반을 제공한다.

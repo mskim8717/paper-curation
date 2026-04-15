@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 **GEEX (Gradient-Estimation-based EXplanation)**를 제안하여 블랙박스 설정에서도 화이트박스 수준의 그래디언트 유사 설명을 생성할 수 있음을 보인다. 쿼리 레벨 접근만으로 정밀한 특성 귀속(feature attribution)을 제공하면서도 완전성(Completeness), 민감도(Sensitivity) 등 기본 공리를 엄밀히 만족한다. ---"
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Mechanistic_AI_Interpretability"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Symbolic_PDE_Optimization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nguyen and Byeon_2023_On gradient-like explanation under a black-box setting when black-box explanations become as good a.pdf"
 ---
@@ -148,7 +150,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nguyen and Byeon_2023_On gradient-like e
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/836_Towards_uncovering_how_large_language_model_works_An_explain/review]] — LLM의 해석가능성 연구가 블랙박스 설정에서의 그래디언트 기반 설명 방법 개발의 이론적 배경을 제공한다.
-- 🔄 다른 접근: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — AI 안전성을 위한 기계적 해석가능성과 블랙박스 설정에서의 설명 가능성이라는 서로 다른 해석가능성 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/017_A_practical_review_of_mechanistic_interpretability_for_trans/review]] — 트랜스포머의 기계적 해석가능성 실용적 검토를 블랙박스 설정의 그래디언트 유사 설명으로 확장할 수 있다.
-- 🔗 후속 연구: [[papers/836_Towards_uncovering_how_large_language_model_works_An_explain/review]] — LLM의 내부 작동 메커니즘 이해를 위한 체계적 검토가 블랙박스 설정에서의 설명가능성 연구의 이론적 확장이다.
+- 🏛 기반 연구: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — 기계적 해석가능성 리뷰가 블랙박스 환경 그래디언트 설명 기법의 이론적 토대를 제공한다
+- 🔄 다른 접근: [[papers/836_Towards_uncovering_how_large_language_model_works_An_explain/review]] — 블랙박스 그래디언트 설명과 화이트박스 해석가능성이 서로 다른 접근으로 LLM 설명 문제를 해결한다
+- 🔗 후속 연구: [[papers/836_Towards_uncovering_how_large_language_model_works_An_explain/review]] — 블랙박스 그래디언트 설명 기법을 LLM 내부 메커니즘의 포괄적 해석가능성으로 확장한다
+- 🧪 응용 사례: [[papers/330_Exploiting_LLMs_for_Automatic_Hypothesis_Assessment_via_a_Lo/review]] — 블랙박스 설정에서 그래디언트 유사 설명이 LLM 기반 가설 평가의 해석 가능성을 위한 실제적 방법을 제시한다.

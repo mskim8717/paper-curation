@@ -12,8 +12,10 @@ arxiv: ""
 score: 3.8
 essence: "과학 AI(AI4Science)의 준비 상태를 평가하기 위한 통합 벤치마킹 프레임워크로, 과학 데이터의 AI 준비도와 대규모 언어모델(LLM)의 과학 분야별 능력을 체계적으로 평가하는 종합 평가 체계를 제시한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Publishing_Trends"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Automated_Scientific_Review"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qin et al._2025_SciHorizon Benchmarking AI-for-Science Readiness from Scientific Data to Large Language Models.pdf"
 ---
@@ -111,9 +113,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qin et al._2025_SciHorizon Benchmarking 
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/090_AIRS-Bench_a_Suite_of_Tasks_for_Frontier_AI_Research_Science/review]] — 프론티어 AI 연구 과학을 위한 작업 모음이 SciHorizon의 평가 체계 설계에 기반을 제공한다.
-- 🔄 다른 접근: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — 과학적 발견에서 LLM 벤치마킹의 다른 접근 방식을 제시한다.
-- 🔗 후속 연구: [[papers/713_Scicueval_A_comprehensive_dataset_for_evaluating_scientific/review]] — 과학적 이해 평가를 위한 포괄적 데이터셋이 SciHorizon의 평가 범위를 확장한다.
-- 🧪 응용 사례: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — 언어 에이전트의 엄격한 평가가 SciHorizon의 AI 준비도 측정에 적용된다.
-- 🔄 다른 접근: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — SciHorizon의 과학 준비도 벤치마킹과 ResearchBench는 AI의 과학적 역량을 서로 다른 관점에서 평가하는 보완적 접근법입니다
-- 🔄 다른 접근: [[papers/261_Deepresearch_bench_A_comprehensive_benchmark_for_deep_resear/review]] — 과학 준비성 벤치마킹과 깊이 있는 연구 에이전트 평가의 다른 접근법
+- 🔗 후속 연구: [[papers/630_Predicting_empirical_ai_research_outcomes_with_language_mode/review]] — AI 연구 성과 예측을 포함한 더 포괄적인 AI4Science 능력 평가 체계를 제시한다
+- 🏛 기반 연구: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — 과학적 검증 자동화를 위한 AI 준비도 평가의 기본 프레임워크를 제공한다
+- 🧪 응용 사례: [[papers/857_Unlocking_the_Potential_of_AI_Researchers_in_Scientific_Disc/review]] — AI 연구자의 과학 발견 잠재력 평가를 위한 구체적인 벤치마킹 도구를 제공한다
+- 🧪 응용 사례: [[papers/803_The_open_review-based_orb_dataset_Towards_automatic_assessme/review]] — 과학 준비도 벤치마킹에서 ORB 데이터셋을 활용하여 AI의 과학적 평가 능력을 측정할 수 있다.
+- 🏛 기반 연구: [[papers/630_Predicting_empirical_ai_research_outcomes_with_language_mode/review]] — AI4Science 능력 평가를 위한 포괄적인 벤치마킹 프레임워크의 기초를 제공한다
+- 🏛 기반 연구: [[papers/881_When_ai_co-scientists_fail_Spot-a_benchmark_for_automated_ve/review]] — AI4Science 능력 평가를 위한 종합적인 벤치마킹 체계의 기초를 제공한다

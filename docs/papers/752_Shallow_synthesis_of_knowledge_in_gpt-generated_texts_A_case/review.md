@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 학술 논문의 관련 연구(Related Work) 섹션 작성에서 GPT-4의 능력을 실증적으로 평가한다. 인용 그래프(citation graph) 분석을 통해 GPT는 거시적 인용 그룹화는 가능하나, 인간의 개입 없이 정교한 문헌 종합을 실패함을 보여준다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_Review_Detection"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Martin-Boyle et al._2024_Shallow synthesis of knowledge in gpt-generated texts A case study in automatic related work compos.pdf"
 ---
@@ -102,10 +103,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Martin-Boyle et al._2024_Shallow synthes
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/742_Select_read_and_write_A_multi-agent_framework_of_full-text-b/review]] — GPT의 문헌 종합 한계와 전체 텍스트 기반 관련 연구 생성의 가능성을 비교하여 현재 AI 기술의 실제 성능과 개선 방향을 파악할 수 있다.
-- 🏛 기반 연구: [[papers/753_Shared_imagination_Llms_hallucinate_alike/review]] — LLM의 공유된 환각 패턴이 관련 연구 섹션 작성에서 나타나는 얕은 지식 종합 문제의 근본적 원인을 이해하는 데 중요한 통찰을 제공한다.
-- 🔄 다른 접근: [[papers/789_Taxonomy_tree_generation_from_citation_graph/review]] — 인용 그래프 분석과 분류 체계 생성은 문헌 종합의 구조적 한계를 극복하기 위한 대안적 접근 방법을 제시한다.
-- 🏛 기반 연구: [[papers/373_Generalization_Bias_in_Large_Language_Model_Summarization_of/review]] — GPT 생성 텍스트의 피상적 지식 합성 분석으로 과학 요약에서 과도한 일반화가 발생하는 메커니즘을 설명한다.
-- ⚖️ 반론/비판: [[papers/742_Select_read_and_write_A_multi-agent_framework_of_full-text-b/review]] — 전체 텍스트 기반 관련 연구 자동 생성의 가능성과 GPT의 문헌 종합 한계를 대비하여 현재 기술의 실제 능력과 한계를 균형있게 파악할 수 있다.
-- 🔗 후속 연구: [[papers/753_Shared_imagination_Llms_hallucinate_alike/review]] — 공유된 상상 공간 개념이 GPT의 얕은 문헌 종합 문제를 더 깊이 이해하는 이론적 틀을 제공한다.
-- 🔄 다른 접근: [[papers/789_Taxonomy_tree_generation_from_citation_graph/review]] — 구조적 인용 그래프 분석을 통한 체계적 분류 생성이 GPT의 얕은 문헌 종합 문제에 대한 대안적 해결 방안을 제시한다.
+- ⚖️ 반론/비판: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — 신경망 기반 관련 연구 생성의 필요성을 GPT의 얕은 지식 종합 한계를 통해 실증적으로 뒷받침한다.
+- 🏛 기반 연구: [[papers/742_Select_read_and_write_A_multi-agent_framework_of_full-text-b/review]] — GPT의 한계점 분석을 바탕으로 다중 에이전트 기반 전체 텍스트 접근법의 필요성을 제시한다.
+- 🔗 후속 연구: [[papers/410_How_deep_do_large_language_models_internalize_scientific_lit/review]] — 대형 언어 모델의 과학 문헌 내재화 정도를 관련 연구 작성 맥락에서 구체적으로 분석한다.
+- ⚖️ 반론/비판: [[papers/573_Neural_related_work_summarization_with_a_joint_context-drive/review]] — GPT 기반 관련 연구 작성의 한계점을 실증적으로 분석하여 신경망 기반 접근법의 필요성을 강조한다.

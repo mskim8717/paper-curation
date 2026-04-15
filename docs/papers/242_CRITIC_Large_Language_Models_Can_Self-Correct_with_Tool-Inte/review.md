@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "대규모 언어모델(LLM)이 외부 도구(검색엔진, 코드 인터프리터 등)와 상호작용하여 자신의 출력을 검증하고 반복적으로 자가수정(self-correct)할 수 있도록 하는 통합 프레임워크를 제안한다. 인간의 비판적 사고 방식을 모방하여 할루시네이션, 코드 오류, 독성 콘텐츠 등의 문제를 완화한다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/LLM_Self-Correction_and_Verification"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 ---
 
@@ -104,18 +106,15 @@ tags:
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 두 논문 모두 LLM 자기 수정을 다루되 CRITIC은 외부 도구 활용, PAG는 내부 정책-검증자 전환에 의존한다.
-- 🏛 기반 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — Toolformer의 언어 모델 도구 사용 학습 방법론은 CRITIC의 외부 도구 상호작용 프레임워크 설계에 핵심적인 이론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — CRITIC의 도구 기반 자기수정 프레임워크는 CACTUS의 화학 도구 활용에서 실험 결과 검증과 오류 수정에 직접 적용될 수 있다.
-- 🏛 기반 연구: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — 도구 통합 기반 자기교정 기법으로 DeepReview의 다단계 구조화 프레임워크의 이론적 기반을 제공한다.
-- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — 도구 통합을 통한 자기 수정 방법론이 순수 LLM 자기 수정의 한계를 극복할 수 있음
-- 🔗 후속 연구: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — CRITIC의 외부 도구 기반 자기수정을 PAG가 모델 내부의 정책-검증자 역할 전환으로 발전시켜 더 효율적인 워크플로우를 제공한다.
-- 🔄 다른 접근: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — 생명과학과 일반 추론에서 각각 자기검증 메커니즘으로 LLM 환각 문제를 해결하는 서로 다른 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/396_Hallucination_mitigation_using_agentic_ai_natural_language-b/review]] — 도구 통합 자기 수정 능력으로 환각 완화 방법론을 확장한다.
-- 🔄 다른 접근: [[papers/435_Interfeedback_Unveiling_interactive_intelligence_of_large_mu/review]] — 도구 기반 자기수정과 달리 인간 피드백을 통한 상호작용적 개선 능력에 집중
-- 🔗 후속 연구: [[papers/747_Selfcheck_Using_llms_to_zero-shot_check_their_own_step-by-st/review]] — 도구를 활용한 자기 수정에서 도구 없이 순수하게 자체 추론을 검증하는 더 순수한 형태의 자기 검증 연구입니다.
-- 🔄 다른 접근: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자기 정제 방식에서 CRITIC은 외부 도구를 활용하는 반면 Self-Refine은 단일 LLM만으로 피드백과 개선을 수행하는 차이점이 있음
-- 🔄 다른 접근: [[papers/743_Self-critique_guided_iterative_reasoning_for_multi-hop_quest/review]] — 둘 다 LLM의 자기교정 능력을 다루지만 하나는 질의응답, 다른 하나는 도구 통합 추론에 중점을 둠
-- 🔗 후속 연구: [[papers/610_Pelican_Correcting_Hallucination_in_Vision-LLMs_via_Claim_De/review]] — CRITIC의 도구 기반 자기 수정 프레임워크를 시각-언어 영역으로 확장하여 더 구조화된 검증 과정을 제공한다.
-- 🔗 후속 연구: [[papers/636_Prompt_to_be_consistent_is_better_than_self-consistent_few-s/review]] — 도구 통합 자기 수정을 일관성 제약 조건과 결합하여 더 강력한 팩트 검증 시스템을 구축할 수 있다.
-- 🏛 기반 연구: [[papers/790_Teaching_Large_Language_Models_to_Self-Debug/review]] — 자기 디버깅의 기본 개념이 도구 통합 자기 수정 시스템에서 더 포괄적인 오류 검출과 수정 능력을 구현하는 기초가 된다.
+- 🔗 후속 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 자가감독 도구 학습이 외부 도구와의 상호작용을 통한 자가수정으로 발전된 형태이다.
+- 🔄 다른 접근: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — 도구 상호작용을 통한 자가수정과 추론 중 검색 통합을 서로 다른 관점에서 접근한다.
+- 🔗 후속 연구: [[papers/667_ReSearch_Learning_to_Reason_with_Search_for_LLMs_via_Reinfor/review]] — 검색을 포함한 도구 사용을 통한 자가수정이 추론 중 자동 검색 활용으로 구체화될 수 있다.
+- 🧪 응용 사례: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 외부 도구를 통한 검증과 수정이 편향 완화를 위한 추론 시간 개입에 활용될 수 있다.
+- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — LLM의 자기 수정 불가능성과 도구 지원을 통한 자기 수정 가능성 사이의 대조를 보여준다.
+- 🔗 후속 연구: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — 도구 상호작용을 통한 자가수정이 추론 중 검색 통합이라는 특화된 형태로 발전될 수 있다.
+- 🔗 후속 연구: [[papers/667_ReSearch_Learning_to_Reason_with_Search_for_LLMs_via_Reinfor/review]] — 도구 상호작용을 통한 자가수정이 추론 중 자동 검색 활용이라는 특화된 형태로 발전될 수 있다.
+- 🔗 후속 연구: [[papers/655_ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models/review]] — CRITIC의 도구 통합 자기 교정이 ReAct의 추론-행동 시너지를 오류 수정 능력으로 확장한 발전된 형태
+- 🔗 후속 연구: [[papers/747_Selfcheck_Using_llms_to_zero-shot_check_their_own_step-by-st/review]] — CRITIC의 도구 기반 자기 수정 방법론을 외부 도구 없이 순수하게 LLM 내부 검증으로 확장한다.
+- 🏛 기반 연구: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 외부 도구 사용의 자가학습이 도구와의 상호작용을 통한 자가수정으로 확장되는 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 도구 통합 자기 수정 연구가 외부 도구 없는 순수 LLM 기반 자기 정제의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/223_Clarify_when_necessary_Resolving_ambiguity_through_interacti/review]] — 도구 통합 자기 수정과 달리 사용자와의 명확화 질문을 통한 상호작용으로 모호성을 해결하는 접근법을 제시한다.

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "ATGC-Gen은 트랜스포머 기반 언어 모델을 활용하여 생물학적 특성(세포 타입, 전사인자 결합 등)을 조건으로 하는 제어 가능한 DNA 서열 생성을 수행하는 프레임워크이다. 교차 모달 인코딩을 통해 다양한 생물학적 신호를 통합하여 기능적이고 다양한 DNA 서열을 생성한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/3D_Molecular_Generation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Su et al._2025_Language Models for Controllable DNA Sequence Design.pdf"
 ---
@@ -96,8 +98,11 @@ ATGC-Gen은 다음과 같은 구조로 작동한다:
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/472_Large_language_models_design_sequence-defined_macromolecules/review]] — 거대분자 설계를 위한 LLM 활용이라는 공통점이 있지만, DNA 서열 생성과 자기조립 구조 설계라는 다른 타겟을 다룬다.
-- 🔗 후속 연구: [[papers/474_Large_language_models_for_zero-shot_inference_of_causal_stru/review]] — 생물학적 인과관계 추론 능력을 DNA 서열의 기능적 특성 예측과 설계에 활용할 수 있다.
-- 🏛 기반 연구: [[papers/461_LARC_Towards_Human-level_Constrained_Retrosynthesis_Planning/review]] — 제약 조건 하에서의 역합성 계획 연구가 조건부 DNA 서열 생성의 방법론적 기반을 제공한다.
-- 🧪 응용 사례: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 제어 가능한 DNA 서열 설계를 3D 분자 토큰화에 언어모델로 적용
-- 🔄 다른 접근: [[papers/472_Large_language_models_design_sequence-defined_macromolecules/review]] — 언어 모델을 활용한 생체분자 설계라는 공통 주제이지만 거대분자 자기조립과 DNA 서열 설계로 응용 영역이 다르다.
+- 🔗 후속 연구: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 분자 기하정보 토큰화 기법을 DNA 서열에 적용하여 3차원 구조를 고려한 생물학적 서열 설계로 확장
+- 🔄 다른 접근: [[papers/472_Large_language_models_design_sequence-defined_macromolecules/review]] — 둘 다 생물학적 서열 설계를 다루지만 ATGC-Gen은 DNA에, 472는 거대분자 자기조립에 특화됨
+- 🧪 응용 사례: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 대규모 단일세포 분석을 위한 언어 모델 확장이 DNA 서열 생성에서 세포 타입별 특성 예측에 활용됨
+- 🔄 다른 접근: [[papers/749_Sequence_modeling_and_design_from_molecular_to_genome_scale/review]] — DNA 서열 설계를 위한 언어 모델 접근법으로, Evo의 genomic foundation model과 동일한 문제를 다른 관점에서 해결한다.
+- 🔗 후속 연구: [[papers/487_Leveraging_biomolecule_and_natural_language_through_multi-mo/review]] — 제어 가능한 DNA 서열 설계를 생분자 다중모달 학습으로 확장한다
+- 🧪 응용 사례: [[papers/302_Effective_gene_expression_prediction_from_sequence_by_integr/review]] — DNA 서열 기반 유전자 발현 예측을 제어 가능한 DNA 설계로 확장 적용한 사례
+- 🔗 후속 연구: [[papers/383_Geometry_Informed_Tokenization_of_Molecules_for_Language_Mod/review]] — 3D 분자 토큰화 기법을 DNA 서열 생성에 적용하여 공간 구조를 고려한 생물학적 서열 설계 가능
+- 🔄 다른 접근: [[papers/472_Large_language_models_design_sequence-defined_macromolecules/review]] — 둘 다 생물학적 서열 설계를 다루지만 472는 거대분자 자기조립에, ATGC-Gen은 DNA 조건부 생성에 특화

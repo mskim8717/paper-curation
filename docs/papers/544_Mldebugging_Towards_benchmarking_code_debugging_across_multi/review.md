@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 실제 소프트웨어 개발 환경에서 흔히 나타나는 **다중 라이브러리 시나리오에서의 코드 디버깅**을 체계적으로 평가하기 위한 MLDebugging 벤치마크를 제시한다. 126개의 Python 라이브러리를 포함하고 7가지 버그 유형으로 분류된 1,175개의 샘플로 구성되어 있다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Benchmarking_Taxonomy"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2025_Mldebugging Towards benchmarking code debugging across multi-library scenarios.pdf"
 ---
@@ -137,8 +138,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2025_Mldebugging Towards be
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/090_AIRS-Bench_a_Suite_of_Tasks_for_Frontier_AI_Research_Science/review]] — 프론티어 AI 연구 과학 에이전트 평가와 다중 라이브러리 코드 디버깅 평가 모두 AI의 복잡한 기술적 문제 해결 능력을 측정하지만 접근법이 다르다.
-- 🏛 기반 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 머신러닝 에이전트 평가를 위한 언어 모델 벤치마크가 다중 라이브러리 환경에서의 코드 디버깅 평가의 기반을 제공한다.
-- 🔗 후속 연구: [[papers/548_Mlr-bench_Evaluating_ai_agents_on_open-ended_machine_learnin/review]] — 오픈엔드 머신러닝 연구 평가가 실제 소프트웨어 개발에서의 디버깅 능력 평가를 연구 차원으로 확장한다.
-- 🔄 다른 접근: [[papers/090_AIRS-Bench_a_Suite_of_Tasks_for_Frontier_AI_Research_Science/review]] — AI 에이전트의 연구 생명주기 전체 평가와 다중 라이브러리 코드 디버깅 평가 모두 복잡한 AI 능력을 측정하지만 평가 범위가 다르다.
-- 🔗 후속 연구: [[papers/550_MLRC-Bench_Can_Language_Agents_Solve_Machine_Learning_Resear/review]] — 코드 디버깅 벤치마크로서 MLRC-Bench에서 요구되는 코드 구현 및 수정 능력 평가를 보완한다.
+- 🏛 기반 연구: [[papers/586_Opendevin_An_open_platform_for_ai_software_developers_as_gen/review]] — OpenDevin의 범용 소프트웨어 개발 플랫폼이 MLDebugging 같은 특화된 디버깅 벤치마크의 평가 환경 기반을 제공함
+- 🏛 기반 연구: [[papers/590_Openhands_An_open_platform_for_ai_software_developers_as_gen/review]] — OpenHands의 개발자 에이전트 플랫폼이 다중 라이브러리 디버깅 벤치마크의 실행 및 평가 인프라를 제공함
+- 🔗 후속 연구: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — SWE-bench의 실제 GitHub 이슈 해결이 MLDebugging의 다중 라이브러리 디버깅을 실제 소프트웨어 개발 환경으로 확장함
+- 🔗 후속 연구: [[papers/586_Opendevin_An_open_platform_for_ai_software_developers_as_gen/review]] — OpenDevin의 범용 개발 플랫폼이 MLDebugging의 특화된 디버깅 작업을 포괄적인 소프트웨어 개발로 확장함

@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "과학 논문의 인용 텍스트 자동 생성을 위해 기존의 초록(abstract)만 사용하는 방식 대신, 실제 인용되는 특정 텍스트 구간(Cited Text Span, CTS)을 활용하여 더 정확하고 충실한 인용 생성이 가능함을 보여준다. 이를 위해 원가(distant labeling)를 통해 대규모 CTS 데이터셋을 구축하고, 실용적인 키워드 기반 CTS 검색 방법을 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Citation_Context_Generation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Patent_Novelty_Prediction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2023_Cited text spans for citation text generation.pdf"
 ---
@@ -110,9 +111,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2023_Cited text spans for cita
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/238_Controllable_citation_sentence_generation_with_language_mode/review]] — 제어 가능한 인용 문장 생성 연구로 본 논문의 인용 텍스트 구간 활용을 언어 모델 제어로 발전시킨다.
-- 🏛 기반 연구: [[papers/1091_Scirgc_Multi-granularity_citation_recommendation_and_citatio/review]] — 다중 단위 인용 추천 및 문장 생성에서 본 논문의 CTS 방법론을 인용 의도와 결합한 기반을 제공한다.
-- 🔄 다른 접근: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — 해석 가능한 로컬 인용 추천으로 본 논문의 인용 생성과 다른 접근법인 인용 추천 시스템을 제시한다.
-- 🏛 기반 연구: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — 인용 텍스트 생성 연구가 로컬 인용 추천을 위한 인용 토큰 마스킹 학습의 기초 아이디어를 제공합니다.
-- 🏛 기반 연구: [[papers/238_Controllable_citation_sentence_generation_with_language_mode/review]] — 인용 텍스트 생성을 위한 인용된 텍스트 구간 활용 연구로 본 논문의 제어 가능한 생성을 위한 입력 정보 기반을 제공한다.
-- 🔗 후속 연구: [[papers/420_Ilciter_Evidence-grounded_interpretable_local_citation_recom/review]] — 인용 텍스트 스팬 추출을 해석가능한 증거 스팬 제시로 발전시켜 더 투명한 인용 추천을 가능하게 합니다.
+- 🔄 다른 접근: [[papers/190_Causal_intervention_for_abstractive_related_work_generation/review]] — 인용 텍스트 생성과 관련 업무 생성이라는 서로 다른 학술 글쓰기 자동화 영역을 다룬다.
+- 🔗 후속 연구: [[papers/219_Citebart_Learning_to_generate_citations_for_local_citation_r/review]] — 로컬 인용 생성과 인용 텍스트 생성이 학술 논문의 인용 시스템에서 상호 보완적 기능을 제공한다.
+- 🏛 기반 연구: [[papers/238_Controllable_citation_sentence_generation_with_language_mode/review]] — 제어 가능한 인용 문장 생성이 특정 텍스트 구간 기반 인용 생성의 방법론적 토대를 제공한다.
+- 🧪 응용 사례: [[papers/273_Directed_criteria_citation_recommendation_and_ranking_throug/review]] — 기준 기반 인용 추천과 순위가 인용 텍스트 생성에서 실제 인용 선택과 활용의 실용적 연결점을 제공한다.
+- 🔗 후속 연구: [[papers/406_Hlm-cite_Hybrid_language_model_workflow_for_text-based_scien/review]] — 하이브리드 LLM 워크플로우가 기존 인용 텍스트 생성 방법론을 핵심 인용 식별로 발전시킨다.
+- 🔄 다른 접근: [[papers/190_Causal_intervention_for_abstractive_related_work_generation/review]] — 관련 업무 생성과 인용 텍스트 생성에서 서로 다른 학술 글쓰기 자동화 접근법을 제시한다.

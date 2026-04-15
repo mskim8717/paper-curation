@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 시각 언어 모델(Vision LLM)에서 멀티모달 인-컨텍스트 학습(MM-ICL)의 성능을 결정하는 요소들을 체계적으로 분석합니다. 6개 모델과 20가지 전략을 통해 시연 검색, 순서 지정, 프롬프트 구성의 세 단계에서 성능에 영향을 미치는 핵심 요인들을 규명합니다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Working_Memory_Benchmarks"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Code_Generation_Multimodal_Models"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Clark_2024_What factors affect multimodal in-context learning an in-depth exploration.pdf"
 ---
@@ -126,7 +128,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Clark_2024_What factors affect multimoda
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/844_Truly_assessing_fluid_intelligence_of_large_language_models/review]] — 유동 지능 연구의 멀티모달 확장으로 인-컨텍스트 학습 요소 분석
-- 🧪 응용 사례: [[papers/196_ChartAssisstant_A_Universal_Chart_Multimodal_Language_Model/review]] — 차트 어시스턴트가 멀티모달 인-컨텍스트 학습의 실제 응용 사례가 됨
-- 🏛 기반 연구: [[papers/844_Truly_assessing_fluid_intelligence_of_large_language_models/review]] — 멀티모달 맥락에서 유동 지능 평가의 기반 연구가 됨
-- 🔗 후속 연구: [[papers/185_Can_large_language_models_understand_you_better_an_mbti_pers/review]] — 다중모달 맥락 내 학습에 영향을 미치는 요인들을 심층 분석하여 본 논문의 성격 탐지 연구를 확장한다.
+- 🔄 다른 접근: [[papers/876_What_are_the_essential_factors_in_crafting_effective_long_co/review]] — 멀티모달 인-컨텍스트 학습과 장문맥 다중 홉 학습이 모두 복잡한 맥락 이해를 요구한다
+- 🧪 응용 사례: [[papers/199_ChartInstruct_Instruction_Tuning_for_Chart_Comprehension_and/review]] — 차트 이해 지시문 튜닝에서 시연 검색과 순서 지정 전략을 적용할 수 있다
+- 🏛 기반 연구: [[papers/369_Gemini_a_family_of_highly_capable_multimodal_models/review]] — Gemini의 멀티모달 능력이 MM-ICL 성능 요인 분석의 기술적 기반이 된다
+- 🔄 다른 접근: [[papers/876_What_are_the_essential_factors_in_crafting_effective_long_co/review]] — 장문맥 데이터 합성과 멀티모달 학습 모두 LLM의 복잡한 맥락 처리 능력을 다룬다
+- 🏛 기반 연구: [[papers/199_ChartInstruct_Instruction_Tuning_for_Chart_Comprehension_and/review]] — 멀티모달 인-컨텍스트 학습 요인이 차트 이해 지시문 튜닝 설계에 영향을 준다

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 Nature Communications의 동료평가 논문 131,393개로부터 742,273개의 이미지를 수집하여, 72개 학문 분야의 대학원 수준 복잡한 과학 시각화를 이해하기 위한 대규모 멀티모달 데이터셋(MMSCI)을 제시한다. 이를 통해 19개 언어비전모델(Large Vision Language Models, LVLMs)을 평가하며, 미세 조정 및 사전 학습을 통해 모델 성능을 향상시킬 수 있음을 보여준다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Multimodal_Scientific_Reasoning"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Physics_Reasoning_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2024_Mmsci A dataset for graduate-level multi-discipline multimodal scientific understanding.pdf"
 ---
@@ -136,11 +138,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2024_Mmsci A dataset for gradu
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/737_Sciverse_Unveiling_the_knowledge_comprehension_and_visual_re/review]] — 둘 다 과학 멀티모달 벤치마크를 제공하지만 MMSCI는 대학원 수준 복잡성에, SCIVERSE는 세밀한 능력 평가에 집중함
-- 🏛 기반 연구: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — MMC의 차트 이해 기술이 MMSCI의 과학 시각화 데이터 처리 방법론의 핵심 구성요소임
-- 🔗 후속 연구: [[papers/713_Scicueval_A_comprehensive_dataset_for_evaluating_scientific/review]] — 대학원 수준의 다학제 멀티모달 과학 데이터셋은 SciCUEval의 과학적 맥락 이해를 더욱 고도화한 벤치마크입니다
-- 🔗 후속 연구: [[papers/706_SciBench_Evaluating_College-Level_Scientific_Problem-Solving/review]] — 대학 수준 과학 문제를 대학원 수준 멀티모달 과학으로 확장한다.
-- 🔄 다른 접근: [[papers/737_Sciverse_Unveiling_the_knowledge_comprehension_and_visual_re/review]] — 둘 다 과학 멀티모달 평가를 위한 벤치마크이지만 SCIVERSE는 세밀한 능력 분석에, MMSCI는 대규모 데이터 수집에 집중함
-- 🧪 응용 사례: [[papers/055_Advancing_multimodal_medical_capabilities_of_gemini/review]] — Med-Gemini의 의료 멀티모달 역량이 MMSCI 데이터셋의 생명과학 분야 벤치마크 평가에 직접 적용됨
-- 🏛 기반 연구: [[papers/261_Deepresearch_bench_A_comprehensive_benchmark_for_deep_resear/review]] — 대학원 수준 다중 분야 다중모달 데이터세트가 연구 벤치마크의 기반 제공
-- 🔗 후속 연구: [[papers/1106_The_BOS-Lig_Dataset_Accurate_Ligand_Charges_from_a_Consensus/review]] — 대학원 수준 다학제 다중모달 과학 데이터셋으로 본 논문의 화학 데이터를 더 광범위한 과학 도메인으로 확장한다.
+- 🔄 다른 접근: [[papers/691_S1-MMAlign_A_Large-Scale_Multi-Disciplinary_Dataset_for_Scie/review]] — MMSCI의 대학원 수준 과학 시각화와 S1-MMAlign의 논문 이미지-텍스트 정렬은 서로 다른 과학 멀티모달 데이터셋이다.
+- 🔗 후속 연구: [[papers/727_Scimage_How_good_are_multimodal_large_language_models_at_sci/review]] — 과학 이미지에 대한 멀티모달 대규모 언어모델 평가가 MMSCI의 과학 시각화 이해를 더 포괄적으로 발전시킨다.
+- 🏛 기반 연구: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 과학 도표 이해용 대규모 멀티모달 모델 벤치마킹이 MMSCI의 과학 시각화 이해 방법론에 기반을 제공한다.
+- 🔄 다른 접근: [[papers/646_QH9_A_Quantum_Hamiltonian_Prediction_Benchmark_for_QM9_Molec/review]] — 둘 다 양자 화학 계산을 위한 데이터셋이지만, QH9는 해밀턴 예측에, MMSCI는 대학원 수준 다중 학문에 집중한다
+- 🏛 기반 연구: [[papers/091_Aiscivision_A_framework_for_specializing_large_multimodal_mo/review]] — 과학 영상 분류의 기반이 되는 다학제 다중모달 과학 데이터셋과 평가 방법론을 제공한다
+- 🔄 다른 접근: [[papers/691_S1-MMAlign_A_Large-Scale_Multi-Disciplinary_Dataset_for_Scie/review]] — S1-MMAlign의 과학 논문 이미지-텍스트 정렬과 MMSCI의 대학원 수준 과학 시각화는 서로 다른 과학 멀티모달 데이터셋이다.
+- 🧪 응용 사례: [[papers/368_Gemini_15_Unlocking_multimodal_understanding_across_millions/review]] — 멀티모달 긴 컨텍스트 이해 능력을 대학원 수준 과학 문제 해결에 적용한 실제 사례를 보여준다.
+- 🔗 후속 연구: [[papers/524_MatViX_Multimodal_Information_Extraction_from_Visually_Rich/review]] — 대학원 수준의 다학문 다중모달 과학 데이터셋으로, MatViX의 재료과학 특화 접근을 더 넓은 과학 분야로 확장한 연구다

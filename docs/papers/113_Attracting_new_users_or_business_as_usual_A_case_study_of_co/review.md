@@ -8,8 +8,8 @@ arxiv: ""
 score: 4.0
 essence: "노르웨이의 11개 인문사회과학(SSH) 학술지가 2017년 구독 기반에서 오픈액세스로 전환한 후의 효과를 분석한 연구로, 전환 후 모든 저널에서 방문 수가 유의미하게 증가했으며 이는 기존 구독 기관이 아닌 다른 부문의 방문자 증가로 인한 것임을 밝혔다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Publishing_Trends"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Academic_Citation_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wenaas_2021_Attracting new users or business as usual A case study of converting academic subscription-based jo.pdf"
 ---
@@ -90,7 +90,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wenaas_2021_Attracting new users or busi
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/274_Discipline-specific_open_access_publishing_practices_and_bar/review]] — 오픈액세스 출판 관행과 장벽에 대한 학문 분야별 분석으로 인문사회과학의 사례와 비교할 수 있다.
-- 🔗 후속 연구: [[papers/280_Divergent_llm_adoption_and_heterogeneous_convergence_paths_i/review]] — LLM 채택의 다양한 수렴 경로 연구로 오픈액세스 전환이 연구 접근성에 미치는 장기적 영향을 분석한다.
-- 🏛 기반 연구: [[papers/386_Google_Scholar_to_overshadow_them_all_Comparing_the_sizes_of/review]] — 학술 검색 엔진의 규모 비교 연구로 오픈액세스 전환 효과 측정의 기준점을 제공한다.
-- 🔗 후속 연구: [[papers/386_Google_Scholar_to_overshadow_them_all_Comparing_the_sizes_of/review]] — 오픈액세스 전환 효과 분석에서 학술 검색 엔진 규모 비교 데이터를 활용하여 접근성 개선을 정량화할 수 있다.
+- 🔗 후속 연구: [[papers/274_Discipline-specific_open_access_publishing_practices_and_bar/review]] — 오픈액세스 출판 관행과 장벽에 대한 분야별 연구가 구독에서 오픈액세스 전환 효과 분석을 보완한다.
+- 🏛 기반 연구: [[papers/386_Google_Scholar_to_overshadow_them_all_Comparing_the_sizes_of/review]] — 학술 검색 엔진 규모 비교가 오픈액세스 전환 후 접근성 변화를 측정하는 기준점을 제공한다.
+- 🧪 응용 사례: [[papers/591_Openreview_should_be_protected_and_leveraged_as_a_community/review]] — OpenReview 커뮤니티 자원 보호가 오픈액세스 학술 출판의 실제적 구현 사례를 보여준다.
+- 🔄 다른 접근: [[papers/907_Is_AI_ready_to_mass-produce_lay_summaries_of_research_articl/review]] — 연구 논문의 대중 요약 자동 생성과 오픈액세스 전환이라는 서로 다른 과학 소통 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/386_Google_Scholar_to_overshadow_them_all_Comparing_the_sizes_of/review]] — 학술 검색 엔진과 데이터베이스 규모 분석이 오픈액세스 전환 효과 측정을 위한 기준점을 제공한다.

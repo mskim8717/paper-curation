@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.0
 essence: "시각 언어 모델(LVLM)의 환각(hallucination) 문제를 1차 술어(first-order predicates) 기반 청구 분해와 파이썬 코드 생성을 통해 검증하고 보정하는 프레임워크를 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Self-Refining_Text_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Automated_Fact_Checking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sahu et al._2024_Pelican Correcting Hallucination in Vision-LLMs via Claim Decomposition and Program of Thought Veri.pdf"
 ---
@@ -102,8 +103,12 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sahu et al._2024_Pelican Correcting Hall
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/753_Shared_imagination_Llms_hallucinate_alike/review]] — 두 논문 모두 LLM의 환각 문제를 다루며, 공유된 상상 공간 개념이 시각-언어 모델의 환각 보정 메커니즘 이해에 중요한 기반을 제공한다.
-- 🔄 다른 접근: [[papers/790_Teaching_Large_Language_Models_to_Self-Debug/review]] — 코드 디버깅과 시각적 주장 검증은 모두 자기 수정 메커니즘을 활용하지만, 서로 다른 모달리티에서 오류 검출과 보정 방법을 제시한다.
-- 🔗 후속 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — CRITIC의 도구 기반 자기 수정 프레임워크를 시각-언어 영역으로 확장하여 더 구조화된 검증 과정을 제공한다.
-- 🔗 후속 연구: [[papers/753_Shared_imagination_Llms_hallucinate_alike/review]] — LLM들의 공유된 환각 패턴 분석이 시각-언어 모델의 환각 보정에서 일관된 오류 유형을 사전에 식별하고 대응하는 데 활용된다.
-- 🔄 다른 접근: [[papers/790_Teaching_Large_Language_Models_to_Self-Debug/review]] — 코드 자기 디버깅과 시각적 주장 검증은 모두 자기 수정 메커니즘을 활용하지만 실행 피드백과 논리적 분해라는 서로 다른 검증 방법을 사용한다.
+- 🔄 다른 접근: [[papers/636_Prompt_to_be_consistent_is_better_than_self-consistent_few-s/review]] — 시각 언어 모델의 환각 문제 해결에서 청구 분해와 일관성 강화라는 서로 다른 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/657_Reading_and_Reasoning_over_Chart_Images_for_Evidence-based_A/review]] — 차트 이미지 기반 팩트 체킹을 시각 언어 모델의 환각 보정으로 확장한 발전된 형태다.
+- 🏛 기반 연구: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 멀티모달 증거 기반 팩트 체킹의 기초적인 방법론을 시각 언어 모델 환각 보정에 적용한다.
+- 🔄 다른 접근: [[papers/397_Hallucinations_can_improve_large_language_models_in_drug_dis/review]] — 비전 LLM의 환각 교정과 약물 발견에서 환각 활용은 모두 환각 현상을 다루지만 정반대 전략을 취한다.
+- 🔗 후속 연구: [[papers/396_Hallucination_mitigation_using_agentic_ai_natural_language-b/review]] — Pelican의 비전-LLM 환각 교정이 자연어 기반 에이전트 AI의 환각 완화를 멀티모달로 확장한다.
+- 🧪 응용 사례: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 비전-언어 모델의 환각 교정 시스템으로, 멀티모달 팩트체킹의 핵심 기술인 클레임 검증을 실제 모델 신뢰성 향상에 적용합니다.
+- 🔗 후속 연구: [[papers/636_Prompt_to_be_consistent_is_better_than_self-consistent_few-s/review]] — 일관성 제약을 시각 언어 모델의 환각 보정에도 적용할 수 있는 확장된 접근법을 제시한다.
+- 🔄 다른 접근: [[papers/657_Reading_and_Reasoning_over_Chart_Images_for_Evidence-based_A/review]] — 차트 이미지 기반 팩트 체킹과 시각 언어 모델 환각 보정이라는 서로 다른 멀티모달 검증 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/753_Shared_imagination_Llms_hallucinate_alike/review]] — 비전-언어 모델의 환각 교정 방법을 제시하여 공유된 상상 공간 문제의 해결책을 모색한다

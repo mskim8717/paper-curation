@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "단일세포 수준에서 여러 데이터 유형(RNA, 단백질 등)을 동시에 측정한 멀티모달 데이터를 통합 분석하기 위해 가중 최근접 이웃(Weighted-Nearest Neighbor, WNN) 방법론을 개발했다. 이를 통해 세포 상태를 더욱 정확하게 정의하고 이전에 미발견된 면역세포 아형들을 발견할 수 있음을 보여준다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Single-cell_RNA_Sequencing"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Single-Cell_RNA_Sequencing_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hao et al._2020_Integrated analysis of multimodal single-cell data.pdf"
 ---
@@ -93,10 +93,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hao et al._2020_Integrated analysis of m
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 멀티모달 단일세포 데이터 통합 분석 방법론이 단일세포 데이터의 대형언어모델 처리를 위한 중요한 생물학적 기반을 제공한다
-- 🧪 응용 사례: [[papers/700_scBaseCount_an_AI_agent-curated_uniformly_processed_and_auto/review]] — 멀티모달 단일세포 데이터 분석 기술이 AI 에이전트 기반 단일세포 데이터베이스 구축과 표준화 작업에 핵심적으로 활용된다
-- 🔗 후속 연구: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — 가중 최근접 이웃 기반 멀티모달 데이터 통합이 LLM 에이전트를 활용한 범용 단일세포 주석 시스템으로 발전했다
-- 🏛 기반 연구: [[papers/193_CellAgent_An_LLM-driven_Multi-Agent_Framework_for_Automated/review]] — 멀티모달 단일세포 데이터 통합 분석 기술이 세포 생물학 연구 자동화를 위한 멀티 에이전트 시스템의 핵심 분석 기반을 제공한다
-- 🏛 기반 연구: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — 멀티모달 단일세포 데이터 통합 분석이 LLM 기반 세포 주석 프레임워크의 데이터 처리 기반을 제공한다.
-- 🔗 후속 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 단일세포 데이터를 텍스트로 변환하는 접근법이 멀티모달 단일세포 데이터 통합 분석을 위한 새로운 방법론적 확장을 제공한다
-- 🧪 응용 사례: [[papers/306_Efficient_fine-tuning_of_single-cell_foundation_models_enabl/review]] — 다중모달 단일세포 데이터 분석에 약물 조건부 어댑터를 적용할 수 있다
+- 🔗 후속 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 멀티모달 단일세포 데이터 분석을 LLM 기반 차세대 플랫폼으로 발전시킨 연구
+- 🏛 기반 연구: [[papers/699_SCANPY_large-scale_single-cell_gene_expression_data_analysis/review]] — 단일세포 유전자 발현 데이터 분석을 위한 기본 도구와 방법론 기반
+- 🧪 응용 사례: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — 멀티모달 단일세포 분석 기법을 LLM 에이전트 기반 자동 주석으로 활용한 사례
+- 🏛 기반 연구: [[papers/696_Scaling_Large_Language_Models_for_Next-Generation_Single-Cel/review]] — 단일세포 멀티모달 데이터 분석 기법을 LLM 기반 접근법으로 확장하는 기반 연구
+- 🏛 기반 연구: [[papers/699_SCANPY_large-scale_single-cell_gene_expression_data_analysis/review]] — 멀티모달 단일세포 데이터의 통합 분석이 SCANPY와 같은 단일세포 분석 도구의 이론적 기반을 제공한다.

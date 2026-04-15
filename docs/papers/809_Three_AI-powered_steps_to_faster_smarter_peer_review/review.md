@@ -8,8 +8,9 @@ arxiv: ""
 score: 3.75
 essence: "학술논문 동료평가(peer review)에 소요되는 과도한 시간을 줄이기 위해 음성 받아쓰기와 오프라인 대규모언어모델(LLM)을 활용한 3단계 워크플로우를 제시한다. 이 방법은 평가 품질을 유지하면서 검토 시간을 획기적으로 단축하고 학술 출판 생태계의 지속성을 개선한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/LLM_Review_Systems"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/AI_Science_Communication"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gruda_2025_Three AI-powered steps to faster, smarter peer review.pdf"
 ---
@@ -101,10 +102,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gruda_2025_Three AI-powered steps to fas
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/080_AI_is_transforming_peer_review__and_many_scientists_are_worr/review]] — AI 동료평가에 대한 우려를 해결하는 구체적이고 실용적인 솔루션을 제시한다
-- 🔗 후속 연구: [[papers/776_Streamlining_the_review_process_Ai-generated_annotations_in/review]] — AI 주석 달기를 포함한 더 포괄적인 동료평가 워크플로우로 확장한다
-- 🏛 기반 연구: [[papers/1087_Gpt4_is_slightly_helpful_for_peer-review_assistance_A_pilot/review]] — GPT-4의 동료평가 보조 능력을 바탕으로 더 체계적인 워크플로우를 구축한다
-- 🔄 다른 접근: [[papers/080_AI_is_transforming_peer_review__and_many_scientists_are_worr/review]] — AI를 활용한 더 효율적이고 스마트한 동료평가 솔루션을 제시한다
-- 🏛 기반 연구: [[papers/860_Unveiling_the_sentinels_Assessing_ai_performance_in_cybersec/review]] — AI 기반 동료평가의 기술적 가능성을 입증하여 효율적 워크플로우의 기초를 제공한다
-- 🏛 기반 연구: [[papers/776_Streamlining_the_review_process_Ai-generated_annotations_in/review]] — AI 보조 동료평가의 구체적 구현 방법으로 효율적 워크플로우의 기초를 제공한다
-- 🔄 다른 접근: [[papers/1087_Gpt4_is_slightly_helpful_for_peer-review_assistance_A_pilot/review]] — 단순한 보조 역할을 넘어 체계적인 AI 동료평가 워크플로우를 제시한다
+- ⚖️ 반론/비판: [[papers/080_AI_is_transforming_peer_review__and_many_scientists_are_worr/review]] — AI 동료평가의 우려와 달리 효율성과 품질을 모두 확보하는 AI 활용 방안을 제시한다
+- 🔗 후속 연구: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — LLM 추론 기반 동료평가 생성으로 3단계 워크플로우의 자동화 수준을 더욱 발전시킨다
+- 🔄 다른 접근: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — 프롬프트 생성 최적화를 통한 리뷰 개선으로 음성 받아쓰기와 다른 효율화 접근을 보여준다
+- 🔄 다른 접근: [[papers/080_AI_is_transforming_peer_review__and_many_scientists_are_worr/review]] — AI 동료평가의 우려와 달리 효율성 향상을 위한 AI 활용 워크플로우를 제시한다

@@ -12,8 +12,10 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 GPT와 같은 대규모 언어모델(LLM)을 자동 머신러닝(AutoML) 시스템의 컨트롤러로 활용하여, 데이터 처리부터 모델 아키텍처 설계, 하이퍼파라미터 튜닝까지 전체 머신러닝 파이프라인을 자동화하는 AutoML-GPT 시스템을 제안한다. 모델 카드(Model Card)와 데이터 카드(Data Card)를 활용한 구조화된 프롬프트를 통해 LLM이 다양한 AI 작업을 자동으로 최적화할 수 있게 한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2023_Automl-gpt Automatic machine learning with gpt.pdf"
 ---
@@ -118,7 +120,9 @@ AutoML-GPT의 작동 방식:
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/135_Automl_in_the_age_of_large_language_models_Current_challenge/review]] — LLM 시대 AutoML의 현재 도전과제와 기회에 대한 포괄적 분석을 제공한다.
-- 🔄 다른 접근: [[papers/594_OSDA_Agent_Leveraging_Large_Language_Models_for_De_Novo_Desi/review]] — 데이터 과학 자동화에서 AutoML과 다중 에이전트 시스템이라는 다른 접근 방식을 보여준다.
-- 🧪 응용 사례: [[papers/121_Autokaggle_A_multi-agent_framework_for_autonomous_data_scien/review]] — Kaggle 경진대회 자동화를 통한 AutoML의 구체적 적용 사례를 제시한다.
-- 🔄 다른 접근: [[papers/543_Mlcopilot_Unleashing_the_power_of_large_language_models_in_s/review]] — AutoML-GPT와 MLCopilot 모두 LLM을 활용한 자동 머신러닝을 추구하지만 전자는 자동화, 후자는 경험 기반 솔루션 제시에 중점을 둔다.
+- ⚖️ 반론/비판: [[papers/760_Small_Language_Models_are_the_Future_of_Agentic_AI/review]] — AutoML-GPT의 대규모 언어모델 활용이 소규모 언어모델 에이전트 우위 주장과 대조적 관점을 제공한다.
+- 🔗 후속 연구: [[papers/543_Mlcopilot_Unleashing_the_power_of_large_language_models_in_s/review]] — MLCopilot의 대규모 언어모델 활용이 AutoML-GPT의 자동화 접근법을 확장한다.
+- 🏛 기반 연구: [[papers/135_Automl_in_the_age_of_large_language_models_Current_challenge/review]] — 대규모 언어모델 시대의 AutoML 도전과제가 AutoML-GPT 설계의 기반 맥락을 제공한다.
+- 🔗 후속 연구: [[papers/135_Automl_in_the_age_of_large_language_models_Current_challenge/review]] — AutoML-GPT를 통해 AutoML과 LLM의 실제 통합을 구현한 발전된 연구
+- 🔄 다른 접근: [[papers/543_Mlcopilot_Unleashing_the_power_of_large_language_models_in_s/review]] — GPT 기반 자동 기계학습과 과거 경험 기반 ML 솔루션 제시는 모두 AI를 활용한 기계학습 자동화의 서로 다른 접근법이다.
+- 🧪 응용 사례: [[papers/760_Small_Language_Models_are_the_Future_of_Agentic_AI/review]] — AutoML-GPT의 자동화된 머신러닝 파이프라인이 소규모 언어모델의 효율성을 입증하는 실용적 사례가 된다.

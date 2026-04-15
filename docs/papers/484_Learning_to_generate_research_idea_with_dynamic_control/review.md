@@ -12,8 +12,8 @@ arxiv: ""
 score: 3.8
 essence: "대규모 언어모델(LLM)을 활용하여 연구 아이디어 생성을 자동화하되, 참신성(novelty), 실현성(feasibility), 효과성(effectiveness)의 세 가지 핵심 차원 간의 균형을 동적으로 조정하는 두 단계 학습 프레임워크를 제시한다. 감독학습(SFT)과 제어 가능한 강화학습(RL)을 결합하여 차원별 보상 모델을 통해 미세한 피드백으로 최적화한다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Autonomous_Agent_Learning_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_Learning to generate research idea with dynamic control.pdf"
 ---
@@ -131,12 +131,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2024_Learning to generate rese
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/066_Agentic_Personas_for_Adaptive_Scientific_Explanations_with_K/review]] — 두 논문 모두 연구 아이디어 생성을 다루되 동적 제어는 참신성-실현성 균형, Agentic Personas는 적응형 설명에 중점을 둔다.
-- 🏛 기반 연구: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — 대규모 인간 평가를 통한 LLM의 새로운 연구 아이디어 생성 연구는 동적 제어 프레임워크의 참신성과 실현성 평가 기준에 실증적 근거를 제공한다.
-- 🧪 응용 사례: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — LiveIdeaBench의 LLM 과학적 창의성 평가는 동적 제어 기반 연구 아이디어 생성의 실제 성능을 체계적으로 벤치마킹할 수 있다.
-- 🔗 후속 연구: [[papers/466_Large_Language_Model-Based_Evolutionary_Optimizer_Reasoning/review]] — 동적 제어를 통한 연구 아이디어 생성 학습이 LLM 기반 진화 최적화를 창의적 생성 분야로 확장한다.
-- 🔄 다른 접근: [[papers/066_Agentic_Personas_for_Adaptive_Scientific_Explanations_with_K/review]] — 두 논문 모두 연구 아이디어 생성을 다루되 Agentic Personas는 지식그래프 기반 설명, Learning to generate는 참신성-실현성 균형에 초점을 맞춘다.
-- 🔄 다른 접근: [[papers/257_Decomposing_the_enigma_Subgoal-based_demonstration_learning/review]] — 두 논문 모두 연구 방법론 개선을 다루되 형식 정리 증명은 구조화된 시연, 연구 아이디어 생성은 동적 제어에 초점을 맞춘다.
-- 🏛 기반 연구: [[papers/754_ShinkaEvolve_Towards_Open-Ended_And_Sample-Efficient_Program/review]] — 동적 제어를 통한 연구 아이디어 생성 방법이 ShinkaEvolve의 적응형 LLM 앙상블 전략의 이론적 기반이 됨
-- 🏛 기반 연구: [[papers/249_Curriculum_Reinforcement_Learning_from_Easy_to_Hard_Tasks_Im/review]] — 동적 제어를 통한 연구 아이디어 생성 학습은 쉬운 작업에서 어려운 작업으로의 점진적 학습 패러다임의 이론적 기반이다.
-- 🔗 후속 연구: [[papers/438_Introspective_growth_Automatically_advancing_llm_expertise_i/review]] — 동적 제어를 통한 연구 아이디어 생성 학습이 내성적 성장의 자동화된 전문성 발전을 창의적 아이디어 생성 영역으로 확장한 연구임
+- 🔄 다른 접근: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 동적 제어 대신 아이디어 체인 방식으로 연구 아이디어 생성의 창의성과 실현성을 균형 잡는 다른 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/392_Grapheval_A_lightweight_graph-based_llm_framework_for_idea_e/review]] — 그래프 기반 평가 프레임워크를 통해 아이디어 생성의 세 차원 균형을 더 체계적으로 측정하고 개선할 수 있다.
+- 🧪 응용 사례: [[papers/079_Ai_idea_bench_2025_Ai_research_idea_generation_benchmark/review]] — AI 연구 아이디어 생성 벤치마크에서 제안된 동적 제어 프레임워크의 실제 성능을 평가할 수 있다.
+- 🏛 기반 연구: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — 인간 대비 LLM의 새로운 연구 아이디어 생성 능력에 대한 기초 연구가 동적 제어 시스템의 필요성을 뒷받침한다.

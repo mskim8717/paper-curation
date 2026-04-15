@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "강화학습(RL)을 활용하여 LLM이 추론 과정 중 코드 인터프리터(Code Interpreter, CI)를 동적으로 호출하도록 학습시키는 프레임워크로, 수학 올림피아드 문제 해결에서 o1-preview를 27.9% 초과 달성한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Feng et al._2025_ReTool Reinforcement Learning for Strategic Tool Use in LLMs.pdf"
 ---
@@ -106,8 +108,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Feng et al._2025_ReTool Reinforcement Le
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/390_Grammars_of_formal_uncertainty_When_to_trust_llms_in_automat/review]] — ReTool의 강화학습 기반 전략적 도구 사용과 확률문맥자유문법 기반 불확실성 정량화는 LLM 신뢰성을 서로 다른 방식으로 개선하는 접근이다.
-- 🏛 기반 연구: [[papers/498_LLM_as_a_Mastermind_A_Survey_of_Strategic_Reasoning_with_Lar/review]] — LLM의 전략적 추론 능력에 대한 종합적 조사가 ReTool의 강화학습 기반 도구 사용 전략 개발의 이론적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — DeepSeek-R1의 강화학습을 통한 추론 인센티브화가 ReTool의 전략적 도구 사용 학습을 더 광범위한 추론 능력으로 확장한 발전 형태이다.
-- 🔄 다른 접근: [[papers/390_Grammars_of_formal_uncertainty_When_to_trust_llms_in_automat/review]] — 확률문맥자유문법 기반 불확실성 정량화와 강화학습 기반 전략적 도구 사용은 LLM의 신뢰성 문제를 서로 다른 방식으로 해결하는 접근이다.
-- 🔗 후속 연구: [[papers/498_LLM_as_a_Mastermind_A_Survey_of_Strategic_Reasoning_with_Lar/review]] — ReTool의 강화학습 기반 전략적 도구 사용이 LLM의 전략적 추론 능력을 실제 문제 해결에 적용한 구체적 확장 사례이다.
+- 🏛 기반 연구: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — 코드 생성 기초 모델이 강화학습 기반 도구 사용의 기반이 된다
+- 🔄 다른 접근: [[papers/813_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools/review]] — 강화학습 기반 대신 자가 학습을 통한 도구 사용법을 제시한다
+- 🔗 후속 연구: [[papers/655_ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models/review]] — 추론과 행동의 시너지를 강화학습 기반 전략적 도구 사용으로 확장한다
+- 🔗 후속 연구: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — 코드 생성을 넘어 강화학습을 통한 전략적 도구 사용으로 확장된다

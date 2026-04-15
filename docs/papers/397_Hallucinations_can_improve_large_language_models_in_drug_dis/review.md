@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.0
 essence: "일반적으로 문제로 간주되는 대규모 언어모델(LLM)의 환각(hallucinations)이 오히려 약물 발견의 분자 특성 예측 과제에서 모델의 성능을 향상시킬 수 있다는 역설적인 발견을 제시한다. 구조적 오기술(structural misdescription)과 같은 특정 유형의 환각이 모델의 일반화 능력을 증대시키는 암묵적 반사실(implicit counterfactual)로 작동함을 보여준다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Drug_Discovery"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yuan et al._2025_Hallucinations can improve large language models in drug discovery.pdf"
 ---
@@ -100,9 +102,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yuan et al._2025_Hallucinations can impr
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/814_Tooling_or_Not_Tooling_The_Impact_of_Tools_on_Language_Agent/review]] — 화학 분야에서 도구 증강이 항상 성능 향상으로 이어지지 않는다는 발견과 환각이 오히려 도움이 된다는 발견이 기존 AI 개선 방식에 대한 의문을 제기한다.
-- 🏛 기반 연구: [[papers/836_Towards_uncovering_how_large_language_model_works_An_explain/review]] — LLM의 환각 현상을 이해하기 위해서는 언어 모델의 내부 메커니즘에 대한 근본적 이해가 필요하다.
-- 🔄 다른 접근: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — 자기 수정 능력의 한계를 다룬 연구로, 환각이 성능 향상에 도움이 된다는 발견과 모델의 자기 개선 한계를 대조적으로 보여준다.
-- 🔗 후속 연구: [[papers/291_Drugclip_Contrastive_drug-disease_interaction_for_drug_repur/review]] — 약물 발견에서 LLM 환각 개선에서 대조학습 약물 재창출로의 확장
-- 🏛 기반 연구: [[papers/814_Tooling_or_Not_Tooling_The_Impact_of_Tools_on_Language_Agent/review]] — 도구 증강의 한계를 보여주는 연구로, 환각이 오히려 도움이 될 수 있다는 발견과 연결하여 AI 성능 개선의 복잡성을 이해할 수 있다.
-- 🏛 기반 연구: [[papers/836_Towards_uncovering_how_large_language_model_works_An_explain/review]] — LLM의 해석가능성 연구가 환각 현상이 성능에 미치는 영향을 이해하는 데 필요한 기계적 이해를 제공한다.
+- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — LLM이 추론에서 자기 교정할 수 없다는 연구와 환각이 오히려 도움된다는 발견은 LLM 오류에 대한 상반된 관점을 제시한다.
+- 🔄 다른 접근: [[papers/610_Pelican_Correcting_Hallucination_in_Vision-LLMs_via_Claim_De/review]] — 비전 LLM의 환각 교정과 약물 발견에서 환각 활용은 모두 환각 현상을 다루지만 정반대 전략을 취한다.
+- 🧪 응용 사례: [[papers/176_CACTUS_Chemistry_Agent_Connecting_Tool_Usage_to_Science/review]] — 화학 도구 연결 에이전트에서 구조적 환각이 새로운 분자 발견에 도움이 되는 실제 사례를 제공한다.
+- 🏛 기반 연구: [[papers/555_Molgan_An_implicit_generative_model_for_small_molecular_grap/review]] — 분자 그래프 생성 모델의 암묵적 생성 과정은 환각이 분자 특성 예측에 도움되는 이론적 기반을 제공한다.
+- ⚖️ 반론/비판: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — 약물 발견에서 LLM의 환각이 오히려 도움이 될 수 있다는 반대 관점을 제시하여 환각 문제에 대한 다른 시각을 보여줌
+- 🧪 응용 사례: [[papers/753_Shared_imagination_Llms_hallucinate_alike/review]] — 신약 발견에서 환각 현상이 오히려 도움이 될 수 있다는 긍정적 관점을 제시한다

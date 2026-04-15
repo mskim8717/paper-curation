@@ -12,7 +12,7 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 의료 체계적 문헌고찰의 가장 비용 집약적인 단계인 초록 스크리닝을 자동화하기 위해 지시어 미세조정(instruction tuning)을 통해 대규모언어모델(LLM)을 특화시킨 Bio-SIEVE를 제시한다. 이 모델은 ChatGPT를 능가하는 성능을 보이면서도 의료 영역 간 우수한 일반화 능력을 갖춘다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
+  - "cat/Scientific_Knowledge_Processing_Systems"
   - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luo et al._2023_Bio-sieve exploring instruction tuning large language models for systematic review automation.pdf"
@@ -111,10 +111,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Luo et al._2023_Bio-sieve exploring inst
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/244_Cross_sectional_pilot_study_on_clinical_review_generation_us/review]] — 임상 리뷰 생성을 위한 파일럿 연구에서 의료 문헌고찰 자동화로의 적용
-- 🔗 후속 연구: [[papers/507_Llmeval-med_A_real-world_clinical_benchmark_for_medical_llms/review]] — 의료 LLM 실제 임상 벤치마크에서 체계적 문헌고찰로의 확장
-- 🔄 다른 접근: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 생명의학 주장 검증과 초록 스크리닝 자동화의 다른 의료 AI 접근법
-- 🏛 기반 연구: [[papers/226_ClinicalGPT_Large_Language_Models_Finetuned_with_Diverse_Med/review]] — 다양한 의료 텍스트로 미세조정된 ClinicalGPT가 의료 특화 모델의 기반
-- 🏛 기반 연구: [[papers/169_Bioprobench_Comprehensive_dataset_and_benchmark_in_biologica/review]] — 생의학 분야 LLM 지시 튜닝이 생물학적 프로토콜 이해의 기반을 제공한다
-- 🧪 응용 사례: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — 자기검증 기법을 생명정보학 분야에 적용한 구체적 사례로서 Bio-SIEVE와 상호 보완적인 접근을 보여준다.
-- 🏛 기반 연구: [[papers/144_AutoProteinEngine_A_Large_Language_Model_Driven_Agent_Framew/review]] — 생물정보학 분야를 위한 대규모 언어 모델 조정 방법론이 AutoProteinEngine의 생물학자 친화적 자연언어 인터페이스 구현의 기반이다.
+- 🔄 다른 접근: [[papers/068_AgentMD_Empowering_Language_Agents_for_Risk_Prediction_with/review]] — 의료 체계적 문헌고찰 자동화와 임상 계산기 큐레이션 모두 의료 지식 처리의 서로 다른 자동화 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/167_Biomedlm_A_27_b_parameter_language_model_trained_on_biomedic/review]] — 바이오메디컬 특화 언어모델이 의료 문헌 스크리닝 자동화 시스템의 성능 향상에 필수적인 기반을 제공한다.
+- 🔗 후속 연구: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 의료 문헌 스크리닝 자동화를 다중 에이전트 협업 시스템으로 확장하여 더 복잡한 의료 진단 작업을 처리할 수 있다.
+- 🔗 후속 연구: [[papers/166_Biomaze_Benchmarking_and_enhancing_large_language_models_for/review]] — 생물학 분야에서 LLM의 명령어 튜닝을 통한 추론 능력 확장을 보여준다
+- 🔄 다른 접근: [[papers/068_AgentMD_Empowering_Language_Agents_for_Risk_Prediction_with/review]] — 의료 문헌 스크리닝 자동화와 임상 계산기 큐레이션 모두 의료 지식 처리의 서로 다른 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/167_Biomedlm_A_27_b_parameter_language_model_trained_on_biomedic/review]] — 바이오메디컬 특화 언어모델이 의료 문헌 스크리닝 시스템의 도메인 적응과 성능 최적화에 중요한 기반을 제공한다.

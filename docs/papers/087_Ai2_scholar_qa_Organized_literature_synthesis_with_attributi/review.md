@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "Ai2 Scholar QA는 과학 문헌에서 검색-증강 생성(RAG)을 활용하여 장문의 과학 질문에 답하는 무료 공개 시스템이다. 전체 파이프라인을 오픈소스로 공개하며 인용 기반의 조직화된 답변 보고서를 생성한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scholarly_Document_QA"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Research_Literature_Analysis_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singh et al._2025_Ai2 scholar qa Organized literature synthesis with attribution.pdf"
 ---
@@ -124,9 +125,12 @@ Ai2 Scholar QA는 과학 문헌에서 검색-증강 생성(RAG)을 활용하여 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — 과학적 질문 답변을 위한 검색-증강 생성 시스템으로 유사한 기능을 다른 방식으로 구현한다.
-- 🔗 후속 연구: [[papers/108_Ask_retrieve_summarize_A_modular_pipeline_for_scientific_lit/review]] — 과학 문헌 요약을 위한 모듈식 파이프라인으로 본 시스템의 문헌 합성 기능을 보완한다.
-- 🔄 다른 접근: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 과학 문헌을 검색하고 합성하는 오픈 시스템으로 동일한 목표를 다른 구조로 달성한다.
-- 🔗 후속 연구: [[papers/604_Pasa_An_llm_agent_for_comprehensive_academic_paper_search/review]] — 논문 검색이 조직적인 문헌 합성으로 확장됩니다.
-- 🔗 후속 연구: [[papers/913_Semantic_Scholar/review]] — 조직화된 문헌 합성을 위해 S2ORC 데이터를 활용한 확장 연구이다
-- 🔗 후속 연구: [[papers/021_A_Review_on_Scientific_Knowledge_Extraction_using_Large_Lang/review]] — 의료 과학 지식 추출을 조직화된 문헌 합성으로 확장한 연구이다
+- 🔄 다른 접근: [[papers/108_Ask_retrieve_summarize_A_modular_pipeline_for_scientific_lit/review]] — 과학 문헌 질의응답과 문서 요약 모두 RAG 기반 접근법을 사용하지만 서로 다른 출력 형태를 제공한다.
+- 🔗 후속 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — OpenScholar의 과학 문헌 합성 기능을 질의응답 형태로 확장하여 더 직관적인 사용자 인터페이스를 제공한다.
+- 🏛 기반 연구: [[papers/235_Comparing_knowledge_sources_for_open-domain_scientific_claim/review]] — 과학적 주장 검증을 위한 지식 소스 비교 연구가 문헌 기반 질의응답 시스템의 신뢰성 확보에 중요한 기반을 제공한다.
+- 🔄 다른 접근: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — AI2 Scholar QA와 유사하게 학술 문헌 종합을 다루지만 더 대규모 오픈 액세스 데이터로 접근한다.
+- 🔗 후속 연구: [[papers/457_Language_agents_achieve_superhuman_synthesis_of_scientific_k/review]] — AI2 Scholar QA는 문헌 기반 질의응답에서 속성 부여 기능을 추가하여, PaperQA2의 신뢰성 있는 과학 지식 합성 능력을 확장한다
+- 🔄 다른 접근: [[papers/108_Ask_retrieve_summarize_A_modular_pipeline_for_scientific_lit/review]] — 과학 문헌 요약과 질의응답 모두 RAG 기반이지만 서로 다른 정보 제시 방식을 통해 사용자의 다양한 요구를 충족한다.
+- 🔗 후속 연구: [[papers/215_Chime_Llm-assisted_hierarchical_organization_of_scientific_s/review]] — 계층적 문헌 조직화를 질의응답 시스템에 통합하여 더 체계적이고 맥락화된 문헌 검색 및 답변 생성을 가능하게 한다.
+- 🏛 기반 연구: [[papers/235_Comparing_knowledge_sources_for_open-domain_scientific_claim/review]] — 과학적 주장 검증을 위한 지식 소스 비교 연구가 문헌 기반 질의응답 시스템의 신뢰성과 정확성 확보에 중요한 기반을 제공한다.
+- 🔗 후속 연구: [[papers/913_Semantic_Scholar/review]] — 대규모 학술 코퍼스를 구조화된 문헌 합성과 인용 분석이라는 구체적 응용으로 확장한다

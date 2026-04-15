@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "Gemini 2.0 기반 다중 에이전트 시스템으로 구성된 AI 공동 과학자(AI co-scientist)를 제시하며, 생성-토론-진화(generate-debate-evolve) 방식으로 기존 증거를 기반으로 참신한 연구 가설을 자동 생성하고 개선하는 시스템을 개발했다. 약물 재사용, 간섬유화 신규 표적, 박테리아 유전자 전달 메커니즘 분야에서 in vitro 검증을 통해 시스템의 과학 발견 가속화 능력을 실증했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/AI-Powered_Research_Planning"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Domain-Specific_Autonomous_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Gottweis et al._2025_Towards an AI co-scientist.pdf"
 ---
@@ -116,11 +116,8 @@ Gemini 2.0 기반 다중 에이전트 시스템으로 구성된 AI 공동 과학
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/071_AgentRxiv_Towards_Collaborative_Autonomous_Research/review]] — AI co-scientist의 생성-토론-진화 방식과 AgentRxiv의 프리프린트 서버 기반 협업은 서로 다른 메커니즘으로 에이전트 간 지식 발전을 달성한다.
-- 🔗 후속 연구: [[papers/826_Towards_Autonomous_Mathematics_Research/review]] — Aletheia의 자율적 수학 연구가 AI co-scientist의 가설 생성 및 검증 프레임워크를 전문 수학 영역으로 특화하여 확장한 적용이다.
-- 🏛 기반 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI Scientist의 완전 자동화된 과학 발견 방법론이 Gemini 2.0 기반 AI co-scientist 시스템 개발의 기본적인 기술적 토대를 제공한다.
-- 🔄 다른 접근: [[papers/071_AgentRxiv_Towards_Collaborative_Autonomous_Research/review]] — AgentRxiv의 협업적 연구 공유 메커니즘과 AI co-scientist의 생성-토론-진화 방식은 서로 다른 접근으로 에이전트 간 지식 축적을 달성한다.
-- 🧪 응용 사례: [[papers/826_Towards_Autonomous_Mathematics_Research/review]] — AI co-scientist의 가설 생성-개선 메커니즘이 Aletheia의 자율적 수학 정리 발견에 구체적으로 적용된 전문 영역 특화 사례이다.
-- 🔄 다른 접근: [[papers/059_Agent_Laboratory_Using_LLM_Agents_as_Research_Assistants/review]] — Agent Laboratory와 Towards an AI co-scientist는 모두 AI 연구 지원을 다루지만, 인간 아이디어 실행 지원과 완전 자율적 공동 연구라는 서로 다른 협업 모델을 제시합니다.
-- 🏛 기반 연구: [[papers/578_Novelseek_When_agent_becomes_the_scientistbuilding_closed-lo/review]] — AI 공동 과학자 연구는 InternAgent가 인간 전문가 피드백을 통합하면서 자율 과학 연구를 수행하는 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/436_InternAgent_When_Agent_Becomes_the_Scientist_--_Building_Clo/review]] — AI 공동 과학자의 개념적 기반과 비전을 제공한다.
+- 🏛 기반 연구: [[papers/175_Building_machines_that_learn_and_think_with_people/review]] — 인간-AI 협력적 인지의 이론적 원리를 실제 과학 연구 자동화에 구현한 구체적 사례로서 사고 파트너 개념의 실용적 구현임
+- 🔄 다른 접근: [[papers/805_The_Virtual_Lab_of_AI_agents_designs_new_SARS-CoV-2_nanobodi/review]] — AI 기반 생물의학 연구를 다루지만 AI co-scientist는 범용적 연구 가설 생성에, Virtual Lab은 나노바디 설계에 특화된 서로 다른 접근법임
+- 🔗 후속 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 과학적 발견을 다루는 AI Scientist의 연구 범위를 다중 에이전트 협업과 가설 생성-개선 사이클로 더욱 정교하게 발전시킴
+- 🔗 후속 연구: [[papers/175_Building_machines_that_learn_and_think_with_people/review]] — 인간-AI 협력의 이론적 원리를 실제 과학 연구에서 구현한 구체적 사례로서 협력적 인지 개념의 실용적 확장임
+- 🔄 다른 접근: [[papers/805_The_Virtual_Lab_of_AI_agents_designs_new_SARS-CoV-2_nanobodi/review]] — AI 기반 생물의학 연구를 다루지만 Virtual Lab은 나노바디 설계에, AI co-scientist는 범용적 연구 가설 생성에 집중한 서로 다른 특화 접근법임

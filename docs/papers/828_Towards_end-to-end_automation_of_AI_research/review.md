@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 **The AI Scientist** 시스템을 제시하며, 이는 아이디어 창출부터 동료 검토까지 과학 연구의 전체 수명주기를 자동화하는 최초의 엔드-투-엔드 파이프라인이다. 이 시스템이 생성한 논문이 상위권 머신러닝 컨퍼런스 워크숍의 동료 검토 과정을 통과했으며, 이는 AI의 과학 기여 역량이 상당히 성숙했음을 입증한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Task_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/AI_Scientist_Research_Protocols"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lu et al._2026_Towards end-to-end automation of AI research.pdf"
 ---
@@ -122,16 +123,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lu et al._2026_Towards end-to-end automa
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/086_AI-Researcher_Autonomous_Scientific_Innovation/review]] — 완전 자동화된 과학 연구와 자율적 과학 혁신이라는 유사하지만 서로 다른 접근법으로 AI 과학자 구현을 시도한다.
-- 🏛 기반 연구: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — AI 과학자의 초기 개념과 구현을 완전한 엔드투엔드 시스템으로 발전시킨 진화 과정을 보여준다.
-- 🔗 후속 연구: [[papers/718_Scientific_discovery_in_the_age_of_artificial_intelligence/review]] — AI 시대 과학 발견의 이론적 가능성을 실제 작동하는 자동화 시스템으로 구현하여 실증적 증거를 제공한다.
-- 🔗 후속 연구: [[papers/321_Evaluating_Sakanas_AI_Scientist_Bold_Claims_Mixed_Results_an/review]] — AI 연구의 종단간 자동화에서 Sakana AI Scientist 평가로의 확장
-- 🔗 후속 연구: [[papers/476_Large_language_models_orchestrating_structured_reasoning_ach/review]] — 데이터 과학 경쟁에서 검증된 자율 학습 능력을 과학 연구 전체 과정으로 확장하여 완전 자동화를 달성한다.
-- 🧪 응용 사례: [[papers/513_M2F_Automated_Formalization_of_Mathematical_Literature_at_Sc/review]] — 수학 형식화 자동화가 과학 연구 전체 자동화의 핵심 구성요소로 작용할 수 있음을 입증한다.
-- 🔄 다른 접근: [[papers/764_Sparks_Multi-Agent_Artificial_Intelligence_Model_Discovers_P/review]] — 단백질 과학 특화 발견과 일반적 과학 연구 자동화라는 서로 다른 범위의 자동화된 발견 접근법을 제시한다.
-- 🧪 응용 사례: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — 에이전트 확장 원칙을 과학 연구 자동화라는 복잡한 실제 문제에 적용한 구체적 사례를 제공한다.
-- 🧪 응용 사례: [[papers/123_Automated_Hypothesis_Validation_with_Agentic_Sequential_Fals/review]] — 자동화된 가설 검증이 완전한 과학 연구 자동화의 핵심 구성요소로 작용함을 보여준다.
-- ⚖️ 반론/비판: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — 완전 자동화 주장에 대해 개별 과학적 작업 단위에서의 체계적 평가가 우선되어야 함을 강조한다.
-- 🧪 응용 사례: [[papers/147_Aviary_training_language_agents_on_challenging_scientific_ta/review]] — 과학적 작업에서 훈련된 언어 에이전트가 완전 자동화된 과학 연구의 핵심 구성요소로 활용될 수 있음을 보여준다.
-- 🏛 기반 연구: [[papers/285_Dolphin_Closed-loop_open-ended_auto-research_through_thinkin/review]] — AI 연구의 end-to-end 자동화 연구는 DOLPHIN의 아이디어-실험-피드백 순환 구조의 이론적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/436_InternAgent_When_Agent_Becomes_the_Scientist_--_Building_Clo/review]] — AI 연구의 종단간 자동화로 과학 연구 자동화의 범위를 확장한다.
+- 🏛 기반 연구: [[papers/764_Sparks_Multi-Agent_Artificial_Intelligence_Model_Discovers_P/review]] — 완전 자동화된 과학 발견을 수행하는 다중에이전트 AI 모델로, 엔드-투-엔드 연구 자동화의 핵심 구성요소를 제공
+- 🔄 다른 접근: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 완전 자동화된 오픈엔드 과학 발견에 대한 다른 시각과 접근을 제시하여, AI Scientist 시스템과 비교 분석 가능
+- 🔗 후속 연구: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — 워크숍 수준의 자동화된 과학 발견으로 확장된 AI Scientist v2로, 원본 시스템의 개선된 버전
+- ⚖️ 반론/비판: [[papers/321_Evaluating_Sakanas_AI_Scientist_Bold_Claims_Mixed_Results_an/review]] — Sakana의 AI Scientist를 자율 연구 관점에서 평가한 연구로, 엔드-투-엔드 자동화의 한계와 과제를 지적
+- 🔗 후속 연구: [[papers/764_Sparks_Multi-Agent_Artificial_Intelligence_Model_Discovers_P/review]] — AI 연구의 엔드-투-엔드 자동화를 실현하는 구체적 시스템으로, Sparks의 과학적 발견을 실제 연구 파이프라인으로 확장
+- 🏛 기반 연구: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — AI 연구 자동화에 대한 종단간 접근법이 AI Scientist-v2 개발의 이론적 기반이 된다.

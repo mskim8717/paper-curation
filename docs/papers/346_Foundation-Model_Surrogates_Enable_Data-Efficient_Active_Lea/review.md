@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "소재 발견을 위한 능동 학습(Active Learning, AL)에서 기존 가우스 프로세스(GP)와 랜덤 포레스트(RF) 서로게이트 모델의 한계를 극복하기 위해, 트랜스포머 기반의 기초 모델(Foundation Model, FM)인 TabPFN을 서로게이트로 도입하는 문맥 내 능동 학습(In-Context Active Learning, ICAL) 프레임워크를 제안한다. TabPFN은 메타 학습을 통해 소량의 실험 데이터에서도 표현력 높은 예측과 보정된 불확실성을 동시에 제공한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Agent_Frameworks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Physics-Informed_Neural_Operators"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2026_Foundation-Model Surrogates Enable Data-Efficient Active Learning for Materials Discovery.pdf"
 ---
@@ -108,9 +108,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2026_Foundation-Model Surrogat
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 재료과학 LLM 방법론을 능동 학습 기반 소재 발견에 구체적으로 적용하는 실용적 사례입니다.
-- 🔗 후속 연구: [[papers/037_A_Survey_on_Uncertainty_Quantification_Methods_for_Deep_Lear/review]] — 불확실성 정량화를 기초 모델 기반 능동 학습으로 확장하여 데이터 효율성을 크게 개선합니다.
-- 🔄 다른 접근: [[papers/626_Polymer_Brushes_and_Grafted_Polymers_AIML-Driven_Synthesis_S/review]] — 소재 발견을 위한 AI/ML 워크플로우라는 동일한 목표를 다른 재료 시스템(일반 vs 중합체)으로 접근합니다.
-- 🏛 기반 연구: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 재료 발견을 위한 능동 학습 시스템의 도메인 특화 언어 모델 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/626_Polymer_Brushes_and_Grafted_Polymers_AIML-Driven_Synthesis_S/review]] — 소재 연구 자동화라는 동일한 목표를 중합체와 일반 소재라는 다른 재료 시스템으로 접근합니다.
-- 🔗 후속 연구: [[papers/258_Deep_active_learning_based_experimental_design_to_uncover_sy/review]] — 기초 모델 기반 대리 모델이 HIV 감염 유전자 상호작용 발견에서 능동학습을 더욱 효율화할 수 있습니다.
+- 🔄 다른 접근: [[papers/788_Targeted_materials_discovery_using_Bayesian_algorithm_execut/review]] — 둘 다 소재 발견을 위한 베이지안 최적화를 사용하지만, ICAL은 기초 모델 서로게이트에, 타겟 연구는 베이지안 알고리즘 실행에 집중한다
+- 🏛 기반 연구: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — 화학 및 재료과학을 위한 자율 실험실 연구가 ICAL의 소재 발견을 위한 능동 학습 프레임워크 개발에 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/695_Scaling_Deep_Learning_for_Materials_Discovery/review]] — 재료 발견을 위한 딥러닝 확장 연구가 TabPFN 기반 문맥 내 능동 학습으로 구체적으로 발전되었다
+- 🔄 다른 접근: [[papers/258_Deep_active_learning_based_experimental_design_to_uncover_sy/review]] — 재료 발견에서 생물학적 상호작용과 범용 능동학습이라는 서로 다른 응용 도메인을 보여준다

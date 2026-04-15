@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.1
 essence: "편미분방정식(PDE) 해법으로 전통 수치해석 방법을 대체할 수 있는 신경 연산자(Neural Operators, NOs)의 아키텍처, 변형, 성능을 종합적으로 비교 분석한 체계적 리뷰 논문이다. DeepONet, 적분 커널 연산자, 트랜스포머 기반 신경 연산자의 세 가지 주요 아키텍처와 이들의 물리정보 통합 변형, 복잡계 응용을 다룬다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Physics-informed_Neural_Networks"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Physics-Informed_Neural_Operators"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_Architectures, variants, and performance of neural operators A comparative review.pdf"
 ---
@@ -115,11 +115,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2025_Architectures, variants,
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리정보 신경망의 이론적 기반을 제공하여 신경 연산자의 물리 법칙 통합 방법론을 이해할 수 있다.
-- 🔗 후속 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — 신경 ODE를 신경 연산자로 확장하는 방법론적 연결점을 제시한다.
-- 🧪 응용 사례: [[papers/456_Lang-PINN_From_Language_to_Physics-Informed_Neural_Networks/review]] — 언어에서 물리정보 신경망으로의 변환 프레임워크를 통해 신경 연산자의 실제 구현 방법을 보여준다.
-- 🏛 기반 연구: [[papers/276_Discovery_of_Unstable_Singularities/review]] — 신경 연산자 아키텍처는 불안정 특이점 발견에 필요한 고정밀 수치해석의 기반이 됨
-- 🏛 기반 연구: [[papers/1085_Ecm_A_unified_electronic_circuit_model_for_explaining_the_em/review]] — 물리정보 신경망과 신경 연산자의 이론적 기반 위에서 전자회로 모델링 접근법을 제시한다.
-- 🔗 후속 연구: [[papers/767_SPINONet_Scalable_Spiking_Physics-informed_Neural_Operator_f/review]] — 신경 연산자의 아키텍처와 변형에 대한 연구가 스파이킹 기반 에너지 효율적 설계로 확장됩니다.
-- 🏛 기반 연구: [[papers/587_OpenFOAM_The_Open_Source_Computational_Fluid_Dynamics_Toolbo/review]] — 과학 컴퓨팅에서 신경망 연산자의 이론적 기반을 실용적 CFD 자동화로 구현한다.
-- 🏛 기반 연구: [[papers/559_Mooseagent_A_llm_based_multi-agent_framework_for_automating/review]] — 신경 연산자의 아키텍처와 변형에 대한 연구는 MooseAgent가 복잡한 유한요소법 시뮬레이션을 자동화하는 이론적 배경을 제공한다.
+- 🔄 다른 접근: [[papers/574_Neural-POD_A_Plug-and-Play_Neural_Operator_Framework_for_Inf/review]] — 둘 다 신경 연산자를 다루지만, 첫 번째는 포괄적 비교 분석에, Neural-POD는 플러그 앤 플레이 프레임워크에 집중한다
+- 🔗 후속 연구: [[papers/621_Physics-informed_neural_network_for_multi-objective_design_o/review]] — 언센티드 칼만 필터를 결합한 물리정보 신경망 연구가 물리정보 통합 변형을 포함한 신경 연산자 아키텍처로 발전되었다
+- 🏛 기반 연구: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 과학 머신러닝을 위한 기초 모델 연구가 전통 수치해석 방법을 대체하는 신경 연산자 개발의 이론적 기반을 제공한다
+- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 신경 연산자의 아키텍처와 변형에 관한 연구는 물리 정보 신경망 발전의 핵심 기술적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/572_Neural_Ordinary_Differential_Equations/review]] — 신경 연산자의 아키텍처와 변형들이 Neural ODE와 같은 연속 신경망 모델의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/829_Towards_Foundation_Models_for_Scientific_Machine_Learning_Ch/review]] — 신경 연산자의 다양한 아키텍처와 변형을 체계적으로 정리한 조사 연구로, 과학 머신러닝 파운데이션 모델의 기술적 기반을 제공한다
+- 🏛 기반 연구: [[papers/364_From_Theory_to_Application_A_Practical_Introduction_to_Neura/review]] — 신경 연산자 아키텍처와 변형들에 대한 종합적 이해가 실용적 응용의 기반 지식을 제공함
+- 🏛 기반 연구: [[papers/354_From_GPU_Engineering_to_Scientific_Discovery_Parallelism_Tec/review]] — 신경망 연산자의 다양한 아키텍처와 성능 분석의 이론적 기반을 제공합니다.

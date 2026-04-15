@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "트랜스포머 기반 언어모델의 내부 계산을 역공학하여 이해하는 기계적 해석가능성(Mechanistic Interpretability, MI)에 대한 종합 리뷰로, 초보자를 위한 실무 가이드를 제시한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Cognitive_LLM_Evaluation"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rai et al._2024_A practical review of mechanistic interpretability for transformer-based language models.pdf"
 ---
@@ -90,8 +91,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rai et al._2024_A practical review of me
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — AI 안전을 위한 기계적 해석가능성 리뷰와 트랜스포머 기반 모델의 기계적 해석가능성은 상호 보완적인 관점에서 AI 이해가능성을 다룹니다
-- 🏛 기반 연구: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 대형 언어모델의 신뢰성 평가는 기계적 해석가능성을 통한 모델 내부 이해의 궁극적인 목표와 평가 기준을 제공합니다
-- 🔗 후속 연구: [[papers/836_Towards_uncovering_how_large_language_model_works_An_explain/review]] — 대형 언어모델 작동 방식의 설명가능한 연구는 기계적 해석가능성의 실무 가이드를 더욱 심화된 연구 방향으로 확장합니다
-- 🔗 후속 연구: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — 트랜스포머 모델의 기계론적 해석가능성 연구를 AI 안전성 맥락으로 확장한다
-- 🔗 후속 연구: [[papers/582_On_gradient-like_explanation_under_a_black-box_setting_when/review]] — 트랜스포머의 기계적 해석가능성 실용적 검토를 블랙박스 설정의 그래디언트 유사 설명으로 확장할 수 있다.
+- 🔄 다른 접근: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — 트랜스포머 기계적 해석가능성에서 실무 중심 리뷰와 AI 안전성 관점의 리뷰는 서로 다른 목적과 접근법으로 해석가능성을 다룬다.
+- 🔗 후속 연구: [[papers/836_Towards_uncovering_how_large_language_model_works_An_explain/review]] — LLM 작동 원리 해명 연구와 기계적 해석가능성 실무 가이드를 결합하면 더 체계적인 모델 이해 방법론을 개발할 수 있다.
+- 🔗 후속 연구: [[papers/527_Mechanistic_interpretability_for_ai_safetya_review/review]] — 변환기 모델의 실용적 해석가능성 리뷰가 AI 안전성 관점을 확장한다

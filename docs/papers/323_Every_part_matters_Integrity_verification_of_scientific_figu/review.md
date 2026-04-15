@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "본 연구는 과학 논문의 그림에서 텍스트와 시각 요소의 세밀한 정렬을 위한 새로운 작업인 \"Figure Integrity Verification\"을 제안하며, 이를 지원하기 위해 Figure-seg 데이터셋과 Every Part Matters (EPM) 프레임워크를 개발했다. 이는 복잡한 도메인-특화 과학 그림의 이해와 검증을 크게 개선한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Literature_Analysis"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "sub/Research_Literature_Analysis_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shi et al._2024_Every part matters Integrity verification of scientific figures based on multimodal large language.pdf"
 ---
@@ -117,6 +118,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Shi et al._2024_Every part matters Integ
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/198_ChartGemma_Visual_Instruction-tuning_for_Chart_Reasoning_in/review]] — 과학 그림의 무결성 검증이 차트 추론 능력에 적용됩니다.
-- 🏛 기반 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 그림 캡션 생성이 과학 그림 검증의 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 과학 그림 검증이 더 포괄적인 과학 캡션 생성으로 확장됩니다.
+- 🔗 후속 연구: [[papers/336_FigCaps-HF_A_Figure-to-Caption_Generative_Framework_and_Benc/review]] — 과학 그림 캡션 생성으로 그림 무결성 검증을 보완하는 연구이다.
+- 🧪 응용 사례: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 과학 그림 캡션 생성에 그림 무결성 검증 기법을 적용할 수 있다.
+- 🔄 다른 접근: [[papers/564_Multi-llm_collaborative_caption_generation_in_scientific_doc/review]] — 과학 문서의 멀티모달 캡션 생성으로 그림 검증의 다른 접근법을 보여준다.
+- 🧪 응용 사례: [[papers/252_Data_integrity_in_materials_science_in_the_era_of_AI_balanci/review]] — 재료과학에서의 데이터 무결성 문제를 과학 논문 그림 검증이라는 구체적 방법으로 해결

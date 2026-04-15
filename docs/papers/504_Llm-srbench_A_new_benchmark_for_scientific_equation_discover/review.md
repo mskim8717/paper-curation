@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.4
 essence: "본 논문은 대규모 언어 모델(LLM) 기반 과학 방정식 발견의 진정한 능력을 평가하기 위해 암기를 방지하는 종합적 벤치마크 LLM-SRBench를 제안한다. 4개 과학 분야에서 239개 도전 문제로 구성되어 있으며, 최고 성능 모델도 31.5% 기호 정확도에 불과함을 보여준다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Benchmarking_Taxonomy"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Llm-srbench A new benchmark for scientific equation discovery with large language models.pdf"
 ---
@@ -116,8 +117,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Llm-srbench A new benc
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/669_Researchbench_Benchmarking_llms_in_scientific_discovery_via/review]] — 과학적 발견 벤치마킹의 더 넓은 맥락에서 방정식 발견 평가를 포함함
-- 🔄 다른 접근: [[papers/289_Drsr_Llm_based_scientific_equation_discovery_with_dual_reaso/review]] — 동일한 과학 방정식 발견 문제를 데이터와 경험 기반 이중 추론으로 접근
-- 🧪 응용 사례: [[papers/1083_A_framework_for_discovering_scientific_equations_with_large/review]] — 과학 방정식 발견을 위한 LLM 벤치마크로 실제 평가 시스템 제공
-- 🔗 후속 연구: [[papers/012_A_Multi-agent_Framework_for_Physical_Laws_Discovery/review]] — 물리 법칙 자동 발견 프레임워크는 LLM-SRBench의 과학 방정식 발견 벤치마크를 다중 에이전트 협업을 통해 실제 연구 환경으로 확장합니다.
-- 🔗 후속 연구: [[papers/289_Drsr_Llm_based_scientific_equation_discovery_with_dual_reaso/review]] — 과학 방정식 발견을 위한 LLM 기반 기호 회귀에서 더 포괄적인 과학 방정식 발견 벤치마크로 확장한 평가 프레임워크입니다.
+- 🔄 다른 접근: [[papers/844_Truly_assessing_fluid_intelligence_of_large_language_models/review]] — 과학 방정식 발견과 유동 지능 평가 모두 LLM의 진정한 추론 능력을 벤치마킹한다
+- 🔗 후속 연구: [[papers/289_Drsr_Llm_based_scientific_equation_discovery_with_dual_reaso/review]] — 데이터와 경험의 이중 추론 방법이 LLM-SRBench의 암기 방지 접근법을 보완한다
+- 🏛 기반 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 과학 분야 LLM 설문이 방정식 발견 벤치마크 설계의 이론적 배경을 제공한다
+- 🔄 다른 접근: [[papers/844_Truly_assessing_fluid_intelligence_of_large_language_models/review]] — 과학 방정식 발견 벤치마크와 유동 지능 평가가 모두 LLM의 일반화 능력을 측정한다
+- 🔄 다른 접근: [[papers/275_Discovering_symbolic_differential_equations_with_symmetry_in/review]] — 물리 제약 기반 방정식 발견과 LLM 기반 접근법이 서로 다른 관점에서 과학 법칙을 탐구한다
+- 🏛 기반 연구: [[papers/502_Llm-feynman_Leveraging_large_language_models_for_universal_s/review]] — 과학 방정식 발견 벤치마크가 LLM-Feynman 같은 자동 공식 발견 시스템의 성능 평가 기준을 제공함
+- 🔄 다른 접근: [[papers/289_Drsr_Llm_based_scientific_equation_discovery_with_dual_reaso/review]] — 과학 방정식 발견을 위한 LLM 기반 벤치마크와 유사한 목표이지만 이중 추론 메커니즘으로 차별화된 접근을 제시한다.

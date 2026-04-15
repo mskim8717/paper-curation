@@ -12,8 +12,8 @@ arxiv: ""
 score: 3.8
 essence: "본 논문은 대규모 언어 모델(LLM)을 활용하여 학술 논문의 관련성을 자동으로 평가하는 분류 시스템 RelevAI-Reviewer를 제안하고, 25,164개의 인스턴스로 구성된 벤치마크 데이터셋을 공개한다. BERT 기반 종단(end-to-end) 분류기가 기존의 지도학습 방법들을 능가하는 성능을 달성했음을 보였다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Peer_Review"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Human_Experience_Studies"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Couto et al._2024_RelevAI-Reviewer A Benchmark on AI Reviewers for Survey Paper Relevance.pdf"
 ---
@@ -145,6 +145,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Couto et al._2024_RelevAI-Reviewer A Ben
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/004_A_Comprehensive_Survey_of_Scientific_Large_Language_Models_a/review]] — 과학 대규모 언어모델에 대한 포괄적 조사가 논문 관련성 평가라는 특정 응용에 대한 다른 접근을 보여준다.
-- 🧪 응용 사례: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — LLM을 활용한 탐색적 논문 검토 연구가 AI 리뷰어의 실제 구현과 평가 방안을 제시한다.
-- 🧪 응용 사례: [[papers/824_Towards_AI_for_science_developing_a_conceptual_basis_for_tra/review]] — AI 리뷰어 벤치마크 연구가 도서관의 연구지원 서비스 평가에 적용될 수 있다.
+- 🏛 기반 연구: [[papers/810_Through_the_lens_of_core_competency_Survey_on_evaluation_of/review]] — LLM 핵심 역량 평가 프레임워크가 논문 관련성 평가 시스템의 방법론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — AI 리뷰 시스템 평가 연구를 논문 관련성 평가로 확장한 구체적 적용 사례이다
+- 🔄 다른 접근: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 다중 턴 대화 기반 피어 리뷰와 관련성 기반 분류가 각각 다른 리뷰 자동화 접근법이다
+- 🧪 응용 사례: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — 인간다운 논문 리뷰 개선 연구가 관련성 평가 벤치마크의 실제 적용 맥락을 보여준다
+- 🔗 후속 연구: [[papers/128_Automatically_evaluating_the_paper_reviewing_capability_of_l/review]] — LLM의 논문 심사 능력 평가와 조사 논문용 AI 심사자 벤치마크를 결합하면 다양한 학술 문서 유형에 대한 포괄적 심사 능력 평가가 가능하다.
+- 🔗 후속 연구: [[papers/237_Confidence_in_Large_Language_Model_Evaluation_A_Bayesian_App/review]] — AI 리뷰어 벤치마킹을 베이지안 신뢰도 평가로 확장한다
+- 🧪 응용 사례: [[papers/810_Through_the_lens_of_core_competency_Survey_on_evaluation_of/review]] — 핵심 역량 프레임워크가 논문 관련성 평가와 같은 구체적 LLM 응용 평가에 적용된다
+- 🧪 응용 사례: [[papers/127_Automatic_evaluation_metrics_for_artificially_generated_scie/review]] — AI 리뷰어 벤치마크가 AI 생성 과학 연구의 자동 평가 메트릭 검증을 위한 실제 적용 사례를 제공한다.

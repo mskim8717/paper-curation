@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "본 연구는 대규모 언어 모델(LLM)과 인과 지식 그래프(Causal Knowledge Graph)를 결합하여 심리학 분야의 자동화된 가설 생성을 수행했다. 43,312개 심리학 논문을 분석한 결과, LLM 단독보다 우월한 신규성을 가진 130개의 웰빙 관련 가설을 생성할 수 있음을 입증했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Question_Answering"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tong et al._2024_Automating psychological hypothesis generation with AI when large language models meet causal graph.pdf"
 ---
@@ -115,8 +117,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Tong et al._2024_Automating psychologica
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — 둘 다 지식 그래프와 LLM을 결합한 연구 아이디어 생성을 다루지만, 하나는 심리학, 다른 하나는 일반 과학 분야에 특화됨
-- 🏛 기반 연구: [[papers/468_Large_Language_Models_are_Zero_Shot_Hypothesis_Proposers/review]] — LLM의 가설 생성 능력에 대한 기초적 탐구가 심리학 분야 자동화된 가설 생성 연구의 이론적 토대를 제공함
-- 🔗 후속 연구: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — 일반적인 LLM 가설 생성을 심리학이라는 특정 도메인으로 확장하여 인과 지식 그래프를 통합한 더 정교한 접근법을 제시함
-- 🔄 다른 접근: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — 둘 다 지식 그래프와 LLM을 결합한 연구 아이디어 생성을 다루지만 하나는 일반 과학, 다른 하나는 심리학에 특화됨
-- 🔗 후속 연구: [[papers/419_Hypothesis_Generation_with_Large_Language_Models/review]] — AI를 통한 심리학 가설 생성을 더 일반적인 과학 분야로 확장하고 탐색-활용 균형을 도입한 진보된 방법입니다.
+- 🧪 응용 사례: [[papers/492_Literature_meets_data_A_synergistic_approach_to_hypothesis_g/review]] — 문헌과 데이터를 통합한 가설 생성 방법론을 심리학 분야에 구체적으로 적용한 실증 사례로, 일반적 접근법의 실제 활용 예시다
+- 🔄 다른 접근: [[papers/434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/review]] — 지식 그래프 기반의 과학적 아이디어 생성 접근법으로, 이 논문의 인과 지식 그래프 결합 방법과 유사하지만 더 범용적인 접근을 보여준다
+- 🔗 후속 연구: [[papers/518_Many_Heads_Are_Better_Than_One_Improved_Scientific_Idea_Gene/review]] — 다수의 관점을 통합한 과학 아이디어 생성 연구로, 이 논문의 LLM과 지식 그래프 결합 접근을 다중 에이전트 협업으로 확장한다
+- 🔄 다른 접근: [[papers/188_Can_we_automatize_scientific_discovery_in_the_cognitive_scie/review]] — AI를 통한 심리학 가설 생성 자동화가 인지과학 발견 자동화와는 다른 접근으로 행동과학 연구를 자동화한다
+- 🧪 응용 사례: [[papers/123_Automated_Hypothesis_Validation_with_Agentic_Sequential_Fals/review]] — AI를 통한 심리학 가설 생성 자동화 연구로, 순차적 반박을 통한 가설 검증의 심리학 분야 적용
+- 🧪 응용 사례: [[papers/149_Bayes-Entropy_Collaborative_Driven_Agents_for_Research_Hypot/review]] — 심리학적 가설 생성 자동화에 베이지안-엔트로피 협력 방법론을 적용하여 인문사회과학 연구에서도 활용할 수 있다
+- 🧪 응용 사례: [[papers/492_Literature_meets_data_A_synergistic_approach_to_hypothesis_g/review]] — 심리학 분야에서 LLM과 인과 지식 그래프를 결합한 가설 생성 사례로, 이 논문의 문헌-데이터 통합 방법론의 구체적 적용 예시다

@@ -63,76 +63,55 @@ a { color: #A62018; }
 </head>
 <body>
 <h1>Research hypothesis generation over scientific knowledge graphs</h1>
-<blockquote><p><strong>저자</strong>: Agustín Borrego, D. Dessí, Daniel Ayala, Inma Hernández, Francesco Osborne | <strong>날짜</strong>: 2025 | <strong>DOI</strong>: <a href="https://doi.org/10.1016/j.knosys.2025.113280" target="_blank">10.1016/j.knosys.2025.113280</a></p></blockquote>
+<blockquote><p><strong>저자</strong>: Agustín Borrego, Danilo Dessì, Daniel Ayala, Inma Hernández, Francesco Osborne, Diego Reforgiato Recupero, Davide Buscaldi, David Ruiz, Enrico Motta | <strong>날짜</strong>: 04/2025 | <strong>DOI</strong>: <a href="https://doi.org/10.1016/j.knosys.2025.113280" target="_blank">10.1016/j.knosys.2025.113280</a></p></blockquote>
 <hr>
 <div class="essence-box"><h2>Essence</h2>
-<p>과학적 지식 그래프(Scientific Knowledge Graphs)를 활용하여 새로운 연구 가설을 자동으로 생성하는 방법론을 제시한다. 특히 대규모 언어모델(LLM)과 구조화된 지식 표현을 결합하여 학제 간 연구 연결과 숨겨진 지식을 발굴하는 접근법을 제안한다.</p></div>
+<div class="review-fig"><img src="figures/fig1.webp" alt="Figure 1">
+<p class="fig-caption"><em>Fig. 1. The proposed approach to generate research hypotheses from a scientific KG.</em></p></div>
+<p>ResearchLink는 knowledge graph의 경로 기반 특징, KGE, 텍스트 임베딩을 결합하여 과학 분야 전반에 걸쳐 도메인 독립적으로 연구 가설을 생성하는 방법론이다.</p></div>
 <div class="section-box"><h2>Motivation</h2>
 <ul>
-<li><strong>Known</strong>: 과학적 발견 과정에서 가설 생성은 필수적이지만 전통적으로 연구자의 직관과 경험에 의존해왔으며, 급증하는 학술 문헌으로 인한 정보 과부하 문제 존재</li>
-<li><strong>Gap</strong>: 기존의 문헌 기반 발견(Literature-Based Discovery, LBD) 방법들은 학문 간 단편화(disciplinary fragmentation)를 극복하지 못하고 있으며, LLM을 단순히 직접 프롬프팅으로만 활용하는 방식은 생성 가설의 신뢰성과 타당성 검증 부족</li>
-<li><strong>Why</strong>: 과학적 지식이 구조화된 형태로 표현되어 있는 지식 그래프를 활용하면 더 체계적이고 검증 가능한 가설 생성이 가능할 수 있음</li>
-<li><strong>Approach</strong>: 지식 그래프 기반의 구조화된 추론(structured reasoning)과 LLM을 통합하여, 개념 간의 명시적 관계성을 활용한 가설 생성 프레임워크 제안</li>
+<li><strong>Known</strong>: Link prediction은 knowledge graph 완성에 널리 사용되며, TransE, TransH, TransD, RotatE 등의 KGE 모델들이 표준적으로 적용되어 왔다. 가설 생성은 특히 생의학 분야에서 집중 연구되었으나 도메인 특화적 접근이 주를 이루었다.</li>
+<li><strong>Gap</strong>: 기존 link prediction 방법들은 KG 완성에는 효과적이나 미래 연구 가설 예측에는 성능이 제한적이며, 텍스트 의미론적 맥락과 서지학적 정보를 충분히 활용하지 못한다. 또한 대부분의 가설 생성 연구가 생의학 분야에만 국한되어 있다.</li>
+<li><strong>Why</strong>: 자동화된 가설 생성은 과학 발견을 가속화하고 다학제적 정보를 결합하여 혁신적 성과를 도출할 수 있으며, 도메인 독립적 방법론은 다양한 과학 분야에 적용 가능하다.</li>
+<li><strong>Approach</strong>: ResearchLink는 path-based 특징과 KGE를 텍스트 임베딩(코퍼스에서의 엔티티 의미론적 맥락 포착) 및 서지학적 데이터베이스 정보와 통합하여 가설 생성을 수행한다.</li>
 </ul></div>
 <div class="section-box"><h2>Achievement</h2>
-<ol>
-<li><strong>체계적 분류체계 구축</strong>: 인간 중심(Human-Centric), 문헌 기반 발견(LBD), 텍스트 마이닝, 감독학습(Supervised Learning), 그래프 기반(Graph-Based), LLM 기반 방법론으로 구분하여 과학 가설 생성 방법론의 진화 과정을 명확히 제시</li>
-<li><strong>LLM 활용 방법론의 다층적 접근</strong>: 직접 프롬프팅(Direct Prompting), 적대적 프롬프팅(Adversarial Prompting), 파인튜닝(Fine-tuning), 검색 증강 생성(RAG: Retrieval-Augmented Generation) 등 다양한 기법을 체계적으로 분류하고 각각의 장단점 분석</li>
-<li><strong>지식 그래프와 LLM의 하이브리드 접근</strong>: 지식 그래프의 구조적 명확성과 LLM의 생성 능력을 결합하여 가설의 신뢰성과 창의성을 동시에 확보하는 방법론 제시</li>
-<li><strong>평가 전략의 다층화</strong>: 신규성(Novelty), 관련성(Relevance), 실행 가능성(Feasibility), 유의성(Significance), 명확성(Clarity) 등 다각도의 평가 기준 제안</li>
-</ol></div>
+<div class="review-fig"><img src="figures/fig2.webp" alt="Figure 2">
+<p class="fig-caption"><em>Fig. 2. Results summary of each tested method. ResearchLink (best) denotes the version</em></p></div>
+<ul>
+<li><strong>ResearchLink 방법론</strong>: path-based features, KGE, 텍스트 임베딩, 서지학적 정보를 종합적으로 결합한 도메인 독립적 가설 생성 프레임워크 제시</li>
+<li><strong>CSKG-600 데이터셋</strong>: Computer Science Knowledge Graph에서 추출한 600개의 수동 검증된 가설 데이터셋 개발 및 공개</li>
+<li><strong>우수한 성능</strong>: 78.7% P@20 달성으로 TransH (71.8%), TransD (71.7%), RotatE (70.7%) 등 기존 방법 대비 유의미한 성능 향상</li>
+<li><strong>재사용 가능한 오픈소스</strong>: GitHub에 완전한 소스코드 공개로 다양한 도메인에 적용 가능하도록 함</li>
+</ul></div>
 <div class="section-box"><h2>How</h2>
+<div class="review-fig"><img src="figures/fig1.webp" alt="Figure 1">
+<p class="fig-caption"><em>Fig. 1. The proposed approach to generate research hypotheses from a scientific KG.</em></p></div>
 <ul>
-<li><strong>지식 그래프 구축</strong>: 과학 문헌에서 개념, 관계, 속성을 추출하여 구조화된 지식 그래프 구성 (예: 질병-유전자-단백질 관계)</li>
-<li><strong>개념 간 경로 발견</strong>: 그래프 알고리즘을 통해 직접 연결되지 않은 개념들 사이의 중간 경로(intermediate concepts)를 식별하여 "미발견 공개 지식(Undiscovered Public Knowledge)" 발굴</li>
-<li><strong>LLM 기반 가설 생성</strong>:
-<ul>
-<li>컨텍스트 제공: 식별된 개념 경로와 관련 메타데이터를 LLM에 입력</li>
-<li>구조적 생성: 프롬프트를 통해 LLM이 발견한 관계를 기반으로 형식화된 가설 생성</li>
-<li>신규성 부스팅: 기존 출판물에 없는 새로운 연결에만 집중하도록 제약</li>
-</ul>
-</li>
-<li><strong>다단계 검증</strong>: 생성된 가설에 대해 관련 논문 탐색, 개념적 타당성 검토, 도메인 전문가 평가 수행</li>
-<li><strong>학제 간 확장</strong>: 여러 과학 도메인의 지식 그래프를 통합하여 기존에 고립된 분야 간 연결점 발견</li>
+<li>Knowledge graph의 경로 기반 특징 추출 (path-based features)</li>
+<li>TransE, TransH, TransD, RotatE 등 KGE 모델을 통한 엔티티 임베딩</li>
+<li>과학 문헌 코퍼스에서 엔티티의 의미론적 맥락을 포착하는 텍스트 임베딩 통합</li>
+<li>서지학적 데이터베이스에서의 엔티티 출현 빈도 및 연구 협력 정보 활용</li>
+<li>다중 특징을 결합한 스코어링 함수로 가설 후보 순위 지정</li>
 </ul></div>
 <div class="section-box"><h2>Originality</h2>
 <ul>
-<li><strong>지식 그래프의 명시적 활용</strong>: 기존의 암묵적 가정에 기반한 LLM 프롬프팅을 넘어, 명시적 지식 구조를 활용하여 생성 가설의 추적 가능성(traceability)과 해석 가능성(interpretability) 확보</li>
-<li><strong>하이브리드 방법론</strong>: LBD의 체계성과 LLM의 생성 능력을 결합하는 새로운 패러다임 제시로, 단순 패러프레이징을 벗어난 진정한 혁신적 가설 생성 가능</li>
-<li><strong>도메인 적응형 평가 프레임워크</strong>: 과학 영역별 특성을 반영한 다층 평가 기준 제안으로, 가설의 질 보증 체계화</li>
-<li><strong>편향 완화 메커니즘</strong>: 지식 그래프의 구조적 제약이 학습 데이터 편향을 일부 보정하고, 대안적 경로 탐색을 가능하게 함</li>
+<li>기존 KGE 모델 단독 사용에서 벗어나 path-based 특징, 텍스트 임베딩, 서지학적 정보를 종합적으로 통합하는 novel 조합 제시</li>
+<li>완성'이 아닌 '미래 가설 예측'을 위해 trivial 예측을 필터링하고 의미 있는 가설을 생성하도록 설계", '도메인 특화 특징 없이도 다양한 과학 분야에 적용 가능한 도메인 독립적 방법론 개발</li>
+<li>가설 생성을 위한 새로운 벤치마크 데이터셋 CSKG-600 구축 (기존 KG 완성 데이터셋과 구별)</li>
 </ul></div>
 <div class="section-box"><h2>Limitation &amp; Further Study</h2>
-<p><strong>한계</strong>:</p>
 <ul>
-<li>지식 그래프의 완성도에 높은 의존성: 누락되거나 부정확한 관계 표현이 생성 가설의 질에 직접 영향</li>
-<li>평가의 어려움: 생성 가설이 실제로 새로운지, 실험적으로 검증 가능한지 확인하는 자동화 방법 부족</li>
-<li>도메인 이식성(Transferability) 제한: 생물의학 중심으로 개발되어 다른 과학 분야(물리학, 천문학 등)로의 확장 시 추가 작업 필요</li>
-<li>설명 가능성 부족: LLM의 생성 과정이 여전히 블랙박스로 남아있어 가설 생성 논리 추적 어려움</li>
-</ul>
-<p><strong>후속 연구</strong>:</p>
-<ul>
-<li>멀티모달 통합(Multimodal Integration): 이미지, 표, 실험 데이터 등을 포함한 다양한 과학 데이터 소스 통합</li>
-<li>인간-AI 협력 모델: 연구자와 시스템 간 반복적 상호작용을 통해 가설을 점진적으로 정제하는 상호작용 설계</li>
-<li>동적 그래프 업데이트: 신규 발표 논문을 실시간으로 반영하여 지식 그래프를 지속적으로 갱신하는 메커니즘</li>
-<li>크로스도메인 추론: 서로 다른 과학 도메인의 지식 그래프를 통합하여 더욱 혁신적인 학제 간 가설 생성</li>
-<li>가설 검증 자동화: 생성된 가설의 선행 연구 존재 여부, 실험 설계 가능성 등을 자동으로 평가하는 검증 시스템</li>
+<li>평가 시 Computer Science 분야만 대상으로 하여 다른 도메인에서의 일반화 가능성 미검증</li>
+<li>CSKG-600이 600개만 포함하여 대규모 데이터셋 대비 제한적 (다른 분야 데이터셋 부재)</li>
+<li>텍스트 임베딩의 질이 사용된 코퍼스와 임베딩 모델에 의존하며, 새로운 영역에 대한 성능 저하 가능성</li>
+<li>서지학적 정보 통합 과정에서 citation bias나 highly cited 연구에 대한 편향 가능성</li>
+<li>후속 연구: 다양한 도메인(생의학, 물리학 등)에서의 평가 수행, LLM 기반 접근과의 비교, 시간 동적성을 고려한 가설 생성 방법 개발</li>
 </ul></div>
 <div class="section-box"><h2>Evaluation</h2>
-
-<p><strong>총평</strong>: 본 논문은 지식 그래프와 대규모 언어모델을 통합하여 과학적 가설 생성의 신뢰성과 창의성을 동시에 추구하는 유의미한 접근법을 제시하지만, 평가 자동화, 다양한 도메인 적용 사례, 인간-AI 협력 모델의 구체적 설계가 강화되면 더욱 완성도 있는 기여가 될 것으로 판단된다.</p></div>
-<div class="connections-box"><h2>같이 보면 좋은 논문</h2><div class="conn-item foundation"><div class="conn-type">기반 연구</div><div class="conn-title"><a href="../393_Graphusion_a_rag_framework_for_knowledge_graph_construction/index.html">Graphusion: a rag framework for knowledge graph construction with a global perspective</a></div><div class="conn-reason">과학 분야 지식그래프 구축을 위한 RAG 프레임워크가 가설 생성의 기반 지식 구조를 제공합니다.</div></div>
-<div class="conn-item foundation"><div class="conn-type">기반 연구</div><div class="conn-title"><a href="../492_Literature_meets_data_A_synergistic_approach_to_hypothesis_g/index.html">Literature meets data: A synergistic approach to hypothesis generation</a></div><div class="conn-reason">과학 지식 그래프를 활용한 연구 가설 생성이 문헌과 데이터 통합 방법론의 구조화된 지식 표현과 추론 과정의 이론적 기반을 제공함</div></div>
-<div class="conn-item foundation"><div class="conn-type">기반 연구</div><div class="conn-title"><a href="../569_Nanostructured_Material_Design_via_a_Retrieval-Augmented_Gen/index.html">Hypothesis Generation for Materials Discovery and Design Using Goal-Driven and Constraint-Guided LLM Agents</a></div><div class="conn-reason">과학 지식 그래프 기반 가설 생성 방법이 ACCELMAT의 소재 발견 가설 자동 생성 프레임워크의 이론적 토대가 됨</div></div>
-<div class="conn-item alternative"><div class="conn-type">다른 접근</div><div class="conn-title"><a href="../434_Interesting_Scientific_Idea_Generation_using_Knowledge_Graph/index.html">Interesting Scientific Idea Generation using Knowledge Graphs and LLMs: Evaluations with 100 Research Group Leaders</a></div><div class="conn-reason">과학적 가설 생성에서 지식 그래프와 지식 그래프 기반 접근법을 비교할 수 있습니다.</div></div>
-<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../473_Large_Language_Models_for_Automated_Open-domain_Scientific_H/index.html">Large Language Models for Automated Open-domain Scientific Hypotheses Discovery</a></div><div class="conn-reason">과학 지식 그래프 기반 연구 가설 생성으로 웹 코퍼스에서 발견한 가설을 체계적으로 검증할 수 있다.</div></div>
-<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../419_Hypothesis_Generation_with_Large_Language_Models/index.html">Hypothesis Generation with Large Language Models</a></div><div class="conn-reason">대형 언어 모델을 활용한 가설 생성이 과학 지식 그래프 기반 방법론으로 확장될 수 있습니다.</div></div>
-<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../426_Improving_Scientific_Hypothesis_Generation_with_Knowledge_Gr/index.html">Improving Scientific Hypothesis Generation with Knowledge Grounded Large Language Models</a></div><div class="conn-reason">지식 그래프 기반 가설 생성의 실제 연구 적용 사례</div></div>
-<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../763_Sparks_of_science_Hypothesis_generation_using_structured_pap/index.html">Sparks of science: Hypothesis generation using structured paper data</a></div><div class="conn-reason">과학 지식 그래프 기반의 연구 가설 생성을 구조화된 논문 데이터로 확장한 발전된 형태이다.</div></div>
-<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../123_Automated_Hypothesis_Validation_with_Agentic_Sequential_Fals/index.html">Automated Hypothesis Validation with Agentic Sequential Falsifications</a></div><div class="conn-reason">지식 그래프 기반 가설 생성을 자동화된 통계적 검증으로 확장하여 완전한 가설 발견 파이프라인을 구축한다.</div></div>
-<div class="conn-item extension"><div class="conn-type">후속 연구</div><div class="conn-title"><a href="../149_Bayes-Entropy_Collaborative_Driven_Agents_for_Research_Hypot/index.html">Bayes-Entropy Collaborative Driven Agents for Research Hypotheses Generation and Optimization</a></div><div class="conn-reason">HypoAgents는 지식그래프 기반 연구 가설 생성을 베이지안 추론과 정보엔트로피를 결합하여 확장함으로써 더 체계적이고 불확실성을 고려한 가설 생성을 실현합니다.</div></div>
-<div class="conn-item application"><div class="conn-type">응용 사례</div><div class="conn-title"><a href="../393_Graphusion_a_rag_framework_for_knowledge_graph_construction/index.html">Graphusion: a rag framework for knowledge graph construction with a global perspective</a></div><div class="conn-reason">과학 지식 그래프를 활용한 연구 가설 생성이 Graphusion 프레임워크의 실제 응용 사례입니다.</div></div>
-<div class="conn-item application"><div class="conn-type">응용 사례</div><div class="conn-title"><a href="../031_A_Survey_on_Hypothesis_Generation_for_Scientific_Discovery_i/index.html">A Survey on Hypothesis Generation for Scientific Discovery in the Era of Large Language Models</a></div><div class="conn-reason">과학 지식 그래프를 활용한 연구 가설 생성의 구체적인 구현 방법을 보여준다.</div></div></div>
+<div class="eval-badges"><span class="eval-badge">Novelty: 4/5</span> <span class="eval-badge">Technical Soundness: 3/5</span> <span class="eval-badge">Significance: 4/5</span> <span class="eval-badge">Clarity: 4/5</span> <span class="eval-badge">Overall: 4/5</span></div>
+<p><strong>총평</strong>: ResearchLink는 기존의 단순 KGE 기반 link prediction 방법을 넘어 텍스트 의미론과 서지학적 맥락을 통합함으로써 실질적 연구 가설 생성에 적합한 창의적 방법론을 제시하며, 공개 데이터셋과 오픈소스를 통해 재현성과 확장성을 확보한 우수한 연구이다.</p></div>
 <div class="back"><a href="../../ai4s/index.html">&larr; 목록으로 돌아가기</a></div>
 <div id="lightbox" class="lightbox"><img id="lightbox-img" alt=""></div>
 <script>

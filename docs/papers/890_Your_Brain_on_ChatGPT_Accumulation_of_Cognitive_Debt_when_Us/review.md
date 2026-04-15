@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.25
 essence: "본 연구는 LLM(대규모 언어모델) 기반 에세이 작성이 신경 인지적 비용을 초래하는지를 뇌파(EEG) 분석을 통해 규명했으며, 4개월 추적 결과 LLM 의존 사용자가 신경, 언어, 행동 모든 수준에서 성능 저하를 보였다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/AI_for_Science_Taxonomy"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Human_Experience_Studies"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kosmyna et al._2025_Your Brain on ChatGPT Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing T.pdf"
 ---
@@ -116,8 +116,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kosmyna et al._2025_Your Brain on ChatGP
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/378_Generative_AI_Uses_and_Risks_for_Knowledge_Workers_in_a_Scie/review]] — 실제 과학 조직에서 생성형 AI 사용 패턴과 우려사항을 실증 분석하여 인지적 부채 현상의 맥락을 제공합니다.
-- ⚖️ 반론/비판: [[papers/840_Transforming_Science_with_Large_Language_Models_A_Survey_on/review]] — AI의 과학 연구 변혁 가능성을 긍정적으로 조망하는 반면, 뇌 수준의 인지적 비용이라는 부정적 측면을 제시합니다.
-- 🔗 후속 연구: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 대화형 정보 수집에서 기초 모델의 능력을 탐구하여 AI 의존성의 인지적 영향을 더 깊이 이해할 수 있습니다.
-- 🔗 후속 연구: [[papers/360_From_lived_experience_to_insight_Unpacking_the_psychological/review]] — ChatGPT 사용 시 인지 부채 축적 현상을 AI 대화 에이전트의 심리적 위험으로 확장 분석할 수 있다
-- 🔗 후속 연구: [[papers/378_Generative_AI_Uses_and_Risks_for_Knowledge_Workers_in_a_Scie/review]] — 과학 조직의 실제 AI 사용 패턴 분석을 개인 수준의 신경인지적 영향까지 확장하여 더 깊은 이해를 제공합니다.
+- 🏛 기반 연구: [[papers/360_From_lived_experience_to_insight_Unpacking_the_psychological/review]] — LLM 사용으로 인한 인지적 부채 연구가 AI 대화 에이전트의 심리적 위험을 신경과학적으로 이해하는 기반을 제공함
+- 🏛 기반 연구: [[papers/458_Language_agents_mirror_human_causal_reasoning_biases/review]] — LLM 사용의 신경인지적 영향을 이해하기 위해 언어 에이전트의 인과 추론 편향 메커니즘 분석이 필요함
+- 🔗 후속 연구: [[papers/360_From_lived_experience_to_insight_Unpacking_the_psychological/review]] — AI 대화 에이전트의 심리적 위험이 LLM 사용으로 인한 인지적 부채와 연결되는 종합적 AI 안전성 문제를 다룸
+- 🔗 후속 연구: [[papers/458_Language_agents_mirror_human_causal_reasoning_biases/review]] — 언어 모델의 인과 추론 편향이 LLM 사용으로 인한 인지적 부채의 신경인지학적 메커니즘 해명에 연결됨
+- ⚖️ 반론/비판: [[papers/878_What_ChatGPT_and_generative_AI_mean_for_science/review]] — ChatGPT 사용 시 인지 부채 누적 연구가 생성형 AI의 긍정적 과학적 잠재력에 대한 비판적 관점을 제시한다

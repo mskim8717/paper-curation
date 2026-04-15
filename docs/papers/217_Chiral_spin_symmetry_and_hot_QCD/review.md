@@ -8,8 +8,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 QCD의 열역학적 특성을 설명하기 위해 **카이랄 스핀 대칭성(chiral spin symmetry)**이라는 새로운 대칭을 도입하고, 이를 통해 가열에 따른 QCD의 세 가지 상(phase)—하드론 기체(hadron gas), 끈모양 유체(stringy fluid), 쿼크-글루온 플라즈마(QGP)—를 통일적으로 설명한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/Materials_Discovery_Hypotheses"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Chatbot_Bias_and_Toxicity_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Glozman_2024_Chiral spin symmetry and hot QCD.pdf"
 ---
@@ -131,7 +133,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Glozman_2024_Chiral spin symmetry and ho
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/279_Distinguishing_Neutron_Star_vs_Low-Mass_Black_Hole_Binaries/review]] — 중성자별과 블랙홀 구별에 카이랄 스핀 대칭성의 QCD 상 이론 적용
-- 🏛 기반 연구: [[papers/576_Nonlinear_stochastic_and_quantum_motion_from_Coulomb_forces/review]] — 쿨롱 힘의 비선형 확률적 양자 운동이 QCD 열역학의 물리적 기반 제공
-- 🔗 후속 연구: [[papers/911_Resummation_of_the_C-Parameter_Sudakov_Shoulder_Using_Effect/review]] — C-매개변수 수다코프 어깨 재합산에서 카이랄 스핀 대칭성으로의 확장
-- 🔄 다른 접근: [[papers/276_Discovery_of_Unstable_Singularities/review]] — 불안정 특이점 발견과 QCD 상 통일 설명의 다른 물리학적 접근법
+- 🏛 기반 연구: [[papers/911_Resummation_of_the_C-Parameter_Sudakov_Shoulder_Using_Effect/review]] — 효과적 장론을 사용한 C-Parameter Sudakov Shoulder 재합이 카이랄 스핀 대칭성 연구의 QCD 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/697_Scaling_physical_reasoning_with_the_physics_dataset/review]] — 물리 데이터셋을 통한 물리적 추론 스케일링이 카이랄 스핀 대칭성의 QCD 열역학 연구를 확장한다
+- 🔄 다른 접근: [[papers/619_Physics_Informed_Deep_Learning_Part_I_Data-driven_Solutions/review]] — 물리 정보 딥러닝의 데이터 기반 접근법이 카이랄 스핀 대칭성의 이론적 접근과는 다른 방식으로 QCD 현상을 탐구한다
+- 🏛 기반 연구: [[papers/911_Resummation_of_the_C-Parameter_Sudakov_Shoulder_Using_Effect/review]] — 키랄 스핀 대칭성과 고온 QCD 연구로서 C-파라미터 재합의 이론물리학적 배경을 제공한다

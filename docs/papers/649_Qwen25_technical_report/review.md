@@ -12,8 +12,8 @@ arxiv: ""
 score: 0
 essence: "본 논문은 Qwen2.5 대규모 언어 모델(LLM) 시리즈를 소개하며, 사전학습 데이터를 7조에서 18조 토큰으로 확대하고, 감독 미세조정(SFT), 직접 선호도 최적화(DPO), 그룹 상대 정책 최적화(GRPO) 등 고도화된 후학습 기법을 적용하여 이전 버전 대비 대폭 향상된 성능을 달성했다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Language_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2024_Qwen2.5 technical report.pdf"
 ---
@@ -141,7 +141,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2024_Qwen2.5 technical repor
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/266_Deepseek-v3_technical_report/review]] — 둘 다 중국 기업의 최신 대규모 언어 모델이지만 하나는 Alibaba의 Qwen2.5이고 다른 하나는 DeepSeek의 DeepSeek-v3로 서로 다른 기술적 접근법을 사용한다.
-- 🏛 기반 연구: [[papers/370_Gemma_2_Improving_open_language_models_at_a_practical_size/review]] — Google의 Gemma 2 모델이 실용적 규모에서 오픈 언어 모델을 개선하는 방법을 제시하여 Qwen2.5의 성능 향상 기법과 비교할 수 있는 기준을 제공한다.
-- 🔗 후속 연구: [[papers/751_SFT_Memorizes_RL_Generalizes_A_Comparative_Study_of_Foundati/review]] — SFT와 RL의 비교 연구가 Qwen2.5에서 사용된 DPO와 GRPO 같은 후학습 기법의 효과를 이론적으로 뒷받침한다.
-- 🔄 다른 접근: [[papers/801_The_llama_3_herd_of_models/review]] — 둘 다 대규모 언어 모델 시리즈이지만 하나는 Meta의 Llama 3이고 다른 하나는 Alibaba의 Qwen2.5로 서로 다른 접근법과 최적화 기술을 사용한다.
+- 🔄 다른 접근: [[papers/368_Gemini_15_Unlocking_multimodal_understanding_across_millions/review]] — 긴 컨텍스트 처리를 위한 서로 다른 모델 아키텍처와 학습 방법론을 비교할 수 있다.
+- 🏛 기반 연구: [[papers/801_The_llama_3_herd_of_models/review]] — Qwen2.5의 후속 모델 개발에 있어 Llama 3의 다양한 크기별 모델 구성 전략을 참조할 수 있다.
+- 🧪 응용 사례: [[papers/794_The_AI_Scientist-v2_Workshop-Level_Automated_Scientific_Disc/review]] — 고도화된 언어 모델이 완전 자동화된 과학 발견 시스템에서 어떻게 활용될 수 있는지 보여준다.
+- 🔗 후속 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 단일 모델에서 다중 에이전트 협력 시스템으로 확장된 LLM 활용 방식의 발전 과정을 보여준다.
+- 🏛 기반 연구: [[papers/370_Gemma_2_Improving_open_language_models_at_a_practical_size/review]] — Qwen2.5는 비슷한 시기에 개발된 오픈소스 모델로, Gemma 2와 유사한 규모에서의 성능 비교 기준점을 제공한다
+- 🔄 다른 접근: [[papers/368_Gemini_15_Unlocking_multimodal_understanding_across_millions/review]] — 긴 컨텍스트 처리에 대한 두 모델의 서로 다른 아키텍처와 최적화 전략을 비교할 수 있다.

@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.2
 essence: "학술 논문 심사 과정에서 메타리뷰(meta-review)를 자동 생성하기 위해 리뷰어들의 상충된 의견과 다중 순환 대화를 포함한 계층적 구조를 갖춘 새로운 다중문서 요약 데이터셋(PEERSUM)과 이를 활용하는 관계-인식 모델(RAMMER)을 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Literature_Summarization"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/GPT-Based_Text_Review_Analysis"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2023_Summarizing multiple documents with conversational structure for meta-review generation.pdf"
 ---
@@ -107,8 +108,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Liu et al._2023_Summarizing multiple doc
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/561_Ms2_Multi-document_summarization_of_medical_studies/review]] — 둘 다 의료/학술 분야 다중문서 요약을 다루지만 하나는 동료평가, 다른 하나는 체계적 문헌 검토에 중점을 둠
-- 🔄 다른 접근: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 둘 다 학술 논문의 다중문서 요약을 다루지만 하나는 메타리뷰, 다른 하나는 관련 업무 생성에 중점을 둠
-- 🔄 다른 접근: [[papers/561_Ms2_Multi-document_summarization_of_medical_studies/review]] — 둘 다 의료/학술 분야 다중문서 요약을 다루지만 하나는 체계적 문헌 검토, 다른 하나는 동료평가에 중점을 둠
-- 🔄 다른 접근: [[papers/581_Oarelatedwork_A_large-scale_dataset_of_related_work_sections/review]] — 둘 다 학술 논문의 다중문서 요약을 다루지만 하나는 관련 업무, 다른 하나는 메타리뷰 생성에 중점을 둠
-- 🔄 다른 접근: [[papers/022_A_sentiment_consolidation_framework_for_meta-review_generati/review]] — 둘 다 동료평가에서 감정 통합을 다루지만 서로 다른 프레임워크와 접근 방식을 사용함
+- 🔄 다른 접근: [[papers/561_Ms2_Multi-document_summarization_of_medical_studies/review]] — 학술 문헌의 다중문서 요약이라는 공통 목표를 가지지만 메타리뷰 vs 체계적 문헌검토라는 다른 출력 형태를 다룬다.
+- 🏛 기반 연구: [[papers/022_A_sentiment_consolidation_framework_for_meta-review_generati/review]] — 메타리뷰 생성을 위한 감정 통합 프레임워크의 이론적 기반을 제공하여 상충된 의견 처리 방법론을 설명한다.
+- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 다중 턴 장문맥 대화로서의 동료 평가를 통해 메타리뷰 생성 과정을 더욱 정교하게 모델링할 수 있다.
+- 🔄 다른 접근: [[papers/561_Ms2_Multi-document_summarization_of_medical_studies/review]] — 의료 문헌 요약이라는 같은 도메인에서 체계적 문헌검토 vs 메타리뷰 생성이라는 다른 접근법을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/022_A_sentiment_consolidation_framework_for_meta-review_generati/review]] — 대화 구조를 가진 다중문서 요약에 감정 통합 프레임워크를 적용하여 상충된 의견을 더욱 체계적으로 처리할 수 있다.
+- 🧪 응용 사례: [[papers/401_Hierarchical_attention_graph_for_scientific_document_summari/review]] — 대화 구조를 가진 다중 문서 요약 기법이 과학 문서의 계층적 구조 모델링에 직접 적용될 수 있다.

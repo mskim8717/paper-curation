@@ -12,10 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "Polybot이라는 AI 기반 자동화 연구실을 개발하여 중요도 기반 베이지안 최적화(importance-guided Bayesian optimization)로 7차원 처리 공간을 탐색하고, 전자 고분자 박막의 고전도성(>4500 S/cm)과 저결함을 동시에 달성했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Autonomous_Laboratory_Biology"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "sub/Autonomous_Biological_Discovery_AI"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2025_Autonomous platform for solution processing of electronic polymers.pdf"
 ---
@@ -94,10 +93,8 @@ Polybot이라는 AI 기반 자동화 연구실을 개발하여 중요도 기반 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/1125_Accelerating_cell_culture_media_development_using_Bayesian_o/review]] — 두 논문 모두 베이지안 최적화 기반 자동화를 다루되 Polybot은 재료과학, 세포 배양은 생물학 응용에 초점을 맞춘다.
-- 🏛 기반 연구: [[papers/744_Self-Driving_Laboratories_for_Chemistry_and_Materials_Scienc/review]] — 화학 및 재료과학을 위한 자율주행 실험실 서베이는 Polybot의 AI 기반 자동화 연구실 설계에 이론적 배경과 방법론적 가이드라인을 제공한다.
-- 🔗 후속 연구: [[papers/099_An_autonomous_laboratory_for_the_accelerated_synthesis_of_in/review]] — 무기 재료의 가속 합성을 위한 자율 실험실은 Polybot의 전자 고분자 최적화 방법론을 더 넓은 재료 합성 영역으로 확장한다.
-- 🔗 후속 연구: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 단백질 공간을 자율적으로 탐색하는 실험실에서 고분자 최적화로의 확장
-- 🏛 기반 연구: [[papers/684_Robot-assisted_mapping_of_chemical_reaction_hyperspaces_and/review]] — 화학 반응 하이퍼공간 로봇 지원 매핑이 자동화 플랫폼의 기반 제공
-- 🔗 후속 연구: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — Polybot의 AI 기반 자동화 연구실은 실시간 실험-이론 폐쇄루프 상호작용 연구의 자동화 개념을 고분자 재료 처리에 적용하여 실제 제조 공정 최적화를 실현합니다.
-- 🔄 다른 접근: [[papers/1125_Accelerating_cell_culture_media_development_using_Bayesian_o/review]] — 두 논문 모두 베이지안 최적화를 자동화 실험에 적용하되 세포 배양 배지는 생물학, 전자 고분자는 재료과학 분야에 특화되어 있다.
+- 🔄 다른 접근: [[papers/1125_Accelerating_cell_culture_media_development_using_Bayesian_o/review]] — 둘 다 베이지안 최적화 기반 자동화 시스템이지만 Polybot은 전자 고분자에, 1125는 세포배양에 특화됨
+- 🏛 기반 연구: [[papers/140_Autonomous_reinforcement_learning_agent_for_chemical_vapor_d/review]] — 화학기상증착의 자율 강화학습 에이전트가 고분자 처리 최적화의 자동화 접근법에 기본 아이디어를 제공함
+- 🔗 후속 연구: [[papers/099_An_autonomous_laboratory_for_the_accelerated_synthesis_of_in/review]] — 무기 재료 합성 자동화 실험실과 고분자 처리 자동화를 통합하여 포괄적인 재료 개발 플랫폼 구축
+- 🧪 응용 사례: [[papers/745_Self-driving_laboratories_to_autonomously_navigate_the_prote/review]] — 전자 재료의 용액 공정을 위한 자율 플랫폼으로, 자율 실험실 개념의 다른 재료 과학 분야 적용
+- 🔄 다른 접근: [[papers/1125_Accelerating_cell_culture_media_development_using_Bayesian_o/review]] — 둘 다 베이지안 최적화를 자동화 시스템에 활용하지만 1125는 생물학적 배지 최적화에, 1126은 전자 고분자 처리에 적용

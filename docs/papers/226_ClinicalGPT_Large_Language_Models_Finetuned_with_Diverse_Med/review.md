@@ -12,8 +12,9 @@ arxiv: ""
 score: 3.5
 essence: "본 논문은 의료 도메인에 특화된 대규모 언어 모델 ClinicalGPT를 제시한다. 다양한 임상 데이터와 포괄적 평가 프레임워크를 활용하여 의료 분야의 고정확도, 해석성, 안전성 요구사항을 충족하도록 설계되었다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Drug_Discovery"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2023_ClinicalGPT Large Language Models Finetuned with Diverse Medical Data and Comprehensive Evaluation.pdf"
 ---
@@ -113,8 +114,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wang et al._2023_ClinicalGPT Large Langu
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/168_Biomni_A_General-Purpose_Biomedical_AI_Agent/review]] — 의료 특화 대규모 언어모델의 두 가지 다른 설계 철학을 비교하여 의료 AI의 범용성과 특화성 간의 균형점을 찾을 수 있다.
-- 🔗 후속 연구: [[papers/530_Medbiolm_Optimizing_medical_and_biological_qa_with_fine-tune/review]] — ClinicalGPT의 의료 데이터 활용 방법론을 생물의학 QA 최적화로 확장하여 더 정밀한 의료 언어모델을 구축할 수 있다.
-- 🏛 기반 연구: [[papers/271_Developing_ChemDFM_as_a_large_language_foundation_model_for/review]] — 화학 분야 대형 언어 기초 모델 개발 경험이 의료 분야 특화 모델 구축에 필요한 도메인 적응 전략을 제공한다.
-- 🏛 기반 연구: [[papers/159_Bio-sieve_exploring_instruction_tuning_large_language_models/review]] — 다양한 의료 텍스트로 미세조정된 ClinicalGPT가 의료 특화 모델의 기반
-- 🏛 기반 연구: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — ClinicalGPT의 기본 의료 언어모델 구조가 추론 능력 강화를 위한 ClinicalGPT-R1의 기술적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/837_Training_a_Scientific_Reasoning_Model_for_Chemistry/review]] — 도메인 특화 과학 LLM을 의료 vs 화학 분야에서 각각 다른 방식으로 구현한다
+- 🧪 응용 사례: [[papers/880_What_makes_medical_claims_un_verifiable_analyzing_entity_and/review]] — 임상 특화 LLM을 의료 주장 검증이라는 구체적 작업에 적용한다
+- 🏛 기반 연구: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 의료 도메인 LLM이 의료 주장 검증 시스템의 필수적인 기술 기반을 제공한다
+- 🏛 기반 연구: [[papers/225_Clinicalgpt-r1_Pushing_reasoning_capability_of_generalist_di/review]] — ClinicalGPT-R1의 기반이 되는 임상 데이터 학습 및 의료 특화 언어모델의 핵심 방법론을 제시한다.
+- 🔄 다른 접근: [[papers/837_Training_a_Scientific_Reasoning_Model_for_Chemistry/review]] — 도메인 특화 과학 추론을 화학 vs 의료 분야에서 각각 다르게 구현한다
+- 🏛 기반 연구: [[papers/880_What_makes_medical_claims_un_verifiable_analyzing_entity_and/review]] — 의료 도메인 LLM의 기반 기술이 의료 주장 분석에 필수적인 토대를 제공한다
+- 🧪 응용 사례: [[papers/328_Explainable_biomedical_claim_verification_with_large_languag/review]] — 임상 특화 LLM을 의료 주장의 설명가능한 검증에 실제 적용한다

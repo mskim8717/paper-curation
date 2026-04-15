@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.1
 essence: "동적 제조 프로세스(Dynamic Manufacturing Process)의 적응형 제어를 위해 생성형 머신러닝(Generative Machine Learning)을 통합하는 방법론을 제시하는 종합 리뷰 논문으로, 확률적 이해를 제어 가능한 실행 계획으로 변환하는 제어 지향적 관점을 제공한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Manufacturing_Process_Control"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Domain-Specific_LLM_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lee and Ko_2025_Generative machine learning in adaptive control of dynamic manufacturing processes A review.pdf"
 ---
@@ -141,6 +141,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Lee and Ko_2025_Generative machine learn
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/140_Autonomous_reinforcement_learning_agent_for_chemical_vapor_d/review]] — 화학 기상 증착 프로세스에서 자율 강화학습 에이전트로 생성형 머신러닝 제어를 확장한다.
-- 🏛 기반 연구: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — 실시간 실험-이론 폐쇄루프 상호작용의 이론적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/048_Adaptive_ai_decision_interface_for_autonomous_electronic_mat/review]] — 동적 제조 프로세스에서 생성형 머신러닝 제어의 이론적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/626_Polymer_Brushes_and_Grafted_Polymers_AIML-Driven_Synthesis_S/review]] — 둘 다 제조 프로세스에서 생성형 ML을 다루지만, 동적 제조는 일반적인 적응형 제어에, 중합체 브러시는 특정 합성에 집중한다
+- 🏛 기반 연구: [[papers/140_Autonomous_reinforcement_learning_agent_for_chemical_vapor_d/review]] — 화학 기상 증착을 위한 자율 강화학습 연구가 동적 제조 프로세스의 적응형 제어 방법론에 이론적 기반을 제공한다
+- 🔗 후속 연구: [[papers/516_Machine-Learned_Interatomic_Potentials_for_Predicting_Physic/review]] — 물리적 특성 예측을 위한 머신러닝 원자간 포텐셜 연구가 동적 제조 프로세스의 생성형 머신러닝 통합으로 발전되었다
+- 🔄 다른 접근: [[papers/626_Polymer_Brushes_and_Grafted_Polymers_AIML-Driven_Synthesis_S/review]] — 둘 다 제조 프로세스에서 생성형 ML을 다루지만, 중합체 브러시 논문은 고분자 합성에, 다른 논문은 일반적인 동적 제조에 집중한다
+- 🧪 응용 사례: [[papers/048_Adaptive_ai_decision_interface_for_autonomous_electronic_mat/review]] — AI 의사결정 인터페이스를 동적 시스템 제어라는 더 광범위한 응용 영역으로 확장한 사례이다
+- 🏛 기반 연구: [[papers/372_General-Purpose_Machine-Learned_Potential_for_CrCoNi_Alloys/review]] — 동적 시스템 적응 제어의 생성 머신러닝이 머신러닝 포텐셜 개발의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/454_Lagrangian_neural_networks/review]] — 동적 시스템의 생성 머신러닝이 Lagrangian 신경망의 물리계 모델링에 이론적 기반을 제공한다.
+- 🔗 후속 연구: [[papers/816_Toward_a_Fully_Autonomous_AI-Native_Particle_Accelerator/review]] — 동적 시스템의 생성형 머신러닝 제어 기법이 AI 기반 입자 가속기 운영에 적용될 수 있다.

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.5
 essence: "대규모 언어모델(LLM)이 자연언어 설명으로부터 기호적 세계 모델(symbolic world model)을 생성할 수 있는지 평가하기 위해 PDDL 기반의 포괄적인 벤치마크 TEXT2WORLD를 제안하고, 수백 개의 다양한 도메인과 실행 기반 평가 지표를 통해 현재 LLM의 세계 모델링 능력이 여전히 제한적임을 밝혔다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Realistic_Discovery_Benchmarks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2025_Text2world Benchmarking large language models for symbolic world model generation.pdf"
 ---
@@ -113,7 +114,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hu et al._2025_Text2world Benchmarking l
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 기호적 세계 모델링과 다단계 도구 활용이라는 서로 다른 방식으로 LLM의 복합적 추론 능력을 평가한다.
-- 🏛 기반 연구: [[papers/823_Towards_a_Science_of_Scaling_Agent_Systems/review]] — 에이전트 시스템의 확장 법칙 연구에 필요한 기본적인 세계 모델링 능력 평가 기준을 제공한다.
-- 🔗 후속 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — 자율 에이전트 연구의 포괄적 조망에서 세계 모델링이라는 핵심 기능의 구체적 평가 방법을 제시한다.
-- 🏛 기반 연구: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 복잡한 도구 활용 평가에 필요한 기본적인 세계 모델링 능력의 중요성을 입증한다.
+- 🏛 기반 연구: [[papers/498_LLM_as_a_Mastermind_A_Survey_of_Strategic_Reasoning_with_Lar/review]] — 세계 모델 생성을 위한 전략적 추론 능력의 이론적 기반을 제공한다
+- 🔄 다른 접근: [[papers/029_A_Survey_of_Scientific_Large_Language_Models_From_Data_Found/review]] — 기호적 세계 모델 대신 과학적 발견을 위한 다른 LLM 접근법을 제시한다
+- 🧪 응용 사례: [[papers/137_Autonomous_Agents_for_Scientific_Discovery_Orchestrating_Sci/review]] — 자율 과학 발견 에이전트가 세계 모델링을 실제 과학 연구에 적용한다
+- 🧪 응용 사례: [[papers/498_LLM_as_a_Mastermind_A_Survey_of_Strategic_Reasoning_with_Lar/review]] — 전략적 추론 능력을 기호적 세계 모델 생성에 적용한다

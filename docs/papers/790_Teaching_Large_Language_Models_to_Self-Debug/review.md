@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어 모델(LLM)이 몇 가지 시연(few-shot demonstration)을 통해 자신이 생성한 코드를 자동으로 디버깅하도록 가르치는 SELF-DEBUGGING 기법을 제시한다. 외부 피드백 없이 코드 설명과 실행 결과 분석을 통해 오류를 식별하는 \"러버덕 디버깅(rubber duck debugging)\" 방식의 자체 수정이 가능함을 보인다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Self-Refining_Text_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Self-Clarifying_Reasoning_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2023_Teaching Large Language Models to Self-Debug.pdf"
 ---
@@ -113,9 +115,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2023_Teaching Large Language
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/610_Pelican_Correcting_Hallucination_in_Vision-LLMs_via_Claim_De/review]] — 코드 자기 디버깅과 시각적 주장 검증은 모두 자기 수정 메커니즘을 활용하지만 실행 피드백과 논리적 분해라는 서로 다른 검증 방법을 사용한다.
-- 🏛 기반 연구: [[papers/636_Prompt_to_be_consistent_is_better_than_self-consistent_few-s/review]] — 자기 디버깅의 반복적 수정 메커니즘이 일관성 기반 팩트 체킹에서 논리적 제약 조건을 효과적으로 적용하기 위한 기본 프레임워크를 제공한다.
-- 🏛 기반 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 자기 디버깅의 기본 개념이 도구 통합 자기 수정 시스템에서 더 포괄적인 오류 검출과 수정 능력을 구현하는 기초가 된다.
-- 🔗 후속 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — Self-Refine의 피드백 메커니즘을 디버깅 특화 작업으로 확장하여 코드 수정에 적용한 후속 연구로 볼 수 있음
-- 🔄 다른 접근: [[papers/610_Pelican_Correcting_Hallucination_in_Vision-LLMs_via_Claim_De/review]] — 코드 디버깅과 시각적 주장 검증은 모두 자기 수정 메커니즘을 활용하지만, 서로 다른 모달리티에서 오류 검출과 보정 방법을 제시한다.
-- 🔄 다른 접근: [[papers/636_Prompt_to_be_consistent_is_better_than_self-consistent_few-s/review]] — 언어모델의 일관성 강제와 자기 디버깅은 모두 자기 수정 메커니즘이지만, 논리적 제약과 실행 피드백이라는 다른 검증 방식을 사용한다.
+- 🔄 다른 접근: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자기 개선이라는 공통 목표를 코드 디버깅 vs 일반적인 자기 개선으로 다르게 접근한다
+- 🔗 후속 연구: [[papers/747_Selfcheck_Using_llms_to_zero-shot_check_their_own_step-by-st/review]] — LLM의 자기 검증 능력을 코드 디버깅이라는 구체적 도메인으로 확장하여 적용한다
+- 🧪 응용 사례: [[papers/263_Deepseek-coder_When_the_large_language_model_meets_programmi/review]] — 프로그래밍 도메인에서 LLM의 자기 디버깅 능력을 실제 코딩 작업에 적용한다
+- 🧪 응용 사례: [[papers/482_Lean-star_Learning_to_interleave_thinking_and_proving/review]] — 대규모 언어모델의 자기 디버깅 학습 방법이 형식 증명에서 사고-증명 결합 학습에 실제 적용된다.
+- 🔗 후속 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자기 디버깅 방법론을 일반적인 출력 개선으로 확장하여 외부 도구 없이 LLM만으로 성능 향상을 달성한다.
+- 🔗 후속 연구: [[papers/227_Closing_the_loop_Learning_to_generate_writing_feedback_via_l/review]] — 대형언어모델의 자기 디버깅 학습 방법으로, 작문 피드백 생성에서 사용한 반복적 개선 접근법을 코드 개선 영역으로 확장한다

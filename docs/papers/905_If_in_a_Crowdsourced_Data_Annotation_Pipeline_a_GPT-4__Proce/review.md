@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "GPT-4와 최적화된 크라우드소싱 파이프라인의 데이터 라벨링 능력을 비교한 연구로, GPT-4가 개별 성능에서 우수하지만 라벨 집계(Label Aggregation)를 통해 크라우드 라벨과 결합하면 더 높은 정확도를 달성할 수 있음을 보여줌."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Domain-adapted_Instruction_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/He et al._If in a Crowdsourced Data Annotation Pipeline, a GPT-4  Proceedings of the 2024 CHI Conference on H.pdf"
 ---
@@ -89,7 +89,7 @@ GPT-4와 최적화된 크라우드소싱 파이프라인의 데이터 라벨링 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/206_ChatGPT_outperforms_crowd_workers_for_text-annotation_tasks/review]] — 둘 다 크라우드소싱 vs AI 성능 비교를 다루지만 하나는 데이터 주석에서 GPT-4와 크라우드워커 비교에, 다른 하나는 텍스트 주석 작업에서 ChatGPT와 크라우드워커 비교에 초점을 맞춘다.
-- 🔗 후속 연구: [[papers/128_Automatically_evaluating_the_paper_reviewing_capability_of_l/review]] — LLM의 논문 리뷰 능력 자동 평가 프레임워크가 GPT-4와 크라우드소싱 데이터 라벨링 품질 비교 연구에 적용될 수 있다.
-- 🏛 기반 연구: [[papers/373_Generalization_Bias_in_Large_Language_Model_Summarization_of/review]] — 대규모 언어 모델 요약에서의 일반화 편향 연구가 GPT-4와 크라우드소싱 파이프라인의 데이터 주석 품질 차이를 이해하는 이론적 기반을 제공한다.
-- 🔗 후속 연구: [[papers/206_ChatGPT_outperforms_crowd_workers_for_text-annotation_tasks/review]] — 크라우드소싱 데이터 주석에서 GPT-4의 활용 연구로 텍스트 주석 작업의 자동화 범위를 확장합니다.
+- 🔗 후속 연구: [[papers/206_ChatGPT_outperforms_crowd_workers_for_text-annotation_tasks/review]] — 텍스트 주석 작업에서 크라우드소싱과 GPT 비교를 라벨 집계까지 포함하여 확장한다
+- 🏛 기반 연구: [[papers/641_Prototypical_human-ai_collaboration_behaviors_from_llm-assis/review]] — LLM 보조 작업에서 인간-AI 협력 행동 패턴이 크라우드소싱 비교의 이론적 기반이 된다
+- 🧪 응용 사례: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — LLM 기반 리뷰 시스템 평가 방법론을 데이터 라벨링 품질 평가에 적용한다
+- 🔗 후속 연구: [[papers/206_ChatGPT_outperforms_crowd_workers_for_text-annotation_tasks/review]] — 크라우드소싱 데이터 주석에서 GPT-4의 성능을 더 자세히 분석하여, ChatGPT 연구의 후속 발전을 보여줍니다.

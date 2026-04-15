@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 대규모 언어모델(LLM)을 정보 검색 에이전트로 자동 개선하는 **자기-인센티브화 기반 탐색 프레임워크(EXSEARCH)**를 제안한다. 일반화 EM 알고리즘을 통해 검색 궤적을 잠재변수로 취급하고, LLM이 생성한 데이터로부터 반복적으로 학습하는 자기 루프를 형성한다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Autonomous_Agent_Learning_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rice_2025_Iterative self-incentivization empowers large language models as agentic searchers.pdf"
 ---
@@ -119,10 +121,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Rice_2025_Iterative self-incentivization
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/872_Webdancer_Towards_autonomous_information_seeking_agency/review]] — 두 논문 모두 정보 검색 에이전트를 다루되 EXSEARCH는 자기-인센티브화, WebDancer는 감독학습과 강화학습 순차 적용에 초점을 맞춘다.
-- 🏛 기반 연구: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — WebAgent-R1의 종단 간 다중턴 강화학습 프레임워크는 EXSEARCH의 반복적 자기 개선 메커니즘에 이론적 토대를 제공한다.
-- 🔗 후속 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — AutoGen의 멀티 에이전트 프레임워크는 EXSEARCH의 단일 에이전트 자기 개선을 여러 에이전트 간 협력적 학습으로 확장한다.
-- 🔄 다른 접근: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — 두 논문 모두 에이전트 강화학습을 다루되 WebAgent-R1은 웹 환경, EXSEARCH는 정보 검색에 특화되어 있다.
-- 🔄 다른 접근: [[papers/872_Webdancer_Towards_autonomous_information_seeking_agency/review]] — 두 논문 모두 웹 기반 에이전트를 다루되 WebDancer는 정보 탐색, EXSEARCH는 자기-인센티브화 기반 검색에 특화되어 있다.
-- 🧪 응용 사례: [[papers/281_Dlpo_Towards_a_robust_efficient_and_generalizable_prompt_opt/review]] — 반복적 자기 인센티브화를 프롬프트 최적화 안정성 향상에 적용
-- 🔗 후속 연구: [[papers/470_Large_language_models_can_self-improve/review]] — 반복적 자기 인센티브 방법이 레이블 없는 데이터를 통한 자가 개선을 강화학습 기반의 더 정교한 자기 동기 시스템으로 발전시킨 연구임
+- 🔄 다른 접근: [[papers/598_PAG_Multi-Turn_Reinforced_LLM_Self-Correction_with_Policy_as/review]] — 정보 검색에서의 자기개선과 일반적 자가수정을 서로 다른 도메인에서 접근하는 방법이다.
+- 🏛 기반 연구: [[papers/265_DeepSeek-R1_incentivizes_reasoning_in_LLMs_through_reinforce/review]] — 검색 궤적의 반복적 개선이 RL을 통한 추론 패턴 개발의 특수한 사례로 볼 수 있다.
+- 🔗 후속 연구: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 정보 검색에서의 자기개선이 일반적인 대화형 환경에서의 능동적 정보 수집으로 확장될 수 있다.
+- 🔄 다른 접근: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — 검색 에이전트의 자기개선과 추론 중 검색 활용을 서로 다른 관점에서 다룬다.
+- 🔄 다른 접근: [[papers/740_Search-R1_Training_LLMs_to_Reason_and_Leverage_Search_Engine/review]] — 추론 중 검색 활용과 검색 에이전트의 자기개선을 서로 다른 관점에서 다룬다.
+- 🏛 기반 연구: [[papers/667_ReSearch_Learning_to_Reason_with_Search_for_LLMs_via_Reinfor/review]] — 추론 중 자동 검색 학습이 검색 에이전트의 자기개선을 위한 구체적인 메커니즘을 제공한다.
+- 🔗 후속 연구: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 능동적 정보 수집이 검색 에이전트의 자기개선을 위한 구체적인 적용으로 발전될 수 있다.

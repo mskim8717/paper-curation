@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.0
 essence: "과학 논문의 발견이 일반 대중에게 보도될 때 발생하는 네 가지 유형의 세밀한 왜곡(인과관계, 확실성, 일반화, 선정성)을 자동으로 감지하기 위한 첫 번째 체계적 연구이다. 1,600개의 과학 발견을 쌍으로 주석 처리하고 기준 모델을 구축하여 과학 통신의 왜곡 패턴을 분석했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Safety_and_Bias"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Physics_Reasoning_Benchmarks"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wuehrl et al._2024_Understanding fine-grained distortions in reports of scientific findings.pdf"
 ---
@@ -120,7 +121,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wuehrl et al._2024_Understanding fine-gr
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/270_Detecting_llm-written_peer_reviews/review]] — 과학 논문의 왜곡 문제를 LLM이 생성한 리뷰 탐지 관점에서 접근하여 상호 보완적인 연구 방향을 제시한다.
-- 🧪 응용 사례: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 과학적 발견의 보도 왜곡 탐지 기술을 리뷰 생성 시스템에 적용하여 더 정확한 과학 커뮤니케이션을 구현할 수 있다.
-- 🔗 후속 연구: [[papers/041_Aaar-10_Assessing_ais_potential_to_assist_research/review]] — 과학 연구의 왜곡 패턴 분석을 AI의 연구 보조 능력 평가로 확장하여 더 신뢰할 수 있는 AI 시스템 구축에 기여한다.
-- 🔗 후속 연구: [[papers/252_Data_integrity_in_materials_science_in_the_era_of_AI_balanci/review]] — AI 생성 이미지의 구별 불가능성 문제가 과학 보고서에서 미세한 왜곡 탐지와 이해에 대한 더 광범위한 연구로 확장되었다
+- 🔗 후속 연구: [[papers/685_Robust_claim_verification_through_fact_detection/review]] — 일반적인 주장 검증에서 한 단계 나아가 과학 보도의 세밀한 왜곡 패턴을 체계적으로 분석한다
+- 🏛 기반 연구: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — 팩트체킹의 한계점 분석이 과학 보도 왜곡 연구의 이론적 기반을 제공한다
+- 🧪 응용 사례: [[papers/267_Defame_Dynamic_evidencebased_fact-checking_with_multimodal_e/review]] — 멀티모달 팩트체킹 기술을 과학 보도의 시각적 왜곡 감지에 적용할 수 있다
+- 🏛 기반 연구: [[papers/685_Robust_claim_verification_through_fact_detection/review]] — 견고한 주장 검증 방법론이 과학 보도 왜곡 감지의 기술적 기반을 제공한다

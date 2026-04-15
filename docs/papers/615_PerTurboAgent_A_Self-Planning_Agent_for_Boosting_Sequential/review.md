@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "대규모 유전자 섭동 실험(Perturb-seq)에서 제한된 실험 자원 내에서 최대의 정보 수집을 위해, 자기 계획 능력을 갖춘 LLM 기반 에이전트(PerTurboAgent)를 개발하여 순차적 유전자 선택 문제를 자동화하고 기존 능동학습(active learning) 방법들을 능가하는 성능을 달성했다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Research_Ideation"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Molecular_Discovery_Foundation_Models"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hao et al._2025_PerTurboAgent A Self-Planning Agent for Boosting Sequential Perturb-seq Experiments.pdf"
 ---
@@ -114,9 +115,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hao et al._2025_PerTurboAgent A Self-Pla
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/505_Llm4grn_Discovering_causal_gene_regulatory_networks_with_llm/review]] — 유전자 관련 실험에서 LLM을 활용한다는 공통점이 있지만 순차적 섭동 실험 설계와 조절 네트워크 발견이라는 다른 목적을 가진다.
-- 🧪 응용 사례: [[papers/474_Large_language_models_for_zero-shot_inference_of_causal_stru/review]] — 생물학적 인과관계 추론 능력을 유전자 섭동 실험의 순차적 선택 최적화에 활용할 수 있다.
-- 🔗 후속 연구: [[papers/239_CRISPR-GPT_for_agentic_automation_of_gene-editing_experiment/review]] — 유전자 편집 실험 자동화를 위한 CRISPR-GPT 기술을 유전자 섭동 실험 설계에 확장 적용할 수 있다.
-- 🧪 응용 사례: [[papers/048_Adaptive_ai_decision_interface_for_autonomous_electronic_mat/review]] — 순차적 섭동 부스팅을 위한 자기 계획 에이전트의 구체적인 응용을 보여준다.
-- 🧪 응용 사례: [[papers/474_Large_language_models_for_zero-shot_inference_of_causal_stru/review]] — 유전자 섭동 실험 설계에 인과관계 추론 능력을 활용하여 더 효과적인 실험 계획을 수립할 수 있다.
-- 🔄 다른 접근: [[papers/505_Llm4grn_Discovering_causal_gene_regulatory_networks_with_llm/review]] — 유전자 섭동 실험에서 LLM을 활용한다는 공통점이 있지만 네트워크 발견과 실험 설계라는 다른 목적을 가진다.
+- 🔄 다른 접근: [[papers/123_Automated_Hypothesis_Validation_with_Agentic_Sequential_Fals/review]] — 둘 다 순차적 실험 설계를 다루지만 PerTurboAgent는 유전자 섭동에, 123은 가설 검증 자동화에 특화됨
+- 🧪 응용 사례: [[papers/500_Llm-based_corroborating_and_refuting_evidence_retrieval_for/review]] — LLM 기반 증거 검색과 반박을 유전자 섭동 실험에서 기능 검증에 활용하여 더 정확한 유전자 선택 가능
+- 🔗 후속 연구: [[papers/371_GeneAgent_self-verification_language_agent_for_gene-set_anal/review]] — 자기검증 언어 에이전트와 유전자 섭동 계획을 결합하여 더 신뢰할 수 있는 유전자 기능 분석 시스템 구축

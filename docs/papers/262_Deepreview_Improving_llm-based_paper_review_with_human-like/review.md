@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 LLM(Large Language Models)을 이용한 학술지 논문 심사를 개선하기 위해, 인간 전문가의 심사 과정을 모방하는 다단계 구조화된 프레임워크 DeepReview를 제안한다. DeepReview-13K 데이터셋으로 훈련된 DeepReviewer-14B 모델은 기존 모델들(CycleReviewer-70B, GPT-o1, DeepSeek-R1)을 능가하면서도 더 적은 토큰을 사용한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Peer_Review"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Automated_Scientific_Review"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhu et al._2025_Deepreview Improving llm-based paper review with human-like deep thinking process.pdf"
 ---
@@ -125,16 +126,15 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhu et al._2025_Deepreview Improving llm
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — AI 생성 리뷰의 평가 프레임워크와 함께 LLM 기반 리뷰 시스템의 품질 향상을 위한 상호 보완적 접근이다.
-- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 다중턴 대화 기반 피어 리뷰를 인간과 같은 심층 사고로 개선하여 더 정교한 리뷰 생성이 가능하다.
-- 🏛 기반 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 도구 통합 기반 자기교정 기법으로 DeepReview의 다단계 구조화 프레임워크의 이론적 기반을 제공한다.
-- 🔄 다른 접근: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 인간과 같은 심층 사고를 통한 LLM 리뷰 개선과 함께 피어 리뷰의 다양한 개선 방향을 제시한다.
-- 🔄 다른 접근: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — LLM 기반 리뷰 개선을 위한 구조화된 프레임워크와 함께 AI 리뷰 시스템의 품질과 신뢰성을 종합적으로 향상시킨다.
-- 🏛 기반 연구: [[papers/739_Seagraph_Unveiling_the_whole_story_of_paper_review_comments/review]] — 인간과 유사한 리뷰 생성 방법론이 SEAGraph의 의미론적 분석에 기초 이론을 제공한다.
-- 🏛 기반 연구: [[papers/537_Mind_the_blind_spots_A_focus-level_evaluation_framework_for/review]] — DeepReview의 인간 유사 논문 리뷰 개선 방법은 포커스 레벨 평가 프레임워크의 이론적 기반을 제공합니다
-- 🔗 후속 연구: [[papers/654_Re_2_A_consistency-ensured_dataset_for_full-stage_peer_revie/review]] — 인간다운 논문 리뷰 개선 방법이 Re2 데이터셋을 활용한 리뷰 품질 향상으로 확장될 수 있습니다.
-- 🔗 후속 연구: [[papers/070_Agentreview_Exploring_peer_review_dynamics_with_llm_agents/review]] — 기본적인 LLM 리뷰 생성을 사회적 요인과 편향을 고려한 복잡한 시뮬레이션으로 발전시킨다.
-- 🔗 후속 연구: [[papers/1094_Towards_a_Medical_AI_Scientist/review]] — 의료 AI 과학자는 DeepReview의 인간 유사 논문 리뷰 기법을 확장하여 임상 연구 전체 과정의 자동화까지 포괄하는 의료 특화 AI 연구자를 구현합니다.
-- 🔗 후속 연구: [[papers/698_Scaling_Reproducibility_An_AI-Assisted_Workflow_for_Large-Sc/review]] — 인간 유사 논문 리뷰를 위한 DeepReview는 재현성 연구의 AI 워크플로우를 논문 품질 평가까지 확장한다.
-- 🔗 후속 연구: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — DeepReview의 인간형 검토 개선 방법이 AI-Driven Review Systems의 편향 인식 메커니즘과 결합되어 더 정교한 자동 검토 시스템을 구성할 수 있음
-- 🔗 후속 연구: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — 인간과 유사한 논문 리뷰를 추론 능력과 다목적 최적화로 확장하여 더 균형잡힌 심사평 생성이 가능하다.
+- 🔄 다른 접근: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — LLM 기반 논문 리뷰 생성을 심층 사고 과정과 프롬프트 최적화로 각각 개선한다.
+- 🔄 다른 접근: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — LLM 리뷰 시스템의 품질과 확장성을 서로 다른 접근법으로 향상시킨다.
+- 🏛 기반 연구: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 전문화된 리뷰 생성 언어모델 개발을 위한 심층 사고 프레임워크를 제공한다.
+- 🏛 기반 연구: [[papers/870_Vulnerability_of_text-matching_in_mlai_conference_reviewer_a/review]] — 심사위원 배정의 조작 가능성이 LLM 기반 리뷰 시스템 개발 시 고려해야 할 보안 요소를 제시한다.
+- 🧪 응용 사례: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 인간과 유사한 리뷰 생성에서 다중턴 대화 접근법의 실제 적용 사례를 제시한다.
+- 🔗 후속 연구: [[papers/184_Can_large_language_models_provide_useful_feedback_on_researc/review]] — LLM 기반 논문 리뷰를 인간과 유사한 방식으로 개선하는 후속 연구이다.
+- 🧪 응용 사례: [[papers/664_RelevAI-Reviewer_A_Benchmark_on_AI_Reviewers_for_Survey_Pape/review]] — 인간다운 논문 리뷰 개선 연구가 관련성 평가 벤치마크의 실제 적용 맥락을 보여준다
+- 🔄 다른 접근: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — LLM 기반 논문 리뷰 생성의 품질 향상을 프롬프트 생성과 심층 사고 과정으로 각각 접근한다.
+- 🔄 다른 접근: [[papers/843_Treereview_A_dynamic_tree_of_questions_framework_for_deep_an/review]] — 인간 유사 LLM 기반 논문 리뷰와 다른 접근으로 질문 기반 동적 평가 구조를 통해 깊이와 효율성을 동시에 추구한다.
+- 🔄 다른 접근: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — LLM 기반 논문 리뷰 시스템의 확장성과 품질을 각각 다른 접근법으로 개선한다.
+- 🔄 다른 접근: [[papers/609_Peerarg_Argumentative_peer_review_with_llms/review]] — AI 기반 논문 리뷰를 논증 구조 vs 인간 유사성으로 다른 관점에서 접근한다
+- 🔗 후속 연구: [[papers/1087_Gpt4_is_slightly_helpful_for_peer-review_assistance_A_pilot/review]] — 인간 유사 피어리뷰 개선 연구가 GPT-4의 한계를 보완하는 더 발전된 형태를 보여준다.

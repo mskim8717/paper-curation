@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.0
 essence: "화학 분야에서 대규모 사전학습 모델(Foundation Models)의 발전 현황을 검토하는 관점 논문으로, 분자 특성 예측, 기계학습 상호작용 포텐셜(MLIP), 역설계 등 다양한 화학 문제 해결에 파운데이션 모델의 적용 가능성을 종합적으로 분석한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Evolutionary_Chemistry_Models"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Choi et al._2025_A Perspective on Foundation Models in Chemistry.pdf"
 ---
@@ -84,7 +84,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Choi et al._2025_A Perspective on Founda
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료 과학을 위한 AI 조사와 LLM 기반 파운데이션 모델은 화학 분야 대규모 사전학습 모델의 응용 영역을 재료과학으로 확장합니다
-- 🧪 응용 사례: [[papers/451_Knowledge-guided_large_language_model_for_material_science/review]] — 재료과학 안내 대형 언어모델은 화학 분야 파운데이션 모델의 구체적인 재료과학 응용 사례입니다
-- 🏛 기반 연구: [[papers/523_MatterChat_A_Multi-Modal_LLM_for_Material_Science/review]] — 재료과학을 위한 멀티모달 LLM은 화학 분야 파운데이션 모델이 다중 모달리티로 확장된 형태의 기반 기술입니다
-- 🔄 다른 접근: [[papers/342_Foundation_Models_for_Environmental_Science_A_Survey_of_Emer/review]] — 환경과학과 화학 분야에서 파운데이션 모델의 적용이라는 다른 도메인별 접근 방식을 사용한다
+- 🔗 후속 연구: [[papers/025_A_Survey_of_AI_for_Materials_Science_Foundation_Models_LLM_A/review]] — 재료과학을 위한 AI 조사와 화학 분야 파운데이션 모델 관점을 결합하면 화학-재료과학 융합 영역의 AI 활용 전략을 수립할 수 있다.
+- 🏛 기반 연구: [[papers/720_Scientific_Large_Language_Models_A_Survey_on_Biological__Che/review]] — 생물학과 화학 분야의 과학적 대형 언어모델 조사가 화학 분야 파운데이션 모델 개발의 포괄적 배경지식을 제공한다.
+- 🧪 응용 사례: [[papers/726_Sciknoweval_Evaluating_multi-level_scientific_knowledge_of_l/review]] — 화학 분야 기초 모델에 대한 관점을 과학 지식 평가에 적용한다

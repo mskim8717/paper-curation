@@ -11,8 +11,9 @@ arxiv: ""
 score: 4.2
 essence: "항생제 내성(Antimicrobial Resistance, AMR)에 대응하기 위해 대규모언어모델(LLM) 기반 다중 에이전트 협업 시스템을 활용하여 항균펩타이드(AMP)를 설계하는 완전 자동화된 폐루프(closed-loop) 시스템을 제시한다. 기존 AMP 설계 모델들의 단순 점수화 및 블랙박스 문제를 극복하기 위해 에이전트 간 협의적 리뷰, 강화학습 기반 보상 함수 자동 생성, 설명가능성을 갖춘 구조를 도입했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-agent_Task_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Multi-Agent_System_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2026_MAC-AMP A Closed-Loop Multi-Agent Collaboration System for Multi-Objective Antimicrobial Peptide De.pdf"
 ---
@@ -135,7 +136,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhou et al._2026_MAC-AMP A Closed-Loop M
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/554_Modular_large_language_model_agents_for_multi-task_computati/review]] — MAC-AMP의 항균펩타이드 특화 다중 에이전트와 PharmAgents의 포괄적 신약 개발 시스템은 서로 다른 범위에서 약물 설계를 자동화하는 접근이다.
-- 🔗 후속 연구: [[papers/805_The_Virtual_Lab_of_AI_agents_designs_new_SARS-CoV-2_nanobodi/review]] — Virtual Lab의 나노바디 설계 성공이 MAC-AMP의 항균펩타이드 설계를 위한 다중 에이전트 협업 방법론의 효과를 다른 단백질 영역에서 확장 검증한다.
-- 🏛 기반 연구: [[papers/177_Can_ai_agents_design_and_implement_drug_discovery_pipelines/review]] — AI 에이전트의 약물 발견 파이프라인 설계 능력이 MAC-AMP의 폐루프 항균펩타이드 개발 시스템 구축의 기본적인 기술적 토대이다.
-- 🔄 다른 접근: [[papers/554_Modular_large_language_model_agents_for_multi-task_computati/review]] — PharmAgents의 포괄적 신약 개발과 MAC-AMP의 항균펩타이드 특화 시스템은 서로 다른 범위에서 약물 개발을 자동화하는 접근이다.
+- 🏛 기반 연구: [[papers/292_Drugpilot_Llm-based_parameterized_reasoning_agent_for_drug_d/review]] — 신약 개발 분야의 LLM 기반 추론 에이전트 방법론을 기반으로 항균펩타이드라는 특정 치료제 설계에 특화된 다중 에이전트 시스템으로 발전시킴
+- 🔄 다른 접근: [[papers/596_OWL_Optimized_Workforce_Learning_for_General_Multi-Agent_Ass/review]] — 다중 에이전트 협업을 활용하지만 MAC-AMP는 생물의학적 문제 해결에, OWL은 범용적 워크포스 최적화에 집중한 서로 다른 목표를 가진 접근법임
+- 🔗 후속 연구: [[papers/651_RAG-Enhanced_Collaborative_LLM_Agents_for_Drug_Discovery/review]] — 약물 발견에서 LLM 기반 다중 에이전트 협업을 다루어 MAC-AMP의 항균펩타이드 설계 방법론을 더 광범위한 약물 발견 영역으로 확장함
+- 🏛 기반 연구: [[papers/638_ProtAgents_protein_discovery_via_large_language_model_multi-/review]] — MAC-AMP의 폐루프 다중 에이전트 협업 시스템이 ProtAgents의 단백질 발견을 위한 협업 프레임워크 기반을 제공한다
+- 🔗 후속 연구: [[papers/292_Drugpilot_Llm-based_parameterized_reasoning_agent_for_drug_d/review]] — 항균펩타이드라는 특정 약물 유형에 대한 다중 에이전트 설계 시스템으로 DrugPilot의 신약 개발 방법론을 더 구체적인 치료제 개발로 확장함
+- 🔗 후속 연구: [[papers/805_The_Virtual_Lab_of_AI_agents_designs_new_SARS-CoV-2_nanobodi/review]] — 생물의학적 치료제 개발에서 다중 AI 에이전트 협업을 활용하여 MAC-AMP의 항균펩타이드 설계 방법론을 나노바디 설계로 확장 적용함

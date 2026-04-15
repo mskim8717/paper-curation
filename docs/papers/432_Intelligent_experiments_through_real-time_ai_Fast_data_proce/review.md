@@ -11,8 +11,8 @@ arxiv: ""
 score: 4.2
 essence: "고에너지 핵물리 실험(sPHENIX, EIC)에서 고속 데이터 처리 및 자동 검출기 제어를 위해 그래프 신경망(GNN)과 FPGA 기반 머신러닝을 실시간으로 구현하는 연구로, 15 kHz 트리거 제한을 극복하고 미처 저장되는 90% 데이터에서 희귀 무거운 쿼크 신호를 추출한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Scientific_Data_Interpretation"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Computational_Chemistry_Tools"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Madushanki et al._2025_Intelligent experiments through real-time ai Fast data processing and autonomous detector control f.pdf"
 ---
@@ -106,11 +106,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Madushanki et al._2025_Intelligent exper
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/139_Autonomous_microscopy_experiments_through_large_language_mod/review]] — 기본적인 실험 자동화를 실시간 고속 데이터 처리가 필요한 고에너지 물리학으로 확장합니다.
-- 🔄 다른 접근: [[papers/072_Agents_for_self-driving_laboratories_applied_to_quantum_comp/review]] — 실시간 AI 기반 실험 제어라는 동일한 개념을 다른 물리 시스템(핵물리 vs 양자)에 적용합니다.
-- 🏛 기반 연구: [[papers/646_QH9_A_Quantum_Hamiltonian_Prediction_Benchmark_for_QM9_Molec/review]] — 정밀한 양자 해밀턴 계산 데이터가 고속 입자 검출 알고리즘의 물리적 모델링 기초를 제공합니다.
-- 🔗 후속 연구: [[papers/254_DataJoint_20_A_Computational_Substrate_for_Agentic_Scientifi/review]] — 실시간 AI 실험이 에이전트 기반 과학 워크플로우로 확장됨
-- 🔗 후속 연구: [[papers/072_Agents_for_self-driving_laboratories_applied_to_quantum_comp/review]] — 실시간 AI 기반 실험 제어를 양자 시스템으로 확장하여 더 복잡한 자동화를 구현합니다.
-- 🔄 다른 접근: [[papers/139_Autonomous_microscopy_experiments_through_large_language_mod/review]] — 실시간 AI 기반 실험 제어라는 동일한 목표를 다른 실험 장비(현미경 vs 고에너지 검출기)로 구현합니다.
-- 🧪 응용 사례: [[papers/646_QH9_A_Quantum_Hamiltonian_Prediction_Benchmark_for_QM9_Molec/review]] — 양자 계산의 정밀성을 고에너지 물리학 실험의 실시간 데이터 분석에 활용하는 실용적 사례입니다.
-- 🔗 후속 연구: [[papers/851_Uncovering_bottlenecks_and_optimizing_scientific_lab_workflo/review]] — 실시간 AI를 통한 지능형 실험으로 실험실 워크플로우 최적화를 확장한다.
+- 🔗 후속 연구: [[papers/816_Toward_a_Fully_Autonomous_AI-Native_Particle_Accelerator/review]] — 완전 자율적이고 AI 네이티브한 입자 가속기 연구가 sPHENIX/EIC 실험의 실시간 AI를 통한 지능형 실험으로 구체화되었다
+- 🏛 기반 연구: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — 실시간 실험-이론 폐쇄 루프 상호작용 연구가 고에너지 핵물리 실험에서 실시간 AI 기반 데이터 처리 시스템 구축의 이론적 기반을 제공한다
+- 🧪 응용 사례: [[papers/553_Model-in-the-loop_milo_Accelerating_multimodal_ai_data_annot/review]] — 멀티모달 AI 데이터 분석 가속화를 위한 루프 내 모델 연구가 sPHENIX 실험의 고속 데이터 처리에 실제 적용되었다
+- 🔗 후속 연구: [[papers/048_Adaptive_ai_decision_interface_for_autonomous_electronic_mat/review]] — 정적 실험에서 실시간 AI 기반 지능형 실험으로 발전시킨 고도화된 접근법을 보여준다
+- 🏛 기반 연구: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — 실시간 AI를 통한 지능형 실험이 실시간 실험-이론 폐루프 상호작용의 기술적 기반을 제공한다
+- 🧪 응용 사례: [[papers/248_Curie_Toward_rigorous_and_automated_scientific_experimentati/review]] — 실시간 AI를 통한 지능형 실험에 대한 연구로, Curie 프레임워크의 실시간 과학 실험 적용 사례

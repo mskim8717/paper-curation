@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 대규모 언어모델(LLM)을 자율 에이전트의 계획 모듈로 활용하는 최신 연구들을 체계적으로 분석한 첫 번째 종합 설문 논문이다. 기존의 기호 기반 방법과 강화학습 기반 방법의 한계를 극복하기 위해 LLM의 추론 및 도구 활용 능력을 활용한 계획 수립 방법들을 5가지 범주로 분류하여 상세히 분석한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Multi-Hop_Reasoning_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2024_Understanding the planning of LLM agents A survey.pdf"
 ---
@@ -125,8 +127,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Huang et al._2024_Understanding the plan
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/412_HuggingGPT_Solving_AI_Tasks_with_ChatGPT_and_its_Friends_in/review]] — 계층적 작업 메모리 관리가 LLM 에이전트의 장기 계획 수립에서 핵심적인 기반 기술을 제공한다.
-- 🔄 다른 접근: [[papers/625_PlanGenLLMs_A_Modern_Survey_of_LLM_Planning_Capabilities/review]] — LLM 계획 능력에 대한 현대적 조사와 LLM 에이전트 계획의 이해 모두 동일한 주제를 다루지만 접근 관점이 다르다.
-- 🔗 후속 연구: [[papers/577_Nova_An_iterative_planning_and_search_approach_to_enhance_no/review]] — 반복적 계획과 검색을 통한 추론 향상이 LLM 에이전트 계획 수립의 구체적인 확장 방법이다.
-- 🔄 다른 접근: [[papers/625_PlanGenLLMs_A_Modern_Survey_of_LLM_Planning_Capabilities/review]] — LLM 에이전트 계획 이해에 대한 조사와 LLM 계획 능력의 현대적 조사는 상호 보완적인 관점을 제공합니다
-- 🧪 응용 사례: [[papers/412_HuggingGPT_Solving_AI_Tasks_with_ChatGPT_and_its_Friends_in/review]] — LLM 에이전트의 계획 수립에서 계층적 메모리 관리가 장기 작업 수행에 필수적인 구성 요소이다.
+- 🔗 후속 연구: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — 사회심리학 기반 협력 메커니즘을 LLM 에이전트 계획 수립의 체계적 분석으로 확장한다
+- 🏛 기반 연구: [[papers/400_Hiagent_Hierarchical_working_memory_management_for_solving_l/review]] — 계층적 메모리 관리가 LLM 에이전트 계획 수립의 핵심 구성요소가 된다
+- 🔗 후속 연구: [[papers/400_Hiagent_Hierarchical_working_memory_management_for_solving_l/review]] — LLM 에이전트 계획 수립에 계층적 메모리 관리를 통합하여 성능을 향상시킨다
+- 🔗 후속 연구: [[papers/625_PlanGenLLMs_A_Modern_Survey_of_LLM_Planning_Capabilities/review]] — LLM 에이전트의 계획 수립 능력 조사를 바탕으로 실제 에이전트 시스템에서의 계획 메커니즘 구현 방안을 구체화할 수 있다.
+- 🔄 다른 접근: [[papers/331_Exploring_collaboration_mechanisms_for_llm_agents_A_social_p/review]] — 에이전트 협력과 계획 수립이 서로 다른 관점에서 LLM 에이전트 시스템을 분석한다

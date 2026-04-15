@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 매개변수 메모리에 의존하지 않고 외부 지식 소스를 활용하는 검색 증강 언어 모델(Atlas)을 제시하여, 550억 개 매개변수 모델보다 50배 적은 매개변수(110억)로 우수한 few-shot 학습 성능을 달성한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Question_Answering"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Knowledge_Graph_Encoding"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Izacard et al._2022_Few-shot Learning with Retrieval Augmented Language Models.pdf"
 ---
@@ -122,11 +123,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Izacard et al._2022_Few-shot Learning wi
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 소규모 검색 증강 모델의 기본 아이디어를 대규모 과학 문헌 데이터베이스로 확장한 발전된 형태의 연구입니다.
-- 🔄 다른 접근: [[papers/768_Splade_v2_Sparse_lexical_and_expansion_model_for_information/review]] — 밀집 표현 기반 검색 증강과 희소 렉시컬 표현 기반 검색의 서로 다른 정보검색 접근법을 제시합니다.
-- 🧪 응용 사례: [[papers/224_Clinical_entity_augmented_retrieval_for_clinical_information/review]] — 검색 증강 언어모델의 일반적 원리를 임상 정보 추출이라는 구체적 도메인에 적용한 사례입니다.
-- 🏛 기반 연구: [[papers/224_Clinical_entity_augmented_retrieval_for_clinical_information/review]] — 검색 증강 언어모델의 기본 원리를 임상 도메인에 특화하여 적용한 실제 구현 사례입니다.
-- 🔄 다른 접근: [[papers/768_Splade_v2_Sparse_lexical_and_expansion_model_for_information/review]] — 희소 렉시컬 표현과 밀집 표현 기반 검색 증강이라는 서로 다른 정보검색 패러다임의 장단점을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/593_Openscholar_Synthesizing_scientific_literature_with_retrieva/review]] — 소규모 검색 증강 모델의 기본 개념을 4천500만 개 논문을 다루는 대규모 과학 문헌 시스템으로 발전시킨 연구입니다.
-- 🏛 기반 연구: [[papers/421_Improving_demonstration_diversity_by_human-free_fusing_for_t/review]] — 검색 증강 언어모델의 소수샷 학습이 시연 다양성 개선의 기초적인 방법론을 제공합니다.
-- 🔄 다른 접근: [[papers/613_Personalized_graph-based_retrieval_for_large_language_models/review]] — 검색 증강 생성에서 개인화 접근법과 소수샘플 학습 방법의 차이점을 비교하여 각각의 장단점을 이해할 수 있다.
+- 🔄 다른 접근: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — 검색 증강 언어모델의 다른 접근법으로, 사전학습 단계와 파인튜닝 단계에서의 검색 활용 방식을 비교할 수 있습니다.
+- 🔄 다른 접근: [[papers/224_Clinical_entity_augmented_retrieval_for_clinical_information/review]] — 임상 도메인에서의 특화된 검색 증강 방법으로, 일반적 접근법과 도메인 특화 접근법의 차이를 보여줍니다.
+- 🏛 기반 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 검색 증강 생성의 전반적인 기술 동향을 제시하여, Atlas 모델의 위치와 발전 방향을 이해할 수 있습니다.
+- 🔄 다른 접근: [[papers/659_REALM_Retrieval-Augmented_Language_Model_Pre-Training/review]] — 검색 증강의 다른 접근법으로, 사전학습 단계에서의 검색 통합과 파인튜닝 후 검색 활용의 차이를 보여줍니다.
+- 🔄 다른 접근: [[papers/224_Clinical_entity_augmented_retrieval_for_clinical_information/review]] — 외부 지식 활용 방식에서 검색 증강과 임상 엔티티 기반 검색의 다른 접근법을 비교할 수 있습니다.

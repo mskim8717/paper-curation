@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.5
 essence: "본 연구는 학술 피어 리뷰에 대규모 언어모델(LLM)을 활용할 때의 심각한 보안 취약점을 최초로 종합적으로 분석한 논문이다. 저자들은 명시적 조작(explicit manipulation)과 암시적 조작(implicit manipulation), 그리고 LLM의 내재적 결함을 통해 LLM 기반 리뷰어가 얼마나 쉽게 오도될 수 있는지를 실증적으로 입증한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/AI_Peer_Review"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ye et al._2024_Are we there yet revealing the risks of utilizing large language models in scholarly peer review.pdf"
 ---
@@ -126,8 +127,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ye et al._2024_Are we there yet revealin
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/270_Detecting_llm-written_peer_reviews/review]] — LLM이 작성한 피어 리뷰를 탐지하는 기술로 LLM 기반 리뷰 시스템의 보안 취약점을 보완할 수 있다.
-- 🔗 후속 연구: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — LLM을 피어 리뷰에 활용하는 탐색적 연구로, 본 논문이 밝힌 보안 위험에 대한 실증적 배경을 제공한다.
-- 🏛 기반 연구: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — LLM의 자기교정 추론 한계를 다루는 연구로, 피어 리뷰에서 LLM이 쉽게 조작당하는 이유를 설명한다.
-- 🔄 다른 접근: [[papers/870_Vulnerability_of_text-matching_in_mlai_conference_reviewer_a/review]] — 학술 피어 리뷰 시스템의 또 다른 보안 취약점을 다루어 종합적인 보안 대책 수립에 필요하다.
-- ⚖️ 반론/비판: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — LLM 논문 심사의 가능성 탐구와 대규모 언어 모델 활용의 위험성 분석을 통해 AI 심사 도입의 신중한 접근 필요성을 확인할 수 있다.
+- 🔗 후속 연구: [[papers/270_Detecting_llm-written_peer_reviews/review]] — LLM 기반 피어 리뷰의 보안 취약점을 탐지하고 방어하는 완전한 공격-방어 프레임워크를 구성한다.
+- 🔄 다른 접근: [[papers/870_Vulnerability_of_text-matching_in_mlai_conference_reviewer_a/review]] — 학술 리뷰 시스템의 조작 가능성을 심사위원 배정과 리뷰 생성 단계에서 각각 검증한다.
+- 🏛 기반 연구: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — AI 기반 피어 리뷰 시스템의 근본적 취약성이 학술계 위기를 야기할 수 있다는 경고를 뒷받침한다.
+- 🔄 다른 접근: [[papers/870_Vulnerability_of_text-matching_in_mlai_conference_reviewer_a/review]] — 학술 심사 시스템의 조작 취약점을 심사위원 배정과 리뷰 조작 단계에서 각각 검증한다.
+- 🔗 후속 연구: [[papers/270_Detecting_llm-written_peer_reviews/review]] — LLM 기반 피어 리뷰의 보안 위험을 탐지하고 방어하는 완전한 솔루션을 구성한다.

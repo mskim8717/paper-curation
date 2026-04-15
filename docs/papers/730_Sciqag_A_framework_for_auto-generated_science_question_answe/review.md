@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "대규모 언어모델(LLM)을 활용하여 과학 논문으로부터 자동으로 고품질의 개방형 질의응답 쌍(188,042개 QA 쌍, 24개 과학 분야)을 생성하고, 세밀한 평가 지표(RACAR)로 품질을 필터링하는 SciQAG 프레임워크를 제안한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Literature_Analysis"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/AI_Scientific_Tool_Integration"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Skarlinski et al._2024_Sciqag A framework for auto-generated science question answering dataset with fine-grained evaluati.pdf"
 ---
@@ -108,10 +109,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Skarlinski et al._2024_Sciqag A framewor
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/729_Scipip_An_llm-based_scientific_paper_idea_proposer/review]] — SciPIP의 아이디어 생성 결과물을 SciQAG의 질의응답 쌍 생성에 활용하여 과학 지식의 자동 구조화를 확장할 수 있다.
-- 🧪 응용 사례: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — SciQAG의 고품질 QA 데이터가 Scientific Agent의 지식 기반 구축과 추론 능력 향상을 위한 핵심 자원으로 활용될 수 있다.
-- 🏛 기반 연구: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — SciQAG의 자동 질의응답 생성 방법론이 사회적 책임 AI를 위한 인과학습 도구들의 효과를 평가하는 체계적인 질문 생성에 적용될 수 있다.
-- 🔄 다른 접근: [[papers/186_Can_large_language_models_unlock_novel_scientific_research_i/review]] — SciQAG의 자동 QA 생성과 LLM의 아이디어 생성 평가가 모두 과학 문헌으로부터 자동으로 지식을 추출하지만 서로 다른 형태의 산출물을 생성한다.
-- 🏛 기반 연구: [[papers/729_Scipip_An_llm-based_scientific_paper_idea_proposer/review]] — SciPIP의 과학 논문 아이디어 생성 방법론이 SciQAG의 질의응답 데이터 생성을 위한 기반 기술로 활용될 수 있다.
-- 🔄 다른 접근: [[papers/186_Can_large_language_models_unlock_novel_scientific_research_i/review]] — LLM의 아이디어 생성과 과학 QA 쌍 생성이 모두 과학 문헌으로부터 지식을 자동 추출하지만 다른 형태의 결과물을 산출한다.
-- 🏛 기반 연구: [[papers/191_Causal_learning_for_socially_responsible_ai/review]] — 인과학습 도구의 체계적 평가를 위해 SciQAG의 자동 질의응답 생성 방법론이 편향성과 공정성 관련 질문 생성에 활용될 수 있다.
+- 🔄 다른 접근: [[papers/701_Scholarchemqa_Unveiling_the_power_of_language_models_in_chem/review]] — 화학 분야 특화 질의응답으로 과학 QA 생성의 다른 도메인 적용 사례이다.
+- 🔗 후속 연구: [[papers/645_Pubmedqa_A_dataset_for_biomedical_research_question_answerin/review]] — 생의학 질의응답 데이터셋으로 과학 QA 자동 생성을 의학 분야로 확장한다.
+- 🧪 응용 사례: [[papers/706_SciBench_Evaluating_College-Level_Scientific_Problem-Solving/review]] — 대학 수준 과학 문제 해결 평가로 자동 생성된 QA의 품질을 검증할 수 있다.

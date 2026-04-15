@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 지식그래프(Knowledge Graph) 기반 설명 생성에 **에이전틱 페르소나(agentic personas)**를 도입하여, 정적 사용자 모델의 한계를 극복하고 전문가의 다양한 인식론적 입장(epistemic stances)을 반영한 적응형 설명을 제공하는 강화학습 기반 접근법을 제시한다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Autonomous_Agent_Learning_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nunes et al._2026_Agentic Personas for Adaptive Scientific Explanations with Knowledge Graphs.pdf"
 ---
@@ -127,7 +128,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nunes et al._2026_Agentic Personas for A
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/484_Learning_to_generate_research_idea_with_dynamic_control/review]] — 두 논문 모두 연구 아이디어 생성을 다루되 Agentic Personas는 지식그래프 기반 설명, Learning to generate는 참신성-실현성 균형에 초점을 맞춘다.
-- 🏛 기반 연구: [[papers/020_A_Review_of_Relational_Machine_Learning_for_Knowledge_Graphs/review]] — 지식 그래프 관계형 머신러닝 리뷰는 Agentic Personas의 지식그래프 기반 설명 생성 시스템 설계에 핵심적인 이론적 배경을 제공한다.
-- 🧪 응용 사례: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — 대규모 인간 평가를 통한 LLM의 새로운 연구 아이디어 생성 연구는 Agentic Personas의 적응형 설명 효과를 실증적으로 검증하는 방법론을 제시한다.
-- 🔄 다른 접근: [[papers/484_Learning_to_generate_research_idea_with_dynamic_control/review]] — 두 논문 모두 연구 아이디어 생성을 다루되 동적 제어는 참신성-실현성 균형, Agentic Personas는 적응형 설명에 중점을 둔다.
+- 🔄 다른 접근: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 편향 완화를 에이전틱 페르소나 기반 적응과 추론 시간 필터링이라는 서로 다른 방법으로 접근한다.
+- 🏛 기반 연구: [[papers/281_Dlpo_Towards_a_robust_efficient_and_generalizable_prompt_opt/review]] — 전문가의 인식론적 입장을 반영한 적응형 설명이 프롬프트 최적화의 견고성 향상에 기여할 수 있다.
+- 🔗 후속 연구: [[papers/538_Mind_the_gap_Examining_the_self-improvement_capabilities_of/review]] — 생성-검증 갭을 에이전틱 페르소나를 통한 맞춤형 설명 생성으로 해결할 수 있다.
+- 🧪 응용 사례: [[papers/795_The_AI_Scientist_Towards_Fully_Automated_Open-Ended_Scientif/review]] — 에이전틱 페르소나 기반 적응형 설명이 자동화된 과학 발견에서 실제로 활용될 수 있다.
+- 🔗 후속 연구: [[papers/281_Dlpo_Towards_a_robust_efficient_and_generalizable_prompt_opt/review]] — 텍스트 기반 그래디언트 최적화가 에이전틱 페르소나의 견고성과 일반화 능력 향상에 기여할 수 있다.
+- 🔄 다른 접근: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 편향 완화를 추론 시간 필터링과 에이전틱 페르소나 기반 적응이라는 서로 다른 방법으로 접근한다.

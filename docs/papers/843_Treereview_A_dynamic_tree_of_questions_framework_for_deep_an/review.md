@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 긴 학술 논문의 동료평가(peer review)를 효율적이면서도 깊이 있게 수행하기 위해 질문-답변 트리 구조를 활용하는 TreeReview 프레임워크를 제안한다. 계층적 질문 분해와 동적 질문 확장 메커니즘을 통해 LLM 기반 과학 논문 검토에서 종합성, 기술적 깊이, 전문가 정렬성을 향상시키면서 토큰 사용량을 80%까지 감소시킨다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Question_Answering"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_Treereview A dynamic tree of questions framework for deep and efficient llm-based scientific peer r.pdf"
 ---
@@ -135,6 +136,6 @@ TreeReview는 두 가지 단계로 작동:
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — TreeReview가 질문 트리 구조로 논문 검토를, AI-Driven Review Systems가 편향 인식 자동화로 접근하여 상호 보완적인 검토 방법론을 제시함
-- 🔗 후속 연구: [[papers/677_Reviewer2_Optimizing_Review_Generation_Through_Prompt_Genera/review]] — Reviewer2의 프롬프트 최적화 접근법이 TreeReview의 계층적 질문 생성 메커니즘과 결합되어 더 효과적인 검토 시스템을 구축할 수 있음
-- 🔄 다른 접근: [[papers/083_AI-Driven_Review_Systems_Evaluating_LLMs_in_Scalable_and_Bia/review]] — AI-Driven Review가 편향 감소와 일관성에 초점을 맞춘 반면, TreeReview는 계층적 질문을 통한 깊이와 효율성을 추구하여 상호 보완적 접근법을 제시함
+- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 다중턴 대화 형태의 동료평가를 계층적 질문 트리 구조로 발전시켜 더 체계적이고 효율적인 평가 방법론을 제시한다.
+- 🔄 다른 접근: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — 인간 유사 LLM 기반 논문 리뷰와 다른 접근으로 질문 기반 동적 평가 구조를 통해 깊이와 효율성을 동시에 추구한다.
+- 🏛 기반 연구: [[papers/665_Remor_Automated_peer_review_generation_with_llm_reasoning_an/review]] — LLM 추론을 통한 자동 동료평가 생성 연구가 질문 기반 동적 리뷰 프레임워크의 기반 방법론을 제공한다.

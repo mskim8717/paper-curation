@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 제한된 샘플 크기 조건에서 대규모언어모델(LLM)을 평가하기 위해 베이지안 추론을 활용한 새로운 방법론을 제시한다. 사전지식(Prior Knowledge)을 통합하여 모델 간 순위를 확률적으로 추정하며, 결정론적 메트릭의 한계를 극복한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Scientific_Literature_Analysis"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xiao et al._2025_Confidence in Large Language Model Evaluation A Bayesian Approach to Limited-Sample Challenges.pdf"
 ---
@@ -113,8 +115,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xiao et al._2025_Confidence in Large Lan
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — 베이지안 LLM 평가 방법론을 대규모 심리학 실험 재현 검증으로 확장한 응용
-- 🏛 기반 연구: [[papers/128_Automatically_evaluating_the_paper_reviewing_capability_of_l/review]] — LLM 리뷰 능력 자동 평가가 베이지안 신뢰도 평가의 구체적 적용 사례
-- 🔗 후속 연구: [[papers/124_Automated_justification_production_for_claim_veracity_in_fac/review]] — 사실 확인의 자동 정당화를 베이지안 추론으로 확장한 신뢰도 평가 연구
-- 🏛 기반 연구: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — 대규모 언어모델 신뢰성 연구가 베이지안 평가 방법론의 이론적 기초
-- 🏛 기반 연구: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — 제한된 샘플에서 LLM 평가하는 베이지안 방법론이 심리학 실험 재현의 통계적 기반
+- 🏛 기반 연구: [[papers/179_Can_ai_replace_human_subjects_a_large-scale_replication_of_p/review]] — 제한된 샘플에서의 베이지안 평가가 대규모 심리학 실험 재현의 기반이 된다
+- 🔄 다른 접근: [[papers/629_Pre_A_peer_review_based_large_language_model_evaluator/review]] — 베이지안 접근법 대신 동료 심사 기반 LLM 평가를 제시한다
+- 🔗 후속 연구: [[papers/664_RelevAI-Reviewer_A_Benchmark_on_AI_Reviewers_for_Survey_Pape/review]] — AI 리뷰어 벤치마킹을 베이지안 신뢰도 평가로 확장한다
+- 🏛 기반 연구: [[papers/844_Truly_assessing_fluid_intelligence_of_large_language_models/review]] — LLM 평가에서의 베이지안 신뢰도 접근법이 유동 지능 측정의 통계적 기반을 제공한다
+- 🧪 응용 사례: [[papers/785_T-sciq_Teaching_multimodal_chain-of-thought_reasoning_via_mi/review]] — LLM 평가에서 신뢰도에 대한 베이지안 접근법 연구가 T-SciQ의 학생 모델 학습 평가에 실제 적용되었다
+- 🏛 기반 연구: [[papers/810_Through_the_lens_of_core_competency_Survey_on_evaluation_of/review]] — 베이지안 접근법을 통한 LLM 평가 신뢰도가 핵심 역량 평가의 방법론적 기반이다

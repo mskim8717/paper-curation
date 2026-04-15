@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "대규모 언어모델(LLM)이 화학 분야의 연구 배경만으로 미발견 과학 가설을 자동으로 재발견할 수 있음을 최초로 증명한 연구이다. 이를 통해 LLM이 Nature/Science 수준의 화학 논문 가설들의 핵심 혁신을 포착하는 능력을 보였다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Drug_Discovery"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Patent_Novelty_Prediction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2024_MOOSE-Chem Large Language Models for Rediscovering Unseen Chemistry Scientific Hypotheses.pdf"
 ---
@@ -102,9 +103,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yang et al._2024_MOOSE-Chem Large Langua
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/418_Hypothesis_Generation_for_Materials_Discovery_and_Design_Usi/review]] — 화학 vs 재료 과학에서 LLM 기반 과학적 발견의 다른 도메인 적용을 비교할 수 있다
-- 🔗 후속 연구: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — LLM에 화학 도구를 통합한 방법론을 미발견 화학 가설 재발견에 확장 적용할 수 있다
-- 🔗 후속 연구: [[papers/558_Moose-chem3_Toward_experiment-guided_hypothesis_ranking_via/review]] — 실험 가이드 기반 가설 순위화로 화학 가설 재발견 방법론을 확장할 수 있다
-- 🏛 기반 연구: [[papers/878_What_ChatGPT_and_generative_AI_mean_for_science/review]] — 생성형 AI가 과학 연구에 미치는 전반적 영향에 대한 이론적 기반을 제공한다
-- 🔗 후속 연구: [[papers/305_Efficient_Evolutionary_Search_Over_Chemical_Space_with_Large/review]] — LLM 기반 화학 공간 진화 탐색이 미발견 화학 지식 재발견을 위한 더 포괄적인 대형언어모델 시스템으로 확장되었다
-- 🏛 기반 연구: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — LLM에 화학 도구를 통합하는 방법론이 미발견 화학 가설 재발견의 기반을 제공한다
+- 🔄 다른 접근: [[papers/480_Large-Language-Model-Based_AI_Agent_for_Organic_Semiconducto/review]] — MOOSE-Chem의 화학 가설 재발견과 유기반도체 소자용 AI 에이전트는 서로 다른 화학 연구 자동화 접근법이다.
+- 🔗 후속 연구: [[papers/187_Can_LLMs_Generate_Novel_Research_Ideas_A_Large-Scale_Human_S/review]] — LLM의 새로운 연구 아이디어 생성 능력이 MOOSE-Chem의 미발견 화학 가설 재발견을 더 창의적인 형태로 확장한다.
+- 🏛 기반 연구: [[papers/719_Scientific_Hypothesis_Generation_and_Validation_Methods_Data/review]] — 대규모 언어모델의 과학적 가설 생성이 MOOSE-Chem의 화학 가설 재발견 방법론의 이론적 기반을 제공한다.
+- 🧪 응용 사례: [[papers/305_Efficient_Evolutionary_Search_Over_Chemical_Space_with_Large/review]] — LLM 기반 화학 공간 탐색을 실제 화학 반응과 분자 생성에 적용한 구체적 사례
+- 🔄 다른 접근: [[papers/480_Large-Language-Model-Based_AI_Agent_for_Organic_Semiconducto/review]] — 유기반도체 소자용 AI 에이전트와 MOOSE-Chem의 화학 가설 재발견은 서로 다른 화학 연구 자동화 방식이다.
+- 🔗 후속 연구: [[papers/097_An_autonomous_AI_agent_for_universal_behavior_analysis/review]] — 범용 행동 분석에서 화학적 발견을 위한 귀납적 추론이라는 더 특화된 AI 에이전트 응용으로 확장된다
+- 🔗 후속 연구: [[papers/701_Scholarchemqa_Unveiling_the_power_of_language_models_in_chem/review]] — LLM을 통한 미발견 화학 반응 재발견을 통해 화학 QA 시스템의 지식 범위를 확장하고 새로운 발견을 가능하게 한다.
+- 🔗 후속 연구: [[papers/213_ChemReasoner_Heuristic_Search_over_a_Large_Language_Models_K/review]] — 미발견 화학물질 재발견 연구가 촉매 발견을 넘어 더 넓은 화학 공간 탐사로 확장한다

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "대규모 다중모달 모델(LMM)을 과학 영상 분류 작업에 특화시키는 프레임워크로, 시각적 검색 기반 생성(VisRAG)과 도메인 특화 도구를 활용하여 해석 가능하고 신뢰할 수 있는 AI 시스템을 구현했다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Visual_Scientific_Reasoning"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Computational_Chemistry_Tools"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hogan et al._2024_Aiscivision A framework for specializing large multimodal models in scientific image classification.pdf"
 ---
@@ -100,6 +100,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Hogan et al._2024_Aiscivision A framewor
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/722_Scifibench_Benchmarking_large_multimodal_models_for_scientif/review]] — 과학적 수치 이해를 위한 대규모 다중모달 모델 벤치마킹으로 과학 영상 분류를 확장한다.
-- 🧪 응용 사례: [[papers/727_Scimage_How_good_are_multimodal_large_language_models_at_sci/review]] — 과학 이미지에서 다중모달 대규모 언어모델의 성능을 구체적으로 평가한다.
-- 🏛 기반 연구: [[papers/737_Sciverse_Unveiling_the_knowledge_comprehension_and_visual_re/review]] — 지식 이해와 시각적 추론을 통해 과학 분야에서의 다중모달 모델 활용 기반을 제공한다.
+- 🏛 기반 연구: [[papers/552_Mmsci_A_dataset_for_graduate-level_multi-discipline_multimod/review]] — 과학 영상 분류의 기반이 되는 다학제 다중모달 과학 데이터셋과 평가 방법론을 제공한다
+- 🔄 다른 접근: [[papers/201_ChartLlama_A_Multimodal_LLM_for_Chart_Understanding_and_Gene/review]] — 과학 시각화에서 영상 분류와 차트 생성이라는 서로 다른 접근 방향을 보여준다
+- 🔗 후속 연구: [[papers/727_Scimage_How_good_are_multimodal_large_language_models_at_sci/review]] — 과학 영상 이해를 다중모달 대화형 시스템으로 확장한 더 발전된 접근법을 제시한다

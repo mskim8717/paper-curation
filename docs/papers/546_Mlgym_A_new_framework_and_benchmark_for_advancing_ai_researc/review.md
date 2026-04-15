@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 LLM 기반 AI 연구 에이전트(AI Research Agent)를 평가하고 개발하기 위한 첫 번째 Gym 환경인 **MLGym**과 13개 과제로 구성된 벤치마크 **MLGym-Bench**를 제시한다. 이는 RL, 커리큘럼 러닝 등 다양한 학습 알고리즘으로 에이전트를 훈련할 수 있는 통합 플랫폼을 제공한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/ML_Research_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nathani et al._2025_Mlgym A new framework and benchmark for advancing ai research agents.pdf"
 ---
@@ -123,8 +125,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Nathani et al._2025_Mlgym A new framewor
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/528_MedAgentGym_A_Scalable_Agentic_Training_Environment_for_Code/review]] — 머신러닝 vs 생의학 도메인에서의 AI 에이전트 개발 환경을 제시합니다.
-- 🧪 응용 사례: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — 코드 생성 모델이 AI 연구 에이전트 프레임워크에 활용됩니다.
-- 🏛 기반 연구: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 실제 개발 문제 해결이 AI 연구 에이전트의 기반을 제공합니다.
-- 🏛 기반 연구: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — 코드 생성 모델이 AI 연구 에이전트 개발의 기반이 됩니다.
-- 🔄 다른 접근: [[papers/528_MedAgentGym_A_Scalable_Agentic_Training_Environment_for_Code/review]] — 생의학 vs 머신러닝 도메인에서의 AI 에이전트 훈련 환경을 제시합니다.
+- 🔄 다른 접근: [[papers/086_AI-Researcher_Autonomous_Scientific_Innovation/review]] — AI 연구 에이전트 개발 대신 자율적 과학 혁신에 집중한다
+- 🏛 기반 연구: [[papers/672_ResearchGym_Evaluating_Language_Model_Agents_on_Real-World_A/review]] — 실세계 연구 환경 평가가 AI 연구 에이전트 벤치마킹의 기반이 된다
+- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 머신러닝 에이전트 벤치마킹을 포괄적인 AI 연구 환경으로 확장한다
+- 🔄 다른 접근: [[papers/086_AI-Researcher_Autonomous_Scientific_Innovation/review]] — 자율적 과학 혁신 대신 AI 연구 에이전트 개발 환경을 제시한다

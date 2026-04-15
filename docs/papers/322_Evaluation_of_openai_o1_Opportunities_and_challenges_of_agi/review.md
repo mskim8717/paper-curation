@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.25
 essence: "OpenAI의 o1-preview 대규모 언어 모델(LLM)을 다양한 복잡 추론 작업에 걸쳐 포괄적으로 평가한 결과, 컴퓨터 과학, 수학, 자연과학, 의학, 언어학, 사회과학 등 여러 영역에서 인간 수준 이상의 성능을 달성했으며, 이는 인공일반지능(AGI) 달성을 위한 중요한 진전을 시사한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/AI_for_Science_Taxonomy"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Bioinformatics_Integration"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhong et al._2024_Evaluation of openai o1 Opportunities and challenges of agi.pdf"
 ---
@@ -116,13 +116,10 @@ OpenAI의 o1-preview 대규모 언어 모델(LLM)을 다양한 복잡 추론 작
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/833_Towards_reasoning_era_A_survey_of_long_chain-of-thought_for/review]] — o1의 뛰어난 성능이 Long CoT 추론 특성에서 기인한다는 이론적 근거를 제공한다
-- 🔗 후속 연구: [[papers/585_Openai_o1_system_card/review]] — OpenAI o1 시스템 카드를 통해 AGI 평가 결과의 구체적 시스템 구현을 확인할 수 있다
-- ⚖️ 반론/비판: [[papers/471_Large_Language_Models_Cannot_Self-Correct_Reasoning_Yet/review]] — LLM의 추론 자기교정 한계와 o1의 인간 수준 추론 성능 사이의 대조적 관점을 제시한다
-- 🧪 응용 사례: [[papers/846_TrustLLM_Trustworthiness_in_Large_Language_Models/review]] — OpenAI O1 모델 평가가 신뢰성 차원에서 구체적 사례 연구가 됨
-- 🔗 후속 연구: [[papers/683_RM-R1_Reward_Modeling_as_Reasoning/review]] — OpenAI o1의 추론 능력 평가는 RM-R1의 생성형 보상 모델이 실제로 달성할 수 있는 성능 상한을 보여준다.
-- 🧪 응용 사례: [[papers/833_Towards_reasoning_era_A_survey_of_long_chain-of-thought_for/review]] — OpenAI o1의 뛰어난 추론 성능이 Long CoT의 특성에서 기인한다는 실증적 증거를 제공한다
-- 🔄 다른 접근: [[papers/181_Can_gpt-4v_ision_serve_medical_applications_case_studies_on/review]] — OpenAI o1 AGI 평가와 GPT-4V 의료 응용의 다른 AI 역량 평가 접근법
-- 🔗 후속 연구: [[papers/585_Openai_o1_system_card/review]] — OpenAI o1 평가 연구는 o1 시스템 카드의 안전성과 강건성 개선 주장을 AGI 맥락에서 기회와 도전으로 확장 분석한다.
-- 🔗 후속 연구: [[papers/387_Gpt-4_technical_report/review]] — GPT-4를 기반으로 한 OpenAI o1의 추론 능력 평가 연구
-- 🏛 기반 연구: [[papers/178_Can_ai_examine_novelty_of_patents_Novelty_evaluation_based_o/review]] — OpenAI o1의 평가를 통해 AGI의 기회와 도전을 분석하여 본 논문의 LLM 특허 평가 능력 연구의 기술적 배경을 제공한다.
+- 🏛 기반 연구: [[papers/833_Towards_reasoning_era_A_survey_of_long_chain-of-thought_for/review]] — OpenAI o1의 복잡한 추론 능력 평가를 위해 Long CoT 특성에 대한 체계적 분석이 필수적임
+- 🔗 후속 연구: [[papers/585_Openai_o1_system_card/review]] — o1-preview 모델의 성능 평가가 정식 o1 시스템의 상세 분석으로 발전함
+- 🧪 응용 사례: [[papers/833_Towards_reasoning_era_A_survey_of_long_chain-of-thought_for/review]] — Long CoT의 추론 능력 분석이 OpenAI o1의 복잡한 추론 작업 성능 평가에 핵심적인 평가 기준을 제공함
+- 🔄 다른 접근: [[papers/044_Accelerating_Scientific_Research_with_Gemini_Case_Studies_an/review]] — 과학 연구 가속화를 위해 Gemini 기반 인간-AI 협력과 OpenAI o1 기반 자율적 추론이라는 서로 다른 접근법을 제시함
+- 🧪 응용 사례: [[papers/040_AAAI_Presidential_Panel_Report_on_the_Future_of_AI_Research/review]] — AI 연구의 미래 방향성을 구체적인 AGI 평가와 기회 분석을 통해 실증적으로 검토한다
+- 🔗 후속 연구: [[papers/585_Openai_o1_system_card/review]] — OpenAI o1의 AGI 가능성과 도전과제에 대한 심층적인 평가를 제공합니다.
+- 🔗 후속 연구: [[papers/438_Introspective_growth_Automatically_advancing_llm_expertise_i/review]] — OpenAI o1의 AGI 평가가 LLM의 기술 전문성 자동 발전 가능성으로 확장될 수 있다.

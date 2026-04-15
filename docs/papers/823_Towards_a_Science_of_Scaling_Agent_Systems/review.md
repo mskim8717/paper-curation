@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 언어 모델 기반 에이전트 시스템의 성능을 결정하는 정량적 확장 원칙(scaling laws)을 최초로 체계적으로 도출한 연구이다. 도구 활용도, 모델 능력, 작업 특성 간의 상호작용을 분석하여 다중 에이전트 시스템(MAS)이 언제 성능을 향상시키고 언제 저하시키는지 정량화하는 예측 프레임워크를 제시한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Task_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Scientific_Agent_Framework_Design"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kim et al._2025_Towards a Science of Scaling Agent Systems.pdf"
 ---
@@ -121,11 +123,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Kim et al._2025_Towards a Science of Sca
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 다중 에이전트 시스템 확장의 이론적 원칙을 머신러닝 하이퍼파라미터 최적화 등 구체적 응용에 적용할 수 있는 기반을 제공한다.
-- 🔗 후속 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — AutoGen의 다중 에이전트 프레임워크에 정량적 확장 법칙을 적용하여 성능 예측 가능성을 높인다.
-- 🧪 응용 사례: [[papers/828_Towards_end-to-end_automation_of_AI_research/review]] — 에이전트 확장 원칙을 과학 연구 자동화라는 복잡한 실제 문제에 적용한 구체적 사례를 제공한다.
-- 🏛 기반 연구: [[papers/052_Advances_and_challenges_in_foundation_agents_From_brain-insp/review]] — 대규모 언어모델 기반 에이전트의 종합적 검토가 에이전트 시스템 확장에 대한 과학적 연구의 중요한 이론적 토대를 제공한다
-- 🏛 기반 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — 에이전트 시스템 확장의 과학적 기반을 제공한다.
-- 🏛 기반 연구: [[papers/792_Text2world_Benchmarking_large_language_models_for_symbolic_w/review]] — 에이전트 시스템의 확장 법칙 연구에 필요한 기본적인 세계 모델링 능력 평가 기준을 제공한다.
-- 🏛 기반 연구: [[papers/596_OWL_Optimized_Workforce_Learning_for_General_Multi-Agent_Ass/review]] — 에이전트 시스템 확장의 과학이 OWL의 일반화된 다중 에이전트 지원 시스템 설계의 이론적 기반과 확장성 원리를 제공한다.
-- 🏛 기반 연구: [[papers/760_Small_Language_Models_are_the_Future_of_Agentic_AI/review]] — 에이전트 시스템 확장의 과학은 소규모 언어모델이 에이전트 AI에서 어떻게 효과적으로 확장될 수 있는지에 대한 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/033_A_survey_on_large_language_model_based_autonomous_agents/review]] — LLM 기반 자율 에이전트에 대한 포괄적 조사로, 에이전트 시스템의 확장 법칙을 이해하는 기초적 배경을 제공
+- 🧪 응용 사례: [[papers/596_OWL_Optimized_Workforce_Learning_for_General_Multi-Agent_Ass/review]] — 일반적인 다중 에이전트 시스템을 위한 최적화된 인력 학습 프레임워크로, 확장 원칙의 실제 적용 사례
+- 🏛 기반 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — LLM 기반 다중 에이전트의 진전에 대한 종합적 조사로, 확장성 연구의 이론적 토대를 제공
+- 🧪 응용 사례: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — 차세대 LLM 애플리케이션을 위한 다중 에이전트 대화 프레임워크로, 확장 법칙의 구체적 구현 사례
+- 🔗 후속 연구: [[papers/562_Multi-agent_risks_from_advanced_ai/review]] — 에이전트 시스템 확장의 과학 연구가 다중 에이전트 AI의 대규모 배포로 인한 구체적인 위험 분류 체계로 발전되었다
+- 🔗 후속 연구: [[papers/464_Large_Language_Model_based_Multi-Agents_A_Survey_of_Progress/review]] — 에이전트 시스템의 확장성 과학과 LLM 기반 멀티에이전트 진전은 상호 보완적인 에이전트 시스템 연구 관점을 제공한다.
+- 🏛 기반 연구: [[papers/102_Architecture_Design_for_Human-Driven_Systems/review]] — 에이전트 시스템 확장성에 대한 과학적 접근으로서 인간 중심 시스템 설계의 이론적 기반을 제공한다

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "학술 논문 심사 과정에서 LLM이 작성한 피어 리뷰(peer review)를 탐지하는 기존 방법들의 한계를 실증적으로 밝히고, 개별 리뷰 수준에서 AI 생성 텍스트를 탐지하는 새로운 앵커 임베딩(Anchor Embedding) 기반 접근법을 제안한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/AI_Review_Detection"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/AI-Generated_Peer_Review_Detection"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2024_Is Your Paper Being Reviewed by an LLM Investigating AI Text Detectability in Peer Review.pdf"
 ---
@@ -103,9 +104,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2024_Is Your Paper Being Revie
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/270_Detecting_llm-written_peer_reviews/review]] — LLM 작성 피어 리뷰 탐지의 기본 연구가 AI 텍스트 탐지 가능성 조사의 이론적 기반을 제공합니다.
-- 🔄 다른 접근: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — AI 생성 리뷰 탐지와 전문 AI 리뷰 생성이라는 상반된 관점에서 학술 심사의 AI 활용을 다룹니다.
-- 🔗 후속 연구: [[papers/678_ReviewerGPT_An_Exploratory_Study_on_Using_Large_Language_Mod/review]] — 학술 리뷰에서 LLM 사용 탐색을 AI 텍스트 탐지 방법론 개발로 확장하여 더 정확한 식별 기술을 제시합니다.
-- 🔄 다른 접근: [[papers/270_Detecting_llm-written_peer_reviews/review]] — 둘 다 학술 논문에서 AI 생성 텍스트를 탐지하는 문제를 다루지만 서로 다른 기술적 접근법을 사용함
-- 🔄 다른 접근: [[papers/051_Admissions_in_the_age_of_AI_detecting_AI-generated_applicati/review]] — AI가 논문 심사에 사용되고 있는지 조사하는 다른 접근법으로 동일한 문제의식을 다른 각도에서 다룬다.
-- 🔄 다른 접근: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — AI 리뷰 생성과 AI 텍스트 탐지가 학술 심사에서 AI 활용의 상반된 두 관점을 제시합니다.
+- 🔄 다른 접근: [[papers/270_Detecting_llm-written_peer_reviews/review]] — LLM이 작성한 피어 리뷰 탐지를 위한 다른 기술적 접근법을 제시한다
+- 🏛 기반 연구: [[papers/478_Large_language_models_penetration_in_scholarly_writing_and_p/review]] — 학술 워크플로우에서 LLM 침투 측정을 위한 기본적인 방법론 기반을 제공한다
+- 🧪 응용 사례: [[papers/861_Use_of_large_language_models_as_artificial_intelligence_tool/review]] — 의학 분야에서 LLM 사용 탐지와 윤리적 문제에 대한 실제 적용 사례를 보여준다
+- 🔗 후속 연구: [[papers/478_Large_language_models_penetration_in_scholarly_writing_and_p/review]] — 피어 리뷰 탐지에서 더 포괄적인 LLM 침투 측정 프레임워크로 확장한다
+- 🏛 기반 연구: [[papers/861_Use_of_large_language_models_as_artificial_intelligence_tool/review]] — 의학 분야에서 LLM 사용 탐지와 윤리적 고려사항의 실증적 기반을 제공한다
+- 🔗 후속 연구: [[papers/093_All_that_glitters_is_not_novel_Plagiarism_in_ai_generated_re/review]] — AI 생성 연구 문서의 표절 탐지와 LLM 작성 논문 식별이 연구 무결성 보장의 완전한 솔루션을 구성한다.
+- 🔄 다른 접근: [[papers/270_Detecting_llm-written_peer_reviews/review]] — LLM 생성 콘텐츠를 피어 리뷰와 일반 논문에서 각각 다른 방법론으로 탐지한다.
+- 🔄 다른 접근: [[papers/051_Admissions_in_the_age_of_AI_detecting_AI-generated_applicati/review]] — 입학 서류와 학술 논문에서 AI 텍스트 탐지라는 서로 다른 학술 영역의 AI 탐지 접근법을 보여준다.

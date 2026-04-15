@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 과학적 발견 과정에서 LLM의 역량을 평가하기 위한 첫 번째 대규모 벤치마크 **ResearchBench**를 제시한다. 영감 검색(inspiration retrieval), 가설 구성(hypothesis composition), 가설 순위 결정(hypothesis ranking)의 세 가지 하위 작업으로 과학 발견 과정을 분해하고, 12개 분야의 1,386편 논문(2024년 발행)으로부터 자동 추출 프레임워크를 통해 벤치마크를 구축했다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Benchmarking_Taxonomy"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zheng et al._2025_Researchbench Benchmarking llms in scientific discovery via inspiration-based task decomposition.pdf"
 ---
@@ -126,14 +126,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zheng et al._2025_Researchbench Benchmar
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/509_Llms_can_realize_combinatorial_creativity_generating_creativ/review]] — 조합적 창의성으로 생성된 과학 아이디어는 ResearchBench의 영감 검색과 가설 구성 작업에서 실제로 평가될 수 있습니다
-- 🔗 후속 연구: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — LiveIdeaBench의 과학적 창의성 평가는 ResearchBench의 과학 발견 벤치마크를 더욱 구체적인 아이디어 생성 평가로 확장합니다
-- 🔄 다른 접근: [[papers/724_SciHorizon_Benchmarking_AI-for-Science_Readiness_from_Scient/review]] — SciHorizon의 과학 준비도 벤치마킹과 ResearchBench는 AI의 과학적 역량을 서로 다른 관점에서 평가하는 보완적 접근법입니다
-- 🔄 다른 접근: [[papers/724_SciHorizon_Benchmarking_AI-for-Science_Readiness_from_Scient/review]] — 과학적 발견에서 LLM 벤치마킹의 다른 접근 방식을 제시한다.
-- 🔗 후속 연구: [[papers/504_Llm-srbench_A_new_benchmark_for_scientific_equation_discover/review]] — 과학적 발견 벤치마킹의 더 넓은 맥락에서 방정식 발견 평가를 포함함
-- 🧪 응용 사례: [[papers/509_Llms_can_realize_combinatorial_creativity_generating_creativ/review]] — ResearchBench의 과학 발견 벤치마크는 조합적 창의성으로 생성된 아이디어의 실제 평가 플랫폼입니다
-- 🏛 기반 연구: [[papers/417_HypoBench_Towards_Systematic_and_Principled_Benchmarking_for/review]] — 과학 발견 벤치마킹이 가설 생성 평가의 포괄적 프레임워크 기초
-- 🧪 응용 사례: [[papers/261_Deepresearch_bench_A_comprehensive_benchmark_for_deep_resear/review]] — 과학 발견에서 LLM 벤치마킹을 깊이 있는 연구 에이전트 평가에 적용
-- 🔗 후속 연구: [[papers/079_Ai_idea_bench_2025_Ai_research_idea_generation_benchmark/review]] — ResearchBench가 AI Idea Bench의 아이디어 생성 벤치마크를 실제 과학적 발견 과정 전반으로 확장한 포괄적 평가 프레임워크이다.
-- 🔗 후속 연구: [[papers/326_Exp-bench_Can_ai_conduct_ai_research_experiments_arXiv_prepr/review]] — ResearchBench가 EXP-Bench의 실험 수행 평가를 더 광범위한 과학적 발견 과정으로 확장한 종합적 벤치마크이다.
-- 🏛 기반 연구: [[papers/550_MLRC-Bench_Can_Language_Agents_Solve_Machine_Learning_Resear/review]] — 과학적 발견에서 LLM의 종합적인 벤치마킹 프레임워크로서 MLRC-Bench의 평가 체계에 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — 과학적 발견 평가에서 ResearchBench의 체계적 접근법과 LiveIdeaBench의 창의성 중심 평가는 상호보완적인 벤치마크 설계 방식이다.
+- 🏛 기반 연구: [[papers/835_Towards_Scientific_Intelligence_A_Survey_of_LLM-based_Scient/review]] — LLM 기반 과학적 지능에 대한 종합적 조사가 ResearchBench 벤치마크 설계의 이론적 기반을 제공한다.
+- 🔄 다른 접근: [[papers/090_AIRS-Bench_a_Suite_of_Tasks_for_Frontier_AI_Research_Science/review]] — 과학적 발견을 위한 LLM 벤치마킹에서 AIRS-Bench와 ResearchBench는 서로 다른 평가 방법론을 제시한다.
+- 🔗 후속 연구: [[papers/417_HypoBench_Towards_Systematic_and_Principled_Benchmarking_for/review]] — 과학 발견의 전반적인 능력 평가를 위한 벤치마크 확장을 제공합니다.
+- 🔄 다른 접근: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — LLM의 과학적 발견 벤치마킹을 위한 다른 접근으로, 언어 에이전트 평가와 일반적인 LLM 평가를 비교
+- 🔄 다른 접근: [[papers/277_Discoverybench_Towards_data-driven_discovery_with_large_lang/review]] — 데이터 기반 발견과 과학적 발견 벤치마킹이라는 서로 다른 관점에서 LLM의 연구 능력을 평가한다

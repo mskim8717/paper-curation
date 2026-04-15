@@ -10,8 +10,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 fact verification(FV) 모델의 zero-shot 및 few-shot 일반화 능력을 체계적으로 조사한 첫 번째 연구로, 11개 FV 데이터셋을 수집하여 도메인 간 전이 학습의 현황을 분석하고 개선 방안을 제시한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Fact_Verification_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/LLM_Hypothesis_Generation_Evaluation"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pan et al._2023_Investigating zero-and few-shot generalization in fact verification.pdf"
 ---
@@ -125,9 +126,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Pan et al._2023_Investigating zero-and f
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 팩트 검증 모델의 일반화 능력 분석이 복잡한 주장의 프로그램 가이드 팩트체킹 시스템 개발의 기초를 제공함
-- 🔗 후속 연구: [[papers/827_Towards_effective_extraction_and_evaluation_of_factual_claim/review]] — 기본적인 팩트 검증의 일반화 문제를 주장 추출과 평가의 더 복잡한 프로세스로 확장함
-- 🏛 기반 연구: [[papers/859_Unsupervised_pretraining_for_fact_verification_by_language_m/review]] — 팩트 검증을 위한 비지도 사전학습 방법이 zero-shot 및 few-shot 일반화 연구의 방법론적 기초를 제공함
-- 🏛 기반 연구: [[papers/117_Augmenting_the_veracity_and_explanations_of_complex_fact_che/review]] — 사실 검증에서 제로샷과 퓨샷 일반화 조사는 복잡한 사실 검증에서 설명 일관성과 핫스팟 인식 능력 평가의 이론적 기반을 제공합니다
-- 🔗 후속 연구: [[papers/332_Fact-checking_complex_claims_with_program-guided_reasoning/review]] — 기본적인 팩트 체킹을 복잡한 주장의 프로그램 가이드 추론으로 확장하여 더 정교한 사실 검증 방법을 제시함
-- 🔗 후속 연구: [[papers/827_Towards_effective_extraction_and_evaluation_of_factual_claim/review]] — 팩트 검증의 일반화 문제를 주장 추출의 품질 평가와 모호성 처리라는 더 세부적인 프로세스로 확장함
+- 🔄 다른 접근: [[papers/827_Towards_effective_extraction_and_evaluation_of_factual_claim/review]] — 팩트 체킹과 주장 추출이라는 유사한 문제를 다루지만 서로 다른 방법론적 접근을 통해 상호 보완적 관점을 제공한다.
+- 🏛 기반 연구: [[papers/541_Missing_counter-evidence_renders_nlp_fact-checking_unrealist/review]] — NLP 기반 팩트체킹의 현실적 한계에 대한 이론적 기반을 제공하여 zero-shot 일반화 연구의 동기를 설명한다.
+- 🔗 후속 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 지식 그래프를 활용한 팩트 검증 방법을 통해 모델의 추론 능력을 향상시키는 확장된 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/172_Boolq_Exploring_the_surprising_difficulty_of_natural_yesno_q/review]] — 사실 검증에서의 제로샷과 퓨샷 일반화를 연구하여, BoolQ의 예/아니오 질문을 사실 확인 맥락으로 확장합니다.
+- 🏛 기반 연구: [[papers/333_Factkg_Fact_verification_via_reasoning_on_knowledge_graphs/review]] — 제로샷/퓨샷 팩트 검증 일반화 연구가 지식 그래프 기반 팩트 검증의 기반 방법론을 제공한다.
+- 🏛 기반 연구: [[papers/832_Towards_llm-based_fact_verification_on_news_claims_with_a_hi/review]] — 사실 검증에서의 zero-shot과 few-shot 일반화를 조사한 연구로, HiSS의 인컨텍스트 학습 기반 접근법의 이론적 배경을 제공한다
+- 🔄 다른 접근: [[papers/827_Towards_effective_extraction_and_evaluation_of_factual_claim/review]] — 사실 검증과 주장 추출이라는 유사한 작업을 다루지만 LLM 생성 콘텐츠 vs 일반 텍스트라는 다른 대상에 적용된다.

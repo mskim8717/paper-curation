@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "CASSIA는 단일세포 RNA-seq 데이터의 자동화된 세포주석(cell annotation)을 위한 다중 에이전트 대규모 언어모델(LLM) 시스템으로, 기존 방법보다 12-41% 높은 정확도를 달성하면서 해석 가능한 품질 점수와 불확실성 정량화를 제공한다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Multi-Hop_Reasoning_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 ---
 
@@ -113,5 +114,6 @@ CASSIA는 단일세포 RNA-seq 데이터의 자동화된 세포주석(cell annot
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/693_scAgent_Universal_Single-Cell_Annotation_via_a_LLM_Agent/review]] — 단일세포 주석 작업에 대한 다른 LLM 기반 접근법
-- 🏛 기반 연구: [[papers/529_MedAgents_Large_Language_Models_as_Collaborators_for_Zero-sh/review]] — 의료 분야 다중 에이전트 협력이 생물학적 데이터 분석의 기반이 됨
+- 🧪 응용 사례: [[papers/143_AutoP2C_An_LLM-Based_Agent_Framework_for_Code_Repository_Gen/review]] — 다중 에이전트 LLM 시스템이 생물정보학 분석 자동화에서 코드 생성까지 확장 적용된다
+- 🏛 기반 연구: [[papers/361_From_LLM_Reasoning_to_Autonomous_AI_Agents_A_Comprehensive_R/review]] — 자율 AI 에이전트 리뷰가 단일세포 분석 다중 에이전트 시스템의 설계 원칙을 제공한다
+- 🧪 응용 사례: [[papers/699_SCANPY_large-scale_single-cell_gene_expression_data_analysis/review]] — SCANPY 대규모 단일세포 분석 프레임워크에 해석 가능한 자동 주석 시스템을 통합한다

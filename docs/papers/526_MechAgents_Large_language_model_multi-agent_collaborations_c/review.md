@@ -9,8 +9,10 @@ arxiv: ""
 score: 4.2
 essence: "대규모 언어모델(LLM) 기반 다중 에이전트 시스템이 자동으로 역학(mechanics) 문제를 풀 수 있음을 보여준다. 에이전트 간 상호작용과 자기수정을 통해 유한요소법(FEM)을 활용한 탄성론 문제 해결이 가능하며, 물리 기반 모델링과 LLM의 지능을 결합하는 새로운 접근법을 제시한다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Specialized_Domain_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/AI-Driven_Drug_and_Materials_Discovery"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ni and Buehler_2023_MechAgents Large language model multi-agent collaborations can solve mechanics problems, generate n.pdf"
 ---
@@ -149,7 +151,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Ni and Buehler_2023_MechAgents Large lan
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/535_MetaOpenFOAM_an_LLM-based_multi-agent_framework_for_CFD/review]] — MechAgents의 역학 문제 해결과 MetaOpenFOAM의 CFD 자동화는 서로 다른 물리학 영역에서 LLM 기반 다중 에이전트 시뮬레이션을 구현하는 접근이다.
-- 🔗 후속 연구: [[papers/620_Physics-Informed_Autonomous_LLM_Agents_for_Explainable_Power/review]] — 전력 시스템 분석을 위한 물리 정보 기반 자율 LLM 에이전트가 MechAgents의 역학 문제 해결을 다른 공학 영역으로 확장한 적용이다.
-- 🏛 기반 연구: [[papers/721_Scientific_Machine_Learning_through_Physics-Informed_Neural/review]] — 물리 정보 기반 신경망을 통한 과학적 기계학습이 MechAgents의 물리 기반 모델링과 LLM 지능 결합의 이론적 토대이다.
-- 🔄 다른 접근: [[papers/535_MetaOpenFOAM_an_LLM-based_multi-agent_framework_for_CFD/review]] — MetaOpenFOAM의 CFD 자동화와 MechAgents의 역학 문제 해결은 서로 다른 물리학 분야에서 LLM 기반 시뮬레이션을 구현하는 대안적 접근이다.
+- 🔗 후속 연구: [[papers/012_A_Multi-agent_Framework_for_Physical_Laws_Discovery/review]] — 물리 법칙 발견이라는 공통 목표에서 MechAgents는 역학 문제 해결에 특화되고 Multi-agent Framework는 일반적인 물리 법칙 발견에 집중한 상호 보완적 확장 관계임
+- 🏛 기반 연구: [[papers/120_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_C/review]] — AutoGen의 다중 에이전트 대화 및 협업 프레임워크를 기반으로 역학 문제 해결이라는 특정 과학 분야에 적용한 전문화된 구현임
+- 🧪 응용 사례: [[papers/697_Scaling_physical_reasoning_with_the_physics_dataset/review]] — 물리학 데이터셋을 활용한 추론 스케일링 연구로 MechAgents가 사용하는 물리 기반 모델링의 대규모 데이터 처리 방법론을 제공함
+- 🧪 응용 사례: [[papers/073_AI_Agents_in_Engineering_Design_A_Multi-Agent_Framework_for/review]] — 기계 공학 분야에서 다중 에이전트 협력의 구체적인 적용 사례를 제시한다.
+- 🔗 후속 연구: [[papers/462_Large_Language_Model_Agent_as_a_Mechanical_Designer/review]] — 기계 설계 에이전트와 멀티에이전트 협력 시스템은 모두 복잡한 엔지니어링 문제 해결을 위한 AI 에이전트 활용을 다룬다.
+- 🏛 기반 연구: [[papers/012_A_Multi-agent_Framework_for_Physical_Laws_Discovery/review]] — 다중 에이전트 기반 물리 법칙 발견의 일반적 프레임워크를 제시하여 MechAgents의 역학 특화 문제 해결 접근법의 이론적 토대를 마련함

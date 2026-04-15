@@ -12,8 +12,10 @@ arxiv: ""
 score: 3.0
 essence: "본 논문은 웹 환경에서 자율적 정보 탐색을 수행하는 에이전트(WebDancer)를 구축하기 위한 체계적 파이프라인을 제시한다. 데이터 중심의 관점에서 고품질 탐색 데이터와 궤적(trajectory)을 생성하고, 감독학습(SFT)과 강화학습(RL)을 순차적으로 적용하여 멀티스텝 정보 탐색 능력을 갖춘 에이전트를 학습시킨다."
 tags:
-  - "cat/Reinforcement_Learning_and_Self-Verification"
-  - "sub/Autonomous_Agent_Learning_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Reinforcement_Learning_Reasoning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2025_Webdancer Towards autonomous information seeking agency.pdf"
 ---
@@ -128,7 +130,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Wu et al._2025_Webdancer Towards autonom
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/447_Iterative_self-incentivization_empowers_large_language_model/review]] — 두 논문 모두 웹 기반 에이전트를 다루되 WebDancer는 정보 탐색, EXSEARCH는 자기-인센티브화 기반 검색에 특화되어 있다.
-- 🔗 후속 연구: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — WebAgent-R1의 종단 간 다중턴 강화학습은 WebDancer의 감독학습-강화학습 순차 파이프라인을 더 통합적인 학습 프레임워크로 발전시킨다.
-- 🧪 응용 사례: [[papers/888_X-webagentbench_A_multilingual_interactive_web_benchmark_for/review]] — X-WebAgentBench의 다국어 웹 벤치마크는 WebDancer의 자율적 정보 탐색 에이전트를 다양한 언어와 문화적 맥락에서 평가하고 개선할 수 있다.
-- 🔄 다른 접근: [[papers/447_Iterative_self-incentivization_empowers_large_language_model/review]] — 두 논문 모두 정보 검색 에이전트를 다루되 EXSEARCH는 자기-인센티브화, WebDancer는 감독학습과 강화학습 순차 적용에 초점을 맞춘다.
+- 🔄 다른 접근: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — 단일 턴 강화학습 대신 멀티턴 종단간 학습으로 웹 에이전트를 훈련하는 다른 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/873_WebThinker_Empowering_Large_Reasoning_Models_with_Deep_Resea/review]] — 웹 추론 모델이 자율적 정보 탐색 에이전트의 깊이 있는 연구 수행 능력으로 확장될 수 있다.
+- 🧪 응용 사례: [[papers/888_X-webagentbench_A_multilingual_interactive_web_benchmark_for/review]] — 다국어 웹 환경에서 제안된 정보 탐색 파이프라인의 실제 성능을 평가하고 개선할 수 있다.
+- 🏛 기반 연구: [[papers/180_Can_foundation_models_actively_gather_information_in_interac/review]] — 상호작용 환경에서 정보 수집하는 파운데이션 모델의 기초 연구가 자율적 정보 탐색 시스템의 이론적 토대를 제공한다.
+- 🔄 다른 접근: [[papers/874_WebWatcher_Breaking_New_Frontier_of_Vision-Language_Deep_Res/review]] — WebDancer와 WebWatcher는 모두 자율적 정보 탐색을 목표로 하지만 서로 다른 추론 방식을 사용한다.
+- 🧪 응용 사례: [[papers/174_Browsecomp_A_simple_yet_challenging_benchmark_for_browsing_a/review]] — 자율적 정보 탐색 에이전시로, 브라우징 에이전트의 실제 정보 검색 능력을 보여주는 응용 사례입니다.

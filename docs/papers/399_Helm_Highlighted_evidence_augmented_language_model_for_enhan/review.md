@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "표-텍스트 생성 작업에서 입력 테이블의 관련 행(row)을 먼저 강조(highlighting)하는 두 단계 접근 방식을 제안하여, 대규모 언어모델(LLM)이 핵심 증거에 집중하도록 함으로써 생성 품질을 향상시킨다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Table_Caption_Generation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Oh et al._2023_Helm Highlighted evidence augmented language model for enhanced table-to-text generation.pdf"
 ---
@@ -95,8 +96,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Oh et al._2023_Helm Highlighted evidence
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/515_Machine-in-the-loop_rewriting_for_creative_image_captioning/review]] — 표 캡션 생성에서 기계-인-루프 접근법과 증거 강조 접근법의 비교 분석이 가능합니다.
-- 🔗 후속 연구: [[papers/564_Multi-llm_collaborative_caption_generation_in_scientific_doc/review]] — 단일 LLM의 증거 강조 방식을 다중 LLM 협업으로 확장한 고도화된 접근법을 제시합니다.
-- 🏛 기반 연구: [[papers/708_SciCap_Generating_Captions_for_Scientific_Figures/review]] — 과학적 도형 캡션 생성의 기본 방법론을 표 캡션 생성에 적용한 기초 연구입니다.
-- 🔄 다른 접근: [[papers/515_Machine-in-the-loop_rewriting_for_creative_image_captioning/review]] — 창의적 캡션 작성에서 기계-인-루프 방식과 증거 강조 방식의 서로 다른 인간-AI 협업 접근법을 비교할 수 있습니다.
-- 🔗 후속 연구: [[papers/564_Multi-llm_collaborative_caption_generation_in_scientific_doc/review]] — 단일 LLM의 증거 강조를 다중 LLM 협업으로 발전시켜 더 고품질의 과학 도형 캡션을 생성합니다.
+- 🔗 후속 연구: [[papers/564_Multi-llm_collaborative_caption_generation_in_scientific_doc/review]] — 다중 LLM 협업 캡션 생성이 테이블-텍스트 생성의 증거 강조 방법론을 과학 문서 전체로 확장한 접근법이다.
+- 🏛 기반 연구: [[papers/802_The_mighty_torr_A_benchmark_for_table_reasoning_and_robustne/review]] — 테이블 추론 벤치마크는 테이블에서 핵심 정보를 식별하고 활용하는 방법론의 기초를 제공한다.
+- 🔄 다른 접근: [[papers/551_MMC_Advancing_Multimodal_Chart_Understanding_with_Large-scal/review]] — 대규모 차트 이해 데이터셋과 테이블 증거 강조 방법은 모두 구조화된 데이터의 핵심 정보 추출을 다른 방식으로 접근한다.
+- 🧪 응용 사례: [[papers/787_Tablemaster_A_recipe_to_advance_table_understanding_with_lan/review]] — 대규모 언어모델을 활용한 테이블 이해 기법이 증거 강조 방법론의 실제 적용 사례를 제시한다.

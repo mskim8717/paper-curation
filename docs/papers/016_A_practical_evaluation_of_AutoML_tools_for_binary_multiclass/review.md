@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "16개의 주요 AutoML 도구를 21개의 실제 데이터셋에서 이진, 다중클래스, 다중라벨 분류 작업으로 체계적으로 벤치마킹하여, 각 도구의 성능-효율성 트레이드오프를 분석한 종합 평가 연구이다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/AI_Benchmarking_Taxonomy"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Multi-Hop_Long_Memory_LLMs"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Aragão et al._2025_A practical evaluation of AutoML tools for binary, multiclass, and multilabel classification.pdf"
 ---
@@ -87,8 +88,5 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Aragão et al._2025_A practical evaluati
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/006_A_deep_subgrouping_framework_for_precision_drug_repurposing/review]] — AutoML 도구의 체계적 벤치마킹 방법론은 정밀 약물 재창출을 위한 딥러닝 프레임워크의 성능 평가에 직접 적용될 수 있습니다
-- 🔄 다른 접근: [[papers/713_Scicueval_A_comprehensive_dataset_for_evaluating_scientific/review]] — AutoML 도구 벤치마킹과 과학적 맥락 이해 평가는 모두 AI 시스템의 실제 성능을 종합적으로 측정하는 서로 다른 접근법입니다
-- 🏛 기반 연구: [[papers/135_Automl_in_the_age_of_large_language_models_Current_challenge/review]] — 대형 언어모델 시대의 AutoML 현재 도전과 미래 방향은 AutoML 도구 실제 평가의 이론적 맥락과 발전 방향을 제시합니다
-- 🔄 다른 접근: [[papers/713_Scicueval_A_comprehensive_dataset_for_evaluating_scientific/review]] — AutoML 도구의 체계적 벤치마킹과 과학적 맥락 이해 평가는 모두 AI 시스템의 실제 성능을 종합적으로 측정하는 서로 다른 접근법입니다
-- 🏛 기반 연구: [[papers/006_A_deep_subgrouping_framework_for_precision_drug_repurposing/review]] — AutoML 도구의 실제 데이터셋 체계적 벤치마킹은 정밀 약물 재창출을 위한 딥러닝 프레임워크 평가의 방법론적 기반을 제공합니다
+- 🔗 후속 연구: [[papers/135_Automl_in_the_age_of_large_language_models_Current_challenge/review]] — AutoML 도구 평가 연구와 LLM 시대의 AutoML 도전과제를 함께 분석하면 차세대 자동화 머신러닝 시스템 개발 방향을 제시할 수 있다.
+- 🧪 응용 사례: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — AutoML 도구 벤치마킹 방법론을 머신러닝 에이전트 평가 프레임워크에 적용하여 에이전트 성능 측정 기준을 개선할 수 있다.

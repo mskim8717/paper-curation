@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 데이터 부족 문제를 극복하기 위해 AI 조언자 기반의 인간-AI 협업 인터페이스를 탑재한 적응형 자동실험 플랫폼을 개발하여, 혼합 이온-전자 전도 고분자(MIECP)의 유리 전도 성능(μC*)을 64회의 자동실험으로 150% 향상시켰다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Manufacturing_Process_Control"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/AI_Research_Taxonomy_Surveys"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dai et al._2025_Adaptive ai decision interface for autonomous electronic material discovery.pdf"
 ---
@@ -128,5 +128,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Dai et al._2025_Adaptive ai decision int
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/380_Generative_machine_learning_in_adaptive_control_of_dynamic_m/review]] — 동적 제조 프로세스에서 생성형 머신러닝 제어의 이론적 토대를 제공한다.
-- 🧪 응용 사례: [[papers/615_PerTurboAgent_A_Self-Planning_Agent_for_Boosting_Sequential/review]] — 순차적 섭동 부스팅을 위한 자기 계획 에이전트의 구체적인 응용을 보여준다.
+- 🧪 응용 사례: [[papers/380_Generative_machine_learning_in_adaptive_control_of_dynamic_m/review]] — AI 의사결정 인터페이스를 동적 시스템 제어라는 더 광범위한 응용 영역으로 확장한 사례이다
+- 🔗 후속 연구: [[papers/432_Intelligent_experiments_through_real-time_ai_Fast_data_proce/review]] — 정적 실험에서 실시간 AI 기반 지능형 실험으로 발전시킨 고도화된 접근법을 보여준다
+- 🏛 기반 연구: [[papers/658_Real-time_experiment-theory_closed-loop_interaction_for_auto/review]] — 실험-이론 폐루프 상호작용의 기본 개념과 실시간 구현 방법론을 제공한다

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.3
 essence: "본 논문은 대규모 언어 모델(LLM)을 기반으로 한 화학 합성 반응 조건 최적화를 위한 통합 AI 에이전트 Chemist-X를 제시한다. 검색 증강 생성(RAG) 기술, 컴퓨터 보조 설계(CAD) 도구, 자동화 로봇 시스템을 결합하여 인간 화학자의 문제 해결 방식을 모방하며, 완전 자동화 습식 실험실(wet-lab) 실행을 가능하게 한다."
 tags:
-  - "cat/AI-Powered_Scientific_Research_Frameworks"
-  - "sub/Domain-specific_Language_Agents"
+  - "cat/AI_Scientific_Research_Infrastructure"
+  - "sub/Domain-Specific_LLM_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2023_Chemist-X Large Language Model-empowered Agent for Reaction Condition Recommendation in Chemical Sy.pdf"
 ---
@@ -121,11 +121,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chen et al._2023_Chemist-X Large Languag
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/308_El_Agente_An_Autonomous_Agent_for_Quantum_Chemistry/review]] — 화학 실험 자동화를 위해 반응 조건 최적화와 양자화학 워크플로우라는 다른 특화 영역에 접근한다
-- 🏛 기반 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 검색 증강 생성 기술을 화학 합성 반응 최적화에 적용하기 위한 핵심 기반 기술을 제공한다
-- 🔗 후속 연구: [[papers/290_DrugAgent_Automating_AI-aided_Drug_Discovery_Programming_thr/review]] — AI 기반 약물 발견 프로그래밍을 화학 합성 자동화로 확장하는 연구 방향을 제시한다
-- 🔗 후속 연구: [[papers/047_ActionIE_Action_Extraction_from_Scientific_Literature_with_P/review]] — 반응 예측을 위한 대형 언어모델 기반 에이전트는 ActionIE의 화학 합성 행동 추출을 실제 반응 설계로 확장한 응용입니다
-- 🔄 다른 접근: [[papers/308_El_Agente_An_Autonomous_Agent_for_Quantum_Chemistry/review]] — 화학 분야 자동화를 위해 양자화학과 합성 반응이라는 다른 전문 영역에서 LLM 에이전트를 활용한다
-- 🧪 응용 사례: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — RAG 기술을 화학 실험 자동화 시스템의 지식 검색 및 의사결정 지원에 적용할 수 있다
-- 🧪 응용 사례: [[papers/848_TxAgent_An_AI_Agent_for_Therapeutic_Reasoning_Across_a_Unive/review]] — 화학 반응 조건 최적화 기술을 치료 추론과 약물 상호작용 분석으로 확장 적용할 수 있다
-- 🏛 기반 연구: [[papers/096_An_automatic_end-to-end_chemical_synthesis_development_platf/review]] — LLM 기반 화학 에이전트가 자동 합성 개발의 핵심 구성요소가 된다.
+- 🔄 다른 접근: [[papers/735_SciToolAgent_a_knowledge-graph-driven_scientific_agent_for_m/review]] — 화학 합성 자동화를 위해 RAG 기반 통합 시스템과 지식 그래프 기반 다중 도구 활용이라는 서로 다른 접근법을 제시함
+- 🏛 기반 연구: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — 화학 합성 에이전트의 검색 증강 생성 기능 구현을 위해 RAG 기술의 체계적 이해가 필수적임
+- 🔄 다른 접근: [[papers/670_ResearchCodeAgent_An_LLM_Multi-Agent_System_for_Automated_Co/review]] — 화학 반응 설계 자동화와 달리 머신러닝 알고리즘 구현 자동화에 특화된 다른 접근 방식
+- 🔄 다른 접근: [[papers/308_El_Agente_An_Autonomous_Agent_for_Quantum_Chemistry/review]] — 양자화학과 화학 합성이라는 서로 다른 화학 분야에 LLM 기반 자율 에이전트를 적용한 상호 보완적 접근법임
+- 🧪 응용 사례: [[papers/675_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_T/review]] — RAG 기술의 체계적 분석이 화학 합성 에이전트의 검색 증강 생성 기능 구현에 직접 적용됨
+- 🔄 다른 접근: [[papers/735_SciToolAgent_a_knowledge-graph-driven_scientific_agent_for_m/review]] — 과학 도구 활용을 위해 지식 그래프 기반 자동 활용과 RAG 기반 통합 시스템이라는 서로 다른 접근법을 제시함

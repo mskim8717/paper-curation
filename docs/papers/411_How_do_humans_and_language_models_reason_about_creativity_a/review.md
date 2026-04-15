@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 STEM 분야의 창의성 평가에서 인간 전문가와 대규모 언어모델(LLM)이 어떻게 다르게 추론하는지를 비교 분석한다. 예시 제공 여부에 따른 창의성 평가 방식의 변화를 통해 인간과 AI의 인지 메커니즘과 편향의 차이를 규명한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Human-AI_Performance_Detection"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Patent_Novelty_Prediction"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sharma et al._2025_How do humans and language models reason about creativity a comparative analysis.pdf"
 ---
@@ -134,7 +135,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Sharma et al._2025_How do humans and lan
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/417_HypoBench_Towards_Systematic_and_Principled_Benchmarking_for/review]] — STEM 창의성 평가의 체계적 벤치마킹이 인간-AI 창의성 추론 비교 연구의 평가 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — 창의성과 아이디어 평가에서 인간과 LLM의 차이를 더 포괄적인 과학적 창의성 벤치마크로 확장한 연구입니다.
-- 🔄 다른 접근: [[papers/409_How_ai_ideas_affect_the_creativity_diversity_and_evolution_o/review]] — AI가 인간 창의성에 미치는 영향과 인간-AI 창의성 평가 방식의 차이라는 서로 다른 관점을 제시합니다.
-- 🏛 기반 연구: [[papers/153_Best_humans_still_outperform_artificial_intelligence_in_a_cr/review]] — 인간과 언어 모델의 창의성에 대한 추론 방식을 분석하여 본 논문의 창의성 비교 연구의 이론적 기반을 제공한다.
+- 🏛 기반 연구: [[papers/194_Chain_of_ideas_Revolutionizing_research_via_novel_idea_devel/review]] — 창의성 평가를 위한 아이디어 생성 및 개발 방법론의 기초 프레임워크를 제공한다
+- 🔄 다른 접근: [[papers/409_How_ai_ideas_affect_the_creativity_diversity_and_evolution_o/review]] — AI와 인간의 창의성 비교를 위한 다른 실험 설계 접근법을 보여준다
+- 🔗 후속 연구: [[papers/494_Liveideabench_Evaluating_llms_scientific_creativity_and_idea/review]] — LLM의 과학적 창의성 평가를 위한 더 포괄적인 벤치마크 체계를 제시한다
+- 🔗 후속 연구: [[papers/509_Llms_can_realize_combinatorial_creativity_generating_creativ/review]] — 창의성에 대한 인간-언어모델 추론 비교가 조합적 창의성 이론의 실증적 검증을 확장한다
+- 🔗 후속 연구: [[papers/477_Large_language_models_pass_the_turing_test/review]] — 인간과 언어모델의 창의성 추론 비교 연구가 튜링 테스트 통과의 인지적 함의를 심화 분석한다
+- 🧪 응용 사례: [[papers/153_Best_humans_still_outperform_artificial_intelligence_in_a_cr/review]] — 인간과 언어모델의 창의성 추론 비교가 창의적 능력 평가의 실제 적용 사례를 보여준다.

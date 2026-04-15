@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "S2ORC는 81.1M개의 영문 학술논문을 수집하고 8.1M개 오픈액세스 논문의 구조화된 전문(full text)을 제공하는 대규모 공개 코퍼스로, 인용(citation), 도표(figure), 표(table) 등이 자동으로 주석 처리되어 있다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Question_Answering"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 ---
 
@@ -86,7 +88,10 @@ S2ORC는 81.1M개의 영문 학술논문을 수집하고 8.1M개 오픈액세스
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/580_Oag-bench_A_human-curated_benchmark_for_academic_graph_minin/review]] — 학술 그래프 마이닝을 위한 다른 접근법과 벤치마크를 제공한다
-- 🔗 후속 연구: [[papers/087_Ai2_scholar_qa_Organized_literature_synthesis_with_attributi/review]] — 조직화된 문헌 합성을 위해 S2ORC 데이터를 활용한 확장 연구이다
-- 🧪 응용 사례: [[papers/812_TLDR_Extreme_Summarization_of_Scientific_Documents/review]] — 대규모 과학 문서 요약을 위한 구체적 적용 사례를 제시한다
-- 🏛 기반 연구: [[papers/386_Google_Scholar_to_overshadow_them_all_Comparing_the_sizes_of/review]] — Semantic Scholar를 포함한 학술 검색 시스템의 기반 연구로 규모 비교 분석의 기준점을 제공한다.
+- 🔗 후속 연구: [[papers/087_Ai2_scholar_qa_Organized_literature_synthesis_with_attributi/review]] — 대규모 학술 코퍼스를 구조화된 문헌 합성과 인용 분석이라는 구체적 응용으로 확장한다
+- 🧪 응용 사례: [[papers/789_Taxonomy_tree_generation_from_citation_graph/review]] — 대규모 학술 데이터베이스를 인용 그래프 기반 분류체계 생성의 실제 데이터소스로 활용한다
+- 🔄 다른 접근: [[papers/580_Oag-bench_A_human-curated_benchmark_for_academic_graph_minin/review]] — 학술 그래프 마이닝을 대규모 코퍼스 vs 큐레이션된 벤치마크로 다르게 접근한다
+- 🔗 후속 연구: [[papers/386_Google_Scholar_to_overshadow_them_all_Comparing_the_sizes_of/review]] — Semantic Scholar와 12개 학술 검색 엔진 비교가 학술 검색 생태계의 포괄적 이해를 제공한다.
+- 🧪 응용 사례: [[papers/789_Taxonomy_tree_generation_from_citation_graph/review]] — 대규모 학술 논문 코퍼스를 활용하여 실제 인용 그래프에서 분류체계를 생성하는 실용적 응용이다
+- 🏛 기반 연구: [[papers/488_Leveraging_LLMs_in_Scholarly_Knowledge_Graph_Question_Answer/review]] — 대규모 학술 코퍼스가 학술 지식 그래프 질의응답의 필수적인 데이터 기반을 제공한다
+- 🧪 응용 사례: [[papers/273_Directed_criteria_citation_recommendation_and_ranking_throug/review]] — 대규모 학술 코퍼스를 인용 추천 시스템의 실제 데이터소스로 활용한다

@@ -11,8 +11,10 @@ arxiv: ""
 score: 4.0
 essence: "대규모 과학 문헌에서 탐색적 검색을 지원하기 위해 LLM과 클러스터링 기법을 결합하여 검색 결과를 2단계 계층 구조의 주제로 자동 조직화하는 시스템을 제안한다. 이를 통해 연구자들이 수백 개의 문서를 직관적으로 탐색할 수 있도록 한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Scientific_Question_Answering"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_Literature_Summarization"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Smits et al._2024_Knowledge navigator Llm-guided browsing framework for exploratory search in scientific literature.pdf"
 ---
@@ -121,12 +123,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Smits et al._2024_Knowledge navigator Ll
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/602_Paperqa_Retrieval-augmented_generative_agent_for_scientific/review]] — 과학 문헌 탐색에서 LLM 가이드 클러스터링과 검색 증강 생성 에이전트의 서로 다른 조직화 방법을 비교할 수 있습니다.
-- 🏛 기반 연구: [[papers/402_Hierarchical_catalogue_generation_for_literature_review_a_be/review]] — 계층적 카탈로그 생성의 구조적 접근법이 LLM 가이드 탐색 프레임워크의 조직화 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/174_Browsecomp_A_simple_yet_challenging_benchmark_for_browsing_a/review]] — 단순한 브라우징 과제를 대규모 과학 문헌의 체계적 탐색으로 확장한 고도화된 시스템입니다.
-- 🔗 후속 연구: [[papers/042_Academicbrowse_Benchmarking_academic_browse_ability_of_llms/review]] — LLM 기반 탐색적 검색 프레임워크로 ScholarSearch 벤치마크의 실제 활용 사례를 제시한다.
-- 🔗 후속 연구: [[papers/312_Empowering_language_models_with_active_inquiry_for_deeper_un/review]] — 능동적 질의가 LLM 기반 탐색적 브라우징으로 확장됩니다.
-- 🔗 후속 연구: [[papers/063_Agent-enhanced_large_language_models_for_researching_politic/review]] — CongressRA의 정치기관 연구 지원은 Knowledge Navigator의 탐색적 지식 발견 프레임워크를 정치학 도메인에 특화시켜 체계적인 연구 도구로 발전시킵니다.
-- 🔗 후속 연구: [[papers/874_WebWatcher_Breaking_New_Frontier_of_Vision-Language_Deep_Res/review]] — LLM 가이드 웹 브라우징 프레임워크에서 비전-언어 통합으로 확장된 탐색 능력을 보여준다.
-- 🔗 후속 연구: [[papers/174_Browsecomp_A_simple_yet_challenging_benchmark_for_browsing_a/review]] — LLM 가이드 브라우징 프레임워크의 성능을 체계적으로 평가할 수 있는 도전적인 벤치마크를 제공합니다.
-- 🔄 다른 접근: [[papers/402_Hierarchical_catalogue_generation_for_literature_review_a_be/review]] — 문헌 탐색에서 계층적 카탈로그 구조와 LLM 가이드 클러스터링의 서로 다른 조직화 방식을 비교할 수 있습니다.
+- 🔗 후속 연구: [[papers/604_Pasa_An_llm_agent_for_comprehensive_academic_paper_search/review]] — 포괄적인 학술 논문 검색 에이전트를 LLM 가이드 브라우징 프레임워크로 발전시켜 더 직관적인 탐색적 검색을 지원한다.
+- 🏛 기반 연구: [[papers/174_Browsecomp_A_simple_yet_challenging_benchmark_for_browsing_a/review]] — 브라우징 복잡성 벤치마크가 대규모 과학 문헌에서 탐색적 검색 시스템의 성능을 평가하는 기준을 제공한다.
+- 🔄 다른 접근: [[papers/450_Knowledge_navigator_Llm-guided_browsing_framework_for_explor/review]] — 계층적 클러스터링 기반 문서 조직화와 검색 결과의 주제별 자동 분류는 모두 대량 문서 탐색의 다른 접근법이다.
+- 🧪 응용 사례: [[papers/613_Personalized_graph-based_retrieval_for_large_language_models/review]] — 개인화된 그래프 기반 검색 기법이 탐색적 과학 검색에서 사용자 맞춤형 문서 조직화에 실제 적용된다.
+- 🔄 다른 접근: [[papers/042_Academicbrowse_Benchmarking_academic_browse_ability_of_llms/review]] — LLM의 정보 탐색 능력을 학술 검색과 일반 지식 탐색에서 각각 전문화된 방식으로 평가한다.
+- 🔄 다른 접근: [[papers/174_Browsecomp_A_simple_yet_challenging_benchmark_for_browsing_a/review]] — 지식 기반 브라우징 프레임워크로, 웹 탐색에서 LLM의 안내 역할을 다른 접근법으로 구현합니다.

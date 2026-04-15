@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 피어 리뷰(peer review) 과정에서 저자들이 리뷰어의 의견을 더 잘 이해할 수 있도록 돕기 위해 SEAGraph라는 프레임워크를 제안한다. 의미론적 마인드 그래프(semantic mind graph)와 계층적 배경 그래프(hierarchical background graph)를 구성하여 리뷰 댓글의 숨겨진 의도를 파악하고 저자가 논문을 개선할 수 있도록 지원한다."
 tags:
-  - "cat/Academic_Peer_Review_Automation"
-  - "sub/Citation_Dataset_Analysis"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2024_Seagraph Unveiling the whole story of paper review comments.pdf"
 ---
@@ -113,8 +114,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yu et al._2024_Seagraph Unveiling the wh
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 피어 리뷰를 다중 턴 대화로 모델링하는 다른 접근 방식을 제시한다.
-- 🔗 후속 연구: [[papers/679_Revieweval_An_evaluation_framework_for_ai-generated_reviews/review]] — AI 생성 리뷰 평가 프레임워크로 SEAGraph의 리뷰 댓글 분석 결과를 검증할 수 있다.
-- 🏛 기반 연구: [[papers/262_Deepreview_Improving_llm-based_paper_review_with_human-like/review]] — 인간과 유사한 리뷰 생성 방법론이 SEAGraph의 의미론적 분석에 기초 이론을 제공한다.
-- 🧪 응용 사례: [[papers/022_A_sentiment_consolidation_framework_for_meta-review_generati/review]] — 메타 리뷰 생성에 SEAGraph의 감정 통합 프레임워크를 적용할 수 있다.
-- 🧪 응용 사례: [[papers/883_When_reviewers_lock_horn_Finding_disagreement_in_scientific/review]] — 피어 리뷰 코멘트의 전체 스토리 공개가 리뷰어 간 의견 불일치 분석의 실제 적용 영역이다.
+- 🏛 기반 연구: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — 피어 리뷰 과정의 투명성과 이해도 향상을 위한 기술적 기반을 제공한다
+- 🔄 다른 접근: [[papers/534_Meta-review_generation_with_checklist-guided_iterative_intro/review]] — 리뷰 과정의 체계적 분석과 개선을 위한 다른 프레임워크를 제시한다
+- 🔗 후속 연구: [[papers/676_Reviewagents_Bridging_the_gap_between_human_and_ai-generated/review]] — 인간과 AI 생성 리뷰 간의 격차 해소를 위한 확장된 접근법을 보여준다
+- 🔗 후속 연구: [[papers/1088_Lag_Llm_agents_for_leaderboard_auto_generation_on_demanding/review]] — 리뷰 코멘트 분석과 리더보드 자동 생성이 학술 성과 평가의 상호 보완적 시스템을 구성한다.
+- 🔄 다른 접근: [[papers/628_Position_The_ai_conference_peer_review_crisis_demands_author/review]] — 리뷰 과정의 투명성 증대를 위한 다른 기술적 솔루션을 제시한다

@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.0
 essence: "PATIENTSIM은 다양한 환자 페르소나를 반영하여 현실적인 의사-환자 상호작용을 시뮬레이션하는 LLM 기반 환자 시뮬레이터로, 임상 전문가의 검증을 통해 강건성을 입증했다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Clinical_Multi-Agent_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Computational_Molecular_Science_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Multi-Agent_Medical_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Srirag et al._2025_Patientsim A persona-driven simulator for realistic doctor-patient interactions.pdf"
 ---
@@ -115,12 +117,11 @@ PATIENTSIM은 다양한 환자 페르소나를 반영하여 현실적인 의사-
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/433_Interactive_agents_Simulating_counselor-client_psychological/review]] — PATIENTSIM과 Interactive agents 모두 의료 상담 시뮬레이션을 다루지만 의사-환자 vs 상담사-내담자 관계에 초점을 둔다.
-- 🔗 후속 연구: [[papers/644_Psyche_A_multi-faceted_patient_simulation_framework_for_eval/review]] — 다면적 환자 시뮬레이션 프레임워크 Psyche는 PATIENTSIM의 페르소나 기반 환자 시뮬레이션을 심리학적 측면까지 확장한다.
-- 🧪 응용 사례: [[papers/528_MedAgentGym_A_Scalable_Agentic_Training_Environment_for_Code/review]] — 코딩 능력을 위한 확장 가능한 에이전트 훈련 환경 MedAgentGym은 환자 시뮬레이터의 의료 교육 활용을 구체화한다.
-- 🧪 응용 사례: [[papers/838_Training_socially_aligned_language_models_in_simulated_human/review]] — 의사-환자 시뮬레이션은 사회적으로 정렬된 언어모델 학습이 의료 분야에 적용된 구체적인 사례입니다
-- 🔗 후속 연구: [[papers/821_Towards_a_client-centered_assessment_of_llm_therapists_by_cl/review]] — 표준화된 환자 개념을 LLM 치료사 평가로 확장한 의료 시뮬레이션 발전
-- 🔗 후속 연구: [[papers/624_Piors_Personalized_intelligent_outpatient_reception_based_on/review]] — 환자 시뮬레이션을 위한 페르소나 기반 시스템이 개인화된 외래 접수 서비스로 확장될 수 있습니다.
-- 🧪 응용 사례: [[papers/413_Human-ai_teaming_using_large_language_models_Boosting_brain-/review]] — PatientSim의 환자 시뮬레이션이 ChatBCI의 뇌 신호 분석 연구에서 실제 임상 시나리오 검증에 활용됨
-- 🔗 후속 연구: [[papers/078_Ai_hospital_Benchmarking_large_language_models_in_a_multi-ag/review]] — AI Hospital의 다중 에이전트 의료 시뮬레이션은 PatientSim의 페르소나 기반 환자 시뮬레이션을 확장하여 의사-환자 상호작용을 포함한 완전한 병원 환경을 구현합니다.
-- 🔄 다른 접근: [[papers/433_Interactive_agents_Simulating_counselor-client_psychological/review]] — Interactive agents와 PATIENTSIM 모두 의료 상담 시뮬레이션을 다루지만 상담사-내담자 vs 의사-환자 관계에 초점을 둔다.
+- 🔗 후속 연구: [[papers/433_Interactive_agents_Simulating_counselor-client_psychological/review]] — PATIENTSIM의 의료 상호작용 시뮬레이션이 심리 상담 대화 생성을 의료진-환자 관계로 확장한 응용 분야
+- 🔄 다른 접근: [[papers/571_Neural_automated_writing_evaluation_with_corrective_feedback/review]] — 두 시스템 모두 전문가-클라이언트 상호작용을 시뮬레이션하지만 각각 의료 상담과 언어 교육이라는 다른 맥락에서 접근함
+- 🏛 기반 연구: [[papers/644_Psyche_A_multi-faceted_patient_simulation_framework_for_eval/review]] — 다면적 환자 시뮬레이션 프레임워크가 PATIENTSIM의 페르소나 기반 환자 모델링 접근법의 이론적 기반을 제공함
+- 🔄 다른 접근: [[papers/624_Piors_Personalized_intelligent_outpatient_reception_based_on/review]] — 환자 시뮬레이션과 외래 접수 자동화는 모두 의료 서비스 개선을 위한 AI 에이전트 활용이지만 서로 다른 접근법을 제시한다.
+- 🔗 후속 연구: [[papers/078_Ai_hospital_Benchmarking_large_language_models_in_a_multi-ag/review]] — 다중 에이전트 의료 상호작용 벤치마크에서 개별화된 의사-환자 시뮬레이터로의 구체적인 발전을 보여준다
+- 🔗 후속 연구: [[papers/433_Interactive_agents_Simulating_counselor-client_psychological/review]] — PATIENTSIM의 환자 시뮬레이션은 심리 상담 대화 생성을 의료 상호작용 영역으로 확장한 발전된 형태
+- 🔄 다른 접근: [[papers/571_Neural_automated_writing_evaluation_with_corrective_feedback/review]] — 두 시스템 모두 인간과의 상호작용 시뮬레이션을 다루지만 각각 언어 교육과 의료 상담이라는 다른 도메인에 특화됨
+- 🔗 후속 연구: [[papers/644_Psyche_A_multi-faceted_patient_simulation_framework_for_eval/review]] — 의사-환자 대화 시뮬레이션이 정신과 평가 프레임워크를 실제 임상 상호작용으로 확장한다

@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 오픈소스 LLM을 활용하여 논문 작성, 동료 검토, 수정의 전체 연구 사이클을 자동화하는 통합 프레임워크를 제안한다. CycleReviewer가 인간 리뷰어보다 26.89% 더 우수한 성능을 보이며, CycleResearcher가 생성한 논문이 인간 전문가 수준(5.36점)에 근접하는 성과를 달성했다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Automated_Scientific_Analysis_Tools"
+  - "sub/Research_Literature_Analysis_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Weng et al._2024_CycleResearcher Improving Automated Research via Automated Review.pdf"
 ---
@@ -128,8 +129,8 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Weng et al._2024_CycleResearcher Improvi
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/086_AI-Researcher_Autonomous_Scientific_Innovation/review]] — 연구 자동화를 위한 서로 다른 사이클 기반 접근법을 제시합니다.
-- 🏛 기반 연구: [[papers/184_Can_large_language_models_provide_useful_feedback_on_researc/review]] — LLM의 논문 피드백 능력이 자동화된 검토 시스템의 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/608_Peer_Review_as_A_Multi-Turn_and_Long-Context_Dialogue_with_R/review]] — 자동화된 검토가 다중턴 대화 기반 동료 검토로 확장됩니다.
-- 🔗 후속 연구: [[papers/184_Can_large_language_models_provide_useful_feedback_on_researc/review]] — 논문 피드백 능력이 자동화된 동료 검토 시스템으로 발전됩니다.
-- 🔄 다른 접근: [[papers/086_AI-Researcher_Autonomous_Scientific_Innovation/review]] — 과학 연구 자동화를 위한 서로 다른 통합 접근법을 제시합니다.
+- 🏛 기반 연구: [[papers/086_AI-Researcher_Autonomous_Scientific_Innovation/review]] — 자율적 과학 혁신이 자동화된 검토 시스템의 기반이 된다
+- 🔄 다른 접근: [[papers/592_Openreviewer_A_specialized_large_language_model_for_generati/review]] — 사이클 연구자 대신 문헌 리뷰 생성에 특화된 LLM을 제시한다
+- 🔗 후속 연구: [[papers/070_Agentreview_Exploring_peer_review_dynamics_with_llm_agents/review]] — 동료 심사 동역학 탐구를 자동화된 검토 시스템으로 확장한다
+- 🔗 후속 연구: [[papers/086_AI-Researcher_Autonomous_Scientific_Innovation/review]] — 자동화된 검토를 통한 연구 개선으로 과학 혁신 과정을 확장한다
+- 🏛 기반 연구: [[papers/285_Dolphin_Closed-loop_open-ended_auto-research_through_thinkin/review]] — 순환적 연구자 개념을 사고-실험-피드백의 폐쇄 루프 연구 프레임워크의 이론적 기반으로 활용한다

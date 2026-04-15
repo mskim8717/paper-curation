@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 신약 개발의 전 단계를 지원하는 대형 언어모델(LLM) 기반 에이전트 시스템 DrugPilot을 제시한다. 매개변수화된 메모리 풀(Parameterized Memory Pool, PMP)을 통해 이질적인 약물 데이터를 표준화된 표현으로 변환하고, 피드백-포커스(Fe-Fo) 메커니즘으로 LLM의 추론 오류를 실시간 모니터링하여 정확한 도구 호출과 멀티턴 대화를 가능하게 한다."
 tags:
-  - "cat/AI-Driven_Materials_and_Drug_Discovery"
-  - "sub/AI_Drug_Discovery"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/AI_Human_Science_Collaboration"
+  - "sub/Biomedical_Causal_Modeling"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2025_Drugpilot Llm-based parameterized reasoning agent for drug discovery.pdf"
 ---
@@ -99,11 +101,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Li et al._2025_Drugpilot Llm-based param
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/638_ProtAgents_protein_discovery_via_large_language_model_multi-/review]] — 신약 vs 단백질 발견에서 LLM 기반 다중 에이전트 시스템의 다른 적용 분야를 비교할 수 있다
-- 🔗 후속 연구: [[papers/306_Efficient_fine-tuning_of_single-cell_foundation_models_enabl/review]] — 단일세포 모델의 약물 반응 예측을 LLM 기반 신약 개발 에이전트와 통합한 확장 연구다
-- 🏛 기반 연구: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — LLM에 전문 도구를 통합하는 방법론이 매개변수화된 추론 에이전트의 기반을 제공한다
-- 🔄 다른 접근: [[papers/490_LIDDIA_Language-based_Intelligent_Drug_Discovery_Agent/review]] — 신약 발견에서 LLM 기반 에이전트의 다른 설계 접근법과 구현 방식을 비교할 수 있다
-- 🔗 후속 연구: [[papers/306_Efficient_fine-tuning_of_single-cell_foundation_models_enabl/review]] — LLM 기반 신약 개발 에이전트와 단일세포 모델을 결합하여 더 정확한 약물 효과 예측을 할 수 있다
-- 🔄 다른 접근: [[papers/638_ProtAgents_protein_discovery_via_large_language_model_multi-/review]] — 단백질 vs 약물 발견에서 LLM 기반 다중 에이전트 시스템의 다른 적용 분야를 비교할 수 있다
-- 🔗 후속 연구: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — 화학 도구 통합 방법론을 신약 개발의 전체 파이프라인으로 확장한 연구다
-- 🏛 기반 연구: [[papers/291_Drugclip_Contrastive_drug-disease_interaction_for_drug_repur/review]] — 매개변수화된 추론 약물 파일럿이 약물-질병 상호작용의 기반 제공
+- 🔄 다른 접근: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — 둘 다 화학/약물 분야의 LLM 에이전트이지만 DrugPilot은 신약 개발 전 과정에, ChemCrow는 범용 화학 작업에 특화된 서로 다른 접근법임
+- 🔗 후속 연구: [[papers/514_MAC-AMP_A_Closed-Loop_Multi-Agent_Collaboration_System_for_M/review]] — 항균펩타이드라는 특정 약물 유형에 대한 다중 에이전트 설계 시스템으로 DrugPilot의 신약 개발 방법론을 더 구체적인 치료제 개발로 확장함
+- 🏛 기반 연구: [[papers/260_DeepCRE_Transforming_Drug_RD_via_AI-Driven_Cross-drug_Respon/review]] — AI 기반 교차 약물 반응 예측 방법론을 제시하여 DrugPilot의 신약 개발 파이프라인에서 약물 효능 평가의 기술적 기반을 제공함
+- 🔄 다른 접근: [[papers/115_Augmenting_large_language_models_with_chemistry_tools/review]] — 둘 다 화학/약물 발견 분야의 LLM 에이전트이지만 ChemCrow는 범용 화학 도구에, DrugPilot은 신약 개발 특화에 집중한 차별화된 접근법임
+- 🔗 후속 연구: [[papers/490_LIDDIA_Language-based_Intelligent_Drug_Discovery_Agent/review]] — DrugPilot의 LLM 기반 매개변수 추론 에이전트가 LIDDIA의 언어 기반 신약 발견 방법론을 확장한다
+- 🏛 기반 연구: [[papers/514_MAC-AMP_A_Closed-Loop_Multi-Agent_Collaboration_System_for_M/review]] — 신약 개발 분야의 LLM 기반 추론 에이전트 방법론을 기반으로 항균펩타이드라는 특정 치료제 설계에 특화된 다중 에이전트 시스템으로 발전시킴

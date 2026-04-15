@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.6
 essence: "실제 GitHub 이슈 2,294개를 기반으로 한 소프트웨어 엔지니어링 벤치마크 SWE-bench를 제시하며, 최고 성능 모델(Claude 2)도 1.96%의 낮은 해결율만 달성하여 대규모 언어 모델의 실제 소프트웨어 엔지니어링 능력의 한계를 명확히 드러낸다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Realistic_Discovery_Benchmarks"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "sub/Large_Language_Model_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jimenez et al._2024_SWE-bench Can Language Models Resolve Real-World GitHub Issues.pdf"
 ---
@@ -113,16 +115,15 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Jimenez et al._2024_SWE-bench Can Langua
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/429_Infiagent-dabench_Evaluating_agents_on_data_analysis_tasks/review]] — 실제 소프트웨어 문제 해결과 데이터 분석이라는 서로 다른 영역에서 LLM 에이전트의 실용적 성능을 평가한다.
-- 🔗 후속 연구: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — 소프트웨어 엔지니어링에서 드러난 한계를 과학 발견 영역으로 확장하여 보다 포괄적인 평가 기준을 제시한다.
-- 🏛 기반 연구: [[papers/704_SciAgentGym_Benchmarking_Multi-Step_Scientific_Tool-use_in_L/review]] — 현실적인 벤치마크 설계의 중요성을 보여주며 다단계 도구 활용 평가의 필요성을 뒷받침한다.
-- 🔗 후속 연구: [[papers/1088_Lag_Llm_agents_for_leaderboard_auto_generation_on_demanding/review]] — GitHub 이슈 해결 벤치마크로 League가 생성하는 리더보드의 실제 소프트웨어 개발 성과 평가에 활용할 수 있다.
-- 🏛 기반 연구: [[papers/546_Mlgym_A_new_framework_and_benchmark_for_advancing_ai_researc/review]] — 실제 개발 문제 해결이 AI 연구 에이전트의 기반을 제공합니다.
-- 🏛 기반 연구: [[papers/871_WebAgent-R1_Training_Web_Agents_via_End-to-End_Multi-Turn_Re/review]] — SWE-bench의 실제 GitHub 이슈 해결 벤치마크는 WebAgent-R1의 웹 에이전트 훈련에 실제 소프트웨어 개발 작업의 복잡성을 반영한 학습 환경을 제공한다.
-- 🔄 다른 접근: [[papers/769_StableToolBench_Towards_Stable_Large-Scale_Benchmarking_on_T/review]] — 실제 문제 해결 능력 평가를 위해 도구 사용과 GitHub 이슈 해결이라는 다른 벤치마킹 접근법을 사용한다
-- 🧪 응용 사례: [[papers/327_Experiential_co-learning_of_software-developing_agents/review]] — 실제 GitHub 이슈 해결을 통해 경험적 협력학습의 효과를 검증할 수 있는 벤치마크를 제공한다.
-- 🏛 기반 연구: [[papers/429_Infiagent-dabench_Evaluating_agents_on_data_analysis_tasks/review]] — 실제 문제 해결 능력 평가의 중요성을 보여주며 현실적 벤치마크 설계의 필요성을 뒷받침한다.
-- 🧪 응용 사례: [[papers/586_Opendevin_An_open_platform_for_ai_software_developers_as_gen/review]] — 실제 GitHub 이슈 해결이라는 구체적 작업에서 플랫폼의 실용성을 검증할 수 있는 벤치마크를 제공한다.
-- 🏛 기반 연구: [[papers/716_ScienceAgentBench_Toward_Rigorous_Assessment_of_Language_Age/review]] — 현실적 문제 해결 능력 평가의 중요성을 보여주며 과학 발견 영역에서의 엄밀한 평가 기준을 제시한다.
-- 🏛 기반 연구: [[papers/416_Hyperagent_Generalist_software_engineering_agents_to_solve_c/review]] — SWE-bench의 실제 GitHub 이슈 해결 벤치마크가 HYPERAGENT의 일반화된 소프트웨어 엔지니어링 에이전트 성능 평가의 기반이 된다.
-- 🔄 다른 접근: [[papers/888_X-webagentbench_A_multilingual_interactive_web_benchmark_for/review]] — X-WebAgentBench가 다국어 웹 환경에서 에이전트를 평가하는 반면, SWE-bench는 GitHub 코드 저장소에서 실제 문제 해결 능력을 측정하는 대안적 벤치마킹 접근법을 제시합니다.
+- 🔄 다른 접근: [[papers/476_Large_language_models_orchestrating_structured_reasoning_ach/review]] — 실제 소프트웨어 엔지니어링 문제 해결에서 LLM 에이전트의 한계를 보여주는 연구로, 구조화된 추론을 통한 성능 향상 방법과 대조됨
+- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — SWE-bench를 기반으로 머신러닝 에이전트의 코드 작업 능력을 더 광범위하게 평가하는 벤치마크로 확장됨
+- 🏛 기반 연구: [[papers/362_From_LLMs_to_LLM-based_Agents_for_Software_Engineering_A_Sur/review]] — LLM 기반 소프트웨어 엔지니어링 에이전트의 현재 능력과 한계에 대한 종합적인 이해를 제공하는 기초 연구
+- ⚖️ 반론/비판: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — 코드 작성에 특화된 LLM의 성능을 긍정적으로 평가한 연구로, SWE-bench의 낮은 성능 결과와 대조적 관점을 제시
+- 🔗 후속 연구: [[papers/544_Mldebugging_Towards_benchmarking_code_debugging_across_multi/review]] — SWE-bench의 실제 GitHub 이슈 해결이 MLDebugging의 다중 라이브러리 디버깅을 실제 소프트웨어 개발 환경으로 확장함
+- 🏛 기반 연구: [[papers/731_Scireplicate-bench_Benchmarking_llms_in_agent-driven_algorit/review]] — 실제 GitHub 이슈 해결 능력을 평가하는 벤치마크로, SciReplicate-Bench의 알고리즘 구현 평가에 필요한 코드 생성 능력의 기초적 평가 틀을 제공한다
+- 🔗 후속 연구: [[papers/327_Experiential_co-learning_of_software-developing_agents/review]] — 실제 GitHub 이슈 해결을 위한 언어 모델 연구가 경험적 협력학습을 통한 소프트웨어 개발 에이전트로 구체화되었다
+- ⚖️ 반론/비판: [[papers/476_Large_language_models_orchestrating_structured_reasoning_ach/review]] — Kaggle에서 최상위 성능을 달성한 긍정적 결과로, SWE-bench의 낮은 성능과 대조되어 LLM 에이전트 능력의 다른 측면을 보여줌
+- 🏛 기반 연구: [[papers/888_X-webagentbench_A_multilingual_interactive_web_benchmark_for/review]] — 실제 GitHub 이슈 해결 능력을 평가하는 기존 벤치마크를 기반으로 다국어 웹 환경에서 에이전트 성능을 평가하는 것으로 확장한 발전된 평가 체계임
+- 🏛 기반 연구: [[papers/205_Chatdev_Communicative_agents_for_software_development/review]] — 실제 GitHub 이슈 해결 벤치마크를 소프트웨어 개발 에이전트의 성능 평가 기준으로 활용한다
+- 🧪 응용 사례: [[papers/362_From_LLMs_to_LLM-based_Agents_for_Software_Engineering_A_Sur/review]] — 실제 GitHub 이슈 해결 벤치마크가 소프트웨어 공학 에이전트의 실질적 성능 검증을 제공한다
+- 🔗 후속 연구: [[papers/590_Openhands_An_open_platform_for_ai_software_developers_as_gen/review]] — OpenHands 플랫폼이 SWE-bench의 GitHub 이슈 해결을 더 포괄적인 소프트웨어 개발 작업으로 확장함

@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.5
 essence: "본 논문은 1.3B에서 33B 규모의 오픈소스 코드 전문 대규모 언어모델(LLM) 시리즈를 제시하며, 폐쇄형 모델인 Codex와 GPT-3.5를 능가하는 성능을 달성했다. 2조 개의 토큰으로 학습된 이 모델들은 저작권 제약 없이 상용 사용 가능한 오픈소스로 제공된다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Domain-adapted_Instruction_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Guo et al._2024_Deepseek-coder When the large language model meets programming–the rise of code intelligence.pdf"
 ---
@@ -118,10 +118,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Guo et al._2024_Deepseek-coder When the 
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/741_Seed-coder_Let_the_code_model_curate_data_for_itself/review]] — 둘 다 코드 생성 모델이지만 Seed-Coder는 LLM 기반 자동 필터링으로 차별화됨
-- 🏛 기반 연구: [[papers/231_Codegen_An_open_large_language_model_for_code_with_multi-tur/review]] — CodeGen의 다중 턴 프로그램 생성 방법론이 DeepSeek-Coder 개발의 기초가 됨
-- 🔄 다른 접근: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — Code Llama와 유사한 코드 특화 LLM이지만 상용 사용 가능한 오픈소스로 차별화
-- 🔗 후속 연구: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — StarCoder의 코드 생성 기술을 더 큰 규모와 상용 라이센스로 발전시킴
-- 🔄 다른 접근: [[papers/741_Seed-coder_Let_the_code_model_curate_data_for_itself/review]] — DeepSeek-Coder와 달리 Seed-Coder는 LLM 기반 자동 필터링으로 인간 수작업을 제거
-- 🔄 다른 접근: [[papers/231_Codegen_An_open_large_language_model_for_code_with_multi-tur/review]] — 코드 생성에 특화된 DeepSeek-Coder와 달리 대화형 프로그램 합성에 중점
-- 🏛 기반 연구: [[papers/894_AI_Copilot_Code_Quality_2025_Data_Suggests_4x_Growth_in_Code/review]] — DeepSeek-Coder가 대규모 코드 언어 모델의 기반 기술로서 AI Copilot의 코드 생성 품질 개선에 영향을 미친다.
+- 🔗 후속 연구: [[papers/266_Deepseek-v3_technical_report/review]] — 같은 개발사의 후속 모델로, 코드 전문 모델에서 일반 대화형 모델로의 발전 과정을 보여줍니다.
+- 🔄 다른 접근: [[papers/770_Starcoder_2_and_the_stack_v2_The_next_generation/review]] — 오픈소스 코드 생성 모델의 다른 접근법으로, 코드 전문 LLM 개발의 다양한 전략을 비교할 수 있습니다.
+- 🔄 다른 접근: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — 메타의 코드 전문 모델로, 오픈소스 코드 LLM 개발에서의 다른 접근 방식과 성능을 비교할 수 있습니다.
+- 🔄 다른 접근: [[papers/320_Evaluating_Large_Language_Models_in_Scientific_Discovery/review]] — 함수 생성 중심의 Codex와 달리 일반적인 코드 이해와 생성에 특화된 다른 접근법
+- 🔗 후속 연구: [[papers/771_Starcoder_may_the_source_be_with_you_arXiv_preprint_arXiv230/review]] — 오픈소스 코드 모델의 발전을 더욱 포괄적인 코드 이해와 추론으로 확장
+- 🏛 기반 연구: [[papers/266_Deepseek-v3_technical_report/review]] — 같은 개발사의 이전 코드 전문 모델로, DeepSeek-V3의 기술적 발전 과정과 기반을 이해할 수 있습니다.
+- 🔗 후속 연구: [[papers/231_Codegen_An_open_large_language_model_for_code_with_multi-tur/review]] — CodeGen의 다중 턴 프로그램 합성을 DeepSeek-Coder의 대규모 코드 생성 능력과 결합하여 더 강력한 프로그래밍 어시스턴트를 구현한다.
+- 🧪 응용 사례: [[papers/790_Teaching_Large_Language_Models_to_Self-Debug/review]] — 프로그래밍 도메인에서 LLM의 자기 디버깅 능력을 실제 코딩 작업에 적용한다

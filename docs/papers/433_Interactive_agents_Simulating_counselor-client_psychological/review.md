@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 두 개의 대규모 언어모델(LLM)을 상담사와 내담자 역할로 활용하여 심리 상담 대화를 자동으로 생성하는 프레임워크를 제안한다. 인간 주석의 비용과 개인정보 문제를 해결하면서도 고품질의 합성 상담 데이터를 대규모로 생성할 수 있다는 점이 핵심이다."
 tags:
-  - "cat/Multi-Agent_Scientific_Discovery_Systems"
-  - "sub/Multi-Agent_Language_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/CRISPR_and_Drug_Discovery_Agents"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qiu and Lan_2024_Interactive agents Simulating counselor-client psychological counseling via role-playing llm-to-llm.pdf"
 ---
@@ -128,7 +128,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Qiu and Lan_2024_Interactive agents Simu
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — Interactive agents와 PATIENTSIM 모두 의료 상담 시뮬레이션을 다루지만 상담사-내담자 vs 의사-환자 관계에 초점을 둔다.
-- 🔗 후속 연구: [[papers/058_Agent_hospital_A_simulacrum_of_hospital_with_evolvable_medic/review]] — Agent hospital의 진화하는 의료진 시뮬레이션은 심리 상담 에이전트의 상호작용을 복잡한 병원 환경으로 확장한다.
-- 🧪 응용 사례: [[papers/821_Towards_a_client-centered_assessment_of_llm_therapists_by_cl/review]] — 클라이언트 중심 LLM 치료사 평가 연구는 심리 상담 대화 생성 프레임워크의 실제 치료 효과성을 검증한다.
-- 🔄 다른 접근: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — PATIENTSIM과 Interactive agents 모두 의료 상담 시뮬레이션을 다루지만 의사-환자 vs 상담사-내담자 관계에 초점을 둔다.
+- 🔗 후속 연구: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — PATIENTSIM의 환자 시뮬레이션은 심리 상담 대화 생성을 의료 상호작용 영역으로 확장한 발전된 형태
+- 🔄 다른 접근: [[papers/571_Neural_automated_writing_evaluation_with_corrective_feedback/review]] — 두 시스템 모두 교육적 피드백 제공을 목표로 하지만 각각 심리 상담과 언어 학습이라는 다른 도메인에 특화됨
+- 🏛 기반 연구: [[papers/058_Agent_hospital_A_simulacrum_of_hospital_with_evolvable_medic/review]] — 에이전트 기반 병원 시뮬레이션 연구가 상담사-내담자 상호작용 모델링의 방법론적 기반을 제공함
+- 🔗 후속 연구: [[papers/821_Towards_a_client-centered_assessment_of_llm_therapists_by_cl/review]] — 상담 심리학 상호작용을 클라이언트 시뮬레이션 평가로 확장한다
+- 🔗 후속 연구: [[papers/571_Neural_automated_writing_evaluation_with_corrective_feedback/review]] — Neural AWE의 언어 학습 피드백 시스템이 심리 상담 대화 생성을 교육적 피드백 제공으로 확장한 응용 사례
+- 🔗 후속 연구: [[papers/606_Patientsim_A_persona-driven_simulator_for_realistic_doctor-p/review]] — PATIENTSIM의 의료 상호작용 시뮬레이션이 심리 상담 대화 생성을 의료진-환자 관계로 확장한 응용 분야
+- 🔄 다른 접근: [[papers/058_Agent_hospital_A_simulacrum_of_hospital_with_evolvable_medic/review]] — 상담사-내담자 심리 상호작용 시뮬레이션과 의료 에이전트 시뮬레이션은 서로 다른 인간 서비스 분야를 다룬다

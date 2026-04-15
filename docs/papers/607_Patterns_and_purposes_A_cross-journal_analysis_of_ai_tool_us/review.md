@@ -8,8 +8,10 @@ arxiv: ""
 score: 3.75
 essence: "본 연구는 엘스비어(Elsevier) 학술지 27개 범주의 8,859개 논문에서 AI 사용 선언문 168개를 분석하여, 학술 저술에서 ChatGPT가 77% 사용되며 가독성 개선(51%)과 문법 검사(22%)가 주요 목적임을 규명했다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Diversity"
+  - "cat/Academic_Publishing_Quality_Assurance"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Academic_Writing_Assistance"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xu_2025_Patterns and purposes A cross-journal analysis of ai tool usage in academic writing.pdf"
 ---
@@ -117,7 +119,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Xu_2025_Patterns and purposes A cross-jo
 
 ## Related Papers
 
-- 🔗 후속 연구: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — AI 도구 사용이 콘텐츠 다양성에 미치는 영향을 학술 저술의 구체적 맥락에서 실증한다
-- 🏛 기반 연구: [[papers/414_Human-llm_coevolution_Evidence_from_academic_writing/review]] — 인간-LLM 협력적 글쓰기의 진화 과정에서 AI 도구 사용 패턴의 기초 데이터를 제공한다
-- 🧪 응용 사례: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 학술적 글쓰기에서 AI 도구의 실제 활용 방식과 목적을 구체적으로 분석한다
-- 🧪 응용 사례: [[papers/508_LLMs_as_Research_Tools_A_Large_Scale_Survey_of_Researchers_U/review]] — AI 도구 사용의 패턴과 목적에 대한 학술지 간 분석이 연구자 LLM 사용 조사의 실제 적용 결과이다.
+- 🔗 후속 연구: [[papers/414_Human-llm_coevolution_Evidence_from_academic_writing/review]] — 학술 저술에서 AI 도구 사용 패턴을 더 광범위한 저널과 분야로 확장하여 분석한다
+- 🏛 기반 연구: [[papers/478_Large_language_models_penetration_in_scholarly_writing_and_p/review]] — 학술 워크플로우에서 LLM 사용 측정을 위한 기본적인 분석 방법론을 제공한다
+- 🔄 다른 접근: [[papers/861_Use_of_large_language_models_as_artificial_intelligence_tool/review]] — 의학 분야 특화가 아닌 다학제적 관점에서 AI 도구 사용 현황을 분석한다
+- 🔄 다른 접근: [[papers/478_Large_language_models_penetration_in_scholarly_writing_and_p/review]] — 학술 저술에서 AI 도구 사용 패턴을 다른 방법론으로 분석한다
+- 🔗 후속 연구: [[papers/861_Use_of_large_language_models_as_artificial_intelligence_tool/review]] — AI 도구 사용 패턴을 의학 연구 분야로 확장하여 분석한다
+- 🔗 후속 연구: [[papers/154_Best_Practices_for_Using_AI_When_Writing_Scientific_Manuscri/review]] — 과학 논문 작성에서 AI 사용 가이드라인을 실제 학술지에서의 AI 도구 사용 패턴으로 확장
+- 🔄 다른 접근: [[papers/378_Generative_AI_Uses_and_Risks_for_Knowledge_Workers_in_a_Scie/review]] — 둘 다 AI 도구 사용 패턴을 분석하지만, Argonne 연구는 과학 조직에, 교차 저널 분석은 학술 출판에 집중한다
+- 🔄 다른 접근: [[papers/414_Human-llm_coevolution_Evidence_from_academic_writing/review]] — AI 도구 사용이 학술 저술에 미치는 영향을 다른 관점에서 정량적으로 분석한다

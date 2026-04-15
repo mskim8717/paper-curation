@@ -12,8 +12,10 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 최근 NLP 논문들의 알고리즘 설명으로부터 코드를 생성하는 대형언어모델(LLM)의 능력을 평가하는 **SciReplicate-Bench** 벤치마크를 제안한다. 2024년 발표된 36개 NLP 논문의 100개 작업으로 구성되며, 알고리즘 이해와 코드 구현 두 가지 핵심 역량을 평가하는 신규 평가지표(reasoning graph accuracy)를 도입한다."
 tags:
-  - "cat/LLM-Based_Scientific_Reasoning"
-  - "sub/Large_Language_Model_Agents"
+  - "cat/Scientific_Reasoning_Evaluation_Methods"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Research_Literature_Analysis_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhu et al._2025_Scireplicate-bench Benchmarking llms in agent-driven algorithmic reproduction from research papers.pdf"
 ---
@@ -116,8 +118,7 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhu et al._2025_Scireplicate-bench Bench
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — Code Llama의 코드 생성 능력이 알고리즘 복제 벤치마크에 활용됩니다.
-- 🏛 기반 연구: [[papers/086_AI-Researcher_Autonomous_Scientific_Innovation/review]] — 자율적 과학 혁신이 알고리즘 복제 평가의 기반을 제공합니다.
-- 🔗 후속 연구: [[papers/145_Autoreproduce_Automatic_ai_experiment_reproduction_with_pape/review]] — 알고리즘 복제가 자동 AI 실험 재현으로 확장됩니다.
-- 🧪 응용 사례: [[papers/230_Code_llama_Open_foundation_models_for_code/review]] — Code Llama의 코드 생성 능력이 과학 논문의 알고리즘 복제에 활용됩니다.
-- 🔗 후속 연구: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — 연구 논문 아이디어 구현을 알고리즘 복제로 확장한 에이전트 기반 벤치마크
+- 🔄 다른 접근: [[papers/671_Researchcodebench_Benchmarking_llms_on_implementing_novel_ma/review]] — ResearchCodeBench는 새로운 ML 연구 구현을 평가하는 벤치마크로, SciReplicate-Bench의 알고리즘 복제에 초점을 맞춘 접근과 대비되는 창의적 구현 평가를 제공한다
+- 🏛 기반 연구: [[papers/782_SWE-bench_Can_Language_Models_Resolve_Real-World_GitHub_Issu/review]] — 실제 GitHub 이슈 해결 능력을 평가하는 벤치마크로, SciReplicate-Bench의 알고리즘 구현 평가에 필요한 코드 생성 능력의 기초적 평가 틀을 제공한다
+- 🔗 후속 연구: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — 머신러닝 작업에서 언어 에이전트를 평가하는 벤치마크로, SciReplicate-Bench의 NLP 알고리즘 복제를 더 넓은 ML 도메인으로 확장한다
+- 🔄 다른 접근: [[papers/145_Autoreproduce_Automatic_ai_experiment_reproduction_with_pape/review]] — AI 실험 자동 재현과 알고리즘 복제 벤치마킹이라는 서로 다른 재현성 접근법을 통해 과학 연구의 신뢰성을 높인다

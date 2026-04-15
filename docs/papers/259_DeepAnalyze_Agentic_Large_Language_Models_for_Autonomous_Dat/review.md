@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.25
 essence: "본 논문은 원시 데이터에서 분석가급 심층 연구 보고서까지 완전 자동화된 데이터 과학(autonomous data science)을 달성하는 최초의 에이전틱 LLM인 DeepAnalyze-8B를 제안한다. 단 8B 파라미터로 고급 독점 LLM 기반의 기존 워크플로우 에이전트를 능가하는 성능을 보여준다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/LLM_Agent_Benchmarking"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Autonomous_Scientific_Discovery_Agents"
+  - "sub/Mathematical_Reasoning_Instruction_Tuning"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_DeepAnalyze Agentic Large Language Models for Autonomous Data Science.pdf"
 ---
@@ -118,8 +119,6 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Zhang et al._2025_DeepAnalyze Agentic La
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/146_Autosdt_Scaling_data-driven_discovery_tasks_toward_open_co-s/review]] — AutoSDT가 태스크 생성에 집중하는 반면 DeepAnalyze는 실제 분석 실행을 자동화
-- 🔗 후속 연구: [[papers/293_Ds-agent_Automated_data_science_by_empowering_large_language/review]] — DS-Agent의 기본 데이터 사이언스 자동화를 분석가 수준의 심층 연구로 발전시킴
-- 🔄 다른 접근: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — Data Interpreter와 유사한 데이터 사이언스 자동화이지만 8B 모델로 더 효율적 달성
-- 🧪 응용 사례: [[papers/542_Mlagentbench_Evaluating_language_agents_on_machine_learning/review]] — DeepAnalyze의 자율적 데이터 과학 능력을 MLAgentBench로 체계적 평가 가능
-- 🔄 다른 접근: [[papers/146_Autosdt_Scaling_data-driven_discovery_tasks_toward_open_co-s/review]] — 둘 다 자동화된 데이터 과학을 다루지만 AutoSDT는 태스크 생성에, DeepAnalyze는 분석 실행에 특화
+- 🔗 후속 연구: [[papers/253_Data_Interpreter_An_LLM_Agent_For_Data_Science/review]] — 데이터 과학을 위한 LLM 에이전트 연구를 완전 자동화된 분석가급 심층 연구 보고서 생성으로 발전시킨다.
+- 🔄 다른 접근: [[papers/293_Ds-agent_Automated_data_science_by_empowering_large_language/review]] — 대규모 언어모델 기반 데이터 과학 자동화와 유사하지만 8B 파라미터로 효율적인 에이전틱 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/294_Dsbench_How_far_are_data_science_agents_to_becoming_data_sci/review]] — 데이터 과학 에이전트의 능력 평가 벤치마크가 자율적 데이터 과학 시스템의 성능 기준을 제공한다.

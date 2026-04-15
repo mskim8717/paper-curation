@@ -9,8 +9,8 @@ arxiv: ""
 score: 4.0
 essence: "본 논문은 사전학습 언어모델(PLM)의 일관성(consistency)을 명시적으로 강제하여 소수샘플(few-shot) 및 영샘플(zero-shot) 사실검증 성능을 향상시키는 **ProToCo** 방법을 제안한다. 클레임의 다양한 변형을 생성하고 이들 간의 논리적 일관성을 제약조건으로 활용하여 파라미터-효율적 미세조정(PEFT)을 수행한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Self-Refining_Text_Systems"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Zero-Shot_Claim_Verification"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singhal et al._2023_Prompt to be consistent is better than self-consistent few-shot and zero-shot fact verification wit.pdf"
 ---
@@ -104,10 +104,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Singhal et al._2023_Prompt to be consist
 
 ## Related Papers
 
-- 🔄 다른 접근: [[papers/790_Teaching_Large_Language_Models_to_Self-Debug/review]] — 언어모델의 일관성 강제와 자기 디버깅은 모두 자기 수정 메커니즘이지만, 논리적 제약과 실행 피드백이라는 다른 검증 방식을 사용한다.
-- 🏛 기반 연구: [[papers/747_Selfcheck_Using_llms_to_zero-shot_check_their_own_step-by-st/review]] — LLM의 단계별 자기 검증 능력이 일관성 기반 팩트 체킹에서 논리적 제약 조건을 효과적으로 적용하기 위한 기본 전제가 된다.
-- 🔗 후속 연구: [[papers/242_CRITIC_Large_Language_Models_Can_Self-Correct_with_Tool-Inte/review]] — 도구 통합 자기 수정을 일관성 제약 조건과 결합하여 더 강력한 팩트 검증 시스템을 구축할 수 있다.
-- 🔗 후속 연구: [[papers/512_Lm-combiner_A_contextual_rewriting_model_for_chinese_grammat/review]] — Few-shot 일관성 개선 기법이 중국어 문법 오류 수정에서 과도한 수정 문제 해결에 적용될 수 있다.
-- 🏛 기반 연구: [[papers/222_Clam_Selective_clarification_for_ambiguous_questions_with_ge/review]] — 일관성을 위한 프롬프트가 자기 일관성보다 효과적임을 보여 본 논문의 선택적 명확화 접근법의 이론적 근거를 제공한다.
-- 🔄 다른 접근: [[papers/421_Improving_demonstration_diversity_by_human-free_fusing_for_t/review]] — 소수샷 학습에서 시연 다양성과 일관성 프롬프팅의 서로 다른 성능 향상 전략을 비교할 수 있습니다.
-- 🏛 기반 연구: [[papers/790_Teaching_Large_Language_Models_to_Self-Debug/review]] — 자기 디버깅의 반복적 수정 메커니즘이 일관성 기반 팩트 체킹에서 논리적 제약 조건을 효과적으로 적용하기 위한 기본 프레임워크를 제공한다.
+- 🔄 다른 접근: [[papers/567_Multivers_Improving_scientific_claim_verification_with_weak/review]] — 사실 검증에서 일관성 강화와 약한 감독이라는 서로 다른 학습 패러다임을 비교할 수 있다.
+- 🔗 후속 연구: [[papers/610_Pelican_Correcting_Hallucination_in_Vision-LLMs_via_Claim_De/review]] — 일관성 제약을 시각 언어 모델의 환각 보정에도 적용할 수 있는 확장된 접근법을 제시한다.
+- 🏛 기반 연구: [[papers/746_Self-Refine_Iterative_Refinement_with_Self-Feedback/review]] — 자기 피드백을 통한 반복적 개선의 기초적인 방법론을 일관성 강화에 적용한다.
+- 🔄 다른 접근: [[papers/421_Improving_demonstration_diversity_by_human-free_fusing_for_t/review]] — Text-to-SQL의 시연 다양성 향상과 일관성 기반 소수샷 학습은 모두 인컨텍스트 학습의 품질 개선을 다른 관점에서 접근한다.
+- 🔄 다른 접근: [[papers/567_Multivers_Improving_scientific_claim_verification_with_weak/review]] — 과학 청구 검증에서 약한 감독과 일관성 강화라는 서로 다른 학습 접근법을 비교할 수 있다.
+- 🔄 다른 접근: [[papers/610_Pelican_Correcting_Hallucination_in_Vision-LLMs_via_Claim_De/review]] — 시각 언어 모델의 환각 문제 해결에서 청구 분해와 일관성 강화라는 서로 다른 접근법을 비교할 수 있다.

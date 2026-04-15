@@ -12,8 +12,9 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 **언어 모델 기반 학생 시뮬레이터를 활용하여 작문 피드백 생성 모델(PROF)을 반복적으로 최적화하는 방법**을 제안한다. 실제 학생 참여 없이 피드백의 실효성을 직접 측정하고 개선할 수 있는 자동화된 시스템을 구축한다."
 tags:
-  - "cat/Scientific_Document_Analysis_and_Retrieval"
-  - "sub/Academic_Writing_Personalization"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "cat/Reinforcement_Learning_Control_Systems"
+  - "sub/Self-Clarifying_Reasoning_Systems"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Schmidt et al._2024_Closing the loop Learning to generate writing feedback via language model simulated student revisio.pdf"
 ---
@@ -126,9 +127,11 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Schmidt et al._2024_Closing the loop Lea
 
 ## Related Papers
 
-- ⚖️ 반론/비판: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — AI 어시스턴트가 학습에 도움이 된다는 관점과 콘텐츠 다양성을 감소시킨다는 우려가 상반됨
-- 🔄 다른 접근: [[papers/656_Read_revise_repeat_A_system_demonstration_for_human-in-the-l/review]] — 둘 다 인간-AI 협력 글쓰기를 다루지만, 하나는 학생 시뮬레이터 기반 피드백, 다른 하나는 직접적 인간 피드백 방식임
-- 🔗 후속 연구: [[papers/414_Human-llm_coevolution_Evidence_from_academic_writing/review]] — 인간-LLM 협력 글쓰기의 일반적 패턴을 교육적 맥락으로 확장하여 피드백 생성에 특화된 방법론을 개발함
-- ⚖️ 반론/비판: [[papers/284_Does_writing_with_language_models_reduce_content_diversity_a/review]] — AI가 콘텐츠 다양성을 감소시킨다는 우려와 교육적 피드백 개선에 도움된다는 관점이 상반됨
-- 🔄 다른 접근: [[papers/656_Read_revise_repeat_A_system_demonstration_for_human-in-the-l/review]] — 둘 다 인간-AI 협력 글쓰기를 다루지만 하나는 직접적 인간 피드백, 다른 하나는 학생 시뮬레이터 기반 접근임
-- 🔗 후속 연구: [[papers/423_Improving_grammatical_error_correction_via_contextual_data_a/review]] — 작문 피드백 생성을 문법 오류 수정의 문맥 기반 증강으로 확장하여 더 정교한 오류 패턴 학습을 제공합니다.
+- 🔗 후속 연구: [[papers/790_Teaching_Large_Language_Models_to_Self-Debug/review]] — 대형언어모델의 자기 디버깅 학습 방법으로, 작문 피드백 생성에서 사용한 반복적 개선 접근법을 코드 개선 영역으로 확장한다
+- 🔄 다른 접근: [[papers/314_Enabling_language_models_to_implicitly_learn_self-improvemen/review]] — 인간 선호도 데이터를 통한 암묵적 자기 개선 접근법으로, 이 논문의 명시적 시뮬레이터 기반 피드백 학습과 대비되는 방법론을 제시한다
+- 🧪 응용 사례: [[papers/889_Xtragpt_Llms_for_human-ai_collaboration_on_controllable_acad/review]] — 제어 가능한 학술 글쓰기를 위한 인간-AI 협업 시스템으로, 이 논문의 작문 피드백 생성을 실제 글쓰기 도구로 응용한 사례다
+- 🏛 기반 연구: [[papers/571_Neural_automated_writing_evaluation_with_corrective_feedback/review]] — 피드백 생성을 통한 글쓰기 학습 연구가 자동 쓰기 평가의 교육적 피드백 시스템 개발의 이론적 기반
+- 🧪 응용 사례: [[papers/884_Wikiatomicedits_A_multilingual_corpus_of_wikipedia_edits_for/review]] — 글쓰기 피드백 생성 연구에서 실제 편집 데이터인 WikiAtomicEdits 코퍼스를 활용하여 편집 패턴 학습에 적용할 수 있다.
+- 🔗 후속 연구: [[papers/314_Enabling_language_models_to_implicitly_learn_self-improvemen/review]] — 언어 모델 기반 시뮬레이터를 활용한 반복적 최적화 접근법으로, PIT의 암묵적 자기 개선을 구체적 응용 영역으로 확장한다
+- 🧪 응용 사례: [[papers/272_Diamonds_in_the_rough_Generating_fluent_sentences_from_early/review]] — 글쓰기 피드백 생성 학습이 초안 문장 수정에서 구체적인 개선 방향 제시에 실제 적용된다.
+- 🧪 응용 사례: [[papers/515_Machine-in-the-loop_rewriting_for_creative_image_captioning/review]] — 학습을 통한 작문 피드백 생성 연구에서 창의적 재작성 지원의 실제 교육적 활용 사례를 제시한다.

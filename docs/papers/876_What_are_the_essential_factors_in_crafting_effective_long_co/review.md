@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.4
 essence: "장문맥(long context) 대규모언어모델(LLM) 훈련용 고품질 다중 홉(multi-hop) 지시어 조정 데이터셋 생성의 핵심 요소를 체계적으로 규명하고, 다중 에이전트 상호작용 기반의 데이터 합성 프레임워크(MIMG)를 제안하여 기존 방식의 35% 수준의 다중 홉 데이터를 85% 이상으로 개선했다."
 tags:
-  - "cat/Cognitive_AI_Evaluation_and_Benchmarking"
-  - "sub/Working_Memory_Benchmarks"
+  - "cat/Scientific_Research_Capability_Evaluation"
+  - "sub/Scientific_LLM_Benchmarking"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yurtsever et al._2024_What are the essential factors in crafting effective long context multi-hop instruction datasets in.pdf"
 ---
@@ -139,8 +139,10 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Yurtsever et al._2024_What are the essen
 
 ## Related Papers
 
-- 🏛 기반 연구: [[papers/005_A_comprehensive_survey_on_long_context_language_modeling/review]] — 장문맥 언어 모델링에 대한 종합적 조사가 다중 홉 데이터 합성의 이론적 배경
-- 🧪 응용 사례: [[papers/452_L-citeeval_Do_longcontext_models_truly_leverage_context_for/review]] — 장문맥 모델의 실제 맥락 활용 능력을 다중 홉 데이터셋으로 평가함
-- 🔄 다른 접근: [[papers/452_L-citeeval_Do_longcontext_models_truly_leverage_context_for/review]] — 효과적인 장문맥 제작 요소 연구와 실제 맥락 활용도 평가는 상호 보완적인 관점을 제공합니다
-- 🔗 후속 연구: [[papers/005_A_comprehensive_survey_on_long_context_language_modeling/review]] — 효과적인 장문맥 제작 요소 연구는 장문맥 언어모델링 조사에서 다룬 데이터 전략과 평가 방법을 더욱 구체화한 연구입니다
-- 🧪 응용 사례: [[papers/157_Beyond_outlining_Heterogeneous_recursive_planning_for_adapti/review]] — 동적 인지 과제 통합 프레임워크는 효과적인 긴 맥락 제작 연구에서 제시된 요소들을 실제 학술 글쓰기 자동화에 적용하여 맥락 인식 생성을 실현합니다.
+- 🔄 다른 접근: [[papers/879_What_factors_affect_multimodal_in-context_learning_an_in-dep/review]] — 장문맥 데이터 합성과 멀티모달 학습 모두 LLM의 복잡한 맥락 처리 능력을 다룬다
+- 🧪 응용 사례: [[papers/452_L-citeeval_Do_longcontext_models_truly_leverage_context_for/review]] — 장문맥 모델의 실제 맥락 활용 평가가 다중 홉 데이터 품질 검증에 활용된다
+- 🏛 기반 연구: [[papers/005_A_comprehensive_survey_on_long_context_language_modeling/review]] — 장문맥 언어 모델링 설문이 효과적인 장문맥 데이터 생성의 이론적 배경을 제공한다
+- 🔄 다른 접근: [[papers/879_What_factors_affect_multimodal_in-context_learning_an_in-dep/review]] — 멀티모달 인-컨텍스트 학습과 장문맥 다중 홉 학습이 모두 복잡한 맥락 이해를 요구한다
+- 🏛 기반 연구: [[papers/452_L-citeeval_Do_longcontext_models_truly_leverage_context_for/review]] — 장문맥 모델의 실제 맥락 활용 측정이 효과적인 장문맥 데이터 생성 검증에 필요하다
+- 🏛 기반 연구: [[papers/036_A_survey_on_transformer_context_extension_Approaches_and_eva/review]] — 효과적인 장문맥 구성 요소에 대한 연구를 통해 Transformer 컨텍스트 확장의 이론적 기반과 실제 구현 방법을 제공한다.
+- 🏛 기반 연구: [[papers/1087_Gpt4_is_slightly_helpful_for_peer-review_assistance_A_pilot/review]] — 긴 컨텍스트 처리의 핵심 요소들이 피어리뷰 보조 시스템의 성능에 미치는 영향을 이해하는 기반을 제공한다.

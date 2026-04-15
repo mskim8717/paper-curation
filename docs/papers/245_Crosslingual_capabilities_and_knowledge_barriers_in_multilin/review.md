@@ -12,8 +12,8 @@ arxiv: ""
 score: 4.2
 essence: "본 논문은 다국어 대규모 언어 모델(LLM)이 명시적 교차언어 작업(기계번역)에서는 우수한 성능을 보이나, 매개변수 지식의 암묵적 교차언어 활용에서는 심각한 성능 저하를 경험하는 '교차언어 지식 장벽(crosslingual knowledge barrier)'을 처음으로 체계적으로 규명하는 연구이다."
 tags:
-  - "cat/Scientific_Language_Processing_and_Visualization"
-  - "sub/Scientific_Language_Models"
+  - "cat/Scientific_Knowledge_Processing_Systems"
+  - "sub/Cross-lingual_Language_Model_Pretraining"
   - "topic/ai4s"
 pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chua et al._2024_Crosslingual capabilities and knowledge barriers in multilingual large language models.pdf"
 ---
@@ -105,11 +105,9 @@ pdf: "C:/Users/jehyu/GoogleDrive/Zotero/Chua et al._2024_Crosslingual capabiliti
 
 ## Related Papers
 
-- 🧪 응용 사례: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 다국어 LLM의 편향 완화를 위해 BiasFilter와 같은 추론 시간 편향 제거 기법 적용 가능
-- 🔗 후속 연구: [[papers/367_Galactica_A_Large_Language_Model_for_Science/review]] — 과학 특화 언어모델 Galactica가 다국어 환경에서 겪을 수 있는 교차언어 지식 장벽 분석
-- ⚖️ 반론/비판: [[papers/617_Phi-4_technical_report/review]] — STEM 성능에 최적화된 Phi-4가 다국어 환경에서는 교차언어 지식 장벽으로 성능 저하 가능성
-- 🏛 기반 연구: [[papers/801_The_llama_3_herd_of_models/review]] — Llama 3 모델군의 다국어 능력에서 발견되는 교차언어 지식 장벽 현상의 이론적 기반
-- 🧪 응용 사례: [[papers/858_Unsupervised_crosslingual_representation_learning_at_scale/review]] — 다언어 능력의 실제적 한계와 지식 장벽을 실증적으로 분석함
-- ⚖️ 반론/비판: [[papers/617_Phi-4_technical_report/review]] — STEM 성능에 최적화되었지만 다국어 환경에서 교차언어 지식 장벽 문제 발생 가능성
-- 🧪 응용 사례: [[papers/158_Biasfilter_An_inference-time_debiasing_framework_for_large_l/review]] — 다국어 LLM의 교차언어 편향 문제를 추론 시간에 실시간으로 완화하는 응용
-- 🏛 기반 연구: [[papers/119_Autocap_Towards_automatic_cross-lingual_alignment_planning_f/review]] — 다국어 모델의 언어 간 능력과 지식 장벽에 대한 연구가 AutoCAP의 자동 교차언어 정렬 계획 수립의 이론적 기반과 한계점을 제시함
+- 🔗 후속 연구: [[papers/192_Cchall_A_novel_benchmark_for_joint_cross-lingual_and_cross-m/review]] — 교차언어 지식 장벽 문제가 교차-언어 및 교차-모달 환각으로 확장되어 나타나는 구체적 증상을 CCHall 벤치마크를 통해 평가한다
+- 🏛 기반 연구: [[papers/858_Unsupervised_crosslingual_representation_learning_at_scale/review]] — 대규모 무감독 교차언어 표현 학습 연구로, 이 논문에서 발견한 교차언어 지식 장벽의 근본적 원인에 대한 기술적 배경을 제공한다
+- 🧪 응용 사례: [[papers/858_Unsupervised_crosslingual_representation_learning_at_scale/review]] — 다언어 모델의 지식 장벽 분석이 XLM-R의 교차언어 전이 성능 이해에 기여한다
+- 🔄 다른 접근: [[papers/023_A_smack_of_all_neighbouring_languages_How_multilingual_is_sc/review]] — 다국어 학술 커뮤니케이션의 언어 장벽 문제를 다른 각도에서 접근한 연구이다
+- 🧪 응용 사례: [[papers/119_Autocap_Towards_automatic_cross-lingual_alignment_planning_f/review]] — 다언어 모델의 지식 장벽 분석이 교차언어 정렬 계획에서 언어별 가중치 설정에 활용된다
+- 🏛 기반 연구: [[papers/192_Cchall_A_novel_benchmark_for_joint_cross-lingual_and_cross-m/review]] — 다국어 대형언어모델의 교차언어 능력과 지식 장벽을 체계적으로 분석하여, CCHall의 교차언어 환각 평가에 필요한 이론적 기반을 제공한다
