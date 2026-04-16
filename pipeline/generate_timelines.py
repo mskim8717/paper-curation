@@ -374,22 +374,57 @@ def save_timeline_narrative(topic_dir, executive_summary, category_summaries):
 # Step 2: PaperBanana Image Generation
 # ═══════════════════════════════════════════
 
+# Gemini 재시도 스케줄 (사용자 정책): 3 × 1분 → 2 × 30분 → 포기.
+# 서버측 이슈(billing cap, 간헐 503, RESOURCE_EXHAUSTED 등)는 보통 수~30분 내
+# 회복. 1분 backoff로 일시적 500/529를 흡수하고, 실패 지속 시 30분 단위로
+# 두 번 더 시도. 이후에도 실패면 명확한 에러로 중단.
+_GEMINI_RETRY_SCHEDULE = [60, 60, 60, 1800, 1800]
+
+
+def _is_gemini_transient(exc_or_text):
+    """Gemini 에러가 재시도 가치가 있는지 판정.
+    429/500/502/503/504/RESOURCE_EXHAUSTED 는 모두 transient 로 간주."""
+    t = str(exc_or_text).lower()
+    markers = ("429", "resource_exhausted", "500", "502", "503", "504",
+               "quota", "overloaded", "unavailable", "server error",
+               "event loop is closed", "timeout", "deadline exceeded")
+    return any(m in t for m in markers)
+
+
 def generate_with_paperbanana(method_text, caption, output_path, critic_rounds=3):
-    """PaperBanana로 이미지 생성. Gemini 폴백 없음."""
+    """PaperBanana 로 이미지 생성. Gemini 일시 실패 시 사용자 정책에 따라 재시도."""
+    import time as _time
     from lib.paperbanana import generate_diagram
 
-    png_bytes = generate_diagram(
-        method=method_text,
-        caption=caption,
-        aspect_ratio="16:9",
-        critic_rounds=critic_rounds,
-        exp_mode="demo_planner_critic",
-        retrieval_setting="auto",
-        output_path=output_path,
-    )
+    last_exc = None
+    for attempt_idx, sleep_s in enumerate([0] + _GEMINI_RETRY_SCHEDULE):
+        if sleep_s:
+            log(f"    [gemini-retry] sleeping {sleep_s}s before attempt "
+                f"{attempt_idx}/{len(_GEMINI_RETRY_SCHEDULE)}...")
+            _time.sleep(sleep_s)
+        try:
+            png_bytes = generate_diagram(
+                method=method_text,
+                caption=caption,
+                aspect_ratio="16:9",
+                critic_rounds=critic_rounds,
+                exp_mode="demo_planner_critic",
+                retrieval_setting="auto",
+                output_path=output_path,
+            )
+            if png_bytes and os.path.exists(output_path):
+                return os.path.getsize(output_path) / 1024
+            # No exception but empty output — treat as transient
+            last_exc = RuntimeError("PaperBanana returned empty output")
+            if not _is_gemini_transient(last_exc):
+                return None
+        except Exception as e:
+            last_exc = e
+            if not _is_gemini_transient(e):
+                log(f"    [gemini-retry] non-transient error, aborting: {e}")
+                raise
 
-    if png_bytes and os.path.exists(output_path):
-        return os.path.getsize(output_path) / 1024
+    log(f"    [gemini-retry] GAVE UP after 3×1m + 2×30m. Last error: {last_exc}")
     return None
 
 
@@ -429,7 +464,7 @@ def deploy_candidate(results, deploy_path):
 def main():
     parser = argparse.ArgumentParser(description="Generate timelines (bottom-up, 3-step)")
     parser.add_argument("--topic", default="ai4s")
-    parser.add_argument("--candidates", type=int, default=5)
+    parser.add_argument("--candidates", type=int, default=3)
     parser.add_argument("--narrative-only", action="store_true", help="Step 1 only: generate narratives")
     parser.add_argument("--images-only", action="store_true", help="Step 2 only: generate images from existing narratives")
     parser.add_argument("--main-only", action="store_true", help="Main timeline only (requires narratives)")

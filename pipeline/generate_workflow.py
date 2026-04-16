@@ -52,11 +52,15 @@ def build_method_text():
 
     phases = []
     for m in re.finditer(
-        r'\|\s*([\d.]+[ab]?)\s*\|\s*`([^`]+)`\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|',
+        r'\|\s*([\d.]+[ab]?|Entry|Recover)\s*\|\s*`([^`]+)`\s*\|\s*(.+?)\s*\|',
         steps_section
     ):
-        step, script, description, output = m.groups()
-        phases.append(f"Step {step}: {script}\n  {description.strip()}\n  Output: {output.strip()}")
+        step, script, description = m.groups()
+        # Strip path/extension so file names never reach the diagram prompt.
+        # e.g. `pipeline/run_update_force.py` → `run_update_force`
+        script = re.sub(r'^pipeline/', '', script)
+        script = re.sub(r'\.py$', '', script)
+        phases.append(f"Step {step}: {script}\n  {description.strip()}")
 
     # 2. Project Structure (README)
     structure_section = _extract_section(readme, "Project Structure")
@@ -110,7 +114,7 @@ Each tool MUST be represented by its recognizable logo/icon. Show Claude Code as
     return method
 
 
-VISUAL_RULES = """
+VISUAL_RULES_DEFAULT = """
 ### ABSOLUTE VISUAL RULES
 - Left to right flow, 21:9 ultra-wide aspect ratio
 - Each phase box: SHORT label (1-2 words max) + a representative ICON/CLIPART inside or beside it
@@ -131,6 +135,53 @@ VISUAL_RULES = """
   * PaperBanana (banana icon) — timeline diagram generation
   * Obsidian (purple gem icon) — knowledge compounding destination
   * OpenAI (OpenAI logo) — embedding for Deep Research index
+"""
+
+VISUAL_RULES_ACADEMIC = """
+### ABSOLUTE VISUAL RULES — ACADEMIC PAPER FIGURE
+The diagram must look like a *method overview figure* from a top-tier ML/NLP conference
+paper (NeurIPS/ICML/ACL). Serious, restrained, information-dense.
+
+LAYOUT
+- Left-to-right horizontal flow, 21:9 ultra-wide aspect ratio
+- Four swim lanes stacked vertically, left-to-right logical flow inside each lane:
+  1. ACQUIRE  (Web search → Zotero registration → Sync → Dedup)
+  2. REVIEW   (PDF → Text+Figures → Sanity gate → Structured review)
+  3. ANALYZE  (Embedding → Cluster assignment → Category summaries → Cross-category insights → Timeline narrative)
+  4. DELIVER  (Validate → Topic page → Search index → Deploy / Recovery audit)
+
+NODE STYLE
+- Rectangles with thin 1.5px black borders, subtle off-white fill (#F7F7F5)
+- Short 1-3 word concept labels in bold serif (e.g. "Embedding", "Cluster Assignment", "Sanity Gate")
+- NO filenames, NO .py, NO command-line flags, NO script paths
+- Optional: tiny monochrome pictogram (magnifying glass, document, graph node) in node corner — not the primary visual
+- Tool logos allowed ONLY as small badges next to the relevant lane label: Zotero, Claude, OpenAI, PaperBanana, Obsidian
+
+EDGES
+- Solid thin arrows for primary data flow
+- Dashed arrows for optional / preflight paths (dedup preflight, audit recovery)
+- Diamond decision nodes only for the 3-axis MECE mode gate
+  ("mode: curate / rebuild / reclassify / retime / deploy")
+- No thick colored edges; monochrome black arrows
+
+ANNOTATIONS
+- Below each lane, a thin italic one-line caption describing what that lane produces
+  (e.g. "structured Korean reviews with extracted figures", "hybrid node-based classification")
+- Top-left: small bold serif title "Paper Curation Pipeline"
+- Bottom-right: tiny italic "single entrypoint orchestrates all stages"
+- English only, no color names, no watermarks
+
+PALETTE
+- Mostly grayscale (#000 / #333 / #666 / #F7F7F5)
+- Accent: at most two muted academic colors (#2C5F9E navy, #B23A3A brick) used sparingly
+  — one for the sanity/validate gates, one for the LLM/embedding nodes
+- No neon, no gradients, no drop shadows
+
+FORBIDDEN
+- No cartoon characters, mascots, emojis, chibi figures
+- No gradients, glow, neon, 3D effects
+- No file names, no argparse flags, no code snippets, no bracketed command args
+- No long sentences inside nodes
 """
 
 # Script name → (keyword, color, cat description, fairy description)
@@ -193,7 +244,8 @@ def _build_characters_from_phases(phases, style):
 
 def build_style_text(phases, style):
     """Build dynamic style text from parsed pipeline phases."""
-    if style == "default":
+    if style in ("default", "academic"):
+        # academic / default 는 캐릭터 추가 없이 VISUAL_RULES 단독으로 사용.
         return ""
 
     characters = _build_characters_from_phases(phases, style)
@@ -227,8 +279,9 @@ def build_style_text(phases, style):
 def main():
     parser = argparse.ArgumentParser(description="Generate paper-curation workflow diagram")
     parser.add_argument("--candidates", type=int, default=5)
-    parser.add_argument("--style", default="default", choices=["default", "cat", "fairy"],
-                        help="Visual style preset (default, cat, fairy)")
+    parser.add_argument("--style", default="academic",
+                        choices=["default", "cat", "fairy", "academic"],
+                        help="Visual style preset. academic = serious paper figure (no characters, no filenames)")
     args = parser.parse_args()
 
     from lib.paperbanana import generate_diagram
@@ -246,7 +299,8 @@ def main():
     # Extract phases for dynamic character generation
     phases = [l for l in pipeline_text.split('\n') if l.startswith('Step ')]
     style_text = build_style_text(phases, args.style)
-    method_text = pipeline_text + VISUAL_RULES + style_text
+    visual_rules = VISUAL_RULES_ACADEMIC if args.style == "academic" else VISUAL_RULES_DEFAULT
+    method_text = pipeline_text + visual_rules + style_text
 
     log(f"METHOD_TEXT: {len(method_text)} chars")
     log(f"Style: {args.style}")

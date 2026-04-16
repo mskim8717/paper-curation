@@ -244,8 +244,8 @@ def main():
 
     # Save
     os.makedirs(topic_dir, exist_ok=True)
-    with open(sum_path, "w", encoding="utf-8") as f:
-        json.dump(summaries, f, ensure_ascii=False, indent=2)
+    from lib.atomic_io import atomic_write_json
+    atomic_write_json(sum_path, summaries)
 
     print(f"\nSaved: {sum_path} ({len(summaries)} categories)")
     if issues:

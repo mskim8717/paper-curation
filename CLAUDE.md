@@ -93,23 +93,27 @@ setup.py 출력의 "다음 단계" 섹션을 사용자에게 전달한다. 특�
 
 | Step | Script | Purpose |
 |------|--------|---------|
+| Entry | `pipeline/run_full.py` | 3-axis orchestrator (`--mode/--source/--images`). Chains all steps below in the right order; also exposes `--mode audit/fix-matching/dedup/validate` as standalone tool entrypoints |
 | 0 | `pipeline/search_papers.py` | arXiv/S2/OpenAlex search + dedup + relevance filter |
 | 0 | `pipeline/register_zotero.py` | Zotero registration + PDF download |
 | 0 | `pipeline/sync_zotero.py` | Sync deletions/renames from Zotero |
-| 1 | `pipeline/run_update_force.py` | Full batch: Zotero fetch → PDF parse → figure extract → review → HTML |
-| 2 | `pipeline/build_papers_index.py` | Rebuild `_papers_index.json` from all review.md files |
-| 3 | `pipeline/classify_papers.py` | Assign primary_category + all_categories (multi-class) via Haiku |
-| 4 | `pipeline/build_category_summaries.py` | Generate category descriptions + sub-themes via Haiku |
-| 4.5 | `pipeline/extract_insights.py` | Cross-category insights + paper connections via Sonnet |
-| 5 | `pipeline/generate_timelines.py` | Bottom-up timeline narrative + PaperBanana images |
+| 0.5 | `pipeline/dedup_zotero.py` | Zotero collection dedup (title60 + DOI + arXiv + PDF). Preflight (dry-run) auto-integrated into `run_update_force` |
+| 1 | `pipeline/run_update_force.py` | Full batch: Zotero fetch → PDF parse → figure extract → **Zotero↔text sanity gate** → review → HTML. ID-first `find_pdf()` with `--strict-pdf` blocking fuzzy |
+| 2 | `pipeline/build_papers_index.py` | Rebuild `_papers_index.json` with integrity fields (`text_md_sha256`, `doi_verified`, `zotero_item_key`) via atomic write |
+| 3 | `pipeline/classify_papers.py` | **Node-based Hybrid C** — SPECTER2 embeddings → KNN-vote primary + qualified-vote multi-class. No LLM call (cluster naming is in `topic_modeling`) |
+| 4 | `pipeline/build_category_summaries.py` | Per-category 한글 description + sub-themes via Haiku |
+| 4.5 | `pipeline/extract_insights.py` | Cross-category insights + paper connections via Sonnet. Auto Haiku-summarization fallback when prompt >200k tokens |
+| 5 | `pipeline/generate_timelines.py` | Bottom-up timeline narrative (Opus) + PaperBanana images. Gemini retry schedule 3×60s → 2×1800s |
 | 5.5 | `pipeline/generate_network.py` | D3.js force-directed network visualization |
-| 5.5 | `pipeline/generate_workflow.py` | Pipeline workflow diagram (PaperBanana, --style cat/fairy) |
-| 6 | `pipeline/validate_papers.py` | Post-build validation + auto-fix (figures, links, list literals) |
+| 5.5 | `pipeline/generate_workflow.py` | Pipeline workflow diagram (PaperBanana, `--style cat/fairy/academic`) |
+| 6 | `pipeline/validate_papers.py` | Strict validation gate: figure refs, classification schema, category whitelist, DOI cross-validation, duplicate text.md, timeline↔category match. `--strict` exits 1 |
 | 7 | `pipeline/review_to_html.py` | Convert review.md → index.html (canonical template) |
 | 8 | `pipeline/build_topic_index.py` | Generate `{topic}/index.html` with cards, search, timelines, Deep Research UI |
 | 8.5 | `pipeline/build_search_index.py` | Build Deep Research RAG index — section-aware chunks + OpenAI `text-embedding-3-small` (int8 L2 quantised) → `{topic}/_search_index.json` |
-| 9 | `pipeline/cleanup.py` | Remove stale files (old timelines, graphify temp, caches) |
-| 10 | `pipeline/prepare_deploy.py` | PNG→WebP, .gitignore update, `git push origin master` (triggers static-host auto-deploy) |
+| 9 | `pipeline/cleanup.py` | Remove stale files (old timelines, graphify temp, caches) + prune stale category entries from narrative JSONs |
+| 10 | `pipeline/prepare_deploy.py` | PNG→WebP, API-key strip/restore, deploy-diff summary, `git push origin master` + Cloudflare deploy verification polling |
+| Recover | `pipeline/audit_matching.py` | PDF↔review mismatch audit (duplicate text.md + 4-axis cross-check). Output `{topic}/_audit_report.json` |
+| Recover | `pipeline/fix_matching.py` | Recovery tool: delete review/figure artifacts for audit-flagged slugs + print re-review command. Default dry-run, `--execute` for real |
 
 Step 0 scripts are for full/update modes only (skipped in --local). Step 1 is the heavy batch (~1.5h for ~80 new papers at concurrency 4).
 
@@ -144,55 +148,64 @@ PYTHONUTF8=1 python pipeline/build_topic_index.py ai4s
 
 ## Common Commands
 
-All scripts require `PYTHONUTF8=1` on Windows to avoid cp949 encoding issues.
+All scripts require `PYTHONUTF8=1` on Windows to avoid cp949 encoding issues. Single entrypoint is `pipeline/run_full.py` (3축: `--mode/--source/--images`); 개별 스크립트는 디버깅·복구용으로만 직접 호출.
 
 ```bash
-# Topic modeling만 .venv312 사용 (UMAP 의존)
+# 주간 운영 — 검색 + Zotero 등록 + sync + 신규 리뷰
+PYTHONUTF8=1 python pipeline/run_full.py --topic ai4s --mode curate --source web --days 7
+
+# 로컬 업데이트 — 검색 스킵, sync만
+PYTHONUTF8=1 python pipeline/run_full.py --topic ai4s --mode curate --source zotero
+
+# 특정 슬러그만 force-rebuild (감사·복구 시)
+PYTHONUTF8=1 python pipeline/run_full.py --topic ai4s --mode rebuild --slugs 088,1093 --strict-pdf
+
+# 분류만 다시 (Phase 3 node-based, LLM 호출 없음)
+PYTHONUTF8=1 python pipeline/run_full.py --topic ai4s --mode reclassify
+
+# 타임라인 narrative + 이미지 재생성
+PYTHONUTF8=1 python pipeline/run_full.py --topic ai4s --mode retime --images all
+
+# 배포만 (humanoid·physical-ai 만 Cloudflare 배포; ai4s/scisci는 .gitignore 격리)
+PYTHONUTF8=1 python pipeline/run_full.py --topic humanoid --mode deploy
+
+# 실행 계획 미리보기 (변경 0)
+PYTHONUTF8=1 python pipeline/run_full.py --topic ai4s --mode curate --source web --dry-run
+```
+
+### 개별 스크립트 (디버깅·감사·복구)
+
+```bash
+# 오매칭 감사·복구
+PYTHONUTF8=1 python pipeline/audit_matching.py --topic ai4s
+PYTHONUTF8=1 python pipeline/fix_matching.py --topic ai4s --execute
+
+# Zotero 중복 탐지·삭제
+PYTHONUTF8=1 python pipeline/dedup_zotero.py --topic ai4s
+PYTHONUTF8=1 python pipeline/dedup_zotero.py --topic ai4s --execute
+
+# 빌드 검증 게이트 (--strict 면 이슈 시 exit 1)
+PYTHONUTF8=1 python pipeline/validate_papers.py --topic ai4s --strict
+
+# 분류만 단독 (이미 _new_classification.json 있어야 anchor set으로 사용)
+PYTHONUTF8=1 python pipeline/classify_papers.py --topic ai4s
+PYTHONUTF8=1 python pipeline/classify_papers.py --topic ai4s --slugs 088,1093 --dry-run
+
+# Topic modeling만 .venv312 사용 (UMAP/sentence-transformers 의존)
 PYTHONUTF8=1 .venv312/Scripts/python.exe pipeline/topic_modeling.py --topic ai4s
 
-# 나머지 스크립트는 전부 시스템 Python
-PYTHONUTF8=1 python pipeline/build_topic_index.py ai4s
-
-# Classify papers into categories
-PYTHONUTF8=1 python pipeline/classify_papers.py --topic ai4s
-
-# Regenerate all review HTML from markdown
-PYTHONUTF8=1 python pipeline/review_to_html.py --all
-
-# Regenerate specific range
-PYTHONUTF8=1 python pipeline/review_to_html.py --slugs 251-394
-
-# Rebuild master index from review.md files
-PYTHONUTF8=1 python pipeline/build_papers_index.py --topic ai4s
-
-# Generate D3 network visualization
-PYTHONUTF8=1 python pipeline/generate_network.py --topic ai4s
-
-# Generate workflow diagram (with cute cat agents)
-PYTHONUTF8=1 python pipeline/generate_workflow.py --candidates 5 --style cat
-
-# Generate timelines (narrative + images)
-PYTHONUTF8=1 python pipeline/generate_timelines.py --topic ai4s
-
-# Deploy preparation (PNG→WebP + push)
-PYTHONUTF8=1 python pipeline/prepare_deploy.py --topic ai4s --push
-
-# Update mode: new papers only, changed categories only
-PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --concurrency 4 --resume
-
-# Update + timeline images for changed categories
-PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --concurrency 4 --resume --timeline
-
-# Reclassify all papers + auto-timeline
-PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --category
-
-# Full batch update (long-running)
-PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --concurrency 4
-
-# Cleanup stale files before deploy (dry-run by default)
+# Cleanup stale files (dry-run / execute)
 PYTHONUTF8=1 python pipeline/cleanup.py
 PYTHONUTF8=1 python pipeline/cleanup.py --execute
 ```
+
+### 안전 플래그 (run_full / run_update_force 공통)
+
+- `--strict-pdf` — fuzzy 매칭 차단, ID(Zotero/DOI/arXiv)로만
+- `--slugs A,B,C` — 특정 슬러그만 처리
+- `--dry-run` — 실행 계획만 출력
+- `--skip-dedup` / `--dedup-execute` — Zotero dedup preflight 제어
+- `--yes` — `--mode rebuild` 확인 게이트 우회
 
 ## Key Design Decisions
 

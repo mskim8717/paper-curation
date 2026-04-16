@@ -118,18 +118,23 @@ def _fetch_collection_keys():
 
 
 def _resolve_collection_value(value):
-    """Collection value가 이름이면 key로 변환, 이미 key면 그대로."""
+    """Collection value가 이름이면 key로 변환, 이미 key면 그대로.
+
+    Zotero collection key는 8자 대문자 영숫자 (예: WKEZLEE8).
+    "Humanoid"처럼 8자이면서 알파벳이 섞인 이름과 구분하기 위해
+    먼저 이름으로 조회한다.
+    """
     if not value:
         return ""
-    # Zotero key는 8자 영숫자 (예: WKEZLEE8)
-    if len(value) == 8 and value.isalnum():
-        return value
-    # 이름으로 간주 → API 조회
+    # 이름으로 먼저 조회 (API 캐시)
     name_to_key = _fetch_collection_keys()
-    key = name_to_key.get(value, "")
-    if not key:
-        print(f"WARNING: Collection '{value}' not found in Zotero.")
-    return key
+    if value in name_to_key:
+        return name_to_key[value]
+    # Zotero key 패턴: 8자 + 대문자/숫자만 (소문자 불가)
+    if len(value) == 8 and value.isalnum() and not any(c.islower() for c in value):
+        return value
+    print(f"WARNING: Collection '{value}' not found in Zotero.")
+    return value
 
 
 def get_collections():

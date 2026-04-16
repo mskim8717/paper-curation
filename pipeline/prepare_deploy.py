@@ -108,12 +108,60 @@ def update_html_refs(file_path, fig_only=False):
     return False
 
 
+CF_BASE_URL = "https://paper-curation.jehyun-lee.workers.dev"
+CF_PROBE_PATHS = ("/", "/humanoid/", "/physical-ai/", "/index.html")
+
+
+def _verify_cloudflare(topic, timeout_s=300, interval_s=15):
+    """Poll Cloudflare Worker endpoints until they all return 200 or timeout.
+
+    We can't read a commit hash from response headers (Workers Static Assets
+    don't expose one), so we only verify reachability + content size sanity.
+    """
+    import time as _time
+    import urllib.request as _ur
+    import urllib.error as _ue
+    print(f"\n  [cf-verify] polling Cloudflare for ≤{timeout_s}s …")
+    deadline = _time.time() + timeout_s
+    last_status = {}
+    while _time.time() < deadline:
+        all_ok = True
+        for path in CF_PROBE_PATHS:
+            url = CF_BASE_URL + path
+            try:
+                req = _ur.Request(url, method="HEAD",
+                                   headers={"User-Agent": "paper-curation/cf-verify"})
+                resp = _ur.urlopen(req, timeout=10)
+                code = resp.status
+                size = resp.headers.get("content-length", "?")
+                last_status[path] = (code, size)
+                if code != 200:
+                    all_ok = False
+            except _ue.HTTPError as e:
+                last_status[path] = (e.code, "?")
+                all_ok = False
+            except Exception as e:
+                last_status[path] = ("err", str(e)[:60])
+                all_ok = False
+        if all_ok:
+            print(f"  [cf-verify] all {len(CF_PROBE_PATHS)} endpoints 200 OK")
+            for p, (c, s) in last_status.items():
+                print(f"    {p}: {c} ({s} bytes)")
+            return True
+        _time.sleep(interval_s)
+    print(f"  [cf-verify] TIMEOUT after {timeout_s}s — last status:")
+    for p, (c, s) in last_status.items():
+        print(f"    {p}: {c} ({s})")
+    return False
+
+
 def main():
     parser = argparse.ArgumentParser(description="Prepare for GitHub Pages deployment")
     parser.add_argument("--topic", default="ai4s")
     parser.add_argument("--quality", type=int, default=90, help="WebP quality (1-100)")
     parser.add_argument("--dry-run", action="store_true", help="Estimate only, no conversion")
     parser.add_argument("--push", action="store_true", help="Git add + commit + push after conversion")
+    parser.add_argument("--topics", nargs="+", help="Only deploy these topics (exclude others from git add)")
     parser.add_argument("--workers", type=int, default=8, help="Parallel workers for conversion")
     args = parser.parse_args()
 
@@ -226,28 +274,107 @@ def main():
         deleted += 1
     print(f"  Deleted: {deleted} PNGs, Preserved: {preserved}")
 
-    # Step 6: Commit docs/ changes and push to master (Cloudflare auto-deploys)
-    if args.push:
-        print("\nStep 6: Git commit + push to master (Cloudflare will auto-deploy)...")
-        os.chdir(REPO)
-
-        subprocess.run(["git", "add", "docs/"], check=True)
-        result = subprocess.run(
-            ["git", "diff", "--cached", "--quiet"],
-            capture_output=True
+    # Step 6: Strip API keys from HTML for deploy (local working tree restored after commit)
+    print("\nStep 6: Stripping API keys from deployed HTML (local keys preserved)...")
+    import re as _re
+    _originals = {}  # Path -> original content, restored after push
+    for html_path in DOCS_DIR.rglob("index.html"):
+        text = html_path.read_text(encoding="utf-8")
+        new_text = _re.sub(
+            r'(const|let|var)\s+_ANTHROPIC_KEY\s*=\s*"sk-[^"]*"',
+            r'\1 _ANTHROPIC_KEY = ""',
+            text,
         )
-        if result.returncode != 0:  # there are staged changes
-            subprocess.run(["git", "commit", "-m",
-                            f"Deploy: PNG→WebP conversion, {converted} figures, "
-                            f"{total_orig // 1048576}→{total_webp // 1048576}MB\n\n"
-                            f"Co-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>"],
-                           check=True)
-            subprocess.run(["git", "push", "origin", "master"], check=True)
-            print("  Pushed to master — Cloudflare Workers will auto-deploy")
+        new_text = _re.sub(
+            r'(const|let|var)\s+_OPENAI_KEY\s*=\s*"sk-[^"]*"',
+            r'\1 _OPENAI_KEY = ""',
+            new_text,
+        )
+        if new_text != text:
+            _originals[html_path] = text
+            html_path.write_text(new_text, encoding="utf-8")
+
+    def _restore_originals():
+        for p, orig in _originals.items():
+            p.write_text(orig, encoding="utf-8")
+
+    # Safety net: verify no residual API keys remain in any deployed HTML
+    _leak_paths = [
+        str(p) for p in DOCS_DIR.rglob("index.html")
+        if _re.search(r'sk-(ant|proj)-[A-Za-z0-9_\-]{10,}', p.read_text(encoding="utf-8"))
+    ]
+    if _leak_paths:
+        _restore_originals()
+        print(f"  ABORT: API key still present in {len(_leak_paths)} files — refusing to commit:")
+        for p in _leak_paths:
+            print(f"    - {p}")
+        sys.exit(1)
+    print(f"  Stripped API keys from {len(_originals)} files (0 leaks remaining)")
+
+    # Step 7: Commit docs/ changes and push to master (Cloudflare auto-deploys)
+    try:
+        if args.push:
+            print("\nStep 7: Git commit + push to master (Cloudflare will auto-deploy)...")
+            os.chdir(REPO)
+
+            if args.topics:
+                # Only add specified topics + shared resources (papers, index.html)
+                subprocess.run(["git", "add", "docs/papers/", "docs/index.html"], check=True)
+                for t in args.topics:
+                    t_dir = os.path.join("docs", t)
+                    if os.path.isdir(t_dir):
+                        subprocess.run(["git", "add", t_dir], check=True)
+                print(f"  Topics included: {', '.join(args.topics)}")
+            else:
+                subprocess.run(["git", "add", "docs/"], check=True)
+            result = subprocess.run(
+                ["git", "diff", "--cached", "--quiet"],
+                capture_output=True
+            )
+            if result.returncode != 0:  # there are staged changes
+                # Deploy-diff summary (visibility before irreversible push)
+                diff_stat = subprocess.run(
+                    ["git", "diff", "--cached", "--stat=160"],
+                    capture_output=True, text=True, encoding="utf-8", errors="replace",
+                )
+                name_status = subprocess.run(
+                    ["git", "diff", "--cached", "--name-status"],
+                    capture_output=True, text=True, encoding="utf-8", errors="replace",
+                )
+                ns_lines = [l for l in (name_status.stdout or "").splitlines() if l.strip()]
+                added = [l for l in ns_lines if l.startswith("A")]
+                deleted = [l for l in ns_lines if l.startswith("D")]
+                print(f"\n  Deploy diff: {len(ns_lines)} files changed "
+                      f"(+{len(added)} new, -{len(deleted)} removed)")
+                if deleted:
+                    print("  Deletions (first 20):")
+                    for l in deleted[:20]:
+                        print(f"    {l}")
+                    if len(deleted) > 20:
+                        print(f"    ... +{len(deleted) - 20} more")
+                # Tail of stat for context (last ~10 lines includes the summary row)
+                stat_tail = "\n".join((diff_stat.stdout or "").splitlines()[-5:])
+                if stat_tail:
+                    print(f"  {stat_tail}")
+                subprocess.run(["git", "commit", "-m",
+                                f"Deploy: PNG→WebP conversion, {converted} figures, "
+                                f"{total_orig // 1048576}→{total_webp // 1048576}MB\n\n"
+                                f"Co-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>"],
+                               check=True)
+                subprocess.run(["git", "push", "origin", "master"], check=True)
+                print("  Pushed to master — Cloudflare Workers will auto-deploy")
+
+                # ── Cloudflare deploy verification: poll known endpoints ──
+                _verify_cloudflare(args.topic)
+            else:
+                print("  No staged changes to commit")
         else:
-            print("  No staged changes to commit")
-    else:
-        print("\n(--push 없이 실행됨. git push는 수동으로)")
+            print("\n(--push 없이 실행됨. git push는 수동으로)")
+    finally:
+        # Restore local working tree so Deep Research UI keeps working without rebuild
+        _restore_originals()
+        if _originals:
+            print(f"  Restored {len(_originals)} local HTML files (API keys preserved for local dev)")
 
     print(f"\nDone! Total savings: {(total_orig - total_webp) / 1048576:.0f} MB")
 

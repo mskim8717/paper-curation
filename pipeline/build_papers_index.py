@@ -12,6 +12,7 @@ import argparse
 import json
 import os
 import re
+import sys
 
 from config_loader import PAPERS_DIR as _PAPERS_DIR, get_papers_index_path
 PAPERS_DIR = str(_PAPERS_DIR)
@@ -70,8 +71,27 @@ def parse_review(slug):
     fig_dir = os.path.join(PAPERS_DIR, slug, "figures")
     has_figs = os.path.isdir(fig_dir) and any(f.endswith(('.png', '.webp')) for f in os.listdir(fig_dir))
 
-    # Has PDF (text.md exists = had PDF)
-    has_pdf = os.path.exists(os.path.join(PAPERS_DIR, slug, "text.md"))
+    # Has PDF (text.md exists = had PDF) + integrity hash
+    text_path = os.path.join(PAPERS_DIR, slug, "text.md")
+    has_pdf = os.path.exists(text_path)
+    text_md_sha256 = ""
+    if has_pdf:
+        try:
+            import hashlib
+            with open(text_path, "rb") as tf:
+                text_md_sha256 = hashlib.sha256(tf.read()).hexdigest()[:16]
+        except Exception:
+            pass
+
+    # DOI verification: does review.md mention index.doi anywhere?
+    # (Cheap signal that review was generated from the right paper.)
+    doi_verified = False
+    if doi:
+        norm_doi = doi.lower()
+        for pref in ("https://doi.org/", "http://doi.org/", "doi:"):
+            if norm_doi.startswith(pref):
+                norm_doi = norm_doi[len(pref):]
+        doi_verified = norm_doi[:30] in content.lower()
 
     return {
         "title": title,
@@ -83,6 +103,8 @@ def parse_review(slug):
         "has_pdf": has_pdf,
         "has_figures": has_figs,
         "verdict": verdict,
+        "text_md_sha256": text_md_sha256,
+        "doi_verified": doi_verified,
     }
 
 
@@ -139,11 +161,17 @@ def main():
             "has_pdf": parsed["has_pdf"],
             "has_figures": parsed["has_figures"],
             "review_date": prev.get("review_date", ""),
+            "text_md_sha256": parsed.get("text_md_sha256", ""),
+            "doi_verified": parsed.get("doi_verified", False),
+            # Preserve any zotero_item_key from previous index (populated by run_update_force)
+            "zotero_item_key": prev.get("zotero_item_key", ""),
         }
         index.append(entry)
 
-    with open(index_path, "w", encoding="utf-8") as f:
-        json.dump(index, f, ensure_ascii=False, indent=2)
+    # Atomic write — `*.tmp + os.replace` so a kill mid-flush never corrupts.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from lib.atomic_io import atomic_write_json
+    atomic_write_json(index_path, index)
 
     with_scores = sum(1 for p in index if p["score"] > 0)
     with_cats = sum(1 for p in index if p.get("classifications"))

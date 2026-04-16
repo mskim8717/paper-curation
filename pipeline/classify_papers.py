@@ -1,289 +1,272 @@
 """
-Paper classification: primary_category + all_categories (multi-class) + sub_category.
+Paper classification via node-based distance in the SPECTER2 embedding space.
+
+Phase 3 re-implementation. Replaces the legacy Haiku-prompt approach with a
+density-faithful (HDBSCAN-style) assignment:
+
+  * Primary category = nearest neighbor's sub-cluster's parent category
+    (single-linkage 1-NN).
+  * all_categories  = top-3 sub-clusters that win the K-nearest-neighbor vote
+    (default K=10, MIN_VOTES=3) sorted by mean distance ascending.
+    The primary category is always included (even if it didn't reach the
+    vote threshold) and pinned to position 0.
+
+Why node-based: HDBSCAN is density-based and has no centroid concept; using
+centroid cosine biases assignments toward isotropic blobs. Node-pair distances
+respect cluster shape and density.
+
+Pipeline contract:
+  * Reads `{topic}/_embeddings_cache.json` (slug → 768D SPECTER2 vector).
+  * Reads `{topic}/_new_classification.json` (slug → sub_category mapping for
+    existing papers; provides the "anchor set" for kNN search).
+  * For papers without a cached embedding, computes one on the fly via
+    `topic_modeling.compute_embeddings` (incremental cache update).
+  * Updates `docs/papers/_papers_index.json` and rewrites
+    `{topic}/_new_classification.json`.
 
 Usage:
-  PYTHONUTF8=1 python classify_papers.py --topic ai4s
-  PYTHONUTF8=1 python classify_papers.py --topic ai4s --sub-only   # sub-category만 재분류
-
-Multi-class 분류 규칙:
-- 각 논문에 primary_category 1개 + all_categories 1~3개 할당
-- 논문이 2개 이상 카테고리에 의미 있게 걸치면 all_categories에 모두 포함
-- build_topic_index.py가 all_categories 기반으로 여러 카테고리에 카드를 표시
-- sub_category: primary_category 내에서의 세부 분류
+  PYTHONUTF8=1 python pipeline/classify_papers.py --topic ai4s
+  PYTHONUTF8=1 python pipeline/classify_papers.py --topic ai4s --slugs 088,1093
+  PYTHONUTF8=1 python pipeline/classify_papers.py --topic ai4s --dry-run
+  PYTHONUTF8=1 python pipeline/classify_papers.py --topic ai4s --k 15 --min-votes 4
 """
 
 import argparse
 import json
 import os
-import re
-from collections import defaultdict, Counter
-from anthropic import Anthropic
-from config_loader import get_collections
+import sys
+from collections import Counter
+from pathlib import Path
+
+import numpy as np
 
 from config_loader import PAPERS_DIR as _PAPERS_DIR, get_topic_dir
 PAPERS_DIR = str(_PAPERS_DIR)
-COLLECTIONS = get_collections()
 
-from lib.categories import CATEGORIES_BY_TOPIC
-
-
-def get_classification(paper, topic):
-    """Get classification for a specific topic from paper entry."""
-    cls = paper.get("classifications", {})
-    return cls.get(topic, {})
+DEFAULT_K = 20
+DEFAULT_MIN_VOTES = 2
+TOP_N_CATEGORIES = 3
 
 
-def set_classification(paper, topic, primary, all_cats, sub=""):
-    """Set classification for a specific topic."""
-    if "classifications" not in paper:
-        paper["classifications"] = {}
-    paper["classifications"][topic] = {
-        "primary_category": primary,
-        "all_categories": all_cats,
-        "sub_category": sub,
-    }
+def log(msg):
+    print(msg, flush=True)
 
 
-def classify_categories(papers, client, topic="ai4s", batch_size=30):
-    """Phase 1: primary_category + all_categories (multi-class).
-    Only classifies papers that belong to the given topic AND don't already have
-    a classification for that topic (--update safe)."""
-    CATEGORIES = CATEGORIES_BY_TOPIC.get(topic, CATEGORIES_BY_TOPIC["ai4s"])
-
-    # Filter: only papers belonging to this topic
-    topic_papers = [p for p in papers if topic in p.get("topics", [])]
-    # Among those, only papers without existing classification for this topic
-    to_classify = [p for p in topic_papers if not get_classification(p, topic).get("primary_category")]
-    already = len(topic_papers) - len(to_classify)
-
-    print(f"Topic '{topic}': {len(topic_papers)} papers ({already} already classified, {len(to_classify)} to classify)")
-    print(f"Categories: {len(CATEGORIES)} (multi-class)")
-
-    if not to_classify:
-        print("Nothing to classify.")
-        # Still print stats from existing
-        cats = Counter(get_classification(p, topic).get("primary_category", "Other") for p in topic_papers)
-        print("Primary distribution:")
-        for c in CATEGORIES:
-            print(f"  {c}: {cats.get(c, 0)}")
-        return
-
-    for i in range(0, len(to_classify), batch_size):
-        batch = to_classify[i:i+batch_size]
-        paper_list = "\n".join(
-            f"[{p['slug'].split('_')[0]}] {p['title'][:70]} | {p.get('essence','')[:80]}"
-            for p in batch
-        )
-
-        prompt = f"""Classify these papers into categories. IMPORTANT: assign ALL relevant categories, not just one.
-
-Categories: {', '.join(CATEGORIES)}
-
-Papers:
-{paper_list}
-
-Rules:
-- "p": the BEST matching category (primary)
-- "a": ALL categories where the paper makes a meaningful contribution (1~3 categories)
-- Most papers belong to 1-2 categories. Some interdisciplinary papers belong to 3.
-- Be generous with multi-class: if a paper uses agents (Autonomous Agents) to do NLP tasks (Scientific NLP), include BOTH.
-- If a paper builds a foundation model (Scientific Foundation Models) and benchmarks it (Benchmarks), include BOTH.
-
-Return JSON array: [{{"n":"001","p":"primary","a":["cat1","cat2"]}}]"""
-
-        try:
-            resp = client.messages.create(
-                model="claude-haiku-4-5-20251001",
-                max_tokens=3000,
-                messages=[{"role": "user", "content": prompt}]
-            )
-            text = resp.content[0].text.strip()
-            if "```" in text:
-                text = text.split("```")[1]
-                if text.startswith("json"):
-                    text = text[4:]
-            results = json.loads(text)
-            rmap = {r["n"]: r for r in results}
-            for p in batch:
-                num = p["slug"].split("_")[0]
-                if num in rmap:
-                    primary = rmap[num].get("p", "Other")
-                    all_cats = rmap[num].get("a", [primary])
-                    if primary not in all_cats:
-                        all_cats.insert(0, primary)
-                    set_classification(p, topic, primary, all_cats)
-        except Exception as e:
-            print(f"  Batch {i//batch_size} error: {e}")
-
-        print(f"  {min(i+batch_size, len(to_classify))}/{len(to_classify)}")
-
-    # Stats (all topic papers including previously classified)
-    multi = sum(1 for p in topic_papers if len(get_classification(p, topic).get("all_categories", [])) > 1)
-    cats = Counter(get_classification(p, topic).get("primary_category", "Other") for p in topic_papers)
-    print(f"\nMulti-class: {multi}/{len(topic_papers)} ({multi*100//max(1,len(topic_papers))}%)")
-    print("Primary distribution:")
-    for c in CATEGORIES:
-        print(f"  {c}: {cats.get(c, 0)}")
+def load_index():
+    p = Path(PAPERS_DIR) / "_papers_index.json"
+    return json.loads(p.read_text(encoding="utf-8")), p
 
 
-def generate_sub_themes(cat_name, plist, client, n=5):
-    """Sub_themes가 없는 카테고리에 대해 LLM으로 sub-theme 이름 생성."""
-    titles = "\n".join(f"- {p['title'][:80]}" for p in plist[:50])
-    try:
-        resp = client.messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=300,
-            messages=[{"role": "user", "content":
-                f"Category: {cat_name}\n\nPapers:\n{titles}\n\n"
-                f"Generate {n} specific sub-category names for grouping these papers. "
-                f"Short noun phrases (2-4 words). No numbering.\n"
-                f"JSON: [\"Sub A\", \"Sub B\", ...]"}]
-        )
-        text = resp.content[0].text.strip()
-        if "```" in text:
-            text = text.split("```")[1]
-            if text.startswith("json"):
-                text = text[4:]
-        return json.loads(text)
-    except Exception as e:
-        print(f"  ERR generating sub_themes for {cat_name}: {e}")
-        return []
+def load_anchor_set(topic_dir):
+    """Read existing classification → slug→sub map, sub→category map.
 
+    The "anchor set" is the set of slugs whose cluster membership is fixed and
+    used to vote on new papers. We exclude assignments whose sub_category is
+    empty (failed previous runs).
+    """
+    cls_path = Path(topic_dir) / "_new_classification.json"
+    if not cls_path.exists():
+        log(f"ERROR: {cls_path} missing — run topic_modeling.py first to seed clusters.")
+        sys.exit(2)
+    cls = json.loads(cls_path.read_text(encoding="utf-8"))
 
-def classify_subcategories(papers, summaries, client, topic="ai4s", batch_size=40):
-    """Phase 2: sub_categories for EACH category in all_categories.
-    Each paper gets a sub_category per category it belongs to (not just primary).
-    Stored as sub_categories dict: { "Category A": "Sub A", "Category B": "Sub B" }."""
-    topic_papers = [p for p in papers if topic in p.get("topics", [])]
-
-    # Build category → sub_theme names from summaries
-    cat_subs = {}
-    for s in summaries:
-        subs = [st["name"] for st in s.get("sub_themes", [])]
-        if subs:
-            cat_subs[s["category"]] = subs
-
-    # Group papers by each category they belong to (via all_categories)
-    cat_papers = defaultdict(list)
-    for p in topic_papers:
-        cls = get_classification(p, topic)
-        for cat in cls.get("all_categories", []):
-            cat_papers[cat].append(p)
-
-    print(f"\nClassifying sub-categories per category (topic={topic})...")
-
-    # Collect all categories that need sub-classification (from cat_papers)
-    all_cats = set(cat_papers.keys())
-    for cat in all_cats:
-        if cat not in cat_subs and cat != "Other":
-            plist = cat_papers[cat]
-            if len(plist) >= 3:
-                print(f"  Generating sub_themes for {cat} ({len(plist)} papers)...")
-                subs = generate_sub_themes(cat, plist, client)
-                if subs:
-                    cat_subs[cat] = subs
-                    print(f"    → {subs}")
-
-    for cat_name, sub_list in cat_subs.items():
-        plist = cat_papers.get(cat_name, [])
-        if not plist or len(plist) < 3:
+    slug_to_sub = {}
+    sub_to_cat = {}
+    for a in cls.get("assignments", []):
+        sub = a.get("sub_category")
+        cat = a.get("primary_category")
+        slug = a.get("slug")
+        if not sub or not cat or not slug:
             continue
+        slug_to_sub[slug] = sub
+        sub_to_cat[sub] = cat
+    return slug_to_sub, sub_to_cat
 
-        # Only classify papers that don't have sub_categories[cat_name] yet
-        to_classify = []
-        for p in plist:
-            cls = get_classification(p, topic)
-            sc = cls.get("sub_categories", {})
-            if cat_name not in sc:
-                to_classify.append(p)
 
-        if not to_classify:
-            dist = Counter(
-                get_classification(p, topic).get("sub_categories", {}).get(cat_name, "?")
-                for p in plist
-            )
-            print(f"  {cat_name} ({len(plist)}): all classified {dict(dist.most_common(5))}")
-            continue
+def cosine_distances_to_all(query_vec, anchor_mat):
+    """Return cosine distance vector (n,) of query against each anchor row."""
+    q = query_vec / (np.linalg.norm(query_vec) + 1e-12)
+    A = anchor_mat / (np.linalg.norm(anchor_mat, axis=1, keepdims=True) + 1e-12)
+    sims = A @ q
+    return 1.0 - sims  # cosine distance
 
-        subs_str = ", ".join(sub_list)
-        print(f"  {cat_name} ({len(plist)}, new={len(to_classify)})...")
 
-        for i in range(0, len(to_classify), batch_size):
-            batch = to_classify[i:i+batch_size]
-            first_key = batch[0]["slug"].split("_")[0] if batch else "N"
-            paper_lines = "\n".join(
-                f"[{p['slug'].split('_')[0]}] {p['title'][:70]}" for p in batch
-            )
+def hybrid_classify(query_vec, query_slug, anchor_slugs, anchor_mat,
+                    slug_to_sub, sub_to_cat, k=DEFAULT_K, min_votes=DEFAULT_MIN_VOTES):
+    """Hybrid node-based assignment.
 
-            try:
-                resp = client.messages.create(
-                    model="claude-haiku-4-5-20251001",
-                    max_tokens=2000,
-                    messages=[{"role": "user", "content":
-                        f"Classify into sub-categories.\nCategory: {cat_name}\n"
-                        f"Sub-categories: {subs_str}\n\nPapers:\n{paper_lines}\n\n"
-                        f"Use the EXACT N value from each [N] label. "
-                        f"JSON: [{{\"n\":\"{first_key}\",\"s\":\"sub-category\"}}]"}]
-                )
-                text = resp.content[0].text.strip()
-                if "```" in text:
-                    text = text.split("```")[1]
-                    if text.startswith("json"):
-                        text = text[4:]
-                results = json.loads(text)
-                rmap = {r["n"]: r["s"] for r in results}
-                for p in batch:
-                    num = p["slug"].split("_")[0]
-                    if num in rmap:
-                        cls = get_classification(p, topic)
-                        if "sub_categories" not in cls:
-                            cls["sub_categories"] = {}
-                        cls["sub_categories"][cat_name] = rmap[num]
-                        # Keep legacy sub_category for primary
-                        if cls.get("primary_category") == cat_name:
-                            cls["sub_category"] = rmap[num]
-                        p.setdefault("classifications", {})[topic] = cls
-            except Exception as e:
-                print(f"  ERR {cat_name} batch {i//batch_size}: {e}")
+    Returns (primary_category, all_categories, primary_sub, sub_per_cat_map).
+    """
+    # Distances to every anchor (exclude self if present)
+    dists = cosine_distances_to_all(query_vec, anchor_mat)
+    if query_slug in anchor_slugs:
+        self_idx = anchor_slugs.index(query_slug)
+        dists[self_idx] = np.inf  # exclude
 
-        dist = Counter(
-            get_classification(p, topic).get("sub_categories", {}).get(cat_name, "?")
-            for p in plist
-        )
-        print(f"    {dict(dist.most_common(5))}")
+    # Sort all anchors ascending by distance
+    order = np.argsort(dists)
 
-        dist = Counter(get_classification(p, topic).get("sub_category", "?") for p in plist)
-        print(f"  {cat_name} ({len(plist)}, new={len(to_classify)}): {dict(dist.most_common(5))}")
+    # K-NN vote among nearest k anchors
+    knn_idxs = order[:k]
+    sub_votes = Counter()
+    sub_dists = {}
+    for i in knn_idxs:
+        s = slug_to_sub[anchor_slugs[int(i)]]
+        sub_votes[s] += 1
+        sub_dists.setdefault(s, []).append(float(dists[int(i)]))
+
+    # Primary: highest vote count, tie-break by smallest mean distance
+    # (replaces 1-NN to reduce single-neighbor noise; per user directive 2026-04-16)
+    def primary_key(item):
+        s, votes = item
+        return (-votes, float(np.mean(sub_dists[s])))
+    primary_sub = sorted(sub_votes.items(), key=primary_key)[0][0]
+    primary_cat = sub_to_cat[primary_sub]
+
+    # Qualifying subs for all_categories: vote >= min_votes
+    qualifying_subs = [s for s, n in sub_votes.items() if n >= min_votes]
+    # Sort qualifying by mean distance ascending (tighter cluster first)
+    qualifying_subs.sort(key=lambda s: float(np.mean(sub_dists[s])))
+
+    # Build all_categories: primary always pinned at index 0, then top qualifying subs' parents
+    sub_per_cat = {primary_cat: primary_sub}
+    all_cats = [primary_cat]
+    for s in qualifying_subs:
+        cat = sub_to_cat[s]
+        if cat not in all_cats:
+            all_cats.append(cat)
+            sub_per_cat[cat] = s
+        if len(all_cats) >= TOP_N_CATEGORIES:
+            break
+
+    return primary_cat, all_cats, primary_sub, sub_per_cat
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Classify papers into categories")
-    parser.add_argument("--topic", default="ai4s")
-    parser.add_argument("--sub-only", action="store_true", help="Sub-category only")
-    args = parser.parse_args()
+    ap = argparse.ArgumentParser(description="Node-based hybrid classifier (Phase 3)")
+    ap.add_argument("--topic", required=True)
+    ap.add_argument("--slugs", default="",
+                    help="Comma-separated slug prefixes. If set, only these "
+                         "papers are (re)classified; others keep existing entries.")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="Print assignment summary without writing JSONs.")
+    ap.add_argument("--k", type=int, default=DEFAULT_K,
+                    help="K for kNN vote on all_categories (default 10).")
+    ap.add_argument("--min-votes", type=int, default=DEFAULT_MIN_VOTES,
+                    help="Minimum kNN votes for a sub to qualify for "
+                         "all_categories (default 3).")
+    args = ap.parse_args()
 
-    index_path = os.path.join(PAPERS_DIR, "_papers_index.json")
-    with open(index_path, "r", encoding="utf-8") as f:
-        papers = json.load(f)
+    topic = args.topic
+    topic_dir = str(get_topic_dir(topic))
 
-    topic_dir = str(get_topic_dir(args.topic))
-    sum_path = os.path.join(topic_dir, "_category_summaries.json")
-    summaries = []
-    if os.path.exists(sum_path):
-        with open(sum_path, "r", encoding="utf-8") as f:
-            summaries = json.load(f)
+    # 1. Anchor set: existing slug→sub & sub→cat
+    slug_to_sub, sub_to_cat = load_anchor_set(topic_dir)
+    log(f"[anchor] {len(slug_to_sub)} anchored slugs, "
+        f"{len(set(sub_to_cat.values()))} parent categories, "
+        f"{len(sub_to_cat)} sub-clusters")
 
-    client = Anthropic()
+    # 2. Index → topic_papers
+    all_papers, index_path = load_index()
+    topic_papers = [p for p in all_papers if topic in p.get("topics", [])]
+    log(f"[index] {len(topic_papers)} {topic} papers")
 
-    if not args.sub_only:
-        classify_categories(papers, client, topic=args.topic)
+    # 3. Embeddings (incremental cache; computes new ones via SPECTER2 if needed)
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from topic_modeling import extract_originalities, compute_embeddings
+    originalities = extract_originalities(topic_papers)
+    cache_path = os.path.join(topic_dir, "_embeddings_cache.json")
+    embeddings, slugs = compute_embeddings(originalities, cache_path)
+    slug_to_vec = dict(zip(slugs, embeddings))
 
-    if summaries:
-        classify_subcategories(papers, summaries, client, topic=args.topic)
+    # 4. Build anchor matrix from anchored slugs that ALSO have embeddings
+    anchor_slugs = [s for s in slug_to_sub if s in slug_to_vec]
+    if not anchor_slugs:
+        log("ERROR: no anchored slug has an embedding — cannot classify.")
+        sys.exit(3)
+    anchor_mat = np.array([slug_to_vec[s] for s in anchor_slugs])
+    log(f"[anchor matrix] shape={anchor_mat.shape}")
 
-    with open(index_path, "w", encoding="utf-8") as f:
-        json.dump(papers, f, ensure_ascii=False, indent=2)
-    print(f"\nSaved: {index_path}")
+    # 5. Slug filter (--slugs)
+    slug_filter = None
+    if args.slugs:
+        prefixes = [s.strip() for s in args.slugs.split(",") if s.strip()]
+        slug_filter = {p["slug"] for p in topic_papers
+                       if any(p["slug"].startswith(pref) or p["slug"] == pref
+                              for pref in prefixes)}
+        log(f"[slug filter] restricting to {len(slug_filter)} papers")
+
+    # 6. Classify
+    reassigned = 0
+    unchanged = 0
+    skipped = 0
+    assignments = []
+    for p in topic_papers:
+        slug = p["slug"]
+        if slug_filter is not None and slug not in slug_filter:
+            cls = p.get("classifications", {}).get(topic)
+            if cls:
+                assignments.append({
+                    "slug": slug,
+                    "primary_category": cls.get("primary_category", ""),
+                    "all_categories": cls.get("all_categories", []),
+                    "sub_category": cls.get("sub_category", ""),
+                })
+            continue
+        vec = slug_to_vec.get(slug)
+        if vec is None:
+            log(f"  WARN: {slug} missing embedding — skipped")
+            skipped += 1
+            continue
+        primary, all_cats, sub, sub_map = hybrid_classify(
+            vec, slug, anchor_slugs, anchor_mat,
+            slug_to_sub, sub_to_cat, k=args.k, min_votes=args.min_votes)
+
+        prev = p.get("classifications", {}).get(topic, {})
+        if prev.get("primary_category") == primary and prev.get("sub_category") == sub:
+            unchanged += 1
+        else:
+            reassigned += 1
+
+        if not args.dry_run:
+            if "classifications" not in p:
+                p["classifications"] = {}
+            p["classifications"][topic] = {
+                "primary_category": primary,
+                "all_categories": all_cats,
+                "sub_category": sub,
+                "sub_categories": sub_map,
+            }
+
+        assignments.append({
+            "slug": slug,
+            "primary_category": primary,
+            "all_categories": all_cats,
+            "sub_category": sub,
+        })
+
+    log(f"[classify] reassigned={reassigned}, unchanged={unchanged}, skipped={skipped}")
+
+    if args.dry_run:
+        cats = Counter(a["primary_category"] for a in assignments)
+        log("[dry-run] per-category counts:")
+        for c, n in cats.most_common():
+            log(f"  {c}: {n}")
+        return
+
+    # Write back
+    from lib.atomic_io import atomic_write_json
+    atomic_write_json(index_path, all_papers)
+    log(f"[write] {index_path}")
+
+    cats_list = sorted({a["primary_category"] for a in assignments})
+    cls_data = {
+        "categories": [{"name": c} for c in cats_list],
+        "assignments": assignments,
+    }
+    cls_path = Path(topic_dir) / "_new_classification.json"
+    atomic_write_json(cls_path, cls_data)
+    log(f"[write] {cls_path}  ({len(cats_list)} categories)")
 
 
 if __name__ == "__main__":

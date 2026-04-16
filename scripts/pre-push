@@ -1,0 +1,41 @@
+#!/bin/sh
+# pre-push hook for paper-curation
+# Install: cp scripts/pre-push .git/hooks/pre-push && chmod +x .git/hooks/pre-push
+#
+# Blocks pushes that:
+#  1. Embed Anthropic / OpenAI API keys (sk-ant-..., sk-proj-...)
+#  2. Fail validate_papers --strict (broken figures, schema, dup text.md, etc.)
+#
+# Both checks are quick (~5s + ~30s); skip with: git push --no-verify
+
+set -e
+
+# 1. Secret leak detection on staged-for-push commits
+echo "[pre-push] scanning for API key leaks…"
+RANGE="@{u}..HEAD"
+if ! git rev-parse --abbrev-ref --symbolic-full-name '@{u}' >/dev/null 2>&1; then
+    RANGE="HEAD"
+fi
+LEAK=$(git diff "$RANGE" | grep -E 'sk-(ant|proj)-[A-Za-z0-9_-]{10,}' || true)
+if [ -n "$LEAK" ]; then
+    echo "[pre-push] ❌ API key leak detected — refusing push"
+    echo "$LEAK" | head -5
+    exit 1
+fi
+echo "[pre-push] ✓ no leaks"
+
+# 2. validate_papers strict gate (skip on docs-only branches)
+TOPIC="${PAPER_CURATION_TOPIC:-ai4s}"
+if [ -f pipeline/validate_papers.py ]; then
+    echo "[pre-push] validate_papers --topic $TOPIC --strict"
+    if ! PYTHONUTF8=1 python pipeline/validate_papers.py --topic "$TOPIC" --strict >/tmp/_pp_validate.log 2>&1; then
+        echo "[pre-push] ❌ validate_papers failed:"
+        tail -20 /tmp/_pp_validate.log
+        echo
+        echo "Override with: git push --no-verify"
+        exit 1
+    fi
+    echo "[pre-push] ✓ validate_papers passed"
+fi
+
+exit 0

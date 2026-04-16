@@ -768,7 +768,11 @@ def main():
         json.dump(umap_data, f, ensure_ascii=False, indent=2)
     log(f"  UMAP coordinates: {umap_path}")
 
-    # Save topic model info
+    # Save topic model info. classify_papers (Phase 3) reads sub→category map
+    # from _new_classification.json directly, so we don't need to duplicate it
+    # here. Centroids are intentionally NOT stored: classify_papers uses
+    # node-based (single-linkage / kNN-vote) distance per HDBSCAN's density
+    # semantics, not centroid distance.
     topic_info_data = {
         "generated_at": datetime.now().strftime("%Y-%m-%d"),
         "model": "SPECTER2 + sklearn.HDBSCAN + UMAP",

@@ -63,35 +63,134 @@ def load_topic_data(topic):
 # 1. Cross-Category Insights
 # ═══════════════════════════════════════════
 
-def extract_cross_category_insights(topic, cat_papers, cat_summaries, client):
-    """카테고리 간 교차 insight 추출. Sonnet 1회 호출."""
+MAX_PROMPT_TOKENS = 200000
+TARGET_PROMPT_TOKENS = 150000
 
-    # 카테고리별 요약 정보 + 대표 논문 essence
-    cat_info_parts = []
-    for cat_name, papers in sorted(cat_papers.items()):
+
+def _est_tokens(text):
+    """Conservative rough estimate for scaffolding (Korean-heavy=1.5)."""
+    return int(len(text) / 1.5)
+
+
+def _count_tokens(client, text, model="claude-sonnet-4-20250514"):
+    """Authoritative token count via Anthropic API (no output tokens spent).
+    Falls back to _est_tokens on any API error."""
+    try:
+        resp = client.messages.count_tokens(
+            model=model,
+            messages=[{"role": "user", "content": text}],
+        )
+        return resp.input_tokens
+    except Exception as e:
+        log(f"  count_tokens API failed ({e}); using local estimate")
+        return _est_tokens(text)
+
+
+def _build_cat_block(cat_name, papers, essence_chars=None):
+    """Render one category's block as plain text. essence_chars truncates
+    each paper's essence if set."""
+    sorted_papers = sorted(papers, key=lambda x: -x.get("score", 0))
+    lines = []
+    for p in sorted_papers:
+        num = p["slug"].split("_")[0]
+        essence = p.get("essence", "") or ""
+        if essence_chars is not None:
+            essence = essence[:essence_chars]
+        year = str(p.get("date", ""))[:4]
+        lines.append(f"  [{num}] ({year}) {p.get('title', '')[:60]} | {essence}")
+    return (f"### {cat_name} ({len(papers)} papers)\n" + "\n".join(lines))
+
+
+def _haiku_summarize_block(block, client, target_chars):
+    """Compress a category block while preserving category header, paper
+    numbers/years, and distilled technical signal."""
+    prompt = (
+        f"Compress the following academic-paper list to at most {target_chars} characters. "
+        f"Preserve:\n"
+        f"  * The first '### CategoryName (N papers)' header line verbatim\n"
+        f"  * Paper numbers in brackets (e.g. [091])\n"
+        f"  * Year when present\n"
+        f"  * Key technical themes (condense essence sentences but keep keywords)\n"
+        f"Keep the top-represented papers in full, then group remaining papers into\n"
+        f"one or two summary lines like '  [015, 042, 088] (2024-2025) survey papers on X focusing on Y, Z'.\n"
+        f"Output plain text only (no markdown fences).\n\n"
+        f"INPUT:\n{block}"
+    )
+    resp = client.messages.create(
+        model="claude-haiku-4-5-20251001",
+        max_tokens=max(2000, target_chars // 3),
+        messages=[{"role": "user", "content": prompt}],
+    )
+    return resp.content[0].text.strip()
+
+
+def _fit_cat_blocks(cat_papers, client, max_prompt_tokens, target_prompt_tokens,
+                    prompt_head, prompt_tail):
+    """Assemble cat blocks. If (head+blocks+tail) token count > max_prompt_tokens,
+    progressively summarize the largest block (via Haiku) until total ≤
+    target_prompt_tokens. Uses Anthropic's count_tokens API for authoritative
+    measurement. Returns the concatenated text + set of summarized category names.
+    """
+    blocks = {}
+    summarized = set()
+    for cat_name, papers in cat_papers.items():
         if cat_name == "Other" or not papers:
             continue
-        sorted_papers = sorted(papers, key=lambda x: -x.get("score", 0))
-        paper_lines = []
-        for p in sorted_papers:
-            num = p["slug"].split("_")[0]
-            essence = p.get("essence", "")
-            year = str(p.get("date", ""))[:4]
-            paper_lines.append(f"  [{num}] ({year}) {p.get('title', '')[:60]} | {essence}")
+        blocks[cat_name] = _build_cat_block(cat_name, papers)
 
-        cat_info_parts.append(
-            f"### {cat_name} ({len(papers)} papers)\n"
-            + "\n".join(paper_lines)
-        )
+    def total_tokens():
+        cat_text = "\n\n".join(blocks[c] for c in sorted(blocks.keys()))
+        return _count_tokens(client, prompt_head + cat_text + prompt_tail)
 
-    all_cats_text = "\n\n".join(cat_info_parts)
-    total = sum(len(v) for v in cat_papers.values())
+    initial_total = total_tokens()
+    log(f"  Prompt token count (authoritative): {initial_total}")
+    if initial_total <= max_prompt_tokens:
+        return "\n\n".join(blocks[c] for c in sorted(blocks.keys())), summarized
 
-    prompt = f"""You are analyzing {total} academic papers across {len(cat_papers)} categories in the "{topic}" research field.
+    log(f"  {initial_total} > {max_prompt_tokens} — running Haiku summarization "
+        f"loop (target {target_prompt_tokens}).")
 
-Below is a summary of each category with representative papers:
+    max_loops = 20
+    for _ in range(max_loops):
+        cur = total_tokens()
+        if cur <= target_prompt_tokens:
+            break
+        # Summarize the biggest remaining block
+        biggest_cat = max(blocks, key=lambda c: len(blocks[c]))
+        # Target char size for this summary: proportional to shortfall
+        overflow = cur - target_prompt_tokens
+        shrink_chars = max(2000, int(overflow * 2.5))  # tokens → chars
+        current_chars = len(blocks[biggest_cat])
+        target_chars = max(1500, current_chars - shrink_chars)
+        if target_chars >= current_chars - 200:
+            # Can't meaningfully shrink; stop to avoid infinite loop
+            log(f"  WARN: {biggest_cat} already near target; stopping summary loop")
+            break
+        log(f"  [summary] {biggest_cat}: {current_chars} → ≤{target_chars} chars")
+        blocks[biggest_cat] = _haiku_summarize_block(
+            blocks[biggest_cat], client, target_chars)
+        summarized.add(biggest_cat)
 
-{all_cats_text}
+    final_total = total_tokens()
+    log(f"  Prompt after summarization: ~{final_total} tokens "
+        f"(summarized categories: {len(summarized)})")
+    return "\n\n".join(blocks[c] for c in sorted(blocks.keys())), summarized
+
+
+def extract_cross_category_insights(topic, cat_papers, cat_summaries, client):
+    """카테고리 간 교차 insight 추출. Sonnet 1회 호출.
+
+    200k 토큰 초과 시 Haiku summarization fallback 으로 150k 아래로 압축.
+    """
+
+    # Build prompt skeleton first (without cat data) to measure overhead.
+    total = sum(len(v) for v in cat_papers.values() if v)
+    prompt_head = (
+        f"You are analyzing {total} academic papers across {len(cat_papers)} "
+        f'categories in the "{topic}" research field.\n\nBelow is a summary '
+        f"of each category with representative papers:\n\n"
+    )
+    prompt_tail = """
 
 Produce a JSON array of 3-7 cross-category research insights. Each insight should be one of:
 - "convergence": Two+ categories are merging or their methods are combining
@@ -115,25 +214,34 @@ Also produce a per-category object with:
 - policy_implication: 한국어 1문장 정책 시사점
 
 Output ONLY valid JSON in this exact format:
-{{
+{
   "cross_category": [ ... ],
-  "per_category": {{
-    "Category Name": {{
+  "per_category": {
+    "Category Name": {
       "trend": "...",
       "key_finding": "...",
       "gap": "...",
       "policy_implication": "..."
-    }}
-  }},
-  "meta": {{
+    }
+  },
+  "meta": {
     "underserved_domains": ["...", "..."],
     "hot_combinations": [
-      {{"pair": ["A", "B"], "description": "한국어 설명"}}
+      {"pair": ["A", "B"], "description": "한국어 설명"}
     ]
-  }}
-}}"""
+  }
+}"""
+    all_cats_text, summarized_cats = _fit_cat_blocks(
+        cat_papers, client,
+        max_prompt_tokens=MAX_PROMPT_TOKENS,
+        target_prompt_tokens=TARGET_PROMPT_TOKENS,
+        prompt_head=prompt_head,
+        prompt_tail=prompt_tail,
+    )
+    prompt = prompt_head + all_cats_text + prompt_tail
 
-    log(f"  Cross-category insight extraction ({total} papers, {len(cat_papers)} categories)...")
+    log(f"  Cross-category insight extraction ({total} papers, {len(cat_papers)} categories, "
+        f"~{_est_tokens(prompt)} tokens)...")
     resp = client.messages.create(
         model="claude-sonnet-4-20250514",
         max_tokens=4000,
@@ -392,8 +500,8 @@ def main():
             existing_per_cat.update(insights.get("per_category", {}))
             insights["per_category"] = existing_per_cat
             insights["paper_count"] = len(topic_papers)
-        with open(insights_path, "w", encoding="utf-8") as f:
-            json.dump(insights, f, ensure_ascii=False, indent=2)
+        from lib.atomic_io import atomic_write_json
+        atomic_write_json(insights_path, insights)
         log(f"\nSaved: {insights_path}")
         log(f"  {len(insights.get('cross_category', []))} cross-category insights")
         log(f"  {len(insights.get('per_category', {}))} per-category insights")

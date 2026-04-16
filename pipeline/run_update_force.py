@@ -21,6 +21,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import sys
 import time
 import urllib.request
@@ -34,8 +35,28 @@ from config_loader import (
     get_zotero_api_key, get_zotero_user_id, get_collection_key, get_collections, get_zotero_dir,
     get_topic_dir,
 )
+from lib.categories import category_slug
 PAPERS_DIR = str(_PAPERS_DIR)
 PROJECT_ROOT = PIPELINE_DIR.parent
+
+
+def _split_cats_by_image_presence(topic, cats):
+    """Split categories by whether their timeline image exists.
+
+    Returns (cats_with_image, cats_missing_image).
+    Image path: docs/{topic}/category_timeline_{slug}.{png,webp}
+    """
+    topic_dir = get_topic_dir(topic)
+    with_image = []
+    missing = []
+    for cat in cats:
+        slug = category_slug(cat)
+        has_image = any(
+            os.path.exists(os.path.join(str(topic_dir), f"category_timeline_{slug}.{ext}"))
+            for ext in ("png", "webp")
+        )
+        (with_image if has_image else missing).append(cat)
+    return with_image, missing
 
 # topic_modeling.py는 UMAP/sentence-transformers 의존 → .venv312 필요
 _VENV312_PYTHON = PROJECT_ROOT / ".venv312" / "Scripts" / "python.exe"
@@ -64,6 +85,7 @@ def load_checkpoint():
 
 
 _cp_lock = threading.Lock()
+_slug_to_zotero_key = {}
 
 
 def save_checkpoint(cp):
@@ -97,51 +119,207 @@ def fetch_zotero_items(collection_key):
     return items
 
 
+# ── PDF match audit log (Phase 1a: diagnose 139-paper mismatch bug) ──
+# Every find_pdf() call appends one JSON line to this file so we can
+# retroactively audit which matches used the weak fuzzy fallback.
+_AUDIT_LOG_PATH = None  # lazily initialised in _audit_append()
+
+
+def _audit_append(record):
+    """Append one JSONL record to the find_pdf audit log."""
+    global _AUDIT_LOG_PATH
+    try:
+        if _AUDIT_LOG_PATH is None:
+            logs_dir = os.path.join(os.path.dirname(__file__), "_logs")
+            os.makedirs(logs_dir, exist_ok=True)
+            ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+            _AUDIT_LOG_PATH = os.path.join(logs_dir, f"find_pdf_audit_{ts}.jsonl")
+        with open(_AUDIT_LOG_PATH, "a", encoding="utf-8") as f:
+            f.write(json.dumps(record, ensure_ascii=False) + "\n")
+    except Exception:
+        pass  # audit log never breaks the pipeline
+
+
+def _extract_arxiv_id_from_item(item):
+    """Try to read an arXiv ID from a Zotero item's url/DOI/archiveID."""
+    for field in ("url", "DOI", "archiveID", "extra"):
+        val = item.get(field, "") or ""
+        m = re.search(r"(\d{4}\.\d{4,5})", val)
+        if m:
+            return m.group(1)
+    return None
+
+
+# Global flag toggled by CLI. When True, fuzzy fallback is disabled entirely.
+_STRICT_PDF = False
+
+
 def find_pdf(item):
-    """Find local PDF path for a Zotero item."""
-    # Try children API for linked file path
-    key = item["key"]
+    """Find local PDF path for a Zotero item.
+
+    Returns (path, method). `method` is one of:
+      - zotero_children_abs     : Zotero child API returned an absolute path that exists
+      - zotero_children_basename: Zotero child API path's basename found under ZOTERO_DIR
+      - doi_filename            : DOI string appears in a PDF filename under ZOTERO_DIR
+      - arxiv_filename          : arXiv ID appears in a PDF filename under ZOTERO_DIR
+      - fuzzy                   : weak title-keyword match (LAST RESORT, logged)
+      - no_match                : no candidate — caller skips the paper
+    """
+    key = item.get("key", "")
+    title = item.get("title", "")
+
+    # Priority 1: Zotero children API (authoritative attachment path)
     try:
         url = f"https://api.zotero.org/users/{USER_ID}/items/{key}/children?format=json"
         req = urllib.request.Request(url, headers={"Zotero-API-Key": API_KEY})
         with urllib.request.urlopen(req, timeout=10, context=_ssl_ctx) as resp:
             children = json.load(resp)
         for c in children:
-            path = c["data"].get("path", "")
-            if path.endswith(".pdf"):
-                if os.path.exists(path):
-                    return path
-                # Try under ZOTERO_DIR
-                fname = os.path.basename(path)
-                alt = os.path.join(ZOTERO_DIR, fname)
-                if os.path.exists(alt):
-                    return alt
-    except Exception:
-        pass
+            cd = c.get("data", {})
+            if cd.get("itemType") != "attachment":
+                continue
+            if cd.get("contentType") not in ("application/pdf", ""):
+                continue
+            path = cd.get("path", "")
+            if not path.lower().endswith(".pdf"):
+                continue
+            if os.path.exists(path):
+                _audit_append({"key": key, "title": title[:80],
+                               "method": "zotero_children_abs", "path": path})
+                return path, "zotero_children_abs"
+            fname = os.path.basename(path)
+            alt = os.path.join(ZOTERO_DIR, fname)
+            if os.path.exists(alt):
+                _audit_append({"key": key, "title": title[:80],
+                               "method": "zotero_children_basename", "path": alt})
+                return alt, "zotero_children_basename"
+    except Exception as e:
+        _audit_append({"key": key, "title": title[:80],
+                       "method": "children_api_error", "error": str(e)[:200]})
 
-    # Fallback: fuzzy match in ZOTERO_DIR
-    # Zotero filenames: "Author et al._YEAR_Title.pdf"
-    title = item.get("title", "")
-    if not title:
-        return None
-    # Normalize title for matching: take first 5 significant words
+    # Priority 2: DOI in filename (reliable when present)
+    doi = (item.get("DOI") or item.get("doi") or "").strip()
+    if doi:
+        doi_norm = re.sub(r"[^a-z0-9]", "", doi.lower())
+        if len(doi_norm) >= 10:  # avoid accidental short-DOI collisions
+            for fname in os.listdir(ZOTERO_DIR):
+                if not fname.lower().endswith(".pdf"):
+                    continue
+                fname_norm = re.sub(r"[^a-z0-9]", "", fname.lower())
+                if doi_norm in fname_norm:
+                    matched = os.path.join(ZOTERO_DIR, fname)
+                    _audit_append({"key": key, "title": title[:80],
+                                   "method": "doi_filename", "path": matched,
+                                   "doi": doi})
+                    return matched, "doi_filename"
+
+    # Priority 3: arXiv ID in filename
+    arxiv_id = _extract_arxiv_id_from_item(item)
+    if arxiv_id:
+        for fname in os.listdir(ZOTERO_DIR):
+            if not fname.lower().endswith(".pdf"):
+                continue
+            if arxiv_id in fname:
+                matched = os.path.join(ZOTERO_DIR, fname)
+                _audit_append({"key": key, "title": title[:80],
+                               "method": "arxiv_filename", "path": matched,
+                               "arxiv_id": arxiv_id})
+                return matched, "arxiv_filename"
+
+    # Priority 4 (optional): fuzzy title match — STRICTER than before.
+    # The original 3-of-5 keyword rule caused the 139-paper mismatch bug.
+    # We now require: (a) at least 5 significant keywords from the title,
+    # (b) at least 5 of them appear in the filename (score >= 5), and
+    # (c) coverage >= 80% of candidate keywords. Disabled entirely under
+    # --strict-pdf.
+    if _STRICT_PDF or not title:
+        _audit_append({"key": key, "title": title[:80], "method": "no_match",
+                       "reason": "strict_pdf" if _STRICT_PDF else "no_title"})
+        return None, "no_match"
+
     title_words = re.sub(r"[^a-z0-9\s]", "", title.lower()).split()
-    key_words = [w for w in title_words if len(w) > 3][:5]
+    key_words = [w for w in title_words if len(w) > 3][:8]
+    if len(key_words) < 5:
+        _audit_append({"key": key, "title": title[:80], "method": "no_match",
+                       "reason": "too_few_keywords", "keywords": key_words})
+        return None, "no_match"
 
     best_match = None
     best_score = 0
     for fname in os.listdir(ZOTERO_DIR):
-        if not fname.endswith(".pdf"):
+        if not fname.lower().endswith(".pdf"):
             continue
         fname_lower = fname.lower()
         score = sum(1 for w in key_words if w in fname_lower)
-        if score > best_score and score >= min(3, len(key_words)):
+        if score > best_score:
             best_score = score
             best_match = fname
 
-    if best_match:
-        return os.path.join(ZOTERO_DIR, best_match)
-    return None
+    coverage = best_score / max(1, len(key_words))
+    if best_match and best_score >= 5 and coverage >= 0.8:
+        matched = os.path.join(ZOTERO_DIR, best_match)
+        _audit_append({"key": key, "title": title[:80], "method": "fuzzy",
+                       "path": matched, "score": best_score,
+                       "coverage": round(coverage, 2), "keywords": key_words,
+                       "WARNING": "weak match — verify with audit_matching.py"})
+        log(f"  WARN fuzzy PDF match for '{title[:60]}' "
+            f"(score {best_score}/{len(key_words)}, cov {coverage:.0%})")
+        return matched, "fuzzy"
+
+    _audit_append({"key": key, "title": title[:80], "method": "no_match",
+                   "reason": "fuzzy_below_threshold", "best_score": best_score,
+                   "best_candidate": best_match, "keywords": key_words})
+    return None, "no_match"
+
+
+# ── Zotero ↔ text.md sanity check (zero-cost PDF integrity gate) ──
+
+def _zotero_text_sanity(item, text_md_path, min_title_coverage=0.6):
+    """Verify Zotero metadata (title/DOI/first author) appears in the extracted
+    text. Catches the "Zotero attachment is wrong PDF" failure mode that even
+    `--strict-pdf` cannot detect: find_pdf returned Zotero's linked file, but
+    that file is the wrong paper.
+
+    All signals are local regex/substring — no LLM call.
+
+    Returns (passed: bool, reason: str).
+    """
+    if not os.path.exists(text_md_path):
+        return True, "no_text_skip"  # text extraction failed; downstream already fails
+    try:
+        with open(text_md_path, "r", encoding="utf-8", errors="replace") as f:
+            text = f.read(6000).lower()
+    except Exception:
+        return True, "read_error_skip"
+
+    # 1. Title keyword coverage
+    title_words = re.sub(r"[^a-z0-9\s]", " ", (item.get("title") or "").lower()).split()
+    kw = [w for w in title_words if len(w) > 3][:6]
+    title_hits = sum(1 for w in kw if w in text) if kw else 0
+    title_ok = (not kw) or title_hits >= max(3, int(len(kw) * min_title_coverage))
+
+    # 2. DOI exact (ignore non-alphanumeric)
+    doi = re.sub(r"[^a-z0-9]", "", (item.get("DOI") or "").lower())
+    text_norm = re.sub(r"[^a-z0-9]", "", text)
+    doi_ok = True if len(doi) < 10 else (doi in text_norm)
+
+    # 3. First author lastName
+    creators = item.get("creators", []) or []
+    last = ""
+    for c in creators:
+        last = (c.get("lastName") or "").lower()
+        if last:
+            break
+    author_ok = True if len(last) < 3 else (last in text)
+
+    # title + doi 둘 다 통과면 author 무관 (corporate author, 이미지 헤더 등
+    # 저자명 추출 실패가 흔해서 단독 blocker로 쓰지 않음).
+    if title_ok and doi_ok:
+        return True, f"ok (title {title_hits}/{len(kw)} doi=T author={author_ok})"
+    if title_ok and author_ok:
+        return True, f"ok (title {title_hits}/{len(kw)} author=T doi={doi_ok})"
+    return False, (f"title_hits={title_hits}/{len(kw)} "
+                   f"doi_ok={doi_ok} author_ok={author_ok}")
 
 
 # ── Phase 2: Extract text.md (OpenDataLoader → PyMuPDF fallback) ──
@@ -741,6 +919,12 @@ def _do_process(item, slug, slug_dir, pdf_path):
     if not os.path.exists(text_path) or os.path.getsize(text_path) < 100:
         return "fail", "text_extraction_failed"
 
+    # Zotero ↔ text sanity check (zero-cost PDF integrity gate)
+    ok, reason = _zotero_text_sanity(item, text_path)
+    if not ok:
+        log(f"  {slug}: SANITY FAIL ({reason}) — aborting review")
+        return "fail", f"sanity_mismatch:{reason}"
+
     # Extract figures
     log(f"  {slug}: extracting figures...")
     figures = extract_figures(pdf_path, slug_dir)
@@ -789,13 +973,19 @@ def process_paper(item, slug, cp):
             shutil.rmtree(fig_dir)
 
     # Find PDF
-    pdf_path = find_pdf(item)
+    pdf_path, match_method = find_pdf(item)
     if not pdf_path:
-        log(f"  {slug}: no PDF found")
+        log(f"  {slug}: no PDF found (method={match_method})")
         with _cp_lock:
-            cp["failed"].append({"slug": slug, "reason": "no_pdf"})
+            cp["failed"].append({"slug": slug, "reason": f"no_pdf:{match_method}"})
         save_checkpoint(cp)
         return "no_pdf"
+    # Record Zotero item key → slug mapping for index persistence (Phase 1
+    # PDF integrity field). Keyed across threads via _cp_lock for safety.
+    with _cp_lock:
+        _slug_to_zotero_key[slug] = item.get("key", "")
+    if match_method == "fuzzy":
+        log(f"  {slug}: PDF matched via FUZZY — review required")
 
     # Try up to MAX_RETRIES times
     last_reason = ""
@@ -823,6 +1013,47 @@ def process_paper(item, slug, cp):
 
 # ── Main ──
 
+# ── Phase 2: 3-axis mode mapping ─────────────────────────────────────────────
+# MECE modes replace the 8-recipe legacy grid. Each --mode implies a specific
+# combination of --resume/--skip-existing/--timeline/--category. When --mode
+# is not used, the legacy flags behave exactly as before (backward compatible).
+_MODE_LEGACY_MAP = {
+    "curate":     {"resume": True,  "skip_existing": True,  "timeline": False, "category": False},
+    "rebuild":    {"resume": False, "skip_existing": False, "timeline": False, "category": False},
+    "reclassify": {"resume": True,  "skip_existing": True,  "timeline": False, "category": True},
+    "retime":     {"resume": True,  "skip_existing": True,  "timeline": True,  "category": False},
+}
+
+
+def _apply_mode_mapping(args):
+    """Translate --mode into legacy flag values.
+
+    When args.mode is None (default), this is a no-op and existing callers keep
+    working unchanged. When --mode is set, any conflicting legacy flag that was
+    *explicitly* provided earns a DeprecationWarning, and the mode wins.
+    """
+    if args.mode is None:
+        return  # legacy-only invocation, nothing to do
+
+    target = _MODE_LEGACY_MAP[args.mode]
+    # Detect explicit legacy flags that diverge from the mode's target
+    overridden = []
+    for field, expected in target.items():
+        current = getattr(args, field)
+        if current and not expected:
+            overridden.append(f"--{field.replace('_', '-')}")
+    if overridden:
+        print(f"[deprecated] --mode {args.mode} overrides legacy flags: "
+              f"{', '.join(overridden)} (these will be ignored)",
+              file=sys.stderr)
+
+    # Apply the mapping
+    for field, value in target.items():
+        setattr(args, field, value)
+    print(f"[mode] {args.mode} → resume={args.resume}, skip_existing={args.skip_existing}, "
+          f"timeline={args.timeline}, category={args.category}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Paper-curation --update-force batch")
     parser.add_argument("--topic", default="ai4s", help="Topic: ai4s or scisci")
@@ -835,7 +1066,70 @@ def main():
                         help="Regenerate timeline images (with --resume: changed cats only, alone: all cats)")
     parser.add_argument("--category", action="store_true",
                         help="Re-run topic_modeling to reclassify all papers. Auto-enables --timeline for changed categories.")
+    parser.add_argument("--strict-pdf", action="store_true",
+                        help="Disable fuzzy PDF matching — skip papers without Zotero/DOI/arXiv link.")
+    parser.add_argument("--slugs", default="",
+                        help="Comma-separated slug prefixes (e.g. '088,1093'). Only these papers are (re)processed. "
+                             "Implies force-rebuild of the listed slugs regardless of checkpoint.")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="Print which papers would be processed and exit without writing.")
+    parser.add_argument("--skip-dedup", action="store_true",
+                        help="Skip the Zotero duplicate preflight (saves ~1-5 min; not recommended).")
+    parser.add_argument("--dedup-execute", action="store_true",
+                        help="Let the Zotero dedup preflight actually delete duplicates. "
+                             "Default is dry-run (report only).")
+    # ── Phase 2: 3-axis mode (new, MECE). When --mode is set, it overrides the
+    # legacy flag combinations and emits DeprecationWarnings for any legacy
+    # flags that were also specified. Omitting --mode keeps 100% legacy
+    # behavior, so existing callers (incl. in-flight batches) are unaffected.
+    parser.add_argument("--mode", choices=["curate", "rebuild", "reclassify", "retime"],
+                        default=None,
+                        help="New MECE mode selector. curate=new papers only (keeps existing reviews); "
+                             "rebuild=regenerate all reviews; reclassify=re-run topic modeling on existing reviews; "
+                             "retime=regenerate timeline narratives+images only. "
+                             "When set, overrides --resume/--skip-existing/--timeline/--category combinations.")
     args = parser.parse_args()
+
+    # Apply --mode → legacy flags mapping. Pure translation; no behavior change
+    # when --mode is absent (args.mode is None → all legacy flags honored as-is).
+    _apply_mode_mapping(args)
+
+    # Propagate strict-pdf flag to find_pdf()
+    global _STRICT_PDF
+    _STRICT_PDF = args.strict_pdf
+    if _STRICT_PDF:
+        print("[strict-pdf] fuzzy PDF matching disabled — papers without authoritative PDF links will be skipped")
+
+    # ── Rebuild safety: snapshot _papers_index.json so an accidental wipe
+    # is reversible. Only triggered when --mode rebuild AND not --slugs (mass).
+    if args.mode == "rebuild" and not args.slugs and not args.dry_run:
+        idx_path = os.path.join(PAPERS_DIR, "_papers_index.json")
+        if os.path.exists(idx_path):
+            backup_path = os.path.join(PAPERS_DIR, "_papers_index.backup.json")
+            try:
+                shutil.copy2(idx_path, backup_path)
+                print(f"[rebuild-safety] snapshot saved: {backup_path}")
+            except Exception as _e:
+                print(f"[rebuild-safety] snapshot FAILED: {_e}")
+
+    # ── Preflight: Zotero dedup ────────────────────────────────────────────
+    # Runs in ALL modes (full/local/update). Users may accidentally double-
+    # register the same paper in Zotero via the UI or imports; running this
+    # every time keeps the collection clean before we spend compute on reviews.
+    # Default is dry-run → a report is written to {topic}/_dedup_zotero_report.json;
+    # pass --dedup-execute once trust is built and you want auto-deletion.
+    # `--slugs` and `--dry-run` modes skip the preflight because they are
+    # targeted operations that should not touch the collection as a whole.
+    if not args.skip_dedup and not args.slugs and not args.dry_run:
+        dedup_script = os.path.join(os.path.dirname(__file__), "dedup_zotero.py")
+        if os.path.exists(dedup_script):
+            print(f"\n[preflight] Zotero dedup ({'EXECUTE' if args.dedup_execute else 'dry-run'}) for topic={args.topic}")
+            dedup_cmd = [sys.executable, dedup_script, "--topic", args.topic]
+            if args.dedup_execute:
+                dedup_cmd.append("--execute")
+            rc = subprocess.call(dedup_cmd)
+            if rc != 0:
+                print(f"[preflight] dedup exited {rc} — continuing anyway")
 
     collection_key = COLLECTIONS.get(args.topic, "")
     if not collection_key:
@@ -871,10 +1165,53 @@ def main():
         if slug not in existing_slugs:
             existing_slugs.append(slug)
 
-    # Skip papers with existing review.md (--skip-existing or --resume)
+    # --slugs filter: restrict processing to listed slug prefixes, and force-rebuild them
+    if args.slugs:
+        wanted_prefixes = [s.strip() for s in args.slugs.split(",") if s.strip()]
+        before = len(item_slug_pairs)
+        item_slug_pairs = [
+            (it, slug) for (it, slug) in item_slug_pairs
+            if any(slug.startswith(p) or slug == p for p in wanted_prefixes)
+        ]
+        log(f"--slugs: kept {len(item_slug_pairs)}/{before} papers matching {wanted_prefixes}")
+        # Force rebuild: drop from checkpoint.completed so they are re-processed
+        kept = {slug for _, slug in item_slug_pairs}
+        cp["completed"] = [s for s in cp.get("completed", []) if s not in kept]
+        save_checkpoint(cp)
+
+    # Rebuild safety: preview PDF matching for first 5 papers so the
+    # operator can spot fuzzy/wrong matches before the destructive run.
+    if args.mode == "rebuild" and not args.slugs and not args.dry_run:
+        print(f"\n[rebuild-preview] sampling 5 PDFs to verify matching before "
+              f"processing {len(item_slug_pairs)} papers:")
+        for it, slug in item_slug_pairs[:5]:
+            try:
+                _p, _m = find_pdf(it)
+            except Exception as _e:
+                _p, _m = None, f"err:{_e}"
+            print(f"  {slug[:55]:55s} | method={_m} | path={_p or '(none)'}")
+        print(f"[rebuild-preview] proceed if these look correct. "
+              f"Ctrl-C now to abort.\n")
+
+    if args.dry_run:
+        print(f"[dry-run] would process {len(item_slug_pairs)} papers:")
+        for _, slug in item_slug_pairs[:50]:
+            print(f"  {slug}")
+        if len(item_slug_pairs) > 50:
+            print(f"  ... +{len(item_slug_pairs) - 50} more")
+        return
+
+    # Skip papers with existing review.md (--skip-existing or --resume).
+    # When --slugs is used the listed papers must be force-rebuilt, so they
+    # are intentionally excluded from this "already done" shortcut.
+    forced_slugs = set()
+    if args.slugs:
+        forced_slugs = {slug for _, slug in item_slug_pairs}
     if args.skip_existing or args.resume:
         skipped = 0
         for item, slug in item_slug_pairs:
+            if slug in forced_slugs:
+                continue
             review_path = os.path.join(PAPERS_DIR, slug, "review.md")
             if os.path.exists(review_path) and os.path.getsize(review_path) >= 200:
                 if slug not in cp["completed"]:
@@ -928,13 +1265,33 @@ def main():
 
     log(f"\nFinal: {len(cp['completed'])} completed, {len(cp['failed'])} failed")
 
+    # ── Persist Zotero item key → slug mapping into _papers_index.json ──
+    # build_papers_index will preserve `zotero_item_key` via prev.get(...).
+    if _slug_to_zotero_key:
+        try:
+            from lib.atomic_io import atomic_write_json
+            idx_path = os.path.join(PAPERS_DIR, "_papers_index.json")
+            if os.path.exists(idx_path):
+                with open(idx_path, "r", encoding="utf-8") as f:
+                    _idx = json.load(f)
+                _patched = 0
+                for _e in _idx:
+                    _k = _slug_to_zotero_key.get(_e.get("slug"))
+                    if _k and _e.get("zotero_item_key") != _k:
+                        _e["zotero_item_key"] = _k
+                        _patched += 1
+                if _patched:
+                    atomic_write_json(idx_path, _idx)
+                    log(f"  [zotero_item_key] persisted {_patched} mappings into _papers_index.json")
+        except Exception as _e:
+            log(f"  [zotero_item_key] persist failed: {_e}")
+
     # ── Post-processing: rebuild index, classify, insights, topic page ──
     if len(cp['completed']) > 0 or args.timeline or args.category:
         log("\n" + "=" * 60)
         log("POST-PROCESSING: index → classify → summaries → insights → HTML → topic index")
         log("=" * 60)
 
-        import subprocess
         topic = args.topic
         is_update = args.resume  # --resume implies update mode
         do_reclassify = args.category  # --category forces topic_modeling
@@ -1061,7 +1418,7 @@ def main():
                      ["python", "pipeline/extract_insights.py", "--topic", topic], 1800)
             cats_arg = ["--categories"] + changed_cats
             run_step("generate_timelines",
-                     ["python", "pipeline/generate_timelines.py", "--topic", topic] + cats_arg, 3600)
+                     ["python", "pipeline/generate_timelines.py", "--topic", topic] + cats_arg, 21600)
         elif do_reclassify:
             # --category but no diff detected: full regeneration
             run_step("build_category_summaries",
@@ -1069,7 +1426,7 @@ def main():
             run_step("extract_insights",
                      ["python", "pipeline/extract_insights.py", "--topic", topic], 1800)
             run_step("generate_timelines",
-                     ["python", "pipeline/generate_timelines.py", "--topic", topic], 3600)
+                     ["python", "pipeline/generate_timelines.py", "--topic", topic], 21600)
         elif is_update:
             if changed_cats:
                 cats_arg = ["--categories"] + changed_cats
@@ -1077,10 +1434,30 @@ def main():
                          ["python", "pipeline/build_category_summaries.py", "--topic", topic] + cats_arg, 1200)
                 run_step("extract_insights",
                          ["python", "pipeline/extract_insights.py", "--topic", topic] + cats_arg, 1800)
-                tl_cmd = ["python", "pipeline/generate_timelines.py", "--topic", topic] + cats_arg
-                if not do_timeline_images:
-                    tl_cmd.append("--narrative-only")
-                run_step("generate_timelines", tl_cmd, 3600)
+
+                # Split by image presence:
+                #   - cats_with_image: narrative-only (unless --timeline explicitly requested)
+                #   - cats_missing_image: always full generation (new/renamed categories MUST get images)
+                cats_with_image, cats_missing_image = _split_cats_by_image_presence(topic, changed_cats)
+                if cats_missing_image:
+                    log(f"  [generate_timelines] {len(cats_missing_image)} categories missing timeline image — will generate:")
+                    for c in cats_missing_image:
+                        log(f"    - {c}")
+                if do_timeline_images:
+                    # --timeline: full generation for all changed cats
+                    run_step("generate_timelines",
+                             ["python", "pipeline/generate_timelines.py", "--topic", topic] + cats_arg, 21600)
+                else:
+                    # Auto: narrative-only for cats with existing images
+                    if cats_with_image:
+                        run_step("generate_timelines (narrative)",
+                                 ["python", "pipeline/generate_timelines.py", "--topic", topic,
+                                  "--categories"] + cats_with_image + ["--narrative-only"], 21600)
+                    # Auto: full generation for new/renamed cats without images
+                    if cats_missing_image:
+                        run_step("generate_timelines (images)",
+                                 ["python", "pipeline/generate_timelines.py", "--topic", topic,
+                                  "--categories"] + cats_missing_image, 21600)
             else:
                 log("  [summaries/insights/timelines] SKIP (no new papers classified)")
         elif do_timeline_images:
@@ -1090,7 +1467,7 @@ def main():
             run_step("extract_insights",
                      ["python", "pipeline/extract_insights.py", "--topic", topic], 1800)
             run_step("generate_timelines",
-                     ["python", "pipeline/generate_timelines.py", "--topic", topic], 3600)
+                     ["python", "pipeline/generate_timelines.py", "--topic", topic], 21600)
         else:
             # Full mode (no --resume, no --timeline)
             run_step("build_category_summaries",
@@ -1098,7 +1475,7 @@ def main():
             run_step("extract_insights",
                      ["python", "pipeline/extract_insights.py", "--topic", topic], 1800)
             run_step("generate_timelines",
-                     ["python", "pipeline/generate_timelines.py", "--topic", topic], 3600)
+                     ["python", "pipeline/generate_timelines.py", "--topic", topic], 21600)
 
         # Step 7-10: Always run (fast steps)
         run_step("inject_frontmatter",
@@ -1139,6 +1516,13 @@ def main():
 
         # Deep Research search index (section-aware chunks + OpenAI embeddings).
         # Reads OPENAI_API_KEY from env or config.json; fails fast if missing.
+        # Cleanup stale category narratives/timelines before building the
+        # search index so Deep Research never surfaces renamed categories.
+        # Always runs --execute because post-processing has just rewritten
+        # the classifier output; any orphan entries are safe to remove.
+        run_step("cleanup",
+                 ["python", "pipeline/cleanup.py", "--execute"], 300)
+
         run_step("build_search_index",
                  ["python", "pipeline/build_search_index.py", "--topic", topic], 900)
 

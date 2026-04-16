@@ -868,7 +868,7 @@ function cosineSim(a, b) {
 
 async function embedQuery(text) {
   const key = _OPENAI_KEY;
-  if (!key) throw new Error('OpenAI API key missing — set OPENAI_API_KEY env var and rebuild');
+  if (!key) throw new Error('OpenAI API key missing — Deep Research 패널에서 키를 입력하세요.');
   const resp = await fetch('https://api.openai.com/v1/embeddings', {
     method: 'POST',
     headers: { 'content-type': 'application/json', 'Authorization': 'Bearer ' + key },
@@ -1006,7 +1006,7 @@ const LENGTH_SPEC = {
 
 async function callClaude(query, selected, lang, model, length, fullTexts) {
   const apiKey = _ANTHROPIC_KEY;
-  if (!apiKey) throw new Error('Anthropic API key missing — set ANTHROPIC_API_KEY env var and rebuild');
+  if (!apiKey) throw new Error('Anthropic API key missing — Deep Research 패널에서 키를 입력하세요.');
   const spec = LENGTH_SPEC[length] || LENGTH_SPEC.short;
   // Haiku 4.5 caps output at ~8192 tokens; Sonnet can go higher.
   let maxTokens = spec.max_tokens;
@@ -1161,8 +1161,13 @@ async function runDeepResearch(query) {
   if (!query) return;
   deepShowPanel();
   if (!_ANTHROPIC_KEY || !_OPENAI_KEY) {
-    deepSetStatus('API key missing — set ANTHROPIC_API_KEY & OPENAI_API_KEY env vars and rebuild.', true);
-    return;
+    const ak = prompt('Anthropic API Key를 입력하세요 (Deep Research에 필요합니다):');
+    if (!ak) { deepSetStatus('Anthropic API Key가 필요합니다.', true); return; }
+    const ok = prompt('OpenAI API Key를 입력하세요 (임베딩 검색에 필요합니다):');
+    if (!ok) { deepSetStatus('OpenAI API Key가 필요합니다.', true); return; }
+    _ANTHROPIC_KEY = ak; _OPENAI_KEY = ok;
+    localStorage.setItem('_ANTHROPIC_KEY', ak);
+    localStorage.setItem('_OPENAI_KEY', ok);
   }
   clearEl(document.getElementById('deep-answer'));
   document.getElementById('deep-refs').style.display = 'none';
@@ -1430,8 +1435,8 @@ if _cfg_path.exists():
         _cfg_keys = json.load(_f)
 _ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY") or _cfg_keys.get("anthropic_api_key", "")
 _OPENAI_KEY = os.environ.get("OPENAI_API_KEY") or _cfg_keys.get("openai_api_key", "")
-JS = ("const _ANTHROPIC_KEY = " + json.dumps(_ANTHROPIC_KEY) + ";\n"
-      "const _OPENAI_KEY = " + json.dumps(_OPENAI_KEY) + ";\n" + JS)
+JS = ("let _ANTHROPIC_KEY = " + json.dumps(_ANTHROPIC_KEY) + " || localStorage.getItem('_ANTHROPIC_KEY') || '';\n"
+      "let _OPENAI_KEY = " + json.dumps(_OPENAI_KEY) + " || localStorage.getItem('_OPENAI_KEY') || '';\n" + JS)
 
 
 def render_insights_section():

@@ -123,6 +123,10 @@ def collect_targets(purge_text=False):
         if tc_dir.exists():
             add_dir(tc_dir, "stale timeline_candidates_pb")
 
+    # 9b. docs/{topic}/_category_narratives.json / _timeline_narrative.json 내의
+    #     과거 카테고리 엔트리 정리 (파일은 보존, 엔트리만 pruning).
+    #     `add_file` 가 아닌 별도 JSON 편집이 필요하므로 prune_json_narratives()에서 처리.
+
     # 10. pipeline/_img_timelines/ — 과거 카테고리 candidate만 삭제, 현재 카테고리 보존
     img_tl_dir = PIPELINE_DIR / "_img_timelines"
     if img_tl_dir.exists():
@@ -152,6 +156,70 @@ def collect_targets(purge_text=False):
     return targets
 
 
+def prune_json_narratives(execute=False):
+    """`_category_narratives.json` / `_timeline_narrative.json` 안의 과거 카테고리
+    엔트리 정리. 파일 자체는 유지하고 dict 키(카테고리명)만 pruning.
+
+    Returns [(path, removed_keys_count, topic, filename)] — report rows.
+    """
+    from lib.categories import category_slug
+    rows = []
+    for topic_dir in DOCS_DIR.iterdir():
+        if not topic_dir.is_dir() or topic_dir.name == "papers":
+            continue
+        # Current categories for this topic
+        sum_path = topic_dir / "_category_summaries.json"
+        if not sum_path.exists():
+            continue
+        with open(sum_path, "r", encoding="utf-8") as f:
+            summaries = json.load(f)
+        current_names = {s["category"] for s in summaries}
+
+        # _category_narratives.json: list of dicts with `category` field
+        cn_path = topic_dir / "_category_narratives.json"
+        if cn_path.exists():
+            with open(cn_path, "r", encoding="utf-8") as f:
+                cn = json.load(f)
+            if isinstance(cn, list):
+                stale = [item for item in cn
+                         if item.get("category") not in current_names]
+                if stale:
+                    rows.append((str(cn_path), len(stale), topic_dir.name,
+                                 "_category_narratives.json"))
+                    if execute:
+                        cn = [item for item in cn
+                              if item.get("category") in current_names]
+                        cn_path.write_text(json.dumps(cn, ensure_ascii=False, indent=2),
+                                           encoding="utf-8")
+            elif isinstance(cn, dict):
+                stale = [k for k in cn.keys() if k not in current_names]
+                if stale:
+                    rows.append((str(cn_path), len(stale), topic_dir.name,
+                                 "_category_narratives.json"))
+                    if execute:
+                        for k in stale:
+                            del cn[k]
+                        cn_path.write_text(json.dumps(cn, ensure_ascii=False, indent=2),
+                                           encoding="utf-8")
+
+        # _timeline_narrative.json: nested dict with 'category_analyses' key
+        tn_path = topic_dir / "_timeline_narrative.json"
+        if tn_path.exists():
+            with open(tn_path, "r", encoding="utf-8") as f:
+                tn = json.load(f)
+            ca = tn.get("category_analyses") or tn.get("categories") or {}
+            if isinstance(ca, dict):
+                stale = [k for k in ca.keys() if k not in current_names]
+                if stale:
+                    rows.append((str(tn_path), len(stale), topic_dir.name, "_timeline_narrative.json"))
+                    if execute:
+                        for k in stale:
+                            del ca[k]
+                        tn_path.write_text(json.dumps(tn, ensure_ascii=False, indent=2),
+                                           encoding="utf-8")
+    return rows
+
+
 def human_size(nbytes):
     for unit in ("B", "KB", "MB", "GB"):
         if abs(nbytes) < 1024:
@@ -167,10 +235,16 @@ def main():
     args = parser.parse_args()
 
     targets = collect_targets(purge_text=args.purge_text)
+    narrative_rows = prune_json_narratives(execute=args.execute)
 
-    if not targets:
+    if not targets and not narrative_rows:
         log("Nothing to clean!")
         return
+
+    if narrative_rows:
+        log(f"\n{'PRUNED' if args.execute else 'would prune'}: stale category entries in narrative JSON")
+        for path, n_removed, topic, fname in narrative_rows:
+            log(f"  [{topic}/{fname}] {n_removed} stale categories")
 
     # Group by category
     from collections import defaultdict

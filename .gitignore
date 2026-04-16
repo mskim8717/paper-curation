@@ -18,6 +18,18 @@
 !pipeline/lib/
 !pipeline/lib/*.py
 
+# Git hooks installer + helper scripts
+!scripts/
+!scripts/*
+
+# CI workflows
+!.github/
+!.github/workflows/
+!.github/workflows/*.yml
+
+# TODO progress doc
+!paper-curation-todo.md
+
 # Documentation (whitelist specific service files below)
 !docs/
 !docs/index.html

@@ -13,14 +13,22 @@ Usage:
 """
 
 import argparse
+import hashlib
 import json
 import os
 import re
 import sys
+from collections import defaultdict
 from pathlib import Path
 
-from config_loader import PAPERS_DIR as _PAPERS_DIR
+from config_loader import PAPERS_DIR as _PAPERS_DIR, DOCS_DIR, get_topic_dir
 PAPERS_DIR = str(_PAPERS_DIR)
+
+try:
+    from lib.categories import category_slug, CATEGORIES_BY_TOPIC
+except Exception:
+    category_slug = None
+    CATEGORIES_BY_TOPIC = {}
 
 
 def log(msg):
@@ -197,10 +205,187 @@ def check_python_list_literals(review_path, fix=False):
 
 # ── Main ──
 
+# ── 5. Category ↔ timeline PNG mismatch (physical-ai 사건 재발 방지) ──
+
+def check_timeline_mismatch(topic):
+    """{topic}/index.html/_new_classification.json의 카테고리 목록과 실제 존재하는
+    category_timeline_*.png 파일명을 비교. 둘 중 한쪽에만 있으면 경고.
+
+    - 분류에 있는데 이미지 없음 → timeline 재생성 필요
+    - 이미지가 있는데 분류에 없음 → stale PNG (cleanup 대상)
+    """
+    issues = []
+    topic_dir = Path(get_topic_dir(topic))
+    cls_path = topic_dir / "_new_classification.json"
+    if not cls_path.exists():
+        return issues  # 토픽 구조 부재 시 스킵
+
+    cls = json.loads(cls_path.read_text(encoding="utf-8"))
+    raw = cls.get("categories", []) if isinstance(cls, dict) else cls
+    categories = []
+    if isinstance(raw, dict):
+        categories = list(raw.keys())
+    elif isinstance(raw, list):
+        for item in raw:
+            if isinstance(item, dict) and "name" in item:
+                categories.append(item["name"])
+            elif isinstance(item, str):
+                categories.append(item)
+
+    if not categories or category_slug is None:
+        return issues
+
+    expected_slugs = {category_slug(c) for c in categories}
+    # Check both png and webp (deploy-stage webp)
+    actual_slugs = set()
+    for p in topic_dir.iterdir():
+        m = re.match(r"category_timeline_(.+)\.(png|webp)$", p.name)
+        if m:
+            actual_slugs.add(m.group(1))
+
+    missing_images = expected_slugs - actual_slugs
+    stale_images = actual_slugs - expected_slugs
+    for slug in sorted(missing_images):
+        issues.append(f"  [timeline] MISSING image for category slug: {slug}")
+    for slug in sorted(stale_images):
+        issues.append(f"  [timeline] STALE image (no matching category): {slug}")
+    return issues
+
+
+# ── 5b. Classifications schema + 카테고리 화이트리스트 ──
+
+def check_classifications_schema(topic):
+    """`_papers_index.json`의 `classifications[topic]` schema를 점검.
+
+    Required:
+      * primary_category : str (non-empty)
+      * all_categories   : list[str] (1~3 entries)
+      * sub_category     : str (optional but recommended)
+
+    화이트리스트: primary/all categories 가 `_new_classification.json` 의 카테고리
+    집합에 모두 속해야 한다.
+    """
+    issues = []
+    idx_path = Path(PAPERS_DIR) / "_papers_index.json"
+    cls_path = Path(get_topic_dir(topic)) / "_new_classification.json"
+    if not idx_path.exists() or not cls_path.exists():
+        return issues
+    idx = json.loads(idx_path.read_text(encoding="utf-8"))
+    cls = json.loads(cls_path.read_text(encoding="utf-8"))
+    valid_cats = {c.get("name") for c in cls.get("categories", [])
+                  if isinstance(c, dict)}
+    bad_schema = 0
+    bad_cat_refs = []
+    for p in idx:
+        if topic not in p.get("topics", []):
+            continue
+        c = p.get("classifications", {}).get(topic)
+        if not isinstance(c, dict):
+            bad_schema += 1
+            continue
+        if not c.get("primary_category"):
+            bad_schema += 1
+            continue
+        if not isinstance(c.get("all_categories"), list) or not c["all_categories"]:
+            bad_schema += 1
+            continue
+        # Whitelist
+        bad = [cat for cat in [c["primary_category"]] + list(c["all_categories"])
+               if valid_cats and cat not in valid_cats]
+        if bad:
+            bad_cat_refs.append((p.get("slug", "?"), bad))
+    if bad_schema:
+        issues.append(f"  [schema] {bad_schema} papers have malformed classifications[{topic}]")
+    for slug, bad in bad_cat_refs[:5]:
+        issues.append(f"  [whitelist] {slug[:55]}: unknown category(s) {bad}")
+    if len(bad_cat_refs) > 5:
+        issues.append(f"  [whitelist] ... +{len(bad_cat_refs)-5} more papers with unknown categories")
+    return issues
+
+
+# ── 5c. DOI 교차검증 게이트 ──
+
+def check_doi_cross_validation(topic):
+    """index.doi 와 review.md 본문에 등장하는 DOI 가 일치하는지 표본 검증.
+
+    review.md 의 markdown 링크 또는 'doi:' 표기에서 DOI 추출 → index.doi 와 비교.
+    review가 다른 PDF 로부터 생성됐을 때 강한 불일치 신호.
+    """
+    issues = []
+    idx_path = Path(PAPERS_DIR) / "_papers_index.json"
+    if not idx_path.exists():
+        return issues
+    idx = json.loads(idx_path.read_text(encoding="utf-8"))
+    doi_re = re.compile(r"\b10\.\d{4,9}/[-._;()/:A-Z0-9]+", re.IGNORECASE)
+    mismatches = []
+    no_doi_in_review = 0
+    for p in idx:
+        if topic not in p.get("topics", []):
+            continue
+        idx_doi = (p.get("doi") or "").strip().lower()
+        # Normalize: strip URL prefix
+        for pref in ("https://doi.org/", "http://doi.org/", "doi:"):
+            if idx_doi.startswith(pref):
+                idx_doi = idx_doi[len(pref):].strip()
+        if not idx_doi:
+            continue  # nothing to compare
+        review_path = Path(PAPERS_DIR) / p.get("slug", "") / "review.md"
+        if not review_path.exists():
+            continue
+        try:
+            text = review_path.read_text(encoding="utf-8", errors="replace")[:8000]
+        except Exception:
+            continue
+        found = {m.group(0).lower() for m in doi_re.finditer(text)}
+        if not found:
+            no_doi_in_review += 1
+            continue
+        if idx_doi not in found:
+            # Allow truncation: check by prefix match
+            if any(d.startswith(idx_doi[:20]) or idx_doi.startswith(d[:20]) for d in found):
+                continue
+            mismatches.append((p.get("slug", "?"), idx_doi, list(found)[:2]))
+    for slug, idoi, fdois in mismatches[:10]:
+        issues.append(f"  [doi] {slug[:55]}: index='{idoi[:40]}' review={fdois}")
+    if len(mismatches) > 10:
+        issues.append(f"  [doi] ... +{len(mismatches)-10} more DOI mismatches")
+    return issues
+
+
+# ── 6. Duplicate text.md (PDF 오매칭 재발 방지) ──
+
+def check_duplicate_text_md(topic):
+    """docs/papers/{slug}/text.md의 SHA256이 같은 슬러그 쌍을 찾는다.
+    동일 해시가 여러 슬러그에 걸쳐 있으면 같은 PDF로 중복 리뷰된 것."""
+    issues = []
+    by_hash = defaultdict(list)
+    papers_dir = Path(PAPERS_DIR)
+    index = json.loads((papers_dir / "_papers_index.json").read_text(encoding="utf-8"))
+    topic_slugs = {e["slug"] for e in index if topic in e.get("topics", [])}
+    for slug_dir in papers_dir.iterdir():
+        if not slug_dir.is_dir() or slug_dir.name not in topic_slugs:
+            continue
+        txt = slug_dir / "text.md"
+        if not txt.exists():
+            continue
+        try:
+            h = hashlib.sha256(txt.read_bytes()).hexdigest()
+        except Exception:
+            continue
+        by_hash[h].append(slug_dir.name)
+    for h, slugs in by_hash.items():
+        if len(slugs) > 1:
+            issues.append(f"  [dup-text] {len(slugs)} slugs share text.md hash {h[:10]}: "
+                          f"{', '.join(slugs[:3])}{'...' if len(slugs) > 3 else ''}")
+    return issues
+
+
 def main():
     parser = argparse.ArgumentParser(description="Post-build validation")
     parser.add_argument("--topic", default="ai4s")
     parser.add_argument("--fix", action="store_true", help="Auto-fix figure refs + Python list literals")
+    parser.add_argument("--strict", action="store_true",
+                        help="Exit non-zero if any issue is found (deploy gate).")
     args = parser.parse_args()
 
     # Load index
@@ -254,6 +439,34 @@ def main():
             for issue in paper_issues:
                 log(issue)
 
+    # 5. Category ↔ timeline mismatch (topic-level)
+    timeline_issues = check_timeline_mismatch(args.topic)
+    if timeline_issues:
+        log(f"\n[topic {args.topic}] timeline mismatch:")
+        for i in timeline_issues:
+            log(i)
+
+    # 5b. classifications schema + 카테고리 화이트리스트
+    schema_issues = check_classifications_schema(args.topic)
+    if schema_issues:
+        log(f"\n[topic {args.topic}] classifications schema/whitelist:")
+        for i in schema_issues:
+            log(i)
+
+    # 5c. DOI 교차검증 (index.doi vs review.md DOI)
+    doi_issues = check_doi_cross_validation(args.topic)
+    if doi_issues:
+        log(f"\n[topic {args.topic}] DOI cross-validation mismatches:")
+        for i in doi_issues:
+            log(i)
+
+    # 6. Duplicate text.md (topic-level, PDF 오매칭)
+    dup_issues = check_duplicate_text_md(args.topic)
+    if dup_issues:
+        log(f"\n[topic {args.topic}] duplicate text.md groups:")
+        for i in dup_issues:
+            log(i)
+
     log(f"\n{'='*60}")
     log(f"Validation Summary ({args.topic})")
     log(f"{'='*60}")
@@ -262,13 +475,23 @@ def main():
     log(f"  Broken links: {total_link}")
     log(f"  Figure issues: {total_fig}")
     log(f"  Python list literals: {total_pylist}")
+    log(f"  Timeline mismatches: {len(timeline_issues)}")
+    log(f"  Schema/whitelist issues: {len(schema_issues)}")
+    log(f"  DOI mismatches: {len(doi_issues)}")
+    log(f"  Duplicate text.md groups: {len(dup_issues)}")
     if args.fix:
         log(f"  Auto-fixed: {total_fixed} papers")
-    total_all = total_truncated + total_link + total_fig + total_pylist
+    total_all = (total_truncated + total_link + total_fig + total_pylist
+                 + len(timeline_issues) + len(schema_issues)
+                 + len(doi_issues) + len(dup_issues))
     if total_all == 0:
         log(f"  ALL CLEAR!")
     else:
         log(f"  Total issues: {total_all}")
+
+    if args.strict and total_all > 0:
+        log(f"\n--strict: failing build due to {total_all} issue(s)")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
