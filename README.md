@@ -48,7 +48,7 @@ python pipeline/setup.py
 
 - **Zotero**: [API Key 발급](https://www.zotero.org/settings/keys) + 큐레이션할 컬렉션에 논문 PDF 준비
 - **환경변수**: `ANTHROPIC_API_KEY`, `GOOGLE_API_KEY`, `OPENAI_API_KEY`
-- **Python 3.12+**
+- **Python 3.14 권장** (3.12+ 동작). macOS 표준 셋업은 conda env `py314` — UMAP/HDBSCAN/sentence-transformers 휠 모두 3.14 지원. Windows 에서 Smart App Control 이 numba/llvmlite DLL 을 차단하면 Python 3.12 전용 fallback env 가 필요할 수 있음.
 
 ---
 
@@ -207,6 +207,28 @@ cd docs && python -m http.server 8000
 - `--dedup-execute`: preflight가 실제 삭제까지 수행 (기본은 dry-run 리포트)
 - `--yes`: rebuild 모드 확인 게이트 우회
 
+### Concurrency 가이드 — Anthropic Tier 기준
+
+리뷰 단계의 `--concurrency N` 은 paper 단위 ThreadPoolExecutor 워커 수. 작업은 I/O bound (Anthropic + Gemini API) 라 하드웨어보다 **Anthropic 레이트 리밋(RPM / ITPM)** 이 천장. paper 당 input ~30~50K tokens / output ~5~10K tokens / 약 60초 소요 가정:
+
+| Tier | Sonnet RPM (approx) | ITPM (approx) | 권장 `--concurrency` | 비고 |
+|------|---------------------|---------------|----------------------|------|
+| Free / 1 | 50 | 30K | **2~4** | ITPM 이 먼저 막힘. 보수적으로 |
+| 2 | 1,000 | 80K | **6~8** | 안전권 |
+| 3 | 2,000 | 200K | **10~12** | 429 거의 없음 |
+| **4** | **4,000** | **400K+** | **16~20 (default 16)** | 새 default. 더 올리면 ITPM 한계 근처 |
+
+기본값 `--concurrency 16` 은 **Tier 4 기준**. Tier 1~3 사용자는 명시적으로 `--concurrency 4` (또는 위 표 값) 으로 낮추세요 — 429 발생 시 자동 재시도되지만 체크포인트 재개 오버헤드가 누적됩니다.
+
+```bash
+# Tier 1 (가장 보수적)
+PYTHONUTF8=1 python pipeline/run_full.py --topic my_topic --mode curate --source web --concurrency 4
+# Tier 4 (기본값과 동일, 생략 가능)
+PYTHONUTF8=1 python pipeline/run_full.py --topic my_topic --mode curate --source web --concurrency 16
+```
+
+하드웨어는 사실상 천장이 아님 — M-series Mac 18코어/64GB+ 정도면 워커 30개도 메모리 여유 충분 (워커당 ~수백 MB). 진짜 한계는 위 표의 ITPM.
+
 `run_update_force.py`는 `run_full.py`의 review + post-processing 단계로 호출됩니다 — legacy 진입점으로 직접 호출도 가능.
 
 ---
@@ -271,7 +293,7 @@ Deep Research 질의 -> Obsidian 메모 작성 -> 인덱스 재빌드 -> 다음 
 
 | 구분 | 항목 |
 |------|------|
-| **필수** | Python 3.12+, Zotero (API Key + 컬렉션 + PDF) |
+| **필수** | Python 3.14 권장 (3.12+ 동작; macOS conda env `py314` 표준), Zotero (API Key + 컬렉션 + PDF) |
 | **API** | Anthropic (Claude Haiku/Sonnet/Opus), Google (Gemini), OpenAI (text-embedding-3-small), Zotero Web API |
 | **Python** | anthropic, google-genai, openai, numpy, PyMuPDF, Pillow, requests, scikit-learn, umap-learn |
 | **선택** | Obsidian (메모/Graph View), PaperBanana (타임라인 이미지), Zotero Desktop (PDF 원클릭) |
@@ -331,7 +353,7 @@ python pipeline/setup.py
 
 - **Zotero**: [API Key](https://www.zotero.org/settings/keys) + a collection with paper PDFs
 - **Environment variables**: `ANTHROPIC_API_KEY`, `GOOGLE_API_KEY`, `OPENAI_API_KEY`
-- **Python 3.12+**
+- **Python 3.14 recommended** (3.12+ works). Standard setup on macOS is a conda env named `py314` — UMAP/HDBSCAN/sentence-transformers all ship wheels for 3.14. On Windows, if Smart App Control blocks numba/llvmlite DLLs, a Python 3.12 fallback env may be needed.
 
 ---
 
@@ -478,6 +500,28 @@ cd docs && python -m http.server 8000
 
 Safety flags: `--strict-pdf` (block fuzzy PDF match), `--slugs A,B,C`, `--dry-run`, `--skip-dedup`, `--dedup-execute`, `--yes`.
 
+### Concurrency Tuning by Anthropic Tier
+
+`--concurrency N` in the review step controls a paper-level `ThreadPoolExecutor`. Work is I/O bound (Anthropic + Gemini APIs), so the ceiling is **Anthropic's rate limits (RPM / ITPM)**, not the machine. Assume ~30–50K input tokens, ~5–10K output tokens, ~60 s per paper:
+
+| Tier | Sonnet RPM (approx) | ITPM (approx) | Recommended `--concurrency` | Notes |
+|------|---------------------|---------------|-----------------------------|-------|
+| Free / 1 | 50 | 30K | **2–4** | ITPM caps you first. Be conservative. |
+| 2 | 1,000 | 80K | **6–8** | Safe |
+| 3 | 2,000 | 200K | **10–12** | 429s are rare |
+| **4** | **4,000** | **400K+** | **16–20 (default 16)** | New default. Pushing higher risks ITPM ceiling. |
+
+Default `--concurrency 16` targets **Tier 4**. Tier 1–3 users should pass `--concurrency 4` (or another table value) explicitly — 429s are retried via the checkpoint, but the resume overhead accumulates.
+
+```bash
+# Tier 1 (most conservative)
+PYTHONUTF8=1 python pipeline/run_full.py --topic my_topic --mode curate --source web --concurrency 4
+# Tier 4 (matches default, can be omitted)
+PYTHONUTF8=1 python pipeline/run_full.py --topic my_topic --mode curate --source web --concurrency 16
+```
+
+Hardware is effectively unbounded — an M-series Mac with 18 cores / 64GB+ has plenty of headroom even at 30 workers (~few hundred MB each). The real ceiling is the ITPM column above.
+
 ---
 
 ## Comparison with Karpathy's LLM Wiki
@@ -511,7 +555,7 @@ Deep Research query -> Obsidian note -> re-index -> your notes cited in next que
 
 | Category | Items |
 |----------|-------|
-| **Required** | Python 3.12+, Zotero (API Key + collection + PDFs) |
+| **Required** | Python 3.14 recommended (3.12+ works; macOS conda env `py314` is the standard), Zotero (API Key + collection + PDFs) |
 | **APIs** | Anthropic (Claude Haiku/Sonnet/Opus), Google (Gemini), OpenAI (text-embedding-3-small), Zotero Web API |
 | **Python** | anthropic, google-genai, openai, numpy, PyMuPDF, Pillow, requests, scikit-learn, umap-learn |
 | **Optional** | Obsidian (notes/Graph View), PaperBanana (timeline images), Zotero Desktop (one-click PDF) |

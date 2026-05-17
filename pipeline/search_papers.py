@@ -94,15 +94,25 @@ def score_relevance(paper: dict, primary_keywords: list, secondary_keywords: lis
 # arXiv 검색
 # ---------------------------------------------------------------------------
 
-def search_arxiv(keywords: list, since_date: str, max_per_keyword: int = 100) -> list:
-    """arXiv API로 논문 검색. since_date: 'YYYY-MM-DD' 형식."""
+def search_arxiv(keywords: list, since_date: str, max_per_keyword: int = 100,
+                 until_date: str = "") -> list:
+    """arXiv API로 논문 검색. since_date / until_date: 'YYYY-MM-DD' 형식.
+    until_date 비어있으면 상한 없음 (오늘까지)."""
     results = []
     ns = "http://www.w3.org/2005/Atom"
+
+    # arXiv API guideline: identifiable User-Agent + contact email. Anonymous
+    # urllib defaults trigger aggressive throttling.
+    contact_email = get_unpaywall_email() or "noreply@example.com"
+    arxiv_headers = {
+        "User-Agent": f"paper-curation/1.0 (mailto:{contact_email})",
+        "From": contact_email,
+    }
 
     for kw in keywords:
         query = urllib.parse.quote(f"all:{kw}")
         url = (
-            f"http://export.arxiv.org/api/query"
+            f"https://export.arxiv.org/api/query"
             f"?search_query={query}"
             f"&start=0"
             f"&max_results={max_per_keyword}"
@@ -110,7 +120,7 @@ def search_arxiv(keywords: list, since_date: str, max_per_keyword: int = 100) ->
             f"&sortOrder=descending"
         )
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "PaperCuration/1.0"})
+            req = urllib.request.Request(url, headers=arxiv_headers)
             with urllib.request.urlopen(req, timeout=30, context=_ssl_ctx) as resp:
                 xml_data = resp.read()
             root = ET.fromstring(xml_data)
@@ -142,6 +152,8 @@ def search_arxiv(keywords: list, since_date: str, max_per_keyword: int = 100) ->
 
                 # 날짜 필터
                 if date < since_date:
+                    continue
+                if until_date and date >= until_date:
                     continue
 
                 # PDF URL
@@ -238,17 +250,23 @@ def search_semantic_scholar(keywords: list, year: int, max_per_keyword: int = 10
 # OpenAlex 검색
 # ---------------------------------------------------------------------------
 
-def search_openalex(keywords: list, since_date: str, email: str, max_per_keyword: int = 100) -> list:
-    """OpenAlex API로 논문 검색."""
+def search_openalex(keywords: list, since_date: str, email: str, max_per_keyword: int = 100,
+                    until_date: str = "") -> list:
+    """OpenAlex API로 논문 검색. until_date 비어있으면 상한 없음."""
     results = []
 
     for kw in keywords:
         query = urllib.parse.quote(kw)
+        date_filter = f"from_publication_date:{since_date}"
+        if until_date:
+            date_filter += f",to_publication_date:{until_date}"
+        # 정렬을 OpenAlex 기본(relevance_score:desc) 으로 둠. publication_date:desc 정렬은
+        # 좁은 윈도우 + to_publication_date 조합 시 결과가 상한 일자에 몰려 윈도우 내 다른 날짜
+        # paper 가 누락된다.
         params = (
             f"search={query}"
-            f"&filter=from_publication_date:{since_date}"
+            f"&filter={date_filter}"
             f"&per_page={max_per_keyword}"
-            f"&sort=publication_date:desc"
         )
         if email:
             params += f"&mailto={urllib.parse.quote(email)}"
@@ -300,6 +318,11 @@ def search_openalex(keywords: list, since_date: str, email: str, max_per_keyword
 
                 # 날짜
                 date = work.get("publication_date", "") or ""
+
+                # OpenAlex 의 to_publication_date 는 inclusive 라 until 도 포함됨.
+                # 우리는 [since, until) 반-개 구간을 의도하므로 결과에서 한 번 더 거른다.
+                if until_date and date and date >= until_date:
+                    continue
 
                 results.append({
                     "title": title,
@@ -378,7 +401,9 @@ def main():
     parser = argparse.ArgumentParser(description="다중 소스 학술 논문 검색")
     parser.add_argument("--topic", required=True, choices=list(SEARCH_KEYWORDS.keys()),
                         help="검색 주제 (ai4s 또는 scisci)")
-    parser.add_argument("--days", type=int, default=7, help="검색 기간(일, 기본: 7)")
+    parser.add_argument("--days", type=int, default=7, help="검색 기간(일, 기본: 7). --since/--until 사용 시 무시.")
+    parser.add_argument("--since", default="", help="시작일 YYYY-MM-DD (포함). --days보다 우선.")
+    parser.add_argument("--until", default="", help="종료일 YYYY-MM-DD (제외, 즉 [since, until)). 비우면 오늘까지.")
     parser.add_argument("--max-papers", type=int, default=100, help="최대 결과 수 (기본: 100)")
     parser.add_argument("--threshold", type=float, default=0.3, help="관련성 점수 임계값 (기본: 0.3)")
     parser.add_argument("--output", default="", help="출력 JSON 경로 (기본: {topic}/_search_results.json)")
@@ -389,10 +414,15 @@ def main():
     max_papers = args.max_papers
     threshold = args.threshold
 
-    # 날짜 계산
+    # 날짜 계산 — --since 가 있으면 우선, 없으면 days로 fallback
     now = datetime.now(timezone.utc)
-    since_dt = now - timedelta(days=days)
-    since_date = since_dt.strftime("%Y-%m-%d")
+    if args.since:
+        since_date = args.since
+        since_dt = datetime.fromisoformat(since_date).replace(tzinfo=timezone.utc)
+    else:
+        since_dt = now - timedelta(days=days)
+        since_date = since_dt.strftime("%Y-%m-%d")
+    until_date = args.until  # 빈 문자열이면 상한 없음
     since_year = since_dt.year
 
     # 출력 경로
@@ -416,12 +446,13 @@ def main():
     except Exception:
         email = ""
 
-    print(f"\n논문 검색 시작: {topic} (최근 {days}일, {since_date} 이후)")
+    window_desc = f"[{since_date}, {until_date or 'today'})"
+    print(f"\n논문 검색 시작: {topic} (윈도우 {window_desc})")
     print(f"  키워드: {len(primary_kws)}개 주요 + {len(secondary_kws)}개 보조")
 
     # --- arXiv ---
     print("\n[1/3] arXiv 검색 중...")
-    arxiv_papers = search_arxiv(all_keywords, since_date, max_per_keyword=100)
+    arxiv_papers = search_arxiv(all_keywords, since_date, max_per_keyword=100, until_date=until_date)
     print(f"  arXiv: {len(arxiv_papers)}건 수집")
 
     # --- Semantic Scholar ---
@@ -431,7 +462,7 @@ def main():
 
     # --- OpenAlex ---
     print("\n[3/3] OpenAlex 검색 중...")
-    oa_papers = search_openalex(all_keywords, since_date, email, max_per_keyword=100)
+    oa_papers = search_openalex(all_keywords, since_date, email, max_per_keyword=100, until_date=until_date)
     print(f"  OpenAlex: {len(oa_papers)}건 수집")
 
     # --- 중복 제거 ---

@@ -358,10 +358,10 @@ def main():
     print("  설치가 완료되었습니다. 이제 파이프라인을 실행하여")
     print("  Zotero 컬렉션의 논문을 리뷰하고 웹 페이지로 배포할 수 있습니다.")
     print()
-    print("  ⚠ 주의: Zotero 컬렉션의 논문 편수에 따라 시간이 크게 달라집니다.")
+    print("  ⚠ 주의: Zotero 컬렉션의 논문 편수에 따라 시간이 크게 달라집니다 (Anthropic Tier·concurrency 의존).")
     print("    - 10편 이하: 수 분")
-    print("    - 50편: 약 1~2시간")
-    print("    - 500편 이상: 10시간+ (concurrency 4 기준)")
+    print("    - 50편: ~15분 (Tier 4 default --concurrency 16) ~ 1~2시간 (Tier 1 --concurrency 4)")
+    print("    - 500편 이상: 비례 증가. Tier별 권장값은 README 'Concurrency 가이드' 참고.")
     print()
     if topics:
         topic = topics[0]

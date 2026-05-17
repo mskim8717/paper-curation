@@ -76,7 +76,8 @@ def build_parser():
     # Aux
     p.add_argument("--days", type=int, default=7, help="search_papers 검색 기간.")
     p.add_argument("--max-papers", type=int, default=20)
-    p.add_argument("--concurrency", type=int, default=4)
+    p.add_argument("--concurrency", type=int, default=16,
+                   help="Parallel review workers (Tier 4 default; see README for Tier-by-Tier table).")
     p.add_argument("--slugs", default="", help="특정 슬러그만 force-rebuild.")
     p.add_argument("--strict-pdf", action="store_true",
                    help="fuzzy PDF 매칭 차단 (ID-first 실패 시 skip).")

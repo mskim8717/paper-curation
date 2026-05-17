@@ -2,7 +2,8 @@
 Paper-Curation --local --update-force 배치 실행 스크립트.
 
 사용법:
-  PYTHONUTF8=1 python run_update_force.py --topic ai4s --concurrency 4
+  PYTHONUTF8=1 python run_update_force.py --topic ai4s
+  # --concurrency 기본값 16 (Anthropic Tier 4). Tier 1~3 은 4~12 로 낮춤.
 
 기능:
   1. Zotero 컬렉션에서 전체 논문 fetch
@@ -59,12 +60,10 @@ def _split_cats_by_image_presence(topic, cats):
     return with_image, missing
 
 # topic_modeling.py / classify_papers.py 는 UMAP + hdbscan + sentence-transformers
-# 의존 → .venv312 (Python 3.12) 필요. 시스템 Python(3.14) 은 Windows Smart App
-# Control 이 numba/llvmlite DLL 을 차단해 UMAP 이 동작하지 않는다. classify_papers
-# 도 학습된 UMAP transformer 로 신규 임베딩을 5D 로 투영해야 하므로 같은 환경에서
-# 실행한다 (변수명은 호환을 위해 TOPIC_MODELING_PYTHON 유지).
-_VENV312_PYTHON = PROJECT_ROOT / ".venv312" / "Scripts" / "python.exe"
-TOPIC_MODELING_PYTHON = str(_VENV312_PYTHON) if _VENV312_PYTHON.exists() else "python"
+# 의존. macOS + Python 3.14 (conda env `py314`) 에서는 numba 0.65 / llvmlite 0.47
+# 휠로 단일 환경에서 동작한다. 서브프로세스도 현재 인터프리터 (sys.executable) 를
+# 그대로 사용하므로 활성화된 env 가 그대로 상속된다. 변수명은 호환을 위해 유지.
+TOPIC_MODELING_PYTHON = sys.executable
 
 ZOTERO_DIR = get_zotero_dir()
 
@@ -1098,7 +1097,7 @@ def _apply_mode_mapping(args):
 def main():
     parser = argparse.ArgumentParser(description="Paper-curation --update-force batch")
     parser.add_argument("--topic", default="ai4s", help="Topic: ai4s or scisci")
-    parser.add_argument("--concurrency", type=int, default=4, help="Parallel workers")
+    parser.add_argument("--concurrency", type=int, default=16, help="Parallel workers (Tier 4 default; lower for Tier 1~3 — see README)")
     parser.add_argument("--resume", action="store_true", help="Resume from checkpoint")
     parser.add_argument("--skip-existing", action="store_true",
                         help="Skip papers that already have review.md (for --update mode)")
@@ -1394,9 +1393,6 @@ def main():
                      [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic], 1200)
 
         # Step 3: classify (always — new papers only in update mode without --category)
-        # classify_papers loads the joblib bundle from topic_modeling and runs
-        # hdbscan.approximate_predict + UMAP.transform — same .venv312 (Python 3.12)
-        # is required because UMAP/numba is blocked under WDAC on system Python 3.14.
         run_step("classify_papers",
                  [TOPIC_MODELING_PYTHON, "pipeline/classify_papers.py", "--topic", topic], 600)
 

@@ -36,8 +36,8 @@ Claude Code가 자동으로 다음 과정을 수행합니다:
 
 설치가 완료되면 **파이프라인 실행** 안내가 표시됩니다.
 
-> **⚠ 파이프라인 실행 시간**: Zotero 컬렉션의 논문 편수에 따라 크게 달라집니다.
-> 10편 이하: 수 분 / 50편: 약 1~2시간 / 500편 이상: 10시간+ (concurrency 4 기준)
+> **⚠ 파이프라인 실행 시간**: Zotero 컬렉션의 논문 편수에 따라 크게 달라집니다 (Anthropic Tier·concurrency 의존).
+> 10편 이하: 수 분 / 50편: ~15분 (Tier 4 default `--concurrency 16`) ~ 1~2시간 (Tier 1 `--concurrency 4`) / 500편 이상: 비례 증가. Tier별 권장값은 README "Concurrency 가이드" 표 참고.
 
 ## 수동 설치 (Claude Code 없이)
 

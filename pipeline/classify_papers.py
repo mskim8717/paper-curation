@@ -31,15 +31,16 @@ Pipeline contract:
   * Rewrites `{topic}/_new_classification.json` (assignments 재기록)
 
 실행 환경:
-  topic_modeling 과 동일하게 `.venv312` (Python 3.12) 에서 실행해야 한다.
-  Windows Smart App Control 은 Python 3.14 의 numba/llvmlite DLL 을 차단해
-  UMAP `.transform()` 이 시스템 Python 에서 동작하지 않는다 (CLAUDE.md
-  Python Environment 섹션 참조).
+  UMAP + hdbscan + sentence-transformers 가 모두 설치된 환경에서 실행한다.
+  표준 셋업은 conda env `py314` (Python 3.14, macOS) — CLAUDE.md
+  Python Environment 섹션 참조. Windows 의 경우 Smart App Control 이
+  numba/llvmlite DLL 을 차단하면 Python 3.12 전용 env (`py312` 등)
+  fallback 이 필요할 수 있다.
 
 Usage:
-  PYTHONUTF8=1 .venv312/Scripts/python.exe pipeline/classify_papers.py --topic ai4s
-  PYTHONUTF8=1 .venv312/Scripts/python.exe pipeline/classify_papers.py --topic ai4s --slugs 088,1093
-  PYTHONUTF8=1 .venv312/Scripts/python.exe pipeline/classify_papers.py --topic ai4s --dry-run
+  PYTHONUTF8=1 python pipeline/classify_papers.py --topic ai4s
+  PYTHONUTF8=1 python pipeline/classify_papers.py --topic ai4s --slugs 088,1093
+  PYTHONUTF8=1 python pipeline/classify_papers.py --topic ai4s --dry-run
 """
 
 import argparse

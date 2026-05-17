@@ -160,7 +160,7 @@ def main():
     for i, c in enumerate(chunks, 1):
         tag = f" (batch {i}/{len(chunks)})" if len(chunks) > 1 else ""
         print(f"  PYTHONUTF8=1 python pipeline/run_update_force.py "
-              f"--topic {args.topic} --slugs {c} --strict-pdf --concurrency 4{tag}")
+              f"--topic {args.topic} --slugs {c} --strict-pdf{tag}")
     print()
     print("After re-review:")
     print(f"  PYTHONUTF8=1 python pipeline/audit_matching.py --topic {args.topic}")

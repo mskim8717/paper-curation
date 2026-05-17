@@ -444,13 +444,13 @@ paper-curation/                          ← git repo (jehyunlee/paper-curation)
 
    ```bash
    # 전체 재생성 (병렬 4)
-   PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --concurrency 4
+   PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --concurrency 16
 
    # --update: 신규만 리뷰 + 변경 카테고리 narrative만 (타임라인 이미지 스킵)
-   PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --concurrency 4 --resume
+   PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --concurrency 16 --resume
 
    # --update --timeline: 신규 리뷰 + 변경 카테고리 narrative + 타임라인 이미지
-   PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --concurrency 4 --resume --timeline
+   PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --concurrency 16 --resume --timeline
 
    # --timeline 단독: 리뷰 없이 전체 narrative + 타임라인 이미지 재생성
    PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --timeline
@@ -702,9 +702,9 @@ PYTHONUTF8=1 python pipeline/sync_zotero.py --topic ai4s            # 실행
 
 # ── Step 1: PDF → text.md → figures → review.md → index.html ──
 # docs/papers/ 비우고 시작 (최초 또는 전체 재생성 시)
-PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --concurrency 4
+PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --concurrency 16
 # 중단 후 재개 / 실패분 재시도 / 신규 논문 추가:
-PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --concurrency 4 --resume
+PYTHONUTF8=1 python pipeline/run_update_force.py --topic ai4s --concurrency 16 --resume
 
 # ── Step 2: _papers_index.json 재생성 ──
 PYTHONUTF8=1 python pipeline/build_papers_index.py --topic ai4s
