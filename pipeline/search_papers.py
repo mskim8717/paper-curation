@@ -407,6 +407,9 @@ def main():
     parser.add_argument("--max-papers", type=int, default=100, help="최대 결과 수 (기본: 100)")
     parser.add_argument("--threshold", type=float, default=0.3, help="관련성 점수 임계값 (기본: 0.3)")
     parser.add_argument("--output", default="", help="출력 JSON 경로 (기본: {topic}/_search_results.json)")
+    parser.add_argument("--skip-arxiv", action="store_true",
+                        help="arXiv 검색 건너뛰기. 한국 IP 에서 chronic 429/timeout 시 시간 절약 (~8분/호출). "
+                             "OpenAlex+Semantic Scholar 만으로도 보통 충분히 broad coverage.")
     args = parser.parse_args()
 
     topic = args.topic
@@ -451,9 +454,13 @@ def main():
     print(f"  키워드: {len(primary_kws)}개 주요 + {len(secondary_kws)}개 보조")
 
     # --- arXiv ---
-    print("\n[1/3] arXiv 검색 중...")
-    arxiv_papers = search_arxiv(all_keywords, since_date, max_per_keyword=100, until_date=until_date)
-    print(f"  arXiv: {len(arxiv_papers)}건 수집")
+    if args.skip_arxiv:
+        print("\n[1/3] arXiv 검색 건너뛰기 (--skip-arxiv)")
+        arxiv_papers = []
+    else:
+        print("\n[1/3] arXiv 검색 중...")
+        arxiv_papers = search_arxiv(all_keywords, since_date, max_per_keyword=100, until_date=until_date)
+        print(f"  arXiv: {len(arxiv_papers)}건 수집")
 
     # --- Semantic Scholar ---
     print("\n[2/3] Semantic Scholar 검색 중...")

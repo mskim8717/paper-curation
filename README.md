@@ -231,6 +231,33 @@ PYTHONUTF8=1 python pipeline/run_full.py --topic my_topic --mode curate --source
 
 `run_update_force.py`는 `run_full.py`의 review + post-processing 단계로 호출됩니다 — legacy 진입점으로 직접 호출도 가능.
 
+### 한국 망 환경 우회 — SPECTER2 / arXiv
+
+한국 ISP 에서 종종 다음 두 가지가 막힙니다 (다른 국가에선 보통 무문제):
+
+**1. `huggingface.co` LFS 다운로드 차단** — `topic_modeling.py` 가 SPECTER2 임베딩 모델을 받아오지 못함. AWS S3 미러에서 한 번 받아 `<project_root>/.cache/base/` 에 두면 `topic_modeling.py` 가 자동 인식 (HF Hub 호출 우회):
+
+```bash
+mkdir -p .cache && cd .cache
+curl -L -o specter2_0.tar.gz "https://ai2-s2-research-public.s3.amazonaws.com/specter2_0/specter2_0.tar.gz"
+tar -xzf specter2_0.tar.gz   # base/ 와 adapters/ 가 풀림
+cd ..
+```
+
+확인:
+```bash
+PYTHONUTF8=1 python -c "from pipeline.topic_modeling import SPECTER2_MODEL; print(SPECTER2_MODEL)"
+# /Users/.../paper-curation/.cache/base 가 찍히면 OK
+```
+
+**2. arXiv API chronic 429/timeout** — `export.arxiv.org` 가 첫 요청에 응답 못 주면 그 IP 를 한동안 throttle. User-Agent 명시도 도움이 안 될 때가 있음. 그 경우 `--skip-arxiv` 로 arXiv 건너뛰고 OpenAlex + Semantic Scholar 만으로 검색 (윈도우당 ~8분 절약):
+
+```bash
+PYTHONUTF8=1 python pipeline/search_papers.py --topic scisci --since 2026-04-01 --until 2026-04-10 --skip-arxiv
+```
+
+OpenAlex(1k+건/키워드) 가 압도적으로 큰 소스라 arXiv 누락이 결과 품질에 큰 영향 주지 않습니다.
+
 ---
 
 ## Reliability (v2+)
@@ -521,6 +548,33 @@ PYTHONUTF8=1 python pipeline/run_full.py --topic my_topic --mode curate --source
 ```
 
 Hardware is effectively unbounded — an M-series Mac with 18 cores / 64GB+ has plenty of headroom even at 30 workers (~few hundred MB each). The real ceiling is the ITPM column above.
+
+### Korean-network workarounds — SPECTER2 / arXiv
+
+From Korean ISPs two endpoints occasionally fail (other regions usually fine):
+
+**1. `huggingface.co` LFS blocked** — `topic_modeling.py` cannot fetch the SPECTER2 embedding model. Download once from the AWS S3 mirror into `<project_root>/.cache/base/` and `topic_modeling.py` will auto-detect it (skipping the HF Hub call):
+
+```bash
+mkdir -p .cache && cd .cache
+curl -L -o specter2_0.tar.gz "https://ai2-s2-research-public.s3.amazonaws.com/specter2_0/specter2_0.tar.gz"
+tar -xzf specter2_0.tar.gz   # extracts base/ and adapters/
+cd ..
+```
+
+Verify:
+```bash
+PYTHONUTF8=1 python -c "from pipeline.topic_modeling import SPECTER2_MODEL; print(SPECTER2_MODEL)"
+# Should print /Users/.../paper-curation/.cache/base
+```
+
+**2. arXiv API chronic 429/timeout** — once `export.arxiv.org` fails to respond to the first request, the IP gets throttled for a while; even a proper User-Agent does not always help. Pass `--skip-arxiv` to skip arXiv entirely and search via OpenAlex + Semantic Scholar (saves ~8 min per window):
+
+```bash
+PYTHONUTF8=1 python pipeline/search_papers.py --topic scisci --since 2026-04-01 --until 2026-04-10 --skip-arxiv
+```
+
+OpenAlex returns 1k+ items per keyword and dominates the result pool, so missing arXiv rarely degrades coverage in practice.
 
 ---
 

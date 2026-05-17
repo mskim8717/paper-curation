@@ -21,10 +21,19 @@ import time
 import numpy as np
 from collections import defaultdict
 from datetime import datetime
+from pathlib import Path
 
 from config_loader import PAPERS_DIR as _PAPERS_DIR, get_topic_dir
 
 PAPERS_DIR = str(_PAPERS_DIR)
+
+# SPECTER2 모델 경로 결정.
+# 한국에서 huggingface.co LFS 가 일관되게 막힐 때를 대비해, 프로젝트 .cache/base/ 가
+# 존재하면 거기서 로드 (AWS S3 ai2-s2-research-public 에서 받은 tar 압축 해제 결과).
+# 없으면 HF Hub 이름 fallback — HF cache 가 채워져 있어야 동작.
+_SPECTER2_LOCAL = Path(__file__).resolve().parent.parent / ".cache" / "base"
+SPECTER2_MODEL = str(_SPECTER2_LOCAL) if (_SPECTER2_LOCAL / "config.json").exists() \
+                 else "allenai/specter2_base"
 
 
 def log(msg):
@@ -126,7 +135,7 @@ def compute_embeddings(originalities, cache_path=None):
         if new_slugs:
             from sentence_transformers import SentenceTransformer
             log("  Loading SPECTER2 model for incremental update...")
-            model = SentenceTransformer("allenai/specter2_base", local_files_only=True)
+            model = SentenceTransformer(SPECTER2_MODEL, local_files_only=True)
             new_texts = [originalities[s] for s in new_slugs]
             log(f"  Embedding {len(new_texts)} new papers...")
             new_embeddings = model.encode(new_texts, show_progress_bar=True, batch_size=32)
@@ -150,7 +159,7 @@ def compute_embeddings(originalities, cache_path=None):
     from sentence_transformers import SentenceTransformer
 
     log("  Loading SPECTER2 model...")
-    model = SentenceTransformer("allenai/specter2_base", local_files_only=True)
+    model = SentenceTransformer(SPECTER2_MODEL, local_files_only=True)
 
     slugs = current_slugs
     texts = [originalities[s] for s in slugs]
