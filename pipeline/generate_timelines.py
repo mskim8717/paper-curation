@@ -59,10 +59,11 @@ def opus_streaming_call(prompt, max_tokens=12000):
     client = Anthropic()
 
     text = ""
+    # Opus 4.7 uses adaptive thinking and rejects an explicit `temperature` —
+    # the API returns 400 "`temperature` is deprecated for this model."
     with client.messages.stream(
         model="claude-opus-4-7",
         max_tokens=max_tokens,
-        temperature=0.3,
         messages=[{"role": "user", "content": prompt}],
     ) as stream:
         for chunk in stream.text_stream:
