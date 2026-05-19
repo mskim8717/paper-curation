@@ -116,12 +116,16 @@ def _haiku_summarize_block(block, client, target_chars):
         f"Output plain text only (no markdown fences).\n\n"
         f"INPUT:\n{block}"
     )
+    _t0 = time.time()
+    log(f"    [haiku-summarize] calling Haiku 4.5 (~{_est_tokens(prompt)} input tokens, target {target_chars} chars)...")
     resp = client.messages.create(
         model="claude-haiku-4-5-20251001",
         max_tokens=max(2000, target_chars // 3),
         messages=[{"role": "user", "content": prompt}],
     )
-    return resp.content[0].text.strip()
+    out = resp.content[0].text.strip()
+    log(f"    [haiku-summarize] -> {len(out)} chars in {time.time()-_t0:.0f}s")
+    return out
 
 
 def _fit_cat_blocks(cat_papers, client, max_prompt_tokens, target_prompt_tokens,
@@ -242,12 +246,16 @@ Output ONLY valid JSON in this exact format:
 
     log(f"  Cross-category insight extraction ({total} papers, {len(cat_papers)} categories, "
         f"~{_est_tokens(prompt)} tokens)...")
+    _t0 = time.time()
+    log(f"    [insights] calling Sonnet 4.6 (max_tokens=4000)...")
     resp = client.messages.create(
         model="claude-sonnet-4-6",
         max_tokens=4000,
         messages=[{"role": "user", "content": prompt}],
     )
     text = resp.content[0].text.strip()
+    log(f"    [insights] -> {len(text)} chars in {time.time()-_t0:.0f}s "
+        f"(stop_reason={getattr(resp, 'stop_reason', '?')})")
 
     # Parse JSON (handle markdown code block)
     if text.startswith("```"):
@@ -322,12 +330,16 @@ Rules:
 - 같은 sub-category끼리만 연결하지 말 것 — 다른 카테고리의 논문도 적극 포함
 - target은 위 목록에 있는 논문 번호만 사용"""
 
+    _t0 = time.time()
+    log(f"    [conn-batch:{cat_name[:30]}] calling Sonnet 4.6 ({len(papers_batch)} targets, max_tokens=10000)...")
     resp = client.messages.create(
         model="claude-sonnet-4-6",
         max_tokens=10000,
         messages=[{"role": "user", "content": prompt}],
     )
     text = resp.content[0].text.strip()
+    log(f"    [conn-batch:{cat_name[:30]}] -> {len(text)} chars in {time.time()-_t0:.0f}s "
+        f"(stop_reason={getattr(resp, 'stop_reason', '?')})")
     if text.startswith("```"):
         text = text.split("```")[1]
         if text.startswith("json"):
@@ -475,7 +487,11 @@ def main():
     else:
         log(f"  {len(topic_papers)} papers, {len(cat_papers)} categories")
 
-    client = Anthropic()
+    # Explicit timeout + retry: previously a single messages.create() in this
+    # script stalled for 1h22m with no log activity, suggesting an httpx read
+    # without a deadline. 5-min per-attempt cap × 2 retries = ~15 min worst
+    # case before the SDK raises, instead of hanging forever.
+    client = Anthropic(timeout=300.0, max_retries=2)
     run_insights = not args.connections_only
     run_connections = not args.insights_only
 
