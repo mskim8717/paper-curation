@@ -30,6 +30,10 @@
 # TODO progress doc
 !paper-curation-todo.md
 
+# Double-click launchers (serve docs/ + open topic site on localhost)
+!open.command
+!open_*.command
+
 # Documentation (whitelist specific service files below)
 !docs/
 !docs/index.html
