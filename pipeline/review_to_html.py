@@ -394,8 +394,8 @@ function buildScriptPrompt(s) {
   let fmt;
   if (s.speakers === "1") {
     fmt = lang === "en"
-      ? "- Format: a single narrator from start to finish; output narration text only, no speaker labels."
-      : "- 형식: 한 명의 내레이터가 처음부터 끝까지 진행. 화자 라벨 없이 순수 내레이션 텍스트만 출력.";
+      ? "- Format: a single narrator from start to finish; output narration text only, no speaker labels.\n- Do not invent a show name or introduce yourself by name; dive straight into the content."
+      : "- 형식: 한 명의 내레이터가 처음부터 끝까지 진행. 화자 라벨 없이 순수 내레이션 텍스트만 출력.\n- 프로그램 이름이나 진행자 이름을 지어내 자기소개하지 말고, 곧바로 내용으로 들어갈 것.";
   } else {
     const roleLines = roles.map(function(r) {
       return (lang === "en" ? "- " + r.label + ": " + r.desc
@@ -405,10 +405,14 @@ function buildScriptPrompt(s) {
     fmt = (lang === "en"
         ? "- Format: a " + s.speakers + "-person conversational podcast.\n" + roleLines +
           "\n- Begin every utterance with exactly one of these labels followed by ': ' — " +
-          labels.join(", ") + "\n- Natural turn-taking; no one speaks more than ~5 sentences in a row."
+          labels.join(", ") + "\n- Natural turn-taking; no one speaks more than ~5 sentences in a row." +
+          "\n- Exactly " + s.speakers + " speakers — never add a third speaker, narrator, or host." +
+          "\n- The labels are voice tags only: speakers must NOT address each other by these labels or by any personal name, must NOT introduce themselves, and must NOT invent a show or host name. Dive straight into the substance."
         : "- 형식: " + s.speakers + "인 대화형 팟캐스트.\n" + roleLines +
           "\n- 각 발화는 반드시 다음 라벨 중 하나로 시작하고 콜론+공백을 붙일 것 — " +
-          labels.join(", ") + "\n- 자연스러운 turn-taking, 한 명이 5문장 이상 연속 독점 금지.");
+          labels.join(", ") + "\n- 자연스러운 turn-taking, 한 명이 5문장 이상 연속 독점 금지." +
+          "\n- 등장인물은 정확히 " + s.speakers + "명뿐 — 제3의 화자·내레이터·해설자를 절대 추가하지 말 것." +
+          "\n- 라벨은 음성 구분용 표시일 뿐이다. 대사 속에서 서로를 그 라벨(예: '전문가님')이나 이름으로 부르지 말고, 자기·상대를 소개하거나 프로그램·진행자 이름을 지어내지 말 것. 곧바로 내용으로 들어갈 것.");
   }
   const focusLine = s.focus ? (lang === "en" ? "- Special emphasis: " + s.focus + "\n"
                                              : "- 주안점: " + s.focus + "\n") : "";
@@ -479,16 +483,25 @@ async function ttsCall(text, speechConfig) {
 }
 
 function parseTurns(script, labels) {
-  const esc = labels.map(function(l) { return l.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); });
-  const re = new RegExp("^(" + esc.join("|") + ")\\s*:\\s*(.*)$");
-  const turns = []; let cur = null, buf = [];
+  // Flexible: treat any short "Label:" at line start as a turn boundary. A
+  // stray 3rd speaker / narrator the model slipped in is remapped to an
+  // allowed speaker (alternating), so multi-speaker TTS never voices a
+  // phantom 3rd voice from a label embedded inside another turn's text.
+  const allow = {}; labels.forEach(function(l, i) { allow[l] = i; });
+  const re = /^([A-Za-z가-힣][A-Za-z가-힣0-9]{0,9})\s*:\s*(.*)$/;
+  const turns = []; let cur = null, buf = [], lastIdx = -1;
   function flush() { if (cur && buf.join(" ").trim()) turns.push({speaker: cur, text: buf.join(" ").trim()}); }
   script.split(/\r?\n/).forEach(function(raw) {
     const line = raw.trim();
     if (!line) return;
     const m = line.match(re);
-    if (m) { flush(); cur = m[1]; buf = [m[2].trim()]; }
-    else if (cur) buf.push(line);
+    if (m) {
+      flush();
+      const label = m[1];
+      if (label in allow) { cur = label; lastIdx = allow[label]; }
+      else { lastIdx = (lastIdx + 1) % labels.length; cur = labels[lastIdx]; }
+      buf = [m[2].trim()];
+    } else if (cur) buf.push(line);
   });
   flush();
   return turns;

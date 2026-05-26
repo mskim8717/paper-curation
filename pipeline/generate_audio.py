@@ -157,20 +157,29 @@ def build_prompt(review: str, conns: list[dict], speakers: int, lang: str,
     conns_blk = connections_text(conns, lang)
 
     if speakers == 1:
-        fmt = ("- Format: a single narrator from start to finish; output narration text only, no speaker labels."
+        fmt = ("- Format: a single narrator from start to finish; output narration text only, no speaker labels.\n"
+               "- Do not invent a show name or introduce yourself by name; dive straight into the content."
                if lang == "en" else
-               "- 형식: 한 명의 내레이터가 처음부터 끝까지 진행. 화자 라벨 없이 순수 내레이션 텍스트만 출력.")
+               "- 형식: 한 명의 내레이터가 처음부터 끝까지 진행. 화자 라벨 없이 순수 내레이션 텍스트만 출력.\n"
+               "- 프로그램 이름이나 진행자 이름을 지어내 자기소개하지 말고, 곧바로 내용으로 들어갈 것.")
     else:
         role_lines = "\n".join(f"- {r['label']}: {r['desc']}" for r in roles)
         labels = ", ".join(r["label"] for r in roles)
         if lang == "en":
             fmt = (f"- Format: a {speakers}-person conversational podcast.\n{role_lines}\n"
                    f"- Begin every utterance with exactly one of these labels followed by ': ' — {labels}\n"
-                   f"- Natural turn-taking; no one speaks more than ~5 sentences in a row.")
+                   "- Natural turn-taking; no one speaks more than ~5 sentences in a row.\n"
+                   f"- Exactly {speakers} speakers — never add a third speaker, narrator, or host.\n"
+                   "- The labels are voice tags only: speakers must NOT address each other by these labels or by any "
+                   "personal name, must NOT introduce themselves, and must NOT invent a show or host name. "
+                   "Dive straight into the substance.")
         else:
             fmt = (f"- 형식: {speakers}인 대화형 팟캐스트.\n{role_lines}\n"
                    f"- 각 발화는 반드시 다음 라벨 중 하나로 시작하고 콜론+공백을 붙일 것 — {labels}\n"
-                   f"- 자연스러운 turn-taking, 한 명이 5문장 이상 연속 독점 금지.")
+                   "- 자연스러운 turn-taking, 한 명이 5문장 이상 연속 독점 금지.\n"
+                   f"- 등장인물은 정확히 {speakers}명뿐 — 제3의 화자·내레이터·해설자를 절대 추가하지 말 것.\n"
+                   "- 라벨은 음성 구분용 표시일 뿐이다. 대사 속에서 서로를 그 라벨(예: '전문가님')이나 이름으로 부르지 말고, "
+                   "자기·상대를 소개하거나 프로그램·진행자 이름을 지어내지 말 것. 곧바로 내용으로 들어갈 것.")
 
     if lang == "en":
         focus_line = f"- Special emphasis: {focus}\n" if focus else ""
@@ -196,9 +205,13 @@ def build_prompt(review: str, conns: list[dict], speakers: int, lang: str,
 
 
 def parse_turns(script: str, labels: list[str]) -> list[tuple[str, str]]:
-    pat = re.compile(r"^(" + "|".join(re.escape(l) for l in labels) + r")\s*:\s*(.*)$")
+    """Flexible: any short 'Label:' at line start is a turn boundary. A stray
+    3rd speaker / narrator the model slipped in is remapped to an allowed
+    speaker (alternating), so multi-speaker TTS never voices a phantom voice."""
+    allow = {l: i for i, l in enumerate(labels)}
+    pat = re.compile(r"^([A-Za-z가-힣][A-Za-z가-힣0-9]{0,9})\s*:\s*(.*)$")
     turns: list[tuple[str, str]] = []
-    cur, buf = None, []
+    cur, buf, last_idx = None, [], -1
 
     def flush():
         if cur and " ".join(buf).strip():
@@ -211,7 +224,13 @@ def parse_turns(script: str, labels: list[str]) -> list[tuple[str, str]]:
         m = pat.match(line)
         if m:
             flush()
-            cur, buf = m.group(1), [m.group(2).strip()]
+            label = m.group(1)
+            if label in allow:
+                cur, last_idx = label, allow[label]
+            else:
+                last_idx = (last_idx + 1) % len(labels)
+                cur = labels[last_idx]
+            buf = [m.group(2).strip()]
         elif cur:
             buf.append(line)
     flush()
