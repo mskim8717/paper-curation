@@ -18,6 +18,11 @@ TODAY = datetime.now(KST).strftime("%Y-%m-%d")
 from collections import OrderedDict
 from config_loader import PAPERS_DIR as _PAPERS_DIR, DOCS_DIR, get_topic_dir, get_zotero_api_key, get_zotero_user_id
 from lib.categories import category_slug
+from lib.audio_overview import (
+    get_audio_css as _audio_css,
+    audio_modal_html as _audio_modal,
+    audio_script_block as _audio_script,
+)
 PAPERS_DIR = str(_PAPERS_DIR)
 
 def get_topic():
@@ -635,6 +640,9 @@ img.lazy.loaded {{ opacity: 1; }}
 .deep-fig-item img {{ width: 100%; height: 115px; object-fit: cover; cursor: zoom-in; display: block; }}
 .deep-fig-item .fig-cap {{ padding: 0.35rem 0.6rem; font-size: 0.7rem; color: #666; line-height: 1.35; }}"""
 
+# Audio Overview styles (shared lib). accent_bg ≈ accent at ~10% alpha.
+CSS = CSS + "\n" + _audio_css(accent, accent_dark, accent + "1a")
+
 JS = """function toggleTopic(id) {
   const body = document.getElementById(id);
   const toggle = document.getElementById('toggle-' + id);
@@ -779,7 +787,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // ============================================================================
 // Deep Research (client-side RAG + Anthropic streaming with Extended Thinking)
 // ============================================================================
-const DEEP = { index: null, loading: false, currentAnswer: '', currentRefs: [] };
+const DEEP = { index: null, loading: false, currentAnswer: '', currentRefs: [], currentQuery: '' };
 
 // Safe DOM helpers (no .innerHTML usage)
 function clearEl(el) { while (el && el.firstChild) el.removeChild(el.firstChild); }
@@ -816,6 +824,7 @@ function deepHidePanel() {
   document.getElementById('deep-figures').style.display = 'none';
   DEEP.currentAnswer = '';
   DEEP.currentRefs = [];
+  DEEP.currentQuery = '';
   deepUpdateButtons(false);
 }
 
@@ -824,6 +833,9 @@ function deepUpdateButtons(enabled) {
     const b = document.getElementById(id);
     if (b) b.disabled = !enabled;
   }
+  // Audio Overview button: only usable locally (key present) and after an answer.
+  const ab = document.getElementById('deep-audio');
+  if (ab) ab.disabled = !(enabled && window._GEMINI_KEY);
 }
 
 async function deepLoadIndex() {
@@ -1159,6 +1171,7 @@ function finalizeDeepAnswer() {
 async function runDeepResearch(query) {
   query = (query || '').trim();
   if (!query) return;
+  DEEP.currentQuery = query;
   deepShowPanel();
   if (!_ANTHROPIC_KEY || !_OPENAI_KEY) {
     const ak = prompt('Anthropic API Key를 입력하세요 (Deep Research에 필요합니다):');
@@ -1455,6 +1468,8 @@ if _cfg_path.exists():
         _cfg_keys = json.load(_f)
 _ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY") or _cfg_keys.get("anthropic_api_key", "")
 _OPENAI_KEY = os.environ.get("OPENAI_API_KEY") or _cfg_keys.get("openai_api_key", "")
+_GEMINI_KEY = (os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+               or _cfg_keys.get("gemini_api_key", "") or _cfg_keys.get("google_api_key", ""))
 JS = ("let _ANTHROPIC_KEY = " + json.dumps(_ANTHROPIC_KEY) + " || localStorage.getItem('_ANTHROPIC_KEY') || '';\n"
       "let _OPENAI_KEY = " + json.dumps(_OPENAI_KEY) + " || localStorage.getItem('_OPENAI_KEY') || '';\n" + JS)
 
@@ -1657,6 +1672,17 @@ if has_research_tl:
         research_tl_html += f'  <div style="text-align:right;margin-top:0.8rem"><a href="network.html" target="_blank" rel="noopener noreferrer" style="color:{accent};font-weight:600;text-decoration:none;font-size:0.9rem">&#x1F517; Interactive Paper Network &rarr;</a></div>\n'
     research_tl_html += '</div>\n\n\n'
 
+# Deep Research Audio Overview: context provider built live from the answer.
+_AUDIO_PROVIDER_JS = (
+    "window._audioContextProvider = function() {\n"
+    "  return {\n"
+    "    title: (DEEP.currentQuery || 'deep-research'),\n"
+    "    review: '[질문]\\n' + (DEEP.currentQuery || '') + '\\n\\n[답변]\\n' + (DEEP.currentAnswer || ''),\n"
+    "    connections: (DEEP.currentRefs || []).map(function(r) { return {title: r.title, relation: '인용', reason: ''}; })\n"
+    "  };\n"
+    "};"
+)
+
 HTML = (
     '<!DOCTYPE html>\n'
     '<html lang="ko">\n'
@@ -1711,6 +1737,7 @@ HTML = (
     '          <button class="deep-btn" id="deep-download-html" disabled title="Download .html">&#x2B07; HTML</button>\n'
     '          <button class="deep-btn" id="deep-newtab" disabled title="Open in new tab">&#x1F517; New tab</button>\n'
     '          <button class="deep-btn" id="deep-obsidian" disabled title="Save answer + your notes to Obsidian">&#x1F4DD; Obsidian</button>\n'
+    '          <button class="deep-btn" id="deep-audio" disabled title="이 답변을 팟캐스트형 오디오로 생성 (로컬 전용)" onclick="openAudioModal()">&#x1F3A7; Audio</button>\n'
     '          <button class="deep-btn" id="deep-close" title="Close">&#x2715;</button>\n'
     '        </div>\n'
     '      </div>\n'
@@ -1743,7 +1770,9 @@ HTML = (
     '</div>\n\n'
     '<div id="lightbox" class="lightbox"><img id="lightbox-img" alt=""></div>\n\n'
     f'<script>\n{JS}\n</script>\n\n'
-    '<footer style="text-align:center;padding:2rem 0 1rem;color:#999;font-size:0.85rem;border-top:1px solid #eee;margin-top:3rem;">'
+    + _audio_modal("이 Deep Research 답변을 팟캐스트형 오디오로 생성합니다. (Gemini · 로컬 전용)") + "\n"
+    + _audio_script(_GEMINI_KEY, mode="deep", provider_js=_AUDIO_PROVIDER_JS) + "\n"
+    + '<footer style="text-align:center;padding:2rem 0 1rem;color:#999;font-size:0.85rem;border-top:1px solid #eee;margin-top:3rem;">'
     'Developed by Jehyun Lee, KIST AIX Strategy Department | jehyun.lee@gmail.com'
     '</footer>\n\n'
     '</body>\n</html>'
