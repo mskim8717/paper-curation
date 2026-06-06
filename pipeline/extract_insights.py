@@ -315,34 +315,121 @@ Output ONLY valid JSON in this exact format:
         },
     }
 
-    # cached_call: same (prompt, model) hash → cache hit. Insights are
-    # stable for unchanged input; re-runs of --mode rebuild skip the call.
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from api._llm import cached_call, topic_cache_dir
     cache_dir = topic_cache_dir(topic)
 
     def _make_call():
-        resp = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=8000,
-            tools=[insight_schema],
-            tool_choice={"type": "tool", "name": "emit_insights"},
-            messages=[{"role": "user", "content": prompt}],
-        )
-        log(f"    [insights] tool-use returned in {time.time()-_t0:.0f}s "
-            f"(stop_reason={getattr(resp, 'stop_reason', '?')})")
-        for block in resp.content:
-            if getattr(block, "type", None) == "tool_use" \
-                    and getattr(block, "name", None) == "emit_insights":
-                return dict(block.input)
-        raise RuntimeError("emit_insights tool was not invoked")
+        last_err = None
+        for backend in _CC_BACKENDS:
+            try:
+                if backend == "anthropic":
+                    out = _cc_anthropic_call(client, prompt, insight_schema)
+                elif backend == "openai":
+                    out = _cc_openai_call(prompt, insight_schema)
+                elif backend == "gemini":
+                    out = _cc_gemini_call(prompt, insight_schema)
+                else:
+                    log(f"    [insights:{backend}] unknown backend, skipping")
+                    continue
+                log(f"    [insights:{backend}] OK in {time.time()-_t0:.0f}s")
+                return out
+            except Exception as e:
+                last_err = e
+                log(f"    [insights:{backend}] failed ({type(e).__name__}: {str(e)[:80]}) → next backend")
+        raise RuntimeError(f"all cross-category backends failed: "
+                           f"{type(last_err).__name__}: {str(last_err)[:120]}")
 
     try:
-        return cached_call(cache_dir, prompt, "claude-sonnet-4-6", _make_call,
+        return cached_call(cache_dir, prompt, "+".join(_CC_BACKENDS), _make_call,
                             schema_version="v1")
     except Exception as e:
         log(f"  WARNING: insight tool-use failed: {e}")
         return {"cross_category": [], "per_category": {}, "meta": {}}
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Cross-category insights backend helpers (Anthropic / OpenAI / Gemini)
+# All three return a dict matching ``insight_schema`` so the caller stays
+# provider-agnostic. Each helper raises on failure so the outer try/except
+# chain can move to the next backend.
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _cc_anthropic_call(client, prompt, schema):
+    if client is None:
+        raise RuntimeError("Anthropic client unavailable")
+    resp = client.messages.create(
+        model="claude-sonnet-4-6",
+        max_tokens=8000,
+        tools=[schema],
+        tool_choice={"type": "tool", "name": schema["name"]},
+        messages=[{"role": "user", "content": prompt}],
+    )
+    for block in resp.content:
+        if getattr(block, "type", None) == "tool_use" \
+                and getattr(block, "name", None) == schema["name"]:
+            return dict(block.input)
+    raise RuntimeError(f"{schema['name']} tool was not invoked")
+
+
+def _cc_openai_call(prompt, schema):
+    try:
+        from openai import OpenAI
+    except ImportError as e:
+        raise RuntimeError(f"openai SDK missing: {e}")
+    api_key = (os.environ.get("OPENAI_API_KEY") or
+               load_config().get("openai_api_key", ""))
+    if not api_key:
+        raise RuntimeError("no OpenAI API key (OPENAI_API_KEY env or config)")
+    oai = OpenAI(api_key=api_key, timeout=180.0, max_retries=1)
+    func_def = {
+        "type": "function",
+        "function": {
+            "name": schema["name"],
+            "description": schema.get("description", ""),
+            "parameters": schema["input_schema"],
+        },
+    }
+    resp = oai.chat.completions.create(
+        model=_OPENAI_CC_MODEL,
+        max_tokens=8000,
+        tools=[func_def],
+        tool_choice={"type": "function", "function": {"name": schema["name"]}},
+        messages=[{"role": "user", "content": prompt}],
+    )
+    msg = resp.choices[0].message
+    if not getattr(msg, "tool_calls", None):
+        raise RuntimeError(f"OpenAI did not invoke {schema['name']}")
+    return json.loads(msg.tool_calls[0].function.arguments)
+
+
+def _cc_gemini_call(prompt, schema):
+    try:
+        from google import genai
+        from google.genai import types as gtypes
+    except ImportError as e:
+        raise RuntimeError(f"google-genai SDK missing: {e}")
+    api_key = (os.environ.get("GEMINI_API_KEY")
+               or os.environ.get("GOOGLE_API_KEY")
+               or load_config().get("gemini_api_key", "")
+               or load_config().get("google_api_key", ""))
+    if not api_key:
+        raise RuntimeError("no Gemini API key (GEMINI_API_KEY/GOOGLE_API_KEY env or config)")
+    gem = genai.Client(api_key=api_key)
+    resp = gem.models.generate_content(
+        model=_GEMINI_CC_MODEL,
+        contents=prompt,
+        config=gtypes.GenerateContentConfig(
+            response_mime_type="application/json",
+            response_schema=schema["input_schema"],
+        ),
+    )
+    text = (resp.text or "").strip()
+    if text.startswith("```"):
+        text = text.split("```")[1]
+        if text.startswith("json"):
+            text = text[4:]
+    return json.loads(text)
 
 
 # ═══════════════════════════════════════════
@@ -394,6 +481,17 @@ _BACKENDS = [b.strip().lower() for b in
 # de-dup preserving order
 _BACKENDS = list(dict.fromkeys(_BACKENDS))
 _OPENAI_CONN_MODEL = os.environ.get("EXTRACT_INSIGHTS_OPENAI_MODEL", "gpt-4.1")
+# Cross-category insights fallback chain (separate from paper_connections):
+# anthropic → openai → gemini. Each backend is forced into the same JSON schema
+# so the downstream consumer is provider-agnostic. Override with
+# EXTRACT_INSIGHTS_CC_BACKENDS=openai,gemini etc.
+_CC_BACKENDS = [b.strip().lower() for b in
+                 os.environ.get("EXTRACT_INSIGHTS_CC_BACKENDS",
+                                "anthropic,openai,gemini").split(",")
+                 if b.strip()]
+_CC_BACKENDS = list(dict.fromkeys(_CC_BACKENDS))
+_OPENAI_CC_MODEL = os.environ.get("EXTRACT_INSIGHTS_CC_OPENAI_MODEL", "gpt-4.1")
+_GEMINI_CC_MODEL = os.environ.get("EXTRACT_INSIGHTS_CC_GEMINI_MODEL", "gemini-2.5-pro")
 # Per-attempt wall-clock cap (thread watchdog) — fail fast so fallback kicks in.
 _ATTEMPT_DEADLINE_S = int(os.environ.get("EXTRACT_INSIGHTS_ATTEMPT_DEADLINE", "150"))
 # Circuit breaker: after this many consecutive failures of a backend, drop it

@@ -360,10 +360,36 @@ def _zotero_text_sanity(item, text_md_path, min_title_coverage=0.6):
         return True, "read_error_skip"
 
     # 1. Title keyword coverage
-    title_words = re.sub(r"[^a-z0-9\s]", " ", (item.get("title") or "").lower()).split()
-    kw = [w for w in title_words if len(w) > 3][:6]
+    # Include Hangul syllables so Korean titles like
+    # "BiCoord: 장기간 시공간 협응 양팔 조작 벤치마크" yield several keywords
+    # rather than just one English fragment. ASCII tokens still need >3
+    # chars to skip stopwords; Hangul tokens use a ≥2-char threshold
+    # since Korean morphemes are short.
+    title_lower = (item.get("title") or "").lower()
+    title_words = re.sub(r"[^a-z0-9가-힣\s]", " ", title_lower).split()
+    kw = [w for w in title_words
+          if (w.isascii() and len(w) > 3) or (not w.isascii() and len(w) >= 2)
+          ][:6]
     title_hits = sum(1 for w in kw if w in text) if kw else 0
-    title_ok = (not kw) or title_hits >= max(3, int(len(kw) * min_title_coverage))
+    # Scale threshold to kw length: 60% coverage with a floor of 1. The
+    # original ``max(3, ...)`` rejected legitimate matches when titles
+    # produced fewer than 5 keywords (typical for Korean papers and
+    # short titles).
+    threshold = max(1, int(len(kw) * min_title_coverage))
+    title_ok = (not kw) or title_hits >= threshold
+
+    # ASCII-only fallback: covers the "Korean title + English PDF" case
+    # where the user registered a translated title in Zotero but the
+    # actual PDF body is the English original. The Hangul keywords will
+    # never appear in the English text, so we additionally pass if the
+    # ASCII subset of the keywords has full coverage (≥60% with floor 1).
+    if not title_ok and kw:
+        ascii_kw = [w for w in kw if w.isascii()]
+        if ascii_kw:
+            ascii_hits = sum(1 for w in ascii_kw if w in text)
+            ascii_thr = max(1, int(len(ascii_kw) * min_title_coverage))
+            if ascii_hits >= ascii_thr:
+                title_ok = True
 
     # 2. DOI exact (ignore non-alphanumeric)
     doi = re.sub(r"[^a-z0-9]", "", (item.get("DOI") or "").lower())
@@ -1046,25 +1072,38 @@ def convert_to_html(slug):
 # ── Process single paper ──
 
 def make_slug(item, existing_slugs):
-    """Match item to existing slug or generate new one."""
-    title = item.get("title", "Unknown")
-    # Normalize for matching
-    norm_title = re.sub(r"[^a-z0-9]", "", title.lower())[:40]
+    """Match item to existing slug or generate a new one.
 
-    # Match against existing slugs (skip number prefix)
-    for s in existing_slugs:
-        # Extract text part after NNN_
-        parts = s.split("_", 1)
-        if len(parts) < 2:
-            continue
-        slug_text = re.sub(r"[^a-z0-9]", "", parts[1].lower())[:40]
-        if norm_title[:25] == slug_text[:25] and len(norm_title[:25]) > 10:
-            return s
+    Matching policy (Phase 4 collision fix):
+      • Normalise title and slug-text by stripping non-alphanumerics and
+        lowercasing.
+      • Require the FULL 40-character prefix to match — the original
+        25-character cutoff conflated different papers that shared their
+        first few words (e.g. "A hierarchical framework for measuring
+        scientific impact" vs "A Hierarchical Framework for Humanoid
+        Locomotion with Supernumerary Limbs", both → `ahierarchical
+        frameworkfor` at 25 chars).
+      • Both sides must have ≥ 40 normalised chars to be eligible; short
+        titles fall through to new-slug allocation rather than risking a
+        false match.
+    """
+    title = item.get("title", "Unknown")
+    norm_title = re.sub(r"[^a-z0-9]", "", title.lower())
+
+    if len(norm_title) >= 40:
+        for s in existing_slugs:
+            parts = s.split("_", 1)
+            if len(parts) < 2:
+                continue
+            slug_text = re.sub(r"[^a-z0-9]", "", parts[1].lower())
+            if len(slug_text) < 40:
+                continue
+            if norm_title[:40] == slug_text[:40]:
+                return s
 
     # No match → new slug
     safe = "".join(c if c.isalnum() or c in " -_" else "" for c in title)[:60].strip()
     safe = safe.replace(" ", "_")
-    # Find max slug number across all existing
     max_num = 0
     for d in existing_slugs:
         m = re.match(r"(\d+)_", d)
