@@ -1254,31 +1254,49 @@ def _run_topic_index(topic=None):
       const reader = resp.body.getReader();
       const decoder = new TextDecoder();
       let buffer = '';
+      let logged = false;
+      // SSE separator: spec says LF-LF, but some Google endpoints emit
+      // CRLF-CRLF. Use a regex that accepts either, and split lines
+      // with /\\r?\\n/ for the same reason. Earlier versions only
+      // matched LF and silently dropped the stream on CRLF responses.
+      const SEP_RE = /\\r?\\n\\r?\\n/;
+      const LINE_RE = /\\r?\\n/;
+      const parseBlock = (block) => {
+        for (const line of block.split(LINE_RE)) {
+          if (!line.startsWith('data:')) continue;
+          // Tolerate "data:foo" as well as "data: foo".
+          const payload = line.slice(5).replace(/^ /, '').trim();
+          if (!payload || payload === '[DONE]') continue;
+          let ev;
+          try { ev = JSON.parse(payload); } catch { continue; }
+          const cand = ev.candidates && ev.candidates[0];
+          if (!cand) continue;
+          const parts = cand.content && cand.content.parts;
+          if (parts) {
+            for (const p of parts) {
+              if (p.text) onDelta(p.text);
+            }
+          }
+        }
+      };
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
         buffer += decoder.decode(value, { stream: true });
-        let idx;
-        while ((idx = buffer.indexOf('\\n\\n')) !== -1) {
-          const block = buffer.slice(0, idx);
-          buffer = buffer.slice(idx + 2);
-          for (const line of block.split('\\n')) {
-            if (!line.startsWith('data: ')) continue;
-            const payload = line.slice(6).trim();
-            if (!payload || payload === '[DONE]') continue;
-            let ev;
-            try { ev = JSON.parse(payload); } catch { continue; }
-            const cand = ev.candidates && ev.candidates[0];
-            if (!cand) continue;
-            const parts = cand.content && cand.content.parts;
-            if (parts) {
-              for (const p of parts) {
-                if (p.text) onDelta(p.text);
-              }
-            }
-          }
+        if (!logged) {
+          console.log('[callGoogle] first chunk (200 chars):', JSON.stringify(buffer.slice(0, 200)));
+          logged = true;
+        }
+        let m;
+        while ((m = SEP_RE.exec(buffer)) !== null) {
+          const block = buffer.slice(0, m.index);
+          buffer = buffer.slice(m.index + m[0].length);
+          parseBlock(block);
         }
       }
+      // Process any remaining buffered chunk (Google sometimes closes
+      // the stream without a trailing blank line on the final event).
+      if (buffer.trim()) parseBlock(buffer);
     }
 
     async function callLLM(query, selected, lang, tier, length, fullTexts) {
@@ -1416,6 +1434,10 @@ def _run_topic_index(topic=None):
       if (!query) return;
       DEEP.currentQuery = query;
       deepShowPanel();
+      // Visible heartbeat — proves the function was actually called.
+      // Without this, a silent fallthrough on missing keys / prompt
+      // cancel can look identical to "nothing happened".
+      deepSetStatus('⏳ Deep Research 시작...');
       if (!_LLM_KEY || !_OPENAI_KEY) {
         if (!_LLM_KEY) {
           const lk = prompt('답변 생성용 API Key를 입력하세요 (Anthropic sk-ant-… / OpenAI sk-… / Google AIza… 중 하나):');
