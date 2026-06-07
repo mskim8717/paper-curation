@@ -841,9 +841,11 @@ def _run_topic_index(topic=None):
         const b = document.getElementById(id);
         if (b) b.disabled = !enabled;
       }
-      // Audio Overview button: only usable locally (key present) and after an answer.
+      // Audio Overview button: enabled once an answer exists. The user
+      // gets prompted for their Gemini key on first click if none is
+      // cached (same as the per-paper button).
       const ab = document.getElementById('deep-audio');
-      if (ab) ab.disabled = !(enabled && window._GEMINI_KEY);
+      if (ab) ab.disabled = !enabled;
     }
 
     async function deepLoadIndex() {
@@ -2052,7 +2054,7 @@ def _run_topic_index(topic=None):
         '          <button class="deep-btn" id="deep-download-html" disabled title="Download .html">&#x2B07; HTML</button>\n'
         '          <button class="deep-btn" id="deep-newtab" disabled title="Open in new tab">&#x1F517; New tab</button>\n'
         '          <button class="deep-btn" id="deep-obsidian" disabled title="Save answer + your notes to Obsidian">&#x1F4DD; Obsidian</button>\n'
-        '          <button class="deep-btn" id="deep-audio" disabled title="이 답변을 팟캐스트형 오디오로 생성 (로컬 전용)" onclick="openAudioModal()">&#x1F3A7; Audio</button>\n'
+        '          <button class="deep-btn" id="deep-audio" disabled title="이 답변을 팟캐스트형 오디오로 생성 (Gemini · 키는 브라우저에만 저장)" onclick="openAudioModal()">&#x1F3A7; Audio</button>\n'
         '          <button class="deep-btn" id="deep-close" title="Close">&#x2715;</button>\n'
         '        </div>\n'
         '      </div>\n'
@@ -2085,7 +2087,7 @@ def _run_topic_index(topic=None):
         '</div>\n\n'
         '<div id="lightbox" class="lightbox"><img id="lightbox-img" alt=""></div>\n\n'
         f'<script>\n{JS}\n</script>\n\n'
-        + _audio_modal("이 Deep Research 답변을 팟캐스트형 오디오로 생성합니다. (Gemini · 로컬 전용)") + "\n"
+        + _audio_modal("이 Deep Research 답변을 팟캐스트형 오디오로 생성합니다. (Gemini · 키는 브라우저에만 저장)") + "\n"
         + _audio_script(_GEMINI_KEY, mode="deep", provider_js=_AUDIO_PROVIDER_JS) + "\n"
         + '<footer style="text-align:center;padding:2rem 0 1rem;color:#999;font-size:0.85rem;border-top:1px solid #eee;margin-top:3rem;">'
         'Developed by Jehyun Lee, KIST AIX Strategy Department | jehyun.lee@gmail.com'

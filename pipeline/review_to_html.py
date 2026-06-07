@@ -131,21 +131,20 @@ def get_audio_css(t):
 
 
 def audio_bar_html():
-    """Button shown under the title; disabled & relabeled when no key (deployed)."""
-    if _GEMINI_KEY:
-        return ('<div class="audio-bar">'
-                '<button class="audio-btn" id="audio-open" onclick="openAudioModal()">'
-                '\U0001F3A7 Audio Overview 생성</button></div>')
+    """Button shown under the title. Always enabled — when the page is
+    deployed without a baked key, the modal JS prompts the visitor for
+    their own Gemini API key on first click and remembers it in
+    localStorage."""
     return ('<div class="audio-bar">'
-            '<button class="audio-btn" disabled '
-            'title="로컬(localhost)에서만 생성할 수 있습니다">'
-            '\U0001F3A7 Audio Overview (로컬 전용)</button></div>')
+            '<button class="audio-btn" id="audio-open" onclick="openAudioModal()">'
+            '\U0001F3A7 Audio Overview 생성</button></div>')
 
 
 def audio_modal_html():
-    if not _GEMINI_KEY:
-        return ""
-    return _audio_modal_lib("이 논문 리뷰를 팟캐스트형 오디오로 생성합니다. (Gemini · 로컬 전용)")
+    return _audio_modal_lib(
+        "이 논문 리뷰를 팟캐스트형 오디오로 생성합니다. "
+        "(Gemini · 키는 브라우저에만 저장)"
+    )
 
 
 def audio_script_block(ctx):

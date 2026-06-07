@@ -44,7 +44,7 @@ def get_audio_css(accent, accent_dark, accent_bg):
 .audio-dl {{ display: inline-block; margin-top: 0.6rem; font-size: 0.82rem; color: {accent_dark}; text-decoration: none; font-weight: 600; }}"""
 
 
-def audio_modal_html(sub_text="팟캐스트형 오디오로 생성합니다. (Gemini · 로컬 전용)"):
+def audio_modal_html(sub_text="팟캐스트형 오디오로 생성합니다. (Gemini · 키는 브라우저에만 저장)"):
     """Shared modal markup. Single instance per page; opened by openAudioModal()."""
     return """
 <div class="audio-modal-bg" id="audio-modal-bg">
@@ -118,7 +118,36 @@ def audio_modal_html(sub_text="팟캐스트형 오디오로 생성합니다. (Ge
 # four onclick-referenced handlers are exported to window at the end.
 AUDIO_JS = r"""
 (function() {
-const GKEY = window._GEMINI_KEY || "";
+// _GEMINI_KEY is baked into the page at build time on localhost and
+// stripped on deploy. To let Cloudflare visitors still generate audio,
+// we additionally accept a user-provided key via localStorage and via
+// a one-time prompt the first time they click the button. The key
+// stays in their browser only — it is never sent anywhere except
+// google's TTS / Gemini endpoints.
+let GKEY = (window._GEMINI_KEY || "") || (function() {
+  try { return localStorage.getItem("_GEMINI_KEY") || ""; } catch (e) { return ""; }
+})();
+function rememberGeminiKey(k) {
+  GKEY = k || "";
+  window._GEMINI_KEY = GKEY;
+  try { if (GKEY) localStorage.setItem("_GEMINI_KEY", GKEY); } catch (e) {}
+}
+function ensureGeminiKey() {
+  if (GKEY) return GKEY;
+  const k = prompt(
+    "Audio Overview는 Gemini API Key가 필요합니다.\n" +
+    "https://aistudio.google.com/apikey 에서 발급 후 입력하세요.\n" +
+    "(브라우저에만 저장됩니다 — 외부로 전송하지 않습니다)"
+  );
+  if (!k) return "";
+  const t = String(k).trim();
+  if (!t.startsWith("AIza")) {
+    alert("올바른 형식이 아닙니다. Gemini API Key는 AIza 로 시작합니다.");
+    return "";
+  }
+  rememberGeminiKey(t);
+  return GKEY;
+}
 const AUDIO_MODE = window._AUDIO_MODE || "paper";
 function audioCtx() {
   if (typeof window._audioContextProvider === "function")
@@ -198,6 +227,15 @@ function getSeg(groupId) {
 }
 
 function openAudioModal() {
+  // Acquire the Gemini key lazily — at modal-open time. This lets
+  // Cloudflare visitors paste their own key the first time and have it
+  // remembered for subsequent sessions (localStorage).
+  if (!ensureGeminiKey()) {
+    // User dismissed the prompt or entered an invalid key. Don't open
+    // the modal — pretending the form is usable would lead to a
+    // confusing 401 deep inside the generation flow.
+    return;
+  }
   const s = loadSettings();
   setSeg("seg-speakers", s.speakers);
   setSeg("seg-lang", s.lang);
@@ -505,7 +543,7 @@ async function synthesize(s, script) {
 
 let _audioUrl = null;
 async function runAudioGen() {
-  if (!GKEY) { setStatus("Gemini 키가 없습니다 (로컬 전용)"); return; }
+  if (!ensureGeminiKey()) { setStatus("Gemini API Key가 필요합니다."); return; }
   const ctx = audioCtx();
   if (!ctx.review || !ctx.review.trim()) { setStatus("먼저 분석할 내용이 필요합니다."); return; }
   const go = document.getElementById("audio-go");
@@ -540,13 +578,13 @@ async function runAudioGen() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Deployed pages have the key stripped (window._GEMINI_KEY = ""): disable
-  // the paper-page button so it can't be clicked into a dead end. (The deep
-  // research button is gated separately by its own enable logic.)
-  if (!GKEY) {
-    const ob = document.getElementById("audio-open");
-    if (ob) { ob.disabled = true; ob.title = "로컬(localhost)에서만 생성할 수 있습니다";
-              ob.innerHTML = "🎧 Audio Overview (로컬 전용)"; }
+  // Button always enabled — clicking will trigger ensureGeminiKey()
+  // which prompts the user when the page was deployed without a baked
+  // key. We keep a hint in the button tooltip when no key is cached so
+  // the visitor knows what to expect.
+  const ob = document.getElementById("audio-open");
+  if (ob && !GKEY) {
+    ob.title = "클릭 시 Gemini API Key 입력 창이 뜹니다 (브라우저에만 저장)";
   }
   if (!document.getElementById("audio-modal-bg")) return;
   wireAudioModal();
@@ -568,10 +606,15 @@ window.runAudioGen = runAudioGen;
 
 def audio_script_block(gemini_key, mode="paper", ctx=None, provider_js=""):
     """Wrap AUDIO_JS with the injected key, mode, and either a static context
-    (paper) or a context-provider snippet (deep). Returns "" when no key."""
-    if not gemini_key:
-        return ""
-    prefix = "window._GEMINI_KEY = " + json.dumps(gemini_key) + ";\n"
+    (paper) or a context-provider snippet (deep).
+
+    Always emits the script so deployed pages can still accept a
+    user-provided key at runtime (the JS prompts the visitor on first
+    click and remembers the result in localStorage). When no key is
+    baked at build time we set the global to an empty string so the JS
+    falls through to the localStorage / prompt path.
+    """
+    prefix = "window._GEMINI_KEY = " + json.dumps(gemini_key or "") + ";\n"
     prefix += "window._AUDIO_MODE = " + json.dumps(mode) + ";\n"
     if ctx is not None:
         prefix += "window._AUDIO = " + json.dumps(ctx, ensure_ascii=False) + ";\n"
