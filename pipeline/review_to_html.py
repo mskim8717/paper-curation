@@ -33,14 +33,19 @@ except Exception:
 # then stripped from every deployed page by prepare_deploy.py. On Cloudflare the
 # value is "" so the generate button stays disabled (localhost-only feature).
 _GEMINI_KEY = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY") or ""
-if not _GEMINI_KEY:
+_LOCAL_EMAILS_RAW = os.environ.get("PAPER_CURATION_LOCAL_EMAILS", "")
+if not _GEMINI_KEY or not _LOCAL_EMAILS_RAW:
     _cfg_path = os.path.join(os.path.dirname(os.path.dirname(_PAPERS_DIR)), "config.json")
     try:
         with open(_cfg_path, "r", encoding="utf-8") as _f:
             _cfg = json.load(_f)
-        _GEMINI_KEY = _cfg.get("gemini_api_key") or _cfg.get("google_api_key", "")
+        if not _GEMINI_KEY:
+            _GEMINI_KEY = _cfg.get("gemini_api_key") or _cfg.get("google_api_key", "")
+        if not _LOCAL_EMAILS_RAW:
+            _LOCAL_EMAILS_RAW = ",".join(_cfg.get("local_emails", []) or [])
     except Exception:
         pass
+_LOCAL_EMAILS = [e.strip() for e in _LOCAL_EMAILS_RAW.split(",") if e.strip()]
 
 THEMES = {
     "ai4s": {"accent": "#D63423", "accent_dark": "#A62018", "accent_bg": "#FEF0EF",
@@ -143,13 +148,14 @@ def audio_bar_html():
 def audio_modal_html():
     return _audio_modal_lib(
         "이 논문 리뷰를 팟캐스트형 오디오로 생성합니다. "
-        "(Gemini · 키는 브라우저에만 저장)"
+        "(Gemini · 키는 브라우저에만 저장 · 완성본은 이메일로도 전송)"
     )
 
 
 def audio_script_block(ctx):
     """Wrap the shared Audio Overview JS with this paper's static context."""
-    return _audio_script_lib(_GEMINI_KEY, mode="paper", ctx=ctx)
+    return _audio_script_lib(_GEMINI_KEY, mode="paper", ctx=ctx,
+                              local_emails=_LOCAL_EMAILS)
 
 
 def parse_scores(md):

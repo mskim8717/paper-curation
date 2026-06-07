@@ -1771,6 +1771,11 @@ def _run_topic_index(topic=None):
     _OPENAI_KEY = os.environ.get("OPENAI_API_KEY") or _cfg_keys.get("openai_api_key", "")
     _GEMINI_KEY = (os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
                    or _cfg_keys.get("gemini_api_key", "") or _cfg_keys.get("google_api_key", ""))
+    # Local-only Audio Overview recipients (baked for localhost convenience;
+    # stripped by prepare_deploy.py before Cloudflare upload).
+    _LOCAL_EMAILS_RAW = (os.environ.get("PAPER_CURATION_LOCAL_EMAILS", "")
+                         or ",".join(_cfg_keys.get("local_emails", []) or []))
+    _LOCAL_EMAILS = [e.strip() for e in _LOCAL_EMAILS_RAW.split(",") if e.strip()]
     # ── Deep Research multi-backend keys ──────────────────────────────
     # We baked these at build time for local dev (where prepare_deploy
     # strips them on the way to Cloudflare). At runtime the modal
@@ -2081,8 +2086,9 @@ def _run_topic_index(topic=None):
         '</div>\n\n'
         '<div id="lightbox" class="lightbox"><img id="lightbox-img" alt=""></div>\n\n'
         f'<script>\n{JS}\n</script>\n\n'
-        + _audio_modal("이 Deep Research 답변을 팟캐스트형 오디오로 생성합니다. (Gemini · 키는 브라우저에만 저장)") + "\n"
-        + _audio_script(_GEMINI_KEY, mode="deep", provider_js=_AUDIO_PROVIDER_JS) + "\n"
+        + _audio_modal("이 Deep Research 답변을 팟캐스트형 오디오로 생성합니다. (Gemini · 키는 브라우저에만 저장 · 완성본은 이메일로도 전송)") + "\n"
+        + _audio_script(_GEMINI_KEY, mode="deep", provider_js=_AUDIO_PROVIDER_JS,
+                        local_emails=_LOCAL_EMAILS) + "\n"
         + '<footer style="text-align:center;padding:2rem 0 1rem;color:#999;font-size:0.85rem;border-top:1px solid #eee;margin-top:3rem;">'
         'Developed by Jehyun Lee, KIST AIX Strategy Department | jehyun.lee@gmail.com'
         '</footer>\n\n'

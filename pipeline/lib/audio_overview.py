@@ -36,6 +36,8 @@ def get_audio_css(accent, accent_dark, accent_bg):
 .audio-actions .go {{ background: {accent}; color: #fff; }}
 .audio-actions .go:disabled {{ background: #bbb; cursor: not-allowed; }}
 .audio-status {{ font-size: 0.82rem; color: #666; margin-top: 0.8rem; min-height: 1.1em; }}
+.audio-notice {{ font-size: 0.8rem; color: #555; background: #fffbe6; border: 1px solid #f0d97a; border-radius: 6px; padding: 0.55rem 0.7rem; margin-top: 0.7rem; display: none; }}
+.audio-notice.show {{ display: block; }}
 .audio-player {{ display: none; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee; }}
 .audio-player.show {{ display: block; }}
 .audio-player audio {{ width: 100%; margin-bottom: 0.6rem; }}
@@ -44,7 +46,7 @@ def get_audio_css(accent, accent_dark, accent_bg):
 .audio-dl {{ display: inline-block; margin-top: 0.6rem; font-size: 0.82rem; color: {accent_dark}; text-decoration: none; font-weight: 600; }}"""
 
 
-def audio_modal_html(sub_text="팟캐스트형 오디오로 생성합니다. (Gemini · 키는 브라우저에만 저장)"):
+def audio_modal_html(sub_text="팟캐스트형 오디오로 생성합니다. (Gemini · 키는 브라우저에만 저장 · 완성본은 이메일로도 전송)"):
     """Shared modal markup. Single instance per page; opened by openAudioModal()."""
     return """
 <div class="audio-modal-bg" id="audio-modal-bg">
@@ -95,6 +97,7 @@ def audio_modal_html(sub_text="팟캐스트형 오디오로 생성합니다. (Ge
         <textarea id="audio-direction"></textarea>
       </div>
     </div>
+    <div class="audio-notice" id="audio-notice"></div>
     <div class="audio-status" id="audio-status"></div>
     <div class="audio-actions">
       <button class="cancel" onclick="closeAudioModal()">닫기</button>
@@ -236,6 +239,11 @@ function openAudioModal() {
     // confusing 401 deep inside the generation flow.
     return;
   }
+  // We used to prompt for the email address here, but that forced
+  // visitors to commit before they'd even seen the form. The recipient
+  // list is now resolved inside runAudioGen() — the prompt fires once,
+  // the first time they actually click "생성", and never again
+  // (localStorage remembers it).
   const s = loadSettings();
   setSeg("seg-speakers", s.speakers);
   setSeg("seg-lang", s.lang);
@@ -247,6 +255,8 @@ function openAudioModal() {
   dir.value = s.directionDirty ? s.direction : defaultDirection(s.lang);
   dir.dataset.dirty = s.directionDirty ? "1" : "";
   document.getElementById("audio-status").textContent = "";
+  const _notice = document.getElementById("audio-notice");
+  if (_notice) { _notice.textContent = ""; _notice.classList.remove("show"); }
   document.getElementById("audio-modal-bg").classList.add("active");
 }
 function closeAudioModal() { document.getElementById("audio-modal-bg").classList.remove("active"); }
@@ -550,6 +560,22 @@ async function runAudioGen() {
   go.disabled = true;
   const s = collectSettings();
   saveSettings(s);
+  // Tell the user up front that they can leave the page — generation
+  // can take several minutes and the finished MP3 will be emailed to
+  // them automatically (so the tab need not stay open). We use a
+  // persistent banner (audio-notice) so it doesn't get overwritten by
+  // the progress messages in audio-status.
+  const recipients = resolveAudioRecipients();
+  const notice = document.getElementById("audio-notice");
+  if (notice) {
+    if (recipients.length) {
+      notice.textContent = "📧 Audio Overview 작성이 완료되면 이메일로 보내드립니다 (" + recipients.join(", ") + "). 다른 작업을 하셔도 좋습니다.";
+      notice.classList.add("show");
+    } else {
+      notice.classList.remove("show");
+      notice.textContent = "";
+    }
+  }
   try {
     setStatus("✍️ 대본 생성 중... (gemini-2.5-pro)");
     const script = await callScript(buildScriptPrompt(s));
@@ -565,15 +591,87 @@ async function runAudioGen() {
     if ("preservesPitch" in el) el.preservesPitch = true;
     const dl = document.getElementById("audio-dl");
     dl.href = _audioUrl;
-    dl.download = (ctx.title || "audio_overview").slice(0, 60).replace(/[^\w가-힣 -]/g, "").trim().replace(/\s+/g, "_") + ".mp3";
+    const fname = (ctx.title || "audio_overview").slice(0, 60).replace(/[^\w가-힣 -]/g, "").trim().replace(/\s+/g, "_") + ".mp3";
+    dl.download = fname;
     document.getElementById("audio-player").classList.add("show");
     const dur = pcm.length / 2 / SAMPLE_RATE;
-    setStatus("✅ 완료 (약 " + Math.round(dur) + "초)");
+    setStatus("✅ 완료 (약 " + Math.round(dur) + "초). 다운로드 가능.");
+
+    // Send by email (optional). LOCAL pages have a baked recipient list;
+    // WEB pages ask the visitor once and remember in localStorage. If
+    // /api/audio-email isn't deployed (e.g. running plain
+    // `python -m http.server`), we silently skip — the download is the
+    // fallback either way.
+    try {
+      const recipients = resolveAudioRecipients();
+      if (recipients.length) {
+        setStatus("📧 이메일로 전송 중...");
+        const ok = await sendAudioEmail(blob, fname, ctx.title || "Audio Overview", s.lang, recipients);
+        if (ok) {
+          setStatus("✅ 완료 — 다운로드 가능 + 이메일 발송됨 (" + recipients.join(", ") + ")");
+        } else {
+          setStatus("✅ 완료 — 다운로드 가능 (이메일 발송은 실패. 위에서 직접 받으세요)");
+        }
+      }
+    } catch (mailErr) {
+      console.warn("audio email send skipped:", mailErr);
+    }
   } catch (e) {
     console.error(e);
     setStatus("오류: " + (e.message || e));
   } finally {
     go.disabled = false;
+  }
+}
+
+// ── Email delivery helpers ──────────────────────────────────────────
+function isLocalHost() {
+  const h = window.location.hostname;
+  return h === "localhost" || h === "127.0.0.1" || h === "0.0.0.0"
+      || h.endsWith(".local") || window.location.protocol === "file:";
+}
+
+function resolveAudioRecipients() {
+  // LOCAL pages: baked list (`window._LOCAL_EMAILS`) — the owner sees
+  // every audio without ever being asked.
+  // WEB pages: localStorage + first-time prompt.
+  const baked = Array.isArray(window._LOCAL_EMAILS) ? window._LOCAL_EMAILS.filter(Boolean) : [];
+  if (isLocalHost() && baked.length) return baked;
+  let e = "";
+  try { e = localStorage.getItem("_AUDIO_EMAIL") || ""; } catch (er) {}
+  if (e) return [e];
+  const entered = prompt(
+    "Audio Overview 완성본을 이메일로 받으시려면 주소를 입력하세요.\n" +
+    "(브라우저에만 저장되며 다음에 다시 묻지 않습니다. 비워두면 다운로드만 합니다.)"
+  );
+  if (!entered) return [];
+  const t = String(entered).trim();
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(t)) {
+    alert("이메일 형식이 올바르지 않습니다. 다운로드로 받으세요.");
+    return [];
+  }
+  try { localStorage.setItem("_AUDIO_EMAIL", t); } catch (er) {}
+  return [t];
+}
+
+async function sendAudioEmail(blob, filename, title, lang, recipients) {
+  const fd = new FormData();
+  fd.append("mp3", blob, filename);
+  fd.append("filename", filename);
+  fd.append("title", title || "Audio Overview");
+  fd.append("lang", lang || "ko");
+  for (const r of recipients) fd.append("email", r);
+  try {
+    const r = await fetch("/api/audio-email", { method: "POST", body: fd });
+    if (!r.ok) {
+      const txt = await r.text();
+      console.warn("audio-email server returned", r.status, txt.slice(0, 200));
+      return false;
+    }
+    return true;
+  } catch (e) {
+    console.warn("audio-email fetch failed:", e);
+    return false;
   }
 }
 
@@ -604,7 +702,8 @@ window.runAudioGen = runAudioGen;
 """
 
 
-def audio_script_block(gemini_key, mode="paper", ctx=None, provider_js=""):
+def audio_script_block(gemini_key, mode="paper", ctx=None, provider_js="",
+                        local_emails=None):
     """Wrap AUDIO_JS with the injected key, mode, and either a static context
     (paper) or a context-provider snippet (deep).
 
@@ -613,9 +712,15 @@ def audio_script_block(gemini_key, mode="paper", ctx=None, provider_js=""):
     click and remembers the result in localStorage). When no key is
     baked at build time we set the global to an empty string so the JS
     falls through to the localStorage / prompt path.
+
+    ``local_emails`` is a list of recipient addresses baked into the
+    build so the operator never has to retype them on localhost. The
+    array is stripped on deploy by ``prepare_deploy.py`` so visitor
+    pages always start with an empty list and prompt instead.
     """
     prefix = "window._GEMINI_KEY = " + json.dumps(gemini_key or "") + ";\n"
     prefix += "window._AUDIO_MODE = " + json.dumps(mode) + ";\n"
+    prefix += "window._LOCAL_EMAILS = " + json.dumps(local_emails or []) + ";\n"
     if ctx is not None:
         prefix += "window._AUDIO = " + json.dumps(ctx, ensure_ascii=False) + ";\n"
     if provider_js:

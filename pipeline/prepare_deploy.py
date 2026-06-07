@@ -121,7 +121,7 @@ def update_html_refs(file_path, fig_only=False):
     return False
 
 
-CF_BASE_URL = "https://paper-curation.jehyun-lee.workers.dev"
+CF_BASE_URL = "https://paper-curation.jehyunlee.dev"
 CF_PROBE_PATHS = ("/", "/humanoid/", "/physical-ai/", "/index.html")
 
 
@@ -477,6 +477,13 @@ def _run_deploy(topic="ai4s", *, quality=90, dry_run=False, push=False,
             r'\1 _LLM_KEY = ""',
             new_text,
         )
+        # _LOCAL_EMAILS — operator addresses baked for localhost convenience.
+        # Empty the array on deploy so visitors only see the prompt path.
+        new_text = _re.sub(
+            r'window\._LOCAL_EMAILS\s*=\s*\[[^\]]*\]',
+            'window._LOCAL_EMAILS = []',
+            new_text,
+        )
         if new_text != text:
             _originals[html_path] = text
             html_path.write_text(new_text, encoding="utf-8")
@@ -495,6 +502,20 @@ def _run_deploy(topic="ai4s", *, quality=90, dry_run=False, push=False,
         _restore_originals()
         print(f"  ABORT: API key still present in {len(_leak_paths)} files — refusing to commit:")
         for p in _leak_paths:
+            print(f"    - {p}")
+        sys.exit(1)
+    # Safety net: verify _LOCAL_EMAILS is empty in every deployed HTML.
+    # The strip above replaces the literal array with `[]`; this catches any
+    # remnant (e.g. emails baked into a different surface we forgot to handle).
+    _email_leak_re = _re.compile(r'window\._LOCAL_EMAILS\s*=\s*\[\s*"[^"]+')
+    _email_leaks = [
+        str(p) for p in DOCS_DIR.rglob("index.html")
+        if _email_leak_re.search(p.read_text(encoding="utf-8"))
+    ]
+    if _email_leaks:
+        _restore_originals()
+        print(f"  ABORT: _LOCAL_EMAILS still populated in {len(_email_leaks)} files — refusing to commit:")
+        for p in _email_leaks:
             print(f"    - {p}")
         sys.exit(1)
     print(f"  Stripped API keys from {len(_originals)} files (0 leaks remaining)")
