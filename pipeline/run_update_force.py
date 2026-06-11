@@ -701,7 +701,9 @@ def extract_figures(pdf_path, slug_dir):
             cap_line = None
             for ln in tb["lines"]:
                 lt = "".join(s["text"] for s in ln["spans"]).strip()
-                m = re.match(r"(?:Figure|Fig\.?)\s*([0-9]+)", lt)
+                # Case-insensitive: physics/PRL papers caption as "FIG. 1."
+                # (uppercase), not just "Figure 1" / "Fig. 1".
+                m = re.match(r"(?:Figure|Fig\.?)\s*([0-9]+)", lt, re.I)
                 if m:
                     cap_line = (ln, lt, int(m.group(1)))
                     break
