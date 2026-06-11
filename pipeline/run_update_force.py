@@ -111,9 +111,17 @@ def log(msg):
 
 
 def load_checkpoint():
+    # A truncated/corrupt checkpoint (process killed mid-flush) must NOT crash
+    # the run before any work begins — degrade to the empty default instead.
+    # The --skip-existing/PDF-mtime scan re-marks slugs with a valid review.md
+    # as completed, so most prior work is recovered for free.
     if os.path.exists(CHECKPOINT_FILE):
-        with open(CHECKPOINT_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+        try:
+            with open(CHECKPOINT_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError, ValueError) as e:
+            log(f"  WARN checkpoint corrupt ({type(e).__name__}); "
+                f"starting fresh — completed papers re-detected from review.md")
     return {"completed": [], "failed": [], "phase": "init"}
 
 
@@ -123,9 +131,13 @@ _slug_to_pdf_path = {}  # populated by find_pdf hits; persisted to _papers_index
 
 
 def save_checkpoint(cp):
+    # Atomic write (tmp + os.replace) so a kill mid-flush leaves the reader the
+    # old complete file rather than a half-written one. _cp_lock still
+    # serializes concurrent writers AND the json serialization (callers may
+    # append to cp['completed'] from other threads).
+    from lib.atomic_io import atomic_write_json
     with _cp_lock:
-        with open(CHECKPOINT_FILE, "w", encoding="utf-8") as f:
-            json.dump(cp, f, ensure_ascii=False, indent=2)
+        atomic_write_json(CHECKPOINT_FILE, cp)
 
 
 # ── Phase 1: Fetch Zotero ──
@@ -265,33 +277,66 @@ def find_pdf(item):
                        "method": "children_api_error", "error": str(e)[:200]})
 
     # Priority 2: DOI in filename (reliable when present)
+    # Bare substring containment collides on prefix-DOIs ('10.1234/abc' is a
+    # substring of '10.1234/abc.suppl'). Require the matched region to be
+    # bounded — followed by end-of-name or a non-alphanumeric separator in the
+    # ORIGINAL filename — and treat 2+ matches as ambiguous (no_match) since
+    # os.listdir order is arbitrary.
     doi = (item.get("DOI") or item.get("doi") or "").strip()
     if doi:
         doi_norm = re.sub(r"[^a-z0-9]", "", doi.lower())
         if len(doi_norm) >= 10:  # avoid accidental short-DOI collisions
+            doi_matches = []
             for fname in os.listdir(ZOTERO_DIR):
                 if not fname.lower().endswith(".pdf"):
                     continue
-                fname_norm = re.sub(r"[^a-z0-9]", "", fname.lower())
-                if doi_norm in fname_norm:
-                    matched = os.path.join(ZOTERO_DIR, fname)
-                    _audit_append({"key": key, "title": title[:80],
-                                   "method": "doi_filename", "path": matched,
-                                   "doi": doi})
-                    return matched, "doi_filename"
+                # Strip the .pdf extension BEFORE normalising, otherwise the
+                # trailing 'pdf' makes the bounded check below see 'p' as the
+                # next char and reject every match.
+                stem = fname[:-4].lower()
+                fname_norm = re.sub(r"[^a-z0-9]", "", stem)
+                idx = fname_norm.find(doi_norm)
+                if idx < 0:
+                    continue
+                # Bounded: the char right after the DOI in the normalised stem
+                # must NOT be alphanumeric (else it's a longer DOI). Since
+                # non-alphanumerics were stripped, a trailing char here means
+                # the real filename had extra DOI digits/letters → reject.
+                nxt = idx + len(doi_norm)
+                if nxt < len(fname_norm) and fname_norm[nxt].isalnum():
+                    continue
+                doi_matches.append(fname)
+            if len(doi_matches) == 1:
+                matched = os.path.join(ZOTERO_DIR, doi_matches[0])
+                _audit_append({"key": key, "title": title[:80],
+                               "method": "doi_filename", "path": matched,
+                               "doi": doi})
+                return matched, "doi_filename"
+            elif len(doi_matches) > 1:
+                _audit_append({"key": key, "title": title[:80],
+                               "method": "doi_ambiguous", "doi": doi,
+                               "candidates": doi_matches[:5]})
 
     # Priority 3: arXiv ID in filename
+    # Bare `arxiv_id in fname` makes '2401.0001' match '2401.00012' (wrong,
+    # newer paper). Require a delimited match: no digit/dot immediately before
+    # and no digit immediately after the id (an arXiv id may have a vN suffix,
+    # so allow a following 'v'/non-digit). Ambiguous (2+) → no_match.
     arxiv_id = _extract_arxiv_id_from_item(item)
     if arxiv_id:
-        for fname in os.listdir(ZOTERO_DIR):
-            if not fname.lower().endswith(".pdf"):
-                continue
-            if arxiv_id in fname:
-                matched = os.path.join(ZOTERO_DIR, fname)
-                _audit_append({"key": key, "title": title[:80],
-                               "method": "arxiv_filename", "path": matched,
-                               "arxiv_id": arxiv_id})
-                return matched, "arxiv_filename"
+        arxiv_re = re.compile(rf"(?<![0-9.]){re.escape(arxiv_id)}(?![0-9])")
+        arxiv_matches = [fname for fname in os.listdir(ZOTERO_DIR)
+                         if fname.lower().endswith(".pdf") and arxiv_re.search(fname)]
+        if len(arxiv_matches) == 1:
+            matched = os.path.join(ZOTERO_DIR, arxiv_matches[0])
+            _audit_append({"key": key, "title": title[:80],
+                           "method": "arxiv_filename", "path": matched,
+                           "arxiv_id": arxiv_id})
+            return matched, "arxiv_filename"
+        elif len(arxiv_matches) > 1:
+            _audit_append({"key": key, "title": title[:80],
+                           "method": "arxiv_ambiguous", "arxiv_id": arxiv_id,
+                           "candidates": arxiv_matches[:5]})
 
     # Priority 4 (optional): fuzzy title match — STRICTER than before.
     # The original 3-of-5 keyword rule caused the 139-paper mismatch bug.
@@ -470,6 +515,91 @@ def extract_text(pdf_path, slug_dir):
 
 # ── Phase 3: Extract figures + Gemini validation ──
 
+# Figure crop is LOCALIZED FROM THE PDF'S OWN GEOMETRY before any LLM call.
+# The previous design seeded every crop as the full page and relied on Gemini
+# point-offsets to shrink it; a Gemini failure or an "ok" on round 0 left the
+# ENTIRE PAGE as the figure. We now build the crop box from the union of the
+# graphic rects (raster image blocks + get_image_rects + area-filtered
+# get_drawings) that are adjacent to the caption, render THAT box first, and
+# only then optionally let Gemini nudge it within bounds. Gemini can never
+# enlarge the box back to a full page, and a Gemini error keeps the geometric
+# box instead of falsely accepting "ok".
+
+
+def _union_rects(rects):
+    """Union a list of (x0,y0,x1,y1) tuples into one bounding box, or None."""
+    if not rects:
+        return None
+    x0 = min(r[0] for r in rects)
+    y0 = min(r[1] for r in rects)
+    x1 = max(r[2] for r in rects)
+    y1 = max(r[3] for r in rects)
+    return [x0, y0, x1, y1]
+
+
+def _collect_graphic_rects(page, pw, ph):
+    """Gather candidate graphic rects on a page from three sources:
+      1. raster image blocks (text_dict type==1)
+      2. page.get_image_rects() for every embedded image xref
+      3. page.get_drawings() vector paths (area-filtered, capped per page)
+    Returns list of (x0,y0,x1,y1). Tiny rects (axis-tick fragments, hairlines)
+    are dropped so a vector-heavy page doesn't explode the union.
+    """
+    MIN_W, MIN_H = 40, 40  # ignore sub-glyph fragments
+    rects = []
+
+    # Source 1: raster image blocks
+    try:
+        td = page.get_text("dict")
+        for b in td["blocks"]:
+            if b.get("type") == 1:
+                bb = b["bbox"]
+                if (bb[2] - bb[0]) > MIN_W and (bb[3] - bb[1]) > MIN_H:
+                    rects.append((bb[0], bb[1], bb[2], bb[3]))
+    except Exception:
+        pass
+
+    # Source 2: get_image_rects() — embedded raster placement (handles repeats)
+    try:
+        for img in page.get_images(full=True):
+            xref = img[0]
+            try:
+                for r in page.get_image_rects(xref):
+                    if (r.x1 - r.x0) > MIN_W and (r.y1 - r.y0) > MIN_H:
+                        rects.append((r.x0, r.y0, r.x1, r.y1))
+            except Exception:
+                continue
+    except Exception:
+        pass
+
+    # Source 3: get_drawings() — vector plots/schematics have no raster block.
+    # This can return thousands of tiny paths; filter by area and cap work.
+    try:
+        drawings = page.get_drawings()
+        page_area = max(1.0, pw * ph)
+        count = 0
+        for d in drawings:
+            count += 1
+            if count > 4000:  # hard cap so vector-dense pages stay fast
+                break
+            r = d.get("rect")
+            if r is None:
+                continue
+            w = r.x1 - r.x0
+            h = r.y1 - r.y0
+            if w <= MIN_W or h <= MIN_H:
+                continue
+            # Drop near-page-spanning full-bleed background rects (a single
+            # path covering >95% of the page is a page border, not a figure).
+            if (w * h) / page_area > 0.95:
+                continue
+            rects.append((r.x0, r.y0, r.x1, r.y1))
+    except Exception:
+        pass
+
+    return rects
+
+
 def extract_figures(pdf_path, slug_dir):
     fig_dir = os.path.join(slug_dir, "figures")
     os.makedirs(fig_dir, exist_ok=True)
@@ -481,9 +611,8 @@ def extract_figures(pdf_path, slug_dir):
         return []
 
     doc = fitz.open(pdf_path)
-    figures = []
     MARGIN = 30
-    MAX_ROUNDS = 5
+    MAX_ROUNDS = 2  # geometric box is the prior; Gemini only refines
 
     # Phase 4 B2: cheap pre-validator runs first. When the heuristic is
     # confident the figure is invalid (tiny/blank/near-uniform), we skip
@@ -491,10 +620,24 @@ def extract_figures(pdf_path, slug_dir):
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from api.extract import pre_validate_figure
 
+    have_gemini = bool(os.environ.get("GOOGLE_API_KEY", "").strip())
+    # Log a degraded-Gemini warning at most once per run instead of silently
+    # accepting full pages when the validator throws.
+    _gemini_warned = {"done": False}
+
     def validate(img_path, caption):
+        """Return a verdict dict. status ∈ {ok, clipped, oversized, both, error}.
+
+        'error' (validator unavailable) is DISTINCT from 'ok' (figure looks
+        good): the caller keeps the geometric box on 'error' rather than
+        treating it as accepted.
+        """
         pre = pre_validate_figure(img_path)
         if pre is not None:
             return pre
+        if not have_gemini:
+            # No key → skip the round-trip entirely, rely on geometry.
+            return {"status": "error", "adjust_pt": {}}
         try:
             from google import genai
             from google.genai import types
@@ -515,96 +658,215 @@ def extract_figures(pdf_path, slug_dir):
                 if text.startswith("json"):
                     text = text[4:]
             return json.loads(text)
-        except Exception:
-            return {"status": "ok", "adjust_pt": {}}
+        except Exception as e:
+            if not _gemini_warned["done"]:
+                log(f"  WARN Gemini figure validator unavailable "
+                    f"({type(e).__name__}); using geometric crops only")
+                _gemini_warned["done"] = True
+            return {"status": "error", "adjust_pt": {}}
+
+    # Collect caption candidates across all pages first, so we can dedup a
+    # fig_num globally by ADJACENT-GRAPHIC AREA (prefer the real caption over a
+    # body-text mention on another page) and cap EMITTED figures by area.
+    candidates = []  # each: dict(fig_num, page, caption, box, hull, graphic_area)
 
     for pn in range(min(30, len(doc))):
         page = doc[pn]
         pw, ph = page.rect.width, page.rect.height
+        # Page rotation: get_text bboxes and get_pixmap clip both operate in
+        # the rotated coordinate space PyMuPDF reports via page.rect, so no
+        # manual rotation maths is needed — page.rect already reflects it.
         text_dict = page.get_text("dict")
         txt_blocks = [b for b in text_dict["blocks"] if b["type"] == 0]
-        img_blocks = [b for b in text_dict["blocks"] if b["type"] == 1
-                      and (b["bbox"][2] - b["bbox"][0]) > 50
-                      and (b["bbox"][3] - b["bbox"][1]) > 50]
+
+        graphic_rects = _collect_graphic_rects(page, pw, ph)
+
+        # Scanned-PDF guard: a single image covering >90% of the page IS the
+        # figure — keep the whole page in that legitimate case.
+        full_page_image = None
+        for r in graphic_rects:
+            if ((r[2] - r[0]) * (r[3] - r[1])) / max(1.0, pw * ph) > 0.90:
+                full_page_image = r
+                break
 
         for tb in txt_blocks:
             first_line = tb["lines"][0] if tb["lines"] else None
             if not first_line:
                 continue
             lt = "".join(s["text"] for s in first_line["spans"])
-            m = re.match(r"(Figure|Fig\.?)\s*(\d+)", lt)
+            # Tolerate trailing punctuation/colon ("Figure 2:"); ignore
+            # appendix letters ("Figure A1"). Captions begin the block, so
+            # re.match (anchored at start) already rejects mid-sentence text,
+            # but body-text mentions that START with "Figure 1" are filtered
+            # by the adjacent-graphic requirement below.
+            m = re.match(r"(?:Figure|Fig\.?)\s*([0-9]+)", lt)
             if not m:
                 continue
-            fig_num = int(m.group(2))
-            if fig_num in [int(f["name"]) for f in figures]:
-                continue
-            if fig_num > 5:
-                continue
+            fig_num = int(m.group(1))
 
+            cap_x0 = tb["bbox"][0]
             cap_top = tb["bbox"][1]
+            cap_x1 = tb["bbox"][2]
             cap_bottom = tb["bbox"][3]
+            cap_w = cap_x1 - cap_x0
             caption = lt.strip()[:120]
 
-            # Full page start
-            x0, y0 = 0, 0
-            x1, y1 = pw, ph
-
-            out = os.path.join(fig_dir, f"fig{fig_num}.png")
-
-            for rnd in range(MAX_ROUNDS + 1):
-                # Try rendering with decreasing resolution on error
-                rendered = False
-                for scale in [3, 2, 1]:
-                    try:
-                        pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale),
-                                              clip=fitz.Rect(x0, y0, x1, y1))
-                        pix.save(out)
-                        rendered = True
-                        break
-                    except Exception:
+            if full_page_image is not None:
+                # Legitimate full-page scanned figure for this caption.
+                adj_rects = [full_page_image]
+            else:
+                # Keep graphic rects that are vertically adjacent to the
+                # caption (gap within ~ph*0.6 above OR below) AND horizontally
+                # overlap the caption's column. This rejects body-text
+                # "as shown in Figure 1" mentions (no adjacent graphic) and
+                # grabs only this caption's own figure on a multi-figure page.
+                gap_tol = ph * 0.6
+                adj_rects = []
+                for r in graphic_rects:
+                    rx0, ry0, rx1, ry1 = r
+                    # vertical adjacency: rect bottom above caption top
+                    # (figure-above-caption) or rect top below caption bottom
+                    # (figure-below-caption), within tolerance
+                    above = (ry1 <= cap_bottom) and (cap_top - ry1) <= gap_tol
+                    below = (ry0 >= cap_top) and (ry0 - cap_bottom) <= gap_tol
+                    if not (above or below):
                         continue
-                if not rendered:
-                    break  # skip this figure entirely
+                    # horizontal overlap with caption column
+                    if rx1 <= cap_x0 or rx0 >= cap_x1:
+                        # No overlap with caption x-range. Allow when caption is
+                        # narrow (single-column caption under a wide figure can
+                        # still sit inside the figure's x-span) — i.e. caption
+                        # contained in rect horizontally.
+                        if not (rx0 <= cap_x0 and rx1 >= cap_x1):
+                            continue
+                    adj_rects.append(r)
 
-                if rnd == MAX_ROUNDS:
+            if not adj_rects:
+                # No graphic content near this caption → body-text mention or
+                # an un-extractable figure. DROP it (never emit a full page).
+                continue
+
+            hull = _union_rects(adj_rects)
+            graphic_area = sum(
+                (r[2] - r[0]) * (r[3] - r[1]) for r in adj_rects
+            )
+
+            # Build the crop box: union of adjacent graphic rects + MARGIN,
+            # then clip to the caption column when the caption is narrow
+            # (<pw*0.6) so a two-column figure doesn't pull in the other column.
+            bx0 = max(0, hull[0] - MARGIN)
+            by0 = max(0, hull[1] - MARGIN)
+            bx1 = min(pw, hull[2] + MARGIN)
+            by1 = min(ph, hull[3] + MARGIN)
+            if full_page_image is None and cap_w < pw * 0.6:
+                cap_cx = (cap_x0 + cap_x1) / 2
+                if cap_cx < pw * 0.45:
+                    bx1 = min(bx1, pw * 0.55)
+                elif cap_cx > pw * 0.55:
+                    bx0 = max(bx0, pw * 0.45)
+
+            candidates.append({
+                "fig_num": fig_num, "page": pn, "caption": caption,
+                "box": [bx0, by0, bx1, by1],
+                "hull": hull, "graphic_area": graphic_area,
+                "pw": pw, "ph": ph,
+            })
+
+    # Page-scoped dedup: when the same fig_num appears on multiple pages,
+    # prefer the candidate with the LARGEST adjacent graphic area (the real
+    # caption, not a bare mention). Then cap EMITTED figures to top-5 by area.
+    best_by_num = {}
+    for c in candidates:
+        prev = best_by_num.get(c["fig_num"])
+        if prev is None or c["graphic_area"] > prev["graphic_area"]:
+            best_by_num[c["fig_num"]] = c
+    chosen = sorted(best_by_num.values(),
+                    key=lambda c: c["graphic_area"], reverse=True)[:5]
+    # Render in figure-number order for stable filenames/output.
+    chosen.sort(key=lambda c: c["fig_num"])
+
+    figures = []
+    for c in chosen:
+        fig_num = c["fig_num"]
+        pn = c["page"]
+        caption = c["caption"]
+        page = doc[pn]
+        pw, ph = c["pw"], c["ph"]
+        hull = c["hull"]
+        x0, y0, x1, y1 = c["box"]
+        out = os.path.join(fig_dir, f"fig{fig_num}.png")
+
+        # Hull clamp bounds: Gemini may nudge the box but never let it leave
+        # the rect hull by more than MARGIN in any direction.
+        hx0, hy0 = max(0, hull[0] - MARGIN), max(0, hull[1] - MARGIN)
+        hx1, hy1 = min(pw, hull[2] + MARGIN), min(ph, hull[3] + MARGIN)
+
+        rendered_ok = False
+        for rnd in range(MAX_ROUNDS + 1):
+            # Inverted-box guard: revert to the geometric box.
+            if x1 <= x0 or y1 <= y0:
+                x0, y0, x1, y1 = c["box"]
+
+            rendered = False
+            for scale in [3, 2, 1]:
+                try:
+                    pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale),
+                                          clip=fitz.Rect(x0, y0, x1, y1))
+                    pix.save(out)
+                    rendered = True
                     break
+                except Exception:
+                    continue
+            if not rendered:
+                break  # skip this figure entirely
+            rendered_ok = True
 
-                result = validate(out, caption)
-                if result.get("status") == "ok":
+            if rnd == MAX_ROUNDS:
+                break
+
+            result = validate(out, caption)
+            status = result.get("status")
+            if status == "ok":
+                break
+            if status == "error":
+                # Validator unavailable → keep the geometric box, do not
+                # expand, break. Never treat as 'ok'.
+                break
+
+            # 'clipped' / 'oversized' / 'both': nudge within the hull ± MARGIN.
+            damping = [0.8, 0.6][min(rnd, 1)]
+            adj = result.get("adjust_pt", {})
+            ny0 = y0 - adj.get("top", 0) * damping
+            ny1 = y1 + adj.get("bottom", 0) * damping
+            nx0 = x0 - adj.get("left", 0) * damping
+            nx1 = x1 + adj.get("right", 0) * damping
+            # Clamp to the rect hull (± MARGIN) — the box can never escape the
+            # detected graphic region back to a full page.
+            x0 = min(max(nx0, hx0), hx1)
+            y0 = min(max(ny0, hy0), hy1)
+            x1 = min(max(nx1, hx0), hx1)
+            y1 = min(max(ny1, hy0), hy1)
+
+        if not rendered_ok:
+            continue
+
+        # Plausibility floor: if the final box is implausibly small vs the
+        # union of detected rects, expand to the hull + MARGIN (a tight figure
+        # box — NEVER the whole page). No full-page re-render fallback.
+        hull_area = (hull[2] - hull[0]) * (hull[3] - hull[1])
+        box_area = (x1 - x0) * (y1 - y0)
+        if hull_area > 0 and box_area < hull_area * 0.5:
+            x0, y0, x1, y1 = hx0, hy0, hx1, hy1
+            for scale in [3, 2, 1]:
+                try:
+                    pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale),
+                                          clip=fitz.Rect(x0, y0, x1, y1))
+                    pix.save(out)
                     break
-
-                # Round 0: educated guess
-                if rnd == 0 and result.get("status") in ("oversized", "both"):
-                    cap_cx = (tb["bbox"][0] + tb["bbox"][2]) / 2
-                    cap_w = tb["bbox"][2] - tb["bbox"][0]
-                    if cap_w < pw * 0.6:
-                        if cap_cx < pw * 0.45:
-                            x1 = pw * 0.52
-                        elif cap_cx > pw * 0.55:
-                            x0 = pw * 0.48
-                    y1 = min(ph, cap_bottom + 15)
-                    y0 = max(0, 40)
+                except Exception:
                     continue
 
-                damping = [1.0, 0.8, 0.6, 0.45, 0.35][min(rnd, 4)]
-                adj = result.get("adjust_pt", {})
-                y0 = max(0, y0 - adj.get("top", 0) * damping)
-                y1 = min(ph, y1 + adj.get("bottom", 0) * damping)
-                x0 = max(0, x0 - adj.get("left", 0) * damping)
-                x1 = min(pw, x1 + adj.get("right", 0) * damping)
-
-            # Fallback
-            final_ratio = (x1 - x0) * (y1 - y0) / (pw * ph)
-            if final_ratio < 0.15:
-                for scale in [3, 2, 1]:
-                    try:
-                        pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale))
-                        pix.save(out)
-                        break
-                    except Exception:
-                        continue
-
-            figures.append({"name": str(fig_num), "page": pn, "caption": caption})
+        figures.append({"name": str(fig_num), "page": pn, "caption": caption})
 
     doc.close()
     return figures
@@ -1709,8 +1971,22 @@ def main():
             run_step("topic_modeling",
                      [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic], 3600)
         elif is_update:
-            run_step("topic_modeling (coords+connections)",
-                     [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic, "--skip-classification"], 3600)
+            # Update mode normally runs --skip-classification (refresh coords +
+            # connections only, reuse the existing HDBSCAN bundle). But
+            # classify_papers.py hard-exits if `_hdbscan_model.joblib` is
+            # absent. On a topic that never had a full (non-skip) run the bundle
+            # doesn't exist yet, so a missing bundle must trigger a one-time
+            # FULL topic_modeling (no --skip-classification) to build it,
+            # rather than aborting the whole pipeline at a critical step.
+            bundle_path = os.path.join(str(get_topic_dir(topic)), "_hdbscan_model.joblib")
+            if not os.path.exists(bundle_path):
+                log("  [topic_modeling] HDBSCAN bundle missing — running full "
+                    "topic_modeling to build it (first run for this topic)")
+                run_step("topic_modeling",
+                         [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic], 3600)
+            else:
+                run_step("topic_modeling (coords+connections)",
+                         [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic, "--skip-classification"], 3600)
         else:
             run_step("topic_modeling",
                      [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic], 3600)
