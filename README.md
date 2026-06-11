@@ -31,13 +31,45 @@
 
 > *"여기에 paper-curation을 설치해줘: https://github.com/jehyunlee/paper-curation"*
 
+### Quickstart — 로컬에서 5단계로 시작
+
+직접 손으로 설치하고 싶다면, 아래 다섯 단계가 로컬에서 돌려보는 최소 경로입니다. (자세한 사전 준비·문제 해결은 바로 아래 섹션 참고.)
+
+```bash
+# 1) 클론
+git clone https://github.com/jehyunlee/paper-curation.git
+cd paper-curation
+
+# 2) conda env 두 개 생성 (py314 = 메인, py312 = 토픽 모델링 전용 — 둘 다 필수)
+conda create -n py314 -c conda-forge python=3.14 pip -y
+conda create -n py312 -c conda-forge python=3.12 pip -y
+#    토픽 모델링/분류는 numba 의 CALL_KW 비호환 때문에 Python 3.14 에서 죽으므로
+#    별도 py312 env 에서 실행됩니다 (자세한 이유는 "사전 준비" 참고).
+
+# 3) 의존성 설치 — 클러스터링 라이브러리는 양쪽 env 에 모두 필요
+conda run -n py314 pip install -r requirements.txt
+conda run -n py312 pip install umap-learn hdbscan sentence-transformers \
+    joblib numpy scikit-learn anthropic openai
+conda activate py314
+
+# 4) 필수 API 키 (리뷰=Anthropic, 임베딩=OpenAI). Google 은 Figure 검증용(선택).
+export ANTHROPIC_API_KEY=sk-ant-...
+export OPENAI_API_KEY=sk-...
+
+# 5) config.json 생성(대화형) → 첫 파이프라인 실행
+python pipeline/setup.py
+#    이미 Zotero 에 PDF 가 있다면 곧바로:
+PYTHONUTF8=1 python pipeline/run_full.py --topic my_topic --mode curate --source zotero
+cd docs && python -m http.server 8000   # → http://localhost:8000 에서 열람
+```
+
 <details>
-<summary><b>수동 설치</b></summary>
+<summary><b>수동 설치 (setup.py 위주)</b></summary>
 
 ```bash
 git clone https://github.com/jehyunlee/paper-curation.git
 cd paper-curation
-pip install anthropic google-genai openai numpy pymupdf Pillow requests opendataloader-pdf
+pip install -r requirements.txt   # 전체 의존성 (anthropic·openai·umap-learn·hdbscan·sentence-transformers 등)
 python pipeline/setup.py
 ```
 
@@ -47,12 +79,53 @@ python pipeline/setup.py
 
 ### 사전 준비
 
-- **Zotero**: [API Key 발급](https://www.zotero.org/settings/keys) + 큐레이션할 컬렉션에 논문 PDF 준비
-- **환경변수**: `ANTHROPIC_API_KEY`, `GOOGLE_API_KEY`, `OPENAI_API_KEY`
-- **Python 환경 — 두 개의 conda env 가 필요합니다**:
-  - **`py314`** (Python 3.14): 오케스트레이터·LLM·웹·PDF·HTML 단계 전부 여기서 동작.
-  - **`py312`** (Python 3.12): `topic_modeling.py` / `classify_papers.py` 전용. numba 의 bytecode interpreter 가 Python 3.14 의 `CALL_KW` opcode 를 아직 처리하지 못해 `umap_cluster.transform()` → `sklearn.pairwise_distances(metric=callable)` 경로가 죽기 때문 (0.65.1 / 0.66.0rc1 / main 모두 동일). `run_update_force._resolve_topic_modeling_python()` 가 자동으로 형제 env `py312/bin/python` 를 잡아 두 스크립트만 그쪽으로 보냅니다. 우선순위는 `PAPER_CURATION_PY312` env var → 형제 env (`<base>/envs/py312`) → `which python3.12` → `sys.executable` fallback. 두 env 모두 numba 0.65 / llvmlite 0.47 / numpy 2.x 동일 라인업.
-- **Java Runtime** — `opendataloader-pdf` 가 PDF 추출에 Java CLI 를 호출. macOS: `brew install --cask temurin`. 없으면 PyMuPDF 로 자동 fallback 되지만 표·헤딩·구조 추출 품질이 떨어짐.
+체크리스트 — 아래 항목이 준비되면 첫 실행이 막히지 않습니다:
+
+| 항목 | 내용 |
+|------|------|
+| **Zotero** | [API Key 발급](https://www.zotero.org/settings/keys) + 큐레이션할 컬렉션에 논문 PDF 준비 |
+| **API 키** | `ANTHROPIC_API_KEY` (리뷰·인사이트 — **필수**), `OPENAI_API_KEY` (Deep Research 임베딩 — **필수**), `GOOGLE_API_KEY` (Figure 검증·TTS — 선택) |
+| **conda env** | `py314` (메인) + `py312` (토픽 모델링) — 둘 다 필수, 아래 명령으로 생성 |
+| **Java Runtime** | `opendataloader-pdf` 의 PDF 추출용. macOS: `brew install --cask temurin`. 없으면 PyMuPDF 로 fallback (표·구조 품질 ↓) |
+
+**conda env 생성 (필수)** — Quickstart 의 2~3단계와 동일합니다:
+
+```bash
+conda create -n py314 -c conda-forge python=3.14 pip -y
+conda create -n py312 -c conda-forge python=3.12 pip -y
+conda run -n py314 pip install -r requirements.txt
+conda run -n py312 pip install umap-learn hdbscan sentence-transformers \
+    joblib numpy scikit-learn anthropic openai
+conda activate py314
+```
+
+**왜 env 가 두 개인가** — numba 의 bytecode interpreter 가 Python 3.14 의 `CALL_KW` opcode 를 아직 처리하지 못해, `topic_modeling.py` / `classify_papers.py` 의 `umap_cluster.transform()` → `sklearn.pairwise_distances(metric=callable)` 경로가 Python 3.14 에서 죽습니다 (0.65.1 / 0.66.0rc1 / main 모두 동일). 그래서 클러스터링 두 스크립트만 별도 `py312` env 에서 실행하며, `run_update_force._resolve_topic_modeling_python()` 가 형제 env `py312/bin/python` 를 자동으로 잡아 그쪽으로 보냅니다 (우선순위: `PAPER_CURATION_PY312` env var → 형제 env `<base>/envs/py312` → `which python3.12` → `sys.executable` fallback). 두 env 모두 numba 0.65 / llvmlite 0.47 / numpy 2.x 동일 라인업입니다. **py312 를 만들지 않으면** 첫 실행이 분류 단계에서 numba 트레이스백과 함께 멈춥니다.
+
+### 설치 확인 (verify)
+
+긴 파이프라인을 돌리기 전에, 클러스터링 의존성이 py312 에 제대로 깔렸는지 한 줄로 확인하세요:
+
+```bash
+conda run -n py312 python -c "import umap, hdbscan, sentence_transformers; print('py312 OK')"
+conda run -n py314 python -c "import fitz, sklearn, anthropic, openai; print('py314 OK')"
+```
+
+두 줄 모두 `OK` 가 찍히면 준비 완료입니다. 실행 계획만 먼저 보려면 `--dry-run` 도 가능합니다:
+
+```bash
+PYTHONUTF8=1 python pipeline/run_full.py --topic my_topic --mode curate --source zotero --dry-run
+```
+
+### 문제 해결 (Troubleshooting)
+
+| 증상 / 에러 메시지 | 원인 | 해결 |
+|---|---|---|
+| `op_CALL_KW: pop from empty list` (numba 트레이스백) | 분류 단계가 py314 에서 실행됨 | `py312` env 를 만들고 클러스터링 의존성 설치 — 위 "conda env 생성" 참고. 형제 위치가 아니면 `PAPER_CURATION_PY312` 로 경로 지정 |
+| `ModuleNotFoundError: umap` / `hdbscan` / `sentence_transformers` | 의존성 누락 | 해당 env 에서 `pip install -r requirements.txt` (py312 에는 클러스터링 패키지도) |
+| Figure 품질이 낮음 / 표·구조가 깨짐 | Java 미설치로 PyMuPDF fallback | `brew install --cask temurin` (macOS) 후 재실행 |
+| SPECTER2 / arXiv 다운로드가 멈춤 (한국 망) | huggingface LFS·arXiv 차단 | 아래 "한국 망 환경 우회" 의 S3 미러 명령 사용 |
+| `[COLLECTION_ERROR]` | Zotero 컬렉션 이름 오타 | 출력의 사용 가능한 컬렉션 목록에서 올바른 이름 선택 후 재실행 |
+| `OPENAI_API_KEY 미설정` 으로 설치 중단 | Deep Research 임베딩 키 필수 | `export OPENAI_API_KEY=sk-...` 후 재실행 |
 
 ---
 
@@ -294,6 +367,11 @@ OpenAlex(1k+건/키워드) 가 압도적으로 큰 소스라 arXiv 누락이 결
 
 ---
 
+<details>
+<summary><h2 id="advanced-internals">고급 / 내부 구조 (펼치기)</h2></summary>
+
+> 아래는 유지보수·심화용 레퍼런스입니다. 처음 사용에는 필요 없습니다.
+
 ## Reliability (v2+)
 
 최근 리팩터링으로 추가된 안전장치:
@@ -447,6 +525,8 @@ Paper Curation의 Obsidian 연동은 LLM Wiki의 compounding 개념을 그대로
 Deep Research 질의 -> Obsidian 메모 작성 -> 인덱스 재빌드 -> 다음 질의에 내 메모가 인용됨
 ```
 
+</details>
+
 ---
 
 ## 요구사항
@@ -455,7 +535,7 @@ Deep Research 질의 -> Obsidian 메모 작성 -> 인덱스 재빌드 -> 다음 
 |------|------|
 | **필수** | Python 3.14 권장 (3.12+ 동작; macOS conda env `py314` 표준), Zotero (API Key + 컬렉션 + PDF) |
 | **API** | Anthropic (Claude Haiku/Sonnet/Opus), Google (Gemini), OpenAI (text-embedding-3-small), Zotero Web API |
-| **Python** | anthropic, google-genai, openai, numpy, PyMuPDF, Pillow, requests, scikit-learn, umap-learn |
+| **Python** | `pip install -r requirements.txt` — anthropic, openai, google-genai, pymupdf, Pillow, requests, pyzotero, opendataloader-pdf, numpy, scikit-learn, joblib, umap-learn, hdbscan, sentence-transformers |
 | **선택** | Obsidian (메모/Graph View), PaperBanana (타임라인 이미지), Zotero Desktop (PDF 원클릭) |
 
 ---
@@ -496,13 +576,45 @@ In [Claude Code](https://claude.ai/code), just say:
 
 Clone, dependencies, Zotero setup, and the first pipeline run — all handled automatically.
 
+### Quickstart — local, in 5 steps
+
+To install by hand, these five steps are the minimal path to running it locally. (See the sections just below for the full prerequisites and troubleshooting.)
+
+```bash
+# 1) Clone
+git clone https://github.com/jehyunlee/paper-curation.git
+cd paper-curation
+
+# 2) Create two conda envs (py314 = main, py312 = topic modeling only — both required)
+conda create -n py314 -c conda-forge python=3.14 pip -y
+conda create -n py312 -c conda-forge python=3.12 pip -y
+#    Topic modeling/classification crashes on Python 3.14 (numba CALL_KW), so it
+#    runs in a separate py312 env (see "Prerequisites" for the full reason).
+
+# 3) Install dependencies — clustering libs are needed in BOTH envs
+conda run -n py314 pip install -r requirements.txt
+conda run -n py312 pip install umap-learn hdbscan sentence-transformers \
+    joblib numpy scikit-learn anthropic openai
+conda activate py314
+
+# 4) Required API keys (reviews = Anthropic, embeddings = OpenAI). Google is optional (figure validation).
+export ANTHROPIC_API_KEY=sk-ant-...
+export OPENAI_API_KEY=sk-...
+
+# 5) Create config.json (interactive) → first pipeline run
+python pipeline/setup.py
+#    If your PDFs are already in Zotero, go straight to:
+PYTHONUTF8=1 python pipeline/run_full.py --topic my_topic --mode curate --source zotero
+cd docs && python -m http.server 8000   # → browse at http://localhost:8000
+```
+
 <details>
-<summary><b>Manual Installation</b></summary>
+<summary><b>Manual Installation (setup.py path)</b></summary>
 
 ```bash
 git clone https://github.com/jehyunlee/paper-curation.git
 cd paper-curation
-pip install anthropic google-genai openai numpy pymupdf Pillow requests opendataloader-pdf
+pip install -r requirements.txt   # full dependency set (anthropic, openai, umap-learn, hdbscan, sentence-transformers, …)
 python pipeline/setup.py
 ```
 
@@ -512,12 +624,53 @@ python pipeline/setup.py
 
 ### Prerequisites
 
-- **Zotero**: [API Key](https://www.zotero.org/settings/keys) + a collection with paper PDFs
-- **Environment variables**: `ANTHROPIC_API_KEY`, `GOOGLE_API_KEY`, `OPENAI_API_KEY`
-- **Python environment — two conda envs are required**:
-  - **`py314`** (Python 3.14): orchestrator, LLM, web, PDF, HTML stages all run here.
-  - **`py312`** (Python 3.12): dedicated to `topic_modeling.py` / `classify_papers.py`. numba's bytecode interpreter doesn't yet handle Python 3.14's `CALL_KW` opcode, so `umap_cluster.transform()` → `sklearn.pairwise_distances(metric=callable)` crashes inside numba (0.65.1 / 0.66.0rc1 / main are all affected). `run_update_force._resolve_topic_modeling_python()` auto-detects the sibling `py312/bin/python` and routes those two scripts there. Priority: `PAPER_CURATION_PY312` env var → sibling env (`<base>/envs/py312`) → `which python3.12` → `sys.executable` fallback. Both envs install the same numba 0.65 / llvmlite 0.47 / numpy 2.x lineup.
-- **Java Runtime** — `opendataloader-pdf` shells out to a Java CLI for PDF extraction. macOS: `brew install --cask temurin`. Without Java the pipeline silently falls back to PyMuPDF, which loses table/heading/structure markers.
+Checklist — get these items ready and the first run won't stall:
+
+| Item | Details |
+|------|---------|
+| **Zotero** | [API Key](https://www.zotero.org/settings/keys) + a collection with paper PDFs |
+| **API keys** | `ANTHROPIC_API_KEY` (reviews/insights — **required**), `OPENAI_API_KEY` (Deep Research embeddings — **required**), `GOOGLE_API_KEY` (figure validation/TTS — optional) |
+| **conda envs** | `py314` (main) + `py312` (topic modeling) — both required, created by the commands below |
+| **Java Runtime** | For `opendataloader-pdf`'s PDF extraction. macOS: `brew install --cask temurin`. Without it the pipeline falls back to PyMuPDF (lower table/structure quality) |
+
+**Create the conda envs (required)** — identical to Quickstart steps 2–3:
+
+```bash
+conda create -n py314 -c conda-forge python=3.14 pip -y
+conda create -n py312 -c conda-forge python=3.12 pip -y
+conda run -n py314 pip install -r requirements.txt
+conda run -n py312 pip install umap-learn hdbscan sentence-transformers \
+    joblib numpy scikit-learn anthropic openai
+conda activate py314
+```
+
+**Why two envs** — numba's bytecode interpreter doesn't yet handle Python 3.14's `CALL_KW` opcode, so `topic_modeling.py` / `classify_papers.py`'s `umap_cluster.transform()` → `sklearn.pairwise_distances(metric=callable)` path crashes on Python 3.14 (0.65.1 / 0.66.0rc1 / main are all affected). Those two clustering scripts therefore run in a separate `py312` env, and `run_update_force._resolve_topic_modeling_python()` auto-detects the sibling `py312/bin/python` and routes them there (priority: `PAPER_CURATION_PY312` env var → sibling env `<base>/envs/py312` → `which python3.12` → `sys.executable` fallback). Both envs install the same numba 0.65 / llvmlite 0.47 / numpy 2.x lineup. **If you skip py312**, the first run stops at the classification step with a numba traceback.
+
+### Verify your install
+
+Before launching the long pipeline, confirm the clustering deps actually landed in py312 with a one-liner:
+
+```bash
+conda run -n py312 python -c "import umap, hdbscan, sentence_transformers; print('py312 OK')"
+conda run -n py314 python -c "import fitz, sklearn, anthropic, openai; print('py314 OK')"
+```
+
+Both lines printing `OK` means you're ready. To preview the execution plan first, use `--dry-run`:
+
+```bash
+PYTHONUTF8=1 python pipeline/run_full.py --topic my_topic --mode curate --source zotero --dry-run
+```
+
+### Troubleshooting
+
+| Symptom / error | Cause | Fix |
+|---|---|---|
+| `op_CALL_KW: pop from empty list` (numba traceback) | Classification ran under py314 | Create the `py312` env and install the clustering deps — see "Create the conda envs" above. If it isn't a sibling env, point `PAPER_CURATION_PY312` at it |
+| `ModuleNotFoundError: umap` / `hdbscan` / `sentence_transformers` | Missing dependency | Run `pip install -r requirements.txt` in that env (and the clustering packages in py312) |
+| Figures look low-quality / tables broken | Java missing → PyMuPDF fallback | `brew install --cask temurin` (macOS), then re-run |
+| SPECTER2 / arXiv download hangs (Korean network) | huggingface LFS / arXiv blocked | Use the S3 mirror command in "Korean-network workarounds" below |
+| `[COLLECTION_ERROR]` | Wrong Zotero collection name | Pick the correct name from the listed available collections, then re-run |
+| Install aborts on `OPENAI_API_KEY 미설정` | Deep Research embedding key is required | `export OPENAI_API_KEY=sk-...`, then re-run |
 
 ---
 
@@ -745,6 +898,11 @@ Six paired rows: Python env (single → auto-routed py314 + py312) · failure mo
 
 ---
 
+<details>
+<summary><h2 id="advanced-internals-en">Advanced / internals (expand)</h2></summary>
+
+> The following is maintainer/advanced reference. You don't need it for first-time use.
+
 ## Reliability (v2+)
 
 Safety nets added through recent refactors:
@@ -898,6 +1056,8 @@ Paper Curation's Obsidian integration implements the LLM Wiki compounding concep
 Deep Research query -> Obsidian note -> re-index -> your notes cited in next query
 ```
 
+</details>
+
 ---
 
 ## Requirements
@@ -906,7 +1066,7 @@ Deep Research query -> Obsidian note -> re-index -> your notes cited in next que
 |----------|-------|
 | **Required** | Python 3.14 recommended (3.12+ works; macOS conda env `py314` is the standard), Zotero (API Key + collection + PDFs) |
 | **APIs** | Anthropic (Claude Haiku/Sonnet/Opus), Google (Gemini), OpenAI (text-embedding-3-small), Zotero Web API |
-| **Python** | anthropic, google-genai, openai, numpy, PyMuPDF, Pillow, requests, scikit-learn, umap-learn |
+| **Python** | `pip install -r requirements.txt` — anthropic, openai, google-genai, pymupdf, Pillow, requests, pyzotero, opendataloader-pdf, numpy, scikit-learn, joblib, umap-learn, hdbscan, sentence-transformers |
 | **Optional** | Obsidian (notes/Graph View), PaperBanana (timeline images), Zotero Desktop (one-click PDF) |
 
 </details>

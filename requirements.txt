@@ -1,0 +1,29 @@
+# Paper Curation — full dependency set.
+#
+# 표준 환경은 conda env `py314` (Python 3.14) 입니다. umap-learn / hdbscan /
+# sentence-transformers 는 macOS 에서 pip 보다 conda-forge 가 안정적이므로,
+# 가능하면 README "환경 설정" 의 conda 명령으로 두 env(py314 + py312)를 만든 뒤
+# 각 env 에서 `pip install -r requirements.txt` 로 나머지를 채우는 것을 권장합니다.
+#
+# NOTE: 토픽 모델링/분류(topic_modeling.py · classify_papers.py)는 numba 의
+# CALL_KW 비호환 때문에 Python 3.14 에서 죽으므로 별도 py312 env 에서 실행됩니다.
+# 따라서 클러스터링 의존성(umap-learn·hdbscan·sentence-transformers·joblib·
+# scikit-learn·numpy)은 py314 와 py312 양쪽 env 에 모두 설치되어야 합니다.
+
+# --- Core: LLM / web / PDF / image ---
+anthropic
+openai
+google-genai
+pymupdf
+Pillow
+requests
+pyzotero
+opendataloader-pdf
+
+# --- Topic modeling / classification (also required in the py312 env) ---
+numpy
+scikit-learn
+joblib
+umap-learn
+hdbscan
+sentence-transformers

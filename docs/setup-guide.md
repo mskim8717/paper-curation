@@ -8,10 +8,19 @@ Paper Curation 파이프라인의 설치 및 설정 가이드입니다.
 
 - [Claude Code](https://claude.ai/code) 설치
 - [Zotero API Key](https://www.zotero.org/settings/keys) 발급
-- `ANTHROPIC_API_KEY`, `GOOGLE_API_KEY`, `OPENAI_API_KEY` 환경변수 설정
+- API 키 — `ANTHROPIC_API_KEY` (리뷰·인사이트 — **필수**), `OPENAI_API_KEY` (Deep Research 임베딩 — **필수**), `GOOGLE_API_KEY` (Figure 검증·TTS — 선택)
 - Zotero 컬렉션 이름 확인 (리뷰할 논문들이 모인 컬렉션)
 - Zotero PDF 저장 경로 확인
-- **Python 3.14 권장** (macOS conda env `py314` 표준). 3.12+ 동작.
+- **conda env 두 개 필요** — `py314` (Python 3.14, 메인) + `py312` (Python 3.12, 토픽 모델링/분류 전용). 토픽 모델링은 numba 의 `CALL_KW` 비호환 때문에 Python 3.14 에서 죽으므로 별도 `py312` env 에서 실행됩니다. 생성 명령:
+  ```bash
+  conda create -n py314 -c conda-forge python=3.14 pip -y
+  conda create -n py312 -c conda-forge python=3.12 pip -y
+  conda run -n py314 pip install -r requirements.txt
+  conda run -n py312 pip install umap-learn hdbscan sentence-transformers \
+      joblib numpy scikit-learn anthropic openai
+  conda activate py314
+  ```
+  `py312` 를 만들지 않으면 첫 실행이 분류 단계에서 numba 트레이스백과 함께 멈춥니다. 자세한 내용은 README "사전 준비" 참고.
 - **Java Runtime** — `opendataloader-pdf` 가 Java CLI 래퍼. macOS: `brew install --cask temurin`. 없으면 PyMuPDF 로 자동 fallback (표/구조 추출 품질 ↓).
 
 ## Claude Code에서 설치 (권장)
@@ -51,14 +60,17 @@ Claude Code가 자동으로 다음 과정을 수행합니다:
 ```bash
 git clone https://github.com/jehyunlee/paper-curation.git
 cd paper-curation
-pip install anthropic google-genai pymupdf Pillow requests opendataloader-pdf
+pip install -r requirements.txt   # 전체 의존성 (anthropic·openai·umap-learn·hdbscan·sentence-transformers 등)
 ```
+
+> 토픽 모델링/분류용 `py312` env 에도 클러스터링 의존성을 설치해야 합니다 (위 "사전 준비" 의 conda 명령 참고).
 
 ### 2. Setup
 
 ```bash
-export ANTHROPIC_API_KEY=your_key
-export GOOGLE_API_KEY=your_key
+export ANTHROPIC_API_KEY=your_key     # 리뷰·인사이트 (필수)
+export OPENAI_API_KEY=your_key        # Deep Research 임베딩 (필수)
+export GOOGLE_API_KEY=your_key        # Figure 검증·TTS (선택)
 python pipeline/setup.py
 ```
 

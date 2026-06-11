@@ -305,6 +305,69 @@ def step_install():
     return True
 
 
+# classify_papers / topic_modeling 이 의존하는 클러스터링 스택 — 이 import 들이
+# 실제로 돌 인터프리터(py312) 에서 모두 통과해야 auto-run 이 중간에 안 죽는다.
+_CLUSTERING_IMPORTS = "import umap, hdbscan, sentence_transformers, sklearn, numpy, joblib"
+
+
+def _resolve_py312():
+    """topic_modeling/classify 가 실제로 쓸 인터프리터를 run_update_force 와 동일 규칙으로 해석.
+
+    run_update_force._resolve_topic_modeling_python() 를 그대로 재사용해 우선순위
+    (PAPER_CURATION_PY312 → 형제 py312 env → which python3.12 → sys.executable)가
+    런타임과 어긋나지 않게 한다. import 실패 시 보수적으로 sys.executable 로 fallback.
+    """
+    try:
+        sys.path.insert(0, str(REPO / "pipeline"))
+        from run_update_force import _resolve_topic_modeling_python  # type: ignore
+        return _resolve_topic_modeling_python()
+    except Exception:
+        return sys.executable
+
+
+def _preflight_clustering_env():
+    """auto-run 전에 클러스터링 의존성이 py312 인터프리터에서 import 가능한지 확인.
+
+    두 가지 실패 모드를 모두 잡는다:
+      (a) py314 단일 env → numba CALL_KW 크래시 (UMAP/HDBSCAN 미라우팅)
+      (b) 의존성 미설치 → ModuleNotFoundError
+    실패하면 정확한 conda 명령을 안내하고 False 를 반환해 auto-run 을 건너뛴다.
+    setup.py 자기 프로세스가 아니라 *실제로 돌 인터프리터* 로 probe 해야 의미가 있다.
+    """
+    py = _resolve_py312()
+    try:
+        probe = subprocess.run(
+            [py, "-c", _CLUSTERING_IMPORTS],
+            capture_output=True, text=True, timeout=120,
+        )
+    except Exception as e:
+        print(f"  ✗ 클러스터링 인터프리터 점검 실패: {e}")
+        probe = None
+
+    if probe is not None and probe.returncode == 0:
+        if py != sys.executable:
+            print(f"  ✓ 클러스터링 인터프리터 확인: {py}")
+        return True
+
+    # 실패 — 정확한 복구 명령 안내
+    print("  ✗ UMAP/HDBSCAN 클러스터링 환경이 준비되지 않았습니다.")
+    print(f"    점검 인터프리터: {py}")
+    if probe is not None and probe.stderr.strip():
+        # 마지막 줄(주로 ModuleNotFoundError / numba CALL_KW)만 간결히 표시
+        last = probe.stderr.strip().splitlines()[-1]
+        print(f"    원인: {last}")
+    print()
+    print("    classify_papers/topic_modeling 은 numba+Python 3.14 충돌을 피하려고")
+    print("    별도 py312 conda env 에서 돌아야 합니다. 아래를 실행해 환경을 만드세요:")
+    print()
+    print("      conda create -n py312 -c conda-forge python=3.12 pip -y")
+    print("      conda run -n py312 pip install umap-learn hdbscan sentence-transformers \\")
+    print("          joblib numpy scikit-learn anthropic openai")
+    print()
+    print("    (형제 env 가 아닌 경로면 PAPER_CURATION_PY312 환경변수로 절대 경로 지정)")
+    return False
+
+
 def main():
     parser = argparse.ArgumentParser(description="paper-curation setup")
     parser.add_argument("--no-install", action="store_true",
@@ -365,15 +428,15 @@ def main():
     print()
     if topics:
         topic = topics[0]
-        print(f"  실행 명령어 (이후에 수동으로 돌릴 때):")
+        print(f"  실행 명령어 (이후에 수동으로 돌릴 때 — 단일 진입점은 run_full.py):")
         print(f"    # 전체 파이프라인 (Zotero에서 가져와서 리뷰 + Deep Research 인덱스 + 배포)")
-        print(f"    PYTHONUTF8=1 python pipeline/run_update_force.py --topic {topic}")
+        print(f"    PYTHONUTF8=1 python pipeline/run_full.py --topic {topic} --mode curate --source zotero")
         print()
-        print(f"    # 로컬 모드 (이미 가져온 논문만 처리)")
-        print(f"    PYTHONUTF8=1 python pipeline/run_update_force.py --topic {topic} --local")
+        print(f"    # 주간 운영 (웹 검색으로 신규 논문 추가, 기존 유지)")
+        print(f"    PYTHONUTF8=1 python pipeline/run_full.py --topic {topic} --mode curate --source web --days 7")
         print()
-        print(f"    # 업데이트 모드 (새 논문만 추가, 기존 유지)")
-        print(f"    PYTHONUTF8=1 python pipeline/run_update_force.py --topic {topic} --local --update")
+        print(f"    # 전체 재빌드 (categorization/insights/timelines 까지 재생성 — 시간·비용 ↑)")
+        print(f"    PYTHONUTF8=1 python pipeline/run_full.py --topic {topic} --mode rebuild --yes")
     print()
 
     # Step 7: 첫 파이프라인 자동 실행 (--no-run 으로 건너뛸 수 있음)
@@ -382,19 +445,32 @@ def main():
         print("-" * 50)
         print(f"  첫 파이프라인을 자동 실행합니다 (topic: {topic})")
         print("-" * 50)
-        print("  Zotero에서 논문을 가져와 리뷰 → 분류 → 인덱스 →")
-        print("  Deep Research 검색 인덱스 → (GitHub 설정 시) 배포까지 진행합니다.")
-        print("  Ctrl+C 로 중단할 수 있고, 중단 후에는 --resume 모드로 이어서 진행할 수 있습니다.")
-        print()
-        try:
-            subprocess.run(
-                [sys.executable, str(REPO / "pipeline" / "run_update_force.py"),
-                 "--topic", topic, "--concurrency", "4"],
-                env={**os.environ, "PYTHONUTF8": "1"},
-                cwd=str(REPO),
-            )
-        except KeyboardInterrupt:
-            print("\n  (파이프라인 실행이 중단되었습니다. 나중에 --resume 으로 재개 가능)")
+
+        # Preflight: classify/topic_modeling 은 UMAP/HDBSCAN 의존 — 별도 py312 env
+        # 에서 돌아야 한다 (numba 가 Python 3.14 의 CALL_KW opcode 를 못 다룸).
+        # 의존성이 없거나 인터프리터가 py314 단일 env 면 build_papers_index →
+        # topic_modeling 에서 CRITICAL_STEP 이 hard-fail 하므로, 깊숙이 들어가
+        # 죽기 전에 여기서 미리 막고 정확한 conda 명령을 안내한 뒤 auto-run 을 건너뛴다.
+        if not _preflight_clustering_env():
+            print()
+            print("  (위 환경을 준비한 뒤 'python pipeline/setup.py' 를 다시 실행하세요.)")
+        else:
+            print("  Zotero에서 논문을 가져와 리뷰 → 분류 → 인덱스 →")
+            print("  Deep Research 검색 인덱스 → (GitHub 설정 시) 배포까지 진행합니다.")
+            print("  Ctrl+C 로 중단할 수 있고, 중단 후에는 --resume 모드로 이어서 진행할 수 있습니다.")
+            print()
+            try:
+                # 문서화된 단일 진입점 run_full.py 사용 — curate/zotero 가 비파괴
+                # 기본 경로이며, topic_modeling/classify 의 py312 라우팅은 내부에서 처리.
+                subprocess.run(
+                    [sys.executable, str(REPO / "pipeline" / "run_full.py"),
+                     "--topic", topic, "--mode", "curate", "--source", "zotero",
+                     "--concurrency", "4"],
+                    env={**os.environ, "PYTHONUTF8": "1"},
+                    cwd=str(REPO),
+                )
+            except KeyboardInterrupt:
+                print("\n  (파이프라인 실행이 중단되었습니다. 나중에 --resume 으로 재개 가능)")
     elif topics and args.no_run:
         print("  (--no-run 지정: 첫 파이프라인 실행은 건너뜁니다)")
     print()
