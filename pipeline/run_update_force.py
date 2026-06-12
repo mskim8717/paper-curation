@@ -2243,8 +2243,13 @@ def main():
                  ["python", "pipeline/inject_frontmatter.py", "--topic", topic], 600)
         run_step("generate_moc",
                  ["python", "pipeline/generate_moc.py", "--topic", topic], 600)
-        run_step("generate_network",
-                 ["python", "pipeline/generate_network.py", "--topic", topic], 600)
+        # 네트워크 시각화는 Research Insights 와 묶인 Option(O-2) — --insights 일 때만.
+        # (LLM 호출은 없지만 기능 분류상 인사이트 분석 부가물로 함께 게이트)
+        if args.insights:
+            run_step("generate_network",
+                     ["python", "pipeline/generate_network.py", "--topic", topic], 600)
+        else:
+            log("  [generate_network] SKIP (Option O-2 — --insights 일 때만 재생성)")
 
         # Verify UMAP coordinate coverage before deploy
         try:
@@ -2263,8 +2268,9 @@ def main():
                 log(f"\n  [verify_umap] {len(missing)} papers missing UMAP coordinates — re-running topic_modeling...")
                 run_step("topic_modeling (umap fix)",
                          [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic, "--skip-connections"], 3600)
-                run_step("generate_network (rebuild)",
-                         ["python", "pipeline/generate_network.py", "--topic", topic], 600)
+                if args.insights:   # 네트워크는 Option(O-2) — --insights 일 때만
+                    run_step("generate_network (rebuild)",
+                             ["python", "pipeline/generate_network.py", "--topic", topic], 600)
             else:
                 log(f"  [verify_umap] OK: all {len(topic_slugs)} papers have coordinates")
         except Exception as e:

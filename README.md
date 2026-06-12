@@ -10,16 +10,29 @@
 
 ## 이런 걸 할 수 있습니다
 
+기능은 **Core**(기본 파이프라인이 항상 생성)와 **Option**(원할 때만 켜는 기능)으로 나뉩니다.
+
+**Core** — `run_full --mode curate` 한 줄이면 전부 생성:
+
 | 기능 | 설명 |
 |------|------|
 | **구조화 리뷰** | PDF에서 텍스트/Figure를 추출하고, Claude가 Essence-Motivation-Achievement-How-Originality-Evaluation 6개 섹션의 한국어 리뷰를 자동 작성 |
-| **자동 분류** | Bottom-up 토픽 모델링(HDBSCAN + UMAP)으로 카테고리를 자동 생성하고 논문을 분류 |
+| **자동 분류** | Bottom-up 토픽 모델링(SPECTER2 + HDBSCAN + UMAP)으로 카테고리를 자동 생성하고 논문을 분류 |
+| **같이 보면 좋은 논문** | 임베딩 top-20 후보를 Claude Sonnet이 선별 — 논문마다 관련 논문 + 관계 유형(alternative/extension/…) + 한국어 이유 1문장. 망 장애 시 multi-round 재시도 + 연결 없는 논문 우선 처리로 강건 |
 | **Deep Research (멀티 백엔드)** | 자연어 질의 + 임베딩 검색 + LLM 답변. 키 prefix 자동 감지로 **Anthropic(Haiku/Sonnet) · OpenAI(GPT-4.1/GPT-5.5) · Google(Gemini Flash-Lite/Flash) 중 하나**를 자동 사용. 자연어 본문 + 클릭 가능한 `[N]` 인용 |
 | **Audio Overview** | 리뷰 또는 Deep Research 답변을 **2-3인 팟캐스트형 한국어 오디오 (Gemini TTS)** 로 생성. 페이지에서 직접 → 브라우저 안에서 MP3 인코딩 → 다운로드 + (배포 시) **이메일 발송 자동 첨부** |
 | **타임라인 시각화** | 카테고리별 연구 동향 내러티브 + 다이어그램 자동 생성 (PaperBanana) |
-| **네트워크 시각화** | UMAP 2D/3D 인터랙티브 네트워크. 카테고리 필터, Ego Network, Hub/Bridge 하이라이트 |
 | **지식 축적** | Obsidian 연동으로 메모가 다음 질의에 반영되는 compounding knowledge |
 | **논문 검색/등록** | arXiv, Semantic Scholar, OpenAlex 병렬 검색 + Zotero 자동 등록 (선택) |
+
+**Option** — 플래그/모드로 켤 때만:
+
+| 기능 | 켜는 법 | 설명 |
+|------|---------|------|
+| **콘텐츠 배포 (O-1)** | `--mode deploy` | Cloudflare Workers(정적 자산 + `/api/embed` + `/api/audio-email`) + gh-pages 리다이렉트 스텁. 배포해야 Audio Overview 이메일 발송이 활성화 |
+| **Research Insights + 네트워크 (O-2)** | `--insights` | 크로스카테고리 인사이트 분석 + UMAP 2D/3D 인터랙티브 네트워크(카테고리 필터, Ego Network, Hub/Bridge) 재생성 |
+| **로컬 LLM fallback** | `--local-fallback` | "같이 보면 좋은 논문" 생성이 망 장애로 끝까지 막히면 로컬 모델(Ollama/LM Studio 등)로 잔여분을 완결. config.json `local_model` 블록 필요 |
+| **워크플로 다이어그램** | `generate_workflow.py` | 이 README 상단의 파이프라인 다이어그램 생성 (PaperBanana, `--style cat/fairy/academic`) |
 
 **필요한 것**: Zotero 컬렉션 + PDF + API 키 (필수: Anthropic · Google · Zotero Web API). 검색 임베딩은 Google `gemini-embedding-001` 을 쓰므로 별도 OpenAI 키는 필요 없습니다 (OpenAI 는 답변 BYOK·insights fallback 용 선택).
 
@@ -147,21 +160,35 @@ PYTHONUTF8=1 python pipeline/run_full.py --topic my_topic --mode curate --source
 ```mermaid
 flowchart TB
     ZT[Zotero 컬렉션 PDF] --> S1
-    subgraph Pipeline[run_full.py 오케스트레이터]
+    subgraph Core[Core — run_full.py 가 항상 실행]
       S1[1 · 데이터 수집<br/>text.md + figures/]
       S2[2 · 구조화 리뷰<br/>review.md 6섹션]
       S3[3 · 토픽 모델링 + 분류<br/>_new_classification.json]
-      S4[4 · 인사이트 + 타임라인<br/>narrative + timeline.png]
+      S3C[3.5 · 같이 보면 좋은 논문<br/>multi-round 재시도 + 연결 0개 우선]
+      S4[4 · 카테고리 요약 + 타임라인<br/>narrative + timeline.png]
       S5[5 · Deep Research 인덱스<br/>_search_index.json]
-      S6[6 · 인덱스 + 네트워크<br/>index.html + network.html<br/>+ Audio Overview 모달]
+      S6[6 · 토픽 인덱스<br/>index.html + Audio Overview 모달]
     end
-    S1 --> S2 --> S3 --> S4 --> S6
+    S1 --> S2 --> S3 --> S3C --> S4 --> S6
     S2 --> S5 --> S6
+    S3C -.->|"망 전멸 시 opt-in: --local-fallback"| LF[로컬 LLM<br/>Ollama / LM Studio<br/>config.json local_model]
+    subgraph Opt2["Option O-2 — --insights"]
+      INS[Research Insights<br/>크로스카테고리 분석]
+      NET[네트워크 시각화<br/>network.html UMAP 2D/3D]
+    end
+    S4 -.->|"--insights"| INS
+    INS --> S6
+    S3 -.->|"--insights"| NET
+    NET --> S6
     S6 --> OUT{로컬 열람 또는 배포}
-    OUT -->|로컬| LOCAL[python -m http.server]
-    OUT -->|배포| DEPLOY[Cloudflare Workers<br/>정적 자산 + /api/audio-email Worker 함수<br/>+ gh-pages 리다이렉트 스텁]
-    DEPLOY -.이메일 발송.-> RESEND[Resend API<br/>noreply@사용자도메인 → 수신자]
-    subgraph Browser[브라우저 안에서 동작]
+    OUT -->|로컬 Core| LOCAL[pipeline/serve_local.py<br/>docs/ 서빙 + /api/embed 프록시]
+    subgraph Opt1["Option O-1 — --mode deploy"]
+      DEPLOY[Cloudflare Workers<br/>정적 자산 + /api/embed + /api/audio-email<br/>+ gh-pages 리다이렉트 스텁]
+      RESEND[Resend API<br/>noreply@사용자도메인 → 수신자]
+    end
+    OUT -->|배포| DEPLOY
+    DEPLOY -.이메일 발송.-> RESEND
+    subgraph Browser[브라우저 안에서 동작 — Core]
       DR[Deep Research<br/>Anthropic / OpenAI / Google<br/>키 자동 감지]
       AO[Audio Overview<br/>Gemini TTS → MP3]
     end
@@ -200,8 +227,9 @@ flowchart TB
 | | 설명 |
 |---|---|
 | **입력** | 카테고리별 논문 목록 + 리뷰 |
-| **처리** | <ul><li>Claude Sonnet이 카테고리 요약·세부 주제·카테고리 간 논문 연결 관계 추출</li><li>Claude Opus가 카테고리별 연구 동향 내러티브 작성</li><li>PaperBanana가 타임라인 다이어그램 자동 생성</li></ul> |
-| **출력** | <ul><li><code>_category_summaries.json</code></li><li><code>_timeline_narrative.json</code></li><li><code>category_timeline_*.png</code></li></ul> |
+| **처리 (Core)** | <ul><li>Claude Sonnet이 카테고리 요약·세부 주제 작성</li><li>**같이 보면 좋은 논문**: 임베딩 top-20 후보 → Sonnet이 관계 유형 + 한국어 이유 선별. 망 장애에 강건 — multi-round 재시도(막힌 배치만), 연결 0개 논문 우선 처리(priority-first), 그래도 남으면 `--local-fallback`(Option)으로 로컬 모델이 완결</li><li>Claude Opus가 카테고리별 연구 동향 내러티브 작성</li><li>PaperBanana가 타임라인 다이어그램 자동 생성</li></ul> |
+| **처리 (Option O-2, `--insights`)** | <ul><li>크로스카테고리 Research Insights 분석 (Anthropic → OpenAI → Gemini 3-backend fallback)</li><li>네트워크 시각화(<code>network.html</code>) 재생성</li></ul> |
+| **출력** | <ul><li><code>_category_summaries.json</code></li><li><code>_paper_connections.json</code></li><li><code>_timeline_narrative.json</code></li><li><code>category_timeline_*.png</code></li><li>(O-2) <code>_insights.json</code> + <code>network.html</code></li></ul> |
 
 ### 5. Deep Research 인덱스
 
@@ -217,13 +245,13 @@ flowchart TB
 | | 설명 |
 |---|---|
 | **입력** | 전체 분류 + 리뷰 + 타임라인 + UMAP 좌표 |
-| **처리** | <ul><li>카테고리 카드·검색·타임라인·Deep Research UI·Audio Overview 모달을 하나의 HTML로 조립</li><li>UMAP 2D/3D 좌표로 D3.js + Three.js 인터랙티브 네트워크 생성</li></ul> |
-| **출력** | <ul><li><code>{topic}/index.html</code></li><li><code>{topic}/network.html</code></li></ul> |
+| **처리** | <ul><li>(Core) 카테고리 카드·검색·타임라인·Deep Research UI·Audio Overview 모달을 하나의 HTML로 조립</li><li>(Option O-2, `--insights`) UMAP 2D/3D 좌표로 D3.js + Three.js 인터랙티브 네트워크 재생성</li></ul> |
+| **출력** | <ul><li><code>{topic}/index.html</code></li><li>(O-2) <code>{topic}/network.html</code></li></ul> |
 | **활용** | <code>cd docs && python -m http.server 8000</code> → 브라우저에서 바로 사용. 개별 논문 페이지 / Deep Research 답변 양쪽에서 🎧 **Audio Overview** 버튼으로 팟캐스트형 한국어 오디오 생성 (Gemini TTS, 브라우저 안에서 MP3 인코딩 → 즉시 다운로드). 배포 환경에선 완성된 MP3 가 이메일로도 자동 발송됨 |
 
-### 배포 (선택)
+### 배포 (Option O-1)
 
-로컬 사용이 기본입니다. 외부 공유가 필요하면 **3-계층 split-host** 구조로 자동 배포됩니다:
+로컬 사용이 기본(Core)입니다. 외부 공유가 필요하면 **3-계층 split-host** 구조로 자동 배포됩니다:
 
 | 계층 | 역할 | 내용 |
 |------|------|------|
@@ -373,6 +401,20 @@ PYTHONUTF8=1 python pipeline/search_papers.py --topic scisci --since 2026-04-01 
 ```
 
 OpenAlex(1k+건/키워드) 가 압도적으로 큰 소스라 arXiv 누락이 결과 품질에 큰 영향 주지 않습니다.
+
+**3. 한국망↔Anthropic stale-connection** — "같이 보면 좋은 논문" 생성(Sonnet 배치 호출)이 half-open 소켓으로 끝까지 막히는 날이 있습니다. 기본 방어는 자동입니다 (multi-round 재시도 + 연결 0개 논문 우선 처리 + 미완분은 기존 연결 유지 후 다음 사이클에 자동 보강). 로컬 모델이 있다면 `--local-fallback` 으로 망과 무관하게 그 자리에서 완결할 수 있습니다:
+
+```bash
+# config.json 에 local_model 블록 추가 (Ollama 예시 — 실측: EXAONE-4.0-32B, 8편 배치당 ~32초)
+#   "local_model": {
+#     "base_url": "http://localhost:11434/v1",
+#     "model": "exaone-4.0:latest",
+#     "num_ctx": 8192, "retries": 2, "batch_size": 8
+#   }
+PYTHONUTF8=1 python pipeline/run_full.py --topic ai4s --mode curate --source zotero --local-fallback
+```
+
+Ollama 는 자동 감지되어 네이티브 API(요청 단위 `num_ctx`, `think:false`)로 전송되고, LM Studio/llama.cpp/vLLM 은 OpenAI 호환 경로를 씁니다. 엔드포인트가 죽어 있으면 조용히 건너뛰므로 파이프라인은 절대 막히지 않습니다.
 
 ---
 
@@ -570,16 +612,29 @@ Turn hundreds of papers into structured Korean reviews, auto-classify them with 
 
 ## What It Does
 
+Features are split into **Core** (always produced by the default pipeline) and **Option** (enabled on demand).
+
+**Core** — one `run_full --mode curate` produces all of these:
+
 | Feature | Description |
 |---------|-------------|
 | **Structured Review** | Extracts text/figures from PDF. Claude generates 6-section Korean reviews (Essence-Motivation-Achievement-How-Originality-Evaluation) |
-| **Auto-Classification** | Bottom-up topic modeling (HDBSCAN + UMAP) creates categories and assigns papers automatically |
+| **Auto-Classification** | Bottom-up topic modeling (SPECTER2 + HDBSCAN + UMAP) creates categories and assigns papers automatically |
+| **Related Papers** | Claude Sonnet curates per-paper connections from embedding top-20 candidates — relation type (alternative/extension/…) + one-sentence Korean reason. Network-resilient: multi-round retry + zero-connection-papers-first ordering |
 | **Deep Research (multi-backend)** | Natural-language Q&A with embedding search + LLM answers grounded in paper text. Prefix-detects the key and routes to **Anthropic (Haiku/Sonnet) · OpenAI (GPT-4.1/GPT-5.5) · Google (Gemini Flash-Lite/Flash)** automatically. Natural prose + clickable `[N]` citation chips |
 | **Audio Overview** | Generates a **2-3 speaker Korean podcast (Gemini TTS)** from any review or Deep Research answer. Runs in-browser → MP3 encoded client-side → download + (when deployed) **automatic email delivery with attachment** |
 | **Timeline Visualization** | Per-category research trend narratives + auto-generated diagrams (PaperBanana) |
-| **Network Visualization** | Interactive UMAP 2D/3D network with category filters, ego network, hub/bridge highlighting |
 | **Knowledge Compounding** | Obsidian integration: your notes feed back into future queries |
 | **Paper Discovery** | Parallel search across arXiv, Semantic Scholar, OpenAlex + auto-registration to Zotero (optional) |
+
+**Option** — enabled by flag/mode only:
+
+| Feature | How to enable | Description |
+|---------|---------------|-------------|
+| **Content Deploy (O-1)** | `--mode deploy` | Cloudflare Workers (static assets + `/api/embed` + `/api/audio-email`) + gh-pages redirect stubs. Deploying activates Audio Overview email delivery |
+| **Research Insights + Network (O-2)** | `--insights` | Cross-category insight analysis + regenerates the interactive UMAP 2D/3D network (category filters, ego network, hub/bridge) |
+| **Local LLM fallback** | `--local-fallback` | When Related Papers generation is blocked by network failures to the very end, a local model (Ollama/LM Studio/…) completes the remainder. Requires a `local_model` block in config.json |
+| **Workflow diagram** | `generate_workflow.py` | Generates the pipeline diagram at the top of this README (PaperBanana, `--style cat/fairy/academic`) |
 
 **What you need**: A Zotero collection with PDFs + API keys (required: Anthropic · Google · Zotero Web API). Search embeddings use Google `gemini-embedding-001`, so no separate OpenAI key is needed (OpenAI is optional — reader BYOK answers / insights fallback).
 
@@ -709,21 +764,35 @@ PYTHONUTF8=1 python pipeline/run_full.py --topic my_topic --mode curate --source
 ```mermaid
 flowchart TB
     ZT[Zotero collection PDFs] --> S1
-    subgraph Pipeline[run_full.py orchestrator]
+    subgraph Core[Core — always run by run_full.py]
       S1[1 · Data Collection<br/>text.md + figures/]
       S2[2 · Structured Review<br/>review.md 6-section]
       S3[3 · Topic Modeling + Classification<br/>_new_classification.json]
-      S4[4 · Insights + Timelines<br/>narrative + timeline.png]
+      S3C[3.5 · Related Papers<br/>multi-round retry + zero-connection-first]
+      S4[4 · Category Summaries + Timelines<br/>narrative + timeline.png]
       S5[5 · Deep Research Index<br/>_search_index.json]
-      S6[6 · Index + Network<br/>index.html + network.html<br/>+ Audio Overview modal]
+      S6[6 · Topic Index<br/>index.html + Audio Overview modal]
     end
-    S1 --> S2 --> S3 --> S4 --> S6
+    S1 --> S2 --> S3 --> S3C --> S4 --> S6
     S2 --> S5 --> S6
+    S3C -.->|"network outage opt-in: --local-fallback"| LF[Local LLM<br/>Ollama / LM Studio<br/>config.json local_model]
+    subgraph Opt2["Option O-2 — --insights"]
+      INS[Research Insights<br/>cross-category analysis]
+      NET[Network Visualization<br/>network.html UMAP 2D/3D]
+    end
+    S4 -.->|"--insights"| INS
+    INS --> S6
+    S3 -.->|"--insights"| NET
+    NET --> S6
     S6 --> OUT{Local browse or deploy}
-    OUT -->|local| LOCAL[python -m http.server]
-    OUT -->|deploy| DEPLOY[Cloudflare Workers<br/>static assets + /api/audio-email function<br/>+ gh-pages redirect stubs]
-    DEPLOY -.email send.-> RESEND[Resend API<br/>noreply@your-domain → recipient]
-    subgraph Browser[in-browser at use time]
+    OUT -->|local Core| LOCAL[pipeline/serve_local.py<br/>serves docs/ + /api/embed proxy]
+    subgraph Opt1["Option O-1 — --mode deploy"]
+      DEPLOY[Cloudflare Workers<br/>static assets + /api/embed + /api/audio-email<br/>+ gh-pages redirect stubs]
+      RESEND[Resend API<br/>noreply@your-domain → recipient]
+    end
+    OUT -->|deploy| DEPLOY
+    DEPLOY -.email send.-> RESEND
+    subgraph Browser[in-browser at use time — Core]
       DR[Deep Research<br/>Anthropic / OpenAI / Google<br/>key auto-detected]
       AO[Audio Overview<br/>Gemini TTS → MP3]
     end
@@ -762,8 +831,9 @@ flowchart TB
 | | Description |
 |---|---|
 | **Input** | Per-category paper lists + reviews |
-| **Processing** | <ul><li>Claude Sonnet extracts category summaries, sub-themes, cross-category connections</li><li>Claude Opus writes research-trend narratives per category</li><li>PaperBanana auto-generates timeline diagrams</li></ul> |
-| **Output** | <ul><li><code>_category_summaries.json</code></li><li><code>_timeline_narrative.json</code></li><li><code>category_timeline_*.png</code></li></ul> |
+| **Processing (Core)** | <ul><li>Claude Sonnet extracts category summaries and sub-themes</li><li>**Related Papers**: embedding top-20 candidates → Sonnet curates relation type + Korean reason per paper. Network-resilient — multi-round retry (only stuck batches), zero-connection-papers-first ordering, and an opt-in `--local-fallback` to a local model for anything still stranded</li><li>Claude Opus writes research-trend narratives per category</li><li>PaperBanana auto-generates timeline diagrams</li></ul> |
+| **Processing (Option O-2, `--insights`)** | <ul><li>Cross-category Research Insights (Anthropic → OpenAI → Gemini 3-backend fallback)</li><li>Regenerates the network visualization (<code>network.html</code>)</li></ul> |
+| **Output** | <ul><li><code>_category_summaries.json</code></li><li><code>_paper_connections.json</code></li><li><code>_timeline_narrative.json</code></li><li><code>category_timeline_*.png</code></li><li>(O-2) <code>_insights.json</code> + <code>network.html</code></li></ul> |
 
 ### 5. Deep Research Index
 
@@ -779,11 +849,11 @@ flowchart TB
 | | Description |
 |---|---|
 | **Input** | All classifications + reviews + timelines + UMAP coordinates |
-| **Processing** | <ul><li>Assembles category cards, search, timeline narratives, Deep Research UI, and the Audio Overview modal into a single HTML</li><li>D3.js + Three.js interactive network from UMAP 2D/3D coordinates</li></ul> |
-| **Output** | <ul><li><code>{topic}/index.html</code></li><li><code>{topic}/network.html</code></li></ul> |
+| **Processing** | <ul><li>(Core) Assembles category cards, search, timeline narratives, Deep Research UI, and the Audio Overview modal into a single HTML</li><li>(Option O-2, `--insights`) Regenerates the D3.js + Three.js interactive network from UMAP 2D/3D coordinates</li></ul> |
+| **Output** | <ul><li><code>{topic}/index.html</code></li><li>(O-2) <code>{topic}/network.html</code></li></ul> |
 | **Usage** | <code>cd docs && python -m http.server 8000</code> — browse locally. On both per-paper pages and Deep Research answers, the 🎧 **Audio Overview** button generates a Korean podcast (Gemini TTS, MP3 encoded in-browser → instant download). On the deployed site the finished MP3 is also delivered by email automatically |
 
-### Deployment (Optional)
+### Deployment (Option O-1)
 
 Local use is the default. For sharing, a **3-tier split-host** architecture deploys automatically:
 
@@ -920,6 +990,20 @@ PYTHONUTF8=1 python pipeline/search_papers.py --topic scisci --since 2026-04-01 
 ```
 
 OpenAlex returns 1k+ items per keyword and dominates the result pool, so missing arXiv rarely degrades coverage in practice.
+
+**3. Korean-network↔Anthropic stale connections** — on bad days the Related Papers generation (batched Sonnet calls) gets stuck on half-open sockets to the very end. The default defenses are automatic (multi-round retry + zero-connection-papers-first ordering + anything unfinished keeps its previous connections and self-heals next cycle). If you run a local model, `--local-fallback` completes the remainder on the spot, independent of the network:
+
+```bash
+# Add a local_model block to config.json (Ollama example — measured: EXAONE-4.0-32B, ~32s per 8-paper batch)
+#   "local_model": {
+#     "base_url": "http://localhost:11434/v1",
+#     "model": "exaone-4.0:latest",
+#     "num_ctx": 8192, "retries": 2, "batch_size": 8
+#   }
+PYTHONUTF8=1 python pipeline/run_full.py --topic ai4s --mode curate --source zotero --local-fallback
+```
+
+Ollama is auto-detected and served via its native API (per-request `num_ctx`, `think:false`); LM Studio/llama.cpp/vLLM use the OpenAI-compatible path. A dead endpoint is skipped silently — the pipeline never blocks on it.
 
 ---
 

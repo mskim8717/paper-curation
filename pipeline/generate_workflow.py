@@ -101,11 +101,22 @@ The system is orchestrated by **Claude Code** (Anthropic's CLI agent) which coor
 - **Claude** (Anthropic LLM, Anthropic logo): structured reviews (Haiku), topic naming (Sonnet), timeline narratives (Opus), Deep Research answers (Extended Thinking)
 - **PaperBanana** (diagram engine, banana icon): auto-generates per-category research trend timeline diagrams from Claude Opus narratives
 - **Obsidian** (knowledge IDE, purple gem logo): personal notes editing, [[wiki-links]] between papers, Graph View for cross-query knowledge topology
-- **OpenAI** (embedding, OpenAI logo): text-embedding-3-small for Deep Research RAG index
+- **Google Gemini** (Google logo): gemini-embedding-001 for the Deep Research RAG index, figure validation, and Audio Overview TTS
+- **Local LLM** (small server/home icon, OPTIONAL): Ollama/LM Studio fallback that completes Related-Papers connections when the network to Anthropic is down
 
 Data flow: Zotero → Claude Code → Claude (review/classify) → PaperBanana (timelines) → Deep Research (RAG Q&A) → Obsidian (compounding knowledge)
 
 Each tool MUST be represented by its recognizable logo/icon. Show Claude Code as the central orchestrator connecting all tools.
+
+### CORE vs OPTION (CRITICAL — must be visually distinguishable!)
+The pipeline has two tiers. The diagram MUST make the tier of every element obvious at a glance:
+- **CORE (always runs, solid style)**: data collection → structured review → topic modeling/classification → Related Papers connections → category summaries + timelines → Deep Research index → topic index page → local browsing (serve_local) → in-browser Deep Research + Audio Overview.
+- **OPTION (opt-in, dashed-border zones, each zone labeled with a small "OPTION" badge/ribbon)**:
+  * O-1 Content Deploy (`--mode deploy`): Cloudflare Workers + gh-pages redirect stubs + Resend email delivery
+  * O-2 Research Insights + Network (`--insights`): cross-category insights analysis + interactive network visualization
+  * Local LLM fallback (`--local-fallback`): Ollama/LM Studio completes stranded connections during network outages
+  * Workflow diagram generation (this very diagram, standalone)
+- Core flow uses solid arrows/borders; every Option element lives inside a clearly dashed enclosure with an "OPTION" tag. A reader must instantly see "this part is optional".
 
 ### PIPELINE PHASES (left to right flow)
 
@@ -159,6 +170,9 @@ VISUAL_RULES_DEFAULT = """
 - Decision diamonds for mode switches (--update, --category, --timeline) with minimal labels
 - Fan-out / fan-in arrows for parallel operations
 - Dashed lines for optional/skippable paths
+- CORE vs OPTION: Core flow solid; every OPTION group (Deploy O-1, Insights+Network O-2,
+  Local LLM fallback, Workflow diagram) inside a dashed rounded enclosure with a small
+  "OPTION" ribbon/badge on its corner — instantly distinguishable from the Core flow
 - White background, clean modern style, soft rounded shapes
 - NO verbose descriptions in boxes — icons speak louder than words
 - NO title text, NO watermarks, NO color name labels
@@ -169,7 +183,8 @@ VISUAL_RULES_DEFAULT = """
   * Claude (Anthropic logo) — LLM review/classify/insights/Deep Research
   * PaperBanana (banana icon) — timeline diagram generation
   * Obsidian (purple gem icon) — knowledge compounding destination
-  * OpenAI (OpenAI logo) — embedding for Deep Research index
+  * Google Gemini (Google logo) — Deep Research embeddings + figure validation + TTS
+  * Local LLM (tiny home-server icon, inside the OPTION zone) — offline connections fallback
 """
 
 VISUAL_RULES_ACADEMIC = """
@@ -195,6 +210,9 @@ NODE STYLE
 EDGES
 - Solid thin arrows for primary data flow
 - Dashed arrows for optional / preflight paths (dedup preflight, audit recovery)
+- CORE vs OPTION: Core nodes/edges solid; OPTION groups (Deploy O-1, Insights+Network O-2,
+  Local LLM fallback) enclosed in thin dashed rounded rectangles, each with a small
+  italic "Option" label at the enclosure corner
 - Diamond decision nodes only for the 3-axis MECE mode gate
   ("mode: curate / rebuild / reclassify / retime / deploy")
 - No thick colored edges; monochrome black arrows
@@ -222,6 +240,12 @@ FORBIDDEN
 # Script name → (keyword, color, cat description, fairy description)
 # Used to dynamically generate per-step character descriptions
 _CHARACTER_DB = {
+    "run_full":                ("Orchestrate","navy",   "majestic silver tabby conductor with a tiny baton, standing on a podium directing all other cats", "conducts with a glowing baton, navy wings"),
+    "dedup_zotero":            ("Dedup",     "cyan",    "twin-spotting Japanese Bobtail holding two identical papers side by side, one eyebrow raised", "compares two identical scrolls, cyan wings"),
+    "cleanup":                 ("Cleanup",   "mint",    "tidy white cat with a tiny broom, sweeping stale files into a small bin", "sweeps sparkles into a bin, mint wings"),
+    "prepare_deploy":          ("Deploy",    "sky",     "adventurous cat in a tiny astronaut helmet, launching a paper-airplane rocket to a cloud", "launches a paper rocket to a cloud, sky wings"),
+    "audit_matching":          ("Audit",     "slate",   "sharp-eyed Sherlock cat with deerstalker hat, comparing two documents with a magnifier", "inspects mismatched scrolls, slate wings"),
+    "fix_matching":            ("Fix",       "copper",  "handy cat with a tiny wrench and tool belt, repairing a broken paper link", "repairs a broken link with a wrench, copper wings"),
     "search_papers":           ("Search",    "blue",    "orange tabby wearing tiny detective hat, holds magnifying glass, curious wide eyes", "holds a magnifying glass, blue wings"),
     "register_zotero":         ("Register",  "green",   "tuxedo cat with round glasses, carries a stack of tiny books on its head", "carries a tiny book stack, green wings"),
     "sync_zotero":             ("Sync",      "green",   "tuxedo cat checking a pocket watch, syncing two book piles", "syncs two floating book stacks, green wings"),
@@ -297,6 +321,12 @@ def build_style_text(phases, style):
 - Style: flat kawaii illustration, soft pastel colors, round shapes, consistent size across all cats
 - Cats ARE the icons — each cat's pose/action replaces a traditional icon
 - Small paw prints or yarn balls as decorative connectors between phases
+- CORE vs OPTION (IMPORTANT): Core cats sit along the main solid path. OPTION features
+  (Deploy O-1, Research Insights + Network O-2, Local LLM fallback) are dashed-fence
+  "play pens" — each pen has a tiny wooden sign reading "OPTION", and the cats inside
+  wear a small star-shaped name tag. A reader must instantly see which cats are optional.
+- The Local LLM fallback pen contains a cozy cat napping next to a tiny home server
+  (it only wakes up when the cloud is unreachable — show tiny zzz)
 """
     elif style == "fairy":
         return f"""
@@ -342,9 +372,11 @@ def main():
     log(f"Generating {args.candidates} workflow candidates (21:9, PaperBanana)")
 
     caption = ("Paper Curation Pipeline: Claude Code orchestrates Zotero (paper source), "
-               "Claude (AI reviews, classification, insights, Deep Research), "
-               "PaperBanana (category trend timelines), OpenAI (embedding index), "
-               "and Obsidian (knowledge compounding with wiki-links and Graph View).")
+               "Claude (AI reviews, classification, related-papers connections, Deep Research), "
+               "PaperBanana (category trend timelines), Google Gemini (embedding index, "
+               "figure validation, TTS), and Obsidian (knowledge compounding). "
+               "Core stages flow solid; Option zones (Deploy O-1, Insights+Network O-2, "
+               "Local LLM fallback) are dashed enclosures labeled OPTION.")
 
     os.makedirs(WORKFLOW_DIR, exist_ok=True)
 
