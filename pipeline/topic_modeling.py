@@ -689,7 +689,7 @@ def compute_related_candidates(embeddings, slugs, top_k=5):
 
 def generate_connections_from_candidates(candidates, topic_papers, client,
                                          batch_size=25, deadline_s=300, max_rounds=3,
-                                         local_fallback=None):
+                                         local_fallback=None, priority_slugs=None):
     """임베딩 top-20 후보 -> Sonnet이 이유/관계 작성.
 
     BEST-EFFORT + 행 방지: 연결은 정규 사이클의 ``extract_insights --only
@@ -713,6 +713,12 @@ def generate_connections_from_candidates(candidates, topic_papers, client,
          연결한다. 클라우드 키·네트워크가 끝까지 막힌 환경에서 사용자가
          ``--local-fallback`` 으로 켰을 때만 동작하며, 엔드포인트가 응답 없으면
          조용히 건너뛴다(런은 절대 막지 않는다). lib/local_llm 참조.
+      6) PRIORITY-FIRST: ``priority_slugs``(기존 연결이 0개인 논문 — 대개 신규)
+         를 매 라운드 큐의 *맨 앞* 에 배치한다. 배치가 슬러그 정렬순으로 제출되면
+         번호 큰 신규 논문이 항상 꼬리에 몰려, deadline 이 잘릴 때마다 같은
+         논문들이 반복 탈락하는 체계적 편향이 생긴다(2026-06-12 실측: ai4s 신규
+         6편이 두 런 연속 탈락). 망 예산이 부족해도 사용자에게 공백으로 보이는
+         논문부터 먼저 채운다.
     """
     from concurrent.futures import (ThreadPoolExecutor, FIRST_COMPLETED,
                                     wait as _futures_wait)
@@ -837,8 +843,18 @@ Rules:
             # 취소; 도는 워커는 conn_client 의 짧은 timeout 안에서 스스로 끝난다.
             executor.shutdown(wait=False, cancel_futures=True)
 
+    prio = set(priority_slugs or ())
+
+    def _ordered(slug_set):
+        """기존 연결 0개(신규) 논문을 큐 맨 앞에 — 잘려도 공백부터 채운다."""
+        return sorted(slug_set, key=lambda s: (s not in prio, s))
+
+    if prio:
+        log(f"  [connections] priority-first: 연결 없는 {len(prio & all_slug_set)} "
+            f"papers 를 첫 배치로")
+
     for rnd in range(max_rounds):
-        todo = sorted(all_slug_set - attempted)
+        todo = _ordered(all_slug_set - attempted)
         if not todo:
             break
         if rnd:
@@ -878,7 +894,7 @@ Rules:
 
     # opt-in: 끝까지 막힌 잔여분을 로컬 모델로 마저 연결 (클라우드 키·네트워크 불필요)
     if missing and local_fallback:
-        missing = _run_local_fallback(sorted(missing), local_fallback)
+        missing = _run_local_fallback(_ordered(missing), local_fallback)
 
     if missing:
         log(f"  [connections] {len(missing)} papers 미완 — 기존 연결 유지, "
@@ -1056,8 +1072,21 @@ def _run_topic_model(topic="ai4s", *, skip_connections=False,
         log("STEP 6: RELATED PAPERS (Embedding + Sonnet)")
         log("=" * 50)
         candidates = compute_related_candidates(embeddings, slugs, top_k=5)
+        # 기존 연결이 0개인 논문(대개 신규)을 우선 배치 — deadline 으로 라운드가
+        # 잘려도 사이트에 공백으로 보이는 논문부터 먼저 채운다.
+        priority_slugs = set()
+        try:
+            conn_path = os.path.join(topic_dir, "_paper_connections.json")
+            with open(conn_path, "r", encoding="utf-8") as f:
+                _existing = json.load(f)
+            _edata = _existing.get("connections", _existing) \
+                if isinstance(_existing, dict) else {}
+            priority_slugs = {s for s in candidates if not _edata.get(s)}
+        except Exception:
+            pass  # 파일 없음(첫 런) 등 — 전부 동순위로 진행
         connections = generate_connections_from_candidates(
-            candidates, topic_papers, client, local_fallback=local_fallback
+            candidates, topic_papers, client, local_fallback=local_fallback,
+            priority_slugs=priority_slugs
         )
         from lib.connections import sync_topic_connections
         sync_topic_connections(connections, topic, slugs, topic_dir, log=log)
