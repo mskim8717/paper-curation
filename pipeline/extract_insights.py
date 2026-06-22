@@ -461,55 +461,6 @@ def _cc_gemini_call(prompt, schema):
     return json.loads(text)
 
 
-# ═══════════════════════════════════════════
-# 2. Paper Connections (per-category batch)
-# ═══════════════════════════════════════════
-
-def _call_with_deadline(fn, deadline_s, label=""):
-    """Run fn() in a daemon thread; raise TimeoutError if it exceeds deadline_s.
-
-    The Anthropic SDK has no hard total-request deadline, and httpx's read
-    timeout doesn't reliably fire when a Korea↔US TCP connection is silently
-    severed by a middlebox (socket stays ESTABLISHED, recv() blocks forever).
-    This wraps the call in a wall-clock watchdog: past the deadline we abandon
-    the (un-killable) thread + its hung socket and raise, so the caller's
-    per-batch except handler can skip it instead of hanging the whole run."""
-    import threading
-    box = {}
-
-    def _w():
-        try:
-            box["v"] = fn()
-        except BaseException as e:  # noqa: BLE001 — propagate any failure
-            box["e"] = e
-
-    t = threading.Thread(target=_w, daemon=True)
-    t.start()
-    t.join(deadline_s)
-    if t.is_alive():
-        raise TimeoutError(f"{label} exceeded {deadline_s}s wall-clock deadline")
-    if "e" in box:
-        raise box["e"]
-    return box.get("v")
-
-
-# Hard per-batch wall-clock cap. Legit batches finish in 2~6 min; rare ones
-# reach ~10 min. Hangs run 20~60+ min. 900s kills hangs while allowing almost
-# all real completions.
-_CONN_BATCH_DEADLINE_S = 900
-
-# Backend fallback chain. Korea↔Anthropic route stalls badly some windows while
-# the OpenAI route stays healthy (and vice-versa). The connection task is plain
-# structured-JSON generation, not provider-specific — so we try backends in
-# order and fall back on failure. Default: Anthropic primary, OpenAI fallback.
-# Override order with EXTRACT_INSIGHTS_BACKENDS=openai,anthropic (or just one).
-_BACKENDS = [b.strip().lower() for b in
-             os.environ.get("EXTRACT_INSIGHTS_BACKENDS",
-                            os.environ.get("EXTRACT_INSIGHTS_BACKEND", "anthropic") + ",openai")
-             .split(",") if b.strip()]
-# de-dup preserving order
-_BACKENDS = list(dict.fromkeys(_BACKENDS))
-_OPENAI_CONN_MODEL = os.environ.get("EXTRACT_INSIGHTS_OPENAI_MODEL", "gpt-5.5")
 # Cross-category insights fallback chain (separate from paper_connections):
 # anthropic → openai → gemini. Each backend is forced into the same JSON schema
 # so the downstream consumer is provider-agnostic. Override with
@@ -521,346 +472,93 @@ _CC_BACKENDS = [b.strip().lower() for b in
 _CC_BACKENDS = list(dict.fromkeys(_CC_BACKENDS))
 _OPENAI_CC_MODEL = os.environ.get("EXTRACT_INSIGHTS_CC_OPENAI_MODEL", "gpt-5.5")
 _GEMINI_CC_MODEL = os.environ.get("EXTRACT_INSIGHTS_CC_GEMINI_MODEL", "gemini-3.1-pro-preview")
-# Per-attempt wall-clock cap (thread watchdog) — fail fast so fallback kicks in.
-_ATTEMPT_DEADLINE_S = int(os.environ.get("EXTRACT_INSIGHTS_ATTEMPT_DEADLINE", "150"))
-# Circuit breaker: after this many consecutive failures of a backend, drop it
-# for the rest of the run (don't keep wasting _ATTEMPT_DEADLINE_S per batch).
-_CB_TRIP = 3
-_cb_fails: dict[str, int] = {}
-_cb_lock = __import__("threading").Lock()
-
-
-_CONNECTIONS_TOOL_SCHEMA = {
-    "name": "emit_connections",
-    "description": (
-        "Emit paper connection recommendations. Each entry in "
-        "`connections` is one source paper plus 2+ related target papers."
-    ),
-    "input_schema": {
-        "type": "object",
-        "properties": {
-            "connections": {
-                "type": "array",
-                "items": {
-                    "type": "object",
-                    "properties": {
-                        "source": {"type": "string",
-                                    "description": "Source paper number (e.g. '045')."},
-                        "targets": {
-                            "type": "array",
-                            "minItems": 2,
-                            "items": {
-                                "type": "object",
-                                "properties": {
-                                    "target": {"type": "string",
-                                                "description": "Target paper number."},
-                                    "relation": {"enum": ["alternative", "extension",
-                                                           "foundation", "counterpoint",
-                                                           "application"]},
-                                    "reason": {"type": "string", "minLength": 5,
-                                                "description": "한국어로 왜 같이 읽어야 하는지 1문장."},
-                                },
-                                "required": ["target", "relation", "reason"],
-                            },
-                        },
-                    },
-                    "required": ["source", "targets"],
-                },
-            },
-        },
-        "required": ["connections"],
-    },
-}
-
-
-def _one_backend_call(backend: str, clients: dict, prompt: str) -> str:
-    """Call a single backend and return the JSON-encoded connection map
-    text. Both branches reach the same downstream ``json.loads`` so the
-    fallback contract is preserved.
-
-    Anthropic uses tool-use (forced ``emit_connections``) to eliminate
-    raw-text JSON parsing fragility; the tool result is converted to
-    the legacy ``{source_num: [{target, relation, reason}, ...]}`` dict
-    shape and re-serialised. OpenAI keeps ``response_format=json_object``
-    since that backend already returns deterministic JSON.
-    """
-    if backend == "openai":
-        resp = clients["openai"].chat.completions.create(
-            model=_OPENAI_CONN_MODEL,
-            max_tokens=16000,
-            response_format={"type": "json_object"},
-            messages=[{"role": "user", "content": prompt}],
-        )
-        return (resp.choices[0].message.content or "").strip()
-
-    resp = clients["anthropic"].messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=20000,
-        tools=[_CONNECTIONS_TOOL_SCHEMA],
-        tool_choice={"type": "tool", "name": "emit_connections"},
-        messages=[{"role": "user", "content": prompt}],
-    )
-    tool_input = None
-    for block in resp.content:
-        if getattr(block, "type", None) == "tool_use" \
-                and getattr(block, "name", None) == "emit_connections":
-            tool_input = dict(block.input)
-            break
-    if tool_input is None:
-        raise RuntimeError("emit_connections tool was not invoked")
-    # Tool emits `[{source, targets:[{target,relation,reason}]}]`; rewrite
-    # to the legacy `{source_num: [{target, relation, reason}]}` shape so
-    # the downstream json.loads parser sees the same structure as before.
-    legacy = {}
-    for entry in tool_input.get("connections", []) or []:
-        src = str(entry.get("source", "")).strip()
-        if not src:
-            continue
-        legacy[src] = entry.get("targets", []) or []
-    return json.dumps(legacy, ensure_ascii=False)
-
-
-def _conn_llm_text(clients: dict, prompt: str, label: str = "") -> tuple[str, str]:
-    """Try backends in _BACKENDS order with a per-attempt deadline; fall back on
-    failure. Circuit-breaks a backend after _CB_TRIP consecutive failures.
-    Returns (text, backend_used). Raises if every available backend fails."""
-    last_err = None
-    for b in _BACKENDS:
-        if clients.get(b) is None:
-            continue
-        with _cb_lock:
-            if _cb_fails.get(b, 0) >= _CB_TRIP:
-                continue  # tripped — skip for rest of run
-        try:
-            text = _call_with_deadline(
-                lambda: _one_backend_call(b, clients, prompt),
-                _ATTEMPT_DEADLINE_S, label=f"{label}:{b}")
-            with _cb_lock:
-                _cb_fails[b] = 0  # success resets the breaker
-            return text, b
-        except Exception as e:  # noqa: BLE001
-            last_err = e
-            with _cb_lock:
-                _cb_fails[b] = _cb_fails.get(b, 0) + 1
-                tripped = _cb_fails[b] >= _CB_TRIP
-            log(f"      [fallback] {b} failed ({type(e).__name__}: {str(e)[:70]})"
-                f"{' — CIRCUIT TRIPPED, dropping for rest of run' if tripped else ' → next backend'}")
-    raise RuntimeError(f"all backends failed: {type(last_err).__name__}: {str(last_err)[:80]}")
-
-
-def _call_connections_batch(papers_batch, cat_name, topic, all_paper_lines,
-                            cross_cat_lines, clients):
-    """논문 배치에 대해 connections 호출. 같은 카테고리 + 다른 카테고리 후보 모두 제공.
-    clients 는 {'anthropic': ..., 'openai': ...} dict — backend fallback 용."""
-
-    batch_lines = []
-    for p in papers_batch:
-        num = p["slug"].split("_")[0]
-        essence = p.get("essence", "")[:200]
-        year = str(p.get("date", ""))[:4]
-        cls = p.get("classifications", {}).get(topic, {})
-        sub = cls.get("sub_category", "")
-        batch_lines.append(f"[{num}] ({year}) [{sub}] {p.get('title', '')[:70]} | {essence}")
-
-    batch_nums = ", ".join(p["slug"].split("_")[0] for p in papers_batch)
-    batch_text = "\n".join(batch_lines)
-
-    cross_section = ""
-    if cross_cat_lines:
-        cross_section = f"""
-PAPERS FROM OTHER CATEGORIES (also use as connection targets):
-{cross_cat_lines}
-"""
-
-    prompt = f"""You are analyzing papers in the "{cat_name}" category of {topic}.
-
-TARGET PAPERS (generate connections for these):
-{batch_text}
-
-PAPERS IN SAME CATEGORY:
-{all_paper_lines}
-{cross_section}
-For each TARGET paper, recommend related papers from BOTH lists above.
-Cross-category connections are especially valuable.
-
-Connection types:
-- alternative: Same problem, different approach
-- extension: Builds on or extends this work
-- foundation: This paper's theoretical/methodological foundation
-- counterpoint: Opposite perspective or critiques limitations
-- application: Applies this method to a real problem
-
-Output ONLY valid JSON — a dict where keys are paper numbers (e.g. "045") and values are arrays:
-{{
-  "045": [
-    {{"target": "123", "relation": "alternative", "reason": "한국어 이유 1문장"}},
-    {{"target": "267", "relation": "extension", "reason": "한국어 이유 1문장"}}
-  ]
-}}
-
-Rules:
-- ONLY include keys for these target papers: {batch_nums}
-- reason은 한국어로, 왜 같이 읽어야 하는지 구체적으로 (1문장)
-- 모든 논문에 대해 최소 2개 연결 생성 (카테고리 내외 모두 가능)
-- 같은 sub-category끼리만 연결하지 말 것 — 다른 카테고리의 논문도 적극 포함
-- target은 위 목록에 있는 논문 번호만 사용"""
-
-    _t0 = time.time()
-    log(f"    [conn-batch:{cat_name[:30]}] calling {'/'.join(_BACKENDS)} ({len(papers_batch)} targets, attempt-deadline={_ATTEMPT_DEADLINE_S}s)...")
-    text, used = _conn_llm_text(clients, prompt, label=f"conn-batch:{cat_name[:20]}")
-    log(f"    [conn-batch:{cat_name[:30]}] -> {len(text)} chars in {time.time()-_t0:.0f}s (via {used})")
-    if text.startswith("```"):
-        text = text.split("```")[1]
-        if text.startswith("json"):
-            text = text[4:]
-    return json.loads(text)
-
-
-BATCH_SIZE = 25
-
-
-# 후보 목록 캡 (대용량 토픽에서 호출 페이로드가 ~200k자에 달해 느린 망에서
-# SDK 타임아웃이 나는 것을 막기 위함). 0 = 무제한(기존 동작 보존). env 지정 시에만
-# 점수(score) 상위 N편으로 후보를 좁힌다 — 중요 논문이 우선 후보로 남는다.
-_MAX_CAT_CAND = int(os.environ.get("EXTRACT_INSIGHTS_MAX_CAT_CAND", "0"))
-_MAX_CROSS_CAND = int(os.environ.get("EXTRACT_INSIGHTS_MAX_CROSS_CAND", "0"))
-
-
-def _process_category(cat_name, papers, topic, clients,
-                      all_topic_papers=None):
-    """단일 카테고리의 connections 추출. 다른 카테고리 논문도 후보로 제공.
-    clients 는 backend fallback dict."""
-    sorted_papers = sorted(papers, key=lambda x: -x.get("score", 0))
-    cat_cands = sorted_papers if _MAX_CAT_CAND <= 0 else sorted_papers[:_MAX_CAT_CAND]
-    all_paper_lines = "\n".join(
-        f"[{p['slug'].split('_')[0]}] {p.get('title', '')[:60]}"
-        for p in cat_cands
-    )
-
-    # 다른 카테고리 논문 목록 (cross-category connection 후보)
-    cat_slugs = {p["slug"] for p in papers}
-    cross_cat_lines = ""
-    if all_topic_papers:
-        other_papers = sorted(
-            (p for p in all_topic_papers if p["slug"] not in cat_slugs),
-            key=lambda x: -x.get("score", 0),
-        )
-        if _MAX_CROSS_CAND > 0:
-            other_papers = other_papers[:_MAX_CROSS_CAND]
-        if other_papers:
-            cross_cat_lines = "\n".join(
-                f"[{p['slug'].split('_')[0]}] [{p.get('classifications',{}).get(topic,{}).get('primary_category','')}] {p.get('title','')[:60]}"
-                for p in other_papers
-            )
-
-    batches = [sorted_papers[i:i + BATCH_SIZE]
-                for i in range(0, len(sorted_papers), BATCH_SIZE)]
-
-    log(f"  {cat_name} ({len(papers)} papers, {len(batches)} batch{'es' if len(batches) > 1 else ''})...")
-
-    # num_to_slug: 같은 카테고리 + 다른 카테고리 모두 포함
-    num_to_slug = {}
-    for p in papers:
-        num = p["slug"].split("_")[0]
-        num_to_slug[num] = p["slug"]
-    if all_topic_papers:
-        for p in all_topic_papers:
-            num = p["slug"].split("_")[0]
-            if num not in num_to_slug:
-                num_to_slug[num] = p["slug"]
-
-    cat_connections = {}
-    cat_total = 0
-    for bi, batch in enumerate(batches):
-        try:
-            batch_result = _call_connections_batch(
-                batch, cat_name, topic, all_paper_lines,
-                cross_cat_lines, clients
-            )
-
-            for num, conns in batch_result.items():
-                slug = num_to_slug.get(num)
-                if not slug:
-                    continue
-                resolved = []
-                for c in conns:
-                    target_slug = num_to_slug.get(c.get("target", ""))
-                    if target_slug:
-                        resolved.append({
-                            "slug": target_slug,
-                            "relation": c.get("relation", "alternative"),
-                            "reason": c.get("reason", ""),
-                        })
-                if resolved:
-                    existing = cat_connections.get(slug, [])
-                    seen_targets = {c["slug"] for c in existing}
-                    for r in resolved:
-                        if r["slug"] not in seen_targets:
-                            existing.append(r)
-                            seen_targets.add(r["slug"])
-                    cat_connections[slug] = existing
-
-            cat_total += len(batch_result)
-            if len(batches) > 1:
-                log(f"    [{cat_name}] batch {bi + 1}/{len(batches)}: {len(batch_result)} papers")
-        except Exception as e:
-            log(f"    [{cat_name}] batch {bi + 1}/{len(batches)} ERROR: {str(e)[:100]}")
-
-        time.sleep(1)  # rate limit
-
-    log(f"    [{cat_name}] → {cat_total} papers connected")
-    return cat_connections
-
-
-MAX_PARALLEL_CATEGORIES = int(os.environ.get("EXTRACT_INSIGHTS_PARALLEL", "4"))
 
 
 def extract_paper_connections(topic, cat_papers, clients, all_topic_papers=None,
                               topic_dir=None, topic_slugs=None):
-    """카테고리별 병렬로 논문 간 연결 추출. 다른 카테고리 논문도 후보로 제공.
+    """SPECTER2 코사인 top-N 후보 → Sonnet 이 관계·이유 판정 (하이브리드).
 
-    topic_dir + topic_slugs 가 주어지면 카테고리가 끝날 때마다 누적 결과를
-    _paper_connections.json 에 incremental 저장한다 — hang/kill 로 죽어도
-    이미 끝난 카테고리의 connections 는 디스크에 보존된다."""
-    from concurrent.futures import ThreadPoolExecutor, as_completed
+    topic_modeling / paper-curio 와 **동일한 SPECTER2 임베딩 기준**을 공유한다:
+    후보는 `compute_related_candidates`(코사인 top-N, 전체 토픽 풀에서) 로 좁히고,
+    판정은 `generate_connections_from_candidates`(Sonnet, 후보 내에서만 선택) 로 한다.
+    카테고리 통째 덤프 방식 대비 (1) topic_modeling 과 기준 통일, (2) paper-curio
+    경로와 방식 일치, (3) 프롬프트 페이로드 급감(느린 망 타임아웃 완화).
 
-    all_connections = {}
-    targets = {cat: papers for cat, papers in cat_papers.items()
-                if cat != "Other" and len(papers) >= 3}
+    연결을 생성할 대상은 `cat_papers`(= --categories 필터 반영)에 한정하되, 후보
+    풀은 `all_topic_papers` 전체에서 뽑아 cross-category 연결을 유지한다. top-N 은
+    `EXTRACT_INSIGHTS_TOPN_CAND`(기본 25)로 넉넉히 둬 counterpoint/application 처럼
+    임베딩상 멀지만 관련 있는 연결의 recall 을 확보한다."""
+    from topic_modeling import (
+        extract_originalities, compute_embeddings,
+        compute_related_candidates, generate_connections_from_candidates,
+    )
 
-    def _persist():
-        if topic_dir is None or topic_slugs is None:
-            return
+    # 연결을 생성할 대상 = cat_papers (Other/초소형 카테고리 제외)
+    target_slugs = set()
+    for cat, papers in cat_papers.items():
+        if cat == "Other" or len(papers) < 3:
+            continue
+        for p in papers:
+            target_slugs.add(p["slug"])
+    if not target_slugs:
+        log("  연결 대상 논문 없음 — skip")
+        return {}
+
+    # 후보 풀 = 전체 토픽(cross-category 후보 유지). 임베딩은 캐시 우선.
+    pool = all_topic_papers or [p for ps in cat_papers.values() for p in ps]
+    seen = set()
+    pool_uniq = []
+    for p in pool:
+        if p["slug"] not in seen:
+            seen.add(p["slug"])
+            pool_uniq.append(p)
+    pool = pool_uniq
+
+    originalities = extract_originalities(pool)
+    cache_path = os.path.join(topic_dir, "_embeddings_cache.json") if topic_dir else None
+    embeddings, slugs = compute_embeddings(originalities, cache_path)
+
+    top_n = int(os.environ.get("EXTRACT_INSIGHTS_TOPN_CAND", "25"))
+    full_cand = compute_related_candidates(embeddings, slugs, top_k=top_n)
+    # 대상 논문에 대해서만 연결 생성(후보 값은 전체 토픽에서 온 것)
+    candidates = {s: full_cand[s] for s in slugs
+                  if s in target_slugs and s in full_cand}
+    if not candidates:
+        log("  후보 없음 — skip")
+        return {}
+
+    client = clients.get("anthropic")  # 이 단계는 Anthropic messages API 전용
+    if client is None:
+        log("  Anthropic client 없음 — skip")
+        return {}
+
+    # 기존 연결이 없는(신규/갭) 논문 우선 처리
+    existing = {}
+    if topic_dir:
+        cp = os.path.join(topic_dir, "_paper_connections.json")
+        if os.path.exists(cp):
+            try:
+                with open(cp, encoding="utf-8") as f:
+                    existing = json.load(f)
+            except Exception:
+                existing = {}
+    priority = set(s for s in candidates if not existing.get(s))
+
+    req_timeout = float(os.environ.get("EXTRACT_INSIGHTS_HTTP_TIMEOUT", "120"))
+    log(f"  연결 생성: 대상 {len(candidates)}편, top_n={top_n}, "
+        f"우선(갭) {len(priority)}편, req_timeout={req_timeout:.0f}s")
+    conn_batch = int(os.environ.get("EXTRACT_INSIGHTS_CONN_BATCH", "15"))
+    all_connections = generate_connections_from_candidates(
+        candidates, pool, client, batch_size=conn_batch,
+        request_timeout_s=req_timeout, priority_slugs=priority)
+
+    # 영속화: merge_to_global → filter_for_topic → per-topic JSON
+    if topic_dir and topic_slugs:
         try:
             from lib.connections import sync_topic_connections
             sync_topic_connections(all_connections, topic, topic_slugs, topic_dir, log=log)
         except Exception as e:
-            log(f"  [incremental-save] failed: {str(e)[:100]}")
-
-    with ThreadPoolExecutor(max_workers=MAX_PARALLEL_CATEGORIES) as executor:
-        futures = {
-            executor.submit(_process_category, cat_name, papers, topic, clients,
-                            all_topic_papers): cat_name
-            for cat_name, papers in sorted(targets.items())
-        }
-
-        for future in as_completed(futures):
-            cat_name = futures[future]
-            try:
-                cat_connections = future.result()
-                for slug, conns in cat_connections.items():
-                    existing = all_connections.get(slug, [])
-                    seen_targets = {c["slug"] for c in existing}
-                    for c in conns:
-                        if c["slug"] not in seen_targets:
-                            existing.append(c)
-                            seen_targets.add(c["slug"])
-                    all_connections[slug] = existing
-                # Incremental checkpoint: persist after every finished category
-                _persist()
-                log(f"  [incremental-save] {cat_name} → {len(all_connections)} papers w/ connections saved")
-            except Exception as e:
-                log(f"  {cat_name} FAILED: {str(e)[:100]}")
+            log(f"  [save] failed: {str(e)[:100]}")
 
     return all_connections
 
@@ -897,7 +595,8 @@ def _run_insights(topic="ai4s", *, insights_only=False, connections_only=False,
     except Exception as e:
         log(f"  [backend] OpenAI init failed: {str(e)[:80]}")
     client = clients["anthropic"] or clients["openai"]
-    log(f"  [backend] connection fallback chain: {' → '.join(b for b in _BACKENDS if clients.get(b))}")
+    log(f"  [backend] connections: Anthropic {'OK' if clients.get('anthropic') else 'MISSING'} "
+        f"(SPECTER2 후보 → Sonnet); cross-category insights: {'/'.join(_CC_BACKENDS)}")
     run_insights = not connections_only
     run_connections = not insights_only
 
@@ -961,4 +660,8 @@ def main():
 
 
 if __name__ == "__main__":
+    # 연결 생성이 SPECTER2 임베딩(compute_related_candidates) 을 쓰므로 py312 강제
+    # (classify_papers 와 동일 표준 — 다른 인터프리터면 py312 로 자동 재실행).
+    from _env_guard import force_py312
+    force_py312()
     main()

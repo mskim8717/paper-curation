@@ -691,7 +691,8 @@ def compute_related_candidates(embeddings, slugs, top_k=5):
 
 def generate_connections_from_candidates(candidates, topic_papers, client,
                                          batch_size=25, deadline_s=300, max_rounds=3,
-                                         local_fallback=None, priority_slugs=None):
+                                         local_fallback=None, priority_slugs=None,
+                                         request_timeout_s=90.0):
     """임베딩 top-20 후보 -> Sonnet이 이유/관계 작성.
 
     BEST-EFFORT + 행 방지: 연결은 정규 사이클의 ``extract_insights --only
@@ -726,7 +727,7 @@ def generate_connections_from_candidates(candidates, topic_papers, client,
                                     wait as _futures_wait)
 
     # 막힌 호출이 토픽모델링을 오래 잡지 않게 짧은 timeout/무재시도 클라이언트.
-    conn_client = client.with_options(timeout=90.0, max_retries=1)
+    conn_client = client.with_options(timeout=request_timeout_s, max_retries=1)
 
     slug_to_paper = {p["slug"]: p for p in topic_papers}
     num_to_slug = {p["slug"].split("_")[0]: p["slug"] for p in topic_papers}
@@ -779,7 +780,10 @@ Rules:
         prompt = _build_prompt(batch_slugs)
         resp = conn_client.messages.create(
             model="claude-sonnet-4-6",
-            max_tokens=10000,
+            # batch_size=25 × 후보 다수 선택 + 한국어 이유의 JSON 출력은 10k 토큰을
+            # 넘겨 응답이 잘리고(Unterminated string) 배치 전체가 버려진다. 25편을
+            # 여유 있게 담도록 상향.
+            max_tokens=16000,
             messages=[{"role": "user", "content": prompt}],
         )
         text = resp.content[0].text.strip()
