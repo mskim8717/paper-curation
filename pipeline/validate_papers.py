@@ -422,6 +422,46 @@ def check_duplicate_text_md(topic):
     return issues
 
 
+def check_connection_coverage(topic):
+    """분류된 논문(_new_classification.json assignments)이 연결(_paper_connections.json
+    키)을 갖는지 검사한다.
+
+    paper-curio 등 일부 ingestion 경로는 review·분류까지만 도달하고 연결 생성
+    (extract_insights)을 트리거하지 못해, 분류됐지만 연결이 없는 논문이 남는다.
+    이 게이트가 그 빈틈을 빌드 때마다 드러낸다. 진단 가치를 위해 paper-curio
+    예약 번호대(9xxx)와 일반 파이프라인 논문을 구분해 보고한다."""
+    issues = []
+    topic_dir = Path(get_topic_dir(topic))
+    cls_path = topic_dir / "_new_classification.json"
+    conn_path = topic_dir / "_paper_connections.json"
+    if not cls_path.exists() or not conn_path.exists():
+        return issues  # 토픽 구조 부재 시 스킵
+    try:
+        assignments = json.loads(cls_path.read_text(encoding="utf-8")).get("assignments", [])
+        conn = json.loads(conn_path.read_text(encoding="utf-8"))
+    except Exception:
+        return issues
+
+    assigned = [a["slug"] for a in assignments if a.get("slug")]
+    missing = [s for s in assigned if s not in conn]
+    if not missing:
+        return issues
+
+    def _is_curio(slug):
+        m = re.match(r"(\d+)_", slug)
+        return bool(m) and int(m.group(1)) >= 9000
+
+    curio = [s for s in missing if _is_curio(s)]
+    issues.append(f"  {len(missing)} classified paper(s) have NO connections "
+                  f"({len(curio)} paper-curio 9xxx, {len(missing) - len(curio)} pipeline) "
+                  f"— run extract_insights --topic {topic} --connections-only")
+    for s in sorted(missing)[:8]:
+        issues.append(f"  missing: {s[:60]}")
+    if len(missing) > 8:
+        issues.append(f"  ... +{len(missing) - 8} more")
+    return issues
+
+
 def _run_validate(topic="ai4s", *, fix=False, strict=False):
     """Programmatic entrypoint for validate_papers."""
     index_path = os.path.join(PAPERS_DIR, "_papers_index.json")
@@ -533,6 +573,13 @@ def _run_validate(topic="ai4s", *, fix=False, strict=False):
         for i in dup_issues:
             log(i)
 
+    # 7. Connection coverage (분류됐는데 연결 없는 논문 — paper-curio 핸드오프 빈틈)
+    conn_issues = check_connection_coverage(topic)
+    if conn_issues:
+        log(f"\n[topic {topic}] connection coverage gaps:")
+        for i in conn_issues:
+            log(i)
+
     log(f"\n{'='*60}")
     log(f"Validation Summary ({topic})")
     log(f"{'='*60}")
@@ -545,11 +592,12 @@ def _run_validate(topic="ai4s", *, fix=False, strict=False):
     log(f"  Schema/whitelist issues: {len(schema_issues)}")
     log(f"  DOI mismatches: {len(doi_issues)}")
     log(f"  Duplicate text.md groups: {len(dup_issues)}")
+    log(f"  Connection coverage gaps: {len(conn_issues)}")
     if fix:
         log(f"  Auto-fixed: {total_fixed} papers")
     total_all = (total_truncated + total_link + total_fig + total_pylist
                  + len(timeline_issues) + len(schema_issues)
-                 + len(doi_issues) + len(dup_issues))
+                 + len(doi_issues) + len(dup_issues) + len(conn_issues))
     if total_all == 0:
         log(f"  ALL CLEAR!")
     else:

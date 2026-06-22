@@ -719,21 +719,34 @@ Rules:
 BATCH_SIZE = 25
 
 
+# 후보 목록 캡 (대용량 토픽에서 호출 페이로드가 ~200k자에 달해 느린 망에서
+# SDK 타임아웃이 나는 것을 막기 위함). 0 = 무제한(기존 동작 보존). env 지정 시에만
+# 점수(score) 상위 N편으로 후보를 좁힌다 — 중요 논문이 우선 후보로 남는다.
+_MAX_CAT_CAND = int(os.environ.get("EXTRACT_INSIGHTS_MAX_CAT_CAND", "0"))
+_MAX_CROSS_CAND = int(os.environ.get("EXTRACT_INSIGHTS_MAX_CROSS_CAND", "0"))
+
+
 def _process_category(cat_name, papers, topic, clients,
                       all_topic_papers=None):
     """단일 카테고리의 connections 추출. 다른 카테고리 논문도 후보로 제공.
     clients 는 backend fallback dict."""
     sorted_papers = sorted(papers, key=lambda x: -x.get("score", 0))
+    cat_cands = sorted_papers if _MAX_CAT_CAND <= 0 else sorted_papers[:_MAX_CAT_CAND]
     all_paper_lines = "\n".join(
         f"[{p['slug'].split('_')[0]}] {p.get('title', '')[:60]}"
-        for p in sorted_papers
+        for p in cat_cands
     )
 
     # 다른 카테고리 논문 목록 (cross-category connection 후보)
     cat_slugs = {p["slug"] for p in papers}
     cross_cat_lines = ""
     if all_topic_papers:
-        other_papers = [p for p in all_topic_papers if p["slug"] not in cat_slugs]
+        other_papers = sorted(
+            (p for p in all_topic_papers if p["slug"] not in cat_slugs),
+            key=lambda x: -x.get("score", 0),
+        )
+        if _MAX_CROSS_CAND > 0:
+            other_papers = other_papers[:_MAX_CROSS_CAND]
         if other_papers:
             cross_cat_lines = "\n".join(
                 f"[{p['slug'].split('_')[0]}] [{p.get('classifications',{}).get(topic,{}).get('primary_category','')}] {p.get('title','')[:60]}"
@@ -867,16 +880,20 @@ def _run_insights(topic="ai4s", *, insights_only=False, connections_only=False,
     else:
         log(f"  {len(topic_papers)} papers, {len(cat_papers)} categories")
 
+    # Per-request timeout — 느린 망에서 대용량 출력(25편 연결 = 수천 토큰)이
+    # 기본 120s read-timeout 을 넘겨 APITimeoutError 가 나는 것을 막기 위해 env 로 상향 가능.
+    _http_timeout = float(os.environ.get("EXTRACT_INSIGHTS_HTTP_TIMEOUT", "120"))
+    _http_retries = int(os.environ.get("EXTRACT_INSIGHTS_HTTP_RETRIES", "1"))
     clients: dict = {"anthropic": None, "openai": None}
     try:
-        clients["anthropic"] = Anthropic(timeout=120.0, max_retries=1)
+        clients["anthropic"] = Anthropic(timeout=_http_timeout, max_retries=_http_retries)
     except Exception as e:
         log(f"  [backend] Anthropic init failed: {str(e)[:80]}")
     try:
         from openai import OpenAI
         _oai_key = os.environ.get("OPENAI_API_KEY") or load_config().get("openai_api_key", "")
         if _oai_key:
-            clients["openai"] = OpenAI(api_key=_oai_key, timeout=120.0, max_retries=1)
+            clients["openai"] = OpenAI(api_key=_oai_key, timeout=_http_timeout, max_retries=_http_retries)
     except Exception as e:
         log(f"  [backend] OpenAI init failed: {str(e)[:80]}")
     client = clients["anthropic"] or clients["openai"]
