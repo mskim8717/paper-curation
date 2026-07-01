@@ -161,7 +161,9 @@ _TOOL = {
                 "properties": {
                     "axis_ko": {"type": "string"},
                     "cells": {"type": "array", "items": {"type": "string"},
-                              "description": "논문 순서대로, 각 논문을 한 줄(≤60자)로"},
+                              "description": "논문 순서대로, 각 논문을 한 줄(≤60자)로. "
+                                             "이 축에서 유달리 두드러지는 내용이 있으면 "
+                                             "그 구절만 **굵게** 마크다운으로 감쌀 것 (남발 금지)"},
                 },
                 "required": ["axis_ko", "cells"],
             }},
@@ -229,7 +231,9 @@ def _build_prompt(papers):
         "- 각 축의 entries 에는 모든 논문을 slug 로 포함\n"
         "- '연구 지형 (같이 보면 좋은 논문)' 축에서는 각 논문의 주변 논문 목록이 "
         "그리는 연구 지형을 비교 — 공유하는 이웃, 서로 다른 계보와 응용 방향\n"
-        "- quick_table 은 같은 6축, cells 는 논문 순서(P1, P2, ...)대로 한 줄 요약\n"
+        "- quick_table 은 같은 6축, cells 는 논문 순서(P1, P2, ...)대로 한 줄 요약. "
+        "축마다 유달리 튀는(특기할 만한) 내용이 있는 cell 은 그 핵심 구절만 "
+        "**굵게** 표시하고, 없으면 어떤 cell 도 굵게 하지 말 것\n"
         "- 한국어 서술, 전문용어·모델명은 영어 유지. 근거 없는 우열 판정 금지 — "
         "리뷰에 있는 내용만 사용\n"
         "- 점수(숫자 평점)는 언급·비교하지 말 것\n"
@@ -377,9 +381,9 @@ def build_markdown(papers, comp, has_image=False):
     for i, p in enumerate(papers, 1):
         doi = f" · DOI: {p['doi']}" if p["doi"] else ""
         lines.append(f"- **[P{i}] {p['title']}** ({p['date']}){doi}")
-        for c in p["connections"]:
-            lines.append(f"  - 같이 보면 좋은 논문 · {c['relation']}: {c['title']}")
-    lines += ["", "## 총평", "", comp["overview_ko"], "", "## 한눈 비교", ""]
+    lines += ["", "## 총평", "", comp["overview_ko"], "",
+              "## 읽기 가이드", "", comp.get("reading_guide_ko", ""), "",
+              "## 한눈 비교", ""]
     header = "| 비교 축 | " + " | ".join(f"P{i}" for i in range(1, len(papers) + 1)) + " |"
     lines += [header, "|" + "---|" * (len(papers) + 1)]
     for row in comp.get("quick_table", []):
@@ -393,7 +397,12 @@ def build_markdown(papers, comp, has_image=False):
             label = slug_to_label.get(e.get("slug", ""), e.get("slug", ""))
             lines += [f"**{label}**", "", e.get("summary_ko", ""), ""]
         lines += ["> " + ax.get("synthesis_ko", ""), ""]
-    lines += ["## 읽기 가이드", "", comp.get("reading_guide_ko", ""), ""]
+    lines += ["## 같이 보면 좋은 논문", ""]
+    for i, p in enumerate(papers, 1):
+        lines += [f"**P{i} · {p['title'][:50]}**", ""]
+        for c in p["connections"]:
+            lines.append(f"- {c['relation']}: {c['title']}")
+        lines.append("")
     return "\n".join(lines)
 
 
@@ -402,17 +411,28 @@ def _paper_card(p, i):
     doi_html = (f' · <a href="https://doi.org/{RH.esc(p["doi"])}" target="_blank">DOI</a>'
                 if p["doi"] else "")
     review_href = f"../../{p['slug']}/index.html"
-    conn_items = "".join(
-        f'<li><span class="rel">{RH.esc(c["relation"])}</span>'
-        f'<a href="../../{c["slug"]}/index.html">{RH.esc(c["title"][:70])}</a></li>'
-        for c in p["connections"])
-    conn_html = (f'<div class="cmp-conn-head">같이 보면 좋은 논문</div>'
-                 f'<ul class="cmp-conn">{conn_items}</ul>') if conn_items else ""
     return (f'<div class="cmp-card"><div class="cmp-card-num">P{i}</div>'
             f'<div class="cmp-card-title"><a href="{review_href}">{RH.esc(p["title"])}</a></div>'
             f'<div class="cmp-card-meta">{RH.esc(authors)} ({RH.esc(p["date"])})'
-            f'{doi_html}<br>{RH.esc(p["category"])}</div>'
-            f'{conn_html}</div>')
+            f'{doi_html}<br>{RH.esc(p["category"])}</div></div>')
+
+
+def _cell_html(text):
+    """표 셀: escape 후 **…** 만 <strong>으로 (LLM이 튀는 구절 강조에 사용)."""
+    return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", RH.esc(text))
+
+
+def _connections_section(papers):
+    """맨 뒤 '같이 보면 좋은 논문' — 논문별 링크 목록."""
+    parts = ["<h2>같이 보면 좋은 논문</h2>"]
+    for i, p in enumerate(papers, 1):
+        items = "".join(
+            f'<li><span class="rel">{RH.esc(c["relation"])}</span>'
+            f'<a href="../../{c["slug"]}/index.html">{RH.esc(c["title"][:80])}</a></li>'
+            for c in p["connections"]) or "<li>(없음)</li>"
+        parts.append(f'<p><strong>P{i} · {RH.esc(p["title"][:60])}</strong></p>'
+                     f'<ul class="cmp-conn">{items}</ul>')
+    return '<div class="section">' + "".join(parts) + "</div>"
 
 
 _CMP_CSS = """
@@ -426,9 +446,11 @@ _CMP_CSS = """
 .cmp-gray { color: #999; font-weight: 600; }
 .cmp-hero { margin: 1.2rem 0; }
 .cmp-hero img { width: 100%; border: 1px solid #e0e0e8; border-radius: 10px; }
-.cmp-conn-head { font-size: 0.78rem; font-weight: 700; color: #888; margin-top: 0.6rem; border-top: 1px solid #eee; padding-top: 0.5rem; }
+/* review 페이지 CSS의 점수열 규칙(td:last-child = bold accent) 무효화 —
+   비교표의 마지막 열은 점수가 아니라 마지막 논문이다. 강조는 <strong>으로만. */
+td:last-child { text-align: left; font-weight: inherit; color: inherit; }
 .cmp-conn { list-style: none; padding: 0; margin: 0.3rem 0 0; }
-.cmp-conn li { font-size: 0.78rem; margin: 0.2rem 0; color: #555; line-height: 1.4; }
+.cmp-conn li { font-size: 0.85rem; margin: 0.25rem 0; color: #555; line-height: 1.45; }
 .cmp-conn a { color: #1a1a2e; text-decoration: none; }
 .cmp-conn a:hover { color: ACCENT; text-decoration: underline; }
 .cmp-conn .rel { color: ACCENT; font-weight: 600; margin-right: 0.35rem; }
@@ -453,7 +475,7 @@ def build_html(papers, comp, md_text, theme, name, image_b64=None):
     trows = "".join(
         "<tr><td><strong>{}</strong></td>{}</tr>".format(
             RH.esc(r.get("axis_ko", "")),
-            "".join(f"<td>{RH.esc(c)}</td>" for c in r.get("cells", [])))
+            "".join(f"<td>{_cell_html(c)}</td>" for c in r.get("cells", [])))
         for r in comp.get("quick_table", []))
     table = f"<table><thead>{thead}</thead><tbody>{trows}</tbody></table>"
 
@@ -502,9 +524,10 @@ def build_html(papers, comp, md_text, theme, name, image_b64=None):
 {hero}
 {cards}
 <div class="section"><h2>총평</h2>{RH.md_section_to_html(comp["overview_ko"])}</div>
+<div class="section"><h2>읽기 가이드</h2>{RH.md_section_to_html(comp.get("reading_guide_ko", ""))}</div>
 <div class="section"><h2>한눈 비교</h2>{table}</div>
 {"".join(ax_html)}
-<div class="section"><h2>읽기 가이드</h2>{RH.md_section_to_html(comp.get("reading_guide_ko", ""))}</div>
+{_connections_section(papers)}
 </div>"""
 
     return f"""<!DOCTYPE html>
