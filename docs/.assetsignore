@@ -20,6 +20,9 @@ _zotero_meta.json
 notes/
 papers/*/notes.md
 
+# Multi-paper comparisons (paper-curio local feature)
+papers/_comparisons/
+
 # Source markdown (only HTML is served)
 papers/*/review.md
 papers/*/text.md
