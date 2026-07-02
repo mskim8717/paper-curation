@@ -545,7 +545,7 @@ def _graph_data(papers):
     shared 로 표시 — 힘 시뮬레이션에서 자연히 비교 논문들 사이에 놓인다.
     """
     compared = {p["slug"] for p in papers}
-    nodes = [{"id": p["slug"], "label": f"P{i} · {p['title'][:34]}",
+    nodes = [{"id": p["slug"], "label": p["title"][:34], "badge": f"P{i}",
               "full": p["title"], "kind": "compared", "ci": i - 1,
               "href": f"../../{p['slug']}/index.html", "purl": p["purl"]}
              for i, p in enumerate(papers, 1)]
@@ -652,6 +652,16 @@ _GRAPH_JS = r"""
     .attr('r', r).attr('fill', fill)
     .attr('stroke', function (d) { return d.kind === 'shared' ? '#B8860B' : '#fff'; })
     .attr('stroke-width', function (d) { return d.kind === 'shared' ? 2.5 : 1.5; });
+  // 비교 논문의 P1/P2 배지는 노드 원 안에 흰색 볼드로 — 공통(금색) 노드와
+  // 즉시 구별되고, 아래 제목 라벨과도 중복되지 않는다.
+  node.append('text')
+    .text(function (d) { return d.badge || ''; })
+    .attr('text-anchor', 'middle')
+    .attr('dy', '0.35em')
+    .attr('font-size', '11.5px')
+    .attr('font-weight', 800)
+    .attr('fill', '#fff')
+    .style('pointer-events', 'none');
   node.append('title').text(function (d) { return d.full; });
   node.append('text')
     .text(function (d) { return d.label; })
