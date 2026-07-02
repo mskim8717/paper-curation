@@ -60,12 +60,6 @@ THEMES = {
 # Paper connections cache (loaded once per run)
 _connections_cache = {}
 
-# Per-paper connection lists are identical across topic files (the bidirectional
-# view is global; topic files differ only in WHICH papers are keys), so we load
-# every collection — ai4s/scisci plus the combined "ai4s+scisci" and the
-# standalone "humanoid"/"physical-ai" topics — to cover papers tagged only there.
-_CONN_TOPICS = list(THEMES) + ["ai4s+scisci", "humanoid", "physical-ai"]
-
 _BSI = None
 
 
@@ -94,17 +88,33 @@ def _portable_url(doi, title):
 
 
 def _load_connections():
-    """Load all _paper_connections.json files."""
+    """Load every docs/<topic>/_paper_connections.json.
+
+    Topic dirs are DISCOVERED from the filesystem (any docs/ subdirectory
+    holding a _paper_connections.json) — same rule as rebuild_connections.
+    Topic names must not be hardcoded here: setup.py installs arbitrary topic
+    aliases, and a fixed list silently drops their connections (surfaced as
+    paper-curio comparisons missing 같이 보면 좋은 논문). Per-paper lists are
+    identical across topic files (the bidirectional view is global; files
+    differ only in WHICH papers are keys), so merge order doesn't matter.
+    """
     global _connections_cache
     if _connections_cache:
         return _connections_cache
-    from config_loader import get_topic_dir
-    for topic in _CONN_TOPICS:
-        conn_path = os.path.join(str(get_topic_dir(topic)), "_paper_connections.json")
-        if os.path.exists(conn_path):
+    docs_dir = os.path.dirname(PAPERS)
+    try:
+        entries = sorted(os.listdir(docs_dir))
+    except OSError:
+        entries = []
+    for d in entries:
+        conn_path = os.path.join(docs_dir, d, "_paper_connections.json")
+        if not os.path.exists(conn_path):
+            continue
+        try:
             with open(conn_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            _connections_cache.update(data)
+                _connections_cache.update(json.load(f))
+        except Exception as e:
+            print(f"  [warn] {d}/_paper_connections.json load failed: {e}")
     return _connections_cache
 
 def get_css(t):

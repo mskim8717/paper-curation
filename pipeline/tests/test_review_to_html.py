@@ -81,6 +81,38 @@ def main():
     print("== 9. no selector -> whole corpus ==")
     check("empty -> all", r(ALL) == ALL)
 
+    print("== 10. _load_connections discovers topic dirs (no hardcoded names) ==")
+    # 커스텀 토픽 설치에서 연결이 통째로 빠지던 회귀 가드: docs/ 를 스캔해
+    # _paper_connections.json 을 가진 모든 디렉토리를 읽어야 한다.
+    import json as _json
+    import tempfile
+    with tempfile.TemporaryDirectory() as tmp:
+        docs = os.path.join(tmp, "docs")
+        for topic, conns in [
+            ("ai4s", {"1_A": [{"slug": "2_B"}]}),
+            ("my-custom-topic", {"3_C": [{"slug": "4_D"}]}),  # setup.py 임의 alias
+        ]:
+            os.makedirs(os.path.join(docs, topic))
+            with open(os.path.join(docs, topic, "_paper_connections.json"),
+                      "w", encoding="utf-8") as f:
+                _json.dump(conns, f)
+        os.makedirs(os.path.join(docs, "papers"))      # 연결 파일 없는 디렉토리
+        os.makedirs(os.path.join(docs, "broken-topic"))
+        with open(os.path.join(docs, "broken-topic", "_paper_connections.json"),
+                  "w", encoding="utf-8") as f:
+            f.write("{not json")                        # 손상 파일은 경고 후 스킵
+
+        old_papers, old_cache = R.PAPERS, R._connections_cache
+        try:
+            R.PAPERS = os.path.join(docs, "papers")
+            R._connections_cache = {}
+            loaded = R._load_connections()
+            check("기본 토픽 로드", "1_A" in loaded)
+            check("커스텀 토픽도 로드 (하드코딩 제거)", "3_C" in loaded)
+            check("손상 파일은 나머지를 막지 않음", len(loaded) == 2)
+        finally:
+            R.PAPERS, R._connections_cache = old_papers, old_cache
+
     print()
     if fails:
         print(f"RESULT: FAIL ({fails})")
