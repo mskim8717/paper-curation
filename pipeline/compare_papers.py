@@ -22,7 +22,6 @@ import json
 import os
 import re
 import sys
-from urllib.parse import quote
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
 if _HERE not in sys.path:
@@ -97,31 +96,10 @@ def resolve_slugs(tokens, index):
     return resolved
 
 
-_BSI = None
-
-
 def _portable_url(doi, title):
-    """다운로드된 .html 에서도 살아있는 절대 URL. build_search_index 의
-    _resolve_external 재사용 — 유효 DOI → doi.org, arXiv → arxiv.org,
-    없으면 **Zotero 에 등록된 원문 URL** (_zotero_meta.json, 제목 매칭).
-    그마저 없을 때만 제목 Scholar 검색."""
-    global _BSI
-    ext = ""
-    try:
-        if _BSI is None:
-            import build_search_index as _bsi
-            _BSI = _bsi
-        _, _, ext = _BSI._resolve_external(title, doi, "")
-    except Exception:
-        # 폴백: DOI/arXiv 직접 해석 (Zotero meta 없이)
-        doi = (doi or "").strip()
-        if re.match(r"^10\.\d{3,}/\S+$", doi):
-            ext = "https://doi.org/" + quote(doi)
-        elif "arxiv" in doi.lower():
-            m = re.search(r"(\d{4}\.\d{4,5})", doi)
-            if m:
-                ext = "https://arxiv.org/abs/" + m.group(1)
-    return ext or ("https://scholar.google.com/scholar?q=" + quote(title or ""))
+    """RH._portable_url 위임 — DOI → arXiv → Zotero 원문 URL → Scholar.
+    리뷰 페이지 다운로드와 동일한 해석기를 공유한다."""
+    return RH._portable_url(doi, title)
 
 
 def _parse_sections(md):

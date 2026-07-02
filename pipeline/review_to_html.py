@@ -9,6 +9,7 @@ Usage:
 """
 import os, re, sys, json, argparse
 from html import escape as esc
+from urllib.parse import quote as _urlquote
 
 from config_loader import PAPERS_DIR as _PAPERS_DIR
 from lib.audio_overview import (
@@ -65,6 +66,33 @@ _connections_cache = {}
 # standalone "humanoid"/"physical-ai" topics — to cover papers tagged only there.
 _CONN_TOPICS = list(THEMES) + ["ai4s+scisci", "humanoid", "physical-ai"]
 
+_BSI = None
+
+
+def _portable_url(doi, title):
+    """다운로드된 .html 에서도 살아있는 절대 URL. build_search_index 의
+    _resolve_external 재사용 — 유효 DOI → doi.org, arXiv → arxiv.org, 없으면
+    Zotero 에 등록된 원문 URL(_zotero_meta.json, 제목 매칭), 최후엔 Scholar 검색.
+    compare_papers.py 도 이 구현을 공유한다."""
+    global _BSI
+    ext = ""
+    try:
+        if _BSI is None:
+            import build_search_index as _bsi
+            _BSI = _bsi
+        _, _, ext = _BSI._resolve_external(title, doi, "")
+    except Exception:
+        # 폴백: DOI/arXiv 직접 해석 (Zotero meta 없이)
+        d = (doi or "").strip()
+        if re.match(r"^10\.\d{3,}/\S+$", d):
+            ext = "https://doi.org/" + _urlquote(d)
+        elif "arxiv" in d.lower():
+            m = re.search(r"(\d{4}\.\d{4,5})", d)
+            if m:
+                ext = "https://arxiv.org/abs/" + m.group(1)
+    return ext or ("https://scholar.google.com/scholar?q=" + _urlquote(title or ""))
+
+
 def _load_connections():
     """Load all _paper_connections.json files."""
     global _connections_cache
@@ -97,6 +125,9 @@ tr:nth-child(even) {{ background: #f8f9fa; }}
 td:last-child {{ text-align: center; font-weight: 600; color: {t['accent']}; }}
 .eval-badges {{ display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0; }}
 .eval-badge {{ background: {t['accent_bg']}; color: {t['accent_dark']}; padding: 0.2rem 0.7rem; border-radius: 14px; font-size: 0.8rem; font-weight: 600; }}
+.dl-bar {{ margin: 0.5rem 0; }}
+.dl-btn {{ background: {t['accent']}; color: #fff; border: none; border-radius: 8px; padding: 0.45rem 0.9rem; font-size: 0.85rem; cursor: pointer; font-family: inherit; }}
+.dl-btn:hover {{ background: {t['accent_dark']}; }}
 .essence-box {{ border: 2px solid {t['essence_border']}; border-radius: 10px; padding: 1rem 1.2rem; margin: 0.8rem 0; background: {t['essence_bg']}; }}
 .essence-box h2 {{ color: {t['essence_border']}; margin: 0 0 0.5rem; border: none; padding: 0; }}
 code {{ background: #e8edf3; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.85rem; }}
@@ -416,6 +447,39 @@ def _inline(text):
     return text
 
 
+# .html 다운로드: 링크를 portable URL 로 치환하고 figure 를 data URI 로
+# 인라인한 자기완결 복사본을 만든다 (플레인 문자열 — JS 문자열 안 개행 없음).
+_DL_JS = r"""
+function downloadPageHtml() {
+  var root = document.documentElement.cloneNode(true);
+  root.querySelectorAll('a[data-portable]').forEach(function (a) {
+    var u = a.getAttribute('data-portable');
+    if (u) { a.setAttribute('href', u); a.setAttribute('target', '_blank'); }
+  });
+  var live = document.querySelectorAll('img');
+  var cloned = root.querySelectorAll('img');
+  for (var i = 0; i < live.length && i < cloned.length; i++) {
+    var img = live[i];
+    var src = img.getAttribute('src') || '';
+    if (!src || src.indexOf('data:') === 0 || !img.complete || !img.naturalWidth) continue;
+    try {
+      var c = document.createElement('canvas');
+      c.width = img.naturalWidth; c.height = img.naturalHeight;
+      c.getContext('2d').drawImage(img, 0, 0);
+      cloned[i].setAttribute('src', c.toDataURL('image/webp', 0.92));
+    } catch (e) { /* cross-origin 등 실패 시 원본 경로 유지 */ }
+  }
+  var h = '<!DOCTYPE html>' + root.outerHTML;
+  var b = new Blob([h], { type: 'text/html' });
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(b);
+  a.download = window._PAGE_SLUG + '.html';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+"""
+
+
 def convert_review(md_path, topic, slug_dir):
     """Convert review.md to index.html with canonical template."""
     with open(md_path, 'r', encoding='utf-8') as f:
@@ -468,6 +532,12 @@ def convert_review(md_path, topic, slug_dir):
 
     # Title
     body_parts.append(f'<h1>{esc(title)}</h1>')
+    # .html 다운로드 — figure 를 data URI 로 인라인하고 논문 링크를 portable
+    # URL 로 치환한 자기완결 복사본을 내려받는다.
+    body_parts.append(
+        '<div class="dl-bar">'
+        '<button class="dl-btn" onclick="downloadPageHtml()">.html 다운로드</button>'
+        '</div>')
     # Audio Overview button (localhost-only; disabled when no key on deploy)
     body_parts.append(audio_bar_html())
 
@@ -533,11 +603,19 @@ def convert_review(md_path, topic, slug_dir):
         index_path = os.path.join(PAPERS, "_papers_index.json")
         slug_titles = {}
         slug_dates = {}
+        slug_dois = {}
         if os.path.exists(index_path):
             with open(index_path, "r", encoding="utf-8") as f:
                 for p in json.load(f):
                     slug_titles[p["slug"]] = p.get("title", p["slug"])
                     slug_dates[p["slug"]] = p.get("date", "")
+                    slug_dois[p["slug"]] = p.get("doi", "")
+
+        def _purl_attr(tslug):
+            """다운로드본용 portable URL 속성 (라이브 페이지는 상대경로 유지)."""
+            u = _portable_url(slug_dois.get(tslug, ""),
+                              slug_titles.get(tslug, tslug))
+            return f' data-portable="{esc(u)}"'
 
         type_labels = {
             "alternative": "다른 접근",
@@ -608,7 +686,8 @@ def convert_review(md_path, topic, slug_dir):
                 cls = ("conn-ref conn-ref-self" if tslug == slug_dir_name
                        else "conn-ref")
                 label = f"[{num}]" if m.group(1) is not None else num
-                return (f'<a class="{cls}" href="../{esc(tslug)}/index.html" '
+                return (f'<a class="{cls}" href="../{esc(tslug)}/index.html"'
+                        f'{_purl_attr(tslug)} '
                         f'title="{ttitle}">{label}</a>')
             return _REF_RE.sub(_repl, esc(reason_text))
 
@@ -633,7 +712,8 @@ def convert_review(md_path, topic, slug_dir):
                     f'{_linkify_refs(rreason)}</div>')
             conn_items.append(
                 f'<div class="conn-item {esc(rel)}">'
-                f'<div class="conn-title"><a href="../{esc(cslug)}/index.html">{esc(ctitle)}</a></div>'
+                f'<div class="conn-title"><a href="../{esc(cslug)}/index.html"'
+                f'{_purl_attr(cslug)}>{esc(ctitle)}</a></div>'
                 + "".join(reason_html)
                 + '</div>'
             )
@@ -696,6 +776,10 @@ document.addEventListener('DOMContentLoaded', function() {{
     if (e.key === 'Escape' && lb.classList.contains('active')) {{ lb.classList.remove('active'); lbImg.src = ''; }}
   }});
 }});
+</script>
+<script>
+window._PAGE_SLUG = {json.dumps(slug_dir_name)};
+{_DL_JS}
 </script>
 {audio_script_block(audio_ctx)}
 <footer style="text-align:center;padding:2rem 0 1rem;color:#999;font-size:0.85rem;border-top:1px solid #eee;margin-top:3rem;">
