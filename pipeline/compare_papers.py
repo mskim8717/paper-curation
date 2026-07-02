@@ -228,11 +228,18 @@ _TOOL = {
                             "label_en": {"type": "string", "description": "캐릭터 이름표 (≤5 words)"},
                             "persona_en": {"type": "string", "description":
                                            "이 논문의 의인화/사물 비유 + 하는 동작 (≤20 words) — "
-                                           "논문의 실제 접근을 행동으로 보여줄 것"},
+                                           "논문의 실제 접근을 행동으로 보여줄 것. 캐릭터들끼리 "
+                                           "실루엣·복장·도구가 한눈에 구별되게"},
+                            "tagline_en": {"type": "string", "description":
+                                           "이 논문만의 차별점 한 줄 — 캐릭터 위 배너로 표시 "
+                                           "(≤8 words, 예: 'measures HOW FAR it spreads')"},
                             "traits_en": {"type": "array", "items": {"type": "string"},
-                                          "description": "차이점을 드러내는 시각 특징 2-3개 (각 ≤6 words)"},
+                                          "description": "이 논문 고유의 **구체적 발견·수치** 3개 "
+                                          "(각 ≤6 words, 숫자 적극 사용 — 예: '5x weekly "
+                                          "user growth', 'humans plan 70%'). 축 이름이 아니라 "
+                                          "내용을 쓸 것"},
                         },
-                        "required": ["label_en", "persona_en", "traits_en"],
+                        "required": ["label_en", "persona_en", "tagline_en", "traits_en"],
                     }, "description": "논문 순서대로 하나씩"},
                     "shared_en": {"type": "string", "description":
                                   "공통점을 나타내는 물리적 공유 요소 (≤15 words) — 둘이 함께 들거나 "
@@ -310,8 +317,10 @@ def _build_prompt(papers):
         "'a surveyor counting footprints spreading across a map', 협업 구조를 "
         "파고드는 논문 = 'a watchmaker opening a clock to see the gears' "
         "(이 예시들을 복사하지 말고, 이 논문들에 맞는 비유를 새로 창작할 것). "
-        "personas 의 동작이 곧 그 논문의 접근이어야 하고, traits_en 은 차이점을, "
-        "shared_en 은 공통점을 하나의 물리적 요소로 보여준다. 짧은 영어 문구만 "
+        "personas 의 동작이 곧 그 논문의 접근이어야 하고, tagline_en 은 그 논문만의 "
+        "차별점 선언, traits_en 은 **그 논문 고유의 구체적 발견·수치**(축 이름 금지, "
+        "숫자 환영), shared_en 은 공통점을 하나의 물리적 요소로 보여준다. 그림만 "
+        "봐도 두 논문이 각각 무엇을 밝혔는지 구별되는 것이 목표. 짧은 영어 문구만 "
         "(rows 는 앞의 5축 요약, 연구 지형 축은 제외)\n"
         "- axes 의 각 원소는 반드시 {\"axis_ko\": ..., \"entries\": "
         "[{\"slug\": ..., \"summary_ko\": ...}], \"synthesis_ko\": ...} 형태의 "
@@ -422,13 +431,18 @@ def generate_comparison_image(papers, comp, out_dir):
         # 차이점(캐릭터 특징)을 그린다.
         char_lines = "\n".join(
             f'- "{p.get("label_en", labels[i] if i < len(labels) else "")}" — '
-            f'{p.get("persona_en", "")}. Visual traits: '
-            + "; ".join(p.get("traits_en", [])[:3])
+            f'{p.get("persona_en", "")}.\n'
+            f'  Header banner above this character: "{p.get("tagline_en", "")}"\n'
+            "  Finding cards this character presents (3 small caption cards, "
+            "keep the numbers EXACTLY): "
+            + " / ".join(f'"{t}"' for t in p.get("traits_en", [])[:3])
             for i, p in enumerate(personas))
         method = (
             f"# Friendly metaphorical comparison of {len(papers)} research papers\n\n"
             "One warm illustrated SCENE comparing research papers as "
-            "characters/objects — NOT a table, NOT a chart, NOT columns.\n\n"
+            "characters/objects — NOT a table, NOT a chart, NOT columns. "
+            "PRIMARY GOAL: a reader must see AT A GLANCE what EACH paper "
+            "uniquely found — the differences matter more than the decoration.\n\n"
             f"Scene setting: {spec.get('scene_en', '')}\n\n"
             f"Characters/objects (left to right, one per paper):\n{char_lines}\n\n"
             f"Shared ground (IMPORTANT): {spec.get('shared_en', '')} — draw it as "
@@ -437,11 +451,18 @@ def generate_comparison_image(papers, comp, out_dir):
             f"Key contrast to make instantly visible: {spec.get('contrast_en', '')}\n\n"
             "Design rules:\n"
             "- flat kawaii/chibi illustration, soft pastel palette, rounded shapes\n"
-            "- one distinct accent color per character; name label under each in a small rounded tag\n"
+            "- characters must be VISUALLY DISTINCT at a glance: different "
+            "silhouette, outfit, headgear and tools — never near-twins\n"
+            "- one distinct accent color per character, tinting that character's "
+            "side of the scene, banner and finding cards\n"
+            "- name label under each character in a small rounded tag; the header "
+            "banner sits above each character in its accent color\n"
             "- each character's pose/action IS its research approach (no abstract icons)\n"
-            "- at most 2 tiny keyword captions per character (from the traits), no sentences\n"
+            "- the 3 finding cards per character are the LARGEST text after the "
+            "banners — short concrete phrases with their numbers kept verbatim, "
+            "clearly attached to their owner's side\n"
             "- the shared element visually connects everyone; the contrast is obvious at a glance\n"
-            "- clean light background, no watermark, no text beyond the given labels/keywords"
+            "- clean light background, no watermark, no text beyond the given labels/phrases"
         )
         caption = ("A friendly metaphorical scene comparing "
                    + " vs ".join(labels)
