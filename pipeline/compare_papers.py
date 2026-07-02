@@ -215,10 +215,30 @@ _TOOL = {
                                  "독자 유형별로 어떤 논문을 어떤 순서로 읽을지 추천 (3-5문장)"},
             "diagram_spec_en": {
                 "type": "object",
-                "description": "비교 다이어그램용 짧은 영어 문구 — 이미지에 렌더링되므로 반드시 영어",
+                "description": "비교 일러스트용 영어 스펙 — 이미지에 렌더링되므로 반드시 영어",
                 "properties": {
                     "labels": {"type": "array", "items": {"type": "string"},
                                "description": "논문 순서대로, 각 논문의 짧은 영어 레이블 (≤6 words)"},
+                    "scene_en": {"type": "string", "description":
+                                 "논문들을 한 장면에 묶는 배경 설정 (≤25 words, English) — "
+                                 "예: 'two explorers charting the same island from opposite shores'"},
+                    "personas": {"type": "array", "items": {
+                        "type": "object",
+                        "properties": {
+                            "label_en": {"type": "string", "description": "캐릭터 이름표 (≤5 words)"},
+                            "persona_en": {"type": "string", "description":
+                                           "이 논문의 의인화/사물 비유 + 하는 동작 (≤20 words) — "
+                                           "논문의 실제 접근을 행동으로 보여줄 것"},
+                            "traits_en": {"type": "array", "items": {"type": "string"},
+                                          "description": "차이점을 드러내는 시각 특징 2-3개 (각 ≤6 words)"},
+                        },
+                        "required": ["label_en", "persona_en", "traits_en"],
+                    }, "description": "논문 순서대로 하나씩"},
+                    "shared_en": {"type": "string", "description":
+                                  "공통점을 나타내는 물리적 공유 요소 (≤15 words) — 둘이 함께 들거나 "
+                                  "딛고 선 하나의 사물/장소로 그려짐"},
+                    "contrast_en": {"type": "string", "description":
+                                    "한눈에 보여야 할 핵심 대비 하나 (≤15 words)"},
                     "rows": {"type": "array", "items": {
                         "type": "object",
                         "properties": {
@@ -231,7 +251,8 @@ _TOOL = {
                     "common_en": {"type": "string",
                                   "description": "shared ground of the papers (≤12 words, English)"},
                 },
-                "required": ["labels", "rows", "common_en"],
+                "required": ["labels", "scene_en", "personas", "shared_en",
+                             "contrast_en", "rows", "common_en"],
             },
         },
         "required": ["overview_ko", "axes", "quick_table", "reading_guide_ko",
@@ -283,8 +304,15 @@ def _build_prompt(papers):
         "- 점수(숫자 평점)는 언급·비교하지 말 것\n"
         "- 서로 다른 관점(문제를 보는 시각), originality 의 결, 결과의 성격 차이를 "
         "드러내는 데 집중\n"
-        "- diagram_spec_en 은 비교 다이어그램에 그대로 렌더링된다 — 짧고 명확한 "
-        "영어 문구만 사용 (rows 는 앞의 5축 요약, 연구 지형 축은 제외)\n"
+        "- diagram_spec_en 은 친근한 비교 일러스트로 그려진다: 논문들(또는 핵심 "
+        "개념들)을 **의인화하거나 사물에 비유**해 한 장면(scene_en)에 담아라. "
+        "비유는 논문이 실제로 하는 일에서 끌어낼 것 — 예: 확산을 재는 논문 = "
+        "'a surveyor counting footprints spreading across a map', 협업 구조를 "
+        "파고드는 논문 = 'a watchmaker opening a clock to see the gears' "
+        "(이 예시들을 복사하지 말고, 이 논문들에 맞는 비유를 새로 창작할 것). "
+        "personas 의 동작이 곧 그 논문의 접근이어야 하고, traits_en 은 차이점을, "
+        "shared_en 은 공통점을 하나의 물리적 요소로 보여준다. 짧은 영어 문구만 "
+        "(rows 는 앞의 5축 요약, 연구 지형 축은 제외)\n"
         "- axes 의 각 원소는 반드시 {\"axis_ko\": ..., \"entries\": "
         "[{\"slug\": ..., \"summary_ko\": ...}], \"synthesis_ko\": ...} 형태의 "
         "객체, quick_table 의 각 원소는 {\"axis_ko\": ..., \"cells\": [...]} 객체"
@@ -383,24 +411,63 @@ def generate_comparison_image(papers, comp, out_dir):
         return False
     spec = comp.get("diagram_spec_en") or {}
     labels = spec.get("labels") or [p["title"][:40] for p in papers]
-    rows = spec.get("rows") or []
-    common = spec.get("common_en", "")
-    row_lines = "\n".join(
-        f"- {r.get('axis_en', '')}: " + " | ".join(r.get("cells", []))
-        for r in rows)
-    method = (
-        f"# Side-by-side comparison of {len(papers)} research papers\n\n"
-        f"A clean {len(papers)}-column versus-style comparison diagram.\n\n"
-        f"Columns (one per paper, left to right): "
-        + " / ".join(f'"{l}"' for l in labels) + "\n\n"
-        f"Comparison rows (axis: one cell per column, left to right):\n{row_lines}\n\n"
-        f"Bottom strip spanning all columns — shared ground: {common}\n\n"
-        "Design: distinct accent color per column, axis labels on the left "
-        "margin, short phrases only (no sentences), generous whitespace, "
-        "no watermark, no extra text beyond the given phrases."
-    )
-    caption = ("Visual comparison of " + " vs ".join(labels)
-               + " across problem framing, method, originality, results, and limitations.")
+
+    personas = spec.get("personas")
+    personas_ok = (isinstance(personas, list) and len(personas) == len(papers)
+                   and all(isinstance(p, dict) and p.get("persona_en")
+                           for p in personas))
+    style = os.environ.get("COMPARE_IMAGE_STYLE", "metaphor")
+    if style != "table" and personas_ok:
+        # 의인화/사물 비유 장면 — 친근한 일러스트로 공통점(공유 요소)과
+        # 차이점(캐릭터 특징)을 그린다.
+        char_lines = "\n".join(
+            f'- "{p.get("label_en", labels[i] if i < len(labels) else "")}" — '
+            f'{p.get("persona_en", "")}. Visual traits: '
+            + "; ".join(p.get("traits_en", [])[:3])
+            for i, p in enumerate(personas))
+        method = (
+            f"# Friendly metaphorical comparison of {len(papers)} research papers\n\n"
+            "One warm illustrated SCENE comparing research papers as "
+            "characters/objects — NOT a table, NOT a chart, NOT columns.\n\n"
+            f"Scene setting: {spec.get('scene_en', '')}\n\n"
+            f"Characters/objects (left to right, one per paper):\n{char_lines}\n\n"
+            f"Shared ground (IMPORTANT): {spec.get('shared_en', '')} — draw it as "
+            "ONE physical element the characters share: jointly holding it, "
+            "standing on it, or both connected to it, placed center or bottom.\n"
+            f"Key contrast to make instantly visible: {spec.get('contrast_en', '')}\n\n"
+            "Design rules:\n"
+            "- flat kawaii/chibi illustration, soft pastel palette, rounded shapes\n"
+            "- one distinct accent color per character; name label under each in a small rounded tag\n"
+            "- each character's pose/action IS its research approach (no abstract icons)\n"
+            "- at most 2 tiny keyword captions per character (from the traits), no sentences\n"
+            "- the shared element visually connects everyone; the contrast is obvious at a glance\n"
+            "- clean light background, no watermark, no text beyond the given labels/keywords"
+        )
+        caption = ("A friendly metaphorical scene comparing "
+                   + " vs ".join(labels)
+                   + f" — shared: {spec.get('shared_en', '')}; "
+                   + f"contrast: {spec.get('contrast_en', '')}.")
+    else:
+        if style != "table" and not personas_ok:
+            log("  diagram: personas missing/malformed — falling back to table style")
+        rows = spec.get("rows") or []
+        common = spec.get("common_en", "")
+        row_lines = "\n".join(
+            f"- {r.get('axis_en', '')}: " + " | ".join(r.get("cells", []))
+            for r in rows)
+        method = (
+            f"# Side-by-side comparison of {len(papers)} research papers\n\n"
+            f"A clean {len(papers)}-column versus-style comparison diagram.\n\n"
+            f"Columns (one per paper, left to right): "
+            + " / ".join(f'"{l}"' for l in labels) + "\n\n"
+            f"Comparison rows (axis: one cell per column, left to right):\n{row_lines}\n\n"
+            f"Bottom strip spanning all columns — shared ground: {common}\n\n"
+            "Design: distinct accent color per column, axis labels on the left "
+            "margin, short phrases only (no sentences), generous whitespace, "
+            "no watermark, no extra text beyond the given phrases."
+        )
+        caption = ("Visual comparison of " + " vs ".join(labels)
+                   + " across problem framing, method, originality, results, and limitations.")
     try:
         from lib.paperbanana import generate_diagram
         import time as _t
