@@ -76,7 +76,7 @@ def audio_modal_html(sub_text="팟캐스트형 오디오로 생성합니다. (Ge
     <div class="audio-row">
       <label>길이</label>
       <div class="audio-seg" id="seg-length">
-        <button data-v="10">10분</button><button data-v="20">20분</button><button data-v="30">30분</button>
+        <button data-v="10">10분</button><button data-v="20">20분</button><button data-v="30">30분</button><button data-v="50">50분</button>
       </div>
     </div>
     <div class="audio-row">
