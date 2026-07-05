@@ -222,7 +222,7 @@ def make_audio(report_text, evidence, client, minutes=50):
     # 단일 호출은 한국어에서 심하게 under-fill → 소스를 조각내 조각마다 심층 대화 생성 후 이어붙여
     # 길이를 콘텐츠에 비례하게 강제한다(≥40분 목표).
     paras = [p for p in re.split(r"\n\s*\n", source) if p.strip()]
-    n_seg = max(6, min(7, len(source) // 6500))   # ~6-7조각 → ≥40분, 시간·비용 균형
+    n_seg = max(5, min(6, len(source) // 8000))   # ~5-6조각 → 40~55분(이메일 40MB 한도 내)
     if len(paras) >= n_seg:
         per = -(-len(paras) // n_seg)
         segs = ["\n\n".join(paras[i:i + per]) for i in range(0, len(paras), per)]
@@ -236,7 +236,7 @@ def make_audio(report_text, evidence, client, minutes=50):
                else "앞 대화에 자연스럽게 이어서 진행(재소개·재인사 금지)")
         p = (f"당신은 전문가 청중용 학술 2인 팟캐스트 대본을 씁니다. 화자는 정확히 2명뿐:\n{rolelines}\n"
              f"각 발화는 '{labels[0]}:' 또는 '{labels[1]}:' 로 시작(콜론+공백). 이 부분은 전체 {len(segs)}개 중 {i + 1}번째. {pos}.\n"
-             "아래 내용을 **최소 3,800자 이상, 8~14 turn**의 깊이 있는 한국어 대화로 작성. 방법·수치·연구 계보와 '당시엔 X로 여겨졌으나 후대엔 Y로 밝혀졌다'식 수정 서사를 구체적으로 풀되 청취자 눈높이 비유도 곁들일 것. 라벨 외 머리말·메타·프로그램명 금지.\n\n"
+             "아래 내용을 **약 3,000~3,800자, 6~9 turn**의 깊이 있는 한국어 대화로 작성. 방법·수치·연구 계보와 '당시엔 X로 여겨졌으나 후대엔 Y로 밝혀졌다'식 수정 서사를 구체적으로 풀되 청취자 눈높이 비유도 곁들일 것. 라벨 외 머리말·메타·프로그램명 금지.\n\n"
              f"내용:\n{seg}")
         r = client.models.generate_content(
             model=REPORT_MODEL, contents=p,
@@ -415,8 +415,11 @@ def run_lecture(L, led, args):
         mp3, script, dur = make_audio(report, evidence, client, minutes=led.get("audio", {}).get("minutes", 50))
         (OUTDIR / f"lecture_{L['lecture']:02d}.mp3").write_bytes(mp3)
         (OUTDIR / f"lecture_{L['lecture']:02d}_script.txt").write_text(script, encoding="utf-8")
-        attachments.append((f"제{L['lecture']}강.mp3", mp3))
-        print(f"     {len(mp3)/1048576:.1f}MB · ~{dur:.0f}분")
+        if len(mp3) < 28 * 1024 * 1024:            # Resend 40MB 한도(base64 ~1.37x) 안전선
+            attachments.append((f"제{L['lecture']}강.mp3", mp3))
+            print(f"     {len(mp3)/1048576:.1f}MB · ~{dur:.0f}분 (첨부)")
+        else:
+            print(f"     ⚠️ {len(mp3)/1048576:.1f}MB · ~{dur:.0f}분 — 이메일 한도 초과, 첨부 제외(맥미니 lectures/에 저장)")
 
     print("  4) 이메일 발송")
     obj_html = "".join(f"<li>{H.escape(o)}</li>" for o in L["objectives"])
