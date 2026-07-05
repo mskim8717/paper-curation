@@ -2032,6 +2032,27 @@ def _run_topic_index(topic=None, cross=None):
       const out = (head + rest).replace(/^\\s+/, '');
       return out.length > 0 ? out : orig;
     }
+    // 섹션 작성기가 본문 앞에 흘리는 계획·사고과정 메타(KO "~하겠습니다", EN "Let me…/
+    // The excerpts give me…")를 선두에서 문장 단위로 제거. 첫 정상 문장에서 멈춘다.
+    function stripLeadingMeta(text) {
+      let t = String(text || '').replace(/^\\s+/, '');
+      const RE = /^\\s*[^.!?。\\n]*?(서술하겠|작성하겠|확인하겠|검토하겠|파악하겠|정리하겠|살펴보겠|하겠습니다|Let me\\b|Let's\\b|I['’]ll\\b|I will\\b|We['’]ll\\b|The excerpts?\\b|figure files?\\b|compose the paragraph|write the (paragraph|section)|before (writing|composing)|Here (is|are|'s))[^.!?。\\n]*[.!?。]\\s*/;
+      let guard = 0;
+      while (guard++ < 15 && RE.test(t)) t = t.replace(RE, '');
+      return t.replace(/^\\s+/, '');
+    }
+    // 작성기가 [ref:N] 대신 맨 대괄호 [N]/[N, M] 로 인용한 경우를 [ref:N] 로 교정
+    // (유효 범위 내 번호만). 마크다운 링크 [txt](url) 와 figure ![..] 는 건드리지 않음.
+    function normalizeBareCites(text, refCount) {
+      return String(text || '').replace(/(?<!!)\\[(\\d+(?:\\s*,\\s*\\d+)*)\\](?!\\()/g, function(m, grp) {
+        const nums = grp.split(',').map(function(x) { return parseInt(x, 10); });
+        if (!nums.every(function(n) { return n >= 1 && n <= refCount; })) return m;
+        return nums.map(function(n) { return '[ref:' + n + ']'; }).join('');
+      });
+    }
+    function sanitizeSectionDraft(text, refCount) {
+      return normalizeBareCites(stripLeadingMeta(text), refCount);
+    }
     function finalizeDeepAnswer() {
       // 취합기가 리포트 대신 역할·지침을 복창하는 서두 메타를 제거 (프롬프트로도 금지하지만 방어).
       try {
@@ -2493,8 +2514,8 @@ def _run_topic_index(topic=None, cross=None):
       const refSet = (sec.refs && sec.refs.length) ? new Set(sec.refs) : null;
       const evidence = buildEvidenceText(all, refSet, fullTexts);
       const sys = (lang === 'ko')
-        ? '당신은 리서치 리포트의 한 단락을 집필하는 전문 작성자입니다. 아래 번호가 매겨진 발췌문만 근거로, 지정된 단락 주제에 해당하는 내용을 자연스러운 한국어 서술로 작성하세요. 규칙: (1) 인용은 ``[ref:N]`` 마커만 사용(N=발췌 번호) — 후처리가 링크로 바꿉니다. (2) 단락 제목·머리말·"~하겠습니다" 같은 메타 없이 본문만 출력. (3) 발췌 밖 지식 금지, 근거 없는 주장 생략. (4) 제공된 발췌 논문을 폭넓게 활용하되 단락 주제와 무관한 논문은 인용하지 마세요. (5) [연결관계:] 태그가 있는 논문은 그 관계를 문장에 녹여 표현하세요(예: "~의 후속 연구[ref:N]", "이에 대한 반론[ref:N]"). (6) 연관 Figure는 ![caption](url) 로 본문에 삽입(발췌에 명시된 URL만, 임의 URL 금지).'
-        : 'You write ONE section of a research report. Using ONLY the numbered excerpts below, write the assigned section in natural Korean prose. Rules: (1) cite with [ref:N] markers only; (2) output only the body — no heading, no preamble or "I will…" meta; (3) no outside knowledge, omit unsupported claims; (4) use the provided papers broadly but do not cite ones irrelevant to this section; (5) for [연결관계:]-tagged papers weave the relation into the prose; (6) embed figures with ![caption](url) using only listed URLs.';
+        ? '당신은 리서치 리포트의 한 단락을 집필하는 전문 작성자입니다. 아래 번호가 매겨진 발췌문만 근거로, 지정된 단락 주제를 자연스러운 한국어 서술로 작성하세요.\\n\\n인용 규칙(가장 중요):\\n- 논문을 지칭하는 모든 문장에 **반드시** ``[ref:N]`` 마커를 붙이세요(N=발췌 번호). "한 서베이는~", "또 다른 연구는~"처럼 논문을 언급하면서 마커를 빠뜨리면 안 됩니다.\\n- 형식은 **오직 ``[ref:N]``** 만 허용. ``[N]``·"[19]" 같은 맨 대괄호나 논문 제목만 쓰는 것은 금지 — 후처리는 ``[ref:N]`` 만 링크로 변환합니다.\\n- 여러 근거는 ``[ref:1][ref:2]`` 처럼 이어 붙이세요. 예: "He et al.은 ~을 제안했다[ref:3].", "이를 확장한 후속 연구[ref:7]는~", "이에 대한 반론[ref:12]도 제기됐다."\\n\\n출력 규칙:\\n- 단락 제목·머리말 없이 **본문만** 출력. "~하겠습니다"·"먼저 ~ 확인하겠습니다"·"Let me ~"·"The excerpts give me ~" 같은 계획·사고과정 메타를 절대 출력하지 말고 곧바로 한국어 본문 문장부터 시작하세요(영어 메타 문장 금지).\\n- 발췌 밖 지식 금지, 근거 없는 주장 생략. 발췌 논문을 폭넓게 활용하되 단락 주제와 무관한 논문은 인용하지 마세요.\\n- [연결관계:] 태그가 있는 논문은 그 관계를 문장에 녹이세요. 연관 Figure는 ![caption](url) 로 삽입(발췌에 명시된 URL만, 임의 URL 금지).'
+        : 'You write ONE section of a research report from the numbered excerpts below, in natural Korean prose.\\n\\nCITATION RULES (most important):\\n- EVERY sentence that refers to a paper MUST carry a [ref:N] marker (N = excerpt number). Never mention a paper ("one survey…", "another study…") without its [ref:N].\\n- Use ONLY the [ref:N] form. Bare brackets like [19] or [N], or naming a paper with no marker, are forbidden — a post-processor converts ONLY [ref:N] into links.\\n- Chain multiple sources as [ref:1][ref:2].\\n\\nOUTPUT RULES:\\n- Output ONLY the body — no heading, no preamble, and NO planning/meta such as "I will…", "Let me…", "먼저 … 하겠습니다", "The excerpts give me…". Begin directly with the Korean prose (no English meta sentences).\\n- No outside knowledge; omit unsupported claims. Use the papers broadly but do not cite ones irrelevant to this section.\\n- For [연결관계:]-tagged papers weave the relation into the prose. Embed figures with ![caption](url) using only listed URLs.';
       const lenDir = (lang === 'ko')
         ? '\\n분량 지침: 이 단락을 8~15개 문단(약 1800~3600자)으로 매우 충실하고 자세하게 작성하세요.'
         : '\\nLength: write this section as 8-15 detailed paragraphs (~1500-3000 words).';
@@ -2757,7 +2778,7 @@ def _run_topic_index(topic=None, cross=None):
         deepMarkSection(i, '작성 중...', false);
         const secFT = await sectionFullTexts(sec, all, _ftTerms);  // 섹션 top refs 원문 윈도우 (404=요약 폴백)
         return writeSection(query, all, lang, backend, apiKey, topModel, sec, secFT)
-          .then(function(txt) { deepMarkSection(i, txt ? '완료' : '내용 없음', true); return { title: sec.title, text: txt }; })
+          .then(function(txt) { const _tx = sanitizeSectionDraft(txt, all.length); deepMarkSection(i, _tx ? '완료' : '내용 없음', true); return { title: sec.title, text: _tx }; })
           .catch(function(e) {
             if (deepIsAbort(e)) throw e;  // user 중단 → abort the whole run
             if (isAuthError(e)) throw e;  // bad key → fail fast to the outer retry
