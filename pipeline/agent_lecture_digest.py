@@ -222,7 +222,7 @@ def make_audio(report_text, evidence, client, minutes=50):
     # 단일 호출은 한국어에서 심하게 under-fill → 소스를 조각내 조각마다 심층 대화 생성 후 이어붙여
     # 길이를 콘텐츠에 비례하게 강제한다(≥40분 목표).
     paras = [p for p in re.split(r"\n\s*\n", source) if p.strip()]
-    n_seg = max(6, min(9, len(source) // 4800))
+    n_seg = max(6, min(7, len(source) // 6500))   # ~6-7조각 → ≥40분, 시간·비용 균형
     if len(paras) >= n_seg:
         per = -(-len(paras) // n_seg)
         segs = ["\n\n".join(paras[i:i + per]) for i in range(0, len(paras), per)]
