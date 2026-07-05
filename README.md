@@ -4,11 +4,100 @@
 
 논문 PDF → 한국어 구조화 리뷰 → 자동 분류 → 연구 동향 타임라인 → 검색 가능한 사이트 + **Deep Research**(논문 근거 RAG Q&A)까지 — Claude Code가 오케스트레이션하는 개인 논문 큐레이션 파이프라인.
 
+**라이브 데모 — 설치 없이 바로 보기:**
+
+- **Humanoid** — https://paper-curation.jehyunlee.dev/humanoid/
+- **Physical AI** — https://paper-curation.jehyunlee.dev/physical-ai/
+
+**핵심 기능 5줄 요약:**
+
+- **리뷰 자동화** — PDF에서 텍스트·Figure를 추출해 Claude가 6개 섹션 한국어 리뷰를 자동 작성
+- **분류·네트워크** — SPECTER2 + HDBSCAN + UMAP로 카테고리를 자동 생성·배정하고 D3.js 인터랙티브 네트워크로 시각화
+- **Deep Research RAG** — 자연어 질의 → hybrid 검색(BM25+dense) → LLM 답변 + `[N]` 인용, 필요하면 **웹 검색 토글**로 코퍼스 밖 근거까지
+- **Audio Overview** — 리뷰·답변을 팟캐스트형 한국어 오디오로(Gemini TTS → 브라우저 MP3, 배포 시 이메일)
+- **paper-curio** — Zotero 플러그인에서 우클릭으로 2~6편 **논문 비교** 리포트(Sonnet 5, 5축)까지 생성
+
 🇬🇧 [English README](README.en.md)
 
 ![Paper Curation 파이프라인](workflow.png)
 
 > 🐱 **한 장으로 보는 전체 파이프라인** — 수집부터 배포까지, 고양이들이 대신합니다.
+
+## 목차
+
+- [📖 독자로 둘러보기](#-독자로-둘러보기)
+- [🔧 운영자로 설치하기](#-운영자로-설치하기)
+- [💰 비용 가이드](#-비용-가이드)
+- [기능](#기능)
+- [파이프라인](#파이프라인)
+- [사용 모드](#사용-모드)
+- [문서](#문서) — Setup / Operations(megasearch · 한국 망 우회 · Concurrency) / Architecture
+- [발표](#발표)
+
+## 📖 독자로 둘러보기
+
+설치도, API 키도 필요 없습니다. 위 라이브 데모 링크를 열면 바로 열람할 수 있습니다.
+
+- **웹에서 보기** — [Humanoid](https://paper-curation.jehyunlee.dev/humanoid/) · [Physical AI](https://paper-curation.jehyunlee.dev/physical-ai/). 카테고리별 카드, 검색, 타임라인, 논문별 한국어 리뷰 페이지가 모두 정적으로 제공됩니다.
+- **Deep Research 사용법** — 토픽 페이지 상단의 검색창에 자연어로 질문하면 됩니다. **검색(retrieval)은 키가 전혀 필요 없습니다** — 질의 임베딩은 서버(worker `/api/embed`)가 대신 계산합니다. 답변 생성만 본인 API 키(BYOK)를 입력하면 되고, Anthropic·OpenAI·Google 키 prefix를 자동 감지해 그중 하나로 근거 답변을 스트리밍합니다. 코퍼스 밖 최신 정보가 필요하면 **웹 검색 토글**을 켜 인라인 링크 인용으로 보강할 수 있습니다.
+- **RSS 구독** — 각 토픽은 Atom 피드를 제공합니다: [Humanoid feed](https://paper-curation.jehyunlee.dev/humanoid/feed.xml) · [Physical AI feed](https://paper-curation.jehyunlee.dev/physical-ai/feed.xml). 리더로 구독하면 새로 추가되는 리뷰를 받아볼 수 있습니다.
+
+## 🔧 운영자로 설치하기
+
+Zotero 컬렉션 + PDF + API 키(필수: Anthropic · Google · Zotero, OpenAI는 선택)만 있으면 됩니다.
+
+**가장 쉬운 방법 — Claude Code에서 한 줄** (전체 설치 플로우는 [CLAUDE.md](CLAUDE.md)의 "Installation Flow (Claude Code)" 참고):
+
+> "여기에 paper-curation을 설치해줘: https://github.com/jehyunlee/paper-curation"
+
+**수동 설치:**
+
+```bash
+# 1) 클론 + 의존성 (단일 conda env: py312)
+git clone https://github.com/jehyunlee/paper-curation.git && cd paper-curation
+conda create -n py312 -c conda-forge python=3.12 pip -y && conda activate py312
+pip install -r requirements.txt
+
+# 2) API 키 (리뷰=Anthropic, 검색 임베딩·Figure 검증·TTS=Google)
+export ANTHROPIC_API_KEY=...
+export GOOGLE_API_KEY=...
+
+# 3) config.json 생성(대화형) → 첫 파이프라인 실행
+PYTHONUTF8=1 python pipeline/setup.py
+```
+
+**설치 진단** — 문제가 있으면 `PYTHONUTF8=1 python pipeline/doctor.py` 로 py312 환경 · 필수 패키지 · API 키 · Zotero 연결을 한 번에 점검합니다.
+
+사전 준비 체크리스트, config.json 스키마, 설치 확인, 문제 해결 → **[Setup Guide](docs/setup-guide.md)**
+
+## 💰 비용 가이드
+
+> 정확한 실측이 아니라 **오더 오브 매그니튜드(order-of-magnitude) 가이드**입니다. 실제 비용은 논문 편수·본문 길이·타임라인 재생성 빈도·Insights opt-in 여부에 따라 크게 달라집니다.
+
+단계별로 쓰이는 모델과 단가(입력/출력, 100만 토큰당):
+
+| 단계 | 모델 | 단가 (입력 / 출력) |
+|------|------|------|
+| 리뷰 · 연결 · 인사이트 | `claude-sonnet-5` | $2 / $10 (인트로, ~2026-08-31) → $3 / $15 |
+| Figure 검증 (vision judge) | `claude-haiku-4-5` | $1 / $5 |
+| 타임라인 내러티브 | `claude-opus` (4.8) | $5 / $25 |
+| 분류 | — (HDBSCAN + UMAP) | **LLM 호출 0회 → $0** |
+| 검색 임베딩 | Google `gemini-embedding-001` | Google 임베딩 요금(소액) |
+
+**편당 리뷰 대략치** — 리뷰 1편은 논문 본문 발췌 + 프롬프트를 입력, 6섹션 한국어 리뷰를 출력합니다. 대략 입력 ~15k · 출력 ~4k 토큰으로 잡으면:
+
+- 인트로 단가($2/$10): `15k × $2/1M + 4k × $10/1M ≈ $0.03 + $0.04 = ~$0.07`
+- 9/1 이후($3/$15): `15k × $3/1M + 4k × $15/1M ≈ $0.045 + $0.06 = ~$0.11`
+- 여기에 연결 생성(증분) + Figure 검증(Haiku)까지 얹으면 **편당 대략 $0.05–0.15** 수준입니다.
+
+**월간 운영 대략치** — 주간 ~20편(월 ~80편) 사이클 기준:
+
+- 리뷰: 80편 × ~$0.10 ≈ **$8**
+- 연결(증분, dirty 논문만) + 카테고리 요약(Haiku) ≈ **$1–3**
+- 타임라인(변경된 카테고리만, Opus, 비정기) ≈ **$1–3**
+- **합계 ≈ 월 $10–20** 수준 (Insights opt-in `--insights` 또는 전체 타임라인 재생성 시 증가)
+
+> **각주**: Sonnet 5 인트로 단가는 2026-08-31까지이며 **9/1 인트로 종료 후 재평가 예정**입니다. 분류 단계는 LLM을 전혀 호출하지 않으므로(HDBSCAN) 비용이 없습니다. Deep Research 답변 생성은 독자 BYOK라 운영자 비용에 포함되지 않습니다.
 
 ## 기능
 
@@ -35,30 +124,6 @@
 | **워크플로 다이어그램** | `generate_workflow.py` | 상단 고양이 다이어그램 생성(PaperBanana, `--style cat/fairy/academic`) |
 
 **필요한 것**: Zotero 컬렉션 + PDF + API 키(필수: Anthropic · Google · Zotero). OpenAI는 선택.
-
-## 빠른 시작
-
-가장 쉬운 방법 — **Claude Code에서 한 줄**:
-
-> "여기에 paper-curation을 설치해줘: https://github.com/jehyunlee/paper-curation"
-
-수동 설치:
-
-```bash
-# 1) 클론 + 의존성 (단일 conda env: py312)
-git clone https://github.com/jehyunlee/paper-curation.git && cd paper-curation
-conda create -n py312 -c conda-forge python=3.12 pip -y && conda activate py312
-pip install -r requirements.txt
-
-# 2) API 키 (리뷰=Anthropic, 검색 임베딩·Figure 검증·TTS=Google)
-export ANTHROPIC_API_KEY=...
-export GOOGLE_API_KEY=...
-
-# 3) config.json 생성(대화형) → 첫 파이프라인 실행
-PYTHONUTF8=1 python pipeline/setup.py
-```
-
-사전 준비 체크리스트, config.json 스키마, 설치 확인, 문제 해결 → **[Setup Guide](docs/setup-guide.md)**
 
 ## 파이프라인
 
