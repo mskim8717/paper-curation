@@ -421,7 +421,7 @@ def make_connection_map(core, related):
         lab = H.escape(_node_label(c))
         ttl = H.escape(c["title"])
         link = H.escape(c["link"])
-        branches = "".join(branch_node(r) for r in rel_by_core.get(c["slug"], [])[:3])
+        branches = "".join(branch_node(r) for r in rel_by_core.get(c["slug"], []))
         return (f'<div class="flow-item">'
                 f'<details class="flow-node core-node" open><summary>'
                 f'<span class="flow-index">{idx}</span><span class="flow-year">{yr}</span>'
