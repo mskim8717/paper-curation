@@ -29,6 +29,7 @@ from google.genai import types
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config_loader import PAPERS_DIR as _PAPERS_DIR, get_google_key  # noqa: E402
+import usage_log  # noqa: E402
 
 PAPERS = Path(_PAPERS_DIR)
 DOCS = PAPERS.parent
@@ -287,6 +288,7 @@ def tts_call(client: genai.Client, text: str, cfg: types.SpeechConfig) -> bytes:
                 config=types.GenerateContentConfig(
                     response_modalities=["AUDIO"], speech_config=cfg,
                     http_options=types.HttpOptions(timeout=180_000)))
+            usage_log.record_gemini(resp, TTS_MODEL)
             return resp.candidates[0].content.parts[0].inline_data.data
         except Exception as e:
             last = e
@@ -391,6 +393,7 @@ def main() -> int:
     resp = client.models.generate_content(
         model=SCRIPT_MODEL, contents=prompt,
         config=types.GenerateContentConfig(temperature=0.85, max_output_tokens=65536))
+    usage_log.record_gemini(resp, SCRIPT_MODEL)
     script = (resp.text or "").strip()
     if not script:
         print("ERROR: 대본이 비었습니다.", file=sys.stderr)

@@ -33,6 +33,7 @@ from generate_audio import (  # noqa: E402
 from google import genai  # noqa: E402
 from google.genai import types  # noqa: E402
 import lameenc  # noqa: E402
+import usage_log  # noqa: E402
 
 PAPERS = Path(PAPERS_DIR)
 DOCS = Path(DOCS_DIR)
@@ -214,6 +215,7 @@ def synthesize_report(course, lecture, evidence, client):
         temperature=0.6, max_output_tokens=40000,
         tools=[types.Tool(google_search=types.GoogleSearch())])
     resp = client.models.generate_content(model=REPORT_MODEL, contents=prompt, config=cfg)
+    usage_log.record_gemini(resp, REPORT_MODEL)
     report = (resp.text or "").strip()
     return report, extract_web_sources(resp)
 
@@ -246,6 +248,7 @@ def make_audio(report_text, evidence, client, minutes=40):
         r = client.models.generate_content(
             model=REPORT_MODEL, contents=p,
             config=types.GenerateContentConfig(temperature=0.8, max_output_tokens=16384))
+        usage_log.record_gemini(r, REPORT_MODEL)
         return i, (r.text or "").strip()
 
     scripts = [""] * len(segs)
