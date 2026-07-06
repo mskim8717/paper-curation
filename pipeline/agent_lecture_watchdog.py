@@ -75,7 +75,7 @@ def parse_cpu_time(s: str) -> float:
 
 def digest_procs() -> list[Proc]:
     try:
-        cp = run(["/bin/ps", "-axo", "pid=,ppid=,etimes=,time=,stat=,command="], timeout=15)
+        cp = run(["/bin/ps", "-ww", "-axo", "pid=,ppid=,etimes=,time=,stat=,command="], timeout=15)
     except Exception as e:
         log(f"ps failed: {e}")
         return []
