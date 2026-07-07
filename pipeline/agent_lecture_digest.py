@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
 """자율 강의 다이제스트 엔진 — Dashun Wang 커리큘럼의 한 강을 Deeper Research 로 처리.
 
-강 1개 → 핵심 논문(내 코퍼스 우선) + 연결 그래프 1-hop 관련 논문 + **웹 검색(google_search)**
-→ Gemini 심화 리포트(방법론·계보·"당시엔 X였으나 후대엔 Y로 밝혀짐" 류 수정 서사, 인용/링크)
-→ 30분 이상·40분 목표·최대 50분 Audio Overview(2인·전문가·학술·한국어) → 링크·관련연구·참고문헌 갖춘 HTML
-→ 이메일(다중 수신자, 제N강·오늘의 학습목표 명시) → 원장(curriculum.json)에 done.
+새 규칙(미리 생성 + 예정시각엔 메일만):
+  ① 미리(--build) 강별 산출물을 만들어 둔다:
+     핵심 논문(내 코퍼스 우선) + 연결 그래프 1-hop 관련 논문 + 웹 검색(google_search)
+     → Gemini 심화 리포트 → 대본(script) → Audio Overview(2인·전문가·학술·한국어, 30~50분)
+     → 링크·관련연구·참고문헌·연구지도 갖춘 HTML → OUTDIR 저장(메일 없음, status=built).
+  ② 예정시각엔(--due, launchd) 미리 만든 산출물을 불러와 **메일만** 발송(status=done).
+     산출물이 없으면 그 자리에서 생성 후 발송(self-heal).
 
-맥미니 launchd:
-    python pipeline/agent_lecture_digest.py --due          # 지금 시각 기준 다음 예정 강
-    python pipeline/agent_lecture_digest.py --lecture 1     # 특정 강 강제
-    python pipeline/agent_lecture_digest.py --lecture 1 --no-audio   # 리포트+메일만(검증)
+맥미니 launchd / 로컬:
+    python pipeline/agent_lecture_digest.py --build --all               # 1~11강 미리 생성(대본·오디오·HTML)
+    python pipeline/agent_lecture_digest.py --build --lecture 1         # 특정 강만 미리 생성
+    python pipeline/agent_lecture_digest.py --due                       # 예정 강 메일 발송(미리 만든 것 사용)
+    python pipeline/agent_lecture_digest.py --deliver --all \
+        --recipients "a@b.com,c@d.com"                                  # 특정 수신자에게 재발송(status 미변경)
+    python pipeline/agent_lecture_digest.py --build --lecture 1 --no-audio   # 오디오 생략(검증용)
 """
 import argparse, json, os, re, sys, base64, urllib.request, urllib.error
 import html as H
@@ -195,12 +201,29 @@ def extract_web_sources(resp):
     return out
 
 
-def synthesize_report(course, lecture, evidence, client):
+def prior_lectures_brief(led, current):
+    """시리즈 연속성용: 이번 강 이전 강의들의 (번호·제목·핵심 주제) 한 줄 요약."""
+    lines = []
+    for L in sorted(led["lectures"], key=lambda x: x["lecture"]):
+        if L["lecture"] >= current:
+            continue
+        theme = (L.get("objectives") or [""])[0]
+        lines.append(f"  {L['lecture']}강 「{L['title']}」 — {theme}")
+    return "\n".join(lines)
+
+
+def synthesize_report(course, lecture, evidence, client, prior=""):
     obj = "\n".join(f"  {i+1}. {o}" for i, o in enumerate(lecture["objectives"]))
     plist = ", ".join(f"({p['year']}) {p['title']}" for p in lecture["papers"])
+    cont = (("이 강의는 시리즈의 제%d강입니다. 앞서 다룬 강의:\n%s\n\n"
+             "연속성 지침:\n"
+             "- 도입부에서 시리즈 흐름 속 이번 강의의 위치를 한두 문장으로 짚고 들어갈 것.\n"
+             "- 앞 강의의 개념·논문과 **실제로 관련될 때만** 자연스럽게 연결('앞서 N강에서 본 ~와 달리/처럼'). 억지 삽입 금지.\n"
+             "- 비유·예시는 앞 강의와 겹치지 않게 새로운 것을 사용.\n\n") % (lecture["lecture"], prior)) if prior else ""
     prompt = (
         f"당신은 '{course}' 심화 강의를 집필하는 전문 연구자입니다. **제{lecture['lecture']}강: {lecture['title']}**.\n\n"
         f"오늘의 학습목표:\n{obj}\n\n다루는 핵심 논문: {plist}\n\n"
+        f"{cont}"
         "이것은 **Deeper Research** 입니다 — 토픽 Deeper Research와 동일하게, **핵심 논문(시드)과 각 논문에 지정된 '같이 보면 좋은 논문'(연결 그래프: 기반·후속·대안·응용·반론)** 을 **최우선**으로 함께 동원해 비교·대조·계보를 분석하세요. 후대에 나온 관련 논문도 훌륭한 비교 대상입니다.\n\n"
         "작성 지침:\n"
         "- 학습목표 3개를 모두 충실히 충족.\n"
@@ -221,7 +244,7 @@ def synthesize_report(course, lecture, evidence, client):
 
 
 # ── 오디오 (2인·전문가·학술·한국어, 30분 이상·40분 목표·50분 이하) ───────────────
-def make_audio(report_text, evidence, client, minutes=40):
+def make_audio(report_text, evidence, client, minutes=40, prior=""):
     lang, speakers = "ko", 2
     roles = ROLES[lang][speakers]
     labels = [r["label"] for r in roles]
@@ -238,11 +261,14 @@ def make_audio(report_text, evidence, client, minutes=40):
         sz = max(1, -(-len(source) // n_seg))
         segs = [source[i:i + sz] for i in range(0, len(source), sz)]
     def gen_script_part(i, seg):
-        pos = ("도입부: 아주 짧게 한두 마디로 시작(장황한 인사 금지)" if i == 0
+        pos = (("도입부: 아주 짧게 한두 마디로 시작(장황한 인사 금지)"
+                + ("; 시리즈 흐름 속 이번 회차의 위치를 한 마디로 짚어도 좋다" if prior else "")) if i == 0
                else "마무리: 핵심 통찰을 종합하며 자연스럽게 끝맺음" if i == len(segs) - 1
                else "앞 대화에 자연스럽게 이어서 진행(재소개·재인사 금지)")
+        cont = ("앞 회차와 실제로 연결될 때만 '앞서 N강에서 본 ~'처럼 자연스럽게 짚되, 억지 참조·재설명은 금지. " if prior else "")
         p = (f"당신은 전문가 청중용 학술 2인 팟캐스트 대본을 씁니다. 화자는 정확히 2명뿐:\n{rolelines}\n"
              f"각 발화는 '{labels[0]}:' 또는 '{labels[1]}:' 로 시작(콜론+공백). 이 부분은 전체 {len(segs)}개 중 {i + 1}번째. {pos}.\n"
+             + cont +
              "아래 내용을 **약 3,400~4,000자, 6~8 turn**의 깊이 있는 한국어 대화로 작성. 전체 오디오는 30분 이상·40분 목표·50분 이하가 되도록 과도한 반복과 장황한 요약을 피한다. 방법·수치·연구 계보와 '당시엔 X로 여겨졌으나 후대엔 Y로 밝혀졌다'식 수정 서사를 구체적으로 풀되 청취자 눈높이 비유도 곁들일 것. 라벨 외 머리말·메타·프로그램명 금지.\n\n"
              f"내용:\n{seg}")
         r = client.models.generate_content(
@@ -657,101 +683,184 @@ def send_email(recipients, subject, html_body, attachments):
 
 
 # ── 오케스트레이션 ───────────────────────────────────────────────────────────
-def pick_lecture(led, args):
-    lecs = led["lectures"]
-    if args.lecture:
-        for L in lecs:
-            if L["lecture"] == args.lecture:
-                return L
-        sys.exit(f"제{args.lecture}강 없음")
-    now = datetime.now()
-    due = [L for L in lecs if L.get("status") != "done"
-           and datetime.strptime(L["scheduled_at"], "%Y-%m-%d %H:%M") <= now]
-    if not due:
-        print("[agent] 지금 발화할 예정 강 없음."); return None
-    return min(due, key=lambda L: L["scheduled_at"])
 
 
-def run_lecture(L, led, args):
-    total, course, recipients = led["total"], led["course"], led["recipients"]
-    print(f"[agent] 제{L['lecture']}강/{total} · {L['title']} · 핵심 {len(L['papers'])}편")
+def artifacts_ready(L, args):
+    """OUTDIR 에 이 강의 산출물이 이미 준비돼 있는지."""
+    n = L["lecture"]
+    if not (OUTDIR / f"lecture_{n:02d}.html").exists():
+        return False
+    if not args.no_audio and not (OUTDIR / f"lecture_{n:02d}.mp3").exists():
+        return False
+    return bool(L.get("build"))
+
+
+def build_lecture(L, led, args):
+    """미리 생성: 리포트→대본→오디오→HTML→연구지도 를 만들어 OUTDIR 에 저장. 메일 없음."""
+    total, course = led["total"], led["course"]
+    n = L["lecture"]
+    print(f"[build] 제{n}강/{total} · {L['title']} · 핵심 {len(L['papers'])}편")
     client = genai.Client(api_key=get_google_key())
 
+    prior = prior_lectures_brief(led, n)
     print("  1) 근거 수집 (핵심 + 연결 그래프)")
     evidence, core, related = gather_evidence(L)
     print(f"     근거 {len(evidence):,}자 · 관련논문 {len(related)}편")
     print("  2) Deeper Research 리포트 합성 (웹 검색 포함)")
-    report, web_sources = synthesize_report(course, L, evidence, client)
+    report, web_sources = synthesize_report(course, L, evidence, client, prior)
     if not report:
         sys.exit("리포트 합성 실패")
     print(f"     리포트 {len(report):,}자 · 웹 출처 {len(web_sources)}개")
 
     OUTDIR.mkdir(parents=True, exist_ok=True)
-    tag = re.sub(r"[^가-힣A-Za-z0-9]+", "_", L["title"])[:30]
     html = make_html(course, L, report, core, related, web_sources, total)
-    (OUTDIR / f"lecture_{L['lecture']:02d}.html").write_text(html, encoding="utf-8")
-    (OUTDIR / f"lecture_{L['lecture']:02d}_report.md").write_text(report, encoding="utf-8")
+    import lecture_map
+    html = lecture_map.assemble_report_html(L["lecture"], html, report)
+    have_map = False
+    try:
+        _mp = OUTDIR / f"lecture_{n:02d}_map.png"
+        lecture_map.build_map(n, str(_mp), report)
+        have_map = _mp.exists()
+        if have_map:
+            print(f"     연구 지도 생성 ({_mp.stat().st_size / 1024:.0f}KB)")
+    except Exception as e:
+        print("     ⚠️ 연구 지도 이미지 생성 실패:", e)
+    (OUTDIR / f"lecture_{n:02d}.html").write_text(html, encoding="utf-8")
+    (OUTDIR / f"lecture_{n:02d}_report.md").write_text(report, encoding="utf-8")
 
-    attachments = [(f"제{L['lecture']}강_{tag}.html", html.encode("utf-8"))]
+    audio_mb = 0.0
     if not args.no_audio:
         print("  3) 오디오 생성 (30분 이상·40분 목표·최대 50분)")
-        mp3, script, dur = make_audio(report, evidence, client, minutes=led.get("audio", {}).get("minutes", 40))
-        (OUTDIR / f"lecture_{L['lecture']:02d}.mp3").write_bytes(mp3)
-        (OUTDIR / f"lecture_{L['lecture']:02d}_script.txt").write_text(script, encoding="utf-8")
-        if len(mp3) < 28 * 1024 * 1024:            # Resend 40MB 한도(base64 ~1.37x) 안전선
-            attachments.append((f"제{L['lecture']}강.mp3", mp3))
-            print(f"     {len(mp3)/1048576:.1f}MB · ~{dur:.0f}분 (첨부)")
-        else:
-            print(f"     ⚠️ {len(mp3)/1048576:.1f}MB · ~{dur:.0f}분 — 이메일 한도 초과, 첨부 제외(맥미니 lectures/에 저장)")
+        mp3, script, dur = make_audio(report, evidence, client, minutes=led.get("audio", {}).get("minutes", 40), prior=prior)
+        (OUTDIR / f"lecture_{n:02d}.mp3").write_bytes(mp3)
+        (OUTDIR / f"lecture_{n:02d}_script.txt").write_text(script, encoding="utf-8")
+        audio_mb = round(len(mp3) / 1048576, 1)
+        print(f"     오디오 {audio_mb}MB · ~{dur:.0f}분 · 대본 {len(script):,}자")
 
-    # 진도 로드맵 이미지 (매 메일에 인라인 표시 + 첨부)
+    L["build"] = {"related": len(related), "web_sources": len(web_sources),
+                  "audio_mb": audio_mb, "map": have_map, "no_audio": bool(args.no_audio),
+                  "built_at": datetime.now().strftime("%Y-%m-%d %H:%M")}
+    if L.get("status") != "done":
+        L["status"] = "built"
+    save_ledger(led)
+    print(f"[build] 제{n}강 미리 생성 완료 → {OUTDIR}")
+    return True
+
+
+def deliver_lecture(L, led, args):
+    """미리 만든 산출물을 불러와 메일만 발송(새 규칙). 산출물이 없으면 먼저 생성."""
+    total, course = led["total"], led["course"]
+    n = L["lecture"]
+    recipients = args.recipients or led["recipients"]
+    html_path = OUTDIR / f"lecture_{n:02d}.html"
+    mp3_path = OUTDIR / f"lecture_{n:02d}.mp3"
+    map_path = OUTDIR / f"lecture_{n:02d}_map.png"
+    if not html_path.exists() or (not args.no_audio and not mp3_path.exists()):
+        print(f"[deliver] 제{n}강 산출물 없음 → 먼저 생성")
+        build_lecture(L, led, args)
+
+    b = L.get("build", {})
+    tag = re.sub(r"[^가-힣A-Za-z0-9]+", "_", L["title"])[:30]
+    html = html_path.read_text(encoding="utf-8")
+    attachments = [(f"제{n}강_{tag}.html", html.encode("utf-8"))]
+
+    map_png_html = ""
+    if map_path.exists():
+        attachments.append(("연구지도.png", map_path.read_bytes(), "lecture-map"))
+        map_png_html = (
+            '<div style="margin:8px 0 16px"><img src="cid:lecture-map" alt="연구 지도" '
+            'style="width:100%;max-width:760px;border:1px solid #eee;border-radius:12px">'
+            '<p style="color:#777;font-size:.82rem;margin:6px 0 0">'
+            '이번 강의가 짚는 논문의 흐름 · 첨부 HTML 상단에 마우스오버·클릭이 되는 인터랙티브 지도가 있습니다.</p></div>')
+
+    if not args.no_audio and mp3_path.exists():
+        mp3 = mp3_path.read_bytes()
+        if len(mp3) < 28 * 1024 * 1024:            # Resend 40MB 한도(base64 ~1.37x) 안전선
+            attachments.append((f"제{n}강.mp3", mp3))
+            print(f"     오디오 첨부 {len(mp3)/1048576:.1f}MB")
+        else:
+            print(f"     ⚠️ {len(mp3)/1048576:.1f}MB — 이메일 한도 초과, 첨부 제외(OUTDIR 에 보관)")
+
     prog_img_html = ""
     try:
-        prog = make_progress_image(led, L["lecture"])
-        (OUTDIR / f"lecture_{L['lecture']:02d}_progress.png").write_bytes(prog)
+        prog = make_progress_image(led, n)
         attachments.append(("커리큘럼_진도.png", prog, "lecture-progress"))
         prog_img_html = ('<div style="margin:10px 0 16px"><img src="cid:lecture-progress" '
                          'alt="전체 진도" style="width:100%;max-width:640px;border:1px solid #eee;border-radius:10px"></div>')
-        print(f"     진도 이미지 생성 ({len(prog) / 1024:.0f}KB)")
     except Exception as e:
         print("     ⚠️ 진도 이미지 생성 실패:", e)
 
-    print("  4) 이메일 발송")
+    print("  4) 메일 발송")
+    related_n, web_n = b.get("related", 0), b.get("web_sources", 0)
     obj_html = "".join(f"<li>{H.escape(o)}</li>" for o in L["objectives"])
-    core_html = "".join(f'<li><a href="{H.escape(c["link"])}">({c["year"]}) {H.escape(c["title"])}</a></li>' for c in core)
     body = (f"<p><b>{H.escape(course)} · 제{L['lecture']}강 / {total}</b></p><h2>{H.escape(L['title'])}</h2>"
-            f"{prog_img_html}"
+            f"{prog_img_html}{map_png_html}"
             f"<p><b>🎯 오늘의 학습목표</b></p><ul>{obj_html}</ul>"
-            f"<p><b>📄 다루는 논문 ({len(core)}편)</b> · 🔗 관련 연구 {len(related)}편 · 🌐 웹 출처 {len(web_sources)}개</p><ul>{core_html}</ul>"
-            f"<p>첨부: Deeper Research 리포트(HTML, 링크·관련연구·참고문헌 포함)"
+            f"<p>첨부: Deeper Research 리포트(HTML, 상단에 인터랙티브 연구지도) · 관련 연구 {related_n}편 · 웹 출처 {web_n}개"
             + ("" if args.no_audio else " + Audio Overview(MP3, 2인·전문가·학술)") + "</p>"
             f"<p style='color:#999;font-size:.85rem'>Paper Curation 자동 발송 · {L['scheduled_at']}</p>")
     st, resp = send_email(recipients, f"[제{L['lecture']}강/{total}] {L['title']}", body, attachments)
     ok = st == 200
     print(f"     이메일 {'성공' if ok else '실패'} (status {st}) {resp}  → {recipients}")
 
-    if ok and not args.no_audio:
-        L["status"] = "done"; L["completed_at"] = datetime.now().strftime("%Y-%m-%d %H:%M")
-        L["artifacts"] = {"related": len(related), "web_sources": len(web_sources), "audio_mb": round(len(mp3) / 1048576, 1)}
+    # 수신자 override(--recipients) 나 --no-mark 는 테스트/재발송 → 예정 배포(status)를 건드리지 않는다.
+    if ok and not args.no_audio and not args.recipients and not args.no_mark:
+        L["status"] = "done"
+        L["completed_at"] = datetime.now().strftime("%Y-%m-%d %H:%M")
+        L["artifacts"] = {"related": related_n, "web_sources": web_n, "audio_mb": b.get("audio_mb", 0)}
         save_ledger(led)
-        print(f"[agent] 제{L['lecture']}강 done 기록.")
+        print(f"[deliver] 제{n}강 done 기록.")
     return ok
 
 
+def process_lecture(L, led, args):
+    if args.force or not artifacts_ready(L, args):
+        build_lecture(L, led, args)
+    if args.build:
+        return True
+    return deliver_lecture(L, led, args)
+
+
+def select_lectures(led, args):
+    lecs = sorted(led["lectures"], key=lambda x: x["lecture"])
+    if args.all:
+        return lecs
+    if args.lecture:
+        m = [L for L in lecs if L["lecture"] == args.lecture]
+        if not m:
+            sys.exit(f"제{args.lecture}강 없음")
+        return m
+    now = datetime.now()
+    due = [L for L in lecs if L.get("status") != "done"
+           and datetime.strptime(L["scheduled_at"], "%Y-%m-%d %H:%M") <= now]
+    if not due:
+        print("[agent] 지금 발화할 예정 강 없음.")
+        return []
+    return [min(due, key=lambda L: L["scheduled_at"])]
+
+
 def main():
-    ap = argparse.ArgumentParser(description="Dashun Wang 강의 다이제스트 엔진 (Deeper Research)")
-    ap.add_argument("--lecture", type=int, help="특정 강 번호 강제")
+    ap = argparse.ArgumentParser(description="Dashun Wang 강의 다이제스트 엔진 (미리 생성 + 예정시각 메일)")
+    ap.add_argument("--lecture", type=int, help="특정 강 번호")
     ap.add_argument("--due", action="store_true", help="지금 시각 기준 다음 예정 강 1개")
-    ap.add_argument("--no-audio", action="store_true", help="오디오 생략(리포트+메일만, 검증용)")
+    ap.add_argument("--all", action="store_true", help="전체 강(1~N)")
+    ap.add_argument("--build", action="store_true", help="미리 생성만(대본·오디오·HTML), 메일 없음")
+    ap.add_argument("--deliver", action="store_true", help="미리 만든 산출물로 메일만 발송")
+    ap.add_argument("--recipients", help="수신자 override(콤마 구분). 지정 시 status 미변경(재발송/테스트)")
+    ap.add_argument("--no-mark", action="store_true", help="발송해도 done 표시 안 함")
+    ap.add_argument("--force", action="store_true", help="산출물이 있어도 재생성")
+    ap.add_argument("--no-audio", action="store_true", help="오디오 생략(검증용)")
     args = ap.parse_args()
-    if not args.lecture and not args.due:
-        ap.error("--lecture N 또는 --due 필요")
+    if not (args.lecture or args.due or args.all):
+        ap.error("--lecture N / --due / --all 중 하나 필요")
+    args.recipients = ([r.strip() for r in args.recipients.split(",") if r.strip()]
+                       if args.recipients else None)
     led = load_ledger()
-    L = pick_lecture(led, args)
-    if L is None:
-        return 0
-    run_lecture(L, led, args)
-    return 0
+    targets = select_lectures(led, args)
+    ok_all = True
+    for L in targets:
+        ok_all = process_lecture(L, led, args) and ok_all
+    return 0 if ok_all else 1
 
 
 if __name__ == "__main__":
