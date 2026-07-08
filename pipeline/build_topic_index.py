@@ -449,13 +449,32 @@ def _run_topic_index(topic=None, cross=None):
         cat_papers = ca.get("papers", [])
         html_parts = []
 
-        # Build slug number → paper info lookup from ALL papers (not just top 20)
+        # Build slug number → paper info lookup. Prefer the CURRENT topic's
+        # papers so a collision number (same slug number reused across
+        # ingestion batches / merged repos) resolves to the paper that belongs
+        # to THIS topic; fall back to the global map for numbers absent here.
         num_to_paper = {}
-        for p in papers_index:
+        for p in papers_index:                       # global fallback (legacy last-wins)
             slug = p.get("slug", "")
             title = p.get("title", "")
             num = slug.split("_")[0] if "_" in slug else slug[:3]
             num_to_paper[num] = (slug, title)
+        for p in topic_papers:                        # topic-scoped overrides win
+            slug = p.get("slug", "")
+            title = p.get("title", "")
+            num = slug.split("_")[0] if "_" in slug else slug[:3]
+            num_to_paper[num] = (slug, title)
+        # Category-primary override (highest precedence): resolves a SAME-topic
+        # collision number to the paper whose PRIMARY category is the one being
+        # rendered — the overview text of this category describes that paper.
+        for p in topic_papers:
+            cls = p.get("classifications", {}).get(TOPIC, {})
+            pc = cls.get("primary_category") or slug_to_cat.get(p.get("slug", ""))
+            if pc == cat_name:
+                slug = p.get("slug", "")
+                title = p.get("title", "")
+                num = slug.split("_")[0] if "_" in slug else slug[:3]
+                num_to_paper[num] = (slug, title)
 
         def _refs_to_links(text_html):
             """Convert [NNN] markers to <a> links."""
@@ -3430,9 +3449,14 @@ def _run_topic_index(topic=None, cross=None):
         if not cross:
             return ""
 
-        # Build slug number → paper info lookup
+        # Build slug number → paper info lookup (topic-first; see _refs_to_links)
         num_to_paper = {}
-        for p in papers_index:
+        for p in papers_index:                       # global fallback
+            slug = p.get("slug", "")
+            title = p.get("title", "")
+            num = slug.split("_")[0] if "_" in slug else slug[:3]
+            num_to_paper[num] = (slug, title)
+        for p in topic_papers:                        # topic-scoped overrides win
             slug = p.get("slug", "")
             title = p.get("title", "")
             num = slug.split("_")[0] if "_" in slug else slug[:3]
