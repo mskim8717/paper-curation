@@ -226,8 +226,8 @@ def parse_scores(md):
         # Table: | Label | X/5 |
         m = re.search(rf'\|\s*{label}\s*\|\s*(\d+(?:\.\d+)?)\s*/\s*5\s*\|', md)
         if not m:
-            # List: - Label: X/5
-            m = re.search(rf'-\s*{label}\s*:\s*(\d+(?:\.\d+)?)\s*/\s*5', md)
+            # List: - Label: X/5  (tolerate **bold**/*italic* around the label)
+            m = re.search(rf'-\s*\**\s*{label}\s*\**\s*:\s*(\d+(?:\.\d+)?)\s*/\s*5', md)
         if m:
             scores[key] = m.group(1)
     return scores
