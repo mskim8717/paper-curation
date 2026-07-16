@@ -59,6 +59,60 @@ def _split_cats_by_image_presence(topic, cats):
         (with_image if has_image else missing).append(cat)
     return with_image, missing
 
+
+def _topic_default_artifacts_missing(topic):
+    """Return missing default topic outputs for a complete collection page.
+
+    Paper Curio collection processing is an "ensure the collection is browsable"
+    entrypoint, not just "review new PDFs". A failed first run can leave the
+    checkpoint full while narrative/timeline artifacts are absent; resume mode
+    must detect that and rebuild the missing default outputs.
+    """
+    topic_dir = get_topic_dir(topic)
+    topic_dir_str = str(topic_dir)
+    missing = []
+    required = [
+        "_category_summaries.json",
+        "_category_narratives.json",
+        "_timeline_narrative.json",
+        "research_timeline.png",
+    ]
+    for name in required:
+        path = os.path.join(topic_dir_str, name)
+        if not os.path.exists(path) or os.path.getsize(path) == 0:
+            missing.append(name)
+
+    expected_categories = []
+    cls_path = os.path.join(topic_dir_str, "_new_classification.json")
+    if os.path.exists(cls_path):
+        try:
+            with open(cls_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            for c in data.get("categories", []):
+                name = c.get("name") if isinstance(c, dict) else str(c)
+                if name and name != "Other":
+                    expected_categories.append(name)
+        except Exception:
+            expected_categories = []
+
+    if expected_categories:
+        for cat in expected_categories:
+            slug = category_slug(cat)
+            has_image = any(
+                os.path.exists(os.path.join(topic_dir_str, f"category_timeline_{slug}.{ext}"))
+                and os.path.getsize(os.path.join(topic_dir_str, f"category_timeline_{slug}.{ext}")) > 0
+                for ext in ("png", "webp")
+            )
+            if not has_image:
+                missing.append(f"category_timeline_{slug}.png")
+    elif not os.path.isdir(topic_dir_str) or not any(
+        name.startswith("category_timeline_") and name.endswith((".png", ".webp"))
+        for name in os.listdir(topic_dir_str)
+    ):
+        missing.append("category_timeline_*.png")
+
+    return missing
+
 # topic_modeling.py / classify_papers.py 는 UMAP + hdbscan + sentence-transformers
 # 의존. 표준은 ``py312`` 단일 env 이며, 이 경우 현재 인터프리터가 곧 클러스터링
 # 인터프리터다. 과거의 "py314 메인 + py312 보조" 이중 구성도 계속 지원한다: py314
@@ -1898,6 +1952,8 @@ def main():
     parser.add_argument("--limit", type=int, default=0, help="Limit papers (0=all)")
     parser.add_argument("--timeline", action="store_true",
                         help="Regenerate timeline images (with --resume: changed cats only, alone: all cats)")
+    parser.add_argument("--ensure-timeline", action="store_true",
+                        help="기본 narrative/timeline 산출물이 없으면 생성하고, 업데이트 중 바뀐 카테고리만 보강한다.")
     parser.add_argument("--category", action="store_true",
                         help="Re-run topic_modeling to reclassify all papers. Auto-enables --timeline for changed categories.")
     parser.add_argument("--strict-pdf", action="store_true",
@@ -2181,7 +2237,7 @@ def main():
             log(f"  [persist] failed: {_e}")
 
     # ── Post-processing: rebuild index, classify, insights, topic page ──
-    if len(cp['completed']) > 0 or args.timeline or args.category:
+    if len(cp['completed']) > 0 or args.timeline or args.category or args.ensure_timeline:
         log("\n" + "=" * 60)
         log("POST-PROCESSING: index → classify → summaries → insights → HTML → topic index")
         log("=" * 60)
@@ -2190,6 +2246,7 @@ def main():
         is_update = args.resume  # --resume implies update mode
         do_reclassify = args.category  # --category forces topic_modeling
         do_timeline_images = args.timeline or args.category  # --category auto-enables timeline
+        do_ensure_timeline = getattr(args, "ensure_timeline", False)
 
         # extract_insights 는 paper connections(Core — '같이 보면 좋은 논문' 박스)만
         # 기본 생성한다. cross-category insights 는 Option 이라 --insights 가 명시될
@@ -2378,8 +2435,33 @@ def main():
                 log(f"  [changed_categories] ERROR reading index: {e}")
                 changed_cats = []
 
+
+        missing_default_artifacts = (
+            _topic_default_artifacts_missing(topic)
+            if (do_ensure_timeline or do_timeline_images)
+            else []
+        )
+        if missing_default_artifacts:
+            log("  [default_outputs] missing narrative/timeline artifacts — will ensure:")
+            for name in missing_default_artifacts[:12]:
+                log(f"    - {name}")
+            if len(missing_default_artifacts) > 12:
+                log(f"    ... +{len(missing_default_artifacts) - 12} more")
+
+        def run_default_topic_outputs(reason):
+            log(f"  [default_outputs] full narrative/timeline generation ({reason})")
+            run_step("build_category_summaries",
+                     ["python", "pipeline/build_category_summaries.py", "--topic", topic], 1200)
+            run_step("extract_insights",
+                     ["python", "pipeline/extract_insights.py", "--topic", topic] + insights_only_arg, 14400)
+            run_step("generate_timelines",
+                     ["python", "pipeline/generate_timelines.py", "--topic", topic], 21600)
         # Step 5-6: summaries, insights, timelines — scoped by changed categories
-        if do_reclassify and changed_cats:
+        if do_reclassify and changed_cats and missing_default_artifacts:
+            # If default outputs are absent, scoped timeline regeneration would
+            # still leave the main narrative/timeline incomplete. Build all.
+            run_default_topic_outputs("missing default outputs")
+        elif do_reclassify and changed_cats:
             # --category: full reclassification → rebuild ALL summaries/insights (old cats must be purged)
             # Only timelines are scoped to changed categories
             run_step("build_category_summaries",
@@ -2398,7 +2480,9 @@ def main():
             run_step("generate_timelines",
                      ["python", "pipeline/generate_timelines.py", "--topic", topic], 21600)
         elif is_update:
-            if changed_cats:
+            if missing_default_artifacts and (do_ensure_timeline or do_timeline_images):
+                run_default_topic_outputs("missing default outputs")
+            elif changed_cats:
                 cats_arg = ["--categories"] + changed_cats
                 run_step("build_category_summaries",
                          ["python", "pipeline/build_category_summaries.py", "--topic", topic] + cats_arg, 1200)
@@ -2428,6 +2512,8 @@ def main():
                         run_step("generate_timelines (images)",
                                  ["python", "pipeline/generate_timelines.py", "--topic", topic,
                                   "--categories"] + cats_missing_image, 21600)
+            elif do_timeline_images:
+                run_default_topic_outputs("--timeline requested")
             else:
                 log("  [summaries/insights/timelines] SKIP (no new papers classified)")
         elif do_timeline_images:

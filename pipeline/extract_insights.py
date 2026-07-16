@@ -29,6 +29,18 @@ def log(msg):
     ts = datetime.now().strftime("%H:%M:%S")
     print(f"[{ts}] {msg}", flush=True)
 
+def _anthropic_text(resp):
+    parts = []
+    for block in getattr(resp, "content", []) or []:
+        if getattr(block, "type", None) == "text" and getattr(block, "text", None):
+            parts.append(block.text)
+    text = "".join(parts).strip()
+    if not text:
+        types = [getattr(b, "type", type(b).__name__) for b in getattr(resp, "content", []) or []]
+        raise RuntimeError(f"Anthropic response contained no text blocks: {types}")
+    return text
+
+
 
 def load_topic_data(topic):
     """토픽의 논문, 분류, 카테고리 요약 로드."""
@@ -132,7 +144,7 @@ def _haiku_summarize_block(block, client, target_chars):
         max_tokens=max(2000, target_chars // 3),
         messages=[{"role": "user", "content": prompt}],
     )
-    out = resp.content[0].text.strip()
+    out = _anthropic_text(resp)
     log(f"    [haiku-summarize] -> {len(out)} chars in {time.time()-_t0:.0f}s")
     return out
 

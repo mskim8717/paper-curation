@@ -1011,6 +1011,7 @@ def _run_timeline(topic="ai4s", *, candidates=3, narrative_only=False,
             category_summaries = json.load(f)
         log(f"Loaded {len(category_summaries)} narratives from {narratives_path}")
 
+    image_failures = []
     # Category timelines
     if not main_only:
         # ThreadPool: PaperBanana (Gemini image) calls per category.
@@ -1037,7 +1038,10 @@ def _run_timeline(topic="ai4s", *, candidates=3, narrative_only=False,
             results = generate_candidates(method_text, caption, f"category_{slug}",
                                           candidates_dir, candidates)
             deploy_name = f"category_timeline_{category_slug(cat_name)}.png"
-            deploy_candidate(results, os.path.join(topic_dir, deploy_name), caption)
+            ok = deploy_candidate(results, os.path.join(topic_dir, deploy_name), caption)
+            if not ok:
+                image_failures.append(deploy_name)
+                raise RuntimeError(f"timeline image was not generated: {deploy_name}")
             log(f"  [done]  {cat_name}")
             return deploy_name
 
@@ -1048,6 +1052,7 @@ def _run_timeline(topic="ai4s", *, candidates=3, narrative_only=False,
                 try:
                     fut.result()
                 except Exception as e:
+                    image_failures.append(f"category:{c}")
                     log(f"  [image failed] {c}: {str(e)[:150]}")
 
     if not category_only:
@@ -1069,10 +1074,15 @@ def _run_timeline(topic="ai4s", *, candidates=3, narrative_only=False,
                     caption = f.read()
 
         log(f"\n--- Main timeline ({len(method_text)} chars method) ---")
+        main_path = os.path.join(topic_dir, "research_timeline.png")
         results = generate_candidates(method_text, caption, "research_timeline",
                                       candidates_dir, candidates)
-        deploy_candidate(results, os.path.join(topic_dir, "research_timeline.png"), caption)
+        if not deploy_candidate(results, main_path, caption):
+            image_failures.append("research_timeline.png")
+            raise RuntimeError("main research timeline was not generated: research_timeline.png")
 
+    if image_failures:
+        raise RuntimeError("timeline generation failed for: " + ", ".join(image_failures))
     log("\n" + "=" * 60)
     log("ALL DONE")
     log(f"Narratives: {narratives_path}")

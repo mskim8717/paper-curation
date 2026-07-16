@@ -19,6 +19,18 @@ from anthropic import Anthropic
 from config_loader import PAPERS_DIR as _PAPERS_DIR, get_topic_dir
 PAPERS_DIR = str(_PAPERS_DIR)
 
+def _anthropic_text(resp):
+    parts = []
+    for block in getattr(resp, "content", []) or []:
+        if getattr(block, "type", None) == "text" and getattr(block, "text", None):
+            parts.append(block.text)
+    text = "".join(parts).strip()
+    if not text:
+        types = [getattr(b, "type", type(b).__name__) for b in getattr(resp, "content", []) or []]
+        raise RuntimeError(f"Anthropic response contained no text blocks: {types}")
+    return text
+
+
 # Categories are now dynamic from _papers_index.json (BERTopic-generated)
 
 
@@ -69,7 +81,7 @@ def _call_with_invariant_gate(prompt, model, max_tokens, label, client,
                 max_tokens=max_tokens,
                 messages=[{"role": "user", "content": local_prompt}],
             )
-            text = resp.content[0].text.strip()
+            text = _anthropic_text(resp)
             if text and text[-1] not in ".다":
                 text += "."
         except Exception as e:

@@ -68,7 +68,7 @@ def build_parser():
     p.add_argument("--source", choices=["web", "zotero"], default="zotero",
                    help="Input source. web=검색+등록+sync+review / zotero=sync+review.")
     p.add_argument("--images", choices=["skip", "changed", "all"], default=None,
-                   help="타임라인 이미지 범위. 기본은 mode별 (curate=skip, rebuild/retime=all).")
+                   help="타임라인 이미지 범위. 기본은 mode별 (curate=changed, rebuild/retime=all).")
 
     # --with-* overrides
     p.add_argument("--with-search", action="store_true",
@@ -142,7 +142,7 @@ def resolve_images_default(args):
     if args.images is not None:
         return args.images
     return {
-        "curate": "skip",
+        "curate": "changed",
         "rebuild": "all",
         "reclassify": "changed",
         "retime": "all",
@@ -170,7 +170,9 @@ def build_update_force_cmd(args, images):
         cmd.append("--local-fallback")
     if getattr(args, "conn_full", False):
         cmd.append("--conn-full")
-    if images in ("changed", "all"):
+    if images == "changed":
+        cmd.append("--ensure-timeline")
+    elif images == "all":
         cmd.append("--timeline")
     if args.skip_dedup:
         cmd.append("--skip-dedup")

@@ -44,6 +44,23 @@ def log(msg):
     print(f"[{ts}] {msg}", flush=True)
 
 
+def _anthropic_text(resp):
+    """Anthropic content blocks에서 text block만 결합한다.
+
+    claude-sonnet-5 계열이 reasoning/thinking block을 text보다 먼저 줄 수 있는데
+    resp.content[0].text 를 가정하면 ThinkingBlock 에서 AttributeError가 난다.
+    """
+    parts = []
+    for block in getattr(resp, "content", []) or []:
+        if getattr(block, "type", None) == "text" and getattr(block, "text", None):
+            parts.append(block.text)
+    text = "".join(parts).strip()
+    if not text:
+        types = [getattr(b, "type", type(b).__name__) for b in getattr(resp, "content", []) or []]
+        raise RuntimeError(f"Anthropic response contained no text blocks: {types}")
+    return text
+
+
 # ═══════════════════════════════════════════
 # Step 1: Originality extraction from text.md
 # ═══════════════════════════════════════════
@@ -456,7 +473,7 @@ Rules:
             max_tokens=8000,
             messages=[{"role": "user", "content": prompt}],
         )
-        text = resp.content[0].text.strip()
+        text = _anthropic_text(resp)
         if text.startswith("```"):
             text = text.split("```")[1]
             if text.startswith("json"):
@@ -585,7 +602,7 @@ Rules:
         max_tokens=4000,
         messages=[{"role": "user", "content": prompt}],
     )
-    text = resp.content[0].text.strip()
+    text = _anthropic_text(resp)
     if text.startswith("```"):
         text = text.split("```")[1]
         if text.startswith("json"):
