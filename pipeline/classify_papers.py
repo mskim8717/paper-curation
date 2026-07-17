@@ -32,10 +32,10 @@ Pipeline contract:
 
 실행 환경:
   UMAP + hdbscan + sentence-transformers 가 모두 설치된 환경에서 실행한다.
-  표준 셋업은 conda env `py314` (Python 3.14, macOS) — CLAUDE.md
-  Python Environment 섹션 참조. Windows 의 경우 Smart App Control 이
-  numba/llvmlite DLL 을 차단하면 Python 3.12 전용 env (`py312` 등)
-  fallback 이 필요할 수 있다.
+  표준이자 유일 환경은 conda env `py312` (Python 3.12). **py314 사용 금지** —
+  진입점(__main__)의 `_env_guard.force_py312()` 가 다른 인터프리터로 실행되면
+  py312 로 자동 재실행한다. (numba 가 Python 3.14 의 CALL_KW opcode 를 못 다뤄
+  py312 로 통일했다 — 운영자 지시 2026-06-18.)
 
 Usage:
   PYTHONUTF8=1 python pipeline/classify_papers.py --topic ai4s
@@ -86,6 +86,22 @@ def load_bundle(topic_dir):
     if missing:
         log(f"ERROR: bundle at {bundle_path} missing keys: {sorted(missing)}.")
         sys.exit(2)
+
+    # 임베딩 모드 가드: 번들의 HDBSCAN manifold 가 어떤 임베딩으로 학습됐는지를
+    # 현재 분류에 쓸 임베딩 모드와 대조한다. 다르면 신 모델 벡터를 구 모델
+    # manifold 에 투영하는 셈이라 분류가 조용히 망가진다 (approximate_predict 가
+    # 엉뚱한 sub-cluster 로 보냄). 구 번들에는 키가 없으므로 base/mean 으로 간주.
+    from lib import specter2_embed
+    bundle_tag = bundle.get("embed_model", "specter2_base_mean")
+    if bundle_tag != specter2_embed.EMBED_TAG:
+        log("ERROR: 분류 임베딩 모드가 학습된 모델 번들과 다릅니다 "
+            f"(번들 embed_model={bundle_tag!r}, 현재={specter2_embed.EMBED_TAG!r}).\n"
+            "       임베딩이 바뀌었으니 신 모델 벡터를 구 모델 manifold 에 그대로\n"
+            "       투영할 수 없습니다. topic_modeling.py 를 먼저 재실행해 같은\n"
+            "       임베딩으로 HDBSCAN 모델을 다시 학습·저장한 뒤 classify_papers 를\n"
+            "       돌리세요.")
+        sys.exit(2)
+
     return bundle
 
 
@@ -113,7 +129,10 @@ def classify_via_bundle(vec_768, bundle):
       3. outlier → nearest centroid (cosine, 768D)
       4. all_categories = top-N parent categories from centroid-ranked subs
 
-    Returns (primary_cat, all_cats, primary_subname, sub_per_cat_map).
+    Returns (primary_cat, all_cats, primary_subname, sub_per_cat_map, raw_outlier).
+    `raw_outlier` 는 centroid fallback 적용 *전* 의 raw label 이 -1 이었는지로,
+    호출부가 비싼 umap_cluster.transform() 를 다시 돌리지 않고 outlier 를
+    집계할 수 있게 한다 (per-paper transform 1회로 단일화).
     """
     import hdbscan as _hdbscan
 
@@ -125,14 +144,17 @@ def classify_via_bundle(vec_768, bundle):
 
     if bundle.get("degenerate") or hdbscan_model is None or umap_cluster is None:
         # 소규모 코퍼스 fallback 번들 (topic_modeling 이 클러스터링 없이 저장):
-        # UMAP/HDBSCAN 없이 아래 outlier 경로(centroid cosine)로 바로 배정
+        # UMAP/HDBSCAN 없이 아래 outlier 경로(centroid cosine)로 바로 배정.
+        # degenerate 는 raw outlier 집계에서 제외한다.
         primary_tid = -1
+        raw_outlier = False
     else:
         vec = np.asarray(vec_768, dtype=np.float32).reshape(1, -1)
         vec_5d = umap_cluster.transform(vec)
 
         labels, strengths = _hdbscan.approximate_predict(hdbscan_model, vec_5d)
         primary_tid = int(labels[0])
+        raw_outlier = primary_tid == -1
 
     # Outlier 강제 배정: 768D centroid 코사인 최단
     if primary_tid == -1 or primary_tid not in tid_to_cat:
@@ -157,7 +179,7 @@ def classify_via_bundle(vec_768, bundle):
         if len(all_cats) >= TOP_N_CATEGORIES:
             break
 
-    return primary_cat, all_cats, primary_subname, sub_per_cat
+    return primary_cat, all_cats, primary_subname, sub_per_cat, raw_outlier
 
 
 def _run_classify(topic, *, slugs=None, dry_run=False):
@@ -176,7 +198,10 @@ def _run_classify(topic, *, slugs=None, dry_run=False):
 
     # 1. HDBSCAN bundle (학습된 모델)
     bundle = load_bundle(topic_dir)
-    log(f"[bundle] {bundle['n_subclusters']} sub-clusters, "
+    # n_subclusters 는 metadata-only 키라 load_bundle 의 required 검증 대상이 아니다.
+    # 구버전/부분 번들에 없을 수 있으므로 centroids 개수로 fallback (KeyError 방지).
+    n_subclusters = bundle.get("n_subclusters", len(bundle.get("centroids", {})))
+    log(f"[bundle] {n_subclusters} sub-clusters, "
         f"{len(set(bundle['tid_to_cat'].values()))} parent categories, "
         f"trained_at={bundle.get('trained_at', '?')}")
 
@@ -208,9 +233,8 @@ def _run_classify(topic, *, slugs=None, dry_run=False):
     skipped = 0
     outlier_count = 0
     assignments = []
+    processed_vecs = []  # (slug, vec_768) for papers (re)classified this run → viz coords
 
-    # Detect outliers separately to report
-    import hdbscan as _hdbscan
     for p in topic_papers:
         slug = p["slug"]
         if slug_filter is not None and slug not in slug_filter:
@@ -229,16 +253,11 @@ def _run_classify(topic, *, slugs=None, dry_run=False):
             skipped += 1
             continue
 
-        # Detect raw outlier flag for reporting (before centroid fallback).
-        # degenerate 번들(소규모 코퍼스)은 UMAP/HDBSCAN 이 없으므로 스킵.
-        if not (bundle.get("degenerate") or bundle["umap_cluster"] is None):
-            vec_5d = bundle["umap_cluster"].transform(
-                np.asarray(vec, dtype=np.float32).reshape(1, -1))
-            raw_labels, _ = _hdbscan.approximate_predict(bundle["hdbscan_model"], vec_5d)
-            if int(raw_labels[0]) == -1:
-                outlier_count += 1
-
-        primary, all_cats, sub, sub_map = classify_via_bundle(vec, bundle)
+        # umap_cluster.transform() 는 per-call 비용이 크므로 paper 당 1회만 돈다.
+        # classify_via_bundle 가 raw outlier 여부를 반환하므로 별도 transform 불필요.
+        primary, all_cats, sub, sub_map, raw_outlier = classify_via_bundle(vec, bundle)
+        if raw_outlier:
+            outlier_count += 1
 
         prev = p.get("classifications", {}).get(topic, {})
         if prev.get("primary_category") == primary and prev.get("sub_category") == sub:
@@ -255,6 +274,7 @@ def _run_classify(topic, *, slugs=None, dry_run=False):
                 "sub_category": sub,
                 "sub_categories": sub_map,
             }
+            processed_vecs.append((slug, vec))
 
         assignments.append({
             "slug": slug,
@@ -278,6 +298,26 @@ def _run_classify(topic, *, slugs=None, dry_run=False):
     atomic_write_json(index_path, all_papers)
     log(f"[write] {index_path}")
 
+    # 시각화 좌표 갱신 — 번들에 umap_2d/3d 가 있으면 신규 논문 위치를
+    # _umap_coords.json 에 채운다(네트워크에 제대로 배치되도록). 기존 좌표는
+    # topic_modeling/복구가 fit_transform 으로 만든 canonical 값이므로 보존하고,
+    # _umap_coords 에 없는(=진짜 신규) slug 만 bundle.transform 으로 추가한다.
+    if processed_vecs:
+        cpath = Path(topic_dir) / "_umap_coords.json"
+        existing = {}
+        if cpath.exists():
+            try:
+                existing = json.loads(cpath.read_text(encoding="utf-8"))
+            except Exception:
+                existing = {}
+        missing = [(s, v) for s, v in processed_vecs if s not in existing]
+        viz = compute_viz_coords([v for _, v in missing], bundle) if missing else None
+        if viz:
+            for (s, _v), c in zip(missing, viz):
+                existing[s] = c
+            atomic_write_json(cpath, existing)
+            log(f"[write] {cpath}  (+{len(viz)} new viz coords)")
+
     cats_list = sorted({a["primary_category"] for a in assignments})
     cls_data = {
         "categories": [{"name": c} for c in cats_list],
@@ -286,6 +326,27 @@ def _run_classify(topic, *, slugs=None, dry_run=False):
     cls_path = Path(topic_dir) / "_new_classification.json"
     atomic_write_json(cls_path, cls_data)
     log(f"[write] {cls_path}  ({len(cats_list)} categories)")
+
+
+def compute_viz_coords(vecs_768, bundle):
+    """번들의 umap_2d/umap_3d transformer 로 2D/3D 시각화 좌표 계산. 번들에 없으면 None.
+
+    generate_network 가 읽는 `_umap_coords.json` 의 {x,y,x3,y3,z3} 형식 리스트를 반환.
+    backfill/topic_modeling 이 transformer 를 번들에 저장해 둔 경우에만 동작하며,
+    신규 논문을 full topic_modeling 재실행 없이 같은 시각화 공간에 투영한다.
+    """
+    u2 = bundle.get("umap_2d")
+    u3 = bundle.get("umap_3d")
+    if u2 is None or u3 is None:
+        return None
+    arr = np.asarray(vecs_768, dtype=np.float32)
+    if arr.ndim == 1:
+        arr = arr.reshape(1, -1)
+    c2 = u2.transform(arr)
+    c3 = u3.transform(arr)
+    return [{"x": float(c2[i, 0]), "y": float(c2[i, 1]),
+             "x3": float(c3[i, 0]), "y3": float(c3[i, 1]), "z3": float(c3[i, 2])}
+            for i in range(len(arr))]
 
 
 def main():
@@ -302,4 +363,6 @@ def main():
 
 
 if __name__ == "__main__":
+    from _env_guard import force_py312
+    force_py312()
     main()

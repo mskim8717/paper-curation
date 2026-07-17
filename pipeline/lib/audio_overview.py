@@ -76,7 +76,7 @@ def audio_modal_html(sub_text="팟캐스트형 오디오로 생성합니다. (Ge
     <div class="audio-row">
       <label>길이</label>
       <div class="audio-seg" id="seg-length">
-        <button data-v="10">10분</button><button data-v="20">20분</button><button data-v="30">30분</button>
+        <button data-v="10">10분</button><button data-v="20">20분</button><button data-v="30">30분</button><button data-v="50">50분</button>
       </div>
     </div>
     <div class="audio-row">
@@ -177,7 +177,7 @@ function audioCtx() {
     return window._audioContextProvider() || {title:"", review:"", connections:[]};
   return window._AUDIO || {title:"", review:"", connections:[]};
 }
-const SCRIPT_MODEL = "gemini-2.5-pro";
+const SCRIPT_MODEL = "gemini-3.1-pro-preview";
 const TTS_MODEL = "gemini-2.5-flash-preview-tts";
 const GBASE = "https://generativelanguage.googleapis.com/v1beta/models/";
 const SAMPLE_RATE = 24000;
@@ -519,7 +519,7 @@ function concatPcm(parts) {
 function pcmToMp3(pcm) {
   if (typeof lamejs === "undefined") throw new Error("MP3 인코더(lamejs) 로드 실패");
   const samples = new Int16Array(pcm.buffer, pcm.byteOffset, pcm.length >> 1);
-  const enc = new lamejs.Mp3Encoder(1, SAMPLE_RATE, 128);
+  const enc = new lamejs.Mp3Encoder(1, SAMPLE_RATE, 64);
   const block = 1152, out = [];
   for (let i = 0; i < samples.length; i += block) {
     const buf = enc.encodeBuffer(samples.subarray(i, i + block));
@@ -597,7 +597,7 @@ async function runAudioGen() {
     }
   }
   try {
-    setStatus("✍️ 대본 생성 중... (gemini-2.5-pro)");
+    setStatus(`✍️ 대본 생성 중... (${SCRIPT_MODEL})`);
     const script = await callScript(buildScriptPrompt(s));
     if (!script) throw new Error("대본이 비어 있습니다");
     setStatus("🔊 음성 합성 중...");
@@ -618,19 +618,23 @@ async function runAudioGen() {
     setStatus("✅ 완료 (약 " + Math.round(dur) + "초). 다운로드 가능.");
 
     // Send by email (optional). LOCAL pages have a baked recipient list;
-    // WEB pages ask the visitor once and remember in localStorage. If
-    // /api/audio-email isn't deployed (e.g. running plain
-    // `python -m http.server`), we silently skip — the download is the
-    // fallback either way.
+    // WEB pages ask the visitor once and remember in localStorage. The send
+    // always targets the deployed worker (absolute AUDIO_EMAIL_ENDPOINT), so
+    // localhost / file:// pages can mail too; the download stays the fallback.
     try {
       const recipients = resolveAudioRecipients();
       if (recipients.length) {
-        setStatus("📧 이메일로 전송 중...");
-        const ok = await sendAudioEmail(blob, fname, ctx.title || "Audio Overview", s.lang, recipients);
-        if (ok) {
-          setStatus("✅ 완료 — 다운로드 가능 + 이메일 발송됨 (" + recipients.join(", ") + ")");
+        const MAX_MAIL_BYTES = 25 * 1024 * 1024;   // Resend/worker 첨부 상한
+        if (blob.size > MAX_MAIL_BYTES) {
+          setStatus("✅ 완료 — 다운로드 가능 (오디오 " + Math.round(blob.size / 1048576) + "MB > 이메일 첨부 한도 25MB → 이메일 생략. 위에서 MP3를 받으세요)");
         } else {
-          setStatus("✅ 완료 — 다운로드 가능 (이메일 발송은 실패. 위에서 직접 받으세요)");
+          setStatus("📧 이메일로 전송 중...");
+          const ok = await sendAudioEmail(blob, fname, ctx.title || "Audio Overview", s.lang, recipients);
+          if (ok) {
+            setStatus("✅ 완료 — 다운로드 가능 + 이메일 발송됨 (" + recipients.join(", ") + ")");
+          } else {
+            setStatus("✅ 완료 — 다운로드 가능 (이메일 발송 실패. 위에서 직접 받으세요)");
+          }
         }
       }
     } catch (mailErr) {
@@ -674,6 +678,10 @@ function resolveAudioRecipients() {
   return [t];
 }
 
+// 로컬 페이지(localhost / file://)에는 /api 라우트가 없으므로 상대경로는
+// worker 에 도달하지 못한다 — 항상 배포된 worker 절대경로로 발송한다.
+var AUDIO_EMAIL_ENDPOINT = "https://paper-curation.jehyunlee.dev/api/audio-email";
+
 async function sendAudioEmail(blob, filename, title, lang, recipients) {
   const fd = new FormData();
   fd.append("mp3", blob, filename);
@@ -682,7 +690,7 @@ async function sendAudioEmail(blob, filename, title, lang, recipients) {
   fd.append("lang", lang || "ko");
   for (const r of recipients) fd.append("email", r);
   try {
-    const r = await fetch("/api/audio-email", { method: "POST", body: fd });
+    const r = await fetch(AUDIO_EMAIL_ENDPOINT, { method: "POST", body: fd });
     if (!r.ok) {
       const txt = await r.text();
       console.warn("audio-email server returned", r.status, txt.slice(0, 200));

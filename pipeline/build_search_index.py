@@ -3,9 +3,14 @@ Build a Deep Research search index (for client-side RAG).
 
 Reads every review.md that belongs to the given topic, splits each one
 into section-aware chunks (Essence, Motivation, How, Achievement,
-Originality), embeds each chunk with OpenAI `text-embedding-3-small`,
-L2-normalises and quantises the 1536-dim float32 vectors down to int8,
+Originality), embeds each chunk with Google `gemini-embedding-001`
+(task_type RETRIEVAL_DOCUMENT, output_dimensionality=768),
+L2-normalises and quantises the 768-dim float32 vectors down to int8,
 then writes `docs/{topic}/_search_index.json`.
+
+주의(gotcha): gemini-embedding-001 은 output_dimensionality 가 3072 가
+아닐 때 정규화되지 않은 벡터를 돌려준다. int8 양자화 전에 반드시 L2
+정규화해야 한다 — quantize_int8_l2() 가 그 정규화를 수행하므로 커버된다.
 
 The resulting JSON is fetched lazily by the topic's index.html when a
 user activates Deep Research mode. The browser dequantises the int8
@@ -23,6 +28,7 @@ Usage:
 
 import argparse
 import base64
+import hashlib
 import json
 import os
 import re
@@ -34,14 +40,65 @@ PIPELINE_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(PIPELINE_DIR))
 from config_loader import DOCS_DIR, PAPERS_DIR, PROJECT_ROOT, get_topic_dir, get_papers_index_path
 
+# Zotero metadata (normalized-title -> {url, doi}) captured by build_topic_index.
+# Gives a real external URL for papers whose review.md frontmatter has a
+# placeholder DOI ("미제공"/"N/A"/"-") or none. Optional + local-only.
+_ZMETA_CACHE = None
 
-def _load_openai_key_from_config() -> str:
-    """Fallback: read openai_api_key from config.json (written by setup.py)."""
+
+def _zotero_meta():
+    global _ZMETA_CACHE
+    if _ZMETA_CACHE is None:
+        _ZMETA_CACHE = {}
+        try:
+            _p = DOCS_DIR / "_zotero_meta.json"
+            if _p.exists():
+                _ZMETA_CACHE = json.load(open(_p, encoding="utf-8"))
+        except Exception:
+            _ZMETA_CACHE = {}
+    return _ZMETA_CACHE
+
+
+def _znorm(s):
+    return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+
+
+def _resolve_external(title, doi, arxiv):
+    """(clean_doi, clean_arxiv, external_url): prefer a valid 10.x DOI, then an
+    arXiv id (incl. one mislabeled into the doi field), then a Zotero URL."""
+    doi = (doi or "").strip()
+    arxiv = (arxiv or "").strip()
+    if not arxiv and re.search(r"ar[xX]iv", doi):
+        m = re.search(r"(\d{4}\.\d{4,5})", doi)
+        if m:
+            arxiv = m.group(1)
+    if not re.match(r"^10\.\d{3,}/", doi):
+        doi = ""  # drop placeholders / mislabeled ids
+    z = _zotero_meta().get(_znorm(title)) or {}
+    if not doi:
+        zd = (z.get("doi") or "").strip()
+        if re.match(r"^10\.\d{3,}/", zd):
+            doi = zd
+    zurl = (z.get("url") or "").strip()
+    if doi:
+        ext = f"https://doi.org/{doi}"
+    elif arxiv:
+        ext = f"https://arxiv.org/abs/{arxiv}"
+    elif zurl.startswith("http"):
+        ext = zurl
+    else:
+        ext = ""
+    return doi, arxiv, ext
+
+
+def _load_gemini_key_from_config() -> str:
+    """Fallback: read gemini/google api key from config.json (written by setup.py)."""
     try:
         cfg_path = PROJECT_ROOT / "config.json"
         if cfg_path.exists():
             with open(cfg_path, "r", encoding="utf-8") as f:
-                return json.load(f).get("openai_api_key", "") or ""
+                cfg = json.load(f)
+            return (cfg.get("gemini_api_key") or cfg.get("google_api_key") or "") or ""
     except Exception:
         pass
     return ""
@@ -56,7 +113,30 @@ except ImportError:
 # Sections worth indexing (order matters — determines which chunk is
 # retrieved first when there is a tie). "How" carries method details,
 # "Achievement" carries results, "Originality" carries novelty framing.
-SECTIONS_TO_INDEX = ["Essence", "Motivation", "How", "Achievement", "Originality"]
+#
+# Limitation/Evaluation 은 모든 review.md 에 100% 존재하지만 누락돼 있었음:
+#   - Limitation: 약점·미해결 과제 검색 ("이 분야 한계는?")
+#   - Evaluation: 벤치마크·메트릭 검색 ("X benchmark 성능 비교")
+# extract_sections() 가 'Limitation & Further Study' → 'Limitation' 키로
+# 정규화하므로 짧은 이름으로 매칭 가능.
+#
+# Related Papers 는 cross-citation noise (다른 논문 제목/저자 leak) 우려로 보류.
+SECTIONS_TO_INDEX = [
+    "Essence", "Motivation", "How", "Achievement", "Originality",
+    "Limitation", "Evaluation",
+]
+
+# Evaluation 섹션의 점수 루브릭 줄("- Novelty: 4/5" 등)은 거의 모든
+# 논문에서 동일한 scaffolding 이라, 그대로 임베딩하면 ~2362 개의 사실상
+# 중복 벡터가 생겨 top-k 검색을 오염시킨다. chunking 전에 이 점수 줄만
+# 제거하고 paper-specific 한 **총평** 산문만 남긴다. (점수만 있고 산문이
+# 없으면 MIN_CHUNK_CHARS 미달로 자연히 chunk 가 빠진다.) Limitation 은
+# 진짜 산문이므로 그대로 둔다.
+EVAL_RUBRIC_LINE_RE = re.compile(
+    r"(?im)^[ \t]*[-*]?\s*"
+    r"(?:Novelty|Technical\s+Soundness|Significance|Clarity|Overall)"
+    r"\s*[:：]\s*\d+(?:\.\d+)?\s*/\s*\d+(?:\.\d+)?\s*$\n?"  # 4/5 또는 4.5/5
+)
 
 H2_RE = re.compile(r"^##\s+(.+?)\s*$", re.MULTILINE)
 FIGURE_RE = re.compile(
@@ -69,9 +149,10 @@ TABLE_LINE_RE = re.compile(r"^\s*\|.*\|\s*$", re.MULTILINE)
 WS_RE = re.compile(r"[ \t]+")
 BLANK_RE = re.compile(r"\n\s*\n\s*\n+")
 
-# OpenAI limits: text-embedding-3-small accepts up to 8192 tokens per
-# input. Korean averages ~2 chars/token, so 6000 chars is a safe cap
-# that also keeps the JSON payload reasonable.
+# Gemini limits: gemini-embedding-001 accepts up to 2048 tokens per input.
+# Korean averages ~2 chars/token, so 6000 chars (~3000 tokens) can overflow;
+# auto_truncate=True 로 초과분은 모델이 잘라낸다. 6000 자 cap 은 JSON
+# payload 크기를 적당히 유지하기 위한 것이기도 하다.
 MAX_CHUNK_CHARS = 6000
 MIN_CHUNK_CHARS = 40
 
@@ -214,6 +295,7 @@ def parse_review(md_path: Path, slug: str) -> dict:
     authors: list[str] = []
     doi = ""
     arxiv = ""
+    journal = ""
     body = text
     if text.startswith("---"):
         end = text.find("\n---", 3)
@@ -225,15 +307,20 @@ def parse_review(md_path: Path, slug: str) -> dict:
                     authors = [str(a).strip() for a in fm["authors"] if str(a).strip()]
                 doi = str(fm.get("doi") or "").strip()
                 arxiv = str(fm.get("arxiv") or "").strip()
+                journal = str(fm.get("journal") or "").strip()
             except Exception:
                 pass
             body = text[end + 4:]
 
-    # ── Body-blockquote fallback ─────────────────────────────────────────
-    if not authors:
-        am = re.search(r"\*\*저자\*\*:\s*([^|*\n]+?)(?:\s*\|)", body)
-        if am:
-            authors = [a.strip() for a in am.group(1).split(",") if a.strip()]
+    # ── Body-blockquote 저자 라인 ────────────────────────────────────────
+    # frontmatter authors 는 build_papers_index 단계에서 5명으로 truncate되어
+    # 시니어(주로 마지막) 저자가 누락된다(예: Dashun Wang). 본문 "> **저자**:"
+    # 라인은 전체 저자를 보존하므로 더 긴 쪽을 채택해 저자 기반 검색 누락을 막는다.
+    am = re.search(r"\*\*저자\*\*:\s*([^|*\n]+?)(?:\s*\|)", body)
+    if am:
+        body_authors = [a.strip() for a in am.group(1).split(",") if a.strip()]
+        if len(body_authors) > len(authors):
+            authors = body_authors
     if not doi:
         dm = re.search(r"\*\*DOI\*\*:\s*\[?([^\]\s\)]+)", body)
         if dm:
@@ -261,7 +348,12 @@ def parse_review(md_path: Path, slug: str) -> dict:
     for sec_name in SECTIONS_TO_INDEX:
         if sec_name not in sections:
             continue
-        cleaned = clean_chunk_text(sections[sec_name])
+        raw = sections[sec_name]
+        # Evaluation 은 점수 루브릭 줄을 떼어내 중복 벡터 오염을 막는다.
+        # (총평 산문만 남으면 paper-specific, 점수만 있으면 MIN 미달로 drop)
+        if sec_name == "Evaluation":
+            raw = EVAL_RUBRIC_LINE_RE.sub("", raw)
+        cleaned = clean_chunk_text(raw)
         if len(cleaned) < MIN_CHUNK_CHARS:
             continue
         if len(cleaned) > MAX_CHUNK_CHARS:
@@ -287,10 +379,11 @@ def parse_review(md_path: Path, slug: str) -> dict:
     return {
         "title": title,
         "year": year,
-        "authors": authors[:8],          # cap at 8 to keep index small
+        "authors": authors,              # 전체 저자 유지 (저자 기반 검색 완전성)
         "first_author": first_author,
         "doi": doi,
         "arxiv": arxiv,
+        "journal": journal,
         "figures": figures,
         "chunks": chunks,
     }
@@ -311,22 +404,226 @@ def quantize_int8_l2(vec: list) -> bytes:
     return q.tobytes()
 
 
-def embed_batch(client, texts: list, model: str) -> list:
-    """Call OpenAI embeddings with retry."""
-    last_err = None
-    for attempt in range(3):
+# ── Content-addressed embedding cache ────────────────────────────────────
+# 매 build 마다 ~16k chunk 를 전부 재임베딩하면 한국망 Gemini 호출이 느리고
+# (transient 429 한 번에 전체가 죽고) 비용이 든다. chunk_text 는 review.md
+# 에서 deterministic 하게 나오므로, sha256(model + text) → 양자화된 emb(b64)
+# 로 캐싱한다. 양자화된 벡터(=index 에 그대로 들어가는 값)를 저장하므로
+# 재양자화로 인한 drift 가 없다 (int8 quantization 과 100% 일관).
+EMBED_CACHE_NAME = "_embedding_cache.json"
+# 임베딩 바이너리 사이드카 — chunk 순서대로 dim 바이트씩 (JSON 의 chunks 와 1:1)
+EMB_BIN_NAME = "_search_index_emb.bin"
+
+
+def _chunk_sha(model: str, text: str) -> str:
+    """Cache key = sha256 over model + chunk text (deterministic)."""
+    h = hashlib.sha256()
+    h.update(model.encode("utf-8"))
+    h.update(b"\n")
+    h.update(text.encode("utf-8"))
+    return h.hexdigest()
+
+
+def load_embedding_cache(topic_dir: Path, model: str) -> dict:
+    """Build {text_sha: emb_b64} from the prior index + sidecar cache.
+
+    Two sources, both keyed by the same sha so a hit is a hit:
+      1. the previous _search_index.json (already shipped, has text+emb)
+      2. the _embedding_cache.json sidecar (partial-save / resume store)
+    Entries whose model does not match are ignored (model is part of the sha).
+    """
+    cache: dict = {}
+
+    # 1) previous index — derive sha from stored text + (its) model
+    prev_path = topic_dir / "_search_index.json"
+    if prev_path.exists():
         try:
-            resp = client.embeddings.create(input=texts, model=model)
-            return [d.embedding for d in resp.data]
+            prev = json.loads(prev_path.read_text(encoding="utf-8"))
+            prev_model = prev.get("model", model)
+            if prev_model == model:
+                prev_chunks = prev.get("chunks", [])
+                # 신형 포맷: emb 는 바이너리 사이드카(emb_file)에 chunk 순서대로
+                # dim 바이트씩 — 거기서 잘라 b64 로 복원해 캐시에 넣는다.
+                bin_blob = None
+                prev_dim = int(prev.get("dim") or 0)
+                if prev.get("emb_file") and prev_dim > 0:
+                    bin_path = topic_dir / prev["emb_file"]
+                    if (bin_path.exists()
+                            and bin_path.stat().st_size == prev_dim * len(prev_chunks)):
+                        bin_blob = bin_path.read_bytes()
+                for ci, ch in enumerate(prev_chunks):
+                    txt = ch.get("text")
+                    if not txt:
+                        continue
+                    emb = ch.get("emb")
+                    if not emb and bin_blob is not None:
+                        emb = base64.b64encode(
+                            bin_blob[ci * prev_dim:(ci + 1) * prev_dim]
+                        ).decode("ascii")
+                    if not emb:
+                        continue
+                    sha = ch.get("text_sha") or _chunk_sha(model, txt)
+                    cache[sha] = emb
+        except Exception as e:
+            print(f"      WARN: could not read prior index for cache ({e})")
+
+    # 2) sidecar cache — already keyed by sha, model-scoped
+    side_path = topic_dir / EMBED_CACHE_NAME
+    if side_path.exists():
+        try:
+            side = json.loads(side_path.read_text(encoding="utf-8"))
+            if side.get("model") == model:
+                for sha, emb in (side.get("emb") or {}).items():
+                    cache[sha] = emb
+        except Exception as e:
+            print(f"      WARN: could not read embedding cache ({e})")
+
+    return cache
+
+
+def save_embedding_cache(topic_dir: Path, model: str, sha_to_emb: dict) -> None:
+    """Persist the full {text_sha: emb_b64} map to the sidecar (atomic)."""
+    side_path = topic_dir / EMBED_CACHE_NAME
+    tmp = side_path.with_suffix(side_path.suffix + ".tmp")
+    payload = {"model": model, "count": len(sha_to_emb), "emb": sha_to_emb}
+    tmp.write_text(
+        json.dumps(payload, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8",
+    )
+    os.replace(tmp, side_path)
+
+
+EMBED_MAX_ATTEMPTS = 6
+EMBED_BACKOFF_CAP_S = 60.0
+
+
+def _retry_after_seconds(err) -> float | None:
+    """Best-effort extraction of a Retry-After hint from a Gemini error.
+
+    한국↔Gemini 경로의 429 는 7초 backoff 로는 못 벗어날 수 있다. 에러가
+    노출하는 retry hint (응답 헤더 또는 .retry_after) 를 존중해 backoff 를
+    맞춘다 (상한 EMBED_BACKOFF_CAP_S). google-genai APIError 가 hint 를
+    안 주면 None 을 돌려주고 지수 backoff 로 떨어진다.
+    """
+    val = getattr(err, "retry_after", None)
+    if val is None:
+        resp = getattr(err, "response", None)
+        headers = getattr(resp, "headers", None)
+        if headers is not None:
+            try:
+                val = headers.get("retry-after") or headers.get("Retry-After")
+            except Exception:
+                val = None
+    if val is None:
+        return None
+    try:
+        return float(val)
+    except (TypeError, ValueError):
+        return None
+
+
+def embed_batch(client, texts: list, model: str) -> list:
+    """Embed a batch with gemini-embedding-001 (RETRIEVAL_DOCUMENT) + retry.
+
+    768-dim 출력을 task_type RETRIEVAL_DOCUMENT 로 요청한다. Retry-After 를
+    존중하고 backoff 를 EMBED_BACKOFF_CAP_S 로 cap 하며, 반환 벡터 수가
+    입력 수와 다르면 (조용한 chunk↔embedding misalignment 대신) 시끄럽게
+    실패한다. 정규화는 호출측 quantize_int8_l2() 가 수행한다 (gemini 는
+    output_dimensionality != 3072 일 때 비정규화 벡터를 돌려주므로).
+    """
+    from google.genai import types as _gtypes
+
+    cfg = _gtypes.EmbedContentConfig(
+        task_type="RETRIEVAL_DOCUMENT",
+        output_dimensionality=768,
+    )
+    last_err = None
+    for attempt in range(EMBED_MAX_ATTEMPTS):
+        try:
+            resp = client.models.embed_content(model=model, contents=texts, config=cfg)
+            vecs = [list(e.values) for e in (resp.embeddings or [])]
+            # Per-batch length guard — a short/long batch would otherwise
+            # silently misalign chunks↔embeddings downstream (zip()).
+            if len(vecs) != len(texts):
+                raise RuntimeError(
+                    f"embedding count {len(vecs)} != input count {len(texts)}"
+                )
+            return vecs
         except Exception as e:
             last_err = e
-            wait = 2 ** attempt
-            print(f"    embed retry {attempt + 1}/3 after {wait}s ({e})")
+            if attempt == EMBED_MAX_ATTEMPTS - 1:
+                break
+            hint = _retry_after_seconds(e)
+            wait = hint if hint is not None else 2 ** attempt
+            wait = min(float(wait), EMBED_BACKOFF_CAP_S)
+            print(f"    embed retry {attempt + 1}/{EMBED_MAX_ATTEMPTS} after {wait:.0f}s ({e})")
             time.sleep(wait)
-    raise RuntimeError(f"embed_batch failed after 3 attempts: {last_err}")
+    raise RuntimeError(f"embed_batch failed after {EMBED_MAX_ATTEMPTS} attempts: {last_err}")
 
 
-def build_index(topic: str, model: str, limit: int | None, dry_run: bool):
+# ── text.md 고신호 본문 청크 (로컬 토픽 전용) ─────────────────────────────
+# review.md 는 정량 디테일(수치/데이터셋/하이퍼파라미터)을 요약하며 떨군다. A/B 실험
+# 결과 매몰 사실 질의 적중률이 review-only 대비 크게 오른다(ai4s 6%→56%, scisci
+# 47%→67%) — 일반 질의 회귀는 없었다. 단 원문 발췌라 저작권상 **배포 토픽엔 절대
+# 포함하지 않는다**(클라우드 비공개). docs/.assetsignore 로 로컬/배포를 자동 판별.
+_TXT_REF_RE = re.compile(r'(?im)^\s*#{0,4}\s*(references|bibliography|참고문헌|acknowledg(e?ments)?)\b')
+_TXT_SIGNAL = re.compile(r'(?i)\b(method|approach|propos|algorithm|model|train|fine-?tun|'
+                         r'dataset|corpus|experiment|evaluat|result|baseline|ablation|'
+                         r'accuracy|precision|recall|f1|auc|benchmark|metric|parameter|'
+                         r'hyper-?parameter|we (train|use|evaluate|propose|find|observe|measure|report))\b')
+_TXT_NUM = re.compile(r'\b\d+(?:\.\d+)?\s?%|\b\d+\.\d+\b')
+TEXTMD_MAX_CHUNKS = 5
+TEXTMD_CHAR_BUDGET = 9000
+
+
+def _text_windows(t, size=1400, overlap=200):
+    out, i = [], 0
+    while i < len(t):
+        out.append(t[i:i + size])
+        i += size - overlap
+    return out
+
+
+def textmd_high_signal_chunks(slug: str) -> list:
+    """text.md 의 References 이전 본문에서 method/experiment/수치 밀도 상위 윈도우만 추출."""
+    p = PAPERS_DIR / slug / "text.md"
+    if not p.exists():
+        return []
+    try:
+        t = p.read_text(encoding="utf-8", errors="ignore")
+    except Exception:
+        return []
+    m = _TXT_REF_RE.search(t)
+    if m:
+        t = t[:m.start()]
+    scored = []
+    for w in _text_windows(t):
+        s = len(_TXT_SIGNAL.findall(w)) + 0.5 * len(_TXT_NUM.findall(w))
+        if s >= 3:
+            scored.append((s, w))
+    scored.sort(key=lambda x: -x[0])
+    out, total = [], 0
+    for _, w in scored[:TEXTMD_MAX_CHUNKS]:
+        c = clean_chunk_text(w)[:MAX_CHUNK_CHARS]
+        if len(c) >= MIN_CHUNK_CHARS:
+            out.append(c)
+            total += len(c)
+        if total >= TEXTMD_CHAR_BUDGET:
+            break
+    return out
+
+
+def is_local_topic(topic: str) -> bool:
+    """배포(Cloudflare) 제외 토픽인지 — docs/.assetsignore 에 '{topic}/' 가 있으면 로컬."""
+    ai = DOCS_DIR / ".assetsignore"
+    if not ai.exists():
+        return False
+    want = f"{topic}/"
+    return any(line.strip() == want for line in ai.read_text(encoding="utf-8").splitlines())
+
+
+def build_index(topic: str, model: str, limit: int | None, dry_run: bool,
+                include_text: str = "auto"):
     topic_dir = get_topic_dir(topic)
     if not topic_dir.exists():
         print(f"ERROR: topic dir {topic_dir} does not exist")
@@ -348,10 +645,26 @@ def build_index(topic: str, model: str, limit: int | None, dry_run: bool):
         topic_papers = topic_papers[:limit]
         print(f"      --limit={limit} -> using {len(topic_papers)}")
 
+    # --- text.md 보강 정책: 클라우드=review-only(A), 로컬=review+text(B) ---
+    local = is_local_topic(topic)
+    if include_text == "auto":
+        use_text = local
+    elif include_text == "yes":
+        if not local:
+            print(f"ERROR: --include-text=yes 는 배포(클라우드) 토픽 '{topic}' 에 허용되지 않음 "
+                  f"(원문 발췌가 _search_index.json 으로 클라우드에 노출됨). 로컬 토픽에서만 가능.")
+            sys.exit(4)
+        use_text = True
+    else:  # "no"
+        use_text = False
+    print(f"      [text.md 보강] {'ON — 로컬 토픽(B)' if use_text else 'OFF — review-only(A)'}"
+          f"  (local={local})")
+
     # --- Parse reviews ---
     papers_meta: dict = {}
     pending_chunks: list = []  # each: {slug, section, text}
     skipped = 0
+    text_chunk_count = 0
     print("[2/4] Parsing reviews and chunking...")
     for p in topic_papers:
         slug = p["slug"]
@@ -378,12 +691,10 @@ def build_index(topic: str, model: str, limit: int | None, dry_run: bool):
         # from anywhere.
         _doi = (parsed.get("doi") or p.get("doi") or "").strip()
         _arxiv = (parsed.get("arxiv") or p.get("arxiv") or "").strip()
-        if _doi:
-            _ext_url = f"https://doi.org/{_doi}" if not _doi.startswith("http") else _doi
-        elif _arxiv:
-            _ext_url = f"https://arxiv.org/abs/{_arxiv}"
-        else:
-            _ext_url = ""
+        # Clean placeholder DOIs + extract a mislabeled arXiv id, and fall back
+        # to the real Zotero URL so non-DOI papers still get a portable link.
+        _doi, _arxiv, _ext_url = _resolve_external(
+            parsed.get("title") or p.get("title") or "", _doi, _arxiv)
 
         papers_meta[slug] = {
             "title": parsed["title"],
@@ -395,6 +706,7 @@ def build_index(topic: str, model: str, limit: int | None, dry_run: bool):
             "first_author": parsed.get("first_author", ""),
             "doi": _doi,
             "arxiv": _arxiv,
+            "journal": (parsed.get("journal") or "").strip() or "preprint",
             "figures": parsed["figures"],
         }
         for ch in parsed["chunks"]:
@@ -403,8 +715,18 @@ def build_index(topic: str, model: str, limit: int | None, dry_run: bool):
                 "section": ch["section"],
                 "text": ch["text"],
             })
+        # 로컬 토픽: review 가 떨군 정량 디테일을 text.md 고신호 청크로 보강(B)
+        if use_text:
+            for _ti, _tc in enumerate(textmd_high_signal_chunks(slug)):
+                pending_chunks.append({
+                    "slug": slug,
+                    "section": f"Detail ({_ti + 1})",
+                    "text": _tc,
+                })
+                text_chunk_count += 1
 
-    print(f"      {len(papers_meta)} papers, {len(pending_chunks)} chunks, {skipped} skipped")
+    print(f"      {len(papers_meta)} papers, {len(pending_chunks)} chunks "
+          f"(review {len(pending_chunks) - text_chunk_count} + text.md {text_chunk_count}), {skipped} skipped")
 
     # --- Index personal notes from docs/notes/{topic}/ (git-ignored) ---
     # These are operator-authored markdown files (hypotheses, meeting notes,
@@ -429,7 +751,7 @@ def build_index(topic: str, model: str, limit: int | None, dry_run: bool):
             _title = _title_m.group(1).strip() if _title_m else _note_path.stem.replace("-", " ").replace("_", " ").title()
             _note_slug = f"_note_{_note_path.stem}"
 
-            _rel = str(_note_path.relative_to(DOCS_DIR / "notes")).replace("\\\\", "/")
+            _rel = _note_path.relative_to(DOCS_DIR / "notes").as_posix()
             papers_meta[_note_slug] = {
                 "title": _title,
                 "year": "",
@@ -437,8 +759,10 @@ def build_index(topic: str, model: str, limit: int | None, dry_run: bool):
                 "url": f"../notes/{_rel}",
                 "figures": [],
             }
-            # Split into paragraphs (max 5 chunks per note)
-            _paras = [p.strip() for p in _cleaned.split("\\n\\n") if len(p.strip()) >= MIN_CHUNK_CHARS]
+            # Split into paragraphs (max 5 chunks per note). clean_chunk_text
+            # collapses 3+ blank lines to exactly two newlines, so a REAL
+            # "\n\n" is the correct separator (not the literal 4-char string).
+            _paras = [p.strip() for p in _cleaned.split("\n\n") if len(p.strip()) >= MIN_CHUNK_CHARS]
             if not _paras:
                 _paras = [_cleaned]
             for _i, _para in enumerate(_paras[:5]):
@@ -457,96 +781,185 @@ def build_index(topic: str, model: str, limit: int | None, dry_run: bool):
 
     total_chars = sum(len(c["text"]) for c in pending_chunks)
     approx_tokens = total_chars // 3  # conservative estimate
-    print(f"      approx {approx_tokens:,} input tokens ~= ${approx_tokens * 0.00000002:.4f} (text-embedding-3-small)")
+    # gemini-embedding-001: $0.15 / 1M input tokens
+    print(f"      approx {approx_tokens:,} input tokens ~= ${approx_tokens * 0.00000015:.4f} (gemini-embedding-001)")
 
-    # --- Embed ---
+    # Cache key per chunk (sha256(model + text)); reused everywhere below.
+    for ch in pending_chunks:
+        ch["text_sha"] = _chunk_sha(model, ch["text"])
+
+    # --- Content-addressed embedding cache (incremental) ---
+    # sha → 양자화된 emb(b64). 이전 index + sidecar 에서 로드한 뒤, 캐시에
+    # 없는 chunk 만 Gemini 로 보낸다. dry-run 도 캐시 hit 은 재사용한다.
+    sha_to_emb: dict = load_embedding_cache(topic_dir, model)
+    miss_chunks = [c for c in pending_chunks if c["text_sha"] not in sha_to_emb]
+    n_hit = len(pending_chunks) - len(miss_chunks)
+    print(f"      cache: {n_hit} hit / {len(miss_chunks)} miss (of {len(pending_chunks)})")
+
+    # --- Embed (cache misses only) ---
     if dry_run:
-        print("[3/4] --dry-run: skipping embedding API calls")
-        embeddings = [[0.0] * 1536 for _ in pending_chunks]
+        print("[3/4] --dry-run: zero-vectors for cache misses")
+        for c in miss_chunks:
+            qbytes = quantize_int8_l2([0.0] * 768)
+            sha_to_emb[c["text_sha"]] = base64.b64encode(qbytes).decode("ascii")
+        dim = 768
+    elif not miss_chunks:
+        print("[3/4] All chunks served from cache — no API calls")
+        dim = 0  # filled in below from any cached vector
     else:
-        print(f"[3/4] Embedding {len(pending_chunks)} chunks with {model}...")
+        print(f"[3/4] Embedding {len(miss_chunks)} chunks with {model}...")
         try:
-            from openai import OpenAI
+            from google import genai
         except ImportError:
-            print("ERROR: openai package not installed. Run: pip install openai")
+            print("ERROR: google-genai package not installed. Run: pip install google-genai")
             sys.exit(1)
 
-        api_key = os.environ.get("OPENAI_API_KEY") or _load_openai_key_from_config()
+        api_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY") or _load_gemini_key_from_config()
         if not api_key:
-            print("ERROR: OPENAI_API_KEY not set (env var or config.json).")
-            print("       Set OPENAI_API_KEY or run 'python pipeline/setup.py' to save it into config.json.")
+            print("ERROR: GOOGLE_API_KEY not set (env var or config.json).")
+            print("       Set GOOGLE_API_KEY/GEMINI_API_KEY or run 'python pipeline/setup.py' to save it into config.json.")
             sys.exit(1)
 
-        client = OpenAI(api_key=api_key)
-        embeddings: list = []
-        BATCH = 100
+        client = genai.Client(api_key=api_key)
+        # gemini-embedding-001 은 요청당 최대 100 input 까지 받지만, 한국망
+        # 타임아웃·부분실패 노출면을 줄이려 50 으로 둔다.
+        BATCH = 50
         t0 = time.time()
-        for i in range(0, len(pending_chunks), BATCH):
-            batch = pending_chunks[i:i + BATCH]
+        embedded = 0
+        for i in range(0, len(miss_chunks), BATCH):
+            batch = miss_chunks[i:i + BATCH]
             texts = [c["text"] for c in batch]
-            vecs = embed_batch(client, texts, model)
-            embeddings.extend(vecs)
-            done = i + len(batch)
+            try:
+                vecs = embed_batch(client, texts, model)
+            except Exception as e:
+                # Partial-save: persist everything embedded so far (plus all
+                # cache hits) so a later run resumes instead of re-embedding
+                # the ~N good batches we already paid for. Do NOT clobber the
+                # existing _search_index.json — leave it stale-but-valid.
+                save_embedding_cache(topic_dir, model, sha_to_emb)
+                remaining = len(miss_chunks) - embedded
+                print(f"ERROR: embedding aborted after {embedded}/{len(miss_chunks)} "
+                      f"new chunks ({e})")
+                print(f"       Saved partial cache to {topic_dir / EMBED_CACHE_NAME}; "
+                      f"rerun to resume the remaining {remaining}.")
+                sys.exit(4)
+            # embed_batch already asserts len(vecs)==len(texts); fold the
+            # freshly-embedded (quantized) vectors into the sha→emb map.
+            for c, emb in zip(batch, vecs):
+                qbytes = quantize_int8_l2(emb)
+                sha_to_emb[c["text_sha"]] = base64.b64encode(qbytes).decode("ascii")
+            embedded += len(batch)
+            done = embedded
             elapsed = time.time() - t0
             rate = done / elapsed if elapsed > 0 else 0
-            eta = (len(pending_chunks) - done) / rate if rate > 0 else 0
-            print(f"      {done}/{len(pending_chunks)}  ({rate:.1f}/s, ETA {eta:.0f}s)")
+            eta = (len(miss_chunks) - done) / rate if rate > 0 else 0
+            print(f"      {done}/{len(miss_chunks)}  ({rate:.1f}/s, ETA {eta:.0f}s)")
+        dim = 0  # filled in below
 
-    dim = len(embeddings[0]) if embeddings else 0
+    # dim from the int8 byte length of any cached/embedded vector (1 byte/dim)
+    if pending_chunks:
+        _sample = sha_to_emb.get(pending_chunks[0]["text_sha"])
+        if _sample:
+            dim = len(base64.b64decode(_sample))
     print(f"      dim={dim}")
 
-    # --- Quantise + assemble JSON ---
-    print("[4/4] Quantising and writing JSON...")
+    # --- Assemble JSON (every chunk's emb must now be present) ---
+    print("[4/4] Assembling and writing JSON...")
+    # Loud guard: no pending chunk may be missing its embedding, otherwise
+    # the index would silently ship misaligned/short.
+    missing = [c["text_sha"] for c in pending_chunks if c["text_sha"] not in sha_to_emb]
+    if missing:
+        print(f"ERROR: {len(missing)} chunk(s) have no embedding after embed pass — aborting")
+        sys.exit(4)
+
+    # 임베딩은 JSON 이 아니라 바이너리 사이드카(.bin)로 분리한다.
+    # 이유 (cold-load 최적화, 2026-06-12): emb(b64) 가 인덱스 JSON 의 ~64% 를
+    # 차지해 JSON.parse 가 무겁고, 쿼리마다 per-chunk atob 디코드 비용도 컸다.
+    # .bin 은 chunk 순서대로 dim 바이트씩 — 브라우저가 ArrayBuffer 로 받아
+    # Int8Array 뷰만 만들면 파싱 0ms. (구형 chunk.emb 포맷은 클라이언트가
+    # 계속 지원하므로 미재빌드 토픽도 동작.)
     out_chunks = []
-    for chunk, emb in zip(pending_chunks, embeddings):
-        qbytes = quantize_int8_l2(emb)
+    emb_blob = bytearray()
+    for chunk in pending_chunks:
+        raw = base64.b64decode(sha_to_emb[chunk["text_sha"]])
+        if len(raw) != dim:
+            print(f"ERROR: embedding byte length {len(raw)} != dim {dim} "
+                  f"(sha {chunk['text_sha'][:12]}) — aborting")
+            sys.exit(4)
+        emb_blob.extend(raw)
         out_chunks.append({
             "slug": chunk["slug"],
             "section": chunk["section"],
             "text": chunk["text"],
-            "emb": base64.b64encode(qbytes).decode("ascii"),
+            "text_sha": chunk["text_sha"],   # self-describing cache key
         })
+    assert len(out_chunks) == len(pending_chunks), (
+        f"out_chunks {len(out_chunks)} != pending_chunks {len(pending_chunks)}"
+    )
+    assert len(emb_blob) == dim * len(out_chunks), (
+        f"emb blob {len(emb_blob)}B != dim {dim} × {len(out_chunks)} chunks"
+    )
 
     out = {
         "model": model,
         "dim": dim,
         "quant": "int8-l2norm",
         "count": len(out_chunks),
+        "emb_file": EMB_BIN_NAME,
         "papers": papers_meta,
         "chunks": out_chunks,
     }
 
+    bin_path = topic_dir / EMB_BIN_NAME
+    bin_path.write_bytes(bytes(emb_blob))
     out_path = topic_dir / "_search_index.json"
     out_path.write_text(
         json.dumps(out, ensure_ascii=False, separators=(",", ":")),
         encoding="utf-8",
     )
     size_kb = out_path.stat().st_size // 1024
-    print(f"      wrote {out_path} ({size_kb:,} KB)")
+    bin_kb = bin_path.stat().st_size // 1024
+    print(f"      wrote {out_path} ({size_kb:,} KB) + {EMB_BIN_NAME} ({bin_kb:,} KB)")
+
+    # Refresh the sidecar cache so the next build resumes from real vectors.
+    # Skip on dry-run — its zero-vectors must never poison the cache.
+    if not dry_run:
+        # Keep only shas that are part of this build (prune drifted entries).
+        live = {c["text_sha"]: sha_to_emb[c["text_sha"]] for c in pending_chunks}
+        save_embedding_cache(topic_dir, model, live)
     print("Done.")
 
 
-def _run_search_index(topic, *, model="text-embedding-3-small", limit=None, dry_run=False):
+def _run_search_index(topic, *, model="gemini-embedding-001", limit=None, dry_run=False,
+                      include_text="auto"):
     """Programmatic entrypoint for build_search_index."""
-    return build_index(topic, model, limit, dry_run)
+    return build_index(topic, model, limit, dry_run, include_text=include_text)
 
 
 def main():
     parser = argparse.ArgumentParser(description="Build Deep Research search index")
     parser.add_argument("--topic", required=True, help="topic alias (e.g. ai4s, scisci)")
-    parser.add_argument("--model", default="text-embedding-3-small")
+    parser.add_argument("--model", default="gemini-embedding-001")
     parser.add_argument("--limit", type=int, default=None, help="limit number of papers (debug)")
     parser.add_argument("--dry-run", action="store_true", help="chunk only, no API calls")
+    parser.add_argument("--include-text", choices=["auto", "yes", "no"], default="auto",
+                        help="text.md 고신호 청크 보강. auto=로컬 토픽만 ON(클라우드 review-only). "
+                             "yes 는 배포 토픽에 거부됨(저작권).")
     args = parser.parse_args()
-    # OPENAI_API_KEY 없으면 Deep Research 인덱스는 건너뛴다 (exit 0 — 파이프라인
+    # GOOGLE_API_KEY 없으면 Deep Research 인덱스는 건너뛴다 (exit 0 — 파이프라인
     # 체인은 계속 진행). classic 검색은 인덱스 없이 동작하며 Deep Research
     # 모드만 비활성화된다. 키를 설정하면 다음 실행부터 자동으로 빌드된다.
-    if not args.dry_run and not (os.environ.get("OPENAI_API_KEY") or _load_openai_key_from_config()):
-        print("SKIP: OPENAI_API_KEY 미설정 — Deep Research 검색 인덱스 빌드를 건너뜁니다.")
+    if not args.dry_run and not (os.environ.get("GOOGLE_API_KEY")
+                                 or os.environ.get("GEMINI_API_KEY")
+                                 or _load_gemini_key_from_config()):
+        print("SKIP: GOOGLE_API_KEY 미설정 — Deep Research 검색 인덱스 빌드를 건너뜁니다.")
         print(f"      키 설정 후 재실행: python pipeline/build_search_index.py --topic {args.topic}")
         return
-    _run_search_index(topic=args.topic, model=args.model, limit=args.limit, dry_run=args.dry_run)
+    _run_search_index(topic=args.topic, model=args.model, limit=args.limit,
+                      dry_run=args.dry_run, include_text=args.include_text)
 
 
 if __name__ == "__main__":
+    from _env_guard import force_py312
+    force_py312()
     main()

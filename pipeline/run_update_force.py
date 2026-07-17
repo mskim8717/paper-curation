@@ -34,7 +34,7 @@ from datetime import datetime
 from config_loader import (
     PAPERS_DIR as _PAPERS_DIR, PIPELINE_DIR, _ssl_ctx,
     get_zotero_api_key, get_zotero_library_base, get_collection_key, get_collections, get_zotero_dir,
-    get_topic_dir,
+    get_topic_dir, get_google_key,
 )
 from lib.categories import category_slug
 PAPERS_DIR = str(_PAPERS_DIR)
@@ -59,22 +59,169 @@ def _split_cats_by_image_presence(topic, cats):
         (with_image if has_image else missing).append(cat)
     return with_image, missing
 
+
+def _topic_default_artifacts_missing(topic):
+    """Return missing default topic outputs for a complete collection page.
+
+    Paper Curio collection processing is an "ensure the collection is browsable"
+    entrypoint, not just "review new PDFs". A failed first run can leave the
+    checkpoint full while narrative/timeline artifacts are absent; resume mode
+    must detect that and rebuild the missing default outputs.
+    """
+    topic_dir = get_topic_dir(topic)
+    topic_dir_str = str(topic_dir)
+    missing = []
+    required = [
+        "_category_summaries.json",
+        "_category_narratives.json",
+        "_timeline_narrative.json",
+        "research_timeline.png",
+    ]
+    for name in required:
+        path = os.path.join(topic_dir_str, name)
+        if not os.path.exists(path) or os.path.getsize(path) == 0:
+            missing.append(name)
+
+    expected_categories = []
+    cls_path = os.path.join(topic_dir_str, "_new_classification.json")
+    if os.path.exists(cls_path):
+        try:
+            with open(cls_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            for c in data.get("categories", []):
+                name = c.get("name") if isinstance(c, dict) else str(c)
+                if name and name != "Other":
+                    expected_categories.append(name)
+        except Exception:
+            expected_categories = []
+
+    if expected_categories:
+        for cat in expected_categories:
+            slug = category_slug(cat)
+            has_image = any(
+                os.path.exists(os.path.join(topic_dir_str, f"category_timeline_{slug}.{ext}"))
+                and os.path.getsize(os.path.join(topic_dir_str, f"category_timeline_{slug}.{ext}")) > 0
+                for ext in ("png", "webp")
+            )
+            if not has_image:
+                missing.append(f"category_timeline_{slug}.png")
+    elif not os.path.isdir(topic_dir_str) or not any(
+        name.startswith("category_timeline_") and name.endswith((".png", ".webp"))
+        for name in os.listdir(topic_dir_str)
+    ):
+        missing.append("category_timeline_*.png")
+
+    return missing
+
 # topic_modeling.py / classify_papers.py 는 UMAP + hdbscan + sentence-transformers
-# 의존. UMAP.transform 가 sklearn.pairwise_distances 에 callable metric 을 넘기는
+# 의존. 표준은 ``py312`` 단일 env 이며, 이 경우 현재 인터프리터가 곧 클러스터링
+# 인터프리터다. 과거의 "py314 메인 + py312 보조" 이중 구성도 계속 지원한다: py314
+# 에서는 UMAP.transform 가 sklearn.pairwise_distances 에 callable metric 을 넘기는
 # 순간 numba 가 JIT 컴파일을 시도하는데, numba 의 bytecode interpreter 가 Python
 # 3.14 의 ``CALL_KW`` opcode 를 아직 처리하지 못해
 # (``op_CALL_KW: pop from empty list``, 0.65.1 / 0.66.0rc1 / main 모두 동일) 분류가
-# 죽는다. numba 가 패치될 때까지 ``py312`` 전용 env 를 별도로 둬서 클러스터링·분류
-# 만 그쪽 인터프리터로 라우팅한다 (CLAUDE.md "Windows fallback" 섹션의 패턴과 동일).
+# 죽으므로, 클러스터링·분류만 형제 ``py312`` 인터프리터로 라우팅한다.
 #
-# 우선 순위:
+# 해석 순서:
+#   0. 현재 인터프리터 프로브 — 클러스터링 *실경로* (UMAP cosine fit→transform +
+#      hdbscan approximate_predict) 를 소형 데이터로 실행하는 서브프로세스가
+#      성공하면 단일 env 로 보고 ``sys.executable`` 을 그대로 쓴다. import-only
+#      프로브는 JIT 시점 크래시를 못 잡아 거짓 양성을 내므로 쓰지 않는다.
+#      판정은 _state/env_probe.json 에 영구 캐시 (첫 1회만 JIT 비용 ~수십 초).
+#   프로브 실패(의존성 미설치 또는 JIT 크래시) 시 기존 fallback 체인을 그대로 탄다:
 #   1. ``PAPER_CURATION_PY312`` 환경변수 — 운영자가 명시한 절대 경로
 #   2. 현재 인터프리터의 conda prefix 에서 형제 env (../py312/bin/python)
 #   3. ``which python3.12`` PATH 검색
 #   4. fallback → ``sys.executable`` (운영자 환경이 이미 py312 이면 동작)
+_PROBE_RESULT = None  # None=미실행, True=현재 인터프리터로 클러스터링 가능, False=불가
+
+# 프로브는 import 가 아니라 *실제 크래시 경로* 를 실행한다. numba CALL_KW 류의
+# 실패는 import 시점이 아니라 UMAP.transform()/approximate_predict() 의 JIT
+# 컴파일 시점에 터지므로, import-only 프로브는 py314 에서 거짓 양성을 낸다
+# (import 성공 → 단일 env 판정 → 분류 단계 mid-run 크래시). 아래 스니펫은
+# topic_modeling/classify 가 쓰는 경로(UMAP cosine fit→transform,
+# hdbscan approximate_predict)를 소형 데이터로 그대로 통과시킨다.
+# 첫 실행은 numba JIT 때문에 수십 초 걸리므로 판정을 _state/env_probe.json 에
+# (인터프리터 경로, 파이썬 버전) 키로 영구 캐시한다. env 의 numba 를 갈아끼운
+# 뒤 재판정이 필요하면 그 파일을 지우면 된다.
+_PROBE_SNIPPET = (
+    # sentence_transformers/adapters 까지 요구하는 이유: topic_modeling 은 SPECTER2
+    # 임베딩이 필수이고, adapters 가 없으면 proximity 어댑터 대신 mean-pooling
+    # fallback 으로 *조용히 품질이 떨어진* 번들을 만든다. 어댑터까지 갖춘 env 만
+    # "단일 env" 로 인정해 EMBED_TAG(proximity vs fallback)가 env 에 따라 갈라지는
+    # 것을 막는다. 모두 없는 환경이라도 fallback 체인의 마지막이 sys.executable
+    # 이므로 동작 자체는 유지된다(이때는 specter2_embed 가 경고와 함께 fallback).
+    "import sentence_transformers, adapters\n"
+    "import numpy as np, numba, umap, hdbscan\n"
+    "rs = np.random.RandomState(0)\n"
+    "X = rs.rand(60, 32).astype('float32')\n"
+    "um = umap.UMAP(n_components=5, n_neighbors=8, metric='cosine',"
+    " random_state=42).fit(X)\n"
+    "um.transform(rs.rand(3, 32).astype('float32'))\n"
+    "cl = hdbscan.HDBSCAN(min_cluster_size=3, prediction_data=True)"
+    ".fit(um.embedding_.astype('float64'))\n"
+    "import hdbscan.prediction as hp\n"
+    "hp.approximate_predict(cl, um.transform(rs.rand(2, 32).astype('float32'))"
+    ".astype('float64'))\n"
+    "print('PROBE_OK numba', numba.__version__)\n"
+)
+import pathlib as _pathlib
+_PROBE_STATE = _pathlib.Path(__file__).resolve().parent / "_state" / "env_probe.json"
+
+
+def _probe_current_interpreter():
+    """현재 인터프리터로 클러스터링 실경로가 도는지 1회 판정 (영구 캐시).
+
+    의존성 미설치(즉시 ImportError)·JIT 크래시·타임아웃 모두 False.
+    판정은 프로세스 전역 + ``_state/env_probe.json`` 에 캐시된다.
+    """
+    global _PROBE_RESULT
+    if _PROBE_RESULT is not None:
+        return _PROBE_RESULT
+
+    key = f"{sys.executable}|py{sys.version_info[0]}.{sys.version_info[1]}"
+    try:
+        state = json.loads(_PROBE_STATE.read_text(encoding="utf-8"))
+    except Exception:
+        state = {}
+    cached = state.get(key)
+    if isinstance(cached, dict) and "ok" in cached:
+        _PROBE_RESULT = bool(cached["ok"])
+        return _PROBE_RESULT
+
+    try:
+        r = subprocess.run(
+            [sys.executable, "-c", _PROBE_SNIPPET],
+            capture_output=True, text=True, timeout=180,
+        )
+        ok = (r.returncode == 0 and "PROBE_OK" in (r.stdout or ""))
+        detail = (r.stdout if ok else (r.stderr or ""))[-200:].strip()
+    except Exception as e:
+        ok, detail = False, f"{type(e).__name__}: {str(e)[:120]}"
+
+    _PROBE_RESULT = ok
+    try:
+        state[key] = {"ok": ok, "detail": detail,
+                      "ts": datetime.now().isoformat(timespec="seconds")}
+        _PROBE_STATE.parent.mkdir(parents=True, exist_ok=True)
+        _PROBE_STATE.write_text(
+            json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
+    except Exception:
+        pass  # 캐시 실패는 치명적이지 않음 (다음 실행에서 재프로브)
+    return _PROBE_RESULT
+
+
 def _resolve_topic_modeling_python():
+    # 표준: py312 단독 환경. py314 등 다른 인터프리터로는 **절대 라우팅하지 않는다**.
+    # (운영자 지시 2026-06-18: py312 단독 사용, py314 진입 경로 전면 차단.)
+    # 0. 현재 인터프리터가 이미 py312 + 클러스터링 의존성을 직접 import 할 수 있으면
+    #    그대로 사용 (단일 env 표준 경로).
     from pathlib import Path as _Path
     import shutil as _shutil
+    if sys.version_info[:2] == (3, 12) and _probe_current_interpreter():
+        return sys.executable
+    # 그 외(예: py314 에서 호출) → py312 인터프리터로 라우팅. py314 로는 절대 가지 않는다.
+    #   1) PAPER_CURATION_PY312 명시 경로
     explicit = os.environ.get("PAPER_CURATION_PY312", "").strip()
     if explicit and os.path.exists(explicit):
         return explicit
@@ -82,22 +229,32 @@ def _resolve_topic_modeling_python():
     # 별도 라우팅 없이 자기 자신 사용 (예: uv venv py3.12 단일 환경).
     if sys.version_info < (3, 13):
         return sys.executable
+    #   2) 형제 conda env <base>/envs/py312/bin/python
     here = _Path(sys.executable).resolve()
-    # conda env layout: <prefix>/envs/<name>/bin/python
-    if here.parent.name == "bin" and here.parent.parent.parent.name == "envs":
-        sibling = here.parent.parent.parent / "py312" / "bin" / "python"
-        if sibling.exists():
-            return str(sibling)
+    for anc in here.parents:
+        if anc.name == "envs":
+            cand = anc / "py312" / "bin" / "python"
+            if cand.exists():
+                return str(cand)
+            break
+    #   3) PATH 의 python3.12
     found = _shutil.which("python3.12")
     if found:
         return found
-    return sys.executable
+    #   4) 현재 인터프리터가 py312 면 그대로 (의존성 미설치 상태일 수 있음)
+    if sys.version_info[:2] == (3, 12):
+        return sys.executable
+    # py312 를 못 찾으면 py314 로 진행하지 않고 명확히 실패한다.
+    raise RuntimeError(
+        "py312 인터프리터를 찾을 수 없습니다. paper-curation 은 py312 단독 환경을 사용합니다 "
+        "(py314 사용 금지). conda env py312 를 만들거나 PAPER_CURATION_PY312 로 절대 경로를 지정하세요."
+    )
 
 
 TOPIC_MODELING_PYTHON = _resolve_topic_modeling_python()
 if TOPIC_MODELING_PYTHON != sys.executable:
     print(f"[env] UMAP/HDBSCAN 단계 인터프리터: {TOPIC_MODELING_PYTHON} "
-          f"(numba+py3.14 CALL_KW 회피)")
+          f"(현재 env 가 py312 가 아니거나 프로브 실패 → py312 라우팅; 사유는 _state/env_probe.json)")
 
 ZOTERO_DIR = get_zotero_dir()
 
@@ -115,9 +272,17 @@ def log(msg):
 
 
 def load_checkpoint():
+    # A truncated/corrupt checkpoint (process killed mid-flush) must NOT crash
+    # the run before any work begins — degrade to the empty default instead.
+    # The --skip-existing/PDF-mtime scan re-marks slugs with a valid review.md
+    # as completed, so most prior work is recovered for free.
     if os.path.exists(CHECKPOINT_FILE):
-        with open(CHECKPOINT_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+        try:
+            with open(CHECKPOINT_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError, ValueError) as e:
+            log(f"  WARN checkpoint corrupt ({type(e).__name__}); "
+                f"starting fresh — completed papers re-detected from review.md")
     return {"completed": [], "failed": [], "phase": "init"}
 
 
@@ -127,9 +292,13 @@ _slug_to_pdf_path = {}  # populated by find_pdf hits; persisted to _papers_index
 
 
 def save_checkpoint(cp):
+    # Atomic write (tmp + os.replace) so a kill mid-flush leaves the reader the
+    # old complete file rather than a half-written one. _cp_lock still
+    # serializes concurrent writers AND the json serialization (callers may
+    # append to cp['completed'] from other threads).
+    from lib.atomic_io import atomic_write_json
     with _cp_lock:
-        with open(CHECKPOINT_FILE, "w", encoding="utf-8") as f:
-            json.dump(cp, f, ensure_ascii=False, indent=2)
+        atomic_write_json(CHECKPOINT_FILE, cp)
 
 
 # ── Phase 1: Fetch Zotero ──
@@ -281,33 +450,66 @@ def find_pdf(item):
                        "method": "children_api_error", "error": str(e)[:200]})
 
     # Priority 2: DOI in filename (reliable when present)
+    # Bare substring containment collides on prefix-DOIs ('10.1234/abc' is a
+    # substring of '10.1234/abc.suppl'). Require the matched region to be
+    # bounded — followed by end-of-name or a non-alphanumeric separator in the
+    # ORIGINAL filename — and treat 2+ matches as ambiguous (no_match) since
+    # os.listdir order is arbitrary.
     doi = (item.get("DOI") or item.get("doi") or "").strip()
     if doi:
         doi_norm = re.sub(r"[^a-z0-9]", "", doi.lower())
         if len(doi_norm) >= 10:  # avoid accidental short-DOI collisions
+            doi_matches = []
             for fname in os.listdir(ZOTERO_DIR):
                 if not fname.lower().endswith(".pdf"):
                     continue
-                fname_norm = re.sub(r"[^a-z0-9]", "", fname.lower())
-                if doi_norm in fname_norm:
-                    matched = os.path.join(ZOTERO_DIR, fname)
-                    _audit_append({"key": key, "title": title[:80],
-                                   "method": "doi_filename", "path": matched,
-                                   "doi": doi})
-                    return matched, "doi_filename"
+                # Strip the .pdf extension BEFORE normalising, otherwise the
+                # trailing 'pdf' makes the bounded check below see 'p' as the
+                # next char and reject every match.
+                stem = fname[:-4].lower()
+                fname_norm = re.sub(r"[^a-z0-9]", "", stem)
+                idx = fname_norm.find(doi_norm)
+                if idx < 0:
+                    continue
+                # Bounded: the char right after the DOI in the normalised stem
+                # must NOT be alphanumeric (else it's a longer DOI). Since
+                # non-alphanumerics were stripped, a trailing char here means
+                # the real filename had extra DOI digits/letters → reject.
+                nxt = idx + len(doi_norm)
+                if nxt < len(fname_norm) and fname_norm[nxt].isalnum():
+                    continue
+                doi_matches.append(fname)
+            if len(doi_matches) == 1:
+                matched = os.path.join(ZOTERO_DIR, doi_matches[0])
+                _audit_append({"key": key, "title": title[:80],
+                               "method": "doi_filename", "path": matched,
+                               "doi": doi})
+                return matched, "doi_filename"
+            elif len(doi_matches) > 1:
+                _audit_append({"key": key, "title": title[:80],
+                               "method": "doi_ambiguous", "doi": doi,
+                               "candidates": doi_matches[:5]})
 
     # Priority 3: arXiv ID in filename
+    # Bare `arxiv_id in fname` makes '2401.0001' match '2401.00012' (wrong,
+    # newer paper). Require a delimited match: no digit/dot immediately before
+    # and no digit immediately after the id (an arXiv id may have a vN suffix,
+    # so allow a following 'v'/non-digit). Ambiguous (2+) → no_match.
     arxiv_id = _extract_arxiv_id_from_item(item)
     if arxiv_id:
-        for fname in os.listdir(ZOTERO_DIR):
-            if not fname.lower().endswith(".pdf"):
-                continue
-            if arxiv_id in fname:
-                matched = os.path.join(ZOTERO_DIR, fname)
-                _audit_append({"key": key, "title": title[:80],
-                               "method": "arxiv_filename", "path": matched,
-                               "arxiv_id": arxiv_id})
-                return matched, "arxiv_filename"
+        arxiv_re = re.compile(rf"(?<![0-9.]){re.escape(arxiv_id)}(?![0-9])")
+        arxiv_matches = [fname for fname in os.listdir(ZOTERO_DIR)
+                         if fname.lower().endswith(".pdf") and arxiv_re.search(fname)]
+        if len(arxiv_matches) == 1:
+            matched = os.path.join(ZOTERO_DIR, arxiv_matches[0])
+            _audit_append({"key": key, "title": title[:80],
+                           "method": "arxiv_filename", "path": matched,
+                           "arxiv_id": arxiv_id})
+            return matched, "arxiv_filename"
+        elif len(arxiv_matches) > 1:
+            _audit_append({"key": key, "title": title[:80],
+                           "method": "arxiv_ambiguous", "arxiv_id": arxiv_id,
+                           "candidates": arxiv_matches[:5]})
 
     # Priority 4 (optional): fuzzy title match — STRICTER than before.
     # The original 3-of-5 keyword rule caused the 139-paper mismatch bug.
@@ -542,6 +744,91 @@ def extract_text(pdf_path, slug_dir):
 
 # ── Phase 3: Extract figures + Gemini validation ──
 
+# Figure crop is LOCALIZED FROM THE PDF'S OWN GEOMETRY before any LLM call.
+# The previous design seeded every crop as the full page and relied on Gemini
+# point-offsets to shrink it; a Gemini failure or an "ok" on round 0 left the
+# ENTIRE PAGE as the figure. We now build the crop box from the union of the
+# graphic rects (raster image blocks + get_image_rects + area-filtered
+# get_drawings) that are adjacent to the caption, render THAT box first, and
+# only then optionally let Gemini nudge it within bounds. Gemini can never
+# enlarge the box back to a full page, and a Gemini error keeps the geometric
+# box instead of falsely accepting "ok".
+
+
+def _union_rects(rects):
+    """Union a list of (x0,y0,x1,y1) tuples into one bounding box, or None."""
+    if not rects:
+        return None
+    x0 = min(r[0] for r in rects)
+    y0 = min(r[1] for r in rects)
+    x1 = max(r[2] for r in rects)
+    y1 = max(r[3] for r in rects)
+    return [x0, y0, x1, y1]
+
+
+def _collect_graphic_rects(page, pw, ph):
+    """Gather candidate graphic rects on a page from three sources:
+      1. raster image blocks (text_dict type==1)
+      2. page.get_image_rects() for every embedded image xref
+      3. page.get_drawings() vector paths (area-filtered, capped per page)
+    Returns list of (x0,y0,x1,y1). Tiny rects (axis-tick fragments, hairlines)
+    are dropped so a vector-heavy page doesn't explode the union.
+    """
+    MIN_W, MIN_H = 40, 40  # ignore sub-glyph fragments
+    rects = []
+
+    # Source 1: raster image blocks
+    try:
+        td = page.get_text("dict")
+        for b in td["blocks"]:
+            if b.get("type") == 1:
+                bb = b["bbox"]
+                if (bb[2] - bb[0]) > MIN_W and (bb[3] - bb[1]) > MIN_H:
+                    rects.append((bb[0], bb[1], bb[2], bb[3]))
+    except Exception:
+        pass
+
+    # Source 2: get_image_rects() — embedded raster placement (handles repeats)
+    try:
+        for img in page.get_images(full=True):
+            xref = img[0]
+            try:
+                for r in page.get_image_rects(xref):
+                    if (r.x1 - r.x0) > MIN_W and (r.y1 - r.y0) > MIN_H:
+                        rects.append((r.x0, r.y0, r.x1, r.y1))
+            except Exception:
+                continue
+    except Exception:
+        pass
+
+    # Source 3: get_drawings() — vector plots/schematics have no raster block.
+    # This can return thousands of tiny paths; filter by area and cap work.
+    try:
+        drawings = page.get_drawings()
+        page_area = max(1.0, pw * ph)
+        count = 0
+        for d in drawings:
+            count += 1
+            if count > 4000:  # hard cap so vector-dense pages stay fast
+                break
+            r = d.get("rect")
+            if r is None:
+                continue
+            w = r.x1 - r.x0
+            h = r.y1 - r.y0
+            if w <= MIN_W or h <= MIN_H:
+                continue
+            # Drop near-page-spanning full-bleed background rects (a single
+            # path covering >95% of the page is a page border, not a figure).
+            if (w * h) / page_area > 0.95:
+                continue
+            rects.append((r.x0, r.y0, r.x1, r.y1))
+    except Exception:
+        pass
+
+    return rects
+
+
 def extract_figures(pdf_path, slug_dir):
     fig_dir = os.path.join(slug_dir, "figures")
     os.makedirs(fig_dir, exist_ok=True)
@@ -555,9 +842,8 @@ def extract_figures(pdf_path, slug_dir):
     doc = fitz.open(pdf_path)
     # 깨진 폰트 인코딩 PDF에서도 "Figure N" 캡션 매칭이 되도록 복구 준비
     broken_fonts = _detect_broken_fonts(doc)
-    figures = []
     MARGIN = 30
-    MAX_ROUNDS = 5
+    MAX_ROUNDS = 2  # geometric box is the prior; Gemini only refines
 
     # Phase 4 B2: cheap pre-validator runs first. When the heuristic is
     # confident the figure is invalid (tiny/blank/near-uniform), we skip
@@ -565,14 +851,32 @@ def extract_figures(pdf_path, slug_dir):
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from api.extract import pre_validate_figure
 
+    # 키 해석: env(GOOGLE_API_KEY/GEMINI_API_KEY) → config.json. 단 reextract_figures
+    # 가 geometric-only 강제 시 세팅하는 PAPER_CURATION_NO_GEMINI 가 있으면 키 유무와
+    # 무관하게 Gemini 검증을 끈다 (env pop 만으론 config.json 키가 남아 스위치가 안 먹음).
+    have_gemini = (not os.environ.get("PAPER_CURATION_NO_GEMINI")
+                   and bool(get_google_key().strip()))
+    # Log a degraded-Gemini warning at most once per run instead of silently
+    # accepting full pages when the validator throws.
+    _gemini_warned = {"done": False}
+
     def validate(img_path, caption):
+        """Return a verdict dict. status ∈ {ok, clipped, oversized, both, error}.
+
+        'error' (validator unavailable) is DISTINCT from 'ok' (figure looks
+        good): the caller keeps the geometric box on 'error' rather than
+        treating it as accepted.
+        """
         pre = pre_validate_figure(img_path)
         if pre is not None:
             return pre
+        if not have_gemini:
+            # No key → skip the round-trip entirely, rely on geometry.
+            return {"status": "error", "adjust_pt": {}}
         try:
             from google import genai
             from google.genai import types
-            client = genai.Client(api_key=os.environ.get("GOOGLE_API_KEY", ""))
+            client = genai.Client(api_key=get_google_key())
             with open(img_path, "rb") as f:
                 img_bytes = f.read()
             prompt = (f"Evaluate cropping of this academic figure.\nCaption: {caption}\n"
@@ -589,98 +893,324 @@ def extract_figures(pdf_path, slug_dir):
                 if text.startswith("json"):
                     text = text[4:]
             return json.loads(text)
-        except Exception:
-            return {"status": "ok", "adjust_pt": {}}
+        except Exception as e:
+            if not _gemini_warned["done"]:
+                log(f"  WARN Gemini figure validator unavailable "
+                    f"({type(e).__name__}); using geometric crops only")
+                _gemini_warned["done"] = True
+            return {"status": "error", "adjust_pt": {}}
+
+    # Collect caption candidates across all pages first, so we can dedup a
+    # fig_num globally by ADJACENT-GRAPHIC AREA (prefer the real caption over a
+    # body-text mention on another page) and cap EMITTED figures by area.
+    candidates = []  # each: dict(fig_num, page, caption, box, hull, graphic_area)
+    orphan_caps = []  # 캡션은 있는데 소유 그래픽이 없는 경우 — 페이지 영역 폴백 후보
 
     for pn in range(min(30, len(doc))):
         page = doc[pn]
         pw, ph = page.rect.width, page.rect.height
+        # Page rotation: get_text bboxes and get_pixmap clip both operate in
+        # the rotated coordinate space PyMuPDF reports via page.rect, so no
+        # manual rotation maths is needed — page.rect already reflects it.
         text_dict = page.get_text("dict")
         txt_blocks = [b for b in text_dict["blocks"] if b["type"] == 0]
-        img_blocks = [b for b in text_dict["blocks"] if b["type"] == 1
-                      and (b["bbox"][2] - b["bbox"][0]) > 50
-                      and (b["bbox"][3] - b["bbox"][1]) > 50]
 
+        graphic_rects = _collect_graphic_rects(page, pw, ph)
+
+        # Scanned-PDF guard: a single image covering >90% of the page IS the
+        # figure — keep the whole page in that legitimate case.
+        full_page_image = None
+        for r in graphic_rects:
+            if ((r[2] - r[0]) * (r[3] - r[1])) / max(1.0, pw * ph) > 0.90:
+                full_page_image = r
+                break
+
+        # Pass 1: collect EVERY caption line on the page first, so each
+        # graphic rect can be assigned to the caption it actually belongs to.
+        # A caption is the first line of a text block that STARTS with
+        # "Figure/Fig/FIG N". Scan all lines of the block (Nature/Science merge
+        # a trailing fragment above the caption into one block, so it may be
+        # line #1+). Case-insensitive for physics/PRL "FIG. 1.".
+        caps = []  # each: dict(fig_num, caption, x0, top, x1, bottom)
         for tb in txt_blocks:
-            first_line = tb["lines"][0] if tb["lines"] else None
-            if not first_line:
-                continue
-            lt = "".join(
-                _repair_span_text(s["text"]) if s["font"] in broken_fonts else s["text"]
-                for s in first_line["spans"])
-            m = re.match(r"(Figure|Fig\.?)\s*(\d+)", lt)
-            if not m:
-                continue
-            fig_num = int(m.group(2))
-            if fig_num in [int(f["name"]) for f in figures]:
-                continue
-            if fig_num > 5:
-                continue
+            for ln in tb["lines"]:
+                lt = "".join(
+                    _repair_span_text(s["text"]) if s["font"] in broken_fonts else s["text"]
+                    for s in ln["spans"]).strip()
+                m = re.match(r"(?:Figure|Fig\.?)\s*([0-9]+)", lt, re.I)
+                if m:
+                    lb = ln["bbox"]
+                    caps.append({
+                        "fig_num": int(m.group(1)), "caption": lt[:120],
+                        "x0": lb[0], "top": lb[1], "x1": lb[2],
+                        "bottom": max(lb[3], tb["bbox"][3]),
+                        # 캡션다움: 번호 뒤 구두점("Figure 1." / "Fig. 1:" 등).
+                        # 본문 언급("Fig. 1 shows …")과 구분하는 신호 — dedup에서
+                        # 진짜 캡션이 본문 언급에게 밀리지 않게 한다.
+                        "caplike": bool(re.match(
+                            r"(?:Figure|Fig\.?)\s*[0-9]+\s*[.:|)\]—–-]", lt, re.I)),
+                    })
+                    break
+        if not caps:
+            continue
 
-            cap_top = tb["bbox"][1]
-            cap_bottom = tb["bbox"][3]
-            caption = lt.strip()[:120]
+        # Figures sit ABOVE their caption (dominant convention), so a tall
+        # figure's TOP panels can be far above the caption — allow a generous
+        # gap there. The figure-BELOW-caption case is rare; keep its gap tight
+        # so the block of body text under a caption isn't vacuumed into the crop.
+        gap_above = ph * 0.6
+        gap_below = ph * 0.12
 
-            # Full page start
-            x0, y0 = 0, 0
-            x1, y1 = pw, ph
-
-            out = os.path.join(fig_dir, f"fig{fig_num}.png")
-
-            for rnd in range(MAX_ROUNDS + 1):
-                # Try rendering with decreasing resolution on error
-                rendered = False
-                for scale in [3, 2, 1]:
-                    try:
-                        pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale),
-                                              clip=fitz.Rect(x0, y0, x1, y1))
-                        pix.save(out)
-                        rendered = True
-                        break
-                    except Exception:
+        # Pass 2: assign each graphic rect to its OWNING caption. The figure
+        # width is derived from the rects themselves, NEVER from the caption's
+        # column — a single-column caption legitimately owns a full-width
+        # figure's far panels (common in Nature/Science). Ranking, best first:
+        #   (1) caption BELOW the rect (figure-above-caption, the dominant
+        #       convention) beats a caption above it;
+        #   (2) a caption that horizontally OVERLAPS the rect beats one that
+        #       does not — this keeps SIDE-BY-SIDE figures separate;
+        #   (3) nearest vertical gap.
+        assigned = {id(c): [] for c in caps}
+        if full_page_image is not None:
+            assigned[id(caps[0])].append(full_page_image)
+        else:
+            for r in graphic_rects:
+                rx0, ry0, rx1, ry1 = r
+                best_key = None
+                best_cap = None
+                for c in caps:
+                    if c["top"] >= ry1 - 2 and (c["top"] - ry1) <= gap_above:
+                        direction, vgap = 0, c["top"] - ry1   # figure above caption
+                    elif c["bottom"] <= ry0 + 2 and (ry0 - c["bottom"]) <= gap_below:
+                        direction, vgap = 1, ry0 - c["bottom"]  # figure below caption
+                    else:
                         continue
-                if not rendered:
-                    break  # skip this figure entirely
+                    overlap = not (rx1 <= c["x0"] or rx0 >= c["x1"])
+                    key = (direction, 0 if overlap else 1, vgap)
+                    if best_key is None or key < best_key:
+                        best_key, best_cap = key, c
+                if best_cap is not None:
+                    assigned[id(best_cap)].append(r)
 
-                if rnd == MAX_ROUNDS:
+        for c in caps:
+            adj_rects = assigned[id(c)]
+            if not adj_rects:
+                # No graphic content owned by this caption → body-text mention
+                # or un-extractable figure. 과거엔 DROP했지만, 등록 시 '모든
+                # 그림' 보장을 위해 페이지 영역 폴백 후보로 보관한다 (최종
+                # 렌더는 함수 끝의 완성 단계).
+                above = [cc["bottom"] for cc in caps if cc["bottom"] < c["top"] - 4]
+                below = [cc["top"] for cc in caps if cc["top"] > c["bottom"] + 4]
+                orphan_caps.append({
+                    "fig_num": c["fig_num"], "page": pn, "caption": c["caption"],
+                    "top": c["top"], "bottom": c["bottom"],
+                    "caplike": c["caplike"],
+                    "floor": (max(above) + 4) if above else 0.0,
+                    "ceil": (min(below) - 4) if below else ph,
+                    "pw": pw, "ph": ph,
+                })
+                continue
+            hull = _union_rects(adj_rects)
+            graphic_area = sum((r[2] - r[0]) * (r[3] - r[1]) for r in adj_rects)
+            # Crop box = union of owned rects + MARGIN. No caption-column clip.
+            bx0 = max(0, hull[0] - MARGIN)
+            by0 = max(0, hull[1] - MARGIN)
+            bx1 = min(pw, hull[2] + MARGIN)
+            by1 = min(ph, hull[3] + MARGIN)
+            # Extend the crop toward the caption so TEXT-rendered figure content
+            # (panel labels, chemical-formula lists, axis labels) between the
+            # last graphic rect and the caption is not clipped. The caption is
+            # the figure's hard boundary, so this can never reach body text.
+            n_above = sum(1 for r in adj_rects if r[3] <= c["top"] + 2)
+            if n_above * 2 >= len(adj_rects):     # figure above its caption
+                by1 = min(ph, max(by1, c["top"] - 2))
+            else:                                 # figure below its caption (rare)
+                by0 = max(0, min(by0, c["bottom"] + 2))
+            candidates.append({
+                "fig_num": c["fig_num"], "page": pn, "caption": c["caption"],
+                "caplike": c["caplike"],
+                "box": [bx0, by0, bx1, by1],
+                "hull": hull, "graphic_area": graphic_area,
+                "pw": pw, "ph": ph,
+            })
+
+    # Page-scoped dedup: when the same fig_num appears on multiple pages,
+    # prefer the candidate with the LARGEST adjacent graphic area (the real
+    # caption, not a bare mention). Then cap EMITTED figures to top-5 by area.
+    best_by_num = {}
+    for c in candidates:
+        prev = best_by_num.get(c["fig_num"])
+        if prev is None or (
+            (c.get("caplike", False), c["graphic_area"])
+            > (prev.get("caplike", False), prev["graphic_area"])
+        ):
+            best_by_num[c["fig_num"]] = c
+    # Cap emitted figures to the LOWEST 5 figure numbers. Main-body figures
+    # (1-5) come before appendix figures, and in some papers (e.g. NLP papers
+    # with many "Prompt for ..." boxes in the appendix) the appendix figures
+    # have far larger area and would crowd out the real figures under an
+    # area-based cap. Figure number is the more reliable importance signal.
+    all_nums = sorted(best_by_num.values(), key=lambda c: c["fig_num"])
+    # review 임베드 후보는 기존과 동일하게 top-5. 6번 이후는 아래 완성 단계에서
+    # geometric-only로 저장만 한다 (등록 시 '모든 그림' 보관 — 채팅 인라인 그림용).
+    chosen = all_nums[:5]
+    extras = all_nums[5:20]
+
+    figures = []
+    for c in chosen:
+        fig_num = c["fig_num"]
+        pn = c["page"]
+        caption = c["caption"]
+        page = doc[pn]
+        pw, ph = c["pw"], c["ph"]
+        hull = c["hull"]
+        x0, y0, x1, y1 = c["box"]
+        out = os.path.join(fig_dir, f"fig{fig_num}.png")
+
+        # Clamp bounds = the geometric box itself (owned-rect hull + MARGIN,
+        # already extended toward the caption to capture text-rendered figure
+        # content). Gemini may nudge WITHIN this box but never expand past it —
+        # the geometric crop is the prior; the LLM only refines inside it, so it
+        # can neither escape to a full page nor re-clip the caption extension.
+        hx0, hy0, hx1, hy1 = c["box"]
+
+        rendered_ok = False
+        for rnd in range(MAX_ROUNDS + 1):
+            # Inverted-box guard: revert to the geometric box.
+            if x1 <= x0 or y1 <= y0:
+                x0, y0, x1, y1 = c["box"]
+
+            rendered = False
+            for scale in [3, 2, 1]:
+                try:
+                    pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale),
+                                          clip=fitz.Rect(x0, y0, x1, y1))
+                    pix.save(out)
+                    rendered = True
                     break
+                except Exception:
+                    continue
+            if not rendered:
+                break  # skip this figure entirely
+            rendered_ok = True
 
-                result = validate(out, caption)
-                if result.get("status") == "ok":
+            if rnd == MAX_ROUNDS:
+                break
+
+            result = validate(out, caption)
+            status = result.get("status")
+            if status == "ok":
+                break
+            if status == "error":
+                # Validator unavailable → keep the geometric box, do not
+                # expand, break. Never treat as 'ok'.
+                break
+
+            # 'clipped' / 'oversized' / 'both': nudge within the hull ± MARGIN.
+            damping = [0.8, 0.6][min(rnd, 1)]
+            adj = result.get("adjust_pt", {})
+            ny0 = y0 - adj.get("top", 0) * damping
+            ny1 = y1 + adj.get("bottom", 0) * damping
+            nx0 = x0 - adj.get("left", 0) * damping
+            nx1 = x1 + adj.get("right", 0) * damping
+            # Clamp to the rect hull (± MARGIN) — the box can never escape the
+            # detected graphic region back to a full page.
+            x0 = min(max(nx0, hx0), hx1)
+            y0 = min(max(ny0, hy0), hy1)
+            x1 = min(max(nx1, hx0), hx1)
+            y1 = min(max(ny1, hy0), hy1)
+
+        if not rendered_ok:
+            continue
+
+        # Plausibility floor: if the final box is implausibly small vs the
+        # union of detected rects, expand to the hull + MARGIN (a tight figure
+        # box — NEVER the whole page). No full-page re-render fallback.
+        hull_area = (hull[2] - hull[0]) * (hull[3] - hull[1])
+        box_area = (x1 - x0) * (y1 - y0)
+        if hull_area > 0 and box_area < hull_area * 0.5:
+            x0, y0, x1, y1 = hx0, hy0, hx1, hy1
+            for scale in [3, 2, 1]:
+                try:
+                    pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale),
+                                          clip=fitz.Rect(x0, y0, x1, y1))
+                    pix.save(out)
                     break
-
-                # Round 0: educated guess
-                if rnd == 0 and result.get("status") in ("oversized", "both"):
-                    cap_cx = (tb["bbox"][0] + tb["bbox"][2]) / 2
-                    cap_w = tb["bbox"][2] - tb["bbox"][0]
-                    if cap_w < pw * 0.6:
-                        if cap_cx < pw * 0.45:
-                            x1 = pw * 0.52
-                        elif cap_cx > pw * 0.55:
-                            x0 = pw * 0.48
-                    y1 = min(ph, cap_bottom + 15)
-                    y0 = max(0, 40)
+                except Exception:
                     continue
 
-                damping = [1.0, 0.8, 0.6, 0.45, 0.35][min(rnd, 4)]
-                adj = result.get("adjust_pt", {})
-                y0 = max(0, y0 - adj.get("top", 0) * damping)
-                y1 = min(ph, y1 + adj.get("bottom", 0) * damping)
-                x0 = max(0, x0 - adj.get("left", 0) * damping)
-                x1 = min(pw, x1 + adj.get("right", 0) * damping)
+        figures.append({"name": str(fig_num), "page": pn, "caption": caption})
 
-            # Fallback
-            final_ratio = (x1 - x0) * (y1 - y0) / (pw * ph)
-            if final_ratio < 0.15:
-                for scale in [3, 2, 1]:
-                    try:
-                        pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale))
-                        pix.save(out)
-                        break
-                    except Exception:
-                        continue
+    # ── 등록 시 '모든 그림' 보장 (채팅 인라인 그림 완전성) ──────────────
+    # (a) 6번 이후 그림: geometric-only 저장 (Gemini 라운드 없음 — 비용 억제).
+    #     review 반환(figures)에는 넣지 않아 기존 임베드 동작 불변.
+    for c in extras:
+        out = os.path.join(fig_dir, f"fig{c['fig_num']}.png")
+        page = doc[c["page"]]
+        x0, y0, x1, y1 = c["box"]
+        for scale in [3, 2, 1]:
+            try:
+                pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale),
+                                      clip=fitz.Rect(x0, y0, x1, y1))
+                pix.save(out)
+                break
+            except Exception:
+                continue
 
-            figures.append({"name": str(fig_num), "page": pn, "caption": caption})
+    # (b) 캡션은 있는데 산출물이 없는/깨진 그림: 캡션 기준 페이지 영역 크롭
+    #     폴백. figure-above-caption 관례(위 영역) 우선, 얕으면 아래 영역.
+    #     본문 일부가 섞일 수 있는 최후 폴백이지만 '그림이 아예 안 나오는'
+    #     상태를 없앤다 (예: 과거 9159 fig1 = 0-byte).
+    def _fig_ok(p):
+        return os.path.exists(p) and os.path.getsize(p) > 1024
+
+    have = set()
+    for c in all_nums:
+        if _fig_ok(os.path.join(fig_dir, f"fig{c['fig_num']}.png")):
+            have.add(c["fig_num"])
+    # 렌더 실패/0-byte로 끝난 검출 후보도 폴백 대상으로 승격
+    for c in all_nums:
+        if c["fig_num"] in have:
+            continue
+        orphan_caps.append({
+            "fig_num": c["fig_num"], "page": c["page"], "caption": c["caption"],
+            "caplike": c.get("caplike", False),
+            "top": min(c["ph"], c["box"][3] + 2),
+            "bottom": min(c["ph"], c["box"][3] + 14),
+            "floor": 0.0, "ceil": c["ph"], "pw": c["pw"], "ph": c["ph"],
+        })
+    done_orphans = set()
+    for o in sorted(orphan_caps, key=lambda o: (o["fig_num"], not o.get("caplike", False), o["page"], o["top"])):
+        num = o["fig_num"]
+        if num in have or num in done_orphans or num > 20:
+            continue
+        page = doc[o["page"]]
+        opw, oph = o["pw"], o["ph"]
+        y0a = max(0.0, o["top"] - 0.55 * oph, o["floor"])
+        y1a = max(0.0, o["top"] - 2)
+        y0b = min(oph, o["bottom"] + 2)
+        y1b = min(oph, o["bottom"] + 0.55 * oph, o["ceil"])
+        if y1a - y0a >= 60:
+            ry0, ry1 = y0a, y1a
+        elif y1b - y0b >= 60:
+            ry0, ry1 = y0b, y1b
+        else:
+            continue
+        out = os.path.join(fig_dir, f"fig{num}.png")
+        try:
+            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2),
+                                  clip=fitz.Rect(12, ry0, opw - 12, ry1))
+            pix.save(out)
+        except Exception:
+            continue
+        if _fig_ok(out):
+            done_orphans.add(num)
+            log(f"  fig{num}: geometric 검출 실패 → 캡션 기준 페이지 영역 폴백")
+        else:
+            try:
+                os.remove(out)
+            except OSError:
+                pass
 
     doc.close()
     return figures
@@ -787,7 +1317,85 @@ REVIEW_TOOL_SCHEMA = {
 }
 
 WRITE_REVIEW_SCHEMA_VERSION = "v1"
-WRITE_REVIEW_MODEL = "claude-haiku-4-5-20251001"
+# 기존 review.md 는 재생성하지 않으므로 모델 변경은 신규 리뷰부터 적용된다
+# (캐시 키에 model 포함 — 변경 시 기존 캐시는 자연 무효).
+WRITE_REVIEW_MODEL = os.environ.get("WRITE_REVIEW_MODEL", "claude-sonnet-5")
+
+
+_REVIEW_STR_TAGS = ("essence", "known", "gap", "why", "approach", "achievement",
+                    "how", "originality", "limitation", "verdict")
+_REVIEW_INT_TAGS = ("fig_essence", "fig_achievement", "fig_how",
+                    "novelty", "technical", "significance", "clarity", "overall")
+
+
+def _salvage_review_data(data):
+    """Recover a structured review when the model invoked `emit_review` but
+    dumped the XML-tagged review into one field instead of filling the schema.
+
+    Three observed claude-sonnet-5 failure modes:
+      A) everything crammed into `essence` (with a trailing `</invoke>`);
+      B) `essence` is clean but the rest is stuffed into `known`/`how`/
+         `originality` using antml `<parameter name="x">…</parameter>` syntax;
+      C) clean fields plus a `<parameter name="x">…</parameter>` blob (for
+         known/gap/why/approach) appended inside `essence`.
+    All render as empty sections + default 3/3/3/3/3 scores. Normalize the
+    tool-parameter syntax and re-parse every field. No-op for clean responses.
+    """
+    d = dict(data or {})
+    other = [t for t in _REVIEW_STR_TAGS if t != "essence"]
+
+    def _norm(s):
+        s = re.sub(r'<parameter name="([^"]+)">(.*?)</parameter>', r'<\1>\2</\1>',
+                   s or "", flags=re.S)
+        s = re.sub(r'<parameter name="([^"]+)">', r'<\1>', s)
+        s = re.sub(r'</parameter[^>]*>', '', s)
+        return s.replace("</invoke>", "")
+
+    normed = {k: _norm(v) for k, v in d.items() if isinstance(v, str)}
+    combined = "\n".join(normed.values())
+    tagged = "</essence>" in combined or any(
+        ("<%s>" % t) in combined or ("</%s>" % t) in combined for t in other)
+    if not tagged:
+        return data  # well-formed
+
+    strip_tags = re.compile(
+        r"</?(?:%s|fig_\w+|novelty|technical|significance|clarity|overall)>"
+        % "|".join(_REVIEW_STR_TAGS))
+    fixed = dict(d)
+
+    er = normed.get("essence", "")
+    if "<essence>" in er:
+        m = re.search(r"<essence>(.*?)</essence>", er, re.S)
+        essence = m.group(1) if m else er
+    elif "</essence>" in er:
+        essence = er.split("</essence>", 1)[0]
+    else:
+        essence = re.split(r"<(?:%s|fig_\w+)>" % "|".join(other), er, 1)[0]
+    essence = strip_tags.sub("", essence).strip()
+    if essence:
+        fixed["essence"] = essence
+
+    for t in other:
+        m = re.search(r"<%s>(.*?)</%s>" % (t, t), combined, re.S)
+        if m and m.group(1).strip():
+            val = m.group(1)
+        else:
+            # carrier field: keep only the leading text before the first
+            # leaked tag (handles `known` holding a `<parameter …>` blob, a
+            # bare `</known>`, or a spilled `<gap>…` sequence).
+            cur = normed.get(t, "")
+            val = re.split(
+                r"<(?:/?)(?:parameter|%s|fig_\w+|novelty|technical|"
+                r"significance|clarity|overall)\b" % "|".join(_REVIEW_STR_TAGS),
+                cur, 1, flags=re.S)[0]
+        val = strip_tags.sub("", val).strip()
+        if val:
+            fixed[t] = val
+    for t in _REVIEW_INT_TAGS:
+        m = re.search(r"<%s>\s*(\d+)" % t, combined)
+        if m:
+            fixed[t] = int(m.group(1))
+    return fixed
 
 
 def write_review(item, slug_dir, figures):
@@ -858,6 +1466,7 @@ def write_review(item, slug_dir, figures):
             cache_dir, prompt, WRITE_REVIEW_MODEL, _make_call,
             schema_version=WRITE_REVIEW_SCHEMA_VERSION,
         )
+        data = _salvage_review_data(data)
 
         # Build figure insertions
         def fig_block(fig_num_str):
@@ -1136,7 +1745,13 @@ def convert_to_html(slug):
         if not os.path.exists(md_path):
             return False
         topic = detect_topic(slug, index_path)
-        html = convert_review(md_path, topic, slug)
+        # convert_review's figure-existence guard resolves figures/figN.png
+        # against this arg, so it MUST be the full slug directory — passing
+        # the bare slug name made the check look under CWD and silently drop
+        # every figure from the rendered HTML (review_to_html.py:697 and
+        # validate_papers.py:497 both pass the full dir).
+        slug_dir = os.path.join(PAPERS_DIR, slug)
+        html = convert_review(md_path, topic, slug_dir)
         with open(html_path, "w", encoding="utf-8") as f:
             f.write(html)
         return True
@@ -1413,6 +2028,8 @@ def main():
     parser.add_argument("--limit", type=int, default=0, help="Limit papers (0=all)")
     parser.add_argument("--timeline", action="store_true",
                         help="Regenerate timeline images (with --resume: changed cats only, alone: all cats)")
+    parser.add_argument("--ensure-timeline", action="store_true",
+                        help="기본 narrative/timeline 산출물이 없으면 생성하고, 업데이트 중 바뀐 카테고리만 보강한다.")
     parser.add_argument("--category", action="store_true",
                         help="Re-run topic_modeling to reclassify all papers. Auto-enables --timeline for changed categories.")
     parser.add_argument("--strict-pdf", action="store_true",
@@ -1427,6 +2044,22 @@ def main():
     parser.add_argument("--dedup-execute", action="store_true",
                         help="Let the Zotero dedup preflight actually delete duplicates. "
                              "Default is dry-run (report only).")
+    parser.add_argument("--insights", action="store_true",
+                        help="extract_insights 에서 cross-category insights(Option)까지 재생성. "
+                             "기본은 paper connections(Core, '같이 보면 좋은 논문')만 생성 (--only connections).")
+    parser.add_argument("--local-fallback", action="store_true",
+                        help="topic_modeling 연결 단계에서 max retry round 를 다 돌고도 막힌 "
+                             "papers 를 로컬 OpenAI 호환 모델(Ollama/LM Studio 등)로 마저 연결. "
+                             "config.json 의 local_model 또는 LOCAL_MODEL_BASE_URL/NAME 필요.")
+    parser.add_argument("--no-deploy", action="store_true",
+                        help="end-of-run prepare_deploy(wrangler deploy + gh-pages + master push)를 건너뛴다. "
+                             "무인 자동복구(auto_recover --execute)처럼 배포를 원치 않는 경우용. "
+                             "환경변수 PAPER_CURATION_NO_DEPLOY 로도 켤 수 있다.")
+    parser.add_argument("--conn-full", action="store_true",
+                        help="연결 캐시(_conn_topk_cache_k*.json)를 무시하고 이번 실행에서 전체 연결을 "
+                             "재생성한다 (월간/대량 추가 후 주기적 full rebuild 용). 자식 프로세스"
+                             "(extract_insights / topic_modeling)가 환경변수 CONN_FULL_REBUILD=1 로 "
+                             "상속한다. 환경변수 CONN_FULL_REBUILD=1 로도 직접 켤 수 있다.")
     # ── Phase 2: 3-axis mode (new, MECE). When --mode is set, it overrides the
     # legacy flag combinations and emits DeprecationWarnings for any legacy
     # flags that were also specified. Omitting --mode keeps 100% legacy
@@ -1442,6 +2075,14 @@ def main():
     # Apply --mode → legacy flags mapping. Pure translation; no behavior change
     # when --mode is absent (args.mode is None → all legacy flags honored as-is).
     _apply_mode_mapping(args)
+
+    # --conn-full → force full connection regen for child subprocesses
+    # (extract_insights / topic_modeling). They read CONN_FULL_REBUILD from env,
+    # which is inherited across subprocess.run, so setting it here is enough.
+    if getattr(args, "conn_full", False):
+        os.environ["CONN_FULL_REBUILD"] = "1"
+        print("[conn] --conn-full → CONN_FULL_REBUILD=1 "
+              "(전체 연결 재생성; 자식 프로세스 env 상속)")
 
     # Propagate strict-pdf flag to find_pdf()
     global _STRICT_PDF
@@ -1673,18 +2314,39 @@ def main():
             log(f"  [persist] failed: {_e}")
 
     # ── Post-processing: rebuild index, classify, insights, topic page ──
-    if len(cp['completed']) > 0 or args.timeline or args.category:
+    topic = args.topic
+    newly_completed = {slug for _item, slug in remaining if slug in cp.get("completed", [])}
+    do_timeline_images = args.timeline or args.category  # --category auto-enables timeline
+    do_ensure_timeline = getattr(args, "ensure_timeline", False)
+    missing_default_artifacts = (
+        _topic_default_artifacts_missing(topic)
+        if (do_ensure_timeline or do_timeline_images)
+        else []
+    )
+    needs_postprocess = (
+        bool(newly_completed)
+        or (len(cp["completed"]) > 0 and not args.resume)
+        or bool(args.timeline)
+        or bool(args.category)
+        or bool(missing_default_artifacts)
+    )
+    if not needs_postprocess:
+        log("\nPost-processing skipped: no new papers, no explicit reclassify/retime, "
+            "and default timeline artifacts already exist.")
+    if needs_postprocess:
         log("\n" + "=" * 60)
         log("POST-PROCESSING: index → classify → summaries → insights → HTML → topic index")
         log("=" * 60)
 
-        topic = args.topic
         is_update = args.resume  # --resume implies update mode
         do_reclassify = args.category  # --category forces topic_modeling
-        do_timeline_images = args.timeline or args.category  # --category auto-enables timeline
 
-        # Identify newly processed slugs (for update mode)
-        newly_completed = set(cp.get("completed", [])) - previously_completed
+        # extract_insights 는 paper connections(Core — '같이 보면 좋은 논문' 박스)만
+        # 기본 생성한다. cross-category insights 는 Option 이라 --insights 가 명시될
+        # 때만 둘 다(--only all) 돌린다. 미생성 시 _insights.json 은 stale/absent 로
+        # 남고 build_topic_index 가 부재를 허용한다.
+        insights_only_arg = ["--only", "all" if args.insights else "connections"]
+
 
         # Steps in this set MUST succeed — any non-zero exit, timeout, or
         # unexpected exception aborts the whole orchestration. Soft-failing
@@ -1771,6 +2433,8 @@ def main():
         # --category: always run (reclassify all)
         # --resume without --category: skip (keep existing categories)
         # full mode: always run
+        # opt-in: connection 단계가 끝까지 막히면 로컬 모델로 마저 연결 (--local-fallback)
+        tm_local = ["--local-fallback"] if getattr(args, "local_fallback", False) else []
         old_cats_by_slug = {}
         if do_reclassify:
             # Snapshot current classifications before reclassification
@@ -1784,20 +2448,27 @@ def main():
             except Exception:
                 pass
             run_step("topic_modeling",
-                     [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic], 3600)
+                     [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic] + tm_local, 3600)
         elif is_update:
+            # Update mode normally runs --skip-classification (refresh coords +
+            # connections only, reuse the existing HDBSCAN bundle). But
+            # classify_papers.py hard-exits if `_hdbscan_model.joblib` is
+            # absent. On a topic that never had a full (non-skip) run the bundle
+            # doesn't exist yet, so a missing bundle must trigger a one-time
+            # FULL topic_modeling (no --skip-classification) to build it,
+            # rather than aborting the whole pipeline at a critical step.
             bundle_path = os.path.join(str(get_topic_dir(topic)), "_hdbscan_model.joblib")
             if not os.path.exists(bundle_path):
-                # 첫 빌드: 분류 번들이 아직 없으므로 --skip-classification 불가 —
-                # 카테고리 생성까지 포함한 풀 topic_modeling 실행
-                run_step("topic_modeling (first build)",
-                         [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic], 3600)
+                log("  [topic_modeling] HDBSCAN bundle missing — running full "
+                    "topic_modeling to build it (first run for this topic)")
+                run_step("topic_modeling",
+                         [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic] + tm_local, 3600)
             else:
                 run_step("topic_modeling (coords+connections)",
-                         [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic, "--skip-classification"], 3600)
+                         [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic, "--skip-classification"] + tm_local, 3600)
         else:
             run_step("topic_modeling",
-                     [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic], 3600)
+                     [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic] + tm_local, 3600)
 
         # Step 3: classify (always — new papers only in update mode without --category)
         run_step("classify_papers",
@@ -1855,14 +2526,33 @@ def main():
                 log(f"  [changed_categories] ERROR reading index: {e}")
                 changed_cats = []
 
+        if missing_default_artifacts:
+            log("  [default_outputs] missing narrative/timeline artifacts — will ensure:")
+            for name in missing_default_artifacts[:12]:
+                log(f"    - {name}")
+            if len(missing_default_artifacts) > 12:
+                log(f"    ... +{len(missing_default_artifacts) - 12} more")
+
+        def run_default_topic_outputs(reason):
+            log(f"  [default_outputs] full narrative/timeline generation ({reason})")
+            run_step("build_category_summaries",
+                     ["python", "pipeline/build_category_summaries.py", "--topic", topic], 1200)
+            run_step("extract_insights",
+                     ["python", "pipeline/extract_insights.py", "--topic", topic] + insights_only_arg, 14400)
+            run_step("generate_timelines",
+                     ["python", "pipeline/generate_timelines.py", "--topic", topic], 21600)
         # Step 5-6: summaries, insights, timelines — scoped by changed categories
-        if do_reclassify and changed_cats:
+        if do_reclassify and changed_cats and missing_default_artifacts:
+            # If default outputs are absent, scoped timeline regeneration would
+            # still leave the main narrative/timeline incomplete. Build all.
+            run_default_topic_outputs("missing default outputs")
+        elif do_reclassify and changed_cats:
             # --category: full reclassification → rebuild ALL summaries/insights (old cats must be purged)
             # Only timelines are scoped to changed categories
             run_step("build_category_summaries",
                      ["python", "pipeline/build_category_summaries.py", "--topic", topic], 1200)
             run_step("extract_insights",
-                     ["python", "pipeline/extract_insights.py", "--topic", topic], 14400)
+                     ["python", "pipeline/extract_insights.py", "--topic", topic] + insights_only_arg, 14400)
             cats_arg = ["--categories"] + changed_cats
             run_step("generate_timelines",
                      ["python", "pipeline/generate_timelines.py", "--topic", topic] + cats_arg, 21600)
@@ -1871,16 +2561,18 @@ def main():
             run_step("build_category_summaries",
                      ["python", "pipeline/build_category_summaries.py", "--topic", topic], 1200)
             run_step("extract_insights",
-                     ["python", "pipeline/extract_insights.py", "--topic", topic], 14400)
+                     ["python", "pipeline/extract_insights.py", "--topic", topic] + insights_only_arg, 14400)
             run_step("generate_timelines",
                      ["python", "pipeline/generate_timelines.py", "--topic", topic], 21600)
         elif is_update:
-            if changed_cats:
+            if missing_default_artifacts and (do_ensure_timeline or do_timeline_images):
+                run_default_topic_outputs("missing default outputs")
+            elif changed_cats:
                 cats_arg = ["--categories"] + changed_cats
                 run_step("build_category_summaries",
                          ["python", "pipeline/build_category_summaries.py", "--topic", topic] + cats_arg, 1200)
                 run_step("extract_insights",
-                         ["python", "pipeline/extract_insights.py", "--topic", topic] + cats_arg, 14400)
+                         ["python", "pipeline/extract_insights.py", "--topic", topic] + cats_arg + insights_only_arg, 14400)
 
                 # Split by image presence:
                 #   - cats_with_image: narrative-only (unless --timeline explicitly requested)
@@ -1905,6 +2597,8 @@ def main():
                         run_step("generate_timelines (images)",
                                  ["python", "pipeline/generate_timelines.py", "--topic", topic,
                                   "--categories"] + cats_missing_image, 21600)
+            elif do_timeline_images:
+                run_default_topic_outputs("--timeline requested")
             else:
                 log("  [summaries/insights/timelines] SKIP (no new papers classified)")
         elif do_timeline_images:
@@ -1912,7 +2606,7 @@ def main():
             run_step("build_category_summaries",
                      ["python", "pipeline/build_category_summaries.py", "--topic", topic], 1200)
             run_step("extract_insights",
-                     ["python", "pipeline/extract_insights.py", "--topic", topic], 14400)
+                     ["python", "pipeline/extract_insights.py", "--topic", topic] + insights_only_arg, 14400)
             run_step("generate_timelines",
                      ["python", "pipeline/generate_timelines.py", "--topic", topic], 21600)
         else:
@@ -1920,7 +2614,7 @@ def main():
             run_step("build_category_summaries",
                      ["python", "pipeline/build_category_summaries.py", "--topic", topic], 1200)
             run_step("extract_insights",
-                     ["python", "pipeline/extract_insights.py", "--topic", topic], 14400)
+                     ["python", "pipeline/extract_insights.py", "--topic", topic] + insights_only_arg, 14400)
             run_step("generate_timelines",
                      ["python", "pipeline/generate_timelines.py", "--topic", topic], 21600)
 
@@ -1929,8 +2623,13 @@ def main():
                  ["python", "pipeline/inject_frontmatter.py", "--topic", topic], 600)
         run_step("generate_moc",
                  ["python", "pipeline/generate_moc.py", "--topic", topic], 600)
-        run_step("generate_network",
-                 ["python", "pipeline/generate_network.py", "--topic", topic], 600)
+        # 네트워크 시각화는 Research Insights 와 묶인 Option(O-2) — --insights 일 때만.
+        # (LLM 호출은 없지만 기능 분류상 인사이트 분석 부가물로 함께 게이트)
+        if args.insights:
+            run_step("generate_network",
+                     ["python", "pipeline/generate_network.py", "--topic", topic], 600)
+        else:
+            log("  [generate_network] SKIP (Option O-2 — --insights 일 때만 재생성)")
 
         # Verify UMAP coordinate coverage before deploy
         try:
@@ -1949,8 +2648,9 @@ def main():
                 log(f"\n  [verify_umap] {len(missing)} papers missing UMAP coordinates — re-running topic_modeling...")
                 run_step("topic_modeling (umap fix)",
                          [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic, "--skip-connections"], 3600)
-                run_step("generate_network (rebuild)",
-                         ["python", "pipeline/generate_network.py", "--topic", topic], 600)
+                if args.insights:   # 네트워크는 Option(O-2) — --insights 일 때만
+                    run_step("generate_network (rebuild)",
+                             ["python", "pipeline/generate_network.py", "--topic", topic], 600)
             else:
                 log(f"  [verify_umap] OK: all {len(topic_slugs)} papers have coordinates")
         except Exception as e:
@@ -1960,6 +2660,10 @@ def main():
                  ["python", "pipeline/review_to_html.py", "--all"], 600)
         run_step("build_topic_index",
                  ["python", "pipeline/build_topic_index.py", topic], 600)
+
+        # Atom 피드(feed.xml) — build_topic_index 가 심은 autodiscovery <link> 의 대상.
+        run_step("build_rss",
+                 ["python", "pipeline/build_rss.py", topic], 300)
 
         # Deep Research search index (section-aware chunks + OpenAI embeddings).
         # Reads OPENAI_API_KEY from env or config.json; fails fast if missing.
@@ -1980,7 +2684,12 @@ def main():
             os.environ.get("CLOUDFLARE_API_TOKEN") or os.environ.get("CF_API_TOKEN")
         )
         has_account_id = bool(os.environ.get("CLOUDFLARE_ACCOUNT_ID"))
-        if has_cf_token and has_account_id:
+        no_deploy = (getattr(args, "no_deploy", False)
+                     or bool(os.environ.get("PAPER_CURATION_NO_DEPLOY")))
+        if no_deploy:
+            log("\n  [prepare_deploy] SKIP: deploy suppressed "
+                "(--no-deploy / PAPER_CURATION_NO_DEPLOY)")
+        elif has_cf_token and has_account_id:
             log("\n  [prepare_deploy] Cloudflare env vars found, deploying...")
             try:
                 result = subprocess.run(
@@ -2009,4 +2718,6 @@ def main():
 
 
 if __name__ == "__main__":
+    from _env_guard import force_py312
+    force_py312()
     main()

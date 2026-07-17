@@ -28,12 +28,13 @@ from google import genai
 from google.genai import types
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from config_loader import PAPERS_DIR as _PAPERS_DIR  # noqa: E402
+from config_loader import PAPERS_DIR as _PAPERS_DIR, get_google_key  # noqa: E402
+import usage_log  # noqa: E402
 
 PAPERS = Path(_PAPERS_DIR)
 DOCS = PAPERS.parent
 
-SCRIPT_MODEL = "gemini-2.5-pro"
+SCRIPT_MODEL = "gemini-3.1-pro-preview"
 TTS_MODEL = "gemini-2.5-flash-preview-tts"
 SAMPLE_RATE = 24_000
 MAX_CHUNK_CHARS = 2200
@@ -279,10 +280,22 @@ def speech_multi(roles: list[dict]) -> types.SpeechConfig:
 
 
 def tts_call(client: genai.Client, text: str, cfg: types.SpeechConfig) -> bytes:
-    resp = client.models.generate_content(
-        model=TTS_MODEL, contents=text,
-        config=types.GenerateContentConfig(response_modalities=["AUDIO"], speech_config=cfg))
-    return resp.candidates[0].content.parts[0].inline_data.data
+    last = None
+    for attempt in range(1, 3):
+        try:
+            resp = client.models.generate_content(
+                model=TTS_MODEL, contents=text,
+                config=types.GenerateContentConfig(
+                    response_modalities=["AUDIO"], speech_config=cfg,
+                    http_options=types.HttpOptions(timeout=180_000)))
+            usage_log.record_gemini(resp, TTS_MODEL)
+            return resp.candidates[0].content.parts[0].inline_data.data
+        except Exception as e:
+            last = e
+            if attempt == 2:
+                break
+            print(f"      TTS retry {attempt}/2: {type(e).__name__}", flush=True)
+    raise last
 
 
 def pool_synth(client, items, fn) -> list[bytes]:
@@ -347,9 +360,10 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+    api_key = get_google_key()  # env(GEMINI/GOOGLE) → config.json(gemini_api_key/google_api_key)
     if not api_key:
-        print("ERROR: GEMINI_API_KEY 또는 GOOGLE_API_KEY 가 필요합니다.", file=sys.stderr)
+        print("ERROR: GEMINI_API_KEY/GOOGLE_API_KEY (env) 또는 config.json(google_api_key) 가 필요합니다.",
+              file=sys.stderr)
         return 1
 
     slug = resolve_slug(args.slug)
@@ -379,6 +393,7 @@ def main() -> int:
     resp = client.models.generate_content(
         model=SCRIPT_MODEL, contents=prompt,
         config=types.GenerateContentConfig(temperature=0.85, max_output_tokens=65536))
+    usage_log.record_gemini(resp, SCRIPT_MODEL)
     script = (resp.text or "").strip()
     if not script:
         print("ERROR: 대본이 비었습니다.", file=sys.stderr)

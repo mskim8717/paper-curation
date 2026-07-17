@@ -9,6 +9,7 @@ Usage:
 """
 import os, re, sys, json, argparse
 from html import escape as esc
+from urllib.parse import quote as _urlquote
 
 from config_loader import PAPERS_DIR as _PAPERS_DIR
 from lib.audio_overview import (
@@ -59,21 +60,67 @@ THEMES = {
                "link_color": "#1856A0", "back_href": "../../scisci/index.html"},
 }
 
+# 배포 도메인 — OG 태그의 절대 URL 용 (= prepare_deploy.CF_BASE_URL).
+_CF_BASE = "https://paper-curation.jehyunlee.dev"
+
 # Paper connections cache (loaded once per run)
 _connections_cache = {}
 
+_BSI = None
+
+
+def _portable_url(doi, title):
+    """다운로드된 .html 에서도 살아있는 절대 URL. build_search_index 의
+    _resolve_external 재사용 — 유효 DOI → doi.org, arXiv → arxiv.org, 없으면
+    Zotero 에 등록된 원문 URL(_zotero_meta.json, 제목 매칭), 최후엔 Scholar 검색.
+    compare_papers.py 도 이 구현을 공유한다."""
+    global _BSI
+    ext = ""
+    try:
+        if _BSI is None:
+            import build_search_index as _bsi
+            _BSI = _bsi
+        _, _, ext = _BSI._resolve_external(title, doi, "")
+    except Exception:
+        # 폴백: DOI/arXiv 직접 해석 (Zotero meta 없이)
+        d = (doi or "").strip()
+        if re.match(r"^10\.\d{3,}/\S+$", d):
+            ext = "https://doi.org/" + _urlquote(d)
+        elif "arxiv" in d.lower():
+            m = re.search(r"(\d{4}\.\d{4,5})", d)
+            if m:
+                ext = "https://arxiv.org/abs/" + m.group(1)
+    return ext or ("https://scholar.google.com/scholar?q=" + _urlquote(title or ""))
+
+
 def _load_connections():
-    """Load all _paper_connections.json files."""
+    """Load every docs/<topic>/_paper_connections.json.
+
+    Topic dirs are DISCOVERED from the filesystem (any docs/ subdirectory
+    holding a _paper_connections.json) — same rule as rebuild_connections.
+    Topic names must not be hardcoded here: setup.py installs arbitrary topic
+    aliases, and a fixed list silently drops their connections (surfaced as
+    paper-curio comparisons missing 같이 보면 좋은 논문). Per-paper lists are
+    identical across topic files (the bidirectional view is global; files
+    differ only in WHICH papers are keys), so merge order doesn't matter.
+    """
     global _connections_cache
     if _connections_cache:
         return _connections_cache
-    from config_loader import get_topic_dir
-    for topic in THEMES:
-        conn_path = os.path.join(str(get_topic_dir(topic)), "_paper_connections.json")
-        if os.path.exists(conn_path):
+    docs_dir = os.path.dirname(PAPERS)
+    try:
+        entries = sorted(os.listdir(docs_dir))
+    except OSError:
+        entries = []
+    for d in entries:
+        conn_path = os.path.join(docs_dir, d, "_paper_connections.json")
+        if not os.path.exists(conn_path):
+            continue
+        try:
             with open(conn_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            _connections_cache.update(data)
+                _connections_cache.update(json.load(f))
+        except Exception as e:
+            print(f"  [warn] {d}/_paper_connections.json load failed: {e}")
     return _connections_cache
 
 def get_css(t):
@@ -94,6 +141,9 @@ tr:nth-child(even) {{ background: #f8f9fa; }}
 td:last-child {{ text-align: center; font-weight: 600; color: {t['accent']}; }}
 .eval-badges {{ display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0; }}
 .eval-badge {{ background: {t['accent_bg']}; color: {t['accent_dark']}; padding: 0.2rem 0.7rem; border-radius: 14px; font-size: 0.8rem; font-weight: 600; }}
+.dl-bar {{ margin: 0.5rem 0; }}
+.dl-btn {{ background: {t['accent']}; color: #fff; border: none; border-radius: 8px; padding: 0.45rem 0.9rem; font-size: 0.85rem; cursor: pointer; font-family: inherit; }}
+.dl-btn:hover {{ background: {t['accent_dark']}; }}
 .essence-box {{ border: 2px solid {t['essence_border']}; border-radius: 10px; padding: 1rem 1.2rem; margin: 0.8rem 0; background: {t['essence_bg']}; }}
 .essence-box h2 {{ color: {t['essence_border']}; margin: 0 0 0.5rem; border: none; padding: 0; }}
 code {{ background: #e8edf3; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.85rem; }}
@@ -118,10 +168,20 @@ a {{ color: {t['link_color']}; }}
 .conn-item.foundation .conn-type {{ color: #8B5CF6; }}
 .conn-item.counterpoint .conn-type {{ color: #F59E0B; }}
 .conn-item.application .conn-type {{ color: #EF4444; }}
-.conn-title {{ font-size: 0.9rem; font-weight: 600; }}
+.conn-title {{ font-size: 0.9rem; font-weight: 600; margin-bottom: 0.35rem; }}
 .conn-title a {{ color: #1a1a2e; text-decoration: none; }}
 .conn-title a:hover {{ color: {t['accent']}; text-decoration: underline; }}
-.conn-reason {{ font-size: 0.85rem; color: #555; margin-top: 0.15rem; }}
+.conn-reason {{ font-size: 0.85rem; color: #555; margin-top: 0.3rem; }}
+.conn-reason-rel {{ font-weight: 700; color: #888; margin-right: 0.25rem; }}
+/* Each reason carries its own relation badge so multiple reasons read equally. */
+.conn-rel-badge {{ display: inline-block; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; margin-right: 0.4rem; padding: 0.05rem 0.4rem; border-radius: 4px; background: #f0f0f0; color: #666; vertical-align: middle; }}
+.conn-rel-badge.alternative {{ color: #3B82F6; background: #EAF1FE; }}
+.conn-rel-badge.extension {{ color: #10B981; background: #E7F7F1; }}
+.conn-rel-badge.foundation {{ color: #8B5CF6; background: #F1ECFD; }}
+.conn-rel-badge.counterpoint {{ color: #F59E0B; background: #FEF5E7; }}
+.conn-rel-badge.application {{ color: #EF4444; background: #FDECEC; }}
+.conn-ref {{ color: {t['accent']}; text-decoration: none; font-weight: 600; }}
+.conn-ref:hover {{ text-decoration: underline; }}
 .review-fig {{ text-align: center; margin: 1.5rem 0; padding: 1rem; background: #f8f9fa; border-radius: 12px; }}
 .review-fig img {{ max-width: min(100%, 700px); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); cursor: zoom-in; }}
 .lightbox {{ display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; cursor: zoom-out; align-items: center; justify-content: center; }}
@@ -169,8 +229,9 @@ def parse_scores(md):
         # Table: | Label | X/5 |
         m = re.search(rf'\|\s*{label}\s*\|\s*(\d+(?:\.\d+)?)\s*/\s*5\s*\|', md)
         if not m:
-            # List: - Label: X/5
-            m = re.search(rf'-\s*{label}\s*:\s*(\d+(?:\.\d+)?)\s*/\s*5', md)
+            # List: - Label: X/5  (tolerate **bold**/*italic* and a "(한글)"
+            # gloss after the label, e.g. "- **Novelty (독창성)**: 4/5")
+            m = re.search(rf'-\s*\**\s*{label}\s*(?:\([^)]*\))?\s*\**\s*:\s*(\d+(?:\.\d+)?)\s*/\s*5', md)
         if m:
             scores[key] = m.group(1)
     return scores
@@ -376,6 +437,11 @@ def md_section_to_html(text, slug_dir=None):
 
 def _inline(text):
     """Process inline markdown: bold, italic, links, code."""
+    # Escape stray angle brackets first so literal tokens in prose (<UNKNOWN>,
+    # <EOS>, <N>, leaked schema tags, …) render visibly instead of vanishing as
+    # unknown HTML tags. The markdown rules below emit their own real tags on
+    # the already-escaped text, so they are unaffected.
+    text = text.replace('<', '&lt;').replace('>', '&gt;')
     text = re.sub(r'`([^`]+)`', r'<code>\1</code>', text)
     text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
     text = re.sub(r'(?<!\*)\*([^*]+?)\*(?!\*)', r'<em>\1</em>', text)
@@ -401,6 +467,64 @@ def _inline(text):
         return f'<a href="https://doi.org/{match.group(1)}" target="_blank">{match.group(1)}</a>'
     text = re.sub(r'(10\.\d{4,}/[^\s<"]+)', _doi_auto_link, text)
     return text
+
+
+# .html 다운로드: 링크를 portable URL 로 치환하고 figure 를 data URI 로
+# 인라인한 자기완결 복사본을 만든다 (플레인 문자열 — JS 문자열 안 개행 없음).
+_DL_JS = r"""
+async function downloadPageHtml() {
+  var btn = document.querySelector('.dl-btn');
+  var oldLabel = btn ? btn.textContent : '';
+  if (btn) { btn.disabled = true; btn.textContent = '이미지 임베딩 중…'; }
+  var root = document.documentElement.cloneNode(true);
+  root.querySelectorAll('a[data-portable]').forEach(function (a) {
+    var u = a.getAttribute('data-portable');
+    if (u) { a.setAttribute('href', u); a.setAttribute('target', '_blank'); }
+  });
+  var live = document.querySelectorAll('img');
+  var cloned = root.querySelectorAll('img');
+  async function toDataUrl(src, liveImg) {
+    // 1) Fetch the exact bytes (same-origin: local server or Cloudflare). This
+    //    embeds the real webp/png losslessly and never taints — unlike canvas.
+    try {
+      var resp = await fetch(src, { cache: 'force-cache' });
+      if (resp && resp.ok) {
+        var blob = await resp.blob();
+        return await new Promise(function (res, rej) {
+          var fr = new FileReader();
+          fr.onload = function () { res(fr.result); };
+          fr.onerror = rej;
+          fr.readAsDataURL(blob);
+        });
+      }
+    } catch (e) { /* fall through to canvas */ }
+    // 2) Canvas fallback (when fetch is blocked, e.g. file:// origin).
+    try {
+      if (liveImg && liveImg.complete && liveImg.naturalWidth) {
+        var c = document.createElement('canvas');
+        c.width = liveImg.naturalWidth; c.height = liveImg.naturalHeight;
+        c.getContext('2d').drawImage(liveImg, 0, 0);
+        return c.toDataURL('image/webp', 0.92);
+      }
+    } catch (e) { /* tainted → keep original path */ }
+    return null;
+  }
+  for (var i = 0; i < live.length && i < cloned.length; i++) {
+    var src = cloned[i].getAttribute('src') || '';
+    if (!src || src.indexOf('data:') === 0) continue;
+    var dataUrl = await toDataUrl(src, live[i]);
+    if (dataUrl) cloned[i].setAttribute('src', dataUrl);
+  }
+  var h = '<!DOCTYPE html>' + root.outerHTML;
+  var b = new Blob([h], { type: 'text/html' });
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(b);
+  a.download = window._PAGE_SLUG + '.html';
+  a.click();
+  URL.revokeObjectURL(a.href);
+  if (btn) { btn.disabled = false; btn.textContent = oldLabel; }
+}
+"""
 
 
 def convert_review(md_path, topic, slug_dir):
@@ -455,6 +579,12 @@ def convert_review(md_path, topic, slug_dir):
 
     # Title
     body_parts.append(f'<h1>{esc(title)}</h1>')
+    # .html 다운로드 — figure 를 data URI 로 인라인하고 논문 링크를 portable
+    # URL 로 치환한 자기완결 복사본을 내려받는다.
+    body_parts.append(
+        '<div class="dl-bar">'
+        '<button class="dl-btn" onclick="downloadPageHtml()">.html 다운로드</button>'
+        '</div>')
     # Audio Overview button (localhost-only; disabled when no key on deploy)
     body_parts.append(audio_bar_html())
 
@@ -507,33 +637,32 @@ def convert_review(md_path, topic, slug_dir):
         else:
             body_parts.append(f'<div class="section-box"><h2>{esc(sec_title)}</h2>\n{sec_html}</div>')
 
-    # Related papers (connections)
+    # Related papers (connections). The per-topic _paper_connections.json is
+    # already bidirectional + per-target-deduped (see lib/connections.py): every
+    # A→B edge implies B→A and a paper connected for several reasons appears once
+    # with all reasons in its ``reasons`` array. So we render the paper's edge
+    # list directly — no incoming scan, no per-relation duplication.
     connections = _load_connections()
     slug_dir_name = os.path.basename(slug_dir)
-    outgoing = connections.get(slug_dir_name, [])
-    # Incoming: 이 논문을 참조하는 다른 논문들
-    incoming = []
-    for src_slug, src_conns in connections.items():
-        if src_slug == slug_dir_name:
-            continue
-        for c in src_conns:
-            if c.get("slug") == slug_dir_name:
-                incoming.append({
-                    "slug": src_slug,
-                    "relation": c.get("relation", "alternative"),
-                    "reason": c.get("reason", ""),
-                })
-    conns = outgoing + incoming
+    conns = list(connections.get(slug_dir_name, []))
     if conns:
         # Load paper titles and dates for link text and sorting
         index_path = os.path.join(PAPERS, "_papers_index.json")
         slug_titles = {}
         slug_dates = {}
+        slug_dois = {}
         if os.path.exists(index_path):
             with open(index_path, "r", encoding="utf-8") as f:
                 for p in json.load(f):
                     slug_titles[p["slug"]] = p.get("title", p["slug"])
                     slug_dates[p["slug"]] = p.get("date", "")
+                    slug_dois[p["slug"]] = p.get("doi", "")
+
+        def _purl_attr(tslug):
+            """다운로드본용 portable URL 속성 (라이브 페이지는 상대경로 유지)."""
+            u = _portable_url(slug_dois.get(tslug, ""),
+                              slug_titles.get(tslug, tslug))
+            return f' data-portable="{esc(u)}"'
 
         type_labels = {
             "alternative": "다른 접근",
@@ -543,22 +672,23 @@ def convert_review(md_path, topic, slug_dir):
             "application": "응용 사례",
         }
 
-        # Dedup within the same relation: a paper appearing twice as e.g.
-        # "alternative" for the same source is redundant. The same paper
-        # is still allowed to show up under *different* relation types
-        # (e.g. both "alternative" and "application") because those carry
-        # distinct meanings. We keep the first occurrence so upstream
-        # ordering (if any) is preserved; the explicit sort below then
-        # places every surviving entry in the canonical order.
-        _seen_pairs = set()
-        _deduped = []
+        # Defensive dedup by target slug: the data layer already collapses each
+        # paper to one entry, but a slug can arrive via two topic files. Keep the
+        # first entry and union its ``reasons`` so no reason is lost.
+        _by_slug = {}
         for c in conns:
-            key = (c.get("relation", ""), c.get("slug", ""))
-            if key in _seen_pairs:
-                continue
-            _seen_pairs.add(key)
-            _deduped.append(c)
-        conns = _deduped
+            cs = c.get("slug", "")
+            if cs not in _by_slug:
+                _by_slug[cs] = dict(c)
+            else:
+                merged = _by_slug[cs]
+                seen = {(r.get("relation"), r.get("reason"))
+                        for r in merged.get("reasons", [])}
+                for r in c.get("reasons", []):
+                    if (r.get("relation"), r.get("reason")) not in seen:
+                        merged.setdefault("reasons", []).append(r)
+                        seen.add((r.get("relation"), r.get("reason")))
+        conns = list(_by_slug.values())
 
         # 정렬: 1차 관계 유형, 2차 시간순
         rel_order = {"foundation": 0, "alternative": 1, "extension": 2,
@@ -568,19 +698,71 @@ def convert_review(md_path, topic, slug_dir):
             slug_dates.get(c.get("slug", ""), ""),
         ))
 
+        # num → slug map for turning paper-number references inside reason text
+        # into links. LLM-written reasons reference papers two ways: bracketed
+        # ("[1065]") and bare with a Korean particle ("835는", "1021의"). We link
+        # both. The map carries leading-zero-insensitive keys ("070" and "70").
+        num_to_slug = {}
+        for s in slug_titles:
+            pre = s.split("_")[0]
+            num_to_slug[pre] = s
+            if pre.isdigit():
+                num_to_slug[str(int(pre))] = s
+
+        def _resolve(num):
+            return num_to_slug.get(num) or (num_to_slug.get(str(int(num)))
+                                            if num.isdigit() else None)
+
+        # A bare number is treated as a paper reference only when (a) it is a real
+        # paper number AND (b) a Korean reference particle follows it — this keeps
+        # years ("2024년"), counts ("7개") and percentages ("79.4%") from linking.
+        _JOSA = (r"(?:은|는|이|가|의|을|를|와|과|도|만|로|으로|에서|에게|보다|처럼"
+                 r"|이라|라는|라고|및|과는|와는|이라는|이라고)")
+        _REF_RE = re.compile(r"\[(\d+)\]|(?<![\d.])(\d{2,})(?=" + _JOSA + r")")
+
+        def _linkify_refs(reason_text):
+            """Escape reason text, then link every paper reference (bracketed or
+            bare-with-particle). References to papers absent from the corpus stay
+            plain; self-references link to the current page so none render dead."""
+            def _repl(m):
+                num = m.group(1) if m.group(1) is not None else m.group(2)
+                tslug = _resolve(num)
+                if not tslug:
+                    return m.group(0)  # not in corpus → leave plain
+                ttitle = esc(slug_titles.get(tslug, tslug))
+                cls = ("conn-ref conn-ref-self" if tslug == slug_dir_name
+                       else "conn-ref")
+                label = f"[{num}]" if m.group(1) is not None else num
+                return (f'<a class="{cls}" href="../{esc(tslug)}/index.html"'
+                        f'{_purl_attr(tslug)} '
+                        f'title="{ttitle}">{label}</a>')
+            return _REF_RE.sub(_repl, esc(reason_text))
+
         conn_items = []
         for c in conns:
             cslug = c.get("slug", "")
             rel = c.get("relation", "alternative")
-            reason = c.get("reason", "")
             ctitle = slug_titles.get(cslug, cslug)
-            label = type_labels.get(rel, rel)
+            # One card per paper. Every reason is listed equally, each carrying its
+            # own relation badge (기반 연구 / 다른 접근 / ...).
+            rlist = c.get("reasons") or [{"relation": rel, "reason": c.get("reason", "")}]
+            reason_html = []
+            for rr in rlist:
+                rreason = rr.get("reason", "")
+                if not rreason:
+                    continue
+                rrel = rr.get("relation", rel)
+                rlabel = type_labels.get(rrel, rrel)
+                reason_html.append(
+                    f'<div class="conn-reason">'
+                    f'<span class="conn-rel-badge {esc(rrel)}">{esc(rlabel)}</span>'
+                    f'{_linkify_refs(rreason)}</div>')
             conn_items.append(
                 f'<div class="conn-item {esc(rel)}">'
-                f'<div class="conn-type">{esc(label)}</div>'
-                f'<div class="conn-title"><a href="../{esc(cslug)}/index.html">{esc(ctitle)}</a></div>'
-                f'<div class="conn-reason">{esc(reason)}</div>'
-                f'</div>'
+                f'<div class="conn-title"><a href="../{esc(cslug)}/index.html"'
+                f'{_purl_attr(cslug)}>{esc(ctitle)}</a></div>'
+                + "".join(reason_html)
+                + '</div>'
             )
         body_parts.append(
             '<div class="connections-box">'
@@ -598,12 +780,50 @@ def convert_review(md_path, topic, slug_dir):
     audio_connections = []
     if conns:
         for c in conns:
+            rlist = c.get("reasons") or [{"relation": c.get("relation", ""),
+                                          "reason": c.get("reason", "")}]
+            reason_txt = " / ".join(r.get("reason", "") for r in rlist
+                                    if r.get("reason"))
             audio_connections.append({
                 "title": slug_titles.get(c.get("slug", ""), c.get("slug", "")),
                 "relation": type_labels.get(c.get("relation", ""), c.get("relation", "")),
-                "reason": c.get("reason", ""),
+                "reason": reason_txt,
             })
     audio_ctx = {"title": title, "review": md, "connections": audio_connections}
+
+    # OG 소셜 카드 — 링크 공유 시 제목/Essence/대표 figure 가 카드로 뜬다.
+    # 이미지 URL 은 절대경로여야 크롤러가 읽는다. figures/…​.png 는 배포 시
+    # prepare_deploy 가 .webp 로 함께 재작성하므로 로컬/웹 모두 정합.
+    og_desc = ""
+    ess_m = re.search(r'\n##\s*Essence[^\n]*\n([\s\S]+?)(?=\n##\s|\Z)', md)
+    if ess_m:
+        t = re.sub(r'!\[[^\]]*\]\([^)]*\)', '', ess_m.group(1))
+        t = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', t)
+        t = re.sub(r'[*_`>#|]', '', t)
+        # Essence 박스는 figure 캡션(영문)이 앞서고 한글 요약이 뒤따른다 —
+        # 카드 설명은 한글 요약 문단을 우선한다.
+        paras = [re.sub(r'\s+', ' ', p).strip()
+                 for p in re.split(r'\n\s*\n', t) if p.strip()]
+        pick = next((p for p in paras if re.search(r'[가-힣]', p)),
+                    paras[0] if paras else "")
+        og_desc = pick[:160]
+    og_img = ""
+    fig_dir = os.path.join(slug_dir, "figures")
+    if os.path.isdir(fig_dir):
+        figs = sorted((f for f in os.listdir(fig_dir)
+                       if re.match(r'fig\d+\.(png|webp)$', f)),
+                      key=lambda f: int(re.findall(r'\d+', f)[0]))
+        if figs:
+            og_img = f"{_CF_BASE}/papers/{slug_dir_name}/figures/{figs[0]}"
+    og_meta = (
+        '<meta property="og:type" content="article">\n'
+        '<meta property="og:site_name" content="Paper Curation">\n'
+        f'<meta property="og:title" content="{esc(title)}">\n'
+        + (f'<meta property="og:description" content="{esc(og_desc)}">\n' if og_desc else "")
+        + f'<meta property="og:url" content="{_CF_BASE}/papers/{slug_dir_name}/">\n'
+        + (f'<meta property="og:image" content="{og_img}">\n' if og_img else "")
+        + f'<meta name="twitter:card" content="{"summary_large_image" if og_img else "summary"}">'
+    )
 
     # Assemble
     css = get_css(theme) + "\n" + get_audio_css(theme)
@@ -613,6 +833,7 @@ def convert_review(md_path, topic, slug_dir):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{esc(title)}</title>
+{og_meta}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css">
 <script>window.MathJax={{tex:{{inlineMath:[['$','$'],['\\\\(','\\\\)']],displayMath:[['$$','$$'],['\\\\[','\\\\]']]}}}};</script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
@@ -638,6 +859,10 @@ document.addEventListener('DOMContentLoaded', function() {{
   }});
 }});
 </script>
+<script>
+window._PAGE_SLUG = {json.dumps(slug_dir_name)};
+{_DL_JS}
+</script>
 {audio_script_block(audio_ctx)}
 <footer style="text-align:center;padding:2rem 0 1rem;color:#999;font-size:0.85rem;border-top:1px solid #eee;margin-top:3rem;">
 Developed by Jehyun Lee, KIST AIX Strategy Department | jehyun.lee@gmail.com
@@ -661,32 +886,73 @@ def detect_topic(slug, index_path=None):
     return "ai4s"
 
 
-def _run_review_to_html(*, topic=None, slug=None, slugs=None, all_papers=False):
+def _resolve_target_slugs(all_slugs, *, slug=None, slugs=None,
+                          with_connected=False, connections=None):
+    """Pure resolver: which paper dirs to (re)render, given the corpus list.
+
+    `slugs` may be a list, a comma-separated string ("9121,9122"), or a
+    'start-end' numeric range ("251-258"). A bare prefix matches an exact slug or
+    an "NNN_" prefix (so "120" hits 120_* but not 1200_*). NOTE: a raw string is
+    normalized to a list first — iterating the string directly would walk
+    characters and match almost everything.
+
+    With `with_connected` (and a merged `connections` dict), the result is
+    expanded to include every paper connected to a seed, so a new/changed
+    connection's reverse edge is re-rendered on the neighbour's own page. The
+    bidirectional view is global, so a seed's connection list already names all
+    its neighbours in both directions.
+    """
+    if slug:
+        target = [slug] if slug in all_slugs else [d for d in all_slugs if d.startswith(slug)]
+    elif isinstance(slugs, str) and re.fullmatch(r'\s*\d+\s*-\s*\d+\s*', slugs):
+        a, b = (int(x) for x in slugs.split('-'))
+        def _num(d):
+            m = re.match(r'^(\d+)_', d)
+            return int(m.group(1)) if m else 0
+        target = [d for d in all_slugs if a <= _num(d) <= b]
+    elif slugs:
+        slug_list = ([s.strip() for s in slugs.split(',')]
+                     if isinstance(slugs, str) else list(slugs))
+        slug_list = [s for s in slug_list if s]
+        target = [d for d in all_slugs
+                  if any(d == s or d.startswith(s + '_') for s in slug_list)]
+    else:
+        target = list(all_slugs)
+
+    if with_connected and target and connections:
+        valid = set(all_slugs)
+        extra = set()
+        for s in target:
+            for c in connections.get(s, []) or []:
+                t = c.get('slug')
+                if t in valid:
+                    extra.add(t)
+        target = sorted(set(target) | extra)
+    return target
+
+
+def _run_review_to_html(*, topic=None, slug=None, slugs=None, all_papers=False,
+                        with_connected=False):
     """Programmatic entrypoint for review_to_html.
 
     - `slug` (str): one slug to convert (mutually exclusive with `slugs`).
-    - `slugs`: either a list of slugs or a 'start-end' numeric range string.
+    - `slugs`: a list of slugs, a comma-separated string ("9121,9122"), or a
+      'start-end' numeric range string ("251-258").
     - `all_papers`: convert everything (same as default behavior).
+    - `with_connected`: also re-render every paper connected to the selected
+      seeds, so a new/changed connection shows its reverse edge on the
+      neighbour's own page.
     """
     index_path = os.path.join(PAPERS, "_papers_index.json")
 
     all_slugs = sorted(d for d in os.listdir(PAPERS)
                        if os.path.isdir(os.path.join(PAPERS, d)) and re.match(r'^\d{3,}_', d))
 
-    if slug:
-        target_slugs = [slug] if slug in all_slugs else [d for d in all_slugs if d.startswith(slug)]
-    elif isinstance(slugs, str) and "-" in slugs:
-        start, end = slugs.split('-')
-        def _slug_num(d):
-            m = re.match(r'^(\d+)_', d)
-            return int(m.group(1)) if m else 0
-        target_slugs = [d for d in all_slugs
-                        if _slug_num(d) >= int(start) and _slug_num(d) <= int(end)]
-    elif slugs:
-        target_slugs = [d for d in all_slugs
-                        if any(d == s or d.startswith(s) for s in slugs)]
-    else:
-        target_slugs = all_slugs
+    target_slugs = _resolve_target_slugs(
+        all_slugs, slug=slug,
+        slugs=(None if all_papers else slugs),
+        with_connected=with_connected,
+        connections=_load_connections() if with_connected else None)
 
     converted = 0
     skipped = 0
@@ -710,10 +976,15 @@ def _run_review_to_html(*, topic=None, slug=None, slugs=None, all_papers=False):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--topic', default=None, help='Force topic (ai4s/scisci)')
-    parser.add_argument('--slugs', default=None, help='Slug range: 251-258')
+    parser.add_argument('--slugs', default=None,
+                        help='Slug range "251-258" or comma list "9121,9122"')
     parser.add_argument('--all', action='store_true', help='Regenerate all')
+    parser.add_argument('--with-connected', action='store_true',
+                        help='Also re-render pages of papers connected to --slugs '
+                             '(so reverse edges show on neighbour pages)')
     args = parser.parse_args()
-    _run_review_to_html(topic=args.topic, slugs=args.slugs, all_papers=args.all)
+    _run_review_to_html(topic=args.topic, slugs=args.slugs, all_papers=args.all,
+                        with_connected=args.with_connected)
 
 
 if __name__ == "__main__":

@@ -6,6 +6,7 @@ ai4s+scisci/
 # Local dev caches — never deployed
 _local_keys.json
 _zotero_keys.json
+_zotero_meta.json
 
 # Obsidian / Claude Code / OMC runtime files
 .obsidian/
@@ -19,7 +20,14 @@ _zotero_keys.json
 notes/
 papers/*/notes.md
 
+# Multi-paper comparisons (paper-curio local feature)
+papers/_comparisons/
+
 # Source markdown (only HTML is served)
 papers/*/review.md
 papers/*/text.md
 papers/*/originality.md
+
+
+# Cross-topic 통합 Deep Research (로컬 전용)
+_cross/

@@ -29,6 +29,18 @@ def log(msg):
     ts = datetime.now().strftime("%H:%M:%S")
     print(f"[{ts}] {msg}", flush=True)
 
+def _anthropic_text(resp):
+    parts = []
+    for block in getattr(resp, "content", []) or []:
+        if getattr(block, "type", None) == "text" and getattr(block, "text", None):
+            parts.append(block.text)
+    text = "".join(parts).strip()
+    if not text:
+        types = [getattr(b, "type", type(b).__name__) for b in getattr(resp, "content", []) or []]
+        raise RuntimeError(f"Anthropic response contained no text blocks: {types}")
+    return text
+
+
 
 def load_topic_data(topic):
     """토픽의 논문, 분류, 카테고리 요약 로드."""
@@ -63,8 +75,17 @@ def load_topic_data(topic):
 # 1. Cross-Category Insights
 # ═══════════════════════════════════════════
 
-MAX_PROMPT_TOKENS = 200000
-TARGET_PROMPT_TOKENS = 150000
+# Sonnet 4.6 의 context window 는 1M 이고, 실제 insight 호출은 max_tokens=8000
+# 출력을 요청한다 (_cc_anthropic_call). 따라서 input+output 이 window 를 넘지 않으려면
+# 프롬프트 자체는 (window - max_output - safety_margin) 아래여야 한다. 1M 를 그대로
+# 임계값으로 쓰면 ~192~200k 프롬프트가 shrink gate 를 그냥 통과한 뒤 호출 시점에
+# context-length 초과로 죽고, 바깥 try/except 가 빈 insight 를 돌려준다.
+# CONTEXT_WINDOW - MAX_OUTPUT_TOKENS - SAFETY_MARGIN = 1000000 - 8000 - 4000 = 988000.
+_CONTEXT_WINDOW = 1000000
+_MAX_OUTPUT_TOKENS = 8000   # _cc_anthropic_call max_tokens
+_SAFETY_MARGIN = 4000       # tool schema/오버헤드/추정 오차 흡수
+MAX_PROMPT_TOKENS = _CONTEXT_WINDOW - _MAX_OUTPUT_TOKENS - _SAFETY_MARGIN  # 988000
+TARGET_PROMPT_TOKENS = 900000
 
 
 def _est_tokens(text):
@@ -72,7 +93,7 @@ def _est_tokens(text):
     return int(len(text) / 1.5)
 
 
-def _count_tokens(client, text, model="claude-sonnet-4-6"):
+def _count_tokens(client, text, model="claude-sonnet-5"):
     """Authoritative token count via Anthropic API (no output tokens spent).
     Falls back to _est_tokens on any API error."""
     try:
@@ -118,12 +139,12 @@ def _haiku_summarize_block(block, client, target_chars):
     )
     _t0 = time.time()
     log(f"    [haiku-summarize] calling Haiku 4.5 (~{_est_tokens(prompt)} input tokens, target {target_chars} chars)...")
-    resp = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+    resp = client.with_options(timeout=600.0).messages.create(
+        model="claude-haiku-4-5",
         max_tokens=max(2000, target_chars // 3),
         messages=[{"role": "user", "content": prompt}],
     )
-    out = resp.content[0].text.strip()
+    out = _anthropic_text(resp)
     log(f"    [haiku-summarize] -> {len(out)} chars in {time.time()-_t0:.0f}s")
     return out
 
@@ -132,8 +153,15 @@ def _fit_cat_blocks(cat_papers, client, max_prompt_tokens, target_prompt_tokens,
                     prompt_head, prompt_tail):
     """Assemble cat blocks. If (head+blocks+tail) token count > max_prompt_tokens,
     progressively summarize the largest block (via Haiku) until total ≤
-    target_prompt_tokens. Uses Anthropic's count_tokens API for authoritative
-    measurement. Returns the concatenated text + set of summarized category names.
+    target_prompt_tokens. Returns the concatenated text + set of summarized
+    category names.
+
+    Token 측정 비용 최적화: count_tokens API (네트워크 왕복) 는 시작 1회 +
+    종료 1회만 호출한다. shrink 루프 안에서는 매 반복마다 API 를 때리는 대신,
+    시작 시 측정한 (authoritative tokens / total chars) 비율로 char→token 을
+    국소 추정해서 언제 멈출지 결정한다. 이렇게 하면 큰 토픽에서 발생하던
+    ~22 회의 직렬 count_tokens 왕복이 2 회로 줄어든다. (한국↔Anthropic 경로에서
+    각 호출은 ~150~200k 페이로드라 수십 초씩 걸림.)
     """
     blocks = {}
     summarized = set()
@@ -142,11 +170,16 @@ def _fit_cat_blocks(cat_papers, client, max_prompt_tokens, target_prompt_tokens,
             continue
         blocks[cat_name] = _build_cat_block(cat_name, papers)
 
-    def total_tokens():
+    def full_prompt_text():
         cat_text = "\n\n".join(blocks[c] for c in sorted(blocks.keys()))
-        return _count_tokens(client, prompt_head + cat_text + prompt_tail)
+        return prompt_head + cat_text + prompt_tail
 
-    initial_total = total_tokens()
+    def api_total_tokens():
+        return _count_tokens(client, full_prompt_text())
+
+    # ── 시작 1회: authoritative 측정 ──────────────────────────────────────
+    initial_text = full_prompt_text()
+    initial_total = _count_tokens(client, initial_text)
     log(f"  Prompt token count (authoritative): {initial_total}")
     if initial_total <= max_prompt_tokens:
         return "\n\n".join(blocks[c] for c in sorted(blocks.keys())), summarized
@@ -154,9 +187,16 @@ def _fit_cat_blocks(cat_papers, client, max_prompt_tokens, target_prompt_tokens,
     log(f"  {initial_total} > {max_prompt_tokens} — running Haiku summarization "
         f"loop (target {target_prompt_tokens}).")
 
+    # 시작 시점의 토큰/문자 비율로 char→token 국소 추정기를 보정한다.
+    # (Korean-heavy 혼합 텍스트라 _est_tokens 의 고정 1/1.5 보다 실측 비율이 정확.)
+    tok_per_char = (initial_total / max(1, len(initial_text)))
+
+    def est_total_tokens():
+        return int(len(full_prompt_text()) * tok_per_char)
+
     max_loops = 20
     for _ in range(max_loops):
-        cur = total_tokens()
+        cur = est_total_tokens()  # 국소 추정 — 루프 안에서는 API 호출 없음
         if cur <= target_prompt_tokens:
             break
         # Summarize the biggest remaining block
@@ -175,7 +215,8 @@ def _fit_cat_blocks(cat_papers, client, max_prompt_tokens, target_prompt_tokens,
             blocks[biggest_cat], client, target_chars)
         summarized.add(biggest_cat)
 
-    final_total = total_tokens()
+    # ── 종료 1회: 실제 Sonnet 호출 전 authoritative 재측정 ────────────────
+    final_total = api_total_tokens()
     log(f"  Prompt after summarization: ~{final_total} tokens "
         f"(summarized categories: {len(summarized)})")
     return "\n\n".join(blocks[c] for c in sorted(blocks.keys())), summarized
@@ -184,7 +225,7 @@ def _fit_cat_blocks(cat_papers, client, max_prompt_tokens, target_prompt_tokens,
 def extract_cross_category_insights(topic, cat_papers, cat_summaries, client):
     """카테고리 간 교차 insight 추출. Sonnet 1회 호출.
 
-    200k 토큰 초과 시 Haiku summarization fallback 으로 150k 아래로 압축.
+    988k 토큰 초과 시 Haiku summarization fallback 으로 900k 아래로 압축.
     """
 
     # Build prompt skeleton first (without cat data) to measure overhead.
@@ -355,11 +396,15 @@ Output ONLY valid JSON in this exact format:
 # chain can move to the next backend.
 # ─────────────────────────────────────────────────────────────────────────────
 
+_CC_ANTHROPIC_MODEL = os.environ.get(
+    "EXTRACT_INSIGHTS_CC_ANTHROPIC_MODEL", "claude-sonnet-5")
+
+
 def _cc_anthropic_call(client, prompt, schema):
     if client is None:
         raise RuntimeError("Anthropic client unavailable")
     resp = client.messages.create(
-        model="claude-sonnet-4-6",
+        model=_CC_ANTHROPIC_MODEL,
         max_tokens=8000,
         tools=[schema],
         tool_choice={"type": "tool", "name": schema["name"]},
@@ -432,55 +477,6 @@ def _cc_gemini_call(prompt, schema):
     return json.loads(text)
 
 
-# ═══════════════════════════════════════════
-# 2. Paper Connections (per-category batch)
-# ═══════════════════════════════════════════
-
-def _call_with_deadline(fn, deadline_s, label=""):
-    """Run fn() in a daemon thread; raise TimeoutError if it exceeds deadline_s.
-
-    The Anthropic SDK has no hard total-request deadline, and httpx's read
-    timeout doesn't reliably fire when a Korea↔US TCP connection is silently
-    severed by a middlebox (socket stays ESTABLISHED, recv() blocks forever).
-    This wraps the call in a wall-clock watchdog: past the deadline we abandon
-    the (un-killable) thread + its hung socket and raise, so the caller's
-    per-batch except handler can skip it instead of hanging the whole run."""
-    import threading
-    box = {}
-
-    def _w():
-        try:
-            box["v"] = fn()
-        except BaseException as e:  # noqa: BLE001 — propagate any failure
-            box["e"] = e
-
-    t = threading.Thread(target=_w, daemon=True)
-    t.start()
-    t.join(deadline_s)
-    if t.is_alive():
-        raise TimeoutError(f"{label} exceeded {deadline_s}s wall-clock deadline")
-    if "e" in box:
-        raise box["e"]
-    return box.get("v")
-
-
-# Hard per-batch wall-clock cap. Legit batches finish in 2~6 min; rare ones
-# reach ~10 min. Hangs run 20~60+ min. 900s kills hangs while allowing almost
-# all real completions.
-_CONN_BATCH_DEADLINE_S = 900
-
-# Backend fallback chain. Korea↔Anthropic route stalls badly some windows while
-# the OpenAI route stays healthy (and vice-versa). The connection task is plain
-# structured-JSON generation, not provider-specific — so we try backends in
-# order and fall back on failure. Default: Anthropic primary, OpenAI fallback.
-# Override order with EXTRACT_INSIGHTS_BACKENDS=openai,anthropic (or just one).
-_BACKENDS = [b.strip().lower() for b in
-             os.environ.get("EXTRACT_INSIGHTS_BACKENDS",
-                            os.environ.get("EXTRACT_INSIGHTS_BACKEND", "anthropic") + ",openai")
-             .split(",") if b.strip()]
-# de-dup preserving order
-_BACKENDS = list(dict.fromkeys(_BACKENDS))
-_OPENAI_CONN_MODEL = os.environ.get("EXTRACT_INSIGHTS_OPENAI_MODEL", "gpt-4.1")
 # Cross-category insights fallback chain (separate from paper_connections):
 # anthropic → openai → gemini. Each backend is forced into the same JSON schema
 # so the downstream consumer is provider-agnostic. Override with
@@ -490,341 +486,194 @@ _CC_BACKENDS = [b.strip().lower() for b in
                                 "anthropic,openai,gemini").split(",")
                  if b.strip()]
 _CC_BACKENDS = list(dict.fromkeys(_CC_BACKENDS))
-_OPENAI_CC_MODEL = os.environ.get("EXTRACT_INSIGHTS_CC_OPENAI_MODEL", "gpt-4.1")
-_GEMINI_CC_MODEL = os.environ.get("EXTRACT_INSIGHTS_CC_GEMINI_MODEL", "gemini-2.5-pro")
-# Per-attempt wall-clock cap (thread watchdog) — fail fast so fallback kicks in.
-_ATTEMPT_DEADLINE_S = int(os.environ.get("EXTRACT_INSIGHTS_ATTEMPT_DEADLINE", "150"))
-# Circuit breaker: after this many consecutive failures of a backend, drop it
-# for the rest of the run (don't keep wasting _ATTEMPT_DEADLINE_S per batch).
-_CB_TRIP = 3
-_cb_fails: dict[str, int] = {}
-_cb_lock = __import__("threading").Lock()
+_OPENAI_CC_MODEL = os.environ.get("EXTRACT_INSIGHTS_CC_OPENAI_MODEL", "gpt-5.5")
+_GEMINI_CC_MODEL = os.environ.get("EXTRACT_INSIGHTS_CC_GEMINI_MODEL", "gemini-3.1-pro-preview")
 
 
-_CONNECTIONS_TOOL_SCHEMA = {
-    "name": "emit_connections",
-    "description": (
-        "Emit paper connection recommendations. Each entry in "
-        "`connections` is one source paper plus 2+ related target papers."
-    ),
-    "input_schema": {
-        "type": "object",
-        "properties": {
-            "connections": {
-                "type": "array",
-                "items": {
-                    "type": "object",
-                    "properties": {
-                        "source": {"type": "string",
-                                    "description": "Source paper number (e.g. '045')."},
-                        "targets": {
-                            "type": "array",
-                            "minItems": 2,
-                            "items": {
-                                "type": "object",
-                                "properties": {
-                                    "target": {"type": "string",
-                                                "description": "Target paper number."},
-                                    "relation": {"enum": ["alternative", "extension",
-                                                           "foundation", "counterpoint",
-                                                           "application"]},
-                                    "reason": {"type": "string", "minLength": 5,
-                                                "description": "한국어로 왜 같이 읽어야 하는지 1문장."},
-                                },
-                                "required": ["target", "relation", "reason"],
-                            },
-                        },
-                    },
-                    "required": ["source", "targets"],
-                },
-            },
-        },
-        "required": ["connections"],
-    },
-}
+def _embed_model_tag(cache_path):
+    """Embedding-geometry tag for the connection cache.
 
-
-def _one_backend_call(backend: str, clients: dict, prompt: str) -> str:
-    """Call a single backend and return the JSON-encoded connection map
-    text. Both branches reach the same downstream ``json.loads`` so the
-    fallback contract is preserved.
-
-    Anthropic uses tool-use (forced ``emit_connections``) to eliminate
-    raw-text JSON parsing fragility; the tool result is converted to
-    the legacy ``{source_num: [{target, relation, reason}, ...]}`` dict
-    shape and re-serialised. OpenAI keeps ``response_format=json_object``
-    since that backend already returns deterministic JSON.
-    """
-    if backend == "openai":
-        resp = clients["openai"].chat.completions.create(
-            model=_OPENAI_CONN_MODEL,
-            max_tokens=16000,
-            response_format={"type": "json_object"},
-            messages=[{"role": "user", "content": prompt}],
-        )
-        return (resp.choices[0].message.content or "").strip()
-
-    resp = clients["anthropic"].messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=20000,
-        tools=[_CONNECTIONS_TOOL_SCHEMA],
-        tool_choice={"type": "tool", "name": "emit_connections"},
-        messages=[{"role": "user", "content": prompt}],
-    )
-    tool_input = None
-    for block in resp.content:
-        if getattr(block, "type", None) == "tool_use" \
-                and getattr(block, "name", None) == "emit_connections":
-            tool_input = dict(block.input)
-            break
-    if tool_input is None:
-        raise RuntimeError("emit_connections tool was not invoked")
-    # Tool emits `[{source, targets:[{target,relation,reason}]}]`; rewrite
-    # to the legacy `{source_num: [{target, relation, reason}]}` shape so
-    # the downstream json.loads parser sees the same structure as before.
-    legacy = {}
-    for entry in tool_input.get("connections", []) or []:
-        src = str(entry.get("source", "")).strip()
-        if not src:
-            continue
-        legacy[src] = entry.get("targets", []) or []
-    return json.dumps(legacy, ensure_ascii=False)
-
-
-def _conn_llm_text(clients: dict, prompt: str, label: str = "") -> tuple[str, str]:
-    """Try backends in _BACKENDS order with a per-attempt deadline; fall back on
-    failure. Circuit-breaks a backend after _CB_TRIP consecutive failures.
-    Returns (text, backend_used). Raises if every available backend fails."""
-    last_err = None
-    for b in _BACKENDS:
-        if clients.get(b) is None:
-            continue
-        with _cb_lock:
-            if _cb_fails.get(b, 0) >= _CB_TRIP:
-                continue  # tripped — skip for rest of run
-        try:
-            text = _call_with_deadline(
-                lambda: _one_backend_call(b, clients, prompt),
-                _ATTEMPT_DEADLINE_S, label=f"{label}:{b}")
-            with _cb_lock:
-                _cb_fails[b] = 0  # success resets the breaker
-            return text, b
-        except Exception as e:  # noqa: BLE001
-            last_err = e
-            with _cb_lock:
-                _cb_fails[b] = _cb_fails.get(b, 0) + 1
-                tripped = _cb_fails[b] >= _CB_TRIP
-            log(f"      [fallback] {b} failed ({type(e).__name__}: {str(e)[:70]})"
-                f"{' — CIRCUIT TRIPPED, dropping for rest of run' if tripped else ' → next backend'}")
-    raise RuntimeError(f"all backends failed: {type(last_err).__name__}: {str(last_err)[:80]}")
-
-
-def _call_connections_batch(papers_batch, cat_name, topic, all_paper_lines,
-                            cross_cat_lines, clients):
-    """논문 배치에 대해 connections 호출. 같은 카테고리 + 다른 카테고리 후보 모두 제공.
-    clients 는 {'anthropic': ..., 'openai': ...} dict — backend fallback 용."""
-
-    batch_lines = []
-    for p in papers_batch:
-        num = p["slug"].split("_")[0]
-        essence = p.get("essence", "")[:200]
-        year = str(p.get("date", ""))[:4]
-        cls = p.get("classifications", {}).get(topic, {})
-        sub = cls.get("sub_category", "")
-        batch_lines.append(f"[{num}] ({year}) [{sub}] {p.get('title', '')[:70]} | {essence}")
-
-    batch_nums = ", ".join(p["slug"].split("_")[0] for p in papers_batch)
-    batch_text = "\n".join(batch_lines)
-
-    cross_section = ""
-    if cross_cat_lines:
-        cross_section = f"""
-PAPERS FROM OTHER CATEGORIES (also use as connection targets):
-{cross_cat_lines}
-"""
-
-    prompt = f"""You are analyzing papers in the "{cat_name}" category of {topic}.
-
-TARGET PAPERS (generate connections for these):
-{batch_text}
-
-PAPERS IN SAME CATEGORY:
-{all_paper_lines}
-{cross_section}
-For each TARGET paper, recommend related papers from BOTH lists above.
-Cross-category connections are especially valuable.
-
-Connection types:
-- alternative: Same problem, different approach
-- extension: Builds on or extends this work
-- foundation: This paper's theoretical/methodological foundation
-- counterpoint: Opposite perspective or critiques limitations
-- application: Applies this method to a real problem
-
-Output ONLY valid JSON — a dict where keys are paper numbers (e.g. "045") and values are arrays:
-{{
-  "045": [
-    {{"target": "123", "relation": "alternative", "reason": "한국어 이유 1문장"}},
-    {{"target": "267", "relation": "extension", "reason": "한국어 이유 1문장"}}
-  ]
-}}
-
-Rules:
-- ONLY include keys for these target papers: {batch_nums}
-- reason은 한국어로, 왜 같이 읽어야 하는지 구체적으로 (1문장)
-- 모든 논문에 대해 최소 2개 연결 생성 (카테고리 내외 모두 가능)
-- 같은 sub-category끼리만 연결하지 말 것 — 다른 카테고리의 논문도 적극 포함
-- target은 위 목록에 있는 논문 번호만 사용"""
-
-    _t0 = time.time()
-    log(f"    [conn-batch:{cat_name[:30]}] calling {'/'.join(_BACKENDS)} ({len(papers_batch)} targets, attempt-deadline={_ATTEMPT_DEADLINE_S}s)...")
-    text, used = _conn_llm_text(clients, prompt, label=f"conn-batch:{cat_name[:20]}")
-    log(f"    [conn-batch:{cat_name[:30]}] -> {len(text)} chars in {time.time()-_t0:.0f}s (via {used})")
-    if text.startswith("```"):
-        text = text.split("```")[1]
-        if text.startswith("json"):
-            text = text[4:]
-    return json.loads(text)
-
-
-BATCH_SIZE = 25
-
-
-def _process_category(cat_name, papers, topic, clients,
-                      all_topic_papers=None):
-    """단일 카테고리의 connections 추출. 다른 카테고리 논문도 후보로 제공.
-    clients 는 backend fallback dict."""
-    sorted_papers = sorted(papers, key=lambda x: -x.get("score", 0))
-    all_paper_lines = "\n".join(
-        f"[{p['slug'].split('_')[0]}] {p.get('title', '')[:60]}"
-        for p in sorted_papers
-    )
-
-    # 다른 카테고리 논문 목록 (cross-category connection 후보)
-    cat_slugs = {p["slug"] for p in papers}
-    cross_cat_lines = ""
-    if all_topic_papers:
-        other_papers = [p for p in all_topic_papers if p["slug"] not in cat_slugs]
-        if other_papers:
-            cross_cat_lines = "\n".join(
-                f"[{p['slug'].split('_')[0]}] [{p.get('classifications',{}).get(topic,{}).get('primary_category','')}] {p.get('title','')[:60]}"
-                for p in other_papers
-            )
-
-    batches = [sorted_papers[i:i + BATCH_SIZE]
-                for i in range(0, len(sorted_papers), BATCH_SIZE)]
-
-    log(f"  {cat_name} ({len(papers)} papers, {len(batches)} batch{'es' if len(batches) > 1 else ''})...")
-
-    # num_to_slug: 같은 카테고리 + 다른 카테고리 모두 포함
-    num_to_slug = {}
-    for p in papers:
-        num = p["slug"].split("_")[0]
-        num_to_slug[num] = p["slug"]
-    if all_topic_papers:
-        for p in all_topic_papers:
-            num = p["slug"].split("_")[0]
-            if num not in num_to_slug:
-                num_to_slug[num] = p["slug"]
-
-    cat_connections = {}
-    cat_total = 0
-    for bi, batch in enumerate(batches):
-        try:
-            batch_result = _call_connections_batch(
-                batch, cat_name, topic, all_paper_lines,
-                cross_cat_lines, clients
-            )
-
-            for num, conns in batch_result.items():
-                slug = num_to_slug.get(num)
-                if not slug:
-                    continue
-                resolved = []
-                for c in conns:
-                    target_slug = num_to_slug.get(c.get("target", ""))
-                    if target_slug:
-                        resolved.append({
-                            "slug": target_slug,
-                            "relation": c.get("relation", "alternative"),
-                            "reason": c.get("reason", ""),
-                        })
-                if resolved:
-                    existing = cat_connections.get(slug, [])
-                    seen_targets = {c["slug"] for c in existing}
-                    for r in resolved:
-                        if r["slug"] not in seen_targets:
-                            existing.append(r)
-                            seen_targets.add(r["slug"])
-                    cat_connections[slug] = existing
-
-            cat_total += len(batch_result)
-            if len(batches) > 1:
-                log(f"    [{cat_name}] batch {bi + 1}/{len(batches)}: {len(batch_result)} papers")
-        except Exception as e:
-            log(f"    [{cat_name}] batch {bi + 1}/{len(batches)} ERROR: {str(e)[:100]}")
-
-        time.sleep(1)  # rate limit
-
-    log(f"    [{cat_name}] → {cat_total} papers connected")
-    return cat_connections
-
-
-MAX_PARALLEL_CATEGORIES = int(os.environ.get("EXTRACT_INSIGHTS_PARALLEL", "4"))
+    A change in embedding geometry means cosine neighbours (hence connection
+    reasons) can shift everywhere, so the incremental diff treats a tag change as
+    a full-regen trigger. Prefer the tag the embeddings cache was written with;
+    fall back to the live SPECTER2 tag; ``None`` if neither is available (None vs
+    a real tag compares unequal → safe full regen)."""
+    try:
+        if cache_path and os.path.exists(cache_path):
+            with open(cache_path, "r", encoding="utf-8") as f:
+                tag = json.load(f).get("embed_model")
+            if tag:
+                return tag
+    except Exception:
+        pass
+    try:
+        from lib import specter2_embed
+        return specter2_embed.EMBED_TAG
+    except Exception:
+        return None
 
 
 def extract_paper_connections(topic, cat_papers, clients, all_topic_papers=None,
-                              topic_dir=None, topic_slugs=None):
-    """카테고리별 병렬로 논문 간 연결 추출. 다른 카테고리 논문도 후보로 제공.
+                              topic_dir=None, topic_slugs=None, seed_cache_only=False):
+    """SPECTER2 코사인 top-N 후보 → Sonnet 이 관계·이유 판정 (하이브리드).
 
-    topic_dir + topic_slugs 가 주어지면 카테고리가 끝날 때마다 누적 결과를
-    _paper_connections.json 에 incremental 저장한다 — hang/kill 로 죽어도
-    이미 끝난 카테고리의 connections 는 디스크에 보존된다."""
-    from concurrent.futures import ThreadPoolExecutor, as_completed
+    topic_modeling / paper-curio 와 **동일한 SPECTER2 임베딩 기준**을 공유한다:
+    후보는 `compute_related_candidates`(코사인 top-N, 전체 토픽 풀에서) 로 좁히고,
+    판정은 `generate_connections_from_candidates`(Sonnet, 후보 내에서만 선택) 로 한다.
+    카테고리 통째 덤프 방식 대비 (1) topic_modeling 과 기준 통일, (2) paper-curio
+    경로와 방식 일치, (3) 프롬프트 페이로드 급감(느린 망 타임아웃 완화).
 
-    all_connections = {}
-    targets = {cat: papers for cat, papers in cat_papers.items()
-                if cat != "Other" and len(papers) >= 3}
+    연결을 생성할 대상은 `cat_papers`(= --categories 필터 반영)에 한정하되, 후보
+    풀은 `all_topic_papers` 전체에서 뽑아 cross-category 연결을 유지한다. top-N 은
+    `EXTRACT_INSIGHTS_TOPN_CAND`(기본 25)로 넉넉히 둬 counterpoint/application 처럼
+    임베딩상 멀지만 관련 있는 연결의 recall 을 확보한다."""
+    from topic_modeling import (
+        extract_originalities, compute_embeddings,
+        compute_related_candidates, generate_connections_from_candidates,
+    )
 
-    def _persist():
-        if topic_dir is None or topic_slugs is None:
-            return
+    # 연결을 생성할 대상 = cat_papers (Other/초소형 카테고리 제외)
+    target_slugs = set()
+    for cat, papers in cat_papers.items():
+        if cat == "Other" or len(papers) < 3:
+            continue
+        for p in papers:
+            target_slugs.add(p["slug"])
+    if not target_slugs:
+        log("  연결 대상 논문 없음 — skip")
+        return {}
+
+    # 후보 풀 = 전체 토픽(cross-category 후보 유지). 임베딩은 캐시 우선.
+    pool = all_topic_papers or [p for ps in cat_papers.values() for p in ps]
+    seen = set()
+    pool_uniq = []
+    for p in pool:
+        if p["slug"] not in seen:
+            seen.add(p["slug"])
+            pool_uniq.append(p)
+    pool = pool_uniq
+
+    originalities = extract_originalities(pool)
+    cache_path = os.path.join(topic_dir, "_embeddings_cache.json") if topic_dir else None
+    embeddings, slugs = compute_embeddings(originalities, cache_path)
+
+    top_n = int(os.environ.get("EXTRACT_INSIGHTS_TOPN_CAND", "25"))
+    full_cand = compute_related_candidates(embeddings, slugs, top_k=top_n)
+    # 대상 논문에 대해서만 연결 생성(후보 값은 전체 토픽에서 온 것)
+    candidates = {s: full_cand[s] for s in slugs
+                  if s in target_slugs and s in full_cand}
+    if not candidates:
+        log("  후보 없음 — skip")
+        return {}
+
+    # seed-cache-only: 현재 top-k 를 conn 캐시 베이스라인으로만 저장하고 LLM 생성은
+    # 건너뛴다. 기존 연결은 그대로(이미 멀쩡) 두고, 이후 실행이 *진짜 신규/변동* 논문만
+    # 증분 생성하도록 캐시를 깐다. 전체 재생성($$·느림·JSON 절단) 없이 증분 모드를
+    # 부팅하는 1회용 시드.
+    if seed_cache_only:
+        from lib import conn_cache
+        _tag = _embed_model_tag(cache_path)
+        conn_cache.save_topk_cache(topic_dir, candidates, top_n, _tag, scope="ei")
+        log(f"  [conn] seed-cache-only: {len(candidates)}편 top-k 베이스라인 저장 "
+            f"(LLM 호출 0). 이후 실행은 신규/변동 논문만 증분 생성.")
+        return {}
+
+    client = clients.get("anthropic")  # 이 단계는 Anthropic messages API 전용
+    if client is None:
+        log("  Anthropic client 없음 — skip")
+        return {}
+
+    # 기존 연결 로드 (신규/갭 우선 + 증분 dirty 판정)
+    existing = {}
+    if topic_dir:
+        cp = os.path.join(topic_dir, "_paper_connections.json")
+        if os.path.exists(cp):
+            try:
+                with open(cp, encoding="utf-8") as f:
+                    existing = json.load(f)
+            except Exception:
+                existing = {}
+
+    # ── 증분 연결 생성: top-k 멤버십이 바뀐(=hub) + 신규 + 연결갭 논문만 LLM 호출.
+    # 변화 없는 논문은 generate 를 건너뛰고, sync 의 bidi 재구성으로 inbound 만 무료
+    # 갱신한다. CONN_INCREMENTAL=0/off → 항상 full(기존 동작), CONN_FULL_REBUILD=1
+    # → 이번 실행만 강제 full(주기적 대량 rebuild). 오류 시 안전하게 full 로 fallback.
+    from lib import conn_cache
+    _inc_on = os.environ.get("CONN_INCREMENTAL", "1").strip().lower() \
+        not in ("0", "off", "false", "no")
+    _full_rebuild = os.environ.get("CONN_FULL_REBUILD", "").strip().lower() \
+        in ("1", "on", "true", "yes")
+    _force_full = _full_rebuild or not _inc_on
+    _embed_tag = _embed_model_tag(cache_path)
+    _prev_cache = conn_cache.load_topk_cache(topic_dir, top_n, scope="ei") if topic_dir else {}
+    dirty, reason = conn_cache.compute_dirty(
+        candidates, _prev_cache, existing, top_n, _embed_tag,
+        force=_force_full, log=log)
+    _total = len(candidates)
+    _pct = int(round(100 * (1 - len(dirty) / _total))) if _total else 0
+    log(f"  [conn] incremental k={top_n}: {len(dirty)}/{_total} dirty ({reason}); "
+        f"skipping {_total - len(dirty)} unchanged -> ~{_pct}% fewer LLM calls")
+    gen_candidates = conn_cache.restrict_candidates(candidates, dirty)
+    priority = set(s for s in gen_candidates if not existing.get(s))
+
+    if gen_candidates:
+        req_timeout = float(os.environ.get("EXTRACT_INSIGHTS_HTTP_TIMEOUT", "120"))
+        conn_batch = int(os.environ.get("EXTRACT_INSIGHTS_CONN_BATCH", "15"))
+        conn_deadline = int(os.environ.get("EXTRACT_INSIGHTS_CONN_DEADLINE", "300"))
+        conn_rounds = int(os.environ.get("EXTRACT_INSIGHTS_CONN_ROUNDS", "3"))
+        log(f"  연결 생성: 대상 {len(gen_candidates)}편, top_n={top_n}, "
+            f"우선(갭) {len(priority)}편, req_timeout={req_timeout:.0f}s, "
+            f"deadline={conn_deadline}s×{conn_rounds}r")
+        all_connections = generate_connections_from_candidates(
+            gen_candidates, pool, client, batch_size=conn_batch,
+            deadline_s=conn_deadline, max_rounds=conn_rounds,
+            request_timeout_s=req_timeout, priority_slugs=priority)
+    else:
+        # 0 dirty: LLM 호출을 통째로 생략. sync 는 그래도 호출해 consumer view 를
+        # 싸게 재구성한다(merge_to_global({}) 는 no-op, bidi+filter 는 LLM 없음).
+        log("  [conn] 0 dirty — LLM 호출 생략, consumer view 만 재구성")
+        all_connections = {}
+
+    # 영속화: merge_to_global → filter_for_topic → per-topic JSON
+    if topic_dir and topic_slugs:
         try:
             from lib.connections import sync_topic_connections
             sync_topic_connections(all_connections, topic, topic_slugs, topic_dir, log=log)
-        except Exception as e:
-            log(f"  [incremental-save] failed: {str(e)[:100]}")
-
-    with ThreadPoolExecutor(max_workers=MAX_PARALLEL_CATEGORIES) as executor:
-        futures = {
-            executor.submit(_process_category, cat_name, papers, topic, clients,
-                            all_topic_papers): cat_name
-            for cat_name, papers in sorted(targets.items())
-        }
-
-        for future in as_completed(futures):
-            cat_name = futures[future]
+            # 성공 시에만 캐시 갱신. 단 이번 run 에 *실제로 생성된* slug 만 current
+            # set 으로 올리고, dirty 였지만 결과를 못 받은(deadline 절단 등) slug 은
+            # prev set 을 유지해 다음 run 에 재시도되게 한다(hub inbound 누락 방지).
             try:
-                cat_connections = future.result()
-                for slug, conns in cat_connections.items():
-                    existing = all_connections.get(slug, [])
-                    seen_targets = {c["slug"] for c in existing}
-                    for c in conns:
-                        if c["slug"] not in seen_targets:
-                            existing.append(c)
-                            seen_targets.add(c["slug"])
-                    all_connections[slug] = existing
-                # Incremental checkpoint: persist after every finished category
-                _persist()
-                log(f"  [incremental-save] {cat_name} → {len(all_connections)} papers w/ connections saved")
+                _next_sets = conn_cache.next_cache_sets(
+                    candidates, _prev_cache, dirty, set(all_connections.keys()))
+                conn_cache.save_topk_cache(
+                    topic_dir, candidates, top_n, _embed_tag,
+                    scope="ei", sets=_next_sets)
             except Exception as e:
-                log(f"  {cat_name} FAILED: {str(e)[:100]}")
+                log(f"  [conn] cache save failed: {str(e)[:80]}")
+        except Exception as e:
+            log(f"  [save] failed: {str(e)[:100]}")
+
+    # 증분 생성된 논문 + 그 연결 이웃의 per-paper 페이지를 다시 렌더 — 새 역방향
+    # 엣지(이웃→신규)가 이웃의 *개별 페이지* "같이 보면 좋은 논문" 에 즉시 뜨도록.
+    # (데이터/네트워크/토픽인덱스는 sync+build 로 이미 완성되지만 per-paper 페이지는
+    #  review_to_html 가 다시 그려야 반영된다.) 증분(reason=="incremental")일 때만 자동
+    # 렌더(=dirty 소규모, 싸다); full 재생성은 파이프라인 review_to_html 단계가 처리.
+    # env CONN_RENDER_NEIGHBORS=0 으로 끌 수 있다.
+    if (all_connections and reason == "incremental" and topic_dir
+            and os.environ.get("CONN_RENDER_NEIGHBORS", "1").strip().lower()
+            not in ("0", "off", "false", "no")):
+        try:
+            import review_to_html as _RTH
+            _RTH._run_review_to_html(slugs=list(dirty), with_connected=True)
+            log(f"  [conn] 이웃 페이지 재렌더: dirty {len(dirty)}편 + 연결 이웃 (--with-connected)")
+        except Exception as e:
+            log(f"  [conn] 이웃 재렌더 skip: {str(e)[:80]}")
 
     return all_connections
 
 
 def _run_insights(topic="ai4s", *, insights_only=False, connections_only=False,
-                   categories=None):
+                   categories=None, seed_cache_only=False):
     """Programmatic entrypoint for extract_insights."""
     topic_dir = str(get_topic_dir(topic))
 
@@ -838,20 +687,25 @@ def _run_insights(topic="ai4s", *, insights_only=False, connections_only=False,
     else:
         log(f"  {len(topic_papers)} papers, {len(cat_papers)} categories")
 
+    # Per-request timeout — 느린 망에서 대용량 출력(25편 연결 = 수천 토큰)이
+    # 기본 120s read-timeout 을 넘겨 APITimeoutError 가 나는 것을 막기 위해 env 로 상향 가능.
+    _http_timeout = float(os.environ.get("EXTRACT_INSIGHTS_HTTP_TIMEOUT", "120"))
+    _http_retries = int(os.environ.get("EXTRACT_INSIGHTS_HTTP_RETRIES", "1"))
     clients: dict = {"anthropic": None, "openai": None}
     try:
-        clients["anthropic"] = Anthropic(timeout=120.0, max_retries=1)
+        clients["anthropic"] = Anthropic(timeout=_http_timeout, max_retries=_http_retries)
     except Exception as e:
         log(f"  [backend] Anthropic init failed: {str(e)[:80]}")
     try:
         from openai import OpenAI
         _oai_key = os.environ.get("OPENAI_API_KEY") or load_config().get("openai_api_key", "")
         if _oai_key:
-            clients["openai"] = OpenAI(api_key=_oai_key, timeout=120.0, max_retries=1)
+            clients["openai"] = OpenAI(api_key=_oai_key, timeout=_http_timeout, max_retries=_http_retries)
     except Exception as e:
         log(f"  [backend] OpenAI init failed: {str(e)[:80]}")
     client = clients["anthropic"] or clients["openai"]
-    log(f"  [backend] connection fallback chain: {' → '.join(b for b in _BACKENDS if clients.get(b))}")
+    log(f"  [backend] connections: Anthropic {'OK' if clients.get('anthropic') else 'MISSING'} "
+        f"(SPECTER2 후보 → Sonnet); cross-category insights: {'/'.join(_CC_BACKENDS)}")
     run_insights = not connections_only
     run_connections = not insights_only
 
@@ -861,6 +715,21 @@ def _run_insights(topic="ai4s", *, insights_only=False, connections_only=False,
         log("=" * 50)
 
         insights = extract_cross_category_insights(topic, cat_papers, cat_summaries, client)
+        # T2-4: verify cited evidence actually backs each cross-category insight.
+        # Default ON (cheap, few items); env VERIFY_INSIGHTS=0 disables. Drops/
+        # annotates unsupported insights. Uses the Anthropic (Haiku) client; if it
+        # is unavailable or anything fails, originals are kept untouched.
+        try:
+            from lib import verify
+            paper_meta = {
+                p["slug"].split("_")[0]: {"title": p.get("title", ""),
+                                          "essence": p.get("essence", "")}
+                for p in topic_papers
+            }
+            verify.apply_insight_verification(
+                insights, paper_meta, clients.get("anthropic"), log=log)
+        except Exception as e:
+            log(f"  [verify] insights hook skipped: {str(e)[:80]}")
         insights["generated_at"] = datetime.now().strftime("%Y-%m-%d")
         insights["topic"] = topic
         insights["paper_count"] = len(topic_papers)
@@ -889,10 +758,13 @@ def _run_insights(topic="ai4s", *, insights_only=False, connections_only=False,
         topic_slugs = [p["slug"] for p in topic_papers]
         connections = extract_paper_connections(
             topic, cat_papers, clients, topic_papers,
-            topic_dir=topic_dir, topic_slugs=topic_slugs)
+            topic_dir=topic_dir, topic_slugs=topic_slugs,
+            seed_cache_only=seed_cache_only)
 
-        from lib.connections import sync_topic_connections
-        sync_topic_connections(connections, topic, topic_slugs, topic_dir, log=log)
+        # seed-cache-only 면 connections=={} 이고 캐시만 깔렸으니 sync(=no-op) 생략.
+        if not seed_cache_only:
+            from lib.connections import sync_topic_connections
+            sync_topic_connections(connections, topic, topic_slugs, topic_dir, log=log)
 
     log("\nDone!")
 
@@ -902,11 +774,27 @@ def main():
     parser.add_argument("--topic", default="ai4s")
     parser.add_argument("--insights-only", action="store_true", help="Cross-category insights only")
     parser.add_argument("--connections-only", action="store_true", help="Paper connections only")
+    parser.add_argument("--only", choices=["connections", "insights", "all"], default="all",
+                        help="생성 대상 선택. connections=paper connections(Core)만, "
+                             "insights=cross-category insights(Option)만, all=둘 다(기본, 하위호환).")
     parser.add_argument("--categories", nargs="+", help="Specific categories to process (others preserved)")
+    parser.add_argument("--seed-cache-only", action="store_true",
+                        help="연결 LLM 생성 없이 현재 top-k 를 conn 캐시 베이스라인으로만 저장. "
+                             "증분 모드를 1회 부팅(전체 재생성 회피); 기존 연결은 그대로 두고 "
+                             "이후 실행이 신규/변동 논문만 증분 생성하게 한다.")
     args = parser.parse_args()
-    _run_insights(topic=args.topic, insights_only=args.insights_only,
-                  connections_only=args.connections_only, categories=args.categories)
+    # --only 를 기존 *_only 게이트로 매핑 (둘 다 동일 효과; --insights-only/--connections-only 와 OR).
+    insights_only = args.insights_only or args.only == "insights"
+    connections_only = (args.connections_only or args.only == "connections"
+                        or args.seed_cache_only)
+    _run_insights(topic=args.topic, insights_only=insights_only,
+                  connections_only=connections_only, categories=args.categories,
+                  seed_cache_only=args.seed_cache_only)
 
 
 if __name__ == "__main__":
+    # 연결 생성이 SPECTER2 임베딩(compute_related_candidates) 을 쓰므로 py312 강제
+    # (classify_papers 와 동일 표준 — 다른 인터프리터면 py312 로 자동 재실행).
+    from _env_guard import force_py312
+    force_py312()
     main()

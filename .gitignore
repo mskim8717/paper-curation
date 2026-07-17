@@ -6,13 +6,14 @@
 !.env.sample
 !.nojekyll
 !README.md
+!README.en.md
 !SKILL.md
 !SKILL.md.template
 !config.example.json
+!requirements.txt
 !wrangler.toml
 !CLAUDE.md
 !workflow.png
-!before_after.png
 
 # Pipeline scripts
 !pipeline/
@@ -22,6 +23,11 @@
 !pipeline/lib/originality_triggers.json
 !pipeline/api/
 !pipeline/api/*.py
+!pipeline/_archive/
+!pipeline/_archive/*.py
+!pipeline/tests/
+!pipeline/tests/*.py
+!pipeline/tests/*.mjs
 
 # Cloudflare Worker function (handles /api/audio-email + serves static assets).
 # Deployed by `wrangler deploy` alongside docs/.
@@ -37,9 +43,6 @@
 !.github/workflows/
 !.github/workflows/*.yml
 
-# TODO progress doc
-!paper-curation-todo.md
-
 # Double-click launchers (serve docs/ + open topic site on localhost)
 !open.command
 !open_*.command
@@ -49,6 +52,11 @@
 !docs/index.html
 !docs/setup-guide.md
 !docs/operations.md
+!docs/architecture.md
+
+# Public assets (conference talk slides, etc.) — tracked on master + GitHub-served
+!docs/public/
+!docs/public/**
 
 # docs/ is the Cloudflare Workers deploy source, NOT a GitHub-served asset.
 # Only the landing redirect, setup guide, and wrangler .assetsignore are

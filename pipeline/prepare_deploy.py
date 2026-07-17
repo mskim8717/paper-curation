@@ -34,6 +34,7 @@ Usage:
 """
 
 import argparse
+import json
 import os
 import re
 import subprocess
@@ -41,7 +42,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-from config_loader import get_github_branch, PAPERS_DIR as _PAPERS_DIR, DOCS_DIR, PROJECT_ROOT, get_topic_dir
+from config_loader import get_github_branch, PAPERS_DIR as _PAPERS_DIR, DOCS_DIR, PROJECT_ROOT, get_topic_dir, load_config
 PAPERS_DIR = str(_PAPERS_DIR)
 REPO = str(PROJECT_ROOT)
 
@@ -321,17 +322,47 @@ def _sync_gh_pages_stubs(topics, cf_url=CF_BASE_URL):
                 with open(stub_file, "w", encoding="utf-8", newline="\n") as f:
                     f.write(content)
                 changed.append(topic)
-        if not changed:
+
+        # Prune orphaned stubs so the gh-pages stub set is reproducible from the
+        # deployable-topics list alone: remove any top-level dir that is one of
+        # OUR redirect stubs (window.location.replace -> cf_url) but is no longer
+        # a deployable topic (e.g. a topic moved back to local-only).
+        import shutil
+        pruned = []
+        topic_set = set(topics)
+        for name in sorted(os.listdir(worktree)):
+            d = os.path.join(worktree, name)
+            if name in topic_set or not os.path.isdir(d) or name == ".git":
+                continue
+            idx = os.path.join(d, "index.html")
+            if not os.path.exists(idx):
+                continue
+            try:
+                with open(idx, "r", encoding="utf-8") as f:
+                    body = f.read()
+            except Exception:
+                continue
+            if "window.location.replace(" in body and cf_url in body:
+                shutil.rmtree(d)
+                pruned.append(name)
+                print(f"  [gh-pages] pruned orphaned stub: {name}")
+
+        if not changed and not pruned:
             print("  [gh-pages] all stubs up to date — no push needed")
             return
         subprocess.run(["git", "add", "-A"], check=True, cwd=worktree)
+        summary = []
+        if changed:
+            summary.append("sync " + ", ".join(changed))
+        if pruned:
+            summary.append("prune " + ", ".join(pruned))
         msg = (
-            f"Sync redirect stubs: {', '.join(changed)}\n\n"
-            "Co-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>"
+            f"gh-pages redirect stubs: {'; '.join(summary)}\n\n"
+            "Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
         )
         subprocess.run(["git", "commit", "-m", msg], check=True, cwd=worktree)
         subprocess.run(["git", "push", "origin", "gh-pages"], check=True, cwd=worktree)
-        print(f"  [gh-pages] pushed stub updates for: {', '.join(changed)}")
+        print(f"  [gh-pages] pushed ({'; '.join(summary)})")
     finally:
         subprocess.run(
             ["git", "worktree", "remove", "--force", worktree],
@@ -339,10 +370,70 @@ def _sync_gh_pages_stubs(topics, cf_url=CF_BASE_URL):
         )
 
 
+def _reinject_local_keys(docs_dir=None, *, verbose=True):
+    """배포용 strip 으로 비워진 로컬 HTML 키 슬롯을 env→config 값으로 재주입한다.
+
+    키 값은 build 와 동일한 env→config 출처에서 결정론적으로 재유도하므로, deploy
+    가 (kill -9 등으로) Step 6 strip 과 finally restore 사이에서 죽어 로컬 working
+    tree 가 strip 된 채 남아도 별도 백업 없이 복원된다. 배포본에는 영향이 없다 —
+    strip 은 항상 wrangler deploy 직전에 다시 실행되기 때문.
+
+    재주입 대상: _GEMINI_KEY(Audio Overview) · _ANTHROPIC_KEY · _OPENAI_KEY
+    (Deep Research) · _LOCAL_EMAILS(로컬 이메일). 값이 없으면 해당 슬롯은 건너뛴다.
+    반환: 실제로 수정된 파일 수.
+    """
+    docs_dir = Path(docs_dir or DOCS_DIR)
+    try:
+        cfg = load_config() or {}
+    except Exception:
+        cfg = {}
+    gemini = (os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+              or cfg.get("gemini_api_key", "") or cfg.get("google_api_key", "")) or ""
+    anthropic = (os.environ.get("ANTHROPIC_API_KEY") or cfg.get("anthropic_api_key", "")) or ""
+    openai = (os.environ.get("OPENAI_API_KEY") or cfg.get("openai_api_key", "")) or ""
+    raw_emails = (os.environ.get("PAPER_CURATION_LOCAL_EMAILS", "")
+                  or ",".join(cfg.get("local_emails", []) or []))
+    emails = [e.strip() for e in raw_emails.split(",") if e.strip()]
+    emails_js = "[" + ", ".join(json.dumps(e) for e in emails) + "]"
+
+    n = 0
+    for html_path in docs_dir.rglob("index.html"):
+        try:
+            text = html_path.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        new = text
+        if gemini:
+            new = new.replace('_GEMINI_KEY = ""', '_GEMINI_KEY = ' + json.dumps(gemini))
+        if anthropic:
+            new = re.sub(r'((?:const|let|var)\s+_ANTHROPIC_KEY\s*=\s*)""',
+                         lambda m: m.group(1) + json.dumps(anthropic), new)
+        if openai:
+            new = re.sub(r'((?:const|let|var)\s+_OPENAI_KEY\s*=\s*)""',
+                         lambda m: m.group(1) + json.dumps(openai), new)
+        if emails:
+            new = new.replace('window._LOCAL_EMAILS = []', 'window._LOCAL_EMAILS = ' + emails_js)
+        if new != text:
+            html_path.write_text(new, encoding="utf-8")
+            n += 1
+    if verbose:
+        print(f"  로컬 HTML 키 재주입: {n} 파일 (env→config)")
+    return n
+
+
 def _run_deploy(topic="ai4s", *, quality=90, dry_run=False, push=False,
-                topics=None, workers=8):
+                topics=None, workers=8, cf_strict=False):
     """Programmatic entrypoint for prepare_deploy."""
     topic_dir = str(get_topic_dir(topic))
+
+    # Self-heal: 이전 deploy 가 Step 6 strip 과 finally restore 사이에서 죽으면
+    # (예: kill -9) 로컬 HTML 이 키-strip 된 채 남아 Audio Overview/Deep Research 가
+    # 로컬에서 깨진다. 본격 작업 전에 env→config 로 재주입해 복원한다 (이미 키가 있으면
+    # no-op). 배포 직전 Step 6 가 다시 strip 하므로 배포본에는 영향 없음.
+    if not dry_run:
+        _healed = _reinject_local_keys(DOCS_DIR, verbose=False)
+        if _healed:
+            print(f"  [self-heal] 이전 배포 중단으로 비워진 로컬 키 복원: {_healed} HTML")
 
     print("Step 1: .gitignore")
     if not dry_run:
@@ -492,38 +583,43 @@ def _run_deploy(topic="ai4s", *, quality=90, dry_run=False, push=False,
         for p, orig in _originals.items():
             p.write_text(orig, encoding="utf-8")
 
-    # Safety net: verify no residual API keys remain in any deployed HTML
-    _leak_re = _re.compile(r'sk-(ant|proj)-[A-Za-z0-9_\-]{10,}|AIza[0-9A-Za-z_\-]{30,}')
-    _leak_paths = [
-        str(p) for p in DOCS_DIR.rglob("index.html")
-        if _leak_re.search(p.read_text(encoding="utf-8"))
-    ]
-    if _leak_paths:
-        _restore_originals()
-        print(f"  ABORT: API key still present in {len(_leak_paths)} files — refusing to commit:")
-        for p in _leak_paths:
-            print(f"    - {p}")
-        sys.exit(1)
-    # Safety net: verify _LOCAL_EMAILS is empty in every deployed HTML.
-    # The strip above replaces the literal array with `[]`; this catches any
-    # remnant (e.g. emails baked into a different surface we forgot to handle).
-    _email_leak_re = _re.compile(r'window\._LOCAL_EMAILS\s*=\s*\[\s*"[^"]+')
-    _email_leaks = [
-        str(p) for p in DOCS_DIR.rglob("index.html")
-        if _email_leak_re.search(p.read_text(encoding="utf-8"))
-    ]
-    if _email_leaks:
-        _restore_originals()
-        print(f"  ABORT: _LOCAL_EMAILS still populated in {len(_email_leaks)} files — refusing to commit:")
-        for p in _email_leaks:
-            print(f"    - {p}")
-        sys.exit(1)
-    print(f"  Stripped API keys from {len(_originals)} files (0 leaks remaining)")
-
-    # Step 7-10: Deploy (only if --push). Otherwise we stop here — the
-    # working tree was modified by API-key strip in Step 6 so we still
-    # need to restore it in the finally block.
+    # The working tree now holds stripped (key-less) HTML. EVERYTHING that
+    # follows — leak-scans, deploy, commit — must run under this try so that
+    # _restore_originals() in the finally ALWAYS runs back: any exception in
+    # the leak-scan window (e.g. read_text OSError/UnicodeDecodeError, or a
+    # KeyboardInterrupt during rglob) would otherwise leave the local working
+    # tree with emptied keys (Deep Research / Audio Overview silently broken
+    # until a rebuild). restore is idempotent, so it's the single restore site.
     try:
+        # Safety net: verify no residual API keys remain in any deployed HTML
+        _leak_re = _re.compile(r'sk-(ant|proj)-[A-Za-z0-9_\-]{10,}|AIza[0-9A-Za-z_\-]{30,}')
+        _leak_paths = [
+            str(p) for p in DOCS_DIR.rglob("index.html")
+            if _leak_re.search(p.read_text(encoding="utf-8"))
+        ]
+        if _leak_paths:
+            print(f"  ABORT: API key still present in {len(_leak_paths)} files — refusing to commit:")
+            for p in _leak_paths:
+                print(f"    - {p}")
+            sys.exit(1)
+        # Safety net: verify _LOCAL_EMAILS is empty in every deployed HTML.
+        # The strip above replaces the literal array with `[]`; this catches any
+        # remnant (e.g. emails baked into a different surface we forgot to handle).
+        _email_leak_re = _re.compile(r'window\._LOCAL_EMAILS\s*=\s*\[\s*"[^"]+')
+        _email_leaks = [
+            str(p) for p in DOCS_DIR.rglob("index.html")
+            if _email_leak_re.search(p.read_text(encoding="utf-8"))
+        ]
+        if _email_leaks:
+            print(f"  ABORT: _LOCAL_EMAILS still populated in {len(_email_leaks)} files — refusing to commit:")
+            for p in _email_leaks:
+                print(f"    - {p}")
+            sys.exit(1)
+        print(f"  Stripped API keys from {len(_originals)} files (0 leaks remaining)")
+
+        # Step 7-10: Deploy (only if --push). Otherwise we stop here — the
+        # working tree was modified by API-key strip in Step 6 so we still
+        # need to restore it in the finally block.
         if not push:
             print("\n(--push 없이 실행됨. Cloudflare 업로드/gh-pages 동기화/master push 모두 스킵)")
         else:
@@ -542,13 +638,28 @@ def _run_deploy(topic="ai4s", *, quality=90, dry_run=False, push=False,
             else:
                 print("\nStep 8: No deployable topics found — skipping gh-pages sync")
 
-            # Step 9: Verify Cloudflare endpoints return 200
+            # Step 9: Verify Cloudflare endpoints return 200.
+            # Bind the result — a failed/timed-out deploy must NOT be recorded
+            # as a clean "Deploy:" commit on master. cf_strict 면 hard abort,
+            # 기본은 warn-only (느린 CF propagation 이 300s 를 넘기는 경우를 위해
+            # master push 만 건너뛰고 로컬 복원은 finally 가 처리).
             print("\nStep 9: Verifying Cloudflare endpoints...")
-            _verify_cloudflare(topic)
+            cf_ok = _verify_cloudflare(topic)
+            if not cf_ok:
+                if cf_strict:
+                    print("  ABORT: Cloudflare verification failed/timed out "
+                          "(--cf-strict) — refusing to commit master")
+                    sys.exit(1)
+                print("  WARN: Cloudflare verification failed/timed out — "
+                      "skipping master commit/push (deploy NOT recorded as clean)")
 
             # Step 10: Commit + push master — only code/config changes.
             # docs/* content is gitignored, so this only captures genuine
             # source changes (pipeline scripts, wrangler.toml, etc.).
+            # Gated on cf_ok: a broken deploy is never committed as success.
+            if not cf_ok:
+                print("\nStep 10: Skipped (Cloudflare verification failed)")
+                return
             print("\nStep 10: Committing code/config changes to master...")
             os.chdir(REPO)
             subprocess.run(["git", "add", "-A"], check=True)
@@ -594,9 +705,17 @@ def main():
     parser.add_argument("--push", action="store_true", help="Git add + commit + push after conversion")
     parser.add_argument("--topics", nargs="+", help="Only deploy these topics (exclude others from git add)")
     parser.add_argument("--workers", type=int, default=8, help="Parallel workers for conversion")
+    parser.add_argument("--cf-strict", action="store_true",
+                        help="Abort (no master commit/push) if Cloudflare 200-OK verification fails/times out")
+    parser.add_argument("--restore-keys", action="store_true",
+                        help="strip 으로 비워진 로컬 HTML 키 슬롯을 env→config 로 재주입하고 종료 (배포 중단 복구 도구)")
     args = parser.parse_args()
+    if args.restore_keys:
+        _reinject_local_keys(DOCS_DIR)
+        return
     _run_deploy(topic=args.topic, quality=args.quality, dry_run=args.dry_run,
-                push=args.push, topics=args.topics, workers=args.workers)
+                push=args.push, topics=args.topics, workers=args.workers,
+                cf_strict=args.cf_strict)
 
 
 if __name__ == "__main__":

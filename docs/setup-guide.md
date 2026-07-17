@@ -8,10 +8,15 @@ Paper Curation 파이프라인의 설치 및 설정 가이드입니다.
 
 - [Claude Code](https://claude.ai/code) 설치
 - [Zotero API Key](https://www.zotero.org/settings/keys) 발급
-- `ANTHROPIC_API_KEY`, `GOOGLE_API_KEY`, `OPENAI_API_KEY` 환경변수 설정
+- API 키 — `ANTHROPIC_API_KEY` (리뷰·인사이트 — **필수**), `GOOGLE_API_KEY` (검색 임베딩 `gemini-embedding-001`·Figure 검증·TTS — **필수**), `RESEND_API_KEY` (배포 시 Audio Overview 이메일 — 배포 필수), `OPENAI_API_KEY` (답변 BYOK·insights fallback — 선택)
 - Zotero 컬렉션 이름 확인 (리뷰할 논문들이 모인 컬렉션)
 - Zotero PDF 저장 경로 확인
-- **Python 3.14 권장** (macOS conda env `py314` 표준). 3.12+ 동작.
+- **conda env 하나 (Python 3.12, `py312`)** — `requirements.txt` 가 umap-learn / hdbscan / sentence-transformers 를 포함하므로 오케스트레이터가 토픽 모델링/분류를 별도 서브프로세스 없이 in-process 로 실행합니다. 생성 명령:
+  ```bash
+  conda create -n py312 -c conda-forge python=3.12 pip -y
+  conda activate py312
+  pip install -r requirements.txt
+  ```
 - **Java Runtime** — `opendataloader-pdf` 가 Java CLI 래퍼. macOS: `brew install --cask temurin`. 없으면 PyMuPDF 로 자동 fallback (표/구조 추출 품질 ↓).
 
 ## Claude Code에서 설치 (권장)
@@ -39,7 +44,7 @@ Claude Code가 자동으로 다음 과정을 수행합니다:
 설치가 완료되면 **파이프라인 실행** 안내가 표시됩니다.
 
 > **⚠ 파이프라인 실행 시간**: Zotero 컬렉션의 논문 편수에 따라 크게 달라집니다 (Anthropic Tier·concurrency 의존).
-> 10편 이하: 수 분 / 50편: ~15분 (Tier 4 default `--concurrency 16`) ~ 1~2시간 (Tier 1 `--concurrency 4`) / 500편 이상: 비례 증가. Tier별 권장값은 README "Concurrency 가이드" 표 참고.
+> 10편 이하: 수 분 / 50편: ~15분 (Tier 4 default `--concurrency 16`) ~ 1~2시간 (Tier 1 `--concurrency 4`) / 500편 이상: 비례 증가. Tier별 권장값은 [Operations Manual의 Concurrency 표](operations.md#concurrency-anthropic-tier-4-default) 참고.
 
 ## 수동 설치 (Claude Code 없이)
 
@@ -51,14 +56,17 @@ Claude Code가 자동으로 다음 과정을 수행합니다:
 ```bash
 git clone https://github.com/jehyunlee/paper-curation.git
 cd paper-curation
-pip install anthropic google-genai pymupdf Pillow requests opendataloader-pdf
+pip install -r requirements.txt   # 전체 의존성 (anthropic·openai·umap-learn·hdbscan·sentence-transformers 등)
 ```
+
+> 표준은 단일 `py312` env 입니다 (`requirements.txt` 에 클러스터링 의존성 포함).
 
 ### 2. Setup
 
 ```bash
-export ANTHROPIC_API_KEY=your_key
-export GOOGLE_API_KEY=your_key
+export ANTHROPIC_API_KEY=your_key     # 리뷰·인사이트 (필수)
+export GOOGLE_API_KEY=your_key        # 검색 임베딩 gemini-embedding-001·Figure 검증·TTS (필수)
+export OPENAI_API_KEY=your_key        # 답변 BYOK·insights fallback (선택)
 python pipeline/setup.py
 ```
 
@@ -81,6 +89,12 @@ python pipeline/setup.py
     "pdf_dir": "/path/to/your/zotero/pdfs"
   },
   "unpaywall_email": "your_email@example.com",
+  "search_keywords": {
+    "my_topic": {
+      "primary": ["machine learning biology", "protein language model"],
+      "secondary": ["single cell RNA", "drug target prediction"]
+    }
+  },
   "paperbanana_dir": "/path/to/paperbanana"
 }
 ```
@@ -91,6 +105,7 @@ python pipeline/setup.py
 | `email` | 이메일 (Zotero 및 Unpaywall용) |
 | `collections` | Topic alias → Zotero 컬렉션 이름 매핑. Collection key는 Zotero API를 통해 자동 변환됩니다. |
 | `pdf_dir` | Zotero PDF가 저장된 로컬 경로 |
+| `search_keywords` | 토픽별 Core-1 검색 키워드 (`{topic: {primary: [...], secondary: [...]}}`). `primary` 매칭 0.5점, `secondary` 0.2점. `ai4s`/`scisci` 는 빌트인 기본값이 있어 생략 가능하고, 그 외 신규 토픽은 여기에 추가합니다. (선택) |
 | `paperbanana_dir` | [PaperBanana](https://github.com/dwzhu-pku/PaperBanana) clone 경로 (선택) |
 
 ### 환경변수 (선택)
@@ -102,7 +117,10 @@ python pipeline/setup.py
 | `ZOTERO_API_KEY` | Zotero API key |
 | `ZOTERO_USER_ID` | Zotero user ID |
 | `ZOTERO_DIR` | Zotero PDF 저장 경로 |
-| `ANTHROPIC_API_KEY` | Claude API key |
+| `ANTHROPIC_API_KEY` | Claude API key (리뷰·인사이트 — 필수) |
+| `GOOGLE_API_KEY` | Google AI key (검색 임베딩 `gemini-embedding-001`·Figure 검증·TTS — 필수) |
+| `OPENAI_API_KEY` | OpenAI key (답변 BYOK·insights fallback — 선택) |
+| `RESEND_API_KEY` | Resend key (배포 시 Audio Overview 이메일 — wrangler secret 으로도 등록) |
 | `GITHUB_REPO` | GitHub repo (owner/repo) |
 | `GITHUB_BRANCH` | Git branch (기본: master) |
 | `PAGES_BASE_URL` | GitHub Pages base URL |
@@ -137,7 +155,7 @@ python pipeline/setup.py
 
 ## Pipeline Scripts
 
-모든 스크립트는 `pipeline/config_loader.py`를 통해 `config.json`을 읽습니다. 하드코딩된 인증 정보는 없습니다.
+단일 진입점은 `run_full.py` (3축 오케스트레이터)이고, 아래 개별 스크립트는 디버깅·복구용입니다. 모든 스크립트는 `pipeline/config_loader.py`를 통해 `config.json`을 읽습니다. 하드코딩된 인증 정보는 없습니다.
 
 | Script | Purpose |
 |--------|---------|
@@ -150,7 +168,7 @@ python pipeline/setup.py
 | `pipeline/generate_timelines.py` | Bottom-up 타임라인 생성 (Opus + PaperBanana) |
 | `pipeline/review_to_html.py` | review.md → index.html 변환 |
 | `pipeline/build_topic_index.py` | Topic 인덱스 페이지 생성 |
-| `pipeline/prepare_deploy.py` | PNG→WebP 변환 + GitHub Pages 배포 |
+| `pipeline/prepare_deploy.py` | PNG→WebP 변환 + Cloudflare + gh-pages 배포 |
 
 ## PaperBanana (타임라인 생성용, 선택)
 
@@ -202,3 +220,30 @@ config.json
 ```
 
 Collection key나 User ID는 직접 입력할 필요 없이 Zotero API를 통해 자동으로 조회됩니다.
+
+## 설치 확인 & 문제 해결
+
+### 설치 확인 (verify)
+
+긴 파이프라인을 돌리기 전에, 한 줄로 의존성이 제대로 깔렸는지 확인하세요:
+
+```bash
+python -c "import umap, hdbscan, sentence_transformers, fitz, sklearn, anthropic; print('py312 OK')"
+```
+
+`OK` 가 찍히면 준비 완료입니다. 실행 계획만 먼저 보려면 `--dry-run` 도 가능합니다:
+
+```bash
+PYTHONUTF8=1 python pipeline/run_full.py --topic my_topic --mode curate --source zotero --dry-run
+```
+
+### 문제 해결 (Troubleshooting)
+
+| 증상 / 에러 메시지 | 원인 | 해결 |
+|---|---|---|
+| `op_CALL_KW: pop from empty list` (numba 트레이스백) | `py312` env 밖에서 분류가 실행됨 | `conda activate py312` 후 재실행 |
+| `ModuleNotFoundError: umap` / `hdbscan` / `sentence_transformers` | 의존성 누락 | env 활성화 후 `pip install -r requirements.txt` (umap-learn·hdbscan·sentence-transformers 포함) |
+| Figure 품질이 낮음 / 표·구조가 깨짐 | Java 미설치로 PyMuPDF fallback | `brew install --cask temurin` (macOS) 후 재실행 |
+| SPECTER2 / arXiv 다운로드가 멈춤 (한국 망) | huggingface LFS·arXiv 차단 | [operations.md "Korean network workarounds"](operations.md#korean-network-workarounds) 의 S3 미러 명령 사용 |
+| `[COLLECTION_ERROR]` | Zotero 컬렉션 이름 오타 | 출력의 사용 가능한 컬렉션 목록에서 올바른 이름 선택 후 재실행 |
+| 검색 인덱스가 빈 임베딩으로 빌드됨 | `GOOGLE_API_KEY` 미설정 | `export GOOGLE_API_KEY=...` 후 재실행 — 검색 임베딩은 Google `gemini-embedding-001` 사용 (OpenAI 키는 더 이상 필수 아님) |

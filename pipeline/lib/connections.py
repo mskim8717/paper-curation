@@ -5,14 +5,174 @@ All topics share a single global connections file (docs/papers/_global_connectio
 Topic-specific _paper_connections.json files are derived from global by filtering.
 
 This ensures cross-topic connections are preserved regardless of execution order.
+
+The global file stores the *raw, directional* edges exactly as generated (one
+``source_topic``-tagged entry per A→B). The per-topic ``_paper_connections.json``
+files — which every renderer consumes — are derived as a **bidirectional,
+per-target-deduped** view: each A→B edge implies B→A (relation flipped), and a
+paper connected for several reasons appears once with all reasons listed. See
+:func:`make_bidirectional_deduped`.
 """
 
 import json
 import os
+from collections import OrderedDict
 
 PAPERS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.abspath(__file__)))), "docs", "papers")
 GLOBAL_CONN_PATH = os.path.join(PAPERS_DIR, "_global_connections.json")
+
+# When we synthesize the reverse edge B→A from a stored edge A→B, the relation
+# must be re-expressed from B's point of view. The stored relation describes how
+# the *target* relates to the *source* (A→B "foundation" means "B is a
+# foundation for A"). Flipping the direction therefore flips the relation:
+#   A→B foundation  ⇒  B→A extension   (A builds on / extends B)
+#   A→B extension   ⇒  B→A foundation  (B is the basis A extends)
+#   A→B application ⇒  B→A foundation  (B is the method A applies)
+#   alternative / counterpoint are mutual ⇒ unchanged.
+REVERSE_RELATION = {
+    "foundation": "extension",
+    "extension": "foundation",
+    "application": "foundation",
+    "alternative": "alternative",
+    "counterpoint": "counterpoint",
+}
+
+# Canonical display/sort priority for relations (also used to pick the "primary"
+# relation when one paper is connected for several reasons).
+REL_ORDER = {"foundation": 0, "alternative": 1, "extension": 2,
+             "application": 3, "counterpoint": 4}
+
+
+def _entry_reasons(entry):
+    """Normalize a connection entry to a list of (relation, reason) pairs.
+
+    Accepts both the new multi-reason schema (``reasons: [{relation, reason}]``)
+    and the legacy single ``relation``/``reason`` fields.
+    """
+    rs = entry.get("reasons")
+    if isinstance(rs, list) and rs:
+        return [((r.get("relation") or "alternative"), r.get("reason", ""))
+                for r in rs]
+    return [((entry.get("relation") or "alternative"), entry.get("reason", ""))]
+
+
+def _title_part(slug):
+    """Slug minus its NNN_ sequence prefix — the part that is stable across
+    renumbering. '1762_WoCoCo_Learning...' -> 'WoCoCo_Learning...'. No
+    underscore -> returned as-is."""
+    return slug.split("_", 1)[1] if "_" in slug else slug
+
+
+def load_index_slugs():
+    """Current valid slugs from _papers_index.json (empty set on any error)."""
+    path = os.path.join(PAPERS_DIR, "_papers_index.json")
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return {p["slug"] for p in json.load(f) if p.get("slug")}
+    except Exception:
+        return set()
+
+
+def build_slug_resolver(index_slugs):
+    """Map a (possibly stale) connection slug to the CURRENT index slug.
+
+    Papers keep their title but get re-assigned NNN sequence numbers over time, so
+    a connection stored as '1762_WoCoCo_…' becomes an orphan once that paper is
+    '1759_WoCoCo_…'. This remaps such an orphan to the current slug by its stable
+    title-part, and drops slugs that no longer resolve — deleted (no title match)
+    or ambiguous (title-part shared by 2+ current papers, can't safely pick).
+
+    Returns a ``resolve(slug) -> slug | None`` callable carrying ``.stats`` =
+    ``{'remapped': {old: new}, 'pruned': set()}``. With an EMPTY index the resolver
+    is an identity that never prunes — a safety guard so a failed index load can't
+    wipe the connection view.
+    """
+    index_slugs = set(index_slugs or ())
+    stats = {"remapped": {}, "pruned": set()}
+    if not index_slugs:
+        def _ident(slug):
+            return slug
+        _ident.stats = stats
+        return _ident
+
+    by_tp = {}
+    for s in index_slugs:
+        by_tp.setdefault(_title_part(s), []).append(s)
+
+    def resolve(slug):
+        if not slug:
+            return None
+        if slug in index_slugs:
+            return slug                      # already current
+        cands = by_tp.get(_title_part(slug))
+        if cands and len(cands) == 1:
+            stats["remapped"][slug] = cands[0]
+            return cands[0]                  # renumbered -> current slug
+        stats["pruned"].add(slug)
+        return None                          # deleted or ambiguous -> drop
+    resolve.stats = stats
+    return resolve
+
+
+def make_bidirectional_deduped(conns_by_slug, resolve=None):
+    """Return a bidirectional, per-target-deduped connections dict.
+
+    For every directed edge A→B we also synthesize the reverse edge B→A (relation
+    flipped via :data:`REVERSE_RELATION`). For each ordered pair we keep **one
+    reason per relation** — so a paper connected several times under the *same*
+    relation (e.g. a forward "foundation" edge plus a reverse "application" edge
+    that flips back to "foundation") shows a single "기반 연구" line, while genuinely
+    distinct relations (foundation + alternative) each get their own. Forward
+    reasons (written from this paper's own perspective) win over reverse-derived
+    ones. The top-level ``relation``/``reason`` mirror the highest-priority reason
+    for consumers that read a single relation.
+    """
+    # buckets[src][tgt] = {relation: (reason, is_forward)} — one reason / relation
+    buckets = {}
+
+    def _add(src, tgt, rel, reason, is_forward):
+        if not src or not tgt or src == tgt:
+            return
+        relmap = buckets.setdefault(src, OrderedDict()).setdefault(tgt, OrderedDict())
+        cur = relmap.get(rel)
+        # Keep one reason per relation: prefer a forward reason; otherwise keep
+        # the first one seen (stable).
+        if cur is None or (is_forward and not cur[1]):
+            relmap[rel] = (reason, is_forward)
+
+    for src, conns in conns_by_slug.items():
+        if resolve is not None:
+            src = resolve(src)
+            if src is None:                  # source paper deleted/ambiguous → drop its edges
+                continue
+        for entry in conns or []:
+            tgt = entry.get("slug")
+            if resolve is not None:
+                tgt = resolve(tgt)
+                if tgt is None:              # target deleted/ambiguous → drop this edge
+                    continue
+            for rel, reason in _entry_reasons(entry):
+                _add(src, tgt, rel, reason, True)
+                _add(tgt, src, REVERSE_RELATION.get(rel, rel), reason, False)
+
+    result = {}
+    for src, tgts in buckets.items():
+        items = []
+        for tgt, relmap in tgts.items():
+            reasons = [{"relation": rel, "reason": rr[0]}
+                       for rel, rr in relmap.items()]
+            reasons.sort(key=lambda r: REL_ORDER.get(r["relation"], 9))
+            primary = reasons[0]
+            items.append({
+                "slug": tgt,
+                "relation": primary["relation"],
+                "reason": primary["reason"],
+                "reasons": reasons,
+            })
+        items.sort(key=lambda c: (REL_ORDER.get(c["relation"], 9), c["slug"]))
+        result[src] = items
+    return result
 
 
 def load_global_connections():
@@ -92,13 +252,21 @@ def sync_topic_connections(new_connections, topic, topic_slugs, topic_dir, log=p
         topic_dir: path to topic directory (e.g. docs/ai4s/)
         log: logging function
     """
-    # Merge into global
+    # Merge into global (raw directional store)
     global_conns = merge_to_global(new_connections, source_topic=topic)
     global_total = sum(len(v) for v in global_conns.values())
     log(f"  Global connections: {len(global_conns)} papers, {global_total} total links")
 
-    # Filter for this topic
-    topic_conns = filter_for_topic(global_conns, topic_slugs)
+    # Derive the bidirectional + per-target-deduped view, then filter for topic.
+    # Self-heal renumbered connection endpoints to current slugs (and prune
+    # deleted/ambiguous ones) so the consumer view never shows orphan slug-titles.
+    _resolve = build_slug_resolver(load_index_slugs())
+    bidi_conns = make_bidirectional_deduped(global_conns, resolve=_resolve)
+    _st = _resolve.stats
+    if _st["remapped"] or _st["pruned"]:
+        log(f"  Connections normalized: {len(_st['remapped'])} remapped (renumbered), "
+            f"{len(_st['pruned'])} pruned (deleted/ambiguous)")
+    topic_conns = filter_for_topic(bidi_conns, topic_slugs)
     topic_total = sum(len(v) for v in topic_conns.values())
 
     # Save topic file
