@@ -123,11 +123,16 @@ def classify_via_bundle(vec_768, bundle):
     tid_to_cat = bundle["tid_to_cat"]
     tid_to_subname = bundle["tid_to_subname"]
 
-    vec = np.asarray(vec_768, dtype=np.float32).reshape(1, -1)
-    vec_5d = umap_cluster.transform(vec)
+    if bundle.get("degenerate") or hdbscan_model is None or umap_cluster is None:
+        # 소규모 코퍼스 fallback 번들 (topic_modeling 이 클러스터링 없이 저장):
+        # UMAP/HDBSCAN 없이 아래 outlier 경로(centroid cosine)로 바로 배정
+        primary_tid = -1
+    else:
+        vec = np.asarray(vec_768, dtype=np.float32).reshape(1, -1)
+        vec_5d = umap_cluster.transform(vec)
 
-    labels, strengths = _hdbscan.approximate_predict(hdbscan_model, vec_5d)
-    primary_tid = int(labels[0])
+        labels, strengths = _hdbscan.approximate_predict(hdbscan_model, vec_5d)
+        primary_tid = int(labels[0])
 
     # Outlier 강제 배정: 768D centroid 코사인 최단
     if primary_tid == -1 or primary_tid not in tid_to_cat:
@@ -224,12 +229,14 @@ def _run_classify(topic, *, slugs=None, dry_run=False):
             skipped += 1
             continue
 
-        # Detect raw outlier flag for reporting (before centroid fallback)
-        vec_5d = bundle["umap_cluster"].transform(
-            np.asarray(vec, dtype=np.float32).reshape(1, -1))
-        raw_labels, _ = _hdbscan.approximate_predict(bundle["hdbscan_model"], vec_5d)
-        if int(raw_labels[0]) == -1:
-            outlier_count += 1
+        # Detect raw outlier flag for reporting (before centroid fallback).
+        # degenerate 번들(소규모 코퍼스)은 UMAP/HDBSCAN 이 없으므로 스킵.
+        if not (bundle.get("degenerate") or bundle["umap_cluster"] is None):
+            vec_5d = bundle["umap_cluster"].transform(
+                np.asarray(vec, dtype=np.float32).reshape(1, -1))
+            raw_labels, _ = _hdbscan.approximate_predict(bundle["hdbscan_model"], vec_5d)
+            if int(raw_labels[0]) == -1:
+                outlier_count += 1
 
         primary, all_cats, sub, sub_map = classify_via_bundle(vec, bundle)
 

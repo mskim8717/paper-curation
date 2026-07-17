@@ -42,20 +42,20 @@ from pathlib import Path
 
 from config_loader import (
     get_zotero_api_key,
-    get_zotero_user_id,
+    get_zotero_library_base,
     get_collection_key,
     get_topic_dir,
     _ssl_ctx,
 )
 
 API_KEY = get_zotero_api_key()
-USER_ID = get_zotero_user_id()
+LIB_BASE = get_zotero_library_base()  # 'users/<id>' 또는 'groups/<id>'
 
 
 # ── Zotero API helpers ───────────────────────────────────────────────────────
 
 def _api(endpoint, method="GET", data=None, if_unmod_version=None, params=None):
-    base = f"https://api.zotero.org/users/{USER_ID}/{endpoint}"
+    base = f"https://api.zotero.org/{LIB_BASE}/{endpoint}"
     if params:
         base += "?" + urllib.parse.urlencode(params)
     body = json.dumps(data).encode("utf-8") if data is not None else None

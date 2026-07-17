@@ -538,6 +538,13 @@ def main():
     parser.add_argument("--limit", type=int, default=None, help="limit number of papers (debug)")
     parser.add_argument("--dry-run", action="store_true", help="chunk only, no API calls")
     args = parser.parse_args()
+    # OPENAI_API_KEY 없으면 Deep Research 인덱스는 건너뛴다 (exit 0 — 파이프라인
+    # 체인은 계속 진행). classic 검색은 인덱스 없이 동작하며 Deep Research
+    # 모드만 비활성화된다. 키를 설정하면 다음 실행부터 자동으로 빌드된다.
+    if not args.dry_run and not (os.environ.get("OPENAI_API_KEY") or _load_openai_key_from_config()):
+        print("SKIP: OPENAI_API_KEY 미설정 — Deep Research 검색 인덱스 빌드를 건너뜁니다.")
+        print(f"      키 설정 후 재실행: python pipeline/build_search_index.py --topic {args.topic}")
+        return
     _run_search_index(topic=args.topic, model=args.model, limit=args.limit, dry_run=args.dry_run)
 
 

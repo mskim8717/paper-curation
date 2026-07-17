@@ -672,6 +672,42 @@ Rules:
 # Main
 # ═══════════════════════════════════════════
 
+# HDBSCAN/UMAP 이 의미를 갖는 최소 코퍼스 크기. 이보다 작으면 클러스터링을
+# 건너뛰고 전체를 단일 sub-cluster 로 취급한다 (신규 토픽 초기 운영 단계).
+MIN_CLUSTERING_CORPUS = 8
+
+
+def _degenerate_clustering(embeddings, slugs, originalities):
+    """소규모 코퍼스 fallback: 모든 논문을 sub-cluster 0 하나에 배정.
+
+    HDBSCAN 은 k-NN 기반이라 논문 수가 극히 적으면 동작 자체가 불가능하다.
+    centroid 는 평균 임베딩, 키워드는 단순 빈도 top-10, 좌표는 원형 배치.
+    반환 형식은 run_clustering 과 동일하며 model/transformer 자리는 None —
+    classify_papers 는 번들의 degenerate 플래그를 보고 centroid cosine
+    경로만 사용한다. 코퍼스가 자라면 다음 실행에서 정상 경로로 대체된다."""
+    import re as _re
+    from collections import Counter
+
+    n = len(slugs)
+    topics = [0] * n
+    probs = [1.0] * n
+
+    words = Counter()
+    for s in slugs:
+        text = (originalities.get(s) or "").lower()
+        words.update(_re.findall(r"[a-z][a-z-]{3,}", text))
+    topic_keywords = {0: [(w, float(c)) for w, c in words.most_common(10)]}
+
+    emb = np.asarray(embeddings, dtype=np.float32)
+    centroids = {0: emb.mean(axis=0)}
+
+    # 시각화용 좌표 — 클러스터 구조가 없으므로 단순 원형 배치
+    angles = np.linspace(0.0, 2.0 * np.pi, n, endpoint=False)
+    coords_2d = np.stack([np.cos(angles), np.sin(angles)], axis=1)
+
+    return topics, probs, topic_keywords, centroids, coords_2d, None, None, None
+
+
 def _run_topic_model(topic="ai4s", *, skip_connections=False,
                       skip_classification=False, min_cats=8, max_cats=12):
     """Programmatic entrypoint for topic_modeling."""
@@ -700,10 +736,19 @@ def _run_topic_model(topic="ai4s", *, skip_connections=False,
     log("\n" + "=" * 50)
     log("STEP 3: HDBSCAN FINE-GRAINED CLUSTERING")
     log("=" * 50)
-    (topics, probs, topic_keywords, centroids, coords_2d, coords_3d,
-     hdbscan_model, umap_cluster) = run_clustering(
-        embeddings, slugs, originalities
-    )
+    degenerate = len(slugs) < MIN_CLUSTERING_CORPUS
+    if degenerate:
+        log(f"  코퍼스 {len(slugs)}편 < {MIN_CLUSTERING_CORPUS} — HDBSCAN 스킵, "
+            f"단일 sub-cluster fallback")
+        (topics, probs, topic_keywords, centroids, coords_2d, coords_3d,
+         hdbscan_model, umap_cluster) = _degenerate_clustering(
+            embeddings, slugs, originalities
+        )
+    else:
+        (topics, probs, topic_keywords, centroids, coords_2d, coords_3d,
+         hdbscan_model, umap_cluster) = run_clustering(
+            embeddings, slugs, originalities
+        )
 
     from anthropic import Anthropic
     client = Anthropic(timeout=180.0, max_retries=4)
@@ -724,7 +769,14 @@ def _run_topic_model(topic="ai4s", *, skip_connections=False,
         log("\n" + "=" * 50)
         log("STEP 4.5: GROUPING SUB-TOPICS INTO CATEGORIES (Sonnet)")
         log("=" * 50)
-        tid_to_cat, cat_info = group_into_categories(topic_names, topics, centroids, min_cats, max_cats, client)
+        if degenerate:
+            # sub-topic 이 1개뿐이므로 그룹핑 LLM 호출 없이 그대로 카테고리로 승격
+            log("  degenerate 모드 — sub-topic 을 그대로 카테고리로 사용")
+            tid_to_cat = {tid: info["name"] for tid, info in topic_names.items()}
+            cat_info = {info["name"]: info.get("description", "")
+                        for info in topic_names.values()}
+        else:
+            tid_to_cat, cat_info = group_into_categories(topic_names, topics, centroids, min_cats, max_cats, client)
         for cat_name, desc in sorted(cat_info.items()):
             count = sum(1 for tid, cat in tid_to_cat.items() if cat == cat_name)
             log(f"  [{cat_name}] {count} sub-topics")
@@ -818,6 +870,9 @@ def _run_topic_model(topic="ai4s", *, skip_connections=False,
             "trained_at": datetime.now().isoformat(),
             "n_papers": len(topic_papers),
             "n_subclusters": len(centroids),
+            # 소규모 코퍼스 fallback 여부 — classify_papers 가 centroid cosine
+            # 경로만 쓰도록 신호 (model/transformer 는 None)
+            "degenerate": degenerate,
         }
         bundle_path = os.path.join(topic_dir, "_hdbscan_model.joblib")
         joblib.dump(bundle, bundle_path)

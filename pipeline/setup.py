@@ -22,6 +22,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+import config_loader  # noqa: F401  — import 시점에 PROJECT_ROOT/.env 를 환경변수로 로드
+
 REPO = Path(__file__).resolve().parent.parent
 CONFIG_PATH = REPO / "config.json"
 EXAMPLE_PATH = REPO / "config.example.json"
@@ -29,6 +31,41 @@ TEMPLATE_PATH = REPO / "SKILL.md.template"
 SKILL_OUTPUT = REPO / "SKILL.md"
 GITIGNORE_PATH = REPO / ".gitignore"
 SKILL_INSTALL_DIR = Path.home() / ".claude" / "skills" / "paper-curation"
+
+
+def _ask_library(api_key):
+    """개인/그룹 라이브러리 선택. 반환: '' (개인 라이브러리) 또는 'group:<groupID>'.
+
+    API 키로 접근 가능한 그룹이 있으면 목록을 보여주고 선택받는다.
+    Enter(기본)면 개인 라이브러리."""
+    if not api_key:
+        return ""
+    import urllib.request
+    try:
+        req = urllib.request.Request("https://api.zotero.org/keys/current", headers={
+            "Zotero-API-Key": api_key, "User-Agent": "Mozilla/5.0",
+        })
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            user_id = str(json.load(resp).get("userID", ""))
+        req = urllib.request.Request(f"https://api.zotero.org/users/{user_id}/groups", headers={
+            "Zotero-API-Key": api_key, "User-Agent": "Mozilla/5.0",
+        })
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            groups = json.load(resp)
+    except Exception:
+        return ""  # 조회 실패 시 개인 라이브러리로
+    if not groups:
+        return ""
+    print("\n  이 키로 접근 가능한 그룹 라이브러리가 있습니다:")
+    for i, g in enumerate(groups, 1):
+        d = g.get("data", {})
+        print(f"    {i}. {d.get('name')} (groupID={d.get('id')})")
+    sel = input("  사용할 라이브러리 — Enter=개인 라이브러리(기본), 번호=그룹 선택: ").strip()
+    if sel.isdigit() and 1 <= int(sel) <= len(groups):
+        gid = groups[int(sel) - 1]["data"]["id"]
+        print(f"  → 그룹 라이브러리 사용: group:{gid}")
+        return f"group:{gid}"
+    return ""
 
 
 def step_config():
@@ -48,6 +85,9 @@ def step_config():
     # Zotero 설정
     api_key = input("  Zotero API Key (https://www.zotero.org/settings/keys): ").strip()
     email = input("  이메일 (Zotero/Unpaywall용): ").strip()
+
+    # 라이브러리 선택 (개인 라이브러리 기본, 그룹 라이브러리 지정 가능)
+    library = _ask_library(api_key)
 
     # 컬렉션 alias 설정
     print("\n  앞으로 이 Collection의 Paper Curation을 운영하려면 부르기 편한 이름을 하나 정하는 게 좋습니다.")
@@ -73,6 +113,8 @@ def step_config():
         },
         "unpaywall_email": email or "your.email@example.com",
     }
+    if library:
+        cfg["zotero"]["library"] = library
     if github_repo:
         cfg["github"] = {
             "repo": github_repo,
@@ -93,8 +135,9 @@ def step_env_check(cfg):
     """Step 2: LLM API 키 환경변수 확인.
 
     ANTHROPIC / GOOGLE 키는 경고만 출력하고 넘어간다.
-    OPENAI_API_KEY는 Deep Research 검색 인덱스 빌드에 필수라 없으면
-    직접 입력받아 config.json에 저장하고, 입력을 건너뛰면 설치를 중단한다.
+    OPENAI_API_KEY는 Deep Research 검색 인덱스 빌드에 필요 — 없으면 직접
+    입력받아 config.json에 저장하고, 입력을 건너뛰면 Deep Research 없이
+    진행한다 (build_search_index가 자동 스킵됨).
     (config.json은 .gitignore 로 보호됨)"""
     print("\n[2/6] 환경변수 확인")
 
@@ -117,16 +160,19 @@ def step_env_check(cfg):
 
     print()
     print("  ✗ OPENAI_API_KEY 미설정")
-    print("    Deep Research 검색 인덱스 빌드에 필수입니다.")
+    print("    Deep Research 검색 인덱스 빌드에 필요합니다.")
     print("    발급: https://platform.openai.com/api-keys")
     print("    지금 입력하시면 config.json에 저장되어 다음 실행에서도 자동 사용됩니다.")
-    print("    입력을 건너뛰시면 설치가 여기서 중단됩니다. 발급 후 다시 setup.py를 실행하세요.")
+    print("    건너뛰면 Deep Research 없이 설치가 계속됩니다 (검색 인덱스 단계 자동 스킵).")
     print()
-    user_input = input("    OpenAI API Key (sk-..., Enter로 중단): ").strip()
+    try:
+        user_input = input("    OpenAI API Key (sk-..., Enter로 스킵): ").strip()
+    except EOFError:
+        user_input = ""
     if not user_input:
-        print("\n  OPENAI_API_KEY가 필요합니다. 설치를 중단합니다.")
-        print("  키를 발급한 뒤 다시 `python pipeline/setup.py` 를 실행해주세요.")
-        sys.exit(1)
+        print("\n  ⚠ OPENAI_API_KEY 없이 진행 — Deep Research 검색 인덱스는 빌드되지 않습니다.")
+        print("    나중에 .env 또는 config.json(openai_api_key)에 키를 추가하면 다음 실행부터 빌드됩니다.")
+        return
 
     cfg["openai_api_key"] = user_input
     _save_config(cfg)
@@ -159,6 +205,14 @@ def step_zotero_test(cfg):
         print(f"  ✗ User ID 조회 실패: {e}")
         return False
 
+    # 라이브러리 베이스 결정 (개인 또는 그룹)
+    lib = str(cfg.get("zotero", {}).get("library", "")).strip()
+    if lib.startswith("group:"):
+        lib_base = f"groups/{lib.split(':', 1)[1].strip()}"
+        print(f"  ✓ 라이브러리: 그룹 ({lib_base})")
+    else:
+        lib_base = f"users/{user_id}"
+
     # 컬렉션 검증
     collections = cfg.get("zotero", {}).get("collections", {})
     if not collections:
@@ -166,7 +220,7 @@ def step_zotero_test(cfg):
         return False
 
     try:
-        url = f"https://api.zotero.org/users/{user_id}/collections?format=json&limit=100"
+        url = f"https://api.zotero.org/{lib_base}/collections?format=json&limit=100"
         req = urllib.request.Request(url, headers={
             "Zotero-API-Key": api_key, "User-Agent": "Mozilla/5.0",
         })

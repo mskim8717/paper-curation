@@ -1,0 +1,24 @@
+{
+  "_comment": "Originality trigger phrases (bootstrap). originality_extractor.py가 rule-based 매칭에 사용하며, LLM fallback이 발견한 트리거가 rule_base_learned에 자동 추가된다. 모두 소문자.",
+  "rule_base_authorship": [
+    "we propose", "we present", "we introduce", "we develop", "we report",
+    "we demonstrate", "we show", "we design", "we describe", "we investigate",
+    "our approach", "our method", "our framework", "our model", "our system",
+    "this paper proposes", "this paper presents", "this paper introduces",
+    "this study proposes", "this study presents", "this work proposes"
+  ],
+  "rule_base_novelty": [
+    "novel", "new approach", "new method", "new framework", "new model",
+    "for the first time", "first to", "unprecedented", "unlike previous",
+    "unlike prior", "in contrast to previous", "in contrast to prior",
+    "state-of-the-art", "cutting-edge", "innovative", "original"
+  ],
+  "rule_base_contribution": [
+    "propose", "present a", "introduce a", "develop a", "design a",
+    "contribution", "contributions", "outperform", "outperforms",
+    "improve", "improves", "achieve", "achieves", "address", "addresses",
+    "overcome", "overcomes", "extend", "extends", "advance", "advances",
+    "enable", "enables", "demonstrate", "demonstrates"
+  ],
+  "rule_base_learned": []
+}

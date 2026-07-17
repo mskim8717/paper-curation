@@ -23,10 +23,10 @@ from datetime import datetime
 from config_loader import PAPERS_DIR as _PAPERS_DIR
 PAPERS_DIR = str(_PAPERS_DIR)
 
-from config_loader import get_zotero_api_key, get_zotero_user_id, get_collections, _ssl_ctx
+from config_loader import get_zotero_api_key, get_zotero_library_base, get_collections, _ssl_ctx
 
 API_KEY = get_zotero_api_key()
-USER_ID = get_zotero_user_id()
+LIB_BASE = get_zotero_library_base()  # 'users/<id>' 또는 'groups/<id>'
 COLLECTIONS = get_collections()
 
 
@@ -57,7 +57,7 @@ def fetch_zotero_items(collection_key):
     items = []
     start = 0
     while True:
-        url = (f"https://api.zotero.org/users/{USER_ID}/collections/"
+        url = (f"https://api.zotero.org/{LIB_BASE}/collections/"
                f"{collection_key}/items/top?limit=100&start={start}&format=json")
         req = urllib.request.Request(url, headers={
             "Zotero-API-Key": API_KEY, "User-Agent": "Mozilla/5.0"
@@ -132,6 +132,10 @@ def _run_sync(topic, *, dry_run=False):
         return
 
     index_path = os.path.join(PAPERS_DIR, "_papers_index.json")
+    if not os.path.exists(index_path):
+        # 첫 빌드: 아직 로컬 인덱스가 없으므로 동기화할 대상이 없다.
+        log(f"첫 빌드 — {index_path} 없음. sync 스킵 (이후 run_update_force가 인덱스 생성).")
+        return
     with open(index_path, "r", encoding="utf-8") as f:
         papers = json.load(f)
 

@@ -28,7 +28,7 @@ from pathlib import Path
 
 from config_loader import (
     PAPERS_DIR as _PAPERS_DIR, get_topic_dir, _ssl_ctx,
-    get_zotero_api_key, get_zotero_user_id, get_zotero_dir,
+    get_zotero_api_key, get_zotero_library_base, get_zotero_dir,
 )
 
 PAPERS_DIR = str(_PAPERS_DIR)
@@ -54,11 +54,11 @@ def log(msg):
 def fetch_zotero_pdf_map():
     """Zotero API에서 item title → PDF filename 매핑 조회."""
     api_key = get_zotero_api_key()
-    user_id = get_zotero_user_id()
+    lib_base = get_zotero_library_base()
     pdf_dir = get_zotero_dir()
 
-    if not api_key or not user_id:
-        log("  WARNING: Zotero API key/user ID missing, skipping PDF lookup")
+    if not api_key or not lib_base:
+        log("  WARNING: Zotero API key/library missing, skipping PDF lookup")
         return {}
 
     log("  Fetching Zotero items for PDF matching...")
@@ -67,7 +67,7 @@ def fetch_zotero_pdf_map():
     limit = 100
 
     while True:
-        url = (f"https://api.zotero.org/users/{user_id}/items"
+        url = (f"https://api.zotero.org/{lib_base}/items"
                f"?format=json&itemType=attachment&limit={limit}&start={start}")
         req = urllib.request.Request(url, headers={
             "Zotero-API-Key": api_key, "User-Agent": "Mozilla/5.0",
@@ -101,7 +101,7 @@ def fetch_zotero_pdf_map():
     # Fetch all items (not just attachments)
     start = 0
     while True:
-        url = (f"https://api.zotero.org/users/{user_id}/items/top"
+        url = (f"https://api.zotero.org/{lib_base}/items/top"
                f"?format=json&limit={limit}&start={start}")
         req = urllib.request.Request(url, headers={
             "Zotero-API-Key": api_key, "User-Agent": "Mozilla/5.0",

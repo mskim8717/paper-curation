@@ -2,6 +2,7 @@
   "zotero": {
     "api_key": "YOUR_ZOTERO_API_KEY_HERE",
     "email": "your.email@example.com",
+    "_comment_library": "선택사항. 그룹 라이브러리를 쓰려면 \"library\": \"group:<groupID>\" 추가. 생략하면 개인 라이브러리.",
     "collections": {
       "my_topic": "Your Zotero Collection Name"
     },

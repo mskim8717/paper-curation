@@ -3,6 +3,7 @@
 
 # Whitelist: core project files
 !.gitignore
+!.env.sample
 !.nojekyll
 !README.md
 !SKILL.md
@@ -18,6 +19,7 @@
 !pipeline/*.py
 !pipeline/lib/
 !pipeline/lib/*.py
+!pipeline/lib/originality_triggers.json
 !pipeline/api/
 !pipeline/api/*.py
 

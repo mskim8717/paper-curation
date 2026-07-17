@@ -16,7 +16,7 @@ KST = timezone(timedelta(hours=9))
 TODAY = datetime.now(KST).strftime("%Y-%m-%d")
 
 from collections import OrderedDict
-from config_loader import PAPERS_DIR as _PAPERS_DIR, DOCS_DIR, get_topic_dir, get_zotero_api_key, get_zotero_user_id
+from config_loader import PAPERS_DIR as _PAPERS_DIR, DOCS_DIR, get_topic_dir, get_zotero_api_key, get_zotero_library_base
 from lib.categories import category_slug
 from lib.audio_overview import (
     get_audio_css as _audio_css,
@@ -1378,7 +1378,7 @@ def _run_topic_index(topic=None):
           // and the Zotero desktop app pops the PDF immediately.
           if (window._zoteroKeys && window._zoteroKeys[ref.slug]) {
             const pdfLink = document.createElement('a');
-            pdfLink.href = 'zotero://open-pdf/library/items/' + window._zoteroKeys[ref.slug];
+            pdfLink.href = 'zotero://open-pdf/' + (window._zoteroLibBase || 'library') + '/items/' + window._zoteroKeys[ref.slug];
             pdfLink.title = 'Open PDF in Zotero';
             pdfLink.textContent = '\U0001F4C4 PDF';
             pdfLink.style.marginLeft = '0.5rem';
@@ -1894,7 +1894,10 @@ def _run_topic_index(topic=None):
       fetch('../_zotero_keys.json').then(function(r) {
         return r.ok ? r.json() : null;
       }).then(function(keys) {
-        if (keys) window._zoteroKeys = keys;
+        if (keys) {
+          if (keys._lib) { window._zoteroLibBase = keys._lib; delete keys._lib; }
+          window._zoteroKeys = keys;
+        }
       }).catch(function() { /* no zotero keys; fine */ });
 
       const cb = document.getElementById('mode-classic');
@@ -2278,13 +2281,13 @@ def _run_topic_index(topic=None):
     try:
         import urllib.request as _urllib_request
         _api_key = get_zotero_api_key()
-        _user_id = get_zotero_user_id()
-        if _api_key and _user_id:
+        _lib_base = get_zotero_library_base()
+        if _api_key and _lib_base:
             _items = []
             _start = 0
             _limit = 100
             while True:
-                _url = f"https://api.zotero.org/users/{_user_id}/items/top?format=json&limit={_limit}&start={_start}"
+                _url = f"https://api.zotero.org/{_lib_base}/items/top?format=json&limit={_limit}&start={_start}"
                 _req = _urllib_request.Request(_url, headers={
                     "Zotero-API-Key": _api_key,
                     "User-Agent": "Mozilla/5.0",
@@ -2315,7 +2318,7 @@ def _run_topic_index(topic=None):
             _attach_items = []
             _start = 0
             while True:
-                _url = f"https://api.zotero.org/users/{_user_id}/items?itemType=attachment&format=json&limit={_limit}&start={_start}"
+                _url = f"https://api.zotero.org/{_lib_base}/items?itemType=attachment&format=json&limit={_limit}&start={_start}"
                 _req = _urllib_request.Request(_url, headers={
                     "Zotero-API-Key": _api_key,
                     "User-Agent": "Mozilla/5.0",
@@ -2354,6 +2357,8 @@ def _run_topic_index(topic=None):
                             # to parent key (which at least selects the item)
                             _slug_to_key[_s] = _parent_to_pdf.get(_parent_key, _parent_key)
             if _slug_to_key:
+                # zotero://open-pdf URI 세그먼트: 개인 라이브러리='library', 그룹='groups/<id>'
+                _slug_to_key["_lib"] = "library" if _lib_base.startswith("users/") else _lib_base
                 _zk_path = Path(DOCS_DIR) / "_zotero_keys.json"
                 _zk_path.write_text(json.dumps(_slug_to_key), encoding="utf-8")
                 print(f"Zotero keys: {_zk_path} ({len(_slug_to_key)} matched, for localhost dev, git-ignored)")

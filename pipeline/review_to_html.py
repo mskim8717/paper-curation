@@ -27,6 +27,9 @@ try:
         _ZOTERO_KEYS = json.load(_f)
 except Exception:
     _ZOTERO_KEYS = {}
+# zotero://open-pdf URI 세그먼트 — build_topic_index가 '_lib'로 기록
+# (개인 라이브러리='library', 그룹='groups/<id>')
+_ZOTERO_URI_LIB = _ZOTERO_KEYS.pop("_lib", "library")
 
 # Gemini key for the browser-direct Audio Overview feature. Baked into the
 # review page at build time (like the Deep Research keys in build_topic_index),
@@ -467,7 +470,7 @@ def convert_review(md_path, topic, slug_dir):
         pdf_btn = ""
         if zkey:
             pdf_btn = (
-                f' <a href="zotero://open-pdf/library/items/{esc(zkey)}" '
+                f' <a href="zotero://open-pdf/{_ZOTERO_URI_LIB}/items/{esc(zkey)}" '
                 f'title="Open PDF in Zotero" '
                 f'style="margin-left:0.5rem; font-size:0.75rem; color:#555; '
                 f'text-decoration:none; padding:0.05rem 0.4rem; '

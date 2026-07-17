@@ -33,7 +33,7 @@ from datetime import datetime
 # Paths
 from config_loader import (
     PAPERS_DIR as _PAPERS_DIR, PIPELINE_DIR, _ssl_ctx,
-    get_zotero_api_key, get_zotero_user_id, get_collection_key, get_collections, get_zotero_dir,
+    get_zotero_api_key, get_zotero_library_base, get_collection_key, get_collections, get_zotero_dir,
     get_topic_dir,
 )
 from lib.categories import category_slug
@@ -78,6 +78,10 @@ def _resolve_topic_modeling_python():
     explicit = os.environ.get("PAPER_CURATION_PY312", "").strip()
     if explicit and os.path.exists(explicit):
         return explicit
+    # 현재 인터프리터가 이미 3.13 미만이면 numba CALL_KW 문제가 없다 —
+    # 별도 라우팅 없이 자기 자신 사용 (예: uv venv py3.12 단일 환경).
+    if sys.version_info < (3, 13):
+        return sys.executable
     here = _Path(sys.executable).resolve()
     # conda env layout: <prefix>/envs/<name>/bin/python
     if here.parent.name == "bin" and here.parent.parent.parent.name == "envs":
@@ -98,7 +102,7 @@ if TOPIC_MODELING_PYTHON != sys.executable:
 ZOTERO_DIR = get_zotero_dir()
 
 API_KEY = get_zotero_api_key()
-USER_ID = get_zotero_user_id()
+LIB_BASE = get_zotero_library_base()  # 'users/<id>' 또는 'groups/<id>'
 COLLECTIONS = get_collections()
 
 # Checkpoint
@@ -134,7 +138,7 @@ def fetch_zotero_items(collection_key):
     items = []
     start = 0
     while True:
-        url = (f"https://api.zotero.org/users/{USER_ID}/collections/"
+        url = (f"https://api.zotero.org/{LIB_BASE}/collections/"
                f"{collection_key}/items/top?limit=100&start={start}&format=json&sort=title")
         # Korea-to-Zotero links drop connections mid-stream; retry with exp backoff.
         last_err = None
@@ -218,7 +222,7 @@ def find_pdf(item):
 
     # Priority 1: Zotero children API (authoritative attachment path)
     try:
-        url = f"https://api.zotero.org/users/{USER_ID}/items/{key}/children?format=json"
+        url = f"https://api.zotero.org/{LIB_BASE}/items/{key}/children?format=json"
         req = urllib.request.Request(url, headers={"Zotero-API-Key": API_KEY})
         with urllib.request.urlopen(req, timeout=10, context=_ssl_ctx) as resp:
             children = json.load(resp)
@@ -228,6 +232,18 @@ def find_pdf(item):
                 continue
             if cd.get("contentType") not in ("application/pdf", ""):
                 continue
+            # Imported (stored) attachment: path 없이 filename만 있으며 실제
+            # 파일은 <storage>/<attachmentKey>/<filename>. ZOTERO_DIR가
+            # storage 자체이거나 Zotero 데이터 디렉토리인 경우 모두 지원.
+            fname_stored = cd.get("filename", "")
+            if not cd.get("path") and fname_stored.lower().endswith(".pdf"):
+                att_key = cd.get("key") or c.get("key", "")
+                for stored in (os.path.join(ZOTERO_DIR, att_key, fname_stored),
+                               os.path.join(ZOTERO_DIR, "storage", att_key, fname_stored)):
+                    if att_key and os.path.exists(stored):
+                        _audit_append({"key": key, "title": title[:80],
+                                       "method": "zotero_children_stored", "path": stored})
+                        return stored, "zotero_children_stored"
             path = cd.get("path", "")
             if not path.lower().endswith(".pdf"):
                 continue
@@ -417,6 +433,40 @@ def _zotero_text_sanity(item, text_md_path, min_title_coverage=0.6):
 
 # ── Phase 2: Extract text.md (OpenDataLoader → PyMuPDF fallback) ──
 
+def _detect_broken_fonts(doc):
+    """ToUnicode CMap이 깨진 폰트 탐지.
+
+    일부 IEEE Xplore 계열 PDF는 폰트 문자코드가 실제 유니코드보다 0x1D(29)
+    낮게 추출된다 (space→0x03, 'E'→'(' 등). 정상 텍스트에 나올 수 없는
+    제어문자(0x03~0x08)가 스팬에 섞여 있으면 그 폰트를 깨진 것으로 표시."""
+    broken = set()
+    for page in doc:
+        for b in page.get_text("dict")["blocks"]:
+            if b["type"] != 0:
+                continue
+            for line in b["lines"]:
+                for s in line["spans"]:
+                    if s["font"] not in broken and any(3 <= ord(c) <= 8 for c in s["text"]):
+                        broken.add(s["font"])
+    return broken
+
+
+def _repair_span_text(text):
+    """깨진 폰트 스팬의 문자코드를 +0x1D 시프트해 원문 복구.
+
+    0x20(공백)은 제외 — 깨진 폰트의 진짜 공백은 0x03으로 인코딩되므로,
+    스팬에 보이는 0x20은 PyMuPDF가 단어 간격에서 합성한 공백이다.
+    복구된 진짜 공백과 합성 공백이 겹치면 이중 공백이 되므로 접는다."""
+    repaired = "".join(chr(ord(c) + 0x1D) if ord(c) >= 3 and ord(c) != 0x20 else c
+                       for c in text)
+    return re.sub(r" {2,}", " ", repaired)
+
+
+def _informative_chars(text):
+    """추출 품질 지표: 영숫자 문자 수 (표 골격·구두점만 남은 부실 추출 감지)."""
+    return sum(1 for c in text if c.isalnum())
+
+
 def extract_text(pdf_path, slug_dir):
     text_path = os.path.join(slug_dir, "text.md")
 
@@ -435,7 +485,7 @@ def extract_text(pdf_path, slug_dir):
             if md_files:
                 with open(os.path.join(tmpdir, md_files[0]), "r", encoding="utf-8") as f:
                     text = f.read()
-                if text and len(text) > 100:
+                if text and len(text) > 100 and _informative_chars(text) >= 1000:
                     # OpenDataLoader exports its own image dump and embeds
                     # `![image N](relative/path.png)` lines pointing to a
                     # sibling dir that paper-curation never tracks (we use
@@ -448,6 +498,11 @@ def extract_text(pdf_path, slug_dir):
                     with open(text_path, "w", encoding="utf-8") as f:
                         f.write(text)
                     return True
+                if text:
+                    # 표 골격·구두점만 남은 부실 추출 (깨진 폰트 인코딩 등)
+                    # → PyMuPDF 폴백으로 넘어간다.
+                    log(f"  OpenDataLoader 추출 부실 (informative chars="
+                        f"{_informative_chars(text)}) — PyMuPDF 폴백")
     except ImportError:
         pass  # OpenDataLoader not installed → fallback
     except Exception as e:
@@ -457,7 +512,24 @@ def extract_text(pdf_path, slug_dir):
     try:
         import fitz
         doc = fitz.open(pdf_path)
-        text = "\n".join(doc[p].get_text() for p in range(len(doc)))
+        broken = _detect_broken_fonts(doc)
+        if broken:
+            # 깨진 ToUnicode CMap — 폰트 단위로 +0x1D 시프트 복구
+            log(f"  깨진 폰트 인코딩 감지 ({len(broken)} fonts) — 시프트 복구 적용")
+            pages = []
+            for page in doc:
+                parts = []
+                for b in page.get_text("dict")["blocks"]:
+                    if b["type"] != 0:
+                        continue
+                    for line in b["lines"]:
+                        parts.append("".join(
+                            _repair_span_text(s["text"]) if s["font"] in broken else s["text"]
+                            for s in line["spans"]))
+                pages.append("\n".join(parts))
+            text = "\n".join(pages)
+        else:
+            text = "\n".join(doc[p].get_text() for p in range(len(doc)))
         doc.close()
         if text and len(text) > 100:
             with open(text_path, "w", encoding="utf-8") as f:
@@ -481,6 +553,8 @@ def extract_figures(pdf_path, slug_dir):
         return []
 
     doc = fitz.open(pdf_path)
+    # 깨진 폰트 인코딩 PDF에서도 "Figure N" 캡션 매칭이 되도록 복구 준비
+    broken_fonts = _detect_broken_fonts(doc)
     figures = []
     MARGIN = 30
     MAX_ROUNDS = 5
@@ -531,7 +605,9 @@ def extract_figures(pdf_path, slug_dir):
             first_line = tb["lines"][0] if tb["lines"] else None
             if not first_line:
                 continue
-            lt = "".join(s["text"] for s in first_line["spans"])
+            lt = "".join(
+                _repair_span_text(s["text"]) if s["font"] in broken_fonts else s["text"]
+                for s in first_line["spans"])
             m = re.match(r"(Figure|Fig\.?)\s*(\d+)", lt)
             if not m:
                 continue
@@ -1426,7 +1502,8 @@ def main():
     items = fetch_zotero_items(collection_key)
     log(f"Total papers: {len(items)}")
 
-    # Get existing slugs
+    # Get existing slugs (첫 빌드면 docs/papers/ 를 생성)
+    os.makedirs(PAPERS_DIR, exist_ok=True)
     existing_slugs = sorted(d for d in os.listdir(PAPERS_DIR)
                             if os.path.isdir(os.path.join(PAPERS_DIR, d)) and d[0].isdigit())
 
@@ -1709,8 +1786,15 @@ def main():
             run_step("topic_modeling",
                      [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic], 3600)
         elif is_update:
-            run_step("topic_modeling (coords+connections)",
-                     [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic, "--skip-classification"], 3600)
+            bundle_path = os.path.join(str(get_topic_dir(topic)), "_hdbscan_model.joblib")
+            if not os.path.exists(bundle_path):
+                # 첫 빌드: 분류 번들이 아직 없으므로 --skip-classification 불가 —
+                # 카테고리 생성까지 포함한 풀 topic_modeling 실행
+                run_step("topic_modeling (first build)",
+                         [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic], 3600)
+            else:
+                run_step("topic_modeling (coords+connections)",
+                         [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic, "--skip-classification"], 3600)
         else:
             run_step("topic_modeling",
                      [TOPIC_MODELING_PYTHON, "pipeline/topic_modeling.py", "--topic", topic], 3600)

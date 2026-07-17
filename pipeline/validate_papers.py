@@ -285,6 +285,12 @@ def check_timeline_mismatch(topic):
         if m:
             actual_slugs.add(m.group(1))
 
+    # 타임라인 이미지가 하나도 없는 토픽은 기능 자체를 안 쓰는 것
+    # (예: 이미지 생성 키 없이 로컬 운영) — mismatch 검사 대상이 아니다.
+    # 이 검사의 목적은 카테고리와 "존재하는" 이미지 간 불일치 탐지다.
+    if not actual_slugs:
+        return issues
+
     missing_images = expected_slugs - actual_slugs
     stale_images = actual_slugs - expected_slugs
     for slug in sorted(missing_images):

@@ -23,6 +23,35 @@ PIPELINE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = PIPELINE_DIR.parent
 CONFIG_PATH = PROJECT_ROOT / "config.json"
 
+
+def _load_dotenv():
+    """PROJECT_ROOT/.env 를 읽어 환경변수로 주입. 셸에서 이미 설정된 값이 우선.
+
+    외부 의존성 없는 단순 파서: KEY=VALUE 줄만 처리하고 빈 줄·'#' 주석은
+    무시한다. 'export ' 접두사와 값 양끝 따옴표는 벗겨낸다.
+    (.env 는 whitelist .gitignore 에 의해 자동으로 커밋 제외됨)
+    """
+    env_path = PROJECT_ROOT / ".env"
+    if not env_path.exists():
+        return
+    try:
+        for line in env_path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            if line.startswith("export "):
+                line = line[len("export "):]
+            key, _, value = line.partition("=")
+            key = key.strip()
+            value = value.strip().strip("'\"")
+            if key:
+                os.environ.setdefault(key, value)
+    except Exception as e:
+        print(f"WARNING: .env 로드 실패: {e}")
+
+
+_load_dotenv()
+
 # 배포 파일 경로 (GitHub Pages 서빙 루트)
 DOCS_DIR = PROJECT_ROOT / "docs"
 PAPERS_DIR = DOCS_DIR / "papers"
@@ -93,6 +122,24 @@ def get_zotero_user_id():
         raise ValueError(f"Failed to fetch Zotero User ID: {e}")
 
 
+def get_zotero_library_base():
+    """Zotero API 라이브러리 베이스 경로 반환.
+
+    config.json의 zotero.library가 "group:<groupID>"면 'groups/<groupID>',
+    그 외("user" 또는 미설정)는 'users/<userID>'.
+    환경변수 ZOTERO_LIBRARY 폴백 지원.
+    """
+    cfg = load_config()
+    lib = str(cfg.get("zotero", {}).get("library", "")
+              or os.environ.get("ZOTERO_LIBRARY", "")).strip()
+    if lib.startswith("group:"):
+        group_id = lib.split(":", 1)[1].strip()
+        if not group_id.isdigit():
+            raise ValueError(f"Invalid zotero.library group ID: '{lib}' (expected 'group:<numeric ID>')")
+        return f"groups/{group_id}"
+    return f"users/{get_zotero_user_id()}"
+
+
 def _fetch_collection_keys():
     """Zotero에서 collection name → key 매핑을 조회. 캐싱."""
     global _collection_key_cache
@@ -100,10 +147,10 @@ def _fetch_collection_keys():
         return _collection_key_cache
 
     api_key = get_zotero_api_key()
-    user_id = get_zotero_user_id()
+    lib_base = get_zotero_library_base()
 
     try:
-        url = f"https://api.zotero.org/users/{user_id}/collections?format=json&limit=100"
+        url = f"https://api.zotero.org/{lib_base}/collections?format=json&limit=100"
         req = urllib.request.Request(url, headers={
             "Zotero-API-Key": api_key, "User-Agent": "Mozilla/5.0",
         })
